@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TuyaSmartMessage Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">TuyaSmartHomeKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tuya.Inc</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/cancelRequest">- cancelRequest</option>
+		
+		<option value="//api/name/deleteMessage:success:failure:">- deleteMessage:success:failure:</option>
+		
+		<option value="//api/name/deleteMessageWithType:ids:msgSrcIds:success:failure:">- deleteMessageWithType:ids:msgSrcIds:success:failure:</option>
+		
+		<option value="//api/name/getLatestMessageWithSuccess:failure:">- getLatestMessageWithSuccess:failure:</option>
+		
+		<option value="//api/name/getMessageDetailListWithType:msgSrcId:limit:offset:success:failure:">- getMessageDetailListWithType:msgSrcId:limit:offset:success:failure:</option>
+		
+		<option value="//api/name/getMessageList:failure:">- getMessageList:failure:</option>
+		
+		<option value="//api/name/getMessageList:offset:success:failure:">- getMessageList:offset:success:failure:</option>
+		
+		<option value="//api/name/getMessageListWithType:limit:offset:success:failure:">- getMessageListWithType:limit:offset:success:failure:</option>
+		
+		<option value="//api/name/getMessageMaxTime:failure:">- getMessageMaxTime:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TuyaSmartMessage Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TuyaSmartMessage.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getMessageList:failure:" title="getMessageList:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMessageList:failure:">&ndash;&nbsp;getMessageList:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取消息列表(旧)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMessageList:(void ( ^ ) ( NSArray&lt;TuyaSmartMessageListModel*&gt; *list ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调，返回消息列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>操作失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取消息列表(旧)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMessage.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMessageList:offset:success:failure:" title="getMessageList:offset:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMessageList:offset:success:failure:">&ndash;&nbsp;getMessageList:offset:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取分页的消息列表(旧)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMessageList:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSArray&lt;TuyaSmartMessageListModel*&gt; *list ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>limit</code></th>
+						<td><p>limit</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>offset</code></th>
+						<td><p>offset 从0开始</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调，返回消息列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>操作失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取分页的消息列表(旧)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMessage.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteMessage:success:failure:" title="deleteMessage:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteMessage:success:failure:">&ndash;&nbsp;deleteMessage:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>批量删除消息(旧)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteMessage:(NSArray&lt;NSString*&gt; *)<em>messgeIdList</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>messgeIdList</code></th>
+						<td><p>消息id列表</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>操作失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>批量删除消息(旧)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMessage.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMessageMaxTime:failure:" title="getMessageMaxTime:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMessageMaxTime:failure:">&ndash;&nbsp;getMessageMaxTime:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取最新一条消息的时间戳(旧)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMessageMaxTime:(TYSuccessInt)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调，返回最新时间</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>操作失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取最新一条消息的时间戳(旧)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMessage.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelRequest" title="cancelRequest"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelRequest">&ndash;&nbsp;cancelRequest</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>取消未完成的操作</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelRequest</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>取消未完成的操作</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMessage.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMessageListWithType:limit:offset:success:failure:" title="getMessageListWithType:limit:offset:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMessageListWithType:limit:offset:success:failure:">&ndash;&nbsp;getMessageListWithType:limit:offset:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取消息列表(新)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMessageListWithType:(NSInteger)<em>msgType</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSArray&lt;TuyaSmartMessageListModel*&gt; *list ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msgType</code></th>
+						<td><p>消息类型 1告警 2家庭 3通知</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>limit</code></th>
+						<td><p>开始</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>offset</code></th>
+						<td><p>条数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>操作失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取消息列表(新)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMessage.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMessageDetailListWithType:msgSrcId:limit:offset:success:failure:" title="getMessageDetailListWithType:msgSrcId:limit:offset:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMessageDetailListWithType:msgSrcId:limit:offset:success:failure:">&ndash;&nbsp;getMessageDetailListWithType:msgSrcId:limit:offset:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取分类消息列表(新)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMessageDetailListWithType:(NSInteger)<em>msgType</em> msgSrcId:(NSString *)<em>msgSrcId</em> limit:(NSInteger)<em>limit</em> offset:(NSInteger)<em>offset</em> success:(void ( ^ ) ( NSArray&lt;TuyaSmartMessageListModel*&gt; *list ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msgType</code></th>
+						<td><p>消息类型 1告警 2家庭 3通知 现只⽤用于告警消息，传1</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msgSrcId</code></th>
+						<td><p>分类ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>limit</code></th>
+						<td><p>开始</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>offset</code></th>
+						<td><p>条数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>操作失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取分类消息列表(新)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMessage.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLatestMessageWithSuccess:failure:" title="getLatestMessageWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLatestMessageWithSuccess:failure:">&ndash;&nbsp;getLatestMessageWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取三类消息是否有新消息(新)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getLatestMessageWithSuccess:(TYSuccessDict)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>操作失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取三类消息是否有新消息(新)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMessage.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteMessageWithType:ids:msgSrcIds:success:failure:" title="deleteMessageWithType:ids:msgSrcIds:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteMessageWithType:ids:msgSrcIds:success:failure:">&ndash;&nbsp;deleteMessageWithType:ids:msgSrcIds:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>批量删除数据(新)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteMessageWithType:(NSInteger)<em>msgType</em> ids:(NSArray *)<em>ids</em> msgSrcIds:(NSArray *)<em>msgSrcIds</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msgType</code></th>
+						<td><p>消息类型 1告警 2家庭 3通知 现只⽤用于告警消息，传1</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ids</code></th>
+						<td><p>消息ID列列表。其中如果消息有 msgId 则传 ids</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>msgSrcIds</code></th>
+						<td><p>告警类消息需要传分类ID，可以是设备ID，⾃自动化ID。其中如果消息有 msgSrcId 则传 msgSrcIds</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>操作失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>批量删除数据(新)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMessage.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-05-27</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

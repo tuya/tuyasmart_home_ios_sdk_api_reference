@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TuyaSmartSceneActionModel Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">TuyaSmartHomeKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tuya.Inc</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/actionDisplay">actionDisplay</option>
+		
+		<option value="//api/name/actionDisplayNew">actionDisplayNew</option>
+		
+		<option value="//api/name/actionExecutor">actionExecutor</option>
+		
+		<option value="//api/name/actionId">actionId</option>
+		
+		<option value="//api/name/entityId">entityId</option>
+		
+		<option value="//api/name/entityName">entityName</option>
+		
+		<option value="//api/name/executorProperty">executorProperty</option>
+		
+		<option value="//api/name/extraProperty">extraProperty</option>
+		
+		<option value="//api/name/scenarioId">scenarioId</option>
+		
+		<option value="//api/name/status">status</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TuyaSmartSceneActionModel Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>NSCoding</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TuyaSmartSceneActionModel.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/actionId" title="actionId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/actionId">&nbsp;&nbsp;actionId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>场景动作Id.
+action&rsquo;s Id.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *actionId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>场景动作Id.
+action&rsquo;s Id.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneActionModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/entityId" title="entityId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/entityId">&nbsp;&nbsp;entityId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>实体Id，如果动作是设备则是设备Id；如果动作是群组则是groupId；如果是触发一个场景或者设置自动化启动/禁用，则是操作的场景的sceneId；如果是一个延时动作，则是字符串@&ldquo;delay"。
+Entity&rsquo;s Id. If action is a device, entityId is devId, and groupId for group action, @"delay&rdquo; for a delay action, sceneId of operated scene for scene action.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *entityId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>实体Id，如果动作是设备则是设备Id；如果动作是群组则是groupId；如果是触发一个场景或者设置自动化启动/禁用，则是操作的场景的sceneId；如果是一个延时动作，则是字符串@&ldquo;delay"。
+Entity&rsquo;s Id. If action is a device, entityId is devId, and groupId for group action, @"delay&rdquo; for a delay action, sceneId of operated scene for scene action.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneActionModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/entityName" title="entityName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/entityName">&nbsp;&nbsp;entityName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>实体名称 如："智能插座",&ldquo;灯群组"等。
+Entity&rsquo;s name, like "lamp&rdquo;, &ldquo;lamp group&rdquo;.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *entityName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>实体名称 如："智能插座",&ldquo;灯群组"等。
+Entity&rsquo;s name, like "lamp&rdquo;, &ldquo;lamp group&rdquo;.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneActionModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scenarioId" title="scenarioId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scenarioId">&nbsp;&nbsp;scenarioId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>场景id, 可用来保存所属场景。
+Scene&rsquo;s Id ,can be used to save the scene&rsquo;s Id which this action belonged to.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *scenarioId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>场景id, 可用来保存所属场景。
+Scene&rsquo;s Id ,can be used to save the scene&rsquo;s Id which this action belonged to.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneActionModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/actionDisplay" title="actionDisplay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/actionDisplay">&nbsp;&nbsp;actionDisplay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>动作要做的内容描述 如：“开关 : 关闭”。
+Describe what this action will do, like &ldquo;Switch : Open&rdquo;.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *actionDisplay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>动作要做的内容描述 如：“开关 : 关闭”。
+Describe what this action will do, like &ldquo;Switch : Open&rdquo;.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneActionModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/actionDisplayNew" title="actionDisplayNew"></a>
+	<h3 class="method-title"><code><a href="#//api/name/actionDisplayNew">&nbsp;&nbsp;actionDisplayNew</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>动作要做的内容的新版描述，可自行拼成要展示的样式。
+{
+1: [
+&ldquo;开关&rdquo;,
+&ldquo;开启&rdquo;
+]
+}
+Describe what this action will do with origin format like the below example, you can use it to create the description.
+{
+1: [
+&ldquo;Switch&rdquo;,
+&ldquo;Open&rdquo;
+]
+},</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *actionDisplayNew</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>动作要做的内容的新版描述，可自行拼成要展示的样式。
+{
+1: [
+&ldquo;开关&rdquo;,
+&ldquo;开启&rdquo;
+]
+}
+Describe what this action will do with origin format like the below example, you can use it to create the description.
+{
+1: [
+&ldquo;Switch&rdquo;,
+&ldquo;Open&rdquo;
+]
+},</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneActionModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/actionExecutor" title="actionExecutor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/actionExecutor">&nbsp;&nbsp;actionExecutor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>任务执行属性 如："dpIssue",&ldquo;ruleTrigger&rdquo;,&ldquo;ruleEnable&rdquo;,&ldquo;ruleDisable&rdquo;
+&ldquo;dpIssue&rdquo; 执行设备
+&ldquo;deviceGroupDpIssue&rdquo; 执行群组
+&ldquo;irIssue&rdquo; 执行红外设备
+&ldquo;ruleTrigger&rdquo; 触发场景
+&ldquo;ruleEnable&rdquo;  启用场景
+&ldquo;ruleDisable&rdquo; 禁用场景
+&ldquo;dealy&rdquo; 延时
+The action type, can be the followed types:
+&ldquo;dpIssue&rdquo; :execute a device action.
+&ldquo;deviceGroupDpIssue&rdquo;: execute a group action.
+&ldquo;irIssue&rdquo;: execete a infrared device, like a air conditoner which is controled by a remote control.
+&ldquo;ruleTrigger&rdquo;: execute a scene.
+&ldquo;ruleEnable&rdquo;:  Enable an automation.
+&ldquo;ruleDisable&rdquo;: Disable an antomation.
+&ldquo;dealy&rdquo;: Delay for a while.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *actionExecutor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>任务执行属性 如："dpIssue",&ldquo;ruleTrigger&rdquo;,&ldquo;ruleEnable&rdquo;,&ldquo;ruleDisable&rdquo;
+&ldquo;dpIssue&rdquo; 执行设备
+&ldquo;deviceGroupDpIssue&rdquo; 执行群组
+&ldquo;irIssue&rdquo; 执行红外设备
+&ldquo;ruleTrigger&rdquo; 触发场景
+&ldquo;ruleEnable&rdquo;  启用场景
+&ldquo;ruleDisable&rdquo; 禁用场景
+&ldquo;dealy&rdquo; 延时
+The action type, can be the followed types:
+&ldquo;dpIssue&rdquo; :execute a device action.
+&ldquo;deviceGroupDpIssue&rdquo;: execute a group action.
+&ldquo;irIssue&rdquo;: execete a infrared device, like a air conditoner which is controled by a remote control.
+&ldquo;ruleTrigger&rdquo;: execute a scene.
+&ldquo;ruleEnable&rdquo;:  Enable an automation.
+&ldquo;ruleDisable&rdquo;: Disable an antomation.
+&ldquo;dealy&rdquo;: Delay for a while.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneActionModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/executorProperty" title="executorProperty"></a>
+	<h3 class="method-title"><code><a href="#//api/name/executorProperty">&nbsp;&nbsp;executorProperty</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>执行属性value 如："{&ldquo;1&rdquo;:true, &hellip;}&ldquo;,"1"是dpId，也就是数据点Id,后面跟的值是这个dp点要设置的值。延时动作格式"executorProperty&rdquo;:{&ldquo;seconds&rdquo;:&ldquo;5&rdquo;,&ldquo;minutes&rdquo;:&ldquo;0&rdquo;}
+Execute property, like {&ldquo;1&rdquo;:true, &hellip;}, &ldquo;1&rdquo; is dpId, a data point&rsquo;s Id, value is the value you want this datapoint to set. Delay action should be like &ldquo;executorProperty&rdquo;:{&ldquo;seconds&rdquo;:&ldquo;5&rdquo;,&ldquo;minutes&rdquo;:&ldquo;0&rdquo;}.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *executorProperty</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>执行属性value 如："{&ldquo;1&rdquo;:true, &hellip;}&ldquo;,"1"是dpId，也就是数据点Id,后面跟的值是这个dp点要设置的值。延时动作格式"executorProperty&rdquo;:{&ldquo;seconds&rdquo;:&ldquo;5&rdquo;,&ldquo;minutes&rdquo;:&ldquo;0&rdquo;}
+Execute property, like {&ldquo;1&rdquo;:true, &hellip;}, &ldquo;1&rdquo; is dpId, a data point&rsquo;s Id, value is the value you want this datapoint to set. Delay action should be like &ldquo;executorProperty&rdquo;:{&ldquo;seconds&rdquo;:&ldquo;5&rdquo;,&ldquo;minutes&rdquo;:&ldquo;0&rdquo;}.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneActionModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/extraProperty" title="extraProperty"></a>
+	<h3 class="method-title"><code><a href="#//api/name/extraProperty">&nbsp;&nbsp;extraProperty</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Zigbee 本地场景使用的字段，保存gId，gwId。
+Local scene&rsquo;s property, save gId and gwId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *extraProperty</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Zigbee 本地场景使用的字段，保存gId，gwId。
+Local scene&rsquo;s property, save gId and gwId.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneActionModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/status" title="status"></a>
+	<h3 class="method-title"><code><a href="#//api/name/status">&nbsp;&nbsp;status</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>执行状态
+Execute actions, you can use this property to store the execute status when executing.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) TYSceneActionStatus status</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>执行状态
+Execute actions, you can use this property to store the execute status when executing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneActionModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-05-27</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TuyaSmartBLEManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">TuyaSmartHomeKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tuya.Inc</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/isPoweredOn">isPoweredOn</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/activeBLEWithUUID:homeId:productKey:success:failure:">- activeBLEWithUUID:homeId:productKey:success:failure:</option>
+		
+		<option value="//api/name/appApplyLaunch:">- appApplyLaunch:</option>
+		
+		<option value="//api/name/appMandatoryTrans:">- appMandatoryTrans:</option>
+		
+		<option value="//api/name/deviceStatueWithUUID:">- deviceStatueWithUUID:</option>
+		
+		<option value="//api/name/getPeripheralRSSI:">- getPeripheralRSSI:</option>
+		
+		<option value="//api/name/isBLEChannelDeviceConnect:">- isBLEChannelDeviceConnect:</option>
+		
+		<option value="//api/name/queryNameWithUUID:productKey:success:failure:">- queryNameWithUUID:productKey:success:failure:</option>
+		
+		<option value="//api/name/sendOTAPack:otaData:success:failure:">- sendOTAPack:otaData:success:failure:</option>
+		
+		<option value="//api/name/sendOTAPack:pid:otaData:success:failure:">- sendOTAPack:pid:otaData:success:failure:</option>
+		
+		<option value="//api/name/setCompletionBlock:uuid:">- setCompletionBlock:uuid:</option>
+		
+		<option value="//api/name/startListening:">- startListening:</option>
+		
+		<option value="//api/name/stopListening:">- stopListening:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TuyaSmartBLEManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TuyaSmartBLEManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isPoweredOn" title="isPoweredOn"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isPoweredOn">&nbsp;&nbsp;isPoweredOn</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>蓝牙是否打开可用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) BOOL isPoweredOn</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>蓝牙是否打开可用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>代理，用于扫描和蓝牙状态变更通知</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;TuyaSmartBLEManagerDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>代理，用于扫描和蓝牙状态变更通知</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startListening:" title="startListening:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startListening:">&ndash;&nbsp;startListening:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>开始扫描</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startListening:(BOOL)<em>clearCache</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>clearCache</code></th>
+						<td><p>是否清理已扫描到的设备</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>开始扫描</p>
+
+<p>如果扫描到未激活设备，结果会通过 <a href="../Protocols/TuyaSmartBLEManagerDelegate.html"><code>TuyaSmartBLEManagerDelegate</code></a> 中的 <code>- (void)didDiscoveryDeviceWithUUID:(NSString *)uuid productKey:(NSString *)productKey</code> 返回;</p>
+
+<p>如果扫描到激活设备，会自动进行连接入网，不会返回扫描结果</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopListening:" title="stopListening:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopListening:">&ndash;&nbsp;stopListening:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停止扫描</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopListening:(BOOL)<em>clearCache</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>clearCache</code></th>
+						<td><p>是否清理已扫描到的设备</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>停止扫描</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/queryNameWithUUID:productKey:success:failure:" title="queryNameWithUUID:productKey:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryNameWithUUID:productKey:success:failure:">&ndash;&nbsp;queryNameWithUUID:productKey:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询设备名称</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)queryNameWithUUID:(NSString *)<em>uuid</em> productKey:(NSString *)<em>productKey</em> success:(void ( ^ ) ( NSString *name ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>设备 uuid</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>productKey</code></th>
+						<td><p>产品 key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询设备名称</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/activeBLEWithUUID:homeId:productKey:success:failure:" title="activeBLEWithUUID:homeId:productKey:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/activeBLEWithUUID:homeId:productKey:success:failure:">&ndash;&nbsp;activeBLEWithUUID:homeId:productKey:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>激活设备，设备 uuid 来源于搜索发现的设备
+激活过程会将设备信息注册到云端</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)activeBLEWithUUID:(NSString *)<em>uuid</em> homeId:(long long)<em>homeId</em> productKey:(NSString *)<em>productKey</em> success:(void ( ^ ) ( TuyaSmartDeviceModel *deviceModel ))<em>success</em> failure:(TYFailureHandler)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>设备 uuid</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeId</code></th>
+						<td><p>家庭 id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>productKey</code></th>
+						<td><p>产品 key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>激活设备，设备 uuid 来源于搜索发现的设备
+激活过程会将设备信息注册到云端</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendOTAPack:otaData:success:failure:" title="sendOTAPack:otaData:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendOTAPack:otaData:success:failure:">&ndash;&nbsp;sendOTAPack:otaData:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送OTA包，升级固件。升级前请务必保证设备已通过蓝牙连接</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendOTAPack:(NSString *)<em>uuid</em> otaData:(NSData *)<em>otaData</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureHandler)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>设备 uuid</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>otaData</code></th>
+						<td><p>升级固件的数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送OTA包，升级固件。升级前请务必保证设备已通过蓝牙连接</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendOTAPack:pid:otaData:success:failure:" title="sendOTAPack:pid:otaData:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendOTAPack:pid:otaData:success:failure:">&ndash;&nbsp;sendOTAPack:pid:otaData:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送OTA包，升级固件。升级前请务必保证设备已通过蓝牙连接</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendOTAPack:(NSString *)<em>uuid</em> pid:(NSString *)<em>pid</em> otaData:(NSData *)<em>otaData</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureHandler)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>设备 uuid</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pid</code></th>
+						<td><p>设备 pid</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>otaData</code></th>
+						<td><p>升级固件的数据</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送OTA包，升级固件。升级前请务必保证设备已通过蓝牙连接</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPeripheralRSSI:" title="getPeripheralRSSI:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPeripheralRSSI:">&ndash;&nbsp;getPeripheralRSSI:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取蓝牙外设的信号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSInteger)getPeripheralRSSI:(NSString *)<em>uuid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>设备 uuid</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>设备信号，若为 0，则获取失败。</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取蓝牙外设的信号</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceStatueWithUUID:" title="deviceStatueWithUUID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceStatueWithUUID:">&ndash;&nbsp;deviceStatueWithUUID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据 UUID 来判断设备是否已连接</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)deviceStatueWithUUID:(NSString *)<em>uuid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>设备 uuid</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>该设备是否连接</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据 UUID 来判断设备是否已连接</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Channel Methods" name="task_Channel Methods"></a>
+						<h2 class="task-title">Channel Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isBLEChannelDeviceConnect:" title="isBLEChannelDeviceConnect:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isBLEChannelDeviceConnect:">&ndash;&nbsp;isBLEChannelDeviceConnect:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断设备是否已连接
+check the device is connected.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isBLEChannelDeviceConnect:(NSString *)<em>uuid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>设备id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>connected</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>判断设备是否已连接
+check the device is connected.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager+Channel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCompletionBlock:uuid:" title="setCompletionBlock:uuid:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCompletionBlock:uuid:">&ndash;&nbsp;setCompletionBlock:uuid:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>判断设备是否已连接
+check the device is connected.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setCompletionBlock:(TPBleResultBlock)<em>block</em> uuid:(NSString *)<em>uuid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>设备id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>判断设备是否已连接
+check the device is connected.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager+Channel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/appApplyLaunch:" title="appApplyLaunch:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/appApplyLaunch:">&ndash;&nbsp;appApplyLaunch:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APP 申请启动大数据通道</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)appApplyLaunch:(NSString *)<em>uuid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>设备id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>APP 申请启动大数据通道</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager+Channel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/appMandatoryTrans:" title="appMandatoryTrans:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/appMandatoryTrans:">&ndash;&nbsp;appMandatoryTrans:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>APP 强制传输终止</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)appMandatoryTrans:(NSString *)<em>uuid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>设备id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>APP 强制传输终止</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBLEManager+Channel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-05-27</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
