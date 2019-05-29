@@ -1,6 +1,6 @@
 #!/bin/bash
 appledoc \
---project-name "APIReference" \
+--project-name "API" \
 --project-company "Tuya.Inc" \
 --no-create-docset \
 --keep-undocumented-objects \
