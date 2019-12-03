@@ -86,6 +86,12 @@
 		
 		<option value="//api/name/modifySceneWithName:background:showFirstPage:preConditionList:conditionList:actionList:matchType:success:failure:">- modifySceneWithName:background:showFirstPage:preConditionList:conditionList:actionList:matchType:success:failure:</option>
 		
+		<option value="//api/name/removeRecommendSceneWithHomeId:success:failure:">- removeRecommendSceneWithHomeId:success:failure:</option>
+		
+		<option value="//api/name/saveRecommendSceneWithHomeId:success:failure:">- saveRecommendSceneWithHomeId:success:failure:</option>
+		
+		<option value="//api/name/triggerRecommendSceneWithHomeId:success:failure:">- triggerRecommendSceneWithHomeId:success:failure:</option>
+		
 	</optgroup>
 	
 	
@@ -1018,6 +1024,216 @@ Cancel the request being executed.</p>
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/triggerRecommendSceneWithHomeId:success:failure:" title="triggerRecommendSceneWithHomeId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/triggerRecommendSceneWithHomeId:success:failure:">&ndash;&nbsp;triggerRecommendSceneWithHomeId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>执行一个推荐场景
+Execute a recommended scene.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)triggerRecommendSceneWithHomeId:(long long)<em>homeId</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeId</code></th>
+						<td><p>homeId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success callback</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>执行一个推荐场景
+Execute a recommended scene.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartScene.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeRecommendSceneWithHomeId:success:failure:" title="removeRecommendSceneWithHomeId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeRecommendSceneWithHomeId:success:failure:">&ndash;&nbsp;removeRecommendSceneWithHomeId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除一个推荐场景
+Delete a recommended scene.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeRecommendSceneWithHomeId:(long long)<em>homeId</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeId</code></th>
+						<td><p>homeId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success callback</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除一个推荐场景
+Delete a recommended scene.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartScene.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveRecommendSceneWithHomeId:success:failure:" title="saveRecommendSceneWithHomeId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveRecommendSceneWithHomeId:success:failure:">&ndash;&nbsp;saveRecommendSceneWithHomeId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>保存一个推荐场景，推荐场景可以在推荐的基础上做修改，保存成功后会变成普通场景，同时被保存的推荐场景也不再推荐。
+Save a recommended scene, this scene can be modified by user. this scene will become a normal scene after save successfully, and the recommended scene will not show anymore.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveRecommendSceneWithHomeId:(long long)<em>homeId</em> success:(void ( ^ ) ( TuyaSmartSceneModel *sceneModel ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeId</code></th>
+						<td><p>homeId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success callback</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>保存一个推荐场景，推荐场景可以在推荐的基础上做修改，保存成功后会变成普通场景，同时被保存的推荐场景也不再推荐。
+Save a recommended scene, this scene can be modified by user. this scene will become a normal scene after save successfully, and the recommended scene will not show anymore.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartScene.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -1033,7 +1249,7 @@ Cancel the request being executed.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-05-29</p>
+						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

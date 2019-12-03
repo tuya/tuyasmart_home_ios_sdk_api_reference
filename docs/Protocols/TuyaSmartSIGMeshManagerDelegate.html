@@ -58,8 +58,6 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/centralManagerStatusChange:">- centralManagerStatusChange:</option>
-		
 		<option value="//api/name/didFinishToActiveDevList">- didFinishToActiveDevList</option>
 		
 		<option value="//api/name/notifyCentralManagerDidDisconnectPeripheral">- notifyCentralManagerDidDisconnectPeripheral</option>
@@ -73,6 +71,8 @@
 		<option value="//api/name/sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:">- sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:</option>
 		
 		<option value="//api/name/sigMeshManager:didScanedDevice:">- sigMeshManager:didScanedDevice:</option>
+		
+		<option value="//api/name/sigMeshManager:queryDeviceModel:groupAddress:">- sigMeshManager:queryDeviceModel:groupAddress:</option>
 		
 	</optgroup>
 	
@@ -116,67 +116,9 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/centralManagerStatusChange:" title="centralManagerStatusChange:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/centralManagerStatusChange:">&ndash;&nbsp;centralManagerStatusChange:</a></code>
-<span class="task-item-suffix">required method</span></h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>蓝牙状态回调</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)centralManagerStatusChange:(CBManagerState)<em>status</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>status</code></th>
-						<td><p>z蓝牙状态</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>蓝牙状态回调</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/sigMeshManager:didActiveSubDevice:devId:error:" title="sigMeshManager:didActiveSubDevice:devId:error:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/sigMeshManager:didActiveSubDevice:devId:error:">&ndash;&nbsp;sigMeshManager:didActiveSubDevice:devId:error:</a></code>
-<span class="task-item-suffix">required method</span></h3>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -249,7 +191,7 @@
 </div><div class="section-method">
 	<a name="//api/name/sigMeshManager:didFailToActiveDevice:error:" title="sigMeshManager:didFailToActiveDevice:error:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/sigMeshManager:didFailToActiveDevice:error:">&ndash;&nbsp;sigMeshManager:didFailToActiveDevice:error:</a></code>
-<span class="task-item-suffix">required method</span></h3>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -317,7 +259,7 @@
 </div><div class="section-method">
 	<a name="//api/name/didFinishToActiveDevList" title="didFinishToActiveDevList"></a>
 	<h3 class="method-title"><code><a href="#//api/name/didFinishToActiveDevList">&ndash;&nbsp;didFinishToActiveDevList</a></code>
-<span class="task-item-suffix">required method</span></h3>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -363,7 +305,7 @@
 </div><div class="section-method">
 	<a name="//api/name/notifyCentralManagerDidDisconnectPeripheral" title="notifyCentralManagerDidDisconnectPeripheral"></a>
 	<h3 class="method-title"><code><a href="#//api/name/notifyCentralManagerDidDisconnectPeripheral">&ndash;&nbsp;notifyCentralManagerDidDisconnectPeripheral</a></code>
-<span class="task-item-suffix">required method</span></h3>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -409,7 +351,7 @@
 </div><div class="section-method">
 	<a name="//api/name/sigMeshManager:didScanedDevice:" title="sigMeshManager:didScanedDevice:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/sigMeshManager:didScanedDevice:">&ndash;&nbsp;sigMeshManager:didScanedDevice:</a></code>
-<span class="task-item-suffix">required method</span></h3>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -472,7 +414,7 @@
 </div><div class="section-method">
 	<a name="//api/name/sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:" title="sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:">&ndash;&nbsp;sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:</a></code>
-<span class="task-item-suffix">required method</span></h3>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -545,7 +487,7 @@
 </div><div class="section-method">
 	<a name="//api/name/notifySIGLoginSuccess" title="notifySIGLoginSuccess"></a>
 	<h3 class="method-title"><code><a href="#//api/name/notifySIGLoginSuccess">&ndash;&nbsp;notifySIGLoginSuccess</a></code>
-<span class="task-item-suffix">required method</span></h3>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -588,6 +530,22 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/sigMeshManager:queryDeviceModel:groupAddress:" title="sigMeshManager:queryDeviceModel:groupAddress:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sigMeshManager:queryDeviceModel:groupAddress:">&ndash;&nbsp;sigMeshManager:queryDeviceModel:groupAddress:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)sigMeshManager:(TuyaSmartSIGMeshManager *)<em>manager</em> queryDeviceModel:(TuyaSmartDeviceModel *)<em>deviceModel</em> groupAddress:(uint32_t)<em>groupAddress</em></code></div>
+
+		    
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -603,7 +561,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-05-29</p>
+						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

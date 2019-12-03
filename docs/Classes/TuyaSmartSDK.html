@@ -54,6 +54,8 @@
 	
 	<optgroup label="Properties">
 		
+		<option value="//api/name/)">)</option>
+		
 		<option value="//api/name/appGroupId">appGroupId</option>
 		
 		<option value="//api/name/appKey">appKey</option>
@@ -62,13 +64,13 @@
 		
 		<option value="//api/name/debugMode">debugMode</option>
 		
+		<option value="//api/name/deviceToken">deviceToken</option>
+		
 		<option value="//api/name/env">env</option>
 		
 		<option value="//api/name/latitude">latitude</option>
 		
 		<option value="//api/name/longitude">longitude</option>
-		
-		<option value="//api/name/pushToken">pushToken</option>
 		
 		<option value="//api/name/secretKey">secretKey</option>
 		
@@ -90,7 +92,19 @@
 		
 		<option value="//api/name/checkVersionUpgrade">- checkVersionUpgrade</option>
 		
+		<option value="//api/name/getDevicePushStatusWithSuccess:failure:">- getDevicePushStatusWithSuccess:failure:</option>
+		
+		<option value="//api/name/getFamilyPushStatusWithSuccess:failure:">- getFamilyPushStatusWithSuccess:failure:</option>
+		
+		<option value="//api/name/getNoticePushStatusWithSuccess:failure:">- getNoticePushStatusWithSuccess:failure:</option>
+		
 		<option value="//api/name/getPushStatusWithSuccess:failure:">- getPushStatusWithSuccess:failure:</option>
+		
+		<option value="//api/name/setDevicePushStatusWithStauts:success:failure:">- setDevicePushStatusWithStauts:success:failure:</option>
+		
+		<option value="//api/name/setFamilyPushStatusWithStauts:success:failure:">- setFamilyPushStatusWithStauts:success:failure:</option>
+		
+		<option value="//api/name/setNoticePushStatusWithStauts:success:failure:">- setNoticePushStatusWithStauts:success:failure:</option>
 		
 		<option value="//api/name/setPushStatusWithStatus:success:failure:">- setPushStatusWithStatus:success:failure:</option>
 		
@@ -193,52 +207,6 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/pushToken" title="pushToken"></a>
-	<h3 class="method-title"><code><a href="#//api/name/pushToken">&nbsp;&nbsp;pushToken</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Push token</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *pushToken</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Push token</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/appGroupId" title="appGroupId"></a>
 	<h3 class="method-title"><code><a href="#//api/name/appGroupId">&nbsp;&nbsp;appGroupId</a></code>
 </h3>
@@ -272,54 +240,6 @@ If you want to use the SDK in app extension, set <code>appGroupId</code> before 
 				<p>Application group identifier
 If you want to use the SDK in app extension, set <code>appGroupId</code> before SDK initialized both in app &amp; app extension.
 如果需要开发APP Extension，请在初始化SDK的时候设置 appGroupId</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/debugMode" title="debugMode"></a>
-	<h3 class="method-title"><code><a href="#//api/name/debugMode">&nbsp;&nbsp;debugMode</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Debug mode
-调试模式</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL debugMode</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Debug mode
-调试模式</p>
 			</div>
 			
 
@@ -737,6 +657,98 @@ If you want to use the SDK in app extension, set <code>appGroupId</code> before 
 
 						<div class="task-list">
 							<div class="section-method">
+	<a name="//api/name/)" title=")"></a>
+	<h3 class="method-title"><code><a href="#//api/name/)">&nbsp;&nbsp;)</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Push token</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *DEPRECATED_MSG_ATTRIBUTE ( &quot;Use +[TuyaSmartSDK sharedInstance].deviceToken instead.&quot; )</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Push token</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceToken" title="deviceToken"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceToken">&nbsp;&nbsp;deviceToken</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Push deviceToken</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSData *deviceToken</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Push deviceToken</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/getPushStatusWithSuccess:failure:" title="getPushStatusWithSuccess:failure:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/getPushStatusWithSuccess:failure:">&ndash;&nbsp;getPushStatusWithSuccess:failure:</a></code>
 </h3>
@@ -748,13 +760,13 @@ If you want to use the SDK in app extension, set <code>appGroupId</code> before 
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Get notification status
-获取 APP 消息通知的开启状态</p>
+				<p>Get notification push status
+获取 APP 消息推送的开启状态</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)getPushStatusWithSuccess:(TYSuccessBOOL)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getPushStatusWithSuccess:(__nullable TYSuccessBOOL)<em>success</em> failure:(__nullable TYFailureError)<em>failure</em></code></div>
 
 		    
 			
@@ -783,8 +795,8 @@ If you want to use the SDK in app extension, set <code>appGroupId</code> before 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Get notification status
-获取 APP 消息通知的开启状态</p>
+				<p>Get notification push status
+获取 APP 消息推送的开启状态</p>
 			</div>
 			
 
@@ -813,13 +825,83 @@ If you want to use the SDK in app extension, set <code>appGroupId</code> before 
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Set notification status
-开启或者关闭 APP 开启消息通知的状态</p>
+				<p>Set notification push status
+开启或者关闭 APP 消息推送</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)setPushStatusWithStatus:(BOOL)<em>status</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)setPushStatusWithStatus:(BOOL)<em>enable</em> success:(__nullable TYSuccessHandler)<em>success</em> failure:(__nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>open or close</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set notification push status
+开启或者关闭 APP 消息推送</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDevicePushStatusWithSuccess:failure:" title="getDevicePushStatusWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDevicePushStatusWithSuccess:failure:">&ndash;&nbsp;getDevicePushStatusWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get device alarm push status
+获取 APP 设备告警通知的开启状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDevicePushStatusWithSuccess:(__nullable TYSuccessBOOL)<em>success</em> failure:(__nullable TYFailureError)<em>failure</em></code></div>
 
 		    
 			
@@ -848,8 +930,348 @@ If you want to use the SDK in app extension, set <code>appGroupId</code> before 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set notification status
-开启或者关闭 APP 开启消息通知的状态</p>
+				<p>Get device alarm push status
+获取 APP 设备告警通知的开启状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDevicePushStatusWithStauts:success:failure:" title="setDevicePushStatusWithStauts:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDevicePushStatusWithStauts:success:failure:">&ndash;&nbsp;setDevicePushStatusWithStauts:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set device alarm push status
+开启或者关闭 APP 设备告警推送消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDevicePushStatusWithStauts:(BOOL)<em>enable</em> success:(__nullable TYSuccessHandler)<em>success</em> failure:(__nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>open or close</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set device alarm push status
+开启或者关闭 APP 设备告警推送消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFamilyPushStatusWithSuccess:failure:" title="getFamilyPushStatusWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFamilyPushStatusWithSuccess:failure:">&ndash;&nbsp;getFamilyPushStatusWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get family message push status
+获取 APP 家庭通知的开启状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getFamilyPushStatusWithSuccess:(__nullable TYSuccessBOOL)<em>success</em> failure:(__nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get family message push status
+获取 APP 家庭通知的开启状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setFamilyPushStatusWithStauts:success:failure:" title="setFamilyPushStatusWithStauts:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setFamilyPushStatusWithStauts:success:failure:">&ndash;&nbsp;setFamilyPushStatusWithStauts:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set family message push status
+开启或者关闭 APP 家庭推送消息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setFamilyPushStatusWithStauts:(BOOL)<em>enable</em> success:(__nullable TYSuccessHandler)<em>success</em> failure:(__nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>open or close</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set family message push status
+开启或者关闭 APP 家庭推送消息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNoticePushStatusWithSuccess:failure:" title="getNoticePushStatusWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNoticePushStatusWithSuccess:failure:">&ndash;&nbsp;getNoticePushStatusWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get notice message push status
+获取 APP 消息通知的开启状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getNoticePushStatusWithSuccess:(__nullable TYSuccessBOOL)<em>success</em> failure:(__nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get notice message push status
+获取 APP 消息通知的开启状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setNoticePushStatusWithStauts:success:failure:" title="setNoticePushStatusWithStauts:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setNoticePushStatusWithStauts:success:failure:">&ndash;&nbsp;setNoticePushStatusWithStauts:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set notice message push status
+开启或者关闭 APP 消息通知推送</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setNoticePushStatusWithStauts:(BOOL)<em>enable</em> success:(__nullable TYSuccessHandler)<em>success</em> failure:(__nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>open or close</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set notice message push status
+开启或者关闭 APP 消息通知推送</p>
 			</div>
 			
 
@@ -995,6 +1417,62 @@ SDK数据升级</p>
 </div>
 						</div>
 						
+
+						<a title="Log Methods" name="task_Log Methods"></a>
+						<h2 class="task-title">Log Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/debugMode" title="debugMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/debugMode">&nbsp;&nbsp;debugMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Debug mode
+调试模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL debugMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Debug mode
+调试模式</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK+Log.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -1007,7 +1485,7 @@ SDK数据升级</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-05-29</p>
+						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

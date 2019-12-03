@@ -82,7 +82,11 @@
 		
 		<option value="//api/name/prepareForOTAWithTargetNodeId:">- prepareForOTAWithTargetNodeId:</option>
 		
-		<option value="//api/name/publishDpsWihNodeId:schemaArray:dps:useUnacknowledged:success:failure:">- publishDpsWihNodeId:schemaArray:dps:useUnacknowledged:success:failure:</option>
+		<option value="//api/name/publishDpsWithNodeId:schemaArray:dps:pcc:useUnacknowledged:success:failure:">- publishDpsWithNodeId:schemaArray:dps:pcc:useUnacknowledged:success:failure:</option>
+		
+		<option value="//api/name/queryDpsWithDeviceModel:dpIds:">- queryDpsWithDeviceModel:dpIds:</option>
+		
+		<option value="//api/name/queryGroupMemberWithGroupAddress:">- queryGroupMemberWithGroupAddress:</option>
 		
 		<option value="//api/name/sendLightBrightWithNodeId:brightValue:useUnacknowledged:success:failure:">- sendLightBrightWithNodeId:brightValue:useUnacknowledged:success:failure:</option>
 		
@@ -95,6 +99,8 @@
 		<option value="//api/name/sendNodeResetWithDeviceModel:success:failure:">- sendNodeResetWithDeviceModel:success:failure:</option>
 		
 		<option value="//api/name/sendOnoffWithNodeId:state:useUnacknowledged:success:failure:">- sendOnoffWithNodeId:state:useUnacknowledged:success:failure:</option>
+		
+		<option value="//api/name/sendVendorDataWithNodeId:vendorData:isQuery:useUnacknowledged:success:failure:">- sendVendorDataWithNodeId:vendorData:isQuery:useUnacknowledged:success:failure:</option>
 		
 		<option value="//api/name/startActive:meshModel:">- startActive:meshModel:</option>
 		
@@ -782,6 +788,89 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/sendVendorDataWithNodeId:vendorData:isQuery:useUnacknowledged:success:failure:" title="sendVendorDataWithNodeId:vendorData:isQuery:useUnacknowledged:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendVendorDataWithNodeId:vendorData:isQuery:useUnacknowledged:success:failure:">&ndash;&nbsp;sendVendorDataWithNodeId:vendorData:isQuery:useUnacknowledged:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>通用 vendor 协议</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendVendorDataWithNodeId:(NSString *)<em>nodeId</em> vendorData:(NSData *)<em>vendorData</em> isQuery:(BOOL)<em>isisQuery</em> useUnacknowledged:(BOOL)<em>useUnacknowledged</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nodeId</code></th>
+						<td><p>节点地址</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>vendorData</code></th>
+						<td><p>数据内容</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isisQuery</code></th>
+						<td><p>是否为查询指令</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>useUnacknowledged</code></th>
+						<td><p>是否需要回复，建议群组使用 no，单设备控制 yes</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调（- 目前通过代理回调，block 暂未实现）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调（- 目前通过代理回调，block 暂未实现）</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>通用 vendor 协议</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/sendNodeResetWithDeviceModel:success:failure:" title="sendNodeResetWithDeviceModel:success:failure:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/sendNodeResetWithDeviceModel:success:failure:">&ndash;&nbsp;sendNodeResetWithDeviceModel:success:failure:</a></code>
 </h3>
@@ -976,6 +1065,64 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/queryGroupMemberWithGroupAddress:" title="queryGroupMemberWithGroupAddress:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryGroupMemberWithGroupAddress:">&ndash;&nbsp;queryGroupMemberWithGroupAddress:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>通过群组地址查询群组中的设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)queryGroupMemberWithGroupAddress:(uint32_t)<em>groupAddress</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupAddress</code></th>
+						<td><p>群组地址</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>通过群组地址查询群组中的设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/getDeviceStatusWithDeviceModel:" title="getDeviceStatusWithDeviceModel:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/getDeviceStatusWithDeviceModel:">&ndash;&nbsp;getDeviceStatusWithDeviceModel:</a></code>
 </h3>
@@ -1034,8 +1181,71 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/publishDpsWihNodeId:schemaArray:dps:useUnacknowledged:success:failure:" title="publishDpsWihNodeId:schemaArray:dps:useUnacknowledged:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/publishDpsWihNodeId:schemaArray:dps:useUnacknowledged:success:failure:">&ndash;&nbsp;publishDpsWihNodeId:schemaArray:dps:useUnacknowledged:success:failure:</a></code>
+	<a name="//api/name/queryDpsWithDeviceModel:dpIds:" title="queryDpsWithDeviceModel:dpIds:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryDpsWithDeviceModel:dpIds:">&ndash;&nbsp;queryDpsWithDeviceModel:dpIds:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询设备的 dps</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)queryDpsWithDeviceModel:(TuyaSmartDeviceModel *)<em>deviceModel</em> dpIds:(NSArray&lt;NSString*&gt; *)<em>dpIds</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceModel</code></th>
+						<td><p>查询的设备</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dpIds</code></th>
+						<td><p>要查询的 dp id 组</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询设备的 dps</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishDpsWithNodeId:schemaArray:dps:pcc:useUnacknowledged:success:failure:" title="publishDpsWithNodeId:schemaArray:dps:pcc:useUnacknowledged:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishDpsWithNodeId:schemaArray:dps:pcc:useUnacknowledged:success:failure:">&ndash;&nbsp;publishDpsWithNodeId:schemaArray:dps:pcc:useUnacknowledged:success:failure:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1050,7 +1260,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)publishDpsWihNodeId:(NSString *)<em>nodeId</em> schemaArray:(NSArray&lt;TuyaSmartSchemaModel*&gt; *)<em>schemaArray</em> dps:(NSDictionary *)<em>dps</em> useUnacknowledged:(BOOL)<em>useUnacknowledged</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)publishDpsWithNodeId:(NSString *)<em>nodeId</em> schemaArray:(NSArray&lt;TuyaSmartSchemaModel*&gt; *)<em>schemaArray</em> dps:(NSDictionary *)<em>dps</em> pcc:(NSString *)<em>pcc</em> useUnacknowledged:(BOOL)<em>useUnacknowledged</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
 
 		    
 			
@@ -1071,6 +1281,11 @@
 					<tr>
 						<th scope="row" class="argument-name"><code>dps</code></th>
 						<td><p>下发 dp</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pcc</code></th>
+						<td><p>产品大小类标示</p></td>
 					</tr>
 				
 					<tr>
@@ -1235,7 +1450,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-05-29</p>
+						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

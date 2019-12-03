@@ -60,7 +60,7 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/addTimerWithTask:loops:devId:time:dps:timeZone:success:failure:">- addTimerWithTask:loops:devId:time:dps:timeZone:success:failure:</option>
+		<option value="//api/name/addTimerWithTask:loops:devId:time:dps:timeZone:isAppPush:aliasName:success:failure:">- addTimerWithTask:loops:devId:time:dps:timeZone:isAppPush:aliasName:success:failure:</option>
 		
 		<option value="//api/name/cancelRequest">- cancelRequest</option>
 		
@@ -78,7 +78,7 @@
 		
 		<option value="//api/name/updateTimerWithDeviceId:timezoneId:success:failure:">- updateTimerWithDeviceId:timezoneId:success:failure:</option>
 		
-		<option value="//api/name/updateTimerWithTask:loops:devId:timerId:time:dps:timeZone:success:failure:">- updateTimerWithTask:loops:devId:timerId:time:dps:timeZone:success:failure:</option>
+		<option value="//api/name/updateTimerWithTask:loops:devId:timerId:time:dps:timeZone:isAppPush:aliasName:success:failure:">- updateTimerWithTask:loops:devId:timerId:time:dps:timeZone:isAppPush:aliasName:success:failure:</option>
 		
 	</optgroup>
 	
@@ -130,8 +130,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/addTimerWithTask:loops:devId:time:dps:timeZone:success:failure:" title="addTimerWithTask:loops:devId:time:dps:timeZone:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/addTimerWithTask:loops:devId:time:dps:timeZone:success:failure:">&ndash;&nbsp;addTimerWithTask:loops:devId:time:dps:timeZone:success:failure:</a></code>
+	<a name="//api/name/addTimerWithTask:loops:devId:time:dps:timeZone:isAppPush:aliasName:success:failure:" title="addTimerWithTask:loops:devId:time:dps:timeZone:isAppPush:aliasName:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addTimerWithTask:loops:devId:time:dps:timeZone:isAppPush:aliasName:success:failure:">&ndash;&nbsp;addTimerWithTask:loops:devId:time:dps:timeZone:isAppPush:aliasName:success:failure:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -146,7 +146,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)addTimerWithTask:(NSString *)<em>task</em> loops:(NSString *)<em>loops</em> devId:(NSString *)<em>devId</em> time:(NSString *)<em>time</em> dps:(NSDictionary *)<em>dps</em> timeZone:(NSString *)<em>timeZone</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)addTimerWithTask:(NSString *)<em>task</em> loops:(NSString *)<em>loops</em> devId:(NSString *)<em>devId</em> time:(NSString *)<em>time</em> dps:(NSDictionary *)<em>dps</em> timeZone:(NSString *)<em>timeZone</em> isAppPush:(BOOL)<em>isAppPush</em> aliasName:(NSString *)<em>aliasName</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
 
 		    
 			
@@ -182,6 +182,16 @@
 					<tr>
 						<th scope="row" class="argument-name"><code>timeZone</code></th>
 						<td><p>设备的时区 +08:00，如果没有取手机时区</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAppPush</code></th>
+						<td><p>是否开启推送</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aliasName</code></th>
+						<td><p>备注</p></td>
 					</tr>
 				
 					<tr>
@@ -530,8 +540,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/updateTimerWithTask:loops:devId:timerId:time:dps:timeZone:success:failure:" title="updateTimerWithTask:loops:devId:timerId:time:dps:timeZone:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/updateTimerWithTask:loops:devId:timerId:time:dps:timeZone:success:failure:">&ndash;&nbsp;updateTimerWithTask:loops:devId:timerId:time:dps:timeZone:success:failure:</a></code>
+	<a name="//api/name/updateTimerWithTask:loops:devId:timerId:time:dps:timeZone:isAppPush:aliasName:success:failure:" title="updateTimerWithTask:loops:devId:timerId:time:dps:timeZone:isAppPush:aliasName:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateTimerWithTask:loops:devId:timerId:time:dps:timeZone:isAppPush:aliasName:success:failure:">&ndash;&nbsp;updateTimerWithTask:loops:devId:timerId:time:dps:timeZone:isAppPush:aliasName:success:failure:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -546,7 +556,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)updateTimerWithTask:(NSString *)<em>task</em> loops:(NSString *)<em>loops</em> devId:(NSString *)<em>devId</em> timerId:(NSString *)<em>timerId</em> time:(NSString *)<em>time</em> dps:(NSDictionary *)<em>dps</em> timeZone:(NSString *)<em>timeZone</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)updateTimerWithTask:(NSString *)<em>task</em> loops:(NSString *)<em>loops</em> devId:(NSString *)<em>devId</em> timerId:(NSString *)<em>timerId</em> time:(NSString *)<em>time</em> dps:(NSDictionary *)<em>dps</em> timeZone:(NSString *)<em>timeZone</em> isAppPush:(BOOL)<em>isAppPush</em> aliasName:(NSString *)<em>aliasName</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
 
 		    
 			
@@ -587,6 +597,16 @@
 					<tr>
 						<th scope="row" class="argument-name"><code>timeZone</code></th>
 						<td><p>时区 +08:00</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAppPush</code></th>
+						<td><p>是否开启推送</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aliasName</code></th>
+						<td><p>备注</p></td>
 					</tr>
 				
 					<tr>
@@ -902,7 +922,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-05-29</p>
+						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
