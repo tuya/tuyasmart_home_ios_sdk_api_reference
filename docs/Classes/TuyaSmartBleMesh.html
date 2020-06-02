@@ -76,13 +76,19 @@
 	
 	<optgroup label="Instance Methods">
 		
+		<option value="//api/name/addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:">- addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:</option>
+		
 		<option value="//api/name/addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:">- addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:</option>
+		
+		<option value="//api/name/addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:">- addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:</option>
 		
 		<option value="//api/name/addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:">- addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:</option>
 		
 		<option value="//api/name/addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:">- addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:</option>
 		
 		<option value="//api/name/broadcastDps:pcc:success:failure:">- broadcastDps:pcc:success:failure:</option>
+		
+		<option value="//api/name/getMultiNodeAddressFromServerWithNumber:success:failure:">- getMultiNodeAddressFromServerWithNumber:success:failure:</option>
 		
 		<option value="//api/name/getSIGMeshNodeAddressFromServerWithSuccess:failure:">- getSIGMeshNodeAddressFromServerWithSuccess:failure:</option>
 		
@@ -1366,6 +1372,109 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:" title="addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:">&ndash;&nbsp;addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>蓝牙设备入网 后绑定 productKey + mac = pid，可兼容配网第三方设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addSIGMeshSubDeviceWithUuid:(NSString *)<em>uuid</em> devKey:(NSString *)<em>devKey</em> nodeId:(NSString *)<em>nodeId</em> productKey:(NSString *)<em>productKey</em> ver:(NSString *)<em>ver</em> mac:(NSString *)<em>mac</em> companyId:(nonnull NSString *)<em>companyId</em> venderId:(nonnull NSString *)<em>venderId</em> success:(void ( ^ ) ( NSString *devId , NSString *name ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>蓝牙子设备短地址标识</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devKey</code></th>
+						<td><p>设备 key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nodeId</code></th>
+						<td><p>mesh节点id（短地址）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>productKey</code></th>
+						<td><p>产品 Key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ver</code></th>
+						<td><p>版本号</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mac</code></th>
+						<td><p>设备 mac</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>companyId</code></th>
+						<td><p>SIG Mesh设备对应的公司ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>venderId</code></th>
+						<td><p>第三方设备需要传入，目前支持灯组与开关，如果存在lightless操作，默认传入 “01” ，没有则传入 “02”</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>操作失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>蓝牙设备入网 后绑定 productKey + mac = pid，可兼容配网第三方设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBleMesh+SIGMesh.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:" title="addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:">&ndash;&nbsp;addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:</a></code>
 </h3>
@@ -1459,6 +1568,109 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:" title="addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:">&ndash;&nbsp;addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>蓝牙设备入网 前绑定 pid,可兼容配网第三方设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addSIGMeshSubDeviceWithUuid:(NSString *)<em>uuid</em> devKey:(NSString *)<em>devKey</em> nodeId:(NSString *)<em>nodeId</em> productId:(NSString *)<em>productId</em> ver:(NSString *)<em>ver</em> mac:(NSString *)<em>mac</em> companyId:(nonnull NSString *)<em>companyId</em> venderId:(nonnull NSString *)<em>venderId</em> success:(void ( ^ ) ( NSString *devId , NSString *name ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuid</code></th>
+						<td><p>蓝牙子设备短地址标识</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devKey</code></th>
+						<td><p>设备 key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nodeId</code></th>
+						<td><p>mesh节点id（短地址）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>productId</code></th>
+						<td><p>产品 ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ver</code></th>
+						<td><p>版本号</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mac</code></th>
+						<td><p>设备 mac</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>companyId</code></th>
+						<td><p>SIG Mesh设备对应的公司ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>venderId</code></th>
+						<td><p>第三方设备需要传入，目前支持灯组与开关，如果存在lightless操作，默认传入 “01” ，没有则传入 “02”</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>操作失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>蓝牙设备入网 前绑定 pid,可兼容配网第三方设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBleMesh+SIGMesh.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/getSIGMeshNodeAddressFromServerWithSuccess:failure:" title="getSIGMeshNodeAddressFromServerWithSuccess:failure:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/getSIGMeshNodeAddressFromServerWithSuccess:failure:">&ndash;&nbsp;getSIGMeshNodeAddressFromServerWithSuccess:failure:</a></code>
 </h3>
@@ -1505,6 +1717,74 @@
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>向云端分配 sig mesh 的 node id, 每次分配 + 0000 0111 = 8</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartBleMesh+SIGMesh.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMultiNodeAddressFromServerWithNumber:success:failure:" title="getMultiNodeAddressFromServerWithNumber:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMultiNodeAddressFromServerWithNumber:success:failure:">&ndash;&nbsp;getMultiNodeAddressFromServerWithNumber:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>向批量获取sig mesh的node id</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMultiNodeAddressFromServerWithNumber:(NSInteger)<em>number</em> success:(TYSuccessList)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>number</code></th>
+						<td><p>分配的数量</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>操作失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>向批量获取sig mesh的node id</p>
 			</div>
 			
 
@@ -1672,7 +1952,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

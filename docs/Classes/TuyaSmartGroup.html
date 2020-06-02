@@ -64,6 +64,8 @@
 	
 	<optgroup label="Class Methods">
 		
+		<option value="//api/name/createDpCodeGroupWithName:homeId:categoryCode:devIdList:success:failure:">+ createDpCodeGroupWithName:homeId:categoryCode:devIdList:success:failure:</option>
+		
 		<option value="//api/name/createGroupWithName:homeId:gwId:productId:success:failure:">+ createGroupWithName:homeId:gwId:productId:success:failure:</option>
 		
 		<option value="//api/name/createGroupWithName:productId:homeId:devIdList:success:failure:">+ createGroupWithName:productId:homeId:devIdList:success:failure:</option>
@@ -71,6 +73,8 @@
 		<option value="//api/name/getDevList:homeId:success:failure:">+ getDevList:homeId:success:failure:</option>
 		
 		<option value="//api/name/getDevListWithProductId:gwId:homeId:success:failure:">+ getDevListWithProductId:gwId:homeId:success:failure:</option>
+		
+		<option value="//api/name/getDpCodeDevListWithHomeId:categoryCode:success:failure:">+ getDpCodeDevListWithHomeId:categoryCode:success:failure:</option>
 		
 		<option value="//api/name/groupWithGroupId:">+ groupWithGroupId:</option>
 		
@@ -88,17 +92,25 @@
 		
 		<option value="//api/name/getDevList:success:failure:">- getDevList:success:failure:</option>
 		
+		<option value="//api/name/getDpCodeDevListWithSuccess:failure:">- getDpCodeDevListWithSuccess:failure:</option>
+		
 		<option value="//api/name/init">- init</option>
 		
 		<option value="//api/name/initWithGroupId:">- initWithGroupId:</option>
+		
+		<option value="//api/name/publishDpCodes:success:failure:">- publishDpCodes:success:failure:</option>
 		
 		<option value="//api/name/publishDps:success:failure:">- publishDps:success:failure:</option>
 		
 		<option value="//api/name/removeZigbeeDeviceWithNodeList:success:failure:">- removeZigbeeDeviceWithNodeList:success:failure:</option>
 		
+		<option value="//api/name/updateDpCodeGroupRelationsWithDevList:success:failure:">- updateDpCodeGroupRelationsWithDevList:success:failure:</option>
+		
 		<option value="//api/name/updateGroupName:success:failure:">- updateGroupName:success:failure:</option>
 		
 		<option value="//api/name/updateGroupRelations:success:failure:">- updateGroupRelations:success:failure:</option>
+		
+		<option value="//api/name/updateIcon:success:failure:">- updateIcon:success:failure:</option>
 		
 	</optgroup>
 	
@@ -138,7 +150,7 @@
 						
 
 						
-						
+						<h2 class="task-title">Other Methods</h2>
 
 						<div class="task-list">
 							<div class="section-method">
@@ -690,6 +702,76 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/updateIcon:success:failure:" title="updateIcon:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateIcon:success:failure:">&ndash;&nbsp;updateIcon:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Edit group icon.
+修改群组图片</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateIcon:(UIImage *)<em>icon</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>icon</code></th>
+						<td><p>icon</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Edit group icon.
+修改群组图片</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartGroup.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/updateGroupRelations:success:failure:" title="updateGroupRelations:success:failure:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/updateGroupRelations:success:failure:">&ndash;&nbsp;updateGroupRelations:success:failure:</a></code>
 </h3>
@@ -1178,6 +1260,379 @@
 </div>
 						</div>
 						
+
+						<a title="DpCode Methods" name="task_DpCode Methods"></a>
+						<h2 class="task-title">DpCode Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createDpCodeGroupWithName:homeId:categoryCode:devIdList:success:failure:" title="createDpCodeGroupWithName:homeId:categoryCode:devIdList:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createDpCodeGroupWithName:homeId:categoryCode:devIdList:success:failure:">+&nbsp;createDpCodeGroupWithName:homeId:categoryCode:devIdList:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creating Groups of Wifi Standard Code Devices
+创建标准DPCode wifi 设备群组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)createDpCodeGroupWithName:(NSString *)<em>name</em> homeId:(long long)<em>homeId</em> categoryCode:(NSString *)<em>categoryCode</em> devIdList:(NSArray&lt;NSString*&gt; *)<em>devIdList</em> success:(nullable void ( ^ ) ( TuyaSmartGroup *group ))<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>Group name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeId</code></th>
+						<td><p>Home ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>categoryCode</code></th>
+						<td><p>category Code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devIdList</code></th>
+						<td><p>DeviceId list</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creating Groups of Wifi Standard Code Devices
+创建标准DPCode wifi 设备群组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartGroup+DpCode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDpCodeDevListWithHomeId:categoryCode:success:failure:" title="getDpCodeDevListWithHomeId:categoryCode:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDpCodeDevListWithHomeId:categoryCode:success:failure:">+&nbsp;getDpCodeDevListWithHomeId:categoryCode:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get list of WiFi devices that support standard code groups based on category code
+根据 categoryCode 获取对应的支持标准DPCode群组的 wifi 设备列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)getDpCodeDevListWithHomeId:(long long)<em>homeId</em> categoryCode:(NSString *)<em>categoryCode</em> success:(nullable void ( ^ ) ( NSArray&lt;TuyaSmartGroupDevListModel*&gt; *list ))<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeId</code></th>
+						<td><p>Home ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>categoryCode</code></th>
+						<td><p>category Code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get list of WiFi devices that support standard code groups based on category code
+根据 categoryCode 获取对应的支持标准DPCode群组的 wifi 设备列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartGroup+DpCode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDpCodeDevListWithSuccess:failure:" title="getDpCodeDevListWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDpCodeDevListWithSuccess:failure:">&ndash;&nbsp;getDpCodeDevListWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the device list for the group based
+获取群组下支持的设备列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDpCodeDevListWithSuccess:(nullable void ( ^ ) ( NSArray&lt;TuyaSmartGroupDevListModel*&gt; *list ))<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get the device list for the group based
+获取群组下支持的设备列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartGroup+DpCode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateDpCodeGroupRelationsWithDevList:success:failure:" title="updateDpCodeGroupRelationsWithDevList:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateDpCodeGroupRelationsWithDevList:success:failure:">&ndash;&nbsp;updateDpCodeGroupRelationsWithDevList:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Modify the device list of the group
+修改群组设备列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateDpCodeGroupRelationsWithDevList:(NSArray&lt;NSString*&gt; *)<em>devList</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devList</code></th>
+						<td><p>Device list</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Modify the device list of the group
+修改群组设备列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartGroup+DpCode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/publishDpCodes:success:failure:" title="publishDpCodes:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/publishDpCodes:success:failure:">&ndash;&nbsp;publishDpCodes:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Group control command issuance
+群组dp Code命令下发</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)publishDpCodes:(NSDictionary *)<em>dpCodes</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dpCodes</code></th>
+						<td><p>dp Codes</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Group control command issuance
+群组dp Code命令下发</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartGroup+DpCode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -1190,7 +1645,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

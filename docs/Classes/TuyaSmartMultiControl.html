@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TuyaSmartMultiControl Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">API </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Tuya.Inc</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addMultiControlWithDevId:groupName:groupDetail:success:failure:">- addMultiControlWithDevId:groupName:groupDetail:success:failure:</option>
+		
+		<option value="//api/name/enableMultiControlWithMultiControlId:enable:success:failure:">- enableMultiControlWithMultiControlId:enable:success:failure:</option>
+		
+		<option value="//api/name/getDeviceDpInfoWithDevId:success:failure:">- getDeviceDpInfoWithDevId:success:failure:</option>
+		
+		<option value="//api/name/getMultiControlDeviceListWithHomeId:success:failure:">- getMultiControlDeviceListWithHomeId:success:failure:</option>
+		
+		<option value="//api/name/queryDeviceDpRelationWithDevId:success:failure:">- queryDeviceDpRelationWithDevId:success:failure:</option>
+		
+		<option value="//api/name/queryDeviceLinkInfoWithDevId:dpId:success:failure:">- queryDeviceLinkInfoWithDevId:dpId:success:failure:</option>
+		
+		<option value="//api/name/updateMultiControlWithDevId:multiControlModel:success:failure:">- updateMultiControlWithDevId:multiControlModel:success:failure:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TuyaSmartMultiControl Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TuyaSmartMultiControl.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/queryDeviceLinkInfoWithDevId:dpId:success:failure:" title="queryDeviceLinkInfoWithDevId:dpId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryDeviceLinkInfoWithDevId:dpId:success:failure:">&ndash;&nbsp;queryDeviceLinkInfoWithDevId:dpId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询设备下 dp 按键关联的多控和自动化</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)queryDeviceLinkInfoWithDevId:(NSString *)<em>devId</em> dpId:(NSString *)<em>dpId</em> success:(void ( ^ ) ( TuyaSmartMultiControlLinkModel *))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devId</code></th>
+						<td><p>设备id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dpId</code></th>
+						<td><p>数据点id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询设备下 dp 按键关联的多控和自动化</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMultiControl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMultiControlWithDevId:groupName:groupDetail:success:failure:" title="addMultiControlWithDevId:groupName:groupDetail:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMultiControlWithDevId:groupName:groupDetail:success:failure:">&ndash;&nbsp;addMultiControlWithDevId:groupName:groupDetail:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>新增多控组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addMultiControlWithDevId:(NSString *)<em>devId</em> groupName:(NSString *)<em>groupName</em> groupDetail:(NSArray&lt;TuyaSmartMultiControlDetailModel*&gt; *)<em>groupDetail</em> success:(void ( ^ ) ( TuyaSmartMultiControlModel *))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devId</code></th>
+						<td><p>主设备id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupName</code></th>
+						<td><p>多控组名称</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupDetail</code></th>
+						<td><p>多控组关联详情</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>新增多控组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMultiControl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateMultiControlWithDevId:multiControlModel:success:failure:" title="updateMultiControlWithDevId:multiControlModel:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateMultiControlWithDevId:multiControlModel:success:failure:">&ndash;&nbsp;updateMultiControlWithDevId:multiControlModel:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更新多控组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateMultiControlWithDevId:(NSString *)<em>devId</em> multiControlModel:(TuyaSmartMultiControlModel *)<em>model</em> success:(void ( ^ ) ( TuyaSmartMultiControlModel *))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devId</code></th>
+						<td><p>主设备id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>model</code></th>
+						<td><p>多控组数据模型</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更新多控组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMultiControl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/queryDeviceDpRelationWithDevId:success:failure:" title="queryDeviceDpRelationWithDevId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryDeviceDpRelationWithDevId:success:failure:">&ndash;&nbsp;queryDeviceDpRelationWithDevId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取附属设备的 dp 点信息、已关联的多控、场景自动化信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)queryDeviceDpRelationWithDevId:(NSString *)<em>devId</em> success:(void ( ^ ) ( TuyaSmartMultiControlDpRelationModel *))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devId</code></th>
+						<td><p>设备id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取附属设备的 dp 点信息、已关联的多控、场景自动化信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMultiControl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableMultiControlWithMultiControlId:enable:success:failure:" title="enableMultiControlWithMultiControlId:enable:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableMultiControlWithMultiControlId:enable:success:failure:">&ndash;&nbsp;enableMultiControlWithMultiControlId:enable:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>启用或停用多控组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableMultiControlWithMultiControlId:(NSString *)<em>multiControlId</em> enable:(BOOL)<em>enable</em> success:(TYSuccessBOOL)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>multiControlId</code></th>
+						<td><p>多控组 Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>启用或停用</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>启用或停用多控组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMultiControl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMultiControlDeviceListWithHomeId:success:failure:" title="getMultiControlDeviceListWithHomeId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMultiControlDeviceListWithHomeId:success:failure:">&ndash;&nbsp;getMultiControlDeviceListWithHomeId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询支持执行动作的设备ID列表及设备群组列表(包括用户的和家庭的)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMultiControlDeviceListWithHomeId:(long long)<em>homeId</em> success:(void ( ^ ) ( NSArray&lt;TuyaSmartMultiControlDeviceModel*&gt; *))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeId</code></th>
+						<td><p>家庭 Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询支持执行动作的设备ID列表及设备群组列表(包括用户的和家庭的)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMultiControl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDeviceDpInfoWithDevId:success:failure:" title="getDeviceDpInfoWithDevId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDeviceDpInfoWithDevId:success:failure:">&ndash;&nbsp;getDeviceDpInfoWithDevId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取设备下所有 dp 点信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDeviceDpInfoWithDevId:(NSString *)<em>devId</em> success:(void ( ^ ) ( NSArray&lt;TuyaSmartMultiControlDatapointModel*&gt; *))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devId</code></th>
+						<td><p>设备id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取设备下所有 dp 点信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartMultiControl.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

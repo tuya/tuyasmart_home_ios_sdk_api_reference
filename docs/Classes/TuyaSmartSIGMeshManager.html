@@ -58,6 +58,8 @@
 		
 		<option value="//api/name/isLogin">isLogin</option>
 		
+		<option value="//api/name/otaTargetNodeId">otaTargetNodeId</option>
+		
 		<option value="//api/name/sigMesh">sigMesh</option>
 		
 	</optgroup>
@@ -148,7 +150,7 @@
 						
 
 						
-						
+						<h2 class="task-title">Other Methods</h2>
 
 						<div class="task-list">
 							<div class="section-method">
@@ -216,6 +218,30 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/otaTargetNodeId" title="otaTargetNodeId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/otaTargetNodeId">&nbsp;&nbsp;otaTargetNodeId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *otaTargetNodeId</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Activator Methods" name="task_Activator Methods"></a>
+						<h2 class="task-title">Activator Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/startScanWithScanType:meshModel:" title="startScanWithScanType:meshModel:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/startScanWithScanType:meshModel:">&ndash;&nbsp;startScanWithScanType:meshModel:</a></code>
 </h3>
@@ -272,7 +298,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Activator.h</code></p>
 			</div>
 			
 			
@@ -335,7 +361,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Activator.h</code></p>
 			</div>
 			
 			
@@ -381,7 +407,83 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Activator.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Config Methods" name="task_Config Methods"></a>
+						<h2 class="task-title">Config Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sendNodeResetWithDeviceModel:success:failure:" title="sendNodeResetWithDeviceModel:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendNodeResetWithDeviceModel:success:failure:">&ndash;&nbsp;sendNodeResetWithDeviceModel:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>重置节点</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendNodeResetWithDeviceModel:(TuyaSmartDeviceModel *)<em>deviceModel</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceModel</code></th>
+						<td><p>节点地址</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调（- 目前通过代理回调，block 暂未实现）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调（- 目前通过代理回调，block 暂未实现）</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>重置节点</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Config.h</code></p>
 			</div>
 			
 			
@@ -459,7 +561,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Config.h</code></p>
 			</div>
 			
 			
@@ -537,7 +639,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Config.h</code></p>
 			</div>
 			
 			
@@ -615,7 +717,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Config.h</code></p>
 			</div>
 			
 			
@@ -703,7 +805,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Config.h</code></p>
 			</div>
 			
 			
@@ -781,7 +883,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Config.h</code></p>
 			</div>
 			
 			
@@ -864,380 +966,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sendNodeResetWithDeviceModel:success:failure:" title="sendNodeResetWithDeviceModel:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sendNodeResetWithDeviceModel:success:failure:">&ndash;&nbsp;sendNodeResetWithDeviceModel:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>重置节点</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)sendNodeResetWithDeviceModel:(TuyaSmartDeviceModel *)<em>deviceModel</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>deviceModel</code></th>
-						<td><p>节点地址</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>成功回调（- 目前通过代理回调，block 暂未实现）</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>失败回调（- 目前通过代理回调，block 暂未实现）</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>重置节点</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/addDeviceToGroupWithDevId:groupAddress:" title="addDeviceToGroupWithDevId:groupAddress:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/addDeviceToGroupWithDevId:groupAddress:">&ndash;&nbsp;addDeviceToGroupWithDevId:groupAddress:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>把设备加入到群组</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)addDeviceToGroupWithDevId:(NSString *)<em>devId</em> groupAddress:(uint32_t)<em>groupAddress</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>devId</code></th>
-						<td><p>设备 id</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>groupAddress</code></th>
-						<td><p>群组地址</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>把设备加入到群组</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/deleteDeviceToGroupWithDevId:groupAddress:" title="deleteDeviceToGroupWithDevId:groupAddress:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/deleteDeviceToGroupWithDevId:groupAddress:">&ndash;&nbsp;deleteDeviceToGroupWithDevId:groupAddress:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>把设备从群组内移除</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)deleteDeviceToGroupWithDevId:(NSString *)<em>devId</em> groupAddress:(uint32_t)<em>groupAddress</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>devId</code></th>
-						<td><p>设备 id</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>groupAddress</code></th>
-						<td><p>群组地址</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>把设备从群组内移除</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/queryGroupMemberWithGroupAddress:" title="queryGroupMemberWithGroupAddress:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/queryGroupMemberWithGroupAddress:">&ndash;&nbsp;queryGroupMemberWithGroupAddress:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>通过群组地址查询群组中的设备</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)queryGroupMemberWithGroupAddress:(uint32_t)<em>groupAddress</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>groupAddress</code></th>
-						<td><p>群组地址</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>通过群组地址查询群组中的设备</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/getDeviceStatusWithDeviceModel:" title="getDeviceStatusWithDeviceModel:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getDeviceStatusWithDeviceModel:">&ndash;&nbsp;getDeviceStatusWithDeviceModel:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>获取某个设备的状态</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)getDeviceStatusWithDeviceModel:(TuyaSmartDeviceModel *)<em>deviceModel</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>deviceModel</code></th>
-						<td><p>设备 model</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取某个设备的状态</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/queryDpsWithDeviceModel:dpIds:" title="queryDpsWithDeviceModel:dpIds:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/queryDpsWithDeviceModel:dpIds:">&ndash;&nbsp;queryDpsWithDeviceModel:dpIds:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>查询设备的 dps</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)queryDpsWithDeviceModel:(TuyaSmartDeviceModel *)<em>deviceModel</em> dpIds:(NSArray&lt;NSString*&gt; *)<em>dpIds</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>deviceModel</code></th>
-						<td><p>查询的设备</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>dpIds</code></th>
-						<td><p>要查询的 dp id 组</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>查询设备的 dps</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Config.h</code></p>
 			</div>
 			
 			
@@ -1325,13 +1054,334 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Config.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/getDeviceStatusWithDeviceModel:" title="getDeviceStatusWithDeviceModel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDeviceStatusWithDeviceModel:">&ndash;&nbsp;getDeviceStatusWithDeviceModel:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取某个设备的状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDeviceStatusWithDeviceModel:(TuyaSmartDeviceModel *)<em>deviceModel</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceModel</code></th>
+						<td><p>设备 model</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取某个设备的状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Config.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/queryDpsWithDeviceModel:dpIds:" title="queryDpsWithDeviceModel:dpIds:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryDpsWithDeviceModel:dpIds:">&ndash;&nbsp;queryDpsWithDeviceModel:dpIds:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询设备的 dps</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)queryDpsWithDeviceModel:(TuyaSmartDeviceModel *)<em>deviceModel</em> dpIds:(NSArray&lt;NSString*&gt; *)<em>dpIds</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceModel</code></th>
+						<td><p>查询的设备</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dpIds</code></th>
+						<td><p>要查询的 dp id 组</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询设备的 dps</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Config.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Group Methods" name="task_Group Methods"></a>
+						<h2 class="task-title">Group Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/addDeviceToGroupWithDevId:groupAddress:" title="addDeviceToGroupWithDevId:groupAddress:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addDeviceToGroupWithDevId:groupAddress:">&ndash;&nbsp;addDeviceToGroupWithDevId:groupAddress:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>把设备加入到群组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addDeviceToGroupWithDevId:(NSString *)<em>devId</em> groupAddress:(uint32_t)<em>groupAddress</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devId</code></th>
+						<td><p>设备 id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupAddress</code></th>
+						<td><p>群组地址</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>把设备加入到群组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Group.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteDeviceToGroupWithDevId:groupAddress:" title="deleteDeviceToGroupWithDevId:groupAddress:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteDeviceToGroupWithDevId:groupAddress:">&ndash;&nbsp;deleteDeviceToGroupWithDevId:groupAddress:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>把设备从群组内移除</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteDeviceToGroupWithDevId:(NSString *)<em>devId</em> groupAddress:(uint32_t)<em>groupAddress</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devId</code></th>
+						<td><p>设备 id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupAddress</code></th>
+						<td><p>群组地址</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>把设备从群组内移除</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Group.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/queryGroupMemberWithGroupAddress:" title="queryGroupMemberWithGroupAddress:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryGroupMemberWithGroupAddress:">&ndash;&nbsp;queryGroupMemberWithGroupAddress:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>通过群组地址查询群组中的设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)queryGroupMemberWithGroupAddress:(uint32_t)<em>groupAddress</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupAddress</code></th>
+						<td><p>群组地址</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>通过群组地址查询群组中的设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+Group.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="OTA Methods" name="task_OTA Methods"></a>
+						<h2 class="task-title">OTA Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/prepareForOTAWithTargetNodeId:" title="prepareForOTAWithTargetNodeId:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/prepareForOTAWithTargetNodeId:">&ndash;&nbsp;prepareForOTAWithTargetNodeId:</a></code>
 </h3>
@@ -1383,7 +1433,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+OTA.h</code></p>
 			</div>
 			
 			
@@ -1429,7 +1479,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSIGMeshManager+OTA.h</code></p>
 			</div>
 			
 			
@@ -1450,7 +1500,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

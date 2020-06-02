@@ -62,9 +62,17 @@
 		
 		<option value="//api/name/addHomeMemberWithHomeId:name:headPic:countryCode:userAccount:isAdmin:success:failure:">- addHomeMemberWithHomeId:name:headPic:countryCode:userAccount:isAdmin:success:failure:</option>
 		
+		<option value="//api/name/getAuthRoomListWithHomeId:memberID:success:failure:">- getAuthRoomListWithHomeId:memberID:success:failure:</option>
+		
+		<option value="//api/name/getAuthSceneListWithHomeID:memberID:success:failure:">- getAuthSceneListWithHomeID:memberID:success:failure:</option>
+		
 		<option value="//api/name/getHomeMemberListWithHomeId:success:failure:">- getHomeMemberListWithHomeId:success:failure:</option>
 		
 		<option value="//api/name/removeHomeMemberWithMemberId:success:failure:">- removeHomeMemberWithMemberId:success:failure:</option>
+		
+		<option value="//api/name/saveAuthRoomListWithHomeId:memberID:roomIDs:success:failure:">- saveAuthRoomListWithHomeId:memberID:roomIDs:success:failure:</option>
+		
+		<option value="//api/name/saveAuthSceneListWithHomeId:memberID:ruleIDs:success:failure:">- saveAuthSceneListWithHomeId:memberID:ruleIDs:success:failure:</option>
 		
 		<option value="//api/name/updateHomeMemberAdminWithMemberId:isAdmin:success:failure:">- updateHomeMemberAdminWithMemberId:isAdmin:success:failure:</option>
 		
@@ -120,6 +128,683 @@
 
 						<div class="task-list">
 							<div class="section-method">
+	<a name="//api/name/removeHomeMemberWithMemberId:success:failure:" title="removeHomeMemberWithMemberId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeHomeMemberWithMemberId:success:failure:">&ndash;&nbsp;removeHomeMemberWithMemberId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Remove a home member
+删除家庭成员</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeHomeMemberWithMemberId:(long long)<em>memberId</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memberId</code></th>
+						<td><p>Member Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Remove a home member
+删除家庭成员</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateHomeMemberInfoWithMemberRequestModel:success:failure:" title="updateHomeMemberInfoWithMemberRequestModel:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateHomeMemberInfoWithMemberRequestModel:success:failure:">&ndash;&nbsp;updateHomeMemberInfoWithMemberRequestModel:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update home member info
+修改家庭成员信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateHomeMemberInfoWithMemberRequestModel:(TuyaSmartHomeMemberRequestModel *)<em>memberRequestModel</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memberRequestModel</code></th>
+						<td><p>request model, Set the corresponding property</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success callback</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callcack</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Update home member info
+修改家庭成员信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateHomeMemberRemarkNameWithMemberId:name:isAdmin:success:failure:" title="updateHomeMemberRemarkNameWithMemberId:name:isAdmin:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateHomeMemberRemarkNameWithMemberId:name:isAdmin:success:failure:">&ndash;&nbsp;updateHomeMemberRemarkNameWithMemberId:name:isAdmin:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update home member note name
+更新家庭成员备注名称</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateHomeMemberRemarkNameWithMemberId:(long long)<em>memberId</em> name:(NSString *)<em>name</em> isAdmin:(BOOL)<em>isAdmin</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memberId</code></th>
+						<td><p>Member Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>Note name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAdmin</code></th>
+						<td><p>Whether the administrator</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Update home member note name
+更新家庭成员备注名称</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateHomeMemberHeadPicWithMemberId:headPic:isAdmin:success:failure:" title="updateHomeMemberHeadPicWithMemberId:headPic:isAdmin:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateHomeMemberHeadPicWithMemberId:headPic:isAdmin:success:failure:">&ndash;&nbsp;updateHomeMemberHeadPicWithMemberId:headPic:isAdmin:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update home member portrait
+更新家庭成员头像</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateHomeMemberHeadPicWithMemberId:(long long)<em>memberId</em> headPic:(UIImage *)<em>headPic</em> isAdmin:(BOOL)<em>isAdmin</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memberId</code></th>
+						<td><p>Member Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>headPic</code></th>
+						<td><p>Portrait</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAdmin</code></th>
+						<td><p>Whether the administrator</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Update home member portrait
+更新家庭成员头像</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateHomeMemberAdminWithMemberId:isAdmin:success:failure:" title="updateHomeMemberAdminWithMemberId:isAdmin:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateHomeMemberAdminWithMemberId:isAdmin:success:failure:">&ndash;&nbsp;updateHomeMemberAdminWithMemberId:isAdmin:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update home member management authority
+更新家庭成员管理权限</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateHomeMemberAdminWithMemberId:(long long)<em>memberId</em> isAdmin:(BOOL)<em>isAdmin</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memberId</code></th>
+						<td><p>Member Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAdmin</code></th>
+						<td><p>Whether the administrator</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Update home member management authority
+更新家庭成员管理权限</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAuthRoomListWithHomeId:memberID:success:failure:" title="getAuthRoomListWithHomeId:memberID:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAuthRoomListWithHomeId:memberID:success:failure:">&ndash;&nbsp;getAuthRoomListWithHomeId:memberID:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取可选的房间列表 fetch optional room list</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getAuthRoomListWithHomeId:(long long)<em>homeID</em> memberID:(long long)<em>memberID</em> success:(TYSuccessList)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeID</code></th>
+						<td><p>homeID 家庭ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memberID</code></th>
+						<td><p>member id 成员ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success callback</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取可选的房间列表 fetch optional room list</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAuthSceneListWithHomeID:memberID:success:failure:" title="getAuthSceneListWithHomeID:memberID:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAuthSceneListWithHomeID:memberID:success:failure:">&ndash;&nbsp;getAuthSceneListWithHomeID:memberID:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取可选的场景或自动化列表 fetch optional scene list</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getAuthSceneListWithHomeID:(long long)<em>homeID</em> memberID:(long long)<em>memberID</em> success:(TYSuccessList)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeID</code></th>
+						<td><p>homeID 家庭ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memberID</code></th>
+						<td><p>member id 成员ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success callback</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取可选的场景或自动化列表 fetch optional scene list</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveAuthRoomListWithHomeId:memberID:roomIDs:success:failure:" title="saveAuthRoomListWithHomeId:memberID:roomIDs:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveAuthRoomListWithHomeId:memberID:roomIDs:success:failure:">&ndash;&nbsp;saveAuthRoomListWithHomeId:memberID:roomIDs:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更新自定义角色有权限的房间列表 update custom role have jurisdiction rooms</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveAuthRoomListWithHomeId:(long long)<em>homeID</em> memberID:(long long)<em>memberID</em> roomIDs:(NSArray&lt;NSNumber*&gt; *)<em>roomIDs</em> success:(TYSuccessID)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeID</code></th>
+						<td><p>homeID 家庭ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memberID</code></th>
+						<td><p>member id 成员ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>roomIDs</code></th>
+						<td><p>有权限的房间ID列表 have jurisdiction room id list</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success callback</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更新自定义角色有权限的房间列表 update custom role have jurisdiction rooms</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveAuthSceneListWithHomeId:memberID:ruleIDs:success:failure:" title="saveAuthSceneListWithHomeId:memberID:ruleIDs:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveAuthSceneListWithHomeId:memberID:ruleIDs:success:failure:">&ndash;&nbsp;saveAuthSceneListWithHomeId:memberID:ruleIDs:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>更新自定义角色有权限的的场景列表 update custom role have jurisdiction rule list</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveAuthSceneListWithHomeId:(long long)<em>homeID</em> memberID:(long long)<em>memberID</em> ruleIDs:(NSArray&lt;NSString*&gt; *)<em>ruleIDs</em> success:(TYSuccessID)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeID</code></th>
+						<td><p>homeID 家庭ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>memberID</code></th>
+						<td><p>member id 成员ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ruleIDs</code></th>
+						<td><p>有权限的场景ID列表 have jurisdiction rule id list</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success callback</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>更新自定义角色有权限的的场景列表 update custom role have jurisdiction rule list</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/addHomeMemberWithHomeId:countryCode:account:name:isAdmin:success:failure:" title="addHomeMemberWithHomeId:countryCode:account:name:isAdmin:success:failure:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/addHomeMemberWithHomeId:countryCode:account:name:isAdmin:success:failure:">&ndash;&nbsp;addHomeMemberWithHomeId:countryCode:account:name:isAdmin:success:failure:</a></code>
 </h3>
@@ -453,76 +1138,6 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/removeHomeMemberWithMemberId:success:failure:" title="removeHomeMemberWithMemberId:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/removeHomeMemberWithMemberId:success:failure:">&ndash;&nbsp;removeHomeMemberWithMemberId:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Remove a home member
-删除家庭成员</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)removeHomeMemberWithMemberId:(long long)<em>memberId</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>memberId</code></th>
-						<td><p>Member Id</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>Success block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>Failure block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Remove a home member
-删除家庭成员</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/updateHomeMemberInfoWithMemberId:name:headPic:isAdmin:success:failure:" title="updateHomeMemberInfoWithMemberId:name:headPic:isAdmin:success:failure:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/updateHomeMemberInfoWithMemberId:name:headPic:isAdmin:success:failure:">&ndash;&nbsp;updateHomeMemberInfoWithMemberId:name:headPic:isAdmin:success:failure:</a></code>
 </h3>
@@ -607,311 +1222,6 @@
 			
 		</div>
 	</div>
-</div><div class="section-method">
-	<a name="//api/name/updateHomeMemberInfoWithMemberRequestModel:success:failure:" title="updateHomeMemberInfoWithMemberRequestModel:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/updateHomeMemberInfoWithMemberRequestModel:success:failure:">&ndash;&nbsp;updateHomeMemberInfoWithMemberRequestModel:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Update home member info
-修改家庭成员信息</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)updateHomeMemberInfoWithMemberRequestModel:(TuyaSmartHomeMemberRequestModel *)<em>memberRequestModel</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>memberRequestModel</code></th>
-						<td><p>request model, Set the corresponding property</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>success callback</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>failure callcack</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Update home member info
-修改家庭成员信息</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/updateHomeMemberRemarkNameWithMemberId:name:isAdmin:success:failure:" title="updateHomeMemberRemarkNameWithMemberId:name:isAdmin:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/updateHomeMemberRemarkNameWithMemberId:name:isAdmin:success:failure:">&ndash;&nbsp;updateHomeMemberRemarkNameWithMemberId:name:isAdmin:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Update home member note name
-更新家庭成员备注名称</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)updateHomeMemberRemarkNameWithMemberId:(long long)<em>memberId</em> name:(NSString *)<em>name</em> isAdmin:(BOOL)<em>isAdmin</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>memberId</code></th>
-						<td><p>Member Id</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>name</code></th>
-						<td><p>Note name</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>isAdmin</code></th>
-						<td><p>Whether the administrator</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>Success block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>Failure block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Update home member note name
-更新家庭成员备注名称</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/updateHomeMemberHeadPicWithMemberId:headPic:isAdmin:success:failure:" title="updateHomeMemberHeadPicWithMemberId:headPic:isAdmin:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/updateHomeMemberHeadPicWithMemberId:headPic:isAdmin:success:failure:">&ndash;&nbsp;updateHomeMemberHeadPicWithMemberId:headPic:isAdmin:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Update home member portrait
-更新家庭成员头像</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)updateHomeMemberHeadPicWithMemberId:(long long)<em>memberId</em> headPic:(UIImage *)<em>headPic</em> isAdmin:(BOOL)<em>isAdmin</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>memberId</code></th>
-						<td><p>Member Id</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>headPic</code></th>
-						<td><p>Portrait</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>isAdmin</code></th>
-						<td><p>Whether the administrator</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>Success block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>Failure block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Update home member portrait
-更新家庭成员头像</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/updateHomeMemberAdminWithMemberId:isAdmin:success:failure:" title="updateHomeMemberAdminWithMemberId:isAdmin:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/updateHomeMemberAdminWithMemberId:isAdmin:success:failure:">&ndash;&nbsp;updateHomeMemberAdminWithMemberId:isAdmin:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Update home member management authority
-更新家庭成员管理权限</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)updateHomeMemberAdminWithMemberId:(long long)<em>memberId</em> isAdmin:(BOOL)<em>isAdmin</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>memberId</code></th>
-						<td><p>Member Id</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>isAdmin</code></th>
-						<td><p>Whether the administrator</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>Success block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>Failure block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Update home member management authority
-更新家庭成员管理权限</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartHomeMember.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
 </div>
 						</div>
 						
@@ -927,7 +1237,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

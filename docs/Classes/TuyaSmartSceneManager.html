@@ -86,11 +86,15 @@
 		
 		<option value="//api/name/getAllConditionListWithFahrenheit:homeId:success:failure:">- getAllConditionListWithFahrenheit:homeId:success:failure:</option>
 		
+		<option value="//api/name/getAllConditionListWithFahrenheit:windSpeedUnit:homeId:success:failure:">- getAllConditionListWithFahrenheit:windSpeedUnit:homeId:success:failure:</option>
+		
 		<option value="//api/name/getCityInfoWithCityId:success:failure:">- getCityInfoWithCityId:success:failure:</option>
 		
 		<option value="//api/name/getCityInfoWithLatitude:longitude:success:failure:">- getCityInfoWithLatitude:longitude:success:failure:</option>
 		
 		<option value="//api/name/getCityListWithCountryCode:success:failure:">- getCityListWithCountryCode:success:failure:</option>
+		
+		<option value="//api/name/getCollectionSceneListWithHomeId:success:failure:">- getCollectionSceneListWithHomeId:success:failure:</option>
 		
 		<option value="//api/name/getCondicationDeviceDPListWithDevId:success:failure:">- getCondicationDeviceDPListWithDevId:success:failure:</option>
 		
@@ -109,6 +113,14 @@
 		<option value="//api/name/getSceneListWithHomeId:success:failure:">- getSceneListWithHomeId:success:failure:</option>
 		
 		<option value="//api/name/getSmartSceneBackgroundCoverWithsuccess:failure:">- getSmartSceneBackgroundCoverWithsuccess:failure:</option>
+		
+		<option value="//api/name/getSmartSceneCustomStyleListWithSuccess:failure:">- getSmartSceneCustomStyleListWithSuccess:failure:</option>
+		
+		<option value="//api/name/getSmartSceneLogDetailWithHomeId:eventId:startTime:endTime:returnType:success:failure:">- getSmartSceneLogDetailWithHomeId:eventId:startTime:endTime:returnType:success:failure:</option>
+		
+		<option value="//api/name/getSmartSceneLogWithHomeId:startTime:endTime:size:lastId:lastRecordTime:success:failure:">- getSmartSceneLogWithHomeId:startTime:endTime:size:lastId:lastRecordTime:success:failure:</option>
+		
+		<option value="//api/name/removeAllGeoFence">- removeAllGeoFence</option>
 		
 		<option value="//api/name/sortSceneWithHomeId:sceneIdList:success:failure:">- sortSceneWithHomeId:sceneIdList:success:failure:</option>
 		
@@ -363,6 +375,76 @@ Get recommended scene list.</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/getCollectionSceneListWithHomeId:success:failure:" title="getCollectionSceneListWithHomeId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCollectionSceneListWithHomeId:success:failure:">&ndash;&nbsp;getCollectionSceneListWithHomeId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取家庭下收藏的场景列表
+Get a list of favorite scenes under the family.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getCollectionSceneListWithHomeId:(long long)<em>homeId</em> success:(TYSuccessList)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeId</code></th>
+						<td><p>homeId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调, 返回场景列表  success callback</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取家庭下收藏的场景列表
+Get a list of favorite scenes under the family.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/getConditionListWithFahrenheit:success:failure:" title="getConditionListWithFahrenheit:success:failure:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/getConditionListWithFahrenheit:success:failure:">&ndash;&nbsp;getConditionListWithFahrenheit:success:failure:</a></code>
 </h3>
@@ -461,6 +543,86 @@ Get weather conditon list and other condition list which automation support.</p>
 					<tr>
 						<th scope="row" class="argument-name"><code>fahrenheit</code></th>
 						<td><p>Unit of temperature，if use fahrenheit, set fahrenheit param to YES.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeId</code></th>
+						<td><p>homeId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success callback. key @&ldquo;envConditions&rdquo; is whether conditions,  @&ldquo;devConditions&rdquo; is other condtions.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取自动化支持的所有条件列表，包括气象条件和可能的其他条件
+Get weather conditon list and other condition list which automation support.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAllConditionListWithFahrenheit:windSpeedUnit:homeId:success:failure:" title="getAllConditionListWithFahrenheit:windSpeedUnit:homeId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllConditionListWithFahrenheit:windSpeedUnit:homeId:success:failure:">&ndash;&nbsp;getAllConditionListWithFahrenheit:windSpeedUnit:homeId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取自动化支持的所有条件列表，包括气象条件和可能的其他条件
+Get weather conditon list and other condition list which automation support.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getAllConditionListWithFahrenheit:(BOOL)<em>fahrenheit</em> windSpeedUnit:(NSString *)<em>speedUnit</em> homeId:(long long)<em>homeId</em> success:(void ( ^ ) ( NSDictionary *dict ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fahrenheit</code></th>
+						<td><p>Unit of temperature，if use fahrenheit, set fahrenheit param to YES.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>speedUnit</code></th>
+						<td><p>Unit of wind speed,@&ldquo;mph"、@"m/s"、@"kph"、@"km/h&rdquo;.</p></td>
 					</tr>
 				
 					<tr>
@@ -1603,6 +1765,312 @@ Get scene cover url list.</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/getSmartSceneCustomStyleListWithSuccess:failure:" title="getSmartSceneCustomStyleListWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSmartSceneCustomStyleListWithSuccess:failure:">&ndash;&nbsp;getSmartSceneCustomStyleListWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取自定义样式数据列表，包括颜色，图标，背景图，key分别对应coverColors，coverIconList，coverPics。
+Get scene custom style resource list. &lt;color,icon,background>, key is &lt;coverColors，coverIconList，coverPics></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getSmartSceneCustomStyleListWithSuccess:(TYSuccessDict)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success callback</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取自定义样式数据列表，包括颜色，图标，背景图，key分别对应coverColors，coverIconList，coverPics。
+Get scene custom style resource list. &lt;color,icon,background>, key is &lt;coverColors，coverIconList，coverPics></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSmartSceneLogWithHomeId:startTime:endTime:size:lastId:lastRecordTime:success:failure:" title="getSmartSceneLogWithHomeId:startTime:endTime:size:lastId:lastRecordTime:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSmartSceneLogWithHomeId:startTime:endTime:size:lastId:lastRecordTime:success:failure:">&ndash;&nbsp;getSmartSceneLogWithHomeId:startTime:endTime:size:lastId:lastRecordTime:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取场景联动日志列表。
+Get scene linkage log list.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getSmartSceneLogWithHomeId:(long long)<em>homeId</em> startTime:(long long)<em>startTime</em> endTime:(long long)<em>endTime</em> size:(NSInteger)<em>size</em> lastId:(NSString *)<em>lastId</em> lastRecordTime:(long long)<em>lastRecordTime</em> success:(void ( ^ ) ( TuyaSmartSceneLogModel *logModel ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeId</code></th>
+						<td><p>homeId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startTime</code></th>
+						<td><p>startTime</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>endTime</code></th>
+						<td><p>endTime</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>size</code></th>
+						<td><p>Number of queries</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lastId</code></th>
+						<td><p>last one&rsquo;s Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lastRecordTime</code></th>
+						<td><p>lastRecordTime, 0 for Not set</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success callback</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取场景联动日志列表。
+Get scene linkage log list.</p>
+
+<p>字段                描述                是否可选(optional)        类型
+startTime           开始时间                N                    Long
+endTime             结束时间                N                    Long
+size                查询条数                N                    Integer
+lastId              偏移量(eventId)         Y                    String
+lastRecordTime      偏移量(execTime)        Y  0 for not set     Long</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSmartSceneLogDetailWithHomeId:eventId:startTime:endTime:returnType:success:failure:" title="getSmartSceneLogDetailWithHomeId:eventId:startTime:endTime:returnType:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSmartSceneLogDetailWithHomeId:eventId:startTime:endTime:returnType:success:failure:">&ndash;&nbsp;getSmartSceneLogDetailWithHomeId:eventId:startTime:endTime:returnType:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询联动日志详情。
+Query linkage log details.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getSmartSceneLogDetailWithHomeId:(long long)<em>homeId</em> eventId:(NSString *)<em>eventId</em> startTime:(long long)<em>startTime</em> endTime:(long long)<em>endTime</em> returnType:(long long)<em>returnType</em> success:(void ( ^ ) ( NSArray&lt;TuyaSmartSceneLogDetailModel*&gt; *items ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeId</code></th>
+						<td><p>homeId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>eventId</code></th>
+						<td><p>eventId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startTime</code></th>
+						<td><p>startTime</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>endTime</code></th>
+						<td><p>endTime</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success callback</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询联动日志详情。
+Query linkage log details.</p>
+
+<p>字段                描述                是否可选        类型
+eventId             事件ID                 N          String
+startTime           开始时间                N           Long
+endTime             结束时间                N           Long
+returnType          返回类型                Y           Long        0:返回全部明细 all details， 1:返回失败状态的明细 only error items</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeAllGeoFence" title="removeAllGeoFence"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeAllGeoFence">&ndash;&nbsp;removeAllGeoFence</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>移除所有场景注册在系统中的地理围栏，在当前用户退出登录时调用。
+Removes all Geo-fencing registered in the system from the automation and is called when the current user logs out.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeAllGeoFence</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>移除所有场景注册在系统中的地理围栏，在当前用户退出登录时调用。
+Removes all Geo-fencing registered in the system from the automation and is called when the current user logs out.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/cancelRequest" title="cancelRequest"></a>
 	<h3 class="method-title"><code><a href="#//api/name/cancelRequest">&ndash;&nbsp;cancelRequest</a></code>
 </h3>
@@ -1665,7 +2133,7 @@ Cancel the request being executed.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

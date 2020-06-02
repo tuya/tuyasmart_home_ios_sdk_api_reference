@@ -62,11 +62,17 @@
 		
 		<option value="//api/name/device:didReceiveCustomMessage:">- device:didReceiveCustomMessage:</option>
 		
+		<option value="//api/name/device:dpCommandsUpdate:">- device:dpCommandsUpdate:</option>
+		
 		<option value="//api/name/device:dpsUpdate:">- device:dpsUpdate:</option>
 		
 		<option value="//api/name/device:firmwareUpgradeProgress:progress:">- device:firmwareUpgradeProgress:progress:</option>
 		
+		<option value="//api/name/device:firmwareUpgradeStatusModel:">- device:firmwareUpgradeStatusModel:</option>
+		
 		<option value="//api/name/device:signal:">- device:signal:</option>
+		
+		<option value="//api/name/device:type:upgradeStatus:">- device:type:upgradeStatus:</option>
 		
 		<option value="//api/name/device:warningInfoUpdate:">- device:warningInfoUpdate:</option>
 		
@@ -316,8 +322,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/deviceFirmwareUpgradeSuccess:type:" title="deviceFirmwareUpgradeSuccess:type:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/deviceFirmwareUpgradeSuccess:type:">&ndash;&nbsp;deviceFirmwareUpgradeSuccess:type:</a></code>
+	<a name="//api/name/device:dpCommandsUpdate:" title="device:dpCommandsUpdate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/device:dpCommandsUpdate:">&ndash;&nbsp;device:dpCommandsUpdate:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -327,13 +333,13 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Device firmware upgrade success
-固件升级成功代理回调</p>
+				<p>dp data update
+设备 dpCodes 变化代理回调</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)deviceFirmwareUpgradeSuccess:(TuyaSmartDevice *)<em>device</em> type:(NSInteger)<em>type</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)device:(TuyaSmartDevice *)<em>device</em> dpCommandsUpdate:(NSDictionary *)<em>dpCodes</em></code></div>
 
 		    
 			
@@ -347,8 +353,8 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>type</code></th>
-						<td><p>device type</p></td>
+						<th scope="row" class="argument-name"><code>dpCodes</code></th>
+						<td><p>dpCodes</p></td>
 					</tr>
 				
 				</table>
@@ -362,138 +368,8 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Device firmware upgrade success
-固件升级成功代理回调</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/deviceFirmwareUpgradeFailure:type:" title="deviceFirmwareUpgradeFailure:type:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/deviceFirmwareUpgradeFailure:type:">&ndash;&nbsp;deviceFirmwareUpgradeFailure:type:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Device firmware upgrade failure
-固件升级失败代理回调</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)deviceFirmwareUpgradeFailure:(TuyaSmartDevice *)<em>device</em> type:(NSInteger)<em>type</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>device</code></th>
-						<td><p>instance</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>type</code></th>
-						<td><p>device type</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Device firmware upgrade failure
-固件升级失败代理回调</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartDevice.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/deviceFirmwareUpgrading:type:" title="deviceFirmwareUpgrading:type:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/deviceFirmwareUpgrading:type:">&ndash;&nbsp;deviceFirmwareUpgrading:type:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Device firmware upgrading
-固件升级中代理回调</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)deviceFirmwareUpgrading:(TuyaSmartDevice *)<em>device</em> type:(NSInteger)<em>type</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>device</code></th>
-						<td><p>instance</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>type</code></th>
-						<td><p>device type</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Device firmware upgrading
-固件升级中代理回调</p>
+				<p>dp data update
+设备 dpCodes 变化代理回调</p>
 			</div>
 			
 
@@ -564,6 +440,71 @@
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Firmware upgrade progress.
 固件升级进度</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/device:firmwareUpgradeStatusModel:" title="device:firmwareUpgradeStatusModel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/device:firmwareUpgradeStatusModel:">&ndash;&nbsp;device:firmwareUpgradeStatusModel:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the delegate of device firmware upgrade status update
+设备升级状态的回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)device:(TuyaSmartDevice *)<em>device</em> firmwareUpgradeStatusModel:(TuyaSmartFirmwareUpgradeStatusModel *)<em>upgradeStatusModel</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>device</code></th>
+						<td><p>设备模型 deviceModel</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>upgradeStatusModel</code></th>
+						<td><p>设备升级状态模型 upgradeStatusModel</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>the delegate of device firmware upgrade status update
+设备升级状态的回调</p>
 			</div>
 			
 
@@ -775,6 +716,266 @@ Wifi信号强度</p>
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/device:type:upgradeStatus:" title="device:type:upgradeStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/device:type:upgradeStatus:">&ndash;&nbsp;device:type:upgradeStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the delegate of device firmware upgrade status update
+设备升级状态的回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)device:(TuyaSmartDevice *)<em>device</em> type:(NSInteger)<em>type</em> upgradeStatus:(TuyaSmartDeviceUpgradeStatus)<em>upgradeStatus</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>device</code></th>
+						<td><p>deviceModel</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>upgradeStatus</code></th>
+						<td><p>upgrade status</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>the delegate of device firmware upgrade status update
+设备升级状态的回调</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceFirmwareUpgradeSuccess:type:" title="deviceFirmwareUpgradeSuccess:type:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceFirmwareUpgradeSuccess:type:">&ndash;&nbsp;deviceFirmwareUpgradeSuccess:type:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Device firmware upgrade success
+固件升级成功代理回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceFirmwareUpgradeSuccess:(TuyaSmartDevice *)<em>device</em> type:(NSInteger)<em>type</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>device</code></th>
+						<td><p>instance</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>device type</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Device firmware upgrade success
+固件升级成功代理回调</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceFirmwareUpgradeFailure:type:" title="deviceFirmwareUpgradeFailure:type:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceFirmwareUpgradeFailure:type:">&ndash;&nbsp;deviceFirmwareUpgradeFailure:type:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Device firmware upgrade failure
+固件升级失败代理回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceFirmwareUpgradeFailure:(TuyaSmartDevice *)<em>device</em> type:(NSInteger)<em>type</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>device</code></th>
+						<td><p>instance</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>device type</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Device firmware upgrade failure
+固件升级失败代理回调</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceFirmwareUpgrading:type:" title="deviceFirmwareUpgrading:type:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceFirmwareUpgrading:type:">&ndash;&nbsp;deviceFirmwareUpgrading:type:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Device firmware upgrading
+固件升级中代理回调</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceFirmwareUpgrading:(TuyaSmartDevice *)<em>device</em> type:(NSInteger)<em>type</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>device</code></th>
+						<td><p>instance</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>device type</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Device firmware upgrading
+固件升级中代理回调</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartDevice.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -790,7 +991,7 @@ Wifi信号强度</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

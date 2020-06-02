@@ -60,6 +60,8 @@
 		
 		<option value="//api/name/home:device:dpsUpdate:">- home:device:dpsUpdate:</option>
 		
+		<option value="//api/name/home:device:firmwareUpgradeStatusModel:">- home:device:firmwareUpgradeStatusModel:</option>
+		
 		<option value="//api/name/home:device:upgradeStatus:">- home:device:upgradeStatus:</option>
 		
 		<option value="//api/name/home:device:warningInfoUpdate:">- home:device:warningInfoUpdate:</option>
@@ -237,66 +239,6 @@
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>the delegate of shared device list update.
 设备共享信息变化代理回调</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartHome.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/homeDidUpdateRoomInfo:" title="homeDidUpdateRoomInfo:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/homeDidUpdateRoomInfo:">&ndash;&nbsp;homeDidUpdateRoomInfo:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>the delegate of relation update of home and room.(deprecated)
-家庭下房间信息信息变化代理回调（已废弃）</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)homeDidUpdateRoomInfo:(TuyaSmartHome *)<em>home</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>home</code></th>
-						<td><p>instance</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>the delegate of relation update of home and room.(deprecated)
-家庭下房间信息信息变化代理回调（已废弃）</p>
 			</div>
 			
 
@@ -909,8 +851,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/home:device:upgradeStatus:" title="home:device:upgradeStatus:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/home:device:upgradeStatus:">&ndash;&nbsp;home:device:upgradeStatus:</a></code>
+	<a name="//api/name/home:device:firmwareUpgradeStatusModel:" title="home:device:firmwareUpgradeStatusModel:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/home:device:firmwareUpgradeStatusModel:">&ndash;&nbsp;home:device:firmwareUpgradeStatusModel:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -926,7 +868,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)home:(TuyaSmartHome *)<em>home</em> device:(TuyaSmartDeviceModel *)<em>device</em> upgradeStatus:(TuyaSmartDeviceUpgradeStatus)<em>upgradeStatus</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)home:(TuyaSmartHome *)<em>home</em> device:(TuyaSmartDeviceModel *)<em>device</em> firmwareUpgradeStatusModel:(TuyaSmartFirmwareUpgradeStatusModel *)<em>upgradeStatusModel</em></code></div>
 
 		    
 			
@@ -936,17 +878,17 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>home</code></th>
-						<td><p>instance</p></td>
+						<td><p>家庭实例 home instance</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>device</code></th>
-						<td><p>deviceModel</p></td>
+						<td><p>设备模型 deviceModel</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>upgradeStatus</code></th>
-						<td><p>upgrade status</p></td>
+						<th scope="row" class="argument-name"><code>upgradeStatusModel</code></th>
+						<td><p>设备升级状态模型 upgradeStatusModel</p></td>
 					</tr>
 				
 				</table>
@@ -1243,6 +1185,136 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/homeDidUpdateRoomInfo:" title="homeDidUpdateRoomInfo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/homeDidUpdateRoomInfo:">&ndash;&nbsp;homeDidUpdateRoomInfo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the delegate of relation update of home and room.(deprecated)
+家庭下房间信息信息变化代理回调（已废弃）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)homeDidUpdateRoomInfo:(TuyaSmartHome *)<em>home</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>home</code></th>
+						<td><p>instance</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>the delegate of relation update of home and room.(deprecated)
+家庭下房间信息信息变化代理回调（已废弃）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHome.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/home:device:upgradeStatus:" title="home:device:upgradeStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/home:device:upgradeStatus:">&ndash;&nbsp;home:device:upgradeStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the delegate of device firmware upgrade status update
+家庭下设备升级状态的回调(废弃)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)home:(TuyaSmartHome *)<em>home</em> device:(TuyaSmartDeviceModel *)<em>device</em> upgradeStatus:(TuyaSmartDeviceUpgradeStatus)<em>upgradeStatus</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>home</code></th>
+						<td><p>instance</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>device</code></th>
+						<td><p>deviceModel</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>upgradeStatus</code></th>
+						<td><p>upgrade status</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>the delegate of device firmware upgrade status update
+家庭下设备升级状态的回调(废弃)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHome.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -1258,7 +1330,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

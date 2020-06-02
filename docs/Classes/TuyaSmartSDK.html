@@ -74,6 +74,8 @@
 		
 		<option value="//api/name/secretKey">secretKey</option>
 		
+		<option value="//api/name/useSSLPinning">useSSLPinning</option>
+		
 		<option value="//api/name/uuid">uuid</option>
 		
 	</optgroup>
@@ -96,13 +98,19 @@
 		
 		<option value="//api/name/getFamilyPushStatusWithSuccess:failure:">- getFamilyPushStatusWithSuccess:failure:</option>
 		
+		<option value="//api/name/getMarketingPushStatusWithSuccess:failure:">- getMarketingPushStatusWithSuccess:failure:</option>
+		
 		<option value="//api/name/getNoticePushStatusWithSuccess:failure:">- getNoticePushStatusWithSuccess:failure:</option>
 		
 		<option value="//api/name/getPushStatusWithSuccess:failure:">- getPushStatusWithSuccess:failure:</option>
 		
 		<option value="//api/name/setDevicePushStatusWithStauts:success:failure:">- setDevicePushStatusWithStauts:success:failure:</option>
 		
+		<option value="//api/name/setDeviceToken:withError:">- setDeviceToken:withError:</option>
+		
 		<option value="//api/name/setFamilyPushStatusWithStauts:success:failure:">- setFamilyPushStatusWithStauts:success:failure:</option>
+		
+		<option value="//api/name/setMarketingPushStatusWithStauts:success:failure:">- setMarketingPushStatusWithStauts:success:failure:</option>
 		
 		<option value="//api/name/setNoticePushStatusWithStauts:success:failure:">- setNoticePushStatusWithStauts:success:failure:</option>
 		
@@ -397,6 +405,22 @@ If you want to use the SDK in app extension, set <code>appGroupId</code> before 
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/useSSLPinning" title="useSSLPinning"></a>
+	<h3 class="method-title"><code><a href="#//api/name/useSSLPinning">&nbsp;&nbsp;useSSLPinning</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL useSSLPinning</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/appKey" title="appKey"></a>
 	<h3 class="method-title"><code><a href="#//api/name/appKey">&nbsp;&nbsp;appKey</a></code>
 </h3>
@@ -652,6 +676,188 @@ If you want to use the SDK in app extension, set <code>appGroupId</code> before 
 						</div>
 						
 
+						<a title="Log Methods" name="task_Log Methods"></a>
+						<h2 class="task-title">Log Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/debugMode" title="debugMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/debugMode">&nbsp;&nbsp;debugMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Debug mode
+调试模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL debugMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Debug mode
+调试模式</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK+Log.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Upgrade Methods" name="task_Upgrade Methods"></a>
+						<h2 class="task-title">Upgrade Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/checkVersionUpgrade" title="checkVersionUpgrade"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkVersionUpgrade">&ndash;&nbsp;checkVersionUpgrade</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Check if TuyaSmartKit need to be upgrade to TuyaSmartHomeKit
+检测是否需要升级数据 从TuyaSDK 升级到TuyaHomeSDK，需要进行数据升级</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)checkVersionUpgrade</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Whether need to upgrade data</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Check if TuyaSmartKit need to be upgrade to TuyaSmartHomeKit
+检测是否需要升级数据 从TuyaSDK 升级到TuyaHomeSDK，需要进行数据升级</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/upgradeVersion:failure:" title="upgradeVersion:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/upgradeVersion:failure:">&ndash;&nbsp;upgradeVersion:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SDK data upgrade
+SDK数据升级</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)upgradeVersion:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SDK data upgrade
+SDK数据升级</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
 						<a title="PushNotification Methods" name="task_PushNotification Methods"></a>
 						<h2 class="task-title">PushNotification Methods</h2>
 
@@ -732,6 +938,71 @@ If you want to use the SDK in app extension, set <code>appGroupId</code> before 
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Push deviceToken</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDeviceToken:withError:" title="setDeviceToken:withError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDeviceToken:withError:">&ndash;&nbsp;setDeviceToken:withError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set push device token and error info
+设置推送token以及错误信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDeviceToken:(nullable NSData *)<em>token</em> withError:(nullable NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p><a href="#//api/name/deviceToken">deviceToken</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>error info</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set push device token and error info
+设置推送token以及错误信息</p>
 			</div>
 			
 
@@ -1288,70 +1559,9 @@ If you want to use the SDK in app extension, set <code>appGroupId</code> before 
 			
 		</div>
 	</div>
-</div>
-						</div>
-						
-
-						<a title="Upgrade Methods" name="task_Upgrade Methods"></a>
-						<h2 class="task-title">Upgrade Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/checkVersionUpgrade" title="checkVersionUpgrade"></a>
-	<h3 class="method-title"><code><a href="#//api/name/checkVersionUpgrade">&ndash;&nbsp;checkVersionUpgrade</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Check if TuyaSmartKit need to be upgrade to TuyaSmartHomeKit
-检测是否需要升级数据 从TuyaSDK 升级到TuyaHomeSDK，需要进行数据升级</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)checkVersionUpgrade</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Whether need to upgrade data</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Check if TuyaSmartKit need to be upgrade to TuyaSmartHomeKit
-检测是否需要升级数据 从TuyaSDK 升级到TuyaHomeSDK，需要进行数据升级</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
 </div><div class="section-method">
-	<a name="//api/name/upgradeVersion:failure:" title="upgradeVersion:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/upgradeVersion:failure:">&ndash;&nbsp;upgradeVersion:failure:</a></code>
+	<a name="//api/name/getMarketingPushStatusWithSuccess:failure:" title="getMarketingPushStatusWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMarketingPushStatusWithSuccess:failure:">&ndash;&nbsp;getMarketingPushStatusWithSuccess:failure:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1361,13 +1571,13 @@ If you want to use the SDK in app extension, set <code>appGroupId</code> before 
 			
 			
 			<div class="method-subsection brief-description">
-				<p>SDK data upgrade
-SDK数据升级</p>
+				<p>Get market message push status
+获取 APP 营销类消息的开启状态</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)upgradeVersion:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)getMarketingPushStatusWithSuccess:(__nullable TYSuccessBOOL)<em>success</em> failure:(__nullable TYFailureError)<em>failure</em></code></div>
 
 		    
 			
@@ -1396,8 +1606,8 @@ SDK数据升级</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>SDK data upgrade
-SDK数据升级</p>
+				<p>Get market message push status
+获取 APP 营销类消息的开启状态</p>
 			</div>
 			
 
@@ -1414,17 +1624,9 @@ SDK数据升级</p>
 			
 		</div>
 	</div>
-</div>
-						</div>
-						
-
-						<a title="Log Methods" name="task_Log Methods"></a>
-						<h2 class="task-title">Log Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/debugMode" title="debugMode"></a>
-	<h3 class="method-title"><code><a href="#//api/name/debugMode">&nbsp;&nbsp;debugMode</a></code>
+</div><div class="section-method">
+	<a name="//api/name/setMarketingPushStatusWithStauts:success:failure:" title="setMarketingPushStatusWithStauts:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setMarketingPushStatusWithStauts:success:failure:">&ndash;&nbsp;setMarketingPushStatusWithStauts:success:failure:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1434,15 +1636,37 @@ SDK数据升级</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Debug mode
-调试模式</p>
+				<p>Set market message push status
+开启或者关闭 APP 营销类消息推送</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL debugMode</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)setMarketingPushStatusWithStauts:(BOOL)<em>enable</em> success:(__nullable TYSuccessHandler)<em>success</em> failure:(__nullable TYFailureError)<em>failure</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enable</code></th>
+						<td><p>open or close</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
@@ -1452,8 +1676,8 @@ SDK数据升级</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Debug mode
-调试模式</p>
+				<p>Set market message push status
+开启或者关闭 APP 营销类消息推送</p>
 			</div>
 			
 
@@ -1464,7 +1688,7 @@ SDK数据升级</p>
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSDK+Log.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartSDK.h</code></p>
 			</div>
 			
 			
@@ -1485,7 +1709,7 @@ SDK数据升级</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

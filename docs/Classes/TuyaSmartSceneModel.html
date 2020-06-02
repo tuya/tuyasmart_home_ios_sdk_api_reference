@@ -64,11 +64,21 @@
 		
 		<option value="//api/name/boundForPanel">boundForPanel</option>
 		
+		<option value="//api/name/boundForWiFiPanel">boundForWiFiPanel</option>
+		
 		<option value="//api/name/code">code</option>
+		
+		<option value="//api/name/collectionType">collectionType</option>
 		
 		<option value="//api/name/conditions">conditions</option>
 		
+		<option value="//api/name/coverIcon">coverIcon</option>
+		
 		<option value="//api/name/devList">devList</option>
+		
+		<option value="//api/name/disableTime">disableTime</option>
+		
+		<option value="//api/name/displayColor">displayColor</option>
 		
 		<option value="//api/name/enabled">enabled</option>
 		
@@ -81,6 +91,10 @@
 		<option value="//api/name/newLocalScene">newLocalScene</option>
 		
 		<option value="//api/name/preConditions">preConditions</option>
+		
+		<option value="//api/name/recomCoefficient">recomCoefficient</option>
+		
+		<option value="//api/name/recomDescription">recomDescription</option>
 		
 		<option value="//api/name/recommendType">recommendType</option>
 		
@@ -578,6 +592,102 @@ device list</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/coverIcon" title="coverIcon"></a>
+	<h3 class="method-title"><code><a href="#//api/name/coverIcon">&nbsp;&nbsp;coverIcon</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>场景icon的url。
+Scene&rsquo;s icon url.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *coverIcon</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>场景icon的url。
+Scene&rsquo;s icon url.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/displayColor" title="displayColor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/displayColor">&nbsp;&nbsp;displayColor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>场景的背景色。FFFFFF
+Scene&rsquo;s <a href="#//api/name/background">background</a> color. FFFFFF</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *displayColor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>场景的背景色。FFFFFF
+Scene&rsquo;s <a href="#//api/name/background">background</a> color. FFFFFF</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/__deprecated" title="__deprecated"></a>
 	<h3 class="method-title"><code><a href="#//api/name/__deprecated">&nbsp;&nbsp;__deprecated</a></code>
 </h3>
@@ -773,6 +883,54 @@ scene is or isn&rsquo;t bound by a panel.</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/boundForWiFiPanel" title="boundForWiFiPanel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/boundForWiFiPanel">&nbsp;&nbsp;boundForWiFiPanel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否有新固件场景面板绑定，此类支持zigbee设备和wifi设备
+scene is or isn&rsquo;t bound by a panel with new firware, this type of smart support zigbee and wifi devices.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL boundForWiFiPanel</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>是否有新固件场景面板绑定，此类支持zigbee设备和wifi设备
+scene is or isn&rsquo;t bound by a panel with new firware, this type of smart support zigbee and wifi devices.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/localLinkage" title="localLinkage"></a>
 	<h3 class="method-title"><code><a href="#//api/name/localLinkage">&nbsp;&nbsp;localLinkage</a></code>
 </h3>
@@ -916,6 +1074,198 @@ Recommend type.</p>
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/collectionType" title="collectionType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/collectionType">&nbsp;&nbsp;collectionType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>收藏场景类型
+Collection scene type.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) TuyaSmartSceneCollectionType collectionType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>收藏场景类型
+Collection scene type.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recomDescription" title="recomDescription"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recomDescription">&nbsp;&nbsp;recomDescription</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>推荐场景描述
+Recommend description.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *recomDescription</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>推荐场景描述
+Recommend description.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recomCoefficient" title="recomCoefficient"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recomCoefficient">&nbsp;&nbsp;recomCoefficient</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>推荐场景的推荐系数0-100
+Recommend coefficient,0-100.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat recomCoefficient</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>推荐场景的推荐系数0-100
+Recommend coefficient,0-100.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/disableTime" title="disableTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disableTime">&nbsp;&nbsp;disableTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自动化场景将会被自动关闭的时间点的时间戳。0表示未被设置过。
+The timeStamp when automation will be disabled automatically.0 means net setted.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) long long disableTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>自动化场景将会被自动关闭的时间点的时间戳。0表示未被设置过。
+The timeStamp when automation will be disabled automatically.0 means net setted.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -931,7 +1281,7 @@ Recommend type.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

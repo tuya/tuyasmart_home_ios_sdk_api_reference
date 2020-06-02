@@ -130,6 +130,8 @@
 		
 		<option value="//api/name/login:phoneNumber:code:success:failure:">- login:phoneNumber:code:success:failure:</option>
 		
+		<option value="//api/name/loginByAuth2WithType:countryCode:accessToken:extraInfo:success:failure:">- loginByAuth2WithType:countryCode:accessToken:extraInfo:success:failure:</option>
+		
 		<option value="//api/name/loginByEmail:email:password:success:failure:">- loginByEmail:email:password:success:failure:</option>
 		
 		<option value="//api/name/loginByFacebook:token:success:failure:">- loginByFacebook:token:success:failure:</option>
@@ -137,6 +139,8 @@
 		<option value="//api/name/loginByPhone:phoneNumber:password:success:failure:">- loginByPhone:phoneNumber:password:success:failure:</option>
 		
 		<option value="//api/name/loginByQQ:userId:accessToken:success:failure:">- loginByQQ:userId:accessToken:success:failure:</option>
+		
+		<option value="//api/name/loginByQRcode:success:failure:">- loginByQRcode:success:failure:</option>
 		
 		<option value="//api/name/loginByTwitter:key:secret:success:failure:">- loginByTwitter:key:secret:success:failure:</option>
 		
@@ -199,6 +203,8 @@
 		<option value="//api/name/updateTimeZoneWithTimeZoneId:success:failure:">- updateTimeZoneWithTimeZoneId:success:failure:</option>
 		
 		<option value="//api/name/updateUserInfo:failure:">- updateUserInfo:failure:</option>
+		
+		<option value="//api/name/userInfo:success:failure:">- userInfo:success:failure:</option>
 		
 	</optgroup>
 	
@@ -1279,6 +1285,86 @@ mqtt 端口号</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/loginWithMobile:countryCode:code:success:failure:" title="loginWithMobile:countryCode:code:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginWithMobile:countryCode:code:success:failure:">&ndash;&nbsp;loginWithMobile:countryCode:code:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Modile phone verification code login.
+手机验证码登录</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loginWithMobile:(NSString *)<em>mobile</em> countryCode:(NSString *)<em>countryCode</em> code:(NSString *)<em>code</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mobile</code></th>
+						<td><p>Mobile phone number</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>countryCode</code></th>
+						<td><p>Country code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>code</code></th>
+						<td><p>Verification code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Modile phone verification code login.
+手机验证码登录</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/sendBindVerifyCode:phoneNumber:success:failure:" title="sendBindVerifyCode:phoneNumber:success:failure:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/sendBindVerifyCode:phoneNumber:success:failure:">&ndash;&nbsp;sendBindVerifyCode:phoneNumber:success:failure:</a></code>
 </h3>
@@ -1337,86 +1423,6 @@ mqtt 端口号</p>
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Send verification code. Used for mobile phone bind, mobile phone change.
 发送验证码，用于手机验证码绑定手机号，更换手机号。</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartUser.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/login:phoneNumber:code:success:failure:" title="login:phoneNumber:code:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/login:phoneNumber:code:success:failure:">&ndash;&nbsp;login:phoneNumber:code:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Mobile phone verification code login and register.
-手机验证码登录和注册</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)login:(NSString *)<em>countryCode</em> phoneNumber:(NSString *)<em>phoneNumber</em> code:(NSString *)<em>code</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>countryCode</code></th>
-						<td><p>Country code</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>phoneNumber</code></th>
-						<td><p>Mobile phone number</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>code</code></th>
-						<td><p>Verification code</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>Success block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>Failure block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Mobile phone verification code login and register.
-手机验证码登录和注册</p>
 			</div>
 			
 
@@ -1747,86 +1753,6 @@ mqtt 端口号</p>
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Mobile phone password reset.
 手机密码重置</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartUser.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/registerByEmail:email:password:success:failure:" title="registerByEmail:email:password:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/registerByEmail:email:password:success:failure:">&ndash;&nbsp;registerByEmail:email:password:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Email register 1.0.
-邮箱注册  1.0</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)registerByEmail:(NSString *)<em>countryCode</em> email:(NSString *)<em>email</em> password:(NSString *)<em>password</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>countryCode</code></th>
-						<td><p>Country code</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>email</code></th>
-						<td><p>Email</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>Password</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>Success block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>Failure block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Email register 1.0.
-邮箱注册  1.0</p>
 			</div>
 			
 
@@ -2324,326 +2250,6 @@ mqtt 端口号</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/loginWithMobile:countryCode:code:success:failure:" title="loginWithMobile:countryCode:code:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/loginWithMobile:countryCode:code:success:failure:">&ndash;&nbsp;loginWithMobile:countryCode:code:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Modile phone verification code login.
-手机验证码登录</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)loginWithMobile:(NSString *)<em>mobile</em> countryCode:(NSString *)<em>countryCode</em> code:(NSString *)<em>code</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>mobile</code></th>
-						<td><p>Mobile phone number</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>countryCode</code></th>
-						<td><p>Country code</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>code</code></th>
-						<td><p>Verification code</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>Success block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>Failure block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Modile phone verification code login.
-手机验证码登录</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartUser.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/registerByUid:password:countryCode:success:failure:" title="registerByUid:password:countryCode:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/registerByUid:password:countryCode:success:failure:">&ndash;&nbsp;registerByUid:password:countryCode:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p><a href="#//api/name/uid">uid</a> register.
-uid注册</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)registerByUid:(NSString *)<em>uid</em> password:(NSString *)<em>password</em> countryCode:(NSString *)<em>countryCode</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>uid</code></th>
-						<td><p>User ID</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>Password</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>countryCode</code></th>
-						<td><p>Country code</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>Success block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>Failure block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p><a href="#//api/name/uid">uid</a> register.
-uid注册</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartUser.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/loginByUid:password:countryCode:success:failure:" title="loginByUid:password:countryCode:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/loginByUid:password:countryCode:success:failure:">&ndash;&nbsp;loginByUid:password:countryCode:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p><a href="#//api/name/uid">uid</a> login.
-uid登录</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)loginByUid:(NSString *)<em>uid</em> password:(NSString *)<em>password</em> countryCode:(NSString *)<em>countryCode</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>uid</code></th>
-						<td><p>User ID</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>Password</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>countryCode</code></th>
-						<td><p>Country code</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>Success block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>Failure block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p><a href="#//api/name/uid">uid</a> login.
-uid登录</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartUser.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/loginOrRegisterWithCountryCode:uid:password:success:failure:" title="loginOrRegisterWithCountryCode:uid:password:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/loginOrRegisterWithCountryCode:uid:password:success:failure:">&ndash;&nbsp;loginOrRegisterWithCountryCode:uid:password:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p><a href="#//api/name/uid">uid</a> login/register. The account will be registered at first login.
-<a href="#//api/name/uid">uid</a> 登录注册接口（如果没有注册就注册，如果注册就登录）</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)loginOrRegisterWithCountryCode:(NSString *)<em>countryCode</em> uid:(NSString *)<em>uid</em> password:(NSString *)<em>password</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>countryCode</code></th>
-						<td><p>Country code</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>uid</code></th>
-						<td><p>User ID</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>Password</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>Success block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>Failure block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p><a href="#//api/name/uid">uid</a> login/register. The account will be registered at first login.
-<a href="#//api/name/uid">uid</a> 登录注册接口（如果没有注册就注册，如果注册就登录）</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartUser.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/loginOrRegisterWithCountryCode:uid:password:createHome:success:failure:" title="loginOrRegisterWithCountryCode:uid:password:createHome:success:failure:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/loginOrRegisterWithCountryCode:uid:password:createHome:success:failure:">&ndash;&nbsp;loginOrRegisterWithCountryCode:uid:password:createHome:success:failure:</a></code>
 </h3>
@@ -2662,171 +2268,6 @@ uid登录</p>
 		    
 
 			<div class="method-subsection method-declaration"><code>- (void)loginOrRegisterWithCountryCode:(NSString *)<em>countryCode</em> uid:(NSString *)<em>uid</em> password:(NSString *)<em>password</em> createHome:(BOOL)<em>createHome</em> success:(nullable TYSuccessID)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>countryCode</code></th>
-						<td><p>Country code</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>uid</code></th>
-						<td><p>User ID</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>Password</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>createHome</code></th>
-						<td><p>Create default home</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>Success block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>Failure block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p><a href="#//api/name/uid">uid</a> login/register. The account will be registered at first login.
-<a href="#//api/name/uid">uid</a> 登录注册接口（如果没有注册就注册，如果注册就登录）</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartUser.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/loginOrRegisterByPhone:uid:password:success:failure:" title="loginOrRegisterByPhone:uid:password:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/loginOrRegisterByPhone:uid:password:success:failure:">&ndash;&nbsp;loginOrRegisterByPhone:uid:password:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p><a href="#//api/name/uid">uid</a> login/register. The account will be registered at first login.
-<a href="#//api/name/uid">uid</a> 登录注册接口（如果没有注册就注册，如果注册就登录）</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)loginOrRegisterByPhone:(NSString *)<em>countryCode</em> uid:(NSString *)<em>uid</em> password:(NSString *)<em>password</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>countryCode</code></th>
-						<td><p>Country code</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>uid</code></th>
-						<td><p>User ID</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>Password</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>Success block</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>Failure block</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p><a href="#//api/name/uid">uid</a> login/register. The account will be registered at first login.
-<a href="#//api/name/uid">uid</a> 登录注册接口（如果没有注册就注册，如果注册就登录）</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartUser.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/loginOrRegisterByPhone:uid:password:createHome:success:failure:" title="loginOrRegisterByPhone:uid:password:createHome:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/loginOrRegisterByPhone:uid:password:createHome:success:failure:">&ndash;&nbsp;loginOrRegisterByPhone:uid:password:createHome:success:failure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p><a href="#//api/name/uid">uid</a> login/register. The account will be registered at first login.
-<a href="#//api/name/uid">uid</a> 登录注册接口（如果没有注册就注册，如果注册就登录）</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)loginOrRegisterByPhone:(NSString *)<em>countryCode</em> uid:(NSString *)<em>uid</em> password:(NSString *)<em>password</em> createHome:(BOOL)<em>createHome</em> success:(nullable TYSuccessID)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
 
 		    
 			
@@ -3187,6 +2628,89 @@ Twitter登录</p>
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Twitter login.
 Twitter登录</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginByAuth2WithType:countryCode:accessToken:extraInfo:success:failure:" title="loginByAuth2WithType:countryCode:accessToken:extraInfo:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginByAuth2WithType:countryCode:accessToken:extraInfo:success:failure:">&ndash;&nbsp;loginByAuth2WithType:countryCode:accessToken:extraInfo:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>third login.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loginByAuth2WithType:(NSString *)<em>type</em> countryCode:(NSString *)<em>countryCode</em> accessToken:(NSString *)<em>accessToken</em> extraInfo:(NSDictionary *)<em>extraInfo</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>login type(ap for &ldquo;login with apple&rdquo;)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>countryCode</code></th>
+						<td><p><a href="#//api/name/countryCode">countryCode</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessToken</code></th>
+						<td><p>token from third authorization login</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>extraInfo</code></th>
+						<td><p>extra params</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>third login.</p>
 			</div>
 			
 
@@ -3721,6 +3245,154 @@ Twitter登录</p>
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">TuyaSmartUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="LoginByQRCode Methods" name="task_LoginByQRCode Methods"></a>
+						<h2 class="task-title">LoginByQRCode Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/loginByQRcode:success:failure:" title="loginByQRcode:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginByQRcode:success:failure:">&ndash;&nbsp;loginByQRcode:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Authorize third-party applications to login by QR code.
+授权第三方应用登录</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loginByQRcode:(NSDictionary *)<em>codeInfo</em> success:(nullable TYSuccessID)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>codeInfo</code></th>
+						<td><p>QR code information</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Authorize third-party applications to login by QR code.
+授权第三方应用登录</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartUser+LoginByQRCode.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userInfo:success:failure:" title="userInfo:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userInfo:success:failure:">&ndash;&nbsp;userInfo:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get third-party applications info.
+获取第三方应用信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)userInfo:(NSDictionary *)<em>codeInfo</em> success:(nullable TYSuccessID)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>codeInfo</code></th>
+						<td><p>QR code information</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Get third-party applications info.
+获取第三方应用信息</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartUser+LoginByQRCode.h</code></p>
 			</div>
 			
 			
@@ -4457,6 +4129,579 @@ for 30 days.After 30 days, old account will be deleted.
 </div>
 						</div>
 						
+
+						<a title="DeprecatedApi Methods" name="task_DeprecatedApi Methods"></a>
+						<h2 class="task-title">DeprecatedApi Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/registerByEmail:email:password:success:failure:" title="registerByEmail:email:password:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerByEmail:email:password:success:failure:">&ndash;&nbsp;registerByEmail:email:password:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Email register 1.0.
+邮箱注册  1.0</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerByEmail:(NSString *)<em>countryCode</em> email:(NSString *)<em>email</em> password:(NSString *)<em>password</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>countryCode</code></th>
+						<td><p>Country code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>Email</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>Password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Email register 1.0.
+邮箱注册  1.0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartUser+DeprecatedApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/login:phoneNumber:code:success:failure:" title="login:phoneNumber:code:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/login:phoneNumber:code:success:failure:">&ndash;&nbsp;login:phoneNumber:code:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Mobile phone verification code login and register.
+手机验证码登录和注册</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)login:(NSString *)<em>countryCode</em> phoneNumber:(NSString *)<em>phoneNumber</em> code:(NSString *)<em>code</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>countryCode</code></th>
+						<td><p>Country code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>phoneNumber</code></th>
+						<td><p>Mobile phone number</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>code</code></th>
+						<td><p>Verification code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Mobile phone verification code login and register.
+手机验证码登录和注册</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartUser+DeprecatedApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginOrRegisterByPhone:uid:password:success:failure:" title="loginOrRegisterByPhone:uid:password:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginOrRegisterByPhone:uid:password:success:failure:">&ndash;&nbsp;loginOrRegisterByPhone:uid:password:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><a href="#//api/name/uid">uid</a> login/register. The account will be registered at first login.
+<a href="#//api/name/uid">uid</a> 登录注册接口（如果没有注册就注册，如果注册就登录）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loginOrRegisterByPhone:(NSString *)<em>countryCode</em> uid:(NSString *)<em>uid</em> password:(NSString *)<em>password</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>countryCode</code></th>
+						<td><p>Country code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>User ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>Password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/uid">uid</a> login/register. The account will be registered at first login.
+<a href="#//api/name/uid">uid</a> 登录注册接口（如果没有注册就注册，如果注册就登录）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartUser+DeprecatedApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginOrRegisterByPhone:uid:password:createHome:success:failure:" title="loginOrRegisterByPhone:uid:password:createHome:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginOrRegisterByPhone:uid:password:createHome:success:failure:">&ndash;&nbsp;loginOrRegisterByPhone:uid:password:createHome:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><a href="#//api/name/uid">uid</a> login/register. The account will be registered at first login.
+<a href="#//api/name/uid">uid</a> 登录注册接口（如果没有注册就注册，如果注册就登录）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loginOrRegisterByPhone:(NSString *)<em>countryCode</em> uid:(NSString *)<em>uid</em> password:(NSString *)<em>password</em> createHome:(BOOL)<em>createHome</em> success:(nullable TYSuccessID)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>countryCode</code></th>
+						<td><p>Country code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>User ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>Password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>createHome</code></th>
+						<td><p>Create default home</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/uid">uid</a> login/register. The account will be registered at first login.
+<a href="#//api/name/uid">uid</a> 登录注册接口（如果没有注册就注册，如果注册就登录）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartUser+DeprecatedApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerByUid:password:countryCode:success:failure:" title="registerByUid:password:countryCode:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerByUid:password:countryCode:success:failure:">&ndash;&nbsp;registerByUid:password:countryCode:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><a href="#//api/name/uid">uid</a> register.
+uid注册</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerByUid:(NSString *)<em>uid</em> password:(NSString *)<em>password</em> countryCode:(NSString *)<em>countryCode</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>User ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>Password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>countryCode</code></th>
+						<td><p>Country code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/uid">uid</a> register.
+uid注册</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartUser+DeprecatedApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginByUid:password:countryCode:success:failure:" title="loginByUid:password:countryCode:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginByUid:password:countryCode:success:failure:">&ndash;&nbsp;loginByUid:password:countryCode:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><a href="#//api/name/uid">uid</a> login.
+uid登录</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loginByUid:(NSString *)<em>uid</em> password:(NSString *)<em>password</em> countryCode:(NSString *)<em>countryCode</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>User ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>Password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>countryCode</code></th>
+						<td><p>Country code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/uid">uid</a> login.
+uid登录</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartUser+DeprecatedApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginOrRegisterWithCountryCode:uid:password:success:failure:" title="loginOrRegisterWithCountryCode:uid:password:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginOrRegisterWithCountryCode:uid:password:success:failure:">&ndash;&nbsp;loginOrRegisterWithCountryCode:uid:password:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><a href="#//api/name/uid">uid</a> login/register. The account will be registered at first login.
+<a href="#//api/name/uid">uid</a> 登录注册接口（如果没有注册就注册，如果注册就登录），不自动创建家庭</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loginOrRegisterWithCountryCode:(NSString *)<em>countryCode</em> uid:(NSString *)<em>uid</em> password:(NSString *)<em>password</em> success:(nullable TYSuccessHandler)<em>success</em> failure:(nullable TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>countryCode</code></th>
+						<td><p>Country code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uid</code></th>
+						<td><p>User ID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>Password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/uid">uid</a> login/register. The account will be registered at first login.
+<a href="#//api/name/uid">uid</a> 登录注册接口（如果没有注册就注册，如果注册就登录），不自动创建家庭</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartUser+DeprecatedApi.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -4469,7 +4714,7 @@ for 30 days.After 30 days, old account will be deleted.
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

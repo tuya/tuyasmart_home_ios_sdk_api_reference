@@ -60,6 +60,8 @@
 		
 		<option value="//api/name/addNewSceneWithName:homeId:background:showFirstPage:preConditionList:conditionList:actionList:matchType:success:failure:">+ addNewSceneWithName:homeId:background:showFirstPage:preConditionList:conditionList:actionList:matchType:success:failure:</option>
 		
+		<option value="//api/name/addNewSceneWithSceneModel:homeId:success:failure:">+ addNewSceneWithSceneModel:homeId:success:failure:</option>
+		
 		<option value="//api/name/sceneWithSceneModel:">+ sceneWithSceneModel:</option>
 		
 	</optgroup>
@@ -85,6 +87,8 @@
 		<option value="//api/name/modifySceneWithName:background:showFirstPage:conditionList:actionList:matchType:success:failure:">- modifySceneWithName:background:showFirstPage:conditionList:actionList:matchType:success:failure:</option>
 		
 		<option value="//api/name/modifySceneWithName:background:showFirstPage:preConditionList:conditionList:actionList:matchType:success:failure:">- modifySceneWithName:background:showFirstPage:preConditionList:conditionList:actionList:matchType:success:failure:</option>
+		
+		<option value="//api/name/modifySceneWithSceneModel:success:failure:">- modifySceneWithSceneModel:success:failure:</option>
 		
 		<option value="//api/name/removeRecommendSceneWithHomeId:success:failure:">- removeRecommendSceneWithHomeId:success:failure:</option>
 		
@@ -522,6 +526,81 @@ Add a new scene.</p>
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/addNewSceneWithSceneModel:homeId:success:failure:" title="addNewSceneWithSceneModel:homeId:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addNewSceneWithSceneModel:homeId:success:failure:">+&nbsp;addNewSceneWithSceneModel:homeId:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加场景，使用一个带有完整数据的sceneModel进行添加。
+Add a new scene.Use a sceneModel with complete infomation of a scene.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)addNewSceneWithSceneModel:(TuyaSmartSceneModel *)<em>sceneModel</em> homeId:(long long)<em>homeId</em> success:(void ( ^ ) ( TuyaSmartSceneModel *sceneModel ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sceneModel</code></th>
+						<td><p>sceneModel</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>homeId</code></th>
+						<td><p>homeId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加场景，使用一个带有完整数据的sceneModel进行添加。
+Add a new scene.Use a sceneModel with complete infomation of a scene.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartScene.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/modifySceneWithName:background:showFirstPage:conditionList:actionList:matchType:success:failure:" title="modifySceneWithName:background:showFirstPage:conditionList:actionList:matchType:success:failure:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/modifySceneWithName:background:showFirstPage:conditionList:actionList:matchType:success:failure:">&ndash;&nbsp;modifySceneWithName:background:showFirstPage:conditionList:actionList:matchType:success:failure:</a></code>
 </h3>
@@ -700,6 +779,76 @@ Edit a existed scene.</p>
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>修改场景
 Edit a existed scene.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartScene.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/modifySceneWithSceneModel:success:failure:" title="modifySceneWithSceneModel:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/modifySceneWithSceneModel:success:failure:">&ndash;&nbsp;modifySceneWithSceneModel:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改一个已经存在的场景，使用一个带有完成信息的sceneModel修改场景。
+Edit a existed scene. Use a sceneModel with complete infomation of a scene.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)modifySceneWithSceneModel:(TuyaSmartSceneModel *)<em>sceneModel</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sceneModel</code></th>
+						<td><p>sceneModel</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改一个已经存在的场景，使用一个带有完成信息的sceneModel修改场景。
+Edit a existed scene. Use a sceneModel with complete infomation of a scene.</p>
 			</div>
 			
 
@@ -1249,7 +1398,7 @@ Save a recommended scene, this scene can be modified by user. this scene will be
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

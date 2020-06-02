@@ -86,15 +86,25 @@
 	
 	<optgroup label="Instance Methods">
 		
+		<option value="//api/name/addHomeMemberWithAddMemeberRequestModel:success:failure:">- addHomeMemberWithAddMemeberRequestModel:success:failure:</option>
+		
 		<option value="//api/name/addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure:">- addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure:</option>
+		
+		<option value="//api/name/addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure:">- addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure:</option>
 		
 		<option value="//api/name/addHomeRoomWithName:success:failure:">- addHomeRoomWithName:success:failure:</option>
 		
 		<option value="//api/name/dismissHomeWithSuccess:failure:">- dismissHomeWithSuccess:failure:</option>
 		
+		<option value="//api/name/geoName">- geoName</option>
+		
 		<option value="//api/name/getHomeDetailWithSuccess:failure:">- getHomeDetailWithSuccess:failure:</option>
 		
 		<option value="//api/name/getHomeMemberListWithSuccess:failure:">- getHomeMemberListWithSuccess:failure:</option>
+		
+		<option value="//api/name/getHomeWeatherDetailWithOption:success:failure:">- getHomeWeatherDetailWithOption:success:failure:</option>
+		
+		<option value="//api/name/getHomeWeatherSketchWithSuccess:failure:">- getHomeWeatherSketchWithSuccess:failure:</option>
 		
 		<option value="//api/name/getMeshListWithSuccess:failure:">- getMeshListWithSuccess:failure:</option>
 		
@@ -684,7 +694,7 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>orderList</code></th>
-						<td><p>order list [@&ldquo;devId&rdquo;, @&ldquo;groupId&rdquo;]</p></td>
+						<td><p>order list [@{@&ldquo;bizId&rdquo;: @&ldquo;XXX&rdquo;, @&ldquo;bizType&rdquo;: @&ldquo;XXX&rdquo;},@{@&ldquo;bizId&rdquo;: @&ldquo;XXX&rdquo;,@&ldquo;bizType&rdquo;: @&ldquo;XXX&rdquo;}] 其中bizId为设备的devId或群组的groupId, device的bizType = @&ldquo;6&rdquo; group的bizType = @&ldquo;5&rdquo;</p></td>
 					</tr>
 				
 					<tr>
@@ -1002,8 +1012,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure:" title="addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure:">&ndash;&nbsp;addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure:</a></code>
+	<a name="//api/name/addHomeMemberWithAddMemeberRequestModel:success:failure:" title="addHomeMemberWithAddMemeberRequestModel:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addHomeMemberWithAddMemeberRequestModel:success:failure:">&ndash;&nbsp;addHomeMemberWithAddMemeberRequestModel:success:failure:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1019,7 +1029,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)addHomeMemberWithName:(NSString *)<em>name</em> headPic:(UIImage *)<em>headPic</em> countryCode:(NSString *)<em>countryCode</em> userAccount:(NSString *)<em>account</em> isAdmin:(BOOL)<em>isAdmin</em> success:(TYSuccessDict)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)addHomeMemberWithAddMemeberRequestModel:(TuyaSmartHomeAddMemberRequestModel *)<em>requestModel</em> success:(TYSuccessDict)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
 
 		    
 			
@@ -1028,28 +1038,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>name</code></th>
-						<td><p>Member name</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>headPic</code></th>
-						<td><p>Member portrait</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>countryCode</code></th>
-						<td><p>Country code</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>account</code></th>
-						<td><p>User account</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>isAdmin</code></th>
-						<td><p>Whether the administrator</p></td>
+						<th scope="row" class="argument-name"><code>requestModel</code></th>
+						<td><p>member model</p></td>
 					</tr>
 				
 					<tr>
@@ -1161,33 +1151,9 @@
 			
 		</div>
 	</div>
-</div>
-						</div>
-						
-
-						<a title="SIGMesh Methods" name="task_SIGMesh Methods"></a>
-						<h2 class="task-title">SIGMesh Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/sigMeshModel" title="sigMeshModel"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sigMeshModel">&nbsp;&nbsp;sigMeshModel</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) TuyaSmartBleMeshModel *sigMeshModel</code></div>
-
-		    
-		</div>
-	</div>
 </div><div class="section-method">
-	<a name="//api/name/getSIGMeshListWithSuccess:failure:" title="getSIGMeshListWithSuccess:failure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getSIGMeshListWithSuccess:failure:">&ndash;&nbsp;getSIGMeshListWithSuccess:failure:</a></code>
+	<a name="//api/name/addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure:" title="addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure:">&ndash;&nbsp;addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1197,12 +1163,13 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取家庭下的 sig mesh 列表</p>
+				<p>Add a home member
+添加家庭成员 将会废弃</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)getSIGMeshListWithSuccess:(void ( ^ ) ( NSArray&lt;TuyaSmartBleMeshModel*&gt; *list ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)addHomeMemberWithName:(NSString *)<em>name</em> headPic:(UIImage *)<em>headPic</em> countryCode:(NSString *)<em>countryCode</em> userAccount:(NSString *)<em>account</em> isAdmin:(BOOL)<em>isAdmin</em> success:(TYSuccessDict)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
 
 		    
 			
@@ -1211,13 +1178,38 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>Member name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>headPic</code></th>
+						<td><p>Member portrait</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>countryCode</code></th>
+						<td><p>Country code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>account</code></th>
+						<td><p>User account</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isAdmin</code></th>
+						<td><p>Whether the administrator</p></td>
+					</tr>
+				
+					<tr>
 						<th scope="row" class="argument-name"><code>success</code></th>
-						<td><p>操作成功回调</p></td>
+						<td><p>Success block</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>failure</code></th>
-						<td><p>操作失败回调</p></td>
+						<td><p>Failure block</p></td>
 					</tr>
 				
 				</table>
@@ -1231,7 +1223,8 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取家庭下的 sig mesh 列表</p>
+				<p>Add a home member
+添加家庭成员 将会废弃</p>
 			</div>
 			
 
@@ -1242,7 +1235,310 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartHome+SIGMesh.h</code></p>
+				<p><code class="declared-in-ref">TuyaSmartHome.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure:" title="addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure:">&ndash;&nbsp;addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Add a home member
+添加家庭成员</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addHomeMemberWithName:(NSString *)<em>name</em> headPic:(UIImage *)<em>headPic</em> countryCode:(NSString *)<em>countryCode</em> userAccount:(NSString *)<em>account</em> role:(TYHomeRoleType)<em>role</em> success:(TYSuccessDict)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>Member name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>headPic</code></th>
+						<td><p>Member portrait</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>countryCode</code></th>
+						<td><p>Country code</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>account</code></th>
+						<td><p>User account</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>role</code></th>
+						<td><p>home role type</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Add a home member
+添加家庭成员</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHome.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Weather Methods" name="task_Weather Methods"></a>
+						<h2 class="task-title">Weather Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/geoName" title="geoName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/geoName">&ndash;&nbsp;geoName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>home location
+家庭地理位置</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)geoName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>home location
+家庭地理位置</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHome+Weather.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getHomeWeatherSketchWithSuccess:failure:" title="getHomeWeatherSketchWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getHomeWeatherSketchWithSuccess:failure:">&ndash;&nbsp;getHomeWeatherSketchWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get home weather simple summary parameters.
+Sush as city name, state of weather(clear, cloudy, rainy, and so on),weather icon.
+获取家庭天气简要参数。该请求返回家庭所在城市的简要天气参数，如城市名称、当天的天气状况(晴、多云、雨等)、天气图片信息。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getHomeWeatherSketchWithSuccess:(void ( ^ ) ( TuyaSmartWeatherSketchModel *))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>request successful callback
+请求成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>request failed callback
+请求失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>get home weather simple summary parameters.
+Sush as city name, state of weather(clear, cloudy, rainy, and so on),weather icon.
+获取家庭天气简要参数。该请求返回家庭所在城市的简要天气参数，如城市名称、当天的天气状况(晴、多云、雨等)、天气图片信息。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHome+Weather.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getHomeWeatherDetailWithOption:success:failure:" title="getHomeWeatherDetailWithOption:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getHomeWeatherDetailWithOption:success:failure:">&ndash;&nbsp;getHomeWeatherDetailWithOption:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>get home weather summary parameters.
+Such as tempature, humidity, ultraviolet index, air quality.
+获取家庭天气详细参数,如温度、湿度、紫外线指数、空气质量等</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getHomeWeatherDetailWithOption:(TuyaSmartWeatherOptionModel *)<em>optionModel</em> success:(void ( ^ ) ( NSArray&lt;TuyaSmartWeatherModel*&gt; *))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>optionModel</code></th>
+						<td><p>weather details unit configuration
+天气详情参数单位配置</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>request successful callback
+请求成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>request failed callback
+请求失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>get home weather summary parameters.
+Such as tempature, humidity, ultraviolet index, air quality.
+获取家庭天气详细参数,如温度、湿度、紫外线指数、空气质量等</p><p>optionModel can be nil.If nil, request would made using last request which is successful callback.
+If optionModel using only one confiuration, the other two configuration would use last successful request.</p>
+
+
+<p>Different areas  are use different weather services.
+Particularly, if location of current home account is in China, server would not return wind speed and pressure.</p>
+
+
+<p>optionModel 可以为nil。若为nil，返回的参数会上一次请求成功的参数设置，若只改变一种单位设置进行请求，另外两种也依然会保留上一次请求成功的参数设置。</p>
+
+
+<p>由于天气服务在不同地区的使用的服务不同，不同地区返回的参数有可能不同。
+特别的，如果当前家庭账号位置在中国，那么不会返回风速和气压信息。</p>
+
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHome+Weather.h</code></p>
 			</div>
 			
 			
@@ -1338,6 +1634,93 @@
 </div>
 						</div>
 						
+
+						<a title="SIGMesh Methods" name="task_SIGMesh Methods"></a>
+						<h2 class="task-title">SIGMesh Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sigMeshModel" title="sigMeshModel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sigMeshModel">&nbsp;&nbsp;sigMeshModel</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) TuyaSmartBleMeshModel *sigMeshModel</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSIGMeshListWithSuccess:failure:" title="getSIGMeshListWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSIGMeshListWithSuccess:failure:">&ndash;&nbsp;getSIGMeshListWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取家庭下的 sig mesh 列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getSIGMeshListWithSuccess:(void ( ^ ) ( NSArray&lt;TuyaSmartBleMeshModel*&gt; *list ))<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>操作成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>操作失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取家庭下的 sig mesh 列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartHome+SIGMesh.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -1350,7 +1733,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

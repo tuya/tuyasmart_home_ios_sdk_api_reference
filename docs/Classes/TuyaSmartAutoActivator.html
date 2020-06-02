@@ -76,9 +76,13 @@
 		
 		<option value="//api/name/bindDeviceWithHomeId:devIds:success:failure:">- bindDeviceWithHomeId:devIds:success:failure:</option>
 		
+		<option value="//api/name/getTokenSuccess:failure:">- getTokenSuccess:failure:</option>
+		
 		<option value="//api/name/startDiscoverRouterWithDevIds:type:timeout:success:failure:">- startDiscoverRouterWithDevIds:type:timeout:success:failure:</option>
 		
 		<option value="//api/name/startDiscoverWithDevIds:timeout:success:failure:">- startDiscoverWithDevIds:timeout:success:failure:</option>
+		
+		<option value="//api/name/startDiscoverWithDevIds:token:timeout:success:failure:">- startDiscoverWithDevIds:token:timeout:success:failure:</option>
 		
 		<option value="//api/name/stopDiscover">- stopDiscover</option>
 		
@@ -428,6 +432,151 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/getTokenSuccess:failure:" title="getTokenSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTokenSuccess:failure:">&ndash;&nbsp;getTokenSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>To obtain token (valid for 10 minutes)
+获取配网Token（有效期10分钟）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getTokenSuccess:(TYSuccessString)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>To obtain token (valid for 10 minutes)
+获取配网Token（有效期10分钟）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartAutoActivator.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startDiscoverWithDevIds:token:timeout:success:failure:" title="startDiscoverWithDevIds:token:timeout:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startDiscoverWithDevIds:token:timeout:success:failure:">&ndash;&nbsp;startDiscoverWithDevIds:token:timeout:success:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>start discover device
+开始发现设备</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startDiscoverWithDevIds:(NSArray&lt;NSString*&gt; *)<em>devIds</em> token:(NSString *)<em>token</em> timeout:(NSTimeInterval)<em>timeout</em> success:(TYSuccessHandler)<em>success</em> failure:(TYFailureError)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>devIds</code></th>
+						<td><p>Device Id list</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>token</code></th>
+						<td><p>Config Token</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>timeout</code></th>
+						<td><p>Timeout, default 100 seconds</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>Success block</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>Failure block</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>start discover device
+开始发现设备</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartAutoActivator.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/startDiscoverRouterWithDevIds:type:timeout:success:failure:" title="startDiscoverRouterWithDevIds:type:timeout:success:failure:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/startDiscoverRouterWithDevIds:type:timeout:success:failure:">&ndash;&nbsp;startDiscoverRouterWithDevIds:type:timeout:success:failure:</a></code>
 </h3>
@@ -645,7 +794,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

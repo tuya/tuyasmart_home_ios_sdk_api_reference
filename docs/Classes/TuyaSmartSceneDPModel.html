@@ -58,17 +58,11 @@
 		
 		<option value="//api/name/actDetail">actDetail</option>
 		
-		<option value="//api/name/cityId">cityId</option>
-		
-		<option value="//api/name/cityLatitude">cityLatitude</option>
-		
-		<option value="//api/name/cityLongitude">cityLongitude</option>
-		
-		<option value="//api/name/cityName">cityName</option>
-		
 		<option value="//api/name/condCalExtraInfo">condCalExtraInfo</option>
 		
 		<option value="//api/name/devId">devId</option>
+		
+		<option value="//api/name/displayType">displayType</option>
 		
 		<option value="//api/name/dpId">dpId</option>
 		
@@ -81,8 +75,6 @@
 		<option value="//api/name/entitySubId">entitySubId</option>
 		
 		<option value="//api/name/entityType">entityType</option>
-		
-		<option value="//api/name/expr">expr</option>
 		
 		<option value="//api/name/iconUrl">iconUrl</option>
 		
@@ -144,54 +136,6 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/__deprecated" title="__deprecated"></a>
-	<h3 class="method-title"><code><a href="#//api/name/__deprecated">&nbsp;&nbsp;__deprecated</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>废弃属性
-deprecated <a href="#//api/name/property">property</a>.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger sceneDPId __deprecated</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>废弃属性
-deprecated <a href="#//api/name/property">property</a>.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSceneDPModel.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/dpId" title="dpId"></a>
 	<h3 class="method-title"><code><a href="#//api/name/dpId">&nbsp;&nbsp;dpId</a></code>
 </h3>
@@ -203,7 +147,7 @@ deprecated <a href="#//api/name/property">property</a>.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>条件id或设备id
+				<p>条件id或设备id。
 Id of device or condition.</p>
 			</div>
 			
@@ -221,7 +165,7 @@ Id of device or condition.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>条件id或设备id
+				<p>条件id或设备id。
 Id of device or condition.</p>
 			</div>
 			
@@ -251,8 +195,8 @@ Id of device or condition.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>条件DP Id或设备DP Id
-Datapoint Id of device or confition.</p>
+				<p>产品ID.代表这个dataPoint所属于的产品的id。设备类型的dp才有这个值。
+Produce ID.This <a href="#//api/name/property">property</a> represent the product&rsquo;s id this datapoints belongs to. Only device&rsquo;s datapoints has this value.</p>
 			</div>
 			
 		    
@@ -269,8 +213,8 @@ Datapoint Id of device or confition.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>条件DP Id或设备DP Id
-Datapoint Id of device or confition.</p>
+				<p>产品ID.代表这个dataPoint所属于的产品的id。设备类型的dp才有这个值。
+Produce ID.This <a href="#//api/name/property">property</a> represent the product&rsquo;s id this datapoints belongs to. Only device&rsquo;s datapoints has this value.</p>
 			</div>
 			
 
@@ -395,7 +339,7 @@ Condition name or datapoint name of device.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>非设备dp的图标,比如条件的图标。
+				<p>非设备dp的图标,比如天气条件的图标。
 icon url of condition.</p>
 			</div>
 			
@@ -413,56 +357,8 @@ icon url of condition.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>非设备dp的图标,比如条件的图标。
+				<p>非设备dp的图标,比如天气条件的图标。
 icon url of condition.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSceneDPModel.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/devId" title="devId"></a>
-	<h3 class="method-title"><code><a href="#//api/name/devId">&nbsp;&nbsp;devId</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设备Id
-device Id.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *devId</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>设备Id
-device Id.</p>
 			</div>
 			
 
@@ -632,198 +528,6 @@ Description of data point and selected value.</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/cityId" title="cityId"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cityId">&nbsp;&nbsp;cityId</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>城市id
-city Id</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *cityId</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>城市id
-city Id</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSceneDPModel.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cityName" title="cityName"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cityName">&nbsp;&nbsp;cityName</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>城市名称
-city name</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *cityName</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>城市名称
-city name</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSceneDPModel.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cityLatitude" title="cityLatitude"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cityLatitude">&nbsp;&nbsp;cityLatitude</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>城市经度
-city&rsquo;s latitude</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CLLocationDegrees cityLatitude</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>城市经度
-city&rsquo;s latitude</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSceneDPModel.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/cityLongitude" title="cityLongitude"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cityLongitude">&nbsp;&nbsp;cityLongitude</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>城市纬度
-city&rsquo;s longitude</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CLLocationDegrees cityLongitude</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>城市纬度
-city&rsquo;s longitude</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">TuyaSmartSceneDPModel.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/operators" title="operators"></a>
 	<h3 class="method-title"><code><a href="#//api/name/operators">&nbsp;&nbsp;operators</a></code>
 </h3>
@@ -883,8 +587,8 @@ operators like &ldquo;[&rdquo;==&ldquo;]&rdquo;</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>条件名称、code、属性等信息
-condition name, code , propertys.</p>
+				<p>条件名称、code、属性等信息，具体内容查看dpModel属性。
+condition name, code , propertys.For details check the <a href="#//api/name/dpModel">dpModel</a> property.</p>
 			</div>
 			
 		    
@@ -901,8 +605,8 @@ condition name, code , propertys.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>条件名称、code、属性等信息
-condition name, code , propertys.</p>
+				<p>条件名称、code、属性等信息，具体内容查看dpModel属性。
+condition name, code , propertys.For details check the <a href="#//api/name/dpModel">dpModel</a> property.</p>
 			</div>
 			
 
@@ -931,7 +635,7 @@ condition name, code , propertys.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>条件或设备的DP点子id 如：“humidity” 或 “1”
+				<p>条件或设备的DP点子id 如：“humidity” 或 “1”。设备使用dpId属性即可。
 subId of condition or datapoint of device, condition&rsquo;s subId like @&ldquo;humidity&rdquo;, device data point&rsquo;s subId like &ldquo;1&rdquo;.</p>
 			</div>
 			
@@ -949,7 +653,7 @@ subId of condition or datapoint of device, condition&rsquo;s subId like @&ldquo;
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>条件或设备的DP点子id 如：“humidity” 或 “1”
+				<p>条件或设备的DP点子id 如：“humidity” 或 “1”。设备使用dpId属性即可。
 subId of condition or datapoint of device, condition&rsquo;s subId like @&ldquo;humidity&rdquo;, device data point&rsquo;s subId like &ldquo;1&rdquo;.</p>
 			</div>
 			
@@ -1075,8 +779,8 @@ extra infomation about dp value&rsquo;s calculate type and other extra infomatio
 			
 			
 			<div class="method-subsection brief-description">
-				<p>选择行,-1表示没选择
-selected row, -1 means haven&rsquo;t selected.</p>
+				<p>选择的step,-1表示没选择，需要手动赋值。value类型的，表示从min向上加了x个step。bool类型的，0表示YES，1表示NO。enum类型表示在enum列表中的位置。
+selected row, -1 means haven&rsquo;t selected, setted by you.</p>
 			</div>
 			
 		    
@@ -1093,8 +797,8 @@ selected row, -1 means haven&rsquo;t selected.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>选择行,-1表示没选择
-selected row, -1 means haven&rsquo;t selected.</p>
+				<p>选择的step,-1表示没选择，需要手动赋值。value类型的，表示从min向上加了x个step。bool类型的，0表示YES，1表示NO。enum类型表示在enum列表中的位置。
+selected row, -1 means haven&rsquo;t selected, setted by you.</p>
 			</div>
 			
 
@@ -1123,8 +827,8 @@ selected row, -1 means haven&rsquo;t selected.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>操作选择行,-1表示没选择 如：">&ldquo;
-selected operator, -1 means haven&rsquo;t selected.</p>
+				<p>操作选择行,-1表示没选择 如：">&ldquo;，需要手动赋值。选中的操作符在operators中的index。
+selected operator, -1 means haven&rsquo;t selected, setted by you.</p>
 			</div>
 			
 		    
@@ -1141,8 +845,8 @@ selected operator, -1 means haven&rsquo;t selected.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>操作选择行,-1表示没选择 如：">&ldquo;
-selected operator, -1 means haven&rsquo;t selected.</p>
+				<p>操作选择行,-1表示没选择 如：">&ldquo;，需要手动赋值。选中的操作符在operators中的index。
+selected operator, -1 means haven&rsquo;t selected, setted by you.</p>
 			</div>
 			
 
@@ -1160,8 +864,8 @@ selected operator, -1 means haven&rsquo;t selected.</p>
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/expr" title="expr"></a>
-	<h3 class="method-title"><code><a href="#//api/name/expr">&nbsp;&nbsp;expr</a></code>
+	<a name="//api/name/__deprecated" title="__deprecated"></a>
+	<h3 class="method-title"><code><a href="#//api/name/__deprecated">&nbsp;&nbsp;__deprecated</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1171,13 +875,13 @@ selected operator, -1 means haven&rsquo;t selected.</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>条件具体内容 (二维数组)
+				<p>条件具体内容 (二维数组)，需要手动赋值。
 如：((&ldquo;$humidity&rdquo;,&ldquo;==&rdquo;,&ldquo;comfort&rdquo;), (“$dp1”，“==”，“1”), &hellip;)</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSArray *expr</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSArray *__deprecated</code></div>
 
 		    
 			
@@ -1189,10 +893,106 @@ selected operator, -1 means haven&rsquo;t selected.</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>条件具体内容 (二维数组)
+				<p>条件具体内容 (二维数组)，需要手动赋值。
 如：((&ldquo;$humidity&rdquo;,&ldquo;==&rdquo;,&ldquo;comfort&rdquo;), (“$dp1”，“==”，“1”), &hellip;)</p>
 
-<p>expression, eg:((&ldquo;$humidity&rdquo;,&ldquo;==&rdquo;,&ldquo;comfort&rdquo;), (“$dp1”，“==”，“1”), &hellip;)</p>
+<p>expression, eg:((&ldquo;$humidity&rdquo;,&ldquo;==&rdquo;,&ldquo;comfort&rdquo;), (“$dp1”，“==”，“1”), &hellip;), setted by you.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneDPModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/devId" title="devId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/devId">&nbsp;&nbsp;devId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设备Id, 需要手动赋值。
+device Id，setted by you.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *devId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设备Id, 需要手动赋值。
+device Id，setted by you.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneDPModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/displayType" title="displayType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/displayType">&nbsp;&nbsp;displayType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>DP值的展示类型，见枚举列表
+displayType of this datapoint‘s value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) SceneDisplayType displayType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>DP值的展示类型，见枚举列表
+displayType of this datapoint‘s value.</p>
 			</div>
 			
 
@@ -1224,7 +1024,7 @@ selected operator, -1 means haven&rsquo;t selected.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

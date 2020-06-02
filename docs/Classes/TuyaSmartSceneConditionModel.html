@@ -78,6 +78,10 @@
 		
 		<option value="//api/name/iconUrl">iconUrl</option>
 		
+		<option value="//api/name/productId">productId</option>
+		
+		<option value="//api/name/productPic">productPic</option>
+		
 		<option value="//api/name/scenarioId">scenarioId</option>
 		
 		<option value="//api/name/status">status</option>
@@ -527,7 +531,7 @@ Meteorological condition&rsquo;s subId or device&rsquo;s dpId, timer contion is 
 			
 			<div class="method-subsection brief-description">
 				<p>条件表达式
-如：(&ldquo;$humidity&rdquo;,&ldquo;==&rdquo;,&ldquo;comfort&rdquo;) 或（“$dp1”，“==”，“1”）
+如：(&ldquo;$humidity&rdquo;,&ldquo;==&rdquo;,&ldquo;comfort&rdquo;) 或（“$dp1”，“==”，1）
 定时：{timeZoneId = &ldquo;Asia/Shanghai&rdquo;,loops = &ldquo;0000000&rdquo;,time = &ldquo;08:00&rdquo;,date = &ldquo;20180308&rdquo;}
 loops = &ldquo;0000000&rdquo;  表示 ： 周日周一周二周三周四周五周六
 详情参见文档:<a href="https://tuyainc.github.io/tuyasmart">https://tuyainc.github.io/tuyasmart</a>_home_ios_sdk_doc/zh-hans/resource/SmartScene.html#%E5%8D%95%E4%B8%AA%E5%9C%BA%E6%99%AF%E6%93%8D%E4%BD%9C</p>
@@ -548,13 +552,13 @@ loops = &ldquo;0000000&rdquo;  表示 ： 周日周一周二周三周四周五�
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>条件表达式
-如：(&ldquo;$humidity&rdquo;,&ldquo;==&rdquo;,&ldquo;comfort&rdquo;) 或（“$dp1”，“==”，“1”）
+如：(&ldquo;$humidity&rdquo;,&ldquo;==&rdquo;,&ldquo;comfort&rdquo;) 或（“$dp1”，“==”，1）
 定时：{timeZoneId = &ldquo;Asia/Shanghai&rdquo;,loops = &ldquo;0000000&rdquo;,time = &ldquo;08:00&rdquo;,date = &ldquo;20180308&rdquo;}
 loops = &ldquo;0000000&rdquo;  表示 ： 周日周一周二周三周四周五周六
 详情参见文档:<a href="https://tuyainc.github.io/tuyasmart">https://tuyainc.github.io/tuyasmart</a>_home_ios_sdk_doc/zh-hans/resource/SmartScene.html#%E5%8D%95%E4%B8%AA%E5%9C%BA%E6%99%AF%E6%93%8D%E4%BD%9C</p>
 
 <p>Condition&rsquo;s expression, like
-(&ldquo;$humidity&rdquo;,&ldquo;==&rdquo;,&ldquo;comfort&rdquo;) or（“$dp1”，“==”，“1”）
+(&ldquo;$humidity&rdquo;,&ldquo;==&rdquo;,&ldquo;comfort&rdquo;) or（“$dp1”，“==”，1）
 timer：{timeZoneId = &ldquo;Asia/Shanghai&rdquo;,loops = &ldquo;0000000&rdquo;,time = &ldquo;08:00&rdquo;,date = &ldquo;20180308&rdquo;}
 loops = &ldquo;0000000&rdquo; ,each bit representing from sunday to saturday.
 Details in Doc: <a href="https://tuyainc.github.io/tuyasmart">https://tuyainc.github.io/tuyasmart</a>_home_ios_sdk_doc/en/resource/SmartScene.html#smart-scene</p>
@@ -750,6 +754,102 @@ city name</p>
 		    
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/productId" title="productId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/productId">&nbsp;&nbsp;productId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>推荐商品id。
+Recommend product id.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *productId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>推荐商品id。
+Recommend product id.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneConditionModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/productPic" title="productPic"></a>
+	<h3 class="method-title"><code><a href="#//api/name/productPic">&nbsp;&nbsp;productPic</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>推荐商品图标。
+Recommend product icon.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *productPic</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>推荐商品图标。
+Recommend product icon.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TuyaSmartSceneConditionModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -765,7 +865,7 @@ city name</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Tuya.Inc. All rights reserved. Updated: 2019-12-03</p>
+						<p class="copyright">Copyright &copy; 2020 Tuya.Inc. All rights reserved. Updated: 2020-06-02</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
