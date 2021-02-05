@@ -24,8 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "iOS SDK", "index.html", [
-    [ "Tuya iOS Home SDK API Reference", "index.html", null ],
+  [ "Tuya iOS Home SDK API Reference", "index.html", [
     [ "Deprecated List", "deprecated.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -43,12 +42,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"interface_t_y_b_l_e_adv_model.html#a61b4a7d32a149dbf2e372d0551bbf82b",
-"interface_tuya_smart_device_model.html#a50272607addb6cec278861890c4c8752",
-"interface_tuya_smart_home.html#af69e2b3e559736c5de32a2081a4260e8",
-"interface_tuya_smart_multi_control_group_model.html#aa772a8dfa5e9eb3e976c35e3764f7615",
-"interface_tuya_smart_scene_log_data.html#ad24f5d93a6bee10f090cc306c4e72f1b",
-"interface_tuya_smart_weather_model.html#a1fee3869171f4646ea97d25f2cd3462c"
+"interface_t_y_api_merge_model.html#a9726ea413ba998b654b678a07c7949a0",
+"interface_tuya_smart_device_model.html#a151c984260c283a42dbf0a43ea630b55",
+"interface_tuya_smart_home.html#a134b90fce0559030e622108fe124687f",
+"interface_tuya_smart_multi_control_device_model.html#a0a7149655547a8b6ad1cef4c650ac189",
+"interface_tuya_smart_scene_d_p_model.html#a6e484ce55d5625adde981b84e59da576",
+"interface_tuya_smart_user.html#ab50bc581edc0977e7cb1590a2c192255"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

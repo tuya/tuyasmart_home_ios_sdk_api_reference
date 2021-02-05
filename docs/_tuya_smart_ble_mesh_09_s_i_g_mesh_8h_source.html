@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: /Users/dasauto/Documents/TuyaRepo/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/Public/SIG/TuyaSmartBleMesh+SIGMesh.h Source File</title>
+		<title>Tuya iOS Home SDK API Reference: /Users/dasauto/Documents/TuyaRepo/TuyaSmartBLEMeshKit/TuyaSmartBLEMeshKit/Public/SIG/TuyaSmartBleMesh+SIGMesh.h Source File</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -96,70 +96,70 @@ $(document).ready(function(){initNavTree('_tuya_smart_ble_mesh_09_s_i_g_mesh_8h_
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;NS_ASSUME_NONNULL_BEGIN</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="category_tuya_smart_ble_mesh_07_s_i_g_mesh_08.html">   11</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_tuya_smart_ble_mesh_07_s_i_g_mesh_08.html">TuyaSmartBleMesh (SIGMesh)</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;+ (void)createSIGMeshWithHomeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                        success:(<span class="keywordtype">void</span>(^)(<a class="code" href="interface_tuya_smart_ble_mesh_model.html">TuyaSmartBleMeshModel</a> *meshModel))success</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                        failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;- (void)addSIGMeshSubDeviceWithUuid:(NSString *)uuid</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                             devKey:(NSString *)devKey</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                             nodeId:(NSString *)nodeId</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                         productKey:(NSString *)productKey</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                ver:(NSString *)ver</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                mac:(NSString *)mac</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                            success:(<span class="keywordtype">void</span> (^)(NSString *devId, NSString *name))success</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                            failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;- (void)addSIGMeshSubDeviceWithUuid:(NSString *)uuid</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                             devKey:(NSString *)devKey</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                             nodeId:(NSString *)nodeId</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                         productKey:(NSString *)productKey</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                ver:(NSString *)ver</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                mac:(NSString *)mac</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                          companyId:(nonnull NSString *)companyId</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                           venderId:(nonnull NSString *)venderId</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                            success:(<span class="keywordtype">void</span> (^)(NSString *devId, NSString *name))success</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                            failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;- (void)addSIGMeshSubDeviceWithUuid:(NSString *)uuid</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                             devKey:(NSString *)devKey</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                             nodeId:(NSString *)nodeId</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                          productId:(NSString *)productId</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                ver:(NSString *)ver</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                mac:(NSString *)mac</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                            success:(<span class="keywordtype">void</span> (^)(NSString *devId, NSString *name))success</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                            failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;- (void)addSIGMeshSubDeviceWithUuid:(NSString *)uuid</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                             devKey:(NSString *)devKey</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                             nodeId:(NSString *)nodeId</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                          productId:(NSString *)productId</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                ver:(NSString *)ver</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                mac:(NSString *)mac</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                          companyId:(nonnull NSString *)companyId</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                           venderId:(nonnull NSString *)venderId</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                            success:(<span class="keywordtype">void</span> (^)(NSString *devId, NSString *name))success</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                            failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;- (void)getSIGMeshNodeAddressFromServerWithSuccess:(TYSuccessInt)success failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;- (void)getMultiNodeAddressFromServerWithNumber:(NSInteger)number success:(TYSuccessList)success failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;- (void)removeMeshSubDeviceWithGatewayId:(NSString *)gatewayId</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                             subDeviceId:(NSString *)subDeviceId</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                 success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                 failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;- (void)getSIGMeshSourceAddressFromServerWithSuccess:(TYSuccessInt)success</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                             failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="interface_tuya_smart_ble_mesh.html#a1b08f501d053804b7073f719ffb3b0ce">  126</a></span>&#160;NS_ASSUME_NONNULL_END</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="category_tuya_smart_ble_mesh_07_s_i_g_mesh_08.html">   12</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_tuya_smart_ble_mesh_07_s_i_g_mesh_08.html">TuyaSmartBleMesh (SIGMesh)</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;+ (void)createSIGMeshWithHomeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                        success:(<span class="keywordtype">void</span>(^)(<a class="code" href="interface_tuya_smart_ble_mesh_model.html">TuyaSmartBleMeshModel</a> *meshModel))success</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                        failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;- (void)addSIGMeshSubDeviceWithUuid:(NSString *)uuid</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                             devKey:(NSString *)devKey</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                             nodeId:(NSString *)nodeId</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                         productKey:(NSString *)productKey</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                ver:(NSString *)ver</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                mac:(NSString *)mac</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                            success:(<span class="keywordtype">void</span> (^)(NSString *devId, NSString *name))success</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                            failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;- (void)addSIGMeshSubDeviceWithUuid:(NSString *)uuid</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                             devKey:(NSString *)devKey</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                             nodeId:(NSString *)nodeId</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                         productKey:(NSString *)productKey</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                ver:(NSString *)ver</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                mac:(NSString *)mac</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                          companyId:(nonnull NSString *)companyId</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                           venderId:(nonnull NSString *)venderId</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                            success:(<span class="keywordtype">void</span> (^)(NSString *devId, NSString *name))success</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                            failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;- (void)addSIGMeshSubDeviceWithUuid:(NSString *)uuid</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                             devKey:(NSString *)devKey</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                             nodeId:(NSString *)nodeId</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                          productId:(NSString *)productId</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                ver:(NSString *)ver</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                mac:(NSString *)mac</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                            success:(<span class="keywordtype">void</span> (^)(NSString *devId, NSString *name))success</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                            failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;- (void)addSIGMeshSubDeviceWithUuid:(NSString *)uuid</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                             devKey:(NSString *)devKey</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                             nodeId:(NSString *)nodeId</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                          productId:(NSString *)productId</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                ver:(NSString *)ver</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                mac:(NSString *)mac</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                          companyId:(nonnull NSString *)companyId</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                           venderId:(nonnull NSString *)venderId</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                            success:(<span class="keywordtype">void</span> (^)(NSString *devId, NSString *name))success</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                            failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;- (void)getSIGMeshNodeAddressFromServerWithSuccess:(TYSuccessInt)success failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;- (void)getMultiNodeAddressFromServerWithNumber:(NSInteger)number success:(TYSuccessList)success failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;- (void)removeMeshSubDeviceWithGatewayId:(NSString *)gatewayId</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                             subDeviceId:(NSString *)subDeviceId</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                 success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                 failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;- (void)getSIGMeshSourceAddressFromServerWithSuccess:(TYSuccessInt)success</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                             failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="interface_tuya_smart_ble_mesh.html#a1b08f501d053804b7073f719ffb3b0ce">  127</a></span>&#160;NS_ASSUME_NONNULL_END</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="acategory_tuya_smart_ble_mesh_07_s_i_g_mesh_08_html"><div class="ttname"><a href="category_tuya_smart_ble_mesh_07_s_i_g_mesh_08.html">TuyaSmartBleMesh(SIGMesh)</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartBleMesh+SIGMesh.h:11</div></div>
+<div class="ttc" id="acategory_tuya_smart_ble_mesh_07_s_i_g_mesh_08_html"><div class="ttname"><a href="category_tuya_smart_ble_mesh_07_s_i_g_mesh_08.html">TuyaSmartBleMesh(SIGMesh)</a></div><div class="ttdoc">SIG mesh information category for bluetooth mesh.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBleMesh+SIGMesh.h:12</div></div>
 <div class="ttc" id="ainterface_tuya_smart_ble_mesh_model_html"><div class="ttname"><a href="interface_tuya_smart_ble_mesh_model.html">TuyaSmartBleMeshModel</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartBleMeshModel.h:13</div></div>
 <!-- start footer part -->
 		<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

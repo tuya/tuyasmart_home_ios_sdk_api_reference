@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: TuyaSmartMultiControl Class Reference</title>
+		<title>Tuya iOS Home SDK API Reference: TuyaSmartMultiControl Class Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('interface_tuya_smart_multi_control.htm
 <div class="title">TuyaSmartMultiControl Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="interface_tuya_smart_multi_control.html" title="TuyaSmartMultiControl provides multi-control related functions.">TuyaSmartMultiControl</a> provides multi-control related functions.  
+ <a href="interface_tuya_smart_multi_control.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TuyaSmartMultiControl:</div>
 <div class="dyncontent">
@@ -113,7 +116,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a3b26d21131920523c43949ace8a83c97"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_multi_control.html#a3b26d21131920523c43949ace8a83c97">getDeviceDpInfoWithDevId:success:failure:</a></td></tr>
 <tr class="separator:a3b26d21131920523c43949ace8a83c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Method Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="interface_tuya_smart_multi_control.html" title="TuyaSmartMultiControl provides multi-control related functions.">TuyaSmartMultiControl</a> provides multi-control related functions. </p>
+</div><h2 class="groupheader">Method Documentation</h2>
 <a id="a9205ab7e21dc84e22444d7635bb25483"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9205ab7e21dc84e22444d7635bb25483">&#9670;&nbsp;</a></span>addMultiControlWithDevId:groupName:groupDetail:success:failure:</h2>
 
@@ -162,7 +167,7 @@ Instance Methods</h2></td></tr>
     <tr><td class="paramname">devId</td><td>Main device ID. </td></tr>
     <tr><td class="paramname">groupName</td><td>The group name. </td></tr>
     <tr><td class="paramname">groupDetail</td><td>Multi-control group association details. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_multi_control_model.html">TuyaSmartMultiControlModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_multi_control_model.html" title="Multi-Control Model.">TuyaSmartMultiControlModel</a> will be returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -253,7 +258,7 @@ Instance Methods</h2></td></tr>
 <p>Get information about all dp points under the device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. A list of <a class="el" href="interface_tuya_smart_multi_control_datapoint_model.html">TuyaSmartMultiControlDatapointModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. A list of <a class="el" href="interface_tuya_smart_multi_control_datapoint_model.html" title="Multi-Control Datapoint Model.">TuyaSmartMultiControlDatapointModel</a> will be returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -295,7 +300,7 @@ Instance Methods</h2></td></tr>
 <p>Query the list of device IDs and the list of device groups (including user's and family's) that support performing actions. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. A list of <a class="el" href="interface_tuya_smart_multi_control_device_model.html">TuyaSmartMultiControlDeviceModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. A list of <a class="el" href="interface_tuya_smart_multi_control_device_model.html" title="Multi-Control Device Model.">TuyaSmartMultiControlDeviceModel</a> will be returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -337,7 +342,7 @@ Instance Methods</h2></td></tr>
 <p>Get dp point information of attached devices, associated multi-control, scene automation information. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_multi_control_dp_relation_model.html">TuyaSmartMultiControlDpRelationModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_multi_control_dp_relation_model.html" title="Multi-Control data Model.">TuyaSmartMultiControlDpRelationModel</a> will be returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -386,7 +391,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">devId</td><td>Main device ID. </td></tr>
     <tr><td class="paramname">dpId</td><td>DP ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_multi_control_link_model.html">TuyaSmartMultiControlLinkModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_multi_control_link_model.html" title="Multi-Control link Model.">TuyaSmartMultiControlLinkModel</a> will be returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -435,7 +440,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">devId</td><td>Main device ID. </td></tr>
     <tr><td class="paramname">model</td><td>Multi-control group data model. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_multi_control_model.html">TuyaSmartMultiControlModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_multi_control_model.html" title="Multi-Control Model.">TuyaSmartMultiControlModel</a> will be returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>

@@ -1,8 +1,10 @@
 var interface_tuya_smart_device =
 [
     [ "cancelFirmwareRequest", "interface_tuya_smart_device.html#ac1f5f78a82692159b068b62b00ec73f5", null ],
+    [ "cancelUpgradeFirmware:success:failure:", "interface_tuya_smart_device.html#a9f11155c651f5bd481ad9002f8033ab7", null ],
     [ "deviceWithDeviceId:", "interface_tuya_smart_device.html#abd4df0b56d5b2abeb8be43d6e0ce1412", null ],
     [ "getAutoUpgradeSwitchInfoWithSuccess:failure:", "interface_tuya_smart_device.html#a305182b7df3210605b4108b747f6e143", null ],
+    [ "getDevPropertyWithSuccess:failure:", "interface_tuya_smart_device.html#ad5451df42bdfaa3097d8772af88bc1b0", null ],
     [ "getFirmwareUpgradeInfo:failure:", "interface_tuya_smart_device.html#a47ab736209d3aa866370612c273e6f4d", null ],
     [ "getOfflineReminderStatusWithSuccess:failure:", "interface_tuya_smart_device.html#aa32ed665d76c273ea82aba705ea3ff2a", null ],
     [ "getOfflineReminderSupportStatusWithSuccess:failure:", "interface_tuya_smart_device.html#ab92b4ca07da687c27dee915598974111", null ],
@@ -16,8 +18,10 @@ var interface_tuya_smart_device =
     [ "remove:failure:", "interface_tuya_smart_device.html#abbea355861e6f16c34c06299ed8f9e71", null ],
     [ "resetFactory:failure:", "interface_tuya_smart_device.html#a0e89d545dd3e0627a92e98f4954f7fc3", null ],
     [ "saveUpgradeInfoWithSwitchValue:success:failure:", "interface_tuya_smart_device.html#ac093caddbbb3b41b464d315cadb5af33", null ],
+    [ "setDevPropertyWithCode:value:success:failure:", "interface_tuya_smart_device.html#aa6b9a90ba924b15ae291b2b805cf5b16", null ],
     [ "setOfflineReminderStatus:success:failure:", "interface_tuya_smart_device.html#abab261c64f1f74dbe6a53562e59fc684", null ],
-    [ "syncDeviceInfoWithDevId:homeId:success:failure:", "interface_tuya_smart_device.html#a77b3f08f205f2f38cff8d2973ee8d4d0", null ],
+    [ "syncDeviceInfoWithDevId:homeId:success:failure:", "interface_tuya_smart_device.html#a3833e0716a35c011dd3b88a4646bc9f0", null ],
+    [ "syncDeviceInfoWithDevId:success:failure:", "interface_tuya_smart_device.html#a3bc2387d4ae2eb1f547775274ae8e2fa", null ],
     [ "syncLocationToDeviceWithSucecess:failure:", "interface_tuya_smart_device.html#ad7e52df5df00d648362b9ed01c228b69", null ],
     [ "syncSubDeviceInfoWithGatewayId:devId:success:failure:", "interface_tuya_smart_device.html#a84baebaa20e71a9f96eb8b6bf17c4d64", null ],
     [ "syncWithCloud:failure:", "interface_tuya_smart_device.html#ac1627a83c10114c135ce14aa8ce6c7ef", null ],

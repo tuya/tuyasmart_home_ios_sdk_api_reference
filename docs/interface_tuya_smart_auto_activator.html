@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: TuyaSmartAutoActivator Class Reference</title>
+		<title>Tuya iOS Home SDK API Reference: TuyaSmartAutoActivator Class Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('interface_tuya_smart_auto_activator.ht
 <div class="title">TuyaSmartAutoActivator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="interface_tuya_smart_auto_activator.html" title="TuyaSmartAutoActivator is used for password-free configuration.">TuyaSmartAutoActivator</a> is used for password-free configuration.  
+ <a href="interface_tuya_smart_auto_activator.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TuyaSmartAutoActivator:</div>
 <div class="dyncontent">
@@ -127,10 +130,13 @@ Class Methods</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ac183a98e7d183480b4ec5768da797854"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_tuya_smart_auto_activator_delegate-p.html">TuyaSmartAutoActivatorDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_auto_activator.html#ac183a98e7d183480b4ec5768da797854">delegate</a></td></tr>
-<tr class="memdesc:ac183a98e7d183480b4ec5768da797854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the delegate of <a class="el" href="interface_tuya_smart_auto_activator.html">TuyaSmartAutoActivator</a>.  <a href="interface_tuya_smart_auto_activator.html#ac183a98e7d183480b4ec5768da797854">More...</a><br /></td></tr>
+<tr class="memdesc:ac183a98e7d183480b4ec5768da797854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the delegate of <a class="el" href="interface_tuya_smart_auto_activator.html" title="TuyaSmartAutoActivator is used for password-free configuration.">TuyaSmartAutoActivator</a>.  <a href="interface_tuya_smart_auto_activator.html#ac183a98e7d183480b4ec5768da797854">More...</a><br /></td></tr>
 <tr class="separator:ac183a98e7d183480b4ec5768da797854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Method Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="interface_tuya_smart_auto_activator.html" title="TuyaSmartAutoActivator is used for password-free configuration.">TuyaSmartAutoActivator</a> is used for password-free configuration. </p>
+<p>This class provides password-free configuration capabilities. </p>
+</div><h2 class="groupheader">Method Documentation</h2>
 <a id="aeeb2d768f14a72e0ec961fb4dac10715"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeeb2d768f14a72e0ec961fb4dac10715">&#9670;&nbsp;</a></span>autoActiveRouterDeviceListWithHomeId:</h2>
 
@@ -153,7 +159,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Current list of all home gateway router devices. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="interface_tuya_smart_router_activator.html#a54e78c91e70fb339dd277c9e9055b8a7">autoActiveRouterDeviceListWithHomeId: (TuyaSmartRouterActivator)</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="interface_tuya_smart_router_activator.html#a54e78c91e70fb339dd277c9e9055b8a7">autoActiveRouterDeviceListWithHomeId: (TuyaSmartRouterActivator)</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -338,7 +344,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="interface_tuya_smart_router_activator.html#ab30ba3f2497c96229609f9292180daba">startDiscoverRouterWithDevIds:type:timeout:success:failure: (TuyaSmartRouterActivator)</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="interface_tuya_smart_router_activator.html#ab30ba3f2497c96229609f9292180daba">startDiscoverRouterWithDevIds:type:timeout:success:failure: (TuyaSmartRouterActivator)</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -379,7 +385,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Start discovering devices. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Start discovering devices.</p>
+<p>The 'devIds' should be obtained form <a class="el" href="interface_tuya_smart_auto_activator.html#a037c2b67bf162a66b457389b585087cc">autoActiveSupportedDeviceListWithHomeId:</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devIds</td><td>Device Id list </td></tr>
     <tr><td class="paramname">timeout</td><td>Timeout, default 100 seconds. </td></tr>
@@ -434,7 +442,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Start discovering devices. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Start discovering devices.</p>
+<p>The 'devIds' should be obtained form <a class="el" href="interface_tuya_smart_auto_activator.html#a037c2b67bf162a66b457389b585087cc">autoActiveSupportedDeviceListWithHomeId:</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devIds</td><td>Device ID list. </td></tr>
     <tr><td class="paramname">token</td><td>Configuration token. </td></tr>
@@ -487,7 +497,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return the delegate of <a class="el" href="interface_tuya_smart_auto_activator.html">TuyaSmartAutoActivator</a>. </p>
+<p>Return the delegate of <a class="el" href="interface_tuya_smart_auto_activator.html" title="TuyaSmartAutoActivator is used for password-free configuration.">TuyaSmartAutoActivator</a>. </p>
 
 </div>
 </div>

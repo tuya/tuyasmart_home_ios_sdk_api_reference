@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: &lt;TuyaSmartHomeDelegate&gt; Protocol Reference</title>
+		<title>Tuya iOS Home SDK API Reference: &lt;TuyaSmartHomeDelegate&gt; Protocol Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -122,6 +122,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:aeb3c0c349a41c0310b91a970a3a4988e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b65aa2678f146a45cd3bc0ff5131dbf"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_home_delegate-p.html#a2b65aa2678f146a45cd3bc0ff5131dbf">home:device:firmwareUpgradeStatusModel:</a></td></tr>
 <tr class="separator:a2b65aa2678f146a45cd3bc0ff5131dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcb8728e0bf99b22d2735da9e6753bf"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_home_delegate-p.html#a7fcb8728e0bf99b22d2735da9e6753bf">home:didUpdateOTAModelList:</a></td></tr>
+<tr class="separator:a7fcb8728e0bf99b22d2735da9e6753bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7766b973b20294ba97532f2965de71d5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_home_delegate-p.html#a7766b973b20294ba97532f2965de71d5">home:didAddGroup:</a></td></tr>
 <tr class="separator:a7766b973b20294ba97532f2965de71d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9408d311ccfb035522c6294b85abc9d5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_home_delegate-p.html#a9408d311ccfb035522c6294b85abc9d5">home:group:dpsUpdate:</a></td></tr>
@@ -292,7 +294,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000043">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="protocol_tuya_smart_home_delegate-p.html#a2b65aa2678f146a45cd3bc0ff5131dbf">home:device:firmwareUpgradeStatusModel:</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000054">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="protocol_tuya_smart_home_delegate-p.html#a2b65aa2678f146a45cd3bc0ff5131dbf">home:device:firmwareUpgradeStatusModel:</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -655,6 +657,49 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
+<a id="a7fcb8728e0bf99b22d2735da9e6753bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fcb8728e0bf99b22d2735da9e6753bf">&#9670;&nbsp;</a></span>home:didUpdateOTAModelList:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) home: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_home.html">TuyaSmartHome</a> *)&#160;</td>
+          <td class="paramname"><em>home</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">didUpdateOTAModelList:</td>
+          <td></td>
+          <td class="paramtype">(NSArray&lt; <a class="el" href="interface_tuya_smart_device_o_t_a_model.html">TuyaSmartDeviceOTAModel</a> * &gt; *)&#160;</td>
+          <td class="paramname"><em>otaModelList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>the delegate when family/shared devices ota status are updated </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">home</td><td>The home instance </td></tr>
+    <tr><td class="paramname">otaModelList</td><td>OTA model list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9408d311ccfb035522c6294b85abc9d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9408d311ccfb035522c6294b85abc9d5">&#9670;&nbsp;</a></span>home:group:dpsUpdate:</h2>
 
@@ -901,7 +946,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="protocol_tuya_smart_home_delegate-p.html#a8ba439eca6ef84cad7ee7d9544d83c96">home:didAddRoom:</a> or <a class="el" href="protocol_tuya_smart_home_delegate-p.html#ade738748343e5ee355afde0166d3a2a7">home:didRemoveRoom:</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000053">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="protocol_tuya_smart_home_delegate-p.html#a8ba439eca6ef84cad7ee7d9544d83c96">home:didAddRoom:</a> or <a class="el" href="protocol_tuya_smart_home_delegate-p.html#ade738748343e5ee355afde0166d3a2a7">home:didRemoveRoom:</a> instead. </dd></dl>
 
 </div>
 </div>

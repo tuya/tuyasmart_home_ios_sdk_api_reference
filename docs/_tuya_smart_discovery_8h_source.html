@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: /Users/dasauto/Documents/TuyaRepo/TuyaSmartActivatorKit/TuyaSmartActivatorKit/Public/TuyaSmartDiscovery.h Source File</title>
+		<title>Tuya iOS Home SDK API Reference: /Users/dasauto/Documents/TuyaRepo/TuyaSmartActivatorKit/TuyaSmartActivatorKit/Public/TuyaSmartDiscovery.h Source File</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -106,38 +106,38 @@ $(document).ready(function(){initNavTree('_tuya_smart_discovery_8h_source.html',
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">@end</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="interface_tuya_smart_discovery.html">   25</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_tuya_smart_discovery.html">TuyaSmartDiscovery</a> : NSObject</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="interface_tuya_smart_discovery.html#ad2d03bb84f84bbae4cfdb385fc931830">   27</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;TuyaSmartDiscoveryDelegate&gt; <a class="code" href="interface_tuya_smart_discovery.html#ace221ba29560a8ab82498ce3c0f1e8d9">delegate</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;- (void)getTokenSuccess:(TYSuccessString)success</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="interface_tuya_smart_discovery.html">   31</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_tuya_smart_discovery.html">TuyaSmartDiscovery</a> : NSObject</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="interface_tuya_smart_discovery.html#ad2d03bb84f84bbae4cfdb385fc931830">   33</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;TuyaSmartDiscoveryDelegate&gt; <a class="code" href="interface_tuya_smart_discovery.html#ace221ba29560a8ab82498ce3c0f1e8d9">delegate</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;- (void)startDiscoveryWithSsid:(NSString *)ssid</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                     password:(NSString *)password</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                      timeout:(NSTimeInterval)timeout</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                      success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                      failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;- (void)startDiscoveryWithSsid:(NSString *)ssid</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                     password:(NSString *)password</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                         token:(NSString *)token</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                      timeout:(NSTimeInterval)timeout</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                      success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                      failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;- (void)bindDeviceWithHomeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId devIds:(NSArray &lt;NSString *&gt;*)devIds success:(TYSuccessHandler)success failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;- (void)<a class="code" href="interface_tuya_smart_discovery.html#ad2d03bb84f84bbae4cfdb385fc931830">stopDiscovery</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_discovery_delegate-p.html#a77f505174e4ffe9fb3c3bb7e7b5caf67">   73</a></span>&#160;NS_ASSUME_NONNULL_END</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;- (void)getTokenSuccess:(TYSuccessString)success</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;- (void)startDiscoveryWithSsid:(NSString *)ssid</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                     password:(NSString *)password</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                      timeout:(NSTimeInterval)timeout</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                      success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                      failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;- (void)startDiscoveryWithSsid:(NSString *)ssid</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                     password:(NSString *)password</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                         token:(NSString *)token</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                      timeout:(NSTimeInterval)timeout</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                      success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                      failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;- (void)bindDeviceWithHomeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId devIds:(NSArray &lt;NSString *&gt;*)devIds success:(TYSuccessHandler)success failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;- (void)<a class="code" href="interface_tuya_smart_discovery.html#ad2d03bb84f84bbae4cfdb385fc931830">stopDiscovery</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_discovery_delegate-p.html#a77f505174e4ffe9fb3c3bb7e7b5caf67">   79</a></span>&#160;NS_ASSUME_NONNULL_END</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="ainterface_tuya_smart_discovery_html_ace221ba29560a8ab82498ce3c0f1e8d9"><div class="ttname"><a href="interface_tuya_smart_discovery.html#ace221ba29560a8ab82498ce3c0f1e8d9">TuyaSmartDiscovery::delegate</a></div><div class="ttdeci">id&lt; TuyaSmartDiscoveryDelegate &gt; delegate</div><div class="ttdef"><b>Definition:</b> TuyaSmartDiscovery.h:27</div></div>
-<div class="ttc" id="ainterface_tuya_smart_device_model_html"><div class="ttname"><a href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartDeviceModel.h:45</div></div>
-<div class="ttc" id="ainterface_tuya_smart_discovery_html"><div class="ttname"><a href="interface_tuya_smart_discovery.html">TuyaSmartDiscovery</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartDiscovery.h:26</div></div>
+<div class="ttc" id="ainterface_tuya_smart_discovery_html_ace221ba29560a8ab82498ce3c0f1e8d9"><div class="ttname"><a href="interface_tuya_smart_discovery.html#ace221ba29560a8ab82498ce3c0f1e8d9">TuyaSmartDiscovery::delegate</a></div><div class="ttdeci">id&lt; TuyaSmartDiscoveryDelegate &gt; delegate</div><div class="ttdef"><b>Definition:</b> TuyaSmartDiscovery.h:33</div></div>
+<div class="ttc" id="ainterface_tuya_smart_device_model_html"><div class="ttname"><a href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a></div><div class="ttdoc">device information.</div><div class="ttdef"><b>Definition:</b> TuyaSmartDeviceModel.h:47</div></div>
+<div class="ttc" id="ainterface_tuya_smart_discovery_html"><div class="ttname"><a href="interface_tuya_smart_discovery.html">TuyaSmartDiscovery</a></div><div class="ttdoc">TuyaSmartDiscovery is used for EZ configuration.</div><div class="ttdef"><b>Definition:</b> TuyaSmartDiscovery.h:32</div></div>
 <div class="ttc" id="aprotocol_tuya_smart_discovery_delegate-p_html"><div class="ttname"><a href="protocol_tuya_smart_discovery_delegate-p.html">TuyaSmartDiscoveryDelegate-p</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartDiscovery.h:13</div></div>
 <div class="ttc" id="ainterface_tuya_smart_discovery_html_ad2d03bb84f84bbae4cfdb385fc931830"><div class="ttname"><a href="interface_tuya_smart_discovery.html#ad2d03bb84f84bbae4cfdb385fc931830">-[TuyaSmartDiscovery stopDiscovery]</a></div><div class="ttdeci">void stopDiscovery()</div><div class="ttdoc">Stop discovering.</div></div>
 <!-- start footer part -->

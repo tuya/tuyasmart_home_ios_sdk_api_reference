@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: TuyaSmartBleMeshGroup Class Reference</title>
+		<title>Tuya iOS Home SDK API Reference: TuyaSmartBleMeshGroup Class Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('interface_tuya_smart_ble_mesh_group.ht
 <div class="title">TuyaSmartBleMeshGroup Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Tuya Bluetooth mesh device groups, including group creation, updating, adding devices to groups, etc.  
+ <a href="interface_tuya_smart_ble_mesh_group.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TuyaSmartBleMeshGroup:</div>
 <div class="dyncontent">
@@ -149,7 +152,10 @@ Properties</h2></td></tr>
 <tr class="memitem:a01de1feb02f3e66ac4ce6aef3390f61b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_tuya_smart_group_model.html">TuyaSmartGroupModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_ble_mesh_group.html#a01de1feb02f3e66ac4ce6aef3390f61b">meshGroupModel</a></td></tr>
 <tr class="separator:a01de1feb02f3e66ac4ce6aef3390f61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Method Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Tuya Bluetooth mesh device groups, including group creation, updating, adding devices to groups, etc. </p>
+<p>Form a group of mesh devices with the same function and control them simultaneously with a single command. </p>
+</div><h2 class="groupheader">Method Documentation</h2>
 <a id="a25d9617205dd2bcd95e6ef4833dac7bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25d9617205dd2bcd95e6ef4833dac7bd">&#9670;&nbsp;</a></span>addDeviceWithDeviceId:success:failure:</h2>
 
@@ -508,7 +514,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="interface_tuya_smart_ble_mesh_group.html">TuyaSmartBleMeshGroup</a> getDeviceListInfoWithSuccess:failure: instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="interface_tuya_smart_ble_mesh_group.html" title="Tuya Bluetooth mesh device groups, including group creation, updating, adding devices to groups,...">TuyaSmartBleMeshGroup</a> getDeviceListInfoWithSuccess:failure: instead. </dd></dl>
 
 </div>
 </div>
@@ -644,11 +650,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>通过多个参数 对mesh控制 </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Custom param publish </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">params</td><td>param:dictionary { "localId":"c050" ,"dps":{"1":true} “pcc”:"1510"} </td></tr>
-    <tr><td class="paramname">success</td><td>成功回调 </td></tr>
-    <tr><td class="paramname">failure</td><td>失败回调 </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
