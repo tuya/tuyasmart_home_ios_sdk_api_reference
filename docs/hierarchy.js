@@ -30,6 +30,7 @@ var hierarchy =
       [ "TuyaSmartDeviceModel", "interface_tuya_smart_device_model.html", null ],
       [ "TuyaSmartDeviceModuleModel", "interface_tuya_smart_device_module_model.html", null ],
       [ "TuyaSmartDeviceNBIoTModel", "interface_tuya_smart_device_n_b_io_t_model.html", null ],
+      [ "TuyaSmartDeviceOTAModel", "interface_tuya_smart_device_o_t_a_model.html", null ],
       [ "TuyaSmartDeviceShareRequestModel", "interface_tuya_smart_device_share_request_model.html", null ],
       [ "TuyaSmartDeviceSubpiecesModel", "interface_tuya_smart_device_subpieces_model.html", null ],
       [ "TuyaSmartDeviceWifiModel", "interface_tuya_smart_device_wifi_model.html", null ],
@@ -159,8 +160,11 @@ var hierarchy =
     [ "TuyaSmartBLEManager(Channel)", "category_tuya_smart_b_l_e_manager_07_channel_08.html", null ],
     [ "TuyaSmartBleMesh(SIGMesh)", "category_tuya_smart_ble_mesh_07_s_i_g_mesh_08.html", null ],
     [ "TuyaSmartBleMeshGroup(SIGMesh)", "category_tuya_smart_ble_mesh_group_07_s_i_g_mesh_08.html", null ],
+    [ "TuyaSmartDevice(Home)", "category_tuya_smart_device_07_home_08.html", null ],
     [ "TuyaSmartDevice(OfflineReminder)", "category_tuya_smart_device_07_offline_reminder_08.html", null ],
+    [ "TuyaSmartDeviceModel(Home)", "category_tuya_smart_device_model_07_home_08.html", null ],
     [ "TuyaSmartGroup(DpCode)", "category_tuya_smart_group_07_dp_code_08.html", null ],
+    [ "TuyaSmartGroup(Home)", "category_tuya_smart_group_07_home_08.html", null ],
     [ "TuyaSmartHome(BleMesh)", "category_tuya_smart_home_07_ble_mesh_08.html", null ],
     [ "TuyaSmartHome(SIGMesh)", "category_tuya_smart_home_07_s_i_g_mesh_08.html", null ],
     [ "TuyaSmartHome(TYDeprecatedApi)", "category_tuya_smart_home_07_t_y_deprecated_api_08.html", null ],
@@ -183,5 +187,8 @@ var hierarchy =
     [ "TuyaSmartUser(DeprecatedApi)", "category_tuya_smart_user_07_deprecated_api_08.html", null ],
     [ "TuyaSmartUser(LoginByQRCode)", "category_tuya_smart_user_07_login_by_q_r_code_08.html", null ],
     [ "TuyaSmartUser(Region)", "category_tuya_smart_user_07_region_08.html", null ],
-    [ "TuyaSmartUser(WCSession)", "category_tuya_smart_user_07_w_c_session_08.html", null ]
+    [ "TuyaSmartUser(WCSession)", "category_tuya_smart_user_07_w_c_session_08.html", null ],
+    [ "UIViewController", null, [
+      [ "TuyaSmartDefaultPanelViewController", "interface_tuya_smart_default_panel_view_controller.html", null ]
+    ] ]
 ];

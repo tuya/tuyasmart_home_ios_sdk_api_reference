@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: /Users/dasauto/Documents/TuyaRepo/TuyaSmartBLEKit/TuyaSmartBLEKit/Public/TuyaSmartBLEDeviceProtocol.h Source File</title>
+		<title>Tuya iOS Home SDK API Reference: /Users/dasauto/Documents/TuyaRepo/TuyaSmartBLEKit/TuyaSmartBLEKit/Public/TuyaSmartBLEDeviceProtocol.h Source File</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -99,117 +99,116 @@ $(document).ready(function(){initNavTree('_tuya_smart_b_l_e_device_protocol_8h_s
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">@class</span> TYBLEAgent;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;NS_ASSUME_NONNULL_BEGIN</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#pragma mark - Scan Protocol</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#pragma mark - Scan Protocol</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_scan_protocol-p.html">   20</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_tuya_smart_b_l_e_scan_protocol-p.html">TuyaSmartBLEScanProtocol</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_active_protocol-p.html#a5556a55f0f413f3e793e8687db4012a2">   22</a></span>&#160;<span class="keyword">typedef</span> void(^TYBLEScanResultHandher)(id&lt;TuyaSmartBLEDeviceProtocol&gt; deviceInfo);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;- (void)bleAgent:(TYBLEAgent *)agent bleScan:(TYBLEScan *)scan didScanBLEDevicePeripheral:(TYBLEPeripheral *)peripheral error:(NSError *)error scanResultHandher:(TYBLEScanResultHandher)handler;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#pragma mark -------------------------------------------------------------</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_scan_protocol-p.html">   19</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_tuya_smart_b_l_e_scan_protocol-p.html">TuyaSmartBLEScanProtocol</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_active_protocol-p.html#a5556a55f0f413f3e793e8687db4012a2">   21</a></span>&#160;<span class="keyword">typedef</span> void(^TYBLEScanResultHandher)(id&lt;TuyaSmartBLEDeviceProtocol&gt; deviceInfo);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- (void)bleAgent:(TYBLEAgent *)agent bleScan:(TYBLEScan *)scan didScanBLEDevicePeripheral:(TYBLEPeripheral *)peripheral error:(NSError *)error scanResultHandher:(TYBLEScanResultHandher)handler;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#pragma mark -------------------------------------------------------------</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#pragma mark - Active Protocol</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_active_protocol-p.html">   40</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_tuya_smart_b_l_e_active_protocol-p.html">TuyaSmartBLEActiveProtocol</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;- (void)startActiveWithDevice:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                       homeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                      success:(<span class="keywordtype">void</span>(^)(<a class="code" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *deviceModel))success</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                      failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#pragma mark -------------------------------------------------------------</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#pragma mark - Active Protocol</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_active_protocol-p.html">   39</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_tuya_smart_b_l_e_active_protocol-p.html">TuyaSmartBLEActiveProtocol</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;- (void)startActiveWithDevice:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                       homeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                      success:(<span class="keywordtype">void</span>(^)(<a class="code" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *deviceModel))success</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                      failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#pragma mark -------------------------------------------------------------</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#pragma mark - Config Protocol</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_config_protocol-p.html">   60</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_tuya_smart_b_l_e_config_protocol-p.html">TuyaSmartBLEConfigProtocol</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;- (void)publishDpsWithDeviceInfo:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                             dps:(NSDictionary *)dps</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                             success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                             failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;- (void)publishQueryDpCommand:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                        dpIds:(NSArray *)dpIds</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                      success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                      failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;- (void)connectWithDeviceInfo:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                      success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                      failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;- (void)disconnectWithDeviceInfo:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                         success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                         failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;- (void)removeWithDeviceInfo:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                     success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                     failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;- (void)resetWithDeviceInfo:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                    success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;- (void)sendOTAPackWithDeviceInfo:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                          otaData:(NSData *)otaData</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                          otaType:(TuyaSmartBLEOTAType)otaType</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                       otaVersion:(NSString *)otaVersion</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                          success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                          failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;- (NSInteger)peripheralRSSI:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;- (BOOL)deviceOnlineState:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#pragma mark -------------------------------------------------------------</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#pragma mark - Config Protocol</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_config_protocol-p.html">   59</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_tuya_smart_b_l_e_config_protocol-p.html">TuyaSmartBLEConfigProtocol</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;- (void)publishDpsWithDeviceInfo:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                             dps:(NSDictionary *)dps</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                             success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                             failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;- (void)publishQueryDpCommand:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                        dpIds:(NSArray *)dpIds</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                      success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                      failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;- (void)connectWithDeviceInfo:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                      success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                      failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;- (void)disconnectWithDeviceInfo:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                         success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                         failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;- (void)removeWithDeviceInfo:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                     success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                     failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;- (void)resetWithDeviceInfo:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                    failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;- (void)sendOTAPackWithDeviceInfo:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                          otaData:(NSData *)otaData</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                          otaType:(TuyaSmartBLEOTAType)otaType</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                       otaVersion:(NSString *)otaVersion</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                          success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                          failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;- (NSInteger)peripheralRSSI:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;- (BOOL)deviceOnlineState:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a>&gt;)deviceInfo;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#pragma mark -------------------------------------------------------------</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#pragma mark - Device Protocol</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">  160</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a5c63485b6baadaf8239bd5f4db0ad8ac">  163</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) TYBLEAgent                        *<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a5c63485b6baadaf8239bd5f4db0ad8ac">agent</a>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a7488bfb624d4add967e4db258619a6f2">  166</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) TYBLEPeripheral                   *<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a7488bfb624d4add967e4db258619a6f2">peripheral</a>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a020819a7d25bb1578655ec82c23ebe3b">  169</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_t_y_b_l_e_adv_model.html">TYBLEAdvModel</a>                     *<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a020819a7d25bb1578655ec82c23ebe3b">advModel</a>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a8b6b4d4bcaf746ef97dad19b51f9b8a8">  172</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) id&lt;TuyaSmartBLEActiveProtocol&gt;    <a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a8b6b4d4bcaf746ef97dad19b51f9b8a8">activeManager</a>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a8995a6610c2a2d5cd56a1cba77b1fc33">  175</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) id&lt;TuyaSmartBLEConfigProtocol&gt;    <a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a4810ba58303d818a80f618ab9dbcb88e">configManager</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#pragma mark - Device Protocol</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">  159</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a5c63485b6baadaf8239bd5f4db0ad8ac">  162</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) TYBLEAgent                        *<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a5c63485b6baadaf8239bd5f4db0ad8ac">agent</a>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a7488bfb624d4add967e4db258619a6f2">  165</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) TYBLEPeripheral                   *<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a7488bfb624d4add967e4db258619a6f2">peripheral</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a020819a7d25bb1578655ec82c23ebe3b">  168</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_t_y_b_l_e_adv_model.html">TYBLEAdvModel</a>                     *<a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a020819a7d25bb1578655ec82c23ebe3b">advModel</a>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a8b6b4d4bcaf746ef97dad19b51f9b8a8">  171</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) id&lt;TuyaSmartBLEActiveProtocol&gt;    <a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a8b6b4d4bcaf746ef97dad19b51f9b8a8">activeManager</a>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a8995a6610c2a2d5cd56a1cba77b1fc33">  174</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) id&lt;TuyaSmartBLEConfigProtocol&gt;    <a class="code" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a4810ba58303d818a80f618ab9dbcb88e">configManager</a>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">@optional</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;- (instancetype)initWithActiveManager:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_active_protocol-p.html">TuyaSmartBLEActiveProtocol</a>&gt;)activeManager</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                        configManager:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_config_protocol-p.html">TuyaSmartBLEConfigProtocol</a>&gt;)configManager;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;NS_ASSUME_NONNULL_END</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;- (instancetype)initWithActiveManager:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_active_protocol-p.html">TuyaSmartBLEActiveProtocol</a>&gt;)activeManager</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                        configManager:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_b_l_e_config_protocol-p.html">TuyaSmartBLEConfigProtocol</a>&gt;)configManager;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;NS_ASSUME_NONNULL_END</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="ainterface_t_y_b_l_e_adv_model_html"><div class="ttname"><a href="interface_t_y_b_l_e_adv_model.html">TYBLEAdvModel</a></div><div class="ttdoc">TYBLEAdvModel provides model for developers to obtaine BLE device broadcast information.</div><div class="ttdef"><b>Definition:</b> TYBLEAdvModel.h:28</div></div>
-<div class="ttc" id="aprotocol_tuya_smart_b_l_e_device_protocol-p_html_a5c63485b6baadaf8239bd5f4db0ad8ac"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a5c63485b6baadaf8239bd5f4db0ad8ac">TuyaSmartBLEDeviceProtocol-p::agent</a></div><div class="ttdeci">TYBLEAgent * agent</div><div class="ttdoc">Tuya BLE agent.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:163</div></div>
-<div class="ttc" id="aprotocol_tuya_smart_b_l_e_active_protocol-p_html"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_active_protocol-p.html">TuyaSmartBLEActiveProtocol-p</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:40</div></div>
-<div class="ttc" id="ainterface_tuya_smart_device_model_html"><div class="ttname"><a href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartDeviceModel.h:45</div></div>
-<div class="ttc" id="aprotocol_tuya_smart_b_l_e_device_protocol-p_html_a7488bfb624d4add967e4db258619a6f2"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a7488bfb624d4add967e4db258619a6f2">TuyaSmartBLEDeviceProtocol-p::peripheral</a></div><div class="ttdeci">TYBLEPeripheral * peripheral</div><div class="ttdoc">Tuya BLE peripheral.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:166</div></div>
-<div class="ttc" id="aprotocol_tuya_smart_b_l_e_device_protocol-p_html_a020819a7d25bb1578655ec82c23ebe3b"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a020819a7d25bb1578655ec82c23ebe3b">TuyaSmartBLEDeviceProtocol-p::advModel</a></div><div class="ttdeci">TYBLEAdvModel * advModel</div><div class="ttdoc">Tuya BLE advertising model.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:169</div></div>
-<div class="ttc" id="aprotocol_tuya_smart_b_l_e_device_protocol-p_html_a8b6b4d4bcaf746ef97dad19b51f9b8a8"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a8b6b4d4bcaf746ef97dad19b51f9b8a8">TuyaSmartBLEDeviceProtocol-p::activeManager</a></div><div class="ttdeci">id&lt; TuyaSmartBLEActiveProtocol &gt; activeManager</div><div class="ttdoc">Tuya active protocol-based manager object.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:172</div></div>
-<div class="ttc" id="aprotocol_tuya_smart_b_l_e_config_protocol-p_html"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_config_protocol-p.html">TuyaSmartBLEConfigProtocol-p</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:60</div></div>
-<div class="ttc" id="aprotocol_tuya_smart_b_l_e_scan_protocol-p_html"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_scan_protocol-p.html">TuyaSmartBLEScanProtocol-p</a></div><div class="ttdoc">TuyaSmartBLEDeviceProtocol provides protocol methons for developers to implement activator,...</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:20</div></div>
-<div class="ttc" id="aprotocol_tuya_smart_b_l_e_device_protocol-p_html"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol-p</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:160</div></div>
-<div class="ttc" id="aprotocol_tuya_smart_b_l_e_device_protocol-p_html_a4810ba58303d818a80f618ab9dbcb88e"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a4810ba58303d818a80f618ab9dbcb88e">TuyaSmartBLEDeviceProtocol-p::configManager</a></div><div class="ttdeci">id&lt; TuyaSmartBLEConfigProtocol &gt; configManager</div><div class="ttdoc">Tuya config protocol-based manager object.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:175</div></div>
+<div class="ttc" id="ainterface_t_y_b_l_e_adv_model_html"><div class="ttname"><a href="interface_t_y_b_l_e_adv_model.html">TYBLEAdvModel</a></div><div class="ttdoc">TYBLEAdvModel provides model for developers to obtaine BLE device broadcast information.</div><div class="ttdef"><b>Definition:</b> TYBLEAdvModel.h:31</div></div>
+<div class="ttc" id="aprotocol_tuya_smart_b_l_e_device_protocol-p_html_a5c63485b6baadaf8239bd5f4db0ad8ac"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a5c63485b6baadaf8239bd5f4db0ad8ac">TuyaSmartBLEDeviceProtocol-p::agent</a></div><div class="ttdeci">TYBLEAgent * agent</div><div class="ttdoc">Tuya BLE agent.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:162</div></div>
+<div class="ttc" id="aprotocol_tuya_smart_b_l_e_active_protocol-p_html"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_active_protocol-p.html">TuyaSmartBLEActiveProtocol-p</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:39</div></div>
+<div class="ttc" id="ainterface_tuya_smart_device_model_html"><div class="ttname"><a href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a></div><div class="ttdoc">device information.</div><div class="ttdef"><b>Definition:</b> TuyaSmartDeviceModel.h:47</div></div>
+<div class="ttc" id="aprotocol_tuya_smart_b_l_e_device_protocol-p_html_a7488bfb624d4add967e4db258619a6f2"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a7488bfb624d4add967e4db258619a6f2">TuyaSmartBLEDeviceProtocol-p::peripheral</a></div><div class="ttdeci">TYBLEPeripheral * peripheral</div><div class="ttdoc">Tuya BLE peripheral.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:165</div></div>
+<div class="ttc" id="aprotocol_tuya_smart_b_l_e_device_protocol-p_html_a020819a7d25bb1578655ec82c23ebe3b"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a020819a7d25bb1578655ec82c23ebe3b">TuyaSmartBLEDeviceProtocol-p::advModel</a></div><div class="ttdeci">TYBLEAdvModel * advModel</div><div class="ttdoc">Tuya BLE advertising model.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:168</div></div>
+<div class="ttc" id="aprotocol_tuya_smart_b_l_e_device_protocol-p_html_a8b6b4d4bcaf746ef97dad19b51f9b8a8"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a8b6b4d4bcaf746ef97dad19b51f9b8a8">TuyaSmartBLEDeviceProtocol-p::activeManager</a></div><div class="ttdeci">id&lt; TuyaSmartBLEActiveProtocol &gt; activeManager</div><div class="ttdoc">Tuya active protocol-based manager object.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:171</div></div>
+<div class="ttc" id="aprotocol_tuya_smart_b_l_e_config_protocol-p_html"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_config_protocol-p.html">TuyaSmartBLEConfigProtocol-p</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:59</div></div>
+<div class="ttc" id="aprotocol_tuya_smart_b_l_e_scan_protocol-p_html"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_scan_protocol-p.html">TuyaSmartBLEScanProtocol-p</a></div><div class="ttdoc">TuyaSmartBLEDeviceProtocol provides protocol methods for developers to implement activator,...</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:19</div></div>
+<div class="ttc" id="aprotocol_tuya_smart_b_l_e_device_protocol-p_html"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_device_protocol-p.html">TuyaSmartBLEDeviceProtocol-p</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:159</div></div>
+<div class="ttc" id="aprotocol_tuya_smart_b_l_e_device_protocol-p_html_a4810ba58303d818a80f618ab9dbcb88e"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a4810ba58303d818a80f618ab9dbcb88e">TuyaSmartBLEDeviceProtocol-p::configManager</a></div><div class="ttdeci">id&lt; TuyaSmartBLEConfigProtocol &gt; configManager</div><div class="ttdoc">Tuya config protocol-based manager object.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEDeviceProtocol.h:174</div></div>
 <!-- start footer part -->
 		<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 			<ul>

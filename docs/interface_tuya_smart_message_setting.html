@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: TuyaSmartMessageSetting Class Reference</title>
+		<title>Tuya iOS Home SDK API Reference: TuyaSmartMessageSetting Class Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('interface_tuya_smart_message_setting.h
 <div class="title">TuyaSmartMessageSetting Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="interface_tuya_smart_message_setting.html" title="TuyaSmartMessageSetting provides methods for device DND.">TuyaSmartMessageSetting</a> provides methods for device DND.  
+ <a href="interface_tuya_smart_message_setting.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TuyaSmartMessageSetting:</div>
 <div class="dyncontent">
@@ -113,7 +116,9 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a2963a6b868649557d6f35510becc05fc"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_message_setting.html#a2963a6b868649557d6f35510becc05fc">removeDNDWithTimerID:success:failure:</a></td></tr>
 <tr class="separator:a2963a6b868649557d6f35510becc05fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Method Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="interface_tuya_smart_message_setting.html" title="TuyaSmartMessageSetting provides methods for device DND.">TuyaSmartMessageSetting</a> provides methods for device DND. </p>
+</div><h2 class="groupheader">Method Documentation</h2>
 <a id="acbf55e9b7d0d35291276152672230d79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbf55e9b7d0d35291276152672230d79">&#9670;&nbsp;</a></span>addDNDWithDNDRequestModel:success:failure:</h2>
 
@@ -145,11 +150,11 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>添加设备免打扰时间段 add device Do Not Disturb time </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add device Do Not Disturb time. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">requestModel</td><td>免打扰设置模型 DND request model </td></tr>
-    <tr><td class="paramname">success</td><td>成功回调 success </td></tr>
-    <tr><td class="paramname">failure</td><td>失败回调 failure </td></tr>
+    <tr><td class="paramname">requestModel</td><td>DND request model. </td></tr>
+    <tr><td class="paramname">success</td><td>When successfully add Do Not Disturb time, this block will be called. </td></tr>
+    <tr><td class="paramname">failure</td><td>When error occurred, return TYFailureError. </td></tr>
   </table>
   </dd>
 </dl>
@@ -181,10 +186,10 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取设备消息免打扰状态 get device Do Not Disturb status </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get device Do Not Disturb status. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">success</td><td>成功回调 success </td></tr>
-    <tr><td class="paramname">failure</td><td>失败回调 failure </td></tr>
+    <tr><td class="paramname">success</td><td>When successfully get device Do Not Disturb status, this block will be called. </td></tr>
+    <tr><td class="paramname">failure</td><td>When error occurred, return TYFailureError. </td></tr>
   </table>
   </dd>
 </dl>
@@ -216,10 +221,10 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取设备列表 get device list </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get device list. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">success</td><td>成功回调 success </td></tr>
-    <tr><td class="paramname">failure</td><td>失败回调 failure </td></tr>
+    <tr><td class="paramname">success</td><td>When successfully get device list, this block will be called. </td></tr>
+    <tr><td class="paramname">failure</td><td>When error occurred, return TYFailureError. </td></tr>
   </table>
   </dd>
 </dl>
@@ -251,10 +256,10 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>获取免打扰时间段列表 get Do Not Disturb list </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get Do Not Disturb list. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">success</td><td>成功回调 success </td></tr>
-    <tr><td class="paramname">failure</td><td>失败回调 failure </td></tr>
+    <tr><td class="paramname">success</td><td>When successfully get Do Not Disturb list, this block will be called. </td></tr>
+    <tr><td class="paramname">failure</td><td>When error occurred, return TYFailureError. </td></tr>
   </table>
   </dd>
 </dl>
@@ -298,12 +303,12 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>更新设备免打扰时间段 modify device Do Not Disturb time </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Modify device Do Not Disturb time. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timerID</td><td>时间ID time ID </td></tr>
-    <tr><td class="paramname">requestModel</td><td>免打扰设置模型 DND request model </td></tr>
-    <tr><td class="paramname">success</td><td>成功回调 success </td></tr>
-    <tr><td class="paramname">failure</td><td>失败回调 failure </td></tr>
+    <tr><td class="paramname">timerID</td><td>time ID. </td></tr>
+    <tr><td class="paramname">requestModel</td><td>DND request model. </td></tr>
+    <tr><td class="paramname">success</td><td>When successfully modify device Do Not Disturb time, this block will be called. </td></tr>
+    <tr><td class="paramname">failure</td><td>When error occurred, return TYFailureError. </td></tr>
   </table>
   </dd>
 </dl>
@@ -341,11 +346,11 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>移除设置的免打扰时间段 remove Do Not Disturb time </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Remove Do Not Disturb time. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timerID</td><td>时间ID time ID </td></tr>
-    <tr><td class="paramname">success</td><td>成功回调 success </td></tr>
-    <tr><td class="paramname">failure</td><td>失败回调 failure </td></tr>
+    <tr><td class="paramname">timerID</td><td>time ID. </td></tr>
+    <tr><td class="paramname">success</td><td>When successfully remove Do Not Disturb time, this block will be called. </td></tr>
+    <tr><td class="paramname">failure</td><td>When error occurred, return TYFailureError. </td></tr>
   </table>
   </dd>
 </dl>
@@ -383,11 +388,11 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>设置设备消息免打扰开关 set device Do Not Disturb status </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set device Do Not Disturb status. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">flags</td><td>开关状态 switch status </td></tr>
-    <tr><td class="paramname">success</td><td>成功回调 success </td></tr>
-    <tr><td class="paramname">failure</td><td>失败回调 failure </td></tr>
+    <tr><td class="paramname">flags</td><td>switch status. </td></tr>
+    <tr><td class="paramname">success</td><td>When successfully set device Do Not Disturb status, this block will be called. </td></tr>
+    <tr><td class="paramname">failure</td><td>When error occurred, return TYFailureError. </td></tr>
   </table>
   </dd>
 </dl>

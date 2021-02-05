@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: TuyaSmartHomeManager Class Reference</title>
+		<title>Tuya iOS Home SDK API Reference: TuyaSmartHomeManager Class Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -111,8 +111,10 @@ Instance Methods</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a905298202540a9840f393afe168b8715"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_tuya_smart_home_manager_delegate-p.html">TuyaSmartHomeManagerDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home_manager.html#a905298202540a9840f393afe168b8715">delegate</a></td></tr>
+<tr class="memdesc:a905298202540a9840f393afe168b8715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate for add and remove home result.  <a href="interface_tuya_smart_home_manager.html#a905298202540a9840f393afe168b8715">More...</a><br /></td></tr>
 <tr class="separator:a905298202540a9840f393afe168b8715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0f0243ed113d6edd4b88b424252e292"><td class="memItemLeft" align="right" valign="top">NSArray&lt; <a class="el" href="interface_tuya_smart_home_model.html">TuyaSmartHomeModel</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home_manager.html#af0f0243ed113d6edd4b88b424252e292">homes</a></td></tr>
+<tr class="memdesc:af0f0243ed113d6edd4b88b424252e292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Home List.  <a href="interface_tuya_smart_home_manager.html#af0f0243ed113d6edd4b88b424252e292">More...</a><br /></td></tr>
 <tr class="separator:af0f0243ed113d6edd4b88b424252e292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
@@ -215,7 +217,7 @@ Properties</h2></td></tr>
 <p>Get homes list. If you want to get home details, need to initialize a home, call getHomeDetailWithSuccess: failure:</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. A list of <a class="el" href="interface_tuya_smart_home_model.html">TuyaSmartHomeModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. A list of <a class="el" href="interface_tuya_smart_home_model.html" title="Home Model.">TuyaSmartHomeModel</a> will be returned. </td></tr>
     <tr><td class="paramname">failure</td><td>If error occurred while adding the task, this block will be called. </td></tr>
   </table>
   </dd>
@@ -276,7 +278,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="interface_tuya_smart_home.html#a349838a9bc1c6e4084c3aea588886f51">joinFamilyWithAccept:success:failure: (TuyaSmartHome)</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="interface_tuya_smart_home.html#a349838a9bc1c6e4084c3aea588886f51">joinFamilyWithAccept:success:failure: (TuyaSmartHome)</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -344,6 +346,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Delegate for add and remove home result. </p>
+
 </div>
 </div>
 <a id="af0f0243ed113d6edd4b88b424252e292"></a>
@@ -365,6 +369,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Home List. </p>
 
 </div>
 </div>

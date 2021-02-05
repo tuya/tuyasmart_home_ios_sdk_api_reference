@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: &lt;TuyaSmartHomeManagerDelegate&gt; Protocol Reference</title>
+		<title>Tuya iOS Home SDK API Reference: &lt;TuyaSmartHomeManagerDelegate&gt; Protocol Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('protocol_tuya_smart_home_manager_deleg
 <div class="title">&lt;TuyaSmartHomeManagerDelegate&gt; Protocol Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class provides methods related to home management.  
+ <a href="protocol_tuya_smart_home_manager_delegate-p.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for &lt;TuyaSmartHomeManagerDelegate&gt;:</div>
 <div class="dyncontent">
@@ -106,7 +109,9 @@ Instance Methods</h2></td></tr>
 <tr class="memdesc:a935af871df9d5f8aac100d91bf01abf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">MQTT service connection success callback.  <a href="protocol_tuya_smart_home_manager_delegate-p.html#a935af871df9d5f8aac100d91bf01abf1">More...</a><br /></td></tr>
 <tr class="separator:a935af871df9d5f8aac100d91bf01abf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Method Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class provides methods related to home management. </p>
+</div><h2 class="groupheader">Method Documentation</h2>
 <a id="a4b735b43a7c35ee4eeb60c8031a56485"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b735b43a7c35ee4eeb60c8031a56485">&#9670;&nbsp;</a></span>homeManager:didAddHome:</h2>
 
@@ -141,6 +146,7 @@ Instance Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The delegate when a new home is added.</p>
+<p>Get result when call addHomeWithName:geoName:rooms:latitude:longitude:success:failure:</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">manager</td><td>instance </td></tr>
@@ -185,6 +191,7 @@ Instance Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The delegate when an existing home is removed.</p>
+<p>Get result when call <a class="el" href="interface_tuya_smart_home.html#a1ae12d89b9d3038c71dd14d7fee34c2b">dismissHomeWithSuccess:failure: (TuyaSmartHome)</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">manager</td><td>instance </td></tr>

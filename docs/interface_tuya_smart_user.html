@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: TuyaSmartUser Class Reference</title>
+		<title>Tuya iOS Home SDK API Reference: TuyaSmartUser Class Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('interface_tuya_smart_user.html',''); i
 </div><!--header-->
 <div class="contents">
 
-<p>User-related functions.  
+<p><a class="el" href="interface_tuya_smart_user.html" title="TuyaSmartUser is used for user-related functions.">TuyaSmartUser</a> is used for user-related functions.  
  <a href="interface_tuya_smart_user.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TuyaSmartUser:</div>
@@ -159,6 +159,12 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a9eaf0f27149c375fd7bb35f80c22d96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2dd1b8a8b599e70183147c6215d4bd1"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_user.html#ae2dd1b8a8b599e70183147c6215d4bd1">cancelAccount:failure:</a></td></tr>
 <tr class="separator:ae2dd1b8a8b599e70183147c6215d4bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bb9a363e86fd72a268d5b9e794f66bd"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_user.html#a4bb9a363e86fd72a268d5b9e794f66bd">checkPasswordFormat:withPasswordRegularType:</a></td></tr>
+<tr class="separator:a4bb9a363e86fd72a268d5b9e794f66bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4aed3fddb7caa0f63ebb566d26fb38"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_user.html#afb4aed3fddb7caa0f63ebb566d26fb38">getUserTicketWithSuccess:failure:</a></td></tr>
+<tr class="separator:afb4aed3fddb7caa0f63ebb566d26fb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5a7ada43c4bf3cc0f678c3373000a5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_user.html#aeb5a7ada43c4bf3cc0f678c3373000a5">getUserInfoWithTicket:success:failure:</a></td></tr>
+<tr class="separator:aeb5a7ada43c4bf3cc0f678c3373000a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9069a330af8de8d7056f1f0b478c02b2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_user.html#a9069a330af8de8d7056f1f0b478c02b2">cancelRequest</a></td></tr>
 <tr class="memdesc:a9069a330af8de8d7056f1f0b478c02b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel network request.  <a href="interface_tuya_smart_user.html#a9069a330af8de8d7056f1f0b478c02b2">More...</a><br /></td></tr>
 <tr class="separator:a9069a330af8de8d7056f1f0b478c02b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,7 +300,25 @@ Properties</h2></td></tr>
 <tr class="separator:ab4876bc874c55414136f13cca3ae667e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>User-related functions. </p>
+<div class="textblock"><p><a class="el" href="interface_tuya_smart_user.html" title="TuyaSmartUser is used for user-related functions.">TuyaSmartUser</a> is used for user-related functions. </p>
+<p>This class is used to do the user-related things, such as register, login, logout, reset password, and so on.</p>
+<p>Currently we support the following account type: Main:</p><ul>
+<li>Email</li>
+<li>Phone Third-party:</li>
+<li>QQ</li>
+<li>Weibo</li>
+<li>WeChat</li>
+<li>Facebook</li>
+<li>Twitter</li>
+<li>Google</li>
+<li>AppleID Other:</li>
+<li>UID (for advance usage)</li>
+<li>Anonymous</li>
+<li>QRCode</li>
+</ul>
+<p>For email and phone account, usually we need to send a verify code to continue the following steps.</p>
+<p>For uid account, it is designed for developers who already has the account system for their own. The developer can register the uid account without any verification. So please keep your username/password in safe place.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Tuya server have many regions over the world, China/Europe/America, and so on. Account system between regions are separated. When user is not logged in, Tuya SDK will select a nearest region for the initial API request. During the register step, Tuya Cloud will see the account country code and create it in the right region. After the register or login step, the API request will be sent to the right region. So, the country code is part of the account username, please do not ignore it. </dd></dl>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="a3c75ee83ef0598c967a73fa75ffa56a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c75ee83ef0598c967a73fa75ffa56a4">&#9670;&nbsp;</a></span>bindEmail:withCountryCode:code:sId:success:failure:</h2>
@@ -471,7 +495,7 @@ Properties</h2></td></tr>
 <p>Check verification code, used for register/login/reset password. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">userName</td><td>Mobile phone number or Email address. </td></tr>
-    <tr><td class="paramname">region</td><td>For register is required, use [<a class="el" href="interface_tuya_smart_user.html" title="User-related functions.">TuyaSmartUser</a> regionListWithCountryCode:success:failure:] or [<a class="el" href="interface_tuya_smart_user.html" title="User-related functions.">TuyaSmartUser</a> getDefaultRegionWithCountryCode:] to get region. </td></tr>
+    <tr><td class="paramname">region</td><td>For register is required, use [<a class="el" href="interface_tuya_smart_user.html" title="TuyaSmartUser is used for user-related functions.">TuyaSmartUser</a> regionListWithCountryCode:success:failure:] or [<a class="el" href="interface_tuya_smart_user.html" title="TuyaSmartUser is used for user-related functions.">TuyaSmartUser</a> getDefaultRegionWithCountryCode:] to get region. </td></tr>
     <tr><td class="paramname">countryCode</td><td>Country code. </td></tr>
     <tr><td class="paramname">code</td><td>Verification code. </td></tr>
     <tr><td class="paramname">type</td><td>1: Mobile phone verification code register,2: Mobile phone verification code login,3: Mobile phone password reset. </td></tr>
@@ -482,6 +506,43 @@ Properties</h2></td></tr>
 </dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_user_07_region_08.html#a35c33136cc5c6eee083ba913b4c96e1e">TuyaSmartUser(Region)</a>.</p>
+
+</div>
+</div>
+<a id="a4bb9a363e86fd72a268d5b9e794f66bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb9a363e86fd72a268d5b9e794f66bd">&#9670;&nbsp;</a></span>checkPasswordFormat:withPasswordRegularType:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) checkPasswordFormat: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>password</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withPasswordRegularType:</td>
+          <td></td>
+          <td class="paramtype">(TYPasswordRegularType)&#160;</td>
+          <td class="paramname"><em>regularType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check password format by password regular type</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">password</td><td>Inputed password </td></tr>
+    <tr><td class="paramname">regularType</td><td>Password regular type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Result of check password format </dd></dl>
 
 </div>
 </div>
@@ -537,7 +598,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Receive <a class="el" href="interface_tuya_smart_user.html" title="User-related functions.">TuyaSmartUser</a> context from iPhone. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Receive <a class="el" href="interface_tuya_smart_user.html" title="TuyaSmartUser is used for user-related functions.">TuyaSmartUser</a> context from iPhone. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">applicationContext</td><td>Application Context. </td></tr>
   </table>
@@ -595,6 +656,85 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="aeb5a7ada43c4bf3cc0f678c3373000a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb5a7ada43c4bf3cc0f678c3373000a5">&#9670;&nbsp;</a></span>getUserInfoWithTicket:success:failure:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) getUserInfoWithTicket: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>ticket</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(nullable TYSuccessDict)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(nullable TYFailureError)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get user detail info json with ticket.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ticket</td><td>User ticket from service with method <code>getUserTicketWithSuccess</code> </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb4aed3fddb7caa0f63ebb566d26fb38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb4aed3fddb7caa0f63ebb566d26fb38">&#9670;&nbsp;</a></span>getUserTicketWithSuccess:failure:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) getUserTicketWithSuccess: </td>
+          <td></td>
+          <td class="paramtype">(nullable TYSuccessString)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(nullable TYFailureError)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get user ticket from server for get user detail info.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. The ticket will return, and can use ticket to request <code>getUserInfoWithTicket:success:failure</code> to get user info. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad47215f6659b65f965a79a1185000e47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad47215f6659b65f965a79a1185000e47">&#9670;&nbsp;</a></span>login:phoneNumber:code:success:failure:</h2>
 
@@ -648,7 +788,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="interface_tuya_smart_user.html#aa3fb62d9ccd5f055c2f19714c69776cf">loginWithMobile:countryCode:code:success:failure:</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="interface_tuya_smart_user.html#aa3fb62d9ccd5f055c2f19714c69776cf">loginWithMobile:countryCode:code:success:failure:</a> instead </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_user_07_deprecated_api_08.html#ad47215f6659b65f965a79a1185000e47">TuyaSmartUser(DeprecatedApi)</a>.</p>
 
@@ -1087,7 +1227,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="interface_tuya_smart_user.html#add9254a7ede6f48a6bb51de23af891cc">loginOrRegisterWithCountryCode:uid:password:createHome:success:failure:</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="interface_tuya_smart_user.html#add9254a7ede6f48a6bb51de23af891cc">loginOrRegisterWithCountryCode:uid:password:createHome:success:failure:</a> instead </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_user_07_deprecated_api_08.html#a808f0c0ba05278132a7eea6f2253d639">TuyaSmartUser(DeprecatedApi)</a>.</p>
 
@@ -1202,7 +1342,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="interface_tuya_smart_user.html#add9254a7ede6f48a6bb51de23af891cc">loginOrRegisterWithCountryCode:uid:password:createHome:success:failure:</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="interface_tuya_smart_user.html#add9254a7ede6f48a6bb51de23af891cc">loginOrRegisterWithCountryCode:uid:password:createHome:success:failure:</a> instead </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_user_07_deprecated_api_08.html#afcd556b26df829283eeeb1b8d7b00111">TuyaSmartUser(DeprecatedApi)</a>.</p>
 
@@ -1261,7 +1401,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="category_tuya_smart_user_07_deprecated_api_08.html#a11952efb570bd18de1423e933c2014a1">loginOrRegisterWithCountryCode:uid:password:success:failure: (TuyaSmartUser(DeprecatedApi))</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="category_tuya_smart_user_07_deprecated_api_08.html#a11952efb570bd18de1423e933c2014a1">loginOrRegisterWithCountryCode:uid:password:success:failure: (TuyaSmartUser(DeprecatedApi))</a> instead </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_user_07_deprecated_api_08.html#ab4a9d61f27b63368d1137370f8bdc1f3">TuyaSmartUser(DeprecatedApi)</a>.</p>
 
@@ -1383,7 +1523,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="interface_tuya_smart_user.html#add9254a7ede6f48a6bb51de23af891cc">loginOrRegisterWithCountryCode:uid:password:createHome:success:failure:</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="interface_tuya_smart_user.html#add9254a7ede6f48a6bb51de23af891cc">loginOrRegisterWithCountryCode:uid:password:createHome:success:failure:</a> instead </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_user_07_deprecated_api_08.html#a11952efb570bd18de1423e933c2014a1">TuyaSmartUser(DeprecatedApi)</a>.</p>
 
@@ -1803,7 +1943,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="interface_tuya_smart_user.html#a0914390c0f357414cab26a1a7562a1c1">registerByEmail:email:password:code:success:failure:</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="interface_tuya_smart_user.html#a0914390c0f357414cab26a1a7562a1c1">registerByEmail:email:password:code:success:failure:</a> instead </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_user_07_deprecated_api_08.html#adbd8311857688a7f487a2be0a5478dc1">TuyaSmartUser(DeprecatedApi)</a>.</p>
 
@@ -1925,7 +2065,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="interface_tuya_smart_user.html#add9254a7ede6f48a6bb51de23af891cc">loginOrRegisterWithCountryCode:uid:password:createHome:success:failure:</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>This method is deprecated, use <a class="el" href="interface_tuya_smart_user.html#add9254a7ede6f48a6bb51de23af891cc">loginOrRegisterWithCountryCode:uid:password:createHome:success:failure:</a> instead </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_user_07_deprecated_api_08.html#add1a65e02014ea8cca4dd3eb3f01493e">TuyaSmartUser(DeprecatedApi)</a>.</p>
 
@@ -1989,7 +2129,7 @@ Properties</h2></td></tr>
 <p>Mobile phone &amp; Email register. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">userName</td><td>Mobile phone number or Email address. </td></tr>
-    <tr><td class="paramname">region</td><td>The region to register account, use [<a class="el" href="interface_tuya_smart_user.html" title="User-related functions.">TuyaSmartUser</a> regionListWithCountryCode:success:failure:] or [<a class="el" href="interface_tuya_smart_user.html" title="User-related functions.">TuyaSmartUser</a> getDefaultRegionWithCountryCode:] to get region. </td></tr>
+    <tr><td class="paramname">region</td><td>The region to register account, use [<a class="el" href="interface_tuya_smart_user.html" title="TuyaSmartUser is used for user-related functions.">TuyaSmartUser</a> regionListWithCountryCode:success:failure:] or [<a class="el" href="interface_tuya_smart_user.html" title="TuyaSmartUser is used for user-related functions.">TuyaSmartUser</a> getDefaultRegionWithCountryCode:] to get region. </td></tr>
     <tr><td class="paramname">countryCode</td><td>Country code. </td></tr>
     <tr><td class="paramname">code</td><td>Verification code. </td></tr>
     <tr><td class="paramname">password</td><td>Password. </td></tr>
@@ -2433,7 +2573,7 @@ Properties</h2></td></tr>
 <p>Send verification code, used for register/login/reset password. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">userName</td><td>Mobile phone number or Email address. </td></tr>
-    <tr><td class="paramname">region</td><td>For register is required, use [<a class="el" href="interface_tuya_smart_user.html" title="User-related functions.">TuyaSmartUser</a> regionListWithCountryCode:success:failure:] or [<a class="el" href="interface_tuya_smart_user.html" title="User-related functions.">TuyaSmartUser</a> getDefaultRegionWithCountryCode:] to get region. </td></tr>
+    <tr><td class="paramname">region</td><td>For register is required, use [<a class="el" href="interface_tuya_smart_user.html" title="TuyaSmartUser is used for user-related functions.">TuyaSmartUser</a> regionListWithCountryCode:success:failure:] or [<a class="el" href="interface_tuya_smart_user.html" title="TuyaSmartUser is used for user-related functions.">TuyaSmartUser</a> getDefaultRegionWithCountryCode:] to get region. </td></tr>
     <tr><td class="paramname">countryCode</td><td>Country code. </td></tr>
     <tr><td class="paramname">type</td><td>1: Mobile phone verification code register,2: Mobile phone verification code login,3: Mobile phone password reset. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
@@ -2503,7 +2643,7 @@ Properties</h2></td></tr>
 3. If switch region success, new account will be logged. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">region</td><td>The region to register account, use [<a class="el" href="interface_tuya_smart_user.html" title="User-related functions.">TuyaSmartUser</a> regionListWithCountryCode:success:failure:] or [<a class="el" href="interface_tuya_smart_user.html" title="User-related functions.">TuyaSmartUser</a> getDefaultRegionWithCountryCode:] to get region. </td></tr>
+    <tr><td class="paramname">region</td><td>The region to register account, use [<a class="el" href="interface_tuya_smart_user.html" title="TuyaSmartUser is used for user-related functions.">TuyaSmartUser</a> regionListWithCountryCode:success:failure:] or [<a class="el" href="interface_tuya_smart_user.html" title="TuyaSmartUser is used for user-related functions.">TuyaSmartUser</a> getDefaultRegionWithCountryCode:] to get region. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -2529,7 +2669,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sync <a class="el" href="interface_tuya_smart_user.html" title="User-related functions.">TuyaSmartUser</a> context to Apple Watch. When user login/logout/session expired on iPhone, please use this method to sync manually. Example: [<a class="el" href="interface_tuya_smart_user.html#abc6c0668d07a3f4b4ab336db8ce41732" title="Returns the singleton of the class.">sharedInstance</a> updateApplicationContext:session]; </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sync <a class="el" href="interface_tuya_smart_user.html" title="TuyaSmartUser is used for user-related functions.">TuyaSmartUser</a> context to Apple Watch. When user login/logout/session expired on iPhone, please use this method to sync manually. Example: [<a class="el" href="interface_tuya_smart_user.html#abc6c0668d07a3f4b4ab336db8ce41732" title="Returns the singleton of the class.">sharedInstance</a> updateApplicationContext:session]; </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">session</td><td>Session. </td></tr>
   </table>

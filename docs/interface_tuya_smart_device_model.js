@@ -1,5 +1,6 @@
 var interface_tuya_smart_device_model =
 [
+    [ "__deprecated_msg", "interface_tuya_smart_device_model.html#a3e255d87b446dff0961c0dca188b331f", null ],
     [ "attributeIsSupport:", "interface_tuya_smart_device_model.html#a7831d44f8de4af17bc0750b737a0d342", null ],
     [ "baseAttributeIsSupport:", "interface_tuya_smart_device_model.html#af87d19f8b9eb0a6786e5293a94ddd4e1", null ],
     [ "capabilityIsSupport:", "interface_tuya_smart_device_model.html#a27a616af4bd07ccf90c15d3b91b630ce", null ],
@@ -80,7 +81,6 @@ var interface_tuya_smart_device_model =
     [ "uiPhase", "interface_tuya_smart_device_model.html#a093ce4bdc6f0e1c7adc92f6d810c78e6", null ],
     [ "uiType", "interface_tuya_smart_device_model.html#a0452d64b23c3aaa28637e73ef4c527ff", null ],
     [ "uiVersion", "interface_tuya_smart_device_model.html#ab8845fe2d1fb1472823eebde6f665c09", null ],
-    [ "upgrading", "interface_tuya_smart_device_model.html#a5894869ad54dac6ac67f7c3dc30edf19", null ],
     [ "uuid", "interface_tuya_smart_device_model.html#a9d8283e006d29197db375f4bfd52a4cc", null ],
     [ "vendorInfo", "interface_tuya_smart_device_model.html#a849df1a20f647132d089b9e9f214bcb7", null ],
     [ "verSw", "interface_tuya_smart_device_model.html#ab2496bb17db487547684712e1c48950c", null ]

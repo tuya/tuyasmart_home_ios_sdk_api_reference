@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: /Users/dasauto/Documents/TuyaRepo/TuyaSmartBLEKit/TuyaSmartBLEKit/Public/TuyaSmartBLEWifiActivator.h Source File</title>
+		<title>Tuya iOS Home SDK API Reference: /Users/dasauto/Documents/TuyaRepo/TuyaSmartBLEKit/TuyaSmartBLEKit/Public/TuyaSmartBLEWifiActivator.h Source File</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -98,43 +98,43 @@ $(document).ready(function(){initNavTree('_tuya_smart_b_l_e_wifi_activator_8h_so
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html">TuyaSmartBLEWifiActivator</a>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_wifi_activator_delegate-p.html">   16</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_tuya_smart_b_l_e_wifi_activator_delegate-p.html">TuyaSmartBLEWifiActivatorDelegate</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;- (void)bleWifiActivator:(<a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html">TuyaSmartBLEWifiActivator</a> *)activator didReceiveBLEWifiConfigDevice:(<a class="code" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *)deviceModel error:(NSError *)error;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_wifi_activator_delegate-p.html">   14</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_tuya_smart_b_l_e_wifi_activator_delegate-p.html">TuyaSmartBLEWifiActivatorDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;- (void)bleWifiActivator:(<a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html">TuyaSmartBLEWifiActivator</a> *)activator didReceiveBLEWifiConfigDevice:(<a class="code" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *)deviceModel error:(NSError *)error;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">@end</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="interface_tuya_smart_b_l_e_wifi_activator.html">   27</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html">TuyaSmartBLEWifiActivator</a> : NSObject</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="interface_tuya_smart_b_l_e_wifi_activator.html#a2542d8b8edca84fa4e19f11b2c734ea7">   30</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;TuyaSmartBLEWifiActivatorDelegate&gt; <a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html#a2542d8b8edca84fa4e19f11b2c734ea7">bleWifiDelegate</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="interface_tuya_smart_b_l_e_wifi_activator.html#a6e571bf438e83c534c3b265a2503f09d">   33</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html#aa7a56eef790a553854441657e51d636b">deviceUUID</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;+ (instancetype)<a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html#a81e27c904dd7bb3a4983ff543f972549">sharedInstance</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;- (void)startConfigBLEWifiDeviceWithUUID:(NSString *)UUID</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                  homeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                               productId:(NSString *)productId</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                    ssid:(NSString *)ssid</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                password:(NSString *)password</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                timeout:(NSTimeInterval)timeout</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                 success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                 failure:(TYFailureHandler)failure;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;- (void)<a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html#a6e571bf438e83c534c3b265a2503f09d">stopDiscover</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_wifi_activator_delegate-p.html#ade758284957ac36b3d4ecf70ee08184c">   62</a></span>&#160;NS_ASSUME_NONNULL_END</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="interface_tuya_smart_b_l_e_wifi_activator.html">   28</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html">TuyaSmartBLEWifiActivator</a> : NSObject</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="interface_tuya_smart_b_l_e_wifi_activator.html#a2542d8b8edca84fa4e19f11b2c734ea7">   31</a></span>&#160;<span class="keyword">@property</span> (nonatomic, weak) id&lt;TuyaSmartBLEWifiActivatorDelegate&gt; <a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html#a2542d8b8edca84fa4e19f11b2c734ea7">bleWifiDelegate</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="interface_tuya_smart_b_l_e_wifi_activator.html#a6e571bf438e83c534c3b265a2503f09d">   34</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html#aa7a56eef790a553854441657e51d636b">deviceUUID</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;+ (instancetype)<a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html#a81e27c904dd7bb3a4983ff543f972549">sharedInstance</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;- (void)startConfigBLEWifiDeviceWithUUID:(NSString *)UUID</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                  homeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                               productId:(NSString *)productId</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                    ssid:(NSString *)ssid</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                password:(NSString *)password</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                timeout:(NSTimeInterval)timeout</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                 success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                 failure:(TYFailureHandler)failure;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;- (void)<a class="code" href="interface_tuya_smart_b_l_e_wifi_activator.html#a6e571bf438e83c534c3b265a2503f09d">stopDiscover</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="protocol_tuya_smart_b_l_e_wifi_activator_delegate-p.html#ade758284957ac36b3d4ecf70ee08184c">   63</a></span>&#160;NS_ASSUME_NONNULL_END</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="ainterface_tuya_smart_b_l_e_wifi_activator_html"><div class="ttname"><a href="interface_tuya_smart_b_l_e_wifi_activator.html">TuyaSmartBLEWifiActivator</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEWifiActivator.h:28</div></div>
+<div class="ttc" id="ainterface_tuya_smart_b_l_e_wifi_activator_html"><div class="ttname"><a href="interface_tuya_smart_b_l_e_wifi_activator.html">TuyaSmartBLEWifiActivator</a></div><div class="ttdoc">TuyaSmartBLEWifiActivator provides methods for developers to implement dual-mode device activator fun...</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEWifiActivator.h:29</div></div>
 <div class="ttc" id="ainterface_tuya_smart_b_l_e_wifi_activator_html_a6e571bf438e83c534c3b265a2503f09d"><div class="ttname"><a href="interface_tuya_smart_b_l_e_wifi_activator.html#a6e571bf438e83c534c3b265a2503f09d">-[TuyaSmartBLEWifiActivator stopDiscover]</a></div><div class="ttdeci">void stopDiscover()</div><div class="ttdoc">Stop discover device.</div></div>
-<div class="ttc" id="ainterface_tuya_smart_device_model_html"><div class="ttname"><a href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartDeviceModel.h:45</div></div>
-<div class="ttc" id="ainterface_tuya_smart_b_l_e_wifi_activator_html_aa7a56eef790a553854441657e51d636b"><div class="ttname"><a href="interface_tuya_smart_b_l_e_wifi_activator.html#aa7a56eef790a553854441657e51d636b">TuyaSmartBLEWifiActivator::deviceUUID</a></div><div class="ttdeci">NSString * deviceUUID</div><div class="ttdoc">The UUID for the device.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEWifiActivator.h:33</div></div>
+<div class="ttc" id="ainterface_tuya_smart_device_model_html"><div class="ttname"><a href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a></div><div class="ttdoc">device information.</div><div class="ttdef"><b>Definition:</b> TuyaSmartDeviceModel.h:47</div></div>
+<div class="ttc" id="ainterface_tuya_smart_b_l_e_wifi_activator_html_aa7a56eef790a553854441657e51d636b"><div class="ttname"><a href="interface_tuya_smart_b_l_e_wifi_activator.html#aa7a56eef790a553854441657e51d636b">TuyaSmartBLEWifiActivator::deviceUUID</a></div><div class="ttdeci">NSString * deviceUUID</div><div class="ttdoc">The UUID for the device.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEWifiActivator.h:34</div></div>
 <div class="ttc" id="ainterface_tuya_smart_b_l_e_wifi_activator_html_a81e27c904dd7bb3a4983ff543f972549"><div class="ttname"><a href="interface_tuya_smart_b_l_e_wifi_activator.html#a81e27c904dd7bb3a4983ff543f972549">+[TuyaSmartBLEWifiActivator sharedInstance]</a></div><div class="ttdeci">instancetype sharedInstance()</div><div class="ttdoc">Single instance.</div></div>
-<div class="ttc" id="ainterface_tuya_smart_b_l_e_wifi_activator_html_a2542d8b8edca84fa4e19f11b2c734ea7"><div class="ttname"><a href="interface_tuya_smart_b_l_e_wifi_activator.html#a2542d8b8edca84fa4e19f11b2c734ea7">TuyaSmartBLEWifiActivator::bleWifiDelegate</a></div><div class="ttdeci">id&lt; TuyaSmartBLEWifiActivatorDelegate &gt; bleWifiDelegate</div><div class="ttdoc">Delegate for dual-mode device activator result.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEWifiActivator.h:30</div></div>
-<div class="ttc" id="aprotocol_tuya_smart_b_l_e_wifi_activator_delegate-p_html"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_wifi_activator_delegate-p.html">TuyaSmartBLEWifiActivatorDelegate-p</a></div><div class="ttdoc">TuyaSmartBLEWifiActivator provides methods for developers to implement dual-mode device activator fun...</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEWifiActivator.h:16</div></div>
+<div class="ttc" id="ainterface_tuya_smart_b_l_e_wifi_activator_html_a2542d8b8edca84fa4e19f11b2c734ea7"><div class="ttname"><a href="interface_tuya_smart_b_l_e_wifi_activator.html#a2542d8b8edca84fa4e19f11b2c734ea7">TuyaSmartBLEWifiActivator::bleWifiDelegate</a></div><div class="ttdeci">id&lt; TuyaSmartBLEWifiActivatorDelegate &gt; bleWifiDelegate</div><div class="ttdoc">Delegate for dual-mode device activator result.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEWifiActivator.h:31</div></div>
+<div class="ttc" id="aprotocol_tuya_smart_b_l_e_wifi_activator_delegate-p_html"><div class="ttname"><a href="protocol_tuya_smart_b_l_e_wifi_activator_delegate-p.html">TuyaSmartBLEWifiActivatorDelegate-p</a></div><div class="ttdoc">Delegate for dual-mode device activator result.</div><div class="ttdef"><b>Definition:</b> TuyaSmartBLEWifiActivator.h:14</div></div>
 <!-- start footer part -->
 		<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 			<ul>

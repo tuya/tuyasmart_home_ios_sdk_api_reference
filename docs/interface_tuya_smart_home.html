@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: TuyaSmartHome Class Reference</title>
+		<title>Tuya iOS Home SDK API Reference: TuyaSmartHome Class Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('interface_tuya_smart_home.html',''); i
 <div class="title">TuyaSmartHome Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="interface_tuya_smart_home.html" title="TuyaSmartHome provides methods for developers to implement home management, room settings and family ...">TuyaSmartHome</a> provides methods for developers to implement home management, room settings and family member management.  
+ <a href="interface_tuya_smart_home.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TuyaSmartHome:</div>
 <div class="dyncontent">
@@ -104,6 +107,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a2cdd2151ba540144918d8427a2d48ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eff24bb15da5ba2a23875e4bb66ed36"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home.html#a1eff24bb15da5ba2a23875e4bb66ed36">getHomeDetailWithSuccess:failure:</a></td></tr>
 <tr class="separator:a1eff24bb15da5ba2a23875e4bb66ed36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca477a61573ea7479455525938fff8a7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home.html#aca477a61573ea7479455525938fff8a7">getDeviceOTAStatusWithHomeId:success:failure:</a></td></tr>
+<tr class="separator:aca477a61573ea7479455525938fff8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6050bad33caaf5c46039a83ff679e236"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home.html#a6050bad33caaf5c46039a83ff679e236">updateHomeInfoWithName:geoName:latitude:longitude:success:failure:</a></td></tr>
 <tr class="separator:a6050bad33caaf5c46039a83ff679e236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad32f6097fc99c6d6b9521c9768ef7f2c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home.html#ad32f6097fc99c6d6b9521c9768ef7f2c">updateHomeInfoWithName:geoName:latitude:longitude:rooms:overWriteRoom:success:failure:</a></td></tr>
@@ -151,25 +156,37 @@ Class Methods</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a992f67e30e88cd05e49db512b5601562"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_tuya_smart_home_delegate-p.html">TuyaSmartHomeDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home.html#a992f67e30e88cd05e49db512b5601562">delegate</a></td></tr>
+<tr class="memdesc:a992f67e30e88cd05e49db512b5601562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate for home setting and devices related result.  <a href="interface_tuya_smart_home.html#a992f67e30e88cd05e49db512b5601562">More...</a><br /></td></tr>
 <tr class="separator:a992f67e30e88cd05e49db512b5601562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76a1b5ca8a95432eef08f2327b206598"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_tuya_smart_home_model.html">TuyaSmartHomeModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home.html#a76a1b5ca8a95432eef08f2327b206598">homeModel</a></td></tr>
+<tr class="memdesc:a76a1b5ca8a95432eef08f2327b206598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Home model.  <a href="interface_tuya_smart_home.html#a76a1b5ca8a95432eef08f2327b206598">More...</a><br /></td></tr>
 <tr class="separator:a76a1b5ca8a95432eef08f2327b206598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ea2189153799ac13b20c85e4903f639"><td class="memItemLeft" align="right" valign="top">NSArray&lt; <a class="el" href="interface_tuya_smart_room_model.html">TuyaSmartRoomModel</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home.html#a5ea2189153799ac13b20c85e4903f639">roomList</a></td></tr>
+<tr class="memdesc:a5ea2189153799ac13b20c85e4903f639"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of rooms in the home.  <a href="interface_tuya_smart_home.html#a5ea2189153799ac13b20c85e4903f639">More...</a><br /></td></tr>
 <tr class="separator:a5ea2189153799ac13b20c85e4903f639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a402e71d4e6fe2540c94736c07652e3c1"><td class="memItemLeft" align="right" valign="top">NSArray&lt; <a class="el" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home.html#a402e71d4e6fe2540c94736c07652e3c1">deviceList</a></td></tr>
+<tr class="memdesc:a402e71d4e6fe2540c94736c07652e3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of device in the home.  <a href="interface_tuya_smart_home.html#a402e71d4e6fe2540c94736c07652e3c1">More...</a><br /></td></tr>
 <tr class="separator:a402e71d4e6fe2540c94736c07652e3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7ddd0c977491c96921b29c0240861a"><td class="memItemLeft" align="right" valign="top">NSArray&lt; <a class="el" href="interface_tuya_smart_group_model.html">TuyaSmartGroupModel</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home.html#a4c7ddd0c977491c96921b29c0240861a">groupList</a></td></tr>
+<tr class="memdesc:a4c7ddd0c977491c96921b29c0240861a"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of device group in the home.  <a href="interface_tuya_smart_home.html#a4c7ddd0c977491c96921b29c0240861a">More...</a><br /></td></tr>
 <tr class="separator:a4c7ddd0c977491c96921b29c0240861a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3cd2670e1d9b907d423f7deeb3e2e84"><td class="memItemLeft" align="right" valign="top">NSArray&lt; <a class="el" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home.html#ad3cd2670e1d9b907d423f7deeb3e2e84">sharedDeviceList</a></td></tr>
+<tr class="memdesc:ad3cd2670e1d9b907d423f7deeb3e2e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of shared devices.  <a href="interface_tuya_smart_home.html#ad3cd2670e1d9b907d423f7deeb3e2e84">More...</a><br /></td></tr>
 <tr class="separator:ad3cd2670e1d9b907d423f7deeb3e2e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af69e2b3e559736c5de32a2081a4260e8"><td class="memItemLeft" align="right" valign="top">NSArray&lt; <a class="el" href="interface_tuya_smart_group_model.html">TuyaSmartGroupModel</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home.html#af69e2b3e559736c5de32a2081a4260e8">sharedGroupList</a></td></tr>
+<tr class="memdesc:af69e2b3e559736c5de32a2081a4260e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of shared Group.  <a href="interface_tuya_smart_home.html#af69e2b3e559736c5de32a2081a4260e8">More...</a><br /></td></tr>
 <tr class="separator:af69e2b3e559736c5de32a2081a4260e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e493b03038590131d974250e901033"><td class="memItemLeft" align="right" valign="top">NSArray&lt; <a class="el" href="interface_tuya_smart_device_o_t_a_model.html">TuyaSmartDeviceOTAModel</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home.html#af4e493b03038590131d974250e901033">deviceOtaList</a></td></tr>
+<tr class="memdesc:af4e493b03038590131d974250e901033"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of OTA devices.  <a href="interface_tuya_smart_home.html#af4e493b03038590131d974250e901033">More...</a><br /></td></tr>
+<tr class="separator:af4e493b03038590131d974250e901033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c0ff846a4e5d8f6e79e48da7d1b9cf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_tuya_smart_ble_mesh_model.html">TuyaSmartBleMeshModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home.html#a0c0ff846a4e5d8f6e79e48da7d1b9cf4">meshModel</a></td></tr>
 <tr class="separator:a0c0ff846a4e5d8f6e79e48da7d1b9cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1046e79bc13a3d1c63552fa0c41f8349"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_tuya_smart_ble_mesh_model.html">TuyaSmartBleMeshModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home.html#a1046e79bc13a3d1c63552fa0c41f8349">sigMeshModel</a></td></tr>
 <tr class="separator:a1046e79bc13a3d1c63552fa0c41f8349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Method Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="interface_tuya_smart_home.html" title="TuyaSmartHome provides methods for developers to implement home management, room settings and family ...">TuyaSmartHome</a> provides methods for developers to implement home management, room settings and family member management. </p>
+</div><h2 class="groupheader">Method Documentation</h2>
 <a id="a134b90fce0559030e622108fe124687f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a134b90fce0559030e622108fe124687f">&#9670;&nbsp;</a></span>addHomeMemberWithAddMemeberRequestModel:success:failure:</h2>
 
@@ -287,7 +304,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="category_tuya_smart_home_07_t_y_deprecated_api_08.html#ae99cf68fc38678176941c1db89ccffc5">addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure: (TuyaSmartHome(TYDeprecatedApi))</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000043">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="category_tuya_smart_home_07_t_y_deprecated_api_08.html#ae99cf68fc38678176941c1db89ccffc5">addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure: (TuyaSmartHome(TYDeprecatedApi))</a> instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_07_t_y_deprecated_api_08.html#a266b4f9a95a87653226cd41ee5d7efd0">TuyaSmartHome(TYDeprecatedApi)</a>.</p>
 
@@ -367,7 +384,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="interface_tuya_smart_home.html#a134b90fce0559030e622108fe124687f">addHomeMemberWithAddMemeberRequestModel:success:failure:</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000044">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="interface_tuya_smart_home.html#a134b90fce0559030e622108fe124687f">addHomeMemberWithAddMemeberRequestModel:success:failure:</a> instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_07_t_y_deprecated_api_08.html#ae99cf68fc38678176941c1db89ccffc5">TuyaSmartHome(TYDeprecatedApi)</a>.</p>
 
@@ -473,6 +490,48 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="aca477a61573ea7479455525938fff8a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca477a61573ea7479455525938fff8a7">&#9670;&nbsp;</a></span>getDeviceOTAStatusWithHomeId:success:failure:</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) getDeviceOTAStatusWithHomeId: </td>
+          <td></td>
+          <td class="paramtype">(long long)&#160;</td>
+          <td class="paramname"><em>homeId</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(void(^)(NSArray&lt; <a class="el" href="interface_tuya_smart_device_o_t_a_model.html">TuyaSmartDeviceOTAModel</a> * &gt; *))&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(TYFailureError)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>After get home details, update device ota status </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">homeId</td><td>Home id </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">failure</td><td>If error occurred while adding the task, this block will be called. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1eff24bb15da5ba2a23875e4bb66ed36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1eff24bb15da5ba2a23875e4bb66ed36">&#9670;&nbsp;</a></span>getHomeDetailWithSuccess:failure:</h2>
 
@@ -500,7 +559,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 <p>After initializing the home object, you need to get the details of the family, homeModel, roomList, deviceList, groupList to have the data。 </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_home_model.html">TuyaSmartHomeModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_home_model.html" title="Home Model.">TuyaSmartHomeModel</a> will be returned. </td></tr>
     <tr><td class="paramname">failure</td><td>If error occurred while adding the task, this block will be called. </td></tr>
   </table>
   </dd>
@@ -536,7 +595,7 @@ Properties</h2></td></tr>
 <p>Get home member list</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. A list of <a class="el" href="interface_tuya_smart_home_member_model.html">TuyaSmartHomeMemberModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. A list of <a class="el" href="interface_tuya_smart_home_member_model.html" title="Home member model.">TuyaSmartHomeMemberModel</a> will be returned. </td></tr>
     <tr><td class="paramname">failure</td><td>If error occurred while adding the task, this block will be called. </td></tr>
   </table>
   </dd>
@@ -581,7 +640,7 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">optionModel</td><td>Weather details parameter unit configuration. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. A list of <a class="el" href="interface_tuya_smart_weather_model.html">TuyaSmartWeatherModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. A list of <a class="el" href="interface_tuya_smart_weather_model.html" title="Weather model.">TuyaSmartWeatherModel</a> will be returned. </td></tr>
     <tr><td class="paramname">failure</td><td>If error occurred while adding the task, this block will be called. </td></tr>
   </table>
   </dd>
@@ -618,7 +677,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 <p>Get brief weather parameters for the home. This request returns brief weather parameters for the city where the family is located, such as the city name, weather conditions for the day (sunny, cloudy, rainy, etc.), and weather picture information. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_weather_sketch_model.html">TuyaSmartWeatherSketchModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_weather_sketch_model.html" title="Get Weather display entity.">TuyaSmartWeatherSketchModel</a> will be returned. </td></tr>
     <tr><td class="paramname">failure</td><td>If error occurred while adding the task, this block will be called. </td></tr>
   </table>
   </dd>
@@ -1115,6 +1174,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Delegate for home setting and devices related result. </p>
+
 </div>
 </div>
 <a id="a402e71d4e6fe2540c94736c07652e3c1"></a>
@@ -1136,6 +1197,32 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>List of device in the home. </p>
+
+</div>
+</div>
+<a id="af4e493b03038590131d974250e901033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e493b03038590131d974250e901033">&#9670;&nbsp;</a></span>deviceOtaList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSArray&lt;<a class="el" href="interface_tuya_smart_device_o_t_a_model.html">TuyaSmartDeviceOTAModel</a> *&gt;*) deviceOtaList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">copy</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of OTA devices. </p>
 
 </div>
 </div>
@@ -1159,6 +1246,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>List of device group in the home. </p>
+
 </div>
 </div>
 <a id="a76a1b5ca8a95432eef08f2327b206598"></a>
@@ -1180,6 +1269,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Home model. </p>
 
 </div>
 </div>
@@ -1227,6 +1318,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>List of rooms in the home. </p>
+
 </div>
 </div>
 <a id="ad3cd2670e1d9b907d423f7deeb3e2e84"></a>
@@ -1249,6 +1342,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>List of shared devices. </p>
+
 </div>
 </div>
 <a id="af69e2b3e559736c5de32a2081a4260e8"></a>
@@ -1270,6 +1365,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>List of shared Group. </p>
 
 </div>
 </div>

@@ -1,8 +1,8 @@
 var protocol_t_y_core_cache_service_delegate_p =
 [
-    [ "deviceListWillAdd:homeId:", "protocol_t_y_core_cache_service_delegate-p.html#a2ccb6327133ca3d6c84a6190048c9aef", null ],
-    [ "deviceWillAdd:homeId:", "protocol_t_y_core_cache_service_delegate-p.html#ae4dd0937a46a580ddfb33ed5bacb263f", null ],
-    [ "deviceWillRemove:", "protocol_t_y_core_cache_service_delegate-p.html#acf8776d89a3feb2f1bc2b34d2977578d", null ],
-    [ "groupWillAdd:homeId:", "protocol_t_y_core_cache_service_delegate-p.html#a9c4682843017f11d1e0c7a2b50df45aa", null ],
-    [ "groupWillRemove:", "protocol_t_y_core_cache_service_delegate-p.html#aa3f399b5ae81b119c165926ef796b96e", null ]
+    [ "deviceDidAdd:", "protocol_t_y_core_cache_service_delegate-p.html#a53b6a83f85c31852d2c162dd8ab268a2", null ],
+    [ "deviceDidRemove:", "protocol_t_y_core_cache_service_delegate-p.html#a246202976b4ee7f2b8b18fe7d5195e6a", null ],
+    [ "deviceListDidAdd:", "protocol_t_y_core_cache_service_delegate-p.html#ae514b3a34e1ad93cc1ab2f763b0c1f91", null ],
+    [ "groupDidAdd:", "protocol_t_y_core_cache_service_delegate-p.html#a6f7c0bde01a618e5012e9693f907bbf1", null ],
+    [ "groupDidRemove:", "protocol_t_y_core_cache_service_delegate-p.html#a73ef67492ca4ba9176cd80f4625a20b6", null ]
 ];

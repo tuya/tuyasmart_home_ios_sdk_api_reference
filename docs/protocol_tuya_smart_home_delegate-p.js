@@ -11,6 +11,7 @@ var protocol_tuya_smart_home_delegate_p =
     [ "home:didRemoveDeivice:", "protocol_tuya_smart_home_delegate-p.html#a3e09e9ecc1267e4ca9656fb3ab0b4a41", null ],
     [ "home:didRemoveGroup:", "protocol_tuya_smart_home_delegate-p.html#a8104c1c750fc9cffadf805defcfd22d9", null ],
     [ "home:didRemoveRoom:", "protocol_tuya_smart_home_delegate-p.html#ade738748343e5ee355afde0166d3a2a7", null ],
+    [ "home:didUpdateOTAModelList:", "protocol_tuya_smart_home_delegate-p.html#a7fcb8728e0bf99b22d2735da9e6753bf", null ],
     [ "home:group:dpsUpdate:", "protocol_tuya_smart_home_delegate-p.html#a9408d311ccfb035522c6294b85abc9d5", null ],
     [ "home:groupInfoUpdate:", "protocol_tuya_smart_home_delegate-p.html#a971fd8d8f94c84a564b82702aa890ad9", null ],
     [ "home:roomInfoUpdate:", "protocol_tuya_smart_home_delegate-p.html#ad1bd63d756a305cee1e2a6c0a1fb193b", null ],

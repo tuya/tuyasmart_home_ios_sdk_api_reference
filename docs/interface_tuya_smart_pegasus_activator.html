@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: TuyaSmartPegasusActivator Class Reference</title>
+		<title>Tuya iOS Home SDK API Reference: TuyaSmartPegasusActivator Class Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('interface_tuya_smart_pegasus_activator
 <div class="title">TuyaSmartPegasusActivator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="interface_tuya_smart_pegasus_activator.html" title="TuyaSmartPegasusActivator is used for pegasus configuration.">TuyaSmartPegasusActivator</a> is used for pegasus configuration.  
+ <a href="interface_tuya_smart_pegasus_activator.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TuyaSmartPegasusActivator:</div>
 <div class="dyncontent">
@@ -119,7 +122,10 @@ Properties</h2></td></tr>
 <tr class="memitem:a7604c4f56e4c2c8d147fbd551c6ed6dc"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_tuya_smart_pegasus_activator_delegate-p.html">TuyaSmartPegasusActivatorDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_pegasus_activator.html#a7604c4f56e4c2c8d147fbd551c6ed6dc">delegate</a></td></tr>
 <tr class="separator:a7604c4f56e4c2c8d147fbd551c6ed6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Method Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="interface_tuya_smart_pegasus_activator.html" title="TuyaSmartPegasusActivator is used for pegasus configuration.">TuyaSmartPegasusActivator</a> is used for pegasus configuration. </p>
+<p>This class provides pegasus configuration capabilities. </p>
+</div><h2 class="groupheader">Method Documentation</h2>
 <a id="a3c310887609bee7efb61d6d2df6e840f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c310887609bee7efb61d6d2df6e840f">&#9670;&nbsp;</a></span>cancelActivatorWithDevIDs:UUIDs:success:failure:</h2>
 
@@ -243,11 +249,13 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Configure of found devices to be configured on the network. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Configure of found devices to be configured on the network.</p>
+<p>The 'token' can be obtained form <a class="el" href="interface_tuya_smart_activator.html#aef4b0739994de8486de8ce9729b59ee5">getTokenWithHomeId:success:failure: (TuyaSmartActivator)</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devIDs</td><td>A list of devices that support Pegasus. </td></tr>
     <tr><td class="paramname">UUIDs</td><td>List of UUIDs of devices to be configured. </td></tr>
-    <tr><td class="paramname">token</td><td>The token. </td></tr>
+    <tr><td class="paramname">token</td><td>The configuration token. </td></tr>
     <tr><td class="paramname">timeout</td><td>Timeout time, default 100s. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
@@ -300,7 +308,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Start Pegasus Activator discover pending device. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Start Pegasus Activator discover pending device.</p>
+<p>The 'devIDs' should be obtained form <a class="el" href="interface_tuya_smart_pegasus_activator.html#a1b987f12eae5cc095eefa96c7d96ce55">pegasusDeviceListWithHomeID:</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devIDs</td><td>Device ID list </td></tr>
     <tr><td class="paramname">serverTimeout</td><td>Configured devices, search timeout for devices to be configured. </td></tr>
@@ -344,7 +354,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Already distributed devices stop continuing to discover equipment to be configured. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Already distributed devices stop continuing to discover equipment to be configured.</p>
+<p>The 'devIDs' should be obtained form <a class="el" href="interface_tuya_smart_pegasus_activator.html#a1b987f12eae5cc095eefa96c7d96ce55">pegasusDeviceListWithHomeID:</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devIDs</td><td>A list of devices that support Pegasus. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>

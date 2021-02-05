@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>iOS SDK: /Users/dasauto/Documents/TuyaRepo/TuyaSmartBaseKit/TuyaSmartBaseKit/Public/TuyaSmartUser/TuyaSmartUser+Region.h Source File</title>
+		<title>Tuya iOS Home SDK API Reference: /Users/dasauto/Documents/TuyaRepo/TuyaSmartBaseKit/TuyaSmartBaseKit/Public/TuyaSmartUser/TuyaSmartUser+Region.h Source File</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">iOS SDK
+							<p id="projectname">Tuya iOS Home SDK API Reference
 							</p>
 						</td>
 					</tr>
@@ -92,55 +92,60 @@ $(document).ready(function(){initNavTree('_tuya_smart_user_09_region_8h_source.h
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#import &quot;TuyaSmartUser.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#import &quot;TYRegionModel.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef TuyaSmartUser_Region_h</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define TuyaSmartUser_Region_h</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;NS_ASSUME_NONNULL_BEGIN</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="category_tuya_smart_user_07_region_08.html">   12</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_tuya_smart_user_07_region_08.html">TuyaSmartUser (Region)</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;- (void)regionListWithCountryCode:(NSString *)countryCode</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                          success:(<span class="keywordtype">void</span>(^)(NSArray&lt;<a class="code" href="interface_t_y_region_model.html">TYRegionModel</a> *&gt; *regionList))success</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                          failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;- (NSString *)getDefaultRegionWithCountryCode:(NSString *)countryCode;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- (NSDictionary *)getDefaultDomain;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;- (void)sendVerifyCodeWithUserName:(NSString *)userName</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                            region:(NSString *_Nullable)region</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                       countryCode:(NSString *)countryCode</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                              type:(NSInteger)type</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                           success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                           failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;- (void)checkCodeWithUserName:(NSString *)userName</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                       region:(NSString *_Nullable)region</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                  countryCode:(NSString *)countryCode</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                         code:(NSString *)code</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                         type:(NSInteger)type</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                      success:(TYSuccessBOOL)success</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                      failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;- (void)registerWithUserName:(NSString *)userName</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                      region:(NSString *)region</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                 countryCode:(NSString *)countryCode</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                        code:(NSString *)code</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    password:(NSString *)password</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                     success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                     failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;- (void)switchUserRegion:(NSString *)region</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                 success:(TYSuccessHandler)success</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                 failure:(TYFailureError)failure;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="interface_tuya_smart_user.html#a62d8a73b11b4bec74bc7b92eeec56b0c">   90</a></span>&#160;NS_ASSUME_NONNULL_END</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;TuyaSmartUser.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;TYRegionModel.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="category_tuya_smart_user_07_region_08.html">   15</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_tuya_smart_user_07_region_08.html">TuyaSmartUser (Region)</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;- (void)regionListWithCountryCode:(NSString *)countryCode</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                          success:(<span class="keywordtype">void</span>(^)(NSArray&lt;<a class="code" href="interface_t_y_region_model.html">TYRegionModel</a> *&gt; *regionList))success</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                          failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;- (NSString *)getDefaultRegionWithCountryCode:(NSString *)countryCode;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;- (NSDictionary *)getDefaultDomain;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;- (void)sendVerifyCodeWithUserName:(NSString *)userName</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                            region:(NSString *_Nullable)region</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                       countryCode:(NSString *)countryCode</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                              type:(NSInteger)type</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                           success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                           failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;- (void)checkCodeWithUserName:(NSString *)userName</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                       region:(NSString *_Nullable)region</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                  countryCode:(NSString *)countryCode</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                         code:(NSString *)code</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                         type:(NSInteger)type</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                      success:(TYSuccessBOOL)success</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                      failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;- (void)registerWithUserName:(NSString *)userName</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                      region:(NSString *)region</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                 countryCode:(NSString *)countryCode</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                        code:(NSString *)code</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    password:(NSString *)password</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                     success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                     failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;- (void)switchUserRegion:(NSString *)region</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                 success:(TYSuccessHandler)success</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                 failure:(TYFailureError)failure;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="interface_tuya_smart_user.html#a62d8a73b11b4bec74bc7b92eeec56b0c">   93</a></span>&#160;NS_ASSUME_NONNULL_END</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TuyaSmartUser_Region_h */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="ainterface_t_y_region_model_html"><div class="ttname"><a href="interface_t_y_region_model.html">TYRegionModel</a></div><div class="ttdef"><b>Definition:</b> TYRegionModel.h:12</div></div>
-<div class="ttc" id="acategory_tuya_smart_user_07_region_08_html"><div class="ttname"><a href="category_tuya_smart_user_07_region_08.html">TuyaSmartUser(Region)</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartUser+Region.h:12</div></div>
+<div class="ttc" id="ainterface_t_y_region_model_html"><div class="ttname"><a href="interface_t_y_region_model.html">TYRegionModel</a></div><div class="ttdoc">TYRegionModel is an object of server region.</div><div class="ttdef"><b>Definition:</b> TYRegionModel.h:16</div></div>
+<div class="ttc" id="acategory_tuya_smart_user_07_region_08_html"><div class="ttname"><a href="category_tuya_smart_user_07_region_08.html">TuyaSmartUser(Region)</a></div><div class="ttdef"><b>Definition:</b> TuyaSmartUser+Region.h:15</div></div>
 <!-- start footer part -->
 		<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
 			<ul>
