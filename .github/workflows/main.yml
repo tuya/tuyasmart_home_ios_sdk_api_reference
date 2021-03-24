@@ -42,15 +42,15 @@ jobs:
         run: |
           python main.py ${{ github.event.inputs.module }} ${{ github.event.inputs.version }}
 
-      - name: doxygen
-        uses: mattnotmitt/doxygen-action@v1.2.3
-        with: 
-            working-directory: ./submodule
-            doxyfile-path: ./Doxyfile
-      # Runs a set of commands using the runners shell
-      - run: |
-          sudo cp -rf ./oridocs/html/* ./docs
-          sudo rm -rf ./oridocs
+      # - name: doxygen
+      #   uses: mattnotmitt/doxygen-action@v1.2.3
+      #   with: 
+      #       working-directory: ./submodule
+      #       doxyfile-path: ./Doxyfile
+      # # Runs a set of commands using the runners shell
+      # - run: |
+      #     sudo cp -rf ./oridocs/html/* ./docs
+      #     sudo rm -rf ./oridocs
 
       - name: commit
         run: |
