@@ -48,10 +48,14 @@ jobs:
             working-directory: ./submodule
             doxyfile-path: ./Doxyfile
       # Runs a set of commands using the runners shell
+      - run: |
+          sudo cp -rf ./oridocs/html/* ./docs
+          sudo rm -rf ./oridocs
+
       - name: commit
         run: |
-          git config --global user.name ll
-          git config --global user.email 123@qq.com
+          git config --global user.name tuyaer
+          git config --global user.email tuyaer@tuya.com
           git add .
-          git commit -m "自动生成文档" 
+          git commit -m "auto generate header and doc" 
           git push

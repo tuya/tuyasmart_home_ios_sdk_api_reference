@@ -27,15 +27,15 @@ jobs:
             doxyfile-path: ./Doxyfile
 
       - run: |
-         mv -rf ./oridocs/html/* ./docs
+         sudo cp -rf ./oridocs/html/* ./docs
+         sudo rm -rf ./oridocs
 
       - run: |
-          # cd  git init && git add .
           git config --global user.name tuyaer
-          git config --global user.email tuya@tuya.com
+          git config --global user.email tuyaer@tuya.com
           # git push --force --quiet "https://github.com/a02683418/testActions.git" master:master
           git add .
-          git commit -m "生成文档" 
+          git commit -m "auto generate doc" 
           git push
 
 
