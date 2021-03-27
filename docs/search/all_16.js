@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['waitingdesc_1115',['waitingDesc',['../interface_tuya_smart_firmware_upgrade_model.html#a0bde52721952f8f4d5250ab0c8acebb5',1,'TuyaSmartFirmwareUpgradeModel']]],
-  ['wifi_1116',['wifi',['../interface_tuya_smart_device_module_model.html#afc21eb4b35c613ef061aac4ec84fe4e4',1,'TuyaSmartDeviceModuleModel']]],
-  ['windspeedunit_1117',['windspeedUnit',['../interface_tuya_smart_weather_option_model.html#af8df77b0cf5fd5ededab085c07a55891',1,'TuyaSmartWeatherOptionModel']]]
+  ['value_929',['value',['../interface_tuya_smart_weather_model.html#a1cbb7c38a2566dc7c14dc04522edaa97',1,'TuyaSmartWeatherModel']]],
+  ['valuerangejson_930',['valueRangeJson',['../interface_tuya_smart_scene_d_p_model.html#af52c83ead4b07738f5bc46edeee558d9',1,'TuyaSmartSceneDPModel']]],
+  ['vendorinfo_931',['vendorInfo',['../interface_t_y_ble_mesh_device_model.html#abdf5eaf9d673e5861d5707ee074b8f84',1,'TYBleMeshDeviceModel']]],
+  ['version_932',['version',['../interface_t_y_ble_mesh_device_model.html#a79347bab4ea8dbe183750ea40395e17d',1,'TYBleMeshDeviceModel::version()'],['../interface_t_y_b_l_e_mesh_manager.html#aa6bc32b4efdfcf1c1857b0c964d75fef',1,'TYBLEMeshManager::version()']]]
 ];
