@@ -1,0 +1,25 @@
+var interface_tuya_smart_beacon_manager =
+[
+    [ "activeBeacon:homeId:success:failure:", "interface_tuya_smart_beacon_manager.html#af8a6732d088b8a91a8676c427c153234", null ],
+    [ "addDeviceToGroupWithDevId:groupId:success:failure:", "interface_tuya_smart_beacon_manager.html#a86705bad60cb3d72c22e101e0e25b0c5", null ],
+    [ "addDeviceWithGroupId:deviceId:success:failure:", "interface_tuya_smart_beacon_manager.html#a84394d702eb179429957fb880adc5d66", null ],
+    [ "checkAllBeaconDeviceOnlineState:", "interface_tuya_smart_beacon_manager.html#acf2884023cd249ae82066f0c971051af", null ],
+    [ "checkDeviceOnlineStateWithDevice:", "interface_tuya_smart_beacon_manager.html#a9408ec971c1667460754b639df05bbef", null ],
+    [ "connectBeaconWithDeviceId:", "interface_tuya_smart_beacon_manager.html#a829d99e2d15662d17ae45a29334bf4a4", null ],
+    [ "createBeaconGroupWithGroupName:productId:pcc:success:failure:", "interface_tuya_smart_beacon_manager.html#adfb5e6bdb162552ba47b8260cbf6e9e9", null ],
+    [ "deleteDeviceFromGroupWithDevId:groupId:success:failure:", "interface_tuya_smart_beacon_manager.html#a24abf4578e896a6482a5e6976ac30852", null ],
+    [ "deviceStatueWithUUID:", "interface_tuya_smart_beacon_manager.html#a7e887ab5725034a2a4d96dcc01a15e76", null ],
+    [ "publishDpsWithDevicId:dps:success:failure:", "interface_tuya_smart_beacon_manager.html#abbc084518e3fd9d6a9f4d063418dc4a0", null ],
+    [ "publishGroupDps:firstDevId:groupId:success:failure:", "interface_tuya_smart_beacon_manager.html#aa900d2f199fbb09fb88bdebcfd82c24b", null ],
+    [ "queryGroupsWithDevId:success:failure:", "interface_tuya_smart_beacon_manager.html#abce804df1ed6cbd60c07573eec8517fe", null ],
+    [ "removeBeaconGroupGroupId:success:failure:", "interface_tuya_smart_beacon_manager.html#abc99bbd3a9aaff740982ec6176cac697", null ],
+    [ "removeDeviceGroupWithGroupId:success:failure:", "interface_tuya_smart_beacon_manager.html#a6e4cf5666393a0a8caade4d6dfc51fd5", null ],
+    [ "removeDeviceWithGroupId:deviceId:success:failure:", "interface_tuya_smart_beacon_manager.html#a0b0a1c65fd22daccaa1881c40d74c735", null ],
+    [ "resetWithDevId:success:failure:", "interface_tuya_smart_beacon_manager.html#a8b5faeb8e045aa3d10338d2b67f6f137", null ],
+    [ "sharedInstance", "interface_tuya_smart_beacon_manager.html#a5baa1b5587c4f9b95bab7a2e5e387ead", null ],
+    [ "startScan", "interface_tuya_smart_beacon_manager.html#aecd56d2c7a649550270dd34b1c4f44c1", null ],
+    [ "stopActive", "interface_tuya_smart_beacon_manager.html#af9525a06204bc69cbb5a5fbdadd8ad25", null ],
+    [ "stopScan", "interface_tuya_smart_beacon_manager.html#a4617f4648e9798b0a32c439361758c25", null ],
+    [ "delegate", "interface_tuya_smart_beacon_manager.html#abe3a6ca9f916bd9016cb0ea6d149df8d", null ],
+    [ "isPoweredOn", "interface_tuya_smart_beacon_manager.html#a77ca5c4a15b095957d76aa278eb3d46f", null ]
+];

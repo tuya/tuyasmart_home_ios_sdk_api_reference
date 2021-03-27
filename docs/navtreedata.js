@@ -29,7 +29,12 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"index.html"
+"annotated.html",
+"functions_j.html",
+"interface_tuya_smart_ble_mesh.html#a8ab8e846803dc0a7eb94adff88682e34",
+"interface_tuya_smart_mc_group_model.html#a97c999abdc6a42ddff95687c52725498",
+"interface_tuya_smart_scene_action_model.html#a5685a6df75ca7f153a05438d8c5dd122",
+"interface_tuya_smart_user.html#aa43946dea4b73895a008a54251508a0d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

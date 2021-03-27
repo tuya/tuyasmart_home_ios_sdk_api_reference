@@ -1,7 +1,9 @@
 var interface_tuya_smart_b_l_e_manager =
 [
+    [ "activatorDualDeviceWithBleChannel:homeId:token:success:failure:", "interface_tuya_smart_b_l_e_manager.html#a56bdb0bcad7b54e4e43007a228165731", null ],
     [ "activeBLE:homeId:success:failure:", "interface_tuya_smart_b_l_e_manager.html#a1b82dde137b2ebfea779be2ae8684568", null ],
     [ "activeBLEWithUUID:homeId:productKey:success:failure:", "interface_tuya_smart_b_l_e_manager.html#ad209bba6adcbf52dfb2fd4169b628924", null ],
+    [ "activeDualDeviceWifiChannel:ssid:password:timeout:success:failure:", "interface_tuya_smart_b_l_e_manager.html#a13cc39c12f541dcc247efd70364a6486", null ],
     [ "appApplyLaunch:", "interface_tuya_smart_b_l_e_manager.html#a8dbe9dc349acf567077a6dc42259fa0f", null ],
     [ "appMandatoryTrans:", "interface_tuya_smart_b_l_e_manager.html#af553bc8684f59424206af215e5ad3444", null ],
     [ "connectBLEWithUUID:productKey:success:failure:", "interface_tuya_smart_b_l_e_manager.html#a37c7dc29df80839302b9089b113c07fc", null ],
