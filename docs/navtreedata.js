@@ -24,12 +24,30 @@
 */
 var NAVTREE =
 [
-  [ "Tuya iOS Home SDK API Reference", "index.html", ]
+  [ "Tuya iOS Home SDK API Reference", "index.html", [
+    [ "Deprecated List", "deprecated.html", null ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Properties", "functions_prop.html", "functions_prop" ]
+      ] ]
+    ] ]
+  ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"annotated.html",
+"interface_t_y_api_merge_model.html#a9726ea413ba998b654b678a07c7949a0",
+"interface_tuya_smart_device_model.html#a151c984260c283a42dbf0a43ea630b55",
+"interface_tuya_smart_home.html#a134b90fce0559030e622108fe124687f",
+"interface_tuya_smart_multi_control_device_model.html#a0a7149655547a8b6ad1cef4c650ac189",
+"interface_tuya_smart_scene_d_p_model.html#a6e484ce55d5625adde981b84e59da576",
+"interface_tuya_smart_user.html#ab50bc581edc0977e7cb1590a2c192255"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
