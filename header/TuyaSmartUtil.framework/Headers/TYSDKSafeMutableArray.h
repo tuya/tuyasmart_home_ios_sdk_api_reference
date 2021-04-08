@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-//线程安全的类
+// The thread-safe class.
 @interface TYSDKSafeMutableArray<ObjectType> : NSMutableArray
 
 @end

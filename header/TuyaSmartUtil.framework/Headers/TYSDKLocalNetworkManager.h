@@ -9,16 +9,13 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(int, TYSDKLocalNetworkStatus) {
-    // 本地网络没有连接（无线网卡无法获取IP地址）
-    // Local network not connected (Wi-Fi adapter can't get IP address)
+    // The local network is not connected (the Wi-Fi adapter cannot get an IP address).
     kTYSDKLocalNetworkStatusNotConnected,
     
-    // 用户已经禁止此应用使用“本地网络”权限，或者还没有作出选择
-    // User has explicitly denied authorization for this application, or not yet made a choice
+    // The user has explicitly denied authorization for this application, or not yet made a choice.
     kTYSDKLocalNetworkStatusNotDeterminedOrDenied,
     
-    // 用户已经允许此应用使用“本地网络”权限
-    // User has granted authorization to use their local network only while they are using your app.
+    // The user has granted permissions to use the local network only when your app is being used.
     kTYSDKLocalNetworkStatusStatusAuthorized,
 };
 
@@ -28,28 +25,21 @@ API_AVAILABLE(ios(14.0))
 + (instancetype)manager;
 
 /**
-    获取“本地网络”的 IP 地址（beta）
-    Get "Local Network" IP address (beta)
+    Returns the IP address of the local network (beta)
  */
 - (NSString *)localIPAddress;
 
 /**
-    申请“本地网络”授权（beta）
+    Requests permissions on the local network (beta)
  
-    在 Wi-Fi 已连接的前提下，调用此方法会触发“本地网络”的授权弹窗。弹窗只会出现一次，直到 App 卸载重装。
-    目前没有办法获取此次触发的状态变更回调。
- 
-    Request "Local Network" authorization (beta)
- 
-    When Wi-Fi is connected, calling this method will start the process of requesting "Local Network" authorization from the user. The authorization prompt will only appear once until App uninstalled.
-    Currently we can't get authorization change callback for this request.
+    If you call this method when a Wi-Fi network is connected, a process is started to request permissions on the local network from the user. The authorization prompt will appear only once until the app is uninstalled.
+    Currently, you cannot get an authorization change callback for this request.
  */
 - (void)requestAuthorization;
 
 
 /**
-    获取“本地网络”的授权状态（beta）
-    Returns the current authorization status of the calling application (beta).
+    Returns the current authorization status of the specified application (beta).
  */
 - (void)authorizationStatus:(void (^)(TYSDKLocalNetworkStatus status))callback;
 

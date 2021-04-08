@@ -40,8 +40,7 @@ extern NSString * const TYUtilWatchKitExtensionString;
 
 /**
  *  @category TYUtil(AppExtension)
- *  To determine which process the code runs in (App/AppExtension/WatchKitExtension).
- *  运行时判断当前代码运行在哪个进程
+ *  Checks the process in which the program runs (App/AppExtension/WatchKitExtension).
  */
 @interface TYSDKUtil (AppSDKExtension)
 

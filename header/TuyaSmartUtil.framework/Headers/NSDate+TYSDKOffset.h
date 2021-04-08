@@ -9,7 +9,7 @@
 
 @interface NSDate (TYSDKOffset)
 
-// 云端时间戳，每次启动会去校准云端时间
+// Cloud timestamp. Cloud time is synchronized at each startup.
 + (NSTimeInterval)tysdk_serverTimeIntervalSince1970;
 
 + (NSString *)tysdk_timeZone;

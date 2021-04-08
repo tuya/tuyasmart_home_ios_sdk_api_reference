@@ -11,20 +11,20 @@
 
 @interface TYSDKLogUtils : NSObject
 
-//byte 字节打印
+// Prints bytes.
 + (void)tysdk_logByte:(uint8_t *)bytes len:(int)len str:(NSString *)str;
 
 + (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute;
 
 + (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute identifier:(NSString *)identifier;
 
-/* 开始一个（时长类）事件
+/* Starts an event that indicates a period.
  
- @params type 事件名称
- @params attributes 公共事件参数
- @params infos 事件信息
- @params identifier 事件ID（调用 [xxx ty_apm_identifier] 生成）
- @params trackType 连路点状态  （trackType = @”begin“ 开始 / @"track" 发送/ @"end" 结束）
+ @params type The name of the event.
+ @params attributes Common parameters of the event.
+ @params infos The information about the event.
+ @params identifier The ID of the event. The value is generated in the call of [xxx ty_apm_identifier].
+ @params trackType The status of the tracked point. (trackType = @”begin“ Begin / @"track" Send/ @"end" End)
  
  */
 + (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute infos:(NSDictionary *)infos trackType:(NSString *)trackType identifier:(NSString *)identifier;
@@ -32,13 +32,13 @@
 + (NSString *)tysdk_eventIdentifiter;
 
 
-/// 压缩点
+/// The data compression point.
 ///
-/// @param type 事件名称，对应平台上的唯一标示
-/// @param attribute 事件参数
-/// @param identify 事件标示，用于区分开与其他埋点数据
-/// @param maxCount 最大压缩收集数，当收集到 x 条数时，会执行 handler
-/// @param handler 当收集到 x 条数时，会执行 handler，返回值为上报的格式数据
+/// @param type The unique name of the event.
+/// @param attribute The parameters of the event.
+/// @param identify The identifier of the event. The value is used to differentiate event tracking data.
+/// @param maxCount The maximum number of entries that are compressed and collected. When the value is x, the handler is executed.
+/// @param handler When the value is x, the handler is executed. The collected data is returned.
 + (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute identify:(NSString *)identify maxCount:(int)maxCount handler:(NSDictionary *(^)(NSInteger index, NSArray * datas))handler;
 
 @end

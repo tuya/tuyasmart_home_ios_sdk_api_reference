@@ -11,80 +11,80 @@
 
 /**
  *
- * APP错误码枚举定义
+ * Definitions of error codes
  */
 typedef enum {
     
-    //接口请求网络错误 errorcode 不能变
+    // The specified network parameter is invalid. The error code cannot be changed.
     TUYA_NETWORK_ERROR = 1500,
     
-    //一般的错误
+    // A common error has occurred.
     TUYA_COMMON_ERROR,
     
-    //面板解压失败
+    // Failed to decompress the panel.
     TUYA_PANEL_DECOMPRESS_ERROR,
     
-    //面板大小校验失败
+    // Failed to validate the panel size.
     TUYA_PANEL_SIZE_ERROR,
     
-    //本地时间校验失败
+    // Failed to validate local time.
     TUYA_TIME_VALIDATE_FAILED,
     
-    //设备已离线
+    // The specified device goes offline.
     TUYA_GW_OFFLINE,
     
-    //用户已注册
+    // The specified user has already registered.
     TUYA_USER_HAS_EXISTS,
     
-    //非法的dp下发
+    // The specified DP is illegal and cannot be sent.
     TUYA_ILLEGAL_DP_DATA,
     
-    //设备已经被重置
+    // The device has been reset.
     TUYA_DEVICE_HAS_RESET,
     
-    //用户登录信息丢失
+    // The user login information is lost.
     TUYA_USER_SESSION_LOSS,
     
-    //用户登录信息失效
+    // The user login information is invalid.
     TUYA_USER_SESSION_INVALID,
     
-    //二维码识别错误
+    // An error has occurred while recognizing the QR code.
     TUYA_QR_PROTOCOL_NOT_RECOGNIZED,
     
-    //超时错误
+    // A timeout error has occurred.
     TUYA_TIMEOUT_ERROR,
     
-    //无可用 node ID
+    // Node IDs are unavailable.
     TUYA_NO_AVAILABLE_NODE_ID,
     
-    //手机号格式错误
+    // The format of the specified phone number is invalid.
     TUYA_MOBILE_FORMAT_ERROR,
     
-    //手机号码输入错误
+    // The specified phone number is invalid.
     TUYA_MOBILE_ILLEGAL,
     
-    //手机验证码错误
+    // The specified phone verification code is invalid.
     TUYA_MOBILE_CODE_ERROR,
     
-    //邮箱格式错误
+    // The format of the specified email address is invalid.
     TUYA_EMAIL_FORMAT_ERROR,
     
-    //邮箱输入错误
+    // The specified email address is invalid.
     TUYA_EMAIL_ILLEGAL,
     
-    //邮箱验证码错误
+    // The specified email verification code is invalid.
     TUYA_EMAIL_CODE_ERROR,
     
-    //用户不存在
+    // The specified user does not exist.
     TUYA_USER_NOT_EXISTS,
     
-    //zigbee 群组子设备不能为空
+    // Sub-devices of the Zigbee group cannot be empty.
     TUYA_GROUP_DEVICE_LIST_NOT_EMPTY,
     
-    //局域网离线
+    // The LAN is disconnected.
     TUYA_SOCKET_TCP_DISCONNECT,
     
-    //局域网解析错误
+    // An error has occurred while resolving domain names over the LAN.
     TUYA_SOCKET_TCP_RESPONSE_ERROR,
     
 } TYSDKErrorCode;

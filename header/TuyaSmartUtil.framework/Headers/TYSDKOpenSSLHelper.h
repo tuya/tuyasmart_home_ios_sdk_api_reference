@@ -17,7 +17,7 @@
 - (NSData*) deobfuscateENCPDU: (NSData*) anENCPDUData ivIndex:(NSData*) anIVIndex privacyKey:(NSData*) aPrivacyKey;
 - (NSData*) calculateDecryptedCCM:(NSData *)someData withKey:(NSData *)aKey nonce:(NSData *)aNonce dataSize:(UInt8)aSize andMIC:(NSData*)aMIC;
 
-//MARK: - Helpers
+// MARK: - Helpers
 - (NSData*) calculateK1WithN: (NSData*) anNValue salt: (NSData*) aSaltValue andP: (NSData*) aPValue;
 - (NSData*) calculateK2WithN: (NSData*) anNValue andP: (NSData*) aPValue;
 - (NSData*) calculateK3WithN: (NSData*) anNValue;

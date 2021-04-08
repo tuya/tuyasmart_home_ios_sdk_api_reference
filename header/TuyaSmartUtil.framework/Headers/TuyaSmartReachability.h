@@ -6,7 +6,7 @@
 
 
 /** 
- * Create NS_ENUM macro if it does not exist on the targeted version of iOS or OS X.
+ * Create NS_ENUM macro if it does not exist on the required version for iOS or OS X.
  *
  * @see http://nshipster.com/ns_enum-ns_options/
  **/
@@ -17,7 +17,7 @@
 extern NSString *const kTuyaSmartReachabilityChangedNotification;
 
 typedef NS_ENUM(NSInteger, TYSDKNetworkStatus) {
-    // Apple NetworkStatus Compatible Names.
+    // Apple NetworkStatus compatible names.
     TYSDKNotReachable = 0,
     TYSDKReachableViaWiFi = 2,
     TYSDKReachableViaWWAN = 1
@@ -38,7 +38,7 @@ typedef void (^TuyaSmartNetworkUnreachable)(TuyaSmartReachability * reachability
 
 
 +(TuyaSmartReachability*)reachabilityWithHostname:(NSString*)hostname;
-// This is identical to the function above, but is here to maintain
+// This is identical to the preceding function but is used to provide
 //compatibility with Apples original code. (see .m)
 +(TuyaSmartReachability*)reachabilityWithHostName:(NSString*)hostname;
 +(TuyaSmartReachability*)reachabilityForInternetConnection;
@@ -54,13 +54,13 @@ typedef void (^TuyaSmartNetworkUnreachable)(TuyaSmartReachability * reachability
 -(BOOL)isReachableViaWWAN;
 -(BOOL)isReachableViaWiFi;
 
-// WWAN may be available, but not active until a connection has been established.
-// WiFi may require a connection for VPN on Demand.
+// WWAN might be available, but not active until a connection has been established.
+// Wi-Fi might require a connection to enable VPN On Demand.
 -(BOOL)isConnectionRequired; // Identical DDG variant.
 -(BOOL)connectionRequired; // Apple's routine.
-// Dynamic, on demand connection?
+// Indicates whether a dynamic on-demand connection is used.
 -(BOOL)isConnectionOnDemand;
-// Is user intervention required?
+// Indicates whether user intervention is required.
 -(BOOL)isInterventionRequired;
 
 -(TYSDKNetworkStatus)currentReachabilityStatus;
