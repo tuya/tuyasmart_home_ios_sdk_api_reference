@@ -234,14 +234,14 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>压缩点</p>
+<p>The data compression point.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>事件名称，对应平台上的唯一标示 </td></tr>
-    <tr><td class="paramname">attribute</td><td>事件参数 </td></tr>
-    <tr><td class="paramname">identify</td><td>事件标示，用于区分开与其他埋点数据 </td></tr>
-    <tr><td class="paramname">maxCount</td><td>最大压缩收集数，当收集到 x 条数时，会执行 handler </td></tr>
-    <tr><td class="paramname">handler</td><td>当收集到 x 条数时，会执行 handler，返回值为上报的格式数据 </td></tr>
+    <tr><td class="paramname">type</td><td>The unique name of the event. </td></tr>
+    <tr><td class="paramname">attribute</td><td>The parameters of the event. </td></tr>
+    <tr><td class="paramname">identify</td><td>The identifier of the event. The value is used to differentiate event tracking data. </td></tr>
+    <tr><td class="paramname">maxCount</td><td>The maximum number of entries that are compressed and collected. When the value is x, the handler is executed. </td></tr>
+    <tr><td class="paramname">handler</td><td>When the value is x, the handler is executed. The collected data is returned. </td></tr>
   </table>
   </dd>
 </dl>

@@ -97,33 +97,30 @@ $(document).ready(function(){initNavTree('_t_y_s_d_k_local_network_manager_8h_so
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="interface_t_y_s_d_k_local_network_manager.html#a5a358360f19bf551e1a490a634570f14">   11</a></span>&#160;<span class="keyword">typedef</span> NS_ENUM(<span class="keywordtype">int</span>, TYSDKLocalNetworkStatus) {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">// 本地网络没有连接（无线网卡无法获取IP地址）</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// Local network not connected (Wi-Fi adapter can&#39;t get IP address)</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    kTYSDKLocalNetworkStatusNotConnected,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// 用户已经禁止此应用使用“本地网络”权限，或者还没有作出选择</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// User has explicitly denied authorization for this application, or not yet made a choice</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    kTYSDKLocalNetworkStatusNotDeterminedOrDenied,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// 用户已经允许此应用使用“本地网络”权限</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// User has granted authorization to use their local network only while they are using your app.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    kTYSDKLocalNetworkStatusStatusAuthorized,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">// The local network is not connected (the Wi-Fi adapter cannot get an IP address).</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    kTYSDKLocalNetworkStatusNotConnected,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// The user has explicitly denied authorization for this application, or not yet made a choice.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    kTYSDKLocalNetworkStatusNotDeterminedOrDenied,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// The user has granted permissions to use the local network only when your app is being used.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    kTYSDKLocalNetworkStatusStatusAuthorized,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;API_AVAILABLE(ios(14.0))</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="interface_t_y_s_d_k_local_network_manager.html">   23</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_t_y_s_d_k_local_network_manager.html">TYSDKLocalNetworkManager</a> : NSObject</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;API_AVAILABLE(ios(14.0))</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="interface_t_y_s_d_k_local_network_manager.html">   26</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_t_y_s_d_k_local_network_manager.html">TYSDKLocalNetworkManager</a> : NSObject</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;+ (instancetype)<a class="code" href="interface_t_y_s_d_k_local_network_manager.html#a3ef86b5ae6480fbdd4e5b5d3536ad2dc">manager</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;- (NSString *)<a class="code" href="interface_t_y_s_d_k_local_network_manager.html#a6689cc977db1ff9e9c6ed50b7265b6ba">localIPAddress</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;- (void)<a class="code" href="interface_t_y_s_d_k_local_network_manager.html#a75a71923ad60add20a4101af6ae337d5">requestAuthorization</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;- (void)authorizationStatus:(<span class="keywordtype">void</span> (^)(TYSDKLocalNetworkStatus status))callback;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">@end</span></div>
-<div class="ttc" id="ainterface_t_y_s_d_k_local_network_manager_html"><div class="ttname"><a href="interface_t_y_s_d_k_local_network_manager.html">TYSDKLocalNetworkManager</a></div><div class="ttdef"><b>Definition:</b> TYSDKLocalNetworkManager.h:27</div></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;+ (instancetype)<a class="code" href="interface_t_y_s_d_k_local_network_manager.html#a3ef86b5ae6480fbdd4e5b5d3536ad2dc">manager</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- (NSString *)<a class="code" href="interface_t_y_s_d_k_local_network_manager.html#a6689cc977db1ff9e9c6ed50b7265b6ba">localIPAddress</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;- (void)<a class="code" href="interface_t_y_s_d_k_local_network_manager.html#a75a71923ad60add20a4101af6ae337d5">requestAuthorization</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;- (void)authorizationStatus:(<span class="keywordtype">void</span> (^)(TYSDKLocalNetworkStatus status))callback;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="ainterface_t_y_s_d_k_local_network_manager_html"><div class="ttname"><a href="interface_t_y_s_d_k_local_network_manager.html">TYSDKLocalNetworkManager</a></div><div class="ttdef"><b>Definition:</b> TYSDKLocalNetworkManager.h:24</div></div>
 <div class="ttc" id="ainterface_t_y_s_d_k_local_network_manager_html_a3ef86b5ae6480fbdd4e5b5d3536ad2dc"><div class="ttname"><a href="interface_t_y_s_d_k_local_network_manager.html#a3ef86b5ae6480fbdd4e5b5d3536ad2dc">+[TYSDKLocalNetworkManager manager]</a></div><div class="ttdeci">instancetype manager()</div></div>
 <div class="ttc" id="ainterface_t_y_s_d_k_local_network_manager_html_a6689cc977db1ff9e9c6ed50b7265b6ba"><div class="ttname"><a href="interface_t_y_s_d_k_local_network_manager.html#a6689cc977db1ff9e9c6ed50b7265b6ba">-[TYSDKLocalNetworkManager localIPAddress]</a></div><div class="ttdeci">NSString * localIPAddress()</div></div>
 <div class="ttc" id="ainterface_t_y_s_d_k_local_network_manager_html_a75a71923ad60add20a4101af6ae337d5"><div class="ttname"><a href="interface_t_y_s_d_k_local_network_manager.html#a75a71923ad60add20a4101af6ae337d5">-[TYSDKLocalNetworkManager requestAuthorization]</a></div><div class="ttdeci">void requestAuthorization()</div></div>

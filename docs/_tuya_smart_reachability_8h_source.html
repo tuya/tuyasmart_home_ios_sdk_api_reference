@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('_tuya_smart_reachability_8h_source.htm
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">extern</span> NSString *<span class="keyword">const</span> kTuyaSmartReachabilityChangedNotification;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">typedef</span> NS_ENUM(NSInteger, TYSDKNetworkStatus) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// Apple NetworkStatus Compatible Names.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// Apple NetworkStatus compatible names.</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    TYSDKNotReachable = 0,</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    TYSDKReachableViaWiFi = 2,</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    TYSDKReachableViaWWAN = 1</div>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('_tuya_smart_reachability_8h_source.htm
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;+(TuyaSmartReachability*)reachabilityWithHostname:(NSString*)hostname;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// This is identical to the function above, but is here to maintain</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// This is identical to the preceding function but is used to provide</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//compatibility with Apples original code. (see .m)</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;+(TuyaSmartReachability*)reachabilityWithHostName:(NSString*)hostname;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;+(TuyaSmartReachability*)reachabilityForInternetConnection;</div>
@@ -137,13 +137,13 @@ $(document).ready(function(){initNavTree('_tuya_smart_reachability_8h_source.htm
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;-(BOOL)isReachableViaWWAN;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;-(BOOL)isReachableViaWiFi;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// WWAN may be available, but not active until a connection has been established.</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">// WiFi may require a connection for VPN on Demand.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// WWAN might be available, but not active until a connection has been established.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">// Wi-Fi might require a connection to enable VPN On Demand.</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;-(BOOL)isConnectionRequired; <span class="comment">// Identical DDG variant.</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;-(BOOL)connectionRequired; <span class="comment">// Apple&#39;s routine.</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// Dynamic, on demand connection?</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// Indicates whether a dynamic on-demand connection is used.</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;-(BOOL)isConnectionOnDemand;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// Is user intervention required?</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// Indicates whether user intervention is required.</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;-(BOOL)isInterventionRequired;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;-(TYSDKNetworkStatus)currentReachabilityStatus;</div>

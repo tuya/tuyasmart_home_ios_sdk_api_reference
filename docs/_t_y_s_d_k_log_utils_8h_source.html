@@ -99,20 +99,20 @@ $(document).ready(function(){initNavTree('_t_y_s_d_k_log_utils_8h_source.html','
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="interface_t_y_s_d_k_log_utils.html">   12</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_t_y_s_d_k_log_utils.html">TYSDKLogUtils</a> : NSObject</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//byte 字节打印</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Prints bytes.</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;+ (void)tysdk_logByte:(uint8_t *)bytes len:(<span class="keywordtype">int</span>)len str:(NSString *)str;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;+ (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;+ (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute identifier:(NSString *)identifier;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/* 开始一个（时长类）事件</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/* Starts an event that indicates a period.</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> @params type 事件名称</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> @params attributes 公共事件参数</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> @params infos 事件信息</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> @params identifier 事件ID（调用 [xxx ty_apm_identifier] 生成）</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> @params trackType 连路点状态  （trackType = @”begin“ 开始 / @&quot;track&quot; 发送/ @&quot;end&quot; 结束）</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> @params type The name of the event.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> @params attributes Common parameters of the event.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> @params infos The information about the event.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> @params identifier The ID of the event. The value is generated in the call of [xxx ty_apm_identifier].</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> @params trackType The status of the tracked point. (trackType = @”begin“ Begin / @&quot;track&quot; Send/ @&quot;end&quot; End)</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> </span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;+ (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute infos:(NSDictionary *)infos trackType:(NSString *)trackType identifier:(NSString *)identifier;</div>
