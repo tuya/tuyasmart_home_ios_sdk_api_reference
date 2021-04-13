@@ -25,13 +25,15 @@
 var NAVTREE =
 [
   [ "Tuya iOS Home SDK API Reference", "index.html", [
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Properties", "functions_prop.html", "functions_prop" ]
       ] ]
     ] ]
   ] ]
@@ -39,7 +41,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"functions_prop_w.html",
+"interface_tuya_smart_device_module_model.html#a95f38dbd14680d3d97c32565d19f748e",
+"interface_tuya_smart_home_member_model.html#ae8a82b2438e7ca9b4475ec0e39d24fd9",
+"interface_tuya_smart_share_member_detail_model.html#a71cf1f70034df0a1242a16271b05a7fa"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

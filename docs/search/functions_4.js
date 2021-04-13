@@ -1,4 +1,27 @@
 var searchData=
 [
-  ['requestauthorization_147',['requestAuthorization',['../interface_t_y_s_d_k_local_network_manager.html#a75a71923ad60add20a4101af6ae337d5',1,'TYSDKLocalNetworkManager']]]
+  ['deleteanonymousaccountwithsuccess_3afailure_3a_959',['deleteAnonymousAccountWithSuccess:failure:',['../interface_tuya_smart_user.html#a32646b1f836b05fb4cfb4fd6cf434a6a',1,'TuyaSmartUser::deleteAnonymousAccountWithSuccess:failure:()'],['../category_tuya_smart_user_07_anonymous_08.html#a32646b1f836b05fb4cfb4fd6cf434a6a',1,'TuyaSmartUser(Anonymous)::deleteAnonymousAccountWithSuccess:failure:()']]],
+  ['deprecated_5fmsg_5fattribute_960',['DEPRECATED_MSG_ATTRIBUTE',['../category_tuya_smart_s_d_k_07_push_notification_08.html#af98896a289c7acb89a07334424ea9254',1,'TuyaSmartSDK(PushNotification)::DEPRECATED_MSG_ATTRIBUTE()'],['../interface_tuya_smart_s_d_k.html#af98896a289c7acb89a07334424ea9254',1,'TuyaSmartSDK::DEPRECATED_MSG_ATTRIBUTE()']]],
+  ['devattributeissupport_3a_961',['devAttributeIsSupport:',['../interface_tuya_smart_device_model.html#a1fdfaa40cf8369387c19ffb72dc8832d',1,'TuyaSmartDeviceModel']]],
+  ['device_3adidreceivecustommessage_3a_962',['device:didReceiveCustomMessage:',['../protocol_tuya_smart_device_delegate-p.html#a69f04708877684e58896827e8c2a85e8',1,'TuyaSmartDeviceDelegate-p']]],
+  ['device_3adidreceivelanmessage_3a_963',['device:didReceiveLanMessage:',['../protocol_tuya_smart_device_delegate-p.html#a35034c2b0219fe350aa140908b6aee84',1,'TuyaSmartDeviceDelegate-p']]],
+  ['device_3adpcommandsupdate_3a_964',['device:dpCommandsUpdate:',['../protocol_tuya_smart_device_delegate-p.html#a8ee87482282093cf9f01a8bec3a37b4c',1,'TuyaSmartDeviceDelegate-p']]],
+  ['device_3adpsupdate_3a_965',['device:dpsUpdate:',['../protocol_tuya_smart_device_delegate-p.html#a2777b88e7550ad52e4d7d52438f91ce4',1,'TuyaSmartDeviceDelegate-p']]],
+  ['device_3afirmwareupgradeprogress_3aprogress_3a_966',['device:firmwareUpgradeProgress:progress:',['../protocol_tuya_smart_device_delegate-p.html#a63e08c46b00c16ef616c3920e92217a1',1,'TuyaSmartDeviceDelegate-p']]],
+  ['device_3afirmwareupgradestatusmodel_3a_967',['device:firmwareUpgradeStatusModel:',['../protocol_tuya_smart_device_delegate-p.html#a94320b18650aacbddc7c9dcf672d78e7',1,'TuyaSmartDeviceDelegate-p']]],
+  ['device_3asignal_3a_968',['device:signal:',['../protocol_tuya_smart_device_delegate-p.html#a6e49d285b85319f0baef12c442f7f637',1,'TuyaSmartDeviceDelegate-p']]],
+  ['device_3atype_3aupgradestatus_3a_969',['device:type:upgradeStatus:',['../protocol_tuya_smart_device_delegate-p.html#a21955d6f83eabd01c28b51d33c2c43a5',1,'TuyaSmartDeviceDelegate-p']]],
+  ['device_3awarninginfoupdate_3a_970',['device:warningInfoUpdate:',['../protocol_tuya_smart_device_delegate-p.html#a7ab437cde31b695b1906dc4a184ce5e1',1,'TuyaSmartDeviceDelegate-p']]],
+  ['devicedidadd_3a_971',['deviceDidAdd:',['../protocol_t_y_core_cache_service_delegate-p.html#a53b6a83f85c31852d2c162dd8ab268a2',1,'TYCoreCacheServiceDelegate-p']]],
+  ['devicedidremove_3a_972',['deviceDidRemove:',['../protocol_t_y_core_cache_service_delegate-p.html#a246202976b4ee7f2b8b18fe7d5195e6a',1,'TYCoreCacheServiceDelegate-p']]],
+  ['devicefirmwareupgradefailure_3atype_3a_973',['deviceFirmwareUpgradeFailure:type:',['../protocol_tuya_smart_device_delegate-p.html#ace7023d77b92ef218fefdf16dc98a618',1,'TuyaSmartDeviceDelegate-p']]],
+  ['devicefirmwareupgradesuccess_3atype_3a_974',['deviceFirmwareUpgradeSuccess:type:',['../protocol_tuya_smart_device_delegate-p.html#adadb15f4207e4fd73482f406eae4b5a6',1,'TuyaSmartDeviceDelegate-p']]],
+  ['devicefirmwareupgrading_3atype_3a_975',['deviceFirmwareUpgrading:type:',['../protocol_tuya_smart_device_delegate-p.html#a94a07265120753fc52038253495b71ad',1,'TuyaSmartDeviceDelegate-p']]],
+  ['deviceinfoupdate_3a_976',['deviceInfoUpdate:',['../protocol_tuya_smart_device_delegate-p.html#aa4e48b1542c597ec5c718acb630cb46f',1,'TuyaSmartDeviceDelegate-p']]],
+  ['devicelistdidadd_3a_977',['deviceListDidAdd:',['../protocol_t_y_core_cache_service_delegate-p.html#ae514b3a34e1ad93cc1ab2f763b0c1f91',1,'TYCoreCacheServiceDelegate-p']]],
+  ['deviceremoved_3a_978',['deviceRemoved:',['../protocol_tuya_smart_device_delegate-p.html#ad7c83b956fa12723f6a370e6429934d4',1,'TuyaSmartDeviceDelegate-p']]],
+  ['devicewithdeviceid_3a_979',['deviceWithDeviceId:',['../interface_tuya_smart_device.html#abd4df0b56d5b2abeb8be43d6e0ce1412',1,'TuyaSmartDevice']]],
+  ['didreceiveapplicationcontext_3a_980',['didReceiveApplicationContext:',['../category_tuya_smart_user_07_w_c_session_08.html#ac3f7e3d1f8f9b29822afae34249e272c',1,'TuyaSmartUser(WCSession)::didReceiveApplicationContext:()'],['../interface_tuya_smart_user.html#ac3f7e3d1f8f9b29822afae34249e272c',1,'TuyaSmartUser::didReceiveApplicationContext:()']]],
+  ['dismissgroup_3afailure_3a_981',['dismissGroup:failure:',['../interface_tuya_smart_group.html#a8155f238af01f98a4b9cf54a94de0b1b',1,'TuyaSmartGroup']]],
+  ['dismisshomewithsuccess_3afailure_3a_982',['dismissHomeWithSuccess:failure:',['../interface_tuya_smart_home.html#a1ae12d89b9d3038c71dd14d7fee34c2b',1,'TuyaSmartHome']]]
 ];
