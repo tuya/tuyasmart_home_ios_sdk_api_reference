@@ -8,35 +8,35 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Communication type
+/// The communication type.
 typedef NS_ENUM(NSUInteger, TYCommunicationType) {
     TYCommunicationTypeLAN      = 0, // LAN
     TYCommunicationTypeMQTT     = 1, // MQTT
-    TYCommunicationTypeHTTP     = 2, // Http
-    TYCommunicationTypeBLE      = 3, // Single Point Bluetooth
-    TYCommunicationTypeSIGMesh  = 4, // Sig Mesh
-    TYCommunicationTypeBLEMesh  = 5, // Tuya Private Mesh
-    TYCommunicationTypeBLEBeacon  = 6, // beaocn
+    TYCommunicationTypeHTTP     = 2, // HTTP
+    TYCommunicationTypeBLE      = 3, // Bluetooth LE
+    TYCommunicationTypeSIGMesh  = 4, // Bluetooth mesh
+    TYCommunicationTypeBLEMesh  = 5, // Bluetooth LE mesh
+    TYCommunicationTypeBLEBeacon  = 6, // Beacon
 };
 
-/// Communication mode
+/// The communication mode.
 @interface TuyaSmartCommunicationMode : NSObject
 
-/// Communication protocol version
+/// The communication protocol version.
 @property (nonatomic, assign) double pv;
 
-/// Communication Protocol Type
+/// The communication protocol type.
 @property (nonatomic, assign) TYCommunicationType type;
 
 @end
 
-/// Device communication
+/// The device communication.
 @interface TuyaSmartCommunication : NSObject
 
-/// Communication sequence
+/// The communication sequence.
 @property (nonatomic, strong) NSArray<TuyaSmartCommunicationMode *> *communicationModes;
 
-/// Communication Nodes
+/// The communication nodes.
 @property (nonatomic, strong) NSString *communicationNode;
 
 @end

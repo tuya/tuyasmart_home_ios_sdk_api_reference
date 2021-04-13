@@ -8,19 +8,19 @@
 
 @interface TuyaSmartShareMemberDetailModel : NSObject
 
-/// deviceModel list
+/// The device model list.
 @property (nonatomic, strong) NSArray <TuyaSmartShareDeviceModel *> *devices;
 
-/// mobile
+/// The phone number.
 @property (nonatomic, strong) NSString *mobile;
 
-/// name
+/// The name.
 @property (nonatomic, strong) NSString *name;
 
-/// remark name
+/// The nickname.
 @property (nonatomic, strong) NSString *remarkName;
 
-/// auto sharing
+/// Specifies whether to enable automatic sharing.
 @property (nonatomic, assign) BOOL autoSharing;
 
 

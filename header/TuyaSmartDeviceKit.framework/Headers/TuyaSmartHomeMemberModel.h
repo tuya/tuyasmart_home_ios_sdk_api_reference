@@ -9,35 +9,35 @@
 
 @interface TuyaSmartHomeMemberModel : NSObject
 
-// member Id
+// The member ID.
 @property (nonatomic, assign) long long memberId;
 
-// Head portraits of members
+// The avatars of members.
 @property (nonatomic, strong) NSString *headPic;
 
-// name of members
+// The names of members.
 @property (nonatomic, strong) NSString *name;
 
-// role
+// The role.
 @property (nonatomic, assign) TYHomeRoleType role;
 
-// home Id
+// The home ID.
 @property (nonatomic, assign) long long homeId;
 
-// mobile
+// The mobile phone number.
 @property (nonatomic, strong) NSString *mobile;
 
-// user name
+// The username.
 @property (nonatomic, strong) NSString *userName;
 
-// uid
+// The user ID.
 @property (nonatomic, strong) NSString *uid;
 
-// state of deal
+// The state of the deal.
 @property (nonatomic, assign) TYHomeStatus dealStatus;
 
 #pragma mark - deprecated
-// admin or not
-@property (nonatomic, assign) BOOL isAdmin __deprecated_msg("The property will be deprecated and remove in a future version，Please use role");
+// Specifies whether the member is an administrator.
+@property (nonatomic, assign) BOOL isAdmin __deprecated_msg("The property will be deprecated and remove in a future version. Please use the role");
 
 @end

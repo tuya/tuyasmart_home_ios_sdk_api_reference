@@ -10,9 +10,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartMultiControlDatapointModel : NSObject
 
-@property (copy, nonatomic) NSString *dpId;///< dp id
-@property (copy, nonatomic) NSString *name;///< dp name
-@property (copy, nonatomic) NSString *code;///< dp standard name（dpCode）
+@property (copy, nonatomic) NSString *dpId;///< The DP ID.
+@property (copy, nonatomic) NSString *name;///< The name.
+@property (copy, nonatomic) NSString *code;///< The DP standard name (dpCode).
 @property (copy, nonatomic) NSString *schemaId;///< The schema ID to which the key belongs.
 
 @end

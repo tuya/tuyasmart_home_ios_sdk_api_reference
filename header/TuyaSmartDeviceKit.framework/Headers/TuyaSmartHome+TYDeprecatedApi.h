@@ -11,16 +11,16 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TuyaSmartHome (TYDeprecatedApi)
 
 
-/// Add a home member
+/// Adds a home member.
 ///
-/// @param name         Member name
-/// @param headPic      Member portrait
-/// @param countryCode  Country code
-/// @param account      User account
-/// @param isAdmin      Whether the administrator
-/// @param success      Success block
-/// @param failure      Failure block
-/// @deprecated This method is deprecated, Use TuyaSmartHome::addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure: instead.
+/// @param name         The member's name.
+/// @param headPic      The member's avatar.
+/// @param countryCode  The country code.
+/// @param account      The user account.
+/// @param isAdmin      Specifies whether the member is an administrator.
+/// @param success      The success block.
+/// @param failure      The failure block.
+/// @deprecated This method is deprecated. Use TuyaSmartHome::addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure: instead.
 - (void)addHomeMemberWithName:(NSString *)name
                       headPic:(UIImage *)headPic
                   countryCode:(NSString *)countryCode
@@ -29,16 +29,16 @@ NS_ASSUME_NONNULL_BEGIN
                       success:(TYSuccessDict)success
                       failure:(TYFailureError)failure __deprecated_msg("This method is deprecated, Use [TuyaSmartHome   addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure:]");
 
-/// Add a home member
+/// Adds a home member.
 ///
-/// @param name         Member name
-/// @param headPic      Member portrait
-/// @param countryCode  Country code
-/// @param account      User account
-/// @param role         home role type
-/// @param success      Success block
-/// @param failure      Failure block
-/// @deprecated This method is deprecated, Use TuyaSmartHome::addHomeMemberWithAddMemeberRequestModel:success:failure: instead.
+/// @param name         The member's name.
+/// @param headPic      The member's avatar.
+/// @param countryCode  The country code.
+/// @param account      The user account.
+/// @param role         The type of the home role.
+/// @param success      The success block.
+/// @param failure      The failure block.
+/// @deprecated This method is deprecated. Use TuyaSmartHome::addHomeMemberWithAddMemeberRequestModel:success:failure: instead.
 - (void)addHomeMemberWithName:(NSString *)name
                       headPic:(UIImage *)headPic
                   countryCode:(NSString *)countryCode

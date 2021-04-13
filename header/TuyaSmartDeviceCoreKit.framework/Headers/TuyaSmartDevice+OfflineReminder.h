@@ -8,30 +8,30 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// @brief Tuya smart device offline alert function, including setting whether to support offline alert function, the status of offline alert switch, setting offline alert function.
+/// @brief Tuya smart device offline alerts: You can specify whether to support the offline alert function, set the status of the offline alert switch, and set the offline alert rules.
 ///
-/// When the device sets offline alert, it will send offline notification to the current user as a reminder when it is offline, you can access  message push to access this feature.
+/// When offline alerts are enabled for the device, the device sends an offline notification to the specified user when the device goes offline. You can subscribe to the message push function to enable this feature.
 ///
 @interface TuyaSmartDevice (OfflineReminder)
 
-/// Check if the device supports offline alerts
+/// Checks whether the device supports offline alerts.
 ///
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getOfflineReminderSupportStatusWithSuccess:(nullable TYSuccessBOOL)success failure:(nullable TYFailureError)failure;
 
 
-/// Get the device offline reminder status
+/// Returns the device offline notification status.
 ///
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getOfflineReminderStatusWithSuccess:(nullable TYSuccessBOOL)success failure:(nullable TYFailureError)failure;
 
 
-/// Set device offline reminder
+/// Sets the device offline notification.
 ///
-/// @param status  Need remind when device offline
-/// @param success Called when the task finishes successfully.
+/// @param status  Sends a notification when the device goes offline. 
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)setOfflineReminderStatus:(BOOL)status success:(nullable TYSuccessBOOL)success failure:(nullable TYFailureError)failure;
 

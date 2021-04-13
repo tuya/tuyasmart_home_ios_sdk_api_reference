@@ -9,10 +9,10 @@
 
 /// @brief Header files for TuyaSmartDeviceCoreKit.
 
-/// The highest currently supported extranet communication protocol for clients.
+/// The latest supported Internet communication protocol for clients.
 #define TUYA_CURRENT_GW_PROTOCOL_VERSION 2.2
 
-/// Highest currently supported LAN communication protocol for clients.
+/// The latest supported LAN communication protocol for clients.
 #define TUYA_CURRENT_LAN_PROTOCOL_VERSION 3.4
 
 #import <TuyaSmartBaseKit/TuyaSmartBaseKit.h>

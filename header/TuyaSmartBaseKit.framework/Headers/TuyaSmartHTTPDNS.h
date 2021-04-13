@@ -8,22 +8,22 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// @brief TuyaSmartHTTPDNS is another solution for DNS query instead of system DNS service.
+/// @brief TuyaSmartHTTPDNS is another solution for the DNS query instead of the system DNS service.
 ///
-/// The DNS query can be done through http to prevent DNS cache pollution.
+/// The DNS query can be performed over HTTP to prevent DNS cache pollution.
 @interface TuyaSmartHTTPDNS : NSObject
 
 + (instancetype)sharedInstance;
 
-/// Asynchronous resolution interface, first query the cache, if it exists then return the result, if not return nil and asynchronous domain name resolution to update the cache.
-/// @param host Domain name (e.g. www.tuya.com).
-/// @return The resolution result corresponding to the domain name.
+/// The asynchronous resolution API operation. The cache is queried first. If the DNS record is found, the result is returned. Otherwise, the value of nil and asynchronous domain name resolution result is returned to update the cache.
+/// @param The domain name, such as www.tuya.com.
+/// @return The resolution result of the domain name.
 - (NSString *)getIpWithHost:(NSString *)host;
 
 
-/// Set whether the domain name is downgraded or not.
-/// @param host Domain Name.
-/// @param enable Whether to downgrade.
+/// Specifies whether the domain name is downgraded.
+/// @param host The domain name.
+/// @param enable Specifies whether to downgrade the domain name.
 - (void)setDegradationWithHost:(NSString *)host enable:(BOOL)enable;
 
 @end

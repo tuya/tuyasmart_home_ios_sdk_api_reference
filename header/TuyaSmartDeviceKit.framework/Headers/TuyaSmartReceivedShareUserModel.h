@@ -6,13 +6,13 @@
 
 @interface TuyaSmartReceivedShareUserModel : NSObject
 
-// user name
+// The username.
 @property (nonatomic, strong) NSString *name;
 
-// mobile
+// The phone number.
 @property (nonatomic, strong) NSString *mobile;
 
-// email
+// The email.
 @property (nonatomic, strong) NSString *email;
 
 

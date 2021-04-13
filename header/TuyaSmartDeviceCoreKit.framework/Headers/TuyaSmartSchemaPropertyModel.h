@@ -9,22 +9,22 @@
 
 #import <Foundation/Foundation.h>
 
-/// device schema property
+/// The device schema property.
 @interface TuyaSmartSchemaPropertyModel : NSObject
 
-/// Type: enum - enumerated | bool - boolean | string - string | value - numeric | bitmap - fault.
+/// The type of object. enum: enumerated | bool: boolean | string: character | value: numeric | bitmap: fault.
 @property (nonatomic, strong) NSString   *type;
 
-/// Unit For example, ℃.
+/// The unit, such as °C.
 @property (nonatomic, strong) NSString   *unit;
 
-/// Minimum value of numeric type.
+/// The minimum value of the numeric type.
 @property (nonatomic, assign) double     min;
 
-/// max when type is value.
+/// The maximum value of the value type.
 @property (nonatomic, assign) double     max;
 
-/// Numerical step.
+/// The numerical step.
 @property (nonatomic, assign) double     step;
 
 /// The exponent of 10 in the numeric type, multiplied by the corresponding transmission value, is equal to the actual value and is used to avoid fractional transmission.
@@ -36,10 +36,10 @@
 /// Detailed description of the fault type.
 @property (nonatomic, strong) NSArray    *label;
 
-/// scope of the enumeration type.
+/// The scope of the enumeration type.
 @property (nonatomic, strong) NSArray    *range;
 
-/// value of the user to select.
+/// The specified value.
 @property (nonatomic, assign) NSInteger selectedValue;
 
 @end

@@ -7,10 +7,10 @@
 #ifndef TuyaSmartDeviceKit_h
 #define TuyaSmartDeviceKit_h
 
-/// The highest currently supported extranet communication protocol for clients.
+/// The latest Internet communication protocol that is supported by clients.
 //#define TUYA_CURRENT_GW_PROTOCOL_VERSION 2.2
 
-/// Highest currently supported LAN communication protocol for clients.
+/// The latest LAN communication protocol that is supported by clients.
 //#define TUYA_CURRENT_LAN_PROTOCOL_VERSION 3.4
 
 #import <TuyaSmartBaseKit/TuyaSmartBaseKit.h>

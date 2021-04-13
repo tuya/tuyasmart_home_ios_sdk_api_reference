@@ -10,14 +10,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartHomeDeviceShare (TYDeprecatedApi)
 
-/// Add Sharing
-/// @param homeId homeId
-/// @param countryCode countryCode
-/// @param userAccount userAccount
-/// @param devIds devId list
-/// @param success Success block
-/// @param failure Failure block
-/// @deprecated This method is deprecated, Use TuyaSmartHomeDeviceShare::addDeviceShareWithRequestModel:success:failure: instead.
+/// Adds a sharing task.
+/// @param homeId The home ID.
+/// @param countryCode The country code.
+/// @param userAccount The user account.
+/// @param devIds The list of device IDs.
+/// @param success The success block.
+/// @param failure The failure block.
+/// @deprecated This method is deprecated. Use TuyaSmartHomeDeviceShare::addDeviceShareWithRequestModel:success:failure: instead.
 - (void)addShareWithHomeId:(long long)homeId
                countryCode:(NSString *)countryCode
                userAccount:(NSString *)userAccount
@@ -26,14 +26,14 @@ NS_ASSUME_NONNULL_BEGIN
                    failure:(TYFailureError)failure __deprecated_msg("This method is deprecated, Use [TuyaSmartHomeDeviceShare   addDeviceShareWithRequestModel:success:failure:]");
 
 
-/// Single device add share
-/// @param homeId homeId
-/// @param countryCode countryCode
-/// @param userAccount userAccount
-/// @param devId devId
-/// @param success Success block
-/// @param failure Failure block
-/// @deprecated This method is deprecated, Use TuyaSmartHomeDeviceShare::addDeviceShareWithRequestModel:success:failure: instead.
+/// Adds a task to share a single device.
+/// @param homeId The home ID.
+/// @param countryCode The country code.
+/// @param userAccount The user account.
+/// @param devId The device ID.
+/// @param success The success block.
+/// @param failure The failure block.
+/// @deprecated This method is deprecated. Use TuyaSmartHomeDeviceShare::addDeviceShareWithRequestModel:success:failure: instead.
 - (void)addDeviceShareWithHomeId:(long long)homeId
                      countryCode:(NSString *)countryCode
                      userAccount:(NSString *)userAccount

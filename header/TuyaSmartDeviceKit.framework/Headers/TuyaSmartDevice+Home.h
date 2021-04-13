@@ -10,10 +10,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartDevice (Home)
 
-/// Sync device information.
+/// Synchronizes device information.
 /// @param devId The device ID.
 /// @param homeId The home ID.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 + (void)syncDeviceInfoWithDevId:(NSString *)devId
                          homeId:(long long)homeId

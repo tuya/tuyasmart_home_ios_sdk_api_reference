@@ -10,30 +10,29 @@
 /*
  *  TYDeviceCoreKitError
  *
- *  Discussion:
  *    Error returned as code to NSError from TuyaSmartDeviceKit.
  */
 extern NSString *const kTYDeviceCoreKitErrorDomain;
 
-/// The device core kit errors define.
+/// The definitions of device core kit errors.
 typedef NS_ENUM(NSInteger, TYDeviceCoreKitError) {
-    /// The device does not support a certain capability (capability reported on the device dimension).
+    /// The device does not support a certain capability that is reported on the device dimensions.
     kTYDeviceCoreKitErrorDeviceNotSupport                      = 3000,
-    /// LAN downstream data failure.
+    /// The LAN downstream data failure.
     kTYDeviceCoreKitErrorSocketSendDataFailed                  = 3001,
-    /// DPS command is empty.
+    /// The DP data is empty.
     kTYDeviceCoreKitErrorEmptyDpsData                          = 3002,
-    /// Group device is empty.
+    /// The group devices are empty.
     kTYDeviceCoreKitErrorGroupDeviceListEmpty                  = 3003,
-    /// Group ID length error.
+    /// The group ID length error.
     kTYDeviceCoreKitErrorGroupIdLengthError                    = 3004,
-    /// Illegal dps, see product dp definition.
+    /// Illegal DPs. See the product DP definition.
     kTYDeviceCoreKitErrorIllegalDpData                         = 3005,
-    /// Device ID length error.
+    /// The device ID length error.
     kTYDeviceCoreKitErrorDeviceIdLengthError                   = 3006,
-    /// Missing local key.
+    /// The local key is not found.
     kTYDeviceCoreKitErrorDeviceLocalKeyNotFound                = 3007,
-    /// Product ID length error.
+    /// The product ID length error.
     kTYDeviceCoreKitErrorDeviceProductIDLengthError            = 3008,
     
 };

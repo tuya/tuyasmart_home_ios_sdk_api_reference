@@ -10,16 +10,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartDeviceShareRequestModel : NSObject
 
-/// Home ID
+/// The home ID.
 @property (nonatomic, assign) long long homeID;
 
-/// Country Code
+/// The country code.
 @property (nonatomic, copy) NSString *countryCode;
 
-/// Account
+/// The account.
 @property (nonatomic, copy) NSString *userAccount;
 
-/// Device list ID
+/// The list of device IDs.
 @property (nonatomic, copy) NSArray<NSString *> *devIds;
 
 @end

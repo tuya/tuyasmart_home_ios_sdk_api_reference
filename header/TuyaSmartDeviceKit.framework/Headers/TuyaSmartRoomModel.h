@@ -8,16 +8,16 @@
 
 @interface TuyaSmartRoomModel : NSObject
 
-// room Id
+// The room ID.
 @property (nonatomic, assign) long long roomId;
 
-// room icon
+// The room icon.
 @property (nonatomic, strong) NSString *iconUrl;
 
-// room name
+// The room name.
 @property (nonatomic, strong) NSString *name;
 
-// order
+// The order.
 @property (nonatomic, assign) NSInteger displayOrder;
 
 

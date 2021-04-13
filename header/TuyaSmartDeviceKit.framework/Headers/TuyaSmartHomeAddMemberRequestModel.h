@@ -10,32 +10,32 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartHomeAddMemberRequestModel : NSObject
 
-/// Nicknames for invitees.
+/// The nicknames for invitees.
 @property (nonatomic, copy) NSString *name;
 
-/// Invited accounts.
+/// The invited accounts.
 @property (nonatomic, copy) NSString *account;
 
-/// Invitee account corresponding to the country code.
+/// The invitee account for the specified country code.
 @property (nonatomic, copy) NSString *countryCode;
 
-/// Member role, please set the correct role type you want to set.
+/// The member role. Set the required role type.
 @property (nonatomic, assign) TYHomeRoleType role;
 
-/// The avatar set for the invitee, if set to nil, the invitee's personal avatar will be used.
+/// The avatar for the invitee. If the value is set to nil, the invitee's personal avatar is used.
 @property (nonatomic, strong) UIImage *headPic;
 
-/// Whether the invitee needs to agree to accept the invitation. YES - the invited account automatically accepts the family invitation without the invitee's confirmation; NO - the invitee's consent is required to join the family.
+/// Specifies whether the invitee must accept the invitation. Valid values: `YES`: The invited account automatically accepts the home invitation without the invitee's confirmation. `NO`: The invitee's consent is required to join the home.
 @property (nonatomic, assign) BOOL autoAccept;
 
 @end
 
 @interface TuyaSmartHomeInvitationCreateRequestModel : NSObject
 
-/// Home ID
+/// The home ID.
 @property (nonatomic, assign) long long homeID;
 
-/// A boolean value indicates whether need invitation message.
+/// A Boolean value that specifies whether an invitation message is required.
 @property (nonatomic, assign) BOOL needMsgContent;
 
 @end
@@ -45,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The invitation ID.
 @property (nonatomic, strong) NSNumber *invitationID;
 
-/// A boolean value indicates whether need invitation message.
+/// A Boolean value that specifies whether an invitation message is required.
 @property (nonatomic, assign) BOOL needMsgContent;
 
 @end
@@ -55,14 +55,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// The invitation ID.
 @property (nonatomic, strong) NSNumber *invitationID;
 
-/// Invitation remark name.
+/// The name in the invitation remarks.
 @property (nonatomic, copy) NSString *name;
 
 @end
 
 @interface TuyaSmartHomeInvitationResultModel : NSObject
 
-/// The Invitation message.
+/// The invitation message.
 @property (nonatomic, copy) NSString *invitationMsgContent;
 
 /// The invitation code.
@@ -73,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartHomeInvitationRecordModel : NSObject;
 
-/// Invitation code valid time, unit:hour.
+/// The validity of the invitation code. Unit: hours.
 @property (nonatomic, assign) NSInteger validTime;
 
 /// The invitation ID.
@@ -82,7 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The invitation code.
 @property (nonatomic, copy) NSString *invitationCode;
 
-/// Invitation remark name.
+/// The name in the invitation remarks.
 @property (nonatomic, copy) NSString *name;
 
 @end

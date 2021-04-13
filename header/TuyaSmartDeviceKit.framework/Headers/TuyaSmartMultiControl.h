@@ -14,21 +14,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartMultiControl : NSObject
 
-/// Query the multiple controls and automation associated with the dp button under the device.
-/// @param devId Main device ID.
-/// @param dpId DP ID.
-/// @param success Called when the task finishes successfully. TuyaSmartMultiControlLinkModel will be returned.
+/// Queries the multi-control and automation functions that are associated with the specified device DP.
+/// @param devId The main device ID.
+/// @param dpId The DP ID.
+/// @param success Called when the task is finished. TuyaSmartMultiControlLinkModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)queryDeviceLinkInfoWithDevId:(NSString *)devId
                                 dpId:(NSString *)dpId
                              success:(void (^)(TuyaSmartMultiControlLinkModel *))success
                              failure:(TYFailureError)failure;
 
-/// Adding a multi-control group.
-/// @param devId Main device ID.
+/// Adds a multi-control group.
+/// @param devId The main device ID.
 /// @param groupName The group name.
-/// @param groupDetail Multi-control group association details.
-/// @param success Called when the task finishes successfully. TuyaSmartMultiControlModel will be returned.
+/// @param groupDetail The multi-control group association details.
+/// @param success Called when the task is finished. TuyaSmartMultiControlModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)addMultiControlWithDevId:(NSString *)devId
                        groupName:(NSString *)groupName
@@ -36,29 +36,29 @@ NS_ASSUME_NONNULL_BEGIN
                          success:(void (^)(TuyaSmartMultiControlModel *))success
                          failure:(TYFailureError)failure;
 
-//// Update multi-Control group.
-/// @param devId Main device ID.
-/// @param model Multi-control group data model.
-/// @param success Called when the task finishes successfully. TuyaSmartMultiControlModel will be returned.
+//// Updates the multi-control group.
+/// @param devId The main device ID.
+/// @param model The data model of the multi-control group.
+/// @param success Called when the task is finished. TuyaSmartMultiControlModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateMultiControlWithDevId:(NSString *)devId
                   multiControlModel:(TuyaSmartMultiControlModel *)model
                             success:(void (^)(TuyaSmartMultiControlModel *))success
                             failure:(TYFailureError)failure;
 
-/// Get dp point information of attached devices, associated multi-control, scene automation information.
+/// Returns the DP information of attached devices, the associated multi-control, and the scene automation information.
 /// @param devId The device ID.
-/// @param success Called when the task finishes successfully. TuyaSmartMultiControlDpRelationModel will be returned.
+/// @param success Called when the task is finished. TuyaSmartMultiControlDpRelationModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)queryDeviceDpRelationWithDevId:(NSString *)devId
                                success:(void (^)(TuyaSmartMultiControlDpRelationModel *))success
                                failure:(TYFailureError)failure;
 
 
-/// Enable or disable multiple control groups.
-/// @param multiControlId Multi-control group ID.
-/// @param enable A boolean value indicates whether to enable or disable the group.
-/// @param success Called when the task finishes successfully.
+/// Enables or disables multi-control groups.
+/// @param multiControlId The multi-control group ID.
+/// @param enable A Boolean value that specifies whether to enable or disable the group.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)enableMultiControlWithMultiControlId:(NSString *)multiControlId
                                       enable:(BOOL)enable
@@ -66,18 +66,18 @@ NS_ASSUME_NONNULL_BEGIN
                                      failure:(TYFailureError)failure;
 
 
-/// Query the list of device IDs and the list of device groups (including user's and family's) that support performing actions.
+/// Queries the list of device IDs and device groups that support specific actions. The data is returned by home ID.
 /// @param homeId The home ID.
-/// @param success Called when the task finishes successfully. A list of TuyaSmartMultiControlDeviceModel will be returned.
+/// @param success Called when the task is finished. A list of TuyaSmartMultiControlDeviceModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getMultiControlDeviceListWithHomeId:(long long)homeId
                                     success:(void (^)(NSArray<TuyaSmartMultiControlDeviceModel *> *))success
                                     failure:(TYFailureError)failure;
 
 
-/// Get information about all dp points under the device.
+/// Returns information about all DPs of the specified device.
 /// @param devId The device ID.
-/// @param success Called when the task finishes successfully. A list of TuyaSmartMultiControlDatapointModel will be returned.
+/// @param success Called when the task is finished. A list of TuyaSmartMultiControlDatapointModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getDeviceDpInfoWithDevId:(NSString *)devId
                          success:(void (^)(NSArray<TuyaSmartMultiControlDatapointModel *> *))success

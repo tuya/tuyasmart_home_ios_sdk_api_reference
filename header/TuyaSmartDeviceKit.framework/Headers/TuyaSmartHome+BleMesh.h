@@ -10,8 +10,8 @@
 
 @property (nonatomic, strong, readonly) TuyaSmartBleMeshModel *meshModel;
 
-/// Get the mesh list under the family.
-/// @param success Called when the task finishes successfully.
+/// Returns the mesh list for the home.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getMeshListWithSuccess:(void(^)(NSArray <TuyaSmartBleMeshModel *> *list))success
                        failure:(TYFailureError)failure;

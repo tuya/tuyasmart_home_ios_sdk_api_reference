@@ -8,23 +8,23 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Device upgrade status.
+/// The device update status.
 typedef enum : NSUInteger {
-    /// Not upgrading.
+    /// Not updating.
     TuyaSmartDeviceOTAModelUpgradeStatusNone = 0,
-    /// During the process of upgrade.
+    /// Updating.
     TuyaSmartDeviceOTAModelUpgradeStatusUpgrading = 2
 } TuyaSmartDeviceOTAModelUpgradeStatus;
 
 @interface TuyaSmartDeviceOTAModel : NSObject
 
-/// device Id
+/// The device ID.
 @property (nonatomic, strong) NSString     *devId;
 
-/// The status of device upgrading.
+/// The status of device updates.
 @property (nonatomic) TuyaSmartDeviceOTAModelUpgradeStatus otaUpgradeStatus;
 
-//针对BLEBeacon设备添加beaconCategory
+// Adds a beacon category for the Bluetooth LE beacon device.
 @property (nonatomic, strong) NSString     *beaconCategory;
 
 @end

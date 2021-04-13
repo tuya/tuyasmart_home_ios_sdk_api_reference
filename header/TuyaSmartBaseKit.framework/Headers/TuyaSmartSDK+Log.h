@@ -30,7 +30,7 @@ void TYSDKLog(NSInteger level, NSString *module, const char *file, const char *f
 
 @interface TuyaSmartSDK (Log)
 
-/// Debug mode
+/// The debugging mode.
 @property (nonatomic, assign) BOOL debugMode;
 
 @end

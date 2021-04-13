@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) TuyaSmartBleMeshModel *sigMeshModel;
 
-/// Get the sig mesh list under the family
-/// @param success Called when the task finishes successfully.
+/// Returns the Bluetooth mesh list for the home.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getSIGMeshListWithSuccess:(void(^)(NSArray <TuyaSmartBleMeshModel *> *list))success
                           failure:(TYFailureError)failure;

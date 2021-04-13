@@ -12,15 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Scan code to authorize third-party app login
 
-/// Authorize third-party applications to login by QR code.
-/// @param codeInfo QR code information.
-/// @param success Called when the task finishes successfully.
+/// Authorizes third-party apps to support login with QR code.
+/// @param codeInfo The QR code information.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)loginByQRcode:(NSDictionary *)codeInfo success:(nullable TYSuccessID)success failure:(nullable TYFailureError)failure;
 
-/// Get third-party applications info.
-/// @param codeInfo  QR code information.
-/// @param success Called when the task finishes successfully.
+/// Returns information about third-party apps.
+/// @param codeInfo The QR code information.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)userInfo:(NSDictionary *)codeInfo success:(nullable TYSuccessID)success failure:(nullable TYFailureError)failure;
 

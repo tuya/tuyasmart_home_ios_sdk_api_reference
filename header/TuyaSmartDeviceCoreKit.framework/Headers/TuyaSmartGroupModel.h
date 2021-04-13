@@ -7,7 +7,7 @@
 #ifndef TuyaSmart_TuyaSmartGroupModel
 #define TuyaSmart_TuyaSmartGroupModel
 
-/// group type
+/// The group type.
 typedef enum : NSUInteger {
     TuyaSmartGroupTypeWifi = 0,
     TuyaSmartGroupTypeMesh,
@@ -19,84 +19,84 @@ typedef enum : NSUInteger {
 #import <Foundation/Foundation.h>
 #import "TuyaSmartDevice.h"
 
-/// group information.
+/// The group information.
 @interface TuyaSmartGroupModel : NSObject
 
-/// group Id
+/// The group ID.
 @property (nonatomic, strong) NSString  *groupId;
 
-/// product Id
+/// The product ID.
 @property (nonatomic, strong) NSString  *productId;
 
-/// group creation time
+/// The time when the group was created.
 @property (nonatomic, assign) long long    time;
 
-/// name of group
+/// The name of the group.
 @property (nonatomic, strong) NSString  *name;
 
-/// iconUrl
+/// The URL of the icon.
 @property (nonatomic, strong) NSString  *iconUrl;
 
-/// type of group
+/// The type of group.
 @property (nonatomic, assign) TuyaSmartGroupType  type;
 
 @property (nonatomic, assign) BOOL      isShare;
 
-/// dps
+/// The DPs.
 @property (nonatomic, strong) NSDictionary *dps;
 
-/// dpCodes
+/// The DP codes.
 @property (nonatomic, strong) NSDictionary *dpCodes;
 
-/// localKey
+/// The local key.
 @property (nonatomic, strong) NSString     *localKey;
 
-/// pv
+/// The PV.
 @property (nonatomic, assign) double        pv;
 
-/// deviceNum
+/// The number of devices,
 @property (nonatomic, assign) NSInteger    deviceNum;
 
-/// productInfo
+/// The product information.
 @property (nonatomic, strong) NSDictionary *productInfo;
 
-/// homeId
+/// The home ID.
 @property (nonatomic, assign) long long    homeId;
 
-/// roomId
+/// The room ID.
 @property (nonatomic, assign) long long    roomId;
 
-/// customize DP name
+/// The custom DP name.
 @property (nonatomic, copy)   NSDictionary *dpName;
 
-/// order
+/// The order.
 @property (nonatomic, assign) NSInteger displayOrder;
 
-/// home all group order
+/// The order of all home groups.
 @property (nonatomic, assign) NSInteger homeDisplayOrder;
 
-/// device list
+/// The device list.
 @property (nonatomic, strong) NSArray<TuyaSmartDeviceModel *> *deviceList;
 
-/// local Short Address of Groups
+/// The local short address of groups.
 @property (nonatomic, strong) NSString     *localId;
 
-/// subclass
+/// The subclass.
 @property (nonatomic, strong) NSString     *pcc;
 
-/// meshId or gwId
+/// The mesh ID or gateway ID.
 @property (nonatomic, strong) NSString     *meshId;
 
-/// schema array
+/// The schema array.
 @property (nonatomic, strong) NSArray      *schemaArray;
 
-/// is standard dp code
+/// Indicates whether the standard DP ID is used.
 @property (nonatomic, assign) BOOL         standard;
 
-/// standard schema
+/// The standard schema.
 @property (nonatomic, strong, readonly) TuyaSmartStandSchemaModel *standSchemaModel;
 
-// add beacon beaconKey
+// Add the beacon beaconKey.
 @property (nonatomic, strong) NSString *groupKey;
 
 @end

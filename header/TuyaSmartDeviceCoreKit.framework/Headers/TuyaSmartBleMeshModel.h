@@ -11,16 +11,16 @@
 
 @interface TuyaSmartBleMeshModel : NSObject
 
-//generic mesh info
+// The generic mesh information.
 @property (nonatomic, strong) NSString     *name;
 
-//mesh id
+// The mesh ID.
 @property (nonatomic, strong) NSString     *meshId;
 
-//localKey
+// The local key.
 @property (nonatomic, strong) NSString     *localKey;
 
-//pv
+//The PV.
 @property (nonatomic, strong) NSString     *pv;
 
 @property (nonatomic, strong) NSString     *code;
@@ -31,7 +31,7 @@
 
 @property (nonatomic, assign) long long    homeId;
 
-// --------- sig mesh info
+// --------- The Bluetooth mesh information
 @property (nonatomic, strong) NSString *netKey;
 
 @property (nonatomic, strong) NSString *appKey;

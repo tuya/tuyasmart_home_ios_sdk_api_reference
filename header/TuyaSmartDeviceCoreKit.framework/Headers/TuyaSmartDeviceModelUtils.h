@@ -7,16 +7,16 @@
 #ifndef TuyaSmartDeviceModelUtils_h
 #define TuyaSmartDeviceModelUtils_h
 
-/// device upgrade status
+/// The device update status.
 typedef enum : NSUInteger {
-    TuyaSmartDeviceUpgradeStatusDefault = 0,    // Default. No upgrade required by default.
-    TuyaSmartDeviceUpgradeStatusReady,          // Ready. Hardware readiness.
-    TuyaSmartDeviceUpgradeStatusUpgrading,      // Upgrading. Upgrade in progress.
-    TuyaSmartDeviceUpgradeStatusSuccess,        // Success. Upgrade completed.
-    TuyaSmartDeviceUpgradeStatusFailure,        // Failure. Upgrade Exception.
-    TuyaSmartDeviceUpgradeStatusWaitingExectue, // For nb,waiting execute nb. Equipment tasks have been issued, but not yet executed.
-    TuyaSmartDeviceUpgradeStatusDownloaded,     // For nb,downloaded nb. Device firmware has been downloaded.
-    TuyaSmartDeviceUpgradeStatusTimeout         // Timeout. Upgrade timeout.
+    TuyaSmartDeviceUpgradeStatusDefault = 0,    // Default: No update is required.
+    TuyaSmartDeviceUpgradeStatusReady,          // Ready: The hardware is ready.
+    TuyaSmartDeviceUpgradeStatusUpgrading,      // Upgrading: The update is in progress.
+    TuyaSmartDeviceUpgradeStatusSuccess,        // Success: The update is completed.
+    TuyaSmartDeviceUpgradeStatusFailure,        // Failure: The update has an exception.
+    TuyaSmartDeviceUpgradeStatusWaitingExectue, // NB-IoT devices wait to execute NB-IoT tasks. Device tasks have been sent but not yet executed.
+    TuyaSmartDeviceUpgradeStatusDownloaded,     // NB-IoT devices have downloaded NB-IoT firmware.
+    TuyaSmartDeviceUpgradeStatusTimeout         // Timeout: The update timed out.
 } TuyaSmartDeviceUpgradeStatus;
 
 #endif /* TuyaSmartDeviceModelUtils_h */

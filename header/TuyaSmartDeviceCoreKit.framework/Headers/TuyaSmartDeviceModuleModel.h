@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import "TuyaSmartDeviceModelUtils.h"
 
-/// mcu device
+/// The MCU device.
 @interface TuyaSmartDeviceMcuModel : NSObject
 
 @property (nonatomic, assign) BOOL     isOnline;
@@ -23,7 +23,7 @@
 
 @end
 
-/// zigbee device
+/// The Zigbee device.
 @interface TuyaSmartDeviceZigbeeModel : NSObject
 
 @property (nonatomic, assign) BOOL     isOnline;
@@ -33,7 +33,7 @@
 
 @end
 
-/// bluetooth device
+/// The Bluetooth device.
 @interface TuyaSmartDeviceBluetoothModel : NSObject
 
 @property (nonatomic, assign) BOOL          isOnline;
@@ -44,7 +44,7 @@
 
 @end
 
-/// wifi device
+/// The Wi-Fi device.
 @interface TuyaSmartDeviceWifiModel : NSObject
 
 @property (nonatomic, assign) BOOL         isOnline;
@@ -58,7 +58,7 @@
 
 @end
 
-/// infrared device
+/// The infrared device.
 @interface TuyaSmartDeviceInfraredModel : NSObject
 
 @property (nonatomic, assign) BOOL         isOnline;
@@ -70,7 +70,7 @@
 
 @end
 
-/// gprs device
+/// The GPRS device.
 @interface TuyaSmartDeviceGprsModel : NSObject
 
 @property (nonatomic, assign) BOOL         isOnline;
@@ -82,7 +82,7 @@
 
 @end
 
-/// subpieces device
+/// The sub-device.
 @interface TuyaSmartDeviceSubpiecesModel : NSObject
 
 @property (nonatomic, assign) BOOL         isOnline;
@@ -92,7 +92,7 @@
 
 @end
 
-/// nbiot device
+/// The NB-IoT device.
 @interface TuyaSmartDeviceNBIoTModel : NSObject
 
 @property (nonatomic, assign) BOOL         isOnline;
@@ -104,7 +104,7 @@
 
 @end
 
-/// device module
+/// The device module.
 @interface TuyaSmartDeviceModuleModel : NSObject
 
 @property (nonatomic, strong) TuyaSmartDeviceWifiModel           *wifi;

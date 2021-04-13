@@ -15,16 +15,16 @@
 
 @optional
 
-/// The delegate when a new home is added.
+/// The delegate that is instantiated when a home is added.
 ///
-/// @param manager  instance
-/// @param home     homeModel
+/// @param manager  The instance.
+/// @param home     The home model.
 - (void)homeManager:(TuyaSmartHomeManager *)manager didAddHome:(TuyaSmartHomeModel *)home;
 
-/// The delegate when an existing home is removed.
+/// The delegate that is instantiated when an existing home is removed.
 ///
-/// @param manager  instance
-/// @param homeId   homeId
+/// @param manager  The instance.
+/// @param homeId   The home ID.
 - (void)homeManager:(TuyaSmartHomeManager *)manager didRemoveHome:(long long)homeId;
 
 /// MQTT service connection success callback.
@@ -40,23 +40,23 @@
 @property (nonatomic, copy, readonly) NSArray <TuyaSmartHomeModel *> *homes;
 
 
-/// Get homes list. If you want to get home details, need to initialize a home, call getHomeDetailWithSuccess: failure:
+/// Returns a list of homes. To get home details, initialize a home and call getHomeDetailWithSuccess: failure:
 ///
-/// @param success Called when the task finishes successfully. A list of TuyaSmartHomeModel will be returned.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// @param success Called when the task is finished. A list of TuyaSmartHomeModel is returned.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)getHomeListWithSuccess:(void(^)(NSArray <TuyaSmartHomeModel *> *homes))success
                        failure:(TYFailureError)failure;
 
 
-/// Adds a new home
+/// Adds a home.
 ///
-/// @param homeName    Home name
-/// @param geoName     City name
-/// @param rooms       Rooms list
-/// @param latitude    Latitude
-/// @param longitude   Longitude
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param homeName    The home name.
+/// @param geoName     The city name.
+/// @param rooms       The rooms list.
+/// @param latitude    The latitude.
+/// @param longitude   The longitude.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)addHomeWithName:(NSString *)homeName
                 geoName:(NSString *)geoName
                   rooms:(NSArray <NSString *>*)rooms
@@ -66,24 +66,24 @@
                 failure:(TYFailureError)failure;
 
 
-/// Home sort
+/// Sorts the homes.
 ///
-/// @param homeList    Homes list
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param homeList    The list of homes.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)sortHomeList:(NSArray <TuyaSmartHomeModel *> *)homeList
              success:(TYSuccessHandler)success
              failure:(TYFailureError)failure;
 
 #pragma mark - deprecated
 
-/// Accept or reject to shared home
+/// Accepts or rejects to share a home.
 ///
-/// @param homeId       Home Id
-/// @param isAccept     Whether to accept the invitation
-/// @param success      Success block
-/// @param failure      Failure block
-/// @deprecated This method is deprecated, Use TuyaSmartHome::joinFamilyWithAccept:success:failure: instead.
+/// @param homeId       The home ID.
+/// @param isAccept     Specifies whether to accept the invitation.
+/// @param success      The success block.
+/// @param failure      The failure block.
+/// @deprecated This method is deprecated. Use TuyaSmartHome::joinFamilyWithAccept:success:failure: instead.
 - (void)joinFamilyWithHomeId:(long long)homeId
                       action:(BOOL)isAccept
                      success:(TYSuccessBOOL)success

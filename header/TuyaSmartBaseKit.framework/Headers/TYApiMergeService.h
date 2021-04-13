@@ -14,16 +14,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) TYSDKSafeMutableArray *requestList;
 
 
-/// Add api request.
-/// @param apiName Api name.
-/// @param postData Post data.
-/// @param version Version.
+/// Adds an API request.
+/// @param apiName The name of the API operation.
+/// @param postData The Post data.
+/// @param version The version.
 - (void)addApiRequest:(NSString *)apiName postData:(NSDictionary *)postData version:(NSString *)version;
 
 
-/// Send request.
-/// @param getData Get data.
-/// @param success Called when the task finishes successfully. A list of TYApiMergeModel will be returned.
+/// Sends a request.
+/// @param getData Returns data.
+/// @param success Called when the task is finished. A list of TYApiMergeModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)sendRequest:(NSDictionary *)getData success:(nullable void (^)(NSArray <TYApiMergeModel *> *list))success failure:(nullable TYFailureError)failure;
 

@@ -10,22 +10,21 @@
 /*
  *  TYBaseKitError
  *
- *  Discussion:
  *    Error returned as code to NSError from TuyaSmartBaseKit.
  */
 
 extern NSString *const kTYBaseKitErrorDomain;
 
 typedef NS_ENUM(NSInteger, TYBaseKitError) {
-    /// Request Error.
+    /// The request error.
     kTYBaseKitErrorAPIRequestError                       = 2000,
-    /// Return data type is illegal.
+    /// The response type is illegal.
     kTYBaseKitErrorAPIResponseDataTypeIllegal            = 2001,
-    /// The returned data sign is inconsistent.
+    /// The response sign is inconsistent.
     kTYBaseKitErrorAPIResponseDataSignInconsistent       = 2002,
-    /// Return data decode error.
+    /// The response decoding error.
     kTYBaseKitErrorAPIResponseDataDecodeError            = 2003,
-    /// Network Error.
+    /// The network error.
     kTYBaseKitErrorNetworkError                          = 2004,
     
 };

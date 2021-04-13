@@ -12,16 +12,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Notification will be sent when user session is invalid.
+/// The notification is sent when the user session is invalid.
 extern NSString *const TuyaSmartUserNotificationUserSessionInvalid;
 
-/// User register type.
+/// The user registration type.
 typedef NS_ENUM(NSInteger, TYRegType) {
     /// Register from email.
     TYRegEmailType,
     /// Register from mobile phone.
     TYRegPhoneType,
-    /// Register from other.
+    /// Register from other methods.
     TYRegOtherType,
     /// Register from QQ.
     TYRegQQType,
@@ -35,96 +35,95 @@ typedef NS_ENUM(NSInteger, TYRegType) {
     TYRegWechatType,
     /// Register from Apple.
     TYRegAppleIdType,
-    /// Register from google.
+    /// Register from Google.
     TYRegGoogleType,
     /// Register from Line.
     TYRegLineType,
 };
 
-/// Password strength type
-/// 密码强度类型
+/// The password strength type.
 typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
-    TYPasswordRegularLow = 1,       // 8-20 character,include letters and numbers
-    TYPasswordRegularMiddle = 2,       // 8-20 character,include capital and lower-case letter and numbers
-    TYPasswordRegularHigh = 3,     // 8-20 character,include capital and lower-case letter and numbers and special character
+    TYPasswordRegularLow = 1,       // Contains 8-20 characters in length,including letters and numbers.
+    TYPasswordRegularMiddle = 2,       // Contains 8-20 characters,including uppercase and lowercase letters and numbers.
+    TYPasswordRegularHigh = 3,     // Contains 8-20 characters,including uppercase and lowercase letters, numbers, and special characters.
 };
 
-/// User-related functions.
+/// User functions.
 @interface TuyaSmartUser : NSObject
 
 /// Returns the singleton of the class.
 + (instancetype)sharedInstance;
 
-/// Session ID.
+/// The session ID.
 @property (nonatomic, strong, readonly) NSString *sid;
 
-/// User ID.
+/// The user ID.
 @property (nonatomic, strong, readonly) NSString *uid;
 
-/// Head icon.
+/// The avatar.
 @property (nonatomic, strong, readonly) NSString *headIconUrl;
 
-/// Nick name.
+/// The nickname.
 @property (nonatomic, strong, readonly) NSString *nickname;
 
-/// Username. If account is mobile phone, this is mobile phone. If account is email, this is email.
+/// The username. If the account is registered with a mobile phone number, the value is set to the mobile phone number. If the account is registered with an email, the value is set to the email.
 @property (nonatomic, strong, readonly) NSString *userName;
 
-/// Mobile phone.
+/// The mobile phone number.
 @property (nonatomic, strong, readonly) NSString *phoneNumber;
 
-/// Email.
+/// The email.
 @property (nonatomic, strong, readonly) NSString *email;
 
-/// Country code. `86` for China, `1` for America.
+/// The country code. For example, `86` means China, `1` means America.
 @property (nonatomic, strong, readonly) NSString *countryCode;
 
-/// Login status.
+/// The login status.
 @property (nonatomic, assign, readonly) BOOL isLogin;
 
-/// The region code of current account. `AY` for China, `AZ` for America, `EU` for Europe.
+/// The region code of the current account. For example, `AY` means China, `AZ` means America, and `EU` means Europe.
 @property (nonatomic, strong, readonly) NSString *regionCode;
 
-/// The api domains of current account region.
+/// The API domains of the current account region.
 @property (nonatomic, strong, readonly) NSDictionary *domain;
 
-/// Timezone ID. e.g. `Asia/Shanghai`.
+/// The timezone ID, such as `Asia/Shanghai`.
 @property (nonatomic, strong, readonly) NSString *timezoneId;
 
 @property (nonatomic, strong, readonly) NSString *partnerIdentity;
 
-/// MQTT host.
+/// The MQTT host.
 @property (nonatomic, strong, readonly) NSString *mbHost;
 
 @property (nonatomic, strong, readonly) NSString *gwHost;
 
-/// MQTT port.
+/// The MQTT port.
 @property (nonatomic, assign, readonly) NSInteger port;
 
-/// Whether to enable SSL.
+/// Specifies whether to enable SSL.
 @property (nonatomic, assign, readonly) BOOL useSSL;
 
-/// QUIC host.
+/// The QUIC host.
 @property (nonatomic, strong, readonly) NSString *quicHost;
 
-/// QUIC port.
+/// The QUIC port.
 @property (nonatomic, assign, readonly) NSInteger quicPort;
 
-/// Whether to enable QUIC.
+/// Specifies whether to enable QUIC.
 @property (nonatomic, assign, readonly) BOOL useQUIC;
 
-/// Temperature unit. 1 for `°C`, 2 for `°F`.
+/// The temperature unit. For example, `1` means `°C` and `2` means `°F`.
 @property (nonatomic, assign) NSInteger tempUnit;
 
-/// User register type.
+/// The user registration type.
 @property (nonatomic, assign, readonly) TYRegType regFrom;
 
-/// Nickname of SNS account.
+/// The nickname of the SNS account.
 @property (nonatomic, strong, readonly) NSString *snsNickname;
 
 @property (nonatomic, strong, readonly) NSString *ecode;
 
-/// User type.
+/// The user type.
 @property (nonatomic, assign, readonly) NSInteger userType;
 
 /// Extra parameters.
@@ -133,12 +132,12 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
 
 #pragma mark - Mobile phone verification code login
 
-/// Send verification code, used for register/login/reset password.
-/// @param userName Mobile phone number or Email address.
-/// @param region For register is required, use [TuyaSmartUser regionListWithCountryCode:success:failure:] or [TuyaSmartUser getDefaultRegionWithCountryCode:] to get region.
-/// @param countryCode Country code.
-/// @param type 1: Mobile phone verification code register,2: Mobile phone verification code login,3: Mobile phone password reset. 5: Improve account information (in experience mode); 7: Account change; 8: Cancel account
-/// @param success Called when the task finishes successfully.
+/// Sends the verification code to register, log in, or reset the password.
+/// @param userName The mobile phone number or email address.
+/// @param region To enable required registration, use [TuyaSmartUser regionListWithCountryCode:success:failure:] or [TuyaSmartUser getDefaultRegionWithCountryCode:] to get the region.
+/// @param countryCode The country code.
+/// @param type 1: Register with the mobile phone verification code. 2: Log in with the mobile phone verification code. 3: Reset the password with the mobile phone number. 5: Complete account information in trial mode. 7: Change the account. 8: Cancel the account.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)sendVerifyCodeWithUserName:(NSString *)userName
                             region:(NSString *_Nullable)region
@@ -148,11 +147,11 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
                            failure:(TYFailureError)failure;
 
 
-/// Mobile phone verification code login.
-/// @param mobile Mobile phone number.
-/// @param countryCode Country code.
-/// @param code Verification code.
-/// @param success Called when the task finishes successfully.
+/// Enables login with the mobile phone verification code.
+/// @param mobile The mobile phone number.
+/// @param countryCode The country code.
+/// @param code The verification code.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)loginWithMobile:(NSString *)mobile
             countryCode:(NSString *)countryCode
@@ -163,10 +162,10 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
 
 #pragma mark - Mobile phone binding
 
-/// Send verification code. Used for mobile phone bind, mobile phone change.
-/// @param countryCode Country code.
-/// @param phoneNumber Mobile phone number.
-/// @param success Called when the task finishes successfully.
+/// Sends the verification code to bind a mobile phone number or change the mobile phone number.
+/// @param countryCode The country code.
+/// @param phoneNumber The mobile phone number.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)sendBindVerifyCode:(NSString *)countryCode
                phoneNumber:(NSString *)phoneNumber
@@ -174,21 +173,21 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
                    failure:(nullable TYFailureError)failure;
 
 
-/// Send verification code. Used for mobile phone bind for more service.
-/// @param countryCode Country code.
-/// @param phoneNumber Mobile phone number.
-/// @param success Called when the task finishes successfully.
+/// Sends the verification code to bing a mobile phone and enable more services.
+/// @param countryCode The country code.
+/// @param phoneNumber The mobile phone number.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)sendBindVasVerifyCode:(NSString *)countryCode
                   phoneNumber:(NSString *)phoneNumber
                       success:(nullable TYSuccessHandler)success
                       failure:(nullable TYFailureError)failure;
 
-/// Mobile phone bind.
-/// @param countryCode Country code.
-/// @param phoneNumber Mobile phone number.
-/// @param code Verification code.
-/// @param success Called when the task finishes successfully.
+/// Binds a mobile phone number.
+/// @param countryCode The country code.
+/// @param phoneNumber The mobile phone number.
+/// @param code The verification code.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)mobileBinding:(NSString *)countryCode
           phoneNumber:(NSString *)phoneNumber
@@ -198,12 +197,12 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
 
 #pragma mark - Mobile phone password login
 
-/// Mobile phone register.
-/// @param countryCode Country code.
-/// @param phoneNumber Mobile phone number.
-/// @param password Password.
-/// @param code Verification code.
-/// @param success Called when the task finishes successfully.
+/// Registers with a mobile phone number.
+/// @param countryCode The country code.
+/// @param phoneNumber The mobile phone number.
+/// @param password The password.
+/// @param code The verification code.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)registerByPhone:(NSString *)countryCode
             phoneNumber:(NSString *)phoneNumber
@@ -212,11 +211,11 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
                 success:(nullable TYSuccessHandler)success
                 failure:(nullable TYFailureError)failure;
 
-/// Mobile phone password login.
-/// @param countryCode Country code.
-/// @param phoneNumber Mobile phone number.
-/// @param password Password.
-/// @param success Called when the task finishes successfully.
+/// Enables login with the mobile phone password.
+/// @param countryCode The country code.
+/// @param phoneNumber The mobile phone number.
+/// @param password The password.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)loginByPhone:(NSString *)countryCode
          phoneNumber:(NSString *)phoneNumber
@@ -224,12 +223,12 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
              success:(nullable TYSuccessHandler)success
              failure:(nullable TYFailureError)failure;
 
-/// Mobile phone password reset.
-/// @param countryCode  Country code.
-/// @param phoneNumber Mobile phone number.
-/// @param newPassword New password.
-/// @param code Verification code.
-/// @param success Called when the task finishes successfully.
+/// Resets the mobile phone password.
+/// @param countryCode The country code.
+/// @param phoneNumber The mobile phone number.
+/// @param newPassword The new password.
+/// @param code The verification code.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)resetPasswordByPhone:(NSString *)countryCode
                  phoneNumber:(NSString *)phoneNumber
@@ -240,11 +239,11 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
 
 #pragma mark - Email login
 
-/// Email login.
-/// @param countryCode Country code.
-/// @param email Email.
-/// @param password Password.
-/// @param success Called when the task finishes successfully.
+/// Enables login with an email.
+/// @param countryCode The country code.
+/// @param email The email.
+/// @param password The password.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)loginByEmail:(NSString *)countryCode
                email:(NSString *)email
@@ -253,12 +252,12 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
              failure:(nullable TYFailureError)failure;
 
 
-/// Email password reset.
-/// @param countryCode Country code.
-/// @param email Email.
-/// @param newPassword New password.
-/// @param code Verification code.
-/// @param success Called when the task finishes successfully.
+/// Resets the email password.
+/// @param countryCode The country code.
+/// @param email The email.
+/// @param newPassword The new password.
+/// @param code The verification code.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)resetPasswordByEmail:(NSString *)countryCode
                        email:(NSString *)email
@@ -271,11 +270,11 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
 #pragma mark - Email register 2.0
 
 /// Email register 2.0.
-/// @param countryCode Country code.
-/// @param email Email.
-/// @param password Password.
-/// @param code Verification code.
-/// @param success Called when the task finishes successfully.
+/// @param countryCode The country code.
+/// @param email The email.
+/// @param password The password.
+/// @param code The verification code.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)registerByEmail:(NSString *)countryCode
                   email:(NSString *)email
@@ -286,32 +285,32 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
 
 #pragma mark - Email verification code login
 
-/// Email verification code login.
-/// @param email Email.
-/// @param countryCode Country code.
-/// @param code Verification code.
-/// @param success Called when the task finishes successfully.
+/// Enables login with an email verification code.
+/// @param email The email.
+/// @param countryCode The country code.
+/// @param code The verification code.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)loginWithEmail:(NSString *)email countryCode:(NSString *)countryCode code:(NSString *)code success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
 #pragma mark - Email bind
 
-/// Get email binding verification code.
-/// @param email E-mail.
-/// @param countryCode Country Code.
-/// @param success Called when the task finishes successfully.
+/// Returns the email verification code.
+/// @param email The email.
+/// @param countryCode The country code.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)sendBindingVerificationCodeWithEmail:(NSString *)email
                                  countryCode:(NSString *)countryCode
                                      success:(nullable TYSuccessHandler)success
                                      failure:(nullable TYFailureError)failure;
 
-/// Binding email.
-/// @param email E-mail.
-/// @param countryCode Country Code.
-/// @param code Verification Code.
-/// @param sId User session ID.
-/// @param success Called when the task finishes successfully.
+/// Binds an email.
+/// @param email The email.
+/// @param countryCode The country code.
+/// @param code The verification Code.
+/// @param sId The user session ID.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)bindEmail:(NSString *)email
   withCountryCode:(NSString *)countryCode
@@ -322,12 +321,12 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
 
 #pragma mark - uid login
 
-/// User ID. login/register. The account will be registered at first login.
-/// @param countryCode Country code.
-/// @param uid User ID.
-/// @param password Password.
-/// @param createHome Create default home.
-/// @param success Called when the task finishes successfully.
+/// The user ID that is used to log in or register. The account is registered at the first login.
+/// @param countryCode The country code.
+/// @param uid The user ID.
+/// @param password The password.
+/// @param createHome Creates the default home.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)loginOrRegisterWithCountryCode:(NSString *)countryCode
                                    uid:(NSString *)uid
@@ -338,11 +337,11 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
 
 #pragma mark - Social login
 
-/// QQ login.
-/// @param countryCode Country code.
-/// @param userId UserId from QQ authorization login.
-/// @param accessToken AccessToken from QQ authorization login.
-/// @param success Called when the task finishes successfully.
+/// Enables login with the QQ account.
+/// @param countryCode The country code.
+/// @param userId The user ID that is authorized for login with the QQ account.
+/// @param accessToken AccessToken that is used for login with the QQ account.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)loginByQQ:(NSString *)countryCode
            userId:(NSString *)userId
@@ -350,31 +349,31 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
           success:(nullable TYSuccessHandler)success
           failure:(nullable TYFailureError)failure;
 
-/// WeChat login.
-/// @param countryCode Country code.
-/// @param code Code from WeChat authorization login.
-/// @param success Called when the task finishes successfully.
+/// Enables login with the WeChat account.
+/// @param countryCode The country code.
+/// @param code The code that is used for login with the WeChat account.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)loginByWechat:(NSString *)countryCode
                  code:(NSString *)code
               success:(nullable TYSuccessHandler)success
               failure:(nullable TYFailureError)failure;
 
-/// Facebook Login.
-/// @param countryCode Country code.
-/// @param token Token from Facebook authorization login
-/// @param success Called when the task finishes successfully.
+/// Enables login with the Facebook account.
+/// @param countryCode The country code.
+/// @param token The token that is used for login with the Facebook account.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)loginByFacebook:(NSString *)countryCode
                   token:(NSString *)token
                 success:(nullable TYSuccessHandler)success
                 failure:(nullable TYFailureError)failure;
 
-/// Twitter login.
-/// @param countryCode Country code.
-/// @param key Key from Twitter authorization login.
-/// @param secret Secret from Twitter authorization login.
-/// @param success Called when the task finishes successfully.
+/// Enables login with the Twitter account.
+/// @param countryCode The country code.
+/// @param key The key that is used for login with the Twitter account.
+/// @param secret The secret that is used for login with the Twitter account.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)loginByTwitter:(NSString *)countryCode
                    key:(NSString *)key
@@ -382,12 +381,12 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
                success:(nullable TYSuccessHandler)success
                failure:(nullable TYFailureError)failure;
 
-/// Third login.
-/// @param type Login type(ap for "login with apple").
-/// @param countryCode Country code.
-/// @param accessToken  Token from third authorization login.
-/// @param extraInfo Extra params.
-/// @param success Called when the task finishes successfully.
+/// Enables login with the third-party account.
+/// @param type The login type. For example, `ap` means "login with apple".
+/// @param countryCode The country code.
+/// @param accessToken  The token that is used for login with the third-party account.
+/// @param extraInfo Extra parameters.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)loginByAuth2WithType:(NSString *)type
                  countryCode:(NSString *)countryCode
@@ -399,62 +398,61 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
 #pragma mark -
 
 /// Logout.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)loginOut:(nullable TYSuccessHandler)success
          failure:(nullable TYFailureError)failure;
 
-/// Edit nick name.
-/// @param nickName Nick name.
-/// @param success Called when the task finishes successfully.
+/// Edits the nickname.
+/// @param nickName The nickname.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateNickname:(NSString *)nickName
                success:(nullable TYSuccessHandler)success
                failure:(nullable TYFailureError)failure;
 
-/// Edit head icon.
-/// @param headIcon Head icon.
-/// @param success Called when the task finishes successfully.
+/// Edits the avatar.
+/// @param headIcon The avatar.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateHeadIcon:(UIImage *)headIcon
                success:(nullable TYSuccessHandler)success
                failure:(nullable TYFailureError)failure;
 
-/// Update user information.
-/// @param success Called when the task finishes successfully.
+/// Updates user information.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateUserInfo:(nullable TYSuccessHandler)success
                failure:(nullable TYFailureError)failure;
 
-/// Edit user timezone information.
-/// @param timeZoneId TimeZone ID. e.g. `Asia/Shanghai`.
-/// @param success Called when the task finishes successfully.
+/// Edits user time zone information.
+/// @param timeZoneId The time zone ID, such as `Asia/Shanghai`.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateTimeZoneWithTimeZoneId:(NSString *)timeZoneId
                              success:(nullable TYSuccessHandler)success
                              failure:(nullable TYFailureError)failure;
 
-/// Edit user temperature unit.
-/// @param tempUnit Temperature unit. 1 for `°C`, 2 for `°F`.
-/// @param success Called when the task finishes successfully.
+/// Edits the user temperature unit.
+/// @param tempUnit The temperature unit. For example, `1` means `°C` and `2` means `°F`.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateTempUnitWithTempUnit:(NSInteger)tempUnit
                            success:(nullable TYSuccessHandler)success
                            failure:(nullable TYFailureError)failure;
 
-/// Destroy account. One week after, all of the account information will be removed from server forever. If you login before removed, the destroy request will be canceled.
-/// @param success Called when the task finishes successfully.
+/// Destroys an account. One week after the operation, all of the account information is permanently removed from the server. After login before the information is removed, the destroying request is canceled.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)cancelAccount:(nullable TYSuccessHandler)success
               failure:(nullable TYFailureError)failure;
 
 
 /**
- * Check password format by password regular type
- * 根据密码强度类型检验密码格式是否符合
- * @param password  Inputed password
- * @param regularType Password regular type
- * @return Result of check password format
+ * Checks whether the password format meets the password strength requirements.
+ * @param password The password to be checked.
+ * @param regularType The recommended password type.
+ * @return The result of the check.
  */
 - (BOOL)checkPasswordFormat:(NSString *)password withPasswordRegularType:(TYPasswordRegularType)regularType;
 
@@ -462,7 +460,7 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
 
 #pragma mark -
 
-/// Cancel network request.
+/// Cancels the network request.
 - (void)cancelRequest;
 
 @end

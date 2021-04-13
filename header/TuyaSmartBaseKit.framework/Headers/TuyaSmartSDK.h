@@ -17,18 +17,18 @@ typedef NS_ENUM(NSInteger, TYEnv) {
     TYEnvRelease,
 };
 
-/// @brief TuyaSmartSDK is a entry for using the Tuya SDK.
+/// @brief TuyaSmartSDK is an entry to use the Tuya SDK.
 ///
-/// Before using the SDK, please go to Tuya IoT Platform (https://iot.tuya.com) create a SDK App.
-/// We need 4 things from the Platform to initialize the SDK:
+/// Before you use the SDK, go to the Tuya IoT Platform (https://iot.tuya.com) to create an SDK app.
+/// The following data from the platform is required to initialize the SDK:
 ///     - Tuya App Key.
 ///     - Tuya App Secret.
-///     - Security Image. Rename to `t_s.bmp` and put it in your project as a resource.
-///     - Bundle ID. Must equal to your App's bundle ID.
+///     - Security image: renamed to `t_s.bmp` and put in your project as a resource.
+///     - Bundle ID: your app's bundle ID.
 ///
-/// If you need to set some params (appGroupId, env, appVersion, lang, etc...) in this class, be sure to set them before initialize the SDK.
+/// To set parameters in this class, such as appGroupId, env, appVersion, and lang, set them before you initialize the SDK.
 ///
-/// Finally, call this method to initialize the SDK:
+/// Then, call this method to initialize the SDK:
 ///     `[TuyaSmartSDK.sharedInstance startWithAppKey:@"YOUR_APP_KEY" secretKey:@"YOUR_APP_SECRET"];`.
 ///
 @interface TuyaSmartSDK : NSObject
@@ -36,53 +36,53 @@ typedef NS_ENUM(NSInteger, TYEnv) {
 /// Returns the singleton of the class.
 + (instancetype)sharedInstance;
 
-/// Application group identifier.
-/// If you want to use the SDK in app extension, set `appGroupId` before SDK initialized both in app & app extension.
+/// The app group identifier.
+/// To use the SDK in the app extension, set `appGroupId` both in the app and app extension before the SDK is initialized.
 @property (nonatomic, strong) NSString *appGroupId;
 
-/// Latitude of the location.
+/// The latitude of the location.
 @property (nonatomic, assign) double latitude;
 
-/// Longitude of the location.
+/// The longitude of the location.
 @property (nonatomic, assign) double longitude;
 
-/// Server environment, daily/prepare/release. For test only. Not recommended to switch.
+/// The server environment, such as the daily, prerelease, or release environment. Used for test only. Not recommended to switch.
 @property (nonatomic, assign) TYEnv env;
 
-/// Request need SSL Pinning, default is `YES`.
+/// Specifies whether the request requires SSL pinning. Default value: `YES`.
 @property (nonatomic, assign) BOOL useSSLPinning;
 
-/// TuyaSmart AppKey.
+/// The appKey in Tuya Smart.
 @property (nonatomic, strong, readonly) NSString *appKey;
 
-/// TuyaSmart SecretKey.
+/// The secretKey in Tuya Smart.
 @property (nonatomic, strong, readonly) NSString *secretKey;
 
-/// Channel.
+/// The channel.
 @property (nonatomic, strong) NSString *channel;
 
-/// UUID of the iOS/watchOS device. Will be created at app first launch.
+/// The UUID of the iOS and watchOS device. The value is created when the app is published for the first time.
 @property (nonatomic, strong, readonly) NSString *uuid;
 
-/// App version, default value is from Info.plist -> CFBundleShortVersionString.
+/// The app version. The value of CFBundleShortVersionString in Info.plist is used as the default value.
 @property (nonatomic, strong) NSString *appVersion;
 
-/// Device product name. For example: iPhone XS Max.
+/// The device product name, such as the iPhone XS Max.
 @property (nonatomic, strong) NSString *deviceProductName;
 
-/// App SDK lang, default value is from mainBundle -> preferredLocalizations -> [0].
+/// The app SDK language. The value [0] of preferredLocalizations in mainBundle is used as the default value.
 @property (nonatomic, strong) NSString *lang;
 
 
-/// Initialize TuyaSmart SDK.
-/// @param appKey TuyaSmart AppKey.
-/// @param secretKey TuyaSmart SecretKey.
+/// Initializes the TuyaSmart SDK.
+/// @param appKey The appKey in Tuya Smart.
+/// @param secretKey TuyaSmart The secretKey in Tuya Smart.
 - (void)startWithAppKey:(NSString *)appKey secretKey:(NSString *)secretKey;
 
 
-/// Report location if needed.
-/// @param latitude Latitude.
-/// @param longitude Longitude.
+/// Reports the location on demand.
+/// @param latitude The latitude.
+/// @param longitude The longitude.
 - (void)updateLatitude:(double)latitude longitude:(double)longitude;
 
 @end
@@ -91,13 +91,13 @@ typedef NS_ENUM(NSInteger, TYEnv) {
 @interface TuyaSmartSDK (Upgrade)
 
 
-/// Check if TuyaSmartKit need to be upgrade to TuyaSmartHomeKit.
-/// @return Whether need to upgrade data.
+/// Checks whether TuyaSmartKit must be upgraded to TuyaSmartHomeKit.
+/// @return Indicates whether to upgrade data.
 - (BOOL)checkVersionUpgrade;
 
 
-/// SDK data upgrade.
-/// @param success Called when the task finishes successfully.
+/// The update of SDK data.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)upgradeVersion:(nullable TYSuccessHandler)success
                failure:(nullable TYFailureError)failure;
@@ -107,81 +107,81 @@ typedef NS_ENUM(NSInteger, TYEnv) {
 
 @interface TuyaSmartSDK (PushNotification)
 
-/// Push token.
+/// Pushes a token.
 /// @deprecated Use +[TuyaSmartSDK sharedInstance].deviceToken instead.
 @property (nonatomic, strong) NSString *pushToken DEPRECATED_MSG_ATTRIBUTE("Use +[TuyaSmartSDK sharedInstance].deviceToken instead.");
 
-/// Push deviceToken.
+/// Pushes deviceToken.
 @property (nonatomic, strong) NSData *deviceToken;
 
 
-/// Set push device token and error info.
-/// @param token DeviceToken.
-/// @param error Error info.
+/// Sets the device token pushing and error information.
+/// @param token The device token.
+/// @param error The error information.
 - (void)setDeviceToken:(nullable NSData *)token withError:(nullable NSError *)error;
 
 
-/// Get the open status of APP messages push.
-/// @param success Called when the task finishes successfully.
+/// Indicates whether the app messages pushing function is enabled.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getPushStatusWithSuccess:(__nullable TYSuccessBOOL)success failure:(__nullable TYFailureError)failure;
 
 
-/// Enable or disable APP message pushing.
-/// @param enable A boolean value indicates whether to enable or disable.
-/// @param success Called when the task finishes successfully.
+/// Enables or disables app message pushing.
+/// @param enable A Boolean value indicates whether to enable or disable the function.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)setPushStatusWithStatus:(BOOL)enable success:(__nullable TYSuccessHandler)success failure:(__nullable TYFailureError)failure;
 
 
-/// Obtain the on status of device alarm notification.
-/// @param success Called when the task finishes successfully.
+/// Indicates whether device alert notifications are enabled.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getDevicePushStatusWithSuccess:(__nullable TYSuccessBOOL)success failure:(__nullable TYFailureError)failure;
 
 
-/// Enable or disable APP device alert push messages.
-/// @param enable  Open or close.
-/// @param success Called when the task finishes successfully.
+/// Enables or disables app device alert pushing messages.
+/// @param enable Specifies whether to enable or disable the function.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)setDevicePushStatusWithStauts:(BOOL)enable success:(__nullable TYSuccessHandler)success failure:(__nullable TYFailureError)failure;
 
 
-/// Get the open status of APP family notifications.
-/// @param success Called when the task finishes successfully.
+/// Indicates whether app home notifications are enabled.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getFamilyPushStatusWithSuccess:(__nullable TYSuccessBOOL)success failure:(__nullable TYFailureError)failure;
 
 
-/// Enable or disable APP family push messages.
-/// @param enable Open or close.
-/// @param success Called when the task finishes successfully.
+/// Enables or disables app home push messages.
+/// @param enable Specifies whether to enable or disable the function.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)setFamilyPushStatusWithStauts:(BOOL)enable success:(__nullable TYSuccessHandler)success failure:(__nullable TYFailureError)failure;
 
 
-/// Get the open status of app message notifications.
-/// @param success Called when the task finishes successfully.
+/// Indicates whether app message notifications are enabled.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getNoticePushStatusWithSuccess:(__nullable TYSuccessBOOL)success failure:(__nullable TYFailureError)failure;
 
 
-/// Enable or disable APP message notification push.
-/// @param enable Open or close.
-/// @param success Called when the task finishes successfully.
+/// Enables or disables app message pushing.
+/// @param enable Specifies whether to enable or disable the function.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)setNoticePushStatusWithStauts:(BOOL)enable success:(__nullable TYSuccessHandler)success failure:(__nullable TYFailureError)failure;
 
 
-/// Get the open status of APP marketing messages.
-/// @param success Called when the task finishes successfully.
+/// Indicates whether app marketing messages are enabled.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getMarketingPushStatusWithSuccess:(__nullable TYSuccessBOOL)success failure:(__nullable TYFailureError)failure;
 
 
-/// Turn on or off APP marketing message pushing.
-/// @param enable Open or close.
-/// @param success Called when the task finishes successfully.
+/// Enables or disables app marketing message pushing.
+/// @param enable Specifies whether to enable or disable the function.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)setMarketingPushStatusWithStauts:(BOOL)enable success:(__nullable TYSuccessHandler)success failure:(__nullable TYFailureError)failure;
 

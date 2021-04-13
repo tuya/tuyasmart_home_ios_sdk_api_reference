@@ -6,16 +6,16 @@
 
 @interface TuyaSmartShareMemberModel : NSObject
 
-/// Relationship Id
+/// The relationship ID.
 @property (nonatomic, assign) NSInteger memberId;
 
-/// Remark name
+/// The nickname.
 @property (nonatomic, strong) NSString  *nickName;
 
-/// User name (cell phone number/email number)
+/// The username that is the phone number or email address.
 @property (nonatomic, strong) NSString  *userName;
 
-/// Avatar address.
+/// The URL of the avatar.
 @property (nonatomic, strong) NSString *iconUrl;
 
 @end

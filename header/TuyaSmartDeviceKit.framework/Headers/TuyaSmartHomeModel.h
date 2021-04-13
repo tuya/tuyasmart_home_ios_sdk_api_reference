@@ -9,38 +9,38 @@
 
 @interface TuyaSmartHomeModel : NSObject
 
-// home Id
+// The home ID.
 @property (nonatomic, assign) long long homeId;
 
-// home name
+// The home name.
 @property (nonatomic, strong) NSString *name;
 
-// home geographic location
+// The home geographic location.
 @property (nonatomic, strong) NSString *geoName;
 
-// latitude
+// The latitude.
 @property (nonatomic, assign) double latitude;
 
-// longitude
+// The longitude.
 @property (nonatomic, assign) double longitude;
 
-// home Background Pictures
+// The home background pictures.
 @property (nonatomic, strong) NSString *backgroundUrl;
 
-// order
+// The order.
 @property (nonatomic, assign) NSInteger displayOrder;
 
-// role type
+// The role type.
 @property (nonatomic, assign) TYHomeRoleType role;
 
-// state of deal
+// The state of the deal.
 @property (nonatomic, assign) TYHomeStatus dealStatus;
 
-// inviter's name
+// The inviter's name.
 @property (nonatomic, strong) NSString *nickName;
 
 #pragma mark - deprecated
-// admin or not
+// Specifies whether the member is an administrator.
 @property (nonatomic, assign) BOOL admin __deprecated_msg("This property is deprecated, Use role property");
 
 @end

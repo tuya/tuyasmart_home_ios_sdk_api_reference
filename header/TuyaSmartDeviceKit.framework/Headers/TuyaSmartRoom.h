@@ -10,85 +10,85 @@
 
 @interface TuyaSmartRoom : NSObject
 
-/// room model
+/// The room model.
 @property (nonatomic, strong, readonly) TuyaSmartRoomModel *roomModel;
 
-/// device list
+/// The device list.
 @property (nonatomic, strong, readonly) NSArray <TuyaSmartDeviceModel *> *deviceList;
 
-/// group list
+/// The group list.
 @property (nonatomic, strong, readonly) NSArray <TuyaSmartGroupModel *> *groupList;
 
 
-/// Get room instance.
+/// Returns the room instance.
 ///
-/// @param roomId Room ID
-/// @param homeId Home ID
-/// @return instance
+/// @param roomId The room ID.
+/// @param homeId The home ID.
+/// @return The instance.
 + (instancetype)roomWithRoomId:(long long)roomId homeId:(long long)homeId;
 
 
-/// Get room instance
+/// Returns the room instance.
 ///
-/// @param roomId Room ID
-/// @param homeId Home ID
-/// @return instance
+/// @param roomId The room ID.
+/// @param homeId The home ID.
+/// @return The instance.
 - (instancetype)initWithRoomId:(long long)roomId homeId:(long long)homeId NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
 
 
-/// Rename the room.
+/// Renames the room.
 ///
-/// @param roomName    Room name
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param roomName    The room name.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)updateRoomName:(NSString *)roomName success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
-/// Edit room icon.
+/// Edits the room icon.
 ///
-/// @param icon room icon
-/// @param success  Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// @param icon The room icon.
+/// @param success  Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)updateIcon:(UIImage *)icon success:(nullable TYSuccessHandler)success failure:(nullable TYFailureError)failure;
 
-/// Add device to the room.
+/// Adds a device to the room.
 ///
-/// @param deviceId    Device ID
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param deviceId    The device ID.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)addDeviceWithDeviceId:(NSString *)deviceId success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
 
-/// Remove device from the room.
+/// Removes a device from the room.
 ///
-/// @param deviceId    Device ID
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param deviceId    The device ID.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)removeDeviceWithDeviceId:(NSString *)deviceId success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
 
-/// Add group to the room.
+/// Adds a group to the room.
 ///
-/// @param groupId     Group ID
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param groupId     The group ID.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)addGroupWithGroupId:(NSString *)groupId success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
 
-/// Remove group from the room
+/// Removes a group from the room
 ///
-/// @param groupId     Group ID
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param groupId     The group ID.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)removeGroupWithGroupId:(NSString *)groupId success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
 
-/// Batch modification of the relationship between rooms, groups and devices.
+/// Modifies the relationships between rooms, groups, and devices in a call.
 ///
-/// @param deviceGroupList  List of devices or groups.
-/// @param success          Called when the task finishes successfully.
-/// @param failure          If error occurred while adding the task, this block will be called.
+/// @param deviceGroupList  The list of devices or groups.
+/// @param success          Called when the task is finished.
+/// @param failure          If an error occurs while adding the task, this block is called.
 - (void)saveBatchRoomRelationWithDeviceGroupList:(NSArray <NSString *> *)deviceGroupList
                                          success:(TYSuccessHandler)success
                                          failure:(TYFailureError)failure;

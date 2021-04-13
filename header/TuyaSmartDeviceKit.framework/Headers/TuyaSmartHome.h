@@ -18,137 +18,137 @@
 @optional
 
 
-/// The delegate of home update information, such as the name, online
+/// The delegate of home update information, such as the name and online status.
 ///
-/// @param home instance
+/// @param home The instance.
 - (void)homeDidUpdateInfo:(TuyaSmartHome *)home;
 
-/// The delegate of shared device list update.
+/// The delegate of updates on the shared device list.
 ///
-/// @param home instance
+/// @param home The instance.
 - (void)homeDidUpdateSharedInfo:(TuyaSmartHome *)home;
 
 
-/// The delegate when a new room is added.
+/// The delegate that is instantiated when a new room is added.
 ///
-/// @param home instance
-/// @param room roomModel
+/// @param home The instance.
+/// @param room The room model.
 - (void)home:(TuyaSmartHome *)home didAddRoom:(TuyaSmartRoomModel *)room;
 
 
-/// The delegate when an existing room is removed.
+/// The delegate that is instantiated when an existing room is removed.
 ///
-/// @param home     instance
-/// @param roomId   roomId
+/// @param home The instance.
+/// @param roomId The room ID.
 - (void)home:(TuyaSmartHome *)home didRemoveRoom:(long long)roomId;
 
 
 /// The delegate of room update information, such as the name.
 ///
-/// @param home     instance
-/// @param room     roomModel
+/// @param home The instance.
+/// @param room The room model.
 - (void)home:(TuyaSmartHome *)home roomInfoUpdate:(TuyaSmartRoomModel *)room;
 
 
-/// The delegate of relation update of room, group and device.
+/// The delegate of updates on the relationship among rooms, groups, and devices.
 ///
-/// @param home instance
-/// @param room roomModel
+/// @param home The instance.
+/// @param room The room model.
 - (void)home:(TuyaSmartHome *)home roomRelationUpdate:(TuyaSmartRoomModel *)room;
 
 
-/// The delegate when a new device is added.
+/// The delegate that is instantiated when a new device is added.
 ///
-/// @param home     instance
-/// @param device   deviceModel
+/// @param home The instance.
+/// @param device The device model.
 - (void)home:(TuyaSmartHome *)home didAddDeivice:(TuyaSmartDeviceModel *)device;
 
 
-/// The delegate when an existing device is removed.
+/// The delegate that is instantiated when an existing device is removed.
 ///
-/// @param home     instance
-/// @param devId    devId
+/// @param home The instance.
+/// @param devId The device ID
 - (void)home:(TuyaSmartHome *)home didRemoveDeivice:(NSString *)devId;
 
 
 /// The delegate of device update information, such as the name.
 ///
-/// @param home     instance
-/// @param device   deviceModel
+/// @param home The instance.
+/// @param device The device model.
 - (void)home:(TuyaSmartHome *)home deviceInfoUpdate:(TuyaSmartDeviceModel *)device;
 
 
-/// The delegate of device dps update.
+/// The delegate of device DPs update.
 ///
-/// @param home     instance
-/// @param device   deviceModel
-/// @param dps      dps
+/// @param home The instance.
+/// @param device The device model.
+/// @param dps The DPs.
 - (void)home:(TuyaSmartHome *)home device:(TuyaSmartDeviceModel *)device dpsUpdate:(NSDictionary *)dps;
 
 
-/// The delegate of warning information update.
+/// The delegate of warning information updates.
 ///
-/// @param home         instance
-/// @param device       deviceModel
-/// @param warningInfo  warning Info
+/// @param home The instance.
+/// @param device The device model.
+/// @param warningInfo The warning information.
 - (void)home:(TuyaSmartHome *)home device:(TuyaSmartDeviceModel *)device warningInfoUpdate:(NSDictionary *)warningInfo;
 
 
-/// The delegate of device firmware upgrade status update.
+/// The delegate of changes in device firmware update status.
 ///
-/// @param home                home instance
-/// @param device              deviceModel
-/// @param upgradeStatusModel  upgradeStatusModel
+/// @param home The home instance.
+/// @param device The device model.
+/// @param upgradeStatusModel The update status model.
 - (void)home:(TuyaSmartHome *)home device:(TuyaSmartDeviceModel *)device firmwareUpgradeStatusModel:(TuyaSmartFirmwareUpgradeStatusModel *)upgradeStatusModel;
 
 
-/// the delegate when family/shared devices ota status are updated
-/// @param home The home instance
-/// @param otaModelList OTA model list
+/// The delegate of OTA updates for homes or shared devices.
+/// @param home The home instance.
+/// @param otaModelList The OTA model list.
 - (void)home:(TuyaSmartHome *)home didUpdateOTAModelList:(NSArray<TuyaSmartDeviceOTAModel *> *)otaModelList;
 
-/// The delegate when a new group is added.
+/// The delegate that is instantiated when a new group is added.
 ///
-/// @param home     instance
-///  @param group    groupModel
+/// @param home The instance.
+///  @param group The group model.
 - (void)home:(TuyaSmartHome *)home didAddGroup:(TuyaSmartGroupModel *)group;
 
 
-/// The delegate of group dps update.
+/// The delegate of group DP updates.
 ///
-/// @param home     instance
-/// @param group    groupModel
-/// @param dps      dps
+/// @param home The instance.
+/// @param group The group model.
+/// @param dps The DPs.
 - (void)home:(TuyaSmartHome *)home group:(TuyaSmartGroupModel *)group dpsUpdate:(NSDictionary *)dps;
 
 
-/// The delegate when an existing group is removed.
+/// The delegate that is instantiated when a group is removed.
 ///
-/// @param home     instance
-/// @param groupId  groupId
+/// @param home The instance.
+/// @param groupId The group ID.
 - (void)home:(TuyaSmartHome *)home didRemoveGroup:(NSString *)groupId;
 
 
-/// The delegate of group update information, such as the name.
+/// The delegate of the group update information, such as the name.
 ///
-/// @param home     instance
-/// @param group    groupModel
+/// @param home The instance.
+/// @param group The group model.
 - (void)home:(TuyaSmartHome *)home groupInfoUpdate:(TuyaSmartGroupModel *)group;
 
 #pragma mark - deprecated
 
-/// The delegate of relation update of home and room.(deprecated)
+/// The delegate of the update on the relationship between homes and rooms. (deprecated)
 ///
-/// @param home instance
-/// @deprecated This method is deprecated, Use TuyaSmartHomeDelegate::home:didAddRoom: or  TuyaSmartHomeDelegate::home:didRemoveRoom: instead.
+/// @param home The instance.
+/// @deprecated This method is deprecated. Use TuyaSmartHomeDelegate::home:didAddRoom: or TuyaSmartHomeDelegate::home:didRemoveRoom: instead.
 - (void)homeDidUpdateRoomInfo:(TuyaSmartHome *)home __deprecated_msg("Use -[TuyaSmartHomeDelegate home:didAddRoom:] or [TuyaSmartHomeDelegate home:didRemoveRoom:] instead.");
 
-/// The delegate of device firmware upgrade status update.
+/// The delegate of changes in device firmware update status.
 ///
-/// @param home           instance
-/// @param device         deviceModel
-/// @param upgradeStatus  upgrade status
-/// @deprecated This method is deprecated, Use TuyaSmartHomeDelegate::home:device:firmwareUpgradeStatusModel: instead.
+/// @param home The instance.
+/// @param device The device model.
+/// @param upgradeStatus The update status.
+/// @deprecated This method is deprecated. Use TuyaSmartHomeDelegate::home:device:firmwareUpgradeStatusModel: instead.
 - (void)home:(TuyaSmartHome *)home device:(TuyaSmartDeviceModel *)device upgradeStatus:(TuyaSmartDeviceUpgradeStatus)upgradeStatus __deprecated_msg("This method is deprecated, Use home:device:firmwareUpgradeStatusModel: instead");
 
 @end
@@ -171,39 +171,39 @@
 
 @property (nonatomic, copy, readonly) NSArray <TuyaSmartDeviceOTAModel *> *deviceOtaList;
 
-/// Init home.
+/// Initializes the home.
 ///
-/// @param homeId Home Id
-/// @return instance
+/// @param homeId The home ID.
+/// @return The instance.
 + (instancetype)homeWithHomeId:(long long)homeId;
 
 - (instancetype)init NS_UNAVAILABLE;
 
 #pragma mark - Home
 
-/// After initializing the home object, you need to get the details of the family, homeModel, roomList, deviceList, groupList to have the data。
-/// @param success Called when the task finishes successfully. TuyaSmartHomeModel will be returned.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// After the home object is initialized, you must get the details of the home, homeModel, roomList, deviceList, and groupList to set the data.
+/// @param success Called when the task is finished. TuyaSmartHomeModel is returned.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)getHomeDetailWithSuccess:(void (^)(TuyaSmartHomeModel *homeModel))success
                          failure:(TYFailureError)failure;
 
-/// After get home details, update device ota status
-/// @param homeId Home id
-/// @param success Called when the task finishes successfully.
-/// @param failure  If error occurred while adding the task, this block will be called.
+/// After the home details are returned, the device OTA update status is changed.
+/// @param homeId The home ID.
+/// @param success Called when the task is finished.
+/// @param failure  If an error occurs while adding the task, this block is called.
 - (void)getDeviceOTAStatusWithHomeId:(long long)homeId
                              success:(void (^)(NSArray<TuyaSmartDeviceOTAModel *> *))success
                              failure:(TYFailureError)failure;
 
 
-/// Update home info, API version 2.0.
+/// Updates the home information. API version 2.0 is used.
 ///
-/// @param homeName    Home name
-/// @param geoName     City name
-/// @param latitude    Lat
-/// @param longitude   Lon
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param homeName    The home name.
+/// @param geoName     The city name.
+/// @param latitude    The latitude.
+/// @param longitude   The longitude.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)updateHomeInfoWithName:(NSString *)homeName
                        geoName:(NSString *)geoName
                       latitude:(double)latitude
@@ -213,16 +213,16 @@
 
 
 
-/// Update home info,API version 3.0
+/// Updates the home information. API version 3.0 is used.
 ///
-/// @param homeName    Home name
-/// @param geoName     City name
-/// @param latitude    Lat
-/// @param longitude   Lon
-/// @param rooms       Room name array
-/// @param overWriteRoom     NSDictionary now only support "overWriteRoom":boolean
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param homeName    The home name.
+/// @param geoName     The city name.
+/// @param latitude    The latitude.
+/// @param longitude   The longitude.
+/// @param rooms       The array of room names.
+/// @param overWriteRoom     NSDictionary only supports "overWriteRoom":boolean.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)updateHomeInfoWithName:(NSString *)homeName
                        geoName:(NSString *)geoName
                       latitude:(double)latitude
@@ -233,18 +233,18 @@
                        failure:(TYFailureError)failure;
 
 
-/// Remove a home.
+/// Removes a home.
 ///
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)dismissHomeWithSuccess:(TYSuccessHandler)success
                        failure:(TYFailureError)failure;
 
 
-/// Sorting of devices and groups under the entire family.
-/// @param orderList order list [@{@"bizId": @"XXX", @"bizType": @"XXX"},@{@"bizId": @"XXX",@"bizType": @"XXX"}], where bizId is the device's devId or group's groupId, device's bizType = @"6" group's bizType = @"5".
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Sorts devices and groups for the home.
+/// @param orderList The order list [@{@"bizId": @"XXX", @"bizType": @"XXX"},@{@"bizId": @"XXX",@"bizType": @"XXX"}], where bizId is the device's device ID or group's group ID, device's bizType = @"6" group's bizType = @"5".
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)sortDeviceOrGroupWithOrderList:(NSArray<NSDictionary *> *)orderList
                                success:(TYSuccessHandler)success
                                failure:(TYFailureError)failure;
@@ -253,11 +253,11 @@
 #pragma mark - Room
 
 
-/// Add a new room
+/// Adds a new room.
 ///
-/// @param name        Room name.
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param name        The room name.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)addHomeRoomWithName:(NSString *)name
                     success:(TYSuccessHandler)success
                     failure:(TYFailureError)failure;
@@ -265,19 +265,19 @@
 
 /// Remove a room
 ///
-/// @param roomId      Home Id
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param roomId      The home ID.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)removeHomeRoomWithRoomId:(long long)roomId
                          success:(TYSuccessHandler)success
                          failure:(TYFailureError)failure;
 
 
-/// Homes sort
+/// Sorts the homes.
 ///
-/// @param roomList    Homes list
-/// @param success     Called when the task finishes successfully.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param roomList    The list of homes.
+/// @param success     Called when the task is finished.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)sortRoomList:(NSArray <TuyaSmartRoomModel *> *)roomList
              success:(TYSuccessHandler)success
              failure:(TYFailureError)failure;
@@ -285,37 +285,37 @@
 
 #pragma mark - home member
 
-/// Get home member list
+/// Returns a list of home members
 ///
-/// @param success     Called when the task finishes successfully. A list of TuyaSmartHomeMemberModel will be returned.
-/// @param failure     If error occurred while adding the task, this block will be called.
+/// @param success     Called when the task is finished. A list of TuyaSmartHomeMemberModel is returned.
+/// @param failure     If an error occurs while adding the task, this block is called.
 - (void)getHomeMemberListWithSuccess:(void(^)(NSArray <TuyaSmartHomeMemberModel *> *memberList))success
                              failure:(TYFailureError)failure;
 
 
-/// Add a home member
+/// Adds a home member.
 ///
-/// @param requestModel member model
-/// @param success      Called when the task finishes successfully.
-/// @param failure      If error occurred while adding the task, this block will be called.
+/// @param requestModel The member model.
+/// @param success      Called when the task is finished.
+/// @param failure      If an error occurs while adding the task, this block is called.
 - (void)addHomeMemberWithAddMemeberRequestModel:(TuyaSmartHomeAddMemberRequestModel *)requestModel
                                         success:(TYSuccessDict)success
                                         failure:(TYFailureError)failure;
 
-/// Accept or reject to shared home
+/// Accepts or rejects to share the home.
 ///
-/// @param accept       A boolean value indicates whether to accept the invitation.
-/// @param success      Called when the task finishes successfully.
-/// @param failure      If error occurred while adding the task, this block will be called.
+/// @param accept       A Boolean value that specifies whether to accept the invitation.
+/// @param success      Called when the task is finished.
+/// @param failure      If an error occurs while adding the task, this block is called.
 - (void)joinFamilyWithAccept:(BOOL)accept
                      success:(TYSuccessBOOL)success
                      failure:(TYFailureError)failure;
 
 
-/// Sync home device list
+/// Synchronizes the home device list.
 ///
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)syncHomeDeviceListWithSuccess:(TYSuccessHandler)success
                               failure:(TYFailureError)failure;
 

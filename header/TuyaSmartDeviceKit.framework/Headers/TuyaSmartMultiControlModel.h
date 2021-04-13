@@ -11,22 +11,22 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TuyaSmartMultiControlDetailModel : NSObject
 
 @property (copy, nonatomic) NSString *detailId;
-@property (copy, nonatomic) NSString *devId;///< Attachment device id.
-@property (copy, nonatomic) NSString *dpId;///< The dp id of the associated attached device.
-@property (assign, nonatomic) BOOL enable;///< Whether affiliated devices that have been associated can be controlled by the multi-control function.
+@property (copy, nonatomic) NSString *devId;///< The ID of the attached device.
+@property (copy, nonatomic) NSString *dpId;///< The DP ID of the associated attached device.
+@property (assign, nonatomic) BOOL enable;///< Specifies whether the associated attached devices support the multi-control function.
 
 @end
 
 
 @interface TuyaSmartMultiControlModel : NSObject
 
-@property (copy, nonatomic) NSString *multiControlId;///< Multi-control group id.
-@property (copy, nonatomic) NSString *groupName;///< Multi-control group name.
+@property (copy, nonatomic) NSString *multiControlId;///< The ID of the multi-control group.
+@property (copy, nonatomic) NSString *groupName;///< The name of the multi-control group.
 @property (strong, nonatomic) NSArray<TuyaSmartMultiControlDetailModel *> *groupDetail;
 
-@property (assign, nonatomic, readonly) NSInteger groupType;///< Multi-control group type. Default is 1.
-@property (copy, nonatomic, readonly) NSString *ownerId;///< Family id.
-@property (copy, nonatomic, readonly) NSString *uid;///< User id.
+@property (assign, nonatomic, readonly) NSInteger groupType;///< The type of the multi-control group. Default value: 1.
+@property (copy, nonatomic, readonly) NSString *ownerId;///< The home ID.
+@property (copy, nonatomic, readonly) NSString *uid;///< The user ID.
 
 @end
 

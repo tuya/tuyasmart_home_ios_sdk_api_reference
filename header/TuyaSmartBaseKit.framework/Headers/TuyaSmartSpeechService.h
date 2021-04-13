@@ -11,12 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TuyaSmartSpeechService : NSObject
 
 
-/// Audio to text.
-/// @param audioData Audio data.
-/// @param audioRate Audio rate.
-/// @param audioType Audio type.
-/// @param homeId Home id.
-/// @param success Called when the task finishes successfully.
+/// Converts from audio to text.
+/// @param audioData The audio data.
+/// @param audioRate The audio rate.
+/// @param audioType The audio type.
+/// @param homeId The home ID.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)convertToTextWithAudioData:(NSData *)audioData
                          audioRate:(NSString *)audioRate
@@ -26,10 +26,10 @@ NS_ASSUME_NONNULL_BEGIN
                            failure:(nullable TYFailureError)failure;
 
 
-/// Execute audio commands.
-/// @param speechText Voice text
-/// @param homeId Home id
-/// @param success Called when the task finishes successfully.
+/// Runs audio commands.
+/// @param speechText The voice text.
+/// @param homeId The home ID.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)executeCommandWithSpeechText:(NSString *)speechText
                               homeId:(long long)homeId

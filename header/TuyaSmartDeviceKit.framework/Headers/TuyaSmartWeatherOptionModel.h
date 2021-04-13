@@ -24,25 +24,25 @@ typedef enum : NSUInteger {
 
 typedef enum : NSUInteger {
     TuyaSmartWeatherOptionTemperatureUnit_unknown = 0,
-    TuyaSmartWeatherOptionTemperatureUnit_Centigrade = 1,// ℃
-    TuyaSmartWeatherOptionTemperatureUnit_Fahrenheit = 2,// ℉
+    TuyaSmartWeatherOptionTemperatureUnit_Centigrade = 1,// °C
+    TuyaSmartWeatherOptionTemperatureUnit_Fahrenheit = 2,// °F
 } TuyaSmartWeatherOptionTemperatureUnit;
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Get home weather request entry.
+/// Returns the requested home weather entries.
 @interface TuyaSmartWeatherOptionModel : NSObject
 
-/// Barometric unit.
+/// The barometric unit.
 @property (nonatomic, assign) TuyaSmartWeatherOptionPressureUnit pressureUnit;
 
-/// Wind speed unit
+/// The wind speed unit.
 @property (nonatomic, assign) TuyaSmartWeatherOptionWindSpeedUnit windspeedUnit;
 
-/// Temperature units
+/// The temperature unit.
 @property (nonatomic, assign) TuyaSmartWeatherOptionTemperatureUnit temperatureUnit;
 
-/// The number of requests for weather details, if not configured, all are returned by default.
+/// The number of requests for weather details. If you do not set the value, all requests are returned.
 @property (nonatomic, assign) NSInteger limit;
 
 @end

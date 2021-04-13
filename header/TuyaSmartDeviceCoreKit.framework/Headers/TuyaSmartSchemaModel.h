@@ -10,28 +10,28 @@
 #import <Foundation/Foundation.h>
 #import "TuyaSmartSchemaPropertyModel.h"
 
-/// device schema
+/// The device schema.
 @interface TuyaSmartSchemaModel : NSObject
 
-/// Dp ID.
+/// The DP ID.
 @property (nonatomic, strong) NSString     *dpId;
 
-/// Dp code.
+/// The DP code.
 @property (nonatomic, strong) NSString     *code;
 
-/// The name of dp.
+/// The name of the DP.
 @property (nonatomic, strong) NSString     *name;
 
-/// Read and write attributes of the DP point rw - can send down and report | ro - only report | wr - only send down.
+/// Reads and writes attributes of the DP. rw: send and report | ro: only report | wr: only send.
 @property (nonatomic, strong) NSString     *mode;
 
-/// Type of DP point obj - (numeric, character, bool, enumerated, fault) | raw pass-through type.
+/// The type of DP. obj: numeric, character, boolean, enumerated, and fault | raw: the pass-through type.
 @property (nonatomic, strong) NSString     *type;
 
-/// The icon name of dp.
+/// The icon name of the DP.
 @property (nonatomic, strong) NSString     *iconname;
 
-/// Dp property.
+/// The DP property.
 @property (nonatomic, strong) TuyaSmartSchemaPropertyModel *property;
 
 @end

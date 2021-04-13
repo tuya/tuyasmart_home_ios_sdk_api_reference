@@ -8,19 +8,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// mqtt message
+/// The MQTT message.
 @interface TuyaSmartMQTTMessageModel : NSObject
 
-/// protocol
+/// The protocol.
 @property (nonatomic, assign) NSInteger    protocol;
 
-/// message type
+/// The message type.
 @property (nonatomic, strong) NSString     *type;
 
-/// message data
+/// The message data.
 @property (nonatomic, strong) id           data;
 
-/// device ID
+/// The device ID.
 @property (nonatomic, strong) NSString     *devId;
 
 @end

@@ -11,13 +11,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TYRegionModel : NSObject
 
 
-/// Region name.
+/// The region name.
 @property (nonatomic, strong) NSString *name;
 
-/// Region code.
+/// The region code.
 @property (nonatomic, strong) NSString *region;
 
-/// Default or not.
+/// Indicates whether the region is the default region.
 @property (nonatomic, assign) BOOL isDefault;
 
 @end

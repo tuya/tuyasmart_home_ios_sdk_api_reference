@@ -11,15 +11,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartMultiControlParentRuleDpModel : NSObject
 
-@property (copy, nonatomic) NSString *dpId;///< dp id
-@property (copy, nonatomic) NSString *dpName;///< dp name
+@property (copy, nonatomic) NSString *dpId;///< The DP ID.
+@property (copy, nonatomic) NSString *dpName;///< The DP name.
 
 @end
 
 @interface TuyaSmartMultiControlParentRuleModel : NSObject
 
-@property (copy, nonatomic) NSString *ruleId;///< Automation id
-@property (copy, nonatomic) NSString *name;///< Automation name
+@property (copy, nonatomic) NSString *ruleId;///< The automation ID.
+@property (copy, nonatomic) NSString *name;///< The automation name.
 
 @property (strong, nonatomic) NSArray<TuyaSmartMultiControlParentRuleDpModel *> *dpList;
 

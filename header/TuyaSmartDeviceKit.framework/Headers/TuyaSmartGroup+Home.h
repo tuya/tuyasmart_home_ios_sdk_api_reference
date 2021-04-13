@@ -11,12 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartGroup (Home)
 
-/// Creating Groups of Wifi Devices.
+/// Creates groups of Wi-Fi devices.
 /// @param name The group name.
-/// @param productId Product ID.
-/// @param homeId Home ID.
-/// @param devIdList DeviceId list.
-/// @param success Called when the task finishes successfully.
+/// @param productId The product ID.
+/// @param homeId The home ID.
+/// @param devIdList The list of device IDs.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 + (void)createGroupWithName:(NSString *)name
                   productId:(NSString *)productId
@@ -26,12 +26,12 @@ NS_ASSUME_NONNULL_BEGIN
                     failure:(nullable TYFailureError)failure;
 
 
-/// Create groups of zigBee devices.
-/// @param name Group name.
-/// @param homeId Home ID.
-/// @param gwId Gateway ID.
-/// @param productId Product ID.
-/// @param success Called when the task finishes successfully.
+/// Creates groups of Zigbee devices.
+/// @param name The group name.
+/// @param homeId The home ID.
+/// @param gwId The gateway ID.
+/// @param productId The product ID.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 + (void)createGroupWithName:(NSString *)name
                      homeId:(long long)homeId
@@ -40,11 +40,11 @@ NS_ASSUME_NONNULL_BEGIN
                     success:(nullable void (^)(TuyaSmartGroup *))success
                     failure:(nullable TYFailureError)failure;
 
-/// Get a list of ZigBee sub devices for the corresponding support group based on productId and gwId.
-/// @param productId Product ID.
-/// @param gwId Gateway ID.
-/// @param homeId Home ID.
-/// @param success Called when the task finishes successfully.
+/// Returns a list of Zigbee sub-devices that are grouped by productId and gwId.
+/// @param productId The product ID.
+/// @param gwId The gateway ID.
+/// @param homeId The home ID.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 + (void)getDevListWithProductId:(NSString *)productId
                            gwId:(NSString *)gwId
@@ -52,10 +52,10 @@ NS_ASSUME_NONNULL_BEGIN
                         success:(nullable void (^)(NSArray<TuyaSmartGroupDevListModel *> *))success
                         failure:(nullable TYFailureError)failure;
 
-/// Get list of WiFi devices that support groups based on productId.
-/// @param productId Product ID.
-/// @param homeId Home ID.
-/// @param success Called when the task finishes successfully.
+/// Returns a list of Wi-Fi devices that are grouped by productId.
+/// @param productId The product ID.
+/// @param homeId The home ID.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 + (void)getDevList:(NSString *)productId
             homeId:(long long)homeId
@@ -65,18 +65,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 #if TARGET_OS_IOS
 
-/// Add ZigBee devices to groups (interacting locally with gateways).
-/// @param nodeList Zigbee sub-device nodeId list.
-/// @param success Called when the task finishes successfully.
+/// Adds Zigbee devices to groups that locally interact with gateways.
+/// @param nodeList The list of Zigbee sub-device node IDs.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)addZigbeeDeviceWithNodeList:(NSArray <NSString *>*)nodeList
                             success:(nullable TYSuccessHandler)success
                             failure:(nullable TYFailureError)failure;
 
 
-/// Remove ZigBee devices from groups (interacting locally with gateways).
-/// @param nodeList Zigbee sub-device nodeId list.
-/// @param success Called when the task finishes successfully.
+/// Removes Zigbee devices from groups that locally interact with gateways.
+/// @param nodeList The list of Zigbee sub-device node IDs.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)removeZigbeeDeviceWithNodeList:(NSArray <NSString *>*)nodeList
                                success:(nullable TYSuccessHandler)success

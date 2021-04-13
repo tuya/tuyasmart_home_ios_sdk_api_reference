@@ -13,98 +13,98 @@
 #import "TuyaSmartDeviceShareModel.h"
 
 
-/// Sharing device related functions (based on device dimension sharing).
+/// Shares devices based on device types.
 @interface TuyaSmartHomeDeviceShare : NSObject
 
-/// Device add sharing.
-/// @param requestModel Adding a shared device model
-/// @param success Called when the task finishes successfully. TuyaSmartShareMemberModel will be returned.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Adds a device to be shared.
+/// @param requestModel Adds a device model to be shared.
+/// @param success Called when the task is finished. TuyaSmartShareMemberModel is returned.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)addDeviceShareWithRequestModel:(TuyaSmartDeviceShareRequestModel *)requestModel
                                success:(void(^)(TuyaSmartShareMemberModel *model))success
                                failure:(TYFailureError)failure;
 
 
-/// Add Share (New, does not overwrite old share)
-/// @param memberId memberId
-/// @param devIds devId list
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Adds extra devices to be shared. The existing shared devices are not overwritten.
+/// @param memberId The member ID.
+/// @param devIds The list of device IDs.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)addShareWithMemberId:(NSInteger)memberId
                       devIds:(NSArray <NSString *> *)devIds
                      success:(TYSuccessHandler)success
                      failure:(TYFailureError)failure;
 
 
-/// Get a list of all users actively sharing under family.
-/// @param homeId homeId
-/// @param success Called when the task finishes successfully. A list of TuyaSmartShareMemberModel will be returned.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Returns all users who initiate device sharing for a home.
+/// @param homeId The home ID.
+/// @param success Called when the task is finished. A list of TuyaSmartShareMemberModel is returned.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)getShareMemberListWithHomeId:(long long)homeId
                              success:(void(^)(NSArray<TuyaSmartShareMemberModel *> *list))success
                              failure:(TYFailureError)failure;
 
 
-/// Get a list of all users who have received a share.
-/// @param success Called when the task finishes successfully. A list of TuyaSmartShareMemberModel will be returned.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Returns all users who receive shared devices.
+/// @param success Called when the task is finished. A list of TuyaSmartShareMemberModel is returned.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)getReceiveMemberListWithSuccess:(void(^)(NSArray<TuyaSmartShareMemberModel *> *list))success
                                 failure:(TYFailureError)failure;
 
 
-/// Get the shared data of a single active share user.
-/// @param memberId memberId
-/// @param success Called when the task finishes successfully. TuyaSmartShareMemberDetailModel will be returned.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Returns the shared device data of a single user who initiates sharing.
+/// @param memberId The member ID.
+/// @param success Called when the task is finished. TuyaSmartShareMemberDetailModel is returned.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)getShareMemberDetailWithMemberId:(NSInteger)memberId
                                  success:(void(^)(TuyaSmartShareMemberDetailModel *model))success
                                  failure:(TYFailureError)failure;
 
 
-/// Get the shared data of a single user who received a share.
-/// @param memberId memberId
-/// @param success Called when the task finishes successfully. TuyaSmartShareMemberDetailModel will be returned.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Returns the shared device data of a single user who receives shared devices.
+/// @param memberId The member ID.
+/// @param success Called when the task is finished. TuyaSmartShareMemberDetailModel is returned.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)getReceiveMemberDetailWithMemberId:(NSInteger)memberId
                                    success:(void(^)(TuyaSmartReceiveMemberDetailModel *model))success
                                    failure:(TYFailureError)failure;
 
 
 
-/// Remove active sharers.
-/// @param memberId memberId
-/// @param success  Called when the task finishes successfully.
-/// @param failure  If error occurred while adding the task, this block will be called.
+/// Removes users who initiate device sharing.
+/// @param memberId The member ID.
+/// @param success  Called when the task is finished.
+/// @param failure  If an error occurs while adding the task, this block is called.
 - (void)removeShareMemberWithMemberId:(NSInteger)memberId
                               success:(TYSuccessHandler)success
                               failure:(TYFailureError)failure;
 
 
-/// Remove received sharer
-/// @param memberId Shared member ID.
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Removes users who receive shared devices.
+/// @param memberId The member ID.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)removeReceiveShareMemberWithMemberId:(NSInteger)memberId
                                      success:(TYSuccessHandler)success
                                      failure:(TYFailureError)failure;
 
 
-/// Change the nickname of an active shared user.
-/// @param memberId memberId
-/// @param name nickname
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Changes the nickname of the user who initiates device sharing.
+/// @param memberId The member ID.
+/// @param name The nickname.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)renameShareMemberNameWithMemberId:(NSInteger)memberId
                                      name:(NSString *)name
                                   success:(TYSuccessHandler)success
                                   failure:(TYFailureError)failure;
 
 
-/// Change the nickname of the person who received the share.
-/// @param memberId memberId
-/// @param name nickname
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Changes the nickname of the user who receives shared devices.
+/// @param memberId The member ID.
+/// @param name The nickname.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)renameReceiveShareMemberNameWithMemberId:(NSInteger)memberId
                                             name:(NSString *)name
                                          success:(TYSuccessHandler)success
@@ -113,50 +113,50 @@
 
 #pragma mark - 
 
-/// Remove Received Shared.
-/// @param devId   DevId
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Removes the device that is shared and received.
+/// @param devId   The device ID.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)removeReceiveDeviceShareWithDevId:(NSString *)devId
                                   success:(TYSuccessHandler)success
                                   failure:(TYFailureError)failure;
 
 
-/// Delete shared devices.
-/// @param memberId member ID
-/// @param devId Device ID
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Deletes the device that is shared.
+/// @param memberId The member ID.
+/// @param devId The device ID.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)removeDeviceShareWithMemberId:(NSInteger)memberId
                                 devId:(NSString *)devId
                               success:(TYSuccessHandler)success
                               failure:(TYFailureError)failure;
 
 
-/// Get a list of device share users.
+/// Returns a list of users who share a specific device.
 /// @param devId The device ID.
-/// @param success Called when the task finishes successfully. A list of TuyaSmartShareMemberModel will be returned.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// @param success Called when the task is finished. A list of TuyaSmartShareMemberModel is returned.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)getDeviceShareMemberListWithDevId:(NSString *)devId
                                   success:(void(^)(NSArray<TuyaSmartShareMemberModel *> *list))success
                                   failure:(TYFailureError)failure;
 
 
-/// Get users for device sharing.
+/// Returns the users who initiate device sharing.
 /// @param devId The device ID.
-/// @param success Called when the task finishes successfully. TuyaSmartReceivedShareUserModel will be returned.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// @param success Called when the task is finished. TuyaSmartReceivedShareUserModel is returned.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)getShareInfoWithDevId:(NSString *)devId
                       success:(void(^)(TuyaSmartReceivedShareUserModel *model))success
                       failure:(TYFailureError)failure;
 
 
-/// Invitation to share to other users
-/// @param countryCode countryCode
-/// @param userAccount userAccount
-/// @param devId Device ID.
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Sends an invitation to other users to share a device.
+/// @param countryCode The country code.
+/// @param userAccount The user account.
+/// @param devId The device ID.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)inviteShareWithCountryCode:(NSString *)countryCode
                        userAccount:(NSString *)userAccount
                              devId:(NSString *)devId
@@ -164,32 +164,32 @@
                            failure:(TYFailureError)failure;
 
 
-/// Confirm invite share.
-/// @param shareId The shareId returned by the invite share interface.
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Confirms the sharing invitation.
+/// @param shareId The shareId that is returned by the sharing invitation API operation.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)confirmInviteShareWithShareId:(NSInteger)shareId
                               success:(TYSuccessHandler)success
                               failure:(TYFailureError)failure;
 
 #pragma mark - Group Share
 
-/// Get a list of shared users for a single group (reflected in the panel).
-/// @param groupId groupId
-/// @param success Called when the task finishes successfully. A list of TuyaSmartShareMemberModel will be returned.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Returns a list of device-sharing users by group ID. The group ID is displayed on the panel.
+/// @param groupId The group ID.
+/// @param success Called when the task is finished. A list of TuyaSmartShareMemberModel is returned.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)getGroupShareMemberListWithGroupId:(NSString *)groupId
                                    success:(void(^)(NSArray<TuyaSmartShareMemberModel *> *list))success
                                    failure:(TYFailureError)failure;
 
 
-/// Share groups to other users.
-/// @param homeId HomeId
-/// @param countryCode Country Code
-/// @param userAccount User Account
-/// @param groupId GroupId
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Shares groups to other users.
+/// @param homeId The home ID.
+/// @param countryCode The country code.
+/// @param userAccount The user account.
+/// @param groupId The group ID.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)addGroupShareToMemberWithHomeId:(long long)homeId
                              countyCode:(NSString *)countryCode
                             userAccount:(NSString *)userAccount
@@ -198,29 +198,29 @@
                                 failure:(TYFailureError)failure;
 
 
-/// Get sharing information of the group.
-/// @param groupId groupId
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Returns sharing information of the group.
+/// @param groupId The group ID.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)getShareGroupFromInfoWithGroupId:(NSString *)groupId
                                  success:(TYSuccessID)success
                                  failure:(TYFailureError)failure;
 
 
-/// Remove sharing groups.
-/// @param groupId groupId
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Removes sharing groups.
+/// @param groupId The group ID.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)removeShareGroupWithGroupId:(NSString *)groupId
                             success:(TYSuccessID)success
                             failure:(TYFailureError)failure;
 
 
-/// Remove group shares from other members.
-/// @param relationId relationId
-/// @param groupId groupId
-/// @param success Called when the task finishes successfully.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// Removes the device sharing group from a member.
+/// @param relationId The member ID.
+/// @param groupId The group ID.
+/// @param success Called when the task is finished.
+/// @param failure If an error occurs while adding the task, this block is called.
 - (void)removeGroupShareWithRelationId:(NSInteger)relationId
                                groupId:(NSString *)groupId
                                success:(TYSuccessHandler)success

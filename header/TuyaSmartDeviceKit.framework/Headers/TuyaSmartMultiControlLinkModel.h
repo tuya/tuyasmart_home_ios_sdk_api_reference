@@ -12,12 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TuyaSmartMultiControlGroupDetailModel : NSObject
 
 @property (copy, nonatomic) NSString *detailId;
-@property (copy, nonatomic) NSString *multiControlId;///< Multi-control group id.
-@property (copy, nonatomic) NSString *devId;///< Attachment device id.
-@property (copy, nonatomic) NSString *devName;///< Name of attached device.
-@property (copy, nonatomic) NSString *dpId;///< The dp id of the associated attached device.
-@property (copy, nonatomic) NSString *dpName;///< The dp name of the associated attached device.
-@property (assign, nonatomic) BOOL enabled;///< Whether affiliated devices that have been associated can be controlled by the multi-control function.
+@property (copy, nonatomic) NSString *multiControlId;///< The ID of the multi-control group.
+@property (copy, nonatomic) NSString *devId;///< The ID of the attached device.
+@property (copy, nonatomic) NSString *devName;///< The name of the attached device.
+@property (copy, nonatomic) NSString *dpId;///< The DP ID of the associated attached device.
+@property (copy, nonatomic) NSString *dpName;///< The DP name of the associated attached device.
+@property (assign, nonatomic) BOOL enabled;///< Specifies whether the associated attached devices support the multi-control function.
 @property (strong, nonatomic) NSArray<TuyaSmartMultiControlDatapointModel *> *datapoints;
 
 @end
@@ -25,15 +25,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartMultiControlGroupModel : NSObject
 
-@property (copy, nonatomic) NSString *multiControlId;///< Multi-control group id.
-@property (copy, nonatomic) NSString *groupName;///< Multi-control group name.
-@property (strong, nonatomic) NSArray<TuyaSmartMultiControlGroupDetailModel *> *groupDetail;///< Multi-control group details.
+@property (copy, nonatomic) NSString *multiControlId;///< The multi-control group ID.
+@property (copy, nonatomic) NSString *groupName;///< The multi-control group name.
+@property (strong, nonatomic) NSArray<TuyaSmartMultiControlGroupDetailModel *> *groupDetail;///< The multi-control group details.
 
 @property (assign, nonatomic) BOOL enabled;
-@property (assign, nonatomic) NSInteger groupType;///< Multi-control group type.
+@property (assign, nonatomic) NSInteger groupType;///< The multi-control group type.
 @property (copy, nonatomic) NSString *multiRuleId;
-@property (copy, nonatomic) NSString *ownerId;///< Family id.
-@property (copy, nonatomic) NSString *uid;///< User id.
+@property (copy, nonatomic) NSString *ownerId;///< The home ID.
+@property (copy, nonatomic) NSString *uid;///< The user ID.
 
 @end
 

@@ -13,19 +13,19 @@ NS_ASSUME_NONNULL_BEGIN
 /// The weather icon.
 @property (nonatomic, copy) NSString *icon;
 
-/// Weather parameter name
+/// The weather parameter name.
 @property (nonatomic, copy) NSString *name;
 
-/// Parameter unit.
+/// The parameter unit.
 @property (nonatomic, copy) NSString *unit;
 
-/// Parameter ID.
+/// The parameter ID.
 @property (nonatomic, assign) long long objId;
 
-/// Whether to display; business layer not used.
+/// Specifies whether to display the weather and does not apply to the business layer.
 @property (nonatomic, assign) BOOL show;
 
-/// Weather parameter value.
+/// The weather parameter value.
 @property (nonatomic, copy) NSString *value;
 
 @property (nonatomic, copy) NSString *metaValue;

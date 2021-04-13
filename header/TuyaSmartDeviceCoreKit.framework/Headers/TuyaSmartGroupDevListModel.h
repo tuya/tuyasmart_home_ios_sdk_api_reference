@@ -9,26 +9,26 @@
 
 #import <Foundation/Foundation.h>
 
-/// group device list information
+/// Information about the group device list.
 @interface TuyaSmartGroupDevListModel : NSObject
 
 
 /// The device ID.
 @property(nonatomic,strong) NSString    *devId;
 
-/// The device ID.
+/// The gateway ID.
 @property(nonatomic,strong) NSString    *gwId;
 
-/// Is the device online.
+/// Indicates whether the device is online.
 @property(nonatomic,assign) BOOL        online;
 
-/// Device icon URL.
+/// The URL of the device icon.
 @property(nonatomic,strong) NSString    *iconUrl;
 
 /// The product ID.
 @property(nonatomic,strong) NSString    *productId;
 
-/// Is the device selected.
+/// Indicates whether the device is selected.
 @property(nonatomic,assign) BOOL        checked;
 
 /// The device name.

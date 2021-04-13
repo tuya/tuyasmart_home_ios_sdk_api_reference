@@ -9,16 +9,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// device firmware upgrade status
+/// The device firmware update status.
 @interface TuyaSmartFirmwareUpgradeStatusModel : NSObject
 
-/// firmware upgrade status
+/// The firmware update status.
 @property (nonatomic, assign) TuyaSmartDeviceUpgradeStatus upgradeStatus;
-/// firmware type
+/// The firmware type.
 @property (nonatomic, assign) NSInteger type;
-/// firmware upgrade explain text
+/// The firmware update description.
 @property (nonatomic, copy) NSString *statusText;
-/// firmware upgrade explain text title
+/// The title of the firmware update description.
 @property (nonatomic, copy) NSString *statusTitle;
 
 @end

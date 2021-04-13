@@ -8,43 +8,43 @@
 
 #import "TuyaSmartDevice.h"
 
-/// @brief Smart Device Wi-Fi Alternative Switching feature to get alternative Wi-Fi.
+/// @brief The Smart Device Wi-Fi Alternative Switching function allows you to get an alternative Wi-Fi network.
 ///
-/// When one of the Wi-Fi is not available, the device will automatically switch to the alternative Wi-Fi to ensure the device can work properly.
+/// When the current Wi-Fi network is not available, the device automatically switches to the alternative Wi-Fi network to ensure that the device can work as expected.
 ///
 API_AVAILABLE(ios(10.0))
 @interface TuyaSmartDevice (WiFiBackup)
 
-/// Get current Wi-Fi info.
-/// @param success Called when the task finishes successfully. TYSuccessDict will be returned.
+/// Returns the current Wi-Fi information.
+/// @param success Called when the task is finished. TYSuccessDict is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getCurrentWifiInfoWithSuccess:(TYSuccessDict)success failure:(TYFailureError)failure;
 
 
-/// Get a list of alternate networks
-/// @param success Called when the task finishes successfully. TYSuccessDict will be returned.
+/// Returns a list of alternative Wi-Fi networks.
+/// @param success Called when the task is finished. TYSuccessDict is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getBackupWifiListWithSuccess:(TYSuccessDict)success failure:(TYFailureError)failure;
 
 
-/// Setting up an alternate network list
-/// @param list Backup wifi list.
-/// @param success Called when the task finishes successfully. A list of TuyaSmartBackupWifiModel will be returned.
+/// Sets up a list of alternative networks.
+/// @param list The list of alternative Wi-Fi networks.
+/// @param success Called when the task is finished. A list of TuyaSmartBackupWifiModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)setBackupWifiList:(NSArray<TuyaSmartBackupWifiModel *> *)list success:(TYSuccessDict)success failure:(TYFailureError)failure;
 
 
-/// Switching to a saved alternate network
-/// @param hash Hash for the SSID + password, returned from device.
-/// @param success Called when the task finishes successfully.
+/// Switches to a saved alternative Wi-Fi network.
+/// @param hash The hash for the SSID and password. The value is returned from the device.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)switchToBackupWifiWithHash:(NSString *)hash success:(TYSuccessDict)success failure:(TYFailureError)failure;
 
 
-/// Switching to a new alternate network
-/// @param ssid SSID
-/// @param password SSID
-/// @param success Called when the task finishes successfully.
+/// Switches to a new alternative Wi-Fi network.
+/// @param ssid The SSID.
+/// @param password The SSID.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)switchToBackupWifiWithSSID:(NSString *)ssid password:(NSString *)password success:(TYSuccessDict)success failure:(TYFailureError)failure;
 

@@ -9,23 +9,23 @@
 @interface TYApiMergeModel : NSObject
 
 
-/// Success.
+/// Indicates a successful call.
 @property (nonatomic, assign) BOOL      success;
 
 
-/// Api name.
+/// The name of the API operation.
 @property (nonatomic, strong) NSString  *apiName;
 
 
-/// Error.
+/// The error.
 @property (nonatomic, strong) NSError   *error;
 
 
-/// Response result.
+/// The response result.
 @property (nonatomic, strong) id        result;
 
 
-/// Timestamp.
+/// The timestamp.
 @property (nonatomic, assign) NSTimeInterval time;
 
 @end

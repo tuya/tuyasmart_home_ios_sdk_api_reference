@@ -11,11 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TuyaSmartUser (DeprecatedApi)
 
 
-/// Send verification code. Used for mobile phone verification code login, register, password reset.
-/// @param countryCode Country code.
-/// @param phoneNumber Mobile phone number.
-/// @param type  0: mobile phone verification code login, 1: mobile phone verification code register, 2: mobile phone password reset.
-/// @param success Called when the task finishes successfully.
+/// Sends the verification code to a mobile phone to enable login, registration, and password resetting.
+/// @param countryCode The The country code.
+/// @param phoneNumber The mobile phone number.
+/// @param type 0: Log in with the mobile phone verification code. 1: Register with the mobile phone verification code. 2: Reset a password with the mobile phone verification code.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)sendVerifyCode:(NSString *)countryCode
            phoneNumber:(NSString *)phoneNumber
@@ -26,13 +26,13 @@ DEPRECATED_MSG_ATTRIBUTE("use sendVerifyCodeWithUserName:region:countryCode:type
 
 #pragma mark email
 
-/// Email register 1.0.
-/// @param countryCode Country code.
-/// @param email Email.
-/// @param password Password.
-/// @param success Called when the task finishes successfully.
+/// Enables email registration 1.0.
+/// @param countryCode The The country code.
+/// @param email The email.
+/// @param password The password.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
-/// @deprecated This method is deprecated, use TuyaSmartUser::registerByEmail:email:password:code:success:failure: instead
+/// @deprecated This method is deprecated. Use TuyaSmartUser::registerByEmail:email:password:code:success:failure: instead.
 - (void)registerByEmail:(NSString *)countryCode
                   email:(NSString *)email
                password:(NSString *)password
@@ -43,13 +43,13 @@ DEPRECATED_MSG_ATTRIBUTE("use registerByEmail:email:password:code:success:failur
 
 #pragma mark phone
 
-/// Mobile phone verification code login and register.
-/// @param countryCode Country code.
-/// @param phoneNumber Mobile phone number.
-/// @param code Verification code.
-/// @param success Called when the task finishes successfully.
+/// Enables registration and login with a mobile phone verification code.
+/// @param countryCode The country code.
+/// @param phoneNumber The mobile phone number.
+/// @param code The verification code.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
-/// @deprecated This method is deprecated, use TuyaSmartUser::loginWithMobile:countryCode:code:success:failure: instead
+/// @deprecated This method is deprecated. Use TuyaSmartUser::loginWithMobile:countryCode:code:success:failure: instead.
 - (void)login:(NSString *)countryCode
   phoneNumber:(NSString *)phoneNumber
          code:(NSString *)code
@@ -59,13 +59,13 @@ DEPRECATED_MSG_ATTRIBUTE("use loginWithMobile:countryCode:code:success:failure: 
 
 #pragma mark Uid
 
-/// User ID login/register. The account will be registered at first login.
-/// @param countryCode Country code.
-/// @param uid User ID.
-/// @param password Password.
-/// @param success Called when the task finishes successfully.
+/// Enables registration and login with the user ID. The account is registered at first login.
+/// @param countryCode The country code.
+/// @param uid The user ID.
+/// @param password The password.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
-/// @deprecated This method is deprecated, use TuyaSmartUser::loginOrRegisterWithCountryCode:uid:password:success:failure: instead
+/// @deprecated This method is deprecated. Use TuyaSmartUser::loginOrRegisterWithCountryCode:uid:password:success:failure: instead.
 - (void)loginOrRegisterByPhone:(NSString *)countryCode
                            uid:(NSString *)uid
                       password:(NSString *)password
@@ -73,14 +73,14 @@ DEPRECATED_MSG_ATTRIBUTE("use loginWithMobile:countryCode:code:success:failure: 
                        failure:(nullable TYFailureError)failure
 DEPRECATED_MSG_ATTRIBUTE("use loginOrRegisterWithCountryCode:uid:password:success:failure: instead");
 
-/// User ID login/register. The account will be registered at first login.
-/// @param countryCode Country code.
-/// @param uid User ID.
-/// @param password Password.
-/// @param createHome Create default home.
-/// @param success Called when the task finishes successfully.
+/// Enables registration and login with the user ID. The account is registered at first login.
+/// @param countryCode The country code.
+/// @param uid The user ID.
+/// @param password The password.
+/// @param createHome Creates a default home.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
-/// @deprecated This method is deprecated, use TuyaSmartUser::loginOrRegisterWithCountryCode:uid:password:createHome:success:failure: instead
+/// @deprecated This method is deprecated. Use TuyaSmartUser::loginOrRegisterWithCountryCode:uid:password:createHome:success:failure: instead.
 - (void)loginOrRegisterByPhone:(NSString *)countryCode
                            uid:(NSString *)uid
                       password:(NSString *)password
@@ -89,13 +89,13 @@ DEPRECATED_MSG_ATTRIBUTE("use loginOrRegisterWithCountryCode:uid:password:succes
                        failure:(nullable TYFailureError)failure
 DEPRECATED_MSG_ATTRIBUTE("use loginOrRegisterWithCountryCode:uid:password:createHome:success:failure: instead");
 
-/// User ID register.
-/// @param uid User ID.
-/// @param password Password.
-/// @param countryCode Country code.
-/// @param success Called when the task finishes successfully.
+/// Enables registration with the user ID.
+/// @param uid The user ID.
+/// @param password The password.
+/// @param countryCode The country code.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
-/// @deprecated This method is deprecated, use TuyaSmartUser::loginOrRegisterWithCountryCode:uid:password:createHome:success:failure: instead
+/// @deprecated This method is deprecated. Use TuyaSmartUser::loginOrRegisterWithCountryCode:uid:password:createHome:success:failure: instead.
 - (void)registerByUid:(NSString *)uid
              password:(NSString *)password
           countryCode:(NSString *)countryCode
@@ -103,13 +103,13 @@ DEPRECATED_MSG_ATTRIBUTE("use loginOrRegisterWithCountryCode:uid:password:create
               failure:(nullable TYFailureError)failure
 DEPRECATED_MSG_ATTRIBUTE("use loginOrRegisterWithCountryCode:uid:password:createHome:success:failure: instead");
 
-/// User ID login.
-/// @param uid User ID.
-/// @param password Password.
-/// @param countryCode Country code.
-/// @param success Called when the task finishes successfully.
+/// Enables login with the user ID.
+/// @param uid The user ID.
+/// @param password The password.
+/// @param countryCode The country code.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
-/// @deprecated This method is deprecated, use TuyaSmartUser::loginOrRegisterWithCountryCode:uid:password:createHome:success:failure: instead
+/// @deprecated This method is deprecated. Use TuyaSmartUser::loginOrRegisterWithCountryCode:uid:password:createHome:success:failure: instead.
 - (void)loginByUid:(NSString *)uid
           password:(NSString *)password
        countryCode:(NSString *)countryCode
@@ -117,13 +117,13 @@ DEPRECATED_MSG_ATTRIBUTE("use loginOrRegisterWithCountryCode:uid:password:create
            failure:(nullable TYFailureError)failure
 DEPRECATED_MSG_ATTRIBUTE("use loginOrRegisterWithCountryCode:uid:password:createHome:success:failure: instead");
 
-/// User ID login/register. The account will be registered at first login.
-/// @param countryCode Country code.
-/// @param uid User ID.
-/// @param password Password.
-/// @param success Called when the task finishes successfully.
+/// Enables registration and login with the user ID. The account is registered at first login.
+/// @param countryCode The country code.
+/// @param uid The user ID.
+/// @param password The password.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
-/// @deprecated This method is deprecated, use TuyaSmartUser::loginOrRegisterWithCountryCode:uid:password:createHome:success:failure: instead
+/// @deprecated This method is deprecated. Use TuyaSmartUser::loginOrRegisterWithCountryCode:uid:password:createHome:success:failure: instead.
 - (void)loginOrRegisterWithCountryCode:(NSString *)countryCode
                                    uid:(NSString *)uid
                               password:(NSString *)password
@@ -132,10 +132,10 @@ DEPRECATED_MSG_ATTRIBUTE("use loginOrRegisterWithCountryCode:uid:password:create
 DEPRECATED_MSG_ATTRIBUTE("use loginOrRegisterWithCountryCode:uid:password:createHome:success:failure: instead");
 
 
-/// Send verification code, used for email password reset.
-/// @param countryCode Country code.
-/// @param email Email.
-/// @param success Called when the task finishes successfully.
+/// Sends the verification code to an email to reset the password.
+/// @param countryCode The country code.
+/// @param email The email.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)sendVerifyCodeByEmail:(NSString *)countryCode
                         email:(NSString *)email
@@ -143,10 +143,10 @@ DEPRECATED_MSG_ATTRIBUTE("use loginOrRegisterWithCountryCode:uid:password:create
                       failure:(nullable TYFailureError)failure
 DEPRECATED_MSG_ATTRIBUTE("use sendVerifyCodeWithUserName:region:countryCode:type:success:failure: instead");
 
-/// Send verification code, used for email password register.
-/// @param countryCode Country code.
-/// @param email Email.
-/// @param success Called when the task finishes successfully.
+/// Sends the verification code to an email to register the account.
+/// @param countryCode The country code.
+/// @param email The email.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)sendVerifyCodeByRegisterEmail:(NSString *)countryCode
                                 email:(NSString *)email

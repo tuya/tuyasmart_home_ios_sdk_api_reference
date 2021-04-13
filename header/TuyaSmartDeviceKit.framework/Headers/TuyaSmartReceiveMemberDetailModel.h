@@ -10,13 +10,13 @@
 
 @property (nonatomic, strong) NSArray <TuyaSmartShareDeviceModel *> *devices;
 
-/// Account information, email or cell phone number.
+/// The account information, email, or phone number.
 @property (nonatomic, strong) NSString *mobile;
 
-/// User nickname.
+/// The user nickname.
 @property (nonatomic, strong) NSString *name;
 
-/// Remarks.
+/// The remarks.
 @property (nonatomic, strong) NSString *remarkName;
 
 @end

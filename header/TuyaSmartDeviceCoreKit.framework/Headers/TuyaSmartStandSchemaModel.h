@@ -8,53 +8,53 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Reported Mapping Policies.
+/// The reported mapping policies.
 @interface TuyaSmartStatusSchemaModel : NSObject
 
-/// Mapping Rules.
+/// The mapping rules.
 @property (nonatomic, strong) NSString     *strategyValue;
 
-/// Policy designators, currently supporting more than 10.
+/// The policy designators. Currently, more than 10 designators are supported.
 @property (nonatomic, strong) NSString     *strategyCode;
 
-/// The reported dpId corresponds to a dpCode that is not a standard dpCode.
+/// The reported DP ID corresponds to a DP code that is not a standard DP code.
 @property (nonatomic, strong) NSString     *dpCode;
 
-/// DpValue type after standard.
+/// The standard DP value type.
 @property (nonatomic, strong) NSString     *standardType;
 
-/// The value range
+/// The value range.
 @property (nonatomic, strong) NSString     *valueRange;
 
-/// Dpcode->dpid mapping relationship
+/// The mapping relationship between DP codes and DP IDs.
 @property (nonatomic, strong) NSDictionary *relationDpIdMaps;
 
 @end
 
-/// Distributed mapping strategy.
+/// The distributed mapping strategy.
 @interface TuyaSmartFunctionSchemaModel : NSObject
 
-/// At present, more than 10 kinds of policy codes are supported.
+/// Currently, more than 10 kinds of policy codes are supported.
 @property (nonatomic, strong) NSString     *strategyCode;
 
-/// Mapping rules.
+/// The mapping rules.
 @property (nonatomic, strong) NSString     *strategyValue;
 
-/// Standardized dpcode.
+/// The standardized DP codes.
 @property (nonatomic, strong) NSString     *standardCode;
 
-/// Dpvalue type after standard.
+/// The standard DP value type.
 @property (nonatomic, strong) NSString     *standardType;
 
-/// The value range
+/// The value range.
 @property (nonatomic, strong) NSString     *valueRange;
 
-/// Dpcode->dpid mapping relationship
+/// The mapping relationship between DP codes and DP IDs.
 @property (nonatomic, strong) NSDictionary *relationDpIdMaps;
 
 @end
 
-/// standard schema
+/// The standard schema.
 @interface TuyaSmartStandSchemaModel : NSObject
 
 @property (nonatomic, assign) BOOL isProductCompatibled;

@@ -10,22 +10,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartWeatherSketchModel : NSObject
 
-/// Weather conditions, such as sunny, cloudy, rainy, etc.
+/// The weather conditions, such as sunny, cloudy, and rainy.
 @property (nonatomic, strong) NSString *condition;
 
-/// Weather icon, which is used by default.
+/// The default weather icon.
 @property (nonatomic, strong) NSString *iconUrl;
 
-/// Weather icon, highlight.
+/// The highlighted weather icon.
 @property (nonatomic, strong) NSString *inIconUrl;
 
-/// Compatible with old version parameters. Business layer not used.
+/// Compatible with the parameters of earlier versions and does not apply to the business layer.
 @property (nonatomic, strong) NSString *city;
 
-/// Weather conditions, such as sunny, cloudy, rainy and other property values, such as "Sunny" for sunny, "Cloudy" for cloudy. The business layer is not used yet.
+/// The weather conditions, such as sunny, cloudy, rainy, and other property values. For example, `Sunny` indicates sunny, and `Cloudy` indicates cloudy. This parameter does not apply to the business layer.
 @property (nonatomic, strong) NSString *mark;
 
-/// Temperature.
+/// The temperature.
 @property (nonatomic, strong) NSString *temp;
 
 @end

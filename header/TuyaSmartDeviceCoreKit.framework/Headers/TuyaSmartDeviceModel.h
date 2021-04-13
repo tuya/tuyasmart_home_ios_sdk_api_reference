@@ -12,38 +12,38 @@
 #import "TuyaSmartStandSchemaModel.h"
 #import "TuyaSmartCommunication.h"
 
-/// device types
+/// The device types.
 typedef enum : NSUInteger {
     
     TuyaSmartDeviceModelTypeWifiDev,         /// Wi-Fi
     
-    TuyaSmartDeviceModelTypeBle,             /// Single Point Bluetooth Device
+    TuyaSmartDeviceModelTypeBle,             /// Bluetooth LE
     
-    TuyaSmartDeviceModelTypeGprs,            /// Gprs
+    TuyaSmartDeviceModelTypeGprs,            /// GPRS
     
     TuyaSmartDeviceModelTypeNBIoT,           /// NB-IoT
     
-    TuyaSmartDeviceModelTypeZigbeeGateway,   /// Zigbee Gateway
+    TuyaSmartDeviceModelTypeZigbeeGateway,   /// Zigbee gateway
     
-    TuyaSmartDeviceModelTypeZigbeeSubDev,    /// Zigbee subDevice
+    TuyaSmartDeviceModelTypeZigbeeSubDev,    /// Zigbee sub-device
     
-    TuyaSmartDeviceModelTypeMeshBleSubDev,   /// Mesh
+    TuyaSmartDeviceModelTypeMeshBleSubDev,   /// Bluetooth mesh
     
     TuyaSmartDeviceModelTypeInfraredGateway, /// Infrared gateway
     
-    TuyaSmartDeviceModelTypeInfraredSubDev,  /// Infrared subDevice
+    TuyaSmartDeviceModelTypeInfraredSubDev,  /// Infrared sub-device
     
-    TuyaSmartDeviceModelTypeWifiGateway,     /// Wi-Fi Gateway
+    TuyaSmartDeviceModelTypeWifiGateway,     /// Wi-Fi gateway
     
-    TuyaSmartDeviceModelTypeWifiSubDev,      /// Wi-Fi subDevice
+    TuyaSmartDeviceModelTypeWifiSubDev,      /// Wi-Fi sub-device
     
-    TuyaSmartDeviceModelTypeSIGMeshGateway,  /// SIG Mesh Gateway
+    TuyaSmartDeviceModelTypeSIGMeshGateway,  /// Bluetooth mesh gateway
     
-    TuyaSmartDeviceModelTypeSIGMeshSubDev,   /// SIG Mesh subDevice
+    TuyaSmartDeviceModelTypeSIGMeshSubDev,   /// Bluetooth mesh sub-device
 
-    TuyaSmartDeviceModelTypeBeacon,          /// Ble Beacon
+    TuyaSmartDeviceModelTypeBeacon,          /// Bluetooth LE Beacon
     
-    TuyaSmartDeviceModelTypeCat1,            /// Cat.1
+    TuyaSmartDeviceModelTypeCat1,            /// Cat 1
 } TuyaSmartDeviceModelType;
 
 
@@ -54,104 +54,104 @@ typedef NS_OPTIONS(NSUInteger, TuyaSmartDeviceOnlineType) {
     TuyaSmartDeviceOnlineTypeWifi = 1 << 0,
     /// Local online
     TuyaSmartDeviceOnlineTypeLan = 1 << 1,
-    /// BLE online
+    /// Bluetooth LE online
     TuyaSmartDeviceOnlineTypeBLE = 1 << 2,
-    /// Mesh BLE  online
+    /// Bluetooth LE mesh online
     TuyaSmartDeviceOnlineTypeMeshBLE = 1 << 3
 };
 
-/// device information.
+/// The device information.
 @interface TuyaSmartDeviceModel : NSObject
 
-/// device Id
+/// The device ID.
 @property (nonatomic, strong) NSString     *devId;
 
-/// name of device
+/// The name of the device.
 @property (nonatomic, strong) NSString     *name;
 
-/// link of device icon
+/// The URL of the device icon.
 @property (nonatomic, strong) NSString     *iconUrl;
 
-/// ability of device
+/// The capability of the device.
 @property (nonatomic, assign) NSInteger    ability;
 
-/// online of device
+/// Specifies whether the device is online.
 @property (nonatomic, assign) BOOL         isOnline;
 
-/// cloud online of device
+/// Specifies whether the device is connected to the cloud.
 @property (nonatomic, assign) BOOL         isCloudOnline;
 
 @property (nonatomic, assign) TuyaSmartDeviceOnlineType onlineType;
 
-/// Communication Information. Gateway-sub-device, mesh-like device communication node information. Communication priority. Device connectivity.
+/// The communication information, the information about the gateway sub-devices and mesh-like device communication nodes, the communication priority, and the device connectivity.
 @property (nonatomic, strong) TuyaSmartCommunication *communication;
 
-/// whether the device is shared
+/// Specifies whether the device is shared.
 @property (nonatomic, assign) BOOL         isShare;
 
 @property (nonatomic, strong) NSString     *verSw;
 
-/// data point of device
+/// The DP of the device.
 @property (nonatomic, strong) NSDictionary *dps;
 
-/// data point execution time of device
+/// The DP execution time of the device.
 @property (nonatomic, strong) NSDictionary *dpsTime;
 
-/// product Id
+/// The product ID.
 @property (nonatomic, strong) NSString     *productId;
 
-/// whether to support group
+/// Specifies whether to support groups.
 @property (nonatomic, assign) BOOL         supportGroup;
 
-/// whether to support standard group
+/// Specifies whether to support standard groups.
 @property (nonatomic, assign) BOOL         supportSGroup;
 
-/// type of gateway
+/// The type of gateway.
 @property (nonatomic, strong) NSString     *gwType;
 
-/// protocol version of gateway
+/// The protocol version of the gateway.
 @property (nonatomic, assign) double       pv;
 
 #if TARGET_OS_IOS
 
-/// online status of LAN
+/// The LAN online status.
 @property (nonatomic, assign) BOOL         isLocalOnline;
 
-/// gateway protocol version of LAN
+/// The LAN gateway protocol version.
 @property (nonatomic, assign) double       lpv;
 
 #endif
 
-/// hardware baseline version
+/// The hardware baseline version.
 @property (nonatomic, assign) double       bv;
 
-/// device latitude
+/// The device latitude.
 @property (nonatomic, strong) NSString     *latitude;
 
-/// device longitude
+/// The device longitude.
 @property (nonatomic, strong) NSString     *longitude;
 
-/// dp name
+/// The DP name.
 @property (nonatomic, strong) NSDictionary *dpName;
 
-/// schema of device
+/// The schema of the device.
 @property (nonatomic, strong) NSString     *schema;
 @property (nonatomic, strong) NSString     *schemaExt;
 @property (nonatomic, strong) NSArray<TuyaSmartSchemaModel *> *schemaArray;
 
 @property (nonatomic, strong) NSString     *runtimeEnv;
 
-/// attribute
+/// The attribute.
 @property (nonatomic, assign) NSUInteger   attribute;
 
 @property (nonatomic, strong) NSString     *localKey;
 
 @property (nonatomic, strong) NSString     *uuid;
 
-/// Media Access Control Address
+/// The media access control address.
 @property (nonatomic, strong) NSString     *mac;
 
-/// The network communication ability:0.wifi;1.cable;2.gprs;3.nb-iot; 10:bluetooth;11.blemesh;12.zigbee.
+/// The network communication capability. `0`: Wi-Fi. `1`: cable. `2`: GPRS. `3`: NB-IoT. `10`: Bluetooth. `11`: Bluetooth mesh. `12`: Zigbee.
 @property (nonatomic, assign) NSUInteger   capability;
 
 @property (nonatomic, strong) NSString     *timezoneId;
@@ -160,13 +160,13 @@ typedef NS_OPTIONS(NSUInteger, TuyaSmartDeviceOnlineType) {
 @property (nonatomic, assign) long long    roomId;
 @property (nonatomic, assign) long long    sharedTime;
 
-/// order
+/// The order.
 @property (nonatomic, assign) NSInteger    displayOrder;
 @property (nonatomic, assign) NSInteger    homeDisplayOrder;
 
 @property (nonatomic, strong) NSString     *ip;
 
-/// skills
+/// The skills.
 @property (nonatomic, strong) NSDictionary *skills;
 
 @property (nonatomic, strong) NSString     *cloudId;
@@ -213,58 +213,58 @@ typedef NS_OPTIONS(NSUInteger, TuyaSmartDeviceOnlineType) {
 - (BOOL)protocolAttributeIsSupport:(NSUInteger)i;
 
 #pragma mark - subdevice
-/// node Id
+/// The node ID.
 @property (nonatomic, strong) NSString     *nodeId;
 @property (nonatomic, strong) NSString     *parentId;
 
-/// mesh
+/// The Bluetooth mesh information.
 @property (nonatomic, strong) NSString     *vendorInfo;
 @property (nonatomic, assign) BOOL         isMeshBleOnline;
 @property (nonatomic, strong) NSString     *pcc;
 
 #pragma mark - discovery device
-/// mark:  0: 1<<0 auto  3：1<<3 route
+/// Mark:  0: 1<<0 auto. 3: 1<<3 route.
 @property (nonatomic, assign) NSUInteger devAttribute;
 
-/// sig mesh dev key
+/// The Bluetooth mesh device key.
 @property (nonatomic, strong) NSString     *devKey;
 
-/// Whether to standardize.
+/// Specifies whether to standardize the schema.
 @property (nonatomic, assign) BOOL standard;
 @property (nonatomic, strong) TuyaSmartStandSchemaModel *standSchemaModel;
 
-/// dpCodes
+/// The DP codes.
 @property (nonatomic, strong, readonly) NSDictionary *dpCodes;
 
-/// Last dp update time.
+/// The last DP update time.
 @property (nonatomic, assign) NSTimeInterval dpMaxTime;
 
-/// Is it a virtual device.
+/// Specifies whether the device is a virtual device.
 @property (nonatomic, assign) BOOL isVirtualDevice;
 
-// Use `baseAttributeIsSupport: index` to check feature
+// Use `baseAttributeIsSupport: index` to check the feature.
 //
-// index rules:
-// 9: Tuya ble mesh device
-// 10: Support network check
+// Index rules:
+// 9: Tuya Bluetooth mesh device.
+// 10: supports network check.
 @property (nonatomic, assign) NSUInteger baseAttribute;
 
-// Use `protocolAttributeIsSupport: index` to check feature
+// Use `protocolAttributeIsSupport: index` to check the feature.
 //
-// index rules:
-// 0: support sigmesh feature
-// 1: support zigbee feature
-// 2: support subpieces feature
+// Index rules:
+// 0: supports the Bluetooth mesh feature.
+// 1: supports the Zigbee feature.
+// 2: supports the sub-device feature.
 @property (nonatomic, assign) NSInteger protocolAttribute;
 
-/// Whether auto-upgrade is supported. Currently NB/Bluetooth mesh devices do not support auto-upgrade.
+/// Specifies whether auto updates are supported. Currently, NB-IoT and Bluetooth mesh devices do not support auto updates.
 @property (nonatomic, assign) BOOL supportAuto;
 
-/// Support OTA upgrade method, from left to right, decreasing priority:
-/// 0: WIFI, 1: BLE, 2: SIGMESH, 3: NB
+/// Supports the following OTA update methods that are listed in descending priority from left to right.
+/// `0`: Wi-Fi. `1`: Bluetooth LE. `2`: Bluetooth mesh. `3`: NB-IoT.
 @property (nonatomic, strong) NSArray *otaUpgradeModes;
 
-/// Bluetooth connection configuration.
+/// The Bluetooth connection configuration.
 @property (nonatomic, strong) NSDictionary *configMetas;
 
 @end

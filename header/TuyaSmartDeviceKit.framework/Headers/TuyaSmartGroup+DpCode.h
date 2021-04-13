@@ -12,15 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Wi-Fi dpCode
 
-/// Creating Groups of Wifi Standard Code Devices.
+/// Creates groups of Wi-Fi standard DPCode devices.
 ///
-/// @param name      Group name
-/// @param homeId    Home ID
-/// @param categoryCode category Code
-/// @param devIdList DeviceId list
-/// @param success   Success block
-/// @param failure   Failure block
-/// @deprecated This method is deprecated, Use TuyaSmartGroup::createDpCodeGroupWithName:homeId:devIdList:success:failure: instead.
+/// @param name The group name.
+/// @param homeId The home ID.
+/// @param categoryCode The category code.
+/// @param devIdList The list of device IDs.
+/// @param success The success block.
+/// @param failure The failure block.
+/// @deprecated This method is deprecated. Use TuyaSmartGroup::createDpCodeGroupWithName:homeId:devIdList:success:failure: instead.
 + (void)createDpCodeGroupWithName:(NSString *)name
                            homeId:(long long)homeId
                      categoryCode:(NSString *)categoryCode
@@ -30,13 +30,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// Get list of Wi-Fi devices that support standard code groups based on category code.
+/// Returns a list of Wi-Fi devices that belong to standard DPCode groups based on category codes.
 ///
-/// @param homeId    Home ID
-/// @param categoryCode category Code
-/// @param success   Success block
-/// @param failure   Failure block
-/// @deprecated This method is deprecated, Use TuyaSmartGroup::getDpCodeDevListWithHomeId:success:failure: instead.
+/// @param homeId The home ID.
+/// @param categoryCode The category code.
+/// @param success The success block.
+/// @param failure The failure block.
+/// @deprecated This method is deprecated. Use TuyaSmartGroup::getDpCodeDevListWithHomeId:success:failure: instead.
 + (void)getDpCodeDevListWithHomeId:(long long)homeId
                       categoryCode:(NSString *)categoryCode
                            success:(nullable void(^)(NSArray <TuyaSmartGroupDevListModel *> *list))success
@@ -45,13 +45,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// Creating Groups of Wifi Standard Code Devices.
+/// Creates groups of Wi-Fi standard DPCode devices.
 ///
-/// @param name      Group name
-/// @param homeId    Home ID
-/// @param devIdList DeviceId list
-/// @param success   Called when the task finishes successfully. TuyaSmartGroup will be returned.
-/// @param failure   Called when the task is interrupted by an error.
+/// @param name The group name.
+/// @param homeId The home ID.
+/// @param devIdList The list of device IDs.
+/// @param success Called when the task is finished. TuyaSmartGroup is returned.
+/// @param failure Called when the task is interrupted by an error.
 + (void)createDpCodeGroupWithName:(NSString *)name
                            homeId:(long long)homeId
                         devIdList:(NSArray<NSString *> *)devIdList
@@ -59,14 +59,14 @@ NS_ASSUME_NONNULL_BEGIN
                           failure:(nullable TYFailureError)failure DEPRECATED_MSG_ATTRIBUTE("use createDpCodeGroupWithName:homeId:productId:devIdList:success:failure: instead");
 
 
-/// Create standard DPCode device group
+/// Creates groups of standard DPCode devices.
 ///
-/// @param name Group name
-/// @param homeId Home ID
-/// @param productId Product ID
-/// @param devIdList DeviceId list
-/// @param success Called when the task finishes successfully. TuyaSmartGroup will be returned.
-/// @param failure  Called when the task is interrupted by an error.
+/// @param name The group name.
+/// @param homeId The home ID.
+/// @param productId The product ID.
+/// @param devIdList The list of device IDs.
+/// @param success Called when the task is finished. TuyaSmartGroup is returned.
+/// @param failure Called when the task is interrupted by an error.
 + (void)createDpCodeGroupWithName:(NSString *)name
                            homeId:(long long)homeId
                         productId:(NSString *)productId
@@ -76,20 +76,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// Get list of WiFi devices that support standard code groups based on category code
+/// Returns a list of Wi-Fi devices that belong to standard DPCode groups based on category codes.
 ///
-/// @param homeId    Home ID
-/// @param success   Called when the task finishes successfully. A list of TuyaSmartGroupDevListModel will be returned.
-/// @param failure   Called when the task is interrupted by an error.
+/// @param homeId The home ID.
+/// @param success Called when the task is finished. A list of TuyaSmartGroupDevListModel is returned.
+/// @param failure Called when the task is interrupted by an error.
 + (void)getDpCodeDevListWithHomeId:(long long)homeId
                            success:(nullable void(^)(NSArray <TuyaSmartGroupDevListModel *> *list))success
                            failure:(nullable TYFailureError)failure DEPRECATED_MSG_ATTRIBUTE("use getDpCodeDevListWithHomeId:productId:success:failure: instead");
 
-/// Get list of WiFi devices that support standard code groups based on category code
+/// Returns a list of Wi-Fi devices that belong to standard DPCode groups based on category codes.
 ///
-/// @param homeId Home ID
-/// @param productId ProductId of device
-/// @param success Called when the task finishes successfully. A list of TuyaSmartGroupDevListModel will be returned.
+/// @param homeId The home ID.
+/// @param productId The product ID of the device.
+/// @param success Called when the task is finished. A list of TuyaSmartGroupDevListModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 + (void)getDpCodeDevListWithHomeId:(long long)homeId
                          productId:(NSString *)productId
@@ -97,19 +97,19 @@ NS_ASSUME_NONNULL_BEGIN
                            failure:(nullable TYFailureError)failure;
 
 
-/// Get the device list for the group based.
+/// Returns a list of devices that belong to the group.
 ///
-/// @param success   Called when the task finishes successfully. A list of TuyaSmartGroupDevListModel will be returned.
-/// @param failure   Called when the task is interrupted by an error.
+/// @param success Called when the task is finished. A list of TuyaSmartGroupDevListModel is returned.
+/// @param failure Called when the task is interrupted by an error.
 - (void)getDpCodeDevListWithSuccess:(nullable void(^)(NSArray <TuyaSmartGroupDevListModel *> *list))success
                             failure:(nullable TYFailureError)failure;
 
 
 
-/// Modify the device list of the group.
+/// Modifies the list of devices that belong to the group.
 ///
-/// @param devList Device list
-/// @param success Called when the task finishes successfully.
+/// @param devList The list of devices.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateDpCodeGroupRelationsWithDevList:(NSArray <NSString *>*)devList
                                       success:(nullable TYSuccessHandler)success
@@ -117,10 +117,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// Group control command issuance.
+/// Sends control commands to the group.
 ///
-/// @param dpCodes dp Codes
-/// @param success Called when the task finishes successfully.
+/// @param dpCodes The DP codes.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)publishDpCodes:(NSDictionary *)dpCodes
                success:(nullable TYSuccessHandler)success

@@ -7,52 +7,52 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, TuyaSmartTransferState) {
-    TuyaSmartTransferConnected = 1, // Connected
-    TuyaSmartTransferDisconnected, // Disconnected
+    TuyaSmartTransferConnected = 1, // The connected state.
+    TuyaSmartTransferDisconnected, // The disconnected state.
 };
 
 @class TuyaSmartSingleTransfer;
 @protocol TuyaSmartTransferDelegate<NSObject>
 
-/// When the connection state changes, the delegate will execute.
-/// @param transfer transfer.
-/// @param state TuyaSmartTransferState.
+/// When the connection state changes, the delegate is executed.
+/// @param transfer Data is transferred.
+/// @param state The transfer state in Tuya Smart.
 - (void)transfer:(TuyaSmartSingleTransfer *)transfer didUpdateConnectState:(TuyaSmartTransferState)state;
 
-/// When received device data, the delegate will execute.
-/// @param transfer transfer.
-/// @param devId Device Id.
-/// @param data Received Data.
+/// When device data is received, the delegate is executed.
+/// @param transfer Data is transferred.
+/// @param devId The device ID.
+/// @param data The received data.
 - (void)transfer:(TuyaSmartSingleTransfer *)transfer didReciveDataWithDevId:(NSString *)devId data:(NSData *)data;
 
 @end
 
-__deprecated_msg("The channel already merged. We will provide new way to support it.")
+__deprecated_msg("The channel already merged. We will provide a new way to support it.")
 @interface TuyaSmartSingleTransfer : NSObject
 
-/// @deprecated Data flow channel, currently deprecated.
+/// @deprecated The data flow channel that is currently deprecated.
 ///
-/// Can use TuyaSmartMQTTChannelDelegate to receive data.
+/// You can use TuyaSmartMQTTChannelDelegate to receive data.
 ///
 @property (nonatomic, weak) id<TuyaSmartTransferDelegate> delegate;
 
 #if TARGET_OS_IOS
 
-/// Start Connect.
+/// Starts the connection.
 - (void)startConnect;
 
 /// The connection state.
-/// @return Connection Result.
+/// @return The connection result.
 - (BOOL)isConnected;
 
-/// Close the channel; Because of channel merging, it will not be closed because it will affect the normal device subscription process.
+/// Close the channels. The merged channels are not closed to ensure the normal device subscription process.
 - (void)close __deprecated_msg("will remove it");;
 
-/// Subscribe device.
+/// Subscribes to the device.
 /// @param devId The device ID.
 - (void)subscribeDeviceWithDevId:(NSString *)devId;
 
-/// Unsubscribe device.
+/// Unsubscribes from the device.
 /// @param devId The device ID.
 - (void)unsubscribeDeviceWithDevId:(NSString *)devId;
 
