@@ -1,4 +1,11 @@
 var searchData=
 [
-  ['sharedinstance_20',['sharedInstance',['../interface_t_y_s_d_k_file.html#a6863c52c19e435fe94850e6cf1829ff5',1,'TYSDKFile']]]
+  ['failedeventwithpipelinetype_3apv_3aerror_3aextendinfo_3a_147',['failedEventWithPipelineType:pv:error:extendInfo:',['../interface_tuya_smart_device_event_util.html#ad191125d9d1ea1d99754983a94f94d7e',1,'TuyaSmartDeviceEventUtil']]],
+  ['faultdps_148',['faultDps',['../interface_tuya_smart_device_model.html#adcb90ac35656a17f8b049b31e80102fc',1,'TuyaSmartDeviceModel']]],
+  ['fetchinvitationhomeinfowithinvitationcode_3asuccess_3afailure_3a_149',['fetchInvitationHomeInfoWithInvitationCode:success:failure:',['../interface_tuya_smart_home_invitation.html#ac155d45e18ae111b6f280fb358247267',1,'TuyaSmartHomeInvitation']]],
+  ['fetchinvitationrecordlistwithhomeid_3asuccess_3afailure_3a_150',['fetchInvitationRecordListWithHomeID:success:failure:',['../interface_tuya_smart_home_invitation.html#ad75097d76986c55e92e5f3b2d9c20ea2',1,'TuyaSmartHomeInvitation']]],
+  ['fieldname_151',['fieldName',['../interface_tuya_smart_weather_model.html#a4ced123219d55d68be509044d59e1c2e',1,'TuyaSmartWeatherModel']]],
+  ['filesize_152',['fileSize',['../interface_tuya_smart_firmware_upgrade_model.html#a80f0562d82081548e2574fb2986d681c',1,'TuyaSmartFirmwareUpgradeModel']]],
+  ['firmwaredeploytime_153',['firmwareDeployTime',['../interface_tuya_smart_firmware_upgrade_model.html#a8daa11803dc92679e3ea30ed16e7bf7b',1,'TuyaSmartFirmwareUpgradeModel']]],
+  ['functionschemalist_154',['functionSchemaList',['../interface_tuya_smart_stand_schema_model.html#a7b706647366946c3e4c6b45f2e69868e',1,'TuyaSmartStandSchemaModel']]]
 ];
