@@ -20,7 +20,7 @@
 // The local key.
 @property (nonatomic, strong) NSString     *localKey;
 
-//The PV.
+//The protocol version.
 @property (nonatomic, strong) NSString     *pv;
 
 @property (nonatomic, strong) NSString     *code;

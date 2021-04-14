@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Get the list of all gateway router devices which support router configuration under the current home.
 /// @param homeId Current home ID.
-/// @return Current list of all home gateway router devices.
+/// @return The list of all home gateway router devices.
 - (NSArray <TuyaSmartDeviceModel *> *)autoActiveRouterDeviceListWithHomeId:(long long)homeId;
 
 

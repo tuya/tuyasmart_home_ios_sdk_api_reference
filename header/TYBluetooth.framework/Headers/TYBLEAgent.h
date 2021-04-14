@@ -3,7 +3,7 @@
 //  TuyaSmartPublic
 //
 //  Created by 冯晓 on 16/8/2.
-//  Copyright © 2016年 Tuya. All rights reserved.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <Foundation/Foundation.h>
@@ -20,9 +20,9 @@ typedef void(^TYBLEAgentCentralConnectionCallback)(TYBLEPeripheral *peripheral, 
 
 typedef NS_ENUM(int, TYBLEAgentRole)
 {
-    kTYBLEAgentDiscovery    = 0x01, // 扫描
-    kTYBLEAgentSession      = 0x10, // 通信
-    kTYBLEAgentBoth         = 0x11, // 扫描 + 通信
+    kTYBLEAgentDiscovery    = 0x01, // Discovers devices.
+    kTYBLEAgentSession      = 0x10, // Communicates with devices.
+    kTYBLEAgentBoth         = 0x11, // Discovers and communicates with devices.
 };
 
 
@@ -45,21 +45,21 @@ typedef NS_ENUM(int, TYBLEAgentRole)
 @property (nonatomic, copy, readonly) BOOL(^scanFilter)(NSDictionary *advertisementData, NSNumber *rssi);
 
 /**
- *  蓝牙是否打开
+ *  Specifies whether to enable Bluetooth.
  */
 @property (nonatomic, assign, readonly) BOOL isPoweredOn;
 
 /**
- 添加代理
+ Adds a delegate.
  
- @param delegate 代理
+ @param delegate The delegate.
  */
 - (void)addDelegate:(id<TYBLEAgent>)delegate;
 
 /**
- 移除代理
+ Removes a delegate.
  
- @param delegate 代理
+ @param delegate The delegate.
  */
 - (void)removeDelegate:(id<TYBLEAgent>)delegate;
 
@@ -70,12 +70,12 @@ typedef NS_ENUM(int, TYBLEAgentRole)
 #pragma mark - central  methods
 
 /**
- 发现周围的BLE设备
+ Discovers Bluetooth devices.
 
- @param services 服务UUIDs
- @param options 扫描参数
- @param scanFilter 扫描过滤条件
- @param aCallback 扫描符合条件的设备回调
+ @param services The UUIDs of services.
+ @param options The discovery parameters. 
+ @param scanFilter The filtering criteria for discovery.
+ @param aCallback The callback of discovered devices that meet the filtering criteria.
  */
 - (void)discoverServiceUUID:(NSArray<NSString *> *)services
                     options:(NSDictionary<NSString *,id> *)options
@@ -84,27 +84,27 @@ typedef NS_ENUM(int, TYBLEAgentRole)
 
 
 /**
- 发现周围的BLE设备
+ Discovers Bluetooth devices.
 
- @param scanFilter 扫描过滤条件
- @param aCallback 扫描符合条件的设备回调
+ @param scanFilter The filtering criteria for discovery.
+ @param aCallback The callback of discovered devices that meet the filtering criteria.
  */
 - (void)discoverWithScanFilter:(BOOL(^)(NSDictionary *advertisementData, NSNumber *rssi))scanFilter
                     completion:(TYBLEAgentCentralDiscoverCallback)aCallback;
 
 
 /**
- *  停止扫描
+ *  Stops discovery.
  */
 - (void)stopDiscovering;
 
 /**
- *  链接发现的BLE设备
+ *  Connects to a discovered Bluetooth device.
  *
- *  @param peripheral      待链接的BLE设备
- *  @param aCharacteristic 特征UUID
- *  @param aService        服务UUID
- *  @param aCallback       回调
+ *  @param peripheral      The Bluetooth device to be connected.
+ *  @param aCharacteristic The characteristic UUID.
+ *  @param aService        The service UUID.
+ *  @param aCallback       The callback.
  */
 - (void)connectPeripheral:(TYBLEPeripheral *)peripheral
               CharactUUID:(NSString *)aCharacteristic
@@ -112,13 +112,13 @@ typedef NS_ENUM(int, TYBLEAgentRole)
                completion:(TYBLEAgentCentralConnectionCallback)aCallback;
 
 /**
- *  链接发现的BLE设备
+ *  Connects to a discovered Bluetooth device.
  *
- *  @param peripheral      待链接的BLE设备
- *  @param aCharacteristic 特征UUID
- *  @param aService        服务UUID
- *  @param timeout         超时
- *  @param aCallback       回调
+ *  @param peripheral      The Bluetooth device to be connected.
+ *  @param aCharacteristic The characteristic UUID.
+ *  @param aService        The service UUID.
+ *  @param timeout         The connection timed out.
+ *  @param aCallback       The callback.
  */
 - (void)connectPeripheral:(TYBLEPeripheral *)peripheral
               CharactUUID:(NSString *)aCharacteristic
@@ -127,38 +127,38 @@ typedef NS_ENUM(int, TYBLEAgentRole)
                completion:(TYBLEAgentCentralConnectionCallback)aCallback;
 
 /**
- *  断开连接的BLE设备
+ *  Disconnects from a Bluetooth device.
  *
- *  @param peripheral 连接的BLE设备
+ *  @param peripheral The connected Bluetooth device.
  */
 - (void)disconnectPeripheral:(TYBLEPeripheral *)peripheral;
 
 /**
- 断开连接的BLE设备
+ Disconnects from a Bluetooth device.
 
- @param peripheral 连接的BLE设备
- @param timeout 断开超时
+ @param peripheral The connected Bluetooth device.
+ @param timeout The disconnection timed out.
  */
 - (void)disconnectPeripheral:(TYBLEPeripheral *)peripheral timeout:(NSTimeInterval)timeout;
 
 /**
- 断开链连接的BLE设备
+ Disconnects from a Bluetooth device.
 
- @param peripheral 链接的BLE设备
- @param aCallback 回调
+ @param peripheral The connected Bluetooth device.
+ @param aCallback The callback.
  */
 - (void)disconnectPeripheral:(TYBLEPeripheral *)peripheral
                   completion:(TYBLEAgentCentralConnectionCallback)aCallback
                      timeout:(NSTimeInterval)timeout;
 
 /**
- *  向BLE设备写数据
+ *  Writes to a Bluetooth device.
  *
- *  @param aData           待写入的二进制数据
- *  @param aPeripheral     目标BLE设备
- *  @param aCharacteristic 设备特征UUID
- *  @param aService        服务UUID
- *  @param aCallback       回调
+ *  @param aData           The binary data to be written.
+ *  @param aPeripheral     The Bluetooth device to which data is written.
+ *  @param aCharacteristic The characteristic UUID.
+ *  @param aService        The service UUID.
+ *  @param aCallback       The callback.
  */
 - (void)writeData:(NSData *)aData
      toPeripheral:(TYBLEPeripheral *)aPeripheral
@@ -167,12 +167,12 @@ typedef NS_ENUM(int, TYBLEAgentRole)
        completion:(TYBLEAgentCentralWriteCallback)aCallback;
 
 /**
- *  从BLE设备读数据
+ *  Read from a Bluetooth device.
  *
- *  @param aPeripheral     待读入的BLE设备
- *  @param aCharacteristic 目标设备特征UUID
- *  @param aService        服务UUID
- *  @param aCallback       回调
+ *  @param aPeripheral     The Bluetooth device from which data is read.
+ *  @param aCharacteristic The characteristic UUID.
+ *  @param aService        The service UUID.
+ *  @param aCallback       The callback.
  */
 - (void)readDataFromPeriphreral:(TYBLEPeripheral *)aPeripheral
                     CharactUUID:(NSString *)aCharacteristic
@@ -180,13 +180,13 @@ typedef NS_ENUM(int, TYBLEAgentRole)
                      completion:(TYBLEAgentCentralReadCallback)aCallback;
 
 /**
- *  接受BLE设备Push来的数据
+ *  Receives data that is pushed by the Bluetooth device.
  *
- *  @param b               传输数据的开关
- *  @param aPeripheral     链接的BLE设备
- *  @param aCharacteristic 目标设备特征UUID
- *  @param aService        服务UUID
- *  @param aCallback       回调
+ *  @param b               The switch that enables or disables data transfers.
+ *  @param aPeripheral     The connected Bluetooth device.
+ *  @param aCharacteristic The characteristic UUID.
+ *  @param aService        The service UUID.
+ *  @param aCallback       The callback.
  */
 - (void)notifyData:(BOOL)b
      FromPeriphral:(TYBLEPeripheral *)aPeripheral

@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Devices supporting Pegasus.
 /// @param homeID The home ID.
-/// @return A list of devices that support Pegasus.
+/// @return The list of devices that support Pegasus.
 + (NSArray <TuyaSmartDeviceModel *> *)pegasusDeviceListWithHomeID:(long long)homeID;
 
 

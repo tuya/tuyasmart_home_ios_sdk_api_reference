@@ -19,56 +19,56 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<TuyaSmartBLEManagerDelegate> delegate;
 
 
-/// Single instance.
+/// The single instance.
 + (instancetype)sharedInstance;
 
-/// Activator beacon device.
+/// Activates the beacon device.
 /// @param advModel The advertisingData model for the beacon device.
-/// @param homeId The Id for the current home.
-/// @param success When activator successfully, this block will be called with DeviceModel.
-/// @param failure This block will be called if some error occurred.
+/// @param homeId The ID for the current home.
+/// @param success When the activation is successful, this block is called with DeviceModel.
+/// @param failure If an error occurs, this block is called.
 - (void)activeBeacon:(TYBLEAdvModel *)advModel
               homeId:(long long)homeId
              success:(nonnull void (^)(TuyaSmartDeviceModel * _Nonnull))success
              failure:(nonnull TYFailureError)failure ;
 
-/// Publish the transmitted data.
-/// @param deviceId The device Id for the device.
-/// @param dps The dp dictionary.
-/// @param success When publish dps successfully, this block will be called.
-/// @param failure  This block will be called if some error occurred.
+/// Publishes the transmitted data.
+/// @param deviceId The device ID for the device.
+/// @param dps The DP dictionary.
+/// @param success After the DPs are sent, this block is called.
+/// @param failure  If an error occurs, this block is called.
 - (void)publishDpsWithDevicId:(NSString *)deviceId
                           dps:(nonnull NSDictionary *)dps
                       success:(nonnull TYSuccessHandler)success
                       failure:(nonnull TYFailureError)failure;
 
 
-/// Check and set device  online status
+/// Checks and sets the online status of a device.
 /// @param deviceModel The device model.
 - (void)checkDeviceOnlineStateWithDevice:(TuyaSmartDeviceModel *)deviceModel;
 
-/// Check and set  all Offline device  online status
-/// @param deviceModelList The device model list .
+/// Checks and sets the online status of all beacon devices.
+/// @param deviceModelList The device model list.
 - (void)checkAllBeaconDeviceOnlineState:(NSArray<TuyaSmartDeviceModel *> *)deviceModelList;
 
-/// connect device,and set device  online status
-/// @param deviceId The device Id for the device.
+/// Connects to the device and sets the online status of the device.
+/// @param deviceId The device ID.
 - (void)connectBeaconWithDeviceId:(NSString *)deviceId ;
 
 
-/// Reset the device and put the device into the network configuration state
-/// @param devId The device Id for the device.
-/// @param success When rest successfully, this block will be called.
-/// @param failure This block will be called if some error occurred.
+/// Resets the device and enables the pairing status for the device.
+/// @param devId The device ID.
+/// @param success After the device is reset, this block is called.
+/// @param failure If an error occurs, this block is called.
 - (void)resetWithDevId:(NSString *)devId
                success:(TYSuccessHandler)success
                failure:(TYFailureHandler)failure;
 
-///  Beacon device online state
-/// @param uuid beacon device uuid
+///  The online status of the beacon device.
+/// @param uuid The UUID of the beacon device.
 - (BOOL)deviceStatueWithUUID:(NSString *)uuid;
 
-/// The end of the distribution network
+/// The end of the pairing process.
 - (void)stopActive;
 
 

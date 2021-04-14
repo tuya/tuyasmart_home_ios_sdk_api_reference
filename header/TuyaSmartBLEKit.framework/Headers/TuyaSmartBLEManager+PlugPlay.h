@@ -12,27 +12,27 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TuyaSmartBLEManager (PlugPlay)
 
 
-/// Activate dual-mode device bluetooth mode.
+/// Activates the Bluetooth mode for a dual-mode device.
 ///
-/// @param advModel    Device advertisement model.
-/// @param homeId      The Id for the current home.
+/// @param advModel    The device advertisement model.
+/// @param homeId      The ID of the current home.
 /// @param token       The token.
-/// @param success     When activator successfully, this param will be called with DeviceModel.
-/// @param failure     This block will be called if some error occurred.
+/// @param success     When the activation is successful, this block is called with DeviceModel.
+/// @param failure     If an error occurs, this block is called.
 - (void)activatorDualDeviceWithBleChannel:(TYBLEAdvModel *)advModel
                                    homeId:(long long)homeId
                                     token:(NSString *)token
                                   success:(void(^)(TuyaSmartDeviceModel *deviceModel))success
                                   failure:(TYFailureError)failure;
 
-/// Dual-mode device which bluetooth channel is actived，to active Wi-Fi channel.
+/// Activates the Wi-Fi channel of a dual-mode device for which the Bluetooth channel is activated.
 ///
-/// @param devId       The device Id for the device.
+/// @param devId       The device ID.
 /// @param ssid        The name of the router.
-/// @param password    The password Id for the device.
-/// @param timeout     Timeout time.
-/// @param success     When active successfully, this param will be called with DeviceModel.
-/// @param failure     This block will be called if some error occurred.
+/// @param password    The password for the device.
+/// @param timeout     The timeout value.
+/// @param success     When the activation is successful, this block is called with DeviceModel.
+/// @param failure     If an error occurs, this block is called.
 - (void)activeDualDeviceWifiChannel:(NSString *)devId
                                ssid:(NSString *)ssid
                            password:(NSString *)password

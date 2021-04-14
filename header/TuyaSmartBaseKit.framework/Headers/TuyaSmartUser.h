@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, TYRegType) {
     TYRegOtherType,
     /// Register from QQ.
     TYRegQQType,
-    /// Register from Weibo.
+    /// Register from Sina Weibo.
     TYRegWeiboType,
     /// Register from Facebook.
     TYRegFacebookType,

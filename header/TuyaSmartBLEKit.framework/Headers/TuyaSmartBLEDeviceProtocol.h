@@ -16,18 +16,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Scan Protocol
 
-/// @brief TuyaSmartBLEDeviceProtocol provides protocol methods for developers to implement activator, control or OTA and others by itself protocol.
+/// @brief TuyaSmartBLEDeviceProtocol provides protocol methods to implement multiple functions, such as activation, device control, and OTA updates.
 @protocol TuyaSmartBLEScanProtocol <NSObject>
 
 typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo);
 
-/// Results of the scanning inactive devices.
+/// Results of inactive device scanning.
 ///
-/// @param agent        Scan agent.
-/// @param scan         Scan class itself.
-/// @param peripheral   Scanned Bluetooth peripheral.
-/// @param error        Scan Error.
-/// @param handler      Scan callback.
+/// @param agent        The scanning agent.
+/// @param scan         The scanning class.
+/// @param peripheral   The scanned Bluetooth peripheral.
+/// @param error        The scan error.
+/// @param handler      The scan callback.
 - (void)bleAgent:(TYBLEAgent *)agent bleScan:(TYBLEScan *)scan didScanBLEDevicePeripheral:(TYBLEPeripheral *)peripheral error:(NSError *)error scanResultHandher:(TYBLEScanResultHandher)handler;
 
 @end
@@ -39,12 +39,12 @@ typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo)
 
 @protocol TuyaSmartBLEActiveProtocol <NSObject>
 
-/// Activator BLE device.
+/// Activates the Bluetooth LE device.
 ///
-/// @param deviceInfo       The advertisingData model for the BLE device.
-/// @param homeId           The Id for the current home.
-/// @param success          When activator successfully, this block will be called with DeviceModel.
-/// @param failure          This block will be called if some error occurred.
+/// @param deviceInfo       The advertisingData model for the Bluetooth LE device.
+/// @param homeId           The ID of the current home.
+/// @param success          When the activation is successful, this block is called with DeviceModel.
+/// @param failure          If an error occurs, this block is called.
 - (void)startActiveWithDevice:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                        homeId:(long long)homeId
                       success:(void(^)(TuyaSmartDeviceModel *deviceModel))success
@@ -59,76 +59,76 @@ typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo)
 
 @protocol TuyaSmartBLEConfigProtocol <NSObject>
 
-/// Dp command publish.
+/// Sends a DP.
 ///
-/// @param deviceInfo   Tuya BEL protocol-based device object.
-/// @param dps          The dp dictionary.
-/// @param success      When query successfully, this block will be called.
-/// @param failure      This block will be called if some error occurred.
+/// @param deviceInfo   The Tuya Bluetooth LE-based device object.
+/// @param dps          The DP dictionary.
+/// @param success      When the query is successful, this block is called.
+/// @param failure      If an error occurs, this block is called.
 - (void)publishDpsWithDeviceInfo:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                              dps:(NSDictionary *)dps
                              success:(TYSuccessHandler)success
                              failure:(TYFailureError)failure;
 
-/// Query device dp data by Bluetooth channel.
+/// Queries device DP data through Bluetooth channels.
 ///
-/// @param deviceInfo   Tuya BEL protocol-based device object.
-/// @param dpIds        Array of dpId's to be queried.
-/// @param success      When query successfully, this block will be called.
-/// @param failure      This block will be called if some error occurred.
+/// @param deviceInfo   The Tuya Bluetooth LE-based device object.
+/// @param dpIds        The array of DP IDs to be queried.
+/// @param success      When the query is successful, this block is called.
+/// @param failure      If an error occurs, this block is called.
 - (void)publishQueryDpCommand:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                         dpIds:(NSArray *)dpIds
                       success:(TYSuccessHandler)success
                       failure:(TYFailureError)failure;
 
-/// Connect device
+/// Connects to a device.
 ///
-/// @param deviceInfo   Tuya BEL protocol-based device object.
-/// @param success      When connect successfully, this block will be called success.
-/// @param failure      This block will be called if some error occurred.
+/// @param deviceInfo   The Tuya Bluetooth LE-based device object.
+/// @param success      After the device is connected, this block is called.
+/// @param failure      If an error occurs, this block is called.
 - (void)connectWithDeviceInfo:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                       success:(TYSuccessHandler)success
                       failure:(TYFailureError)failure;
 
-/// Disconnect device
+/// Disconnects a device.
 ///
-/// @param deviceInfo   Tuya BEL protocol-based device object.
-/// @param success      When disconnect successfully, this block will be called success.
-/// @param failure      This block will be called if some error occurred.
+/// @param deviceInfo   The Tuya Bluetooth LE-based device object.
+/// @param success      After the device is disconnected, this block is called.
+/// @param failure      If an error occurs, this block is called.
 - (void)disconnectWithDeviceInfo:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                          success:(TYSuccessHandler)success
                          failure:(TYFailureError)failure;
 
-/// Remove device
+/// Removes a device.
 ///
-/// @param deviceInfo   Tuya BEL protocol-based device object.
-/// @param success      When remove successfully, this block will be called success.
-/// @param failure      This block will be called if some error occurred.
+/// @param deviceInfo   The Tuya Bluetooth LE-based device object.
+/// @param success      After the device is removed, this block is called.
+/// @param failure      If an error occurs, this block is called.
 - (void)removeWithDeviceInfo:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                      success:(TYSuccessHandler)success
                      failure:(TYFailureError)failure;
 
-/// Restore factory settings
+/// Restores factory settings
 ///
-/// @param deviceInfo   Tuya BEL protocol-based device object.
-/// @param success      When reset successfully, this block will be called success.
-/// @param failure      This block will be called if some error occurred.
+/// @param deviceInfo   The Tuya Bluetooth LE-based device object.
+/// @param success      After the device is reset, this block is called.
+/// @param failure      If an error occurs, this block is called.
 - (void)resetWithDeviceInfo:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                     success:(TYSuccessHandler)success
                     failure:(TYFailureError)failure;
 
-/// Send OTA package to upgrade firmware.
+/// Sends an OTA package to update the firmware.
 ///
-/// The `otaData`、`otaType` and `otaVersion` can be obtained from TuyaSmartFirmwareUpgradeModel. You can get TuyaSmartFirmwareUpgradeModel by TuyaSmartDevice::getFirmwareUpgradeInfo:failure: .
+/// The values of `otaData`, `otaType`, and `otaVersion` can be obtained from TuyaSmartFirmwareUpgradeModel. You can get TuyaSmartFirmwareUpgradeModel by using TuyaSmartDevice::getFirmwareUpgradeInfo:failure:.
 ///
-/// @note Please make sure your device is connected via Bluetooth before upgrading.
+/// @note Your device must be connected over Bluetooth before the update.
 ///
-/// @param deviceInfo   Tuya BEL protocol-based device object.
+/// @param deviceInfo   The Tuya Bluetooth LE-based device object.
 /// @param otaData      The OTA package data.
-/// @param otaType      The OTA type.
+/// @param otaType      The OTA update type.
 /// @param otaVersion   The OTA version.
-/// @param success      When ota successfully, this block will be called success.
-/// @param failure      This block will be called if some error occurred.
+/// @param success      When the OTA update is successful, this block is called.
+/// @param failure      If an error occurs, this block is called.
 - (void)sendOTAPackWithDeviceInfo:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                           otaData:(NSData *)otaData
                           otaType:(TuyaSmartBLEOTAType)otaType
@@ -136,18 +136,18 @@ typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo)
                           success:(TYSuccessHandler)success
                           failure:(TYFailureError)failure;
 
-/// Get the RSSI of the BLE device
+/// Returns the Received Signal Strength Indicator (RSSI) value of the Bluetooth LE device.
 ///
-/// @param deviceInfo       Tuya BEL protocol-based device object.
+/// @param deviceInfo       The Tuya Bluetooth LE-based device object.
 ///
-/// @return The RSSI of the BLE device
+/// @return The RSSI value of the Bluetooth LE device.
 - (NSInteger)peripheralRSSI:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo;
 
-/// Get the local connection status of the BLE device by deviceInfo
+/// Returns the local connection status of the Bluetooth LE device by deviceInfo.
 ///
-/// @param deviceInfo       Tuya BEL protocol-based device object.
+/// @param deviceInfo       The Tuya Bluetooth LE-based device object.
 ///
-/// @return The local connection status of the BLE device
+/// @return The local connection status of the Bluetooth LE device.
 - (BOOL)deviceOnlineState:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo;
 
 @end
@@ -159,27 +159,27 @@ typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo)
 
 @protocol TuyaSmartBLEDeviceProtocol <NSObject>
 
-/// Tuya BLE agent.
+/// The Tuya Bluetooth LE agent.
 @property (nonatomic, strong) TYBLEAgent                        *agent;
 
-/// Tuya BLE peripheral.
+/// The Tuya Bluetooth LE peripheral.
 @property (nonatomic, strong) TYBLEPeripheral                   *peripheral;
 
-/// Tuya BLE advertising model.
+/// The Tuya Bluetooth LE advertising model.
 @property (nonatomic, strong) TYBLEAdvModel                     *advModel;
 
-/// Tuya active protocol-based manager object.
+/// The Tuya active protocol-based manager object.
 @property (nonatomic, strong) id<TuyaSmartBLEActiveProtocol>    activeManager;
 
-/// Tuya config protocol-based manager object.
+/// The Tuya config protocol-based manager object.
 @property (nonatomic, strong) id<TuyaSmartBLEConfigProtocol>    configManager;
 
 
 @optional
-/// Methods for initializing TuyaSmartBLEDeviceProtocol-based device objects.
+/// The methods to initialize TuyaSmartBLEDeviceProtocol-based device objects.
 ///
-/// @param activeManager      Tuya active protocol-based manager object.
-/// @param configManager      Tuya config protocol-based manager object.
+/// @param activeManager      The Tuya active protocol-based manager object.
+/// @param configManager      The Tuya config protocol-based manager object.
 - (instancetype)initWithActiveManager:(id<TuyaSmartBLEActiveProtocol>)activeManager
                         configManager:(id<TuyaSmartBLEConfigProtocol>)configManager;
 

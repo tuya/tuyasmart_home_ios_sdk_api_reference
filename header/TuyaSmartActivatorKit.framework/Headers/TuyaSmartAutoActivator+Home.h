@@ -13,12 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Get a list of all the devices under the current household that support password-free configuration.
 /// @param homeId HomeId
-/// @return Current list of all devices in the home that support password-free configuration.
+/// @return The list of all devices in the home that support password-free configuration.
 - (NSArray <TuyaSmartDeviceModel *> *)autoActiveSupportedDeviceListWithHomeId:(long long)homeId;
 
 /// Get the list of all gateway router devices under the current family.
 /// @param homeId Current home ID.
-/// @return Current list of all home gateway router devices.
+/// @return The list of all home gateway router devices.
 /// @deprecated This method is deprecated, Use TuyaSmartRouterActivator::autoActiveRouterDeviceListWithHomeId: instead.
 - (NSArray <TuyaSmartDeviceModel *> *)autoActiveRouterDeviceListWithHomeId:(long long)homeId __deprecated_msg("Use -[TuyaSmartRouterActivator autoActiveRouterDeviceListWithHomeId:] instead.");
 

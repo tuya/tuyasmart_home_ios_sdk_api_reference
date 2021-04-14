@@ -3,7 +3,7 @@
 //  TuyaSmart
 //
 //  Created by xucheng on 15/5/30.
-//  Copyright (c) 2015年 Tuya. All rights reserved.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <Foundation/Foundation.h>
@@ -73,7 +73,7 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
 /**
  *  Connects to the MQTT host.
  *
- *  @param mqttConfig mqttConfig
+ *  @param mqttConfig The configuration of the MQTT connection.
  */
 - (void)startConnectToHostWithMqttConfig:(TuyaSmartMQTTConfigModel *)mqttConfig;
 
@@ -117,7 +117,7 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
  *  @param topic   The topic.
  *  @param success The success block.
  *  @param failure The failure block.
- *  @return The message identifier of the published message. Zero if qos 0. If qos 1 or 2, zero was publish faliure
+ *  @return The message identifier of the published message. A value of `zero` is returned at the QoS level 0. A value of `zero` indicates a publishing failure at the QoS level 1 or 2.
  */
 - (UInt16)publishMessage:(NSData *)data
                    topic:(NSString *)topic
@@ -138,18 +138,16 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
                                failure:(TYFailureError)failure;
 
 /**
- *  Adds mqtt channel delegate
- *  添加mqtt长连接的代理
+ *  Adds an MQTT channel delegate.
  *
  *  @param delegate Delegate
  */
 - (void)addDelegate:(id<TuyaSmartMQTTChannelDelegate>)delegate;
 
 /**
- *  remove mqtt channel delegate
- *  删除mqtt长连接的代理
+ *  Removes an MQTT channel delegate.
  *
- *  @param delegate Delegate
+ *  @param delegate The delegate.
  */
 - (void)removeDelegate:(id<TuyaSmartMQTTChannelDelegate>)delegate;
 

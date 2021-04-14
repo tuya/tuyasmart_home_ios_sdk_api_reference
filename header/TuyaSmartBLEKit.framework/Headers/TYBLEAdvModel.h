@@ -4,53 +4,53 @@
 //
 // Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 
-/// The different type of BLE device.
+/// The different types of Bluetooth LE devices.
 typedef enum : NSUInteger {
-    /// The unknown BLE device type.
+    /// The unknown type of Bluetooth LE device.
     TYSmartBLETypeUnknow = 1,
-    /// The old protocol BLE device type, which is not support security protocol.
+    /// The type of Bluetooth LE device that supports an earlier protocol. The device does not support a security protocol.
     TYSmartBLETypeBLE,
-    /// The old protocol BLE device type, which has a lower level of security.
+    /// The type of Bluetooth LE device that supports an earlier protocol of a lower security level.
     TYSmartBLETypeBLEPlus,
-    /// The old protocol BLE dual-mode device type, which is not support security protocol.
+    /// The type of Bluetooth LE device that supports an earlier protocol. The device does not support a security protocol.
     TYSmartBLETypeBLEWifi,
-    /// The new protocol BLE device type, which has a high level of security.
+    /// The type of Bluetooth LE device that supports a later protocol of a higher security level.
     TYSmartBLETypeBLESecurity,
-    /// The new protocol BLE dual-mode device type, which has a high level of security.
+    /// The type of Bluetooth LE dual-mode device that supports a later protocol of a higher security level.
     TYSmartBLETypeBLEWifiSecurity,
-    /// The new protocol BLE dual-mode device type, which has a high level of security and supports plug&play function.
+    /// The type of Bluetooth LE dual-mode device that supports a later protocol of a higher security level and that supports the plug and play (PnP) function.
     TYSmartBLETypeBLEWifiPlugPlay,
-    /// The new protocol BLE and zigbee dual-mode device type, which has a high level of security.
+    /// The type of Bluetooth LE and Zigbee dual-mode device that supports a later protocol of a higher security level.
     TYSmartBLETypeBLEZigbee,
-    /// The new protocol BLE and LTE Cat.1 dual-mode device type, which has a high level of security.
+    /// The type of Bluetooth LE and LTE Category 1 dual-mode device that supports a later protocol of a higher security level.
     TYSmartBLETypeBLELTESecurity,
-    /// beacon security
+    /// The beacon security.
     TYSmartBLETypeBLEBeacon,
 } TYSmartBLEType;
 
-/// @brief TYBLEAdvModel provides model for developers to obtaine BLE device broadcast information.
+/// @brief TYBLEAdvModel provides a model to get the Bluetooth LE device broadcast information.
 ///
 /// All the device information is obtained from the Bluetooth device broadcast packet data.
 
-/// The different types of BLE device type. See explanation below.
+/// The different types of Bluetooth LE devices. See the following parameter descriptions.
 @interface TYBLEAdvModel : NSObject
 
-/// The BLE device UUID.
+/// The UUID of the Bluetooth LE device.
 @property (nonatomic, strong) NSString           *uuid;
-/// The BLE device product Id.
+/// The product ID of the Bluetooth LE device.
 @property (nonatomic, strong) NSString           *productId;
-/// The BLE device mac address.
+/// The MAC address of the Bluetooth LE device.
 @property (nonatomic, strong) NSString           *mac;
-/// The BLE device activation state.
+/// The activation state of the Bluetooth LE device.
 @property (nonatomic, assign) BOOL               isActive;
-/// The BLE device BLE device type.
+/// The type of Bluetooth LE device.
 @property (nonatomic, assign) TYSmartBLEType     bleType;
-/// whether the BLE device support connect the router 5G band.
-/// @note only available for `bleType` is `TYSmartBLETypeBLEWifi` or `TYSmartBLETypeBLEWifiSecurity`.
+/// Indicates whether the Bluetooth LE device supports connections through the router on a 5 GHz band.
+/// @note `TYSmartBLETypeBLEWifi` or `TYSmartBLETypeBLEWifiSecurity` is only available for `bleType`.
 @property (nonatomic, assign) BOOL               isSupport5G;
-/// whether the BLE device support product key.
+/// Indicates whether the Bluetooth LE device supports the product key.
 @property (nonatomic, assign) BOOL               isProuductKey;
-/// The BLE device device protocol version.
+/// The protocol version of the Bluetooth LE device.
 @property (nonatomic, assign) int                bleProtocolV;
 
 

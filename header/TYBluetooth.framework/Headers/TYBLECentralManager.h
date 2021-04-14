@@ -3,7 +3,7 @@
 //  TuyaSmartPublic
 //
 //  Created by 冯晓 on 16/8/2.
-//  Copyright © 2016年 Tuya. All rights reserved.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <Foundation/Foundation.h>
@@ -12,14 +12,14 @@
 @interface TYBLECentralManager : NSObject <CBCentralManagerDelegate>
 
 /**
- *  蓝牙是否打开
+ *  Specifies whether to enable Bluetooth.
  */
 @property (nonatomic, assign, readonly) BOOL isPoweredOn;
 
 - (instancetype)initWithAgentKey:(NSString *)agentKey;
 
 /**
- *  CBCentralManager对象
+ *  The CBCentralManager object.
  */
 @property (nonatomic, strong, readonly) CBCentralManager *cbManager;
 

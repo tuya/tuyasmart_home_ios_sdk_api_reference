@@ -92,7 +92,7 @@ typedef NS_ENUM(NSInteger, TYEnv) {
 
 
 /// Checks whether TuyaSmartKit must be upgraded to TuyaSmartHomeKit.
-/// @return Indicates whether to upgrade data.
+/// @return Indicates whether to update data.
 - (BOOL)checkVersionUpgrade;
 
 

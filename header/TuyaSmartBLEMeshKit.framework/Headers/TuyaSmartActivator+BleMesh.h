@@ -8,17 +8,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// @brief Mesh activator category for activator.
+/// @brief Mesh activator category for activator.=====The mesh activator category.
 @interface TuyaSmartActivator (BleMesh)
 
-/// WiFi connector adds mesh. Get distribution network token (valid for 10 minutes).
+/// WiFi connector adds mesh. Get distribution network token (valid for 10 minutes).=====Adds a Wi-Fi connector to a mesh network and returns a pairing token that is valid for 10 minutes.
 /// @param meshId The mesh ID.
 /// @param nodeId The node ID.
 /// @param productId The product ID.
-/// @param uuid The device uuid.
-/// @param authKey The authority key.
-/// @param version Version.
-/// @param success Called when the task finishes successfully.
+/// @param uuid The device UUID.
+/// @param authKey The authorization key.
+/// @param version The version.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getTokenWithMeshId:(NSString *)meshId
                     nodeId:(NSString *)nodeId
@@ -29,10 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
                    success:(TYSuccessString)success
                    failure:(TYFailureError)failure;
 
-/// Mesh distribution network.
-/// @param ssid Router hotspot name.
-/// @param password Router hotspot password.
-/// @param token Distribution network token.
+/// Mesh distribution network.======Connects to a mesh device.
+/// @param ssid The router hotspot name.
+/// @param password The router hotspot password.
+/// @param token The pairing token.
 /// @param timeout The timeout time is 100 seconds by default.
 - (void)startBleMeshConfigWiFiWithSsid:(NSString *)ssid
                               password:(NSString *)password

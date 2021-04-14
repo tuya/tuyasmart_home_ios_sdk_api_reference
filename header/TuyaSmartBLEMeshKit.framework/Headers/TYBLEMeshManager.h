@@ -18,49 +18,49 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class TYBLEMeshManager;
 
-/// The bluetooth mesh for tuya when ble mesh manger do some action and received some messages.
+/// The bluetooth mesh for tuya when ble mesh manger do some action and received some messages.=====The Bluetooth LE mesh delegate that is instantiated when the Bluetooth LE mesh manager performs a specific action and receive messages.
 @protocol TYBLEMeshManagerDelegate <NSObject>
 
 @optional
 
-/// Bluetooth status callback.
-/// @param status Bluetooth status.
+/// The callback of the Bluetooth status.
+/// @param status The Bluetooth status.
 - (void)centralManagerStatusChange:(CBManagerState)status;
 
-/// Activate child device callback.
+/// Activate child device callback.======The callback that is used to activate a sub-device.
 /// @param name The device name.
 /// @param deviceId The device ID.
-/// @param error Error in activation. If an error occurs, ` name 'and' deviceid 'are empty.
+/// @param error Error in activation. If an error occurs, ` name 'and' deviceid 'are empty.======An error occurs while activating the sub-device. The values of `name' and 'deviceid' are empty in the response.
 - (void)activeDeviceSuccessWithName:(NSString *)name deviceId:(NSString *)deviceId error:(NSError *)error;
 
-/// Activate sub device successfully callback.
-/// @param manager TYBLEMeshManager.
-/// @param device TYBleMeshDeviceModel.
+/// Activate sub device successfully callback.=====The callback that is used when a sub-device is activated.
+/// @param manager The value of TYBLEMeshManager.
+/// @param device The value of TYBleMeshDeviceModel.
 /// @param devId The device ID.
-/// @param error Error in activation. If an error occurs, ` name 'and' deviceid 'are empty.
+/// @param error Error in activation. If an error occurs, ` name 'and' deviceid 'are empty.======An error occurs while activating the sub-device. The values of `name' and 'deviceid' are empty in the response.
 - (void)bleMeshManager:(TYBLEMeshManager *)manager didActiveSubDevice:(TYBleMeshDeviceModel *)device devId:(NSString *)devId error:(NSError *)error;
 
-/// Activate gateway device callback.
+/// Activate gateway device callback.======The callback that is used to activate a gateway device.
 /// @param name The device name.
 /// @param address The device address.
-/// @param mac The gateway mac.
-/// @param error Error.
+/// @param mac The gateway MAC.
+/// @param error The error.
 - (void)activeWifiDeviceWithName:(NSString *)name address:(NSInteger)address mac:(NSInteger)mac error:(NSError *)error;
 
-/// Activate device failure callback.
-/// @param manager TYBLEMeshManager.
+/// Activate device failure callback.======The callback that is used when a device failed to be activated.
+/// @param manager The value of TYBLEMeshManager.
 /// @param device The device.
-/// @param error Error.
+/// @param error The error.
 - (void)bleMeshManager:(TYBLEMeshManager *)manager didFailToActiveDevice:(TYBleMeshDeviceModel *)device error:(NSError *)error;
 
-/// Activate completion callback.
+/// The callback that is used when the activation is completed.
 - (void)didFinishToActiveDevList;
 
-/// Disconnect device callback.
+/// The callback that is used when a device is disconnected..
 - (void)notifyCentralManagerDidDisconnectPeripheral;
 
-/// Version number callback.
-/// @param version Version.
+/// The callback of the version number.
+/// @param version The version number.
 - (void)notifyFirmwareWithVersion:(NSString *)version;
 
 /// Login success notification, upgrade required.

@@ -8,29 +8,29 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// @brief SIG mesh activator Category for (SIG) bluetooth mesh manager.
+/// @brief SIG mesh activator Category for (SIG) bluetooth mesh manager.=====The Bluetooth mesh activator category for the Bluetooth mesh manager.
 ///
-/// Mainly contains gong for group management, adding devices to groups and removing devices from groups.
+/// Mainly contains gong for group management, adding devices to groups and removing devices from groups.=====This API provides multiple group management functions. For example, devices can be added to groups or removed from groups.
 @interface TuyaSmartSIGMeshManager (Group)
 
-/// Add device to group.
+/// Adds a device to a group.
 /// @param devId The device ID.
-/// @param groupAddress Group address.
+/// @param groupAddress The group address.
 - (void)addDeviceToGroupWithDevId:(NSString *)devId
                      groupAddress:(uint32_t)groupAddress;
 
-/// Remove device from group.
+/// Removes a device from a group.
 /// @param devId The device ID.
 /// @param groupAddress The group address.
 - (void)deleteDeviceToGroupWithDevId:(NSString *)devId
                         groupAddress:(uint32_t)groupAddress;
 
-/// Query the devices in the group through the group address.
+/// Queries the devices in the group based on the group address.
 /// @param groupAddress The group address.
 - (void)queryGroupMemberWithGroupAddress:(uint32_t)groupAddress;
 
 
-/// Query group list.
+/// Queries the group list.
 /// @param devId The device ID.
 - (void)queryGroupListWithDevid:(NSString *)devId;
 

@@ -66,7 +66,7 @@ TYSDK_SINGLETON;
 
 /// Adds a device to the cache.
 ///
-/// After you add the device to the cache, subscribe to the topic of the device's MQTT messages. Make sure that the local key and PV are both set.
+/// After you add the device to the cache, subscribe to the topic of the device's MQTT messages. Make sure that the local key and protocol version are both set.
 /// After the device is added, you can accept callbacks by implementing `deviceDidAdd:` of `TYCoreCacheServiceDelegate`.
 /// The tasks to add devices, subscribe to messages, and execute callbacks are run in the asynchronous thread.
 /// The asynchronous queue.
@@ -77,7 +77,7 @@ TYSDK_SINGLETON;
 
 /// Adds a device to the cache.
 ///
-/// After you add the device to the cache, subscribe to the topic of the device's MQTT messages. Make sure that the local key and PV are both set.
+/// After you add the device to the cache, subscribe to the topic of the device's MQTT messages. Make sure that the local key and protocol version are both set.
 /// During the process, you can set the completion block or implement the `deviceDidAdd:` of the proxy `TYCoreCacheServiceDelegate` to handle the result of the event.
 /// The completion block is called and followed by the delegate.
 /// The tasks to add devices, subscribe to messages, block, and execute callbacks are run in the asynchronous thread.
@@ -90,7 +90,7 @@ TYSDK_SINGLETON;
 
 /// Adds multiple devices to the cache in an operation.
 ///
-/// After you add the device to the cache, subscribe to the topic of each device's MQTT messages. Make sure that the local key and PV are both set.
+/// After you add the device to the cache, subscribe to the topic of each device's MQTT messages. Make sure that the local key and protocol version are both set.
 /// After the device is added, you can accept callbacks by implementing `deviceListDidAdd:` of `TYCoreCacheServiceDelegate`.
 /// The tasks to add devices, subscribe to messages, and execute callbacks are run in the asynchronous thread.
 /// The asynchronous queue.
@@ -101,7 +101,7 @@ TYSDK_SINGLETON;
 
 /// Adds multiple devices to the cache in an operation.
 ///
-/// After you add the device to the cache, subscribe to the topic of each device's MQTT messages. Make sure that the local key and PV are both set.
+/// After you add the device to the cache, subscribe to the topic of each device's MQTT messages. Make sure that the local key and protocol version are both set.
 /// During the process, you can set the completion block or implement the `deviceListDidAdd:` of the proxy `TYCoreCacheServiceDelegate` to handle the result of the event.
 /// The completion block is called and followed by the delegate.
 /// The tasks to add devices, subscribe to messages, and execute callbacks are run in the asynchronous thread.
@@ -164,7 +164,7 @@ TYSDK_SINGLETON;
 
 /// Adds a group to the cache.
 ///
-/// After you add the group to the cache, subscribe to the topic of the group's MQTT messages. Make sure that the local key and PV are both set.
+/// After you add the group to the cache, subscribe to the topic of the group's MQTT messages. Make sure that the local key and protocol version are both set.
 /// After the group is added, you can accept callbacks by implementing `groupDidAdd:` of `TYCoreCacheServiceDelegate`.
 /// The tasks to add groups, subscribe to messages, and execute callbacks are run in the asynchronous threads.
 /// The asynchronous queue.
@@ -175,7 +175,7 @@ TYSDK_SINGLETON;
 
 //// Adds a group to the cache.
 ///
-/// After you add the group to the cache, subscribe to the topic of the group's MQTT messages. Make sure that the local key and PV are both set.
+/// After you add the group to the cache, subscribe to the topic of the group's MQTT messages. Make sure that the local key and protocol version are both set.
 /// During the process, you can set the completion block or implement the proxy `groupDidAdd:` of `TYCoreCacheServiceDelegate` to handle the result of the event.
 /// The completion block is called and followed by the delegate.
 /// The tasks to add devices, subscribe to messages, and execute callbacks are run in the asynchronous thread.

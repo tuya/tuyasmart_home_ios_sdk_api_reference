@@ -12,37 +12,37 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TYBLECentralManager (Discovery)
 
 /**
- 扫描到的设备
+ The discovered devices.
  */
 @property (nonatomic, strong, readonly) NSArray<TYBLEPeripheral *> *discoveredDevices;
 
 @property (nonatomic, assign) BOOL shouldAutoDiscoveryWhenCenteralPoweredOn;
 
 /**
- 添加发现代理
+ Adds a discovery delegate.
 
- @param delegate 发现代理
+ @param delegate The discovery delegate.
  */
 - (void)addDiscoveryDelegate:(id<TYBLECentralManagerDiscoveryDelegate>)delegate;
 
 /**
- 移除发现代理
+ Removes a discovery delegate.
 
- @param delegate 发现代理
+ @param delegate The discovery delegate.
  */
 - (void)removeDiscoveryDelegate:(id<TYBLECentralManagerDiscoveryDelegate>)delegate;
 
 /**
- *  扫描周围所有BLE设备
+ *  Discovers all Bluetooth devices.
  *
- *  @param timeout 超时时间
+ *  @param timeout The discovery timed out.
  */
 - (void)scanForPeripheralsWithServices:(nullable NSArray<CBUUID *> *)serviceUUIDs options:(nullable NSDictionary<NSString *, id> *)options timeout:(NSTimeInterval)timeout;
 
 /**
- *  扫描周围所有BLE设备
+ *  Discovers all Bluetooth devices.
  *
- *  @param timeout 超时时间
+ *  @param timeout The discovery timed out.
  */
 - (void)scanForPeripherals:(NSTimeInterval)timeout;
 
@@ -50,12 +50,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray<CBPeripheral *> *)retrieveConnectedPeripheralsWithServices:(NSArray<CBUUID *> *)serviceUUIDs;
 
 /**
- *  停止扫描
+ *  Stops discovery.
  */
 - (void)stopScan;
 
 /**
- 清理扫描的缓存
+ Clears the discovery cache.
  */
 - (void)cleanScanedCache;
 

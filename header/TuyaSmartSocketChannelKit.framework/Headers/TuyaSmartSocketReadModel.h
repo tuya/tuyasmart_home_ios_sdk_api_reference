@@ -11,17 +11,17 @@
 
 @interface TuyaSmartSocketReadModel : NSObject <NSCopying>
 
-@property (nonatomic, assign) int               index; // sequence number
-@property (nonatomic, assign) int               type; // protocol
-@property (nonatomic, assign) int               code; // success code
-@property (nonatomic, strong) NSDictionary      *body; // message
-@property (nonatomic, strong) NSString          *error; // error reason
+@property (nonatomic, assign) int               index; // The sequence number.
+@property (nonatomic, assign) int               type; // The protocol.
+@property (nonatomic, assign) int               code; // The success code.
+@property (nonatomic, strong) NSDictionary      *body; // The message.
+@property (nonatomic, strong) NSString          *error; // The error reason.
 @property (nonatomic, strong) NSData            *data;
 
-// TCP data decrypt
+// Decrypts TCP data.
 + (NSArray <TuyaSmartSocketReadModel *> *)tcpResponseWithData:(NSData *)data gwId:(NSString *)gwId lpv:(NSString *)lpv localKey:(NSString *)localKey localKeyData:(NSData *)localKeyData;
 
-// UDP data decrypt
+// Decrypts UDP data.
 + (NSArray <TuyaSmartSocketReadModel *> *)udpResponseWithData:(NSData *)data;
 
 - (NSDictionary *)attribute;

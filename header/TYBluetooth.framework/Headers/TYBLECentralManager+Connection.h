@@ -15,46 +15,46 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TYBLECentralManager (Connection)
 
 /**
- 添加连接代理
+ Adds a connection delegate.
 
- @param delegate 代理
+ @param delegate The delegate.
  */
 - (void)addConnectionDelegate:(id<TYBLECentralManagerSessionDelegate>)delegate;
 
 /**
- 移除连接代理
+ Removes a connection delegate.
 
- @param delegate 代理
+ @param delegate The delegate.
  */
 - (void)removeConnectionDelegate:(id<TYBLECentralManagerSessionDelegate>)delegate;
 
 /**
- *  连接peripheral
+ *  Connects to a peripheral.
  *
- *  @param peripheral 待连接的peripheral对象
- *  @param timeout 超时时间
+ *  @param peripheral The peripheral to be connected.
+ *  @param timeout The connection timed out.
  */
 - (void)connectPeripheral:(TYBLEPeripheral *)peripheral timeout:(NSTimeInterval)timeout;
 
 /**
- 连接peripheral
+ Connects to a peripheral.
 
- @param peripheral 待连接的peripheral对象
- @param options 连接选项
- @param timeout 超时时间
+ @param peripheral The peripheral to be connected.
+ @param options The connection parameters.
+ @param timeout The connection timed out.
  */
 - (void)connectPeripheral:(TYBLEPeripheral *)peripheral options:(nullable NSDictionary<NSString *, id> *)options timeout:(NSTimeInterval)timeout;
 
 /**
- 断开对peripheral的连接
+ Disconnects from a peripheral.
  
- @param peripheral 连接的peripheral
- @param timeout 超时时间
+ @param peripheral The connected peripheral.
+ @param timeout The disconnection timed out.
  */
 - (void)disconnectPeripheral:(TYBLEPeripheral *)peripheral timeout:(NSTimeInterval)timeout;
 
 /**
- *  断开所有peripheral的链接
+ *  Disconnects from all peripherals.
  */
 - (void)disconnectAllPeripherals;
 

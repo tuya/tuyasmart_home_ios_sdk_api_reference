@@ -11,30 +11,30 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^TPBleResultBlock)(NSString *result);
 
-/// @brief TuyaSmartBLEManager+Channel provides methods for developers to make BLE device report large amounts of data through bluetooth channel.
+/// @brief TuyaSmartBLEManager+Channel provides methods to enable Bluetooth LE devices to report large amounts of data through Bluetooth channels.
 @interface TuyaSmartBLEManager (Channel)
  
-/// Determine if the device is connected.
+/// Indicates whether the device is connected.
 ///
 /// @param uuid     The UUID for the device.
 ///
-/// @return The local connection status of the BLE device
+/// @return The local connection status of the Bluetooth LE device.
 - (BOOL)isBLEChannelDeviceConnect:(NSString *)uuid;
 
-/// Set the callback when the transfer is completed.
+/// Sets the callback when the transfer is completed.
 ///
-/// @param block    When transfer successfully, this block will be called success.
-/// @param uuid     The UUID for the device.
+/// @param block    After data is transferred, this block is called.
+/// @param uuid     The UUID of the device.
 - (void)setCompletionBlock:(TPBleResultBlock)block uuid:(NSString *)uuid;
 
-/// App request to start big data transfer.
+/// The app requests to start a big data transfer.
 ///
-/// @param uuid     The UUID for the device.
+/// @param uuid     The UUID of the device.
 - (void)appApplyLaunch:(NSString *)uuid;
 
-/// App forced termination of data transmission.
+/// The app forcibly terminates data transmission.
 ///
-/// @param uuid     The UUID for the device.
+/// @param uuid     The UUID of the device.
 - (BOOL)appMandatoryTrans:(NSString *)uuid;
 
 @end

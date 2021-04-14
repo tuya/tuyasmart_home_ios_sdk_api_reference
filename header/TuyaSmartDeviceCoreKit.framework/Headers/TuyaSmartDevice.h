@@ -314,7 +314,7 @@ typedef enum : NSUInteger {
                             success:(nullable TYSuccessDict)success
                             failure:(nullable TYFailureError)failure;
 
-/// Queries the DP initiative. Some DPs do not report the initiative when settings are changed.
+/// Queries the DPs. Some DPs do not report the initial data when settings are changed.
 /// @param dpsArray The array of DP IDs. If the value is set to nil or an empty array, all DPs are queried.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.

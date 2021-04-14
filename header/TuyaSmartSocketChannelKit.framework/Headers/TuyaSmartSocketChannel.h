@@ -11,7 +11,7 @@
 #import "TuyaSmartSocketWriteModel.h"
 #import <TuyaSmartBaseKit/TuyaSmartBaseKit.h>
 
-// 协议
+// The protocol.
 #define SOCKET_TYPE_BROADCAST             0x00
 #define SOCKET_TYPE_BROADCAST_V4          0x13
 #define SOCKET_TYPE_BROADCAST_V34         0x23
@@ -48,22 +48,22 @@
 
 #pragma mark - TCP Delegate
 
-// TCP Connection Successful
+// The TCP connection is successful.
 - (void)socketDidTcpConnected:(TuyaSmartSocketChannel *)socket devId:(NSString *)devId;
 
-// Receive TCP message
+// Receives a TCP message.
 - (void)socket:(TuyaSmartSocketChannel *)socket didReceiveTcpData:(TuyaSmartSocketReadModel *)tcpData tag:(long)tag devId:(NSString *)devId;
 
-// TCP disconnection
+// Closes the TCP connection.
 - (void)socketDidTcpDisconnect:(TuyaSmartSocketChannel *)socket devId:(NSString *)devId error:(NSError *)error;
 
 
 #pragma mark - UDP Delegate
 
-// Receive UDP message
+// Receives a UDP message.
 - (void)socket:(TuyaSmartSocketChannel *)socket didReceiveUdpData:(TuyaSmartSocketReadModel *)udpData;
 
-// Close UDP connection
+// Closes a UDP connection.
 - (void)socketDidUdpClose:(TuyaSmartSocketChannel *)socket error:(NSError *)error;
 
 @end
@@ -73,21 +73,21 @@
 + (instancetype)sharedInstance;
 
 /**
- *  未激活的设备列表
+ *  The list of inactive devices.
  */
 @property (nonatomic, strong) TYSDKSafeMutableDictionary   *inactiveDevices;
 
 #pragma mark - TCP
 
-// connect TCP
+// Establishes a TCP connection.
 - (void)initTcpClientWithHost:(NSString *)host devInfo:(NSDictionary *)devInfo;
 
-// send TCP message
+// Sends a TCP message.
 - (void)sendTcpRequest:(TuyaSmartSocketWriteModel *)request
                success:(TYSuccessDict)success
                failure:(TYFailureHandler)failure __deprecated_msg("This method is deprecated, Use sendTcpWithRequest:success:failure: instead");
 
-// send TCP message
+// Sends a TCP message.
 - (void)sendTcpWithRequest:(TuyaSmartSocketWriteModel *)request
                    success:(TYSuccessDict)success
                    failure:(TYFailureError)failure;
@@ -96,32 +96,32 @@
 
 - (void)removeAllInactiveDevice;
 
-// whether the TCP connection
+// Indicates whether the TCP connection is established.
 - (BOOL)hasTcpClientWithDevId:(NSString *)devId;
 
-// close TCP connect
+// Closes a TCP connection.
 - (void)closeTcpClientWithDevId:(NSString *)devId;
 
-// close all TCP connect
+// Closes all TCP connections.
 - (void)closeAllTcpClient;
 
 #pragma mark - UDP
 
-// init UDP serve
+// Initializes a UDP server.
 - (void)initUdpServerWithPort:(NSInteger)port;
 
-// send UDP message
+// Sends a UDP message.
 - (void)sendUdpRequestWithHost:(NSString *)host port:(NSInteger)port type:(int)type body:(NSDictionary *)body success:(TYSuccessHandler)success failure:(TYFailureHandler)failure;
 
-// close UDP serve
+// Closes a UDP server.
 - (void)closeUdpServerWithPort:(uint16_t)port;
 
 #pragma mark - Delegate
 
-// add socket channel delegate
+// Adds a socket channel delegate.
 - (void)addDelegate:(id<TuyaSmartSocketChannelDelegate>)delegate;
 
-// remove socket channel delegate
+// Removes a socket channel delegate.
 - (void)removeDelegate:(id<TuyaSmartSocketChannelDelegate>)delegate;
 
 @end

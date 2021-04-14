@@ -14,20 +14,20 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString          *gwId;
 @property (nonatomic, assign) BOOL              encrypt;
 
-@property (nonatomic, assign) int               index; // sequence number
-@property (nonatomic, assign) int               type; // protocol
-@property (nonatomic, strong) NSString          *lpv; // version
-@property (nonatomic, strong) NSDictionary      *body; // body
-@property (nonatomic, strong) NSString          *localKey; // local key
-@property (nonatomic, strong) NSData            *data; // data
-@property (nonatomic, strong) NSData            *localKeyData; // local key
+@property (nonatomic, assign) int               index; // The sequence number.
+@property (nonatomic, assign) int               type; // The protocol.
+@property (nonatomic, strong) NSString          *lpv; // The version.
+@property (nonatomic, strong) NSDictionary      *body; // The body.
+@property (nonatomic, strong) NSString          *localKey; // The local key.
+@property (nonatomic, strong) NSData            *data; // The data.
+@property (nonatomic, strong) NSData            *localKeyData; // The local key.
 
 
 @property (nonatomic, copy) TYSuccessDict       successBlock;
 @property (nonatomic, copy) TYFailureError      failureErrorBlock;
 @property (nonatomic, copy) TYFailureHandler    failureBlock;
 
-// data encryption
+// Encrypts data.
 - (NSData *)buildRequestData;
 
 - (NSDictionary *)attributes;

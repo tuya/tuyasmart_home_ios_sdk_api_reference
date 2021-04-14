@@ -21,11 +21,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Returns the default region of the country code. For example,`AY` indicates China, `AZ` indicates America, and `EU` indicates Europe.
 /// @param countryCode The country code.
-/// @return Returns a default region of the country code.
+/// @return The default region of the country code.
 - (NSString *)getDefaultRegionWithCountryCode:(NSString *)countryCode;
 
 /// Returns the default region.
-/// @return Returns a default region of the country code.
+/// @return The default region of the country code.
 - (NSDictionary *)getDefaultDomain;
 
 /// Checks the verification code that is used to register, log in, or reset the password.

@@ -51,7 +51,7 @@ typedef enum : NSUInteger {
 /// The local key.
 @property (nonatomic, strong) NSString     *localKey;
 
-/// The PV.
+/// The protocol version.
 @property (nonatomic, assign) double        pv;
 
 /// The number of devices,

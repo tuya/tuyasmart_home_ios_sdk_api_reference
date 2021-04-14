@@ -3,7 +3,7 @@
 //  TuyaSmartPublic
 //
 //  Created by 冯晓 on 16/8/2.
-//  Copyright © 2016年 Tuya. All rights reserved.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
@@ -17,74 +17,74 @@ typedef void(^TYBLECentralPeripheralRSSIValueCallback)(NSNumber *RSSI, NSError *
 @interface TYBLEPeripheral : NSObject <CBPeripheralDelegate>
 
 /**
- *  内部的cbPeripheral对象
+ *  The internal cbPeripheral object.
  */
 @property (strong, nonatomic, readonly) CBPeripheral *cbPeripheral;
 /**
- *  service的UUID列表
+ *  The list of service UUIDs.
  */
 @property (strong, nonatomic, readonly) NSArray *services;
 /**
- *  peripheral的UUID string
+ *  The UUID string of the peripheral.
  */
 @property (weak, nonatomic, readonly) NSString *UUIDString;
 
 /**
- * Signal strength of peripheral
+ * The signal strength of the peripheral.
  */
 @property (assign, nonatomic) NSInteger RSSI;
 
 /**
- * The advertisement data that was tracked from peripheral
+ * The advertisement data that was tracked from the peripheral.
  */
 @property (strong, nonatomic) NSDictionary *advertisingData;
 
 /**
- *  flag of connection
+ *  The connection flag.
  */
 @property (nonatomic, assign) BOOL isConnected;
 /**
- *  是否需要恢复设备的连接状态
+ *  Specifies whether to restore the connection status of the device.
  */
 @property (nonatomic, assign) BOOL isWillRestoreState;
 
 /**
- *  创建TYBLEPeripheral对象
+ *  Creates a TYBLEPeripheral object.
  *
- *  @param p CBPeripheral对象
+ *  @param p The CBPeripheral object.
  *
- *  @return TYBLEPeripheral对象
+ *  @return The TYBLEPeripheral object.
  */
 - (instancetype)initWithCBPeripheral:(CBPeripheral *)p;
 
 /**
- *  扫描支持的所有service
+ *  Discovers all supported services.
  *
- *  @param block 回调
+ *  @param block The callback.
  */
 - (void)discoverServicesWithCompletion:(TYBLECentralPeripheralDiscoverServicesCallback)block;
 
 /**
- *  扫描特定UUID的service
+ *  Discovers the service with a specific UUID.
  *
- *  @param serviceUUIDs service uuid
- *  @param block        回调
+ *  @param serviceUUIDs The service UUID
+ *  @param block        The callback.
  */
 - (void)discoverServices:(NSArray *)serviceUUIDs
               completion:(TYBLECentralPeripheralDiscoverServicesCallback)block;
 
 /**
- *  读取RSSI值
+ *  Reads the Received Signal Strength Indicator (RSSI) value.
  *
- *  @param aCallback 回调
+ *  @param aCallback The callback.
  */
 - (void)readRSSIValueCompletion:(TYBLECentralPeripheralRSSIValueCallback)aCallback;
 /**
- *  根据UUID查找service
+ *  Discovers the service with a specific UUID.
  *
- *  @param uuid 待查找的UUID
+ *  @param uuid The UUID to be discovered.
  *
- *  @return TYBLEService对象
+ *  @return The TYBLEService object.
  */
 - (TYBLEService *)retrieveServiceByUUID:(NSString *)uuid;
 

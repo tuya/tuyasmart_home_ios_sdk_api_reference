@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// @brief Mesh information category for user.
+/// @brief Mesh information category for user.=======The mesh information category for a user.
 @interface TuyaSmartUser (BleMesh)
 
 @property (nonatomic, strong) TuyaSmartBleMeshModel *meshModel;

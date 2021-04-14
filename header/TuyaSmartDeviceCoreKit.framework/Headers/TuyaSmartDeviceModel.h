@@ -254,7 +254,7 @@ typedef NS_OPTIONS(NSUInteger, TuyaSmartDeviceOnlineType) {
 // Index rules:
 // 0: supports the Bluetooth mesh feature.
 // 1: supports the Zigbee feature.
-// 2: supports the sub-device feature.
+// 2: supports the subpieces feature.
 @property (nonatomic, assign) NSInteger protocolAttribute;
 
 /// Specifies whether auto updates are supported. Currently, NB-IoT and Bluetooth mesh devices do not support auto updates.

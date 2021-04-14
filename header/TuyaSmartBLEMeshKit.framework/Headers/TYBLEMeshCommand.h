@@ -7,23 +7,23 @@
 #import <Foundation/Foundation.h>
 #import "TYBLEMeshCommandType.h"
 
-/// The mesh command protocol, confirm and impl some command, will execute.
+/// The mesh command protocol, confirm and impl some command, will execute.=====The mesh command protocol that is used to confirm and implement certain commands.
 @protocol TYBLEMeshCommandProtocol <NSObject>
 
-/// Convert to Bluetooth command.
-/// @return Bluetooth command.
+/// Convert to Bluetooth command.=====Converts to the Bluetooth command.
+/// @return The Bluetooth command.
 - (NSData *)command;
 
-/// Convert to raw command (used by gateway).
-/// @return Raw command.
+/// Converts  to the raw command that is used by a gateway.
+/// @return The raw command.
 - (NSString *)raw;
 
 @end
 
-/// @brief The ble mesh command for some command.
+/// @brief The ble mesh command for some command.=======The Bluetooth mesh protocol for certain commands.
 @interface TYBLEMeshCommand : NSObject <TYBLEMeshCommandProtocol>
 
-/// Command type
+/// The command type.
 @property (nonatomic, assign) TYBLEMeshCommandType commandType;
 
 /// For equipment type, the small category is in the front, and the major category is in the rear, for example, four street lamps. At this time, the PCC is 0401 "04 represents four street lamps, 01 represents major categories of lamps".

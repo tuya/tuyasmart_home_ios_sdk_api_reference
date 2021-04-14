@@ -8,25 +8,25 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// The ble mesh delegate when mesh do some action.
+/// The Bluetooth LE mesh delegate that is instantiated when the mesh network is used to perform a specific action.
 @protocol TuyaSmartBleMeshDelegate<NSObject>
 
 @optional
 
-/// DP data update.
+/// The DP data update.
 - (void)subDeviceUpdateWithAddress:(NSString *)address dps:(NSDictionary *)dps;
 
-/// Raw transparent command received.
+/// Raw transparent command received.=======Receives the DPs of raw type.
 - (void)bleMeshReceiveRawData:(NSString *)raw;
 
-/// Batch report of received data.
+/// Batch report of received data.=======Reports multiple DPs in a call.
 - (void)bleMeshReceiveBatchDeviceDpsInfo;
 
 @end
 
-/// @brief Bluetooth mesh base class, including the basic operations of Bluetooth mesh, such as create, update, delete mesh, etc.
+/// @brief Bluetooth mesh base class, including the basic operations of Bluetooth mesh, such as create, update, delete mesh, etc.========The Bluetooth mesh base class that supports the basic operations of Bluetooth mesh. For example, meshes can be created, updated, and deleted.
 ///
-/// mesh as an important parameter for Bluetooth mesh connection.
+/// mesh as an important parameter for Bluetooth mesh connection.====The mesh parameters are required to establish a Bluetooth mesh connection.
 ///
 @interface TuyaSmartBleMesh : NSObject
 
@@ -34,41 +34,41 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<TuyaSmartBleMeshDelegate> delegate;
 
-/// Get device object.
+/// Returns a device object.
 /// @param meshId The mesh ID.
 /// @param homeId The home ID.
 + (instancetype)bleMeshWithMeshId:(NSString *)meshId homeId:(long long)homeId;
 
-/// Get device object.
+/// mesh as an important parameter for Bluetooth mesh connection.
 /// @param meshId The mesh ID.
 /// @param homeId The home ID.
 - (instancetype)initWithMeshId:(NSString *)meshId homeId:(long long)homeId NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
 
-/// Create mesh.
+/// Creates a mesh.
 /// @param meshName The mesh name.
 /// @param homeId The home ID.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 + (void)createBleMeshWithMeshName:(NSString *)meshName homeId:(long long)homeId success:(void(^)(TuyaSmartBleMeshModel *meshModel))success failure:(TYFailureError)failure;
 
-/// Get the sub device information of mesh.
-/// @param success Called when the task finishes successfully.
+/// Returns the sub-device information of the mesh.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getSubDeviceListFromCloudWithSuccess:(void (^)(NSArray <TuyaSmartDeviceModel *> *subDeviceList))success failure:(TYFailureError)failure;
 
-/// Get single sub device information.
+/// Returns the single sub-device information.
 /// @param deviceId The device ID.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getSubDeviceFromCloudWithDeviceId:(NSString *)deviceId success:(void (^)(TuyaSmartDeviceModel *subDeviceModel))success failure:(TYFailureError)failure;
 
-/// Single sub device DPS command issued.
+/// Sends DPs to a single sub-device.
 /// @param nodeId The node ID.
-/// @param pcc Size class label.
-/// @param dps Command dictionary.
-/// @param success Called when the task finishes successfully.
+/// @param pcc The size class label.
+/// @param dps The DP dictionary.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)publishNodeId:(NSString *)nodeId
                   pcc:(NSString *)pcc
@@ -76,11 +76,11 @@ NS_ASSUME_NONNULL_BEGIN
               success:(TYSuccessHandler)success
               failure:(TYFailureError)failure;
 
-/// Group control equipment.
-/// @param localId Local ID.
-/// @param pcc Size class label.
-/// @param dps Command dictionary.
-/// @param success Called when the task finishes successfully.
+/// Controls devices in a group.
+/// @param localId The local ID.
+/// @param pcc The size class label.
+/// @param dps The DP dictionary.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)multiPublishWithLocalId:(NSString *)localId
                             pcc:(NSString *)pcc
@@ -88,21 +88,21 @@ NS_ASSUME_NONNULL_BEGIN
                         success:(TYSuccessHandler)success
                         failure:(TYFailureError)failure;
 
-/// Broadcast DPS command issued.
-/// @param dps Command dictionary.
-/// @param pcc Size class label.
-/// @param success Called when the task finishes successfully.
+/// Sends broadcast DPs.
+/// @param dps The DP dictionary.
+/// @param pcc The size class label.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)broadcastDps:(NSDictionary *)dps
                  pcc:(NSString *)pcc
              success:(TYSuccessHandler)success
              failure:(TYFailureError)failure;
 
-/// Get the latest DPS information of the sub device.
+/// Returns the latest DP information of the sub-device.
 /// @param nodeId The node ID.
-/// @param pcc Size class label.
-/// @param dpIdList List of keys in DPS.
-/// @param success Called when the task finishes successfully.
+/// @param pcc The size class label.
+/// @param dpIdList The list of keys in the DPs.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getSubDeviceDpsWithNodeId:(NSString *)nodeId
                               pcc:(NSString *)pcc
@@ -110,35 +110,35 @@ NS_ASSUME_NONNULL_BEGIN
                           success:(TYSuccessHandler)success
                           failure:(TYFailureError)failure;
 
-/// Send transparent instruction to device.
-/// @param raw Transmission value.
-/// @param pcc Size class label.
-/// @param success Called when the task finishes successfully.
+/// Send transparent instruction to device.=======Sends DPs of raw type to the device.
+/// @param raw Transmission value.=====The type of transmission.
+/// @param pcc The size class label.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)publishRawDataWithRaw:(NSString *)raw
                           pcc:(NSString *)pcc
                       success:(TYSuccessHandler)success
                       failure:(TYFailureError)failure;
 
-/// Modify mesh name.
+/// Modifies the mesh name.
 /// @param meshName The mesh name.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateMeshName:(NSString *)meshName success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
-/// Delete mesh. If there are devices under the mesh group, the sub devices are also removed. The WiFi connector is also removed.
-/// @param success Called when the task finishes successfully.
+/// Deletes the mesh. If there are devices under the mesh group, the sub devices are also removed. The WiFi connector is also removed.======If the specified mesh group contains sub-devices, the sub-devices are also removed. The Wi-Fi connector is also removed.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)removeMeshWithSuccess:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
-/// Bluetooth device access 2.0.
-/// @param uuid Bluetooth sub device short address identification.
+/// Bluetooth device access 2.0.=======Connects to Bluetooth mesh 2.0
+/// @param uuid Bluetooth sub device short address identification.=====The short address identification of the Bluetooth sub-device.
 /// @param homeId The home ID.
-/// @param authKey The authority key.
+/// @param authKey The authorization key.
 /// @param nodeId The node ID.
 /// @param productKey The product key.
-/// @param ver Version.
-/// @param success Called when the task finishes successfully.
+/// @param ver The version.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)addSubDeviceWithUuid:(NSString *)uuid
                       homeId:(long long)homeId
@@ -149,16 +149,16 @@ NS_ASSUME_NONNULL_BEGIN
                      success:(void (^)(NSString *devId, NSString *name))success
                      failure:(TYFailureError)failure;
 
-/// Rename mesh subdevice.
+/// Renames the mesh sub-device.
 /// @param deviceId The device ID.
 /// @param name The device name.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)renameMeshSubDeviceWithDeviceId:(NSString *)deviceId name:(NSString *)name success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
-/// Remove mesh sub device.
+/// Removes the mesh sub-device.
 /// @param deviceId The device ID.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)removeMeshSubDeviceWithDeviceId:(NSString *)deviceId success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 

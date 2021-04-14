@@ -3,7 +3,7 @@
 //  TuyaSmartPublic
 //
 //  Created by 冯晓 on 16/8/2.
-//  Copyright © 2016年 Tuya. All rights reserved.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
@@ -15,91 +15,91 @@ typedef void(^TYBLECentralServiceDiscoverCharacteristcsCallback)(NSArray *charac
 @interface TYBLEService : NSObject
 
 /**
- *  CBService对象
+ *  The CBService object.
  */
 @property (strong, nonatomic, readonly) CBService *cbService;
 
 /**
- * 自己的UUID
+ * The UUID string.
  */
 @property (strong, nonatomic, readonly) NSString *UUIDString;
 
 /**
- *  包含的characteristic列表
+ *  The list of characteristics.
  */
 @property (strong, nonatomic) NSArray *characteristics;
 
 /**
- *  是否是device信息
+ *  Indicates whether the device information is returned.
  */
 @property (assign, nonatomic) BOOL isDeviceInfo;
 
 
 /**
- *  是否是timer信息
+ *  Indicates whether the timer information is returned.
  */
 @property (nonatomic, assign) BOOL isTimerInfo;
 
 
 
 /**
- *  是否是battery信息
+ *  Indicates whether the battery information is returned.
  */
 @property (assign, nonatomic) BOOL isBatteryInfo;
     
     
 /**
- *  构造TYBLESerice对象
+ *  Creates a TYBLESerice object.
  *
- *  @param aService CBservice对象
+ *  @param aService The CBservice object.
  *
- *  @return TYBLESerice对象
+ *  @return The TYBLESerice object.
  */
 - (instancetype)initWithService:(CBService *)aService;
 
 /**
- *  查找所包含的characteristic列表
+ *  Returns the list of characteristics.
  *
- *  @param aCallback 完成的回调
+ *  @param aCallback The callback.
  */
 - (void)discoverCharacteristicsWithCompletion:(TYBLECentralServiceDiscoverCharacteristcsCallback)aCallback;
 
 
 
 /**
- *  查找所包含的characteristic列表
+ *  Returns the list of characteristics.
  *
- *  同步方法
+ *  The synchronization method.
  *
- *  @return TYBLECharacteristic list
+ *  @return The TYBLECharacteristic list.
  */
 - (NSArray <TYBLECharacteristic *> *)discoverCharacteristics;
     
 /**
- *  根据UUID查找所包含的characteristic
+ *  Returns the characteristics with specific UUIDs.
  *
- *  @param aCallback 完成的回调
+ *  @param aCallback The callback.
  */
 - (void)discoverCharacteristicsWithUUIDs:(NSArray *)uuids
                               completion:(TYBLECentralServiceDiscoverCharacteristcsCallback)aCallback;
 
 /**
- *  取消characteristic的operaion
+ *  Cancels the characteristic operation.
  */
 - (void)cancelCharacteristicOperations;
 /**
- *  存储发现的characteristic
+ *  Stores the returned characteristics.
  *
- *  @param aCharacteristics list of CBCharacteristics
- *  @param aError           error
+ *  @param aCharacteristics The list of CBCharacteristics objects.
+ *  @param aError           The error.
  */
 - (void)handleDiscoveredCharacteristics:(NSArray *)aCharacteristics error:(NSError *)aError;
 /**
- *  根据UUID查找characteristic
+ *  Returns the characteristic with a specific UUID.
  *
- *  @param uuid 待查找的UUID
+ *  @param uuid The UUID to be returned.
  *
- *  @return TYBLECharacteristic对象
+ *  @return The TYBLECharacteristic object.
  */
 - (TYBLECharacteristic*)retrieveCharacteristicByUUID:(NSString *)uuid;
 

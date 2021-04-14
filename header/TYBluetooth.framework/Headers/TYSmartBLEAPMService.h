@@ -9,12 +9,12 @@
 #import "TYSmartBLEAPMMessageModel.h"
 #import "TYSmartBLEAPMEnum.h"
 
-// Reconnection
-#define TY_LOG_EVENT_BLE_RECONNECTION                   @"af66d2469918c8d55dc6346598fd7d4f"  // 重连埋点事件编码
+// The reconnection event tracking.
+#define TY_LOG_EVENT_BLE_RECONNECTION                   @"af66d2469918c8d55dc6346598fd7d4f"  // The reconnection event tracking ID.
 
-#define TY_RECONNECT_LOG_TYPE_BLE_SUCCESS               @"ble_log_connect_success"  // 第一次直接连接成功
-#define TY_RECONNECT_LOG_TYPE_BLE_RETRY_SUCCESS         @"ble_log_reconnect_success"  // 通过重连成功
-#define TY_RECONNECT_LOG_TYPE_BLE_FAILURE               @"ble_log_reconnect_failure"  // 连接失败
+#define TY_RECONNECT_LOG_TYPE_BLE_SUCCESS               @"ble_log_connect_success"  // The initial connection is successful.
+#define TY_RECONNECT_LOG_TYPE_BLE_RETRY_SUCCESS         @"ble_log_reconnect_success"  // The reconnection is successful.
+#define TY_RECONNECT_LOG_TYPE_BLE_FAILURE               @"ble_log_reconnect_failure"  // The reconnection failed.
 
 @interface TYSmartBLEAPMService : NSObject
 

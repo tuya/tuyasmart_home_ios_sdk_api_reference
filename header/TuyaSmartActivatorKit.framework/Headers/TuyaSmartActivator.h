@@ -89,12 +89,12 @@ typedef enum : NSUInteger {
 ///
 /// @see https://developer.apple.com/videos/play/wwdc2019/713/
 ///
-/// @return Wi-Fi SSID
+/// @return The Wi-Fi SSID.
 + (NSString *)currentWifiSSID;
 
 /// Get the BSSID of the current Wi-Fi.
 /// @see TuyaSmartActivator::currentWifiSSID.
-/// @return Wi-Fi BSSID
+/// @return The Wi-Fi BSSID.
 + (NSString *)currentWifiBSSID;
 
 /// Get the SSID of the current Wi-Fi asynchronously.

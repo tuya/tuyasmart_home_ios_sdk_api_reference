@@ -3,7 +3,7 @@
 //  TuyaSmartPublic
 //
 //  Created by 冯晓 on 16/8/2.
-//  Copyright © 2016年 Tuya. All rights reserved.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <Foundation/Foundation.h>
@@ -21,17 +21,17 @@ typedef void (^TYBLECentralCharacteristicWriteCallback) (NSError *error);
 @interface TYBLECharacteristic : NSObject
 
 /**
- * 内部CBCharacteristic对象
+ * The CBCharacteristic object.
  */
 @property (strong, nonatomic, readonly) CBCharacteristic *cbCharacteristic;
 
 /**
- * UUID字符串
+ * The UUID string.
  */
 @property (weak, nonatomic, readonly) NSString *UUIDString;
 
 /**
- *  Characteristic的特征值
+ *  The characteristic value.
  */
 @property (nonatomic, assign) CBCharacteristicProperties properties;
 
@@ -40,9 +40,9 @@ typedef void (^TYBLECentralCharacteristicWriteCallback) (NSError *error);
 @property (nonatomic, copy  ) TYBLECentralCharacteristicWriteCallback writeCallback;
 
 /**
- *  创建TYBLECharacteristic对象
+ *  Creates a TYBLECharacteristic object.
  *
- *  @param aCharacteristic CBCharacteristic对象
+ *  @param aCharacteristic The CBCharacteristic object.
  *
  *  @return TYBLECharacteristic
  */
@@ -50,36 +50,36 @@ typedef void (^TYBLECentralCharacteristicWriteCallback) (NSError *error);
 
 
 /**
- *  通知Peripheral向Central push数据
+ *  Notifies the peripheral to push data to the central manager.
  *
- *  @param notifyValue 开关标志位
- *  @param aCallback   完成的回调
+ *  @param notifyValue The switch flag.
+ *  @param aCallback   The callback.
  */
 - (void)notifyValue:(BOOL)notifyValue
      Withcompletion:(TYBLECentralCharacteristicNotifyCallback)aCallback;
 
 /**
- *  向Peripheral写数据
+ *  Writes to the peripheral.
  *
- *  @param data      待写的二进制流
- *  @param aCallback 完成的回调
+ *  @param data      The binary streams to be written.
+ *  @param aCallback The callback.
  */
 - (void)writeData:(NSData *)data
    Withcompletion:(TYBLECentralCharacteristicWriteCallback)aCallback;
 
 /**
- *  向Peripheral写字节
+ *  Writes bytes to the peripheral.
  *
- *  @param aByte     待写入的字节
- *  @param aCallback 完成的回调
+ *  @param aByte     The bytes to be written.
+ *  @param aCallback The callback.
  */
 - (void)writeByte:(int8_t)aByte
    Withcompletion:(TYBLECentralCharacteristicWriteCallback)aCallback;
 
 /**
- *  向Peripheral读数据
+ *  Reads from the peripheral.
  *
- *  @param aCallback 完成的回调
+ *  @param aCallback The callback.
  */
 - (void)readValueWithBlock:(TYBLECentralCharacteristicReadCallback)aCallback;
 

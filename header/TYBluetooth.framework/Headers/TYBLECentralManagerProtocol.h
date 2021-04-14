@@ -14,9 +14,9 @@ typedef NS_ENUM(NSInteger, TYBLECentralManagerState) {
 //    TYBLECentralManagerStateUnknown = 0,
 //    TYBLECentralManagerStateResetting,
 //    TYBLECentralManagerStateUnsupported,
-    TYBLECentralManagerStateUnauthorized = 3, // 未打开应用蓝牙权限
-    TYBLECentralManagerStatePoweredOff, // 系统蓝牙关闭
-    TYBLECentralManagerStatePoweredOn, // 系统蓝牙打开
+    TYBLECentralManagerStateUnauthorized = 3, // The Bluetooth permissions are not granted.
+    TYBLECentralManagerStatePoweredOff, // The Bluetooth function is disabled.
+    TYBLECentralManagerStatePoweredOn, // The Bluetooth function is enabled.
 };
 
 @class TYBLECentralManager;

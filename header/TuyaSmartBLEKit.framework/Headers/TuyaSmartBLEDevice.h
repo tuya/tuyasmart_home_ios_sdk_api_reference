@@ -6,7 +6,7 @@
 
 #import <TuyaSmartDeviceCoreKit/TuyaSmartDeviceCoreKit.h>
 
-/// @brief BLE device inherited from TuyaSmartDevice.
+/// @brief The Bluetooth LE device is inherited from TuyaSmartDevice.
 @interface TuyaSmartBLEDevice : TuyaSmartDevice
 
 @end

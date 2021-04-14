@@ -82,7 +82,7 @@
 
 @end
 
-/// The sub-device.
+/// The subpieces.
 @interface TuyaSmartDeviceSubpiecesModel : NSObject
 
 @property (nonatomic, assign) BOOL         isOnline;

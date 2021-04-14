@@ -36,7 +36,7 @@
 /// The device type.
 @property (nonatomic, assign) NSInteger type;
 
-// The device type. 0: normal device. 1: non-insured device.
+// The device type. 0: normal device. 1: low-power non keep-alive device.
 @property (nonatomic, assign) NSInteger devType;
 
 /// The download URL of the update firmware for Bluetooth devices.
@@ -57,7 +57,7 @@
 /// Indicates whether the update device is controllable. `0` : controllable. `1` : not controllable.
 @property (nonatomic, assign) BOOL controlType;
 
-/// The description of waiting for device wake-up. The low-power non-live device is in the status of "waiting for device wake-up" before an update.
+/// The description of waiting for device wake-up. The low-power non keep-alive device is in the state of "waiting for device wake-up" before an update.
 @property (nonatomic, strong) NSString *waitingDesc;
 
 /// The notification text in the firmware update.
