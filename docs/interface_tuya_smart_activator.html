@@ -202,7 +202,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get the BSSID of the current Wi-Fi. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_tuya_smart_activator.html#a5baf4e001d3152d21cc4a53e70954a00">+ currentWifiSSID</a>. </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>Wi-Fi BSSID </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The Wi-Fi BSSID. </dd></dl>
 
 </div>
 </div>
@@ -227,7 +227,7 @@ Properties</h2></td></tr>
 <li>Use of NEHotspotConfiguration (only Wi-Fi networks configured through the app are supported).</li>
 </ul>
 <dl class="section see"><dt>See also</dt><dd><a href="https://developer.apple.com/videos/play/wwdc2019/713/">https://developer.apple.com/videos/play/wwdc2019/713/</a></dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>Wi-Fi SSID </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The Wi-Fi SSID. </dd></dl>
 
 </div>
 </div>
@@ -407,15 +407,15 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>WiFi connector adds mesh. Get distribution network token (valid for 10 minutes). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>WiFi connector adds mesh. Get distribution network token (valid for 10 minutes).=====Adds a Wi-Fi connector to a mesh network and returns a pairing token that is valid for 10 minutes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">meshId</td><td>The mesh ID. </td></tr>
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
     <tr><td class="paramname">productId</td><td>The product ID. </td></tr>
-    <tr><td class="paramname">uuid</td><td>The device uuid. </td></tr>
-    <tr><td class="paramname">authKey</td><td>The authority key. </td></tr>
-    <tr><td class="paramname">version</td><td>Version. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">uuid</td><td>The device UUID. </td></tr>
+    <tr><td class="paramname">authKey</td><td>The authorization key. </td></tr>
+    <tr><td class="paramname">version</td><td>The version. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -583,11 +583,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mesh distribution network. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Mesh distribution network.======Connects to a mesh device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ssid</td><td>Router hotspot name. </td></tr>
-    <tr><td class="paramname">password</td><td>Router hotspot password. </td></tr>
-    <tr><td class="paramname">token</td><td>Distribution network token. </td></tr>
+    <tr><td class="paramname">ssid</td><td>The router hotspot name. </td></tr>
+    <tr><td class="paramname">password</td><td>The router hotspot password. </td></tr>
+    <tr><td class="paramname">token</td><td>The pairing token. </td></tr>
     <tr><td class="paramname">timeout</td><td>The timeout time is 100 seconds by default. </td></tr>
   </table>
   </dd>

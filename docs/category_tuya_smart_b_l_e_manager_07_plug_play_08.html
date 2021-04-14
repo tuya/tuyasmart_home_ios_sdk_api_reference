@@ -141,14 +141,14 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Activate dual-mode device bluetooth mode.</p>
+<p>Activates the Bluetooth mode for a dual-mode device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">advModel</td><td>Device advertisement model. </td></tr>
-    <tr><td class="paramname">homeId</td><td>The Id for the current home. </td></tr>
+    <tr><td class="paramname">advModel</td><td>The device advertisement model. </td></tr>
+    <tr><td class="paramname">homeId</td><td>The ID of the current home. </td></tr>
     <tr><td class="paramname">token</td><td>The token. </td></tr>
-    <tr><td class="paramname">success</td><td>When activator successfully, this param will be called with DeviceModel. </td></tr>
-    <tr><td class="paramname">failure</td><td>This block will be called if some error occurred. </td></tr>
+    <tr><td class="paramname">success</td><td>When the activation is successful, this block is called with DeviceModel. </td></tr>
+    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
   </table>
   </dd>
 </dl>
@@ -206,15 +206,15 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Dual-mode device which bluetooth channel is actived，to active Wi-Fi channel.</p>
+<p>Activates the Wi-Fi channel of a dual-mode device for which the Bluetooth channel is activated.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">devId</td><td>The device Id for the device. </td></tr>
+    <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">ssid</td><td>The name of the router. </td></tr>
-    <tr><td class="paramname">password</td><td>The password Id for the device. </td></tr>
-    <tr><td class="paramname">timeout</td><td>Timeout time. </td></tr>
-    <tr><td class="paramname">success</td><td>When active successfully, this param will be called with DeviceModel. </td></tr>
-    <tr><td class="paramname">failure</td><td>This block will be called if some error occurred. </td></tr>
+    <tr><td class="paramname">password</td><td>The password for the device. </td></tr>
+    <tr><td class="paramname">timeout</td><td>The timeout value. </td></tr>
+    <tr><td class="paramname">success</td><td>When the activation is successful, this block is called with DeviceModel. </td></tr>
+    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
   </table>
   </dd>
 </dl>

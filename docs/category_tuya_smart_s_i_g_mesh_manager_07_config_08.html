@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('category_tuya_smart_s_i_g_mesh_manager
 </div><!--header-->
 <div class="contents">
 
-<p>SIG mesh activator Category for (SIG) bluetooth mesh manager.  
+<p>SIG mesh activator Category for (SIG) bluetooth mesh manager.=====The Bluetooth mesh activator category for the Bluetooth mesh manager.  
  <a href="category_tuya_smart_s_i_g_mesh_manager_07_config_08.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -119,8 +119,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a405363a4d2e4e602921bb950c3708b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>SIG mesh activator Category for (SIG) bluetooth mesh manager. </p>
-<p>Mainly contains device node control, reset and other functions. The core channels are also included and can send generic mesh messages. </p>
+<div class="textblock"><p>SIG mesh activator Category for (SIG) bluetooth mesh manager.=====The Bluetooth mesh activator category for the Bluetooth mesh manager. </p>
+<p>Mainly contains device node control, reset and other functions. The core channels are also included and can send generic mesh messages.======This API provides multiple functions such as device node control and resetting. The core channels are also used to send generic mesh messages. </p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="acd072b04a67a5edd9333d1fc9298fbd7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd072b04a67a5edd9333d1fc9298fbd7">&#9670;&nbsp;</a></span>getDeviceStatusWithDeviceModel:</h2>
@@ -137,7 +137,7 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets the status of a device. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns the status of a device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deviceModel</td><td>The device model. </td></tr>
   </table>
@@ -203,14 +203,14 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Single device sends messages. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Single device sends messages.=====Sends DPs to a single device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
-    <tr><td class="paramname">schemaArray</td><td>Dps information. </td></tr>
-    <tr><td class="paramname">dps</td><td>Dps. </td></tr>
-    <tr><td class="paramname">pcc</td><td>Product size class identification. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Do you need a message reply? </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">schemaArray</td><td>Dps information.=======The array of DP information. </td></tr>
+    <tr><td class="paramname">dps</td><td>The DPs. </td></tr>
+    <tr><td class="paramname">pcc</td><td>Product size class identification.======The size class label of the product. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Do you need a message reply?=====Specifies whether a response is required. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -245,10 +245,10 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Query device DPS. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Queries the device DPs. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deviceModel</td><td>The device model. </td></tr>
-    <tr><td class="paramname">dpIds</td><td>DP ID group to query. </td></tr>
+    <tr><td class="paramname">dpIds</td><td>The group of DP IDs to be queries. </td></tr>
   </table>
   </dd>
 </dl>
@@ -300,12 +300,12 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Custom channel, through the vendor instructions. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Custom channel, through the vendor instructions.======The custom channel that is enabled with the vendor instructions. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
-    <tr><td class="paramname">opCode</td><td>opCode. </td></tr>
-    <tr><td class="paramname">payload</td><td>Metadata. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">opCode</td><td>opCode.====The operation code. </td></tr>
+    <tr><td class="paramname">payload</td><td>Metadata.=====The metadata. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -358,12 +358,12 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Brightness command. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Controls the brightness. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
-    <tr><td class="paramname">brightValue</td><td>Brightness value : 0 &ndash; 65535. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Whether a reply is needed, it is suggested that the group should use no and single device control yes. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">brightValue</td><td>The brightness value. Valid values: <code>0</code> to <code>65535</code>. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that the value is set to <code>no</code> in the case of group control and set to <code>yes</code> in the case of single-device control. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -416,12 +416,12 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Heating and cooling control. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Controls the heating and cooling functions. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
-    <tr><td class="paramname">tempValue</td><td>Warm and cold value : 300 - 20000. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Whether a reply is needed, it is suggested that the group should use no and single device control yes. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">tempValue</td><td>Specifies the warm and cool temperatures. Valid values: 300 to 20000. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that the value is set to <code>no</code> in the case of group control and set to <code>yes</code> in the case of single-device control. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -486,14 +486,14 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>HLS color control. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Controls the hue, lightness, and saturation (HLS) color model. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
-    <tr><td class="paramname">aHue</td><td>Hue value : 0 - 65535. </td></tr>
-    <tr><td class="paramname">aSaturation</td><td>Saturation : 0 - 65535. </td></tr>
-    <tr><td class="paramname">aLightness</td><td>brightness : l or v，0 - 65535. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Whether a reply is needed, it is suggested that the group should use no and single device control yes. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">aHue</td><td>The Hue. Valid values: <code>0</code> to <code>65535</code>. </td></tr>
+    <tr><td class="paramname">aSaturation</td><td>The saturation. Valid values: <code>0</code> to <code>65535</code>. </td></tr>
+    <tr><td class="paramname">aLightness</td><td>The brightness. Valid values: <code>l</code> and <code>v</code>, <code>0</code> to <code>65535</code>. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that the value is set to <code>no</code> in the case of group control and set to <code>yes</code> in the case of single-device control. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -546,12 +546,12 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Setup mode. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The setup mode. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
-    <tr><td class="paramname">alightModel</td><td>0: white light mode. 1: Color light mode. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Whether a reply is needed, it is suggested that the group should use no and single device control yes. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">alightModel</td><td><code>0</code>: the white light mode. <code>1</code>: the colored light mode. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that the value is set to <code>no</code> in the case of group control and set to <code>yes</code> in the case of single-device control. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -592,10 +592,10 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Reset node. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Resets the node. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">deviceModel</td><td><a class="el" href="interface_tuya_smart_device_model.html" title="The device information.">TuyaSmartDeviceModel</a>. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td><a class="el" href="interface_tuya_smart_device_model.html" title="The device information.">TuyaSmartDeviceModel</a>.======The value of <a class="el" href="interface_tuya_smart_device_model.html" title="The device information.">TuyaSmartDeviceModel</a>. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -648,12 +648,12 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Switch command. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Controls the switch. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
-    <tr><td class="paramname">state</td><td>Switch status. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Whether a reply is needed, it is suggested that the group should use no and single device control yes. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">state</td><td>The switch status. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Whether a reply is needed, it is suggested that the group should use no and single device control yes=====Specifies whether a response is required. We recommend that the value is set to <code>no</code> in the case of group control and set to <code>yes</code> in the case of single-device control. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -712,13 +712,13 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>General vendor protocol. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The general vendor protocol.=====The generic vendor protocol. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
-    <tr><td class="paramname">vendorData</td><td>Data content. </td></tr>
-    <tr><td class="paramname">isisQuery</td><td>Is it a query instruction. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Whether a reply is needed, it is suggested that the group should use no and single device control yes. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">vendorData</td><td>The data content. </td></tr>
+    <tr><td class="paramname">isisQuery</td><td>Is it a query instruction.======Specifies whether a query instruction is sent. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that the value is set to <code>no</code> in the case of group control and set to <code>yes</code> in the case of single-device control. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>

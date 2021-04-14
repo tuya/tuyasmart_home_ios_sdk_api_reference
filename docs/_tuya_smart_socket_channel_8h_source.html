@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('_tuya_smart_socket_channel_8h_source.h
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;TuyaSmartSocketWriteModel.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#import &lt;TuyaSmartBaseKit/TuyaSmartBaseKit.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// 协议</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// The protocol.</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define SOCKET_TYPE_BROADCAST             0x00</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define SOCKET_TYPE_BROADCAST_V4          0x13</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define SOCKET_TYPE_BROADCAST_V34         0x23</span></div>
@@ -136,22 +136,22 @@ $(document).ready(function(){initNavTree('_tuya_smart_socket_channel_8h_source.h
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#pragma mark - TCP Delegate</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// TCP Connection Successful</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// The TCP connection is successful.</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;- (void)socketDidTcpConnected:(<a class="code" href="interface_tuya_smart_socket_channel.html">TuyaSmartSocketChannel</a> *)socket devId:(NSString *)devId;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// Receive TCP message</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// Receives a TCP message.</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;- (void)socket:(<a class="code" href="interface_tuya_smart_socket_channel.html">TuyaSmartSocketChannel</a> *)socket didReceiveTcpData:(<a class="code" href="interface_tuya_smart_socket_read_model.html">TuyaSmartSocketReadModel</a> *)tcpData tag:(<span class="keywordtype">long</span>)tag devId:(NSString *)devId;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// TCP disconnection</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// Closes the TCP connection.</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;- (void)socketDidTcpDisconnect:(<a class="code" href="interface_tuya_smart_socket_channel.html">TuyaSmartSocketChannel</a> *)socket devId:(NSString *)devId error:(NSError *)error;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#pragma mark - UDP Delegate</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// Receive UDP message</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">// Receives a UDP message.</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;- (void)socket:(<a class="code" href="interface_tuya_smart_socket_channel.html">TuyaSmartSocketChannel</a> *)socket didReceiveUdpData:(<a class="code" href="interface_tuya_smart_socket_read_model.html">TuyaSmartSocketReadModel</a> *)udpData;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">// Close UDP connection</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">// Closes a UDP connection.</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;- (void)socketDidUdpClose:(<a class="code" href="interface_tuya_smart_socket_channel.html">TuyaSmartSocketChannel</a> *)socket error:(NSError *)error;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">@end</span></div>
@@ -164,15 +164,15 @@ $(document).ready(function(){initNavTree('_tuya_smart_socket_channel_8h_source.h
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#pragma mark - TCP</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// connect TCP</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// Establishes a TCP connection.</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;- (void)initTcpClientWithHost:(NSString *)host devInfo:(NSDictionary *)devInfo;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">// send TCP message</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">// Sends a TCP message.</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;- (void)sendTcpRequest:(<a class="code" href="interface_tuya_smart_socket_write_model.html">TuyaSmartSocketWriteModel</a> *)request</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;               success:(TYSuccessDict)success</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;               failure:(TYFailureHandler)failure __deprecated_msg(&quot;This method is deprecated, Use sendTcpWithRequest:success:failure: instead&quot;);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">// send TCP message</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">// Sends a TCP message.</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;- (void)sendTcpWithRequest:(<a class="code" href="interface_tuya_smart_socket_write_model.html">TuyaSmartSocketWriteModel</a> *)request</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                   success:(TYSuccessDict)success</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                   failure:(TYFailureError)failure;</div>
@@ -181,32 +181,32 @@ $(document).ready(function(){initNavTree('_tuya_smart_socket_channel_8h_source.h
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;- (void)<a class="code" href="interface_tuya_smart_socket_channel.html#a05b9fe3dca6cabc69fffefc59d3ea229">removeAllInactiveDevice</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// whether the TCP connection</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// Indicates whether the TCP connection is established.</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;- (BOOL)hasTcpClientWithDevId:(NSString *)devId;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">// close TCP connect</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">// Closes a TCP connection.</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;- (void)closeTcpClientWithDevId:(NSString *)devId;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">// close all TCP connect</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">// Closes all TCP connections.</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;- (void)<a class="code" href="interface_tuya_smart_socket_channel.html#a23a89faad2f56527ae82c4f674cf7459">closeAllTcpClient</a>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#pragma mark - UDP</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">// init UDP serve</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">// Initializes a UDP server.</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;- (void)initUdpServerWithPort:(NSInteger)port;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">// send UDP message</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">// Sends a UDP message.</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;- (void)sendUdpRequestWithHost:(NSString *)host port:(NSInteger)port type:(<span class="keywordtype">int</span>)type body:(NSDictionary *)body success:(TYSuccessHandler)success failure:(TYFailureHandler)failure;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">// close UDP serve</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">// Closes a UDP server.</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;- (void)closeUdpServerWithPort:(uint16_t)port;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#pragma mark - Delegate</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">// add socket channel delegate</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">// Adds a socket channel delegate.</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;- (void)addDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_socket_channel_delegate-p.html">TuyaSmartSocketChannelDelegate</a>&gt;)delegate;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">// remove socket channel delegate</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">// Removes a socket channel delegate.</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;- (void)removeDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_tuya_smart_socket_channel_delegate-p.html">TuyaSmartSocketChannelDelegate</a>&gt;)delegate;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">@end</span></div>

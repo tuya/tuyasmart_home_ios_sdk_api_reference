@@ -115,7 +115,7 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a7e887ab5725034a2a4d96dcc01a15e76"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_beacon_manager.html#a7e887ab5725034a2a4d96dcc01a15e76">deviceStatueWithUUID:</a></td></tr>
 <tr class="separator:a7e887ab5725034a2a4d96dcc01a15e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9525a06204bc69cbb5a5fbdadd8ad25"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_beacon_manager.html#af9525a06204bc69cbb5a5fbdadd8ad25">stopActive</a></td></tr>
-<tr class="memdesc:af9525a06204bc69cbb5a5fbdadd8ad25"><td class="mdescLeft">&#160;</td><td class="mdescRight">The end of the distribution network.  <a href="interface_tuya_smart_beacon_manager.html#af9525a06204bc69cbb5a5fbdadd8ad25">More...</a><br /></td></tr>
+<tr class="memdesc:af9525a06204bc69cbb5a5fbdadd8ad25"><td class="mdescLeft">&#160;</td><td class="mdescRight">The end of the pairing process.  <a href="interface_tuya_smart_beacon_manager.html#af9525a06204bc69cbb5a5fbdadd8ad25">More...</a><br /></td></tr>
 <tr class="separator:af9525a06204bc69cbb5a5fbdadd8ad25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86705bad60cb3d72c22e101e0e25b0c5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_beacon_manager.html#a86705bad60cb3d72c22e101e0e25b0c5">addDeviceToGroupWithDevId:groupId:success:failure:</a></td></tr>
 <tr class="separator:a86705bad60cb3d72c22e101e0e25b0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +139,7 @@ Instance Methods</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
 <tr class="memitem:a5baa1b5587c4f9b95bab7a2e5e387ead"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_tuya_smart_beacon_manager.html#a5baa1b5587c4f9b95bab7a2e5e387ead">sharedInstance</a></td></tr>
-<tr class="memdesc:a5baa1b5587c4f9b95bab7a2e5e387ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single instance.  <a href="interface_tuya_smart_beacon_manager.html#a5baa1b5587c4f9b95bab7a2e5e387ead">More...</a><br /></td></tr>
+<tr class="memdesc:a5baa1b5587c4f9b95bab7a2e5e387ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">The single instance.  <a href="interface_tuya_smart_beacon_manager.html#a5baa1b5587c4f9b95bab7a2e5e387ead">More...</a><br /></td></tr>
 <tr class="separator:a5baa1b5587c4f9b95bab7a2e5e387ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfb5e6bdb162552ba47b8260cbf6e9e9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_tuya_smart_beacon_manager.html#adfb5e6bdb162552ba47b8260cbf6e9e9">createBeaconGroupWithGroupName:productId:pcc:success:failure:</a></td></tr>
 <tr class="separator:adfb5e6bdb162552ba47b8260cbf6e9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,12 +191,12 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Activator beacon device. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Activates the beacon device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">advModel</td><td>The advertisingData model for the beacon device. </td></tr>
-    <tr><td class="paramname">homeId</td><td>The Id for the current home. </td></tr>
-    <tr><td class="paramname">success</td><td>When activator successfully, this block will be called with DeviceModel. </td></tr>
-    <tr><td class="paramname">failure</td><td>This block will be called if some error occurred. </td></tr>
+    <tr><td class="paramname">homeId</td><td>The ID for the current home. </td></tr>
+    <tr><td class="paramname">success</td><td>When the activation is successful, this block is called with DeviceModel. </td></tr>
+    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
   </table>
   </dd>
 </dl>
@@ -240,11 +240,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add device to group. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds a device to the group. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called device groups data when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>The device groups data is returned when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -291,11 +291,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add device to cloud </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds a device to the cloud. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
     <tr><td class="paramname">deviceId</td><td>The device ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -320,9 +320,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check and set all Offline device online status </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Checks and sets the online status of all beacon devices. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">deviceModelList</td><td>The device model list . </td></tr>
+    <tr><td class="paramname">deviceModelList</td><td>The device model list. </td></tr>
   </table>
   </dd>
 </dl>
@@ -344,7 +344,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check and set device online status </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Checks and sets the online status of a device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deviceModel</td><td>The device model. </td></tr>
   </table>
@@ -368,9 +368,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>connect device,and set device online status </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Connects to the device and sets the online status of the device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">deviceId</td><td>The device Id for the device. </td></tr>
+    <tr><td class="paramname">deviceId</td><td>The device ID. </td></tr>
   </table>
   </dd>
 </dl>
@@ -420,12 +420,12 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a group in the cloud </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Creates a group in the cloud. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">groupName</td><td>grou name </td></tr>
-    <tr><td class="paramname">productId</td><td>device productId </td></tr>
-    <tr><td class="paramname">beaconCategory</td><td>device category </td></tr>
-    <tr><td class="paramname">success</td><td>Called groupId when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">groupName</td><td>The group name. </td></tr>
+    <tr><td class="paramname">productId</td><td>The product ID of the device. </td></tr>
+    <tr><td class="paramname">beaconCategory</td><td>The device category. </td></tr>
+    <tr><td class="paramname">success</td><td>The value of groupId is returned when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -472,11 +472,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Delete device from group. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Deletes a device from the group. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called device groups data when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>The device groups data is returned when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -501,9 +501,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Beacon device online state </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The online status of the beacon device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>beacon device uuid </td></tr>
+    <tr><td class="paramname">uuid</td><td>The UUID of the beacon device. </td></tr>
   </table>
   </dd>
 </dl>
@@ -547,12 +547,12 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Publish the transmitted data. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Publishes the transmitted data. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">deviceId</td><td>The device Id for the device. </td></tr>
-    <tr><td class="paramname">dps</td><td>The dp dictionary. </td></tr>
-    <tr><td class="paramname">success</td><td>When publish dps successfully, this block will be called. </td></tr>
-    <tr><td class="paramname">failure</td><td>This block will be called if some error occurred. </td></tr>
+    <tr><td class="paramname">deviceId</td><td>The device ID for the device. </td></tr>
+    <tr><td class="paramname">dps</td><td>The DP dictionary. </td></tr>
+    <tr><td class="paramname">success</td><td>After the DPs are sent, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
   </table>
   </dd>
 </dl>
@@ -602,12 +602,12 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Group dp command publish. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sends a DP to the group. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dps</td><td>Dp command </td></tr>
+    <tr><td class="paramname">dps</td><td>The DP command. </td></tr>
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -648,10 +648,10 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Query device groups </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Queries device groups. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called device groups data when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>The device groups data is returned when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -692,10 +692,10 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>remove device from cloud </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Removes the device from the cloud. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -736,10 +736,10 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove group of specific address </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Removes the group with a specific address. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -786,11 +786,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The specified device is deleted from the group </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The specified device is deleted from the group. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
     <tr><td class="paramname">deviceId</td><td>The device ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -831,11 +831,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Reset the device and put the device into the network configuration state </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Resets the device and enables the pairing status for the device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">devId</td><td>The device Id for the device. </td></tr>
-    <tr><td class="paramname">success</td><td>When rest successfully, this block will be called. </td></tr>
-    <tr><td class="paramname">failure</td><td>This block will be called if some error occurred. </td></tr>
+    <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
+    <tr><td class="paramname">success</td><td>After the device is reset, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
   </table>
   </dd>
 </dl>
@@ -857,7 +857,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Single instance. </p>
+<p>The single instance. </p>
 
 </div>
 </div>
@@ -895,7 +895,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The end of the distribution network. </p>
+<p>The end of the pairing process. </p>
 
 </div>
 </div>

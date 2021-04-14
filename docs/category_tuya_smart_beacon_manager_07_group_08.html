@@ -153,11 +153,11 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add device to group. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds a device to the group. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called device groups data when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>The device groups data is returned when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -204,11 +204,11 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add device to cloud </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds a device to the cloud. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
     <tr><td class="paramname">deviceId</td><td>The device ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -261,12 +261,12 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a group in the cloud </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Creates a group in the cloud. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">groupName</td><td>grou name </td></tr>
-    <tr><td class="paramname">productId</td><td>device productId </td></tr>
-    <tr><td class="paramname">beaconCategory</td><td>device category </td></tr>
-    <tr><td class="paramname">success</td><td>Called groupId when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">groupName</td><td>The group name. </td></tr>
+    <tr><td class="paramname">productId</td><td>The product ID of the device. </td></tr>
+    <tr><td class="paramname">beaconCategory</td><td>The device category. </td></tr>
+    <tr><td class="paramname">success</td><td>The value of groupId is returned when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -313,11 +313,11 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Delete device from group. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Deletes a device from the group. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called device groups data when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>The device groups data is returned when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -370,12 +370,12 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Group dp command publish. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sends a DP to the group. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dps</td><td>Dp command </td></tr>
+    <tr><td class="paramname">dps</td><td>The DP command. </td></tr>
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -416,10 +416,10 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Query device groups </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Queries device groups. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called device groups data when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>The device groups data is returned when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -460,10 +460,10 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>remove device from cloud </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Removes the device from the cloud. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -504,10 +504,10 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove group of specific address </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Removes the group with a specific address. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -554,11 +554,11 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The specified device is deleted from the group </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The specified device is deleted from the group. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
     <tr><td class="paramname">deviceId</td><td>The device ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>

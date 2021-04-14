@@ -151,10 +151,10 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>添加代理</p>
+<p>Adds a delegate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">delegate</td><td>代理 </td></tr>
+    <tr><td class="paramname">delegate</td><td>The delegate. </td></tr>
   </table>
   </dd>
 </dl>
@@ -198,13 +198,13 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>链接发现的BLE设备</p>
+<p>Connects to a discovered Bluetooth device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">peripheral</td><td>待链接的BLE设备 </td></tr>
-    <tr><td class="paramname">aCharacteristic</td><td>特征UUID </td></tr>
-    <tr><td class="paramname">aService</td><td>服务UUID </td></tr>
-    <tr><td class="paramname">aCallback</td><td>回调 </td></tr>
+    <tr><td class="paramname">peripheral</td><td>The Bluetooth device to be connected. </td></tr>
+    <tr><td class="paramname">aCharacteristic</td><td>The characteristic UUID. </td></tr>
+    <tr><td class="paramname">aService</td><td>The service UUID. </td></tr>
+    <tr><td class="paramname">aCallback</td><td>The callback. </td></tr>
   </table>
   </dd>
 </dl>
@@ -254,14 +254,14 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>链接发现的BLE设备</p>
+<p>Connects to a discovered Bluetooth device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">peripheral</td><td>待链接的BLE设备 </td></tr>
-    <tr><td class="paramname">aCharacteristic</td><td>特征UUID </td></tr>
-    <tr><td class="paramname">aService</td><td>服务UUID </td></tr>
-    <tr><td class="paramname">timeout</td><td>超时 </td></tr>
-    <tr><td class="paramname">aCallback</td><td>回调 </td></tr>
+    <tr><td class="paramname">peripheral</td><td>The Bluetooth device to be connected. </td></tr>
+    <tr><td class="paramname">aCharacteristic</td><td>The characteristic UUID. </td></tr>
+    <tr><td class="paramname">aService</td><td>The service UUID. </td></tr>
+    <tr><td class="paramname">timeout</td><td>The connection timed out. </td></tr>
+    <tr><td class="paramname">aCallback</td><td>The callback. </td></tr>
   </table>
   </dd>
 </dl>
@@ -283,10 +283,10 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>断开连接的BLE设备</p>
+<p>Disconnects from a Bluetooth device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">peripheral</td><td>连接的BLE设备 </td></tr>
+    <tr><td class="paramname">peripheral</td><td>The connected Bluetooth device. </td></tr>
   </table>
   </dd>
 </dl>
@@ -324,11 +324,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>断开链连接的BLE设备</p>
+<p>Disconnects from a Bluetooth device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">peripheral</td><td>链接的BLE设备 </td></tr>
-    <tr><td class="paramname">aCallback</td><td>回调 </td></tr>
+    <tr><td class="paramname">peripheral</td><td>The connected Bluetooth device. </td></tr>
+    <tr><td class="paramname">aCallback</td><td>The callback. </td></tr>
   </table>
   </dd>
 </dl>
@@ -360,11 +360,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>断开连接的BLE设备</p>
+<p>Disconnects from a Bluetooth device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">peripheral</td><td>连接的BLE设备 </td></tr>
-    <tr><td class="paramname">timeout</td><td>断开超时 </td></tr>
+    <tr><td class="paramname">peripheral</td><td>The connected Bluetooth device. </td></tr>
+    <tr><td class="paramname">timeout</td><td>The disconnection timed out. </td></tr>
   </table>
   </dd>
 </dl>
@@ -408,13 +408,13 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>发现周围的BLE设备</p>
+<p>Discovers Bluetooth devices.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">services</td><td>服务UUIDs </td></tr>
-    <tr><td class="paramname">options</td><td>扫描参数 </td></tr>
-    <tr><td class="paramname">scanFilter</td><td>扫描过滤条件 </td></tr>
-    <tr><td class="paramname">aCallback</td><td>扫描符合条件的设备回调 </td></tr>
+    <tr><td class="paramname">services</td><td>The UUIDs of services. </td></tr>
+    <tr><td class="paramname">options</td><td>The discovery parameters. </td></tr>
+    <tr><td class="paramname">scanFilter</td><td>The filtering criteria for discovery. </td></tr>
+    <tr><td class="paramname">aCallback</td><td>The callback of discovered devices that meet the filtering criteria. </td></tr>
   </table>
   </dd>
 </dl>
@@ -446,11 +446,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>发现周围的BLE设备</p>
+<p>Discovers Bluetooth devices.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scanFilter</td><td>扫描过滤条件 </td></tr>
-    <tr><td class="paramname">aCallback</td><td>扫描符合条件的设备回调 </td></tr>
+    <tr><td class="paramname">scanFilter</td><td>The filtering criteria for discovery. </td></tr>
+    <tr><td class="paramname">aCallback</td><td>The callback of discovered devices that meet the filtering criteria. </td></tr>
   </table>
   </dd>
 </dl>
@@ -500,14 +500,14 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>接受BLE设备Push来的数据</p>
+<p>&#x2408;Receives data that is pushed by the Bluetooth device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">b</td><td>传输数据的开关 </td></tr>
-    <tr><td class="paramname">aPeripheral</td><td>链接的BLE设备 </td></tr>
-    <tr><td class="paramname">aCharacteristic</td><td>目标设备特征UUID </td></tr>
-    <tr><td class="paramname">aService</td><td>服务UUID </td></tr>
-    <tr><td class="paramname">aCallback</td><td>回调 </td></tr>
+    <tr><td class="paramname">b</td><td>The switch that enables or disables data transfers. </td></tr>
+    <tr><td class="paramname">aPeripheral</td><td>The connected Bluetooth device. </td></tr>
+    <tr><td class="paramname">aCharacteristic</td><td>The characteristic UUID. </td></tr>
+    <tr><td class="paramname">aService</td><td>The service UUID. </td></tr>
+    <tr><td class="paramname">aCallback</td><td>The callback. </td></tr>
   </table>
   </dd>
 </dl>
@@ -551,13 +551,13 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>从BLE设备读数据</p>
+<p>Read from a Bluetooth device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aPeripheral</td><td>待读入的BLE设备 </td></tr>
-    <tr><td class="paramname">aCharacteristic</td><td>目标设备特征UUID </td></tr>
-    <tr><td class="paramname">aService</td><td>服务UUID </td></tr>
-    <tr><td class="paramname">aCallback</td><td>回调 </td></tr>
+    <tr><td class="paramname">aPeripheral</td><td>The Bluetooth device from which data is read. </td></tr>
+    <tr><td class="paramname">aCharacteristic</td><td>The characteristic UUID. </td></tr>
+    <tr><td class="paramname">aService</td><td>The service UUID. </td></tr>
+    <tr><td class="paramname">aCallback</td><td>The callback. </td></tr>
   </table>
   </dd>
 </dl>
@@ -579,10 +579,10 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>移除代理</p>
+<p>Removes a delegate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">delegate</td><td>代理 </td></tr>
+    <tr><td class="paramname">delegate</td><td>The delegate. </td></tr>
   </table>
   </dd>
 </dl>
@@ -603,7 +603,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>停止扫描 </p>
+<p>Stops discovery. </p>
 
 </div>
 </div>
@@ -650,14 +650,14 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>向BLE设备写数据</p>
+<p>Writes to a Bluetooth device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aData</td><td>待写入的二进制数据 </td></tr>
-    <tr><td class="paramname">aPeripheral</td><td>目标BLE设备 </td></tr>
-    <tr><td class="paramname">aCharacteristic</td><td>设备特征UUID </td></tr>
-    <tr><td class="paramname">aService</td><td>服务UUID </td></tr>
-    <tr><td class="paramname">aCallback</td><td>回调 </td></tr>
+    <tr><td class="paramname">aData</td><td>The binary data to be written. </td></tr>
+    <tr><td class="paramname">aPeripheral</td><td>The Bluetooth device to which data is written. </td></tr>
+    <tr><td class="paramname">aCharacteristic</td><td>The characteristic UUID. </td></tr>
+    <tr><td class="paramname">aService</td><td>The service UUID. </td></tr>
+    <tr><td class="paramname">aCallback</td><td>The callback. </td></tr>
   </table>
   </dd>
 </dl>
@@ -684,7 +684,7 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>蓝牙是否打开 </p>
+<p>Specifies whether to enable Bluetooth. </p>
 
 </div>
 </div>

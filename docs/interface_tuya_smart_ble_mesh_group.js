@@ -9,7 +9,7 @@ var interface_tuya_smart_ble_mesh_group =
     [ "getBleMeshGroupAddressFromCluondWithMeshId:success:failure:", "interface_tuya_smart_ble_mesh_group.html#a0433320d6055e6545411c2687536a472", null ],
     [ "getBleMeshGroupCount", "interface_tuya_smart_ble_mesh_group.html#a2aa36589f8bd7b1ccf1381af95bb70e4", null ],
     [ "getDeviceListInfoWithSuccess:failure:", "interface_tuya_smart_ble_mesh_group.html#adf1abb85939c4e53b64e7b18c82576ce", null ],
-    [ "getDeviveListInfoWithSuccess:failure:", "interface_tuya_smart_ble_mesh_group.html#a9c103c4fec0f0b2ecac0b83a0d44a5e8", null ],
+    [ "getDeviveListInfoWithSuccess:failure:", "interface_tuya_smart_ble_mesh_group.html#a54a4adec9b77cb0a450f810a3c76a91a", null ],
     [ "initWithGroupId:", "interface_tuya_smart_ble_mesh_group.html#a5ab4627f8756d2f35c9d8dd9120c7c92", null ],
     [ "meshGroupWithGroupId:", "interface_tuya_smart_ble_mesh_group.html#ac189131228979145faf7afb34f187694", null ],
     [ "NS_UNAVAILABLE", "interface_tuya_smart_ble_mesh_group.html#acefd47ed48fc948e5cbe66edd4e217ff", null ],

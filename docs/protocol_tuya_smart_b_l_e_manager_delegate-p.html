@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('protocol_tuya_smart_b_l_e_manager_dele
 </div><!--header-->
 <div class="contents">
 
-<p>Delegate for scanning and Bluetooth status change notification.  
+<p>The delegate for scanning and notifications of Bluetooth status changes.  
  <a href="protocol_tuya_smart_b_l_e_manager_delegate-p.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for &lt;TuyaSmartBLEManagerDelegate&gt;:</div>
@@ -105,8 +105,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:aee12197654e422be82eaeb378a42d9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad2b63b995d26f3df05dc9b36f830200"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_b_l_e_manager_delegate-p.html#aad2b63b995d26f3df05dc9b36f830200">onCentralDidDisconnectFromDevice:error:</a></td></tr>
 <tr class="separator:aad2b63b995d26f3df05dc9b36f830200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bc5fa7763425ff445a4a20835e961bc"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_b_l_e_manager_delegate-p.html#a2bc5fa7763425ff445a4a20835e961bc">didDiscoveryDeviceWithUUID:productKey:</a></td></tr>
-<tr class="separator:a2bc5fa7763425ff445a4a20835e961bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952a15811fa064b5591c524ef63776f9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_b_l_e_manager_delegate-p.html#a952a15811fa064b5591c524ef63776f9">didDiscoveryDeviceWithUUID:productKey:</a></td></tr>
+<tr class="separator:a952a15811fa064b5591c524ef63776f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a6d01f8f3303ddfced5a1bb58e8896"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_b_l_e_manager_delegate-p.html#ab3a6d01f8f3303ddfced5a1bb58e8896">didDiscoveryDeviceWithDeviceInfo:</a></td></tr>
 <tr class="separator:ab3a6d01f8f3303ddfced5a1bb58e8896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bf9e1fa43e79c9ad5f875e9388ed9ac"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_b_l_e_manager_delegate-p.html#a1bf9e1fa43e79c9ad5f875e9388ed9ac">bleManager:didFinishActivateDevice:error:</a></td></tr>
@@ -115,7 +115,7 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a6eca7a314afa746b8b018118e59c60d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Delegate for scanning and Bluetooth status change notification. </p>
+<div class="textblock"><p>The delegate for scanning and notifications of Bluetooth status changes. </p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="a1bf9e1fa43e79c9ad5f875e9388ed9ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1bf9e1fa43e79c9ad5f875e9388ed9ac">&#9670;&nbsp;</a></span>bleManager:didFinishActivateDevice:error:</h2>
@@ -156,12 +156,12 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The result of the activator BLE devices.</p>
+<p>The result of activating Bluetooth LE devices.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">manager</td><td>The class itself. </td></tr>
-    <tr><td class="paramname">deviceModel</td><td>When activator successfully, this param will be called with DeviceModel. </td></tr>
-    <tr><td class="paramname">error</td><td>This error will be called if some error occurred. </td></tr>
+    <tr><td class="paramname">manager</td><td>The class. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>When the activation is successful, this block is called with DeviceModel. </td></tr>
+    <tr><td class="paramname">error</td><td>If an error occurs, this block is called. </td></tr>
   </table>
   </dd>
 </dl>
@@ -201,11 +201,11 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Receive the transmission data from the device.</p>
+<p>Receives the transmission data from the device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>Transmission data receiving from the device. </td></tr>
-    <tr><td class="paramname">devId</td><td>The device Id for the device. </td></tr>
+    <tr><td class="paramname">data</td><td>Transmission data that is sent by the device. </td></tr>
+    <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
   </table>
   </dd>
 </dl>
@@ -235,10 +235,10 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The notification for bluetooth status changing.</p>
+<p>The notification for Bluetooth status changes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">isPoweredOn</td><td>Bluetooth status, on or off </td></tr>
+    <tr><td class="paramname">isPoweredOn</td><td>Indicates the Bluetooth status. Valid values: <code>on</code> and <code>off</code>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -268,7 +268,7 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Results of the scanning inactive devices.</p>
+<p>The result of scanning inactive devices.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deviceInfo</td><td>The advertisingData model for the inactive device. </td></tr>
@@ -278,8 +278,8 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
-<a id="a2bc5fa7763425ff445a4a20835e961bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bc5fa7763425ff445a4a20835e961bc">&#9670;&nbsp;</a></span>didDiscoveryDeviceWithUUID:productKey:</h2>
+<a id="a952a15811fa064b5591c524ef63776f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a952a15811fa064b5591c524ef63776f9">&#9670;&nbsp;</a></span>didDiscoveryDeviceWithUUID:productKey:</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,13 +296,7 @@ Instance Methods</h2></td></tr>
         <tr>
           <td class="paramkey">productKey:</td>
           <td></td>
-          <td class="paramtype">(&quot;This method is)&#160;</td>
-          <td class="paramname"><em>deprecated</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">(Use TuyaSmartBLEManager::didDiscoveryDeviceWithDeviceInfo:instead&quot;)&#160;</td>
+          <td class="paramtype">(&quot;This method is deprecated. Use TuyaSmartBLEManager::didDiscoveryDeviceWithDeviceInfo: instead&quot;)&#160;</td>
           <td class="paramname"><em>__deprecated_msg</em>&#160;</td>
         </tr>
         <tr>
@@ -317,15 +311,15 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Results of the scanning inactive devices.</p>
+<p>The result of scanning inactive devices.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>The UUID for the device. </td></tr>
-    <tr><td class="paramname">productKey</td><td>The product Id for the device. </td></tr>
+    <tr><td class="paramname">uuid</td><td>The device UUID. </td></tr>
+    <tr><td class="paramname">productKey</td><td>The product ID for the device. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>This method is deprecated, Use TuyaSmartBLEManager::didDiscoveryDeviceWithDeviceInfo: instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>This method is deprecated. Use TuyaSmartBLEManager::didDiscoveryDeviceWithDeviceInfo: instead. </dd></dl>
 
 </div>
 </div>
@@ -362,11 +356,11 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Disconnecting result from device.</p>
+<p>The result of disconnecting the device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">devId</td><td>The device Id for the device. </td></tr>
-    <tr><td class="paramname">error</td><td>The error for the disconnect. </td></tr>
+    <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
+    <tr><td class="paramname">error</td><td>The error for the disconnection. </td></tr>
   </table>
   </dd>
 </dl>

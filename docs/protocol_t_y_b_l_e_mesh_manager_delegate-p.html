@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('protocol_t_y_b_l_e_mesh_manager_delega
 </div><!--header-->
 <div class="contents">
 
-<p>The bluetooth mesh for tuya when ble mesh manger do some action and received some messages.  
+<p>The bluetooth mesh for tuya when ble mesh manger do some action and received some messages.=====The Bluetooth LE mesh delegate that is instantiated when the Bluetooth LE mesh manager performs a specific action and receive messages.  
  <a href="protocol_t_y_b_l_e_mesh_manager_delegate-p.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for &lt;TYBLEMeshManagerDelegate&gt;:</div>
@@ -112,10 +112,10 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:aaa646a7e851903e38e5383a74df4e3a8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_y_b_l_e_mesh_manager_delegate-p.html#aaa646a7e851903e38e5383a74df4e3a8">bleMeshManager:didFailToActiveDevice:error:</a></td></tr>
 <tr class="separator:aaa646a7e851903e38e5383a74df4e3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae20f62cd5c11c60b937f948fb86f1824"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_y_b_l_e_mesh_manager_delegate-p.html#ae20f62cd5c11c60b937f948fb86f1824">didFinishToActiveDevList</a></td></tr>
-<tr class="memdesc:ae20f62cd5c11c60b937f948fb86f1824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate completion callback.  <a href="protocol_t_y_b_l_e_mesh_manager_delegate-p.html#ae20f62cd5c11c60b937f948fb86f1824">More...</a><br /></td></tr>
+<tr class="memdesc:ae20f62cd5c11c60b937f948fb86f1824"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback that is used when the activation is completed.  <a href="protocol_t_y_b_l_e_mesh_manager_delegate-p.html#ae20f62cd5c11c60b937f948fb86f1824">More...</a><br /></td></tr>
 <tr class="separator:ae20f62cd5c11c60b937f948fb86f1824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafc81dd9e1e0951cf5247609a7126a84"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_y_b_l_e_mesh_manager_delegate-p.html#aafc81dd9e1e0951cf5247609a7126a84">notifyCentralManagerDidDisconnectPeripheral</a></td></tr>
-<tr class="memdesc:aafc81dd9e1e0951cf5247609a7126a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect device callback.  <a href="protocol_t_y_b_l_e_mesh_manager_delegate-p.html#aafc81dd9e1e0951cf5247609a7126a84">More...</a><br /></td></tr>
+<tr class="memdesc:aafc81dd9e1e0951cf5247609a7126a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">The callback that is used when a device is disconnected..  <a href="protocol_t_y_b_l_e_mesh_manager_delegate-p.html#aafc81dd9e1e0951cf5247609a7126a84">More...</a><br /></td></tr>
 <tr class="separator:aafc81dd9e1e0951cf5247609a7126a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bf4bdfa28d32d315f242f16173c3221"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_y_b_l_e_mesh_manager_delegate-p.html#a9bf4bdfa28d32d315f242f16173c3221">notifyFirmwareWithVersion:</a></td></tr>
 <tr class="separator:a9bf4bdfa28d32d315f242f16173c3221"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,7 +132,7 @@ Instance Methods</h2></td></tr>
 <tr class="separator:ab77146aea431658e2c340b83b3a318a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The bluetooth mesh for tuya when ble mesh manger do some action and received some messages. </p>
+<div class="textblock"><p>The bluetooth mesh for tuya when ble mesh manger do some action and received some messages.=====The Bluetooth LE mesh delegate that is instantiated when the Bluetooth LE mesh manager performs a specific action and receive messages. </p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="a43d5146a33a2f6afa9895b90a2ab4ef7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a43d5146a33a2f6afa9895b90a2ab4ef7">&#9670;&nbsp;</a></span>activeDeviceSuccessWithName:deviceId:error:</h2>
@@ -173,11 +173,11 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Activate child device callback. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Activate child device callback.======The callback that is used to activate a sub-device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The device name. </td></tr>
     <tr><td class="paramname">deviceId</td><td>The device ID. </td></tr>
-    <tr><td class="paramname">error</td><td>Error in activation. If an error occurs, &lsquo; name 'and&rsquo; deviceid 'are empty. </td></tr>
+    <tr><td class="paramname">error</td><td>Error in activation. If an error occurs, &lsquo; name 'and&rsquo; deviceid 'are empty.======An error occurs while activating the sub-device. The values of &lsquo;name&rsquo; and 'deviceid' are empty in the response. </td></tr>
   </table>
   </dd>
 </dl>
@@ -229,12 +229,12 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Activate gateway device callback. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Activate gateway device callback.======The callback that is used to activate a gateway device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The device name. </td></tr>
     <tr><td class="paramname">address</td><td>The device address. </td></tr>
-    <tr><td class="paramname">mac</td><td>The gateway mac. </td></tr>
-    <tr><td class="paramname">error</td><td>Error. </td></tr>
+    <tr><td class="paramname">mac</td><td>The gateway MAC. </td></tr>
+    <tr><td class="paramname">error</td><td>The error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -286,12 +286,12 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Activate sub device successfully callback. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Activate sub device successfully callback.=====The callback that is used when a sub-device is activated. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">manager</td><td><a class="el" href="interface_t_y_b_l_e_mesh_manager.html" title="( Tuya ) Bluetooth mesh manager, contains common sig mesh management classes, such as creating groups...">TYBLEMeshManager</a>. </td></tr>
-    <tr><td class="paramname">device</td><td><a class="el" href="interface_t_y_ble_mesh_device_model.html" title="The ble mesh device model when bluetooth scan some peripheral.">TYBleMeshDeviceModel</a>. </td></tr>
+    <tr><td class="paramname">manager</td><td>The value of <a class="el" href="interface_t_y_b_l_e_mesh_manager.html" title="( Tuya ) Bluetooth mesh manager, contains common sig mesh management classes, such as creating groups...">TYBLEMeshManager</a>. </td></tr>
+    <tr><td class="paramname">device</td><td>The value of <a class="el" href="interface_t_y_ble_mesh_device_model.html" title="The ble mesh device model when bluetooth scan some peripheral.">TYBleMeshDeviceModel</a>. </td></tr>
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
-    <tr><td class="paramname">error</td><td>Error in activation. If an error occurs, &lsquo; name 'and&rsquo; deviceid 'are empty. </td></tr>
+    <tr><td class="paramname">error</td><td>Error in activation. If an error occurs, &lsquo; name 'and&rsquo; deviceid 'are empty.======An error occurs while activating the sub-device. The values of &lsquo;name&rsquo; and 'deviceid' are empty in the response. </td></tr>
   </table>
   </dd>
 </dl>
@@ -337,11 +337,11 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Activate device failure callback. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Activate device failure callback.======The callback that is used when a device failed to be activated. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">manager</td><td><a class="el" href="interface_t_y_b_l_e_mesh_manager.html" title="( Tuya ) Bluetooth mesh manager, contains common sig mesh management classes, such as creating groups...">TYBLEMeshManager</a>. </td></tr>
+    <tr><td class="paramname">manager</td><td>The value of <a class="el" href="interface_t_y_b_l_e_mesh_manager.html" title="( Tuya ) Bluetooth mesh manager, contains common sig mesh management classes, such as creating groups...">TYBLEMeshManager</a>. </td></tr>
     <tr><td class="paramname">device</td><td>The device. </td></tr>
-    <tr><td class="paramname">error</td><td>Error. </td></tr>
+    <tr><td class="paramname">error</td><td>The error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -414,9 +414,9 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Bluetooth status callback. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The callback of the Bluetooth status. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">status</td><td>Bluetooth status. </td></tr>
+    <tr><td class="paramname">status</td><td>The Bluetooth status. </td></tr>
   </table>
   </dd>
 </dl>
@@ -516,7 +516,7 @@ Instance Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Activate completion callback. </p>
+<p>The callback that is used when the activation is completed. </p>
 
 </div>
 </div>
@@ -543,7 +543,7 @@ Instance Methods</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Disconnect device callback. </p>
+<p>The callback that is used when a device is disconnected.. </p>
 
 </div>
 </div>
@@ -570,9 +570,9 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Version number callback. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The callback of the version number. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">version</td><td>Version. </td></tr>
+    <tr><td class="paramname">version</td><td>The version number. </td></tr>
   </table>
   </dd>
 </dl>

@@ -139,7 +139,7 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Adds mqtt channel delegate 添加mqtt长连接的代理</p>
+<p>Adds an MQTT channel delegate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">delegate</td><td>Delegate </td></tr>
@@ -232,7 +232,7 @@ Class Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The message identifier of the published message. Zero if qos 0. If qos 1 or 2, zero was publish faliure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The message identifier of the published message. A value of <code>zero</code> is returned at the QoS level 0. A value of <code>zero</code> indicates a publishing failure at the QoS level 1 or 2. </dd></dl>
 
 </div>
 </div>
@@ -301,10 +301,10 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>remove mqtt channel delegate 删除mqtt长连接的代理</p>
+<p>Removes an MQTT channel delegate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">delegate</td><td>Delegate </td></tr>
+    <tr><td class="paramname">delegate</td><td>The delegate. </td></tr>
   </table>
   </dd>
 </dl>
@@ -346,7 +346,7 @@ Class Methods</h2></td></tr>
 <p>Connects to the MQTT host.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mqttConfig</td><td>mqttConfig </td></tr>
+    <tr><td class="paramname">mqttConfig</td><td>The configuration of the MQTT connection. </td></tr>
   </table>
   </dd>
 </dl>
