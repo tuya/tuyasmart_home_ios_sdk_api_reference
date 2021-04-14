@@ -13,24 +13,24 @@
 
 @property (nonatomic, strong) NSString          *devId;
 
-@property (nonatomic, assign) NSTimeInterval    time; // time stamp
-@property (nonatomic, assign) NSInteger         protocol; // protocol
-@property (nonatomic, assign) double            pv; // version
-@property (nonatomic, strong) NSDictionary      *body; // body
-@property (nonatomic, strong) NSString          *localKey; // local key
-@property (nonatomic, assign) NSInteger         publishS;// sequence
-@property (nonatomic, assign) NSInteger         publishR;// publish Id
+@property (nonatomic, assign) NSTimeInterval    time; // The timestamp.
+@property (nonatomic, assign) NSInteger         protocol; // The protocol.
+@property (nonatomic, assign) double            pv; // The version.
+@property (nonatomic, strong) NSDictionary      *body; // The body.
+@property (nonatomic, strong) NSString          *localKey; // The local key.
+@property (nonatomic, assign) NSInteger         publishS;// The sequence.
+@property (nonatomic, assign) NSInteger         publishR;// The publishing ID.
 
 @end
 
 @interface TuyaSmartResponseMessageModel : NSObject
 
 @property (nonatomic, strong) NSString          *devId;
-@property (nonatomic, strong) id                message;  // mesh array
-@property (nonatomic, assign) NSInteger         protocol; // protocol
+@property (nonatomic, strong) id                message;  // The mesh array.
+@property (nonatomic, assign) NSInteger         protocol; // The protocol.
 @property (nonatomic, strong) NSString          *type;
-@property (nonatomic, assign) NSInteger         responseS;// sequence
-@property (nonatomic, assign) NSInteger         responseR;// response Id
+@property (nonatomic, assign) NSInteger         responseS;// The sequence.
+@property (nonatomic, assign) NSInteger         responseR;// The response ID.
 @property (nonatomic, assign) NSTimeInterval    time;
 
 @end
@@ -38,7 +38,7 @@
 @class TuyaSmartMQTTChannel;
 
 /**
- mqtt connect state
+ The MQTT connection state.
  */
 typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
     TuyaSmartMqttConnectStateCreated,
@@ -54,14 +54,12 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
 @optional
 
 /**
- *  mqtt connection channel state changes
- *  mqtt 连接的状态改变回调
+ *  The callback of changes in MQTT connection channel states.
  */
 - (void)mqttChannel:(TuyaSmartMQTTChannel *)mqttChannel connectState:(TuyaSmartMqttConnectState)connectState error:(NSError *)error;
 
 /**
- *  Receive mqtt data
- *  收到mqtt消息上报
+ *  Receives the MTQQ data.
  */
 - (void)mqttChannel:(TuyaSmartMQTTChannel *)mqttChannel didReceiveMessage:(TuyaSmartResponseMessageModel *)message topic:(NSString *)topic;
 
@@ -73,32 +71,28 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
 + (instancetype)sharedInstance;
 
 /**
- *  connect mqtt host
- *  建立 mqtt 连接
+ *  Connects to the MQTT host.
  *
  *  @param mqttConfig mqttConfig
  */
 - (void)startConnectToHostWithMqttConfig:(TuyaSmartMQTTConfigModel *)mqttConfig;
 
 /**
- *  close mqtt host
- *  关闭mqtt连接
+ *  Disconnects from the MQTT host.
  */
 - (void)close;
 
 /**
- *  mqtt connect state
- *  mqtt 连接状态
+ *  The MQTT connection state.
  */
 - (TuyaSmartMqttConnectState)connectState;
 
 /**
- *  subscribe topic
- *  订阅主题
+ *  Subscribes to a topic.
  *
- *  @param topic   Topic
- *  @param success Success block
- *  @param failure Failure block
+ *  @param topic   The topic.
+ *  @param success The success block.
+ *  @param failure The failure block.
  */
 - (void)subscribeToTopic:(NSString *)topic
                  devInfo:(NSDictionary *)devInfo
@@ -106,26 +100,24 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
                  failure:(TYFailureError)failure;
 
 /**
- *  unsubscribe topic
- *  取消订阅主题
+ *  Unsubscribes from a topic.
  *
- *  @param topic   Topic
- *  @param success Success block
- *  @param failure Failure block
+ *  @param topic   The topic.
+ *  @param success The success block.
+ *  @param failure The failure block.
  */
 - (void)unsubscribeToTopic:(NSString *)topic
                    success:(TYSuccessHandler)success
                    failure:(TYFailureError)failure;
 
 /**
- *  推送mqtt消息
- *  publish mqtt data
+ *  Publishes the MQTT data.
  *
- *  @param data    Data
- *  @param topic   Topic
- *  @param success Success block
- *  @param failure Failure block
- *  @return the Message Identifier of the publish message. Zero if qos 0. If qos 1 or 2, zero was publish faliure
+ *  @param data    The data.
+ *  @param topic   The topic.
+ *  @param success The success block.
+ *  @param failure The failure block.
+ *  @return The message identifier of the published message. Zero if qos 0. If qos 1 or 2, zero was publish faliure
  */
 - (UInt16)publishMessage:(NSData *)data
                    topic:(NSString *)topic
@@ -133,13 +125,12 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
                  failure:(TYFailureError)failure;
 
 /**
- *  推送mqtt消息
- *  publish mqtt data
+ *  Publishes MQTT data.
  *
- *  @param messageModel MessageModel
- *  @param topic        Topic
- *  @param success      Success block
- *  @param failure      Failure block
+ *  @param messageModel The message model.
+ *  @param topic        The topic.
+ *  @param success      The success block.
+ *  @param failure      The failure block.
  */
 - (void)publishMessageWithMessageModel:(TuyaSmartPublishMessageModel *)messageModel
                                  topic:(NSString *)topic
@@ -147,7 +138,7 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
                                failure:(TYFailureError)failure;
 
 /**
- *  add mqtt channel delegate
+ *  Adds mqtt channel delegate
  *  添加mqtt长连接的代理
  *
  *  @param delegate Delegate
