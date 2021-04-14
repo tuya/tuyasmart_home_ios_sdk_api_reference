@@ -95,6 +95,12 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>cancelAccount:failure:
 : <a class="el" href="interface_tuya_smart_user.html#ae2dd1b8a8b599e70183147c6215d4bd1">TuyaSmartUser</a>
 </li>
+<li>cancelActivatorWithDevIDs:UUIDs:success:failure:
+: <a class="el" href="interface_tuya_smart_pegasus_activator.html#a3c310887609bee7efb61d6d2df6e840f">TuyaSmartPegasusActivator</a>
+</li>
+<li>cancelCharacteristicOperations
+: <a class="el" href="interface_t_y_b_l_e_service.html#ae22361c0c2e8be139c4010f2edd1163d">TYBLEService</a>
+</li>
 <li>cancelFirmwareRequest
 : <a class="el" href="interface_tuya_smart_device.html#ac1f5f78a82692159b068b62b00ec73f5">TuyaSmartDevice</a>
 </li>
@@ -120,16 +126,58 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>categoryCode
 : <a class="el" href="interface_tuya_smart_device_model.html#ad663d48978ebe169ec559920da9922ba">TuyaSmartDeviceModel</a>
 </li>
+<li>cbCharacteristic
+: <a class="el" href="interface_t_y_b_l_e_characteristic.html#add59d901f2ad07153d99bf12f58fe552">TYBLECharacteristic</a>
+</li>
+<li>cbManager
+: <a class="el" href="interface_t_y_b_l_e_central_manager.html#a92b7e84d2dfe2b61523d6bd93e56d4d8">TYBLECentralManager</a>
+</li>
+<li>cbPeripheral
+: <a class="el" href="interface_t_y_b_l_e_peripheral.html#aa057737ed3f09858d804c32c1d39871c">TYBLEPeripheral</a>
+</li>
+<li>cbService
+: <a class="el" href="interface_t_y_b_l_e_service.html#a24d22da267d94e934ea09bfae90e9a94">TYBLEService</a>
+</li>
 <li>cdv
 : <a class="el" href="interface_tuya_smart_device_infrared_model.html#a62dfac40529e9ab66ecc712b8e3ed163">TuyaSmartDeviceInfraredModel</a>
 , <a class="el" href="interface_tuya_smart_device_wifi_model.html#a65530b4fc4f7125e61446eb6415e3bc9">TuyaSmartDeviceWifiModel</a>
 </li>
+<li>centralManager:didConnectPeripheral:
+: <a class="el" href="protocol_t_y_b_l_e_central_manager_session_delegate-p.html#ad0486e5ca74a719d05f54f2c2d63ff17">&lt;TYBLECentralManagerSessionDelegate&gt;</a>
+</li>
+<li>centralManager:didDisconnectPeripheral:error:
+: <a class="el" href="protocol_t_y_b_l_e_central_manager_session_delegate-p.html#afcdff2924b18c4cccc1bc095b594d55d">&lt;TYBLECentralManagerSessionDelegate&gt;</a>
+</li>
+<li>centralManager:didDiscoverPeripheral:advertisementData:RSSI:
+: <a class="el" href="protocol_t_y_b_l_e_central_manager_discovery_delegate-p.html#a45deb6e7134fd5106fc09cf42f76628e">&lt;TYBLECentralManagerDiscoveryDelegate&gt;</a>
+</li>
+<li>centralManager:didFailToConnectPeripheral:error:
+: <a class="el" href="protocol_t_y_b_l_e_central_manager_session_delegate-p.html#ab73ade9a1acee88c614b8d9b32e01281">&lt;TYBLECentralManagerSessionDelegate&gt;</a>
+</li>
+<li>centralManager:didUpdateCentralState:
+: <a class="el" href="protocol_t_y_b_l_e_central_manager_discovery_delegate-p.html#ada469b901038a34d09b8361ac26ebe08">&lt;TYBLECentralManagerDiscoveryDelegate&gt;</a>
+</li>
+<li>centralManager:didUpdateState:
+: <a class="el" href="protocol_t_y_b_l_e_central_manager_discovery_delegate-p.html#a2ff3a5184a23b5ed174bb258def071c4">&lt;TYBLECentralManagerDiscoveryDelegate&gt;</a>
+</li>
+<li>centralManagerStatusChange:
+: <a class="el" href="protocol_t_y_b_l_e_mesh_manager_delegate-p.html#a674f8cb7aa7c5338c0505bb0c03aa16e">&lt;TYBLEMeshManagerDelegate&gt;</a>
+</li>
 <li>channel
 : <a class="el" href="interface_tuya_smart_s_d_k.html#a9dcdd5618918480c9c7370682578f961">TuyaSmartSDK</a>
+</li>
+<li>characteristics
+: <a class="el" href="interface_t_y_b_l_e_service.html#a530f15820387b49cb3e749df7dc43a50">TYBLEService</a>
+</li>
+<li>checkAllBeaconDeviceOnlineState:
+: <a class="el" href="interface_tuya_smart_beacon_manager.html#acf2884023cd249ae82066f0c971051af">TuyaSmartBeaconManager</a>
 </li>
 <li>checkCodeWithUserName:region:countryCode:code:type:success:failure:
 : <a class="el" href="interface_tuya_smart_user.html#a35c33136cc5c6eee083ba913b4c96e1e">TuyaSmartUser</a>
 , <a class="el" href="category_tuya_smart_user_07_region_08.html#a35c33136cc5c6eee083ba913b4c96e1e">TuyaSmartUser(Region)</a>
+</li>
+<li>checkDeviceOnlineStateWithDevice:
+: <a class="el" href="interface_tuya_smart_beacon_manager.html#a9408ec971c1667460754b639df05bbef">TuyaSmartBeaconManager</a>
 </li>
 <li>checked
 : <a class="el" href="interface_tuya_smart_group_dev_list_model.html#ac964a939899c9c5900f0a56286e05245">TuyaSmartGroupDevListModel</a>
@@ -144,11 +192,27 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>city
 : <a class="el" href="interface_tuya_smart_weather_sketch_model.html#a1facb01a902d0ae45311e5b4cbbe9ff0">TuyaSmartWeatherSketchModel</a>
 </li>
+<li>cleanScanedCache
+: <a class="el" href="interface_t_y_b_l_e_central_manager.html#a3416f43a66c7e45aa922608f7d8516fa">TYBLECentralManager</a>
+, <a class="el" href="category_t_y_b_l_e_central_manager_07_discovery_08.html#a3416f43a66c7e45aa922608f7d8516fa">TYBLECentralManager(Discovery)</a>
+</li>
+<li>clearScanData
+: <a class="el" href="interface_t_y_b_l_e_mesh_manager.html#a870361dbc8944b72d476d3f62afaad03">TYBLEMeshManager</a>
+</li>
 <li>clientId
 : <a class="el" href="interface_tuya_smart_m_q_t_t_config_model.html#a88e24150e13ecad5239c3bc6635c6a48">TuyaSmartMQTTConfigModel</a>
 </li>
 <li>close
 : <a class="el" href="interface_tuya_smart_m_q_t_t_channel.html#a5a880c600e8a5e4290e9a0d534c5abd8">TuyaSmartMQTTChannel</a>
+</li>
+<li>closeAllTcpClient
+: <a class="el" href="interface_tuya_smart_socket_channel.html#a23a89faad2f56527ae82c4f674cf7459">TuyaSmartSocketChannel</a>
+</li>
+<li>closeTcpClientWithDevId:
+: <a class="el" href="interface_tuya_smart_socket_channel.html#aecfce7cb5a38b24a5e50d4e35cc28abe">TuyaSmartSocketChannel</a>
+</li>
+<li>closeUdpServerWithPort:
+: <a class="el" href="interface_tuya_smart_socket_channel.html#ae48d80f2b24b40d2d6301abc527600d9">TuyaSmartSocketChannel</a>
 </li>
 <li>cloudId
 : <a class="el" href="interface_tuya_smart_device_model.html#a50272607addb6cec278861890c4c8752">TuyaSmartDeviceModel</a>
@@ -157,6 +221,13 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 : <a class="el" href="interface_tuya_smart_ble_mesh_model.html#ad8b92c5fcc89b4329ea1c240fd6b3e9b">TuyaSmartBleMeshModel</a>
 , <a class="el" href="interface_tuya_smart_multi_control_datapoint_model.html#aec6a3e55594dc5a20d0385bb87a14299">TuyaSmartMultiControlDatapointModel</a>
 , <a class="el" href="interface_tuya_smart_schema_model.html#a941ab2c0383fa7f40d1fd22a3cd1707a">TuyaSmartSchemaModel</a>
+, <a class="el" href="interface_tuya_smart_socket_read_model.html#adc9e9a00fba74d2217af674231af86bf">TuyaSmartSocketReadModel</a>
+</li>
+<li>command
+: <a class="el" href="protocol_t_y_b_l_e_mesh_command_protocol-p.html#abfe033e1fea61d8cf21a97db21da11a6">&lt;TYBLEMeshCommandProtocol&gt;</a>
+</li>
+<li>commandType
+: <a class="el" href="interface_t_y_b_l_e_mesh_command.html#ab2e8e144edc618d577780d054652a735">TYBLEMeshCommand</a>
 </li>
 <li>communication
 : <a class="el" href="interface_tuya_smart_device_model.html#af0bef0f75c9e2a6d121499dd8d8ad743">TuyaSmartDeviceModel</a>
@@ -170,14 +241,40 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>condition
 : <a class="el" href="interface_tuya_smart_weather_sketch_model.html#a82f9cac10a1d2066ea3c1e8bd787f99d">TuyaSmartWeatherSketchModel</a>
 </li>
+<li>configManager
+: <a class="el" href="protocol_tuya_smart_b_l_e_device_protocol-p.html#a4810ba58303d818a80f618ab9dbcb88e">&lt;TuyaSmartBLEDeviceProtocol&gt;</a>
+</li>
 <li>configMetas
 : <a class="el" href="interface_tuya_smart_device_model.html#a66241c09fd3c70bad3ebded614a2526c">TuyaSmartDeviceModel</a>
 </li>
 <li>confirmInviteShareWithShareId:success:failure:
 : <a class="el" href="interface_tuya_smart_home_device_share.html#ada98b290bdf6dd40709831044787f1a8">TuyaSmartHomeDeviceShare</a>
 </li>
+<li>connectBeaconWithDeviceId:
+: <a class="el" href="interface_tuya_smart_beacon_manager.html#a829d99e2d15662d17ae45a29334bf4a4">TuyaSmartBeaconManager</a>
+</li>
+<li>connectBLEWithUUID:productKey:success:failure:
+: <a class="el" href="interface_tuya_smart_b_l_e_manager.html#a37c7dc29df80839302b9089b113c07fc">TuyaSmartBLEManager</a>
+</li>
+<li>connectPeripheral:CharactUUID:serviceUUID:completion:
+: <a class="el" href="interface_t_y_b_l_e_agent.html#aa0417d2faab7d875e546177752436e8e">TYBLEAgent</a>
+</li>
+<li>connectPeripheral:CharactUUID:serviceUUID:timeout:completion:
+: <a class="el" href="interface_t_y_b_l_e_agent.html#a3feab39f6b9417aa4909a6122dd21b91">TYBLEAgent</a>
+</li>
+<li>connectPeripheral:options:timeout:
+: <a class="el" href="interface_t_y_b_l_e_central_manager.html#a956f7f5f15fce6ad7b0000f5cff424ab">TYBLECentralManager</a>
+, <a class="el" href="category_t_y_b_l_e_central_manager_07_connection_08.html#a956f7f5f15fce6ad7b0000f5cff424ab">TYBLECentralManager(Connection)</a>
+</li>
+<li>connectPeripheral:timeout:
+: <a class="el" href="interface_t_y_b_l_e_central_manager.html#ad4f0a9c152e447d187cafa644bf7f5f8">TYBLECentralManager</a>
+, <a class="el" href="category_t_y_b_l_e_central_manager_07_connection_08.html#ad4f0a9c152e447d187cafa644bf7f5f8">TYBLECentralManager(Connection)</a>
+</li>
 <li>connectState
 : <a class="el" href="interface_tuya_smart_m_q_t_t_channel.html#a36a87a19ccf6420ccb71b782f58fe4ef">TuyaSmartMQTTChannel</a>
+</li>
+<li>connectWithDeviceInfo:success:failure:
+: <a class="el" href="protocol_tuya_smart_b_l_e_config_protocol-p.html#a4c7229d18ff7af45c2106ecd03f7d67b">&lt;TuyaSmartBLEConfigProtocol&gt;</a>
 </li>
 <li>controlType
 : <a class="el" href="interface_tuya_smart_firmware_upgrade_model.html#a00f8831913e5e7672c087ca2205c4a66">TuyaSmartFirmwareUpgradeModel</a>
@@ -189,6 +286,13 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 : <a class="el" href="interface_tuya_smart_device_share_request_model.html#a910e6e2a600264d49104780344463787">TuyaSmartDeviceShareRequestModel</a>
 , <a class="el" href="interface_tuya_smart_home_add_member_request_model.html#a35a3948f7f5aa88f0a66f9ff0375baa2">TuyaSmartHomeAddMemberRequestModel</a>
 , <a class="el" href="interface_tuya_smart_user.html#ab8b307a8fe76a2c7691c24e50519f09c">TuyaSmartUser</a>
+</li>
+<li>createBeaconGroupWithGroupName:productId:pcc:success:failure:
+: <a class="el" href="interface_tuya_smart_beacon_manager.html#adfb5e6bdb162552ba47b8260cbf6e9e9">TuyaSmartBeaconManager</a>
+, <a class="el" href="category_tuya_smart_beacon_manager_07_group_08.html#adfb5e6bdb162552ba47b8260cbf6e9e9">TuyaSmartBeaconManager(Group)</a>
+</li>
+<li>createBleMeshWithMeshName:homeId:success:failure:
+: <a class="el" href="interface_tuya_smart_ble_mesh.html#a1f5d523dda9561da5fea73337f8ae1bf">TuyaSmartBleMesh</a>
 </li>
 <li>createDpCodeGroupWithName:homeId:categoryCode:devIdList:success:failure:
 : <a class="el" href="interface_tuya_smart_group.html#aba9c60025474435afe6d71b5c753b6dd">TuyaSmartGroup</a>
@@ -213,8 +317,25 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>createInvitationWithCreateRequestModel:success:failure:
 : <a class="el" href="interface_tuya_smart_home_invitation.html#ac8e54d41da9a2c0b5108a56783e5c090">TuyaSmartHomeInvitation</a>
 </li>
+<li>createMeshGroupWithGroupName:meshId:localId:pcc:success:failure:
+: <a class="el" href="interface_tuya_smart_ble_mesh_group.html#adeffb716be9438aff5e1fc85d4135a23">TuyaSmartBleMeshGroup</a>
+</li>
+<li>createSIGMeshWithHomeId:success:failure:
+: <a class="el" href="interface_tuya_smart_ble_mesh.html#ac9b970d1b6bf06aa98b9f7706d304e46">TuyaSmartBleMesh</a>
+, <a class="el" href="category_tuya_smart_ble_mesh_07_s_i_g_mesh_08.html#ac9b970d1b6bf06aa98b9f7706d304e46">TuyaSmartBleMesh(SIGMesh)</a>
+</li>
+<li>currentConnectNodeId
+: <a class="el" href="interface_tuya_smart_s_i_g_mesh_manager.html#a165250e0edd1faf0d6fff2fb5c68cc7c">TuyaSmartSIGMeshManager</a>
+, <a class="el" href="category_tuya_smart_s_i_g_mesh_manager_07_activator_08.html#a165250e0edd1faf0d6fff2fb5c68cc7c">TuyaSmartSIGMeshManager(Activator)</a>
+</li>
 <li>currentVersion
 : <a class="el" href="interface_tuya_smart_firmware_upgrade_model.html#a4a240f6aabbe0e9651a4f291fd2e51dd">TuyaSmartFirmwareUpgradeModel</a>
+</li>
+<li>currentWifiBSSID
+: <a class="el" href="interface_tuya_smart_activator.html#adc6e879353d095e2f60a1b359f8cf36c">TuyaSmartActivator</a>
+</li>
+<li>currentWifiSSID
+: <a class="el" href="interface_tuya_smart_activator.html#a5baf4e001d3152d21cc4a53e70954a00">TuyaSmartActivator</a>
 </li>
 </ul>
 </div><!-- contents -->

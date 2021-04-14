@@ -63,6 +63,8 @@ var interface_tuya_smart_user =
     [ "headIconUrl", "interface_tuya_smart_user.html#a1b4288c1ab8b457f7eb6fa0f2bcfb097", null ],
     [ "isLogin", "interface_tuya_smart_user.html#ae93de63e12a8e9b0bc80168b5931eeff", null ],
     [ "mbHost", "interface_tuya_smart_user.html#a6c0c0f192f833acf17b77bd66d57433c", null ],
+    [ "mesh", "interface_tuya_smart_user.html#ab4876bc874c55414136f13cca3ae667e", null ],
+    [ "meshModel", "interface_tuya_smart_user.html#ad139784b9c5e53f68f47bfb8d0c480c1", null ],
     [ "nickname", "interface_tuya_smart_user.html#a133d97e8e7391c0bf728fbf203124e9d", null ],
     [ "partnerIdentity", "interface_tuya_smart_user.html#a53d3443870e240d732b9a74713416aaa", null ],
     [ "phoneNumber", "interface_tuya_smart_user.html#ae5273cd1cf4080e9b4e466d28a33f64e", null ],

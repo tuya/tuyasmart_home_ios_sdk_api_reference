@@ -42,10 +42,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"functions_prop_w.html",
-"interface_tuya_smart_device_module_model.html#a95f38dbd14680d3d97c32565d19f748e",
-"interface_tuya_smart_home_member_model.html#ae8a82b2438e7ca9b4475ec0e39d24fd9",
-"interface_tuya_smart_share_member_detail_model.html#a71cf1f70034df0a1242a16271b05a7fa"
+"category_tuya_smart_s_d_k_07_push_notification_08.html#a0df54c783a8f66a9311c086b531995da",
+"interface_t_y_b_l_e_mesh_manager.html#a710dffc2347f78e615225f135ea730c0",
+"interface_tuya_smart_ble_mesh.html#aabbf98954cce37de56f3bf3cea9aed58",
+"interface_tuya_smart_firmware_upgrade_model.html",
+"interface_tuya_smart_m_q_t_t_channel.html#a14280c7d413dcbb653b827e515737a6b",
+"interface_tuya_smart_schema_model.html#a22a65417d15e88f281f272b60a911e27",
+"protocol_tuya_smart_b_l_e_config_protocol-p.html#ad725db5bba35210fc79b065dac3b0179"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

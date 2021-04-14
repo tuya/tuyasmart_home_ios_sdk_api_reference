@@ -9,6 +9,7 @@ var interface_tuya_smart_s_i_g_mesh_manager =
     [ "queryDpsWithDeviceModel:dpIds:", "interface_tuya_smart_s_i_g_mesh_manager.html#a405363a4d2e4e602921bb950c3708b22", null ],
     [ "queryGroupListWithDevid:", "interface_tuya_smart_s_i_g_mesh_manager.html#a51fd7a7d0921e147fe7c64213e0295da", null ],
     [ "queryGroupMemberWithGroupAddress:", "interface_tuya_smart_s_i_g_mesh_manager.html#a6da2adac2751d867be577c954d6cb156", null ],
+    [ "sendCustomDataWithNodeId:opCode:payload:success:failure:", "interface_tuya_smart_s_i_g_mesh_manager.html#a1bf1969da6c322e9e4d75e2f13a906e7", null ],
     [ "sendLightBrightWithNodeId:brightValue:useUnacknowledged:success:failure:", "interface_tuya_smart_s_i_g_mesh_manager.html#a0ca7ad5ebc7021da4d8b3ba5f15ecb79", null ],
     [ "sendLightCTLTempeValueWithNodeId:tempValue:useUnacknowledged:success:failure:", "interface_tuya_smart_s_i_g_mesh_manager.html#a476a8600cd0091398a9d2a4a5bb0e381", null ],
     [ "sendLightHSLWithNodeId:hue:andSaturation:lightness:useUnacknowledged:success:failure:", "interface_tuya_smart_s_i_g_mesh_manager.html#ae2f90d94639e62e734376f992ada4cb5", null ],

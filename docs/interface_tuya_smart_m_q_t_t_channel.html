@@ -139,7 +139,7 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>add mqtt channel delegate 添加mqtt长连接的代理</p>
+<p>Adds mqtt channel delegate 添加mqtt长连接的代理</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">delegate</td><td>Delegate </td></tr>
@@ -163,7 +163,7 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>close mqtt host 关闭mqtt连接 </p>
+<p>Disconnects from the MQTT host. </p>
 
 </div>
 </div>
@@ -181,7 +181,7 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>mqtt connect state mqtt 连接状态 </p>
+<p>The MQTT connection state. </p>
 
 </div>
 </div>
@@ -222,17 +222,17 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>推送mqtt消息 publish mqtt data</p>
+<p>Publishes the MQTT data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>Data </td></tr>
-    <tr><td class="paramname">topic</td><td>Topic </td></tr>
-    <tr><td class="paramname">success</td><td>Success block </td></tr>
-    <tr><td class="paramname">failure</td><td>Failure block </td></tr>
+    <tr><td class="paramname">data</td><td>The data. </td></tr>
+    <tr><td class="paramname">topic</td><td>The topic. </td></tr>
+    <tr><td class="paramname">success</td><td>The success block. </td></tr>
+    <tr><td class="paramname">failure</td><td>The failure block. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the Message Identifier of the publish message. Zero if qos 0. If qos 1 or 2, zero was publish faliure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The message identifier of the published message. Zero if qos 0. If qos 1 or 2, zero was publish faliure </dd></dl>
 
 </div>
 </div>
@@ -273,13 +273,13 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>推送mqtt消息 publish mqtt data</p>
+<p>Publishes MQTT data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">messageModel</td><td>MessageModel </td></tr>
-    <tr><td class="paramname">topic</td><td>Topic </td></tr>
-    <tr><td class="paramname">success</td><td>Success block </td></tr>
-    <tr><td class="paramname">failure</td><td>Failure block </td></tr>
+    <tr><td class="paramname">messageModel</td><td>The message model. </td></tr>
+    <tr><td class="paramname">topic</td><td>The topic. </td></tr>
+    <tr><td class="paramname">success</td><td>The success block. </td></tr>
+    <tr><td class="paramname">failure</td><td>The failure block. </td></tr>
   </table>
   </dd>
 </dl>
@@ -343,7 +343,7 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>connect mqtt host 建立 mqtt 连接</p>
+<p>Connects to the MQTT host.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mqttConfig</td><td>mqttConfig </td></tr>
@@ -390,12 +390,12 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>subscribe topic 订阅主题</p>
+<p>Subscribes to a topic.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">topic</td><td>Topic </td></tr>
-    <tr><td class="paramname">success</td><td>Success block </td></tr>
-    <tr><td class="paramname">failure</td><td>Failure block </td></tr>
+    <tr><td class="paramname">topic</td><td>The topic. </td></tr>
+    <tr><td class="paramname">success</td><td>The success block. </td></tr>
+    <tr><td class="paramname">failure</td><td>The failure block. </td></tr>
   </table>
   </dd>
 </dl>
@@ -433,12 +433,12 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>unsubscribe topic 取消订阅主题</p>
+<p>Unsubscribes from a topic.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">topic</td><td>Topic </td></tr>
-    <tr><td class="paramname">success</td><td>Success block </td></tr>
-    <tr><td class="paramname">failure</td><td>Failure block </td></tr>
+    <tr><td class="paramname">topic</td><td>The topic. </td></tr>
+    <tr><td class="paramname">success</td><td>The success block. </td></tr>
+    <tr><td class="paramname">failure</td><td>The failure block. </td></tr>
   </table>
   </dd>
 </dl>
