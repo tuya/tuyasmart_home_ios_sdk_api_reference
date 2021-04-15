@@ -74,10 +74,10 @@ typedef NS_ENUM(NSUInteger, TuyaSmartSIGScanType) {
 
 - (void)sigMeshManager:(TuyaSmartSIGMeshManager *)manager queryDeviceModel:(TuyaSmartDeviceModel *)deviceModel groupAddress:(uint32_t)groupAddress;
 
-//获取到opCode 和 payload回调=====Returns the values of `opCode` and `payload`.
+// Returns the values of `opCode` and `payload`.
 - (void)sigMeshManager:(TuyaSmartSIGMeshManager *)manager didReceivedCustomOpCodeData:(NSData *)opCode payload:(NSData *)payload;
 
-//需要绑定的自定义model id list=====The list of model IDs to be managed by the Bluetooth mesh manager.
+// The list of model IDs to be managed over the mesh network.
 - (NSArray<NSNumber *> *)listOfCustomModelIdWithSigMeshManager:(TuyaSmartSIGMeshManager *)manager;
 
 @end

@@ -117,7 +117,7 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
  *  @param topic   The topic.
  *  @param success The success block.
  *  @param failure The failure block.
- *  @return The message identifier of the published message. A value of `zero` is returned at the QoS level 0. A value of `zero` indicates a publishing failure at the QoS level 1 or 2.
+ *  @return The message identifier of the published message. A value of `zero` is returned at the QoS level 0. A message identifier is returned at the QoS level 1 or 2.
  */
 - (UInt16)publishMessage:(NSData *)data
                    topic:(NSString *)topic

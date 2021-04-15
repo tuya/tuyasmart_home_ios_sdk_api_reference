@@ -45,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init NS_UNAVAILABLE;
 
-/// Assigns a group ID to the cloud.
+/// Assigns a group ID from the cloud.
 /// @param meshId The mesh ID.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.

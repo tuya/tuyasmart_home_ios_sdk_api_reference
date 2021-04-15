@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
                         success:(void(^)(TuyaSmartBleMeshModel *meshModel))success
                         failure:(TYFailureError)failure;
 
-/// Bluetooth device binding after network access, productKey + mac = pid.=====Adds a Bluetooth sub-device to the app after the network is connected. The product ID that consists of the product key and MAC address is required in this operation.
+/// Bluetooth device binding after network access, productKey + mac = pid.=====Reports the result of successful pairing between a Bluetooth sub-device and the app to the cloud by including the `productKey` and `mac` parameters. Then, the cloud returns the product ID (PID) based on both parameters.
 /// @param uuid The short address identification of the Bluetooth sub-device.
 /// @param devKey The device key.
 /// @param nodeId The node ID.
@@ -81,7 +81,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param ver The version.
 /// @param mac The device MAC.
 /// @param companyId The company ID.
-/// @param venderId The third-party device needs to be transferred in. At present, it supports the light group and switch. If lightless operation exists, it will pass in "01" by default, and "02" will be passed in if there is no lightless operation.======This parameter is required to add a third-party device to the app. Lighting devices and switches are supported. If the lightless operation exists, the value is set to `01`. If no lightless operation exists, the value is set to `02`.
+/// @param venderId The third-party device needs to be transferred in. At present, it supports the light group and switch. If lightless operation exists, it will pass in "01" by default, and "02" will be passed in if there is no lightless operation.======This parameter is required to add a third-party device to the app. Lighting devices, switches, and other low-power devices are supported.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)addSIGMeshSubDeviceWithUuid:(NSString *)uuid
@@ -95,7 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
                             success:(void (^)(NSString *devId, NSString *name))success
                             failure:(TYFailureError)failure;
 
-/// Assigns the node ID of Bluetooth mesh to the cloud, + 0000 0111 = 8 each time.======Assigns the node ID of Bluetooth mesh to the cloud. In each request, the node ID is incremented by `0000 0111` or `8`.
+/// Assigns the node ID of Bluetooth mesh to the cloud, + 0000 0111 = 8 each time.======Assigns the node ID of Bluetooth mesh from the cloud. In each request, the node ID is incremented by `0000 0111` or `8`.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getSIGMeshNodeAddressFromServerWithSuccess:(TYSuccessInt)success failure:(TYFailureError)failure;
@@ -116,7 +116,7 @@ NS_ASSUME_NONNULL_BEGIN
                                  success:(TYSuccessHandler)success
                                  failure:(TYFailureError)failure;
 
-/// Assign sig mesh terminal source ID to cloud.=======Assigns the terminal source ID of Bluetooth mesh to the cloud.
+/// Assign sig mesh terminal source ID to cloud.=======Assigns the terminal source ID of Bluetooth mesh from the cloud.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getSIGMeshSourceAddressFromServerWithSuccess:(TYSuccessInt)success

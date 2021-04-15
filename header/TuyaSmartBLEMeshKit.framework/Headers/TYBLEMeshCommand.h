@@ -26,19 +26,19 @@
 /// The command type.
 @property (nonatomic, assign) TYBLEMeshCommandType commandType;
 
-/// For equipment type, the small category is in the front, and the major category is in the rear, for example, four street lamps. At this time, the PCC is 0401 "04 represents four street lamps, 01 represents major categories of lamps".
+/// For equipment type, the small category is in the front, and the major category is in the rear, for example, four street lamps. At this time, the PCC is 0401 "04 represents four street lamps, 01 represents major categories of lamps".======In each prodcut category code (PCC), a small category is followed by a major category. For example, the PCC of a cool white and colored light (RGBC) is `0401`. In this case, `04` represents a cool white and colored light (RGBC) and `01` represents the major category of lights.
 @property (nonatomic, strong) NSString *pcc;
 
-/// Device or group address, device address range (1-255), group address range 0x8001-0x8008.
+/// The address of a device or a group. Valid values of a device address: 1 to 255). Valid values of a group address: 0x8001 and 0x8008.
 @property (nonatomic, assign) uint32_t address;
 
-/// Is it a group command.
+/// Specifies whether a group command is used.
 @property (nonatomic, assign) BOOL isGroup;
 
-/// For command data, refer to the document.
+/// For more information about the command data, see the documentation.
 @property (nonatomic, strong) NSArray<NSString *> *dataParams;
 
-/// Secondary log output.
+/// Secondary log output.=====The output of secondary log files.
 @property (nonatomic, strong) NSString *logDescription;
 
 @end

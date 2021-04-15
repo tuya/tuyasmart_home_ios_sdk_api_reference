@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-/// @brief Bluetooth mesh base class, including the basic operations of Bluetooth mesh, such as create, update, delete mesh, etc.========The Bluetooth mesh base class that supports the basic operations of Bluetooth mesh. For example, meshes can be created, updated, and deleted.
+/// @brief Bluetooth mesh base class, including the basic operations of Bluetooth mesh, such as create, update, delete mesh, etc.========The Bluetooth mesh base class that supports the basic operations of Bluetooth mesh networks. For example, devices in a mesh network can be created, updated, and deleted.
 ///
 /// mesh as an important parameter for Bluetooth mesh connection.====The mesh parameters are required to establish a Bluetooth mesh connection.
 ///
@@ -131,10 +131,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param failure Called when the task is interrupted by an error.
 - (void)removeMeshWithSuccess:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
-/// Bluetooth device access 2.0.=======Connects to Bluetooth mesh 2.0
+/// Bluetooth device access 2.0.=======Adds a Bluetooth sub-device. API version: 2.0.
 /// @param uuid Bluetooth sub device short address identification.=====The short address identification of the Bluetooth sub-device.
 /// @param homeId The home ID.
-/// @param authKey The authorization key.
+/// @param authKey The authentication key.
 /// @param nodeId The node ID.
 /// @param productKey The product key.
 /// @param ver The version.

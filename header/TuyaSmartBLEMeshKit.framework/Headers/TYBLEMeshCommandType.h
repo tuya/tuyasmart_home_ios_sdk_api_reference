@@ -7,73 +7,73 @@
 #ifndef TYBLEMeshCommandType_h
 #define TYBLEMeshCommandType_h
 
-/// The ble mesh command type.
+/// The type of Bluetooth mesh command.
 typedef NS_ENUM(NSUInteger, TYBLEMeshCommandType) {
     
-    /// Modify device address.
+    /// Modifies the device address.
     TYBLEMeshSetDeviceAddressCommand = 0xAA,
     
-    /// Group operations, such as adding, deleting, and adding devices to a group.
+    /// The group operations. For example, a group can be added or deleted, and devices can be added to a group.
     TYBLEMeshGroupHandlingCommand,
     
-    /// Get the address of the device group.
+    /// Returns the address of the device group.
     TYBLEMeshFetchGroupAddressCommand,
     
-    /// Kick the device out of the network.
+    /// Kicks the device out of the network.
     TYBLEMeshKickedOutCommand,
     
-    /// Get the ID of all devices in the group.
+    /// Returns the IDs of all devices in the group.
     TYBLEMeshFetchAllDeviceIdFromGroupCommand,
     
-    /// Request auth key.
+    /// Requests the authentication key.
     TYBLEMeshRequestAuthKeyCommand,
     
-    /// Switch command.
+    /// Switch command.====Sends the switch command.
     TYBLEMeshTurnOnAndOffCommand,
     
-    /// Get status of all devices in mesh.
+    /// Returns the status of all devices in a mesh network.
     TYBLEMeshFetchAllStateCommand,
     
-    /// Set brightness value.
+    /// Sets the brightness value.
     TYBLEMeshSetBrightnessValueCommand,
     
-    /// Set RGBWCL value.
+    /// Sets the RGBWCL value.
     TYBLEMeshSetRGBWCLCommand,
     
-    /// Set the light on mode, color light / white light.
+    /// Sets the light mode, such as the colored light and cool and warm white light.
     TYBLEMeshSetLightModelCommand,
     
-    /// Control sub row insertion.
+    /// Control sub row insertion.====Controls the sub power strip.
     TYBLEMeshControlSubSwitchCommand,
     
-    /// Set countdown.
+    /// Sets the countdown.
     TYBLEMeshSetCountDownCommand,
     
-    /// Read countdown.
+    /// Reads the countdown.
     TYBLEMeshFetchCountDownCommand,
     
-    /// Read sensor value.
+    /// Reads the sensor value.
     TYBLEMeshFetchSensorValueCommand,
     
-    /// Send DP point.
+    /// Sends the DPs.
     TYBLEMeshSendDPSCommand,
     
-    /// Gets one or two states.
+    /// Returns one or two state values.
     TYBLEMeshFetchStateCommand,
     
-    /// Modify the current mesh light scene mode data.
+    /// Modifies the mode of the current mesh light scene.
     TYBLEMeshSetLightSceneModelCommand,
     
-    /// Get the current mesh light scene mode data.
+    /// Returns the mode of the current mesh light scene.
     TYBLEMeshGetLightSceneModelCommand,
     
-    /// time synchronization.
+    /// Synchronizes time.
     TYBLEMeshTimeSynchronizationCommand,
     
-    /// Setting timing.
+    /// Sets the timing data.
     TYBLEMeshSetTimerCommand,
     
-    /// Read timing.
+    /// Reads the timing data.
     TYBLEMeshGetTimerCommand,
     
 };

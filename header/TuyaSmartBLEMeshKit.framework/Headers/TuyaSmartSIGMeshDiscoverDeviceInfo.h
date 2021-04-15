@@ -51,13 +51,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// The node MAC.
 @property (nonatomic, copy) NSString *mac;
 
-/// The pcc for tuya node.=====The PCC value of the Tuya node.
+/// The pcc for tuya node.=====The product category code (PCC) value of the `Powered by Tuya` device node.
 @property (nonatomic, copy) NSString *type;
 
 /// The product ID for tuya node.
 @property (nonatomic, copy) NSString *productId;
 
-/// For ota.=====Applies to OTA updates.
+/// Applies to OTA updates.
 @property (nonatomic, copy) NSString *nodeId;
 
 /// QuickSuccess: YES | NO , for extend.======Indicates whether quick pairing is successful. Valid values: `YES` and `NO`. This value is used as the extension information.
