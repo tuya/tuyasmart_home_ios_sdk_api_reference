@@ -132,10 +132,10 @@ $(document).ready(function(){initNavTree('_tuya_smart_s_i_g_mesh_manager_8h_sour
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;- (void)sigMeshManager:(<a class="code" href="interface_tuya_smart_s_i_g_mesh_manager.html">TuyaSmartSIGMeshManager</a> *)manager queryDeviceModel:(<a class="code" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *)deviceModel groupAddress:(uint32_t)groupAddress;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//获取到opCode 和 payload回调=====Returns the values of `opCode` and `payload`.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">// Returns the values of `opCode` and `payload`.</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;- (void)sigMeshManager:(<a class="code" href="interface_tuya_smart_s_i_g_mesh_manager.html">TuyaSmartSIGMeshManager</a> *)manager didReceivedCustomOpCodeData:(NSData *)opCode payload:(NSData *)payload;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">//需要绑定的自定义model id list=====The list of model IDs to be managed by the Bluetooth mesh manager.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">// The list of model IDs to be managed over the mesh network.</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;- (NSArray&lt;NSNumber *&gt; *)listOfCustomModelIdWithSigMeshManager:(<a class="code" href="interface_tuya_smart_s_i_g_mesh_manager.html">TuyaSmartSIGMeshManager</a> *)manager;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">@end</span></div>

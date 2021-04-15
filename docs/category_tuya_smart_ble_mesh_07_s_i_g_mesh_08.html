@@ -203,7 +203,7 @@ Class Methods</h2></td></tr>
     <tr><td class="paramname">ver</td><td>The version. </td></tr>
     <tr><td class="paramname">mac</td><td>The device MAC. </td></tr>
     <tr><td class="paramname">companyId</td><td>The company ID. </td></tr>
-    <tr><td class="paramname">venderId</td><td>The third-party device needs to be transferred in. At present, it supports the light group and switch. If lightless operation exists, it will pass in "01" by default, and "02" will be passed in if there is no lightless operation.======This parameter is required to add a third-party device to the app. Lighting devices and switches are supported. If the lightless operation exists, the value is set to <code>01</code>. If no lightless operation exists, the value is set to <code>02</code>. </td></tr>
+    <tr><td class="paramname">venderId</td><td>The third-party device needs to be transferred in. At present, it supports the light group and switch. If lightless operation exists, it will pass in "01" by default, and "02" will be passed in if there is no lightless operation.======This parameter is required to add a third-party device to the app. Lighting devices, switches, and other low-power devices are supported. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -447,7 +447,7 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Bluetooth device binding after network access, productKey + mac = pid.=====Adds a Bluetooth sub-device to the app after the network is connected. The product ID that consists of the product key and MAC address is required in this operation. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Bluetooth device binding after network access, productKey + mac = pid.=====Reports the result of successful pairing between a Bluetooth sub-device and the app to the cloud by including the <code>productKey</code> and <code>mac</code> parameters. Then, the cloud returns the product ID (PID) based on both parameters. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The short address identification of the Bluetooth sub-device. </td></tr>
     <tr><td class="paramname">devKey</td><td>The device key. </td></tr>
@@ -570,7 +570,7 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assigns the node ID of Bluetooth mesh to the cloud, + 0000 0111 = 8 each time.======Assigns the node ID of Bluetooth mesh to the cloud. In each request, the node ID is incremented by <code>0000 0111</code> or <code>8</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Assigns the node ID of Bluetooth mesh to the cloud, + 0000 0111 = 8 each time.======Assigns the node ID of Bluetooth mesh from the cloud. In each request, the node ID is incremented by <code>0000 0111</code> or <code>8</code>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
@@ -607,7 +607,7 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assign sig mesh terminal source ID to cloud.=======Assigns the terminal source ID of Bluetooth mesh to the cloud. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Assign sig mesh terminal source ID to cloud.=======Assigns the terminal source ID of Bluetooth mesh from the cloud. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
