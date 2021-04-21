@@ -25,7 +25,7 @@
 /// Reads and writes attributes of the DP. rw: send and report | ro: only report | wr: only send.
 @property (nonatomic, strong) NSString     *mode;
 
-/// The type of DP. obj: numeric, character, boolean, enumerated, and fault | raw: the pass-through type.
+/// The type of DP. obj: numeric, character, Boolean, enumeration, and fault | raw: the pass-through type.
 @property (nonatomic, strong) NSString     *type;
 
 /// The icon name of the DP.

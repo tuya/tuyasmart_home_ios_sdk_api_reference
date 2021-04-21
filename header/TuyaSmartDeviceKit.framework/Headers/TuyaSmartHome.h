@@ -102,7 +102,7 @@
 - (void)home:(TuyaSmartHome *)home device:(TuyaSmartDeviceModel *)device firmwareUpgradeStatusModel:(TuyaSmartFirmwareUpgradeStatusModel *)upgradeStatusModel;
 
 
-/// The delegate of OTA updates for homes or shared devices.
+/// The delegate of over-the-air (OTA) updates for homes or shared devices.
 /// @param home The home instance.
 /// @param otaModelList The OTA model list.
 - (void)home:(TuyaSmartHome *)home didUpdateOTAModelList:(NSArray<TuyaSmartDeviceOTAModel *> *)otaModelList;

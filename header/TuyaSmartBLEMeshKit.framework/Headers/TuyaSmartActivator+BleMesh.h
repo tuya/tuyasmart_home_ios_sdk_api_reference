@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param nodeId The node ID.
 /// @param productId The product ID.
 /// @param uuid The device UUID.
-/// @param authKey The authentication key.
+/// @param authKey The authorization key.
 /// @param version The version.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.

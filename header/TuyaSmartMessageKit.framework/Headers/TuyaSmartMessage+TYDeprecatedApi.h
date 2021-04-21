@@ -58,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// Delete a batch of messages
+/// Deletes a batch of messages
 ///
 /// @param messgeIdList Message Id list
 /// @param success      Success block

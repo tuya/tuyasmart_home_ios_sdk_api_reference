@@ -12,7 +12,7 @@
 /// The device schema property.
 @interface TuyaSmartSchemaPropertyModel : NSObject
 
-/// The type of object. enum: enumerated | bool: boolean | string: character | value: numeric | bitmap: fault.
+/// The type of object. enum: enumerated | bool: Boolean | string: character | value: numeric | bitmap: fault.
 @property (nonatomic, strong) NSString   *type;
 
 /// The unit, such as °C.

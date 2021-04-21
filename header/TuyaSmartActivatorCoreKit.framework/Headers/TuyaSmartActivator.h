@@ -143,7 +143,7 @@ typedef enum : NSUInteger {
 #pragma mark - active sub device
 
 /// Activates sub-devices, such as Zigbee or Wi-Fi sub-devices.
-/// @param gwId     The gateway ID.
+/// @param gwId     The gateway ID.
 /// @param timeout  The timeout value. Unit: seconds. Default value: 100
 - (void)activeSubDeviceWithGwId:(NSString *)gwId timeout:(NSTimeInterval)timeout;
 

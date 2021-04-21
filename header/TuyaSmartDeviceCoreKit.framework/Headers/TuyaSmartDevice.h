@@ -271,7 +271,7 @@ typedef enum : NSUInteger {
 - (void)getAutoUpgradeSwitchInfoWithSuccess:(nullable TYSuccessID)success
                                     failure:(nullable TYFailureError)failure;
 
-/// Saves the switch value for automatic device OTA updates.
+/// Saves the switch value for automatic device over-the-air (OTA) updates.
 /// @param switchValue The value of the auto switch. 0 means off, and 1 means on.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.

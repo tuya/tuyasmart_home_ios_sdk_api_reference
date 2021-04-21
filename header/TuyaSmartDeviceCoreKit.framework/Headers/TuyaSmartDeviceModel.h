@@ -260,7 +260,7 @@ typedef NS_OPTIONS(NSUInteger, TuyaSmartDeviceOnlineType) {
 /// Specifies whether automatic updates are supported. Currently, NB-IoT and Bluetooth mesh devices do not support automatic updates.
 @property (nonatomic, assign) BOOL supportAuto;
 
-/// Supports the following OTA update methods that are listed in descending priority from left to right:
+/// Supports the following over-the-air (OTA) update methods that are listed in descending priority from left to right:
 /// `0`: Wi-Fi. `1`: Bluetooth LE. `2`: Bluetooth mesh. `3`: NB-IoT.
 @property (nonatomic, strong) NSArray *otaUpgradeModes;
 

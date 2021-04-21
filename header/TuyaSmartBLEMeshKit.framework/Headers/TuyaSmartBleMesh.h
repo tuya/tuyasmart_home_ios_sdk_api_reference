@@ -134,7 +134,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Adds a Bluetooth sub-device. API version: 2.0.
 /// @param uuid The short address identification of the Bluetooth sub-device.
 /// @param homeId The home ID.
-/// @param authKey The authentication key.
+/// @param authKey The authorization key.
 /// @param nodeId The node ID.
 /// @param productKey The product key.
 /// @param ver The version.

@@ -90,8 +90,8 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
  *  Subscribes to a topic.
  *
  *  @param topic   The topic.
- *  @param success The success block.
- *  @param failure The failure block.
+ *  @param success Called when the task is finished.
+ *  @param failure Called when the task is interrupted by an error.
  */
 - (void)subscribeToTopic:(NSString *)topic
                  devInfo:(NSDictionary *)devInfo
@@ -102,8 +102,8 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
  *  Unsubscribes from a topic.
  *
  *  @param topic   The topic.
- *  @param success The success block.
- *  @param failure The failure block.
+ *  @param success Called when the task is finished.
+ *  @param failure Called when the task is interrupted by an error.
  */
 - (void)unsubscribeToTopic:(NSString *)topic
                    success:(TYSuccessHandler)success
@@ -114,8 +114,8 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
  *
  *  @param data    The data.
  *  @param topic   The topic.
- *  @param success The success block.
- *  @param failure The failure block.
+ *  @param success Called when the task is finished.
+ *  @param failure Called when the task is interrupted by an error.
  *  @return The message identifier of the published message. A value of `zero` is returned at the QoS level 0. A message identifier is returned at the QoS level 1 or 2.
  */
 - (UInt16)publishMessage:(NSData *)data
@@ -128,8 +128,8 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
  *
  *  @param messageModel The message model.
  *  @param topic        The topic.
- *  @param success      The success block.
- *  @param failure      The failure block.
+ *  @param success      Called when the task is finished.
+ *  @param failure      Called when the task is interrupted by an error.
  */
 - (void)publishMessageWithMessageModel:(TuyaSmartPublishMessageModel *)messageModel
                                  topic:(NSString *)topic

@@ -16,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// The result of activating the dual-mode device.
 ///
 /// @param activator        The class.
-/// @param deviceModel      When the activation is successful, this block is called with DeviceModel.
-/// @param error            If an error occurs, this block is called.
+/// @param deviceModel      Called when the task is finished. DeviceModel is returned.
+/// @param error            Called when the task is interrupted by an error.
 - (void)bleWifiActivator:(TuyaSmartBLEWifiActivator *)activator didReceiveBLEWifiConfigDevice:(TuyaSmartDeviceModel *)deviceModel error:(NSError *)error;
 
 @end
@@ -44,8 +44,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param ssid         The name of the router.
 /// @param password     The password of the device.
 /// @param timeout      The timeout value.
-/// @param success      After the data is sent, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)startConfigBLEWifiDeviceWithUUID:(NSString *)UUID
                                   homeId:(long long)homeId
                                productId:(NSString *)productId

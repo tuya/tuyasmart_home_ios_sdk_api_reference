@@ -40,7 +40,7 @@
 @property (nonatomic, copy, readonly) NSArray <TuyaSmartHomeModel *> *homes;
 
 
-/// Returns a list of homes. To get home details, initialize a home and call getHomeDetailWithSuccess: failure:
+/// Returns a list of homes. To get home details, initialize a home and call getHomeDetailWithSuccess: failure:.
 ///
 /// @param success Called when the task is finished. A list of TuyaSmartHomeModel is returned.
 /// @param failure Called when the task is interrupted by an error.

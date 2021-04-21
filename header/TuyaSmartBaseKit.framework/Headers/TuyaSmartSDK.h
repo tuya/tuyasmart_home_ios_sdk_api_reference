@@ -91,7 +91,7 @@ typedef NS_ENUM(NSInteger, TYEnv) {
 @interface TuyaSmartSDK (Upgrade)
 
 
-/// Checks whether TuyaSmartKit must be upgraded to TuyaSmartHomeKit.
+/// Checks whether TuyaSmartKit must be updated to TuyaSmartHomeKit.
 /// @return Indicates whether to update data.
 - (BOOL)checkVersionUpgrade;
 

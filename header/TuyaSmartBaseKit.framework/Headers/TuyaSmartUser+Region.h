@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param region To complete the required registration, use [TuyaSmartUser regionListWithCountryCode:success:failure:] or [TuyaSmartUser getDefaultRegionWithCountryCode:] to get the region.
 /// @param countryCode The country code.
 /// @param code The verification code.
-/// @param type 1: Register with the mobile phone verification code. 2: Log in with the mobile phone verification code. 3: Reset the mobile phone password.
+/// @param type Valid values: `1`: Register with the mobile phone verification code. `2`: Log in with the mobile phone verification code. `3`: Reset the mobile phone password.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)checkCodeWithUserName:(NSString *)userName
@@ -76,8 +76,8 @@ NS_ASSUME_NONNULL_BEGIN
  *  Returns the whitelist of regions to enable registration with mobile phone numbers.
  *
  *
- *  @param success     The success block.
- *  @param failure     The failure block.
+ *  @param success     Called when the task is finished.
+ *  @param failure     Called when the task is interrupted by an error.
  */
 - (void)getWhiteListWhoCanSendMobileCodeSuccess:(TYSuccessString)success
                                         failure:(TYFailureError)failure;

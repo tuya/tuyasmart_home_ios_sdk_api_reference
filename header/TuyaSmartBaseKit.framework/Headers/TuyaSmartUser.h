@@ -136,7 +136,7 @@ typedef NS_ENUM(NSInteger, TYPasswordRegularType) {
 /// @param userName The mobile phone number or email address.
 /// @param region To enable required registration, use [TuyaSmartUser regionListWithCountryCode:success:failure:] or [TuyaSmartUser getDefaultRegionWithCountryCode:] to get the region.
 /// @param countryCode The country code.
-/// @param type 1: Register with the mobile phone verification code. 2: Log in with the mobile phone verification code. 3: Reset the password with the mobile phone number. 5: Complete account information in trial mode. 7: Change the account. 8: Cancel the account.
+/// @param type Valid values: `1`: Register with the mobile phone verification code. `2`: Log in with the mobile phone verification code. `3`: Reset the password with the mobile phone number. `5`: Complete account information in trial mode. `7`: Change the account. `8`: Cancel the account.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)sendVerifyCodeWithUserName:(NSString *)userName

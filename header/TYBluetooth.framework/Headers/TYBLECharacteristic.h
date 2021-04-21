@@ -43,7 +43,7 @@ typedef void (^TYBLECentralCharacteristicWriteCallback) (NSError *error);
  *
  *  @param aCharacteristic The CBCharacteristic object.
  *
- *  @return TYBLECharacteristic
+ *  @return The TYBLECharacteristic object.
  */
 - (instancetype)initWithCharacteristic:(CBCharacteristic *)aCharacteristic;
 

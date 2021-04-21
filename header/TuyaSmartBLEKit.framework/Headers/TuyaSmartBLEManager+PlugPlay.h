@@ -17,8 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param advModel    The device advertisement model.
 /// @param homeId      The ID of the current home.
 /// @param token       The token.
-/// @param success     When the activation is successful, this block is called with DeviceModel.
-/// @param failure     If an error occurs, this block is called.
+/// @param success     Called when the task is finished. DeviceModel is returned.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)activatorDualDeviceWithBleChannel:(TYBLEAdvModel *)advModel
                                    homeId:(long long)homeId
                                     token:(NSString *)token
@@ -31,8 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param ssid        The name of the router.
 /// @param password    The password for the device.
 /// @param timeout     The timeout value.
-/// @param success     When the activation is successful, this block is called with DeviceModel.
-/// @param failure     If an error occurs, this block is called.
+/// @param success     Called when the task is finished. DeviceModel is returned.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)activeDualDeviceWifiChannel:(NSString *)devId
                                ssid:(NSString *)ssid
                            password:(NSString *)password

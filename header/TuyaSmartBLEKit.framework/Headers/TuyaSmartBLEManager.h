@@ -9,9 +9,9 @@
 #import "TYBLEAdvModel.h"
 
 typedef enum : NSUInteger {
-    /// The firmware OTA update type.
+    /// The firmware over-the-air (OTA) update type.
     TuyaSmartBLEOTATypeFirmware = 0,
-    /// The MCU OTA update type.
+    /// The microcontroller unit (MCU) OTA update type.
     TuyaSmartBLEOTATypeMCU,
 } TuyaSmartBLEOTAType;
 
@@ -50,8 +50,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// The result of activating Bluetooth LE devices.
 ///
 /// @param manager          The class.
-/// @param deviceModel      When the activation is successful, this block is called with DeviceModel.
-/// @param error            If an error occurs, this block is called.
+/// @param deviceModel      Called when the task is finished. DeviceModel is returned.
+/// @param error            Called when the task is interrupted by an error.
 - (void)bleManager:(TuyaSmartBLEManager *)manager didFinishActivateDevice:(TuyaSmartDeviceModel *)deviceModel error:(NSError *)error;
 
 /// Receives the transmission data from the device.
@@ -70,7 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The single instance.
 + (instancetype)sharedInstance;
 
-/// A boolean value that indicates whether the mobile phone's Bluetooth is enabled or disabled.
+/// A Boolean value that indicates whether the mobile phone's Bluetooth is enabled or disabled.
 @property (nonatomic, assign, readonly) BOOL isPoweredOn;
 
 /// The delegate for scanning and notifications of Bluetooth status changes.
@@ -94,8 +94,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param uuid         The UUID of the device.
 /// @param productKey   The product ID of the device.
-/// @param success      After the device is connected, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)connectBLEWithUUID:(NSString *)uuid
                 productKey:(NSString *)productKey
                    success:(TYSuccessHandler)success
@@ -104,8 +104,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// Disconnects a device.
 ///
 /// @param uuid         The UUID of the device.
-/// @param success      After the device is disconnected, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)disconnectBLEWithUUID:(NSString *)uuid
                       success:(TYSuccessHandler)success
                       failure:(TYFailureError)failure;
@@ -115,8 +115,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param uuid         The UUID of the device.
 /// @param productKey   The product ID for the device.
-/// @param success      When the query is successful, this block is called with the device name string.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished. The device name string is returned.
+/// @param failure      Called when the task is interrupted by an error.
 ///
 /// @deprecated This method is deprecated. Use TuyaSmartBLEManager::queryDeviceInfoWithUUID:productKey:success:failure: instead.
 - (void)queryNameWithUUID:(NSString *)uuid
@@ -128,8 +128,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param uuid         The UUID of the device.
 /// @param productId    The product ID for the device.
-/// @param success      When the query is successful, this block is called with a dictionary of device information.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished. A dictionary of device information is returned.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)queryDeviceInfoWithUUID:(NSString *)uuid
                       productId:(NSString *)productId
                         success:(TYSuccessDict)success
@@ -139,8 +139,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param uuid The UUID of the device.
 /// @param homeId The ID of the current home.
 /// @param productKey The product ID of the device.
-/// @param success When the activation is successful, this block is called with DeviceModel.
-/// @param failure If an error occurs, this block is called.
+/// @param success Called when the task is finished. DeviceModel is returned.
+/// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated. Use TuyaSmartBLEManager::activeBLE:homeId:success:failure: instead.
 - (void)activeBLEWithUUID:(NSString *)uuid
                    homeId:(long long)homeId
@@ -152,8 +152,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param deviceInfo       The advertisingData model for the Bluetooth LE device.
 /// @param homeId           The ID for the current home.
-/// @param success          When the activation is successful, this block is called with DeviceModel.
-/// @param failure          If an error occurs, this block is called.
+/// @param success          Called when the task is finished. DeviceModel is returned.
+/// @param failure          Called when the task is interrupted by an error.
 - (void)activeBLE:(TYBLEAdvModel *)deviceInfo
            homeId:(long long)homeId
           success:(void(^)(TuyaSmartDeviceModel *deviceModel))success
@@ -164,7 +164,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param devId        The device ID.
 /// @param data         The data to be transmitted to the device.
 /// @param success      The data that is returned by the device.
-/// @param failure      If an error occurs, this block is called.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)publishBleTransparentData:(NSString *)devId
                              data:(NSData *)data
                           success:(TYSuccessData)success
@@ -174,8 +174,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param devId        The device ID.
 /// @param dpIds        The array of DP IDs to be queried.
-/// @param success      When the query is successful, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)publishQueryDpCommand:(NSString *)devId
                         dpIds:(NSArray *)dpIds
                       success:(TYSuccessBOOL)success
@@ -189,8 +189,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param uuid         The UUID of the device.
 /// @param otaData      The OTA package data.
-/// @param success      When the OTA update is successful, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 ///
 /// @deprecated This method is deprecated. Use TuyaSmartBLEManager::sendOTAPack:pid:otaData:otaType:otaVersion:success:failure: instead.
 - (void)sendOTAPack:(NSString *)uuid
@@ -207,8 +207,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param uuid         The UUID of the device.
 /// @param pid          The product ID of the device.
 /// @param otaData      The OTA package data.
-/// @param success      When the OTA update is successful, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 ///
 /// @deprecated This method is deprecated. Use TuyaSmartBLEManager::sendOTAPack:pid:otaData:otaType:otaVersion:success:failure: instead.
 - (void)sendOTAPack:(NSString *)uuid
@@ -228,8 +228,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param otaData      The OTA package data.
 /// @param otaType      The OTA update type.
 /// @param otaVersion   The OTA version.
-/// @param success      When the OTA update is successful, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)sendOTAPack:(NSString *)uuid
                 pid:(NSString *)pid
             otaData:(NSData *)otaData
@@ -256,8 +256,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 
 /// @param devId        The device ID.
 /// @param paramsDict   A dictionary of parameters that are defined by the protocol party.
-/// @param success      When the OTA update is successful, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)postBleBigDataChannel:(NSString *)devId params:(NSDictionary *)paramsDict success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
 @end

@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Returns all gateway router devices for the current home.
 /// @param homeId The home ID.
-/// @return TAhe list of all home gateway router devices.
+/// @return A list of all home gateway router devices.
 /// @deprecated This method is deprecated. Use TuyaSmartRouterActivator::autoActiveRouterDeviceListWithHomeId: instead.
 - (NSArray <TuyaSmartDeviceModel *> *)autoActiveRouterDeviceListWithHomeId:(long long)homeId __deprecated_msg("Use -[TuyaSmartRouterActivator autoActiveRouterDeviceListWithHomeId:] instead.");
 

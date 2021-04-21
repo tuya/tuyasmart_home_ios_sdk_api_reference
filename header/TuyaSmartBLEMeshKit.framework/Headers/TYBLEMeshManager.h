@@ -117,7 +117,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The token of the activator.
 @property (nonatomic, strong) NSString *token;
 
-/// The device authentication key (AuthKey) that is used for activation.
+/// The device authorization key (AuthKey) that is used for activation.
 @property (nonatomic, strong) NSString *authKey;
 
 /// The UUID of the mesh node.
@@ -243,7 +243,7 @@ NS_ASSUME_NONNULL_BEGIN
                        type:(NSString *)type
                groupAddress:(uint32_t)groupAddress;
 
-/// Delete a group from the mesh network.
+/// Deletes a group from the mesh network.
 /// @param groupAddress The group address.
 /// @param type The group type.
 - (void)deleteGroupAddress:(uint32_t)groupAddress

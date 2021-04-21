@@ -59,7 +59,7 @@ NS_ASSUME_NONNULL_BEGIN
                               failure:(TYFailureError)failure;
 
 
-/// Start discovering devices.
+/// Starts to scan for devices.
 ///
 /// The 'devIds' should be obtained form TuyaSmartRouterActivator::autoActiveRouterDeviceListWithHomeId:
 ///

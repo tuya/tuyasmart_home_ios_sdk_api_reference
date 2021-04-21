@@ -23,7 +23,7 @@ typedef void (^TPBleResultBlock)(NSString *result);
 
 /// Sets the callback when the transfer is completed.
 ///
-/// @param block    After data is transferred, this block is called.
+/// @param block    Called when the task is finished.
 /// @param uuid     The UUID of the device.
 - (void)setCompletionBlock:(TPBleResultBlock)block uuid:(NSString *)uuid;
 

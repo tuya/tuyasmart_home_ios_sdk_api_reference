@@ -166,7 +166,7 @@ typedef NS_ENUM(int, TYBLEAgentRole)
        completion:(TYBLEAgentCentralWriteCallback)aCallback;
 
 /**
- *  Read from a Bluetooth device.
+ *  Reads from a Bluetooth device.
  *
  *  @param aPeripheral     The Bluetooth device from which data is read.
  *  @param aCharacteristic The characteristic UUID.
@@ -179,7 +179,7 @@ typedef NS_ENUM(int, TYBLEAgentRole)
                      completion:(TYBLEAgentCentralReadCallback)aCallback;
 
 /**
- *  Receives data that is pushed by the Bluetooth device.
+ *  Receives data that is pushed by the Bluetooth device.
  *
  *  @param b               The switch that enables or disables data transfers.
  *  @param aPeripheral     The connected Bluetooth device.

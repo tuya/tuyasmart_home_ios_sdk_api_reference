@@ -25,7 +25,7 @@ typedef NS_ENUM(NSUInteger, TYBLEMeshCommandType) {
     /// Returns the IDs of all devices in the group.
     TYBLEMeshFetchAllDeviceIdFromGroupCommand,
     
-    /// Requests the authentication key.
+    /// Requests the authorization key.
     TYBLEMeshRequestAuthKeyCommand,
     
     /// Sends the switch command.

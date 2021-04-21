@@ -22,8 +22,8 @@
 /// @param time The specific time to trigger this task.
 /// @param dps The data point dictionary.
 /// @param timeZone The timezone of the device.
-/// @param success If successfully added the task, this block will be called.
-/// @param failure If error occurred while adding the task, this block will be called.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated, Use TuyaSmartTimer::addTimerWithTask:loops:bizId:bizType:time:dps:status:isAppPush:aliasName:success:failure: instead.
 - (void)addTimerWithTask:(NSString *)task
                    loops:(NSString *)loops
@@ -42,7 +42,7 @@
 /// @param time Timed clocks under timed tasks
 /// @param dps Command dictionary.
 /// @param timeZone Time zone of the device +08:00, if the phone time zone is not taken.
-/// @param isAppPush A boolean value indicates whether to turn on the push notification.
+/// @param isAppPush A Boolean value indicates whether to turn on the push notification.
 /// @param aliasName The remark for the task.
 /// @param success  Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
@@ -133,7 +133,7 @@
 /// @param time Timed clocks under timed tasks
 /// @param dps Command dictionary.
 /// @param timeZone Time zone of the device +08:00.
-/// @param isAppPush A boolean value indicates whether to turn on the push notification.
+/// @param isAppPush A Boolean value indicates whether to turn on the push notification.
 /// @param aliasName The remark for the task.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.

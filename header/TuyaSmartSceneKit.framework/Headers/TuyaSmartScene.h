@@ -26,7 +26,7 @@
 
 /// Do not initialize an instance by using the init method.
 ///
-/// @return    This method returns an unavailable instance.
+/// @return This method returns an unavailable instance.
 - (instancetype)init NS_UNAVAILABLE;
 
 /// Adds a scene by using required parameters.

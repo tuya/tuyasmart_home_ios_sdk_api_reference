@@ -25,8 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// Activates the beacon device.
 /// @param advModel The advertisingData model for the beacon device.
 /// @param homeId The ID for the current home.
-/// @param success When the activation is successful, this block is called with DeviceModel.
-/// @param failure If an error occurs, this block is called.
+/// @param success Called when the task is finished. DeviceModel is returned.
+/// @param failure Called when the task is interrupted by an error.
 - (void)activeBeacon:(TYBLEAdvModel *)advModel
               homeId:(long long)homeId
              success:(nonnull void (^)(TuyaSmartDeviceModel * _Nonnull))success
@@ -35,8 +35,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// Publishes the transmitted data.
 /// @param deviceId The device ID for the device.
 /// @param dps The DP dictionary.
-/// @param success After the DPs are sent, this block is called.
-/// @param failure  If an error occurs, this block is called.
+/// @param success Called when the task is finished.
+/// @param failure  Called when the task is interrupted by an error.
 - (void)publishDpsWithDevicId:(NSString *)deviceId
                           dps:(nonnull NSDictionary *)dps
                       success:(nonnull TYSuccessHandler)success
@@ -58,8 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Resets the device and enables the pairing status for the device.
 /// @param devId The device ID.
-/// @param success After the device is reset, this block is called.
-/// @param failure If an error occurs, this block is called.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error.
 - (void)resetWithDevId:(NSString *)devId
                success:(TYSuccessHandler)success
                failure:(TYFailureHandler)failure;

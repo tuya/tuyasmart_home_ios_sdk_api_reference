@@ -65,7 +65,7 @@ typedef NS_ENUM(NSInteger, TYSceneActionStatus)
 /// Describes the details of the specified action, such as `Switch : Open`.
 @property (nonatomic, copy) NSString *actionDisplay;
 
-/// Describes the details of the specified action. The following sample code shows the original format. You can use this sample code to create the description.
+/// Describes the details of the specified action. The following sample code shows the original format. You can use this sample code to create the description:
 /// {
 ///    1: [
 ///        "Switch",

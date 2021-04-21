@@ -236,7 +236,7 @@
 
 /// Returns a list of URLs for the scene background icons.
 ///
-/// @param success If the task is finished, this block is called and the URL list is returned.
+/// @param success Called when the task is finished. The URL list is returned.
 /// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getSmartSceneBackgroundCoverWithsuccess:(TYSuccessList)success failure:(TYFailureError)failure;
 

@@ -18,8 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param countryCode  The country code.
 /// @param account      The user account.
 /// @param isAdmin      Specifies whether the member is an administrator.
-/// @param success      The success block.
-/// @param failure      The failure block.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated. Use TuyaSmartHome::addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure: instead.
 - (void)addHomeMemberWithName:(NSString *)name
                       headPic:(UIImage *)headPic
@@ -36,8 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param countryCode  The country code.
 /// @param account      The user account.
 /// @param role         The type of the home role.
-/// @param success      The success block.
-/// @param failure      The failure block.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated. Use TuyaSmartHome::addHomeMemberWithAddMemeberRequestModel:success:failure: instead.
 - (void)addHomeMemberWithName:(NSString *)name
                       headPic:(UIImage *)headPic

@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param countryCode The country code.
 /// @param userAccount The user account.
 /// @param devIds A list of device IDs.
-/// @param success The success block.
-/// @param failure The failure block.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated. Use TuyaSmartHomeDeviceShare::addDeviceShareWithRequestModel:success:failure: instead.
 - (void)addShareWithHomeId:(long long)homeId
                countryCode:(NSString *)countryCode
@@ -31,8 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param countryCode The country code.
 /// @param userAccount The user account.
 /// @param devId The device ID.
-/// @param success The success block.
-/// @param failure The failure block.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated. Use TuyaSmartHomeDeviceShare::addDeviceShareWithRequestModel:success:failure: instead.
 - (void)addDeviceShareWithHomeId:(long long)homeId
                      countryCode:(NSString *)countryCode

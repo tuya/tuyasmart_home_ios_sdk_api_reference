@@ -18,8 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param homeId The home ID.
 /// @param categoryCode The category code.
 /// @param devIdList A list of device IDs.
-/// @param success The success block.
-/// @param failure The failure block.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated. Use TuyaSmartGroup::createDpCodeGroupWithName:homeId:devIdList:success:failure: instead.
 + (void)createDpCodeGroupWithName:(NSString *)name
                            homeId:(long long)homeId
@@ -34,8 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param homeId The home ID.
 /// @param categoryCode The category code.
-/// @param success The success block.
-/// @param failure The failure block.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated. Use TuyaSmartGroup::getDpCodeDevListWithHomeId:success:failure: instead.
 + (void)getDpCodeDevListWithHomeId:(long long)homeId
                       categoryCode:(NSString *)categoryCode

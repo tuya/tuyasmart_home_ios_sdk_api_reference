@@ -27,8 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param advModel     Device advertisement model.
 /// @param homeId       The ID of the current home.
-/// @param success      When the request is successful, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)switchZigbeeSubDeviceToZigbeeActivator:(TYBLEAdvModel *)advModel
                                         homeId:(long long)homeId
                                        success:(TYSuccessHandler)success

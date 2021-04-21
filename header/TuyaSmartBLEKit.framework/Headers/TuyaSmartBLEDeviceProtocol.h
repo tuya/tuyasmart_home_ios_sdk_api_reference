@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Scan Protocol
 
-/// @brief TuyaSmartBLEDeviceProtocol provides protocol methods to implement multiple functions, such as activation, device control, and OTA updates.
+/// @brief TuyaSmartBLEDeviceProtocol provides protocol methods to implement multiple functions, such as activation, device control, and over-the-air (OTA) updates.
 @protocol TuyaSmartBLEScanProtocol <NSObject>
 
 typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo);
@@ -43,8 +43,8 @@ typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo)
 ///
 /// @param deviceInfo       The advertisingData model for the Bluetooth LE device.
 /// @param homeId           The ID of the current home.
-/// @param success          When the activation is successful, this block is called with DeviceModel.
-/// @param failure          If an error occurs, this block is called.
+/// @param success          Called when the task is finished. DeviceModel is returned.
+/// @param failure          Called when the task is interrupted by an error.
 - (void)startActiveWithDevice:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                        homeId:(long long)homeId
                       success:(void(^)(TuyaSmartDeviceModel *deviceModel))success
@@ -63,8 +63,8 @@ typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo)
 ///
 /// @param deviceInfo   The Tuya Bluetooth LE-based device object.
 /// @param dps          The DP dictionary.
-/// @param success      When the query is successful, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)publishDpsWithDeviceInfo:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                              dps:(NSDictionary *)dps
                              success:(TYSuccessHandler)success
@@ -74,8 +74,8 @@ typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo)
 ///
 /// @param deviceInfo   The Tuya Bluetooth LE-based device object.
 /// @param dpIds        The array of DP IDs to be queried.
-/// @param success      When the query is successful, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)publishQueryDpCommand:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                         dpIds:(NSArray *)dpIds
                       success:(TYSuccessHandler)success
@@ -84,8 +84,8 @@ typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo)
 /// Connects to a device.
 ///
 /// @param deviceInfo   The Tuya Bluetooth LE-based device object.
-/// @param success      After the device is connected, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)connectWithDeviceInfo:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                       success:(TYSuccessHandler)success
                       failure:(TYFailureError)failure;
@@ -93,8 +93,8 @@ typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo)
 /// Disconnects a device.
 ///
 /// @param deviceInfo   The Tuya Bluetooth LE-based device object.
-/// @param success      After the device is disconnected, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)disconnectWithDeviceInfo:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                          success:(TYSuccessHandler)success
                          failure:(TYFailureError)failure;
@@ -102,8 +102,8 @@ typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo)
 /// Removes a device.
 ///
 /// @param deviceInfo   The Tuya Bluetooth LE-based device object.
-/// @param success      After the device is removed, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)removeWithDeviceInfo:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                      success:(TYSuccessHandler)success
                      failure:(TYFailureError)failure;
@@ -111,8 +111,8 @@ typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo)
 /// Restores factory settings
 ///
 /// @param deviceInfo   The Tuya Bluetooth LE-based device object.
-/// @param success      After the device is reset, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)resetWithDeviceInfo:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                     success:(TYSuccessHandler)success
                     failure:(TYFailureError)failure;
@@ -127,8 +127,8 @@ typedef void(^TYBLEScanResultHandher)(id<TuyaSmartBLEDeviceProtocol> deviceInfo)
 /// @param otaData      The OTA package data.
 /// @param otaType      The OTA update type.
 /// @param otaVersion   The OTA version.
-/// @param success      When the OTA update is successful, this block is called.
-/// @param failure      If an error occurs, this block is called.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)sendOTAPackWithDeviceInfo:(id<TuyaSmartBLEDeviceProtocol>)deviceInfo
                           otaData:(NSData *)otaData
                           otaType:(TuyaSmartBLEOTAType)otaType
