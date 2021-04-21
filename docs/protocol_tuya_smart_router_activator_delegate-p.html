@@ -100,10 +100,12 @@ Inheritance diagram for &lt;TuyaSmartRouterActivatorDelegate&gt;:</div>
 Instance Methods</h2></td></tr>
 <tr class="memitem:aa4ddaf9f44c37ec27975533597270415"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_router_activator_delegate-p.html#aa4ddaf9f44c37ec27975533597270415">routerActivator:didReceiveAutoConfigDevice:error:</a></td></tr>
 <tr class="separator:aa4ddaf9f44c37ec27975533597270415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ddaf9f44c37ec27975533597270415"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_router_activator_delegate-p.html#aa4ddaf9f44c37ec27975533597270415">routerActivator:didReceiveAutoConfigDevice:error:</a></td></tr>
+<tr class="separator:aa4ddaf9f44c37ec27975533597270415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
 <a id="aa4ddaf9f44c37ec27975533597270415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4ddaf9f44c37ec27975533597270415">&#9670;&nbsp;</a></span>routerActivator:didReceiveAutoConfigDevice:error:</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ddaf9f44c37ec27975533597270415">&#9670;&nbsp;</a></span>routerActivator:didReceiveAutoConfigDevice:error: <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,11 +135,53 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Callback for configuration network status update. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The callback of pairing status updates. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">activator</td><td>The activator instance. </td></tr>
-    <tr><td class="paramname">deviceModel</td><td>The <a class="el" href="interface_tuya_smart_device_model.html" title="The device information.">TuyaSmartDeviceModel</a>. </td></tr>
-    <tr><td class="paramname">error</td><td>The error message. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The value of <a class="el" href="interface_tuya_smart_device_model.html" title="The information about the device.">TuyaSmartDeviceModel</a>. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa4ddaf9f44c37ec27975533597270415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ddaf9f44c37ec27975533597270415">&#9670;&nbsp;</a></span>routerActivator:didReceiveAutoConfigDevice:error: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) routerActivator: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_router_activator.html">TuyaSmartRouterActivator</a> *)&#160;</td>
+          <td class="paramname"><em>activator</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">didReceiveAutoConfigDevice:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *)&#160;</td>
+          <td class="paramname"><em>deviceModel</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">error:</td>
+          <td></td>
+          <td class="paramtype">(NSError *)&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The callback of pairing status updates. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">activator</td><td>The activator instance. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The value of <a class="el" href="interface_tuya_smart_device_model.html" title="The information about the device.">TuyaSmartDeviceModel</a>. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
   </table>
   </dd>
 </dl>

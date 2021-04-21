@@ -104,10 +104,16 @@ Instance Methods</h2></td></tr>
 <tr class="separator:aa722cfb1ac987fa607fc2737fd4fad14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a375e200a5d8634157e7a1dd5f11561b2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_activator_delegate-p.html#a375e200a5d8634157e7a1dd5f11561b2">meshActivator:didReceiveDeviceId:meshId:error:</a></td></tr>
 <tr class="separator:a375e200a5d8634157e7a1dd5f11561b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae55bf371f821187eae54a85abdacdb4c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_activator_delegate-p.html#ae55bf371f821187eae54a85abdacdb4c">activator:didReceiveDevice:error:</a></td></tr>
+<tr class="separator:ae55bf371f821187eae54a85abdacdb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa722cfb1ac987fa607fc2737fd4fad14"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_activator_delegate-p.html#aa722cfb1ac987fa607fc2737fd4fad14">activator:didReceiveDevice:step:error:</a></td></tr>
+<tr class="separator:aa722cfb1ac987fa607fc2737fd4fad14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375e200a5d8634157e7a1dd5f11561b2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_activator_delegate-p.html#a375e200a5d8634157e7a1dd5f11561b2">meshActivator:didReceiveDeviceId:meshId:error:</a></td></tr>
+<tr class="separator:a375e200a5d8634157e7a1dd5f11561b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
 <a id="ae55bf371f821187eae54a85abdacdb4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae55bf371f821187eae54a85abdacdb4c">&#9670;&nbsp;</a></span>activator:didReceiveDevice:error:</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae55bf371f821187eae54a85abdacdb4c">&#9670;&nbsp;</a></span>activator:didReceiveDevice:error: <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,11 +151,61 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Callback for distribution status update, wifi single product, zigbee gateway, zigbee sub device. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The callback of pairing status updates. A Wi-Fi single product, Zigbee gateways, and Zigbee sub-devices are supported. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">activator</td><td>instance </td></tr>
-    <tr><td class="paramname">deviceModel</td><td>deviceModel </td></tr>
-    <tr><td class="paramname">error</td><td>error </td></tr>
+    <tr><td class="paramname">activator</td><td>The instance. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The device model. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae55bf371f821187eae54a85abdacdb4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae55bf371f821187eae54a85abdacdb4c">&#9670;&nbsp;</a></span>activator:didReceiveDevice:error: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) activator: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_activator.html">TuyaSmartActivator</a> *)&#160;</td>
+          <td class="paramname"><em>activator</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">didReceiveDevice:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *)&#160;</td>
+          <td class="paramname"><em>deviceModel</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">error:</td>
+          <td></td>
+          <td class="paramtype">(NSError *)&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The callback of pairing status updates. A Wi-Fi single product, Zigbee gateways, and Zigbee sub-devices are supported. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">activator</td><td>The instance. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The device model. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
   </table>
   </dd>
 </dl>
@@ -157,7 +213,7 @@ Instance Methods</h2></td></tr>
 </div>
 </div>
 <a id="aa722cfb1ac987fa607fc2737fd4fad14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa722cfb1ac987fa607fc2737fd4fad14">&#9670;&nbsp;</a></span>activator:didReceiveDevice:step:error:</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa722cfb1ac987fa607fc2737fd4fad14">&#9670;&nbsp;</a></span>activator:didReceiveDevice:step:error: <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,12 +257,69 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Callback for distribution status update, wifi single product, zigbee gateway, zigbee sub device. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The callback of pairing status updates. A Wi-Fi single product, Zigbee gateways, and Zigbee sub-devices are supported. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">activator</td><td>instance </td></tr>
-    <tr><td class="paramname">deviceModel</td><td>deviceModel </td></tr>
-    <tr><td class="paramname">step</td><td>activator step </td></tr>
-    <tr><td class="paramname">error</td><td>error </td></tr>
+    <tr><td class="paramname">activator</td><td>The instance. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The device model. </td></tr>
+    <tr><td class="paramname">step</td><td>One of the activation steps. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa722cfb1ac987fa607fc2737fd4fad14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa722cfb1ac987fa607fc2737fd4fad14">&#9670;&nbsp;</a></span>activator:didReceiveDevice:step:error: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) activator: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_activator.html">TuyaSmartActivator</a> *)&#160;</td>
+          <td class="paramname"><em>activator</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">didReceiveDevice:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *)&#160;</td>
+          <td class="paramname"><em>deviceModel</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">step:</td>
+          <td></td>
+          <td class="paramtype">(TYActivatorStep)&#160;</td>
+          <td class="paramname"><em>step</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">error:</td>
+          <td></td>
+          <td class="paramtype">(NSError *)&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The callback of pairing status updates. A Wi-Fi single product, Zigbee gateways, and Zigbee sub-devices are supported. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">activator</td><td>The instance. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The device model. </td></tr>
+    <tr><td class="paramname">step</td><td>One of the activation steps. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
   </table>
   </dd>
 </dl>
@@ -214,7 +327,7 @@ Instance Methods</h2></td></tr>
 </div>
 </div>
 <a id="a375e200a5d8634157e7a1dd5f11561b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a375e200a5d8634157e7a1dd5f11561b2">&#9670;&nbsp;</a></span>meshActivator:didReceiveDeviceId:meshId:error:</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a375e200a5d8634157e7a1dd5f11561b2">&#9670;&nbsp;</a></span>meshActivator:didReceiveDeviceId:meshId:error: <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,16 +377,80 @@ Instance Methods</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Callback for distribution status update mesh gateway, deprecated. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The callback of pairing status updates for a mesh gateway. This method is deprecated. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">activator</td><td>instance </td></tr>
-    <tr><td class="paramname">deviceId</td><td>devId </td></tr>
-    <tr><td class="paramname">meshId</td><td>meshId </td></tr>
-    <tr><td class="paramname">error</td><td>error </td></tr>
+    <tr><td class="paramname">activator</td><td>The instance. </td></tr>
+    <tr><td class="paramname">deviceId</td><td>The device ID. </td></tr>
+    <tr><td class="paramname">meshId</td><td>The mesh ID. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="protocol_tuya_smart_activator_delegate-p.html#ae55bf371f821187eae54a85abdacdb4c">activator:didReceiveDevice:error:</a> instead <code>deviceId</code> is <code>deviceModel.devId</code>, <code>meshId</code> is <code>deviceModel.parentId</code>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="protocol_tuya_smart_activator_delegate-p.html#ae55bf371f821187eae54a85abdacdb4c">activator:didReceiveDevice:error:</a> instead. <code>deviceId</code> is set to the value of <code>deviceModel.devId</code>. <code>meshId</code> is set to the value of <code>deviceModel.parentId</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a375e200a5d8634157e7a1dd5f11561b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375e200a5d8634157e7a1dd5f11561b2">&#9670;&nbsp;</a></span>meshActivator:didReceiveDeviceId:meshId:error: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) meshActivator: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_activator.html">TuyaSmartActivator</a> *)&#160;</td>
+          <td class="paramname"><em>activator</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">didReceiveDeviceId:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>deviceId</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">meshId:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>meshId</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">error:</td>
+          <td></td>
+          <td class="paramtype">(&quot;Use - instead. `deviceId` is `deviceModel.devId`)&#160;</td>
+          <td class="paramname">[TuyaSmartActivatorDelegate activator:didReceiveDevice:error:]</td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(`meshId` is `deviceModel.parentId`.&quot;)&#160;</td>
+          <td class="paramname"><em>__deprecated_msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">optional</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The callback of pairing status updates for a mesh gateway. This method is deprecated. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">activator</td><td>The instance. </td></tr>
+    <tr><td class="paramname">deviceId</td><td>The device ID. </td></tr>
+    <tr><td class="paramname">meshId</td><td>The mesh ID. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="protocol_tuya_smart_activator_delegate-p.html#ae55bf371f821187eae54a85abdacdb4c">activator:didReceiveDevice:error:</a> instead. <code>deviceId</code> is set to the value of <code>deviceModel.devId</code>. <code>meshId</code> is set to the value of <code>deviceModel.parentId</code>. </dd></dl>
 
 </div>
 </div>

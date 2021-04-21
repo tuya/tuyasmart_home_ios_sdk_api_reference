@@ -131,10 +131,10 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Obtain allocation token using home ID (valid for 10 minutes). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns the pairing token by home ID. This token is valid for 10 minutes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">homeId</td><td>Home Id </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. TYSuccessString will be returned. </td></tr>
+    <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. TYSuccessString is returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -181,11 +181,11 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Obtain allocation token using product ID (valid for 10 minutes). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns the pairing token by product ID. This token is valid for 10 minutes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">productKey</td><td>Product Id </td></tr>
-    <tr><td class="paramname">homeId</td><td>Home Id </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. TYSuccessString will be returned. </td></tr>
+    <tr><td class="paramname">productKey</td><td>The product ID. </td></tr>
+    <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. TYSuccessString is returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -232,11 +232,11 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Obtain allocation token using UUID (valid for 10 minutes). </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns the pairing token by UUID. This token is valid for 10 minutes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>Device uuid </td></tr>
-    <tr><td class="paramname">homeId</td><td>Home Id </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. TYSuccessString will be returned. </td></tr>
+    <tr><td class="paramname">uuid</td><td>The device UUID. </td></tr>
+    <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. TYSuccessString is returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>

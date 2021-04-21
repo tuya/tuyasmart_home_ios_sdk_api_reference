@@ -115,22 +115,22 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the list of all gateway router devices under the current family. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns all gateway router devices for the current home. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">homeId</td><td>Current home ID. </td></tr>
+    <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The list of all home gateway router devices. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="category_tuya_smart_router_activator_07_home_08.html#a1357db87c9c7aaefdd72d7cfee089fa1">autoActiveRouterDeviceListWithHomeId: (TuyaSmartRouterActivator(Home))</a> instead. </dd></dl>
-<p>Get the list of all gateway router devices under the current family. </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="section return"><dt>Returns</dt><dd>TAhe list of all home gateway router devices. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="category_tuya_smart_router_activator_07_home_08.html#a1357db87c9c7aaefdd72d7cfee089fa1">autoActiveRouterDeviceListWithHomeId: (TuyaSmartRouterActivator(Home))</a> instead. </dd></dl>
+<p>Returns all gateway router devices for the current home. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">homeId</td><td>Current home ID. </td></tr>
+    <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The list of all home gateway router devices. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>This method is deprecated, Use <a class="el" href="category_tuya_smart_router_activator_07_home_08.html#a1357db87c9c7aaefdd72d7cfee089fa1">autoActiveRouterDeviceListWithHomeId: (TuyaSmartRouterActivator(Home))</a> instead. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>All home gateway router devices. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="category_tuya_smart_router_activator_07_home_08.html#a1357db87c9c7aaefdd72d7cfee089fa1">autoActiveRouterDeviceListWithHomeId: (TuyaSmartRouterActivator(Home))</a> instead. </dd></dl>
 
 <p>Extends class <a class="el" href="interface_tuya_smart_auto_activator.html#aeeb2d768f14a72e0ec961fb4dac10715">TuyaSmartAutoActivator</a>.</p>
 
@@ -151,20 +151,13 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a list of all the devices under the current household that support password-free configuration. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns all devices for the current home that supports the password-free pairing function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">homeId</td><td>HomeId </td></tr>
+    <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The list of all devices in the home that support password-free configuration.</dd></dl>
-<p>Get a list of all the devices under the current household that support password-free configuration. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">homeId</td><td>HomeId </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The list of all devices in the home that supports the password-free configuration. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>All devices in the home that supports the password-free pairing function. </dd></dl>
 
 <p>Extends class <a class="el" href="interface_tuya_smart_auto_activator.html#a037c2b67bf162a66b457389b585087cc">TuyaSmartAutoActivator</a>.</p>
 
@@ -207,11 +200,11 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Binding devices to a specified home. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds devices to a specified home. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">homeId</td><td>HomeId </td></tr>
-    <tr><td class="paramname">devIds</td><td>Device ID list. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
+    <tr><td class="paramname">devIds</td><td>A list of device IDs. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>

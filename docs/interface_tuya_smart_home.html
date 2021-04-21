@@ -210,7 +210,7 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">requestModel</td><td>The member model. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -291,7 +291,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="category_tuya_smart_home_07_t_y_deprecated_api_08.html#ae99cf68fc38678176941c1db89ccffc5">addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure: (TuyaSmartHome(TYDeprecatedApi))</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="category_tuya_smart_home_07_t_y_deprecated_api_08.html#ae99cf68fc38678176941c1db89ccffc5">addHomeMemberWithName:headPic:countryCode:userAccount:role:success:failure: (TuyaSmartHome(TYDeprecatedApi))</a> instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_07_t_y_deprecated_api_08.html#a266b4f9a95a87653226cd41ee5d7efd0">TuyaSmartHome(TYDeprecatedApi)</a>.</p>
 
@@ -371,7 +371,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="interface_tuya_smart_home.html#a134b90fce0559030e622108fe124687f">addHomeMemberWithAddMemeberRequestModel:success:failure:</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="interface_tuya_smart_home.html#a134b90fce0559030e622108fe124687f">addHomeMemberWithAddMemeberRequestModel:success:failure:</a> instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_07_t_y_deprecated_api_08.html#ae99cf68fc38678176941c1db89ccffc5">TuyaSmartHome(TYDeprecatedApi)</a>.</p>
 
@@ -413,7 +413,7 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">name</td><td>The room name. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -449,7 +449,7 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -512,7 +512,7 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -547,7 +547,7 @@ Properties</h2></td></tr>
 <p>After the home object is initialized, you must get the details of the home, homeModel, roomList, deviceList, and groupList to set the data. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">success</td><td>Called when the task is finished. <a class="el" href="interface_tuya_smart_home_model.html">TuyaSmartHomeModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -583,7 +583,7 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">success</td><td>Called when the task is finished. A list of <a class="el" href="interface_tuya_smart_home_member_model.html">TuyaSmartHomeMemberModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -628,7 +628,7 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">optionModel</td><td>The configurations of weather parameter units. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. A list of <a class="el" href="interface_tuya_smart_weather_model.html">TuyaSmartWeatherModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -665,7 +665,7 @@ Properties</h2></td></tr>
 <p>Returns brief weather parameters for the home. This request also returns brief weather parameters for the city where the home is located, such as the city name, weather conditions for the day (such as sunny, cloudy, and rainy), and weather picture information. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">success</td><td>Called when the task is finished. <a class="el" href="interface_tuya_smart_weather_sketch_model.html">TuyaSmartWeatherSketchModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -810,7 +810,7 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">accept</td><td>A Boolean value that specifies whether to accept the invitation. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -870,7 +870,7 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">roomId</td><td>The home ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -912,7 +912,7 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">orderList</td><td>The order list ["bizId": @"XXX", @"bizType": @"XXX"},@"bizId": @"XXX",@"bizType": @"XXX"}], where bizId is the device's device ID or group's group ID, device's bizType = @"6" group's bizType = @"5". </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -953,9 +953,9 @@ Properties</h2></td></tr>
 <p>Sorts the homes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">roomList</td><td>The list of homes. </td></tr>
+    <tr><td class="paramname">roomList</td><td>A list of homes. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -991,7 +991,7 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1069,7 +1069,7 @@ Properties</h2></td></tr>
     <tr><td class="paramname">rooms</td><td>The array of room names. </td></tr>
     <tr><td class="paramname">overWriteRoom</td><td>NSDictionary only supports "overWriteRoom":boolean. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1133,7 +1133,7 @@ Properties</h2></td></tr>
     <tr><td class="paramname">latitude</td><td>The latitude. </td></tr>
     <tr><td class="paramname">longitude</td><td>The longitude. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>

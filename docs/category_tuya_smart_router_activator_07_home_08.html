@@ -113,20 +113,20 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the list of all gateway router devices under the current home. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns all gateway router devices for the current home. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">homeId</td><td>Current home ID. </td></tr>
+    <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The list of all home gateway router devices.</dd></dl>
-<p>Get the list of all gateway router devices which support router configuration under the current home. </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="section return"><dt>Returns</dt><dd>All home gateway router devices.</dd></dl>
+<p>Returns all gateway router devices that support router-based pairing for the current home. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">homeId</td><td>Current home ID. </td></tr>
+    <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The list of all home gateway router devices. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>All home gateway router devices. </dd></dl>
 
 <p>Extends class <a class="el" href="interface_tuya_smart_router_activator.html#a54e78c91e70fb339dd277c9e9055b8a7">TuyaSmartRouterActivator</a>.</p>
 
@@ -169,11 +169,11 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Binding devices to home. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds devices to a specified home. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">homeId</td><td>HomeId. </td></tr>
-    <tr><td class="paramname">devIds</td><td>Device ID list. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
+    <tr><td class="paramname">devIds</td><td>A list of device IDs. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>

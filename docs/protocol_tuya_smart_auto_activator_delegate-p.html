@@ -100,10 +100,12 @@ Inheritance diagram for &lt;TuyaSmartAutoActivatorDelegate&gt;:</div>
 Instance Methods</h2></td></tr>
 <tr class="memitem:a64f962a044c9238a95c6e1fdeb6e3d33"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_auto_activator_delegate-p.html#a64f962a044c9238a95c6e1fdeb6e3d33">autoActivator:didReceiveAutoConfigDevice:error:</a></td></tr>
 <tr class="separator:a64f962a044c9238a95c6e1fdeb6e3d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f962a044c9238a95c6e1fdeb6e3d33"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_auto_activator_delegate-p.html#a64f962a044c9238a95c6e1fdeb6e3d33">autoActivator:didReceiveAutoConfigDevice:error:</a></td></tr>
+<tr class="separator:a64f962a044c9238a95c6e1fdeb6e3d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
 <a id="a64f962a044c9238a95c6e1fdeb6e3d33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64f962a044c9238a95c6e1fdeb6e3d33">&#9670;&nbsp;</a></span>autoActivator:didReceiveAutoConfigDevice:error:</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f962a044c9238a95c6e1fdeb6e3d33">&#9670;&nbsp;</a></span>autoActivator:didReceiveAutoConfigDevice:error: <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,11 +135,53 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Configure callbacks for status updates of the network. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Configures the callbacks of network status updates. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">activator</td><td>instance </td></tr>
-    <tr><td class="paramname">deviceModel</td><td>Device model. </td></tr>
-    <tr><td class="paramname">error</td><td>error </td></tr>
+    <tr><td class="paramname">activator</td><td>The instance. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The device model. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64f962a044c9238a95c6e1fdeb6e3d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f962a044c9238a95c6e1fdeb6e3d33">&#9670;&nbsp;</a></span>autoActivator:didReceiveAutoConfigDevice:error: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) autoActivator: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_auto_activator.html">TuyaSmartAutoActivator</a> *)&#160;</td>
+          <td class="paramname"><em>activator</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">didReceiveAutoConfigDevice:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *)&#160;</td>
+          <td class="paramname"><em>deviceModel</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">error:</td>
+          <td></td>
+          <td class="paramtype">(NSError *)&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configures the callbacks of network status updates. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">activator</td><td>The instance. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The device model. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
   </table>
   </dd>
 </dl>

@@ -90,59 +90,58 @@ $(document).ready(function(){initNavTree('_t_y_b_l_e_service_8h_source.html','')
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  TYBLEService.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  TuyaSmartPublic</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by 冯晓 on 16/8/2.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;CoreBluetooth/CoreBluetooth.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_t_y_b_l_e_characteristic.html">TYBLECharacteristic</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">typedef</span> void(^TYBLECentralServiceDiscoverCharacteristcsCallback)(NSArray *characteristics, NSError *error);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html">   15</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_t_y_b_l_e_service.html">TYBLEService</a> : NSObject</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html#a24d22da267d94e934ea09bfae90e9a94">   20</a></span>&#160;<span class="keyword">@property</span> (strong, nonatomic, readonly) CBService *<a class="code" href="interface_t_y_b_l_e_service.html#a24d22da267d94e934ea09bfae90e9a94">cbService</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html#ac99a0fac47fe3ab27adf95befc9a6eb1">   25</a></span>&#160;<span class="keyword">@property</span> (strong, nonatomic, readonly) NSString *<a class="code" href="interface_t_y_b_l_e_service.html#ac99a0fac47fe3ab27adf95befc9a6eb1">UUIDString</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html#a530f15820387b49cb3e749df7dc43a50">   30</a></span>&#160;<span class="keyword">@property</span> (strong, nonatomic) NSArray *<a class="code" href="interface_t_y_b_l_e_service.html#a530f15820387b49cb3e749df7dc43a50">characteristics</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html#a06a6aef6381f96f06906910a4b9efc47">   35</a></span>&#160;<span class="keyword">@property</span> (assign, nonatomic) BOOL <a class="code" href="interface_t_y_b_l_e_service.html#a06a6aef6381f96f06906910a4b9efc47">isDeviceInfo</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#import &lt;CoreBluetooth/CoreBluetooth.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_t_y_b_l_e_characteristic.html">TYBLECharacteristic</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">typedef</span> void(^TYBLECentralServiceDiscoverCharacteristcsCallback)(NSArray *characteristics, NSError *error);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html">   14</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_t_y_b_l_e_service.html">TYBLEService</a> : NSObject</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html#a24d22da267d94e934ea09bfae90e9a94">   19</a></span>&#160;<span class="keyword">@property</span> (strong, nonatomic, readonly) CBService *<a class="code" href="interface_t_y_b_l_e_service.html#a24d22da267d94e934ea09bfae90e9a94">cbService</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html#ac99a0fac47fe3ab27adf95befc9a6eb1">   24</a></span>&#160;<span class="keyword">@property</span> (strong, nonatomic, readonly) NSString *<a class="code" href="interface_t_y_b_l_e_service.html#ac99a0fac47fe3ab27adf95befc9a6eb1">UUIDString</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html#a530f15820387b49cb3e749df7dc43a50">   29</a></span>&#160;<span class="keyword">@property</span> (strong, nonatomic) NSArray *<a class="code" href="interface_t_y_b_l_e_service.html#a530f15820387b49cb3e749df7dc43a50">characteristics</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html#a06a6aef6381f96f06906910a4b9efc47">   34</a></span>&#160;<span class="keyword">@property</span> (assign, nonatomic) BOOL <a class="code" href="interface_t_y_b_l_e_service.html#a06a6aef6381f96f06906910a4b9efc47">isDeviceInfo</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html#a185d2482b30fc9991214cf7cb3f86e03">   41</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BOOL <a class="code" href="interface_t_y_b_l_e_service.html#a185d2482b30fc9991214cf7cb3f86e03">isTimerInfo</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html#a185d2482b30fc9991214cf7cb3f86e03">   40</a></span>&#160;<span class="keyword">@property</span> (nonatomic, assign) BOOL <a class="code" href="interface_t_y_b_l_e_service.html#a185d2482b30fc9991214cf7cb3f86e03">isTimerInfo</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html#ae22361c0c2e8be139c4010f2edd1163d">   48</a></span>&#160;<span class="keyword">@property</span> (assign, nonatomic) BOOL <a class="code" href="interface_t_y_b_l_e_service.html#a5ff4ae1fcb3891c44ce5ed4bc239f261">isBatteryInfo</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="interface_t_y_b_l_e_service.html#ae22361c0c2e8be139c4010f2edd1163d">   47</a></span>&#160;<span class="keyword">@property</span> (assign, nonatomic) BOOL <a class="code" href="interface_t_y_b_l_e_service.html#a5ff4ae1fcb3891c44ce5ed4bc239f261">isBatteryInfo</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;- (instancetype)initWithService:(CBService *)aService;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;- (void)discoverCharacteristicsWithCompletion:(TYBLECentralServiceDiscoverCharacteristcsCallback)aCallback;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;- (instancetype)initWithService:(CBService *)aService;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;- (void)discoverCharacteristicsWithCompletion:(TYBLECentralServiceDiscoverCharacteristcsCallback)aCallback;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;- (NSArray &lt;<a class="code" href="interface_t_y_b_l_e_characteristic.html">TYBLECharacteristic</a> *&gt; *)<a class="code" href="interface_t_y_b_l_e_service.html#a6a0bbdeb3673f8e7b7105391e7be55e9">discoverCharacteristics</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;- (void)discoverCharacteristicsWithUUIDs:(NSArray *)uuids</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                              completion:(TYBLECentralServiceDiscoverCharacteristcsCallback)aCallback;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;- (void)<a class="code" href="interface_t_y_b_l_e_service.html#ae22361c0c2e8be139c4010f2edd1163d">cancelCharacteristicOperations</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;- (void)handleDiscoveredCharacteristics:(NSArray *)aCharacteristics error:(NSError *)aError;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;- (<a class="code" href="interface_t_y_b_l_e_characteristic.html">TYBLECharacteristic</a>*)retrieveCharacteristicByUUID:(NSString *)uuid;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">@end</span></div>
-<div class="ttc" id="ainterface_t_y_b_l_e_characteristic_html"><div class="ttname"><a href="interface_t_y_b_l_e_characteristic.html">TYBLECharacteristic</a></div><div class="ttdef"><b>Definition:</b> TYBLECharacteristic.h:22</div></div>
-<div class="ttc" id="ainterface_t_y_b_l_e_service_html"><div class="ttname"><a href="interface_t_y_b_l_e_service.html">TYBLEService</a></div><div class="ttdef"><b>Definition:</b> TYBLEService.h:16</div></div>
-<div class="ttc" id="ainterface_t_y_b_l_e_service_html_a06a6aef6381f96f06906910a4b9efc47"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#a06a6aef6381f96f06906910a4b9efc47">TYBLEService::isDeviceInfo</a></div><div class="ttdeci">BOOL isDeviceInfo</div><div class="ttdef"><b>Definition:</b> TYBLEService.h:35</div></div>
-<div class="ttc" id="ainterface_t_y_b_l_e_service_html_a185d2482b30fc9991214cf7cb3f86e03"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#a185d2482b30fc9991214cf7cb3f86e03">TYBLEService::isTimerInfo</a></div><div class="ttdeci">BOOL isTimerInfo</div><div class="ttdef"><b>Definition:</b> TYBLEService.h:41</div></div>
-<div class="ttc" id="ainterface_t_y_b_l_e_service_html_a24d22da267d94e934ea09bfae90e9a94"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#a24d22da267d94e934ea09bfae90e9a94">TYBLEService::cbService</a></div><div class="ttdeci">CBService * cbService</div><div class="ttdef"><b>Definition:</b> TYBLEService.h:20</div></div>
-<div class="ttc" id="ainterface_t_y_b_l_e_service_html_a530f15820387b49cb3e749df7dc43a50"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#a530f15820387b49cb3e749df7dc43a50">TYBLEService::characteristics</a></div><div class="ttdeci">NSArray * characteristics</div><div class="ttdef"><b>Definition:</b> TYBLEService.h:30</div></div>
-<div class="ttc" id="ainterface_t_y_b_l_e_service_html_a5ff4ae1fcb3891c44ce5ed4bc239f261"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#a5ff4ae1fcb3891c44ce5ed4bc239f261">TYBLEService::isBatteryInfo</a></div><div class="ttdeci">BOOL isBatteryInfo</div><div class="ttdef"><b>Definition:</b> TYBLEService.h:48</div></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;- (NSArray &lt;<a class="code" href="interface_t_y_b_l_e_characteristic.html">TYBLECharacteristic</a> *&gt; *)<a class="code" href="interface_t_y_b_l_e_service.html#a6a0bbdeb3673f8e7b7105391e7be55e9">discoverCharacteristics</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;- (void)discoverCharacteristicsWithUUIDs:(NSArray *)uuids</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                              completion:(TYBLECentralServiceDiscoverCharacteristcsCallback)aCallback;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;- (void)<a class="code" href="interface_t_y_b_l_e_service.html#ae22361c0c2e8be139c4010f2edd1163d">cancelCharacteristicOperations</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;- (void)handleDiscoveredCharacteristics:(NSArray *)aCharacteristics error:(NSError *)aError;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;- (<a class="code" href="interface_t_y_b_l_e_characteristic.html">TYBLECharacteristic</a>*)retrieveCharacteristicByUUID:(NSString *)uuid;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="ainterface_t_y_b_l_e_characteristic_html"><div class="ttname"><a href="interface_t_y_b_l_e_characteristic.html">TYBLECharacteristic</a></div><div class="ttdef"><b>Definition:</b> TYBLECharacteristic.h:21</div></div>
+<div class="ttc" id="ainterface_t_y_b_l_e_service_html"><div class="ttname"><a href="interface_t_y_b_l_e_service.html">TYBLEService</a></div><div class="ttdef"><b>Definition:</b> TYBLEService.h:15</div></div>
+<div class="ttc" id="ainterface_t_y_b_l_e_service_html_a06a6aef6381f96f06906910a4b9efc47"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#a06a6aef6381f96f06906910a4b9efc47">TYBLEService::isDeviceInfo</a></div><div class="ttdeci">BOOL isDeviceInfo</div><div class="ttdef"><b>Definition:</b> TYBLEService.h:34</div></div>
+<div class="ttc" id="ainterface_t_y_b_l_e_service_html_a185d2482b30fc9991214cf7cb3f86e03"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#a185d2482b30fc9991214cf7cb3f86e03">TYBLEService::isTimerInfo</a></div><div class="ttdeci">BOOL isTimerInfo</div><div class="ttdef"><b>Definition:</b> TYBLEService.h:40</div></div>
+<div class="ttc" id="ainterface_t_y_b_l_e_service_html_a24d22da267d94e934ea09bfae90e9a94"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#a24d22da267d94e934ea09bfae90e9a94">TYBLEService::cbService</a></div><div class="ttdeci">CBService * cbService</div><div class="ttdef"><b>Definition:</b> TYBLEService.h:19</div></div>
+<div class="ttc" id="ainterface_t_y_b_l_e_service_html_a530f15820387b49cb3e749df7dc43a50"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#a530f15820387b49cb3e749df7dc43a50">TYBLEService::characteristics</a></div><div class="ttdeci">NSArray * characteristics</div><div class="ttdef"><b>Definition:</b> TYBLEService.h:29</div></div>
+<div class="ttc" id="ainterface_t_y_b_l_e_service_html_a5ff4ae1fcb3891c44ce5ed4bc239f261"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#a5ff4ae1fcb3891c44ce5ed4bc239f261">TYBLEService::isBatteryInfo</a></div><div class="ttdeci">BOOL isBatteryInfo</div><div class="ttdef"><b>Definition:</b> TYBLEService.h:47</div></div>
 <div class="ttc" id="ainterface_t_y_b_l_e_service_html_a6a0bbdeb3673f8e7b7105391e7be55e9"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#a6a0bbdeb3673f8e7b7105391e7be55e9">-[TYBLEService discoverCharacteristics]</a></div><div class="ttdeci">NSArray&lt; TYBLECharacteristic * &gt; * discoverCharacteristics()</div></div>
-<div class="ttc" id="ainterface_t_y_b_l_e_service_html_ac99a0fac47fe3ab27adf95befc9a6eb1"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#ac99a0fac47fe3ab27adf95befc9a6eb1">TYBLEService::UUIDString</a></div><div class="ttdeci">NSString * UUIDString</div><div class="ttdef"><b>Definition:</b> TYBLEService.h:25</div></div>
+<div class="ttc" id="ainterface_t_y_b_l_e_service_html_ac99a0fac47fe3ab27adf95befc9a6eb1"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#ac99a0fac47fe3ab27adf95befc9a6eb1">TYBLEService::UUIDString</a></div><div class="ttdeci">NSString * UUIDString</div><div class="ttdef"><b>Definition:</b> TYBLEService.h:24</div></div>
 <div class="ttc" id="ainterface_t_y_b_l_e_service_html_ae22361c0c2e8be139c4010f2edd1163d"><div class="ttname"><a href="interface_t_y_b_l_e_service.html#ae22361c0c2e8be139c4010f2edd1163d">-[TYBLEService cancelCharacteristicOperations]</a></div><div class="ttdeci">void cancelCharacteristicOperations()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

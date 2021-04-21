@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('interface_tuya_smart_ble_mesh.html',''
 </div><!--header-->
 <div class="contents">
 
-<p>Bluetooth mesh base class, including the basic operations of Bluetooth mesh, such as create, update, delete mesh, etc.========The Bluetooth mesh base class that supports the basic operations of Bluetooth mesh networks. For example, devices in a mesh network can be created, updated, and deleted.  
+<p>The Bluetooth mesh base class that supports the basic operations of Bluetooth mesh networks. For example, devices in a mesh network can be created, updated, and deleted.  
  <a href="interface_tuya_smart_ble_mesh.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TuyaSmartBleMesh:</div>
@@ -165,8 +165,8 @@ Properties</h2></td></tr>
 <tr class="separator:a26574dbe2cf60dc3a5263ff7d57b6460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Bluetooth mesh base class, including the basic operations of Bluetooth mesh, such as create, update, delete mesh, etc.========The Bluetooth mesh base class that supports the basic operations of Bluetooth mesh networks. For example, devices in a mesh network can be created, updated, and deleted. </p>
-<p>mesh as an important parameter for Bluetooth mesh connection.====The mesh parameters are required to establish a Bluetooth mesh connection. </p>
+<div class="textblock"><p>The Bluetooth mesh base class that supports the basic operations of Bluetooth mesh networks. For example, devices in a mesh network can be created, updated, and deleted. </p>
+<p>The mesh parameters are required to establish a Bluetooth mesh connection. </p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="adac61f0cca4c61b0f231497e17ee10d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adac61f0cca4c61b0f231497e17ee10d7">&#9670;&nbsp;</a></span>addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:</h2>
@@ -248,9 +248,9 @@ Properties</h2></td></tr>
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
     <tr><td class="paramname">productId</td><td>The product ID. </td></tr>
     <tr><td class="paramname">ver</td><td>The version. </td></tr>
-    <tr><td class="paramname">mac</td><td>The device MAC. </td></tr>
+    <tr><td class="paramname">mac</td><td>The MAC address of the device. </td></tr>
     <tr><td class="paramname">companyId</td><td>The company ID. </td></tr>
-    <tr><td class="paramname">venderId</td><td>The third-party device needs to be transferred in. At present, it supports the light group and switch. If lightless operation exists, it will pass in "01" by default, and "02" will be passed in if there is no lightless operation.======This parameter is required to add a third-party device to the app. Lighting devices, switches, and other low-power devices are supported. </td></tr>
+    <tr><td class="paramname">venderId</td><td>This parameter is required to add a third-party device to the app. Lighting devices, switches, and other low-power devices are supported. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -329,7 +329,7 @@ Properties</h2></td></tr>
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
     <tr><td class="paramname">productId</td><td>The product ID. </td></tr>
     <tr><td class="paramname">ver</td><td>The version. </td></tr>
-    <tr><td class="paramname">mac</td><td>The device MAC. </td></tr>
+    <tr><td class="paramname">mac</td><td>The MAC address of the device. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -413,16 +413,16 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Bluetooth device binding after network access, productKey + mac = pid, Compatible with third party equipment of distribution network.=====Adds a Bluetooth sub-device to the app after the network is connected. The product ID that consists of the product key and MAC address is required in this operation. This applies when a third-party device is paired. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Reports information about the paired Bluetooth device to the cloud after the device is connected to the network. The product key and MAC address are included in the report. The cloud returns the PID based on the reported information. This applies when a third-party device is paired. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The short address identification of the Bluetooth sub-device. </td></tr>
     <tr><td class="paramname">devKey</td><td>The device key. </td></tr>
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
     <tr><td class="paramname">productKey</td><td>The product key. </td></tr>
     <tr><td class="paramname">ver</td><td>The version. </td></tr>
-    <tr><td class="paramname">mac</td><td>The device MAC. </td></tr>
+    <tr><td class="paramname">mac</td><td>The MAC address of the device. </td></tr>
     <tr><td class="paramname">companyId</td><td>The company ID of the Bluetooth mesh device. </td></tr>
-    <tr><td class="paramname">venderId</td><td>The third-party device needs to be transferred in. At present, it supports the light group and switch. If lightless operation exists, it will pass in "01" by default, and "02" will be passed in if there is no lightless operation.======This parameter is required to add a third-party device to the app. Lighting devices and switches are supported. If the lightless operation exists, the value is set to <code>01</code>. If no lightless operation exists, the value is set to <code>02</code>. </td></tr>
+    <tr><td class="paramname">venderId</td><td>This parameter is required to add a third-party device to the app. Lighting devices, switches, and other low-power devices are supported. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -494,14 +494,14 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Bluetooth device binding after network access, productKey + mac = pid.=====Reports the result of successful pairing between a Bluetooth sub-device and the app to the cloud by including the <code>productKey</code> and <code>mac</code> parameters. Then, the cloud returns the product ID (PID) based on both parameters. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Reports the result of the successful pairing between a Bluetooth sub-device and the app to the cloud. The <code>productKey</code> and <code>mac</code> parameters are included in the report. Then, the cloud returns the product ID (PID) based on both parameters. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The short address identification of the Bluetooth sub-device. </td></tr>
     <tr><td class="paramname">devKey</td><td>The device key. </td></tr>
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
     <tr><td class="paramname">productKey</td><td>The product key. </td></tr>
-    <tr><td class="paramname">ver</td><td>Version. </td></tr>
-    <tr><td class="paramname">mac</td><td>The device mac. </td></tr>
+    <tr><td class="paramname">ver</td><td>The version. </td></tr>
+    <tr><td class="paramname">mac</td><td>The MAC address of the device. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -573,9 +573,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Bluetooth device access 2.0.=======Adds a Bluetooth sub-device. API version: 2.0. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds a Bluetooth sub-device. API version: 2.0. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uuid</td><td>Bluetooth sub device short address identification.=====The short address identification of the Bluetooth sub-device. </td></tr>
+    <tr><td class="paramname">uuid</td><td>The short address identification of the Bluetooth sub-device. </td></tr>
     <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
     <tr><td class="paramname">authKey</td><td>The authentication key. </td></tr>
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
@@ -789,9 +789,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get node ID of SIG mesh in batch====Returns multiple node IDs of Bluetooth mesh in a call. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns multiple node IDs of Bluetooth mesh in a call. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">number</td><td>Allocated quantity======The number of assigned node IDs. </td></tr>
+    <tr><td class="paramname">number</td><td>The number of assigned node IDs. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -827,7 +827,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assigns the node ID of Bluetooth mesh to the cloud, + 0000 0111 = 8 each time.======Assigns the node ID of Bluetooth mesh from the cloud. In each request, the node ID is incremented by <code>0000 0111</code> or <code>8</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Assigns the node ID of Bluetooth mesh from the cloud. In each request, the node ID is incremented by <code>0000 0111</code> or <code>8</code>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
@@ -864,7 +864,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assign sig mesh terminal source ID to cloud.=======Assigns the terminal source ID of Bluetooth mesh from the cloud. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Assigns the terminal source ID of Bluetooth mesh from the cloud. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
@@ -923,7 +923,7 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
     <tr><td class="paramname">pcc</td><td>The size class label. </td></tr>
-    <tr><td class="paramname">dpIdList</td><td>The list of keys in the DPs. </td></tr>
+    <tr><td class="paramname">dpIdList</td><td>A list of keys in the DPs. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -1034,7 +1034,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>mesh as an important parameter for Bluetooth mesh connection. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The mesh parameters are required to establish a Bluetooth mesh connection. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">meshId</td><td>The mesh ID. </td></tr>
     <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
@@ -1210,9 +1210,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Send transparent instruction to device.=======Sends DPs of raw type to the device. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sends DPs of raw type to the device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">raw</td><td>Transmission value.=====The type of transmission. </td></tr>
+    <tr><td class="paramname">raw</td><td>The type of transmission. </td></tr>
     <tr><td class="paramname">pcc</td><td>The size class label. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
@@ -1340,7 +1340,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Deletes the mesh. If there are devices under the mesh group, the sub devices are also removed. The WiFi connector is also removed.======If the specified mesh group contains sub-devices, the sub-devices are also removed. The Wi-Fi connector is also removed. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Deletes the mesh. If the specified mesh group contains sub-devices, the sub-devices are also removed. The Wi-Fi connector is also removed. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>

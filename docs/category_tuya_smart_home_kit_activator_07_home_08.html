@@ -135,22 +135,22 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Binding HomeKit devices to the home. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds HomeKit devices to a specified home. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
     <tr><td class="paramname">devIds</td><td>A list of device IDs. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Binding HomeKit devices to the home.</p>
-<p>Need to call the method when using <a class="el" href="interface_tuya_smart_home_kit_activator.html#ad23cf23c8fd90a69b5a430fc687ce0cc">getTokenSuccess:failure: (TuyaSmartHomeKitActivator)</a>, cause configuration token has no home information</p>
+<p>Adds HomeKit devices to a specified home.</p>
+<p>The pairing token does not contain home information. You must call the method to get home information when you use <a class="el" href="interface_tuya_smart_home_kit_activator.html#ad23cf23c8fd90a69b5a430fc687ce0cc">getTokenSuccess:failure: (TuyaSmartHomeKitActivator)</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
     <tr><td class="paramname">devIds</td><td>A list of device IDs. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -191,18 +191,18 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the token of the homeKit device wiring network. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns the pairing token for HomeKit devices. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">homeID</td><td>The home id </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. token will be returned. </td></tr>
+    <tr><td class="paramname">homeID</td><td>The home ID. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. The token is returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Obtain the HomeKit device configuration token with home id. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns the pairing token for HomeKit devices by home ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">homeID</td><td>The home id </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. token will be returned. </td></tr>
+    <tr><td class="paramname">homeID</td><td>The home ID. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. The token is returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>

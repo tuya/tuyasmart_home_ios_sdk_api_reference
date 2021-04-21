@@ -217,7 +217,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="interface_tuya_smart_home_device_share.html#a8bbcb966ef78000be7463948a39d178d">addDeviceShareWithRequestModel:success:failure:</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="interface_tuya_smart_home_device_share.html#a8bbcb966ef78000be7463948a39d178d">addDeviceShareWithRequestModel:success:failure:</a> instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_device_share_07_t_y_deprecated_api_08.html#ad1d94a07785046b844710dc0a9963f07">TuyaSmartHomeDeviceShare(TYDeprecatedApi)</a>.</p>
 
@@ -258,7 +258,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">requestModel</td><td>Adds a device model to be shared. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. <a class="el" href="interface_tuya_smart_share_member_model.html">TuyaSmartShareMemberModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -321,7 +321,7 @@ Instance Methods</h2></td></tr>
     <tr><td class="paramname">userAccount</td><td>The user account. </td></tr>
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -388,13 +388,13 @@ Instance Methods</h2></td></tr>
     <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
     <tr><td class="paramname">countryCode</td><td>The country code. </td></tr>
     <tr><td class="paramname">userAccount</td><td>The user account. </td></tr>
-    <tr><td class="paramname">devIds</td><td>The list of device IDs. </td></tr>
+    <tr><td class="paramname">devIds</td><td>A list of device IDs. </td></tr>
     <tr><td class="paramname">success</td><td>The success block. </td></tr>
     <tr><td class="paramname">failure</td><td>The failure block. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="interface_tuya_smart_home_device_share.html#a8bbcb966ef78000be7463948a39d178d">addDeviceShareWithRequestModel:success:failure:</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="interface_tuya_smart_home_device_share.html#a8bbcb966ef78000be7463948a39d178d">addDeviceShareWithRequestModel:success:failure:</a> instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_device_share_07_t_y_deprecated_api_08.html#a8d9ba711c5477bd8a2d99d8927fb0448">TuyaSmartHomeDeviceShare(TYDeprecatedApi)</a>.</p>
 
@@ -440,9 +440,9 @@ Instance Methods</h2></td></tr>
 <p>Adds extra devices to be shared. The existing shared devices are not overwritten. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">memberId</td><td>The member ID. </td></tr>
-    <tr><td class="paramname">devIds</td><td>The list of device IDs. </td></tr>
+    <tr><td class="paramname">devIds</td><td>A list of device IDs. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -484,7 +484,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">shareId</td><td>The shareId that is returned by the sharing invitation API operation. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -526,7 +526,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. A list of <a class="el" href="interface_tuya_smart_share_member_model.html">TuyaSmartShareMemberModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -568,7 +568,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. A list of <a class="el" href="interface_tuya_smart_share_member_model.html">TuyaSmartShareMemberModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -610,7 +610,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">memberId</td><td>The member ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. <a class="el" href="interface_tuya_smart_share_member_detail_model.html">TuyaSmartShareMemberDetailModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -645,7 +645,7 @@ Instance Methods</h2></td></tr>
 <p>Returns all users who receive shared devices. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">success</td><td>Called when the task is finished. A list of <a class="el" href="interface_tuya_smart_share_member_model.html">TuyaSmartShareMemberModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -687,7 +687,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -729,7 +729,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. <a class="el" href="interface_tuya_smart_received_share_user_model.html">TuyaSmartReceivedShareUserModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -771,7 +771,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">memberId</td><td>The member ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. <a class="el" href="interface_tuya_smart_share_member_detail_model.html">TuyaSmartShareMemberDetailModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -813,7 +813,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. A list of <a class="el" href="interface_tuya_smart_share_member_model.html">TuyaSmartShareMemberModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -869,7 +869,7 @@ Instance Methods</h2></td></tr>
     <tr><td class="paramname">userAccount</td><td>The user account. </td></tr>
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -918,7 +918,7 @@ Instance Methods</h2></td></tr>
     <tr><td class="paramname">memberId</td><td>The member ID. </td></tr>
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -967,7 +967,7 @@ Instance Methods</h2></td></tr>
     <tr><td class="paramname">relationId</td><td>The member ID. </td></tr>
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1009,7 +1009,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1051,7 +1051,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">memberId</td><td>The member ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1093,7 +1093,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">groupId</td><td>The group ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1135,7 +1135,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">memberId</td><td>The member ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1184,7 +1184,7 @@ Instance Methods</h2></td></tr>
     <tr><td class="paramname">memberId</td><td>The member ID. </td></tr>
     <tr><td class="paramname">name</td><td>The nickname. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1233,7 +1233,7 @@ Instance Methods</h2></td></tr>
     <tr><td class="paramname">memberId</td><td>The member ID. </td></tr>
     <tr><td class="paramname">name</td><td>The nickname. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>

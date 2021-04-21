@@ -90,40 +90,39 @@ $(document).ready(function(){initNavTree('_t_y_s_d_k_log_utils_8h_source.html','
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  TYLogUtils.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  TuyaSmartKit</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by 冯晓 on 2017/2/14.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright © 2017年 Tuya. All rights reserved.</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="interface_t_y_s_d_k_log_utils.html">   12</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_t_y_s_d_k_log_utils.html">TYSDKLogUtils</a> : NSObject</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Prints bytes.</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;+ (void)tysdk_logByte:(uint8_t *)bytes len:(<span class="keywordtype">int</span>)len str:(NSString *)str;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;+ (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;+ (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute identifier:(NSString *)identifier;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/* Starts an event that indicates a period.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> @params type The name of the event.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> @params attributes Common parameters of the event.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> @params infos The information about the event.</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> @params identifier The ID of the event. The value is generated in the call of [xxx ty_apm_identifier].</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> @params trackType The status of the tracked point. (trackType = @”begin“ Begin / @&quot;track&quot; Send/ @&quot;end&quot; End)</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> </span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;+ (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute infos:(NSDictionary *)infos trackType:(NSString *)trackType identifier:(NSString *)identifier;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;+ (NSString *)<a class="code" href="interface_t_y_s_d_k_log_utils.html#a377cf91222778492727375b2d77822d0">tysdk_eventIdentifiter</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="interface_t_y_s_d_k_log_utils.html">   11</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_t_y_s_d_k_log_utils.html">TYSDKLogUtils</a> : NSObject</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// Prints bytes.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;+ (void)tysdk_logByte:(uint8_t *)bytes len:(<span class="keywordtype">int</span>)len str:(NSString *)str;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;+ (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;+ (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute identifier:(NSString *)identifier;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/* Starts an event that indicates a period.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> @params type The name of the event.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> @params attributes Common parameters of the event.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> @params infos The information about the event.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> @params identifier The ID of the event. The value is generated in the call of [xxx ty_apm_identifier].</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> @params trackType The status of the tracked point. (trackType = @&quot;begin&quot; Begin / @&quot;track&quot; Send/ @&quot;end&quot; End)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;+ (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute infos:(NSDictionary *)infos trackType:(NSString *)trackType identifier:(NSString *)identifier;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;+ (NSString *)<a class="code" href="interface_t_y_s_d_k_log_utils.html#a377cf91222778492727375b2d77822d0">tysdk_eventIdentifiter</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;+ (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute identify:(NSString *)identify maxCount:(<span class="keywordtype">int</span>)maxCount handler:(NSDictionary *(^)(NSInteger index, NSArray * datas))handler;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">@end</span></div>
-<div class="ttc" id="ainterface_t_y_s_d_k_log_utils_html"><div class="ttname"><a href="interface_t_y_s_d_k_log_utils.html">TYSDKLogUtils</a></div><div class="ttdef"><b>Definition:</b> TYSDKLogUtils.h:13</div></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;+ (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute identify:(NSString *)identify maxCount:(<span class="keywordtype">int</span>)maxCount handler:(NSDictionary *(^)(NSInteger index, NSArray * datas))handler;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="ainterface_t_y_s_d_k_log_utils_html"><div class="ttname"><a href="interface_t_y_s_d_k_log_utils.html">TYSDKLogUtils</a></div><div class="ttdef"><b>Definition:</b> TYSDKLogUtils.h:12</div></div>
 <div class="ttc" id="ainterface_t_y_s_d_k_log_utils_html_a377cf91222778492727375b2d77822d0"><div class="ttname"><a href="interface_t_y_s_d_k_log_utils.html#a377cf91222778492727375b2d77822d0">+[TYSDKLogUtils tysdk_eventIdentifiter]</a></div><div class="ttdeci">NSString * tysdk_eventIdentifiter()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

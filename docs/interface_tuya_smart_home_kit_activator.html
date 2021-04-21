@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('interface_tuya_smart_home_kit_activato
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="interface_tuya_smart_home_kit_activator.html" title="TuyaSmartHomeKitActivator is used for HomeKit device configuration.">TuyaSmartHomeKitActivator</a> is used for HomeKit device configuration.  
+<p><a class="el" href="interface_tuya_smart_home_kit_activator.html" title="TuyaSmartHomeKitActivator is used to pair HomeKit devices.">TuyaSmartHomeKitActivator</a> is used to pair HomeKit devices.  
  <a href="interface_tuya_smart_home_kit_activator.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TuyaSmartHomeKitActivator:</div>
@@ -103,6 +103,19 @@ Inheritance diagram for TuyaSmartHomeKitActivator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
+<tr class="memitem:ad23cf23c8fd90a69b5a430fc687ce0cc"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home_kit_activator.html#ad23cf23c8fd90a69b5a430fc687ce0cc">getTokenSuccess:failure:</a></td></tr>
+<tr class="separator:ad23cf23c8fd90a69b5a430fc687ce0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f30ce9e4f6bd53eb1d4496b96efeac7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home_kit_activator.html#a1f30ce9e4f6bd53eb1d4496b96efeac7">startDiscoverHomeKitDeviceWithTimeout:token:success:failure:</a></td></tr>
+<tr class="separator:a1f30ce9e4f6bd53eb1d4496b96efeac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54fd595b331ee718a400f227810fe369"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home_kit_activator.html#a54fd595b331ee718a400f227810fe369">startDiscoverHomeKitDeviceWithTimeout:success:failure:</a></td></tr>
+<tr class="separator:a54fd595b331ee718a400f227810fe369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae990e39050ce1cfd82932a64a43ff80f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home_kit_activator.html#ae990e39050ce1cfd82932a64a43ff80f">getHomekitDeviceInfoWithProductId:success:failure:</a></td></tr>
+<tr class="separator:ae990e39050ce1cfd82932a64a43ff80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcc90ff54478b90105450c9fab01551"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home_kit_activator.html#a2fcc90ff54478b90105450c9fab01551">getHomekitDeviceInfoWithProductId:uuid:success:failure:</a></td></tr>
+<tr class="separator:a2fcc90ff54478b90105450c9fab01551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64011384e2cbb991b6c373543d827ff4"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home_kit_activator.html#a64011384e2cbb991b6c373543d827ff4">stopDiscover</a></td></tr>
+<tr class="memdesc:a64011384e2cbb991b6c373543d827ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops scanning for devices.  <a href="interface_tuya_smart_home_kit_activator.html#a64011384e2cbb991b6c373543d827ff4">More...</a><br /></td></tr>
+<tr class="separator:a64011384e2cbb991b6c373543d827ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad23cf23c8fd90a69b5a430fc687ce0cc"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home_kit_activator.html#ad23cf23c8fd90a69b5a430fc687ce0cc">getTokenSuccess:failure:</a></td></tr>
 <tr class="separator:ad23cf23c8fd90a69b5a430fc687ce0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a769594f87d5e7192ec52f3e1222ebe5f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home_kit_activator.html#a769594f87d5e7192ec52f3e1222ebe5f">getTokenWithHomeID:Success:failure:</a></td></tr>
@@ -120,23 +133,26 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a2fcc90ff54478b90105450c9fab01551"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home_kit_activator.html#a2fcc90ff54478b90105450c9fab01551">getHomekitDeviceInfoWithProductId:uuid:success:failure:</a></td></tr>
 <tr class="separator:a2fcc90ff54478b90105450c9fab01551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64011384e2cbb991b6c373543d827ff4"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_tuya_smart_home_kit_activator.html#a64011384e2cbb991b6c373543d827ff4">stopDiscover</a></td></tr>
-<tr class="memdesc:a64011384e2cbb991b6c373543d827ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop discovery devices.  <a href="interface_tuya_smart_home_kit_activator.html#a64011384e2cbb991b6c373543d827ff4">More...</a><br /></td></tr>
+<tr class="memdesc:a64011384e2cbb991b6c373543d827ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops scanning devices.  <a href="interface_tuya_smart_home_kit_activator.html#a64011384e2cbb991b6c373543d827ff4">More...</a><br /></td></tr>
 <tr class="separator:a64011384e2cbb991b6c373543d827ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
 <tr class="memitem:aebd12962101374991b0a28e833d0f514"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_tuya_smart_home_kit_activator.html#aebd12962101374991b0a28e833d0f514">sharedInstance</a></td></tr>
-<tr class="memdesc:aebd12962101374991b0a28e833d0f514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the singleton of the class.  <a href="interface_tuya_smart_home_kit_activator.html#aebd12962101374991b0a28e833d0f514">More...</a><br /></td></tr>
+<tr class="memdesc:aebd12962101374991b0a28e833d0f514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the singleton instance of the class.  <a href="interface_tuya_smart_home_kit_activator.html#aebd12962101374991b0a28e833d0f514">More...</a><br /></td></tr>
+<tr class="separator:aebd12962101374991b0a28e833d0f514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd12962101374991b0a28e833d0f514"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_tuya_smart_home_kit_activator.html#aebd12962101374991b0a28e833d0f514">sharedInstance</a></td></tr>
+<tr class="memdesc:aebd12962101374991b0a28e833d0f514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the singleton instance of the class.  <a href="interface_tuya_smart_home_kit_activator.html#aebd12962101374991b0a28e833d0f514">More...</a><br /></td></tr>
 <tr class="separator:aebd12962101374991b0a28e833d0f514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a4963eb46338eea8510510255592bf4cf"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_tuya_smart_home_kit_activator_delegate-p.html">TuyaSmartHomeKitActivatorDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home_kit_activator.html#a4963eb46338eea8510510255592bf4cf">delegate</a></td></tr>
-<tr class="separator:a4963eb46338eea8510510255592bf4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7891ad96c136a0185c337f56676eacf2"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_tuya_smart_home_kit_activator_delegate-p.html">TuyaSmartHomeKitActivatorDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_home_kit_activator.html#a7891ad96c136a0185c337f56676eacf2">delegate</a></td></tr>
+<tr class="separator:a7891ad96c136a0185c337f56676eacf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="interface_tuya_smart_home_kit_activator.html" title="TuyaSmartHomeKitActivator is used for HomeKit device configuration.">TuyaSmartHomeKitActivator</a> is used for HomeKit device configuration. </p>
-<p>This class provides HomeKit device configuration capabilities. </p>
+<div class="textblock"><p><a class="el" href="interface_tuya_smart_home_kit_activator.html" title="TuyaSmartHomeKitActivator is used to pair HomeKit devices.">TuyaSmartHomeKitActivator</a> is used to pair HomeKit devices. </p>
+<p>This class provides capabilities to pair HomeKit devices. </p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="a537b52ba82df5ed7855510119b885e47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a537b52ba82df5ed7855510119b885e47">&#9670;&nbsp;</a></span>bindHomeKitDeviceWithHomeId:devIds:success:failure:</h2>
@@ -175,13 +191,13 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Binding HomeKit devices to the home.</p>
-<p>Need to call the method when using <a class="el" href="interface_tuya_smart_home_kit_activator.html#ad23cf23c8fd90a69b5a430fc687ce0cc">getTokenSuccess:failure:</a>, cause configuration token has no home information</p>
+<p>Adds HomeKit devices to a specified home.</p>
+<p>The pairing token does not contain home information. You must call the method to get home information when you use <a class="el" href="interface_tuya_smart_home_kit_activator.html#ad23cf23c8fd90a69b5a430fc687ce0cc">getTokenSuccess:failure:</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
     <tr><td class="paramname">devIds</td><td>A list of device IDs. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -192,7 +208,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <a id="ae990e39050ce1cfd82932a64a43ff80f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae990e39050ce1cfd82932a64a43ff80f">&#9670;&nbsp;</a></span>getHomekitDeviceInfoWithProductId:success:failure:</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae990e39050ce1cfd82932a64a43ff80f">&#9670;&nbsp;</a></span>getHomekitDeviceInfoWithProductId:success:failure: <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,10 +238,52 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get device information based on pid. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns device information by product ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">productId</td><td>The product ID. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. TYSuccessDict will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. TYSuccessDict is returned. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae990e39050ce1cfd82932a64a43ff80f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae990e39050ce1cfd82932a64a43ff80f">&#9670;&nbsp;</a></span>getHomekitDeviceInfoWithProductId:success:failure: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) getHomekitDeviceInfoWithProductId: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>productId</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(TYSuccessDict)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(TYFailureError)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns device information by product ID. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">productId</td><td>The product ID. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. TYSuccessDict is returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -234,7 +292,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <a id="a2fcc90ff54478b90105450c9fab01551"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fcc90ff54478b90105450c9fab01551">&#9670;&nbsp;</a></span>getHomekitDeviceInfoWithProductId:uuid:success:failure:</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcc90ff54478b90105450c9fab01551">&#9670;&nbsp;</a></span>getHomekitDeviceInfoWithProductId:uuid:success:failure: <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,11 +328,60 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get device information based on pid. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns device information by product ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">productId</td><td>The product ID. </td></tr>
-    <tr><td class="paramname">uuid</td><td>The device uuid </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. TYSuccessDict will be returned. </td></tr>
+    <tr><td class="paramname">uuid</td><td>The device UUID. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. TYSuccessDict is returned. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2fcc90ff54478b90105450c9fab01551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcc90ff54478b90105450c9fab01551">&#9670;&nbsp;</a></span>getHomekitDeviceInfoWithProductId:uuid:success:failure: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) getHomekitDeviceInfoWithProductId: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>productId</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">uuid:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>uuid</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(TYSuccessDict)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(TYFailureError)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns device information by product ID. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">productId</td><td>The product ID. </td></tr>
+    <tr><td class="paramname">uuid</td><td>The device UUID. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. TYSuccessDict is returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -283,7 +390,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <a id="ad23cf23c8fd90a69b5a430fc687ce0cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad23cf23c8fd90a69b5a430fc687ce0cc">&#9670;&nbsp;</a></span>getTokenSuccess:failure:</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23cf23c8fd90a69b5a430fc687ce0cc">&#9670;&nbsp;</a></span>getTokenSuccess:failure: <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -307,9 +414,44 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Obtain the HomeKit device configuration token. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns the pairing token for HomeKit devices. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. TYSuccessString will be returned. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. TYSuccessString is returned. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad23cf23c8fd90a69b5a430fc687ce0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23cf23c8fd90a69b5a430fc687ce0cc">&#9670;&nbsp;</a></span>getTokenSuccess:failure: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) getTokenSuccess: </td>
+          <td></td>
+          <td class="paramtype">(TYSuccessString)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(TYFailureError)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the pairing token for HomeKit devices. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">success</td><td>Called when the task is finished. TYSuccessString is returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -348,10 +490,10 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Obtain the HomeKit device configuration token with home id. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns the pairing token for HomeKit devices by home ID. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">homeID</td><td>The home id </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. token will be returned. </td></tr>
+    <tr><td class="paramname">homeID</td><td>The home ID. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. The token is returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -362,7 +504,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <a id="aebd12962101374991b0a28e833d0f514"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebd12962101374991b0a28e833d0f514">&#9670;&nbsp;</a></span>sharedInstance</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd12962101374991b0a28e833d0f514">&#9670;&nbsp;</a></span>sharedInstance <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,12 +518,31 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the singleton of the class. </p>
+<p>Returns the singleton instance of the class. </p>
+
+</div>
+</div>
+<a id="aebd12962101374991b0a28e833d0f514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebd12962101374991b0a28e833d0f514">&#9670;&nbsp;</a></span>sharedInstance <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (instancetype) sharedInstance </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the singleton instance of the class. </p>
 
 </div>
 </div>
 <a id="a54fd595b331ee718a400f227810fe369"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54fd595b331ee718a400f227810fe369">&#9670;&nbsp;</a></span>startDiscoverHomeKitDeviceWithTimeout:success:failure:</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a54fd595b331ee718a400f227810fe369">&#9670;&nbsp;</a></span>startDiscoverHomeKitDeviceWithTimeout:success:failure: <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -411,10 +572,52 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Search for HomeKit device. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Scans for HomeKit devices. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeout</td><td>Timeout time. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. TYSuccessString will be returned. </td></tr>
+    <tr><td class="paramname">timeout</td><td>The timeout value. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. TYSuccessString is returned. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a54fd595b331ee718a400f227810fe369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54fd595b331ee718a400f227810fe369">&#9670;&nbsp;</a></span>startDiscoverHomeKitDeviceWithTimeout:success:failure: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) startDiscoverHomeKitDeviceWithTimeout: </td>
+          <td></td>
+          <td class="paramtype">(NSTimeInterval)&#160;</td>
+          <td class="paramname"><em>timeout</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(TYSuccessString)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(TYFailureError)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scans for HomeKit devices. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>The timeout value. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. TYSuccessString is returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -423,7 +626,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <a id="a1f30ce9e4f6bd53eb1d4496b96efeac7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f30ce9e4f6bd53eb1d4496b96efeac7">&#9670;&nbsp;</a></span>startDiscoverHomeKitDeviceWithTimeout:token:success:failure: <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f30ce9e4f6bd53eb1d4496b96efeac7">&#9670;&nbsp;</a></span>startDiscoverHomeKitDeviceWithTimeout:token:success:failure: <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,11 +662,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Search for HomeKit devices. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Scans for HomeKit devices. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeout</td><td>Timeout time. </td></tr>
-    <tr><td class="paramname">token</td><td>Configuration token. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_device_model.html" title="The device information.">TuyaSmartDeviceModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">timeout</td><td>The timeout value. </td></tr>
+    <tr><td class="paramname">token</td><td>The pairing token. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. <a class="el" href="interface_tuya_smart_device_model.html" title="The information about the device.">TuyaSmartDeviceModel</a> is returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -472,7 +675,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <a id="a1f30ce9e4f6bd53eb1d4496b96efeac7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f30ce9e4f6bd53eb1d4496b96efeac7">&#9670;&nbsp;</a></span>startDiscoverHomeKitDeviceWithTimeout:token:success:failure: <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f30ce9e4f6bd53eb1d4496b96efeac7">&#9670;&nbsp;</a></span>startDiscoverHomeKitDeviceWithTimeout:token:success:failure: <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -508,11 +711,60 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Search for HomeKit device. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Scans for HomeKit devices. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeout</td><td>Timeout time. </td></tr>
-    <tr><td class="paramname">token</td><td>Configuration token. </td></tr>
-    <tr><td class="paramname">success</td><td>Called when the task finishes successfully. <a class="el" href="interface_tuya_smart_device_model.html" title="The device information.">TuyaSmartDeviceModel</a> will be returned. </td></tr>
+    <tr><td class="paramname">timeout</td><td>The timeout value. </td></tr>
+    <tr><td class="paramname">token</td><td>The pairing token. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. <a class="el" href="interface_tuya_smart_device_model.html" title="The information about the device.">TuyaSmartDeviceModel</a> is returned. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1f30ce9e4f6bd53eb1d4496b96efeac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f30ce9e4f6bd53eb1d4496b96efeac7">&#9670;&nbsp;</a></span>startDiscoverHomeKitDeviceWithTimeout:token:success:failure: <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) startDiscoverHomeKitDeviceWithTimeout: </td>
+          <td></td>
+          <td class="paramtype">(NSTimeInterval)&#160;</td>
+          <td class="paramname"><em>timeout</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">token:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>token</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(void(^)(<a class="el" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *))&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(TYFailureError)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scans for HomeKit devices. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>The timeout value. </td></tr>
+    <tr><td class="paramname">token</td><td>The pairing token. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. <a class="el" href="interface_tuya_smart_device_model.html" title="The information about the device.">TuyaSmartDeviceModel</a> is returned. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
@@ -521,7 +773,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <a id="a64011384e2cbb991b6c373543d827ff4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64011384e2cbb991b6c373543d827ff4">&#9670;&nbsp;</a></span>stopDiscover</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a64011384e2cbb991b6c373543d827ff4">&#9670;&nbsp;</a></span>stopDiscover <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -535,13 +787,32 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Stop discovery devices. </p>
+<p>Stops scanning for devices. </p>
+
+</div>
+</div>
+<a id="a64011384e2cbb991b6c373543d827ff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64011384e2cbb991b6c373543d827ff4">&#9670;&nbsp;</a></span>stopDiscover <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) stopDiscover </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stops scanning devices. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a id="a4963eb46338eea8510510255592bf4cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4963eb46338eea8510510255592bf4cf">&#9670;&nbsp;</a></span>delegate</h2>
+<a id="a7891ad96c136a0185c337f56676eacf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7891ad96c136a0185c337f56676eacf2">&#9670;&nbsp;</a></span>delegate</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,7 +821,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (id&lt;<a class="el" href="protocol_tuya_smart_home_kit_activator_delegate-p.html">TuyaSmartHomeKitActivatorDelegate</a>&gt;) delegate</td>
+          <td class="memname">- (id&lt; <a class="el" href="protocol_tuya_smart_home_kit_activator_delegate-p.html">TuyaSmartHomeKitActivatorDelegate</a> &gt;) delegate</td>
         </tr>
       </table>
   </td>

@@ -202,7 +202,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="category_tuya_smart_home_07_t_y_deprecated_api_08.html#a266b4f9a95a87653226cd41ee5d7efd0">addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure: (TuyaSmartHome(TYDeprecatedApi))</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000035">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="category_tuya_smart_home_07_t_y_deprecated_api_08.html#a266b4f9a95a87653226cd41ee5d7efd0">addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure: (TuyaSmartHome(TYDeprecatedApi))</a> instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_member_07_t_y_deprecated_api_08.html#a1087291c66dd666e3c7613890ef85757">TuyaSmartHomeMember(TYDeprecatedApi)</a>.</p>
 
@@ -288,7 +288,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000035">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="category_tuya_smart_home_07_t_y_deprecated_api_08.html#a266b4f9a95a87653226cd41ee5d7efd0">addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure: (TuyaSmartHome(TYDeprecatedApi))</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000037">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="category_tuya_smart_home_07_t_y_deprecated_api_08.html#a266b4f9a95a87653226cd41ee5d7efd0">addHomeMemberWithName:headPic:countryCode:userAccount:isAdmin:success:failure: (TuyaSmartHome(TYDeprecatedApi))</a> instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_member_07_t_y_deprecated_api_08.html#af621e8dd6865b4f3cfb2040110d34ad1">TuyaSmartHomeMember(TYDeprecatedApi)</a>.</p>
 
@@ -336,7 +336,7 @@ Instance Methods</h2></td></tr>
     <tr><td class="paramname">homeID</td><td>The home ID. </td></tr>
     <tr><td class="paramname">memberID</td><td>The member ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -385,7 +385,7 @@ Instance Methods</h2></td></tr>
     <tr><td class="paramname">homeID</td><td>The home ID. </td></tr>
     <tr><td class="paramname">memberID</td><td>The member ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -438,7 +438,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000036">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="interface_tuya_smart_home.html#a3941a766ac18e314f6de36c89e77e69e">getHomeMemberListWithSuccess:failure: (TuyaSmartHome)</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000038">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="interface_tuya_smart_home.html#a3941a766ac18e314f6de36c89e77e69e">getHomeMemberListWithSuccess:failure: (TuyaSmartHome)</a> instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_member_07_t_y_deprecated_api_08.html#ae0cc939046004205bf3b62ec60446cb9">TuyaSmartHomeMember(TYDeprecatedApi)</a>.</p>
 
@@ -480,7 +480,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">memberId</td><td>The member ID. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -530,13 +530,13 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Updates the list of rooms to which custom roles have access. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Updates a list of rooms to which custom roles have access. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">homeID</td><td>The home ID. </td></tr>
     <tr><td class="paramname">memberID</td><td>The member ID. </td></tr>
-    <tr><td class="paramname">roomIDs</td><td>The list of room IDs with permissions. </td></tr>
+    <tr><td class="paramname">roomIDs</td><td>A list of room IDs with permissions. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -586,13 +586,13 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Updates the list of scenes to which custom roles have access. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Updates a list of scenes to which custom roles have access. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">homeID</td><td>The home ID. </td></tr>
     <tr><td class="paramname">memberID</td><td>The member ID. </td></tr>
-    <tr><td class="paramname">ruleIDs</td><td>The list of scene IDs with permissions. </td></tr>
+    <tr><td class="paramname">ruleIDs</td><td>A list of scene IDs with permissions. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -652,7 +652,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>This method is deprecated. Use TuyaSmartHome::updateHomeMemberInfoWithMemberRequestModel:success:failure: instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>This method is deprecated. Use TuyaSmartHome::updateHomeMemberInfoWithMemberRequestModel:success:failure: instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_member_07_t_y_deprecated_api_08.html#aefd86befdc72c2dfced201bff6fe0b9c">TuyaSmartHomeMember(TYDeprecatedApi)</a>.</p>
 
@@ -718,7 +718,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>This method is deprecated. Use TuyaSmartHome::updateHomeMemberInfoWithMemberRequestModel:success:failure: instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>This method is deprecated. Use TuyaSmartHome::updateHomeMemberInfoWithMemberRequestModel:success:failure: instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_member_07_t_y_deprecated_api_08.html#a94f16b517f5376a122cab295e0f47cf5">TuyaSmartHomeMember(TYDeprecatedApi)</a>.</p>
 
@@ -791,7 +791,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000037">Deprecated:</a></b></dt><dd>This method is deprecated. Use TuyaSmartHome::updateHomeMemberInfoWithMemberRequestModel:success:failure: instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>This method is deprecated. Use TuyaSmartHome::updateHomeMemberInfoWithMemberRequestModel:success:failure: instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_member_07_t_y_deprecated_api_08.html#ae6bc59c8f46a3983bb9c54e4885f20d3">TuyaSmartHomeMember(TYDeprecatedApi)</a>.</p>
 
@@ -833,7 +833,7 @@ Instance Methods</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">memberRequestModel</td><td>The request model. Set the required properties. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -900,7 +900,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated:</a></b></dt><dd>This method is deprecated. Use TuyaSmartHome::updateHomeMemberInfoWithMemberId:name:headPic:isAdmin:success:failure: instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000036">Deprecated:</a></b></dt><dd>This method is deprecated. Use TuyaSmartHome::updateHomeMemberInfoWithMemberId:name:headPic:isAdmin:success:failure: instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_member_07_t_y_deprecated_api_08.html#a4171ecafb40bc8c0fc994c1be9859161">TuyaSmartHomeMember(TYDeprecatedApi)</a>.</p>
 
@@ -966,7 +966,7 @@ Instance Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000038">Deprecated:</a></b></dt><dd>This method is deprecated. Use TuyaSmartHome::updateHomeMemberInfoWithMemberRequestModel:success:failure: instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>This method is deprecated. Use TuyaSmartHome::updateHomeMemberInfoWithMemberRequestModel:success:failure: instead. </dd></dl>
 
 <p>Provided by category <a class="el" href="category_tuya_smart_home_member_07_t_y_deprecated_api_08.html#a91a6bf8055a32a7c46c35465a1c3399a">TuyaSmartHomeMember(TYDeprecatedApi)</a>.</p>
 

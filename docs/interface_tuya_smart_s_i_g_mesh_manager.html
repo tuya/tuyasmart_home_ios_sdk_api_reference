@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('interface_tuya_smart_s_i_g_mesh_manage
 </div><!--header-->
 <div class="contents">
 
-<p>SIG Bluetooth mesh manager, contains common sig mesh management classes, such as creating groups, issuing control commands, removing devices, etc.=====The Bluetooth mesh manager supports common Bluetooth mesh management classes and enables multiple functions. For example, the classes can be called to create groups, send control commands, and remove devices.  
+<p>The Bluetooth mesh manager supports common Bluetooth mesh management classes and enables multiple functions. For example, the classes can be called to create groups, send control commands, and remove devices.  
  <a href="interface_tuya_smart_s_i_g_mesh_manager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for TuyaSmartSIGMeshManager:</div>
@@ -168,8 +168,8 @@ Properties</h2></td></tr>
 <tr class="separator:aa2a895adf16d4a485b5311cdf8faab96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>SIG Bluetooth mesh manager, contains common sig mesh management classes, such as creating groups, issuing control commands, removing devices, etc.=====The Bluetooth mesh manager supports common Bluetooth mesh management classes and enables multiple functions. For example, the classes can be called to create groups, send control commands, and remove devices. </p>
-<p>We provide a particularly large number of extension interfaces that can be used for various methods and scenarios.====A large number of extension APIs are available to support various methods and scenarios. </p>
+<div class="textblock"><p>The Bluetooth mesh manager supports common Bluetooth mesh management classes and enables multiple functions. For example, the classes can be called to create groups, send control commands, and remove devices. </p>
+<p>A large number of extension APIs are available to support various methods and scenarios. </p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="a62bc794afcdecea3bca6dab2b4d1cd84"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62bc794afcdecea3bca6dab2b4d1cd84">&#9670;&nbsp;</a></span>addDeviceToGroupWithDevId:groupAddress:</h2>
@@ -307,7 +307,7 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Ready to upgrade target device.====Prepares for OTA updates for a specific device. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Prepares for OTA updates for a specific device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">targetNodeId</td><td>The node ID of the device to be updated. </td></tr>
   </table>
@@ -373,13 +373,13 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Single device sends messages.=====Sends DPs to a single device. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sends DPs to a single device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
-    <tr><td class="paramname">schemaArray</td><td>Dps information.=======The array of DP information. </td></tr>
+    <tr><td class="paramname">schemaArray</td><td>The array of DP information. </td></tr>
     <tr><td class="paramname">dps</td><td>The DPs. </td></tr>
-    <tr><td class="paramname">pcc</td><td>Product size class identification.======The size class label of the product. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Do you need a message reply?=====Specifies whether a response is required. </td></tr>
+    <tr><td class="paramname">pcc</td><td>The size class label of the product. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -522,11 +522,11 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Custom channel, through the vendor instructions.======The custom channel that is enabled with the vendor instructions. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The custom channel that is enabled with the vendor commands. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
-    <tr><td class="paramname">opCode</td><td>opCode.====The operation code. </td></tr>
-    <tr><td class="paramname">payload</td><td>Metadata.=====The metadata. </td></tr>
+    <tr><td class="paramname">opCode</td><td>The operation code. </td></tr>
+    <tr><td class="paramname">payload</td><td>The metadata. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -584,7 +584,7 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
     <tr><td class="paramname">brightValue</td><td>The brightness value. Valid values: <code>0</code> to <code>65535</code>. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that the value is set to <code>no</code> in the case of group control and set to <code>yes</code> in the case of single-device control. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that you set the value to <code>no</code> in the case of group control and <code>yes</code> in the case of single-device control. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -642,7 +642,7 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
     <tr><td class="paramname">tempValue</td><td>Specifies the warm and cool temperatures. Valid values: 300 to 20000. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that the value is set to <code>no</code> in the case of group control and set to <code>yes</code> in the case of single-device control. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that you set the value to <code>no</code> in the case of group control and <code>yes</code> in the case of single-device control. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -714,7 +714,7 @@ Properties</h2></td></tr>
     <tr><td class="paramname">aHue</td><td>The Hue. Valid values: <code>0</code> to <code>65535</code>. </td></tr>
     <tr><td class="paramname">aSaturation</td><td>The saturation. Valid values: <code>0</code> to <code>65535</code>. </td></tr>
     <tr><td class="paramname">aLightness</td><td>The brightness. Valid values: <code>l</code> and <code>v</code>, <code>0</code> to <code>65535</code>. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that the value is set to <code>no</code> in the case of group control and set to <code>yes</code> in the case of single-device control. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that you set the value to <code>no</code> in the case of group control and <code>yes</code> in the case of single-device control. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -771,8 +771,8 @@ Properties</h2></td></tr>
 <p>The setup mode. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
-    <tr><td class="paramname">alightModel</td><td><code>0</code>: the white light mode. <code>1</code>: the colored light mode. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that the value is set to <code>no</code> in the case of group control and set to <code>yes</code> in the case of single-device control. </td></tr>
+    <tr><td class="paramname">alightModel</td><td>The light model. Valid values: <code>0</code>: the white light mode. <code>1</code>: the colored light mode. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that you set the value to <code>no</code> in the case of group control and <code>yes</code> in the case of single-device control. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -816,7 +816,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 <p>Resets the node. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">deviceModel</td><td><a class="el" href="interface_tuya_smart_device_model.html" title="The device information.">TuyaSmartDeviceModel</a>.======The value of <a class="el" href="interface_tuya_smart_device_model.html" title="The device information.">TuyaSmartDeviceModel</a>. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The value of <a class="el" href="interface_tuya_smart_device_model.html" title="The information about the device.">TuyaSmartDeviceModel</a>. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -874,7 +874,7 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
     <tr><td class="paramname">state</td><td>The switch status. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Whether a reply is needed, it is suggested that the group should use no and single device control yes=====Specifies whether a response is required. We recommend that the value is set to <code>no</code> in the case of group control and set to <code>yes</code> in the case of single-device control. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that you set the value to <code>no</code> in the case of group control and <code>yes</code> in the case of single-device control. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -934,12 +934,12 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The general vendor protocol.=====The generic vendor protocol. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The generic vendor protocol. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeId</td><td>The node ID. </td></tr>
     <tr><td class="paramname">vendorData</td><td>The data content. </td></tr>
-    <tr><td class="paramname">isisQuery</td><td>Is it a query instruction.======Specifies whether a query instruction is sent. </td></tr>
-    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that the value is set to <code>no</code> in the case of group control and set to <code>yes</code> in the case of single-device control. </td></tr>
+    <tr><td class="paramname">isisQuery</td><td>Specifies whether a query command is sent. </td></tr>
+    <tr><td class="paramname">useUnacknowledged</td><td>Specifies whether a response is required. We recommend that you set the value to <code>no</code> in the case of group control and <code>yes</code> in the case of single-device control. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -992,9 +992,9 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Start to activate devices. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Starts to activate devices. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">devList</td><td>The list of devices to be activated. </td></tr>
+    <tr><td class="paramname">devList</td><td>A list of devices to be activated. </td></tr>
     <tr><td class="paramname">meshModel</td><td>The mesh model information. </td></tr>
   </table>
   </dd>
@@ -1031,7 +1031,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 <p>Starts to scan devices. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scanType</td><td>At present, the scanning type is divided into non distribution network and distributed network. The scanned result of distribution network will automatically enter the network.======The devices to be scanned are classified into the paired devices and the devices that are not paired. The devices that are not paired are added to the network after they are scanned. </td></tr>
+    <tr><td class="paramname">scanType</td><td>The devices to be scanned are classified into the paired devices and the devices that are not paired. The devices that are not paired are added to the network after they are scanned. </td></tr>
     <tr><td class="paramname">meshModel</td><td>The mesh model. </td></tr>
   </table>
   </dd>
@@ -1081,7 +1081,7 @@ Properties</h2></td></tr>
 <p>Starts to send the update package. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>The data. </td></tr>
-    <tr><td class="paramname">targetVersion</td><td>The version to which the device is updated to. </td></tr>
+    <tr><td class="paramname">targetVersion</td><td>The version to which the device is updated. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>

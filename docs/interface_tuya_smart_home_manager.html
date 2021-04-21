@@ -180,7 +180,7 @@ Properties</h2></td></tr>
     <tr><td class="paramname">latitude</td><td>The latitude. </td></tr>
     <tr><td class="paramname">longitude</td><td>The longitude. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -216,7 +216,7 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">success</td><td>Called when the task is finished. A list of <a class="el" href="interface_tuya_smart_home_model.html">TuyaSmartHomeModel</a> is returned. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -271,12 +271,12 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">homeId</td><td>The home ID. </td></tr>
     <tr><td class="paramname">isAccept</td><td>Specifies whether to accept the invitation. </td></tr>
-    <tr><td class="paramname">success</td><td>The success block. </td></tr>
-    <tr><td class="paramname">failure</td><td>The failure block. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="interface_tuya_smart_home.html#a349838a9bc1c6e4084c3aea588886f51">joinFamilyWithAccept:success:failure: (TuyaSmartHome)</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated:</a></b></dt><dd>This method is deprecated. Use <a class="el" href="interface_tuya_smart_home.html#a349838a9bc1c6e4084c3aea588886f51">joinFamilyWithAccept:success:failure: (TuyaSmartHome)</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -314,9 +314,9 @@ Properties</h2></td></tr>
 <p>Sorts the homes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">homeList</td><td>The list of homes. </td></tr>
+    <tr><td class="paramname">homeList</td><td>A list of homes. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs while adding the task, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>

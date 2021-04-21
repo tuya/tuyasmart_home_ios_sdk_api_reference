@@ -102,10 +102,14 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a810fc1d0704fb2c168d86f6a27c9f5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34c8335f55c05d053a9d07f7c685ee04"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_pegasus_activator_delegate-p.html#a34c8335f55c05d053a9d07f7c685ee04">pegasusActivator:didReceiveDevice:error:</a></td></tr>
 <tr class="separator:a34c8335f55c05d053a9d07f7c685ee04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810fc1d0704fb2c168d86f6a27c9f5f5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_pegasus_activator_delegate-p.html#a810fc1d0704fb2c168d86f6a27c9f5f5">pegasusActivator:serverDevice:didFoundDevice:error:</a></td></tr>
+<tr class="separator:a810fc1d0704fb2c168d86f6a27c9f5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c8335f55c05d053a9d07f7c685ee04"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_tuya_smart_pegasus_activator_delegate-p.html#a34c8335f55c05d053a9d07f7c685ee04">pegasusActivator:didReceiveDevice:error:</a></td></tr>
+<tr class="separator:a34c8335f55c05d053a9d07f7c685ee04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Method Documentation</h2>
 <a id="a34c8335f55c05d053a9d07f7c685ee04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34c8335f55c05d053a9d07f7c685ee04">&#9670;&nbsp;</a></span>pegasusActivator:didReceiveDevice:error:</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c8335f55c05d053a9d07f7c685ee04">&#9670;&nbsp;</a></span>pegasusActivator:didReceiveDevice:error: <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,11 +139,53 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Devices that have been configured for the network by Pegasus. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns the devices that are found by Pegasus. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">activator</td><td>Activator instance. </td></tr>
-    <tr><td class="paramname">deviceModel</td><td>The found device. </td></tr>
-    <tr><td class="paramname">error</td><td>Error message. </td></tr>
+    <tr><td class="paramname">activator</td><td>The activator instance. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The device that is found by Pegasus. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a34c8335f55c05d053a9d07f7c685ee04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c8335f55c05d053a9d07f7c685ee04">&#9670;&nbsp;</a></span>pegasusActivator:didReceiveDevice:error: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) pegasusActivator: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_pegasus_activator.html">TuyaSmartPegasusActivator</a> *)&#160;</td>
+          <td class="paramname"><em>activator</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">didReceiveDevice:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *)&#160;</td>
+          <td class="paramname"><em>deviceModel</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">error:</td>
+          <td></td>
+          <td class="paramtype">(NSError *__nullable)&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the devices that are found by Pegasus. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">activator</td><td>The activator instance. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The device that is found by Pegasus. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
   </table>
   </dd>
 </dl>
@@ -147,7 +193,7 @@ Instance Methods</h2></td></tr>
 </div>
 </div>
 <a id="a810fc1d0704fb2c168d86f6a27c9f5f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a810fc1d0704fb2c168d86f6a27c9f5f5">&#9670;&nbsp;</a></span>pegasusActivator:serverDevice:didFoundDevice:error:</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a810fc1d0704fb2c168d86f6a27c9f5f5">&#9670;&nbsp;</a></span>pegasusActivator:serverDevice:didFoundDevice:error: <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,12 +229,61 @@ Instance Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Devices found by Pegasus. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns the devices that are found by Pegasus. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">activator</td><td>Activator instance. </td></tr>
-    <tr><td class="paramname">serverDeviceModel</td><td>The device is found, but there is no device ID at this time. </td></tr>
-    <tr><td class="paramname">deviceModel</td><td>The device is found, but there is no device ID at this time. </td></tr>
-    <tr><td class="paramname">error</td><td>Error message. </td></tr>
+    <tr><td class="paramname">activator</td><td>The activator instance. </td></tr>
+    <tr><td class="paramname">serverDeviceModel</td><td>The device is found, but no device ID is available. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The device is found, but no device ID is available. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a810fc1d0704fb2c168d86f6a27c9f5f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810fc1d0704fb2c168d86f6a27c9f5f5">&#9670;&nbsp;</a></span>pegasusActivator:serverDevice:didFoundDevice:error: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) pegasusActivator: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_pegasus_activator.html">TuyaSmartPegasusActivator</a> *)&#160;</td>
+          <td class="paramname"><em>activator</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">serverDevice:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *)&#160;</td>
+          <td class="paramname"><em>serverDeviceModel</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">didFoundDevice:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_tuya_smart_device_model.html">TuyaSmartDeviceModel</a> *)&#160;</td>
+          <td class="paramname"><em>deviceModel</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">error:</td>
+          <td></td>
+          <td class="paramtype">(NSError *__nullable)&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the devices that are found by Pegasus. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">activator</td><td>The activator instance. </td></tr>
+    <tr><td class="paramname">serverDeviceModel</td><td>The device is found, but no device ID is available. </td></tr>
+    <tr><td class="paramname">deviceModel</td><td>The device is found, but no device ID is available. </td></tr>
+    <tr><td class="paramname">error</td><td>An error occurs while processing the request. </td></tr>
   </table>
   </dd>
 </dl>
