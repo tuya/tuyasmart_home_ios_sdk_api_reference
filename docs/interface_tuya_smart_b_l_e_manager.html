@@ -157,7 +157,7 @@ Class Methods</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a76cd51240938ced91084fbd87a679b67"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_b_l_e_manager.html#a76cd51240938ced91084fbd87a679b67">isPoweredOn</a></td></tr>
-<tr class="memdesc:a76cd51240938ced91084fbd87a679b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean value that indicates whether the mobile phone's Bluetooth is enabled or disabled.  <a href="interface_tuya_smart_b_l_e_manager.html#a76cd51240938ced91084fbd87a679b67">More...</a><br /></td></tr>
+<tr class="memdesc:a76cd51240938ced91084fbd87a679b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Boolean value that indicates whether the mobile phone's Bluetooth is enabled or disabled.  <a href="interface_tuya_smart_b_l_e_manager.html#a76cd51240938ced91084fbd87a679b67">More...</a><br /></td></tr>
 <tr class="separator:a76cd51240938ced91084fbd87a679b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac28ae98fe7123b5bae4ac72501fa47f7"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_tuya_smart_b_l_e_manager_delegate-p.html">TuyaSmartBLEManagerDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_tuya_smart_b_l_e_manager.html#ac28ae98fe7123b5bae4ac72501fa47f7">delegate</a></td></tr>
 <tr class="memdesc:ac28ae98fe7123b5bae4ac72501fa47f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The delegate for scanning and notifications of Bluetooth status changes.  <a href="interface_tuya_smart_b_l_e_manager.html#ac28ae98fe7123b5bae4ac72501fa47f7">More...</a><br /></td></tr>
@@ -216,8 +216,8 @@ Properties</h2></td></tr>
     <tr><td class="paramname">advModel</td><td>The device advertisement model. </td></tr>
     <tr><td class="paramname">homeId</td><td>The ID of the current home. </td></tr>
     <tr><td class="paramname">token</td><td>The token. </td></tr>
-    <tr><td class="paramname">success</td><td>When the activation is successful, this block is called with DeviceModel. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. DeviceModel is returned. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -268,8 +268,8 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">deviceInfo</td><td>The advertisingData model for the Bluetooth LE device. </td></tr>
     <tr><td class="paramname">homeId</td><td>The ID for the current home. </td></tr>
-    <tr><td class="paramname">success</td><td>When the activation is successful, this block is called with DeviceModel. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. DeviceModel is returned. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -324,8 +324,8 @@ Properties</h2></td></tr>
     <tr><td class="paramname">uuid</td><td>The UUID of the device. </td></tr>
     <tr><td class="paramname">homeId</td><td>The ID of the current home. </td></tr>
     <tr><td class="paramname">productKey</td><td>The product ID of the device. </td></tr>
-    <tr><td class="paramname">success</td><td>When the activation is successful, this block is called with DeviceModel. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. DeviceModel is returned. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -389,8 +389,8 @@ Properties</h2></td></tr>
     <tr><td class="paramname">ssid</td><td>The name of the router. </td></tr>
     <tr><td class="paramname">password</td><td>The password for the device. </td></tr>
     <tr><td class="paramname">timeout</td><td>The timeout value. </td></tr>
-    <tr><td class="paramname">success</td><td>When the activation is successful, this block is called with DeviceModel. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. DeviceModel is returned. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -495,8 +495,8 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The UUID of the device. </td></tr>
     <tr><td class="paramname">productKey</td><td>The product ID of the device. </td></tr>
-    <tr><td class="paramname">success</td><td>After the device is connected, this block is called. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -564,8 +564,8 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The UUID of the device. </td></tr>
-    <tr><td class="paramname">success</td><td>After the device is disconnected, this block is called. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -668,8 +668,8 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">paramsDict</td><td>A dictionary of parameters that are defined by the protocol party. </td></tr>
-    <tr><td class="paramname">success</td><td>When the OTA update is successful, this block is called. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -719,7 +719,7 @@ Properties</h2></td></tr>
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">data</td><td>The data to be transmitted to the device. </td></tr>
     <tr><td class="paramname">success</td><td>The data that is returned by the device. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -768,8 +768,8 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
     <tr><td class="paramname">dpIds</td><td>The array of DP IDs to be queried. </td></tr>
-    <tr><td class="paramname">success</td><td>When the query is successful, this block is called. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -818,8 +818,8 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The UUID of the device. </td></tr>
     <tr><td class="paramname">productId</td><td>The product ID for the device. </td></tr>
-    <tr><td class="paramname">success</td><td>When the query is successful, this block is called with a dictionary of device information. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. A dictionary of device information is returned. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -868,8 +868,8 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The UUID of the device. </td></tr>
     <tr><td class="paramname">productKey</td><td>The product ID for the device. </td></tr>
-    <tr><td class="paramname">success</td><td>When the query is successful, this block is called with the device name string. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called.</td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. The device name string is returned. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error.</td></tr>
   </table>
   </dd>
 </dl>
@@ -921,8 +921,8 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">uuid</td><td>The UUID of the device. </td></tr>
     <tr><td class="paramname">otaData</td><td>The OTA package data. </td></tr>
-    <tr><td class="paramname">success</td><td>When the OTA update is successful, this block is called. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called.</td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error.</td></tr>
   </table>
   </dd>
 </dl>
@@ -995,8 +995,8 @@ Properties</h2></td></tr>
     <tr><td class="paramname">otaData</td><td>The OTA package data. </td></tr>
     <tr><td class="paramname">otaType</td><td>The OTA update type. </td></tr>
     <tr><td class="paramname">otaVersion</td><td>The OTA version. </td></tr>
-    <tr><td class="paramname">success</td><td>When the OTA update is successful, this block is called. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1054,8 +1054,8 @@ Properties</h2></td></tr>
     <tr><td class="paramname">uuid</td><td>The UUID of the device. </td></tr>
     <tr><td class="paramname">pid</td><td>The product ID of the device. </td></tr>
     <tr><td class="paramname">otaData</td><td>The OTA package data. </td></tr>
-    <tr><td class="paramname">success</td><td>When the OTA update is successful, this block is called. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called.</td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1091,7 +1091,7 @@ Properties</h2></td></tr>
 <p>Sets the callback when the transfer is completed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">block</td><td>After data is transferred, this block is called. </td></tr>
+    <tr><td class="paramname">block</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">uuid</td><td>The UUID of the device. </td></tr>
   </table>
   </dd>
@@ -1217,7 +1217,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A boolean value that indicates whether the mobile phone's Bluetooth is enabled or disabled. </p>
+<p>A Boolean value that indicates whether the mobile phone's Bluetooth is enabled or disabled. </p>
 
 </div>
 </div>

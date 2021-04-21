@@ -195,8 +195,8 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">advModel</td><td>The advertisingData model for the beacon device. </td></tr>
     <tr><td class="paramname">homeId</td><td>The ID for the current home. </td></tr>
-    <tr><td class="paramname">success</td><td>When the activation is successful, this block is called with DeviceModel. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. DeviceModel is returned. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -551,8 +551,8 @@ Properties</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">deviceId</td><td>The device ID for the device. </td></tr>
     <tr><td class="paramname">dps</td><td>The DP dictionary. </td></tr>
-    <tr><td class="paramname">success</td><td>After the DPs are sent, this block is called. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -834,8 +834,8 @@ Properties</h2></td></tr>
 <p>Resets the device and enables the pairing status for the device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">devId</td><td>The device ID. </td></tr>
-    <tr><td class="paramname">success</td><td>After the device is reset, this block is called. </td></tr>
-    <tr><td class="paramname">failure</td><td>If an error occurs, this block is called. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>

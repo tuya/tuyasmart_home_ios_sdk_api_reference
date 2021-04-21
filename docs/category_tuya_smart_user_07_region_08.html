@@ -169,7 +169,7 @@ Instance Methods</h2></td></tr>
     <tr><td class="paramname">region</td><td>To complete the required registration, use [<a class="el" href="interface_tuya_smart_user.html" title="User functions.">TuyaSmartUser</a> regionListWithCountryCode:success:failure:] or [<a class="el" href="interface_tuya_smart_user.html" title="User functions.">TuyaSmartUser</a> getDefaultRegionWithCountryCode:] to get the region. </td></tr>
     <tr><td class="paramname">countryCode</td><td>The country code. </td></tr>
     <tr><td class="paramname">code</td><td>The verification code. </td></tr>
-    <tr><td class="paramname">type</td><td>1: Register with the mobile phone verification code. 2: Log in with the mobile phone verification code. 3: Reset the mobile phone password. </td></tr>
+    <tr><td class="paramname">type</td><td>Valid values: <code>1</code>: Register with the mobile phone verification code. <code>2</code>: Log in with the mobile phone verification code. <code>3</code>: Reset the mobile phone password. </td></tr>
     <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
     <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
@@ -255,8 +255,8 @@ Instance Methods</h2></td></tr>
 <p>Returns the whitelist of regions to enable registration with mobile phone numbers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">success</td><td>The success block. </td></tr>
-    <tr><td class="paramname">failure</td><td>The failure block. </td></tr>
+    <tr><td class="paramname">success</td><td>Called when the task is finished. </td></tr>
+    <tr><td class="paramname">failure</td><td>Called when the task is interrupted by an error. </td></tr>
   </table>
   </dd>
 </dl>
