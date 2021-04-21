@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param groupName The group name.
 /// @param productId The product ID of the device.
 /// @param beaconCategory The device category.
-/// @param success The value of groupId is returned when the task is finished.
+/// @param success Called when the task is finished. The value of groupId is returned.
 /// @param failure Called when the task is interrupted by an error.
 + (void)createBeaconGroupWithGroupName:(NSString *)groupName
                              productId:(NSString *)productId
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Adds a device to the group.
 /// @param devId The device ID.
 /// @param groupId The group ID.
-/// @param success The device groups data is returned when the task is finished.
+/// @param success Called when the task is finished. The device group data is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)addDeviceToGroupWithDevId:(NSString *)devId
                           groupId:(NSString *)groupId
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Deletes a device from the group.
 /// @param devId The device ID.
 /// @param groupId The group ID.
-/// @param success The device groups data is returned when the task is finished.
+/// @param success Called when the task is finished. The device group data is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)deleteDeviceFromGroupWithDevId:(NSString *)devId
                                groupId:(NSString *)groupId
@@ -45,7 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Queries device groups.
 /// @param devId The device ID.
-/// @param success The device groups data is returned when the task is finished.
+/// @param success Called when the task is finished. The device group data is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)queryGroupsWithDevId:(NSString *)devId
                      success:(TYSuccessData)success

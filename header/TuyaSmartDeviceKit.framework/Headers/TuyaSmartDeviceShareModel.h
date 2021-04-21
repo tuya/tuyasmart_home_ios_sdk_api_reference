@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The account.
 @property (nonatomic, copy) NSString *userAccount;
 
-/// The list of device IDs.
+/// A list of device IDs.
 @property (nonatomic, copy) NSArray<NSString *> *devIds;
 
 @end

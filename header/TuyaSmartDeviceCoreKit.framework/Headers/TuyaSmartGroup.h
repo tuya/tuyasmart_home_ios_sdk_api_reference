@@ -126,7 +126,7 @@ NS_ASSUME_NONNULL_BEGIN
 #if TARGET_OS_IOS
 
 /// Adds sub-devices to groups that locally interact with gateways.
-/// @param nodeList The list of sub-device node IDs.
+/// @param nodeList A list of sub-device node IDs.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)addSubDeviceWithSubDeviceNodeList:(NSArray <NSString *>*)nodeList
@@ -134,7 +134,7 @@ NS_ASSUME_NONNULL_BEGIN
                                   failure:(nullable TYFailureError)failure;
 
 /// Removes sub-devices from groups that locally interact with gateways.
-/// @param nodeList  The list of sub-device node IDs.
+/// @param nodeList  A list of sub-device node IDs.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)removeSubDeviceWithSubDeviceNodeList:(NSArray <NSString *>*)nodeList

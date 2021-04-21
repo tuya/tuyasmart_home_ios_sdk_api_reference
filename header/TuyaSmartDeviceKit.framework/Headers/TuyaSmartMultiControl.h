@@ -66,7 +66,7 @@ NS_ASSUME_NONNULL_BEGIN
                                      failure:(TYFailureError)failure;
 
 
-/// Queries the list of device IDs and device groups that support specific actions. The data is returned by home ID.
+/// Queries a list of device IDs and device groups that support specific actions. The data is returned by home ID.
 /// @param homeId The home ID.
 /// @param success Called when the task is finished. A list of TuyaSmartMultiControlDeviceModel is returned.
 /// @param failure Called when the task is interrupted by an error.

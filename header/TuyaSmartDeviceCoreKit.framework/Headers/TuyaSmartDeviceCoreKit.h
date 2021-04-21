@@ -7,7 +7,7 @@
 #ifndef TuyaSmartDeviceCoreKit_h
 #define TuyaSmartDeviceCoreKit_h
 
-/// @brief Header files for TuyaSmartDeviceCoreKit.
+/// @brief A list of header files for TuyaSmartDeviceCoreKit.
 
 /// The latest supported Internet communication protocol for clients.
 #define TUYA_CURRENT_GW_PROTOCOL_VERSION 2.2

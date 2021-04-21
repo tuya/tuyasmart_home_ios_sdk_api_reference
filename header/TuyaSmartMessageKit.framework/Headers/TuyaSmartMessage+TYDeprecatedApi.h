@@ -83,7 +83,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param msgType      Message type
 /// @param ids          Delete message Id list
-/// @param msgSrcIds    Delete alarm message Id list
+/// @param msgSrcIds    Delete alert message Id list
 /// @param success      Success block
 /// @param failure      Failure block
 /// @deprecated This method is deprecated, Use TuyaSmartMessage::deleteMessageWithDeleteRequestModel:failure: instead.

@@ -35,7 +35,7 @@
                  failure:(TYFailureError)failure __deprecated_msg("This method is deprecated, Use [TuyaSmartTimer addTimerWithTask:loops:bizId:bizType:time:dps:status:isAppPush:aliasName:success:failure:] instead");
 
 
-/// Add timed tasks。
+/// Add timed tasks.
 /// @param task The name of the task.
 /// @param loops Number of cycles.
 /// @param devId The device ID.
@@ -44,7 +44,7 @@
 /// @param timeZone Time zone of the device +08:00, if the phone time zone is not taken.
 /// @param isAppPush A boolean value indicates whether to turn on the push notification.
 /// @param aliasName The remark for the task.
-/// @param success  Called when the task finishes successfully.
+/// @param success  Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated, Use TuyaSmartTimer::addTimerWithTask:loops:bizId:bizType:time:dps:status:isAppPush:aliasName:success:failure: instead.
 - (void)addTimerWithTask:(NSString *)task
@@ -63,7 +63,7 @@
 /// @param task The name of the task.
 /// @param devId The device ID.
 /// @param status Timing group status.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated, Use TuyaSmartTimer::updateTimerStatusWithTask:bizId:bizType:status:success:failure: instead instead.
 - (void)updateTimerTaskStatusWithTask:(NSString *)task
@@ -78,7 +78,7 @@
 /// @param devId The device ID.
 /// @param timerId The timer ID for the update process.
 /// @param status Timing clock status.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated, Use TuyaSmartTimer::updateTimerStatusWithTimerId:bizId:bizType:status:success:failure: instead instead.
 - (void)updateTimerStatusWithTask:(NSString *)task
@@ -93,7 +93,7 @@
 /// @param task The name of the timer task.
 /// @param devId The device ID.
 /// @param timerId The timer ID for the update process.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated, Use TuyaSmartTimer::removeTimerWithTimerId:bizId:bizType:success:failure: instead.
 - (void)removeTimerWithTask:(NSString *)task
@@ -111,7 +111,7 @@
 /// @param time Timed clocks under timed tasks
 /// @param dps Command dictionary.
 /// @param timeZone Time zone of the device +08:00.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated, Use TuyaSmartTimer::updateTimerWithTimerId:loops:bizId:bizType:time:dps:isAppPush:aliasName:success:failure: instead.
 - (void)updateTimerWithTask:(NSString *)task
@@ -135,7 +135,7 @@
 /// @param timeZone Time zone of the device +08:00.
 /// @param isAppPush A boolean value indicates whether to turn on the push notification.
 /// @param aliasName The remark for the task.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated, Use TuyaSmartTimer::updateTimerWithTimerId:loops:bizId:bizType:time:dps:isAppPush:aliasName:success:failure: instead.
 - (void)updateTimerWithTask:(NSString *)task
@@ -154,7 +154,7 @@
 /// Get all timer clocks under timer task.
 /// @param task The name of the timer task.
 /// @param devId The device ID.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated, Use TuyaSmartTimer::getTimerListWithTask:bizId:bizType:success:failure: instead.
 - (void)getTimerWithTask:(NSString *)task

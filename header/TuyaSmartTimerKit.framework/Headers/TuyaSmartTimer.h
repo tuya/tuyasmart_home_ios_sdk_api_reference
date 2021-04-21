@@ -9,77 +9,77 @@
 
 #import <TuyaSmartUtil/TuyaSmartUtil.h>
 
-/// Timer detail model.
+/// The detailed model of the timer.
 @interface TYTimerModel : NSObject
 
-/// The id of timer.
+/// The ID of the timer.
 @property (nonatomic, strong) NSString *timerId;
 
-/// Date.
+/// The date.
 @property (nonatomic, strong) NSString *date;
 
-/// The timer execute time.
+/// The time when the timer runs.
 @property (nonatomic, strong) NSString *time;
 
-/// The timer status.
+/// The status of the timer.
 @property (nonatomic, assign) BOOL     status;
 
-/// The timer loop.
+/// The loop of the timer.
 @property (nonatomic, strong) NSString *loops;
 
-/// The timer action dps.
+/// The action DPs of the timer.
 @property (nonatomic, strong) NSDictionary *dps;
 
-/// The timer zone id.
+/// The zone ID of the timer.
 @property (nonatomic, strong) NSString *timezoneId;
 
-/// The timer alias name.
+/// The alias name of the timer.
 @property (nonatomic, copy)   NSString *aliasName;
 
-/// Timer push notify, if yes, when timer execute, app will receive a notify message.
+/// Specifies whether the timer push notification is enabled. If the value is set to `yes`, when the timer runs, the app receives a push notification.
 @property (nonatomic, assign) BOOL     isAppPush;
 
 @end
 
-/// Timer task model.
+/// The task model of the timer.
 @interface TYTimerTaskModel : NSObject
 
-/// The task name.
+/// The name of the task.
 @property (nonatomic, strong) NSString  *taskName;
 
-// The task status.
+// The status of the task.
 @property (nonatomic, assign) NSInteger status;
 
 @end
 
 
-/// @brief TuyaSmartTimer provides basic timing capability, supporting device timing (including WiFi devices, Bluetooth Mesh sub-devices, Zigbee sub-devices) and group timing.
+/// @brief TuyaSmartTimer provides basic timing capabilities and supports device timing and group timing. The device timing function supports Wi-Fi devices, Bluetooth mesh sub-devices, and Zigbee sub-devices.
 ///
-/// It also encapsulates the interface of adding, deleting and checking timer information for device dp points. After the application sets up the timer information through the timing interface, the hardware module will automatically perform the booked operations according to the timing requirements. Multiple timers can be included under each timing task.
+/// TuyaSmartTimer also encapsulates the API operations to add, delete, and check timer data for device data points (DPs). After the timer data is configured for the app in the calls of the timing API operations, the hardware module automatically runs the scheduled tasks based on the timing requirements. Multiple timers can be included in the same timer task.
 @interface TuyaSmartTimer : NSObject
 
-/// Get a list of timer task.
-/// @param devId Provides the device ID which is needed to get the timer task.
-/// @param success Called when the task finishes successfully. A list of TYTimerTaskModel will be returned.
+/// Returns a list of timer tasks.
+/// @param devId The ID of the device to which the timer tasks are assigned.
+/// @param success Called when the task is finished. A list of TYTimerTaskModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getTimerTaskStatusWithDeviceId:(NSString *)devId
                                success:(void(^)(NSArray<TYTimerTaskModel *> *list))success
                                failure:(TYFailureError)failure;
 
 
-/// Call this method to get all timers that the specified device has.
-/// @param devId Provides the device ID which is needed to get all timers.
-/// @param success Called when the task finishes successfully.
+/// Returns all timers that are configured for a specified device.
+/// @param devId The ID of the device for which the timers are configured.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getAllTimerWithDeviceId:(NSString *)devId
                         success:(TYSuccessDict)success
                         failure:(TYFailureError)failure;
 
 
-/// Call this method to update the timezone of a specified device.
-/// @param devId Provides the device ID which is needed to update the timezone.
-/// @param timezoneId The ID of the time zone, for example, "Asia/Shanghai".
-/// @param success Called when the task finishes successfully.
+/// Updates the time zone of a specified device.
+/// @param devId The ID of the device for which the time zone is updated.
+/// @param timezoneId The ID of the time zone, such as "Asia/Shanghai".
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateTimerWithDeviceId:(NSString *)devId
                      timezoneId:(NSString *)timezoneId
@@ -87,24 +87,24 @@
                         failure:(TYFailureError)failure;
 
 
-/// Call this method to cancel the ongoing request.
+/// Cancels the ongoing request.
 - (void)cancelRequest;
 
 
 #pragma mark - Timer
 
-/// Set timers for each device or group.
-/// @note The maximum number of timings per device or group is 30.
+/// Sets timers for each device or group.
+/// @note The maximum number of timers per device or group is 30.
 /// @param task The task name of the timer.
-/// @param loops Number of loop.
-/// @param bizId If it is a device, here is the device Id; if it is a group, here is the group id.
-/// @param bizType Pass 0 if the type is device, otherwise, 1 for the group.
-/// @param time Timed clocks under timed tasks.
-/// @param dps Command Dictionary.
-/// @param status A boolean value indicates whether to turn on the timer.
-/// @param isAppPush A boolean value indicates whether to turn on the push notification.
-/// @param aliasName The remark for the task.
-/// @param success Called when the task finishes successfully.
+/// @param loops The number of loops.
+/// @param bizId Set the value to a device ID for device timing and a group ID for group timing.
+/// @param bizType Set the value to `0` for device timing and `1` for group timing.
+/// @param time The timing clocks for timer tasks.
+/// @param dps The command dictionary.
+/// @param status A Boolean value that specifies whether to enable the timer.
+/// @param isAppPush A Boolean value that specifies whether to enable the push notification.
+/// @param aliasName The remarks for the task.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)addTimerWithTask:(NSString *)task
                    loops:(NSString *)loops
@@ -119,11 +119,11 @@
                  failure:(TYFailureError)failure;
 
 
-/// Get the timer under the specified task of the device or group.
+/// Returns the timer for a specified task of the device or group.
 /// @param task The name of the timer task.
-/// @param bizId If it is a device, here is the device Id; if it is a group, here is the group id.
-/// @param bizType Pass 0 if the type is device, otherwise, 1 for the group.
-/// @param success Called when the task finishes successfully. A list of TYTimerTaskModel will be returned.
+/// @param bizId Set the value to a device ID for device timing and a group ID for group timing.
+/// @param bizType Set the value to `0` for device timing and `1` for group timing.
+/// @param success Called when the task is finished. A list of TYTimerTaskModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getTimerListWithTask:(NSString *)task
                        bizId:(NSString *)bizId
@@ -132,17 +132,17 @@
                      failure:(TYFailureError)failure;
 
 
-/// Update the specified timer information for the specified task under the device or group.
+/// Updates the specified timer information about a specified task for the device or group.
 /// @param timerId The timer ID for the update process.
-/// @param loops Number of cycles, format "0000000". Each bit 0:off, 1:on, from left to right: Sunday Monday Tuesday Wednesday Thursday Friday Saturday. For example, each Monday: 0100000.
-/// @param bizId If it is a device, here is the device Id; if it is a group, here is the group id.
-/// @param bizType Pass 0 if the type is device, otherwise, 1 for the group.
-/// @param time Timed time, e.g. 18:00.
-/// @param dps Command Dictionary.
-/// @param status A boolean value indicates whether to turn on the timer.
-/// @param isAppPush A boolean value indicates whether to turn on the push notification.
-/// @param aliasName The remark for the task.
-/// @param success Called when the task finishes successfully.
+/// @param loops The number of loops in the format of "0000000". Each bit of the string specifies whether to update the timer on a specific day within a week. `0`: disables the update. `1`: enables the update. Each bit means the following days in sequence from left to right: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, and Saturday. For example, `0100000` means every Monday.
+/// @param bizId Set the value to a device ID for device timing and a group ID for group timing.
+/// @param bizType Set the value to `0` for device timing and `1` for group timing.
+/// @param time The scheduled time, such as `18:00`.
+/// @param dps The command dictionary.
+/// @param status A Boolean value that indicates whether to enable the timer.
+/// @param isAppPush A Boolean value that indicates whether to enable the push notification.
+/// @param aliasName The remarks for the task.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateTimerWithTimerId:(NSString *)timerId
                          loops:(NSString *)loops
@@ -157,12 +157,12 @@
                        failure:(TYFailureError)failure;
 
 
-/// Update the specified timer status for the specified task under the device or group.
+/// Updates the timer status of a specified task for the device or group.
 /// @param timerId The timer ID for the update process.
-/// @param bizId If it is a device, here is the device Id; if it is a group, here is the group id.
-/// @param bizType Pass 0 if the type is device, otherwise, 1 for the group.
-/// @param status A boolean value indicates whether to turn on the timer.
-/// @param success Called when the task finishes successfully.
+/// @param bizId Set the value to a device ID for device timing and a group ID for group timing.
+/// @param bizType Set the value to `0` for device timing and `1` for group timing.
+/// @param status A Boolean value that indicates whether to enable the timer.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateTimerStatusWithTimerId:(NSString *)timerId
                                bizId:(NSString *)bizId
@@ -172,12 +172,12 @@
                              failure:(TYFailureError)failure;
 
 
-/// Update the status of all time clocks under a specific task.
+/// Updates the status of all-time clocks for a specific task.
 /// @param task The name of the timer task.
-/// @param bizId If it is a device, here is the device Id; if it is a group, here is the group id.
-/// @param bizType Pass 0 if the type is device, otherwise, 1 for the group.
-/// @param status A boolean value indicates whether to turn on the timer.
-/// @param success Called when the task finishes successfully.
+/// @param bizId Set the value to a device ID for device timing and a group ID for group timing.
+/// @param bizType Set the value to `0` for device timing and `1` for group timing.
+/// @param status A Boolean value that indicates whether to enable the timer.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateTimerStatusWithTask:(NSString *)task
                             bizId:(NSString *)bizId
@@ -187,11 +187,11 @@
                           failure:(TYFailureError)failure;
 
 
-/// Delete a single timer.
+/// Deletes a single timer.
 /// @param timerId The timer ID for the delete process.
-/// @param bizId If it is a device, here is the device Id; if it is a group, here is the group id.
-/// @param bizType Pass 0 if the type is device, otherwise, 1 for the group.
-/// @param success Called when the task finishes successfully.
+/// @param bizId Set the value to a device ID for device timing and a group ID for group timing.
+/// @param bizType Set the value to `0` for device timing and `1` for group timing.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)removeTimerWithTimerId:(NSString *)timerId
                          bizId:(NSString *)bizId
@@ -200,11 +200,11 @@
                        failure:(TYFailureError)failure;
 
 
-/// Delete all timers under a specific task.
+/// Deletes all timers from a specific task.
 /// @param task The name of the timer task.
-/// @param bizId If it is a device, here is the device Id; if it is a group, here is the group id.
-/// @param bizType Pass 0 if the type is device, otherwise, 1 for the group.
-/// @param success Called when the task finishes successfully.
+/// @param bizId Set the value to a device ID for device timing and a group ID for group timing.
+/// @param bizType Set the value to `0` for device timing and `1` for group timing.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)removeTimerWithTask:(NSString *)task
                       bizId:(NSString *)bizId
@@ -213,12 +213,12 @@
                     failure:(TYFailureError)failure;
 
 
-/// Batch modification of common timing status or deletion of timers.
-/// @param timerIds Batch modified timing ids.
-/// @param bizId Service id, in case of device, here is the device id; in case of group, here is the group id.
-/// @param bizType Service type, 0:Device; 1:Device group.
-/// @param updateType Update Type 0: Turn off the timer 1: Turn on the timer 2: Delete the timer.
-/// @param success Called when the task finishes successfully.
+/// Modifies common timing status of multiple timer IDs or deletes multiple timers in a request.
+/// @param timerIds The timer IDs for the batch operation.
+/// @param bizId The service ID. Set the value to a device ID for device timing and a group ID for group timing.
+/// @param bizType The service type. Set the value to `0` for device timing and `1` for group timing.
+/// @param updateType The type of update. Valid values: `0`: disables the timer. `1`: enables the timer. `2`: deletes the timer.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateTimerStatusWithTimerIds:(NSArray<NSString *> *)timerIds
                                 bizId:(NSString *)bizId
@@ -228,12 +228,12 @@
                               failure:(TYFailureError)failure;
 
 
-/// Modify all timing status under a timing task or delete a timer.
-/// @param task Timing task name.
-/// @param bizId Service id, in case of device, here is the device id; in case of group, here is the group id.
-/// @param bizType Service type, 0:Device; 1:Device group.
-/// @param updateType Update Type 0: Turn off the timer 1: Turn on the timer 2: Delete the timer.
-/// @param success Called when the task finishes successfully.
+/// Modifies all timing status of a timer task or delete a timer.
+/// @param task The name of the timer task.
+/// @param bizId The service ID. Set the value to a device ID for device timing and a group ID for group timing.
+/// @param bizType The service type. Set the value to `0` for device timing and `1` for group timing.
+/// @param updateType The type of update. Valid values: `0`: disables the timer. `1`: enables the timer. `2`: deletes the timer.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateTimerTaskStatusWithTask:(NSString *)task
                                 bizId:(NSString *)bizId

@@ -2,7 +2,7 @@
 //  TYBluetooth.h
 //  TYBluetooth
 //
-//  Created by 黄凯 on 2019/3/21.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #ifndef TYBluetooth_h

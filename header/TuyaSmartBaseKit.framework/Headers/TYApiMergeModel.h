@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSString  *apiName;
 
 
-/// The error.
+/// An error occurs while processing the request.
 @property (nonatomic, strong) NSError   *error;
 
 

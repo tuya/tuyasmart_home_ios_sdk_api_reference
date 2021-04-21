@@ -2,8 +2,7 @@
 //  TYLogUtils.h
 //  TuyaSmartKit
 //
-//  Created by 冯晓 on 2017/2/14.
-//  Copyright © 2017年 Tuya. All rights reserved.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <Foundation/Foundation.h>
@@ -24,7 +23,7 @@
  @params attributes Common parameters of the event.
  @params infos The information about the event.
  @params identifier The ID of the event. The value is generated in the call of [xxx ty_apm_identifier].
- @params trackType The status of the tracked point. (trackType = @”begin“ Begin / @"track" Send/ @"end" End)
+ @params trackType The status of the tracked point. (trackType = @"begin" Begin / @"track" Send/ @"end" End)
  
  */
 + (void)tysdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute infos:(NSDictionary *)infos trackType:(NSString *)trackType identifier:(NSString *)identifier;

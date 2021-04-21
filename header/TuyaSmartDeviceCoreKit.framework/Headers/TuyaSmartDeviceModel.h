@@ -43,7 +43,7 @@ typedef enum : NSUInteger {
 
     TuyaSmartDeviceModelTypeBeacon,          /// Bluetooth LE Beacon
     
-    TuyaSmartDeviceModelTypeCat1,            /// Cat 1
+    TuyaSmartDeviceModelTypeCat1,            /// Category 1
 } TuyaSmartDeviceModelType;
 
 
@@ -60,10 +60,10 @@ typedef NS_OPTIONS(NSUInteger, TuyaSmartDeviceOnlineType) {
     TuyaSmartDeviceOnlineTypeMeshBLE = 1 << 3
 };
 
-/// The device information.
+/// The information about the device.
 @interface TuyaSmartDeviceModel : NSObject
 
-/// The device ID.
+/// The ID of the device.
 @property (nonatomic, strong) NSString     *devId;
 
 /// The name of the device.
@@ -125,10 +125,10 @@ typedef NS_OPTIONS(NSUInteger, TuyaSmartDeviceOnlineType) {
 /// The hardware baseline version.
 @property (nonatomic, assign) double       bv;
 
-/// The device latitude.
+/// The latitude of the device.
 @property (nonatomic, strong) NSString     *latitude;
 
-/// The device longitude.
+/// The longitude of the device.
 @property (nonatomic, strong) NSString     *longitude;
 
 /// The DP name.
@@ -151,7 +151,7 @@ typedef NS_OPTIONS(NSUInteger, TuyaSmartDeviceOnlineType) {
 /// The media access control address.
 @property (nonatomic, strong) NSString     *mac;
 
-/// The network communication capability. `0`: Wi-Fi. `1`: cable. `2`: GPRS. `3`: NB-IoT. `10`: Bluetooth. `11`: Bluetooth mesh. `12`: Zigbee.
+/// The network communication capability. Valid values: `0`: Wi-Fi. `1`: wired. `2`: GPRS. `3`: NB-IoT. `10`: Bluetooth. `11`: Bluetooth mesh. `12`: Zigbee.
 @property (nonatomic, assign) NSUInteger   capability;
 
 @property (nonatomic, strong) NSString     *timezoneId;
@@ -217,7 +217,7 @@ typedef NS_OPTIONS(NSUInteger, TuyaSmartDeviceOnlineType) {
 @property (nonatomic, strong) NSString     *nodeId;
 @property (nonatomic, strong) NSString     *parentId;
 
-/// The Bluetooth mesh information.
+/// The information about Bluetooth mesh.
 @property (nonatomic, strong) NSString     *vendorInfo;
 @property (nonatomic, assign) BOOL         isMeshBleOnline;
 @property (nonatomic, strong) NSString     *pcc;
@@ -246,7 +246,7 @@ typedef NS_OPTIONS(NSUInteger, TuyaSmartDeviceOnlineType) {
 //
 // Index rules:
 // 9: Tuya Bluetooth mesh device.
-// 10: supports network check.
+// 10: supports network checks.
 @property (nonatomic, assign) NSUInteger baseAttribute;
 
 // Use `protocolAttributeIsSupport: index` to check the feature.
@@ -257,10 +257,10 @@ typedef NS_OPTIONS(NSUInteger, TuyaSmartDeviceOnlineType) {
 // 2: supports the subpieces feature.
 @property (nonatomic, assign) NSInteger protocolAttribute;
 
-/// Specifies whether auto updates are supported. Currently, NB-IoT and Bluetooth mesh devices do not support auto updates.
+/// Specifies whether automatic updates are supported. Currently, NB-IoT and Bluetooth mesh devices do not support automatic updates.
 @property (nonatomic, assign) BOOL supportAuto;
 
-/// Supports the following OTA update methods that are listed in descending priority from left to right.
+/// Supports the following OTA update methods that are listed in descending priority from left to right:
 /// `0`: Wi-Fi. `1`: Bluetooth LE. `2`: Bluetooth mesh. `3`: NB-IoT.
 @property (nonatomic, strong) NSArray *otaUpgradeModes;
 

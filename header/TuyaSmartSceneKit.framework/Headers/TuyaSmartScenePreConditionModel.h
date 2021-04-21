@@ -6,27 +6,27 @@
 
 #import <Foundation/Foundation.h>
 
-/// @brief TuyaSmartScenePreConditionModel provides more attributes for developers to create pre-conditions for automation scene.
+/// @brief TuyaSmartScenePreConditionModel provides extra attributes to create pre-conditions for an automation scene.
 @interface TuyaSmartScenePreConditionModel : NSObject<NSCoding>
 
-/// The scene id.
+/// The scene ID.
 @property (nonatomic, copy) NSString *scenarioId;
 
-/// The condition id in the scene.
+/// The condition ID in the scene.
 @property (nonatomic, copy) NSString *conditionId;
 
-/// The precondition type for automation scene.
+/// The precondition type for an automation scene.
 @property (nonatomic, copy) NSString *condType;
 
-/// The precondition expression information, it contains more fields. For detail:
+/// The information about a precondition expression. The following fields are supported:
 ///
-/// timeInterval: it's enumeration string type, you can select custom/daytime/night/allDay. eg: "timeInterval": "allDay"
-/// timeZoneId: it's string type, indicates the time zone id. eg: "timeZoneId": "Asia/Shanghai"
-/// loops: it's string type, every bit representing from Sunday to Saturday, "1" means for valid. eg: "1111111".
-/// start: it's string type, if type is timeCheck and timeInterval is custom, this property will be useful. eg: "start": "20:30".
-/// end: it's string type, if type is timeCheck and timeInterval is custom, this property will be useful. eg: "end": "06:30".
-/// cityId: it's string type, the city id. eg: "cityId": "793409534348627968".
-/// cityName: it's string type, the city name. eg: "cityName": "hangzhou".
+/// timeInterval: the interval of enumeration string type. Valid values: custom, daytime, night, and allDay. Example: "timeInterval": "allDay".
+/// timeZoneId: the time zone ID of string type. Example: "timeZoneId": "Asia/Shanghai".
+/// loops: the loop of string type. Each bit represents a day from Sunday to Saturday. A value of "1" means a valid day. Example: `1111111`.
+/// start: the string type. If the `timeCheck` type is specified and `timeInterval` is set to `custom`, this property is useful. Example: "start": "20:30".
+/// end: the string type. If the `timeCheck` type is specified and `timeInterval` is set to `custom`, this property is useful. Example: "end": "06:30".
+/// cityId: the city ID of string type. Example: "cityId": "793409534348627968".
+/// cityName: the city name of string type. Example: "cityName": "hangzhou".
 @property (nonatomic, strong) NSDictionary *expr;
 
 @end

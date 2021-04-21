@@ -2,7 +2,6 @@
 //  TYBLEConfig.h
 //  TuyaSmartPublic
 //
-//  Created by 冯晓 on 16/8/2.
 //  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
@@ -33,7 +32,7 @@
 
 
 
-// The notification MTU size.
+// The notification maximum transmission unit (MTU) size.
 #define kCBNotifyMTU 20
 
 // The background identifier.

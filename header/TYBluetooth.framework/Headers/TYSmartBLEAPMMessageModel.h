@@ -2,7 +2,7 @@
 //  TYSmartBLEModel.h
 //  TuyaSmartUtil-iOS-TuyaSmartUtil
 //
-//  Created by 温明妍 on 2019/9/23.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <Foundation/Foundation.h>

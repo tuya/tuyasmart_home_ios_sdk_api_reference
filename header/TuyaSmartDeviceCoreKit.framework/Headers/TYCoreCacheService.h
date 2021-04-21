@@ -66,7 +66,7 @@ TYSDK_SINGLETON;
 
 /// Adds a device to the cache.
 ///
-/// After you add the device to the cache, subscribe to the topic of the device's MQTT messages. Make sure that the local key and protocol version are both set.
+/// After you add the device to the cache, subscribe to the topic of the device's MQTT messages. Make sure that the local key and protocol version are both configured.
 /// After the device is added, you can accept callbacks by implementing `deviceDidAdd:` of `TYCoreCacheServiceDelegate`.
 /// The tasks to add devices, subscribe to messages, and execute callbacks are run in the asynchronous thread.
 /// The asynchronous queue.
@@ -77,7 +77,7 @@ TYSDK_SINGLETON;
 
 /// Adds a device to the cache.
 ///
-/// After you add the device to the cache, subscribe to the topic of the device's MQTT messages. Make sure that the local key and protocol version are both set.
+/// After you add the device to the cache, subscribe to the topic of the device's MQTT messages. Make sure that the local key and protocol version are both configured.
 /// During the process, you can set the completion block or implement the `deviceDidAdd:` of the proxy `TYCoreCacheServiceDelegate` to handle the result of the event.
 /// The completion block is called and followed by the delegate.
 /// The tasks to add devices, subscribe to messages, block, and execute callbacks are run in the asynchronous thread.
@@ -90,7 +90,7 @@ TYSDK_SINGLETON;
 
 /// Adds multiple devices to the cache in an operation.
 ///
-/// After you add the device to the cache, subscribe to the topic of each device's MQTT messages. Make sure that the local key and protocol version are both set.
+/// After you add the device to the cache, subscribe to the topic of each device's MQTT messages. Make sure that the local key and protocol version are both configured.
 /// After the device is added, you can accept callbacks by implementing `deviceListDidAdd:` of `TYCoreCacheServiceDelegate`.
 /// The tasks to add devices, subscribe to messages, and execute callbacks are run in the asynchronous thread.
 /// The asynchronous queue.
@@ -101,7 +101,7 @@ TYSDK_SINGLETON;
 
 /// Adds multiple devices to the cache in an operation.
 ///
-/// After you add the device to the cache, subscribe to the topic of each device's MQTT messages. Make sure that the local key and protocol version are both set.
+/// After you add the device to the cache, subscribe to the topic of each device's MQTT messages. Make sure that the local key and protocol version are both configured.
 /// During the process, you can set the completion block or implement the `deviceListDidAdd:` of the proxy `TYCoreCacheServiceDelegate` to handle the result of the event.
 /// The completion block is called and followed by the delegate.
 /// The tasks to add devices, subscribe to messages, and execute callbacks are run in the asynchronous thread.
@@ -144,11 +144,11 @@ TYSDK_SINGLETON;
 
 #pragma mark - device ota
 
-/// Updates the OTA information.
-/// @param otaList The list of device OTA information.
+/// Updates the over-the-air (OTA) information.
+/// @param otaList A list of device OTA information.
 - (void)updateDeviceOtaInfoWithList:(NSArray<TuyaSmartDeviceOTAModel *> *)otaList;
 
-/// Returns the device OTA information.
+/// Returns a device OTA information.
 /// @param devId The device ID.
 - (TuyaSmartDeviceOTAModel *)getDeviceOtaInfoWithDevId:(NSString *)devId;
 
@@ -164,7 +164,7 @@ TYSDK_SINGLETON;
 
 /// Adds a group to the cache.
 ///
-/// After you add the group to the cache, subscribe to the topic of the group's MQTT messages. Make sure that the local key and protocol version are both set.
+/// After you add the group to the cache, subscribe to the topic of the group's MQTT messages. Make sure that the local key and protocol version are both configured.
 /// After the group is added, you can accept callbacks by implementing `groupDidAdd:` of `TYCoreCacheServiceDelegate`.
 /// The tasks to add groups, subscribe to messages, and execute callbacks are run in the asynchronous threads.
 /// The asynchronous queue.
@@ -175,7 +175,7 @@ TYSDK_SINGLETON;
 
 //// Adds a group to the cache.
 ///
-/// After you add the group to the cache, subscribe to the topic of the group's MQTT messages. Make sure that the local key and protocol version are both set.
+/// After you add the group to the cache, subscribe to the topic of the group's MQTT messages. Make sure that the local key and protocol version are both configured.
 /// During the process, you can set the completion block or implement the proxy `groupDidAdd:` of `TYCoreCacheServiceDelegate` to handle the result of the event.
 /// The completion block is called and followed by the delegate.
 /// The tasks to add devices, subscribe to messages, and execute callbacks are run in the asynchronous thread.
@@ -211,7 +211,7 @@ TYSDK_SINGLETON;
 - (NSDictionary *)getGroupProductWithProductId:(NSString *)productId;
 
 
-/// Returns the list of devices in a group.
+/// Returns a list of devices in a group.
 /// The synchronous queue.
 ///
 /// @param groupId The group ID.
@@ -221,7 +221,7 @@ TYSDK_SINGLETON;
 /// Updates information about multiple products in an operation.
 /// The asynchronous queue.
 ///
-/// @param groupProductList The list of product information in the JSON format.
+/// @param groupProductList A list of product information in the JSON format.
 - (void)updateGroupProductList:(NSArray <NSDictionary *> *)groupProductList;
 
 

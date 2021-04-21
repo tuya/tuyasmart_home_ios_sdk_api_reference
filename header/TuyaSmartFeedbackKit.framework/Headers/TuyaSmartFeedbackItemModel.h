@@ -7,13 +7,13 @@
 @interface TuyaSmartFeedbackItemModel : NSObject
 
 
-/// The feedback item id.
+/// The ID of the feedback item.
 @property (nonatomic, strong) NSString      *hdId;
 
-/// The feedback item type.
+/// The type of feedback item.
 @property (nonatomic, assign) NSUInteger    hdType;
 
-/// The feedback item title.
+/// The title of the feedback item.
 @property (nonatomic, strong) NSString      *title;
 
 @end

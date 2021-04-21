@@ -13,249 +13,249 @@
 
 @class TuyaSmartSceneManager;
 
-/// The protocol provides delegate methods to receive changes to the scene enable or disable state.
+/// The protocol provides the delegate methods to receive changes in the enabled or disabled state of a scene.
 @protocol TuyaSmartSceneManagerDelegate<NSObject>
 
 @optional
 
-/// Called when the state of the scene changes.
+/// Called when the state of the scene is changed.
 ///
 /// @param manager The scene manager.
-/// @param state   The scene state, eg: "disable、"enable".
+/// @param state   The scene state. Valid values: "disabled" and "enabled".
 /// @param sceneId The scene ID.
 - (void)sceneManager:(TuyaSmartSceneManager *)manager state:(NSString *)state sceneId:(NSString *)sceneId;
 
 @end
 
-/// @brief The TuyaSmartSceneManager class provides many methods for developers getting the list of scenes, getting the list of conditions, getting the list of tasks, the list of cities, the list of scene log, etc.
+/// @brief The TuyaSmartSceneManager class provides multiple methods to get a list of scenes, conditions, tasks, cities, and scene logs.
 @interface TuyaSmartSceneManager : NSObject
 
-/// Returns the singleton of the TuyaSmartSceneManager class.
+/// Returns the singleton instance of the TuyaSmartSceneManager class.
 ///
 /// @return The TuyaSmartSceneManager instance.
 + (instancetype)sharedInstance;
 
-/// The delegate will be notified when the scene's contents change. @see TuyaSmartSceneManagerDelegate.
+/// The delegate is notified when the data of the scene is changed. @see TuyaSmartSceneManagerDelegate.
 @property (nonatomic, weak) id<TuyaSmartSceneManagerDelegate> delegate;
 
-/// Get a list of scenes, including tap-to-run and automation. We can judge tap-to-run and automation scene by the entityType of conditions property in TuyaSmartSceneModel, The scene is tap-to-run when the entityType equal AutoTypeManual, otherwise it's automation.
+/// Returns a list of scenes, including tap-to-run and automation types of scenes. The tap-to-run and automation scenes are differentiated by the value of `entityType` in TuyaSmartSceneModel. A tap-to-run scene is specified when `entityType` is set to `AutoTypeManual`. Otherwise, an automation scene is specified.
 ///
-/// @see For more information about the entityType, you can see TuyaSmartSceneConditionModel class.
+/// @see For more information, see the TuyaSmartSceneConditionModel class.
 ///
 /// @param homeId  The current home ID.
-/// @param success When successfully get the scene list, this block will be called and return TuyaSmartSceneModel list.
-/// @param failure When error occurred, this block will be called and return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartSceneModel is returned.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getSceneListWithHomeId:(long long)homeId
                        success:(void(^)(NSArray<TuyaSmartSceneModel *> *list))success
                        failure:(TYFailureError)failure;
 
-/// Get a simple list of scenes, including tap-to-run and automation. We can judge tap-to-run and automation scene by the entityType of conditions property in TuyaSmartSceneModel, The scene is tap-to-run when the entityType equal AutoTypeManual, otherwise it's automation.
+/// Returns a simple list of scenes, including tap-to-run and automation types of scenes. The tap-to-run and automation scenes are differentiated by the value of `entityType` in TuyaSmartSceneModel. A tap-to-run scene is specified when `entityType` is set to `AutoTypeManual`. Otherwise, an automation scene is specified.
 ///
-/// @note The different between the simple scene list and scene list is less json data returned by the server.
+/// @note A simple list of scenes provides less JSON data from the server than a precise list of scenes.
 ///
 /// @param homeId  The current home ID.
-/// @param success When successfully get the scene list, this block will be called and return TuyaSmartSceneModel list.
-/// @param failure When error occurred, this block will be called and return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartSceneModel is returned.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getSimpleSceneListWithHomeId:(long long)homeId
                        success:(void(^)(NSArray<TuyaSmartSceneModel *> *list))success
                        failure:(TYFailureError)failure;
 
-/// Get scene detail information according to the specify homeId and sceneId.
+/// Returns the scene details based on the specified home ID and scene ID.
 ///
 /// @param homeId  The home ID.
 /// @param sceneId The scene ID.
-/// @param success When successfully get scene detail, this block will be called and return TuyaSmartSceneModel object.
-/// @param failure When error occurred, this block will be called and return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartSceneModel is returned.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getSceneDetailWithHomeId:(long long)homeId
                          sceneId:(NSString *)sceneId
                          success:(void(^)(TuyaSmartSceneModel *scene))success
                          failure:(TYFailureError)failure;
 
-/// Get recommend scene list with the specify homeId.
+/// Returns a recommended list of scenes based on the specified home ID.
 ///
 /// @param homeId  The home ID.
-/// @param success When success, return TuyaSmartSceneModel list.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartSceneModel is returned.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getRecommendedSceneListWithHomeId:(long long)homeId
                        success:(void(^)(NSArray<TuyaSmartSceneModel *> *list))success
                        failure:(TYFailureError)failure;
 
-/// Get collection scene list with the specify homeId.
+/// Returns a collection of scenes based on the specified home ID.
 ///
 /// @param homeId  The home ID.
-/// @param success When success, return TuyaSmartSceneModel list.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartSceneModel is returned.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getCollectionSceneListWithHomeId:(long long)homeId
                                  success:(TYSuccessList)success
                                  failure:(TYFailureError)failure;
 
-/// Get all condition list for automation conditions with the specify temperature scale type, speed unit and homeId.
+/// Returns a list of automation conditions based on the specified temperature scale type, speed unit, and home ID.
 ///
-/// @param fahrenheit If YES, indicate the temperature unit is Fahrenheit, otherwise Celsius.
-/// @param speedUnit  The speed unit description.
+/// @param fahrenheit If the value is set to `YES`, the temperature unit Fahrenheit (°F) is used. Otherwise, Celsius (°C) is used.
+/// @param speedUnit  The description of the speed unit.
 /// @param homeId     The current home ID.
-/// @param success    When success, return  map object, including envConditions and devConditions object.
-/// @param failure    When error occurred, return TYFailureError.
+/// @param success    Called when the task is finished. The map objects are returned, including the envConditions and devConditions objects.
+/// @param failure    Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getAllConditionListWithFahrenheit:(BOOL)fahrenheit
                             windSpeedUnit:(NSString *)speedUnit
                                    homeId:(long long)homeId
                                   success:(void(^)(NSDictionary *dict))success
                                   failure:(TYFailureError)failure;
 
-/// Get action device list in the scene with specify the current home id.
+/// Returns a list of action devices in the scene based on the specified home ID.
 ///
 /// @param homeId  The current home ID.
-/// @param success When success, return TuyaSmartDeviceModel list.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartDeviceModel is returned.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getActionDeviceListWithHomeId:(long long)homeId
                               success:(void(^)(NSArray<TuyaSmartDeviceModel *> *list))success
                               failure:(TYFailureError)failure;
 
-/// Get action device list in the current room with the specify room id.
+/// Returns a list of action devices based on the specified room ID.
 ///
 /// @param roomId The room ID.
 ///
-/// @retrun The TuyaSmartDeviceModel list, the more information you can see TuyaSmartDeviceModel class.
+/// @retrun The TuyaSmartDeviceModel list. For more information, see the TuyaSmartDeviceModel class.
 - (NSArray<TuyaSmartDeviceModel *> *)getActionDeviceListWithRoomId:(long long)roomId;
 
 
-/// Get condition device list in the scene with specify the current home id
+/// Returns a list of condition devices in the scene based on the specified home ID.
 ///
 /// @param homeId  The home ID.
-/// @param success When success, return TuyaSmartDeviceModel list.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartDeviceModel is returned.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getConditionDeviceListWithHomeId:(long long)homeId
                                  success:(void(^)(NSArray<TuyaSmartDeviceModel *> *list))success
                                  failure:(TYFailureError)failure;
 
-/// Get condition device list for the current room in the scene with specify room id.
+/// Returns a list of condition devices in the scene based on the specified room ID.
 ///
 /// @param roomId The room ID.
 ///
 /// @return The TuyaSmartDeviceModel list, the more information you can see TuyaSmartDeviceModel class.
 - (NSArray<TuyaSmartDeviceModel *> *)getConditionDeviceListWithRoomId:(long long)roomId;
 
-/// Get device list for recognize face condition type with specify current home id.
+/// Returns a list of devices for the face recognition condition based on the specified home ID.
 ///
 /// @param homeId  The home ID.
-/// @param success When success, return TuyaSmartDeviceModel list.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartDeviceModel is returned.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getFaceDeviceListWithHomeId:(long long)homeId success:(void(^)(NSArray<TuyaSmartDeviceModel *> *list))success failure:(TYFailureError)failure;
 
-/// Get device list for the member lock condition type with specify current home id.
+/// Returns a list of devices for the member's lock condition based on the specified home ID.
 ///
 /// @param homeId  The home ID.
-/// @param success When success, return TuyaSmartDeviceModel list for member lock condition.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartDeviceModel is returned for the member lock condition.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getLockDeviceListWithHomeId:(long long)homeId
                             success:(void(^)(NSArray<TuyaSmartDeviceModel *> *list))success
                             failure:(TYFailureError)failure;
 
-/// Get group list for action in the scene with specify the current room id.
+/// Returns a list of groups for an action in the scene based on the specified room ID.
 ///
 /// @param roomId The room ID.
 ///
-/// @return The TuyaSmartGroupModel list for action in the scene, more information you can see TuyaSmartGroupModel class.
+/// @return The TuyaSmartGroupModel list for the action in the scene. For more information, see the TuyaSmartGroupModel class.
 - (NSArray<TuyaSmartGroupModel *> *)getActionGroupListWithRoomId:(long long)roomId;
 
-/// Get all device list and group list for action in the scene with specify the current home id.
+/// Returns all devices and groups for an action in the scene based on the specified home ID.
 ///
 /// @param homeId  The home ID.
-/// @param success When success, return map object, including deviceList、groupList and extendsDictionary object.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success Called when the task is finished. The map objects are returned, including the deviceList, groupList, and extendsDictionary objects.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getActionGroupListAndDeviceListWithHomeId:(long long)homeId
                                           success:(void(^)(NSDictionary *dict))success
                                           failure:(TYFailureError)failure;
 
-/// Get device data point list for action in the scene with specify the device id.
+/// Returns a list of device data points (DPs) for an action in the scene based on the specified device ID.
 ///
 /// @param devId   The device ID.
-/// @param success When success, return TuyaSmartSceneDPModel list.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartSceneDPModel is returned.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getActionDeviceDPListWithDevId:(NSString *)devId
                                success:(void(^)(NSArray<TuyaSmartSceneDPModel *> *list))success
                                failure:(TYFailureError)failure;
 
-/// Get device dp list for condition in the scene with specify the device id.
+/// Returns a list of device DPs for a condition in the scene based on the specified device ID.
 ///
 /// @param devId   The device ID.
-/// @param success When success, return TuyaSmartSceneDPModel list. The TuyaSmartSceneDPModel object describes the datapoint data of the device.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartSceneDPModel is returned. The TuyaSmartSceneDPModel object describes the DP data of the device.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getCondicationDeviceDPListWithDevId:(NSString *)devId
                                     success:(void(^)(NSArray<TuyaSmartSceneDPModel *> *list))success
                                     failure:(TYFailureError)failure;
 
-/// Get group datapoint list for action in the scene with specify the current group id.
+/// Returns a list of group DPs for an action in the scene based on the specified group ID.
 ///
 /// @param groupId The group ID.
-/// @param success When success, return TuyaSmartSceneDPModel list.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartSceneDPModel is returned.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getActionGroupDPListWithGroupId:(NSString *)groupId
                                 success:(void(^)(NSArray<TuyaSmartSceneDPModel *> *list))success
                                 failure:(TYFailureError)failure;
 
-/// Get city list with specify the current country code. If you are out of China, we suggest you use latitude and longitude to get the city information.
+/// Returns a list of cities based on the specified country code. If the account is located out of China, we recommend that you specify the latitude and longitude to get the city information.
 ///
 /// @param countryCode The country code.
-/// @param success     When success, return TuyaSmartCityModel list.
-/// @param failure     When error occurred, return TYFailureError.
+/// @param success     Called when the task is finished. A list of TuyaSmartCityModel is returned.
+/// @param failure     Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getCityListWithCountryCode:(NSString *)countryCode
                            success:(void(^)(NSArray<TuyaSmartCityModel *> *list))success
                            failure:(TYFailureError)failure;
 
-/// Get city detail information with specify the latitude and longitude.
+/// Returns the city information based on the specified latitude and longitude.
 ///
 /// @param latitude  The latitude.
 /// @param longitude The longitude.
-/// @param success   When success, return TuyaSmartCityModel list.
-/// @param failure   When error occurred, return TYFailureError.
+/// @param success   Called when the task is finished. A list of TuyaSmartCityModel is returned.
+/// @param failure   Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getCityInfoWithLatitude:(NSString *)latitude
                       longitude:(NSString *)longitude
                         success:(void(^)(TuyaSmartCityModel *model))success
                         failure:(TYFailureError)failure;
 
-/// Get city detail information with specify the city id.
+/// Returns the city information based on the specified city ID.
 ///
 /// @param cityId  The city ID.
-/// @param success When success, return TuyaSmartCityModel list.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success Called when the task is finished. A list of TuyaSmartCityModel is returned.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getCityInfoWithCityId:(NSString *)cityId
                       success:(void(^)(TuyaSmartCityModel *model))success
                       failure:(TYFailureError)failure;
 
-/// Sort the scene list by the current home id.
+/// Sorts a list of scenes by home ID.
 ///
 /// @param homeId      The home ID.
-/// @param sceneIdList The scene list that to be sorted.
-/// @param success     When success, return TYSuccessHandler.
-/// @param failure     When error occurred, return TYFailureError.
+/// @param sceneIdList A list of scenes to be sorted.
+/// @param success     Called when the task is finished. A list of TYSuccessHandler is returned.
+/// @param failure     Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)sortSceneWithHomeId:(long long)homeId
                 sceneIdList:(NSArray<NSString *> *)sceneIdList
                     success:(TYSuccessHandler)success
                     failure:(TYFailureError)failure;
 
-/// Get scene background icons URL list.
+/// Returns a list of URLs for the scene background icons.
 ///
-/// @param success When success, return URL list.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success If the task is finished, this block is called and the URL list is returned.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getSmartSceneBackgroundCoverWithsuccess:(TYSuccessList)success failure:(TYFailureError)failure;
 
-/// Get scene custom style resource list, including color、icon and background. The return result map object, contain coverColors、coverIconList and coverPics.
+/// Returns a list of custom style resources for scenes, including the color, icon, and background. The map objects are returned, including the coverColors, coverIconList, and coverPics objects.
 ///
-/// @param success When success, return map object, including coverColors、coverIconList and coverPics object.
-/// @param failure When error occurred, return TYFailureError.
+/// @param success Called when the task is finished. The map objects are returned, including the coverColors, coverIconList, and coverPics objects.
+/// @param failure Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getSmartSceneCustomStyleListWithSuccess:(TYSuccessDict)success failure:(TYFailureError)failure;
 
-/// Get all scene linkage logs, including reminder of successful or failed scene execution、push information and so on.
+/// Returns all scene linkage logs that indicate successful or failed operations, such as scene running results and push notifications.
 ///
 /// @param homeId         The home ID.
 /// @param startTime      The start date.
 /// @param endTime        The end date.
 /// @param size           The number of items to be queried.
-/// @param lastId         The id of the last query item.
+/// @param lastId         The ID of the last query item.
 /// @param lastRecordTime The record date of the last query item.
-/// @param success        When success, return TuyaSmartSceneLogModel list.
-/// @param failure        When error occurred, return TYFailureError.
+/// @param success        Called when the task is finished. A list of TuyaSmartSceneLogModel is returned.
+/// @param failure        Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getSmartSceneLogWithHomeId:(long long)homeId
                          startTime:(long long)startTime
                            endTime:(long long)endTime
@@ -265,17 +265,17 @@
                            success:(void(^)(TuyaSmartSceneLogModel *logModel))success
                            failure:(TYFailureError)failure;
 
-/// Get scene linkage log list of specified device.
+/// Returns a list of scene linkage logs of a specified device.
 ///
 /// @param devId          The device ID.
 /// @param homeId         The home ID.
 /// @param startTime      The start date.
 /// @param endTime        The end date.
 /// @param size           The number of items to be queried.
-/// @param lastId         The id of the last query item.
+/// @param lastId         The ID of the last query item.
 /// @param lastRecordTime The record date of the last query item.
-/// @param success        When success, return TuyaSmartSceneLogModel list.
-/// @param failure        When error occurred, return TYFailureError.
+/// @param success        Called when the task is finished. A list of TuyaSmartSceneLogModel is returned.
+/// @param failure        Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getSmartSceneLogOfDeviceWithDevId:(NSString *)devId
                                    homeId:(long long)homeId
                                 startTime:(long long)startTime
@@ -286,15 +286,15 @@
                                   success:(void(^)(TuyaSmartSceneLogModel *logModel))success
                                   failure:(TYFailureError)failure;
 
-/// Get scene log detail information by the homeId, eventId, startTime, endTime, returnType.
+/// Returns the scene log details by homeId, eventId, startTime, endTime, and returnType.
 ///
 /// @param homeId     The home ID.
 /// @param eventId    The event ID.
 /// @param startTime  The start date.
 /// @param endTime    The end date.
 /// @param returnType The return type.
-/// @param success    When success, return TuyaSmartSceneLogDetailModel list.
-/// @param failure    When error occurred, return TYFailureError.
+/// @param success    Called when the task is finished. A list of TuyaSmartSceneLogDetailModel is returned.
+/// @param failure    Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 - (void)getSmartSceneLogDetailWithHomeId:(long long)homeId
                                  eventId:(NSString *)eventId
                                startTime:(long long)startTime
@@ -303,33 +303,33 @@
                                  success:(void(^)(NSArray <TuyaSmartSceneLogDetailModel *>*items))success
                                  failure:(TYFailureError)failure;
 
-/// Remove all geofence registered in the apple system for automation scene when user logout.
+/// Removes all geofencing data that is registered in the iOS system for automation scenes after user logout.
 - (void)removeAllGeoFence;
 
-/// Cancel the request being executed.
+/// Cancels the current request.
 - (void)cancelRequest;
 
 #pragma mark - Deprecated
 
-/// Get a weather condition list for automation conditions with the specify temperature scale type. If Fahrenheit is YES, indicates that the temperature unit you use is Fahrenheit, otherwise you use is Celsius.
+/// Returns a list of weather conditions for automation scenes based on the specified temperature scale type. If the value of `fahrenheit` is `YES`, °F is used as the temperature unit. Otherwise, °C is used.
 ///
-/// @param fahrenheit If YES, indicate the temperature unit is Fahrenheit, otherwise Celsius.
-/// @param success    When success, return TuyaSmartSceneDPModel list.
-/// @param failure    When error occurred, return TYFailureError.
+/// @param fahrenheit If the value is `YES`, °F is used as the temperature unit. Otherwise, °C is used.
+/// @param success    Called when the task is finished. A list of TuyaSmartSceneDPModel is returned.
+/// @param failure    Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 ///
-/// @deprecated This method is deprecated, Use getAllConditionListWithFahrenheit:windSpeedUnit:homeId:success:failure instead.
+/// @deprecated This method is deprecated. Use getAllConditionListWithFahrenheit:windSpeedUnit:homeId:success:failure instead.
 - (void)getConditionListWithFahrenheit:(BOOL)fahrenheit
                                success:(void(^)(NSArray<TuyaSmartSceneDPModel *> *list))success
                                failure:(TYFailureError)failure __deprecated_msg("use -getAllConditionListWithFahrenheit:windSpeedUnit:homeId:success:failure instead");
 
-/// Get all condition list for automation conditions, including weather condition、device condition and so on.
+/// Returns all conditions for automation scenes, such as the weather condition and device condition.
 ///
-/// @param fahrenheit If YES, indicate the temperature unit is Fahrenheit, otherwise Celsius.
+/// @param fahrenheit If the value is `YES`, °F is used as the temperature unit. Otherwise, °C is used.
 /// @param homeId     The current home ID.
-/// @param success    When success, return map object, including envConditions and devConditions object.
-/// @param failure    When error occurred, return TYFailureError.
+/// @param success    Called when the task is finished. The map objects are returned, including the envConditions and devConditions objects.
+/// @param failure    Called when the task is interrupted by an error. An error message from TYFailureError is returned.
 ///
-/// @deprecated This method is deprecated, Use getAllConditionListWithFahrenheit:windSpeedUnit:homeId:success:failure instead.
+/// @deprecated This method is deprecated. Use getAllConditionListWithFahrenheit:windSpeedUnit:homeId:success:failure instead.
 - (void)getAllConditionListWithFahrenheit:(BOOL)fahrenheit
                                    homeId:(long long)homeId
                                   success:(void(^)(NSDictionary *dict))success

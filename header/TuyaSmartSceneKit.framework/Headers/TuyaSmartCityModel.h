@@ -6,31 +6,31 @@
 
 #import <CoreLocation/CoreLocation.h>
 
-/// @brief TuyaSmartCityModel is used to save a city base info.
+/// @brief TuyaSmartCityModel is used to store basic information about a city.
 @interface TuyaSmartCityModel : NSObject
 
-/// The city id
+/// The city ID.
 @property (nonatomic, assign) long long cityId;
 
-/// The city name
+/// The city name.
 @property (nonatomic, strong) NSString *city;
 
-/// The city info , achieved from map, for temporary storage.
+/// The city information from a map to be temporarily stored.
 @property (nonatomic, copy) NSString *cityNameFromMap;
 
-/// The city latitude, set by mapView centerCoordinate.
+/// The city latitude that is specified by mapView centerCoordinate.
 @property (nonatomic, assign) CLLocationDegrees tempLatitude;
 
-/// The city longitude, set by mapView centerCoordinate.
+/// The city longitude that is specified by mapView centerCoordinate.
 @property (nonatomic, assign) CLLocationDegrees tempLongitude;
 
-/// Area or city, like a county.
+/// The area of the city, such as a county.
 @property (nonatomic, copy) NSString *area;
 
-/// Chinese pinyin for city.
+/// The name of the city.
 @property (nonatomic, copy) NSString *pinyin;
 
-/// The province or state name.
+/// The name of the province or state.
 @property (nonatomic, copy) NSString *province;
 
 @end

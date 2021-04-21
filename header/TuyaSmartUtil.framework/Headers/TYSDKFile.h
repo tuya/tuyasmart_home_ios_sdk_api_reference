@@ -2,7 +2,7 @@
 //  TYSDKFile.h
 //  Pods-TuyaSmartHomeKit_Tests
 //
-//  Created by XuChengcheng on 2019/5/6.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <Foundation/Foundation.h>

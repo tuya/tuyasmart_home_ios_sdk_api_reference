@@ -2,7 +2,6 @@
 //  TYBLEService.h
 //  TuyaSmartPublic
 //
-//  Created by 冯晓 on 16/8/2.
 //  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 #import <Foundation/Foundation.h>
@@ -25,7 +24,7 @@ typedef void(^TYBLECentralServiceDiscoverCharacteristcsCallback)(NSArray *charac
 @property (strong, nonatomic, readonly) NSString *UUIDString;
 
 /**
- *  The list of characteristics.
+ *  A list of characteristics.
  */
 @property (strong, nonatomic) NSArray *characteristics;
 
@@ -58,7 +57,7 @@ typedef void(^TYBLECentralServiceDiscoverCharacteristcsCallback)(NSArray *charac
 - (instancetype)initWithService:(CBService *)aService;
 
 /**
- *  Returns the list of characteristics.
+ *  Returns a list of characteristics.
  *
  *  @param aCallback The callback.
  */
@@ -67,7 +66,7 @@ typedef void(^TYBLECentralServiceDiscoverCharacteristcsCallback)(NSArray *charac
 
 
 /**
- *  Returns the list of characteristics.
+ *  Returns a list of characteristics.
  *
  *  The synchronization method.
  *
@@ -90,8 +89,8 @@ typedef void(^TYBLECentralServiceDiscoverCharacteristcsCallback)(NSArray *charac
 /**
  *  Stores the returned characteristics.
  *
- *  @param aCharacteristics The list of CBCharacteristics objects.
- *  @param aError           The error.
+ *  @param aCharacteristics A list of CBCharacteristics objects.
+ *  @param aError           An error occurs while processing the request.
  */
 - (void)handleDiscoveredCharacteristics:(NSArray *)aCharacteristics error:(NSError *)aError;
 /**

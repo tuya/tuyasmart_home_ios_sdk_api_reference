@@ -6,19 +6,19 @@
 
 @interface TuyaSmartFeedbackTalkListModel : NSObject
 
-/// The time of the feedback talk.
+/// The time of the feedback content.
 @property (nonatomic, strong) NSString          *dateTime;
 
-/// The talk ID.
+/// The ID of the feedback content.
 @property (nonatomic, strong) NSString          *hdId;
 
-/// The type of the feedback talk.
+/// The type of feedback content.
 @property (nonatomic, assign) NSUInteger        hdType;
 
-/// A string title for the feedback talk.
+/// A string title for the feedback content.
 @property (nonatomic, strong) NSString          *title;
 
-/// The string content of the feedback talk.
+/// The string content of the feedback content.
 @property (nonatomic, strong) NSString          *content;
 
 @end

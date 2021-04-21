@@ -7,78 +7,78 @@
 #import <Foundation/Foundation.h>
 #import <TuyaSmartSceneKit/TuyaSmartSceneKit.h>
 
-/// The two types of automation state. Provides enable and disable types.
+/// The type of automation state. Valid values: enabled and disabled.
 typedef enum : NSInteger {
-    /// The enable type.
+    /// The enabled type.
     kAutoSwitchTypeEnable,
-    /// The disable type.
+    /// The disabled type.
     kAutoSwitchTypeDisable
 }AutoSwitchType;
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// @brief A factory design mode for create TuyaSmartSceneActionModel.
+/// @brief The default design mode to create TuyaSmartSceneActionModel.
 ///
-/// @note In order to facilitate the handling of multiple languages, this class does not handle the actionDisplay and actionDisplayNew fields of the TuyaSmartSceneActionModel. These two properties are spliced by the developer themselves when they are created. When saving, the server will generate them according to the executiveProperty and the language environment of the interface. The property saved by the developer will not be used.
+/// @note To support multiple languages, this class does not process the actionDisplay and actionDisplayNew fields of TuyaSmartSceneActionModel. These two properties are spliced by developers when they are created. After the properties are saved, the server generates the values according to the executiveProperty field value and the language environment of the interface. The property that is saved by developers is not used.
 @interface TuyaSmartSceneActionFactory : NSObject
 
-/// Create a device action with all param.
+/// Creates a device action with required parameters.
 ///
-/// @param devId The device id.
+/// @param devId The device ID.
 /// @param devName The device name.
-/// @param executerProperty Action to execute, format:{dpId: <dpId's value>} eg: {"1":true}.
-/// @param extraProperty The optional parameters, extraProperty of action.
+/// @param executerProperty The action to be run. Format: {dpId: <dpId's value>}. Example: {"1":true}.
+/// @param extraProperty The optional parameters that specify extra properties of an action.
 ///
 /// @return The TuyaSmartSceneActionModel class.
 + (TuyaSmartSceneActionModel *)createDeviceDpActionWithDevId:(NSString *)devId devName:(NSString *)devName executerProperty:(NSDictionary *)executerProperty extraProperty:(NSDictionary *)extraProperty;
 
-/// Create a group action with group's params.
+/// Creates a group action by setting the parameters of the group.
 ///
-/// @param groupId The group id.
+/// @param groupId The group ID.
 /// @param groupName The group name.
-/// @param executerProperty Action to execute, format:{dpId: <dpId's value>} eg: {"1":true}.
-/// @param extraProperty The  optional parameters, extraProperty of action.
+/// @param executerProperty The action to be run. Format: {dpId: <dpId's value>}. Example: {"1":true}.
+/// @param extraProperty The optional parameters that specify extra properties of an action.
 ///
 /// @return The TuyaSmartSceneActionModel class.
 + (TuyaSmartSceneActionModel *)createGroupDpActionWithGroupId:(NSString *)groupId groupName:(NSString *)groupName executerProperty:(NSDictionary *)executerProperty extraProperty:(NSDictionary *)extraProperty;
 
-/// Create an action to trigger a scene.
+/// Creates an action to trigger a scene.
 ///
-/// @param sceneId The sceneId id.
-/// @param sceneName The sceneName name.
+/// @param sceneId The scene ID.
+/// @param sceneName The scene name.
 ///
 /// @return The TuyaSmartSceneActionModel class.
 + (TuyaSmartSceneActionModel *)createTriggerSceneActionWithSceneId:(NSString *)sceneId sceneName:(NSString *)sceneName;
 
-/// Create an action to enable/disable an automation.
+/// Creates an action to enable or disable an automation scene.
 ///
-/// @param sceneId The sceneId id.
-/// @param sceneName The sceneName name.
-/// @param type AutoSwitchType.
+/// @param sceneId The scene ID.
+/// @param sceneName The scene name.
+/// @param type The value of AutoSwitchType.
 ///
 /// @return The TuyaSmartSceneActionModel class.
 + (TuyaSmartSceneActionModel *)createSwitchAutoActionWithSceneId:(NSString *)sceneId sceneName:(NSString *)sceneName type:(AutoSwitchType)type;
 
-/// Create a delay action.
+/// Creates a delay action.
 ///
-/// @param hours hours,range 0-5.
-/// @param minutes minutes,range 0-59.
-/// @param seconds seconds,range 0-59.
+/// @param hours The number of hours in a delay. Valid values: 0 to 5.
+/// @param minutes The number of minutes in a delay. Valid values: 0 to 59.
+/// @param seconds The number of seconds in a delay. Valid values: 0 to 59.
 /// 
 /// @return The TuyaSmartSceneActionModel class.
 + (TuyaSmartSceneActionModel *)createDelayActionWithHours:(NSString *)hours minutes:(NSString *)minutes seconds:(NSString *)seconds;
 
-/// Create a push notification action.
+/// Creates a push notification action.
 ///
 /// @return The TuyaSmartSceneActionModel class.
 + (TuyaSmartSceneActionModel *)createSendNotificationAction;
 
-/// Create a call notification action(internal use, not open).
+/// Creates a call notification action (for internal use only).
 ///
 /// @return The TuyaSmartSceneActionModel class.
 + (TuyaSmartSceneActionModel *)createCallAction;
 
-/// Create a send sms action(internal use, not open).
+/// Creates an SMS sending action (for internal use only).
 ///
 /// @return The TuyaSmartSceneActionModel class.
 + (TuyaSmartSceneActionModel *)createSmsAction;

@@ -11,131 +11,131 @@
 #import "TuyaSmartScenePreConditionModel.h"
 
 
-/// The two types of condition match. Provides any and all types.
+/// The type of condition to be matched. Valid values: any and all types.
 typedef enum : NSUInteger {
-    /// The condition match any type, it means any one condition in the scene is be matched, it will be executed.
+    /// If any type of condition in a scene is matched, the scene is run.
     TuyaSmartConditionMatchAny = 1,
-    /// The condition match all type, it means all conditions in the scene is be matched, it will be executed.
+    /// If all types of conditions in a scene are matched, the scene is run.
     TuyaSmartConditionMatchAll
 } TuyaSmartConditionMatchType;
 
-/// The three types of recommend scene. Provides none, scene and automation types.
+/// The type of recommended scene. Valid values: none, tap-to-run, and automation types.
 typedef enum : NSUInteger {
-    /// The none recommend type, indicates it is neither tap-to-run nor automation scene.
+    /// None: Neither the tap-to-run scene nor the automation scene is run.
     TuyaSmartSceneRecommendTypeNone,
-    /// The tap-to-run recommend scene type.
+    /// The tap-to-run type of recommended scene is run.
     TuyaSmartSceneRecommendTypeScene,
-    /// The automation recommend scene type.
+    /// The automation type of recommended scene is run.
     TuyaSmartSceneRecommendTypeAutomation
 } TuyaSmartSceneRecommendType;
 
-/// The three types of collection scene. Provides none, scene and automation types.
+/// The type of collection scene. Valid values: none, tap-to-run, and automation types.
 typedef enum : NSUInteger {
-    /// The none collection type, indicates it is neither tap-to-run nor automation scene.
+    /// None: Neither the tap-to-run scene nor the automation scene is run.
     TuyaSmartSceneCollectionTypeNone,
-    /// The tap-to-run collection scene type.
+    /// The tap-to-run type of collection scene is run.
     TuyaSmartSceneCollectionTypeScene,
-    /// The automation collection scene type.
+    /// The automation type of collection scene is run.
     TuyaSmartSceneCollectionTypeAutomation
 } TuyaSmartSceneCollectionType;
 
-/// The two types of device list on the panel when creating scene.
+/// The type of device list that is supported by the panel when you create a scene.
 typedef NS_ENUM(NSInteger, TuyaSmartScenePanelType) {
-    /// The non all device panel type, indicates you can only add zigbee device in the scene action.
+    /// NonAllDevevice: Only Zigbee devices can be added in the scene action.
     TuyaSmartScenePanelTypeNonAllDevevice = 0,
-    /// The all device panel type, indicates you can add zigbee device and wifi device in the scene action.
+    /// AllDevices: Zigbee devices and Wi-Fi devices can be added in the scene action.
     TuyaSmartScenePanelTypeAllDevices
 };
 
-/// @brief TuyaSmartSceneModel provides more data attributes for developers to implement business logic of the scene.
+/// @brief TuyaSmartSceneModel provides extra attributes to implement the service logic of the scene.
 @interface TuyaSmartSceneModel : NSObject<NSCoding>
 
-/// The scene id, it's unique. But only custom scene has this property.
+/// The unique scene ID that only applies to custom scenes.
 @property (nonatomic, strong) NSString *sceneId;
 
-/// The scene code, only default scene has this property.
+/// The scene code that only applies to default scenes.
 @property (nonatomic, strong) NSString *code;
 
-/// The scene name, it describes what the scene is used to.
+/// The scene name that describes the purpose of the scene.
 @property (nonatomic, strong) NSString *name;
 
-/// Whether the scene enabled, this status is used to automation scene and default enabled in tap-to-run scene.
+/// Specifies whether the specified scene is enabled. This status can be used to describe an automation scene. By default, a tap-to-run scene is enabled.
 @property (nonatomic, assign) BOOL enabled;
 
-/// Whether show scene in first page, the status only can be switched when editing scene.
+/// Specifies whether to show scenes on the homepage. The status can be switched only when the scene is edited. 
 @property (nonatomic, assign) BOOL stickyOnTop;
 
-/// The pre condition object model list is used to set the valid time period for automation scene. More information about TuyaSmartScenePreConditionModel, you can see TuyaSmartScenePreConditionModel class.
+/// A list of preconditions is used to set the validity period of an automation scene. For more information, see the TuyaSmartScenePreConditionModel class.
 @property (nonatomic, strong) NSArray<TuyaSmartScenePreConditionModel *> *preConditions;
 
-/// The condition model list,
+/// A list of conditions.
 @property (nonatomic, strong) NSArray<TuyaSmartSceneConditionModel *> *conditions;
 
-/// The action model list,
+/// A list of actions.
 @property (nonatomic, strong) NSArray<TuyaSmartSceneActionModel *> *actions;
 
-/// The device list,
+/// A list of devices.
 @property (nonatomic, strong) NSArray *devList;
 
-/// The scene background icon URL
+/// The URL of the scene background icon.
 @property (nonatomic, copy) NSString *coverIcon;
 
-/// The scene background color hex string.
+/// The hexadecimal string of the scene background color.
 @property (nonatomic, copy) NSString *displayColor;
 
-/// The scene background URL, when created a new scene, use the URL provided by Tuya.
+/// The URL of the scene background. To create a scene, use the URL provided by Tuya.
 @property (nonatomic, strong) NSString *background;
 
-/// The condition match type, For detail you can see TuyaSmartConditionMatchType enumeration value introduction.
+/// The type of condition to be matched. For more information, see the enumeration values of TuyaSmartConditionMatchType.
 @property (nonatomic, assign) TuyaSmartConditionMatchType matchType;
 
-/// Whether this scene is bound to a panel. This attribute only supports standard zigbee devices.
+/// Indicates whether this scene is bound to a panel. This attribute only supports standard Zigbee devices.
 @property (nonatomic, assign) BOOL boundForPanel;
 
-/// Whether this scene is bound by a panel with new firmware. The new panel indicates that the scene supports zigbee devices and wifi devices.
+/// Specifies whether this scene is bound to a panel with later firmware updates. The new panel specifies that the scene supports Zigbee devices and Wi-Fi devices.
 @property (nonatomic, assign) BOOL boundForWiFiPanel;
 
-/// Whether the automation scene supports to execute in LAN, If YES indicates the automation scene can be executed when zigbee gateway is offline.
+/// Specifies whether the automation scene supports running over a LAN. A value of `YES` means that the automation scene can be run when a Zigbee gateway goes offline.
 @property (nonatomic, assign) BOOL localLinkage;
 
-/// Whether the tap-to-run scene supports to execute in LAN, If YES indicates you can directly notify the zigbee gateway to execute the scene through TCP or MQTT messages.
+/// Indicates whether the tap-to-run scene supports running over a LAN. A value of `YES` means that specific commands can be sent in TCP or MQTT messages and used to notify the Zigbee gateway to run the scene.
 @property (nonatomic, assign) BOOL newLocalScene;
 
-/// The bound panel type, For detail you can see TuyaSmartScenePanelType enumeration value introduction.
+/// The type of the associated panel. For more information, see the enumeration values of TuyaSmartScenePanelType.
 @property (nonatomic, assign) TuyaSmartScenePanelType panelType;
 
-/// The recommend scene type, For detail you can see TuyaSmartSceneRecommendType enumeration value introduction.
+/// The type of recommended scene. For more information, see the enumeration values of TuyaSmartSceneRecommendType.
 @property (nonatomic, assign) TuyaSmartSceneRecommendType recommendType;
 
-/// The collection scene type, For detail you can see TuyaSmartSceneCollectionType enumeration value introduction.
+/// The type of collection scene. For more information, see the enumeration values of TuyaSmartSceneCollectionType.
 @property (nonatomic, assign) TuyaSmartSceneCollectionType collectionType;
 
-/// The recommend scene description.
+/// The description of the recommended scene.
 @property (nonatomic, copy) NSString *recomDescription;
 
-/// The recommended coefficient value of recommended scene, the range value is 0-100.
+/// The coefficient value of recommended scene. Valid values: 0-100.
 @property (nonatomic, assign) CGFloat recomCoefficient;
 
-/// The timestamp when the automation scene will be automatically closed, The zero means it has not been set.
+/// The timestamp when the automation scene is automatically closed. A value of `zero` means that the timestamp has not been set.
 @property (nonatomic, assign) long long  disableTime;
 
 #pragma mark - Business field
 
-/// Whether the scene has already obtained details.
+/// Indicates whether the details of the scene are returned. 
 @property (nonatomic, assign) BOOL cached;
 
-/// The arrow icon URL.
+/// The URL of the arrow icon.
 @property (nonatomic, copy) NSString *arrowIconUrl;
 
 #pragma mark - Deprecated
 
-/// The scene subtitle.
+/// The subtitle of the scene.
 @property (nonatomic, strong) NSString *subTitle __deprecated;
 
-/// The scene edit icon URL.
+/// The URL of the edit icon for the scene.
 @property (nonatomic, strong) NSString *editIcon __deprecated;
 
-/// The scene display icon URL.
+/// The URL of the display icon for the scene.
 @property (nonatomic, strong) NSString *displayIcon __deprecated;
 
 @end

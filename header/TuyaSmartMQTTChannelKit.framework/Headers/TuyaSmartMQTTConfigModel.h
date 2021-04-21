@@ -2,7 +2,7 @@
 //  TuyaSmartMQTTConfigModel.h
 //  Bolts
 //
-//  Created by XuChengcheng on 2019/3/11.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <Foundation/Foundation.h>

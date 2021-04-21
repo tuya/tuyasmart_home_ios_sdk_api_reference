@@ -10,15 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// @brief TuyaSmartScenePreConditionFactory provides convenient construction methods for developers to generate precondition object.
+/// @brief TuyaSmartScenePreConditionFactory provides convenient construction methods to generate a precondition object.
 @interface TuyaSmartScenePreConditionFactory : NSObject
 
-/// Create an all-day valid precondition.
+/// Creates an all-day validity precondition.
 ///
-/// @param sceneId The scene id. You can pass nil when create an automation scene.
-/// @param conditionId The current condition id. You need to pass the original condition id when editing scene for automation scene.
-/// @param loops The loop description, the data format is "1111111". Each bit indicates the Sunday to Saturday, 1 means valid, 0 means invalid.
-/// @param timeZoneId The timezone id, eg:"Asia/Shanghai".
+/// @param sceneId The scene ID. A value of nil is returned when an automation scene is created.
+/// @param conditionId The current condition ID. You must pass the original condition ID when you edit an automation scene.
+/// @param loops The description of a loop in the format of `1111111`. Each bit specifies a day from Sunday to Saturday. A value of `1` means a valid day and a value of `0` means an invalid day.
+/// @param timeZoneId The ID of the time zone. Example: "Asia/Shanghai".
 ///
 /// @return The TuyaSmartScenePreConditionModel instance.
 + (TuyaSmartScenePreConditionModel *)creatAllDayPreConditionWithSceneId:(NSString *__nullable)sceneId
@@ -26,14 +26,14 @@ NS_ASSUME_NONNULL_BEGIN
                                                                   loops:(NSString *)loops
                                                              timeZoneId:(NSString *)timeZoneId;
 
-/// Create a daytime valid precondition.
+/// Creates a daytime validity precondition.
 /// 
-/// @param sceneId The scene id. You can pass nil when create an automation scene.
-/// @param conditionId The current condition id. You need to pass the original condition id when editing scene for automation scene.
-/// @param loops The loop description, the data format is "1111111". Each bit indicates the Sunday to Saturday, 1 means valid, 0 means invalid.
-/// @param cityId The current city id.
-/// @param cityName The current city name.
-/// @param timeZoneId The timezone id, eg:"Asia/Shanghai".
+/// @param sceneId The scene ID. Set the value to nil to create an automation scene.
+/// @param conditionId The current condition ID. You must pass the original condition ID when an automation scene is edited.
+/// @param loops The description of a loop in the format of `1111111`. Each bit specifies a day from Sunday to Saturday. A value of `1` means a valid day and a value of `0` means an invalid day.
+/// @param cityId The ID of the current city.
+/// @param cityName The name of the current city.
+/// @param timeZoneId The ID of the time zone. Example: "Asia/Shanghai".
 ///
 /// @return The TuyaSmartScenePreConditionModel instance.
 + (TuyaSmartScenePreConditionModel *)createDayTimePreConditionWithSceneId:(NSString *__nullable)sceneId
@@ -43,14 +43,14 @@ NS_ASSUME_NONNULL_BEGIN
                                                                  cityName:(NSString *)cityName
                                                                timeZoneId:(NSString *)timeZoneId;
 
-/// Create a night valid precondition.
+/// Creates a night validity precondition.
 ///
-/// @param sceneId The scene id. You can pass nil when create an automation scene.
-/// @param conditionId The current condition id. You need to pass the original condition id when editing scene for automation scene.
-/// @param loops The loop description, the data format is "1111111". Each bit indicates the Sunday to Saturday, 1 means valid, 0 means invalid.
-/// @param cityId The current city id.
-/// @param cityName The current city name.
-/// @param timeZoneId The timezone id, eg:"Asia/Shanghai".
+/// @param sceneId The scene ID. Set the value to nil to create an automation scene.
+/// @param conditionId The current condition ID. You must pass the original condition ID when an automation scene is edited.
+/// @param loops The description of a loop in the format of `1111111`. Each bit specifies a day from Sunday to Saturday. A value of `1` means a valid day and a value of `0` means an invalid day.
+/// @param cityId The ID of the current city.
+/// @param cityName The name of the current city.
+/// @param timeZoneId The ID of the time zone. Example: "Asia/Shanghai".
 ///
 /// @return The TuyaSmartScenePreConditionModel instance.
 + (TuyaSmartScenePreConditionModel *)createNightTimePreConditionWithSceneId:(NSString *__nullable)sceneId
@@ -60,16 +60,16 @@ NS_ASSUME_NONNULL_BEGIN
                                                                    cityName:(NSString *)cityName
                                                                  timeZoneId:(NSString *)timeZoneId;
 
-/// Create a valid precondition of custom time period.
+/// Creates a validity precondition for a custom period.
 ///
-/// @param sceneId The scene id. You can pass nil when create an automation scene.
-/// @param conditionId The current condition id. You need to pass the original condition id when editing scene for automation scene.
-/// @param loops The loop description, the data format is "1111111". Each bit indicates the Sunday to Saturday, 1 means valid, 0 means invalid.
-/// @param cityId The current city id.
-/// @param cityName The current city name.
-/// @param timeZoneId The timezone id, eg:"Asia/Shanghai".
-/// @param begin The begin date. eg:"00:59".
-/// @param end The end date. eg:"18:30".
+/// @param sceneId The scene ID. Set the value to nil to create an automation scene.
+/// @param conditionId The current condition ID. You must pass the original condition ID when an automation scene is edited.
+/// @param loops The description of a loop in the format of `1111111`. Each bit specifies a day from Sunday to Saturday. A value of `1` means a valid day and a value of `0` means an invalid day.
+/// @param cityId The ID of the current city.
+/// @param cityName The name of the current city.
+/// @param timeZoneId The ID of the time zone. Example: "Asia/Shanghai".
+/// @param begin The start time. Example: "00:59".
+/// @param end The end time. Example: "18:30".
 ///
 /// @return The TuyaSmartScenePreConditionModel instance.
 + (TuyaSmartScenePreConditionModel *)createCustomTimePreConditionWithSceneId:(NSString *__nullable)sceneId

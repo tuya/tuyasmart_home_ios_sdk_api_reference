@@ -8,10 +8,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// @brief Mesh activator category for activator.=====The mesh activator category.
+/// @brief The mesh activator category.
 @interface TuyaSmartActivator (BleMesh)
 
-/// WiFi connector adds mesh. Get distribution network token (valid for 10 minutes).=====Adds a Wi-Fi connector to a mesh network and returns a pairing token that is valid for 10 minutes.
+/// Adds a Wi-Fi connector to a mesh network and returns a pairing token that is valid for 10 minutes.
 /// @param meshId The mesh ID.
 /// @param nodeId The node ID.
 /// @param productId The product ID.
@@ -29,11 +29,11 @@ NS_ASSUME_NONNULL_BEGIN
                    success:(TYSuccessString)success
                    failure:(TYFailureError)failure;
 
-/// Mesh distribution network.======Connects to a mesh device.
+/// Connects a device to a Bluetooth mesh network.
 /// @param ssid The router hotspot name.
 /// @param password The router hotspot password.
 /// @param token The pairing token.
-/// @param timeout The timeout time is 100 seconds by default.
+/// @param timeout The timeout value is 100 seconds by default.
 - (void)startBleMeshConfigWiFiWithSsid:(NSString *)ssid
                               password:(NSString *)password
                                  token:(NSString *)token

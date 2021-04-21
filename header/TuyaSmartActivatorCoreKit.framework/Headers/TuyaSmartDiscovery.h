@@ -14,10 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @required
 
-/// Callback of device discovery.
-/// @param discovery Instance of TuyaSmartDiscovery class.
-/// @param deviceModel Tuya smart device model.
-/// @param error NSError object.
+/// The callback of device discovery.
+/// @param discovery The instance of the TuyaSmartDiscovery class.
+/// @param deviceModel The device model in Tuya Smart.
+/// @param error The NSError object.
 - (void)discovery:(TuyaSmartDiscovery *)discovery didDiscoveryDevice:(TuyaSmartDeviceModel *)deviceModel error:(NSError *)error;
 
 @end
@@ -26,17 +26,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<TuyaSmartDiscoveryDelegate> delegate;
 
-/// Obtain configuration token (valid for 10 minutes).
-/// @param success Called when the task finishes successfully. TYSuccessString will be returned.
+/// Returns the pairing token. This token is valid for 10 minutes.
+/// @param success Called when the task is finished. TYSuccessString is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getTokenSuccess:(TYSuccessString)success
                 failure:(TYFailureError)failure;
 
-/// Start discovering devices.
-/// @param ssid Name of route.
-/// @param password Password of route.
-/// @param timeout Timeout, default 100 seconds.
-/// @param success Called when the task finishes successfully.
+/// Starts to scan for devices.
+/// @param ssid The name of the router.
+/// @param password The password of the router.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)startDiscoveryWithSsid:(NSString *)ssid
                      password:(NSString *)password
@@ -44,12 +44,12 @@ NS_ASSUME_NONNULL_BEGIN
                       success:(TYSuccessHandler)success
                       failure:(TYFailureError)failure;
 
-/// Start discovering devices using token.
-/// @param ssid Name of route.
-/// @param password Password of route.
-/// @param token Configuration token.
-/// @param timeout Timeout, default 100 seconds.
-/// @param success Called when the task finishes successfully.
+/// Starts to scan for devices by using a token.
+/// @param ssid The name of the router.
+/// @param password The password of the router.
+/// @param token The pairing token.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)startDiscoveryWithSsid:(NSString *)ssid
                      password:(NSString *)password
@@ -58,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
                       success:(TYSuccessHandler)success
                       failure:(TYFailureError)failure;
 
-/// Stop discovering.
+/// Stops scanning for devices.
 - (void)stopDiscovery;
 
 @end

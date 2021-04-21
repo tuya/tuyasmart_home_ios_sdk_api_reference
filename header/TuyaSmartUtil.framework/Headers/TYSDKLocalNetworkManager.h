@@ -2,8 +2,7 @@
 //  TYSDKLocalNetworkManager.h
 //  TuyaSmartUtil
 //
-//  Created by 高森 on 2020/9/8.
-//  Copyright © 2020 tuya. All rights reserved.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <Foundation/Foundation.h>

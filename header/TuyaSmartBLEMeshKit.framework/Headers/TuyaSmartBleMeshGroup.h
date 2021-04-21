@@ -10,24 +10,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class TuyaSmartBleMeshGroup;
 
-/// The ble mesh group delegate.  when use gateway to add device into group, will call it.=====The Bluetooth mesh group delegate. The delegate is instantiated when a gateway is used to add a device to a group.
+/// The Bluetooth mesh group delegate. The delegate is instantiated when a gateway is used to add a device to a group.
 @protocol TuyaSmartBleMeshGroupDelegate <NSObject>
 
-/// Group response of SIG mesh device joining gateway.=======The group response that is returned when the Bluetooth mesh device joins the gateway.
-/// @param group TuyaSmartBleMeshGroup.=====The Tuya Smart Bluetooth mesh group.
-/// @param responseCode 1: Exceeded the maximum number of scenes 2: sub device timeout 3: set value out of range 4: write file error 5: other errors.=====Valid values: `1`: exceededs the maximum number of scenes. `2`: sub-device timeout. `3`: specifies a value out of range. `4`: file writing error. `5`: other errors.
+/// The group response that is returned when the Bluetooth mesh device joins the gateway.
+/// @param group The Tuya Smart Bluetooth mesh group.
+/// @param responseCode Valid values: `1`: exceeds the maximum number of scenes. `2`: sub-device timeout. `3`: specifies a value out of range. `4`: file writing error. `5`: other errors.
 - (void)meshGroup:(TuyaSmartBleMeshGroup *)group addResponseCode:(NSArray <NSNumber *> *)responseCode;
 
-/// SIG mesh device removes response from gateway group.=====The group response that is returned when a Bluetooth mesh device is removed.
-/// @param group TuyaSmartBleMeshGroup.=====The Tuya Smart Bluetooth mesh group.
-/// @param responseCode Valid values: `1`: exceededs the maximum number of scenes. `2`: sub-device timeout. `3`: specifies a value out of range. `4`: file writing error. `5`: other errors.
+/// The group response that is returned when a Bluetooth mesh device is removed.
+/// @param group The Tuya Smart Bluetooth mesh group.
+/// @param responseCode Valid values: `1`: exceeds the maximum number of scenes. `2`: sub-device timeout. `3`: specifies a value out of range. `4`: file writing error. `5`: other errors.
 - (void)meshGroup:(TuyaSmartBleMeshGroup *)group removeResponseCode:(NSArray <NSNumber *> *)responseCode;
   
 @end
 
-/// @brief Tuya Bluetooth mesh device groups, including group creation, updating, adding devices to groups, etc.=====The Tuya Bluetooth mesh device groups allow you to create and update groups and add devices to the groups.
+/// @brief The Tuya Bluetooth mesh device groups allow you to create and update groups and add devices to the groups.
 ///
-/// Form a group of mesh devices with the same function and control them simultaneously with a single command.====You can create a group of mesh devices with the same functions and simultaneously control them with a single command.
+/// You can create a group of mesh devices with the same functions and simultaneously control them with a single command.
 ///
 @interface TuyaSmartBleMeshGroup : NSObject
 
@@ -57,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param groupName The mesh group name.
 /// @param meshId The mesh ID.
 /// @param localId The local short address of the group.
-/// @param pcc Group device size class=====The size class label of each group device.
+/// @param pcc The size class label of each group device.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 + (void)createMeshGroupWithGroupName:(NSString *)groupName
@@ -117,18 +117,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - SIG Mesh
 
-/// @brief The group command for gateway. Add device into group.======You can use a gateway to send commands to a group and add devices to the group.
+/// @brief You can use a gateway to send commands to a group and add devices to the group.
 @interface TuyaSmartBleMeshGroup (SIGMesh)
 
-/// Add sig mesh sub device group through sig mesh gateway.=====Adds a Bluetooth mesh sub-device group through the Bluetooth mesh gateway.
-/// The sub-devices must belong to the Bluetooth mesh gateway belongs to the sig mesh gateway.
+/// Adds a Bluetooth mesh sub-device group through the Bluetooth mesh gateway.
+/// The sub-devices must belong to the Bluetooth mesh gateway.
 /// @param subList The gateway sub-device to be managed.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)addSubDeviceWithSubList:(NSArray<TuyaSmartDeviceModel *> * _Nonnull )subList success:(nullable TYSuccessHandler)success failure:(nullable TYFailureError)failure;
 
 /// Deletes a Bluetooth mesh sub-device group through the Bluetooth mesh gateway.
-/// The sub-devices must belong to the Bluetooth mesh gateway belongs to the sig mesh gateway.
+/// The sub-devices must belong to the Bluetooth mesh gateway.
 /// @param subList The gateway sub-device to be managed.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
@@ -137,7 +137,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)publishDps:(NSDictionary *)dps success:(nullable TYSuccessHandler)success failure:(nullable TYFailureError)failure;
 
 /// Publishes custom parameters.
-/// @param params param:dictionary  { "localId":"c050" ,"dps":{"1":true}  “pcc”:"1510"}
+/// @param params param:dictionary  { "localId":"c050" ,"dps":{"1":true}  "pcc":"1510"}
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)publishDpsWithParams:(NSDictionary *)params success:(TYSuccessHandler)success failure:(TYFailureError)failure;

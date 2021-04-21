@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /// Sends the verification code to a mobile phone to enable login, registration, and password resetting.
-/// @param countryCode The The country code.
+/// @param countryCode The country code.
 /// @param phoneNumber The mobile phone number.
-/// @param type 0: Log in with the mobile phone verification code. 1: Register with the mobile phone verification code. 2: Reset a password with the mobile phone verification code.
+/// @param type Valid values: 0: Log in with the mobile phone verification code. 1: Register with the mobile phone verification code. 2: Reset a password with the mobile phone verification code.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)sendVerifyCode:(NSString *)countryCode
@@ -27,7 +27,7 @@ DEPRECATED_MSG_ATTRIBUTE("use sendVerifyCodeWithUserName:region:countryCode:type
 #pragma mark email
 
 /// Enables email registration 1.0.
-/// @param countryCode The The country code.
+/// @param countryCode The country code.
 /// @param email The email.
 /// @param password The password.
 /// @param success Called when the task is finished.

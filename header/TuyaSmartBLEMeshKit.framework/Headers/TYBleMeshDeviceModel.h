@@ -12,31 +12,31 @@ NS_ASSUME_NONNULL_BEGIN
 /// @brief The Bluetooth mesh device model that is used to scan for Bluetooth peripherals.
 @interface TYBleMeshDeviceModel : NSObject
 
-/// The device name.
+/// The name of the device.
 @property (nonatomic, strong) NSString *name;
 
 /// The device.
 @property (nonatomic, strong) TYBLEPeripheral *device;
 
-/// The device address.
+/// The address of the device.
 @property (nonatomic, assign) uint32_t address;
 
 /// The product ID.
 @property (nonatomic, strong) NSString *productId;
 
-/// The device version.
+/// The version of the device.
 @property (nonatomic, strong) NSString *version;
 
-/// The device MAC.
+/// The MAC address of the device.
 @property (nonatomic, assign) uint32_t mac;
 
-/// THe device UUID.
+/// The UUID of the device.
 @property (nonatomic, strong) NSString *uuid;
 
-/// The device type. The device size class.
+/// The type of device. It is also the device size class.
 @property (nonatomic, assign) uint32_t type;
 
-/// Fusion expansion information=====The vendor information.
+/// The vendor information.
 @property (nonatomic, strong) NSString *vendorInfo;
 
 @end

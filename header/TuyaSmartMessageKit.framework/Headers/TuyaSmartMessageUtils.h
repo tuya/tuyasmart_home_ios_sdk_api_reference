@@ -7,13 +7,13 @@
 #ifndef TuyaSmartMessageUtils_h
 #define TuyaSmartMessageUtils_h
 
-/// The three types of message. Provides alarm, family and notice types.
+/// The type of message. Valid values: alert messages, home messages and notifications.
 typedef NS_ENUM(NSInteger, TYMessageType) {
-    /// The alarm message type.
+    /// The alert message type.
     TYMessageTypeAlarm = 1,
-    /// The family message type.
+    /// The home message type.
     TYMessageTypeFamily,
-    /// The notice message type.
+    /// The notification type.
     TYMessageTypeNotice,
 };
 

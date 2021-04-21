@@ -8,9 +8,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// @brief SIG mesh activator Category for (SIG) bluetooth mesh manager.=====The Bluetooth mesh activator category for the Bluetooth mesh manager.
+/// @brief The Bluetooth mesh activator category for the Bluetooth mesh manager.
 ///
-/// Mainly contains gong for group management, adding devices to groups and removing devices from groups.=====This API provides multiple group management functions. For example, devices can be added to groups or removed from groups.
+/// This API provides multiple group management functions. For example, devices can be added to groups or removed from groups.
 @interface TuyaSmartSIGMeshManager (Group)
 
 /// Adds a device to a group.

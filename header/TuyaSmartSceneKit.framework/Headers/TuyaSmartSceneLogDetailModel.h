@@ -10,60 +10,60 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class TuyaSmartSceneLogDetailData;
 
-/// @brief TuyaSmartSceneLogDetailModel provides more attributes for developers to generate log detail model object.
+/// @brief TuyaSmartSceneLogDetailModel provides extra attributes to generate the object of the log detail model.
 @interface TuyaSmartSceneLogDetailModel : NSObject
 
-/// The action entity id.
+/// The ID of the action entity.
 @property (nonatomic, strong) NSString *actionEntityId;
 
-/// The action entity name.
+/// The name of the action entity.
 @property (nonatomic, strong) NSString *actionEntityName;
 
-/// The action entity URL.
+/// The URL of the action entity.
 @property (nonatomic, strong) NSString *actionEntityUrl;
 
-/// The action executor type, eg: dpIssue, groupDpIssue.
+/// The type of action executor. Example: `dpIssue` and `groupDpIssue`.
 @property (nonatomic, strong) NSString *actionExecutor;
 
-/// The action id.
+/// The ID of the action.
 @property (nonatomic, strong) NSString *actionId;
 
 /// The error code.
 @property (nonatomic, strong) NSString *errorCode;
 
-/// The error information of scene execution.
+/// The error message that is returned while running a scene.
 @property (nonatomic, strong) NSString *errorMsg;
 
-/// The execute status of the action in the scene.
+/// The running status of the action in the scene.
 @property (nonatomic, assign) NSInteger execStatus;
 
-/// The execute time of the action in the scene.
+/// The running time of the action in the scene.
 @property (nonatomic, strong) NSString *executeTime;
 
-/// The detail data list of scene log.
+/// A list of the scene log details.
 @property (nonatomic, strong) NSArray<TuyaSmartSceneLogDetailData *> *detail;
 
 @end
 
-/// @brief TuyaSmartSceneLogDetailData provides more attributes for developers to generate log detail data object.
+/// @brief TuyaSmartSceneLogDetailData provides extra attributes to generate the object of log details.
 @interface TuyaSmartSceneLogDetailData: NSObject
 
-/// The execute code of the action in the scene.
+/// The code that is used to run an action in a scene.
 @property (nonatomic, strong) NSString *code;
 
-/// The error message.
+/// The error message that is returned while running the action.
 @property (nonatomic, strong) NSString *msg;
 
-/// The execute status of the action in the scene.
+/// The running status of the action in the scene.
 @property (nonatomic, assign) NSInteger status;
 
-/// The detail user name.
+/// The username.
 @property (nonatomic, strong) NSString *detailName;
 
-/// The user id.
+/// The user ID.
 @property (nonatomic, strong) NSString *detailId;
 
-/// The icon URL.
+/// The URL of the icon.
 @property (nonatomic, strong) NSString * icon;
 
 @end

@@ -2,7 +2,7 @@
 //  TYBLECentralManagerProtocol.h
 //  TYBluetooth
 //
-//  Created by 黄凯 on 2019/6/5.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #ifndef TYBLECentralManagerProtocol_h

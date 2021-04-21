@@ -11,42 +11,42 @@ NS_ASSUME_NONNULL_BEGIN
 @class TuyaSmartPegasusActivator;
 @protocol TuyaSmartPegasusActivatorDelegate <NSObject>
 
-/// Devices found by Pegasus.
-/// @param activator Activator instance.
-/// @param serverDeviceModel The device is found, but there is no device ID at this time.
-/// @param deviceModel The device is found, but there is no device ID at this time.
-/// @param error Error message.
+/// Returns the devices that are found by Pegasus.
+/// @param activator The activator instance.
+/// @param serverDeviceModel The device is found, but no device ID is available.
+/// @param deviceModel The device is found, but no device ID is available.
+/// @param error An error occurs while processing the request.
 - (void)pegasusActivator:(TuyaSmartPegasusActivator *)activator serverDevice:(TuyaSmartDeviceModel *)serverDeviceModel didFoundDevice:(TuyaSmartDeviceModel *)deviceModel error:(NSError * __nullable)error;
 
-/// Devices that have been configured for the network by Pegasus.
-/// @param activator Activator instance.
-/// @param deviceModel The found device.
-/// @param error Error message.
+/// Returns the devices that are found by Pegasus.
+/// @param activator The activator instance.
+/// @param deviceModel The device that is found by Pegasus.
+/// @param error An error occurs while processing the request.
 - (void)pegasusActivator:(TuyaSmartPegasusActivator *)activator didReceiveDevice:(TuyaSmartDeviceModel *)deviceModel error:(NSError * __nullable)error;
 
 @end
 
-/// @brief TuyaSmartPegasusActivator is used for pegasus configuration.
+/// @brief TuyaSmartPegasusActivator is used for pairing based on Pegasus.
 ///
-/// This class provides pegasus configuration capabilities.
+/// This class provides capabilities for Pegasus-based pairing.
 ///
 @interface TuyaSmartPegasusActivator : NSObject
 
 @property (nonatomic, weak) id<TuyaSmartPegasusActivatorDelegate> delegate;
 
-/// Devices supporting Pegasus.
+/// Returns a list of devices that support Pegasus.
 /// @param homeID The home ID.
 /// @return A list of devices that support Pegasus.
 + (NSArray <TuyaSmartDeviceModel *> *)pegasusDeviceListWithHomeID:(long long)homeID;
 
-/// Start Pegasus Activator discover pending device.
+/// Starts to scan for and pair devices by using Pegasus.
 ///
-/// The 'devIDs' should be obtained form TuyaSmartPegasusActivator::pegasusDeviceListWithHomeID:
+/// The value of 'devIDs' is generated in the call of TuyaSmartPegasusActivator::pegasusDeviceListWithHomeID:.
 ///
-/// @param devIDs Device ID list
-/// @param serverTimeout Configured devices, search timeout for devices to be configured.
-/// @param clientTimeout Pending devices, pending devices is searched for and not added to the family timeout.
-/// @param success Called when the task finishes successfully.
+/// @param devIDs A list of device IDs.
+/// @param serverTimeout The timeout value for devices to be paired.
+/// @param clientTimeout The timeout value for devices to be paired. These devices are not added to the home.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)startDiscoverWithDevIDs:(NSArray<NSString *> *)devIDs
                   serverTimeout:(NSTimeInterval)serverTimeout
@@ -55,27 +55,27 @@ NS_ASSUME_NONNULL_BEGIN
                         failure:(TYFailureError)failure;
 
 
-/// Already distributed devices stop continuing to discover equipment to be configured.
+/// Stops pairing devices by Pegasus after devices are paired.
 ///
-/// The 'devIDs' should be obtained form TuyaSmartPegasusActivator::pegasusDeviceListWithHomeID:
+/// The value of 'devIDs' is generated in the call of TuyaSmartPegasusActivator::pegasusDeviceListWithHomeID:.
 ///
 /// @param devIDs A list of devices that support Pegasus.
-/// @param success Called when the task finishes successfully.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)stopDiscoverWithDevIDs:(NSArray<NSString *> *)devIDs
                         success:(TYSuccessHandler)success
                         failure:(TYFailureError)failure;
 
 
-/// Configure of found devices to be configured on the network.
+/// Pairs specified devices by using Pegasus.
 ///
-/// The 'token' can be obtained form TuyaSmartActivator::getTokenWithHomeId:success:failure:
+/// The value of 'token' can be generated in the call of TuyaSmartActivator::getTokenWithHomeId:success:failure:.
 ///
 /// @param devIDs A list of devices that support Pegasus.
-/// @param UUIDs List of UUIDs of devices to be configured.
-/// @param token The configuration token.
-/// @param timeout Timeout time, default 100s.
-/// @param success Called when the task finishes successfully.
+/// @param UUIDs A list of UUIDs of devices to be paired.
+/// @param token The pairing token.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)startActivatorWithDevIDs:(NSArray<NSString *> *)devIDs
                            UUIDs:(NSArray<NSString *> *)UUIDs
@@ -85,10 +85,10 @@ NS_ASSUME_NONNULL_BEGIN
                          failure:(TYFailureError)failure;
 
 
-/// Cancel the configuration of devices that being discovered by Pegasus.
+/// Cancels the Pegasus-based pairing of devices.
 /// @param devIDs A list of devices that support Pegasus.
-/// @param UUIDs List of UUIDs of devices to be configured.
-/// @param success Called when the task finishes successfully.
+/// @param UUIDs A list of UUIDs of devices to be paired.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)cancelActivatorWithDevIDs:(NSArray<NSString *> *)devIDs
                             UUIDs:(NSArray<NSString *> *)UUIDs

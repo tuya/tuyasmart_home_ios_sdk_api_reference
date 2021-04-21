@@ -7,10 +7,10 @@
 
 #import <Foundation/Foundation.h>
 
-/// @brief Scene expression model, it can be defined as any type.
+/// @brief The expression model of the scene. Any type of expression model is supported.
 @interface TuyaSmartSceneExprModel : NSObject
 
-/// Used to store expression data, it can be used as any type.
+/// Stores the expression data. Any type of expression is supported.
 @property (nonatomic, strong) NSArray *expr;
 
 @end

@@ -2,7 +2,7 @@
 //  TYBLECentralManager+Discovery.h
 //  Pods-TYBluetooth_Example
 //
-//  Created by 黄凯 on 2019/4/19.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import "TYBLECentralManager.h"

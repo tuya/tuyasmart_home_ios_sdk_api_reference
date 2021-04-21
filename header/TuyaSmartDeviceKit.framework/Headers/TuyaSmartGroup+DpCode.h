@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param name The group name.
 /// @param homeId The home ID.
 /// @param categoryCode The category code.
-/// @param devIdList The list of device IDs.
+/// @param devIdList A list of device IDs.
 /// @param success The success block.
 /// @param failure The failure block.
 /// @deprecated This method is deprecated. Use TuyaSmartGroup::createDpCodeGroupWithName:homeId:devIdList:success:failure: instead.
@@ -49,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// @param name The group name.
 /// @param homeId The home ID.
-/// @param devIdList The list of device IDs.
+/// @param devIdList A list of device IDs.
 /// @param success Called when the task is finished. TuyaSmartGroup is returned.
 /// @param failure Called when the task is interrupted by an error.
 + (void)createDpCodeGroupWithName:(NSString *)name
@@ -64,7 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param name The group name.
 /// @param homeId The home ID.
 /// @param productId The product ID.
-/// @param devIdList The list of device IDs.
+/// @param devIdList A list of device IDs.
 /// @param success Called when the task is finished. TuyaSmartGroup is returned.
 /// @param failure Called when the task is interrupted by an error.
 + (void)createDpCodeGroupWithName:(NSString *)name
@@ -106,9 +106,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-/// Modifies the list of devices that belong to the group.
+/// Modifies a list of devices that belong to the group.
 ///
-/// @param devList The list of devices.
+/// @param devList A list of devices.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateDpCodeGroupRelationsWithDevList:(NSArray <NSString *>*)devList

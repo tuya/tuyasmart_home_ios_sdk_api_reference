@@ -2,7 +2,7 @@
 //  TuyaSmartBLEWifiActivator+PlugPlay.h
 //  TuyaSmartBLEKit
 //
-//  Created by 吴戈 on 2020/11/9.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <TuyaSmartBLEKit/TuyaSmartBLEKit.h>

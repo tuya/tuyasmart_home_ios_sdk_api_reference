@@ -13,20 +13,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
-/// The DP data update.
+/// The data point (DP) update.
 - (void)subDeviceUpdateWithAddress:(NSString *)address dps:(NSDictionary *)dps;
 
-/// Raw transparent command received.=======Receives the DPs of raw type.
+/// Receives the DPs of raw type.
 - (void)bleMeshReceiveRawData:(NSString *)raw;
 
-/// Batch report of received data.=======Reports multiple DPs in a call.
+/// Reports multiple DPs in a call.
 - (void)bleMeshReceiveBatchDeviceDpsInfo;
 
 @end
 
-/// @brief Bluetooth mesh base class, including the basic operations of Bluetooth mesh, such as create, update, delete mesh, etc.========The Bluetooth mesh base class that supports the basic operations of Bluetooth mesh networks. For example, devices in a mesh network can be created, updated, and deleted.
+/// @brief The Bluetooth mesh base class that supports the basic operations of Bluetooth mesh networks. For example, devices in a mesh network can be created, updated, and deleted.
 ///
-/// mesh as an important parameter for Bluetooth mesh connection.====The mesh parameters are required to establish a Bluetooth mesh connection.
+/// The mesh parameters are required to establish a Bluetooth mesh connection.
 ///
 @interface TuyaSmartBleMesh : NSObject
 
@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param homeId The home ID.
 + (instancetype)bleMeshWithMeshId:(NSString *)meshId homeId:(long long)homeId;
 
-/// mesh as an important parameter for Bluetooth mesh connection.
+/// The mesh parameters are required to establish a Bluetooth mesh connection.
 /// @param meshId The mesh ID.
 /// @param homeId The home ID.
 - (instancetype)initWithMeshId:(NSString *)meshId homeId:(long long)homeId NS_DESIGNATED_INITIALIZER;
@@ -101,7 +101,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Returns the latest DP information of the sub-device.
 /// @param nodeId The node ID.
 /// @param pcc The size class label.
-/// @param dpIdList The list of keys in the DPs.
+/// @param dpIdList A list of keys in the DPs.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getSubDeviceDpsWithNodeId:(NSString *)nodeId
@@ -110,8 +110,8 @@ NS_ASSUME_NONNULL_BEGIN
                           success:(TYSuccessHandler)success
                           failure:(TYFailureError)failure;
 
-/// Send transparent instruction to device.=======Sends DPs of raw type to the device.
-/// @param raw Transmission value.=====The type of transmission.
+/// Sends DPs of raw type to the device.
+/// @param raw The type of transmission.
 /// @param pcc The size class label.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
@@ -126,13 +126,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param failure Called when the task is interrupted by an error.
 - (void)updateMeshName:(NSString *)meshName success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
-/// Deletes the mesh. If there are devices under the mesh group, the sub devices are also removed. The WiFi connector is also removed.======If the specified mesh group contains sub-devices, the sub-devices are also removed. The Wi-Fi connector is also removed.
+/// Deletes the mesh. If the specified mesh group contains sub-devices, the sub-devices are also removed. The Wi-Fi connector is also removed.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)removeMeshWithSuccess:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
-/// Bluetooth device access 2.0.=======Adds a Bluetooth sub-device. API version: 2.0.
-/// @param uuid Bluetooth sub device short address identification.=====The short address identification of the Bluetooth sub-device.
+/// Adds a Bluetooth sub-device. API version: 2.0.
+/// @param uuid The short address identification of the Bluetooth sub-device.
 /// @param homeId The home ID.
 /// @param authKey The authentication key.
 /// @param nodeId The node ID.

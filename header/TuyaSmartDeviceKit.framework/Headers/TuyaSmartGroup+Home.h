@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param name The group name.
 /// @param productId The product ID.
 /// @param homeId The home ID.
-/// @param devIdList The list of device IDs.
+/// @param devIdList A list of device IDs.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 + (void)createGroupWithName:(NSString *)name
@@ -66,7 +66,7 @@ NS_ASSUME_NONNULL_BEGIN
 #if TARGET_OS_IOS
 
 /// Adds Zigbee devices to groups that locally interact with gateways.
-/// @param nodeList The list of Zigbee sub-device node IDs.
+/// @param nodeList A list of Zigbee sub-device node IDs.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)addZigbeeDeviceWithNodeList:(NSArray <NSString *>*)nodeList
@@ -75,7 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /// Removes Zigbee devices from groups that locally interact with gateways.
-/// @param nodeList The list of Zigbee sub-device node IDs.
+/// @param nodeList A list of Zigbee sub-device node IDs.
 /// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)removeZigbeeDeviceWithNodeList:(NSArray <NSString *>*)nodeList

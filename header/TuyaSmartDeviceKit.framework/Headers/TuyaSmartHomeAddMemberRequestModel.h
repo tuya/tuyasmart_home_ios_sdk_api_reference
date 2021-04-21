@@ -73,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartHomeInvitationRecordModel : NSObject;
 
-/// The validity of the invitation code. Unit: hours.
+/// The validity period of the invitation code. Unit: hours.
 @property (nonatomic, assign) NSInteger validTime;
 
 /// The invitation ID.

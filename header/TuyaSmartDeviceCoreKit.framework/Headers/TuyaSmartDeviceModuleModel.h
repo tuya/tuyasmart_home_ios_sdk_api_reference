@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import "TuyaSmartDeviceModelUtils.h"
 
-/// The MCU device.
+/// The microcontroller unit (MCU) device.
 @interface TuyaSmartDeviceMcuModel : NSObject
 
 @property (nonatomic, assign) BOOL     isOnline;

@@ -7,82 +7,82 @@
 #import <Foundation/Foundation.h>
 #import "TuyaSmartSceneExprModel.h"
 
-/// The two types of expr data model. Provides whether and device types.
+/// The type of expression data model. Valid values: weather and device.
 typedef enum : NSInteger {
-    /// The whether expr model type
+    /// The weather expression model type.
     kExprTypeWhether,
-    /// The device expr model type
+    /// The device expression model type.
     kExprTypeDevice
 }ExprType;
 
-/// The Three types of expr data model. Provides not determine, rise and set types.
+/// The type of expression data model. Valid values: unknown, sunrise, and sunset.
 typedef enum : NSInteger {
-    /// The sun not determine type
+    /// An unknown type.
     kSunTypeNotDetermin,
-    /// The sun rise
+    /// The sunrise type.
     kSunTypeRise,
-    /// The sun set type
+    /// The sunset type.
     kSunTypeSet
 }SunType;
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// @brief Create TuyaSmartSceneExprModel by difference type values.
+/// @brief Creates TuyaSmartSceneExprModel by using different type values.
 @interface TuyaSmartSceneConditionExprBuilder : NSObject
 
-/// Create a exprModel with bool value and condition type.
+/// Creates the Boolean value and condition type for an expression model.
 ///
-/// @param type Whether type or device's dpId.
-/// @param isTrue BOOL value
-/// @param exprType To distinguish the entity type.
+/// @param type The weather type or the DP ID of a device.
+/// @param isTrue The Boolean value.
+/// @param exprType The entity type.
 /// 
-/// @return A TuyaSmartSceneExprModel object.
+/// @return The TuyaSmartSceneExprModel object.
 + (TuyaSmartSceneExprModel *)createBoolExprWithType:(NSString *)type isTrue:(BOOL)isTrue exprType:(ExprType)exprType;
 
-/// Create a exprModel with enum string value and condition type.
+/// Creates an expression model by using enumeration string value and condition type.
 ///
-/// @param type Whether type or device's dpId.
-/// @param chooseValue enum string value, get it in TuyaSmartSceneDPModel.dpModel.property.range
-/// @param exprType To distinguish the entity type.
+/// @param type The weather type or the DP ID of a device.
+/// @param chooseValue The enumeration string value. Get the value in TuyaSmartSceneDPModel.dpModel.property.range.
+/// @param exprType The entity type.
 ///
-/// @return A TuyaSmartSceneExprModel object.
+/// @return The TuyaSmartSceneExprModel object.
 + (TuyaSmartSceneExprModel *)createEnumExprWithType:(NSString *)type chooseValue:(NSString *)chooseValue exprType:(ExprType)exprType;
 
-/// Create exprModel like "temp <= 40".
+/// Creates an expression model, such as `temp <= 40`.
 ///
-/// @param type Whether type or device's dpId.
-/// @param operateString @">=",@"<=",@"=="
-/// @param value selected value
-/// @param exprType To distinguish the entity type.
+/// @param type The weather type or the DP ID of a device.
+/// @param operateString The operators. Valid values: @">=", @"<=", and @"==".
+/// @param value The specified value.
+/// @param exprType The entity type.
 ///
-/// @return A TuyaSmartSceneExprModel object.
+/// @return The TuyaSmartSceneExprModel object.
 + (TuyaSmartSceneExprModel *)createValueExprWithType:(NSString *)type operater:(NSString *)operateString chooseValue:(NSInteger )value exprType:(ExprType)exprType;
 
-/// Create exprModel like "rawType".
+/// Creates an expression model, such as `rawType`.
 ///
-/// @param type Whether type or device's dpId.
-/// @param exprType To distinguish the entity type.
+/// @param type The weather type or the DP ID of a device.
+/// @param exprType The entity type.
 ///
-/// @return A TuyaSmartSceneExprModel object.
+/// @return The TuyaSmartSceneExprModel object.
 + (TuyaSmartSceneExprModel *)createRawExprWithType:(NSString *)type exprType:(ExprType)exprType;
 
-/// Create timer condition.
+/// Creates a timer condition.
 ///
-/// @param timeZoneId timeZoneId like @"Asia/Shanghai".
-/// @param loops eg: @"0111110", each character represent from Sunday to Monday. @"0000000" represent only once.
-/// @param date eg: @"20190501".
-/// @param time eg: @"20:40".
+/// @param timeZoneId The ID of a time zone, such as @"Asia/Shanghai".
+/// @param loops The timer loop. For example, each character in @"0111110" specifies a day from Sunday to Monday. @"0000000" specifies only once.
+/// @param date The date, such as @"20190501".
+/// @param time The time, such as @"20:40".
 ///
-/// @return A TuyaSmartSceneExprModel object.
+/// @return The TuyaSmartSceneExprModel object.
 + (TuyaSmartSceneExprModel *)createTimerExprWithTimeZoneId:(NSString *)timeZoneId loops:(NSString *)loops date:(NSString *)date time:(NSString *)time;
 
-/// Create a timer condition's expression related to sunrise or sunset times, For example, "x minutes before sunrise". "at sunrise" is still handled as a normal weather condition.
+/// Creates the expression of a timer condition related to sunrise or sunset time, such as `x minutes before sunrise`. `at sunrise` is still used as a normal weather condition.
 ///
-/// @param city City that needs to be set.
-/// @param type Identify sunrise or sunset.
-/// @param minutes From -300 minutes to 300 minutes.
+/// @param city The city.
+/// @param type The sunrise or sunset.
+/// @param minutes The number of minutes. Valid values: -300 to 300.
 ///
-/// @return A TuyaSmartSceneExprModel object.
+/// @return The TuyaSmartSceneExprModel object.
 + (TuyaSmartSceneExprModel *)createSunsetriseTimerExprWithCity:(TuyaSmartCityModel *)city type:(SunType)type deltaMinutes:(NSInteger)minutes;
 
 @end

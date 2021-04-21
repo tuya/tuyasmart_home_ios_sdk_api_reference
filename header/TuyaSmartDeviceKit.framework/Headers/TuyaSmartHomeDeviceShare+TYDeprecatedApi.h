@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param homeId The home ID.
 /// @param countryCode The country code.
 /// @param userAccount The user account.
-/// @param devIds The list of device IDs.
+/// @param devIds A list of device IDs.
 /// @param success The success block.
 /// @param failure The failure block.
 /// @deprecated This method is deprecated. Use TuyaSmartHomeDeviceShare::addDeviceShareWithRequestModel:success:failure: instead.

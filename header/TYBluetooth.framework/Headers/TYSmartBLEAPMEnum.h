@@ -2,7 +2,7 @@
 //  TYSmartBLEAPMEnum.h
 //  Pods
 //
-//  Created by 温明妍 on 2019/9/24.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #ifndef TYSmartBLEAPMEnum_h

@@ -1,8 +1,7 @@
 //
 //  TuyaSmartSocketChannel.h
 //
-//
-//  Created by xcc on 19/3/13.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 //
 
@@ -73,7 +72,7 @@
 + (instancetype)sharedInstance;
 
 /**
- *  The list of inactive devices.
+ *  A list of inactive devices.
  */
 @property (nonatomic, strong) TYSDKSafeMutableDictionary   *inactiveDevices;
 

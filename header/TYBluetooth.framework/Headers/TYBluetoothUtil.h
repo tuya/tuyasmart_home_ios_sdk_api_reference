@@ -2,7 +2,7 @@
 //  TYBluetoothUtil.h
 //  TYBluetooth
 //
-//  Created by tjl on 2020/12/25.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <Foundation/Foundation.h>

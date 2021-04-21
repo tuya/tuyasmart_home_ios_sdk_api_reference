@@ -9,77 +9,77 @@
 #import <TuyaSmartDeviceKit/TuyaSmartDeviceKit.h>
 #import "TuyaSmartSceneExprModel.h"
 
-/// The three geo fence type. Provide reach, exit and not set type.
+/// The type of geofencing. Valid values: reach, exit, and not set.
 typedef enum : NSInteger{
-    /// The geo fence reach type.
+    /// Reaches a geofence.
     kGeoFenceTypeReach,
-    /// The geo fence exit type.
+    /// Exits a geofence.
     kGeoFenceTypeExit,
-    /// The geo fence not set type.
+    /// The geofence is not set.
     kGeoFenceTypeNotSet
 }GeoFenceType;
 
-/// @brief A factory design mode for create TuyaSmartSceneConditionModel.
+/// @brief A default design mode to create TuyaSmartSceneConditionModel.
 ///
-/// @note In order to facilitate the handling of multiple languages, this class does not handle the actionDisplay and actionDisplayNew fields of the TuyaSmartSceneConditionModel.
+/// @note To support multiple languages, this class does not process the actionDisplay and actionDisplayNew fields of TuyaSmartSceneConditionModel.
 @interface TuyaSmartSceneConditionFactory : NSObject
 
-/// Create a device condition.
+/// Creates a device condition.
 ///
-/// @param device The device model to create condition.
-/// @param dpModel The dpModel to create condition.
-/// @param exprModel Create with TYSmartSceneConditionExprBuilder.
+/// @param device The device model to create a condition.
+/// @param dpModel The DP model to create a condition.
+/// @param exprModel Creates a condition by using TYSmartSceneConditionExprBuilder.
 ///
-/// @return TuyaSmartSceneConditionModel object.
+/// @return The TuyaSmartSceneConditionModel object.
 + (TuyaSmartSceneConditionModel *)createDeviceConditionWithDevice:(TuyaSmartDeviceModel *)device dpModel:(TuyaSmartSceneDPModel *)dpModel exprModel:(TuyaSmartSceneExprModel *)exprModel;
 
-/// Create a timed type of human sensor condition, such as no movement for five minutes. Common human sensor conditions use -createDeviceConditionWithDevice:dpModel:exprModel:.
+/// Creates a timed type of motion detection condition, such as no movement for five minutes. Common motion detection conditions use -createDeviceConditionWithDevice:dpModel:exprModel:.
 ///
-/// @param device The device model to create condition.
-/// @param dpModel The dpModel to create condition.
-/// @param exprModel Create with TYSmartSceneConditionExprBuilder.
+/// @param device The device model to create a condition.
+/// @param dpModel The DP model to create a condition.
+/// @param exprModel Creates a condition by using TYSmartSceneConditionExprBuilder.
 ///
-/// @return TuyaSmartSceneConditionModel object.
+/// @return The TuyaSmartSceneConditionModel object.
 + (TuyaSmartSceneConditionModel *)createPirConditionWithDevice:(TuyaSmartDeviceModel *)device dpModel:(TuyaSmartSceneDPModel *)dpModel exprModel:(TuyaSmartSceneExprModel *)exprModel;
 
-/// Create an whether condition.
+/// Creates a weather condition.
 ///
-/// @param city Whether condition need a city.
-/// @param dpModel The dpModel to create condition.
-/// @param exprModel Create with TYSmartSceneConditionExprBuilder.
+/// @param city The city that is required in a weather condition.
+/// @param dpModel The DP model to create a condition.
+/// @param exprModel Creates a condition by using TYSmartSceneConditionExprBuilder.
 ///
-/// @return TuyaSmartSceneConditionModel object.
+/// @return The TuyaSmartSceneConditionModel object.
 + (TuyaSmartSceneConditionModel *)createWhetherConditionWithCity:(TuyaSmartCityModel *)city dpModel:(TuyaSmartSceneDPModel *)dpModel exprModel:(TuyaSmartSceneExprModel *)exprModel;
 
-/// Create a timer condition.
+/// Creates a timer condition.
 ///
-/// @param exprModel Create with TYSmartSceneConditionExprBuilder.
+/// @param exprModel Creates a condition by using TYSmartSceneConditionExprBuilder.
 ///
-/// @return TuyaSmartSceneConditionModel object.
+/// @return The TuyaSmartSceneConditionModel object.
 + (TuyaSmartSceneConditionModel *)createTimerConditionWithExprModel:(TuyaSmartSceneExprModel *)exprModel;
 
-/// Create a timer condition related to sunrise and sunset times
+/// Creates a timer condition related to the sunrise and sunset time.
 ///
-/// @param city City to be operated.
-/// @param exprModel Create with TYSmartSceneConditionExprBuilder.
+/// @param city The city to be managed.
+/// @param exprModel Creates a condition by using TYSmartSceneConditionExprBuilder.
 ///
-/// @return TuyaSmartSceneConditionModel object.
+/// @return The TuyaSmartSceneConditionModel object.
 + (TuyaSmartSceneConditionModel *)createSunsetriseTimerConditionWithCity:(TuyaSmartCityModel *)city ExprModel:(TuyaSmartSceneExprModel *)exprModel;
 
-/// Create a GeoFence conditon,conditionModel's entityId will be assigned after scene saved, the entityId represent the geoFence id, will should be upload to server by http API to trigger the automation.
+/// Creates a geofencing condition. The entity ID of the condition model is assigned after the scene is saved. The entity ID represents the geofence ID and is uploaded to the server in an HTTP API request to trigger the automation scene.
 ///
-/// @param type The GeoFenceType, reach or leave the place.
-/// @param latitude  The geo fence center latitude.
-/// @param longitude The geo fence center longitude.
-/// @param radius Consider latitude and longitude as the center of a circle, this property represent the radius.
-/// @param geoTitle The location name.
+/// @param type The geofencing type to specify that a perimeter is reached or crossed.
+/// @param latitude  The geofence center latitude.
+/// @param longitude The geofence center longitude.
+/// @param radius If the latitude and longitude of the geofence are regarded as the center of a circle, this property represents the radius.
+/// @param geoTitle The name of the geofence.
 ///
-/// @return TuyaSmartSceneConditionModel object.
+/// @return The TuyaSmartSceneConditionModel object.
 + (TuyaSmartSceneConditionModel *)createGeoFenceConditionWithGeoType:(GeoFenceType)type geoLati:(CGFloat)latitude geoLonti:(CGFloat)longitude geoRadius:(CGFloat)radius geoTitle:(NSString *)geoTitle;
 
-/// Create an "manual execute" condition.This condition should not be saved to cloud server, when you call the API to save a smart, you should delete this type of condition first.
+/// Creates a manual running condition. This condition is not saved to the cloud server. When you make an API request to save a smart condition, delete this manual running condition first.
 ///
-/// @return TuyaSmartSceneConditionModel object.
+/// @return The TuyaSmartSceneConditionModel object.
 + (TuyaSmartSceneConditionModel *)createManualExecuteCondition;
 
 @end

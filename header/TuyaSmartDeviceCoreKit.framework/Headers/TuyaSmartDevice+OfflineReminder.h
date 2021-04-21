@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// @brief Tuya smart device offline alerts: You can specify whether to support the offline alert function, set the status of the offline alert switch, and set the offline alert rules.
+/// @brief Tuya Smart device offline alerts: You can specify whether to support the offline alert function, set the status of the offline alert switch, and set the offline alert rules.
 ///
 /// When offline alerts are enabled for the device, the device sends an offline notification to the specified user when the device goes offline. You can subscribe to the message push function to enable this feature.
 ///

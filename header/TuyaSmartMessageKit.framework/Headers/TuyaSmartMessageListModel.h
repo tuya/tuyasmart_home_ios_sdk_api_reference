@@ -8,59 +8,59 @@
 #import "TuyaSmartMessageUtils.h"
 
 NS_ASSUME_NONNULL_BEGIN
-/// Message attachment model.
+/// The model of a message attachment.
 @interface TuyaSmartMessageAttachModel : NSObject
 
-/// Is the attachment a video (.mp4 is considered a video).
+/// Specifies whether the attachment is a video file, such as MP4 files.
 @property (nonatomic, assign) BOOL isVideo;
 
-/// Attachment url.
+/// The URL of the attachment.
 @property (nonatomic, strong) NSString *url;
 
-/// Thumbnail url.
+/// The thumbnail of the attachment.
 @property (nonatomic, strong) NSString *thumbUrl;
 
 @end
 
-/// Message list model.
+/// The model of a message list.
 @interface TuyaSmartMessageListModel : NSObject
 
-/// The Message Identifier.
+/// The identifier of a message.
 @property (nonatomic, strong) NSString *msgId;
 
-/// The Message title.
+/// The title of a message.
 @property (nonatomic, strong) NSString *msgTypeContent;
 
-/// The Message content.
+/// The content of a message.
 @property (nonatomic, strong) NSString *msgContent;
 
-/// Formatted date and time.
+/// The formatted date and time.
 @property (nonatomic, strong) NSString *dateTime;
 
-/// Message timestamp.
+/// The timestamp of a message.
 @property (nonatomic, assign) NSInteger time;
 
-/// Message icon.
+/// The icon of a message.
 @property (nonatomic, strong) NSString *icon;
 
-/// Attachment list.
+/// A list of attachments.
 @property (nonatomic, strong) NSArray<TuyaSmartMessageAttachModel *> *attachPicList;
 
 @property (nonatomic, assign) BOOL hasNotRead;
 
-/// Device id (note: only alarm type messages will have this field).
+/// The device ID. Only alert messages support this field.
 @property (nonatomic, strong) NSString  *msgSrcId;
 
-///  1 is Alert message, 2 is Automation message (Note: Only alert type messages will have this field used in alert messages to distinguish between alerts or automation, home and notification messages are ignored).
+///  Valid values: `1` means an alert message. `2` means an automation message. Only alert messages support this field to distinguish between alert messages and automation messages. The home messages and notifications are ignored.
 @property (nonatomic, assign) NSInteger  alarmType;
 
-/// Message Type: 0 is system message, 1 is new devices, 2 is new friend, 4 is device alarm.
+/// The type of message. Valid values: `0` means system messages. `1` means that new devices are added. `2` means that new friends are added. `4` means device alerts.
 @property (nonatomic, assign) NSInteger msgType;
 
-/// The current home id.
+/// The ID of the current home.
 @property (nonatomic, assign) long long homeID;
 
-/// The current home name.
+/// The name of the current home.
 @property (nonatomic, copy) NSString *homeName;
 
 @end

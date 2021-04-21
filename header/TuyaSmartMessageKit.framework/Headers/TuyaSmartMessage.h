@@ -9,46 +9,46 @@
 #import "TuyaSmartMessageRequestModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
-/// @brief TuyaSmartMessage provides methods for developers to implement message functionalities.
+/// @brief TuyaSmartMessage provides methods to implement message functionalities.
 ///
-/// TuyaSmartMessage contains message center and push-related functions, and its messages are mainly divided into three major categories: alarms, families, and notifications, each of which is supported to be turned on or off respectively.
+/// TuyaSmartMessage provides a message center and supports push functions. The messages are classified into the following categories: alert messages, home messages, and notifications. Each type of message can be enabled or disabled.
 @interface TuyaSmartMessage : NSObject
 
-/// Fetch message list.
-/// @param listRequestModel Provide listRequestModel to fetch the TuyaSmartMessageListModel.
-/// @param success Called when the task finishes successfully. A list of TuyaSmartMessageListModel will be returned.
+/// Returns a list of messages.
+/// @param listRequestModel Returns a list of TuyaSmartMessageListModel.
+/// @param success Called when the task is finished. A list of TuyaSmartMessageListModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)fetchMessageListWithListRequestModel:(TuyaSmartMessageListRequestModel *)listRequestModel
                                      success:(void (^)(NSArray<TuyaSmartMessageListModel *> *messageList))success
                                      failure:(TYFailureError)failure;
 
-/// Fetch message detail list.
-/// @param detailListRequestModel Provide a listRequestModel to fetch the TuyaSmartMessageListModel.
-/// @param success Called when the task finishes successfully. A list of TuyaSmartMessageListModel will be returned.
+/// Returns a list of message details.
+/// @param detailListRequestModel Returns a list of TuyaSmartMessageListModel.
+/// @param success Called when the task is finished. A list of TuyaSmartMessageListModel is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)fetchMessageDetailListWithListRequestModel:(TuyaSmartMessageDetailListRequestModel *)detailListRequestModel
                                            success:(void (^)(NSArray<TuyaSmartMessageListModel *> *messageList))success
                                            failure:(TYFailureError)failure;
 
-/// Get three types of messages if there are new ones.
-/// @param success Called when the task finishes successfully.
+/// Returns the latest messages of all types.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getLatestMessageWithSuccess:(TYSuccessDict)success failure:(TYFailureError)failure;
 
-/// Set the message center list data to read.
-/// @param readRequestModel List of read messages (support all read).
-/// @param success Called when the task finishes successfully.
+/// Sets and reads a list of data of the message center.
+/// @param readRequestModel A list of read messages. All types of messages can be read.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)readMessageWithReadRequestModel:(TuyaSmartMessageListReadRequestModel *)readRequestModel success:(TYSuccessBOOL)success failure:(TYFailureError)failure;
 
 
-/// Delete message center list data.
-/// @param deleteRequestModel List of deleted messages (delete all is not supported).
-/// @param success Called when the task finishes successfully.
+/// Deletes a list of data from the message center.
+/// @param deleteRequestModel A list of deleted messages. The deletion of all data is not supported.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)deleteMessageWithDeleteRequestModel:(TuyaSmartMessageListDeleteRequestModel *)deleteRequestModel success:(TYSuccessBOOL)success failure:(TYFailureError)failure;
 
-/// Canceling the ongoing operation.
+/// Cancels the ongoing request.
 - (void)cancelRequest;
 
 @end

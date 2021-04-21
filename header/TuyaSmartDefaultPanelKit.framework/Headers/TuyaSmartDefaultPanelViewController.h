@@ -2,7 +2,7 @@
 //  TuyaSmartDefaultPanelKit.h
 //  TuyaSmartDefaultPanelKit
 //
-//  Created by tuya on 2021/1/18.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #ifndef TuyaSmartDefaultPanelViewController_h
@@ -13,13 +13,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// @brief This class is the default device control panel, support all type of tuya devices, designed for production use.
+/// @brief This class is the default device control panel and supports all types of `Powered by Tuya` devices. This class is designed for production use.
 ///
-/// This ViewController can be used for all type of tuya devices.
-/// Before your own device control panel developed, you can use this ViewController to preview the device functions.
-/// After your own device control panel developed, you can still use this ViewController as an `else` option.
+/// This ViewController can be used for all types of `Powered by Tuya` devices.
+/// During the development of a control panel, you can call ViewController to preview the device functions.
+/// After the control panel is developed, you can still call ViewController as an `else` option.
 ///
-/// Usually we choose the specific device control panel by the following code:
+/// You can select a specific device control panel based on the following code:
 ///
 /// if ([deviceModel.productId isEqualToString:PID_A]) {
 ///     UIViewController *vc = [[MyViewControllerA alloc] initWithDeviceId:deviceModel.devId];
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nullable instancetype)initWithDeviceId:(NSString *)devId;
 
-/// debug mode. defaults to NO.
+/// The debugging mode. Default value: `NO`.
 @property (nonatomic, assign) BOOL debugMode;
 
 @end

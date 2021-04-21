@@ -11,48 +11,48 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-/// @brief TuyaSmartMessageSetting provides methods for device DND.
+/// @brief TuyaSmartMessageSetting provides methods to manage the Do Not Disturb (DND) mode for devices.
 ///
 @interface TuyaSmartMessageSetting : NSObject
 
-/// Set device Do Not Disturb status.
-/// @param flags switch status.
-/// @param success When successfully set device Do Not Disturb status, this block will be called.
-/// @param failure When error occurred, return TYFailureError.
+/// Sets the DND status for devices.
+/// @param flags The switching status.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error. TYFailureError is returned.
 - (void)setDeviceDNDSettingStatus:(BOOL)flags success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
-/// Get device Do Not Disturb status.
-/// @param success When successfully get device Do Not Disturb status, this block will be called.
-/// @param failure When error occurred, return TYFailureError.
+/// Returns the DND status for devices.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error. TYFailureError is returned.
 - (void)getDeviceDNDSettingstatusSuccess:(TYSuccessBOOL)success failure:(TYFailureError)failure;
 
-/// Get Do Not Disturb list.
-/// @param success When successfully get Do Not Disturb list, this block will be called.
-/// @param failure When error occurred, return TYFailureError.
+/// Returns a list of DND settings.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error. TYFailureError is returned.
 - (void)getDNDListSuccess:(TYSuccessList)success failure:(TYFailureError)failure;
 
-/// Get device list.
-/// @param success When successfully get device list, this block will be called.
-/// @param failure When error occurred, return TYFailureError.
+/// Returns a list of devices.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error. TYFailureError is returned.
 - (void)getDNDDeviceListSuccess:(TYSuccessList)success failure:(TYFailureError)failure;
 
-/// Add device Do Not Disturb time.
-/// @param requestModel DND request model.
-/// @param success When successfully add Do Not Disturb time, this block will be called.
-/// @param failure When error occurred, return TYFailureError.
+/// Adds DND time for devices.
+/// @param requestModel The model of a DND request.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error. TYFailureError is returned.
 - (void)addDNDWithDNDRequestModel:(TuyaSmartMessageSettingDNDRequestModel *)requestModel success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
-/// Modify device  Do Not Disturb time.
-/// @param timerID  time ID.
-/// @param requestModel DND request model.
-/// @param success When successfully modify device Do Not Disturb time, this block will be called.
-/// @param failure When error occurred, return TYFailureError.
+/// Modifies DND time for devices.
+/// @param timerID The ID of the timer.
+/// @param requestModel The model of a DND request.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error. TYFailureError is returned.
 - (void)modifyDNDWithTimerID:(long)timerID DNDRequestModel:(TuyaSmartMessageSettingDNDRequestModel *)requestModel success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
-/// Remove Do Not Disturb time.
-/// @param timerID time ID.
-/// @param success When successfully remove Do Not Disturb time, this block will be called.
-/// @param failure When error occurred, return TYFailureError.
+/// Removes DND time.
+/// @param timerID The ID of the timer.
+/// @param success Called when the task is finished.
+/// @param failure Called when the task is interrupted by an error. TYFailureError is returned.
 - (void)removeDNDWithTimerID:(long)timerID success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
 @end

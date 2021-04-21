@@ -2,7 +2,7 @@
 //  OpenSSLHelper.h
 //  nRFMeshProvision
 //
-//  Created by Mostafa Berg on 27/12/2017.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #if TARGET_OS_IOS

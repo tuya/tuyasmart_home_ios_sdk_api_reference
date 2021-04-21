@@ -12,45 +12,45 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol TuyaSmartRouterActivatorDelegate <NSObject>
 
-/// Callback for configuration network status update.
+/// The callback of pairing status updates.
 /// @param activator The activator instance.
-/// @param deviceModel The TuyaSmartDeviceModel.
-/// @param error The error message.
+/// @param deviceModel The value of TuyaSmartDeviceModel.
+/// @param error An error occurs while processing the request.
 - (void)routerActivator:(TuyaSmartRouterActivator *)activator didReceiveAutoConfigDevice:(TuyaSmartDeviceModel *)deviceModel error:(NSError *)error;
 
 @end
 
-/// @brief TuyaSmartRouterActivator is used for router configuration.
+/// @brief TuyaSmartRouterActivator is used to pair devices by using a router.
 ///
-/// This class provides router configuration capabilities.
+/// This class provides capabilities for router-based pairing.
 ///
 @interface TuyaSmartRouterActivator : NSObject
 
-/// Return the delegate of TuyaSmartRouterActivator.
+/// Returns the delegate of TuyaSmartRouterActivator.
 @property (nonatomic, weak) id<TuyaSmartRouterActivatorDelegate> delegate;
 
 
-/// Get the list of all gateway router devices which support router configuration under the current home.
-/// @param homeId Current home ID.
-/// @return The list of all home gateway router devices.
+/// Returns all gateway router devices that support router-based pairing for the current home.
+/// @param homeId The home ID.
+/// @return All home gateway router devices.
 - (NSArray <TuyaSmartDeviceModel *> *)autoActiveRouterDeviceListWithHomeId:(long long)homeId;
 
 
-/// Obtain configuration token (valid for 10 minutes).
-/// @param success Called when the task finishes successfully. TYSuccessString will be returned.
+/// Returns the pairing token. This token is valid for 10 minutes.
+/// @param success Called when the task is finished. TYSuccessString will be returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getTokenSuccess:(TYSuccessString)success
                 failure:(TYFailureError)failure;
 
 
-/// Start discovering devices.
+/// Starts to scan for devices.
 ///
-/// The 'devIds' should be obtained form TuyaSmartRouterActivator::autoActiveRouterDeviceListWithHomeId:
+/// The value of 'devIds' is generated in the call of TuyaSmartRouterActivator::autoActiveRouterDeviceListWithHomeId:.
 ///
-/// @param devIds Device ID list.
-/// @param type Type, 0 to start discover device.
-/// @param timeout Timeout, default 100 seconds
-/// @param success Called when the task finishes successfully.
+/// @param devIds A list of device IDs.
+/// @param type Specifies whether to start scanning. Set the value to `0` to start scanning.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)startDiscoverRouterWithDevIds:(NSArray<NSString *> *)devIds
                                  type:(NSInteger)type
@@ -63,11 +63,11 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// The 'devIds' should be obtained form TuyaSmartRouterActivator::autoActiveRouterDeviceListWithHomeId:
 ///
-/// @param devIds Device ID list.
-/// @param token Configuration token.
-/// @param type Type, 0 to start discover device.
-/// @param timeout Timeout, default 100 seconds
-/// @param success Called when the task finishes successfully.
+/// @param devIds A list of device IDs.
+/// @param token The pairing token.
+/// @param type Specifies whether to start scanning. Set the value to `0` to start scanning.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)startDiscoverRouterWithDevIds:(NSArray<NSString *> *)devIds
                                 token:(NSString *)token
@@ -77,14 +77,14 @@ NS_ASSUME_NONNULL_BEGIN
                               failure:(TYFailureError)failure;
 
 
-/// Stop discovering devices.
+/// Stops scanning for devices.
 - (void)stopDiscover;
 
 
-/// Binding devices to home.
-/// @param homeId HomeId.
-/// @param devIds Device ID list.
-/// @param success Called when the task finishes successfully.
+/// Adds devices to a specified home.
+/// @param homeId The home ID.
+/// @param devIds A list of device IDs.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)bindDeviceWithHomeId:(long long)homeId devIds:(NSArray <NSString *>*)devIds success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 

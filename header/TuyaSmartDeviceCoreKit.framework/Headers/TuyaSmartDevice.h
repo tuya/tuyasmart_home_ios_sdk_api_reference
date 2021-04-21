@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// The device online status.
 typedef enum : NSUInteger {
-    /// Connected to an LAN.
+    /// Connected to a LAN.
     TYDeviceOnlineModeLocal,
     /// Connected to the Internet.
     TYDeviceOnlineModeInternet,
@@ -71,7 +71,7 @@ typedef enum : NSUInteger {
 
 /// The delegate of changes in device firmware update status.
 /// @param device The device instance.
-/// @param upgradeStatusModel The device update status model.
+/// @param upgradeStatusModel The model of the device update status.
 - (void)device:(TuyaSmartDevice *)device firmwareUpgradeStatusModel:(TuyaSmartFirmwareUpgradeStatusModel *)upgradeStatusModel;
 
 /// The callback of Wi-Fi signal strength.
@@ -121,13 +121,13 @@ typedef enum : NSUInteger {
 
 @end
 
-/// @brief The basic operation class of TuyaSmartDevice contains the basic information model, including the device, DPs to send, update device information, and other common API operations.
+/// @brief The basic operation class of TuyaSmartDevice contains the model of basic information, including the device, DPs to send, update device information, and other common API operations.
 ///
 /// All types of devices can be controlled after you initialize an instance of this class if the function is supported.
 ///
 @interface TuyaSmartDevice : NSObject
 
-/// Returns the basic device information model.
+/// Returns the model of basic device information.
 @property (nonatomic, strong, readonly) TuyaSmartDeviceModel *deviceModel;
 
 @property (nonatomic, weak, nullable) id<TuyaSmartDeviceDelegate> delegate;

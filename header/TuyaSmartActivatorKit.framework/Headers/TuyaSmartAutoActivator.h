@@ -12,64 +12,64 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol TuyaSmartAutoActivatorDelegate <NSObject>
 
-/// Configure callbacks for status updates of the network.
-/// @param activator instance
-/// @param deviceModel Device model.
-/// @param error error
+/// Configures the callbacks of network status updates.
+/// @param activator The instance.
+/// @param deviceModel The device model.
+/// @param error An error occurs while processing the request.
 - (void)autoActivator:(TuyaSmartAutoActivator *)activator didReceiveAutoConfigDevice:(TuyaSmartDeviceModel *)deviceModel error:(NSError *)error;
 
 @end
 
-/// @brief TuyaSmartAutoActivator is used for password-free configuration.
+/// @brief TuyaSmartAutoActivator is used to configure the password-free pairing function.
 ///
-/// This class provides password-free configuration capabilities.
+/// This class provides capabilities for the password-free pairing function.
 ///
 @interface TuyaSmartAutoActivator : NSObject
 
-/// Return the delegate of TuyaSmartAutoActivator.
+/// Returns the delegate of TuyaSmartAutoActivator.
 @property (nonatomic, weak) id<TuyaSmartAutoActivatorDelegate> delegate;
 
-/// Returns the single of the class.
+/// Returns the singleton instance of the class.
 + (instancetype)sharedInstance;
 
-/// Get a list of all the devices under the current household that support password-free configuration.
-/// @param homeId HomeId
-/// @return The list of all devices in the home that supports the password-free configuration.
+/// Returns all devices for the current home that supports the password-free pairing function.
+/// @param homeId The home ID.
+/// @return All devices in the home that supports the password-free pairing function.
 - (NSArray <TuyaSmartDeviceModel *> *)autoActiveSupportedDeviceListWithHomeId:(long long)homeId;
 
-/// Get the list of all gateway router devices under the current family.
-/// @param homeId Current home ID.
-/// @return The list of all home gateway router devices.
-/// @deprecated This method is deprecated, Use TuyaSmartRouterActivator::autoActiveRouterDeviceListWithHomeId: instead.
+/// Returns all gateway router devices for the current home.
+/// @param homeId The home ID.
+/// @return All home gateway router devices.
+/// @deprecated This method is deprecated. Use TuyaSmartRouterActivator::autoActiveRouterDeviceListWithHomeId: instead.
 - (NSArray <TuyaSmartDeviceModel *> *)autoActiveRouterDeviceListWithHomeId:(long long)homeId __deprecated_msg("Use -[TuyaSmartRouterActivator autoActiveRouterDeviceListWithHomeId:] instead.");
 
-/// Start discovering devices.
+/// Starts to scan for devices.
 ///
-/// The 'devIds' should be obtained form TuyaSmartAutoActivator::autoActiveSupportedDeviceListWithHomeId:
+/// The value of 'devIds' is generated in the call of TuyaSmartAutoActivator::autoActiveSupportedDeviceListWithHomeId:.
 ///
-/// @param devIds Device Id list
-/// @param timeout Timeout, default 100 seconds.
-/// @param success Called when the task finishes successfully.
+/// @param devIds A list of device IDs.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)startDiscoverWithDevIds:(NSArray<NSString *> *)devIds
                         timeout:(NSTimeInterval)timeout
                         success:(TYSuccessHandler)success
                         failure:(TYFailureError)failure;
 
-/// Obtain configuration token (valid for 10 minutes).
-/// @param success Called when the task finishes successfully. TYSuccessString will be returned.
+/// Returns the pairing token. This token is valid for 10 minutes.
+/// @param success Called when the task is finished. TYSuccessString is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getTokenSuccess:(TYSuccessString)success
                 failure:(TYFailureError)failure;
 
-/// Start discovering devices.
+/// Starts to scan for devices.
 ///
-/// The 'devIds' should be obtained form TuyaSmartAutoActivator::autoActiveSupportedDeviceListWithHomeId:
+/// The value of 'devIds' is generated in the call of TuyaSmartAutoActivator::autoActiveSupportedDeviceListWithHomeId:
 ///
-/// @param devIds Device ID list.
-/// @param token Configuration token.
-/// @param timeout Timeout, default 100 seconds.
-/// @param success Called when the task finishes successfully.
+/// @param devIds A list of device IDs.
+/// @param token The pairing token.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)startDiscoverWithDevIds:(NSArray<NSString *> *)devIds
                           token:(NSString *)token
@@ -77,26 +77,26 @@ NS_ASSUME_NONNULL_BEGIN
                         success:(TYSuccessHandler)success
                         failure:(TYFailureError)failure;
 
-/// Start discovering gateway routers.
-/// @param devIds Device ID list.
-/// @param type Type,  0 to start discover device.
-/// @param timeout Timeout, default 100 seconds
-/// @param success Called when the task finishes successfully.
+/// Starts to scan for gateway routers.
+/// @param devIds A list of device IDs.
+/// @param type Specifies whether to start scanning. Set the value to `0` to start scanning.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
-/// @deprecated This method is deprecated, Use TuyaSmartRouterActivator::startDiscoverRouterWithDevIds:type:timeout:success:failure: instead.
+/// @deprecated This method is deprecated. Use TuyaSmartRouterActivator::startDiscoverRouterWithDevIds:type:timeout:success:failure: instead.
 - (void)startDiscoverRouterWithDevIds:(NSArray<NSString *> *)devIds
                                  type:(NSInteger)type
                               timeout:(NSTimeInterval)timeout
                               success:(TYSuccessHandler)success
                               failure:(TYFailureError)failure __deprecated_msg("Use -[TuyaSmartRouterActivator startDiscoverRouterWithDevIds:type:timeout:success:failure:] instead.");
 
-/// Stop discovery devices.
+/// Stops scanning devices.
 - (void)stopDiscover;
 
-/// Binding devices to a specified home.
-/// @param homeId HomeId
-/// @param devIds Device ID list.
-/// @param success Called when the task finishes successfully.
+/// Adds devices to a specified home.
+/// @param homeId The home ID.
+/// @param devIds A list of device IDs.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)bindDeviceWithHomeId:(long long)homeId devIds:(NSArray <NSString *>*)devIds success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 

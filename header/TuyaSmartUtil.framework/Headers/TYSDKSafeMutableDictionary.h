@@ -2,8 +2,7 @@
 //  TYSafeMutableDictionary.h
 //  TYLibraryExample
 //
-//  Created by 冯晓 on 16/8/23.
-//  Copyright © 2016年 Tuya. All rights reserved.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <Foundation/Foundation.h>

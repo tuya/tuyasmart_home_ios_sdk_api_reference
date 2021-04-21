@@ -2,7 +2,7 @@
 //  TuyaSmartSocketReadModel.h
 //  Bolts
 //
-//  Created by XuChengcheng on 2019/3/13.
+//  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
 #import <Foundation/Foundation.h>
@@ -15,7 +15,7 @@
 @property (nonatomic, assign) int               type; // The protocol.
 @property (nonatomic, assign) int               code; // The success code.
 @property (nonatomic, strong) NSDictionary      *body; // The message.
-@property (nonatomic, strong) NSString          *error; // The error reason.
+@property (nonatomic, strong) NSString          *error; // An error occurs while processing the request.
 @property (nonatomic, strong) NSData            *data;
 
 // Decrypts TCP data.

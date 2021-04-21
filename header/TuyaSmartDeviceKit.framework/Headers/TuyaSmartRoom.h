@@ -42,21 +42,21 @@
 ///
 /// @param roomName    The room name.
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)updateRoomName:(NSString *)roomName success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
 /// Edits the room icon.
 ///
 /// @param icon The room icon.
 /// @param success  Called when the task is finished.
-/// @param failure If an error occurs while adding the task, this block is called.
+/// @param failure Called when the task is interrupted by an error.
 - (void)updateIcon:(UIImage *)icon success:(nullable TYSuccessHandler)success failure:(nullable TYFailureError)failure;
 
 /// Adds a device to the room.
 ///
 /// @param deviceId    The device ID.
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)addDeviceWithDeviceId:(NSString *)deviceId success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
 
@@ -64,7 +64,7 @@
 ///
 /// @param deviceId    The device ID.
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)removeDeviceWithDeviceId:(NSString *)deviceId success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
 
@@ -72,7 +72,7 @@
 ///
 /// @param groupId     The group ID.
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)addGroupWithGroupId:(NSString *)groupId success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
 
@@ -80,15 +80,15 @@
 ///
 /// @param groupId     The group ID.
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)removeGroupWithGroupId:(NSString *)groupId success:(TYSuccessHandler)success failure:(TYFailureError)failure;
 
 
 /// Modifies the relationships between rooms, groups, and devices in a call.
 ///
-/// @param deviceGroupList  The list of devices or groups.
+/// @param deviceGroupList  A list of devices or groups.
 /// @param success          Called when the task is finished.
-/// @param failure          If an error occurs while adding the task, this block is called.
+/// @param failure          Called when the task is interrupted by an error.
 - (void)saveBatchRoomRelationWithDeviceGroupList:(NSArray <NSString *> *)deviceGroupList
                                          success:(TYSuccessHandler)success
                                          failure:(TYFailureError)failure;

@@ -28,7 +28,7 @@ typedef NS_ENUM(NSUInteger, TYBLEMeshCommandType) {
     /// Requests the authentication key.
     TYBLEMeshRequestAuthKeyCommand,
     
-    /// Switch command.====Sends the switch command.
+    /// Sends the switch command.
     TYBLEMeshTurnOnAndOffCommand,
     
     /// Returns the status of all devices in a mesh network.
@@ -43,7 +43,7 @@ typedef NS_ENUM(NSUInteger, TYBLEMeshCommandType) {
     /// Sets the light mode, such as the colored light and cool and warm white light.
     TYBLEMeshSetLightModelCommand,
     
-    /// Control sub row insertion.====Controls the sub power strip.
+    /// Controls the sub power strip.
     TYBLEMeshControlSubSwitchCommand,
     
     /// Sets the countdown.

@@ -43,7 +43,7 @@
 /// Returns a list of homes. To get home details, initialize a home and call getHomeDetailWithSuccess: failure:
 ///
 /// @param success Called when the task is finished. A list of TuyaSmartHomeModel is returned.
-/// @param failure If an error occurs while adding the task, this block is called.
+/// @param failure Called when the task is interrupted by an error.
 - (void)getHomeListWithSuccess:(void(^)(NSArray <TuyaSmartHomeModel *> *homes))success
                        failure:(TYFailureError)failure;
 
@@ -56,7 +56,7 @@
 /// @param latitude    The latitude.
 /// @param longitude   The longitude.
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)addHomeWithName:(NSString *)homeName
                 geoName:(NSString *)geoName
                   rooms:(NSArray <NSString *>*)rooms
@@ -68,9 +68,9 @@
 
 /// Sorts the homes.
 ///
-/// @param homeList    The list of homes.
+/// @param homeList    A list of homes.
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)sortHomeList:(NSArray <TuyaSmartHomeModel *> *)homeList
              success:(TYSuccessHandler)success
              failure:(TYFailureError)failure;
@@ -81,8 +81,8 @@
 ///
 /// @param homeId       The home ID.
 /// @param isAccept     Specifies whether to accept the invitation.
-/// @param success      The success block.
-/// @param failure      The failure block.
+/// @param success      Called when the task is finished.
+/// @param failure      Called when the task is interrupted by an error.
 /// @deprecated This method is deprecated. Use TuyaSmartHome::joinFamilyWithAccept:success:failure: instead.
 - (void)joinFamilyWithHomeId:(long long)homeId
                       action:(BOOL)isAccept

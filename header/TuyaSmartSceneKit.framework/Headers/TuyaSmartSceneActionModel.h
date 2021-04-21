@@ -4,34 +4,34 @@
 //
 //  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 
-/// push message action
+/// The push message action.
 static NSString * const ACTION_EXECUTOR_APP_PUSH = @"appPushTrigger";
-/// call action
+/// The call action.
 static NSString * const ACTION_EXECUTOR_APP_CALL = @"mobileVoiceSend";
-/// sms action
+/// The SMS action.
 static NSString * const ACTION_EXECUTOR_SMS_SEND = @"smsSend";
-/// device dp action
+/// The device DP action.
 static NSString * const ACTION_EXECUTOR_DP_ISSUE = @"dpIssue";
-/// device group dp action
+/// The device group DP action.
 static NSString * const ACTION_EXECUTOR_GROUP_DP_ISSUE = @"deviceGroupDpIssue";
-/// ir device dp action
+/// The infrared device DP action.
 static NSString * const ACTION_EXECUTOR_IR_ISSUE = @"irIssue";
-/// ir device dp action(2rd version)
+/// The infrared device DP action (Version 2).
 static NSString * const ACTION_EXECUTOR_IR_ISSUE_VII = @"irIssueVii";
-/// enable a automation
+/// Enables an automation scene.
 static NSString * const ACTION_EXECUTOR_RULE_ENABLE = @"ruleEnable";
-/// diable a automation
+/// Disables an automation scene.
 static NSString * const ACTION_EXECUTOR_RULE_DISABLE = @"ruleDisable";
-/// execute a scene
+/// Runs a scene.
 static NSString * const ACTION_EXECUTOR_RULE_TRIGGER = @"ruleTrigger";
-/// delay action
+/// Delays an action.
 static NSString * const ACTION_EXECUTOR_DELAY = @"delay";
-/// toggle action
+/// Runs a toggle action.
 static NSString * const ACTION_EXECUTOR_TOGGLE = @"toggle";
-/// step action
+/// Runs a step action.
 extern NSString * const ACTION_EXECUTOR_STEP;
 
-/// The five types of action status. Provides loading, success, offline, timeout and delay types.
+/// The type of action status. Valid values: loading, success, offline, timeout, and delay.
 typedef NS_ENUM(NSInteger, TYSceneActionStatus)
 {
     /// The loading action type.
@@ -47,25 +47,25 @@ typedef NS_ENUM(NSInteger, TYSceneActionStatus)
 };
 
 
-/// @brief Data model for Scene Base Action.
+/// @brief The data model of the scene-based action.
 @interface TuyaSmartSceneActionModel : NSObject<NSCoding>
 
-/// The action id.
+/// The action ID.
 @property (nonatomic, copy) NSString *actionId;
 
-/// The entity id. If action is a device, entityId is devId, and groupId for group action, @"delay" for a delay action, sceneId of operated scene for scene action.
+/// The entity ID. For a device action, this parameter is set to the value of `devId`. For a group action, it is set to the value of `groupId`. For a delay action, it is set to the value of @"delay". For a scene action, it is set to the value of `sceneId`.
 @property (nonatomic, copy) NSString *entityId;
 
-/// The entity name, like "lamp", "lamp group".
+/// The entity name, such as `lamp` or `lamp group`.
 @property (nonatomic, copy) NSString *entityName;
 
-/// The scene id, can be used to save the scene's Id which this action belonged to.
+/// The ID of the scene to which the specified action belongs.
 @property (nonatomic, copy) NSString *scenarioId;
 
-/// Describe what this action will do, like "Switch : Open".
+/// Describes the details of the specified action, such as `Switch : Open`.
 @property (nonatomic, copy) NSString *actionDisplay;
 
-/// Describe what this action will do with origin format like the below example, you can use it to create the description.
+/// Describes the details of the specified action. The following sample code shows the original format. You can use this sample code to create the description.
 /// {
 ///    1: [
 ///        "Switch",
@@ -75,46 +75,46 @@ typedef NS_ENUM(NSInteger, TYSceneActionStatus)
 @property (nonatomic, strong) NSDictionary *actionDisplayNew;
 
 
-/// The action type, can be the followed types:
-/// "dpIssue" :execute a device action.
-/// "deviceGroupDpIssue": execute a group action.
-/// "irIssue": execute an infrared device, like an air conditioner which is controlled by a remote control.
-/// "irIssueVii": execute an infrared device, like an air conditioner which is controlled by a remote control.ExecutorProperty is real infrared ray remotes control code.
-/// "ruleTrigger": execute a scene.
-/// "ruleEnable":  Enable an automation.
-/// "ruleDisable": Disable an automation.
-/// "delay": Delay for a while.
+/// The type of action. Valid values:
+/// "dpIssue": runs a device action.
+/// "deviceGroupDpIssue": runs a group action.
+/// "irIssue": runs an infrared device, such as an air conditioner that is controlled by a remote control.
+/// "irIssueVii": runs an infrared device, such as an air conditioner that is controlled by a remote control. ExecutorProperty specifies real-time infrared ray remote control.
+/// "ruleTrigger": runs a scene.
+/// "ruleEnable":  enables an automation scene.
+/// "ruleDisable": disables an automation scene.
+/// "delay": delays a scene for a specific period.
 @property (nonatomic, copy) NSString *actionExecutor;
 
 
-/// Execute property, like {"1":true, ...}, "1" is dpId, a data point's Id, value is the value you want this datapoint to set. Delay action should be like "executorProperty":{"seconds":"5","minutes":"0"}.
+/// The property that is used to run a scene. For example, {"1":true, ...} can be specified. In this example, "1" is the value of `dpId` that is a data point ID. You can set the value to the preferred data point. For a delay action, `executorProperty` is set in the format such as {"seconds":"5","minutes":"0"}.
 @property (nonatomic, strong) NSDictionary *executorProperty;
 
-/// Local property of scene , save gId and gwId.
+/// Tne local property of the scene, such as `gId` and `gwId`.
 @property (nonatomic, strong) NSDictionary *extraProperty;
 
-/// If this action is a device type action and this device has been removed from the current account, this flag is YES.
+/// If this action is a device action and this device has been removed from the current account, this flag is set to `YES`.
 @property (nonatomic, assign) BOOL devDelMark;
 
-/// If this action is a device type action, and this device has been removed from the current account, then provide this icon url to display the device icon.
+/// If this action is a device action and this device has been removed from the current account, this icon URL is used to display the device icon.
 @property (nonatomic, copy) NSString *deleteDevIcon;
 
-/// Execute action status, you can use this property to store the execute status when executing.
+/// The status of the current running action.
 @property (nonatomic, assign) TYSceneActionStatus status;
 
 #pragma mark - Panel info
 
-/// The panel id, this value will be assigned by cloud server when this action should be oprate by a React Native panel.
+/// The panel ID. When a React Native panel is used to run the specified action, the value is assigned by the cloud server.
 @property (nonatomic, copy) NSString *uiid;
 
 #pragma mark - Recommend info
 
-/// The recommend product id.
+/// The recommended product ID.
 @property (nonatomic, copy) NSString *productId;
 
-/// The recommend product icon.
+/// The recommended product icon.
 @property (nonatomic, copy) NSString *productPic;
 
-/// The recommend product local default icon.
+/// The URL of the default icon of the recommended product.
 @property (nonatomic, copy) NSString *defaultIconUrl;
 @end

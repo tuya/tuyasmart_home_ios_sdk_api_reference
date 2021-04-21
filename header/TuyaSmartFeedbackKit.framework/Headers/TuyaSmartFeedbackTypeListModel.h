@@ -8,10 +8,10 @@
 
 @interface TuyaSmartFeedbackTypeListModel : NSObject
 
-/// Feedback type, e.g. "faulty device", "more".
+/// The type of feedback type, such as "faulty device" and "more".
 @property (nonatomic, strong) NSString *type;
 
-/// List of items included in the feedback type.
+/// A list of items that are supported by the feedback type.
 @property (nonatomic, strong) NSArray<TuyaSmartFeedbackItemModel *> *list;
 
 @end

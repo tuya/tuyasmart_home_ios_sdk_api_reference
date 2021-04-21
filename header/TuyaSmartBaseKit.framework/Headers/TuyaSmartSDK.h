@@ -117,7 +117,7 @@ typedef NS_ENUM(NSInteger, TYEnv) {
 
 /// Sets the device token pushing and error information.
 /// @param token The device token.
-/// @param error The error information.
+/// @param error An error occurs while processing the request.
 - (void)setDeviceToken:(nullable NSData *)token withError:(nullable NSError *)error;
 
 

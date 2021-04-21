@@ -12,32 +12,32 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol TuyaSmartRouterActivatorDelegate <NSObject>
 
-/// Callback for configuration network status update.
+/// The callback of pairing status updates.
 /// @param activator The activator instance.
-/// @param deviceModel The TuyaSmartDeviceModel.
-/// @param error The error message.
+/// @param deviceModel The value of TuyaSmartDeviceModel.
+/// @param error An error occurs while processing the request.
 - (void)routerActivator:(TuyaSmartRouterActivator *)activator didReceiveAutoConfigDevice:(TuyaSmartDeviceModel *)deviceModel error:(NSError *)error;
 
 @end
 
 @interface TuyaSmartRouterActivator : NSObject
 
-/// Return the delegate of TuyaSmartRouterActivator.
+/// Returns the delegate of TuyaSmartRouterActivator.
 @property (nonatomic, weak) id<TuyaSmartRouterActivatorDelegate> delegate;
 
 
-/// Obtain configuration token (valid for 10 minutes).
-/// @param success Called when the task finishes successfully. TYSuccessString will be returned.
+/// Returns the pairing token. This token is valid for 10 minutes.
+/// @param success Called when the task is finished. TYSuccessString is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getTokenSuccess:(TYSuccessString)success
                 failure:(TYFailureError)failure;
 
 
-/// Start discovering devices.
-/// @param devIds Device ID list.
-/// @param type Type, 0 to start discover device.
-/// @param timeout Timeout, default 100 seconds
-/// @param success Called when the task finishes successfully.
+/// Starts to scan for devices.
+/// @param devIds A list of device IDs.
+/// @param type Specifies whether to start scanning. Set the value to `0` to start scanning.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)startDiscoverRouterWithDevIds:(NSArray<NSString *> *)devIds
                                  type:(NSInteger)type
@@ -46,12 +46,12 @@ NS_ASSUME_NONNULL_BEGIN
                               failure:(TYFailureError)failure;
 
 
-/// Start discovering devices.
-/// @param devIds Device ID list.
-/// @param token Configuration token.
-/// @param type Type, 0 to start discover device.
-/// @param timeout Timeout, default 100 seconds
-/// @param success Called when the task finishes successfully.
+/// Starts to scan for devices.
+/// @param devIds A list of device IDs.
+/// @param token The pairing token.
+/// @param type Specifies whether to start scanning. Set the value to `0` to start scanning.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)startDiscoverRouterWithDevIds:(NSArray<NSString *> *)devIds
                                 token:(NSString *)token
@@ -61,7 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
                               failure:(TYFailureError)failure;
 
 
-/// Stop discovering devices.
+/// Stops scanning for devices.
 - (void)stopDiscover;
 
 @end

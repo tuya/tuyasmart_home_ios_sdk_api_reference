@@ -12,43 +12,43 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol TuyaSmartAutoActivatorDelegate <NSObject>
 
-/// Configure callbacks for status updates of the network.
-/// @param activator instance
-/// @param deviceModel Device model.
-/// @param error error
+/// Configures the callbacks of network status updates.
+/// @param activator The instance.
+/// @param deviceModel The device model.
+/// @param error An error occurs while processing the request.
 - (void)autoActivator:(TuyaSmartAutoActivator *)activator didReceiveAutoConfigDevice:(TuyaSmartDeviceModel *)deviceModel error:(NSError *)error;
 
 @end
 
 @interface TuyaSmartAutoActivator : NSObject
 
-/// Return the delegate of TuyaSmartAutoActivator.
+/// Returns the delegate of TuyaSmartAutoActivator.
 @property (nonatomic, weak) id<TuyaSmartAutoActivatorDelegate> delegate;
 
-/// Returns the single of the class.
+/// Returns the singleton instance of the class.
 + (instancetype)sharedInstance;
 
-/// Start discovering devices.
-/// @param devIds Device Id list
-/// @param timeout Timeout, default 100 seconds.
-/// @param success Called when the task finishes successfully.
+/// Starts to scan for devices.
+/// @param devIds A list of device IDs.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)startDiscoverWithDevIds:(NSArray<NSString *> *)devIds
                         timeout:(NSTimeInterval)timeout
                         success:(TYSuccessHandler)success
                         failure:(TYFailureError)failure;
 
-/// Obtain configuration token (valid for 10 minutes).
-/// @param success Called when the task finishes successfully. TYSuccessString will be returned.
+/// Returns the pairing token. This token is valid for 10 minutes.
+/// @param success Called when the task is finished. TYSuccessString is returned.
 /// @param failure Called when the task is interrupted by an error.
 - (void)getTokenSuccess:(TYSuccessString)success
                 failure:(TYFailureError)failure;
 
-/// Start discovering devices.
-/// @param devIds Device ID list.
-/// @param token Configuration token.
-/// @param timeout Timeout, default 100 seconds.
-/// @param success Called when the task finishes successfully.
+/// Starts to scan for devices.
+/// @param devIds A list of device IDs.
+/// @param token The pairing token.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
 - (void)startDiscoverWithDevIds:(NSArray<NSString *> *)devIds
                           token:(NSString *)token
@@ -56,20 +56,20 @@ NS_ASSUME_NONNULL_BEGIN
                         success:(TYSuccessHandler)success
                         failure:(TYFailureError)failure;
 
-/// Start discovering gateway routers.
-/// @param devIds Device ID list.
-/// @param type Type,  0 to start discover device.
-/// @param timeout Timeout, default 100 seconds
-/// @param success Called when the task finishes successfully.
+/// Starts to scan for gateway routers.
+/// @param devIds A list of device IDs.
+/// @param type Specifies whether to start scanning. Set the value to `0` to start scanning.
+/// @param timeout The timeout value. Unit: seconds. Default value: 100.
+/// @param success Called when the task is finished.
 /// @param failure Called when the task is interrupted by an error.
-/// @deprecated This method is deprecated, Use TuyaSmartRouterActivator::startDiscoverRouterWithDevIds:type:timeout:success:failure: instead.
+/// @deprecated This method is deprecated. Use TuyaSmartRouterActivator::startDiscoverRouterWithDevIds:type:timeout:success:failure: instead.
 - (void)startDiscoverRouterWithDevIds:(NSArray<NSString *> *)devIds
                                  type:(NSInteger)type
                               timeout:(NSTimeInterval)timeout
                               success:(TYSuccessHandler)success
                               failure:(TYFailureError)failure __deprecated_msg("Use -[TuyaSmartRouterActivator startDiscoverRouterWithDevIds:type:timeout:success:failure:] instead.");
 
-/// Stop discovery devices.
+/// Stops scanning for devices.
 - (void)stopDiscover;
 
 @end

@@ -183,14 +183,14 @@
 
 /// After the home object is initialized, you must get the details of the home, homeModel, roomList, deviceList, and groupList to set the data.
 /// @param success Called when the task is finished. TuyaSmartHomeModel is returned.
-/// @param failure If an error occurs while adding the task, this block is called.
+/// @param failure Called when the task is interrupted by an error.
 - (void)getHomeDetailWithSuccess:(void (^)(TuyaSmartHomeModel *homeModel))success
                          failure:(TYFailureError)failure;
 
 /// After the home details are returned, the device OTA update status is changed.
 /// @param homeId The home ID.
 /// @param success Called when the task is finished.
-/// @param failure  If an error occurs while adding the task, this block is called.
+/// @param failure  Called when the task is interrupted by an error.
 - (void)getDeviceOTAStatusWithHomeId:(long long)homeId
                              success:(void (^)(NSArray<TuyaSmartDeviceOTAModel *> *))success
                              failure:(TYFailureError)failure;
@@ -203,7 +203,7 @@
 /// @param latitude    The latitude.
 /// @param longitude   The longitude.
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)updateHomeInfoWithName:(NSString *)homeName
                        geoName:(NSString *)geoName
                       latitude:(double)latitude
@@ -222,7 +222,7 @@
 /// @param rooms       The array of room names.
 /// @param overWriteRoom     NSDictionary only supports "overWriteRoom":boolean.
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)updateHomeInfoWithName:(NSString *)homeName
                        geoName:(NSString *)geoName
                       latitude:(double)latitude
@@ -236,7 +236,7 @@
 /// Removes a home.
 ///
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)dismissHomeWithSuccess:(TYSuccessHandler)success
                        failure:(TYFailureError)failure;
 
@@ -244,7 +244,7 @@
 /// Sorts devices and groups for the home.
 /// @param orderList The order list [@{@"bizId": @"XXX", @"bizType": @"XXX"},@{@"bizId": @"XXX",@"bizType": @"XXX"}], where bizId is the device's device ID or group's group ID, device's bizType = @"6" group's bizType = @"5".
 /// @param success Called when the task is finished.
-/// @param failure If an error occurs while adding the task, this block is called.
+/// @param failure Called when the task is interrupted by an error.
 - (void)sortDeviceOrGroupWithOrderList:(NSArray<NSDictionary *> *)orderList
                                success:(TYSuccessHandler)success
                                failure:(TYFailureError)failure;
@@ -257,7 +257,7 @@
 ///
 /// @param name        The room name.
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)addHomeRoomWithName:(NSString *)name
                     success:(TYSuccessHandler)success
                     failure:(TYFailureError)failure;
@@ -267,7 +267,7 @@
 ///
 /// @param roomId      The home ID.
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)removeHomeRoomWithRoomId:(long long)roomId
                          success:(TYSuccessHandler)success
                          failure:(TYFailureError)failure;
@@ -275,9 +275,9 @@
 
 /// Sorts the homes.
 ///
-/// @param roomList    The list of homes.
+/// @param roomList    A list of homes.
 /// @param success     Called when the task is finished.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)sortRoomList:(NSArray <TuyaSmartRoomModel *> *)roomList
              success:(TYSuccessHandler)success
              failure:(TYFailureError)failure;
@@ -288,7 +288,7 @@
 /// Returns a list of home members
 ///
 /// @param success     Called when the task is finished. A list of TuyaSmartHomeMemberModel is returned.
-/// @param failure     If an error occurs while adding the task, this block is called.
+/// @param failure     Called when the task is interrupted by an error.
 - (void)getHomeMemberListWithSuccess:(void(^)(NSArray <TuyaSmartHomeMemberModel *> *memberList))success
                              failure:(TYFailureError)failure;
 
@@ -297,7 +297,7 @@
 ///
 /// @param requestModel The member model.
 /// @param success      Called when the task is finished.
-/// @param failure      If an error occurs while adding the task, this block is called.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)addHomeMemberWithAddMemeberRequestModel:(TuyaSmartHomeAddMemberRequestModel *)requestModel
                                         success:(TYSuccessDict)success
                                         failure:(TYFailureError)failure;
@@ -306,7 +306,7 @@
 ///
 /// @param accept       A Boolean value that specifies whether to accept the invitation.
 /// @param success      Called when the task is finished.
-/// @param failure      If an error occurs while adding the task, this block is called.
+/// @param failure      Called when the task is interrupted by an error.
 - (void)joinFamilyWithAccept:(BOOL)accept
                      success:(TYSuccessBOOL)success
                      failure:(TYFailureError)failure;
@@ -315,7 +315,7 @@
 /// Synchronizes the home device list.
 ///
 /// @param success Called when the task is finished.
-/// @param failure If an error occurs while adding the task, this block is called.
+/// @param failure Called when the task is interrupted by an error.
 - (void)syncHomeDeviceListWithSuccess:(TYSuccessHandler)success
                               failure:(TYFailureError)failure;
 

@@ -5,7 +5,7 @@
 // Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 
 
-/// @brief Header files for TuyaSmartActivatorKit.
+/// @brief A list of header files for TuyaSmartActivatorKit.
 #ifndef TuyaSmartActivatorKit_h
 #define TuyaSmartActivatorKit_h
 

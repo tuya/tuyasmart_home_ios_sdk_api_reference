@@ -17,7 +17,7 @@
 
 /// Returns brief weather parameters for the home. This request also returns brief weather parameters for the city where the home is located, such as the city name, weather conditions for the day (such as sunny, cloudy, and rainy), and weather picture information.
 /// @param success Called when the task is finished. TuyaSmartWeatherSketchModel is returned.
-/// @param failure If an error occurs while adding the task, this block is called.
+/// @param failure Called when the task is interrupted by an error.
 - (void)getHomeWeatherSketchWithSuccess:(void(^)(TuyaSmartWeatherSketchModel *))success
                                 failure:(TYFailureError)failure;
 
@@ -30,7 +30,7 @@
 ///
 /// @param optionModel The configurations of weather parameter units.
 /// @param success Called when the task is finished. A list of TuyaSmartWeatherModel is returned.
-/// @param failure If an error occurs while adding the task, this block is called.
+/// @param failure Called when the task is interrupted by an error.
 - (void)getHomeWeatherDetailWithOption:(TuyaSmartWeatherOptionModel *)optionModel
                          success:(void(^)(NSArray<TuyaSmartWeatherModel *> *))success
                          failure:(TYFailureError)failure;

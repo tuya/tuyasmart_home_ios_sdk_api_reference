@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The result of disconnecting the device.
 ///
 /// @param devId        The device ID.
-/// @param error        The error for the disconnection.
+/// @param error        An error occurs while processing the request.
 - (void)onCentralDidDisconnectFromDevice:(NSString *)devId error:(NSError *)error;
 
 /// The result of scanning inactive devices.

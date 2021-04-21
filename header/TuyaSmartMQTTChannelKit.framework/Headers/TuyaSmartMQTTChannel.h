@@ -2,7 +2,6 @@
 //  TuyaSmartMQTTChannel.h
 //  TuyaSmart
 //
-//  Created by xucheng on 15/5/30.
 //  Copyright (c) 2014-2021 Tuya Inc. (https://developer.tuya.com)
 //
 
@@ -54,7 +53,7 @@ typedef NS_ENUM (NSInteger, TuyaSmartMqttConnectState){
 @optional
 
 /**
- *  The callback of changes in MQTT connection channel states.
+ *  The callback of changes in the MQTT connection channel states.
  */
 - (void)mqttChannel:(TuyaSmartMQTTChannel *)mqttChannel connectState:(TuyaSmartMqttConnectState)connectState error:(NSError *)error;
 

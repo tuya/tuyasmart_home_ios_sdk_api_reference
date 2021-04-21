@@ -11,9 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TuyaSmartPegasusActivator (Home)
 
-/// Devices supporting Pegasus.
+/// eturns the devices that support Pegasus.
 /// @param homeID The home ID.
-/// @return The list of devices that support Pegasus.
+/// @return A list of devices that support Pegasus.
 + (NSArray <TuyaSmartDeviceModel *> *)pegasusDeviceListWithHomeID:(long long)homeID;
 
 
