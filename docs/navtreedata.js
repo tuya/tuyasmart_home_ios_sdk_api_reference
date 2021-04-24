@@ -42,12 +42,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"interface_t_y_api_merge_model.html#a9726ea413ba998b654b678a07c7949a0",
-"interface_tuya_smart_device_model.html#a151c984260c283a42dbf0a43ea630b55",
-"interface_tuya_smart_home.html#a134b90fce0559030e622108fe124687f",
-"interface_tuya_smart_multi_control_device_model.html#a0a7149655547a8b6ad1cef4c650ac189",
-"interface_tuya_smart_scene_d_p_model.html#a6e484ce55d5625adde981b84e59da576",
-"interface_tuya_smart_user.html#ab50bc581edc0977e7cb1590a2c192255"
+"category_tuya_smart_request_07_encryption_08.html",
+"interface_t_y_b_l_e_mesh_command.html#ad35abcfae8df31988c267629fb60294f",
+"interface_tuya_smart_b_l_e_wifi_activator.html#a81e27c904dd7bb3a4983ff543f972549",
+"interface_tuya_smart_device_model.html#aeca3ec3749003c8de2fc54a1748ba664",
+"interface_tuya_smart_home_device_share.html#ae36bb6a3f8376ba1c65a3bbfc98345df",
+"interface_tuya_smart_multi_control_link_model.html",
+"interface_tuya_smart_scene_d_p_model.html#a258100015cae0a3ee09aa1e19a098f59",
+"interface_tuya_smart_user.html#a133d97e8e7391c0bf728fbf203124e9d",
+"protocol_tuya_smart_s_i_g_mesh_manager_delegate-p.html#a57043dd9f1edf6a713d55fe1a6e978cb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

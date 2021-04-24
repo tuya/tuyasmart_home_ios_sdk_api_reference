@@ -1,6 +1,6 @@
 var interface_tuya_smart_home_member_model =
 [
-    [ "__deprecated_msg", "interface_tuya_smart_home_member_model.html#a6db237e9a9e731fc072efa31db20b8e2", null ],
+    [ "__deprecated_msg", "interface_tuya_smart_home_member_model.html#a89c963fcd8bc59d9f0cdce6bade6a10f", null ],
     [ "dealStatus", "interface_tuya_smart_home_member_model.html#a072eca26acce33973920107cdcdef375", null ],
     [ "headPic", "interface_tuya_smart_home_member_model.html#a6bbc70080d65fab9e1f04545c16e0110", null ],
     [ "homeId", "interface_tuya_smart_home_member_model.html#aee2b775c0662efc59f8394750aa4e45d", null ],

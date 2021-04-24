@@ -7,6 +7,7 @@ var interface_tuya_smart_group_model =
     [ "dpName", "interface_tuya_smart_group_model.html#acd10d393bbf58d3600344e174a31990c", null ],
     [ "dps", "interface_tuya_smart_group_model.html#a8d75534a165851495e79066ba8abb155", null ],
     [ "groupId", "interface_tuya_smart_group_model.html#aa06ea844568b7fe54b87cad549bb1a07", null ],
+    [ "groupKey", "interface_tuya_smart_group_model.html#ac1fa218b3978dc796d5297b58065ba70", null ],
     [ "homeDisplayOrder", "interface_tuya_smart_group_model.html#ae7aa815f06d65d75ac2ccc9293c8b620", null ],
     [ "homeId", "interface_tuya_smart_group_model.html#a53a3f12e4924484eb4f005b6a0fd80d8", null ],
     [ "iconUrl", "interface_tuya_smart_group_model.html#a448c89943701a1b5a0842015c8bd9a11", null ],
