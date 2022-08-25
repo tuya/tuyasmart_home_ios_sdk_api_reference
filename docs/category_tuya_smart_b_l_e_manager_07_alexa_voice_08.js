@@ -1,0 +1,27 @@
+var category_tuya_smart_b_l_e_manager_07_alexa_voice_08 =
+[
+    [ "clearAuthorizationToken:success:failure:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a79ed39615a6c42879c290df0f8986631", null ],
+    [ "clearAuthorizationToken:success:failure:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a79ed39615a6c42879c290df0f8986631", null ],
+    [ "getAudioVoiceAuthorizationToken:deviceId:success:failure:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a42837cb0ebb2648667e0336f9b3d5816", null ],
+    [ "getAudioVoiceAuthorizationToken:deviceId:success:failure:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a42837cb0ebb2648667e0336f9b3d5816", null ],
+    [ "publishAudioEndpoint:dialogId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a68a08563202e4b4440a666e755a31bfa", null ],
+    [ "publishAudioEndpoint:dialogId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a68a08563202e4b4440a666e755a31bfa", null ],
+    [ "publishAudioMD5Token:token:deviceId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a68cd07e1a647c65f6378b6939adbeabd", null ],
+    [ "publishAudioMD5Token:token:deviceId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a68cd07e1a647c65f6378b6939adbeabd", null ],
+    [ "publishAudioProvideSpeech:dialogId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a9ae287457840beccfd965b734b5d2c50", null ],
+    [ "publishAudioProvideSpeech:dialogId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a9ae287457840beccfd965b734b5d2c50", null ],
+    [ "publishAudioResult:type:deviceId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#aad6be5abc3ee328a73f985b6d820011b", null ],
+    [ "publishAudioResult:type:deviceId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#aad6be5abc3ee328a73f985b6d820011b", null ],
+    [ "publishAudioSpeechState:deviceId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a8636e8fac8f5b0ed1ca26c1b1340db70", null ],
+    [ "publishAudioSpeechState:deviceId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a8636e8fac8f5b0ed1ca26c1b1340db70", null ],
+    [ "publishAudioStartSpeech:deviceId:dialogId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#aa94071fd111ed2cad3d4f784f2fb6ea3", null ],
+    [ "publishAudioStartSpeech:deviceId:dialogId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#aa94071fd111ed2cad3d4f784f2fb6ea3", null ],
+    [ "publishAudioStopSpeech:deviceId:dialogId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a642b69b4e3b5ff8ebdc8e2728d7f733a", null ],
+    [ "publishAudioStopSpeech:deviceId:dialogId:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a642b69b4e3b5ff8ebdc8e2728d7f733a", null ],
+    [ "sendAlexaSuccessWithDeviceId:andToken:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#aea9a91061efc887ddad3a8bdc5c14780", null ],
+    [ "sendAlexaSuccessWithDeviceId:andToken:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#aea9a91061efc887ddad3a8bdc5c14780", null ],
+    [ "setAlarmClockWithAlarmClockModel:deviceId:success:failure:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#acd18dbb79322914a1428900da811d8af", null ],
+    [ "setAlarmClockWithAlarmClockModel:deviceId:success:failure:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#acd18dbb79322914a1428900da811d8af", null ],
+    [ "setNotificationStatus:isPermanentVision:isPlayAudio:deviceId:success:failure:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a7f0b10b9bb946c76881dff2a484d77b0", null ],
+    [ "setNotificationStatus:isPermanentVision:isPlayAudio:deviceId:success:failure:", "category_tuya_smart_b_l_e_manager_07_alexa_voice_08.html#a7f0b10b9bb946c76881dff2a484d77b0", null ]
+];

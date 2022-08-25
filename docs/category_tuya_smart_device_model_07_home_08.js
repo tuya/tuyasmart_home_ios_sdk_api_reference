@@ -1,7 +1,9 @@
 var category_tuya_smart_device_model_07_home_08 =
 [
-    [ "displayOrder", "category_tuya_smart_device_model_07_home_08.html#af2e5f9266bfdb315c57383cb06da4562", null ],
-    [ "homeDisplayOrder", "category_tuya_smart_device_model_07_home_08.html#ab37b9ddfa22e1ea4c873f742ad53a8a8", null ],
-    [ "homeId", "category_tuya_smart_device_model_07_home_08.html#a5fe4e9d4fbf98c45cc5e186f27f3053f", null ],
-    [ "roomId", "category_tuya_smart_device_model_07_home_08.html#a2c1825f33b57bc687e3b484b6063cc8b", null ]
+    [ "updateLocalDeviceConfigWithDevId:success:failure:", "category_tuya_smart_device_model_07_home_08.html#a12d8e2f2fee85dc2e885faefef89f925", null ],
+    [ "updateLocalDeviceConfigWithDevId:success:failure:", "category_tuya_smart_device_model_07_home_08.html#a12d8e2f2fee85dc2e885faefef89f925", null ],
+    [ "updateLocalDeviceConfigWithDevId:success:failure:", "category_tuya_smart_device_model_07_home_08.html#a12d8e2f2fee85dc2e885faefef89f925", null ],
+    [ "updateLocalDeviceConfigWithDevId:success:failure:", "category_tuya_smart_device_model_07_home_08.html#a12d8e2f2fee85dc2e885faefef89f925", null ],
+    [ "isLocalDevice", "category_tuya_smart_device_model_07_home_08.html#a13a82a81d3027b6188bb572025107d3e", null ],
+    [ "ssidName", "category_tuya_smart_device_model_07_home_08.html#ac2ccb9d3d5f1b8578b5e35f0693eccbf", null ]
 ];

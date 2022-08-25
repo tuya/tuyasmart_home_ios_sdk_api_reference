@@ -1,9 +1,9 @@
 var interface_tuya_smart_function_schema_model =
 [
-    [ "relationDpIdMaps", "interface_tuya_smart_function_schema_model.html#a5ceb0705152111674f69d440f623226b", null ],
-    [ "standardCode", "interface_tuya_smart_function_schema_model.html#a00e4d3df9e6ee6a6d6e66df41733408a", null ],
-    [ "standardType", "interface_tuya_smart_function_schema_model.html#a8bc62f30d867a611c339671971259463", null ],
-    [ "strategyCode", "interface_tuya_smart_function_schema_model.html#a662db3af5fbe3107878efbe8a89bb76d", null ],
-    [ "strategyValue", "interface_tuya_smart_function_schema_model.html#aa0462be3f69323c7e05bda28f7cb12bd", null ],
-    [ "valueRange", "interface_tuya_smart_function_schema_model.html#a3870bf0003228871aed6a0c88595c176", null ]
+    [ "relationDpIdMaps", "interface_tuya_smart_function_schema_model.html#a31589c2cd5121f6ca280a05dbebb7e9e", null ],
+    [ "standardCode", "interface_tuya_smart_function_schema_model.html#a352aa1768718493031c0376e350d2850", null ],
+    [ "standardType", "interface_tuya_smart_function_schema_model.html#a07599bcede66f035eaaf6280f04471db", null ],
+    [ "strategyCode", "interface_tuya_smart_function_schema_model.html#acd314eda3e96f8e92107d8b5100e7f52", null ],
+    [ "strategyValue", "interface_tuya_smart_function_schema_model.html#acab7dfb842978f647a20ba3751a59cf8", null ],
+    [ "valueRange", "interface_tuya_smart_function_schema_model.html#a5c52dd6840663b1d3eb9e8fc603e3bbe", null ]
 ];

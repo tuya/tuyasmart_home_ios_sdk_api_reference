@@ -1,10 +1,11 @@
 var interface_tuya_smart_schema_model =
 [
-    [ "code", "interface_tuya_smart_schema_model.html#a941ab2c0383fa7f40d1fd22a3cd1707a", null ],
-    [ "dpId", "interface_tuya_smart_schema_model.html#afe4ffaeee7f3706480f2680198dca7b9", null ],
-    [ "iconname", "interface_tuya_smart_schema_model.html#a01bb35e4c6ba2c72aad72cdd0e4e71cf", null ],
-    [ "mode", "interface_tuya_smart_schema_model.html#a22a65417d15e88f281f272b60a911e27", null ],
-    [ "name", "interface_tuya_smart_schema_model.html#ade8a2f5c6b2fd696097205f865ae363f", null ],
-    [ "property", "interface_tuya_smart_schema_model.html#a7c3619d46a82fba915c8c8a66a5beeae", null ],
-    [ "type", "interface_tuya_smart_schema_model.html#a4a4dd3e040174101d89517b3493665ef", null ]
+    [ "code", "interface_tuya_smart_schema_model.html#a8813fd28a513879b142600d1112bb0dc", null ],
+    [ "dpId", "interface_tuya_smart_schema_model.html#a94f36b6dcb6e562bd6961c182973096c", null ],
+    [ "extContent", "interface_tuya_smart_schema_model.html#afbfa0c940ff8b08f6aa9e1373d6d5364", null ],
+    [ "iconname", "interface_tuya_smart_schema_model.html#a4b0dfca748d5a6068104d9d0779226c2", null ],
+    [ "mode", "interface_tuya_smart_schema_model.html#a02b369d00ad2f28f8fff4998cddbbfc0", null ],
+    [ "name", "interface_tuya_smart_schema_model.html#a82eb0595fe4d06ab47cfcdc4cf5b2ccb", null ],
+    [ "property", "interface_tuya_smart_schema_model.html#a4f6965fcfdf749d5376845d716b60821", null ],
+    [ "type", "interface_tuya_smart_schema_model.html#a64a374c4251708c1d1de944dd2c29452", null ]
 ];

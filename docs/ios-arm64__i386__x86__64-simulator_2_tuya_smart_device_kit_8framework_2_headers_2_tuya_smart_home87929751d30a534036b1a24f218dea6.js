@@ -1,0 +1,4 @@
+var ios_arm64__i386__x86__64_simulator_2_tuya_smart_device_kit_8framework_2_headers_2_tuya_smart_home87929751d30a534036b1a24f218dea6 =
+[
+    [ "TuyaSmartHomeMember(TYDeprecatedApi)", "category_tuya_smart_home_member_07_t_y_deprecated_api_08.html", "category_tuya_smart_home_member_07_t_y_deprecated_api_08" ]
+];

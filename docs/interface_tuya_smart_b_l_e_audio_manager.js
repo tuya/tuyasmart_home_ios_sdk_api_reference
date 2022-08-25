@@ -1,0 +1,26 @@
+var interface_tuya_smart_b_l_e_audio_manager =
+[
+    [ "clearAuthorizationToken:success:failure:", "interface_tuya_smart_b_l_e_audio_manager.html#ae65544da850a49c5411454347571fa20", null ],
+    [ "clearAuthorizationToken:success:failure:", "interface_tuya_smart_b_l_e_audio_manager.html#ae65544da850a49c5411454347571fa20", null ],
+    [ "getAudioVoiceAuthorizationToken:uuid:success:failure:", "interface_tuya_smart_b_l_e_audio_manager.html#a9891df85022833bb30ee842fdb963d68", null ],
+    [ "getAudioVoiceAuthorizationToken:uuid:success:failure:", "interface_tuya_smart_b_l_e_audio_manager.html#a9891df85022833bb30ee842fdb963d68", null ],
+    [ "publishAudioEndpoint:dialogId:", "interface_tuya_smart_b_l_e_audio_manager.html#ac7b0c81219279231f46142718781a9f7", null ],
+    [ "publishAudioEndpoint:dialogId:", "interface_tuya_smart_b_l_e_audio_manager.html#ac7b0c81219279231f46142718781a9f7", null ],
+    [ "publishAudioMD5Token:token:uuid:", "interface_tuya_smart_b_l_e_audio_manager.html#af068c1eb547411db31f4ff34bea0bc1a", null ],
+    [ "publishAudioMD5Token:token:uuid:", "interface_tuya_smart_b_l_e_audio_manager.html#af068c1eb547411db31f4ff34bea0bc1a", null ],
+    [ "publishAudioProvideSpeech:dialogId:", "interface_tuya_smart_b_l_e_audio_manager.html#ad3ee193cea5cf5e9bc053d5e84dc7080", null ],
+    [ "publishAudioProvideSpeech:dialogId:", "interface_tuya_smart_b_l_e_audio_manager.html#ad3ee193cea5cf5e9bc053d5e84dc7080", null ],
+    [ "publishAudioResult:type:uuid:", "interface_tuya_smart_b_l_e_audio_manager.html#abdc427a920aff809305926c0928ea4b9", null ],
+    [ "publishAudioResult:type:uuid:", "interface_tuya_smart_b_l_e_audio_manager.html#abdc427a920aff809305926c0928ea4b9", null ],
+    [ "publishAudioSpeechState:uuid:", "interface_tuya_smart_b_l_e_audio_manager.html#a7436498b20a0a4319c4b08a928563fef", null ],
+    [ "publishAudioSpeechState:uuid:", "interface_tuya_smart_b_l_e_audio_manager.html#a7436498b20a0a4319c4b08a928563fef", null ],
+    [ "publishAudioStartSpeech:uuid:dialogId:", "interface_tuya_smart_b_l_e_audio_manager.html#af96d67d4fcf153f3f09ad055537506e2", null ],
+    [ "publishAudioStartSpeech:uuid:dialogId:", "interface_tuya_smart_b_l_e_audio_manager.html#af96d67d4fcf153f3f09ad055537506e2", null ],
+    [ "publishAudioStopSpeech:uuid:dialogId:", "interface_tuya_smart_b_l_e_audio_manager.html#afe75e52df6590a507e7ab28856336b2d", null ],
+    [ "publishAudioStopSpeech:uuid:dialogId:", "interface_tuya_smart_b_l_e_audio_manager.html#afe75e52df6590a507e7ab28856336b2d", null ],
+    [ "setAlarmClockWithAlarmClockModel:uuid:success:failure:", "interface_tuya_smart_b_l_e_audio_manager.html#af038b29dc31c9aae5c7cfa8de3b0a410", null ],
+    [ "setAlarmClockWithAlarmClockModel:uuid:success:failure:", "interface_tuya_smart_b_l_e_audio_manager.html#af038b29dc31c9aae5c7cfa8de3b0a410", null ],
+    [ "setNotificationStatus:isPermanentVision:isPlayAudio:uuid:success:failure:", "interface_tuya_smart_b_l_e_audio_manager.html#a1062a0e26814fabd4f951ba848426dc8", null ],
+    [ "setNotificationStatus:isPermanentVision:isPlayAudio:uuid:success:failure:", "interface_tuya_smart_b_l_e_audio_manager.html#a1062a0e26814fabd4f951ba848426dc8", null ],
+    [ "delegate", "interface_tuya_smart_b_l_e_audio_manager.html#a668d4b4e6bee08f2720c84c8c3a31626", null ]
+];

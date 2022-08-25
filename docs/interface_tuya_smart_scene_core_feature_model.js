@@ -1,0 +1,26 @@
+var interface_tuya_smart_scene_core_feature_model =
+[
+    [ "getBrightnessDpModel", "interface_tuya_smart_scene_core_feature_model.html#a8f48db7ea1482d3643df118a46877b6c", null ],
+    [ "getBrightnessDpModel", "interface_tuya_smart_scene_core_feature_model.html#a8f48db7ea1482d3643df118a46877b6c", null ],
+    [ "getBrightnessDpModel", "interface_tuya_smart_scene_core_feature_model.html#a8f48db7ea1482d3643df118a46877b6c", null ],
+    [ "getBrightnessDpModel", "interface_tuya_smart_scene_core_feature_model.html#a8f48db7ea1482d3643df118a46877b6c", null ],
+    [ "isColorSelectType", "interface_tuya_smart_scene_core_feature_model.html#a0610e79c961e32b5f7c06e0c51ffce53", null ],
+    [ "isColorSelectType", "interface_tuya_smart_scene_core_feature_model.html#a0610e79c961e32b5f7c06e0c51ffce53", null ],
+    [ "isColorSelectType", "interface_tuya_smart_scene_core_feature_model.html#a0610e79c961e32b5f7c06e0c51ffce53", null ],
+    [ "isColorSelectType", "interface_tuya_smart_scene_core_feature_model.html#a0610e79c961e32b5f7c06e0c51ffce53", null ],
+    [ "setH:s:v:", "interface_tuya_smart_scene_core_feature_model.html#a34f07401549ec96646a92b14ac557b88", null ],
+    [ "setH:s:v:", "interface_tuya_smart_scene_core_feature_model.html#a34f07401549ec96646a92b14ac557b88", null ],
+    [ "setH:s:v:", "interface_tuya_smart_scene_core_feature_model.html#a34f07401549ec96646a92b14ac557b88", null ],
+    [ "setH:s:v:", "interface_tuya_smart_scene_core_feature_model.html#a34f07401549ec96646a92b14ac557b88", null ],
+    [ "brightModel", "interface_tuya_smart_scene_core_feature_model.html#aae23aa82c53c880bb54085385038fd55", null ],
+    [ "dataPoints", "interface_tuya_smart_scene_core_feature_model.html#aa00cd38e6b6c3376944161961b53f68e", null ],
+    [ "devId", "interface_tuya_smart_scene_core_feature_model.html#a8b5c3a9dec249848dd651afcaf0bd30a", null ],
+    [ "featureId", "interface_tuya_smart_scene_core_feature_model.html#aced4a1fedfecc1e190c1a301f48effae", null ],
+    [ "functionCode", "interface_tuya_smart_scene_core_feature_model.html#afe2c9b9b41bc59fddf6971dc8e94cd5a", null ],
+    [ "functionName", "interface_tuya_smart_scene_core_feature_model.html#ad0f71282df232fd4c31f45a68398aa5e", null ],
+    [ "functionType", "interface_tuya_smart_scene_core_feature_model.html#a77b423ea230cdff21cf8f842bfa87b35", null ],
+    [ "hsvColor", "interface_tuya_smart_scene_core_feature_model.html#ab3f5c4ac8eac4c5cdfec354b37277a5d", null ],
+    [ "lightColor", "interface_tuya_smart_scene_core_feature_model.html#a9c7c604682e4cf4a4eba08274db9452e", null ],
+    [ "productId", "interface_tuya_smart_scene_core_feature_model.html#a3d19816bb24d98da4371f518cd609d58", null ],
+    [ "rgbColor", "interface_tuya_smart_scene_core_feature_model.html#a811baa21ff4a64ed58c3600657223698", null ]
+];

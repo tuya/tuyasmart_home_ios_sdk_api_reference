@@ -1,0 +1,4 @@
+var ios_arm64__i386__x86__64_simulator_2_tuya_smart_m_q_t_t_channel_kit_8framework_2_headers_2_tuya_smart_m_q_t_t_channel_kit_8h =
+[
+    [ "TUYA_CURRENT_GW_PROTOCOL_VERSION", "ios-arm64__i386__x86__64-simulator_2_tuya_smart_m_q_t_t_channel_kit_8framework_2_headers_2_tuya_smart_m_q_t_t_channel_kit_8h.html#a09570de1fe07c2b4eaef64851f868de9", null ]
+];

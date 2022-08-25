@@ -1,0 +1,4 @@
+var _tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2ios_arm64__i386__x87af4dd57d067e1f8ae142b56e6bd00e8 =
+[
+    [ "TuyaSmartSceneConditionModel(CheckDevice)", "category_tuya_smart_scene_condition_model_07_check_device_08.html", "category_tuya_smart_scene_condition_model_07_check_device_08" ]
+];

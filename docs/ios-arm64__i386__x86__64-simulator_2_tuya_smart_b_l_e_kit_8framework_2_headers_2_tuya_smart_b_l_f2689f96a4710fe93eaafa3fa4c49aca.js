@@ -1,0 +1,4 @@
+var ios_arm64__i386__x86__64_simulator_2_tuya_smart_b_l_e_kit_8framework_2_headers_2_tuya_smart_b_l_f2689f96a4710fe93eaafa3fa4c49aca =
+[
+    [ "TuyaSmartBLEWifiActivator(PlugPlay)", "category_tuya_smart_b_l_e_wifi_activator_07_plug_play_08.html", "category_tuya_smart_b_l_e_wifi_activator_07_plug_play_08" ]
+];

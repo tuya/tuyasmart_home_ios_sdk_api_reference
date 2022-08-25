@@ -1,5 +1,5 @@
 var interface_tuya_smart_feedback_type_list_model =
 [
-    [ "list", "interface_tuya_smart_feedback_type_list_model.html#ae60fcf64d40218b43aad6b680a156848", null ],
-    [ "type", "interface_tuya_smart_feedback_type_list_model.html#a9062846c87aea54492fb94641c446bbe", null ]
+    [ "list", "interface_tuya_smart_feedback_type_list_model.html#afe1d5d5eb088c86e7fcf9a024dd60d5e", null ],
+    [ "type", "interface_tuya_smart_feedback_type_list_model.html#aa7d82477f790652c0c2bd80214be7a5a", null ]
 ];

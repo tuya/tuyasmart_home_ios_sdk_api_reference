@@ -1,0 +1,14 @@
+var _tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2ios_arm64__armv7_2_b056000b2d6b6e23a0820aec96bf09da =
+[
+    [ "TuyaSmartSceneActionFactory", "interface_tuya_smart_scene_action_factory.html", null ],
+    [ "AutoSwitchType", "_tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2ios-arm64__armv7_2_b056000b2d6b6e23a0820aec96bf09da.html#ac29702f9b742b60fa903fea462b5d2da", [
+      [ "kAutoSwitchTypeEnable", "_tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2ios-arm64__armv7_2_b056000b2d6b6e23a0820aec96bf09da.html#ac29702f9b742b60fa903fea462b5d2daacbde80e35b02814e9dba188dd469797d", null ],
+      [ "kAutoSwitchTypeDisable", "_tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2ios-arm64__armv7_2_b056000b2d6b6e23a0820aec96bf09da.html#ac29702f9b742b60fa903fea462b5d2daa6a2d36b52c325e4f41b4c393ecdfb0dc", null ],
+      [ "kAutoSwitchTypeEnable", "_tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2ios-arm64__i386__x8a598b9d2cbba8d410ecfc298f1f7cbbb.html#ac29702f9b742b60fa903fea462b5d2daacbde80e35b02814e9dba188dd469797d", null ],
+      [ "kAutoSwitchTypeDisable", "_tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2ios-arm64__i386__x8a598b9d2cbba8d410ecfc298f1f7cbbb.html#ac29702f9b742b60fa903fea462b5d2daa6a2d36b52c325e4f41b4c393ecdfb0dc", null ],
+      [ "kAutoSwitchTypeEnable", "_tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2watchos-arm64__32__16c66d68955ad118a56767b315a65fba.html#ac29702f9b742b60fa903fea462b5d2daacbde80e35b02814e9dba188dd469797d", null ],
+      [ "kAutoSwitchTypeDisable", "_tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2watchos-arm64__32__16c66d68955ad118a56767b315a65fba.html#ac29702f9b742b60fa903fea462b5d2daa6a2d36b52c325e4f41b4c393ecdfb0dc", null ],
+      [ "kAutoSwitchTypeEnable", "_tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2watchos-arm64__i3863ced1b6a24251a06196ebbb3ba49aa8f.html#ac29702f9b742b60fa903fea462b5d2daacbde80e35b02814e9dba188dd469797d", null ],
+      [ "kAutoSwitchTypeDisable", "_tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2watchos-arm64__i3863ced1b6a24251a06196ebbb3ba49aa8f.html#ac29702f9b742b60fa903fea462b5d2daa6a2d36b52c325e4f41b4c393ecdfb0dc", null ]
+    ] ]
+];

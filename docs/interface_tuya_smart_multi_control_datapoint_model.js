@@ -1,7 +1,7 @@
 var interface_tuya_smart_multi_control_datapoint_model =
 [
-    [ "code", "interface_tuya_smart_multi_control_datapoint_model.html#aec6a3e55594dc5a20d0385bb87a14299", null ],
-    [ "dpId", "interface_tuya_smart_multi_control_datapoint_model.html#aa209b7559543ab2238b7237cc1b162ec", null ],
-    [ "name", "interface_tuya_smart_multi_control_datapoint_model.html#ac4671ac2e36a0e62a120a88770675fda", null ],
-    [ "schemaId", "interface_tuya_smart_multi_control_datapoint_model.html#a0691526ac7c258b2d23187121c6e5c16", null ]
+    [ "code", "interface_tuya_smart_multi_control_datapoint_model.html#ad6eeb2cb78c509a0843ee04cb4f06221", null ],
+    [ "dpId", "interface_tuya_smart_multi_control_datapoint_model.html#a8af8773a2eb2879d1da7a94fc4beffa7", null ],
+    [ "name", "interface_tuya_smart_multi_control_datapoint_model.html#af658ad9236fe8bd773fb23c576345fe1", null ],
+    [ "schemaId", "interface_tuya_smart_multi_control_datapoint_model.html#a10f4cd7d21a189b973a713e4b40ee9de", null ]
 ];

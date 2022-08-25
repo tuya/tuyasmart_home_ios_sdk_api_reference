@@ -1,0 +1,6 @@
+var watchos_arm64__32__armv7k_2_tuya_smart_message_kit_8framework_2_headers_2_tuya_smart_message_kit_watch_o_s_umbrella_8h =
+[
+    [ "FOUNDATION_EXPORT", "watchos-arm64__32__armv7k_2_tuya_smart_message_kit_8framework_2_headers_2_tuya_smart_message_kit-watch_o_s-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "TuyaSmartMessageKitVersionNumber", "watchos-arm64__32__armv7k_2_tuya_smart_message_kit_8framework_2_headers_2_tuya_smart_message_kit-watch_o_s-umbrella_8h.html#ac49551074994ae5e261c6b7ad144f259", null ],
+    [ "TuyaSmartMessageKitVersionString", "watchos-arm64__32__armv7k_2_tuya_smart_message_kit_8framework_2_headers_2_tuya_smart_message_kit-watch_o_s-umbrella_8h.html#a86bdc0d2b796c0640971cc84ad992760", null ]
+];

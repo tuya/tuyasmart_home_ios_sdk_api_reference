@@ -1,11 +1,9 @@
 var interface_tuya_smart_mc_group_model =
 [
-    [ "enabled", "interface_tuya_smart_mc_group_model.html#a97c999abdc6a42ddff95687c52725498", null ],
-    [ "groupDetail", "interface_tuya_smart_mc_group_model.html#a73986ddc51a49510990c4486646a49bf", null ],
-    [ "groupName", "interface_tuya_smart_mc_group_model.html#abea22b20c29a3f1577a59f4cce8a867f", null ],
+    [ "groupDetail", "interface_tuya_smart_mc_group_model.html#a010f03420475a0d32c937aca0ce9e7f6", null ],
+    [ "groupName", "interface_tuya_smart_mc_group_model.html#abcdcde6cb4038be385eb0e8310b8258d", null ],
     [ "groupType", "interface_tuya_smart_mc_group_model.html#a55769475a9c072e77ee94f6c74ee264f", null ],
-    [ "multiControlId", "interface_tuya_smart_mc_group_model.html#aaca44bf0cec0394014d7eba95aa8ec70", null ],
-    [ "multiRuleId", "interface_tuya_smart_mc_group_model.html#a41f3fe4706fb96578e72a9fa5e8b6d77", null ],
-    [ "ownerId", "interface_tuya_smart_mc_group_model.html#a0cd7dcead647b3a56f31b11f563c5b62", null ],
-    [ "uid", "interface_tuya_smart_mc_group_model.html#a2f96890d341662a3c1440f04e9ef2f33", null ]
+    [ "multiControlId", "interface_tuya_smart_mc_group_model.html#ae5ef82891d8143817e5926eb99f70234", null ],
+    [ "ownerId", "interface_tuya_smart_mc_group_model.html#a35d552a05e5f460b9f80293b3f64c98e", null ],
+    [ "uid", "interface_tuya_smart_mc_group_model.html#a523fde834c2241a8d4f1769a8b8a2010", null ]
 ];

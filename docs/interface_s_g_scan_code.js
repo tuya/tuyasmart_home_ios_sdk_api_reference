@@ -1,0 +1,25 @@
+var interface_s_g_scan_code =
+[
+    [ "checkCameraDeviceRearAvailable", "interface_s_g_scan_code.html#ae68c6d655299b015de94d3c61e882f4b", null ],
+    [ "checkCameraDeviceRearAvailable", "interface_s_g_scan_code.html#ae68c6d655299b015de94d3c61e882f4b", null ],
+    [ "checkCameraDeviceRearAvailable", "interface_s_g_scan_code.html#ae68c6d655299b015de94d3c61e882f4b", null ],
+    [ "playSoundEffect:", "interface_s_g_scan_code.html#a5435b41361456832fdcf1e153c46d180", null ],
+    [ "playSoundEffect:", "interface_s_g_scan_code.html#a5435b41361456832fdcf1e153c46d180", null ],
+    [ "playSoundEffect:", "interface_s_g_scan_code.html#a5435b41361456832fdcf1e153c46d180", null ],
+    [ "readQRCode:completion:", "interface_s_g_scan_code.html#a1a86501a4502db7e3c3fab32e3495dc8", null ],
+    [ "readQRCode:completion:", "interface_s_g_scan_code.html#a1a86501a4502db7e3c3fab32e3495dc8", null ],
+    [ "readQRCode:completion:", "interface_s_g_scan_code.html#a1a86501a4502db7e3c3fab32e3495dc8", null ],
+    [ "setVideoZoomFactor:", "interface_s_g_scan_code.html#af44d75b047405d013b1ee6b922db78fa", null ],
+    [ "setVideoZoomFactor:", "interface_s_g_scan_code.html#af44d75b047405d013b1ee6b922db78fa", null ],
+    [ "setVideoZoomFactor:", "interface_s_g_scan_code.html#af44d75b047405d013b1ee6b922db78fa", null ],
+    [ "startRunning", "interface_s_g_scan_code.html#a3123a79a7ff3294d59f979720aae73f2", null ],
+    [ "startRunning", "interface_s_g_scan_code.html#a3123a79a7ff3294d59f979720aae73f2", null ],
+    [ "startRunning", "interface_s_g_scan_code.html#a3123a79a7ff3294d59f979720aae73f2", null ],
+    [ "stopRunning", "interface_s_g_scan_code.html#a52919f981ce6b8d707c1ea99d8cb8b79", null ],
+    [ "stopRunning", "interface_s_g_scan_code.html#a52919f981ce6b8d707c1ea99d8cb8b79", null ],
+    [ "stopRunning", "interface_s_g_scan_code.html#a52919f981ce6b8d707c1ea99d8cb8b79", null ],
+    [ "delegate", "interface_s_g_scan_code.html#a9debf09654c1e3a15ff3933534e01322", null ],
+    [ "preview", "interface_s_g_scan_code.html#a6081bc9de611a7e6a0308547088f4d2f", null ],
+    [ "rectOfInterest", "interface_s_g_scan_code.html#a268e37912fcddac193ac801f82869693", null ],
+    [ "sampleBufferDelegate", "interface_s_g_scan_code.html#a0bdeff0fa58e516439280c02c3c82b14", null ]
+];

@@ -1,0 +1,4 @@
+var ios_arm64__i386__x86__64_simulator_2_tuya_smart_b_l_e_core_kit_8framework_2_headers_2_t_y_b_l_e_be78a914a76659cdf5247dbe0e222a81 =
+[
+    [ "TYBLEAudioAuthorizationTokenModel", "interface_t_y_b_l_e_audio_authorization_token_model.html", "interface_t_y_b_l_e_audio_authorization_token_model" ]
+];

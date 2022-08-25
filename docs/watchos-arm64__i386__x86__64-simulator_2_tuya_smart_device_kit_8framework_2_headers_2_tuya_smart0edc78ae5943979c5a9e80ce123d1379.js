@@ -1,0 +1,4 @@
+var watchos_arm64__i386__x86__64_simulator_2_tuya_smart_device_kit_8framework_2_headers_2_tuya_smart0edc78ae5943979c5a9e80ce123d1379 =
+[
+    [ "TuyaSmartHomeDeviceShare(TYDeprecatedApi)", "category_tuya_smart_home_device_share_07_t_y_deprecated_api_08.html", "category_tuya_smart_home_device_share_07_t_y_deprecated_api_08" ]
+];

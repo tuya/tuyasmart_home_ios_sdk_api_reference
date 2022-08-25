@@ -1,7 +1,6 @@
 var interface_tuya_smart_receive_member_detail_model =
 [
-    [ "devices", "interface_tuya_smart_receive_member_detail_model.html#a991227ca3498186022f21f27490fc806", null ],
-    [ "mobile", "interface_tuya_smart_receive_member_detail_model.html#a5eda91271f1ccc8e0ec2785326f9fdda", null ],
-    [ "name", "interface_tuya_smart_receive_member_detail_model.html#a07800dc144ef20b422448efb24898550", null ],
-    [ "remarkName", "interface_tuya_smart_receive_member_detail_model.html#a758330afb2e9699e38bf59d2bf3c5e46", null ]
+    [ "mobile", "interface_tuya_smart_receive_member_detail_model.html#a8d64696a0130a86509f20554b31cdc18", null ],
+    [ "name", "interface_tuya_smart_receive_member_detail_model.html#ab3c0687d6d695b6f78a12d4c08f38afb", null ],
+    [ "remarkName", "interface_tuya_smart_receive_member_detail_model.html#aa5126b09a31e66ccdac2f23e1913434e", null ]
 ];

@@ -1,6 +1,6 @@
 var interface_tuya_smart_multi_control_dp_relation_model =
 [
-    [ "datapoints", "interface_tuya_smart_multi_control_dp_relation_model.html#afebb54beff1e7505e3ddfea75e4cee76", null ],
-    [ "mcGroups", "interface_tuya_smart_multi_control_dp_relation_model.html#aa306de1333a5df8487a33ad296ce2262", null ],
-    [ "parentRules", "interface_tuya_smart_multi_control_dp_relation_model.html#a0d0b18ddf690a7dfb1f7355613291229", null ]
+    [ "datapoints", "interface_tuya_smart_multi_control_dp_relation_model.html#a841cc84f6155e6ca32a8fa3e4961b8d2", null ],
+    [ "mcGroups", "interface_tuya_smart_multi_control_dp_relation_model.html#a04bd1cb8a6b0014b219332e85b8a90e1", null ],
+    [ "parentRules", "interface_tuya_smart_multi_control_dp_relation_model.html#a48eac9f9757ad02715fae89d569de3b9", null ]
 ];
