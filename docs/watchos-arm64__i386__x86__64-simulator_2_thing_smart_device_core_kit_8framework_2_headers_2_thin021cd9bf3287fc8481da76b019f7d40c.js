@@ -1,0 +1,5 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thin021cd9bf3287fc8481da76b019f7d40c =
+[
+    [ "NS_ENUM", "watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thin021cd9bf3287fc8481da76b019f7d40c.html#a20c76226398992e4c1fa407172965da6", null ],
+    [ "kThingDeviceCoreKitErrorDomain", "watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thin021cd9bf3287fc8481da76b019f7d40c.html#af8b787c5e4fd8d7ec588dfc666c6d08a", null ]
+];

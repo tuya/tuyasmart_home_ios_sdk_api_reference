@@ -1,0 +1,4 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_sm08c04d0df911f1fc43a89b1c31dfa002 =
+[
+    [ "ThingSmartMessage(ThingDeprecatedApi)", "category_thing_smart_message_07_thing_deprecated_api_08.html", "category_thing_smart_message_07_thing_deprecated_api_08" ]
+];

@@ -1,0 +1,4 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_device_kit_8framework_2_headers_2_thing_sma67587a950a662b2e5e3468c01f14fc3f =
+[
+    [ "ThingSmartHomeMember(ThingDeprecatedApi)", "category_thing_smart_home_member_07_thing_deprecated_api_08.html", "category_thing_smart_home_member_07_thing_deprecated_api_08" ]
+];

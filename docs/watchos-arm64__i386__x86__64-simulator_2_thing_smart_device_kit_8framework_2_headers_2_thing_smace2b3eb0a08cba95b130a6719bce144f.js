@@ -1,0 +1,4 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_device_kit_8framework_2_headers_2_thing_smace2b3eb0a08cba95b130a6719bce144f =
+[
+    [ "ThingSmartMultiControlDatapointModel", "interface_thing_smart_multi_control_datapoint_model.html", "interface_thing_smart_multi_control_datapoint_model" ]
+];

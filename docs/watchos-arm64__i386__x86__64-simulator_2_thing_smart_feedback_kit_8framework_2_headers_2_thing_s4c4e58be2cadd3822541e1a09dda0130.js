@@ -1,0 +1,4 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_feedback_kit_8framework_2_headers_2_thing_s4c4e58be2cadd3822541e1a09dda0130 =
+[
+    [ "ThingSmartFeedbackTypeListModel", "interface_thing_smart_feedback_type_list_model.html", "interface_thing_smart_feedback_type_list_model" ]
+];

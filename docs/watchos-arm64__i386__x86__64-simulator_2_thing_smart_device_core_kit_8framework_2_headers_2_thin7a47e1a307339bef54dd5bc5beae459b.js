@@ -1,0 +1,4 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thin7a47e1a307339bef54dd5bc5beae459b =
+[
+    [ "ThingSmartDeviceAdvancedAbility", "interface_thing_smart_device_advanced_ability.html", "interface_thing_smart_device_advanced_ability" ]
+];

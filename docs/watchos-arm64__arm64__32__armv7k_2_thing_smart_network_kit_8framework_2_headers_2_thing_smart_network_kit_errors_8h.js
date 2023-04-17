@@ -1,0 +1,5 @@
+var watchos_arm64__arm64__32__armv7k_2_thing_smart_network_kit_8framework_2_headers_2_thing_smart_network_kit_errors_8h =
+[
+    [ "NS_ENUM", "watchos-arm64__arm64__32__armv7k_2_thing_smart_network_kit_8framework_2_headers_2_thing_smart_network_kit_errors_8h.html#a3f0b9d5c9af56bd57a2f992acecd498c", null ],
+    [ "kThingNetworkKitErrorDomain", "watchos-arm64__arm64__32__armv7k_2_thing_smart_network_kit_8framework_2_headers_2_thing_smart_network_kit_errors_8h.html#a10d5d879c9cc2edab9cbc4b4ecb460a2", null ]
+];

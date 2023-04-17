@@ -1,0 +1,4 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_feedback_kit_8framework_2_headers_2_thing_s358c94d2637f6f7c37d6064f6f63f080 =
+[
+    [ "ThingSmartFeedbackTalkListModel", "interface_thing_smart_feedback_talk_list_model.html", "interface_thing_smart_feedback_talk_list_model" ]
+];

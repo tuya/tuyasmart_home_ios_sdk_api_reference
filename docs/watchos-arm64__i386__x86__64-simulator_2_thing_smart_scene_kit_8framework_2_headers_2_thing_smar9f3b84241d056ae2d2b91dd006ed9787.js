@@ -1,0 +1,6 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_scene_kit_8framework_2_headers_2_thing_smar9f3b84241d056ae2d2b91dd006ed9787 =
+[
+    [ "FOUNDATION_EXPORT", "watchos-arm64__i386__x86__64-simulator_2_thing_smart_scene_kit_8framework_2_headers_2_thing_smar9f3b84241d056ae2d2b91dd006ed9787.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "ThingSmartSceneKitVersionNumber", "watchos-arm64__i386__x86__64-simulator_2_thing_smart_scene_kit_8framework_2_headers_2_thing_smar9f3b84241d056ae2d2b91dd006ed9787.html#a0660b76912ba341bf219eb521afb8efb", null ],
+    [ "ThingSmartSceneKitVersionString", "watchos-arm64__i386__x86__64-simulator_2_thing_smart_scene_kit_8framework_2_headers_2_thing_smar9f3b84241d056ae2d2b91dd006ed9787.html#a318505a83ececa9c8a189196d6ce402d", null ]
+];

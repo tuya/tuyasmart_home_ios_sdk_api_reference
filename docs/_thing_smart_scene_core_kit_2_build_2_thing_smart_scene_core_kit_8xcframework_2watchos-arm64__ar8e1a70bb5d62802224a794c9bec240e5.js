@@ -1,0 +1,4 @@
+var _thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2watchos_arm64__ar8e1a70bb5d62802224a794c9bec240e5 =
+[
+    [ "ThingSmartScenePreConditionModel", "interface_thing_smart_scene_pre_condition_model.html", "interface_thing_smart_scene_pre_condition_model" ]
+];

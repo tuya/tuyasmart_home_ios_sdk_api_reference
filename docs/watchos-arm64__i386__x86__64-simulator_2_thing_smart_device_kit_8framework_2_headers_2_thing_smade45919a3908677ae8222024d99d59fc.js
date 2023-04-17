@@ -1,0 +1,4 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_device_kit_8framework_2_headers_2_thing_smade45919a3908677ae8222024d99d59fc =
+[
+    [ "ThingSmartMultiControlDeviceModel", "interface_thing_smart_multi_control_device_model.html", "interface_thing_smart_multi_control_device_model" ]
+];

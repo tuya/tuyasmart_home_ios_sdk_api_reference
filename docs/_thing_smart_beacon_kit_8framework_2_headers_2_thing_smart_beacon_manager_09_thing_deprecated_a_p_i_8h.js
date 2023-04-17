@@ -1,0 +1,4 @@
+var _thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_thing_deprecated_a_p_i_8h =
+[
+    [ "ThingSmartBeaconManager(ThingDeprecatedAPI)", "category_thing_smart_beacon_manager_07_thing_deprecated_a_p_i_08.html", "category_thing_smart_beacon_manager_07_thing_deprecated_a_p_i_08" ]
+];

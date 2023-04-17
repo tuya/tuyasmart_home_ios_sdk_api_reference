@@ -1,0 +1,6 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_timer_kit_8framework_2_headers_2_thing_smar5bdc0fbae7297a26553a2b764b577b27 =
+[
+    [ "FOUNDATION_EXPORT", "watchos-arm64__i386__x86__64-simulator_2_thing_smart_timer_kit_8framework_2_headers_2_thing_smar5bdc0fbae7297a26553a2b764b577b27.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "ThingSmartTimerKitVersionNumber", "watchos-arm64__i386__x86__64-simulator_2_thing_smart_timer_kit_8framework_2_headers_2_thing_smar5bdc0fbae7297a26553a2b764b577b27.html#a68588b2b43776f126d8c5de2055eb5cc", null ],
+    [ "ThingSmartTimerKitVersionString", "watchos-arm64__i386__x86__64-simulator_2_thing_smart_timer_kit_8framework_2_headers_2_thing_smar5bdc0fbae7297a26553a2b764b577b27.html#a6b53846e8d41c1d24236bdb3ab74050f", null ]
+];

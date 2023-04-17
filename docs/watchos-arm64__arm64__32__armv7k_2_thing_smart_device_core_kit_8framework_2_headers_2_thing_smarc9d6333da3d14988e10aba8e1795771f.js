@@ -1,0 +1,4 @@
+var watchos_arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smarc9d6333da3d14988e10aba8e1795771f =
+[
+    [ "ThingSmartFirmwareUpgradeStatusModel", "interface_thing_smart_firmware_upgrade_status_model.html", "interface_thing_smart_firmware_upgrade_status_model" ]
+];

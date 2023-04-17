@@ -1,0 +1,4 @@
+var _thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2watchos_arm64__ar0190c63f89bb3363bd3448ce4fec06b3 =
+[
+    [ "ThingSmartSceneConditionModel(CheckDevice)", "category_thing_smart_scene_condition_model_07_check_device_08.html", "category_thing_smart_scene_condition_model_07_check_device_08" ]
+];

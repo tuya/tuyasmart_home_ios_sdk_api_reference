@@ -1,0 +1,26 @@
+var interface_thing_smart_device_o_t_a_model =
+[
+    [ "blueConnectivitySupport", "interface_thing_smart_device_o_t_a_model.html#a9dc0f929983069c0199ff673c8d0ed63", null ],
+    [ "blueConnectivitySupport", "interface_thing_smart_device_o_t_a_model.html#a9dc0f929983069c0199ff673c8d0ed63", null ],
+    [ "blueConnectivitySupport", "interface_thing_smart_device_o_t_a_model.html#a9dc0f929983069c0199ff673c8d0ed63", null ],
+    [ "blueConnectivitySupport", "interface_thing_smart_device_o_t_a_model.html#a9dc0f929983069c0199ff673c8d0ed63", null ],
+    [ "bluetoothCapabilityOfIndex:", "interface_thing_smart_device_o_t_a_model.html#a5a70397201fdacf5c99c1cd41590a166", null ],
+    [ "bluetoothCapabilityOfIndex:", "interface_thing_smart_device_o_t_a_model.html#a5a70397201fdacf5c99c1cd41590a166", null ],
+    [ "bluetoothCapabilityOfIndex:", "interface_thing_smart_device_o_t_a_model.html#a5a70397201fdacf5c99c1cd41590a166", null ],
+    [ "bluetoothCapabilityOfIndex:", "interface_thing_smart_device_o_t_a_model.html#a5a70397201fdacf5c99c1cd41590a166", null ],
+    [ "deviceCapabilitySupport:", "interface_thing_smart_device_o_t_a_model.html#a393a51a449aa62b91acfea4e4bf2473a", null ],
+    [ "deviceCapabilitySupport:", "interface_thing_smart_device_o_t_a_model.html#a393a51a449aa62b91acfea4e4bf2473a", null ],
+    [ "deviceCapabilitySupport:", "interface_thing_smart_device_o_t_a_model.html#a393a51a449aa62b91acfea4e4bf2473a", null ],
+    [ "deviceCapabilitySupport:", "interface_thing_smart_device_o_t_a_model.html#a393a51a449aa62b91acfea4e4bf2473a", null ],
+    [ "isGatewaySubDevOTASupported:", "interface_thing_smart_device_o_t_a_model.html#acb7ddfc6232e0d4a1c0d80ba6e5d0ec3", null ],
+    [ "isGatewaySubDevOTASupported:", "interface_thing_smart_device_o_t_a_model.html#acb7ddfc6232e0d4a1c0d80ba6e5d0ec3", null ],
+    [ "isGatewaySubDevOTASupported:", "interface_thing_smart_device_o_t_a_model.html#acb7ddfc6232e0d4a1c0d80ba6e5d0ec3", null ],
+    [ "isGatewaySubDevOTASupported:", "interface_thing_smart_device_o_t_a_model.html#acb7ddfc6232e0d4a1c0d80ba6e5d0ec3", null ],
+    [ "beaconCategory", "interface_thing_smart_device_o_t_a_model.html#a8c48191085e06d583345810c0afdf127", null ],
+    [ "beaconKey", "interface_thing_smart_device_o_t_a_model.html#a64f24426963554f0f5a9952f9c23be0a", null ],
+    [ "bluetoothCapability", "interface_thing_smart_device_o_t_a_model.html#a740c4c4341ec34fefff2b8216bf2c8dd", null ],
+    [ "devId", "interface_thing_smart_device_o_t_a_model.html#a8c25cbe58b9bea548fc4372aa3db5544", null ],
+    [ "gwBTSubDevOtaCap", "interface_thing_smart_device_o_t_a_model.html#a4f7eff788500df75110f1fde590597ad", null ],
+    [ "otaUpgradeStatus", "interface_thing_smart_device_o_t_a_model.html#a880170cda05bc9151e7053b1a25860bf", null ],
+    [ "zigbeeInstallCode", "interface_thing_smart_device_o_t_a_model.html#ac5c35818c7fc3fde491d06ff73d5d0a4", null ]
+];
