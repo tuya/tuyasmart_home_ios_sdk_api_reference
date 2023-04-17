@@ -1,4 +1,0 @@
-var ios_arm64__i386__x86__64_simulator_2_tuya_smart_device_kit_8framework_2_headers_2_tuya_smart_hom610aff0d1fdf71449e42b0dfc2477681 =
-[
-    [ "TuyaSmartHomeDeviceShare(TYDeprecatedApi)", "category_tuya_smart_home_device_share_07_t_y_deprecated_api_08.html", "category_tuya_smart_home_device_share_07_t_y_deprecated_api_08" ]
-];

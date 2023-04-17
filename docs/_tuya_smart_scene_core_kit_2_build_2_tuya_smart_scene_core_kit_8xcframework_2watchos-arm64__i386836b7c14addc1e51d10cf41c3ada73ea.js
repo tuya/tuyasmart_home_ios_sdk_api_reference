@@ -1,4 +1,0 @@
-var _tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2watchos_arm64__i386836b7c14addc1e51d10cf41c3ada73ea =
-[
-    [ "TuyaSmartScenePreConditionModel", "interface_tuya_smart_scene_pre_condition_model.html", "interface_tuya_smart_scene_pre_condition_model" ]
-];

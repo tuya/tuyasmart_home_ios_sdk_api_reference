@@ -1,4 +1,0 @@
-var _tuya_smart_scene_core_kit_2_build_2_tuya_smart_scene_core_kit_8xcframework_2watchos_arm64__i3863767b9c79c4a21903684737bef3cb3fd =
-[
-    [ "TuyaSmartSceneConditionModel(CheckDevice)", "category_tuya_smart_scene_condition_model_07_check_device_08.html", "category_tuya_smart_scene_condition_model_07_check_device_08" ]
-];

@@ -1,4 +1,29 @@
 var files_dup =
 [
-    [ "Pods", "dir_540f99a10063b36dc878c13406b98882.html", "dir_540f99a10063b36dc878c13406b98882" ]
+    [ "ThingBluetooth", "dir_cb8a44019b943c28adbf57dbd4b11904.html", "dir_cb8a44019b943c28adbf57dbd4b11904" ],
+    [ "ThingMbedtls", "dir_ce6de818eb6e12717d4da8246ac91416.html", "dir_ce6de818eb6e12717d4da8246ac91416" ],
+    [ "ThingOpenSSLSDK", "dir_e4a952bf14e7cabecbfd7baaa5c3768f.html", "dir_e4a952bf14e7cabecbfd7baaa5c3768f" ],
+    [ "ThingSmartActivatorCoreKit", "dir_67f79291c074b9e0c94ea05d845d5d97.html", "dir_67f79291c074b9e0c94ea05d845d5d97" ],
+    [ "ThingSmartActivatorKit", "dir_9622b4ab5a6f6fa636dca413bed18ea4.html", "dir_9622b4ab5a6f6fa636dca413bed18ea4" ],
+    [ "ThingSmartBaseKit", "dir_aaec33fb4eee282ffef43a083153d0a8.html", "dir_aaec33fb4eee282ffef43a083153d0a8" ],
+    [ "ThingSmartBeaconKit", "dir_a0238a2f9d0fe84bf1d58ae52c6f9860.html", "dir_a0238a2f9d0fe84bf1d58ae52c6f9860" ],
+    [ "ThingSmartBLECoreKit", "dir_c3d99766213042c7a2e54d9ebbe7b500.html", "dir_c3d99766213042c7a2e54d9ebbe7b500" ],
+    [ "ThingSmartBLEKit", "dir_02ba816f69dc01c97b82660160592df5.html", "dir_02ba816f69dc01c97b82660160592df5" ],
+    [ "ThingSmartBLEMeshKit", "dir_e518295b5ca3393611bfa3c0ad829eec.html", "dir_e518295b5ca3393611bfa3c0ad829eec" ],
+    [ "ThingSmartDeviceCoreKit", "dir_36682888f72490ce887c53149e4216d7.html", "dir_36682888f72490ce887c53149e4216d7" ],
+    [ "ThingSmartDeviceKit", "dir_4127ad7f06073ef56840ea16648e60a2.html", "dir_4127ad7f06073ef56840ea16648e60a2" ],
+    [ "ThingSmartFeedbackKit", "dir_9d1f24b7d0211b3c2d35c41429c357f7.html", "dir_9d1f24b7d0211b3c2d35c41429c357f7" ],
+    [ "ThingSmartHomeKit", "dir_9698ef648ee7a5daae388a6f97b978b5.html", "dir_9698ef648ee7a5daae388a6f97b978b5" ],
+    [ "ThingSmartMessageKit", "dir_6dac26941419f3cd0974b5c9c77fd6c9.html", "dir_6dac26941419f3cd0974b5c9c77fd6c9" ],
+    [ "ThingSmartMQTTChannelKit", "dir_d29955f9f36e04fd6aa264a51b4e547a.html", "dir_d29955f9f36e04fd6aa264a51b4e547a" ],
+    [ "ThingSmartNetworkKit", "dir_068090273be04ba7bb4139f69ef772cf.html", "dir_068090273be04ba7bb4139f69ef772cf" ],
+    [ "ThingSmartPairingCoreKit", "dir_d6617368483affc5a2259e369b4fd4e7.html", "dir_d6617368483affc5a2259e369b4fd4e7" ],
+    [ "ThingSmartSceneCoreKit", "dir_c88d8e828e1e62d35165e77ddee4683e.html", "dir_c88d8e828e1e62d35165e77ddee4683e" ],
+    [ "ThingSmartSceneKit", "dir_47240ff36db71090c84501b74a04776a.html", "dir_47240ff36db71090c84501b74a04776a" ],
+    [ "ThingSmartShareKit", "dir_47ab6ce8ebddb82edae8a6da3d75636f.html", "dir_47ab6ce8ebddb82edae8a6da3d75636f" ],
+    [ "ThingSmartSocketChannelKit", "dir_92dd3b635e10c9cb833d84aad46d0f02.html", "dir_92dd3b635e10c9cb833d84aad46d0f02" ],
+    [ "ThingSmartTimerKit", "dir_f72a5da00bf9e62fd803fc900a68e809.html", "dir_f72a5da00bf9e62fd803fc900a68e809" ],
+    [ "ThingSmartUtil", "dir_73d30e6208994fa039410eabebf23ed2.html", "dir_73d30e6208994fa039410eabebf23ed2" ],
+    [ "Tools", "dir_7e461070e7b716e896e0d97cd6a82321.html", "dir_7e461070e7b716e896e0d97cd6a82321" ],
+    [ "TuyaAppSDKSample-iOS-ObjC", "dir_5a337cadb69b8bdd2f4dd0b29dd9aa41.html", "dir_5a337cadb69b8bdd2f4dd0b29dd9aa41" ]
 ];

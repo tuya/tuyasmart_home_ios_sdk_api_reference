@@ -1,4 +1,0 @@
-var watchos_arm64__i386__x86__64_simulator_2_tuya_smart_device_core_kit_8framework_2_headers_2_tuya_6e232d068d8ab89e0f5c55d75bd7fac8 =
-[
-    [ "TuyaSmartFirmwareUpgradeStatusModel", "interface_tuya_smart_firmware_upgrade_status_model.html", "interface_tuya_smart_firmware_upgrade_status_model" ]
-];

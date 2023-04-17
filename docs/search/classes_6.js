@@ -1,28 +1,8 @@
 var searchData=
 [
-  ['sggenerateqrcode_0',['SGGenerateQRCode',['../interface_s_g_generate_q_r_code.html',1,'']]],
-  ['sgpermission_1',['SGPermission',['../interface_s_g_permission.html',1,'']]],
-  ['sgpermission_28_29_2',['SGPermission()',['../category_s_g_permission_07_08.html',1,'']]],
-  ['sgpermissioncamera_3',['SGPermissionCamera',['../interface_s_g_permission_camera.html',1,'']]],
-  ['sgpermissionphoto_4',['SGPermissionPhoto',['../interface_s_g_permission_photo.html',1,'']]],
-  ['sgqrcodelog_5',['SGQRCodeLog',['../interface_s_g_q_r_code_log.html',1,'']]],
-  ['sgscancode_6',['SGScanCode',['../interface_s_g_scan_code.html',1,'']]],
-  ['sgscancode_28_29_7',['SGScanCode()',['../category_s_g_scan_code_07_08.html',1,'']]],
-  ['sgscancodedelegate_2dp_8',['SGScanCodeDelegate-p',['../protocol_s_g_scan_code_delegate-p.html',1,'']]],
-  ['sgscancodesamplebufferdelegate_2dp_9',['SGScanCodeSampleBufferDelegate-p',['../protocol_s_g_scan_code_sample_buffer_delegate-p.html',1,'']]],
-  ['sgscanview_10',['SGScanView',['../interface_s_g_scan_view.html',1,'']]],
-  ['sgscanview_28_29_11',['SGScanView()',['../category_s_g_scan_view_07_08.html',1,'']]],
-  ['sgscanviewconfigure_12',['SGScanViewConfigure',['../interface_s_g_scan_view_configure.html',1,'']]],
-  ['sgsoundeffect_13',['SGSoundEffect',['../interface_s_g_sound_effect.html',1,'']]],
-  ['sgsoundeffect_28_29_14',['SGSoundEffect()',['../category_s_g_sound_effect_07_08.html',1,'']]],
-  ['sgtorch_15',['SGTorch',['../interface_s_g_torch.html',1,'']]],
-  ['sgweakproxy_16',['SGWeakProxy',['../interface_s_g_weak_proxy.html',1,'']]],
-  ['sgweakproxy_28_29_17',['SGWeakProxy()',['../category_s_g_weak_proxy_07_08.html',1,'']]],
-  ['svindefiniteanimatedview_18',['SVIndefiniteAnimatedView',['../interface_s_v_indefinite_animated_view.html',1,'']]],
-  ['svindefiniteanimatedview_28_29_19',['SVIndefiniteAnimatedView()',['../category_s_v_indefinite_animated_view_07_08.html',1,'']]],
-  ['svprogressanimatedview_20',['SVProgressAnimatedView',['../interface_s_v_progress_animated_view.html',1,'']]],
-  ['svprogressanimatedview_28_29_21',['SVProgressAnimatedView()',['../category_s_v_progress_animated_view_07_08.html',1,'']]],
-  ['svprogresshud_22',['SVProgressHUD',['../interface_s_v_progress_h_u_d.html',1,'']]],
-  ['svprogresshud_28_29_23',['SVProgressHUD()',['../category_s_v_progress_h_u_d_07_08.html',1,'']]],
-  ['svradialgradientlayer_24',['SVRadialGradientLayer',['../interface_s_v_radial_gradient_layer.html',1,'']]]
+  ['home_0',['Home',['../interface_home.html',1,'']]],
+  ['homedetailtableviewcontroller_1',['HomeDetailTableViewController',['../interface_home_detail_table_view_controller.html',1,'']]],
+  ['homedetailtableviewcontroller_28_29_2',['HomeDetailTableViewController()',['../category_home_detail_table_view_controller_07_08.html',1,'']]],
+  ['homelisttableviewcontroller_3',['HomeListTableViewController',['../interface_home_list_table_view_controller.html',1,'']]],
+  ['homelisttableviewcontroller_28_29_4',['HomeListTableViewController()',['../category_home_list_table_view_controller_07_08.html',1,'']]]
 ];

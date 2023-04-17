@@ -1,4 +1,0 @@
-var watchos_arm64__i386__x86__64_simulator_2_tuya_smart_device_kit_8framework_2_headers_2_tuya_smartdcc3d2c5a2e5906343137a9f0a9bbfd3 =
-[
-    [ "TuyaSmartMultiControlDatapointModel", "interface_tuya_smart_multi_control_datapoint_model.html", "interface_tuya_smart_multi_control_datapoint_model" ]
-];
