@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartSceneLogData Class Reference</title>
+<title>Tuya iOS Home SDK: ThingSmartSceneLogData Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.0.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
    </div>
   </td>
  </tr>
@@ -106,9 +106,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a9df6d5a934b77b33cc9c63f84e6d8dec"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_scene_log_data.html#a9df6d5a934b77b33cc9c63f84e6d8dec">eventId</a></td></tr>
 <tr class="memdesc:a9df6d5a934b77b33cc9c63f84e6d8dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The log event id.  <a href="interface_thing_smart_scene_log_data.html#a9df6d5a934b77b33cc9c63f84e6d8dec">More...</a><br /></td></tr>
 <tr class="separator:a9df6d5a934b77b33cc9c63f84e6d8dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8186f46c1433ccc00c19e99bda1ddc4"><td class="memItemLeft" align="right" valign="top">NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_scene_log_data.html#ad8186f46c1433ccc00c19e99bda1ddc4">execResult</a></td></tr>
-<tr class="memdesc:ad8186f46c1433ccc00c19e99bda1ddc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The result of scene execution. 1 and 3 is success.  <a href="interface_thing_smart_scene_log_data.html#ad8186f46c1433ccc00c19e99bda1ddc4">More...</a><br /></td></tr>
-<tr class="separator:ad8186f46c1433ccc00c19e99bda1ddc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a8a39fba40829459f85255f979f47b"><td class="memItemLeft" align="right" valign="top">TSceneLogExecResultType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_scene_log_data.html#ab6a8a39fba40829459f85255f979f47b">execResult</a></td></tr>
+<tr class="memdesc:ab6a8a39fba40829459f85255f979f47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The result of scene execution. 1 and 3 is success.  <a href="interface_thing_smart_scene_log_data.html#ab6a8a39fba40829459f85255f979f47b">More...</a><br /></td></tr>
+<tr class="separator:ab6a8a39fba40829459f85255f979f47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6098d17c85b6eb13ca1d802e847b7ee"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_scene_log_data.html#ab6098d17c85b6eb13ca1d802e847b7ee">execResultMsg</a></td></tr>
 <tr class="memdesc:ab6098d17c85b6eb13ca1d802e847b7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The result message of scene execution.  <a href="interface_thing_smart_scene_log_data.html#ab6098d17c85b6eb13ca1d802e847b7ee">More...</a><br /></td></tr>
 <tr class="separator:ab6098d17c85b6eb13ca1d802e847b7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +130,9 @@ Properties</h2></td></tr>
 <tr class="memitem:abcedca5cef4175df2f18be4f805bffa6"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_scene_log_data.html#abcedca5cef4175df2f18be4f805bffa6">ruleName</a></td></tr>
 <tr class="memdesc:abcedca5cef4175df2f18be4f805bffa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rule name.  <a href="interface_thing_smart_scene_log_data.html#abcedca5cef4175df2f18be4f805bffa6">More...</a><br /></td></tr>
 <tr class="separator:abcedca5cef4175df2f18be4f805bffa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3a6207376ab3be944f2d70b4ee80e9"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_scene_log_data.html#abe3a6207376ab3be944f2d70b4ee80e9">runMode</a></td></tr>
+<tr class="memdesc:abe3a6207376ab3be944f2d70b4ee80e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rule run mode, <code>local</code> means local interaction, <code>cloud</code> means cloud interaction.  <a href="interface_thing_smart_scene_log_data.html#abe3a6207376ab3be944f2d70b4ee80e9">More...</a><br /></td></tr>
+<tr class="separator:abe3a6207376ab3be944f2d70b4ee80e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a396b1a336d5d5ef6bd0a6d4bd925997b"><td class="memItemLeft" align="right" valign="top">NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_scene_log_data.html#a396b1a336d5d5ef6bd0a6d4bd925997b">sceneType</a></td></tr>
 <tr class="memdesc:a396b1a336d5d5ef6bd0a6d4bd925997b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene type, 1 means tap-to-run scene, 2 means automation scene.  <a href="interface_thing_smart_scene_log_data.html#a396b1a336d5d5ef6bd0a6d4bd925997b">More...</a><br /></td></tr>
 <tr class="separator:a396b1a336d5d5ef6bd0a6d4bd925997b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +148,8 @@ Properties</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="interface_thing_smart_scene_log_data.html" title="ThingSmartSceneLogData provides more attributes for developers to create log data.">ThingSmartSceneLogData</a> provides more attributes for developers to create log data. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00042">42</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
 </div><h2 class="groupheader">Property Documentation</h2>
 <a id="a6125a0614fdc4e0a8f7a97b400b8184d" name="a6125a0614fdc4e0a8f7a97b400b8184d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6125a0614fdc4e0a8f7a97b400b8184d">&#9670;&nbsp;</a></span>detailTime</h2>
@@ -167,6 +172,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This data is not from service, you can set this property just for display. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00081">81</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
 
 </div>
 </div>
@@ -192,10 +199,12 @@ Properties</h2></td></tr>
 
 <p>The log event id. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00045">45</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
+
 </div>
 </div>
-<a id="ad8186f46c1433ccc00c19e99bda1ddc4" name="ad8186f46c1433ccc00c19e99bda1ddc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8186f46c1433ccc00c19e99bda1ddc4">&#9670;&nbsp;</a></span>execResult</h2>
+<a id="ab6a8a39fba40829459f85255f979f47b" name="ab6a8a39fba40829459f85255f979f47b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a8a39fba40829459f85255f979f47b">&#9670;&nbsp;</a></span>execResult</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +213,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (NSInteger) execResult</td>
+          <td class="memname">- (TSceneLogExecResultType) execResult</td>
         </tr>
       </table>
   </td>
@@ -215,6 +224,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The result of scene execution. 1 and 3 is success. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00048">48</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
 
 </div>
 </div>
@@ -240,6 +251,8 @@ Properties</h2></td></tr>
 
 <p>The result message of scene execution. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00051">51</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
+
 </div>
 </div>
 <a id="a13d02de2f349cbbf505920d0f0e7431b" name="a13d02de2f349cbbf505920d0f0e7431b"></a>
@@ -263,6 +276,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The time of scene execution. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00054">54</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
 
 </div>
 </div>
@@ -288,6 +303,8 @@ Properties</h2></td></tr>
 
 <p>The error information of scene execution. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00057">57</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
+
 </div>
 </div>
 <a id="a173f4b68b282d9e8eaa06d70c793ff4b" name="a173f4b68b282d9e8eaa06d70c793ff4b"></a>
@@ -311,6 +328,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The error code. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00060">60</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
 
 </div>
 </div>
@@ -336,6 +355,8 @@ Properties</h2></td></tr>
 
 <p>This data is not from service, you can set this property to assist sort the list into category use this property just for display. 0 first , 1 middle, 2 last, -1 needless(just one item) </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00084">84</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
+
 </div>
 </div>
 <a id="ab0b94a1041a231c3623c192632ad6e63" name="ab0b94a1041a231c3623c192632ad6e63"></a>
@@ -359,6 +380,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The owner id of scene log. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00063">63</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
 
 </div>
 </div>
@@ -384,6 +407,8 @@ Properties</h2></td></tr>
 
 <p>The rule id of the scene. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00066">66</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
+
 </div>
 </div>
 <a id="abcedca5cef4175df2f18be4f805bffa6" name="abcedca5cef4175df2f18be4f805bffa6"></a>
@@ -407,6 +432,34 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The rule name. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00069">69</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
+
+</div>
+</div>
+<a id="abe3a6207376ab3be944f2d70b4ee80e9" name="abe3a6207376ab3be944f2d70b4ee80e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3a6207376ab3be944f2d70b4ee80e9">&#9670;&nbsp;</a></span>runMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString *) runMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The rule run mode, <code>local</code> means local interaction, <code>cloud</code> means cloud interaction. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00072">72</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
 
 </div>
 </div>
@@ -432,6 +485,8 @@ Properties</h2></td></tr>
 
 <p>The scene type, 1 means tap-to-run scene, 2 means automation scene. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00075">75</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
+
 </div>
 </div>
 <a id="a2a562886047e802ebf2d6ef6a488c622" name="a2a562886047e802ebf2d6ef6a488c622"></a>
@@ -455,6 +510,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The user id. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00078">78</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html">ThingSmartSceneLogModel.h</a>.</p>
 
 </div>
 </div>

@@ -11,5 +11,9 @@ var category_thing_smart_scene_manager_07_home_08 =
     [ "getConditionDeviceListWithRoomId:", "category_thing_smart_scene_manager_07_home_08.html#acd7c43c9267fa21a1bbd1c6208dd3e51", null ],
     [ "getConditionDeviceListWithRoomId:", "category_thing_smart_scene_manager_07_home_08.html#acd7c43c9267fa21a1bbd1c6208dd3e51", null ],
     [ "getConditionDeviceListWithRoomId:", "category_thing_smart_scene_manager_07_home_08.html#acd7c43c9267fa21a1bbd1c6208dd3e51", null ],
-    [ "getConditionDeviceListWithRoomId:", "category_thing_smart_scene_manager_07_home_08.html#acd7c43c9267fa21a1bbd1c6208dd3e51", null ]
+    [ "getConditionDeviceListWithRoomId:", "category_thing_smart_scene_manager_07_home_08.html#acd7c43c9267fa21a1bbd1c6208dd3e51", null ],
+    [ "statusConditionDeviceListWithRoomId:", "category_thing_smart_scene_manager_07_home_08.html#a97ce75449667eb21386cf1e1542d7d91", null ],
+    [ "statusConditionDeviceListWithRoomId:", "category_thing_smart_scene_manager_07_home_08.html#a97ce75449667eb21386cf1e1542d7d91", null ],
+    [ "statusConditionDeviceListWithRoomId:", "category_thing_smart_scene_manager_07_home_08.html#a97ce75449667eb21386cf1e1542d7d91", null ],
+    [ "statusConditionDeviceListWithRoomId:", "category_thing_smart_scene_manager_07_home_08.html#a97ce75449667eb21386cf1e1542d7d91", null ]
 ];

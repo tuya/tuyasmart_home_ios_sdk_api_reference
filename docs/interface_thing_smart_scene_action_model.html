@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartSceneActionModel Class Reference</title>
+<title>Tuya iOS Home SDK: ThingSmartSceneActionModel Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.0.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
    </div>
   </td>
  </tr>
@@ -149,6 +149,9 @@ Properties</h2></td></tr>
 <tr class="memitem:aa37cdadfad820c64ec689a723a11685f"><td class="memItemLeft" align="right" valign="top">ThingSceneActionStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_scene_action_model.html#aa37cdadfad820c64ec689a723a11685f">status</a></td></tr>
 <tr class="memdesc:aa37cdadfad820c64ec689a723a11685f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute action status, you can use this property to store the execute status when executing.  <a href="interface_thing_smart_scene_action_model.html#aa37cdadfad820c64ec689a723a11685f">More...</a><br /></td></tr>
 <tr class="separator:aa37cdadfad820c64ec689a723a11685f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc71312017ace93cb31e3a284caae60d"><td class="memItemLeft" align="right" valign="top">NSDictionary *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_scene_action_model.html#adc71312017ace93cb31e3a284caae60d">relationGroup</a></td></tr>
+<tr class="memdesc:adc71312017ace93cb31e3a284caae60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Batch control device information.  <a href="interface_thing_smart_scene_action_model.html#adc71312017ace93cb31e3a284caae60d">More...</a><br /></td></tr>
+<tr class="separator:adc71312017ace93cb31e3a284caae60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bcc2e417b9f4e046d49cec23f5bc7e6"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_scene_action_model.html#a7bcc2e417b9f4e046d49cec23f5bc7e6">uiid</a></td></tr>
 <tr class="memdesc:a7bcc2e417b9f4e046d49cec23f5bc7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The panel id, this value will be assigned by cloud server when this action should be oprate by a React Native panel.  <a href="interface_thing_smart_scene_action_model.html#a7bcc2e417b9f4e046d49cec23f5bc7e6">More...</a><br /></td></tr>
 <tr class="separator:a7bcc2e417b9f4e046d49cec23f5bc7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +176,8 @@ Properties</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Data model for Scene Base Action. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00057">57</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="aab18e76853571998bc077b0d92d9a311" name="aab18e76853571998bc077b0d92d9a311"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab18e76853571998bc077b0d92d9a311">&#9670;&nbsp;</a></span>checkWhetherDeviceIsNormal <span class="overload">[1/4]</span></h2>
@@ -277,6 +282,8 @@ Properties</h2></td></tr>
 
 <p>Describe what this action will do, like "Switch : Open". </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00072">72</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
+
 </div>
 </div>
 <a id="a6cdc65de7c80111728d48a629659bf62" name="a6cdc65de7c80111728d48a629659bf62"></a>
@@ -300,6 +307,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 <p >Describe what this action will do with origin format like the below example, you can use it to create the description. { 1: [ "Switch", "Open" ] } </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00081">81</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
+
 </div>
 </div>
 <a id="a04d05959b21ec90f0f657ce8afbb9781" name="a04d05959b21ec90f0f657ce8afbb9781"></a>
@@ -322,6 +331,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >The action type, can be the followed types: "dpIssue" :execute a device action. "deviceGroupDpIssue": execute a group action. "irIssue": execute an infrared device, like an air conditioner which is controlled by a remote control. "irIssueVii": execute an infrared device, like an air conditioner which is controlled by a remote control.ExecutorProperty is real infrared ray remotes control code. "ruleTrigger": execute a scene. "ruleEnable": Enable an automation. "ruleDisable": Disable an automation. "delay": Delay for a while. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00093">93</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
 
 </div>
 </div>
@@ -347,6 +358,8 @@ Properties</h2></td></tr>
 
 <p>The action id. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00060">60</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
+
 </div>
 </div>
 <a id="a71bf91842553b0e732824fc12888f190" name="a71bf91842553b0e732824fc12888f190"></a>
@@ -370,6 +383,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The recommend product local default icon. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00138">138</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
 
 </div>
 </div>
@@ -395,6 +410,8 @@ Properties</h2></td></tr>
 
 <p>If this action is a device type action, and this device has been removed from the current account, then provide this icon url to display the device icon. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00106">106</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
+
 </div>
 </div>
 <a id="a11a38b7425d46bc460fbd0dedba6553b" name="a11a38b7425d46bc460fbd0dedba6553b"></a>
@@ -418,6 +435,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>If this action is a device type action and this device has been removed from the current account, this flag is YES. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00103">103</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
 
 </div>
 </div>
@@ -443,6 +462,8 @@ Properties</h2></td></tr>
 
 <p>The entity id. If action is a device, entityId is devId, and groupId for group action, "delay" for a delay action, sceneId of operated scene for scene action. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00063">63</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
+
 </div>
 </div>
 <a id="a572d608f52fa846c38ea9abca78f089b" name="a572d608f52fa846c38ea9abca78f089b"></a>
@@ -466,6 +487,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The entity name, like "lamp", "lamp group". </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00066">66</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
 
 </div>
 </div>
@@ -491,6 +514,8 @@ Properties</h2></td></tr>
 
 <p>Execute property, like {"1":true, ...}, "1" is dpId, a data point's Id, value is the value you want this datapoint to set. Delay action should be like "executorProperty":{"seconds":"5","minutes":"0"}. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00097">97</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
+
 </div>
 </div>
 <a id="a8082db0350ce153b0cb4a6dba5074105" name="a8082db0350ce153b0cb4a6dba5074105"></a>
@@ -514,6 +539,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Local property of scene , save gId and gwId. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00100">100</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
 
 </div>
 </div>
@@ -539,6 +566,8 @@ Properties</h2></td></tr>
 
 <p>The panel info, this value will be assigned by cloud server when this action should be oprate by a React Native panel. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00123">123</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
+
 </div>
 </div>
 <a id="a6ba7f386302d7bf50ee05476ae17349b" name="a6ba7f386302d7bf50ee05476ae17349b"></a>
@@ -562,6 +591,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The panel relate device's pid, this value will be assigned by cloud server when this action should be oprate by a React Native panel. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00126">126</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
 
 </div>
 </div>
@@ -587,6 +618,8 @@ Properties</h2></td></tr>
 
 <p>The recommend product id. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00132">132</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
+
 </div>
 </div>
 <a id="a7b3bcabbdbbd3d9c52b7f92f6c3cad58" name="a7b3bcabbdbbd3d9c52b7f92f6c3cad58"></a>
@@ -610,6 +643,34 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The recommend product icon. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00135">135</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
+
+</div>
+</div>
+<a id="adc71312017ace93cb31e3a284caae60d" name="adc71312017ace93cb31e3a284caae60d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc71312017ace93cb31e3a284caae60d">&#9670;&nbsp;</a></span>relationGroup</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSDictionary *) relationGroup</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Batch control device information. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00112">112</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
 
 </div>
 </div>
@@ -635,6 +696,8 @@ Properties</h2></td></tr>
 
 <p>The scene id, can be used to save the scene's Id which this action belonged to. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00069">69</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
+
 </div>
 </div>
 <a id="aa37cdadfad820c64ec689a723a11685f" name="aa37cdadfad820c64ec689a723a11685f"></a>
@@ -658,6 +721,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Execute action status, you can use this property to store the execute status when executing. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00109">109</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
 
 </div>
 </div>
@@ -683,6 +748,8 @@ Properties</h2></td></tr>
 
 <p>The panel id, this value will be assigned by cloud server when this action should be oprate by a React Native panel. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00117">117</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
+
 </div>
 </div>
 <a id="acd109556857a281ec974cea38ba5262b" name="acd109556857a281ec974cea38ba5262b"></a>
@@ -706,6 +773,8 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The panel info, this value will be assigned by cloud server when this action should be oprate by a React Native panel. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html#l00120">120</a> of file <a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thingd577e7dafe2da203a2c88a34f69c4a6e_source.html">ThingSmartSceneActionModel.h</a>.</p>
 
 </div>
 </div>

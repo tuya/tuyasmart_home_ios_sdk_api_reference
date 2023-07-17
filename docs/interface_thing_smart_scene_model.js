@@ -1,5 +1,9 @@
 var interface_thing_smart_scene_model =
 [
+    [ "isManual", "interface_thing_smart_scene_model.html#a542274ad6a778d9b951aa50d730ac380", null ],
+    [ "isManual", "interface_thing_smart_scene_model.html#a542274ad6a778d9b951aa50d730ac380", null ],
+    [ "isManual", "interface_thing_smart_scene_model.html#a542274ad6a778d9b951aa50d730ac380", null ],
+    [ "isManual", "interface_thing_smart_scene_model.html#a542274ad6a778d9b951aa50d730ac380", null ],
     [ "__deprecated", "interface_thing_smart_scene_model.html#ac3fa5d1319f5738fdeeb214108e827a5", null ],
     [ "__deprecated", "interface_thing_smart_scene_model.html#aaf885db30e3746a1f1523aaa74522e92", null ],
     [ "__deprecated", "interface_thing_smart_scene_model.html#a9bd90a832ff11a697c37cc6b381c5262", null ],
@@ -9,6 +13,7 @@ var interface_thing_smart_scene_model =
     [ "boundForPanel", "interface_thing_smart_scene_model.html#adf15221b71f86f974d590e5e87bd3071", null ],
     [ "boundForWiFiPanel", "interface_thing_smart_scene_model.html#acf1921a51b70eef3f08f756f4447367e", null ],
     [ "cached", "interface_thing_smart_scene_model.html#a03c0d2c4905f8ff00dcda1cc9f1ccb21", null ],
+    [ "categorys", "interface_thing_smart_scene_model.html#a875f43a7e86271651bdf0163a97065a6", null ],
     [ "code", "interface_thing_smart_scene_model.html#ad610494bdac4d019eba75d7fa98b5335", null ],
     [ "collectionType", "interface_thing_smart_scene_model.html#aa59da762549c8f03c6d89f209ae9abf0", null ],
     [ "conditions", "interface_thing_smart_scene_model.html#a56981a866d2b5d92f3980a57b48e676c", null ],
@@ -17,6 +22,7 @@ var interface_thing_smart_scene_model =
     [ "disableTime", "interface_thing_smart_scene_model.html#a841f49259648725e31010247ce0e0166", null ],
     [ "displayColor", "interface_thing_smart_scene_model.html#a86a1a842421a8bf24f59fbc9265d14fb", null ],
     [ "enabled", "interface_thing_smart_scene_model.html#a6799800684cafc38b0bc602135cb8008", null ],
+    [ "gwId", "interface_thing_smart_scene_model.html#a7dda52e9a9dfbb9a80c20a24570e9062", null ],
     [ "hotCount", "interface_thing_smart_scene_model.html#a96a8ff6331d948536b51523c6089c7b9", null ],
     [ "linkageType", "interface_thing_smart_scene_model.html#a851760592c7ee8f627d9def34564b840", null ],
     [ "localLinkage", "interface_thing_smart_scene_model.html#a97f264830901e907756cd53951eaee12", null ],
@@ -33,5 +39,7 @@ var interface_thing_smart_scene_model =
     [ "roomIds", "interface_thing_smart_scene_model.html#ab21efcf05c989c08e8af96dc99b6cf67", null ],
     [ "ruleGenre", "interface_thing_smart_scene_model.html#a38264a65f94b31e49e83eb38d0344007", null ],
     [ "sceneId", "interface_thing_smart_scene_model.html#a2a7bf37cb9a2d93f2c126320528ada38", null ],
-    [ "stickyOnTop", "interface_thing_smart_scene_model.html#a46ab4ff080b34e044f2171b0c3acac77", null ]
+    [ "statusConditions", "interface_thing_smart_scene_model.html#a3bb4ca76011d7ea9a1b2c83028e84994", null ],
+    [ "stickyOnTop", "interface_thing_smart_scene_model.html#a46ab4ff080b34e044f2171b0c3acac77", null ],
+    [ "subMatchType", "interface_thing_smart_scene_model.html#a9be38b1a0ab0f6df52b834c3a89b17d8", null ]
 ];

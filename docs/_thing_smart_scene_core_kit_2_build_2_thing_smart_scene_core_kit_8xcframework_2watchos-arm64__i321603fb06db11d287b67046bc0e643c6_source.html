@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartSceneCoreKit/Build/ThingSmartSceneCoreKit.xcframework/watchos-arm64_i386_x86_64-simulator/ThingSmartSceneCoreKit.framework/Headers/ThingSmartSceneLogModel.h Source File</title>
+<title>Tuya iOS Home SDK: ThingSmartSceneCoreKit/Build/ThingSmartSceneCoreKit.xcframework/watchos-arm64_i386_x86_64-simulator/ThingSmartSceneCoreKit.framework/Headers/ThingSmartSceneLogModel.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.0.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
    </div>
   </td>
  </tr>
@@ -106,47 +106,62 @@ $(document).ready(function(){initNavTree('_thing_smart_scene_core_kit_2_build_2_
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_smart_scene_log_data.html">ThingSmartSceneLogData</a> : NSObject</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">@property</span> (nonatomic, strong) NSString *eventId;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">@property</span> (nonatomic, assign) NSInteger execResult;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">@property</span> (nonatomic, strong) NSString *execResultMsg;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2watchos-arm64__i321603fb06db11d287b67046bc0e643c6.html#a1e878b2e201e631705e69c1183d36852">   25</a></span><span class="keyword">typedef</span> <a class="code hl_function" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335.html#a1e878b2e201e631705e69c1183d36852">NS_ENUM</a>(NSInteger, TSceneLogExecResultType) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    TSceneLogExecType_Fail = 0,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    TSceneLogExecType_Success = 1,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    TSceneLogExecType_Part_Success = 2,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    TSceneLogExecType_Doing = 3</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">@property</span> (nonatomic, strong) NSString *execTime;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">@property</span> (nonatomic, strong) NSString *failureCause;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">@property</span> (nonatomic, assign) NSInteger failureCode;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">@property</span> (nonatomic, strong) NSString *ownerId;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">@property</span> (nonatomic, strong) NSString *ruleId;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">@property</span> (nonatomic, strong) NSString *ruleName;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">@property</span> (nonatomic, assign) NSInteger sceneType;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">@property</span> (nonatomic, strong) NSString *uid;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">@property</span> (nonatomic, strong) NSString *detailTime;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">@property</span> (nonatomic, assign) NSInteger indexType;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">extern</span> NSString * <span class="keyword">const</span> <a class="code hl_variable" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335.html#acbe36993dbf82e927935f1d11ed1d777">TSceneLogExecRunModelLocal</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">extern</span> NSString * <span class="keyword">const</span> <a class="code hl_variable" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335.html#ace98fd7ac6bda66af14782adea919254">TSceneLogExecRunModelCloud</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_smart_scene_log_data.html">ThingSmartSceneLogData</a> : NSObject</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">@property</span> (nonatomic, strong) NSString *eventId;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">@property</span> (nonatomic, assign) TSceneLogExecResultType execResult;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">@property</span> (nonatomic, strong) NSString *execResultMsg;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">@property</span> (nonatomic, strong) NSString *execTime;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">@property</span> (nonatomic, strong) NSString *failureCause;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">@property</span> (nonatomic, assign) NSInteger failureCode;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">@property</span> (nonatomic, strong) NSString *ownerId;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">@property</span> (nonatomic, strong) NSString *ruleId;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>NS_ASSUME_NONNULL_END</div>
-<div class="ttc" id="ainterface_thing_smart_scene_log_data_html"><div class="ttname"><a href="interface_thing_smart_scene_log_data.html">ThingSmartSceneLogData</a></div><div class="ttdoc">ThingSmartSceneLogData provides more attributes for developers to create log data.</div><div class="ttdef"><b>Definition:</b> ThingSmartSceneLogModel.h:26</div></div>
-<div class="ttc" id="ainterface_thing_smart_scene_log_model_html"><div class="ttname"><a href="interface_thing_smart_scene_log_model.html">ThingSmartSceneLogModel</a></div><div class="ttdoc">ThingSmartSceneLogModel provides more attributes for developers to create log list model for scene.</div><div class="ttdef"><b>Definition:</b> ThingSmartSceneLogModel.h:15</div></div>
-<div class="ttc" id="ainterface_thing_smart_scene_log_model_html_a0a4ebbfb545e2ed92d98faf0c94a96a9"><div class="ttname"><a href="interface_thing_smart_scene_log_model.html#a0a4ebbfb545e2ed92d98faf0c94a96a9">ThingSmartSceneLogModel::totalCount</a></div><div class="ttdeci">NSInteger totalCount</div><div class="ttdoc">The number of scene logs.</div><div class="ttdef"><b>Definition:</b> ThingSmartSceneLogModel.h:20</div></div>
-<div class="ttc" id="ainterface_thing_smart_scene_log_model_html_ad18bfba7f697352a5a2e2a4f0d9c51fd"><div class="ttname"><a href="interface_thing_smart_scene_log_model.html#ad18bfba7f697352a5a2e2a4f0d9c51fd">ThingSmartSceneLogModel::datas</a></div><div class="ttdeci">NSArray&lt; ThingSmartSceneLogData * &gt; * datas</div><div class="ttdoc">The scene log data list.</div><div class="ttdef"><b>Definition:</b> ThingSmartSceneLogModel.h:17</div></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">@property</span> (nonatomic, strong) NSString *ruleName;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">@property</span> (nonatomic, strong) NSString *runMode;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">@property</span> (nonatomic, assign) NSInteger sceneType;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">@property</span> (nonatomic, strong) NSString *uid;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">@property</span> (nonatomic, strong) NSString *detailTime;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">@property</span> (nonatomic, assign) NSInteger indexType;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="a_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_html_a1e878b2e201e631705e69c1183d36852"><div class="ttname"><a href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335.html#a1e878b2e201e631705e69c1183d36852">NS_ENUM</a></div><div class="ttdeci">typedef NS_ENUM(NSInteger, TSceneLogExecResultType)</div><div class="ttdoc">The log execute result type.</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00025">ThingSmartSceneLogModel.h:25</a></div></div>
+<div class="ttc" id="a_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_html_acbe36993dbf82e927935f1d11ed1d777"><div class="ttname"><a href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335.html#acbe36993dbf82e927935f1d11ed1d777">TSceneLogExecRunModelLocal</a></div><div class="ttdeci">NSString *const TSceneLogExecRunModelLocal</div><div class="ttdoc">The scene log run model is local. Description the scene is executed in the gateway device.</div></div>
+<div class="ttc" id="a_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_html_ace98fd7ac6bda66af14782adea919254"><div class="ttname"><a href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335.html#ace98fd7ac6bda66af14782adea919254">TSceneLogExecRunModelCloud</a></div><div class="ttdeci">NSString *const TSceneLogExecRunModelCloud</div><div class="ttdoc">The scene log run model is cloud. Description the scene is executed in the cloud.</div></div>
+<div class="ttc" id="ainterface_thing_smart_scene_log_data_html"><div class="ttname"><a href="interface_thing_smart_scene_log_data.html">ThingSmartSceneLogData</a></div><div class="ttdoc">ThingSmartSceneLogData provides more attributes for developers to create log data.</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00042">ThingSmartSceneLogModel.h:43</a></div></div>
+<div class="ttc" id="ainterface_thing_smart_scene_log_model_html"><div class="ttname"><a href="interface_thing_smart_scene_log_model.html">ThingSmartSceneLogModel</a></div><div class="ttdoc">ThingSmartSceneLogModel provides more attributes for developers to create log list model for scene.</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00014">ThingSmartSceneLogModel.h:15</a></div></div>
+<div class="ttc" id="ainterface_thing_smart_scene_log_model_html_a0a4ebbfb545e2ed92d98faf0c94a96a9"><div class="ttname"><a href="interface_thing_smart_scene_log_model.html#a0a4ebbfb545e2ed92d98faf0c94a96a9">ThingSmartSceneLogModel::totalCount</a></div><div class="ttdeci">NSInteger totalCount</div><div class="ttdoc">The number of scene logs.</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00020">ThingSmartSceneLogModel.h:20</a></div></div>
+<div class="ttc" id="ainterface_thing_smart_scene_log_model_html_ad18bfba7f697352a5a2e2a4f0d9c51fd"><div class="ttname"><a href="interface_thing_smart_scene_log_model.html#ad18bfba7f697352a5a2e2a4f0d9c51fd">ThingSmartSceneLogModel::datas</a></div><div class="ttdeci">NSArray&lt; ThingSmartSceneLogData * &gt; * datas</div><div class="ttdoc">The scene log data list.</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335_source.html#l00017">ThingSmartSceneLogModel.h:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c88d8e828e1e62d35165e77ddee4683e.html">ThingSmartSceneCoreKit</a></li><li class="navelem"><a class="el" href="dir_7cceefc93c5825e05e000ebcf52a0812.html">Build</a></li><li class="navelem"><a class="el" href="dir_f69f01990671c8a52ba9dde92c5bb546.html">ThingSmartSceneCoreKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_7f61e270091042447a0bcd7cab15941f.html">watchos-arm64_i386_x86_64-simulator</a></li><li class="navelem"><a class="el" href="dir_7ebeb80cd3d8b9a01656013eeaada2f6.html">ThingSmartSceneCoreKit.framework</a></li><li class="navelem"><a class="el" href="dir_973e37d326d2742883ab78a10f64f586.html">Headers</a></li><li class="navelem"><a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2watchos-arm64__i321603fb06db11d287b67046bc0e643c6.html">ThingSmartSceneLogModel.h</a></li>
+    <li class="navelem"><a class="el" href="dir_055a670b7d053482ded45e34f9c67b9a.html">ThingSmartSceneCoreKit</a></li><li class="navelem"><a class="el" href="dir_97442d1ea2b12efffcb1a3df50865fe3.html">Build</a></li><li class="navelem"><a class="el" href="dir_4a572b44119b2beb6c59d8fe89fa0fe2.html">ThingSmartSceneCoreKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_5edfbdc0af19ccd87410059c1146dc29.html">watchos-arm64_i386_x86_64-simulator</a></li><li class="navelem"><a class="el" href="dir_1583b5ee69c5ac390e3402a09045bd1c.html">ThingSmartSceneCoreKit.framework</a></li><li class="navelem"><a class="el" href="dir_eb74588a6a30061be01144c64ee65254.html">Headers</a></li><li class="navelem"><a class="el" href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2watchos-arm64__i321603fb06db11d287b67046bc0e643c6.html">ThingSmartSceneLogModel.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

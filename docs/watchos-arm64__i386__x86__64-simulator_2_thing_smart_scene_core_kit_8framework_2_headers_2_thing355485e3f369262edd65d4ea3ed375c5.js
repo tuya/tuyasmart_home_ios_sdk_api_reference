@@ -1,0 +1,4 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_thing355485e3f369262edd65d4ea3ed375c5 =
+[
+    [ "ThingSmartSceneConditionCategoryListModel", "interface_thing_smart_scene_condition_category_list_model.html", "interface_thing_smart_scene_condition_category_list_model" ]
+];

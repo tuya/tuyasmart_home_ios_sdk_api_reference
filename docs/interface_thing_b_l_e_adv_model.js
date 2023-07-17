@@ -6,6 +6,7 @@ var interface_thing_b_l_e_adv_model =
     [ "isExecutedV2Secret", "interface_thing_b_l_e_adv_model.html#ac62b507d370a4b9d5306863821334b71", null ],
     [ "isProuductKey", "interface_thing_b_l_e_adv_model.html#a4e9329ff98e814d4ec1acc1643edb26c", null ],
     [ "isQRCodeDevice", "interface_thing_b_l_e_adv_model.html#a7a3c5f98c0652e1cebdfe1ff5f9d2085", null ],
+    [ "isRoaming", "interface_thing_b_l_e_adv_model.html#a55aaac1ba50599092c17d5508cc8643b", null ],
     [ "isSupport5G", "interface_thing_b_l_e_adv_model.html#aa446e69ed38e583796974c5ca617ebca", null ],
     [ "isSupportMultiUserShare", "interface_thing_b_l_e_adv_model.html#af36833f8503fbf774472c83b9aa38de8", null ],
     [ "isSupportV2Secret", "interface_thing_b_l_e_adv_model.html#a0d009153ced19e515486754fa14b1026", null ],

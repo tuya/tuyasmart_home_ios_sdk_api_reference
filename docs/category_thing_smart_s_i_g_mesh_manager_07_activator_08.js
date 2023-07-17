@@ -8,6 +8,8 @@ var category_thing_smart_s_i_g_mesh_manager_07_activator_08 =
     [ "disconnectLowPowerNode", "category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#a81b105127694d1093058bee73c3e1452", null ],
     [ "getDevicesOnlineStatus", "category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#aae1ab7e747b69c51d37416be34354db2", null ],
     [ "getDevicesOnlineStatus", "category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#aae1ab7e747b69c51d37416be34354db2", null ],
+    [ "getOfflineDevicesOnlineStatus", "category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#a1df55bd7da9b627399390395d4ffcbdb", null ],
+    [ "getOfflineDevicesOnlineStatus", "category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#a1df55bd7da9b627399390395d4ffcbdb", null ],
     [ "startActive:", "category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#ad4188f015eadb214ec9a0471dd4205b7", null ],
     [ "startActive:", "category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#ad4188f015eadb214ec9a0471dd4205b7", null ],
     [ "startActive:meshModel:", "category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#a01e9f6eebc0eba2105fe8b42dd629701", null ],

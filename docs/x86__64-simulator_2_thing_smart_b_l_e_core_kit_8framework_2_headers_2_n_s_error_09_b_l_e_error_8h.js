@@ -76,6 +76,11 @@ var x86__64_simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_er
       [ "THING_BLE_PARAM_ERROR", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311a0fe4a8d7ffad3c5365222fd43279a060", null ],
       [ "THING_BLE_INSTRUCTION_STATE_OTA_FAIL", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311aa15278bba05dc20d1d731f599223ca62", null ],
       [ "THING_BLE_INSTRUCTION_OFFLINE_FAIL", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311a59d91eb0c595b20a53af70c1dd20454d", null ],
+      [ "THING_BLE_READ_BROADCAST_FAIL", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311afb546322cf62c7a69bcf8486b0ea0430", null ],
+      [ "THING_BLE_FIND_CHARACTERISTIC_FAIL", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311af188dd9f54cfcd445fde042b39ecfba4", null ],
+      [ "THING_BLE_ONLINE_TIMEOUT", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311aa5750bc1857b6439958a388c4097b038", null ],
+      [ "THING_BLE_DEVICE_RESET", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311a7afbc56c9357c8bb4030bb70bf0ea5cd", null ],
+      [ "THING_BLE_CONNECT_BUSY", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311a9c517a7bfe3ff8e4828a476417a11858", null ],
       [ "THING_BLE_CONFIG_CANCEL", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311ab3b06ef021c69f18e0d4d212bf048c88", null ],
       [ "THING_BLE_CONNECT_FAILURE", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311ad171e586b70b59ea11c099022c2dc1ad", null ],
       [ "THING_BLE_FIND_SERVICE_FAILURE", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311a44a5f8503741abd6308d7c4a3ded4c61", null ],
@@ -148,7 +153,12 @@ var x86__64_simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_er
       [ "THING_BLE_SEND_ZIGBEE_GATEWAY_INFO_ERROR", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311aa58d579129c58833a2d0f88b852cfd23", null ],
       [ "THING_BLE_PARAM_ERROR", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311a0fe4a8d7ffad3c5365222fd43279a060", null ],
       [ "THING_BLE_INSTRUCTION_STATE_OTA_FAIL", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311aa15278bba05dc20d1d731f599223ca62", null ],
-      [ "THING_BLE_INSTRUCTION_OFFLINE_FAIL", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311a59d91eb0c595b20a53af70c1dd20454d", null ]
+      [ "THING_BLE_INSTRUCTION_OFFLINE_FAIL", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311a59d91eb0c595b20a53af70c1dd20454d", null ],
+      [ "THING_BLE_READ_BROADCAST_FAIL", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311afb546322cf62c7a69bcf8486b0ea0430", null ],
+      [ "THING_BLE_FIND_CHARACTERISTIC_FAIL", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311af188dd9f54cfcd445fde042b39ecfba4", null ],
+      [ "THING_BLE_ONLINE_TIMEOUT", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311aa5750bc1857b6439958a388c4097b038", null ],
+      [ "THING_BLE_DEVICE_RESET", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311a7afbc56c9357c8bb4030bb70bf0ea5cd", null ],
+      [ "THING_BLE_CONNECT_BUSY", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a44d65f527431252e2e1ea044cf183311a9c517a7bfe3ff8e4828a476417a11858", null ]
     ] ],
     [ "NS_ENUM", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_error_09_b_l_e_error_8h.html#a0aaa6b3ab871f48163dd7497660d413b", null ]
 ];

@@ -14,6 +14,8 @@ var interface_thing_b_l_e_status_service =
     [ "createDeviceInfoWithUUID:andMac:", "interface_thing_b_l_e_status_service.html#a0723df9a91ff392d1ddcd1f25554aa53", null ],
     [ "findAllDeviceInfo", "interface_thing_b_l_e_status_service.html#ac34a51559f754c0c5dbdf9172ac94e11", null ],
     [ "findAllDeviceInfo", "interface_thing_b_l_e_status_service.html#ac34a51559f754c0c5dbdf9172ac94e11", null ],
+    [ "findDeviceInfoWithDevId:", "interface_thing_b_l_e_status_service.html#a73dc341b454529c3dcb5baa6b2c1bc60", null ],
+    [ "findDeviceInfoWithDevId:", "interface_thing_b_l_e_status_service.html#a73dc341b454529c3dcb5baa6b2c1bc60", null ],
     [ "findDeviceInfoWithUUID:", "interface_thing_b_l_e_status_service.html#ab8e82d07f0c5f5c615be10af845acaa2", null ],
     [ "findDeviceInfoWithUUID:", "interface_thing_b_l_e_status_service.html#ab8e82d07f0c5f5c615be10af845acaa2", null ],
     [ "findDeviceInfoWithUUID:andMac:", "interface_thing_b_l_e_status_service.html#af8a53a26791708913c06874a26aab57b", null ],

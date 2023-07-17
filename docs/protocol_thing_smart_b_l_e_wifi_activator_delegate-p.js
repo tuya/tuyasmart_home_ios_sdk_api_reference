@@ -1,13 +1,13 @@
 var protocol_thing_smart_b_l_e_wifi_activator_delegate_p =
 [
-    [ "bleWifiActivator:didReceiveBLEWifiConfigDevice:error:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a59b303e4a2460d22f4c8545bd9e146f2", null ],
-    [ "bleWifiActivator:didReceiveBLEWifiConfigDevice:error:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a59b303e4a2460d22f4c8545bd9e146f2", null ],
-    [ "bleWifiActivator:didReceiveConfigMiddleStateModel:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a3226df54b015d607aea18d1217a8263a", null ],
-    [ "bleWifiActivator:didReceiveConfigMiddleStateModel:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a3226df54b015d607aea18d1217a8263a", null ],
-    [ "bleWifiActivator:didScanWifiList:uuid:error:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#af8084ced36215671de601efc169690ab", null ],
-    [ "bleWifiActivator:didScanWifiList:uuid:error:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#af8084ced36215671de601efc169690ab", null ],
-    [ "bleWifiActivator:notConfigStateWithError:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a3212fca3f86b2b00ca0ca090c4daa95c", null ],
-    [ "bleWifiActivator:notConfigStateWithError:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a3212fca3f86b2b00ca0ca090c4daa95c", null ],
-    [ "getBleWifiActivatorToken:failure:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a9681a11ed87f7d3e642cf7ec3286123e", null ],
-    [ "getBleWifiActivatorToken:failure:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a9681a11ed87f7d3e642cf7ec3286123e", null ]
+    [ "bleWifiActivator:didReceiveBLEWifiConfigDevice:error:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a45b42cf6af1d6f1799e9d49c9b8de4b5", null ],
+    [ "bleWifiActivator:didReceiveBLEWifiConfigDevice:error:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a45b42cf6af1d6f1799e9d49c9b8de4b5", null ],
+    [ "bleWifiActivator:didReceiveConfigMiddleStateModel:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a1e8d112d9a7a0385ee4a2951ff752f8d", null ],
+    [ "bleWifiActivator:didReceiveConfigMiddleStateModel:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a1e8d112d9a7a0385ee4a2951ff752f8d", null ],
+    [ "bleWifiActivator:didScanWifiList:uuid:error:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#af6bfa8169aaf84666c732b0dab54cbfa", null ],
+    [ "bleWifiActivator:didScanWifiList:uuid:error:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#af6bfa8169aaf84666c732b0dab54cbfa", null ],
+    [ "bleWifiActivator:notConfigStateWithError:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a521bff6c6d099d3a7763c077c8e5f75f", null ],
+    [ "bleWifiActivator:notConfigStateWithError:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a521bff6c6d099d3a7763c077c8e5f75f", null ],
+    [ "getBleWifiActivatorToken:failure:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#aef3ad28683ea21c3e9468b5372fb072a", null ],
+    [ "getBleWifiActivatorToken:failure:", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#aef3ad28683ea21c3e9468b5372fb072a", null ]
 ];

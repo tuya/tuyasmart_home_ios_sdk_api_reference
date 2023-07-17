@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartSIGMeshManager(Activator) Category Reference</title>
+<title>Tuya iOS Home SDK: ThingSmartSIGMeshManager(Activator) Category Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.0.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
    </div>
   </td>
  </tr>
@@ -122,6 +122,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a1b5899c15be5cb6b97598b4c31421d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae1ab7e747b69c51d37416be34354db2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#aae1ab7e747b69c51d37416be34354db2">getDevicesOnlineStatus</a></td></tr>
 <tr class="separator:aae1ab7e747b69c51d37416be34354db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df55bd7da9b627399390395d4ffcbdb"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#a1df55bd7da9b627399390395d4ffcbdb">getOfflineDevicesOnlineStatus</a></td></tr>
+<tr class="separator:a1df55bd7da9b627399390395d4ffcbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab632af417d5d0ea6cd49b64a2f2811ec"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#ab632af417d5d0ea6cd49b64a2f2811ec">startScanWithScanType:meshModel:</a></td></tr>
 <tr class="separator:ab632af417d5d0ea6cd49b64a2f2811ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01e9f6eebc0eba2105fe8b42dd629701"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#a01e9f6eebc0eba2105fe8b42dd629701">startActive:meshModel:</a></td></tr>
@@ -147,10 +149,14 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a1b5899c15be5cb6b97598b4c31421d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae1ab7e747b69c51d37416be34354db2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#aae1ab7e747b69c51d37416be34354db2">getDevicesOnlineStatus</a></td></tr>
 <tr class="separator:aae1ab7e747b69c51d37416be34354db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df55bd7da9b627399390395d4ffcbdb"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_activator_08.html#a1df55bd7da9b627399390395d4ffcbdb">getOfflineDevicesOnlineStatus</a></td></tr>
+<tr class="separator:a1df55bd7da9b627399390395d4ffcbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The Bluetooth mesh activator category for the Bluetooth mesh manager. </p>
 <p >This API provides multiple functions such as device scanning and activation. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_09_activator_8h_source.html#l00012">12</a> of file <a class="el" href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_09_activator_8h_source.html">ThingSmartSIGMeshManager+Activator.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="a04392916e1169e611a847c3c48b29181" name="a04392916e1169e611a847c3c48b29181"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04392916e1169e611a847c3c48b29181">&#9670;&nbsp;</a></span>connectLowPowerNode: <span class="overload">[1/2]</span></h2>
@@ -323,6 +329,44 @@ Instance Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Extends class <a class="el" href="interface_thing_smart_s_i_g_mesh_manager.html#aae1ab7e747b69c51d37416be34354db2">ThingSmartSIGMeshManager</a>.</p>
+
+</div>
+</div>
+<a id="a1df55bd7da9b627399390395d4ffcbdb" name="a1df55bd7da9b627399390395d4ffcbdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1df55bd7da9b627399390395d4ffcbdb">&#9670;&nbsp;</a></span>getOfflineDevicesOnlineStatus <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) getOfflineDevicesOnlineStatus </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extends class <a class="el" href="interface_thing_smart_s_i_g_mesh_manager.html#a1df55bd7da9b627399390395d4ffcbdb">ThingSmartSIGMeshManager</a>.</p>
+
+</div>
+</div>
+<a id="a1df55bd7da9b627399390395d4ffcbdb" name="a1df55bd7da9b627399390395d4ffcbdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1df55bd7da9b627399390395d4ffcbdb">&#9670;&nbsp;</a></span>getOfflineDevicesOnlineStatus <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) getOfflineDevicesOnlineStatus </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extends class <a class="el" href="interface_thing_smart_s_i_g_mesh_manager.html#a1df55bd7da9b627399390395d4ffcbdb">ThingSmartSIGMeshManager</a>.</p>
 
 </div>
 </div>

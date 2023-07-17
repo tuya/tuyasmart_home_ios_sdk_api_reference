@@ -24,6 +24,7 @@ var interface_thing_smart_group_model =
     [ "pcc", "interface_thing_smart_group_model.html#a983d7c84b64efd86c5db331bd26105ce", null ],
     [ "productId", "interface_thing_smart_group_model.html#ad6fa3dff0a511ffc75d26508757d1801", null ],
     [ "productInfo", "interface_thing_smart_group_model.html#a6da2a2a8d4cd67bf0353d6c5eafd9321", null ],
+    [ "productVer", "interface_thing_smart_group_model.html#a30d4020ebe6574d51084984c1abd75c1", null ],
     [ "pv", "interface_thing_smart_group_model.html#ab5b3164920907b2c22480790148f9737", null ],
     [ "roomId", "interface_thing_smart_group_model.html#a089a74144b67ce4b922d91939e2bf80d", null ],
     [ "schemaArray", "interface_thing_smart_group_model.html#a49758a1e6946cc90620e75ea139fe264", null ],

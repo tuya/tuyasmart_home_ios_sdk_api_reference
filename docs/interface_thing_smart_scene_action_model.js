@@ -19,6 +19,7 @@ var interface_thing_smart_scene_action_model =
     [ "pid", "interface_thing_smart_scene_action_model.html#a6ba7f386302d7bf50ee05476ae17349b", null ],
     [ "productId", "interface_thing_smart_scene_action_model.html#ae193192de12c074e8f8adae05399a1a9", null ],
     [ "productPic", "interface_thing_smart_scene_action_model.html#a7b3bcabbdbbd3d9c52b7f92f6c3cad58", null ],
+    [ "relationGroup", "interface_thing_smart_scene_action_model.html#adc71312017ace93cb31e3a284caae60d", null ],
     [ "scenarioId", "interface_thing_smart_scene_action_model.html#a6db8ed5d3696716ec7bf8b7180e945f5", null ],
     [ "status", "interface_thing_smart_scene_action_model.html#aa37cdadfad820c64ec689a723a11685f", null ],
     [ "uiid", "interface_thing_smart_scene_action_model.html#a7bcc2e417b9f4e046d49cec23f5bc7e6", null ],

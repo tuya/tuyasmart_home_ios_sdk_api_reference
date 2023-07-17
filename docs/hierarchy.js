@@ -28,7 +28,6 @@ var hierarchy =
       [ "ThingSmartResult", "interface_thing_smart_result.html", null ],
       [ "ThingSmartResult", "interface_thing_smart_result.html", null ]
     ] ],
-    [ "AppDelegate()", "category_app_delegate_07_08.html", null ],
     [ "<CBCentralManagerDelegate>", null, [
       [ "ThingBLECentralManager", "interface_thing_b_l_e_central_manager.html", null ],
       [ "ThingBLECentralManager", "interface_thing_b_l_e_central_manager.html", null ]
@@ -38,22 +37,12 @@ var hierarchy =
       [ "ThingBLEPeripheral", "interface_thing_b_l_e_peripheral.html", null ]
     ] ],
     [ "CBUUID(ThingCategory)", "category_c_b_u_u_i_d_07_thing_category_08.html", null ],
-    [ "<CLLocationManagerDelegate>", null, [
-      [ "EditHomeTableViewController()", "category_edit_home_table_view_controller_07_08.html", null ],
-      [ "NewHomeTableViewController()", "category_new_home_table_view_controller_07_08.html", null ]
-    ] ],
-    [ "DeviceDetailTableViewController()", "category_device_detail_table_view_controller_07_08.html", null ],
-    [ "HomeDetailTableViewController()", "category_home_detail_table_view_controller_07_08.html", null ],
-    [ "HomeListTableViewController()", "category_home_list_table_view_controller_07_08.html", null ],
     [ "<KeyType>", null, [
       [ "ThingSDKSafeMutableDictionary", "interface_thing_s_d_k_safe_mutable_dictionary.html", null ],
       [ "ThingSDKSafeMutableDictionary", "interface_thing_s_d_k_safe_mutable_dictionary.html", null ],
       [ "ThingSDKSafeMutableDictionary", "interface_thing_s_d_k_safe_mutable_dictionary.html", null ],
       [ "ThingSDKSafeMutableDictionary", "interface_thing_s_d_k_safe_mutable_dictionary.html", null ]
     ] ],
-    [ "LoginTableViewController()", "category_login_table_view_controller_07_08.html", null ],
-    [ "MainTableViewController()", "category_main_table_view_controller_07_08.html", null ],
-    [ "MainViewController()", "category_main_view_controller_07_08.html", null ],
     [ "NSArray(ThingSDKJSON)", "category_n_s_array_07_thing_s_d_k_j_s_o_n_08.html", null ],
     [ "NSBundle(ThingSDKLanguage)", "category_n_s_bundle_07_thing_s_d_k_language_08.html", null ],
     [ "<NSCoding>", null, [
@@ -116,12 +105,22 @@ var hierarchy =
     [ "NSNumber(Characteristic)", "category_n_s_number_07_characteristic_08.html", null ],
     [ "NSNumber(ThingSDKRandom)", "category_n_s_number_07_thing_s_d_k_random_08.html", null ],
     [ "NSObject", null, [
-      [ "Alert", "interface_alert.html", null ],
-      [ "DeviceControlCellHelper", "interface_device_control_cell_helper.html", null ],
       [ "FrameControlModel", "interface_frame_control_model.html", null ],
       [ "FrameControlModel", "interface_frame_control_model.html", null ],
-      [ "Home", "interface_home.html", null ],
-      [ "NotificationName", "interface_notification_name.html", null ],
+      [ "FrameControlModelExt", "interface_frame_control_model_ext.html", null ],
+      [ "FrameControlModelExt", "interface_frame_control_model_ext.html", null ],
+      [ "TSceneConditionCategoryListRequestParams", "interface_t_scene_condition_category_list_request_params.html", null ],
+      [ "TSceneConditionCategoryListRequestParams", "interface_t_scene_condition_category_list_request_params.html", null ],
+      [ "TSceneConditionCategoryListRequestParams", "interface_t_scene_condition_category_list_request_params.html", null ],
+      [ "TSceneConditionCategoryListRequestParams", "interface_t_scene_condition_category_list_request_params.html", null ],
+      [ "TSceneCoreError", "interface_t_scene_core_error.html", null ],
+      [ "TSceneCoreError", "interface_t_scene_core_error.html", null ],
+      [ "TSceneCoreError", "interface_t_scene_core_error.html", null ],
+      [ "TSceneCoreError", "interface_t_scene_core_error.html", null ],
+      [ "TSceneRequestInfo", "interface_t_scene_request_info.html", null ],
+      [ "TSceneRequestInfo", "interface_t_scene_request_info.html", null ],
+      [ "TSceneRequestInfo", "interface_t_scene_request_info.html", null ],
+      [ "TSceneRequestInfo", "interface_t_scene_request_info.html", null ],
       [ "ThingAntiReplayModel", "interface_thing_anti_replay_model.html", null ],
       [ "ThingAntiReplayModel", "interface_thing_anti_replay_model.html", null ],
       [ "ThingAntiReplayModel", "interface_thing_anti_replay_model.html", null ],
@@ -283,9 +282,18 @@ var hierarchy =
       [ "ThingSDKUtil", "interface_thing_s_d_k_util.html", null ],
       [ "ThingSDKUtil", "interface_thing_s_d_k_util.html", null ],
       [ "ThingSDKUtil", "interface_thing_s_d_k_util.html", null ],
+      [ "ThingSIGMeshConfigModel", "interface_thing_s_i_g_mesh_config_model.html", null ],
+      [ "ThingSIGMeshConfigModel", "interface_thing_s_i_g_mesh_config_model.html", null ],
       [ "ThingSIGMeshDCSActionModel", "interface_thing_s_i_g_mesh_d_c_s_action_model.html", null ],
       [ "ThingSIGMeshDCSActionModel", "interface_thing_s_i_g_mesh_d_c_s_action_model.html", null ],
-      [ "ThingSIGMeshDCSConditionModel", "interface_thing_s_i_g_mesh_d_c_s_condition_model.html", null ],
+      [ "ThingSIGMeshDCSConditionModel", "interface_thing_s_i_g_mesh_d_c_s_condition_model.html", [
+        [ "ThingSIGMeshDCSConditionDPModel", "interface_thing_s_i_g_mesh_d_c_s_condition_d_p_model.html", null ],
+        [ "ThingSIGMeshDCSConditionDPModel", "interface_thing_s_i_g_mesh_d_c_s_condition_d_p_model.html", null ],
+        [ "ThingSIGMeshDCSConditionDateTimerModel", "interface_thing_s_i_g_mesh_d_c_s_condition_date_timer_model.html", null ],
+        [ "ThingSIGMeshDCSConditionDateTimerModel", "interface_thing_s_i_g_mesh_d_c_s_condition_date_timer_model.html", null ],
+        [ "ThingSIGMeshDCSConditionWeekTimerModel", "interface_thing_s_i_g_mesh_d_c_s_condition_week_timer_model.html", null ],
+        [ "ThingSIGMeshDCSConditionWeekTimerModel", "interface_thing_s_i_g_mesh_d_c_s_condition_week_timer_model.html", null ]
+      ] ],
       [ "ThingSIGMeshDCSConditionModel", "interface_thing_s_i_g_mesh_d_c_s_condition_model.html", null ],
       [ "ThingSIGMeshDCSHashModel", "interface_thing_s_i_g_mesh_d_c_s_hash_model.html", null ],
       [ "ThingSIGMeshDCSHashModel", "interface_thing_s_i_g_mesh_d_c_s_hash_model.html", null ],
@@ -297,6 +305,8 @@ var hierarchy =
       [ "ThingSIGMeshFittingMsgModel", "interface_thing_s_i_g_mesh_fitting_msg_model.html", null ],
       [ "ThingSIGMeshQueryDpsModel", "interface_thing_s_i_g_mesh_query_dps_model.html", null ],
       [ "ThingSIGMeshQueryDpsModel", "interface_thing_s_i_g_mesh_query_dps_model.html", null ],
+      [ "ThingSIGMeshQuickControl", "interface_thing_s_i_g_mesh_quick_control.html", null ],
+      [ "ThingSIGMeshQuickControl", "interface_thing_s_i_g_mesh_quick_control.html", null ],
       [ "ThingSIGMeshSceneModel", "interface_thing_s_i_g_mesh_scene_model.html", null ],
       [ "ThingSIGMeshSceneModel", "interface_thing_s_i_g_mesh_scene_model.html", null ],
       [ "ThingSmartActivator", "interface_thing_smart_activator.html", null ],
@@ -317,6 +327,8 @@ var hierarchy =
       [ "ThingSmartBLEBeaconScanBridge", "interface_thing_smart_b_l_e_beacon_scan_bridge.html", null ],
       [ "ThingSmartBLEConfigNotifyItem", "interface_thing_smart_b_l_e_config_notify_item.html", null ],
       [ "ThingSmartBLEConfigNotifyItem", "interface_thing_smart_b_l_e_config_notify_item.html", null ],
+      [ "ThingSmartBLEDeviceCheckModel", "interface_thing_smart_b_l_e_device_check_model.html", null ],
+      [ "ThingSmartBLEDeviceCheckModel", "interface_thing_smart_b_l_e_device_check_model.html", null ],
       [ "ThingSmartBLEManager", "interface_thing_smart_b_l_e_manager.html", null ],
       [ "ThingSmartBLEManager", "interface_thing_smart_b_l_e_manager.html", null ],
       [ "ThingSmartBLEWifiActivator", "interface_thing_smart_b_l_e_wifi_activator.html", null ],
@@ -406,6 +418,10 @@ var hierarchy =
       [ "ThingSmartDeviceModel", "interface_thing_smart_device_model.html", null ],
       [ "ThingSmartDeviceModel", "interface_thing_smart_device_model.html", null ],
       [ "ThingSmartDeviceModel", "interface_thing_smart_device_model.html", null ],
+      [ "ThingSmartDeviceModelPatch", "interface_thing_smart_device_model_patch.html", null ],
+      [ "ThingSmartDeviceModelPatch", "interface_thing_smart_device_model_patch.html", null ],
+      [ "ThingSmartDeviceModelPatch", "interface_thing_smart_device_model_patch.html", null ],
+      [ "ThingSmartDeviceModelPatch", "interface_thing_smart_device_model_patch.html", null ],
       [ "ThingSmartDeviceModuleModel", "interface_thing_smart_device_module_model.html", null ],
       [ "ThingSmartDeviceModuleModel", "interface_thing_smart_device_module_model.html", null ],
       [ "ThingSmartDeviceModuleModel", "interface_thing_smart_device_module_model.html", null ],
@@ -494,6 +510,10 @@ var hierarchy =
       [ "ThingSmartGroup", "interface_thing_smart_group.html", null ],
       [ "ThingSmartGroup", "interface_thing_smart_group.html", null ],
       [ "ThingSmartGroup", "interface_thing_smart_group.html", null ],
+      [ "ThingSmartGroupAddParams", "interface_thing_smart_group_add_params.html", null ],
+      [ "ThingSmartGroupAddParams", "interface_thing_smart_group_add_params.html", null ],
+      [ "ThingSmartGroupAddParams", "interface_thing_smart_group_add_params.html", null ],
+      [ "ThingSmartGroupAddParams", "interface_thing_smart_group_add_params.html", null ],
       [ "ThingSmartGroupDevListModel", "interface_thing_smart_group_dev_list_model.html", null ],
       [ "ThingSmartGroupDevListModel", "interface_thing_smart_group_dev_list_model.html", null ],
       [ "ThingSmartGroupDevListModel", "interface_thing_smart_group_dev_list_model.html", null ],
@@ -564,10 +584,16 @@ var hierarchy =
       [ "ThingSmartHomePageSceneParams", "interface_thing_smart_home_page_scene_params.html", null ],
       [ "ThingSmartHomePageSceneParams", "interface_thing_smart_home_page_scene_params.html", null ],
       [ "ThingSmartHomePageSceneParams", "interface_thing_smart_home_page_scene_params.html", null ],
+      [ "ThingSmartIPInfo", "interface_thing_smart_i_p_info.html", null ],
+      [ "ThingSmartIPInfo", "interface_thing_smart_i_p_info.html", null ],
+      [ "ThingSmartIPInfo", "interface_thing_smart_i_p_info.html", null ],
+      [ "ThingSmartIPInfo", "interface_thing_smart_i_p_info.html", null ],
       [ "ThingSmartLanMessageModel", "interface_thing_smart_lan_message_model.html", null ],
       [ "ThingSmartLanMessageModel", "interface_thing_smart_lan_message_model.html", null ],
       [ "ThingSmartLanMessageModel", "interface_thing_smart_lan_message_model.html", null ],
       [ "ThingSmartLanMessageModel", "interface_thing_smart_lan_message_model.html", null ],
+      [ "ThingSmartLocalNetworkAuther", "interface_thing_smart_local_network_auther.html", null ],
+      [ "ThingSmartLocalNetworkAuther", "interface_thing_smart_local_network_auther.html", null ],
       [ "ThingSmartLogTrackConfiguration", "interface_thing_smart_log_track_configuration.html", null ],
       [ "ThingSmartLogTrackConfiguration", "interface_thing_smart_log_track_configuration.html", null ],
       [ "ThingSmartMQTTChannel", "interface_thing_smart_m_q_t_t_channel.html", null ],
@@ -586,6 +612,10 @@ var hierarchy =
       [ "ThingSmartMcGroupModel", "interface_thing_smart_mc_group_model.html", null ],
       [ "ThingSmartMcGroupModel", "interface_thing_smart_mc_group_model.html", null ],
       [ "ThingSmartMcGroupModel", "interface_thing_smart_mc_group_model.html", null ],
+      [ "ThingSmartMemberCheckFirmwareInfo", "interface_thing_smart_member_check_firmware_info.html", null ],
+      [ "ThingSmartMemberCheckFirmwareInfo", "interface_thing_smart_member_check_firmware_info.html", null ],
+      [ "ThingSmartMemberCheckFirmwareInfo", "interface_thing_smart_member_check_firmware_info.html", null ],
+      [ "ThingSmartMemberCheckFirmwareInfo", "interface_thing_smart_member_check_firmware_info.html", null ],
       [ "ThingSmartMessage", "interface_thing_smart_message.html", null ],
       [ "ThingSmartMessage", "interface_thing_smart_message.html", null ],
       [ "ThingSmartMessage", "interface_thing_smart_message.html", null ],
@@ -686,12 +716,18 @@ var hierarchy =
       [ "ThingSmartMultiControlParentRuleModel", "interface_thing_smart_multi_control_parent_rule_model.html", null ],
       [ "ThingSmartMultiControlParentRuleModel", "interface_thing_smart_multi_control_parent_rule_model.html", null ],
       [ "ThingSmartMultiControlParentRuleModel", "interface_thing_smart_multi_control_parent_rule_model.html", null ],
+      [ "ThingSmartNetworkInfoUtil", "interface_thing_smart_network_info_util.html", null ],
+      [ "ThingSmartNetworkInfoUtil", "interface_thing_smart_network_info_util.html", null ],
+      [ "ThingSmartNetworkInfoUtil", "interface_thing_smart_network_info_util.html", null ],
+      [ "ThingSmartNetworkInfoUtil", "interface_thing_smart_network_info_util.html", null ],
       [ "ThingSmartPairConfiguration", "interface_thing_smart_pair_configuration.html", null ],
       [ "ThingSmartPairConfiguration", "interface_thing_smart_pair_configuration.html", null ],
       [ "ThingSmartPairErrorDevice", "interface_thing_smart_pair_error_device.html", null ],
       [ "ThingSmartPairErrorDevice", "interface_thing_smart_pair_error_device.html", null ],
       [ "ThingSmartPairSuccessDevice", "interface_thing_smart_pair_success_device.html", null ],
       [ "ThingSmartPairSuccessDevice", "interface_thing_smart_pair_success_device.html", null ],
+      [ "ThingSmartPairUtil", "interface_thing_smart_pair_util.html", null ],
+      [ "ThingSmartPairUtil", "interface_thing_smart_pair_util.html", null ],
       [ "ThingSmartPairingParam", "interface_thing_smart_pairing_param.html", null ],
       [ "ThingSmartPairingParam", "interface_thing_smart_pairing_param.html", null ],
       [ "ThingSmartPairingResumeConfigWiFiParam", "interface_thing_smart_pairing_resume_config_wi_fi_param.html", null ],
@@ -771,6 +807,10 @@ var hierarchy =
       [ "ThingSmartSceneColorHelper", "interface_thing_smart_scene_color_helper.html", null ],
       [ "ThingSmartSceneColorHelper", "interface_thing_smart_scene_color_helper.html", null ],
       [ "ThingSmartSceneColorHelper", "interface_thing_smart_scene_color_helper.html", null ],
+      [ "ThingSmartSceneConditionCategoryListModel", "interface_thing_smart_scene_condition_category_list_model.html", null ],
+      [ "ThingSmartSceneConditionCategoryListModel", "interface_thing_smart_scene_condition_category_list_model.html", null ],
+      [ "ThingSmartSceneConditionCategoryListModel", "interface_thing_smart_scene_condition_category_list_model.html", null ],
+      [ "ThingSmartSceneConditionCategoryListModel", "interface_thing_smart_scene_condition_category_list_model.html", null ],
       [ "ThingSmartSceneConditionExprBuilder", "interface_thing_smart_scene_condition_expr_builder.html", null ],
       [ "ThingSmartSceneConditionExprBuilder", "interface_thing_smart_scene_condition_expr_builder.html", null ],
       [ "ThingSmartSceneConditionExprBuilder", "interface_thing_smart_scene_condition_expr_builder.html", null ],
@@ -1018,10 +1058,7 @@ var hierarchy =
       [ "<ThingSINode>", "protocol_thing_s_i_node-p.html", null ],
       [ "<ThingSINode>", "protocol_thing_s_i_node-p.html", null ],
       [ "<ThingSINode>", "protocol_thing_s_i_node-p.html", null ],
-      [ "<ThingSmartActivatorDelegate>", "protocol_thing_smart_activator_delegate-p.html", [
-        [ "APModeTableViewController()", "category_a_p_mode_table_view_controller_07_08.html", null ],
-        [ "EZModeTableViewController()", "category_e_z_mode_table_view_controller_07_08.html", null ]
-      ] ],
+      [ "<ThingSmartActivatorDelegate>", "protocol_thing_smart_activator_delegate-p.html", null ],
       [ "<ThingSmartActivatorDelegate>", "protocol_thing_smart_activator_delegate-p.html", null ],
       [ "<ThingSmartAutoActivatorDelegate>", "protocol_thing_smart_auto_activator_delegate-p.html", null ],
       [ "<ThingSmartAutoActivatorDelegate>", "protocol_thing_smart_auto_activator_delegate-p.html", null ],
@@ -1043,16 +1080,11 @@ var hierarchy =
       [ "<ThingSmartBLEDeviceProtocol>", "protocol_thing_smart_b_l_e_device_protocol-p.html", null ],
       [ "<ThingSmartBLELocalDataDelegate>", "protocol_thing_smart_b_l_e_local_data_delegate-p.html", null ],
       [ "<ThingSmartBLELocalDataDelegate>", "protocol_thing_smart_b_l_e_local_data_delegate-p.html", null ],
-      [ "<ThingSmartBLEManagerDelegate>", "protocol_thing_smart_b_l_e_manager_delegate-p.html", [
-        [ "BLEModelViewController()", "category_b_l_e_model_view_controller_07_08.html", null ],
-        [ "DualModelTableViewController()", "category_dual_model_table_view_controller_07_08.html", null ]
-      ] ],
+      [ "<ThingSmartBLEManagerDelegate>", "protocol_thing_smart_b_l_e_manager_delegate-p.html", null ],
       [ "<ThingSmartBLEManagerDelegate>", "protocol_thing_smart_b_l_e_manager_delegate-p.html", null ],
       [ "<ThingSmartBLEScanProtocol>", "protocol_thing_smart_b_l_e_scan_protocol-p.html", null ],
       [ "<ThingSmartBLEScanProtocol>", "protocol_thing_smart_b_l_e_scan_protocol-p.html", null ],
-      [ "<ThingSmartBLEWifiActivatorDelegate>", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html", [
-        [ "DualModelTableViewController()", "category_dual_model_table_view_controller_07_08.html", null ]
-      ] ],
+      [ "<ThingSmartBLEWifiActivatorDelegate>", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html", null ],
       [ "<ThingSmartBLEWifiActivatorDelegate>", "protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html", null ],
       [ "<ThingSmartBeaconManagerDelegate>", "protocol_thing_smart_beacon_manager_delegate-p.html", null ],
       [ "<ThingSmartBeaconManagerDelegate>", "protocol_thing_smart_beacon_manager_delegate-p.html", null ],
@@ -1071,13 +1103,14 @@ var hierarchy =
       [ "<ThingSmartCoreCacheProtocol>", "protocol_thing_smart_core_cache_protocol-p.html", null ],
       [ "<ThingSmartCoreCacheProtocol>", "protocol_thing_smart_core_cache_protocol-p.html", null ],
       [ "<ThingSmartCoreCacheProtocol>", "protocol_thing_smart_core_cache_protocol-p.html", null ],
-      [ "<ThingSmartDeviceDelegate>", "protocol_thing_smart_device_delegate-p.html", [
-        [ "DeviceControlTableViewController()", "category_device_control_table_view_controller_07_08.html", null ],
-        [ "ThingLinkDeviceControlController()", "category_thing_link_device_control_controller_07_08.html", null ]
-      ] ],
       [ "<ThingSmartDeviceDelegate>", "protocol_thing_smart_device_delegate-p.html", null ],
       [ "<ThingSmartDeviceDelegate>", "protocol_thing_smart_device_delegate-p.html", null ],
       [ "<ThingSmartDeviceDelegate>", "protocol_thing_smart_device_delegate-p.html", null ],
+      [ "<ThingSmartDeviceDelegate>", "protocol_thing_smart_device_delegate-p.html", null ],
+      [ "<ThingSmartDeviceModelPatchProtocol>", "protocol_thing_smart_device_model_patch_protocol-p.html", null ],
+      [ "<ThingSmartDeviceModelPatchProtocol>", "protocol_thing_smart_device_model_patch_protocol-p.html", null ],
+      [ "<ThingSmartDeviceModelPatchProtocol>", "protocol_thing_smart_device_model_patch_protocol-p.html", null ],
+      [ "<ThingSmartDeviceModelPatchProtocol>", "protocol_thing_smart_device_model_patch_protocol-p.html", null ],
       [ "<ThingSmartDirectlyConnectedActivatorDelegate>", "protocol_thing_smart_directly_connected_activator_delegate-p.html", null ],
       [ "<ThingSmartDirectlyConnectedActivatorDelegate>", "protocol_thing_smart_directly_connected_activator_delegate-p.html", null ],
       [ "<ThingSmartDiscoveryDelegate>", "protocol_thing_smart_discovery_delegate-p.html", null ],
@@ -1088,17 +1121,11 @@ var hierarchy =
       [ "<ThingSmartDomainConfigurable>", "protocol_thing_smart_domain_configurable-p.html", null ],
       [ "<ThingSmartExtModuleStatusListeningDelegate>", "protocol_thing_smart_ext_module_status_listening_delegate-p.html", null ],
       [ "<ThingSmartExtModuleStatusListeningDelegate>", "protocol_thing_smart_ext_module_status_listening_delegate-p.html", null ],
-      [ "<ThingSmartGroupDelegate>", "protocol_thing_smart_group_delegate-p.html", null ],
-      [ "<ThingSmartGroupDelegate>", "protocol_thing_smart_group_delegate-p.html", null ],
-      [ "<ThingSmartGroupDelegate>", "protocol_thing_smart_group_delegate-p.html", null ],
-      [ "<ThingSmartGroupDelegate>", "protocol_thing_smart_group_delegate-p.html", null ],
       [ "<ThingSmartHTTPDNSIntercepter>", "protocol_thing_smart_h_t_t_p_d_n_s_intercepter-p.html", null ],
       [ "<ThingSmartHTTPDNSIntercepter>", "protocol_thing_smart_h_t_t_p_d_n_s_intercepter-p.html", null ],
       [ "<ThingSmartHTTPDNSIntercepter>", "protocol_thing_smart_h_t_t_p_d_n_s_intercepter-p.html", null ],
       [ "<ThingSmartHTTPDNSIntercepter>", "protocol_thing_smart_h_t_t_p_d_n_s_intercepter-p.html", null ],
-      [ "<ThingSmartHomeDelegate>", "protocol_thing_smart_home_delegate-p.html", [
-        [ "DeviceListTableViewController()", "category_device_list_table_view_controller_07_08.html", null ]
-      ] ],
+      [ "<ThingSmartHomeDelegate>", "protocol_thing_smart_home_delegate-p.html", null ],
       [ "<ThingSmartHomeDelegate>", "protocol_thing_smart_home_delegate-p.html", null ],
       [ "<ThingSmartHomeDelegate>", "protocol_thing_smart_home_delegate-p.html", null ],
       [ "<ThingSmartHomeDelegate>", "protocol_thing_smart_home_delegate-p.html", null ],
@@ -1117,6 +1144,15 @@ var hierarchy =
       [ "<ThingSmartLogTrackHandleDelegate>", "protocol_thing_smart_log_track_handle_delegate-p.html", null ],
       [ "<ThingSmartMQTTSubscribeCorrectProtocol>", "protocol_thing_smart_m_q_t_t_subscribe_correct_protocol-p.html", null ],
       [ "<ThingSmartMQTTSubscribeCorrectProtocol>", "protocol_thing_smart_m_q_t_t_subscribe_correct_protocol-p.html", null ],
+      [ "<ThingSmartModelFetcher>", "protocol_thing_smart_model_fetcher-p.html", [
+        [ "ThingSmartUIPanelModel", "interface_thing_smart_u_i_panel_model.html", null ],
+        [ "ThingSmartUIPanelModel", "interface_thing_smart_u_i_panel_model.html", null ],
+        [ "ThingSmartUIPanelModel", "interface_thing_smart_u_i_panel_model.html", null ],
+        [ "ThingSmartUIPanelModel", "interface_thing_smart_u_i_panel_model.html", null ]
+      ] ],
+      [ "<ThingSmartModelFetcher>", "protocol_thing_smart_model_fetcher-p.html", null ],
+      [ "<ThingSmartModelFetcher>", "protocol_thing_smart_model_fetcher-p.html", null ],
+      [ "<ThingSmartModelFetcher>", "protocol_thing_smart_model_fetcher-p.html", null ],
       [ "<ThingSmartModuleProtocol>", "protocol_thing_smart_module_protocol-p.html", [
         [ "<ThingSmartChannelRegEntry>", "protocol_thing_smart_channel_reg_entry-p.html", null ],
         [ "<ThingSmartChannelRegEntry>", "protocol_thing_smart_channel_reg_entry-p.html", null ],
@@ -1161,9 +1197,7 @@ var hierarchy =
       [ "<ThingSmartSDKEvent>", "protocol_thing_smart_s_d_k_event-p.html", null ],
       [ "<ThingSmartSDKEvent>", "protocol_thing_smart_s_d_k_event-p.html", null ],
       [ "<ThingSmartSDKEvent>", "protocol_thing_smart_s_d_k_event-p.html", null ],
-      [ "<ThingSmartSIGMeshManagerDelegate>", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html", [
-        [ "SIGMeshTableViewController()", "category_s_i_g_mesh_table_view_controller_07_08.html", null ]
-      ] ],
+      [ "<ThingSmartSIGMeshManagerDelegate>", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html", null ],
       [ "<ThingSmartSIGMeshManagerDelegate>", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html", null ],
       [ "<ThingSmartSceneManagerDelegate>", "protocol_thing_smart_scene_manager_delegate-p.html", null ],
       [ "<ThingSmartSceneManagerDelegate>", "protocol_thing_smart_scene_manager_delegate-p.html", null ],
@@ -1179,24 +1213,6 @@ var hierarchy =
       [ "<ThingSmartTransferDelegate>", "protocol_thing_smart_transfer_delegate-p.html", null ],
       [ "<ThingSmartTransferDelegate>", "protocol_thing_smart_transfer_delegate-p.html", null ],
       [ "<ThingSmartTransferDelegate>", "protocol_thing_smart_transfer_delegate-p.html", null ],
-      [ "<ThingSmartUIPanelInfoProp>", "protocol_thing_smart_u_i_panel_info_prop-p.html", [
-        [ "ThingSmartUIPanelInfo", "interface_thing_smart_u_i_panel_info.html", null ],
-        [ "ThingSmartUIPanelInfo", "interface_thing_smart_u_i_panel_info.html", null ],
-        [ "ThingSmartUIPanelInfo", "interface_thing_smart_u_i_panel_info.html", null ],
-        [ "ThingSmartUIPanelInfo", "interface_thing_smart_u_i_panel_info.html", null ]
-      ] ],
-      [ "<ThingSmartUIPanelInfoProp>", "protocol_thing_smart_u_i_panel_info_prop-p.html", null ],
-      [ "<ThingSmartUIPanelInfoProp>", "protocol_thing_smart_u_i_panel_info_prop-p.html", null ],
-      [ "<ThingSmartUIPanelInfoProp>", "protocol_thing_smart_u_i_panel_info_prop-p.html", null ],
-      [ "<ThingSmartUIPanelModelProp>", "protocol_thing_smart_u_i_panel_model_prop-p.html", [
-        [ "ThingSmartUIPanelModel", "interface_thing_smart_u_i_panel_model.html", null ],
-        [ "ThingSmartUIPanelModel", "interface_thing_smart_u_i_panel_model.html", null ],
-        [ "ThingSmartUIPanelModel", "interface_thing_smart_u_i_panel_model.html", null ],
-        [ "ThingSmartUIPanelModel", "interface_thing_smart_u_i_panel_model.html", null ]
-      ] ],
-      [ "<ThingSmartUIPanelModelProp>", "protocol_thing_smart_u_i_panel_model_prop-p.html", null ],
-      [ "<ThingSmartUIPanelModelProp>", "protocol_thing_smart_u_i_panel_model_prop-p.html", null ],
-      [ "<ThingSmartUIPanelModelProp>", "protocol_thing_smart_u_i_panel_model_prop-p.html", null ],
       [ "<ThingSmartYuNetChannelDelegate>", "protocol_thing_smart_yu_net_channel_delegate-p.html", [
         [ "<ThingSmartYuNetRegEntry>", "protocol_thing_smart_yu_net_reg_entry-p.html", null ],
         [ "<ThingSmartYuNetRegEntry>", "protocol_thing_smart_yu_net_reg_entry-p.html", null ],
@@ -1208,6 +1224,10 @@ var hierarchy =
       [ "<ThingSmartYuNetChannelDelegate>", "protocol_thing_smart_yu_net_channel_delegate-p.html", null ]
     ] ],
     [ "<NSObjectNSObject>", null, [
+      [ "<ThingSmartGroupDelegate>", "protocol_thing_smart_group_delegate-p.html", null ],
+      [ "<ThingSmartGroupDelegate>", "protocol_thing_smart_group_delegate-p.html", null ],
+      [ "<ThingSmartGroupDelegate>", "protocol_thing_smart_group_delegate-p.html", null ],
+      [ "<ThingSmartGroupDelegate>", "protocol_thing_smart_group_delegate-p.html", null ],
       [ "<ThingSmartMQTTChannelDelegate>", "protocol_thing_smart_m_q_t_t_channel_delegate-p.html", null ],
       [ "<ThingSmartMQTTChannelDelegate>", "protocol_thing_smart_m_q_t_t_channel_delegate-p.html", null ]
     ] ],
@@ -1245,24 +1265,14 @@ var hierarchy =
       [ "ThingSDKSafeMutableDictionary", "interface_thing_s_d_k_safe_mutable_dictionary.html", null ],
       [ "ThingSDKSafeMutableDictionary", "interface_thing_s_d_k_safe_mutable_dictionary.html", null ]
     ] ],
-    [ "RegisterTableViewController()", "category_register_table_view_controller_07_08.html", null ],
-    [ "ResetPasswordTableViewController()", "category_reset_password_table_view_controller_07_08.html", null ],
-    [ "SceneDelegate()", "category_scene_delegate_07_08.html", null ],
-    [ "<SGScanCodeDelegate>", null, [
-      [ "QRCodeScanerViewController()", "category_q_r_code_scaner_view_controller_07_08.html", null ]
-    ] ],
-    [ "SwitchHomeTableViewController()", "category_switch_home_table_view_controller_07_08.html", null ],
     [ "ThingBLECentralManager(Connection)", "category_thing_b_l_e_central_manager_07_connection_08.html", null ],
     [ "ThingBLECentralManager(Discovery)", "category_thing_b_l_e_central_manager_07_discovery_08.html", null ],
     [ "ThingBLECharacteristic(ToolMethods)", "category_thing_b_l_e_characteristic_07_tool_methods_08.html", null ],
     [ "ThingBLEMeshManager(Command)", "category_thing_b_l_e_mesh_manager_07_command_08.html", null ],
     [ "ThingBLEMeshManager(Raw)", "category_thing_b_l_e_mesh_manager_07_raw_08.html", null ],
     [ "ThingCoreCacheService(ShareCache)", "category_thing_core_cache_service_07_share_cache_08.html", null ],
-    [ "ThingLinkActionMsgSendController()", "category_thing_link_action_msg_send_controller_07_08.html", null ],
-    [ "ThingLinkBindViewController()", "category_thing_link_bind_view_controller_07_08.html", null ],
     [ "ThingSDKUtil(AppSDKExtension)", "category_thing_s_d_k_util_07_app_s_d_k_extension_08.html", null ],
     [ "ThingSmartActivator(BleMesh)", "category_thing_smart_activator_07_ble_mesh_08.html", null ],
-    [ "ThingSmartActivator(Home)", "category_thing_smart_activator_07_home_08.html", null ],
     [ "ThingSmartAutoActivator(Home)", "category_thing_smart_auto_activator_07_home_08.html", null ],
     [ "ThingSmartBeaconManager(BatchDp)", "category_thing_smart_beacon_manager_07_batch_dp_08.html", null ],
     [ "ThingSmartBeaconManager(Group)", "category_thing_smart_beacon_manager_07_group_08.html", null ],
@@ -1277,6 +1287,7 @@ var hierarchy =
     [ "ThingSmartBLEManager(DualModeBT)", "category_thing_smart_b_l_e_manager_07_dual_mode_b_t_08.html", null ],
     [ "ThingSmartBLEManager(OTA)", "category_thing_smart_b_l_e_manager_07_o_t_a_08.html", null ],
     [ "ThingSmartBLEManager(PlugPlay)", "category_thing_smart_b_l_e_manager_07_plug_play_08.html", null ],
+    [ "ThingSmartBLEManager(QRCode)", "category_thing_smart_b_l_e_manager_07_q_r_code_08.html", null ],
     [ "ThingSmartBleMesh(SIGMesh)", "category_thing_smart_ble_mesh_07_s_i_g_mesh_08.html", null ],
     [ "ThingSmartBleMeshGroup(SIGMesh)", "category_thing_smart_ble_mesh_group_07_s_i_g_mesh_08.html", null ],
     [ "ThingSmartBLEWifiActivator(PlugPlay)", "category_thing_smart_b_l_e_wifi_activator_07_plug_play_08.html", null ],
@@ -1341,60 +1352,5 @@ var hierarchy =
     [ "ThingSmartUser(LoginByQRCode)", "category_thing_smart_user_07_login_by_q_r_code_08.html", null ],
     [ "ThingSmartUser(Region)", "category_thing_smart_user_07_region_08.html", null ],
     [ "ThingSmartUser(WCSession)", "category_thing_smart_user_07_w_c_session_08.html", null ],
-    [ "ThingUtil(AppExtension)", "category_thing_util_07_app_extension_08.html", null ],
-    [ "<UIApplicationDelegate>", null, [
-      [ "AppDelegate", "interface_app_delegate.html", null ]
-    ] ],
-    [ "UIButton(Extensions)", "category_u_i_button_07_extensions_08.html", null ],
-    [ "<UIImagePickerControllerDelegate>", null, [
-      [ "QRCodeScanerViewController()", "category_q_r_code_scaner_view_controller_07_08.html", null ]
-    ] ],
-    [ "<UINavigationControllerDelegate>", null, [
-      [ "QRCodeScanerViewController()", "category_q_r_code_scaner_view_controller_07_08.html", null ]
-    ] ],
-    [ "UIResponder", null, [
-      [ "AppDelegate", "interface_app_delegate.html", null ],
-      [ "SceneDelegate", "interface_scene_delegate.html", null ]
-    ] ],
-    [ "UITableViewCell", null, [
-      [ "DeviceStatusBehaveCell", "interface_device_status_behave_cell.html", [
-        [ "EnumTableViewCell", "interface_enum_table_view_cell.html", null ],
-        [ "LabelTableViewCell", "interface_label_table_view_cell.html", null ],
-        [ "SliderTableViewCell", "interface_slider_table_view_cell.html", null ],
-        [ "StringTableViewCell", "interface_string_table_view_cell.html", null ],
-        [ "SwitchTableViewCell", "interface_switch_table_view_cell.html", null ],
-        [ "TextViewTableViewCell", "interface_text_view_table_view_cell.html", null ]
-      ] ]
-    ] ],
-    [ "UITableViewController", null, [
-      [ "APModeTableViewController", "interface_a_p_mode_table_view_controller.html", null ],
-      [ "DeviceControlTableViewController", "interface_device_control_table_view_controller.html", null ],
-      [ "DeviceDetailTableViewController", "interface_device_detail_table_view_controller.html", null ],
-      [ "DeviceListTableViewController", "interface_device_list_table_view_controller.html", null ],
-      [ "DualModelTableViewController", "interface_dual_model_table_view_controller.html", null ],
-      [ "EZModeTableViewController", "interface_e_z_mode_table_view_controller.html", null ],
-      [ "EditHomeTableViewController", "interface_edit_home_table_view_controller.html", null ],
-      [ "HomeDetailTableViewController", "interface_home_detail_table_view_controller.html", null ],
-      [ "HomeListTableViewController", "interface_home_list_table_view_controller.html", null ],
-      [ "LoginTableViewController", "interface_login_table_view_controller.html", null ],
-      [ "MainTableViewController", "interface_main_table_view_controller.html", null ],
-      [ "NewHomeTableViewController", "interface_new_home_table_view_controller.html", null ],
-      [ "RegisterTableViewController", "interface_register_table_view_controller.html", null ],
-      [ "ResetPasswordTableViewController", "interface_reset_password_table_view_controller.html", null ],
-      [ "SIGMeshTableViewController", "interface_s_i_g_mesh_table_view_controller.html", null ],
-      [ "SwitchHomeTableViewController", "interface_switch_home_table_view_controller.html", null ],
-      [ "ThingLinkActionMsgSendController", "interface_thing_link_action_msg_send_controller.html", null ],
-      [ "ThingLinkBindViewController", "interface_thing_link_bind_view_controller.html", null ],
-      [ "ThingLinkDeviceControlController", "interface_thing_link_device_control_controller.html", null ],
-      [ "UserInformationTableViewController", "interface_user_information_table_view_controller.html", null ]
-    ] ],
-    [ "UIViewController", null, [
-      [ "BLEModelViewController", "interface_b_l_e_model_view_controller.html", null ],
-      [ "MainViewController", "interface_main_view_controller.html", null ],
-      [ "QRCodeScanerViewController", "interface_q_r_code_scaner_view_controller.html", null ]
-    ] ],
-    [ "<UIWindowSceneDelegate>", null, [
-      [ "SceneDelegate", "interface_scene_delegate.html", null ]
-    ] ],
-    [ "UserInformationTableViewController()", "category_user_information_table_view_controller_07_08.html", null ]
+    [ "ThingUtil(AppExtension)", "category_thing_util_07_app_extension_08.html", null ]
 ];

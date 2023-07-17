@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartBLEManager Class Reference</title>
+<title>Tuya iOS Home SDK: ThingSmartBLEManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.0.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
    </div>
   </td>
  </tr>
@@ -109,6 +109,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a85747d7d49de84cee6cfe1308c805e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa016dff3eb2bf03e38b734a6525534d3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#aa016dff3eb2bf03e38b734a6525534d3">startListenCore:handler:configNotify:scanType:</a></td></tr>
 <tr class="separator:aa016dff3eb2bf03e38b734a6525534d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f711427102e6b4d601039a5a0a3ced"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a75f711427102e6b4d601039a5a0a3ced">startEnhancedQRListenWithCache:handler:configNotify:scanType:</a></td></tr>
+<tr class="separator:a75f711427102e6b4d601039a5a0a3ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab60716c21ef762de78d7e26728f953bd"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#ab60716c21ef762de78d7e26728f953bd">startScanWithInterval:scanHandler:finishHandler:</a></td></tr>
 <tr class="separator:ab60716c21ef762de78d7e26728f953bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cd70d9284255727579c13e49daaf3ce"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a5cd70d9284255727579c13e49daaf3ce">stopListenCore:</a></td></tr>
@@ -154,6 +156,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a85747d7d49de84cee6cfe1308c805e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa016dff3eb2bf03e38b734a6525534d3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#aa016dff3eb2bf03e38b734a6525534d3">startListenCore:handler:configNotify:scanType:</a></td></tr>
 <tr class="separator:aa016dff3eb2bf03e38b734a6525534d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f711427102e6b4d601039a5a0a3ced"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a75f711427102e6b4d601039a5a0a3ced">startEnhancedQRListenWithCache:handler:configNotify:scanType:</a></td></tr>
+<tr class="separator:a75f711427102e6b4d601039a5a0a3ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab60716c21ef762de78d7e26728f953bd"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#ab60716c21ef762de78d7e26728f953bd">startScanWithInterval:scanHandler:finishHandler:</a></td></tr>
 <tr class="separator:ab60716c21ef762de78d7e26728f953bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cd70d9284255727579c13e49daaf3ce"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a5cd70d9284255727579c13e49daaf3ce">stopListenCore:</a></td></tr>
@@ -225,10 +229,14 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a0b0bc0777acb359138e6536b57bb0dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b0bc0777acb359138e6536b57bb0dbc"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a0b0bc0777acb359138e6536b57bb0dbc">getAudioVoiceAuthorizationToken:deviceId:success:failure:</a></td></tr>
 <tr class="separator:a0b0bc0777acb359138e6536b57bb0dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a48b27523b6d846ce9d6a8a8634041"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#ae3a48b27523b6d846ce9d6a8a8634041">publishAudioMD5Token:token:deviceId:</a></td></tr>
-<tr class="separator:ae3a48b27523b6d846ce9d6a8a8634041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a48b27523b6d846ce9d6a8a8634041"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#ae3a48b27523b6d846ce9d6a8a8634041">publishAudioMD5Token:token:deviceId:</a></td></tr>
-<tr class="separator:ae3a48b27523b6d846ce9d6a8a8634041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc64341a3f806655251e26a069b0bf32"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#abc64341a3f806655251e26a069b0bf32">publishAudioMD5Token:token:deviceId:</a></td></tr>
+<tr class="separator:abc64341a3f806655251e26a069b0bf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc64341a3f806655251e26a069b0bf32"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#abc64341a3f806655251e26a069b0bf32">publishAudioMD5Token:token:deviceId:</a></td></tr>
+<tr class="separator:abc64341a3f806655251e26a069b0bf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ccf94842aa7d79ca7b240e42516fd5d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a4ccf94842aa7d79ca7b240e42516fd5d">publishAudioMD5Token:token:deviceId:success:failure:</a></td></tr>
+<tr class="separator:a4ccf94842aa7d79ca7b240e42516fd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ccf94842aa7d79ca7b240e42516fd5d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a4ccf94842aa7d79ca7b240e42516fd5d">publishAudioMD5Token:token:deviceId:success:failure:</a></td></tr>
+<tr class="separator:a4ccf94842aa7d79ca7b240e42516fd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600444e85631287c55f1ac691fe9e8a7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a600444e85631287c55f1ac691fe9e8a7">clearAuthorizationToken:success:failure:</a></td></tr>
 <tr class="separator:a600444e85631287c55f1ac691fe9e8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600444e85631287c55f1ac691fe9e8a7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a600444e85631287c55f1ac691fe9e8a7">clearAuthorizationToken:success:failure:</a></td></tr>
@@ -439,6 +447,18 @@ Instance Methods</h2></td></tr>
 <tr class="separator:aa7da65423c73ab5b2388f0e672ad5c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7da65423c73ab5b2388f0e672ad5c55"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#aa7da65423c73ab5b2388f0e672ad5c55">activeDualDeviceWifiChannel:ssid:password:timeout:success:failure:</a></td></tr>
 <tr class="separator:aa7da65423c73ab5b2388f0e672ad5c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c00f72ba8fae17f35934bdaa9bc28e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a34c00f72ba8fae17f35934bdaa9bc28e">startListeningWithUUID:</a></td></tr>
+<tr class="separator:a34c00f72ba8fae17f35934bdaa9bc28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c00f72ba8fae17f35934bdaa9bc28e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a34c00f72ba8fae17f35934bdaa9bc28e">startListeningWithUUID:</a></td></tr>
+<tr class="separator:a34c00f72ba8fae17f35934bdaa9bc28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11bc3c723bb523a48f87914ea3107cb"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#ab11bc3c723bb523a48f87914ea3107cb">fetchResetKeyWithUUID:shortUrl:success:failure:</a></td></tr>
+<tr class="separator:ab11bc3c723bb523a48f87914ea3107cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11bc3c723bb523a48f87914ea3107cb"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#ab11bc3c723bb523a48f87914ea3107cb">fetchResetKeyWithUUID:shortUrl:success:failure:</a></td></tr>
+<tr class="separator:ab11bc3c723bb523a48f87914ea3107cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e6269f1033979e0a17d20439715612"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a01e6269f1033979e0a17d20439715612">scanQRCodeToResetDeviceWithUUID:encryptedAuthKey:random:success:failure:</a></td></tr>
+<tr class="separator:a01e6269f1033979e0a17d20439715612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e6269f1033979e0a17d20439715612"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_b_l_e_manager.html#a01e6269f1033979e0a17d20439715612">scanQRCodeToResetDeviceWithUUID:encryptedAuthKey:random:success:failure:</a></td></tr>
+<tr class="separator:a01e6269f1033979e0a17d20439715612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
@@ -480,6 +500,8 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="interface_thing_smart_b_l_e_manager.html" title="ThingSmartBLEManager provides methods to manage Bluetooth LE devices by using multiple functions,...">ThingSmartBLEManager</a> provides methods to manage Bluetooth LE devices by using multiple functions, such as activation, device control, and OTA updates. </p>
 <p >The types of OTA updates: firmware and MCU. </p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html#l00158">158</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html">ThingSmartBLEManager.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="ac3134c63e33722c6b92f8f0232ff9e98" name="ac3134c63e33722c6b92f8f0232ff9e98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3134c63e33722c6b92f8f0232ff9e98">&#9670;&nbsp;</a></span>activateExtendedModule:automatic:success:failure: <span class="overload">[1/2]</span></h2>
@@ -2687,6 +2709,90 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="ab11bc3c723bb523a48f87914ea3107cb" name="ab11bc3c723bb523a48f87914ea3107cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11bc3c723bb523a48f87914ea3107cb">&#9670;&nbsp;</a></span>fetchResetKeyWithUUID:shortUrl:success:failure: <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) fetchResetKeyWithUUID: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>UUID</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">shortUrl:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>shortUrl</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_09_q_r_code_8h.html#a760c046558cc06e4386429739498e625">ThingSmartBLEDevcieCheckHandler</a>)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_q_r_code_08.html#ab11bc3c723bb523a48f87914ea3107cb">ThingSmartBLEManager(QRCode)</a>.</p>
+
+</div>
+</div>
+<a id="ab11bc3c723bb523a48f87914ea3107cb" name="ab11bc3c723bb523a48f87914ea3107cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11bc3c723bb523a48f87914ea3107cb">&#9670;&nbsp;</a></span>fetchResetKeyWithUUID:shortUrl:success:failure: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) fetchResetKeyWithUUID: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>UUID</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">shortUrl:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>shortUrl</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_09_q_r_code_8h.html#a760c046558cc06e4386429739498e625">ThingSmartBLEDevcieCheckHandler</a>)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_q_r_code_08.html#ab11bc3c723bb523a48f87914ea3107cb">ThingSmartBLEManager(QRCode)</a>.</p>
+
+</div>
+</div>
 <a id="a65243ca2db45c1de7d7832713c1668cc" name="a65243ca2db45c1de7d7832713c1668cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65243ca2db45c1de7d7832713c1668cc">&#9670;&nbsp;</a></span>forceDeleteWithDeviceInfo:success:failure: <span class="overload">[1/2]</span></h2>
 
@@ -3807,8 +3913,108 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3a48b27523b6d846ce9d6a8a8634041" name="ae3a48b27523b6d846ce9d6a8a8634041"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3a48b27523b6d846ce9d6a8a8634041">&#9670;&nbsp;</a></span>publishAudioMD5Token:token:deviceId: <span class="overload">[1/2]</span></h2>
+<a id="abc64341a3f806655251e26a069b0bf32" name="abc64341a3f806655251e26a069b0bf32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc64341a3f806655251e26a069b0bf32">&#9670;&nbsp;</a></span>publishAudioMD5Token:token:deviceId: <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) publishAudioMD5Token: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>md5Token</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">token:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>token</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">deviceId:</td>
+          <td></td>
+          <td class="paramtype">(&quot;This method is)&#160;</td>
+          <td class="paramname"><em>deprecated</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(Use publishAudioMD5Token:token:deviceId:success:failure:instead&quot;)&#160;</td>
+          <td class="paramname"><em>__deprecated_msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >alexa md5 token </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">md5Token</td><td>md5Token </td></tr>
+    <tr><td class="paramname">token</td><td>token </td></tr>
+    <tr><td class="paramname">deviceId</td><td>device id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_alexa_voice_08.html#abc64341a3f806655251e26a069b0bf32">ThingSmartBLEManager(AlexaVoice)</a>.</p>
+
+</div>
+</div>
+<a id="abc64341a3f806655251e26a069b0bf32" name="abc64341a3f806655251e26a069b0bf32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc64341a3f806655251e26a069b0bf32">&#9670;&nbsp;</a></span>publishAudioMD5Token:token:deviceId: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) publishAudioMD5Token: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>md5Token</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">token:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>token</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">deviceId:</td>
+          <td></td>
+          <td class="paramtype">(&quot;This method is)&#160;</td>
+          <td class="paramname"><em>deprecated</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">(Use publishAudioMD5Token:token:deviceId:success:failure:instead&quot;)&#160;</td>
+          <td class="paramname"><em>__deprecated_msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >alexa md5 token </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">md5Token</td><td>md5Token </td></tr>
+    <tr><td class="paramname">token</td><td>token </td></tr>
+    <tr><td class="paramname">deviceId</td><td>device id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_alexa_voice_08.html#abc64341a3f806655251e26a069b0bf32">ThingSmartBLEManager(AlexaVoice)</a>.</p>
+
+</div>
+</div>
+<a id="a4ccf94842aa7d79ca7b240e42516fd5d" name="a4ccf94842aa7d79ca7b240e42516fd5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ccf94842aa7d79ca7b240e42516fd5d">&#9670;&nbsp;</a></span>publishAudioMD5Token:token:deviceId:success:failure: <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3829,7 +4035,19 @@ Properties</h2></td></tr>
           <td class="paramkey">deviceId:</td>
           <td></td>
           <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>deviceId</em>&#160;</td>
+          <td class="paramname"><em>deviceId</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3838,21 +4056,23 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >alexa md5 token </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Pulish alexa md5 token </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">md5Token</td><td>md5Token </td></tr>
+    <tr><td class="paramname">md5Token</td><td>md5 token </td></tr>
     <tr><td class="paramname">token</td><td>token </td></tr>
-    <tr><td class="paramname">deviceId</td><td>device id </td></tr>
+    <tr><td class="paramname">deviceId</td><td>deviceId </td></tr>
+    <tr><td class="paramname">success</td><td>success </td></tr>
+    <tr><td class="paramname">failure</td><td>failure </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_alexa_voice_08.html#ae3a48b27523b6d846ce9d6a8a8634041">ThingSmartBLEManager(AlexaVoice)</a>.</p>
+<p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_alexa_voice_08.html#a4ccf94842aa7d79ca7b240e42516fd5d">ThingSmartBLEManager(AlexaVoice)</a>.</p>
 
 </div>
 </div>
-<a id="ae3a48b27523b6d846ce9d6a8a8634041" name="ae3a48b27523b6d846ce9d6a8a8634041"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3a48b27523b6d846ce9d6a8a8634041">&#9670;&nbsp;</a></span>publishAudioMD5Token:token:deviceId: <span class="overload">[2/2]</span></h2>
+<a id="a4ccf94842aa7d79ca7b240e42516fd5d" name="a4ccf94842aa7d79ca7b240e42516fd5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ccf94842aa7d79ca7b240e42516fd5d">&#9670;&nbsp;</a></span>publishAudioMD5Token:token:deviceId:success:failure: <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3873,7 +4093,19 @@ Properties</h2></td></tr>
           <td class="paramkey">deviceId:</td>
           <td></td>
           <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>deviceId</em>&#160;</td>
+          <td class="paramname"><em>deviceId</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3882,16 +4114,18 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >alexa md5 token </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Pulish alexa md5 token </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">md5Token</td><td>md5Token </td></tr>
+    <tr><td class="paramname">md5Token</td><td>md5 token </td></tr>
     <tr><td class="paramname">token</td><td>token </td></tr>
-    <tr><td class="paramname">deviceId</td><td>device id </td></tr>
+    <tr><td class="paramname">deviceId</td><td>deviceId </td></tr>
+    <tr><td class="paramname">success</td><td>success </td></tr>
+    <tr><td class="paramname">failure</td><td>failure </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_alexa_voice_08.html#ae3a48b27523b6d846ce9d6a8a8634041">ThingSmartBLEManager(AlexaVoice)</a>.</p>
+<p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_alexa_voice_08.html#a4ccf94842aa7d79ca7b240e42516fd5d">ThingSmartBLEManager(AlexaVoice)</a>.</p>
 
 </div>
 </div>
@@ -5855,6 +6089,102 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a01e6269f1033979e0a17d20439715612" name="a01e6269f1033979e0a17d20439715612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e6269f1033979e0a17d20439715612">&#9670;&nbsp;</a></span>scanQRCodeToResetDeviceWithUUID:encryptedAuthKey:random:success:failure: <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) scanQRCodeToResetDeviceWithUUID: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>UUID</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">encryptedAuthKey:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>encryptedAuthKey</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">random:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>random</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_q_r_code_08.html#a01e6269f1033979e0a17d20439715612">ThingSmartBLEManager(QRCode)</a>.</p>
+
+</div>
+</div>
+<a id="a01e6269f1033979e0a17d20439715612" name="a01e6269f1033979e0a17d20439715612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e6269f1033979e0a17d20439715612">&#9670;&nbsp;</a></span>scanQRCodeToResetDeviceWithUUID:encryptedAuthKey:random:success:failure: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) scanQRCodeToResetDeviceWithUUID: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>UUID</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">encryptedAuthKey:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>encryptedAuthKey</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">random:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>random</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_q_r_code_08.html#a01e6269f1033979e0a17d20439715612">ThingSmartBLEManager(QRCode)</a>.</p>
+
+</div>
+</div>
 <a id="a94fa247c0be67cd6f410b532443d511a" name="a94fa247c0be67cd6f410b532443d511a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94fa247c0be67cd6f410b532443d511a">&#9670;&nbsp;</a></span>sendAlexaSuccessWithDeviceId:andToken: <span class="overload">[1/2]</span></h2>
 
@@ -6089,7 +6419,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Sends an OTA package to update the firmware.</p>
-<p >The value of <code>otaData</code> can be obtained from <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information.">ThingSmartFirmwareUpgradeModel</a>. You can get <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information.">ThingSmartFirmwareUpgradeModel</a> by using <a class="el" href="interface_thing_smart_device.html#aac1dc8f24cd9296a2994a5fdf3a14c34">getFirmwareUpgradeInfo:failure: (ThingSmartDevice)</a>.</p>
+<p >The value of <code>otaData</code> can be obtained from <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information. (Provided for home owner role or administrator role users....">ThingSmartFirmwareUpgradeModel</a>. You can get <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information. (Provided for home owner role or administrator role users....">ThingSmartFirmwareUpgradeModel</a> by using <a class="el" href="interface_thing_smart_device.html#aac1dc8f24cd9296a2994a5fdf3a14c34">getFirmwareUpgradeInfo:failure: (ThingSmartDevice)</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>Your device must be connected over Bluetooth before the update.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -6150,7 +6480,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Sends an OTA package to update the firmware.</p>
-<p >The value of <code>otaData</code> can be obtained from <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information.">ThingSmartFirmwareUpgradeModel</a>. You can get <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information.">ThingSmartFirmwareUpgradeModel</a> by using <a class="el" href="interface_thing_smart_device.html#aac1dc8f24cd9296a2994a5fdf3a14c34">getFirmwareUpgradeInfo:failure: (ThingSmartDevice)</a>.</p>
+<p >The value of <code>otaData</code> can be obtained from <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information. (Provided for home owner role or administrator role users....">ThingSmartFirmwareUpgradeModel</a>. You can get <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information. (Provided for home owner role or administrator role users....">ThingSmartFirmwareUpgradeModel</a> by using <a class="el" href="interface_thing_smart_device.html#aac1dc8f24cd9296a2994a5fdf3a14c34">getFirmwareUpgradeInfo:failure: (ThingSmartDevice)</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>Your device must be connected over Bluetooth before the update.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -6229,7 +6559,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Sends an OTA package to update the firmware.</p>
-<p >The values of <code>otaData</code>, <code>otaType</code>, and <code>otaVersion</code> can be obtained from <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information.">ThingSmartFirmwareUpgradeModel</a>. You can get <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information.">ThingSmartFirmwareUpgradeModel</a> by using <a class="el" href="interface_thing_smart_device.html#aac1dc8f24cd9296a2994a5fdf3a14c34">getFirmwareUpgradeInfo:failure: (ThingSmartDevice)</a>.</p>
+<p >The values of <code>otaData</code>, <code>otaType</code>, and <code>otaVersion</code> can be obtained from <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information. (Provided for home owner role or administrator role users....">ThingSmartFirmwareUpgradeModel</a>. You can get <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information. (Provided for home owner role or administrator role users....">ThingSmartFirmwareUpgradeModel</a> by using <a class="el" href="interface_thing_smart_device.html#aac1dc8f24cd9296a2994a5fdf3a14c34">getFirmwareUpgradeInfo:failure: (ThingSmartDevice)</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>Your device must be connected over Bluetooth before the update.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -6311,7 +6641,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Sends an OTA package to update the firmware.</p>
-<p >The values of <code>otaData</code>, <code>otaType</code>, and <code>otaVersion</code> can be obtained from <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information.">ThingSmartFirmwareUpgradeModel</a>. You can get <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information.">ThingSmartFirmwareUpgradeModel</a> by using <a class="el" href="interface_thing_smart_device.html#aac1dc8f24cd9296a2994a5fdf3a14c34">getFirmwareUpgradeInfo:failure: (ThingSmartDevice)</a>.</p>
+<p >The values of <code>otaData</code>, <code>otaType</code>, and <code>otaVersion</code> can be obtained from <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information. (Provided for home owner role or administrator role users....">ThingSmartFirmwareUpgradeModel</a>. You can get <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information. (Provided for home owner role or administrator role users....">ThingSmartFirmwareUpgradeModel</a> by using <a class="el" href="interface_thing_smart_device.html#aac1dc8f24cd9296a2994a5fdf3a14c34">getFirmwareUpgradeInfo:failure: (ThingSmartDevice)</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>Your device must be connected over Bluetooth before the update.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -6381,7 +6711,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Sends an OTA package to update the firmware.</p>
-<p >The value of <code>otaData</code> can be obtained from <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information.">ThingSmartFirmwareUpgradeModel</a>. You can get <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information.">ThingSmartFirmwareUpgradeModel</a> by using <a class="el" href="interface_thing_smart_device.html#aac1dc8f24cd9296a2994a5fdf3a14c34">getFirmwareUpgradeInfo:failure: (ThingSmartDevice)</a>.</p>
+<p >The value of <code>otaData</code> can be obtained from <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information. (Provided for home owner role or administrator role users....">ThingSmartFirmwareUpgradeModel</a>. You can get <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information. (Provided for home owner role or administrator role users....">ThingSmartFirmwareUpgradeModel</a> by using <a class="el" href="interface_thing_smart_device.html#aac1dc8f24cd9296a2994a5fdf3a14c34">getFirmwareUpgradeInfo:failure: (ThingSmartDevice)</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>Your device must be connected over Bluetooth before the update.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -6449,7 +6779,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Sends an OTA package to update the firmware.</p>
-<p >The value of <code>otaData</code> can be obtained from <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information.">ThingSmartFirmwareUpgradeModel</a>. You can get <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information.">ThingSmartFirmwareUpgradeModel</a> by using <a class="el" href="interface_thing_smart_device.html#aac1dc8f24cd9296a2994a5fdf3a14c34">getFirmwareUpgradeInfo:failure: (ThingSmartDevice)</a>.</p>
+<p >The value of <code>otaData</code> can be obtained from <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information. (Provided for home owner role or administrator role users....">ThingSmartFirmwareUpgradeModel</a>. You can get <a class="el" href="interface_thing_smart_firmware_upgrade_model.html" title="The device firmware update information. (Provided for home owner role or administrator role users....">ThingSmartFirmwareUpgradeModel</a> by using <a class="el" href="interface_thing_smart_device.html#aac1dc8f24cd9296a2994a5fdf3a14c34">getFirmwareUpgradeInfo:failure: (ThingSmartDevice)</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>Your device must be connected over Bluetooth before the update.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -7065,6 +7395,104 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a75f711427102e6b4d601039a5a0a3ced" name="a75f711427102e6b4d601039a5a0a3ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f711427102e6b4d601039a5a0a3ced">&#9670;&nbsp;</a></span>startEnhancedQRListenWithCache:handler:configNotify:scanType: <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) startEnhancedQRListenWithCache: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>cache</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">handler:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h.html#a089a75b36bd363563843d6509ee8ddf0">ThingBLEScanHandler</a>)&#160;</td>
+          <td class="paramname"><em>handler</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">configNotify:</td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_thing_smart_b_l_e_config_package_notify-p.html">ThingSmartBLEConfigPackageNotify</a> &gt;)&#160;</td>
+          <td class="paramname"><em>notify</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">scanType:</td>
+          <td></td>
+          <td class="paramtype">(ThingBLEScanType)&#160;</td>
+          <td class="paramname"><em>scanType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >增强扫码设备扫描 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cache</td><td>是否清理已扫描到的设备 </td></tr>
+    <tr><td class="paramname">handler</td><td>设备扫描之后需要处理的业务功能 </td></tr>
+    <tr><td class="paramname">notify</td><td>接收蓝牙业务回调 </td></tr>
+    <tr><td class="paramname">scanType</td><td>扫描类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a75f711427102e6b4d601039a5a0a3ced" name="a75f711427102e6b4d601039a5a0a3ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f711427102e6b4d601039a5a0a3ced">&#9670;&nbsp;</a></span>startEnhancedQRListenWithCache:handler:configNotify:scanType: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) startEnhancedQRListenWithCache: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>cache</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">handler:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h.html#a089a75b36bd363563843d6509ee8ddf0">ThingBLEScanHandler</a>)&#160;</td>
+          <td class="paramname"><em>handler</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">configNotify:</td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_thing_smart_b_l_e_config_package_notify-p.html">ThingSmartBLEConfigPackageNotify</a> &gt;)&#160;</td>
+          <td class="paramname"><em>notify</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">scanType:</td>
+          <td></td>
+          <td class="paramtype">(ThingBLEScanType)&#160;</td>
+          <td class="paramname"><em>scanType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >增强扫码设备扫描 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cache</td><td>是否清理已扫描到的设备 </td></tr>
+    <tr><td class="paramname">handler</td><td>设备扫描之后需要处理的业务功能 </td></tr>
+    <tr><td class="paramname">notify</td><td>接收蓝牙业务回调 </td></tr>
+    <tr><td class="paramname">scanType</td><td>扫描类型 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa016dff3eb2bf03e38b734a6525534d3" name="aa016dff3eb2bf03e38b734a6525534d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa016dff3eb2bf03e38b734a6525534d3">&#9670;&nbsp;</a></span>startListenCore:handler:configNotify:scanType: <span class="overload">[1/2]</span></h2>
 
@@ -7296,6 +7724,46 @@ Properties</h2></td></tr>
 </dl>
 
 <p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_biz_08.html#a13c3e72404277549512bbaa3c6813b4b">ThingSmartBLEManager(Biz)</a>.</p>
+
+</div>
+</div>
+<a id="a34c00f72ba8fae17f35934bdaa9bc28e" name="a34c00f72ba8fae17f35934bdaa9bc28e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c00f72ba8fae17f35934bdaa9bc28e">&#9670;&nbsp;</a></span>startListeningWithUUID: <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) startListeningWithUUID: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>UUID</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_q_r_code_08.html#a34c00f72ba8fae17f35934bdaa9bc28e">ThingSmartBLEManager(QRCode)</a>.</p>
+
+</div>
+</div>
+<a id="a34c00f72ba8fae17f35934bdaa9bc28e" name="a34c00f72ba8fae17f35934bdaa9bc28e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c00f72ba8fae17f35934bdaa9bc28e">&#9670;&nbsp;</a></span>startListeningWithUUID: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) startListeningWithUUID: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>UUID</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provided by category <a class="el" href="category_thing_smart_b_l_e_manager_07_q_r_code_08.html#a34c00f72ba8fae17f35934bdaa9bc28e">ThingSmartBLEManager(QRCode)</a>.</p>
 
 </div>
 </div>
@@ -7858,6 +8326,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html#l00174">174</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html">ThingSmartBLEManager.h</a>.</p>
+
 </div>
 </div>
 <a id="a469c6be00df9d3e8eb78e80cb822d009" name="a469c6be00df9d3e8eb78e80cb822d009"></a>
@@ -7879,6 +8349,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html#l00185">185</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html">ThingSmartBLEManager.h</a>.</p>
 
 </div>
 </div>
@@ -7904,6 +8376,8 @@ Properties</h2></td></tr>
 
 <p>The delegate for scanning and notifications of Bluetooth status changes. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html#l00170">170</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html">ThingSmartBLEManager.h</a>.</p>
+
 </div>
 </div>
 <a id="aedbcc5b55b5b24ec953e2b66ea14523b" name="aedbcc5b55b5b24ec953e2b66ea14523b"></a>
@@ -7928,6 +8402,8 @@ Properties</h2></td></tr>
 
 <p>Whether to disable bluetooth. Default NO. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html#l00167">167</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html">ThingSmartBLEManager.h</a>.</p>
+
 </div>
 </div>
 <a id="a524714e39a3a0341b4988f305851e1fd" name="a524714e39a3a0341b4988f305851e1fd"></a>
@@ -7950,6 +8426,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html#l00179">179</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html">ThingSmartBLEManager.h</a>.</p>
+
 </div>
 </div>
 <a id="ab841c233b2a81ac0cdf38ba3e14546a9" name="ab841c233b2a81ac0cdf38ba3e14546a9"></a>
@@ -7971,6 +8449,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html#l00177">177</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html">ThingSmartBLEManager.h</a>.</p>
 
 </div>
 </div>
@@ -7996,6 +8476,8 @@ Properties</h2></td></tr>
 
 <p>A Boolean value that indicates whether the mobile phone's Bluetooth is enabled or disabled. </p>
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html#l00164">164</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html">ThingSmartBLEManager.h</a>.</p>
+
 </div>
 </div>
 <a id="ae6acc7ac65b878fc054f0d7578747a09" name="ae6acc7ac65b878fc054f0d7578747a09"></a>
@@ -8017,6 +8499,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html#l00172">172</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html">ThingSmartBLEManager.h</a>.</p>
 
 </div>
 </div>
@@ -8040,6 +8524,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html#l00187">187</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html">ThingSmartBLEManager.h</a>.</p>
+
 </div>
 </div>
 <a id="ad77c89f19c644c1ba0c237fe48e9c7f1" name="ad77c89f19c644c1ba0c237fe48e9c7f1"></a>
@@ -8061,6 +8547,8 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html#l00191">191</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source.html">ThingSmartBLEManager.h</a>.</p>
 
 </div>
 </div>

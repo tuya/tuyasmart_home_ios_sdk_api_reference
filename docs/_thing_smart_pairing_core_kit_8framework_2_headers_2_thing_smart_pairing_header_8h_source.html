@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartPairingCoreKit/Build/ThingSmartPairingCoreKit.xcframework/ios-arm64/ThingSmartPairingCoreKit.framework/Headers/ThingSmartPairingHeader.h Source File</title>
+<title>Tuya iOS Home SDK: ThingSmartPairingCoreKit/Build/ThingSmartPairingCoreKit.xcframework/ios-arm64/ThingSmartPairingCoreKit.framework/Headers/ThingSmartPairingHeader.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.0.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
    </div>
   </td>
  </tr>
@@ -106,24 +106,25 @@ $(document).ready(function(){initNavTree('_thing_smart_pairing_core_kit_8framewo
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    ThingActivatorModeEZMulti,</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    ThingActivatorModeWiredGateway, </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    ThingActivatorModeELink, </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    ThingActivatorModeAPPlus</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_header_8h.html#a4f28ebd3e7064ab61443dcaa3c8868b2">   24</a></span><span class="keyword">typedef</span> <a class="code hl_function" href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_header_8h.html#a023cce1c02880b8febd2e09447868e32">NS_ENUM</a>(NSUInteger, ThingActivatorStep) {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    ThingActivatorStepFound = 1,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    ThingActivatorStepRegisted = 2,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    ThingActivatorStepIntialized = 3,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    ThingActivatorStepTimeOut = 4, </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif </span><span class="comment">/* ThingSmartPairingHeader_h */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_header_8h_html_a023cce1c02880b8febd2e09447868e32"><div class="ttname"><a href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_header_8h.html#a023cce1c02880b8febd2e09447868e32">NS_ENUM</a></div><div class="ttdeci">typedef NS_ENUM(NSUInteger, ThingActivatorMode)</div><div class="ttdef"><b>Definition:</b> ThingSmartPairingHeader.h:13</div></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    ThingActivatorModeAPPlus,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    ThingActivatorModeMQTTDirectly,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_header_8h.html#a4f28ebd3e7064ab61443dcaa3c8868b2">   25</a></span><span class="keyword">typedef</span> <a class="code hl_function" href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_header_8h.html#a023cce1c02880b8febd2e09447868e32">NS_ENUM</a>(NSUInteger, ThingActivatorStep) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    ThingActivatorStepFound = 1,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    ThingActivatorStepRegisted = 2,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    ThingActivatorStepIntialized = 3,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    ThingActivatorStepTimeOut = 4, </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif </span><span class="comment">/* ThingSmartPairingHeader_h */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_header_8h_html_a023cce1c02880b8febd2e09447868e32"><div class="ttname"><a href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_header_8h.html#a023cce1c02880b8febd2e09447868e32">NS_ENUM</a></div><div class="ttdeci">typedef NS_ENUM(NSUInteger, ThingActivatorMode)</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_header_8h_source.html#l00013">ThingSmartPairingHeader.h:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d6617368483affc5a2259e369b4fd4e7.html">ThingSmartPairingCoreKit</a></li><li class="navelem"><a class="el" href="dir_dd7cef2ef1517104d378423305cb6857.html">Build</a></li><li class="navelem"><a class="el" href="dir_1ca975681f9b9bb219153e59404f1946.html">ThingSmartPairingCoreKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_c88388f9e286d759634a7b63678650a8.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_0b9dbfd9a6cb7f2a4f5c6d5355beed2a.html">ThingSmartPairingCoreKit.framework</a></li><li class="navelem"><a class="el" href="dir_ddd440fa8cbcfc40897e4e6d6998dc87.html">Headers</a></li><li class="navelem"><a class="el" href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_header_8h.html">ThingSmartPairingHeader.h</a></li>
+    <li class="navelem"><a class="el" href="dir_1cf2e8a14924e576d1c386a82ec26597.html">ThingSmartPairingCoreKit</a></li><li class="navelem"><a class="el" href="dir_715f74f945f40d5e968967ffe742ffa9.html">Build</a></li><li class="navelem"><a class="el" href="dir_93fe333ae7accc762925a18ef7375608.html">ThingSmartPairingCoreKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_7b10ddffe490876da67886c4db257b99.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_273cf5800d9149d71dc636f677be40f5.html">ThingSmartPairingCoreKit.framework</a></li><li class="navelem"><a class="el" href="dir_8859081d352b84ab3027b81c37616fec.html">Headers</a></li><li class="navelem"><a class="el" href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_header_8h.html">ThingSmartPairingHeader.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

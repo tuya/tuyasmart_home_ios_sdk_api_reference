@@ -1,0 +1,4 @@
+var ios_arm64__x86__64_simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_conditia3e2919d91b099767f226985d6b910a4 =
+[
+    [ "TSceneConditionCategoryListRequestParams", "interface_t_scene_condition_category_list_request_params.html", "interface_t_scene_condition_category_list_request_params" ]
+];

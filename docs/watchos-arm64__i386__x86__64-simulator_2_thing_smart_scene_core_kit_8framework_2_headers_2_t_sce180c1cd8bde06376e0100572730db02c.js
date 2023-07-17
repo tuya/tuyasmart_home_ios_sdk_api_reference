@@ -1,0 +1,4 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_sce180c1cd8bde06376e0100572730db02c =
+[
+    [ "TSceneConditionCategoryListRequestParams", "interface_t_scene_condition_category_list_request_params.html", "interface_t_scene_condition_category_list_request_params" ]
+];

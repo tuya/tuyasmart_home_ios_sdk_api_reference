@@ -37,6 +37,7 @@ var x86__64_simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_
     [ "Thing_BLE_CONFIG_STEP_SERVICE", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_log_event_service_8h.html#a8137d1a35a25d9191b39856145eb4853", null ],
     [ "Thing_BLE_CONFIG_STEP_SET_PWD", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_log_event_service_8h.html#a2196847834871b44f784ad50e49af4bb", null ],
     [ "Thing_BLE_CONFIG_STEP_TIMEOUT", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_log_event_service_8h.html#ab4a4314fe39e55b7efd5d4c9211ec58f", null ],
+    [ "Thing_BLE_CONFIG_STEP_UNKNOWN", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_log_event_service_8h.html#a74d1e6f3d3603ae33deedc1d7762bdc2", null ],
     [ "Thing_BLE_CONFIG_STEP_ZB_CHECK", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_log_event_service_8h.html#a560a1d67df5364bc8d5c65a3de35dc8a", null ],
     [ "Thing_BLE_CONFIG_STEP_ZB_DEVICE_GW_INFO", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_log_event_service_8h.html#a5ad0977b4cd04540d90093b365212ba6", null ],
     [ "Thing_BLE_CONFIG_STEP_ZB_GET_DEVINFO", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_log_event_service_8h.html#a2e16d98f2ba06c14155a51b8cc306419", null ],

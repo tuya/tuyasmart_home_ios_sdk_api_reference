@@ -22,6 +22,8 @@ var protocol_thing_smart_s_i_g_mesh_manager_delegate_p =
     [ "notifySIGLoginSuccess:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#ac2877a1698e29c1249c1ddb064dd25b7", null ],
     [ "notifySIGLoginSuccess:manager:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#ae4fd39d654b3331dc135763c466825a6", null ],
     [ "notifySIGLoginSuccess:manager:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#ae4fd39d654b3331dc135763c466825a6", null ],
+    [ "OptionalParametersToRegisterDeviceWithTheCloud", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a738114d2232308f602ba89f2160ab620", null ],
+    [ "OptionalParametersToRegisterDeviceWithTheCloud", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a738114d2232308f602ba89f2160ab620", null ],
     [ "sigMeshManager:didActiveSubDevice:devId:error:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#adf9973d55a8f5c94ad094153b450cc0d", null ],
     [ "sigMeshManager:didActiveSubDevice:devId:error:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#adf9973d55a8f5c94ad094153b450cc0d", null ],
     [ "sigMeshManager:didFailToActiveDevice:error:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#ac0925f517060e09c3dbe851af1e971b1", null ],
