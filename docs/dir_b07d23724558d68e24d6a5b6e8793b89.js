@@ -20,5 +20,6 @@ var dir_b07d23724558d68e24d6a5b6e8793b89 =
     [ "ThingSmartBLEManager+QRCode.h", "_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_09_q_r_code_8h.html", "_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_09_q_r_code_8h" ],
     [ "ThingSmartBLEWifiActivator+PlugPlay.h", "_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_09_plug_play_8h.html", "_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_09_plug_play_8h" ],
     [ "ThingSmartBLEWifiActivator.h", "_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_8h.html", "_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_8h" ],
+    [ "ThingSmartBLEWifiMultier.h", "_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_multier_8h.html", "_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_multier_8h" ],
     [ "ThingSmartExtModuleManager.h", "_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_ext_module_manager_8h.html", "_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_ext_module_manager_8h" ]
 ];

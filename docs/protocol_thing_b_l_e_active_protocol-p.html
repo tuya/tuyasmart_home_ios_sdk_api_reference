@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: &lt;ThingBLEActiveProtocol&gt; Protocol Reference</title>
+<title>Tuya iOS Smart Life App SDK API Doc: &lt;ThingBLEActiveProtocol&gt; Protocol Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -113,6 +112,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a96a39f1e27b358a2432484c440b7a5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a986f3afa28bfa025060f8d0e17e14dcf"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_b_l_e_active_protocol-p.html#a986f3afa28bfa025060f8d0e17e14dcf">startActiveWithDevice:ssid:passwd:token:handlerDelegate:success:failure:</a></td></tr>
 <tr class="separator:a986f3afa28bfa025060f8d0e17e14dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02bd176f050830e9e602871be9f8b56"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_b_l_e_active_protocol-p.html#ad02bd176f050830e9e602871be9f8b56">multiActiveWithDevice:ssid:passwd:token:handlerDelegate:success:failure:</a></td></tr>
+<tr class="separator:ad02bd176f050830e9e602871be9f8b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ce8164ed1d24c03d5ab6aeae599d441"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_b_l_e_active_protocol-p.html#a8ce8164ed1d24c03d5ab6aeae599d441">pairZigbeeSubDeviceWithBleChannel:success:failure:</a></td></tr>
 <tr class="separator:a8ce8164ed1d24c03d5ab6aeae599d441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b084f6483c907c2ea184ef40f07a761"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_b_l_e_active_protocol-p.html#a9b084f6483c907c2ea184ef40f07a761">publishGatewayInfoWithBleChannel:gatewayInfo:success:failure:</a></td></tr>
@@ -145,6 +146,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a96a39f1e27b358a2432484c440b7a5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a986f3afa28bfa025060f8d0e17e14dcf"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_b_l_e_active_protocol-p.html#a986f3afa28bfa025060f8d0e17e14dcf">startActiveWithDevice:ssid:passwd:token:handlerDelegate:success:failure:</a></td></tr>
 <tr class="separator:a986f3afa28bfa025060f8d0e17e14dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02bd176f050830e9e602871be9f8b56"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_b_l_e_active_protocol-p.html#ad02bd176f050830e9e602871be9f8b56">multiActiveWithDevice:ssid:passwd:token:handlerDelegate:success:failure:</a></td></tr>
+<tr class="separator:ad02bd176f050830e9e602871be9f8b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ce8164ed1d24c03d5ab6aeae599d441"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_b_l_e_active_protocol-p.html#a8ce8164ed1d24c03d5ab6aeae599d441">pairZigbeeSubDeviceWithBleChannel:success:failure:</a></td></tr>
 <tr class="separator:a8ce8164ed1d24c03d5ab6aeae599d441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b084f6483c907c2ea184ef40f07a761"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_b_l_e_active_protocol-p.html#a9b084f6483c907c2ea184ef40f07a761">publishGatewayInfoWithBleChannel:gatewayInfo:success:failure:</a></td></tr>
@@ -182,7 +185,7 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >激活协议，老的方法目前因为降级的存在，暂时不能挪走，只能一并放在Core中 </p>
 
-<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html#l00046">46</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html">ThingBLEActiveProtocol.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html#l00048">48</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html">ThingBLEActiveProtocol.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="aaa0ebfe5c98b1990ced37aac1c1dc6f9" name="aaa0ebfe5c98b1990ced37aac1c1dc6f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa0ebfe5c98b1990ced37aac1c1dc6f9">&#9670;&nbsp;</a></span>activeBLEBackUp:token:success:failure: <span class="overload">[1/2]</span></h2>
@@ -560,6 +563,146 @@ Properties</h2></td></tr>
 <p >连接设备（双模、PlugPlay）（Core） </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>需要配网的设备 </td></tr>
+    <tr><td class="paramname">success</td><td>成功回调 </td></tr>
+    <tr><td class="paramname">failure</td><td>失败回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad02bd176f050830e9e602871be9f8b56" name="ad02bd176f050830e9e602871be9f8b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad02bd176f050830e9e602871be9f8b56">&#9670;&nbsp;</a></span>multiActiveWithDevice:ssid:passwd:token:handlerDelegate:success:failure: <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) multiActiveWithDevice: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_thing_b_l_e_device_info_protocol-p.html">ThingBLEDeviceInfoProtocol</a> &gt;)&#160;</td>
+          <td class="paramname"><em>deviceInfo</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">ssid:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>ssid</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">passwd:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>passwd</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">token:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>token</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">handlerDelegate:</td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_thing_smart_b_l_e_active_delegate-p.html">ThingSmartBLEActiveDelegate</a> &gt;)&#160;</td>
+          <td class="paramname"><em>handlerDelegate</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a1ac4228c704d9d5a24b47a8d3b9d4c32">ThingSuccessID</a>)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >批量配网（Core） </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deviceInfo</td><td>需要配网的设备 </td></tr>
+    <tr><td class="paramname">ssid</td><td>路由器热点名称 </td></tr>
+    <tr><td class="paramname">passwd</td><td>路由器热点密码 </td></tr>
+    <tr><td class="paramname">token</td><td>配网Token </td></tr>
+    <tr><td class="paramname">handlerDelegate</td><td>用于获取部分补充信息的代理对象 </td></tr>
+    <tr><td class="paramname">success</td><td>成功回调 </td></tr>
+    <tr><td class="paramname">failure</td><td>失败回调 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad02bd176f050830e9e602871be9f8b56" name="ad02bd176f050830e9e602871be9f8b56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad02bd176f050830e9e602871be9f8b56">&#9670;&nbsp;</a></span>multiActiveWithDevice:ssid:passwd:token:handlerDelegate:success:failure: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) multiActiveWithDevice: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_thing_b_l_e_device_info_protocol-p.html">ThingBLEDeviceInfoProtocol</a> &gt;)&#160;</td>
+          <td class="paramname"><em>deviceInfo</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">ssid:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>ssid</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">passwd:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>passwd</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">token:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>token</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">handlerDelegate:</td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_thing_smart_b_l_e_active_delegate-p.html">ThingSmartBLEActiveDelegate</a> &gt;)&#160;</td>
+          <td class="paramname"><em>handlerDelegate</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a1ac4228c704d9d5a24b47a8d3b9d4c32">ThingSuccessID</a>)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >批量配网（Core） </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deviceInfo</td><td>需要配网的设备 </td></tr>
+    <tr><td class="paramname">ssid</td><td>路由器热点名称 </td></tr>
+    <tr><td class="paramname">passwd</td><td>路由器热点密码 </td></tr>
+    <tr><td class="paramname">token</td><td>配网Token </td></tr>
+    <tr><td class="paramname">handlerDelegate</td><td>用于获取部分补充信息的代理对象 </td></tr>
     <tr><td class="paramname">success</td><td>成功回调 </td></tr>
     <tr><td class="paramname">failure</td><td>失败回调 </td></tr>
   </table>
@@ -1335,7 +1478,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html#l00050">50</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html">ThingBLEActiveProtocol.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html#l00052">52</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html">ThingBLEActiveProtocol.h</a>.</p>
 
 </div>
 </div>
@@ -1362,7 +1505,7 @@ Properties</h2></td></tr>
 <p>&lt; 配网代理 </p>
 <p >中间过程要外部补充数据的代理 </p>
 
-<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html#l00051">51</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html">ThingBLEActiveProtocol.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html#l00053">53</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html">ThingBLEActiveProtocol.h</a>.</p>
 
 </div>
 </div>
@@ -1386,7 +1529,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html#l00052">52</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html">ThingBLEActiveProtocol.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html#l00054">54</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_active_protocol_8h_source.html">ThingBLEActiveProtocol.h</a>.</p>
 
 </div>
 </div>

@@ -11,6 +11,7 @@ var interface_thing_b_l_e_adv_model =
     [ "isSupportMultiUserShare", "interface_thing_b_l_e_adv_model.html#af36833f8503fbf774472c83b9aa38de8", null ],
     [ "isSupportV2Secret", "interface_thing_b_l_e_adv_model.html#a0d009153ced19e515486754fa14b1026", null ],
     [ "mac", "interface_thing_b_l_e_adv_model.html#a69b380f8a41f34a75d7ddf5155979cde", null ],
+    [ "peripheral", "interface_thing_b_l_e_adv_model.html#ac7193f8dca6f956c393373a4ef46ef9a", null ],
     [ "productId", "interface_thing_b_l_e_adv_model.html#aa48d35fa65eb369e9c912236908b0b1b", null ],
     [ "uuid", "interface_thing_b_l_e_adv_model.html#ad685e46d9624ebb58302e6129a2f9f15", null ]
 ];

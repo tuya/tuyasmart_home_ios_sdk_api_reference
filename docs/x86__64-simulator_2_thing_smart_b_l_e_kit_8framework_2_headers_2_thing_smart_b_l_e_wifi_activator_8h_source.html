@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartBLEKit/Build/ThingSmartBLEKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBLEKit.framework/Headers/ThingSmartBLEWifiActivator.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartBLEKit/Build/ThingSmartBLEKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBLEKit.framework/Headers/ThingSmartBLEWifiActivator.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -108,7 +107,7 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_b_l_e_
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    ThingBLEWifiConfigResumeActionTypePlugPlay,<span class="comment">//继续兜底激活</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="x86__64-simulator_2_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_8h.html#a5b0094ccc2e8d8a5436e9077939e3910">   23</a></span><span class="keyword">typedef</span> void(^<a class="code hl_typedef" href="_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_8h.html#a5b0094ccc2e8d8a5436e9077939e3910">ThingBLEArrayCallback</a>)(NSArray *_Nullable array, NSError *_Nullable error);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="x86__64-simulator_2_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_8h.html#a5b0094ccc2e8d8a5436e9077939e3910">   23</a></span><span class="keyword">typedef</span> void(^<a class="code hl_typedef" href="_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_8h.html#a5b0094ccc2e8d8a5436e9077939e3910">ThingBLEArrayCallback</a>)(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> *_Nullable array, NSError *_Nullable error);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">@protocol </span><a class="code hl_protocol" href="protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html">ThingSmartBLEWifiActivatorDelegate</a> &lt;NSObject&gt;</div>
@@ -121,7 +120,7 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_b_l_e_
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>- (void)bleWifiActivator:(<a class="code hl_interface" href="interface_thing_smart_b_l_e_wifi_activator.html">ThingSmartBLEWifiActivator</a> *)activator notConfigStateWithError:(NSError *)error;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>- (void)bleWifiActivator:(<a class="code hl_interface" href="interface_thing_smart_b_l_e_wifi_activator.html">ThingSmartBLEWifiActivator</a> *)activator didScanWifiList:(NSArray *)wifiList uuid:(NSString *)uuid error:(NSError *)error;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>- (void)bleWifiActivator:(<a class="code hl_interface" href="interface_thing_smart_b_l_e_wifi_activator.html">ThingSmartBLEWifiActivator</a> *)activator didScanWifiList:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> *)wifiList uuid:(NSString *)uuid error:(NSError *)error;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>- (void)bleWifiActivator:(<a class="code hl_interface" href="interface_thing_smart_b_l_e_wifi_activator.html">ThingSmartBLEWifiActivator</a> *)activator didReceiveConfigMiddleStateModel:(<a class="code hl_interface" href="interface_thing_b_l_e_config_state_model.html">ThingBLEConfigStateModel</a> *)configState;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
@@ -179,6 +178,7 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_b_l_e_
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="protocol_thing_smart_b_l_e_wifi_activator_delegate-p.html#a45b42cf6af1d6f1799e9d49c9b8de4b5">  159</a></span>NS_ASSUME_NONNULL_END</div>
 <div class="ttc" id="a_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_8h_html_a5b0094ccc2e8d8a5436e9077939e3910"><div class="ttname"><a href="_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_8h.html#a5b0094ccc2e8d8a5436e9077939e3910">ThingBLEArrayCallback</a></div><div class="ttdeci">void(^ ThingBLEArrayCallback)(NSArray *_Nullable array, NSError *_Nullable error)</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_8h_source.html#l00023">ThingSmartBLEWifiActivator.h:23</a></div></div>
 <div class="ttc" id="a_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_8h_html_ac1f27ee70f06ca2802d2d1547dc89ace"><div class="ttname"><a href="_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_8h.html#ac1f27ee70f06ca2802d2d1547dc89ace">NS_ENUM</a></div><div class="ttdeci">typedef NS_ENUM(NSInteger, ThingBLEWifiConfigResumeActionType)</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_wifi_activator_8h_source.html#l00018">ThingSmartBLEWifiActivator.h:18</a></div></div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_b_l_e_config_state_model_html"><div class="ttname"><a href="interface_thing_b_l_e_config_state_model.html">ThingBLEConfigStateModel</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_wifi_config_model_8h_source.html#l00031">ThingBLEWifiConfigModel.h:32</a></div></div>
 <div class="ttc" id="ainterface_thing_b_l_e_transport_request_html"><div class="ttname"><a href="interface_thing_b_l_e_transport_request.html">ThingBLETransportRequest</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_wifi_config_model_8h_source.html#l00023">ThingBLEWifiConfigModel.h:24</a></div></div>
 <div class="ttc" id="ainterface_thing_b_l_e_wifi_config_model_html"><div class="ttname"><a href="interface_thing_b_l_e_wifi_config_model.html">ThingBLEWifiConfigModel</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_wifi_config_model_8h_source.html#l00012">ThingBLEWifiConfigModel.h:13</a></div></div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-arm64/ThingSmartUtil.framework/Headers/ThingSDKConfig.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-arm64/ThingSmartUtil.framework/Headers/ThingSDKConfig.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -117,11 +116,15 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_util_8framewor
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="interface_thing_s_d_k_config.html#a4126a1175378ecb0e0abb7ade0e4388b">   32</a></span><span class="keyword">@property</span> (nonatomic, copy, nullable) NSString *<a class="code hl_property" href="interface_thing_s_d_k_config.html#a4126a1175378ecb0e0abb7ade0e4388b">dynamicAddHotspots</a>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>+ (instancetype)<a class="code hl_function" href="interface_thing_s_d_k_config.html#a8ad638edfb7dcd65b75806a5713a7b27">sharedInstance</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="interface_thing_s_d_k_config.html#a8ae64a54736188251b133fda501fc3fc">   34</a></span><span class="keyword">@property</span> (nonatomic, assign) NSUInteger <a class="code hl_property" href="interface_thing_s_d_k_config.html#a8ae64a54736188251b133fda501fc3fc">multiPairMaxConnection</a>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="interface_thing_s_d_k_config.html#acb10f44e8cacf968b2907e0a6014ee5e">   36</a></span><span class="keyword">@property</span> (nonatomic, assign) NSUInteger <a class="code hl_property" href="interface_thing_s_d_k_config.html#acb10f44e8cacf968b2907e0a6014ee5e">enableMultiPair</a>;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>NS_ASSUME_NONNULL_END</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>+ (instancetype)<a class="code hl_function" href="interface_thing_s_d_k_config.html#a8ad638edfb7dcd65b75806a5713a7b27">sharedInstance</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>NS_ASSUME_NONNULL_END</div>
 <div class="ttc" id="ainterface_thing_s_d_k_config_html"><div class="ttname"><a href="interface_thing_s_d_k_config.html">ThingSDKConfig</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00012">ThingSDKConfig.h:13</a></div></div>
 <div class="ttc" id="ainterface_thing_s_d_k_config_html_a28801376c9e9243fee373a50be00bb76"><div class="ttname"><a href="interface_thing_s_d_k_config.html#a28801376c9e9243fee373a50be00bb76">ThingSDKConfig::matterDpProprity</a></div><div class="ttdeci">NSUInteger matterDpProprity</div><div class="ttdoc">1: DPEngine 1st forcely, 2: mqtt 1st forcely, other: communication order</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00019">ThingSDKConfig.h:19</a></div></div>
 <div class="ttc" id="ainterface_thing_s_d_k_config_html_a4126a1175378ecb0e0abb7ade0e4388b"><div class="ttname"><a href="interface_thing_s_d_k_config.html#a4126a1175378ecb0e0abb7ade0e4388b">ThingSDKConfig::dynamicAddHotspots</a></div><div class="ttdeci">NSString * dynamicAddHotspots</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00032">ThingSDKConfig.h:32</a></div></div>
@@ -130,7 +133,9 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_util_8framewor
 <div class="ttc" id="ainterface_thing_s_d_k_config_html_a77ce75de0989ffa14ade8d85a71a2d3d"><div class="ttname"><a href="interface_thing_s_d_k_config.html#a77ce75de0989ffa14ade8d85a71a2d3d">ThingSDKConfig::hostSameLimit</a></div><div class="ttdeci">BOOL hostSameLimit</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00024">ThingSDKConfig.h:24</a></div></div>
 <div class="ttc" id="ainterface_thing_s_d_k_config_html_a88894dbb34b3f486ddc01bc1834b4544"><div class="ttname"><a href="interface_thing_s_d_k_config.html#a88894dbb34b3f486ddc01bc1834b4544">ThingSDKConfig::shouldUseNewUIPanelModel</a></div><div class="ttdeci">BOOL shouldUseNewUIPanelModel</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00016">ThingSDKConfig.h:16</a></div></div>
 <div class="ttc" id="ainterface_thing_s_d_k_config_html_a8ad638edfb7dcd65b75806a5713a7b27"><div class="ttname"><a href="interface_thing_s_d_k_config.html#a8ad638edfb7dcd65b75806a5713a7b27">+[ThingSDKConfig sharedInstance]</a></div><div class="ttdeci">instancetype sharedInstance()</div></div>
+<div class="ttc" id="ainterface_thing_s_d_k_config_html_a8ae64a54736188251b133fda501fc3fc"><div class="ttname"><a href="interface_thing_s_d_k_config.html#a8ae64a54736188251b133fda501fc3fc">ThingSDKConfig::multiPairMaxConnection</a></div><div class="ttdeci">NSUInteger multiPairMaxConnection</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00034">ThingSDKConfig.h:34</a></div></div>
 <div class="ttc" id="ainterface_thing_s_d_k_config_html_a9d73ecc216f020e1ec87052439a61613"><div class="ttname"><a href="interface_thing_s_d_k_config.html#a9d73ecc216f020e1ec87052439a61613">ThingSDKConfig::matterDpCompensateTime</a></div><div class="ttdeci">NSUInteger matterDpCompensateTime</div><div class="ttdoc">DPEngine no response after x sencond, use mqtt to compensate. 0 is no compensate.</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00022">ThingSDKConfig.h:22</a></div></div>
+<div class="ttc" id="ainterface_thing_s_d_k_config_html_acb10f44e8cacf968b2907e0a6014ee5e"><div class="ttname"><a href="interface_thing_s_d_k_config.html#acb10f44e8cacf968b2907e0a6014ee5e">ThingSDKConfig::enableMultiPair</a></div><div class="ttdeci">NSUInteger enableMultiPair</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00036">ThingSDKConfig.h:36</a></div></div>
 <div class="ttc" id="ainterface_thing_s_d_k_config_html_ace743a16e670ab481fbfd998a83cad32"><div class="ttname"><a href="interface_thing_s_d_k_config.html#ace743a16e670ab481fbfd998a83cad32">ThingSDKConfig::appHostPoolLimit</a></div><div class="ttdeci">BOOL appHostPoolLimit</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00028">ThingSDKConfig.h:28</a></div></div>
 <div class="ttc" id="ainterface_thing_s_d_k_config_html_af48d17c3caa78de305aeb7dd19765114"><div class="ttname"><a href="interface_thing_s_d_k_config.html#af48d17c3caa78de305aeb7dd19765114">ThingSDKConfig::hostPoolAbnormalLimit</a></div><div class="ttdeci">BOOL hostPoolAbnormalLimit</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00030">ThingSDKConfig.h:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartDeviceKit/Build/ThingSmartDeviceKit.xcframework/watchos-arm64_arm64_32_armv7k/ThingSmartDeviceKit.framework/Headers/ThingSmartRoom.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartDeviceKit/Build/ThingSmartDeviceKit.xcframework/watchos-arm64_arm64_32_armv7k/ThingSmartDeviceKit.framework/Headers/ThingSmartRoom.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -100,9 +99,9 @@ $(document).ready(function(){initNavTree('watchos-arm64__arm64__32__armv7k_2_thi
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">@property</span> (nonatomic, strong, readonly) <a class="code hl_interface" href="interface_thing_smart_room_model.html">ThingSmartRoomModel</a> *<a class="code hl_property" href="interface_thing_smart_room.html#a0f8fa6b9e4a1a97097f070270fb6700f">roomModel</a>;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">@property</span> (nonatomic, strong, readonly) NSArray &lt;ThingSmartDeviceModel *&gt; *<a class="code hl_property" href="interface_thing_smart_room.html#a73c313077527e840a58715957c29b67c">deviceList</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">@property</span> (nonatomic, strong, readonly) <a class="code hl_class" href="interface_n_s_array.html">NSArray &lt;ThingSmartDeviceModel *&gt;</a> *<a class="code hl_property" href="interface_thing_smart_room.html#a73c313077527e840a58715957c29b67c">deviceList</a>;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="interface_thing_smart_room.html#a7f9e96df6258749c020c202f922b3a5f">   20</a></span><span class="keyword">@property</span> (nonatomic, strong, readonly) NSArray &lt;ThingSmartGroupModel *&gt; *<a class="code hl_property" href="interface_thing_smart_room.html#a927f7410ed0b89c0534288985f006f1f">groupList</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="interface_thing_smart_room.html#a7f9e96df6258749c020c202f922b3a5f">   20</a></span><span class="keyword">@property</span> (nonatomic, strong, readonly) <a class="code hl_class" href="interface_n_s_array.html">NSArray &lt;ThingSmartGroupModel *&gt;</a> *<a class="code hl_property" href="interface_thing_smart_room.html#a927f7410ed0b89c0534288985f006f1f">groupList</a>;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>+ (instancetype)roomWithRoomId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)roomId homeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId;</div>
@@ -129,21 +128,22 @@ $(document).ready(function(){initNavTree('watchos-arm64__arm64__32__armv7k_2_thi
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>- (void)removeGroupWithGroupId:(NSString *)groupId success:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)success failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>- (void)saveBatchRoomRelationWithDeviceGroupList:(NSArray &lt;NSString *&gt; *)deviceGroupList</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>- (void)saveBatchRoomRelationWithDeviceGroupList:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> &lt;NSString *&gt; *)deviceGroupList</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                                         success:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)success</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                                         failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>- (void)sortDeviceRelationWithList:(nonnull NSArray&lt;NSString *&gt; *)deviceGroupList</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>- (void)sortDeviceRelationWithList:(nonnull <a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;NSString *&gt; *)deviceGroupList</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                           success:(nullable <a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)success</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                           failure:(nullable <a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>- (void)increaseRoomRelationWithDeviceGroupList:(nonnull NSArray &lt;NSString *&gt; *)deviceGroupList</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>- (void)increaseRoomRelationWithDeviceGroupList:(nonnull <a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> &lt;NSString *&gt; *)deviceGroupList</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                                        success:(nullable <a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)success</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                                        failure:(nullable <a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword">@end</span></div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray&lt; ThingSmartDeviceModel * &gt;</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_room_html"><div class="ttname"><a href="interface_thing_smart_room.html">ThingSmartRoom</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_room_8h_source.html#l00011">ThingSmartRoom.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_room_html_a0f8fa6b9e4a1a97097f070270fb6700f"><div class="ttname"><a href="interface_thing_smart_room.html#a0f8fa6b9e4a1a97097f070270fb6700f">ThingSmartRoom::roomModel</a></div><div class="ttdeci">ThingSmartRoomModel * roomModel</div><div class="ttdoc">The room model.</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_room_8h_source.html#l00014">ThingSmartRoom.h:14</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_room_html_a73c313077527e840a58715957c29b67c"><div class="ttname"><a href="interface_thing_smart_room.html#a73c313077527e840a58715957c29b67c">ThingSmartRoom::deviceList</a></div><div class="ttdeci">NSArray&lt; ThingSmartDeviceModel * &gt; * deviceList</div><div class="ttdoc">The device list.</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_room_8h_source.html#l00017">ThingSmartRoom.h:17</a></div></div>

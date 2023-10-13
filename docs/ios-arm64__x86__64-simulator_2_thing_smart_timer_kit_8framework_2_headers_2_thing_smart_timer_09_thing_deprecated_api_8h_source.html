@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartTimerKit/Build/ThingSmartTimerKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartTimerKit.framework/Headers/ThingSmartTimer+ThingDeprecatedApi.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartTimerKit/Build/ThingSmartTimerKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartTimerKit.framework/Headers/ThingSmartTimer+ThingDeprecatedApi.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -169,7 +168,7 @@ $(document).ready(function(){initNavTree('ios-arm64__x86__64-simulator_2_thing_s
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>- (void)getTimerWithTask:(NSString *)task</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                   devId:(NSString *)devId</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                 success:(<span class="keywordtype">void</span>(^)(NSArray&lt;<a class="code hl_interface" href="interface_thing_timer_model.html">ThingTimerModel</a> *&gt; *list))success</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                 success:(<span class="keywordtype">void</span>(^)(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;<a class="code hl_interface" href="interface_thing_timer_model.html">ThingTimerModel</a> *&gt; *list))success</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                 failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure __deprecated_msg(&quot;This method is deprecated, Use [<a class="code hl_interface" href="interface_thing_smart_timer.html">ThingSmartTimer</a> getTimerListWithTask:bizId:bizType:success:failure:] instead&quot;);</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
@@ -178,6 +177,7 @@ $(document).ready(function(){initNavTree('ios-arm64__x86__64-simulator_2_thing_s
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="preprocessor">#endif </span><span class="comment">/* ThingSmartTimer_ThingDeprecatedApi_h */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="acategory_thing_smart_timer_07_thing_deprecated_api_08_html"><div class="ttname"><a href="category_thing_smart_timer_07_thing_deprecated_api_08.html">ThingSmartTimer(ThingDeprecatedApi)</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_timer_kit_8framework_2_headers_2_thing_smart_timer_09_thing_deprecated_api_8h_source.html#l00016">ThingSmartTimer+ThingDeprecatedApi.h:16</a></div></div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_timer_html"><div class="ttname"><a href="interface_thing_smart_timer.html">ThingSmartTimer</a></div><div class="ttdoc">ThingSmartTimer provides basic timing capabilities and supports device timing and group timing....</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_timer_kit_8framework_2_headers_2_thing_smart_timer_8h_source.html#l00071">ThingSmartTimer.h:72</a></div></div>
 <div class="ttc" id="ainterface_thing_timer_model_html"><div class="ttname"><a href="interface_thing_timer_model.html">ThingTimerModel</a></div><div class="ttdoc">The detailed model of the timer.</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_timer_kit_8framework_2_headers_2_thing_smart_timer_8h_source.html#l00013">ThingSmartTimer.h:14</a></div></div>
 <div class="ttc" id="aios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_html_a32a79cd7d4562b2e058fc1f7b525c842"><div class="ttname"><a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a></div><div class="ttdeci">void(^ ThingSuccessHandler)(void)</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source.html#l00067">ThingSmartUtil.h:67</a></div></div>

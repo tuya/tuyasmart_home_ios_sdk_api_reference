@@ -29,5 +29,9 @@ var dir_09bf58be3b32372446c1d096ec5cec1f =
     [ "TSceneConditionCategoryListRequestParams.h", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_condition_category_list_request_params_8h.html", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_condition_category_list_request_params_8h" ],
     [ "TSceneCoreError.h", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_core_error_8h.html", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_core_error_8h" ],
     [ "TSceneDefined.h", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_defined_8h.html", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_defined_8h" ],
-    [ "TSceneRequestInfo.h", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_request_info_8h.html", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_request_info_8h" ]
+    [ "TSceneRecomHandleParams.h", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_recom_handle_params_8h.html", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_recom_handle_params_8h" ],
+    [ "TSceneRecomListParams.h", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_recom_list_params_8h.html", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_recom_list_params_8h" ],
+    [ "TSceneRequestInfo.h", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_request_info_8h.html", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_request_info_8h" ],
+    [ "TSmartSceneModelTypes.h", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_model_types_8h.html", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_model_types_8h" ],
+    [ "TSmartScenePreconditionParam.h", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h.html", "ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h" ]
 ];

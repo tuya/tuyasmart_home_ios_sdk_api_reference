@@ -27,6 +27,7 @@ var interface_thing_pairing_manager =
     [ "dataExt", "interface_thing_pairing_manager.html#a16e61ad85fdcbca42097d07e3a74a7c1", null ],
     [ "gwId", "interface_thing_pairing_manager.html#a70ea9e24c95a2e48f00a5e9ae9abb669", null ],
     [ "hasSuccess", "interface_thing_pairing_manager.html#a2d0deccc27054d528a6e70d4ce13637b", null ],
+    [ "isPairing", "interface_thing_pairing_manager.html#a98036b563b42868b6c1ef5f34070a49a", null ],
     [ "isReported", "interface_thing_pairing_manager.html#a74acec0157b2361d998a770228e03c98", null ],
     [ "logTrackConfiguration", "interface_thing_pairing_manager.html#a25fb8350dc97ade775ce82986ddaaf2c", null ],
     [ "miniPairId", "interface_thing_pairing_manager.html#a3823fdb3ea546e3a6606ca12451192ea", null ],

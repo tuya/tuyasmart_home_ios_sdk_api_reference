@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-arm64/ThingSmartUtil.framework/Headers/ThingSmartYuNetModuleProtocol.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-arm64/ThingSmartUtil.framework/Headers/ThingSmartYuNetModuleProtocol.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -110,7 +109,7 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_util_8framewor
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>- (void)syncDevicStatusWithData:(NSDictionary *)data;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>- (NSArray *)<a class="code hl_function" href="protocol_thing_smart_yu_net_channel_delegate-p.html#aa4fd8cc55a627983a546e827fc08803e">requireDirectlyConnectedDevice</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>- (<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> *)<a class="code hl_function" href="protocol_thing_smart_yu_net_channel_delegate-p.html#aa4fd8cc55a627983a546e827fc08803e">requireDirectlyConnectedDevice</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>- (void)updateOnlineWithDevice:(NSSet &lt;NSString *&gt; *)devIds;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
@@ -140,10 +139,10 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_util_8framewor
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>- (void)<a class="code hl_function" href="protocol_thing_smart_yu_net_reg_entry-p.html#a3cc6838ccae0f8e71006f2afe9b8c53f">synchronousDeviceOnlineStatus</a>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// [{&quot;devId&quot;:&quot;&quot;, dps: &quot;&quot;}]</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>- (void)publishMessageWithDeviceId:(NSString *)devId data:(NSArray *)data isCloud:(BOOL)isCloud success:(nullable <span class="keywordtype">void</span> (^)(<span class="keywordtype">void</span>))success failure:(nullable <span class="keywordtype">void</span> (^)(NSError *))failure;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>- (void)publishMessageWithDeviceId:(NSString *)devId data:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> *)data isCloud:(BOOL)isCloud success:(nullable <span class="keywordtype">void</span> (^)(<span class="keywordtype">void</span>))success failure:(nullable <span class="keywordtype">void</span> (^)(NSError *))failure;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// [{&quot;devId&quot;:&quot;&quot;, dps: &quot;&quot;}]</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>- (void)reportMessageWithDeviceId:(NSString *)devId data:(NSArray *)data success:(nullable <span class="keywordtype">void</span> (^)(<span class="keywordtype">void</span>))success failure:(nullable <span class="keywordtype">void</span> (^)(NSError *))failure;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>- (void)reportMessageWithDeviceId:(NSString *)devId data:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> *)data success:(nullable <span class="keywordtype">void</span> (^)(<span class="keywordtype">void</span>))success failure:(nullable <span class="keywordtype">void</span> (^)(NSError *))failure;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>- (void)<a class="code hl_function" href="protocol_thing_smart_yu_net_reg_entry-p.html#a769597e1924cc159f061ff095b2e9509">closeLocalService</a>;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
@@ -160,6 +159,7 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_util_8framewor
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="protocol_thing_smart_yu_net_reg_entry-p.html#aaac64704e795edc2faa2302fcebb0e27">   74</a></span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="aprotocol_thing_smart_module_protocol-p_html"><div class="ttname"><a href="protocol_thing_smart_module_protocol-p.html">ThingSmartModuleProtocol-p</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h_source.html#l00012">ThingSmartModuleProtocol.h:12</a></div></div>
 <div class="ttc" id="aprotocol_thing_smart_yu_net_channel_delegate-p_html"><div class="ttname"><a href="protocol_thing_smart_yu_net_channel_delegate-p.html">ThingSmartYuNetChannelDelegate-p</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_yu_net_module_protocol_8h_source.html#l00019">ThingSmartYuNetModuleProtocol.h:19</a></div></div>
 <div class="ttc" id="aprotocol_thing_smart_yu_net_channel_delegate-p_html_aa4fd8cc55a627983a546e827fc08803e"><div class="ttname"><a href="protocol_thing_smart_yu_net_channel_delegate-p.html#aa4fd8cc55a627983a546e827fc08803e">-[ThingSmartYuNetChannelDelegate-p requireDirectlyConnectedDevice]</a></div><div class="ttdeci">NSArray * requireDirectlyConnectedDevice()</div></div>

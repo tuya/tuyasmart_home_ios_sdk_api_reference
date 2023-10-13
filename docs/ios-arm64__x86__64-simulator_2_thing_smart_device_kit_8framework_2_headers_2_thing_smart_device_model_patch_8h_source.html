@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartDeviceKit/Build/ThingSmartDeviceKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartDeviceKit.framework/Headers/ThingSmartDeviceModelPatch.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartDeviceKit/Build/ThingSmartDeviceKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartDeviceKit.framework/Headers/ThingSmartDeviceModelPatch.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -122,8 +121,8 @@ $(document).ready(function(){initNavTree('ios-arm64__x86__64-simulator_2_thing_s
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>- (void)removePatcher:(<span class="keywordtype">id</span>&lt;<a class="code hl_protocol" href="protocol_thing_smart_device_model_patch_protocol-p.html">ThingSmartDeviceModelPatchProtocol</a>&gt;)patcher;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>+ (nullable NSArray&lt;<a class="code hl_interface" href="interface_thing_smart_device_model.html">ThingSmartDeviceModel</a> *&gt; *)buildDeviceModelWithDeviceMapList:(nullable NSArray&lt;NSDictionary *&gt; *)deviceList</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                                                                  productMapList:(nullable NSArray&lt;NSDictionary *&gt; *)productList</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>+ (nullable <a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;<a class="code hl_interface" href="interface_thing_smart_device_model.html">ThingSmartDeviceModel</a> *&gt; *)buildDeviceModelWithDeviceMapList:(nullable <a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;NSDictionary *&gt; *)deviceList</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                                                                  productMapList:(nullable <a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;NSDictionary *&gt; *)productList</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                                                                       patchType:(ThingSmartDeviceModelPatchType)patchType</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                                                                 checkProductVer:(BOOL)checkProductVer</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                                                                     customBlock:(<span class="keywordtype">void</span> (^ _Nullable)(NSDictionary * srcDeviceMap,</div>
@@ -132,6 +131,7 @@ $(document).ready(function(){initNavTree('ios-arm64__x86__64-simulator_2_thing_s
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="interface_thing_smart_device_model_patch.html#a18dc905ae1d792bc17bf60c2c9d408cf">   63</a></span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_device_model_html"><div class="ttname"><a href="interface_thing_smart_device_model.html">ThingSmartDeviceModel</a></div><div class="ttdoc">The information about the device.</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_source.html#l00097">ThingSmartDeviceModel.h:98</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_device_model_patch_html"><div class="ttname"><a href="interface_thing_smart_device_model_patch.html">ThingSmartDeviceModelPatch</a></div><div class="ttdoc">根据元素设备信息、产品信息，组装 DeviceModel ，提供定制补偿数据</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_device_model_patch_8h_source.html#l00037">ThingSmartDeviceModelPatch.h:38</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_device_model_patch_html_a0f1c97d099fa7b155214600656ceff05"><div class="ttname"><a href="interface_thing_smart_device_model_patch.html#a0f1c97d099fa7b155214600656ceff05">+[ThingSmartDeviceModelPatch shareInstance]</a></div><div class="ttdeci">instancetype shareInstance()</div></div>

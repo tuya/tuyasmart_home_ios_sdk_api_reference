@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartCommunication Class Reference</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartCommunication Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -103,7 +102,7 @@ Inheritance diagram for ThingSmartCommunication:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a7b141ab488830aed05a051718874b3e6"><td class="memItemLeft" align="right" valign="top">NSArray&lt; <a class="el" href="interface_thing_smart_communication_mode.html">ThingSmartCommunicationMode</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_communication.html#a7b141ab488830aed05a051718874b3e6">communicationModes</a></td></tr>
+<tr class="memitem:a7b141ab488830aed05a051718874b3e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_n_s_array.html">NSArray</a>&lt; <a class="el" href="interface_thing_smart_communication_mode.html">ThingSmartCommunicationMode</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_communication.html#a7b141ab488830aed05a051718874b3e6">communicationModes</a></td></tr>
 <tr class="memdesc:a7b141ab488830aed05a051718874b3e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The communication sequence.  <a href="interface_thing_smart_communication.html#a7b141ab488830aed05a051718874b3e6">More...</a><br /></td></tr>
 <tr class="separator:a7b141ab488830aed05a051718874b3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97556b926ea765e27dad0be461830661"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_communication.html#a97556b926ea765e27dad0be461830661">communicationNode</a></td></tr>
@@ -116,11 +115,19 @@ Properties</h2></td></tr>
 <tr class="separator:ad31c08e5e93100e473562b4093fcb464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aaf6a1cd49b6762da7225bea5afcfcc"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_communication.html#a6aaf6a1cd49b6762da7225bea5afcfcc">localNodeId</a></td></tr>
 <tr class="separator:a6aaf6a1cd49b6762da7225bea5afcfcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae033907d816aac6bf3916675dc8627b0"><td class="memItemLeft" align="right" valign="top">NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_communication.html#ae033907d816aac6bf3916675dc8627b0">localDataModel</a></td></tr>
+<tr class="separator:ae033907d816aac6bf3916675dc8627b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24ff1315f6c1292ba2ad8e16fc207d2"><td class="memItemLeft" align="right" valign="top">NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_communication.html#ab24ff1315f6c1292ba2ad8e16fc207d2">dataModel</a></td></tr>
+<tr class="memdesc:ab24ff1315f6c1292ba2ad8e16fc207d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data model. 1-DP Model , 2-Thing Model.  <a href="interface_thing_smart_communication.html#ab24ff1315f6c1292ba2ad8e16fc207d2">More...</a><br /></td></tr>
+<tr class="separator:ab24ff1315f6c1292ba2ad8e16fc207d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c3e21b0058ff687714223da1498966"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_communication.html#a34c3e21b0058ff687714223da1498966">mqttTopicAttr</a></td></tr>
+<tr class="memdesc:a34c3e21b0058ff687714223da1498966"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mqtt topic attribute. 0-Default 1-Thing-Link.  <a href="interface_thing_smart_communication.html#a34c3e21b0058ff687714223da1498966">More...</a><br /></td></tr>
+<tr class="separator:a34c3e21b0058ff687714223da1498966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The device communication. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00036">36</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00037">37</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
 </div><h2 class="groupheader">Property Documentation</h2>
 <a id="a7b141ab488830aed05a051718874b3e6" name="a7b141ab488830aed05a051718874b3e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b141ab488830aed05a051718874b3e6">&#9670;&nbsp;</a></span>communicationModes</h2>
@@ -132,7 +139,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (NSArray&lt; <a class="el" href="interface_thing_smart_communication_mode.html">ThingSmartCommunicationMode</a> * &gt; *) communicationModes</td>
+          <td class="memname">- (<a class="el" href="interface_n_s_array.html">NSArray</a>&lt; <a class="el" href="interface_thing_smart_communication_mode.html">ThingSmartCommunicationMode</a> * &gt; *) communicationModes</td>
         </tr>
       </table>
   </td>
@@ -144,7 +151,7 @@ Properties</h2></td></tr>
 
 <p>The communication sequence. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00039">39</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00040">40</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
 
 </div>
 </div>
@@ -170,7 +177,7 @@ Properties</h2></td></tr>
 
 <p>The communication nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00042">42</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00043">43</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
 
 </div>
 </div>
@@ -196,7 +203,33 @@ Properties</h2></td></tr>
 
 <p>The connection status. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00048">48</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00049">49</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
+
+</div>
+</div>
+<a id="ab24ff1315f6c1292ba2ad8e16fc207d2" name="ab24ff1315f6c1292ba2ad8e16fc207d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab24ff1315f6c1292ba2ad8e16fc207d2">&#9670;&nbsp;</a></span>dataModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSInteger) dataModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The data model. 1-DP Model , 2-Thing Model. </p>
+
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00059">59</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
 
 </div>
 </div>
@@ -220,7 +253,31 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00051">51</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00052">52</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
+
+</div>
+</div>
+<a id="ae033907d816aac6bf3916675dc8627b0" name="ae033907d816aac6bf3916675dc8627b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae033907d816aac6bf3916675dc8627b0">&#9670;&nbsp;</a></span>localDataModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSInteger) localDataModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00056">56</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
 
 </div>
 </div>
@@ -244,7 +301,33 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00053">53</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00054">54</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
+
+</div>
+</div>
+<a id="a34c3e21b0058ff687714223da1498966" name="a34c3e21b0058ff687714223da1498966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c3e21b0058ff687714223da1498966">&#9670;&nbsp;</a></span>mqttTopicAttr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (long) mqttTopicAttr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The mqtt topic attribute. 0-Default 1-Thing-Link. </p>
+
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html#l00062">62</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source.html">ThingSmartCommunication.h</a>.</p>
 
 </div>
 </div>

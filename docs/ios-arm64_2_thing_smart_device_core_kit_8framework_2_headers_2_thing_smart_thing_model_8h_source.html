@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/ios-arm64/ThingSmartDeviceCoreKit.framework/Headers/ThingSmartThingModel.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/ios-arm64/ThingSmartDeviceCoreKit.framework/Headers/ThingSmartThingModel.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -106,7 +105,7 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_device_core_ki
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_model.html#aaf6b4857181585681d243aa2d0c8241a">   19</a></span><span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code hl_property" href="interface_thing_smart_thing_model.html#aaf6b4857181585681d243aa2d0c8241a">modelId</a>;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_model.html#ac54fca6f2a8d626df830a60a8261114f">   21</a></span><span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code hl_property" href="interface_thing_smart_thing_model.html#ac54fca6f2a8d626df830a60a8261114f">productId</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_model.html#a0b7853387376659d5ef625ea6f7eeacd">   23</a></span><span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code hl_property" href="interface_thing_smart_thing_model.html#a0b7853387376659d5ef625ea6f7eeacd">productVersion</a>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_model.html#a5868c0b49dd679c4cc5defcd59b6538d">   25</a></span><span class="keyword">@property</span> (nonatomic, strong) NSArray&lt;ThingSmartThingServiceModel *&gt; *<a class="code hl_property" href="interface_thing_smart_thing_model.html#a5868c0b49dd679c4cc5defcd59b6538d">services</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_model.html#a5868c0b49dd679c4cc5defcd59b6538d">   25</a></span><span class="keyword">@property</span> (nonatomic, strong) <a class="code hl_class" href="interface_n_s_array.html">NSArray&lt;ThingSmartThingServiceModel *&gt;</a> *<a class="code hl_property" href="interface_thing_smart_thing_model.html#a5868c0b49dd679c4cc5defcd59b6538d">services</a>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_model.html#a73778f1bf7d07e7c6e627ac7f63b289a">   27</a></span><span class="keyword">@property</span> (nonatomic, strong) NSDictionary *<a class="code hl_property" href="interface_thing_smart_thing_model.html#a97d958db09af929dc860b9ef9dd5ebcf">extensions</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>- (NSDictionary *)dpsFromProperties:(NSDictionary *)properties;</div>
@@ -114,9 +113,9 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_device_core_ki
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_service_model.html">   55</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_smart_thing_service_model.html">ThingSmartThingServiceModel</a> : NSObject</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_service_model.html#af6bfe5e479f664ef6da6eeda1662ad85">   57</a></span><span class="keyword">@property</span> (nonatomic, strong) NSArray&lt;ThingSmartThingProperty *&gt; *properties;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_service_model.html#aa6ecbbac033931d7565a3a5434c5acb1">   59</a></span><span class="keyword">@property</span> (nonatomic, strong) NSArray&lt;ThingSmartThingAction *&gt; *actions;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_service_model.html#ad190837467fb0e1ed0dacf0865e8cacf">   61</a></span><span class="keyword">@property</span> (nonatomic, strong) NSArray&lt;ThingSmartThingEvent *&gt; *events;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_service_model.html#af6bfe5e479f664ef6da6eeda1662ad85">   57</a></span><span class="keyword">@property</span> (nonatomic, strong) <a class="code hl_class" href="interface_n_s_array.html">NSArray&lt;ThingSmartThingProperty *&gt;</a> *properties;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_service_model.html#aa6ecbbac033931d7565a3a5434c5acb1">   59</a></span><span class="keyword">@property</span> (nonatomic, strong) <a class="code hl_class" href="interface_n_s_array.html">NSArray&lt;ThingSmartThingAction *&gt;</a> *actions;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_service_model.html#ad190837467fb0e1ed0dacf0865e8cacf">   61</a></span><span class="keyword">@property</span> (nonatomic, strong) <a class="code hl_class" href="interface_n_s_array.html">NSArray&lt;ThingSmartThingEvent *&gt;</a> *events;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_property.html">   64</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_smart_thing_property.html">ThingSmartThingProperty</a> : NSObject</div>
@@ -130,18 +129,19 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_device_core_ki
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_action.html">   80</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_smart_thing_action.html">ThingSmartThingAction</a> : NSObject</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_action.html#a50c462ebd4b82eed0f8f648b35f35528">   82</a></span><span class="keyword">@property</span> (nonatomic, assign) NSInteger abilityId;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_action.html#a809f58929d32435709eefd231bbc7eab">   84</a></span><span class="keyword">@property</span> (nonatomic, strong) NSString *code;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_action.html#a7b549765780792fbbabb8627befc4a52">   86</a></span><span class="keyword">@property</span> (nonatomic, strong) NSArray *inputParams;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_action.html#a105eeb39f552cfb594c58ca5097febdc">   88</a></span><span class="keyword">@property</span> (nonatomic, strong) NSArray *outputParams;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_action.html#a7b549765780792fbbabb8627befc4a52">   86</a></span><span class="keyword">@property</span> (nonatomic, strong) <a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> *inputParams;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_action.html#a105eeb39f552cfb594c58ca5097febdc">   88</a></span><span class="keyword">@property</span> (nonatomic, strong) <a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> *outputParams;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_event.html">   91</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_smart_thing_event.html">ThingSmartThingEvent</a> : NSObject</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_event.html#a093304a53981fe1589db8591e9e8037d">   93</a></span><span class="keyword">@property</span> (nonatomic, assign) NSInteger abilityId;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_event.html#a8d9bdf33918b96aa1a81fbab3185ee31">   95</a></span><span class="keyword">@property</span> (nonatomic, strong) NSString *code;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_event.html#ab92c20a37eb2bcd60730ff27fcb852c7">   97</a></span><span class="keyword">@property</span> (nonatomic, strong) NSArray *outputParams;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="interface_thing_smart_thing_event.html#ab92c20a37eb2bcd60730ff27fcb852c7">   97</a></span><span class="keyword">@property</span> (nonatomic, strong) <a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> *outputParams;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray&lt; ThingSmartThingServiceModel * &gt;</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_thing_action_html"><div class="ttname"><a href="interface_thing_smart_thing_action.html">ThingSmartThingAction</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source.html#l00080">ThingSmartThingModel.h:81</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_thing_event_html"><div class="ttname"><a href="interface_thing_smart_thing_event.html">ThingSmartThingEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source.html#l00091">ThingSmartThingModel.h:92</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_thing_model_html"><div class="ttname"><a href="interface_thing_smart_thing_model.html">ThingSmartThingModel</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source.html#l00017">ThingSmartThingModel.h:18</a></div></div>

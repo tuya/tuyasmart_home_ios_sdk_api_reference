@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/watchos-arm64_arm64_32_armv7k/ThingSmartDeviceCoreKit.framework/Headers/ThingSmartCoreCache.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/watchos-arm64_arm64_32_armv7k/ThingSmartDeviceCoreKit.framework/Headers/ThingSmartCoreCache.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -103,8 +102,8 @@ $(document).ready(function(){initNavTree('watchos-arm64__arm64__32__armv7k_2_thi
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>- (instancetype)init <a class="code hl_function" href="interface_thing_smart_core_cache.html#a21d39fa8b8a597a1f4d148f2dc252cd8">NS_UNAVAILABLE</a>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>+ (instancetype)<span class="keyword">new</span> <a class="code hl_function" href="interface_thing_smart_core_cache.html#a21d39fa8b8a597a1f4d148f2dc252cd8">NS_UNAVAILABLE</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>- (NSArray&lt;ObjectType&gt; *)<a class="code hl_function" href="interface_thing_smart_core_cache.html#a36eb868d22699f3c7148a8bcdedf2910">allObjects</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>- (NSArray&lt;KeyType&gt; *)<a class="code hl_function" href="interface_thing_smart_core_cache.html#a43e2ae05e71ef3c4aadbac8904714de5">allKeys</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>- (<a class="code hl_interface" href="interface_n_s_array.html">NSArray&lt;ObjectType&gt;</a> *)<a class="code hl_function" href="interface_thing_smart_core_cache.html#a36eb868d22699f3c7148a8bcdedf2910">allObjects</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>- (<a class="code hl_interface" href="interface_n_s_array.html">NSArray&lt;KeyType&gt;</a> *)<a class="code hl_function" href="interface_thing_smart_core_cache.html#a43e2ae05e71ef3c4aadbac8904714de5">allKeys</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>- (void)setObject:(<a class="code hl_variable" href="interface_thing_smart_core_cache.html#a9e52c457043ca7bcc19f4cd98358feb8">ObjectType</a>)<span class="keywordtype">object</span> forKey:(KeyType)key;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
@@ -136,13 +135,13 @@ $(document).ready(function(){initNavTree('watchos-arm64__arm64__32__armv7k_2_thi
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>- (void)cacheObject:(<a class="code hl_variable" href="interface_thing_smart_core_cache.html#a9e52c457043ca7bcc19f4cd98358feb8">ObjectType</a>&lt;<a class="code hl_protocol" href="protocol_thing_smart_core_cache_protocol-p.html">ThingSmartCoreCacheProtocol</a>&gt;)object;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>- (void)cacheObjects:(NSArray&lt;<a class="code hl_variable" href="interface_thing_smart_core_cache.html#a9e52c457043ca7bcc19f4cd98358feb8">ObjectType</a>&lt;<a class="code hl_protocol" href="protocol_thing_smart_core_cache_protocol-p.html">ThingSmartCoreCacheProtocol</a>&gt;&gt; *)objects;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>- (void)cacheObjects:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;<a class="code hl_variable" href="interface_thing_smart_core_cache.html#a9e52c457043ca7bcc19f4cd98358feb8">ObjectType</a>&lt;<a class="code hl_protocol" href="protocol_thing_smart_core_cache_protocol-p.html">ThingSmartCoreCacheProtocol</a>&gt;&gt; *)objects;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>- (void)removeObject:(<a class="code hl_variable" href="interface_thing_smart_core_cache.html#a9e52c457043ca7bcc19f4cd98358feb8">ObjectType</a>&lt;<a class="code hl_protocol" href="protocol_thing_smart_core_cache_protocol-p.html">ThingSmartCoreCacheProtocol</a>&gt;)object;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>+ (void)cacheObject:(<a class="code hl_variable" href="interface_thing_smart_core_cache.html#a9e52c457043ca7bcc19f4cd98358feb8">ObjectType</a>&lt;<a class="code hl_protocol" href="protocol_thing_smart_core_cache_protocol-p.html">ThingSmartCoreCacheProtocol</a>&gt;)object;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>+ (void)cacheObjects:(NSArray&lt;<a class="code hl_variable" href="interface_thing_smart_core_cache.html#a9e52c457043ca7bcc19f4cd98358feb8">ObjectType</a>&lt;<a class="code hl_protocol" href="protocol_thing_smart_core_cache_protocol-p.html">ThingSmartCoreCacheProtocol</a>&gt;&gt; *)objects;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>+ (void)cacheObjects:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;<a class="code hl_variable" href="interface_thing_smart_core_cache.html#a9e52c457043ca7bcc19f4cd98358feb8">ObjectType</a>&lt;<a class="code hl_protocol" href="protocol_thing_smart_core_cache_protocol-p.html">ThingSmartCoreCacheProtocol</a>&gt;&gt; *)objects;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>+ (void)removeObject:(<a class="code hl_variable" href="interface_thing_smart_core_cache.html#a9e52c457043ca7bcc19f4cd98358feb8">ObjectType</a>&lt;<a class="code hl_protocol" href="protocol_thing_smart_core_cache_protocol-p.html">ThingSmartCoreCacheProtocol</a>&gt;)object;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
@@ -157,6 +156,7 @@ $(document).ready(function(){initNavTree('watchos-arm64__arm64__32__armv7k_2_thi
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_core_cache_html"><div class="ttname"><a href="interface_thing_smart_core_cache.html">ThingSmartCoreCache</a></div><div class="ttdoc">A list of header files for ThingSmartCoreCache.</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h_source.html#l00012">ThingSmartCoreCache.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_core_cache_html_a21d39fa8b8a597a1f4d148f2dc252cd8"><div class="ttname"><a href="interface_thing_smart_core_cache.html#a21d39fa8b8a597a1f4d148f2dc252cd8">-[ThingSmartCoreCache NS_UNAVAILABLE]</a></div><div class="ttdeci">instancetype NS_UNAVAILABLE()</div></div>
 <div class="ttc" id="ainterface_thing_smart_core_cache_html_a36eb868d22699f3c7148a8bcdedf2910"><div class="ttname"><a href="interface_thing_smart_core_cache.html#a36eb868d22699f3c7148a8bcdedf2910">-[ThingSmartCoreCache allObjects]</a></div><div class="ttdeci">NSArray&lt; ObjectType &gt; * allObjects()</div></div>

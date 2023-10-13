@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSDKConfig Class Reference</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSDKConfig Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -132,6 +131,10 @@ Properties</h2></td></tr>
 <tr class="separator:af48d17c3caa78de305aeb7dd19765114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4126a1175378ecb0e0abb7ade0e4388b"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_s_d_k_config.html#a4126a1175378ecb0e0abb7ade0e4388b">dynamicAddHotspots</a></td></tr>
 <tr class="separator:a4126a1175378ecb0e0abb7ade0e4388b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae64a54736188251b133fda501fc3fc"><td class="memItemLeft" align="right" valign="top">NSUInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_s_d_k_config.html#a8ae64a54736188251b133fda501fc3fc">multiPairMaxConnection</a></td></tr>
+<tr class="separator:a8ae64a54736188251b133fda501fc3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb10f44e8cacf968b2907e0a6014ee5e"><td class="memItemLeft" align="right" valign="top">NSUInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_s_d_k_config.html#acb10f44e8cacf968b2907e0a6014ee5e">enableMultiPair</a></td></tr>
+<tr class="separator:acb10f44e8cacf968b2907e0a6014ee5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -251,6 +254,30 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00032">32</a> of file <a class="el" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html">ThingSDKConfig.h</a>.</p>
+
+</div>
+</div>
+<a id="acb10f44e8cacf968b2907e0a6014ee5e" name="acb10f44e8cacf968b2907e0a6014ee5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb10f44e8cacf968b2907e0a6014ee5e">&#9670;&nbsp;</a></span>enableMultiPair</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSUInteger) enableMultiPair</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00036">36</a> of file <a class="el" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html">ThingSDKConfig.h</a>.</p>
 
 </div>
 </div>
@@ -375,6 +402,30 @@ Properties</h2></td></tr>
 <p>1: DPEngine 1st forcely, 2: mqtt 1st forcely, other: communication order </p>
 
 <p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00019">19</a> of file <a class="el" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html">ThingSDKConfig.h</a>.</p>
+
+</div>
+</div>
+<a id="a8ae64a54736188251b133fda501fc3fc" name="a8ae64a54736188251b133fda501fc3fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ae64a54736188251b133fda501fc3fc">&#9670;&nbsp;</a></span>multiPairMaxConnection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSUInteger) multiPairMaxConnection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html#l00034">34</a> of file <a class="el" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h_source.html">ThingSDKConfig.h</a>.</p>
 
 </div>
 </div>

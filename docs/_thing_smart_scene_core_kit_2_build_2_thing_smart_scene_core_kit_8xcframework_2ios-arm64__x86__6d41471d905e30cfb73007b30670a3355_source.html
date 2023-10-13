@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartSceneCoreKit/Build/ThingSmartSceneCoreKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartSceneCoreKit.framework/Headers/ThingSmartScenePreConditionFactory.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartSceneCoreKit/Build/ThingSmartSceneCoreKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartSceneCoreKit.framework/Headers/ThingSmartScenePreConditionFactory.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -96,43 +95,48 @@ $(document).ready(function(){initNavTree('_thing_smart_scene_core_kit_2_build_2_
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &quot;<a class="code" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_thing_smart_scene_core_kit_8h.html">ThingSmartSceneCoreKit.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">@class</span> <a class="code hl_interface" href="interface_t_smart_scene_precondition_param.html">TSmartScenePreconditionParam</a>;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_smart_scene_pre_condition_factory.html">ThingSmartScenePreConditionFactory</a> : NSObject</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>+ (<a class="code hl_interface" href="interface_thing_smart_scene_pre_condition_model.html">ThingSmartScenePreConditionModel</a> *)creatAllDayPreConditionWithSceneId:(NSString *__nullable)sceneId</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                                                       existConditionId:(NSString * __nullable)conditionId</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                                                                  loops:(NSString *)loops</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                                                             timeZoneId:(NSString *)timeZoneId;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>+ (<a class="code hl_interface" href="interface_thing_smart_scene_pre_condition_model.html">ThingSmartScenePreConditionModel</a> *)createDayTimePreConditionWithSceneId:(NSString *__nullable)sceneId</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                                                         existConditionId:(NSString * __nullable)conditionId</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                                                    loops:(NSString *)loops</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                                                   cityId:(NSString *)cityId</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                                                 cityName:(NSString *)cityName</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                                                               timeZoneId:(NSString *)timeZoneId;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>+ (<a class="code hl_interface" href="interface_thing_smart_scene_pre_condition_model.html">ThingSmartScenePreConditionModel</a> *)createNightTimePreConditionWithSceneId:(NSString *__nullable)sceneId</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                                                           existConditionId:(NSString * __nullable)conditionId</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                                                                      loops:(NSString *)loops</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                                                     cityId:(NSString *)cityId</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                                                                   cityName:(NSString *)cityName</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                                                 timeZoneId:(NSString *)timeZoneId;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>+ (<a class="code hl_interface" href="interface_thing_smart_scene_pre_condition_model.html">ThingSmartScenePreConditionModel</a> *)createCustomTimePreConditionWithSceneId:(NSString *__nullable)sceneId</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                                                            existConditionId:(NSString * __nullable)conditionId</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                                                                       loops:(NSString *)loops</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                                                                      cityId:(NSString *)cityId</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                                                                    cityName:(NSString *)cityName</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                                                                  timeZoneId:(NSString *)timeZoneId</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                                                                   beginTime:(NSString *)begin</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                                                                     endTime:(NSString *)end;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_smart_scene_pre_condition_factory.html">ThingSmartScenePreConditionFactory</a> : NSObject</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>+ (<a class="code hl_interface" href="interface_thing_smart_scene_pre_condition_model.html">ThingSmartScenePreConditionModel</a> *)creatAllDayPreConditionWithSceneId:(NSString *__nullable)sceneId</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                                                       existConditionId:(NSString * __nullable)conditionId</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                                                                  loops:(NSString *)loops</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                                             timeZoneId:(NSString *)timeZoneId;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>+ (<a class="code hl_interface" href="interface_thing_smart_scene_pre_condition_model.html">ThingSmartScenePreConditionModel</a> *)createDayTimePreConditionWithSceneId:(NSString *__nullable)sceneId</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                                         existConditionId:(NSString * __nullable)conditionId</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                                                    loops:(NSString *)loops</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                                                                   cityId:(NSString *)cityId</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                                                                 cityName:(NSString *)cityName</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                                                               timeZoneId:(NSString *)timeZoneId;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>+ (<a class="code hl_interface" href="interface_thing_smart_scene_pre_condition_model.html">ThingSmartScenePreConditionModel</a> *)createNightTimePreConditionWithSceneId:(NSString *__nullable)sceneId</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                                           existConditionId:(NSString * __nullable)conditionId</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                                                                      loops:(NSString *)loops</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                                                     cityId:(NSString *)cityId</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                                                                   cityName:(NSString *)cityName</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                                                                 timeZoneId:(NSString *)timeZoneId;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>+ (<a class="code hl_interface" href="interface_thing_smart_scene_pre_condition_model.html">ThingSmartScenePreConditionModel</a> *)createCustomTimePreConditionWithSceneId:(NSString *__nullable)sceneId</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                                                            existConditionId:(NSString * __nullable)conditionId</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                                                                       loops:(NSString *)loops</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                                                                      cityId:(NSString *)cityId</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                                                                    cityName:(NSString *)cityName</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                                                                  timeZoneId:(NSString *)timeZoneId</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                                                                   beginTime:(NSString *)begin</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                                                                     endTime:(NSString *)end;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="interface_thing_smart_scene_pre_condition_factory.html#acc32361de4da2ebbcb4fe71feb189889">   86</a></span>NS_ASSUME_NONNULL_END</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>+ (<a class="code hl_interface" href="interface_thing_smart_scene_pre_condition_model.html">ThingSmartScenePreConditionModel</a> *)scenePreconditionWithParam:(<a class="code hl_interface" href="interface_t_smart_scene_precondition_param.html">TSmartScenePreconditionParam</a> *)preconditionParam;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="ttc" id="ainterface_thing_smart_scene_pre_condition_factory_html"><div class="ttname"><a href="interface_thing_smart_scene_pre_condition_factory.html">ThingSmartScenePreConditionFactory</a></div><div class="ttdoc">ThingSmartScenePreConditionFactory provides convenient construction methods for developers to generat...</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing7cf6ccffe606c6160dc2560d65815aa6_source.html#l00014">ThingSmartScenePreConditionFactory.h:15</a></div></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="interface_thing_smart_scene_pre_condition_factory.html#acc32361de4da2ebbcb4fe71feb189889">   90</a></span>NS_ASSUME_NONNULL_END</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="ttc" id="ainterface_t_smart_scene_precondition_param_html"><div class="ttname"><a href="interface_t_smart_scene_precondition_param.html">TSmartScenePreconditionParam</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source.html#l00023">TSmartScenePreconditionParam.h:24</a></div></div>
+<div class="ttc" id="ainterface_thing_smart_scene_pre_condition_factory_html"><div class="ttname"><a href="interface_thing_smart_scene_pre_condition_factory.html">ThingSmartScenePreConditionFactory</a></div><div class="ttdoc">ThingSmartScenePreConditionFactory provides convenient construction methods for developers to generat...</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing7cf6ccffe606c6160dc2560d65815aa6_source.html#l00016">ThingSmartScenePreConditionFactory.h:17</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_scene_pre_condition_model_html"><div class="ttname"><a href="interface_thing_smart_scene_pre_condition_model.html">ThingSmartScenePreConditionModel</a></div><div class="ttdoc">ThingSmartScenePreConditionModel provides more attributes for developers to create pre-conditions for...</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing362bf2dbd6e56374a2eb09574b5c7c59_source.html#l00010">ThingSmartScenePreConditionModel.h:10</a></div></div>
 <div class="ttc" id="awatchos-arm64__i386__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_thing_smart_scene_core_kit_8h_html"><div class="ttname"><a href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_thing_smart_scene_core_kit_8h.html">ThingSmartSceneCoreKit.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

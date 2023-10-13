@@ -95,6 +95,7 @@ var menudata={children:[
 {text:"h",url:"functions_prop_h.html#index_h"},
 {text:"i",url:"functions_prop_i.html#index_i"},
 {text:"j",url:"functions_prop_j.html#index_j"},
+{text:"k",url:"functions_prop_k.html#index_k"},
 {text:"l",url:"functions_prop_l.html#index_l"},
 {text:"m",url:"functions_prop_m.html#index_m"},
 {text:"n",url:"functions_prop_n.html#index_n"},
@@ -168,6 +169,7 @@ var menudata={children:[
 {text:"k",url:"globals_defs_k.html#index_k"},
 {text:"l",url:"globals_defs_l.html#index_l"},
 {text:"m",url:"globals_defs_m.html#index_m"},
+{text:"n",url:"globals_defs_n.html#index_n"},
 {text:"s",url:"globals_defs_s.html#index_s"},
 {text:"t",url:"globals_defs_t.html#index_t"},
 {text:"w",url:"globals_defs_w.html#index_w"}]}]}]}]}

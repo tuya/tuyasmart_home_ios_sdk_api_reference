@@ -16,6 +16,8 @@ var protocol_thing_pairing_protocol_p =
     [ "resumeConfigWiFi:error:", "protocol_thing_pairing_protocol-p.html#a9e43e73c916b072079db2c1c1589ba1b", null ],
     [ "resumeWithConfiguration:", "protocol_thing_pairing_protocol-p.html#a1f9d52d2dc969b3409aa616430b65c0b", null ],
     [ "resumeWithConfiguration:", "protocol_thing_pairing_protocol-p.html#a1f9d52d2dc969b3409aa616430b65c0b", null ],
+    [ "reuseTCPConnection", "protocol_thing_pairing_protocol-p.html#aeca45ed6ffa8975c2a1a3fff9df5dcea", null ],
+    [ "reuseTCPConnection", "protocol_thing_pairing_protocol-p.html#aeca45ed6ffa8975c2a1a3fff9df5dcea", null ],
     [ "scanConnectableWiFiList:success:failure:", "protocol_thing_pairing_protocol-p.html#a4291d9984c1e286b0e4f900e4f935263", null ],
     [ "scanConnectableWiFiList:success:failure:", "protocol_thing_pairing_protocol-p.html#a4291d9984c1e286b0e4f900e4f935263", null ],
     [ "searchDevice", "protocol_thing_pairing_protocol-p.html#a53f30b86652e53c552698ae9608276cf", null ],

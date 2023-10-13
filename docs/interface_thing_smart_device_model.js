@@ -1,5 +1,7 @@
 var interface_thing_smart_device_model =
 [
+    [ "__attribute__", "interface_thing_smart_device_model.html#a7415f9e2131dc0165a3bf0ec3dff6787", null ],
+    [ "__attribute__", "interface_thing_smart_device_model.html#a7415f9e2131dc0165a3bf0ec3dff6787", null ],
     [ "__deprecated_msg", "interface_thing_smart_device_model.html#a3256a527bda57bd23f22cb3e5f44486b", null ],
     [ "__deprecated_msg", "interface_thing_smart_device_model.html#a3256a527bda57bd23f22cb3e5f44486b", null ],
     [ "__deprecated_msg", "interface_thing_smart_device_model.html#a3256a527bda57bd23f22cb3e5f44486b", null ],
@@ -80,6 +82,8 @@ var interface_thing_smart_device_model =
     [ "switchDpsValueFromDps:", "interface_thing_smart_device_model.html#a5fc5010bc348cb4fc33bdc809c1ccad4", null ],
     [ "switchDpsValueFromDps:", "interface_thing_smart_device_model.html#a5fc5010bc348cb4fc33bdc809c1ccad4", null ],
     [ "switchDpsValueFromDps:", "interface_thing_smart_device_model.html#a5fc5010bc348cb4fc33bdc809c1ccad4", null ],
+    [ "thingsdk_associatedHomeKitDeviceForHomeManager:", "interface_thing_smart_device_model.html#a08003f7b44a6e97f47aa346c1dc3590d", null ],
+    [ "thingsdk_associatedHomeKitDeviceForHomeManager:", "interface_thing_smart_device_model.html#a08003f7b44a6e97f47aa346c1dc3590d", null ],
     [ "uiPanelModel", "interface_thing_smart_device_model.html#a15f24755c8974bb191b097fe3028ccde", null ],
     [ "uiPanelModel", "interface_thing_smart_device_model.html#a15f24755c8974bb191b097fe3028ccde", null ],
     [ "uiPanelModel", "interface_thing_smart_device_model.html#a15f24755c8974bb191b097fe3028ccde", null ],
@@ -186,5 +190,6 @@ var interface_thing_smart_device_model =
     [ "uiVersion", "interface_thing_smart_device_model.html#a2aacf8fcc0034b34caf6b7dfa5c36b08", null ],
     [ "uuid", "interface_thing_smart_device_model.html#a6ccb053e714fa2375e533239a0fb099b", null ],
     [ "vendorInfo", "interface_thing_smart_device_model.html#adb490af75b01acc312528efa11925785", null ],
-    [ "verSw", "interface_thing_smart_device_model.html#ae64b7f569e4a8724d917e9e210893787", null ]
+    [ "verSw", "interface_thing_smart_device_model.html#ae64b7f569e4a8724d917e9e210893787", null ],
+    [ "virtualExperience", "interface_thing_smart_device_model.html#a365f25f1980134607fdb751a96e01dc6", null ]
 ];

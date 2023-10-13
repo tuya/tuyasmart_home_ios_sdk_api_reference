@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingBluetooth/Build/ThingBluetooth.xcframework/ios-arm64/ThingBluetooth.framework/Headers/ThingBLECentralManager+Discovery.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingBluetooth/Build/ThingBluetooth.xcframework/ios-arm64/ThingBluetooth.framework/Headers/ThingBLECentralManager+Discovery.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -100,7 +99,7 @@ $(document).ready(function(){initNavTree('_thing_bluetooth_8framework_2_headers_
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="category_thing_b_l_e_central_manager_07_discovery_08.html">   13</a></span><span class="keyword">@interface </span><a class="code hl_category" href="category_thing_b_l_e_central_manager_07_discovery_08.html">ThingBLECentralManager (Discovery)</a></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="category_thing_b_l_e_central_manager_07_discovery_08.html#a8ceb5a2705e8f8a00c2863ba97db20cd">   18</a></span><span class="keyword">@property</span> (nonatomic, strong, readonly) NSArray&lt;ThingBLEPeripheral *&gt; *discoveredDevices;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="category_thing_b_l_e_central_manager_07_discovery_08.html#a8ceb5a2705e8f8a00c2863ba97db20cd">   18</a></span><span class="keyword">@property</span> (nonatomic, strong, readonly) <a class="code hl_class" href="interface_n_s_array.html">NSArray&lt;ThingBLEPeripheral *&gt;</a> *discoveredDevices;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="category_thing_b_l_e_central_manager_07_discovery_08.html#afbcf6274b90cb50ff87cef63ceeed627">   20</a></span><span class="keyword">@property</span> (nonatomic, assign) BOOL shouldAutoDiscoveryWhenCenteralPoweredOn;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
@@ -108,13 +107,13 @@ $(document).ready(function(){initNavTree('_thing_bluetooth_8framework_2_headers_
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>- (void)removeDiscoveryDelegate:(<span class="keywordtype">id</span>&lt;<a class="code hl_protocol" href="protocol_thing_b_l_e_central_manager_discovery_delegate-p.html">ThingBLECentralManagerDiscoveryDelegate</a>&gt;)delegate;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>- (void)scanForPeripheralsWithServices:(nullable NSArray&lt;CBUUID *&gt; *)serviceUUIDs options:(nullable NSDictionary&lt;NSString *, <span class="keywordtype">id</span>&gt; *)options timeout:(NSTimeInterval)timeout;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>- (void)scanForPeripheralsWithServices:(nullable <a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;CBUUID *&gt; *)serviceUUIDs options:(nullable NSDictionary&lt;NSString *, <span class="keywordtype">id</span>&gt; *)options timeout:(NSTimeInterval)timeout;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>- (void)scanForPeripherals:(NSTimeInterval)timeout;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>- (NSArray&lt;CBPeripheral *&gt; *)retrievePeripheralsWithIdentifiers:(NSArray&lt;NSUUID *&gt; *)identifiers;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>- (<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;CBPeripheral *&gt; *)retrievePeripheralsWithIdentifiers:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;NSUUID *&gt; *)identifiers;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>- (NSArray&lt;<a class="code hl_interface" href="interface_thing_b_l_e_peripheral.html">ThingBLEPeripheral</a> *&gt; *)retrieveConnectedPeripheralsWithServices:(NSArray&lt;CBUUID *&gt; *)serviceUUIDs;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>- (<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;<a class="code hl_interface" href="interface_thing_b_l_e_peripheral.html">ThingBLEPeripheral</a> *&gt; *)retrieveConnectedPeripheralsWithServices:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;CBUUID *&gt; *)serviceUUIDs;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>- (void)stopScan;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
@@ -122,12 +121,13 @@ $(document).ready(function(){initNavTree('_thing_bluetooth_8framework_2_headers_
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>- (void)cleanScanedCache:(NSString *)service;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>- (void)cleanScanedCacheWithServices:(NSArray&lt;NSString *&gt; *)services;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>- (void)cleanScanedCacheWithServices:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;NSString *&gt; *)services;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>NS_ASSUME_NONNULL_END</div>
 <div class="ttc" id="acategory_thing_b_l_e_central_manager_07_discovery_08_html"><div class="ttname"><a href="category_thing_b_l_e_central_manager_07_discovery_08.html">ThingBLECentralManager(Discovery)</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_central_manager_09_discovery_8h_source.html#l00013">ThingBLECentralManager+Discovery.h:13</a></div></div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray&lt; ThingBLEPeripheral * &gt;</a></div></div>
 <div class="ttc" id="ainterface_thing_b_l_e_peripheral_html"><div class="ttname"><a href="interface_thing_b_l_e_peripheral.html">ThingBLEPeripheral</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_peripheral_8h_source.html#l00016">ThingBLEPeripheral.h:16</a></div></div>
 <div class="ttc" id="aprotocol_thing_b_l_e_central_manager_discovery_delegate-p_html"><div class="ttname"><a href="protocol_thing_b_l_e_central_manager_discovery_delegate-p.html">ThingBLECentralManagerDiscoveryDelegate-p</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_central_manager_protocol_8h_source.html#l00024">ThingBLECentralManagerProtocol.h:24</a></div></div>
 <div class="ttc" id="ax86__64-simulator_2_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_central_manager_8h_html"><div class="ttname"><a href="x86__64-simulator_2_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_central_manager_8h.html">ThingBLECentralManager.h</a></div></div>

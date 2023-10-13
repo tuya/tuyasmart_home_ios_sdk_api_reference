@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBLEMeshKit.framework/Headers/ThingBLEMeshManager.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBLEMeshKit.framework/Headers/ThingBLEMeshManager.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -213,13 +212,13 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_b_l_e_
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>- (void)setLightModelWithAddress:(uint32_t)address</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                            type:(NSString *)type</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                         isGroup:(BOOL)isGroup</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                           param:(NSArray&lt;NSString *&gt; *)param;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                           param:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;NSString *&gt; *)param;</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>- (void)getLightSceneModelWithAddress:(uint32_t)address</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>                                 type:(NSString *)type;</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>- (void)getSensorStateWithAddress:(uint32_t)deviceAddress</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                              dps:(NSArray *)dps</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                              dps:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> *)dps</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                             type:(NSString *)type;</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>- (void)addDeviceAddress:(uint32_t)deviceAddress</div>
@@ -233,7 +232,7 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_b_l_e_
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>- (void)deleteGroupAddress:(uint32_t)groupAddress</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>                      type:(NSString *)type;</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>- (NSMutableArray&lt;NSString *&gt; *)findAllDevicesByVendorIdArray:(NSArray *)vendorIdArray;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>- (NSMutableArray&lt;NSString *&gt; *)findAllDevicesByVendorIdArray:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> *)vendorIdArray;</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>- (void)getGroupAddressWithDeviceAddress:(uint32_t)deviceAddress</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>                                    type:(NSString *)type;</div>
@@ -284,6 +283,7 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_b_l_e_
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="protocol_thing_b_l_e_mesh_manager_delegate-p.html#a63446c1226dc037553bd5749c52746ae">  342</a></span>NS_ASSUME_NONNULL_END</div>
 <div class="ttc" id="acategory_thing_b_l_e_mesh_manager_07_command_08_html"><div class="ttname"><a href="category_thing_b_l_e_mesh_manager_07_command_08.html">ThingBLEMeshManager(Command)</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_manager_8h_source.html#l00206">ThingBLEMeshManager.h:206</a></div></div>
 <div class="ttc" id="acategory_thing_b_l_e_mesh_manager_07_raw_08_html"><div class="ttname"><a href="category_thing_b_l_e_mesh_manager_07_raw_08.html">ThingBLEMeshManager(Raw)</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_manager_8h_source.html#l00288">ThingBLEMeshManager.h:288</a></div></div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_b_l_e_mesh_command_html"><div class="ttname"><a href="interface_thing_b_l_e_mesh_command.html">ThingBLEMeshCommand</a></div><div class="ttdoc">The Bluetooth mesh protocol for certain commands.</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source.html#l00024">ThingBLEMeshCommand.h:24</a></div></div>
 <div class="ttc" id="ainterface_thing_b_l_e_mesh_manager_html"><div class="ttname"><a href="interface_thing_b_l_e_mesh_manager.html">ThingBLEMeshManager</a></div><div class="ttdoc">The Bluetooth mesh manager supports common Bluetooth mesh management classes and enables multiple fun...</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_manager_8h_source.html#l00091">ThingBLEMeshManager.h:92</a></div></div>
 <div class="ttc" id="ainterface_thing_b_l_e_mesh_manager_html_a1804df8f3eacf33fb1ca3323d8cfbf41"><div class="ttname"><a href="interface_thing_b_l_e_mesh_manager.html#a1804df8f3eacf33fb1ca3323d8cfbf41">ThingBLEMeshManager::wifiAddress</a></div><div class="ttdeci">uint32_t wifiAddress</div><div class="ttdoc">Returns the node address of the Wi-Fi device if it is activated.</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_manager_8h_source.html#l00106">ThingBLEMeshManager.h:106</a></div></div>

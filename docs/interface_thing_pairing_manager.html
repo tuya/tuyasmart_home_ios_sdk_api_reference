@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingPairingManager Class Reference</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingPairingManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -198,6 +197,8 @@ Properties</h2></td></tr>
 <tr class="separator:a3823fdb3ea546e3a6606ca12451192ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74acec0157b2361d998a770228e03c98"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_pairing_manager.html#a74acec0157b2361d998a770228e03c98">isReported</a></td></tr>
 <tr class="separator:a74acec0157b2361d998a770228e03c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98036b563b42868b6c1ef5f34070a49a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_pairing_manager.html#a98036b563b42868b6c1ef5f34070a49a">isPairing</a></td></tr>
+<tr class="separator:a98036b563b42868b6c1ef5f34070a49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25fb8350dc97ade775ce82986ddaaf2c"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="interface_thing_smart_log_track_configuration.html">ThingSmartLogTrackConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_pairing_manager.html#a25fb8350dc97ade775ce82986ddaaf2c">logTrackConfiguration</a></td></tr>
 <tr class="separator:a25fb8350dc97ade775ce82986ddaaf2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -914,7 +915,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(void(^)(NSArray&lt; <a class="el" href="interface_thing_smart_pairing_wi_fi_info.html">ThingSmartPairingWiFiInfo</a> * &gt; *_Nullable listArray))&#160;</td>
+          <td class="paramtype">(void(^)(<a class="el" href="interface_n_s_array.html">NSArray</a>&lt; <a class="el" href="interface_thing_smart_pairing_wi_fi_info.html">ThingSmartPairingWiFiInfo</a> * &gt; *_Nullable listArray))&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
@@ -957,7 +958,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(void(^)(NSArray&lt; <a class="el" href="interface_thing_smart_pairing_wi_fi_info.html">ThingSmartPairingWiFiInfo</a> * &gt; *_Nullable listArray))&#160;</td>
+          <td class="paramtype">(void(^)(<a class="el" href="interface_n_s_array.html">NSArray</a>&lt; <a class="el" href="interface_thing_smart_pairing_wi_fi_info.html">ThingSmartPairingWiFiInfo</a> * &gt; *_Nullable listArray))&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
@@ -1262,6 +1263,30 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a98036b563b42868b6c1ef5f34070a49a" name="a98036b563b42868b6c1ef5f34070a49a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98036b563b42868b6c1ef5f34070a49a">&#9670;&nbsp;</a></span>isPairing</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) isPairing</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_pairing_manager_8h_source.html#l00045">45</a> of file <a class="el" href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_pairing_manager_8h_source.html">ThingPairingManager.h</a>.</p>
+
+</div>
+</div>
 <a id="a74acec0157b2361d998a770228e03c98" name="a74acec0157b2361d998a770228e03c98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74acec0157b2361d998a770228e03c98">&#9670;&nbsp;</a></span>isReported</h2>
 
@@ -1306,7 +1331,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_pairing_manager_8h_source.html#l00045">45</a> of file <a class="el" href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_pairing_manager_8h_source.html">ThingPairingManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_pairing_manager_8h_source.html#l00047">47</a> of file <a class="el" href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_pairing_manager_8h_source.html">ThingPairingManager.h</a>.</p>
 
 </div>
 </div>

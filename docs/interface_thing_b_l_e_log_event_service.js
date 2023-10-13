@@ -12,6 +12,7 @@ var interface_thing_b_l_e_log_event_service =
     [ "firmwareVersion", "interface_thing_b_l_e_log_event_service.html#ac2a6f22b29ca469bda85611794111cf5", null ],
     [ "freeDate", "interface_thing_b_l_e_log_event_service.html#a3b2bca6a9b67f651072b7a76bfeaee93", null ],
     [ "isSuccess", "interface_thing_b_l_e_log_event_service.html#a43a72bbb2f65cce159c1fb7bb8a4a084", null ],
+    [ "pairID", "interface_thing_b_l_e_log_event_service.html#a9d4cb02fb99c3b97a68170d37dce64ae", null ],
     [ "pid", "interface_thing_b_l_e_log_event_service.html#a17dd030ea4b7cd9c96a1e278d8f3c626", null ],
     [ "step", "interface_thing_b_l_e_log_event_service.html#a3c87a41293c9ddb47b697b7ddae3d428", null ],
     [ "subCategory", "interface_thing_b_l_e_log_event_service.html#a6fbb3bd95f8e4ad4fd9515ef5b77552f", null ],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartShareKit/Build/ThingSmartShareKit.xcframework/ios-arm64/ThingSmartShareKit.framework/Headers/ThingSmartShareKitApi.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartShareKit/Build/ThingSmartShareKit.xcframework/ios-arm64/ThingSmartShareKit.framework/Headers/ThingSmartShareKitApi.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -105,17 +104,17 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_share_kit_8fra
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>- (void)addShareWithMemberId:(NSInteger)memberId</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                      devIds:(NSArray &lt;NSString *&gt; *)devIds</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                      devIds:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> &lt;NSString *&gt; *)devIds</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                     success:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)success</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                     failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>- (void)getShareMemberListWithSpaceId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)spaceId</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                             success:(<span class="keywordtype">void</span>(^)(NSArray&lt;<a class="code hl_interface" href="interface_thing_smart_share_member_model.html">ThingSmartShareMemberModel</a> *&gt; *list))success</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                             success:(<span class="keywordtype">void</span>(^)(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;<a class="code hl_interface" href="interface_thing_smart_share_member_model.html">ThingSmartShareMemberModel</a> *&gt; *list))success</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                             failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>- (void)getReceiveMemberListWithSuccess:(<span class="keywordtype">void</span>(^)(NSArray&lt;<a class="code hl_interface" href="interface_thing_smart_share_member_model.html">ThingSmartShareMemberModel</a> *&gt; *list))success</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>- (void)getReceiveMemberListWithSuccess:(<span class="keywordtype">void</span>(^)(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;<a class="code hl_interface" href="interface_thing_smart_share_member_model.html">ThingSmartShareMemberModel</a> *&gt; *list))success</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                                failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
@@ -155,7 +154,7 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_share_kit_8fra
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>- (void)getDeviceShareMemberListWithDevId:(NSString *)devId</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                                  success:(<span class="keywordtype">void</span>(^)(NSArray&lt;<a class="code hl_interface" href="interface_thing_smart_share_member_model.html">ThingSmartShareMemberModel</a> *&gt; *list))success</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                                  success:(<span class="keywordtype">void</span>(^)(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;<a class="code hl_interface" href="interface_thing_smart_share_member_model.html">ThingSmartShareMemberModel</a> *&gt; *list))success</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                                  failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
@@ -173,7 +172,7 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_share_kit_8fra
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="preprocessor">#pragma mark - Group Share</span></div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>- (void)getGroupShareMemberListWithGroupId:(NSString *)groupId</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                                   success:(<span class="keywordtype">void</span>(^)(NSArray&lt;<a class="code hl_interface" href="interface_thing_smart_share_member_model.html">ThingSmartShareMemberModel</a> *&gt; *list))success</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                                   success:(<span class="keywordtype">void</span>(^)(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;<a class="code hl_interface" href="interface_thing_smart_share_member_model.html">ThingSmartShareMemberModel</a> *&gt; *list))success</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                                   failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
@@ -198,6 +197,7 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_share_kit_8fra
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="interface_thing_smart_home_device_share.html#afbebb1c8fe1f3a71b4b476c1e1dd62ac">  190</a></span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_device_share_request_model_html"><div class="ttname"><a href="interface_thing_smart_device_share_request_model.html">ThingSmartDeviceShareRequestModel</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_share_kit_8framework_2_headers_2_thing_smart_share_kit_model_8h_source.html#l00026">ThingSmartShareKitModel.h:27</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_home_device_share_html"><div class="ttname"><a href="interface_thing_smart_home_device_share.html">ThingSmartHomeDeviceShare</a></div><div class="ttdoc">Shares devices based on device types.</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_share_kit_8framework_2_headers_2_thing_smart_share_kit_api_8h_source.html#l00013">ThingSmartShareKitApi.h:14</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_receive_member_detail_model_html"><div class="ttname"><a href="interface_thing_smart_receive_member_detail_model.html">ThingSmartReceiveMemberDetailModel</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_share_kit_8framework_2_headers_2_thing_smart_share_kit_model_8h_source.html#l00090">ThingSmartShareKitModel.h:91</a></div></div>

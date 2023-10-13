@@ -1,10 +1,12 @@
 var files_dup =
 [
     [ "ThingBluetooth", "dir_c360db0446a0011a8da53b2a077cebf4.html", "dir_c360db0446a0011a8da53b2a077cebf4" ],
+    [ "ThingFoundationKit", "dir_ea7f8fd609ed92c7e61e9cbd1f5e21b8.html", "dir_ea7f8fd609ed92c7e61e9cbd1f5e21b8" ],
     [ "ThingMbedtls", "dir_c9a542f9fd750d47226eaf7a64a25a16.html", "dir_c9a542f9fd750d47226eaf7a64a25a16" ],
     [ "ThingOpenSSLSDK", "dir_403420f2735052564bde85aff16301cc.html", "dir_403420f2735052564bde85aff16301cc" ],
     [ "ThingSmartActivatorCoreKit", "dir_cec301ae20f2d5ed4e12e06d0c010a75.html", "dir_cec301ae20f2d5ed4e12e06d0c010a75" ],
     [ "ThingSmartActivatorKit", "dir_7cfef94bc011a2cf00d732c32a3aad8f.html", "dir_7cfef94bc011a2cf00d732c32a3aad8f" ],
+    [ "ThingSmartAppleDeviceKit", "dir_f618c689ae66207754b092252da088a6.html", "dir_f618c689ae66207754b092252da088a6" ],
     [ "ThingSmartBaseKit", "dir_2724aea3f9645cd146954583a29c81af.html", "dir_2724aea3f9645cd146954583a29c81af" ],
     [ "ThingSmartBeaconKit", "dir_e0aec2257e3d626727425be454a83964.html", "dir_e0aec2257e3d626727425be454a83964" ],
     [ "ThingSmartBLECoreKit", "dir_2682697f5ddf908ef75acdcfa469254e.html", "dir_2682697f5ddf908ef75acdcfa469254e" ],

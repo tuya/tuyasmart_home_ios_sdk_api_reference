@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartActivatorCoreKit/Build/ThingSmartActivatorCoreKit.xcframework/ios-arm64/ThingSmartActivatorCoreKit.framework/Headers/ThingSmartPegasusActivator.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartActivatorCoreKit/Build/ThingSmartActivatorCoreKit.xcframework/ios-arm64/ThingSmartActivatorCoreKit.framework/Headers/ThingSmartPegasusActivator.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -110,33 +109,34 @@ $(document).ready(function(){initNavTree('_thing_smart_activator_core_kit_2_buil
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="interface_thing_smart_pegasus_activator.html#aca17f50723acdfd9e187a9252f9321f7">   31</a></span><span class="keyword">@property</span> (nonatomic, weak) id&lt;ThingSmartPegasusActivatorDelegate&gt; <a class="code hl_property" href="interface_thing_smart_pegasus_activator.html#af4b2799e7a4c005558a184538deeb2eb">delegate</a>;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>- (void)startDiscoverWithDevIDs:(NSArray&lt;NSString *&gt; *)devIDs</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>- (void)startDiscoverWithDevIDs:(<a class="code hl_class" href="interface_n_s_array.html">NSArray&lt;NSString *&gt;</a> *)devIDs</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                  serverTimeout:(NSTimeInterval)serverTimeout</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                  clientTimeout:(NSTimeInterval)clientTimeout</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                        success:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)success</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                        failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>- (void)stopDiscoverWithDevIDs:(NSArray&lt;NSString *&gt; *)devIDs</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>- (void)stopDiscoverWithDevIDs:(<a class="code hl_class" href="interface_n_s_array.html">NSArray&lt;NSString *&gt;</a> *)devIDs</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                        success:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)success</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                        failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>- (void)startActivatorWithDevIDs:(NSArray&lt;NSString *&gt; *)devIDs</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                           UUIDs:(NSArray&lt;NSString *&gt; *)UUIDs</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>- (void)startActivatorWithDevIDs:(<a class="code hl_class" href="interface_n_s_array.html">NSArray&lt;NSString *&gt;</a> *)devIDs</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                           UUIDs:(<a class="code hl_class" href="interface_n_s_array.html">NSArray&lt;NSString *&gt;</a> *)UUIDs</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                           token:(NSString *)token</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                         timeout:(NSTimeInterval)timeout</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                         success:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)success</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                         failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>- (void)cancelActivatorWithDevIDs:(NSArray&lt;NSString *&gt; *)devIDs</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                            UUIDs:(NSArray&lt;NSString *&gt; *)UUIDs</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>- (void)cancelActivatorWithDevIDs:(<a class="code hl_class" href="interface_n_s_array.html">NSArray&lt;NSString *&gt;</a> *)devIDs</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                            UUIDs:(<a class="code hl_class" href="interface_n_s_array.html">NSArray&lt;NSString *&gt;</a> *)UUIDs</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                          success:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)success</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                          failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="protocol_thing_smart_pegasus_activator_delegate-p.html#ad92f3f928f1c36c2eef4f569b80c112d">   82</a></span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray&lt; NSString * &gt;</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_device_model_html"><div class="ttname"><a href="interface_thing_smart_device_model.html">ThingSmartDeviceModel</a></div><div class="ttdoc">The information about the device.</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_source.html#l00097">ThingSmartDeviceModel.h:98</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_pegasus_activator_html"><div class="ttname"><a href="interface_thing_smart_pegasus_activator.html">ThingSmartPegasusActivator</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm6454c97e851ca7963abafa15e75a33bea9_source.html#l00029">ThingSmartPegasusActivator.h:30</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_pegasus_activator_html_af4b2799e7a4c005558a184538deeb2eb"><div class="ttname"><a href="interface_thing_smart_pegasus_activator.html#af4b2799e7a4c005558a184538deeb2eb">ThingSmartPegasusActivator::delegate</a></div><div class="ttdeci">id&lt; ThingSmartPegasusActivatorDelegate &gt; delegate</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm6454c97e851ca7963abafa15e75a33bea9_source.html#l00031">ThingSmartPegasusActivator.h:31</a></div></div>

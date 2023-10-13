@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBLEMeshKit.framework/Headers/ThingSmartSIGMeshManager.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBLEMeshKit.framework/Headers/ThingSmartSIGMeshManager.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -127,7 +126,7 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_b_l_e_
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>- (void)newSigMeshManager:(<a class="code hl_interface" href="interface_thing_smart_s_i_g_mesh_manager.html">ThingSmartSIGMeshManager</a> *)manager didHandleGroupWithGroupAddress:(NSString *)groupAddress deviceNodeId:(NSString *)nodeId error:(NSError *)error;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>- (void)sigMeshManager:(<a class="code hl_interface" href="interface_thing_smart_s_i_g_mesh_manager.html">ThingSmartSIGMeshManager</a> *)manager</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        queryGroupList:(NSArray&lt;NSString *&gt; *)groupList</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        queryGroupList:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;NSString *&gt; *)groupList</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>           deviceModel:(<a class="code hl_interface" href="interface_thing_smart_device_model.html">ThingSmartDeviceModel</a> *)deviceModel</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                 error:(NSString * _Nullable)error;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
@@ -144,7 +143,7 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_b_l_e_
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>- (void)sigMeshManager:(<a class="code hl_interface" href="interface_thing_smart_s_i_g_mesh_manager.html">ThingSmartSIGMeshManager</a> *)manager didReceivedCustomOpCodeData:(NSData *)opCode payload:(NSData *)payload;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">// A list of model IDs to be managed over the mesh network.</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>- (NSArray&lt;NSNumber *&gt; *)listOfCustomModelIdWithSigMeshManager:(<a class="code hl_interface" href="interface_thing_smart_s_i_g_mesh_manager.html">ThingSmartSIGMeshManager</a> *)manager;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>- (<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;NSNumber *&gt; *)listOfCustomModelIdWithSigMeshManager:(<a class="code hl_interface" href="interface_thing_smart_s_i_g_mesh_manager.html">ThingSmartSIGMeshManager</a> *)manager;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>- (void)sigMeshManager:(<a class="code hl_interface" href="interface_thing_smart_s_i_g_mesh_manager.html">ThingSmartSIGMeshManager</a> *)manager receivedFittingMessage:(<a class="code hl_interface" href="interface_thing_s_i_g_mesh_fitting_msg_model.html">ThingSIGMeshFittingMsgModel</a> *)message;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
@@ -167,7 +166,7 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_b_l_e_
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword">@property</span> (nonatomic, copy) NSString *<a class="code hl_property" href="interface_thing_smart_s_i_g_mesh_manager.html#a688b80347979733eb65e78c1bb865ed7">otaTargetNodeId</a>; </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword">@property</span> (nonatomic, strong) NSArray&lt;NSData *&gt; *<a class="code hl_property" href="interface_thing_smart_s_i_g_mesh_manager.html#ac178e18b6bcb077019397fb9c8a44a07">nodeIds</a>;<span class="comment">//已知的nodeId列表</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword">@property</span> (nonatomic, strong) <a class="code hl_class" href="interface_n_s_array.html">NSArray&lt;NSData *&gt;</a> *<a class="code hl_property" href="interface_thing_smart_s_i_g_mesh_manager.html#ac178e18b6bcb077019397fb9c8a44a07">nodeIds</a>;<span class="comment">//已知的nodeId列表</span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keyword">@property</span> (nonatomic, strong) MeshStateManager *<a class="code hl_property" href="interface_thing_smart_s_i_g_mesh_manager.html#a7c2ab407efccc1d47d6c3ee7e2c73a96">meshState</a>;</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
@@ -184,6 +183,7 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_b_l_e_
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>NS_ASSUME_NONNULL_END</div>
 <div class="ttc" id="a_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_8h_html_a023d740056608fdfb081563d6d69a175"><div class="ttname"><a href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_8h.html#a023d740056608fdfb081563d6d69a175">NS_ENUM</a></div><div class="ttdeci">NS_ASSUME_NONNULL_BEGIN typedef NS_ENUM(NSUInteger, ThingSmartSIGScanType)</div><div class="ttdoc">The type of Bluetooth mesh manager for inactive and active devices.</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_8h_source.html#l00013">ThingSmartSIGMeshManager.h:13</a></div></div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_s_i_g_mesh_config_model_html"><div class="ttname"><a href="interface_thing_s_i_g_mesh_config_model.html">ThingSIGMeshConfigModel</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_s_i_g_mesh_config_model_8h_source.html#l00019">ThingSIGMeshConfigModel.h:20</a></div></div>
 <div class="ttc" id="ainterface_thing_s_i_g_mesh_fitting_msg_model_html"><div class="ttname"><a href="interface_thing_s_i_g_mesh_fitting_msg_model.html">ThingSIGMeshFittingMsgModel</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_s_i_g_mesh_fitting_msg_model_8h_source.html#l00018">ThingSIGMeshFittingMsgModel.h:19</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_ble_mesh_html"><div class="ttname"><a href="interface_thing_smart_ble_mesh.html">ThingSmartBleMesh</a></div><div class="ttdoc">The Bluetooth mesh base class that supports the basic operations of Bluetooth mesh networks....</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_8h_source.html#l00031">ThingSmartBleMesh.h:32</a></div></div>

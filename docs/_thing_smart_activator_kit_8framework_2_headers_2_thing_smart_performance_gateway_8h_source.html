@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartActivatorKit/Build/ThingSmartActivatorKit.xcframework/ios-arm64/ThingSmartActivatorKit.framework/Headers/ThingSmartPerformanceGateway.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartActivatorKit/Build/ThingSmartActivatorKit.xcframework/ios-arm64/ThingSmartActivatorKit.framework/Headers/ThingSmartPerformanceGateway.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -103,7 +102,7 @@ $(document).ready(function(){initNavTree('_thing_smart_activator_kit_8framework_
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="interface_thing_smart_performance_gateway.html">   17</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_smart_performance_gateway.html">ThingSmartPerformanceGateway</a> : NSObject</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>- (BOOL)shouldBindForSuccessActivatorDevices:(NSArray &lt;<a class="code hl_interface" href="interface_thing_smart_device_model.html">ThingSmartDeviceModel</a> *&gt; *)successActivatorDevices;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>- (BOOL)shouldBindForSuccessActivatorDevices:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> &lt;<a class="code hl_interface" href="interface_thing_smart_device_model.html">ThingSmartDeviceModel</a> *&gt; *)successActivatorDevices;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#pragma mark - 对家庭下网关与子设备处理自动绑定逻辑</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
@@ -135,12 +134,13 @@ $(document).ready(function(){initNavTree('_thing_smart_activator_kit_8framework_
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>- (void)autoBindRoomDevicesWithRoomID:(<a class="code hl_typedef" href="_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_activator_definition_8h.html#a3fbbf66694ba96d04a9c35b0735dce65">ThingSmartHomeID</a>)homeID complete:(<a class="code hl_typedef" href="interface_thing_smart_performance_gateway.html#a66de1b8650d51dba22a103b27dda0989">ThingSmartPerformanceGatewayAutoBindComplete</a>)complete;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>- (void)autoBindingGateway:(<a class="code hl_interface" href="interface_thing_smart_performance_gateway_property.html">ThingSmartPerformanceGatewayProperty</a> *)gatewayProperty subDeviceIDList:(NSArray&lt;NSString *&gt; *)subDeviceIDList success:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a69c1e753c6b7729845fff29427d408b8">ThingSuccessBOOL</a> __nullable)success failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a> __nullable)failure;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>- (void)autoBindingGateway:(<a class="code hl_interface" href="interface_thing_smart_performance_gateway_property.html">ThingSmartPerformanceGatewayProperty</a> *)gatewayProperty subDeviceIDList:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;NSString *&gt; *)subDeviceIDList success:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a69c1e753c6b7729845fff29427d408b8">ThingSuccessBOOL</a> __nullable)success failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a> __nullable)failure;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="interface_thing_smart_performance_gateway.html#abbee822c346687a3a06f0d21e1fe3f0b">   74</a></span>NS_ASSUME_NONNULL_END</div>
 <div class="ttc" id="a_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_activator_definition_8h_html_a3fbbf66694ba96d04a9c35b0735dce65"><div class="ttname"><a href="_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_activator_definition_8h.html#a3fbbf66694ba96d04a9c35b0735dce65">ThingSmartHomeID</a></div><div class="ttdeci">long long ThingSmartHomeID</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_activator_definition_8h_source.html#l00011">ThingSmartActivatorDefinition.h:11</a></div></div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_device_model_html"><div class="ttname"><a href="interface_thing_smart_device_model.html">ThingSmartDeviceModel</a></div><div class="ttdoc">The information about the device.</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_source.html#l00097">ThingSmartDeviceModel.h:98</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_performance_gateway_html"><div class="ttname"><a href="interface_thing_smart_performance_gateway.html">ThingSmartPerformanceGateway</a></div><div class="ttdoc">为了增强体验，高性能网关在配网完成后将子设备自动绑定到网关下，当存在多个高性能网关时则引导用户配置</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source.html#l00017">ThingSmartPerformanceGateway.h:18</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_performance_gateway_html_a1ebd028ca977e7f385c872d0e157b341"><div class="ttname"><a href="interface_thing_smart_performance_gateway.html#a1ebd028ca977e7f385c872d0e157b341">ThingSmartPerformanceGateway::ThingSmartPerformanceGatewayAutoBindErrorKey</a></div><div class="ttdeci">NSString *const ThingSmartPerformanceGatewayAutoBindErrorKey</div><div class="ttdoc">value:NSError* __nullable 错误信息</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source.html#l00043">ThingSmartPerformanceGateway.h:43</a></div></div>

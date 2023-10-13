@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartUtil/Build/ThingSmartUtil.xcframework/watchos-arm64_i386_x86_64-simulator/ThingSmartUtil.framework/Headers/ThingSDKLogUtils.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartUtil/Build/ThingSmartUtil.xcframework/watchos-arm64_i386_x86_64-simulator/ThingSmartUtil.framework/Headers/ThingSDKLogUtils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -119,9 +118,10 @@ $(document).ready(function(){initNavTree('watchos-arm64__i386__x86__64-simulator
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>+ (NSString *)<a class="code hl_function" href="interface_thing_s_d_k_log_utils.html#a7afc9fd1f5244e58012d0970dcd66948">thingsdk_eventIdentifiter</a>;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>+ (void)thingsdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute identify:(NSString *)identify maxCount:(<span class="keywordtype">int</span>)maxCount handler:(NSDictionary *(^)(NSInteger index, NSArray * datas))handler;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>+ (void)thingsdk_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute identify:(NSString *)identify maxCount:(<span class="keywordtype">int</span>)maxCount handler:(NSDictionary *(^)(NSInteger index, <a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> * datas))handler;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">@end</span></div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_s_d_k_log_utils_html"><div class="ttname"><a href="interface_thing_s_d_k_log_utils.html">ThingSDKLogUtils</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source.html#l00011">ThingSDKLogUtils.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_s_d_k_log_utils_html_a7afc9fd1f5244e58012d0970dcd66948"><div class="ttname"><a href="interface_thing_s_d_k_log_utils.html#a7afc9fd1f5244e58012d0970dcd66948">+[ThingSDKLogUtils thingsdk_eventIdentifiter]</a></div><div class="ttdeci">NSString * thingsdk_eventIdentifiter()</div></div>
 </div><!-- fragment --></div><!-- contents -->

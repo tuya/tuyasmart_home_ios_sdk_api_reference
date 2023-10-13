@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartSocketChannelKit/Build/ThingSmartSocketChannelKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartSocketChannelKit.framework/Headers/ThingSmartSocketReadModel.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartSocketChannelKit/Build/ThingSmartSocketChannelKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartSocketChannelKit.framework/Headers/ThingSmartSocketReadModel.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -107,16 +106,17 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_socket
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="interface_thing_smart_socket_read_model.html#a42c7bd909986b98f405c6ecde3dbf891">   19</a></span><span class="keyword">@property</span> (nonatomic, strong) NSData            *<a class="code hl_property" href="interface_thing_smart_socket_read_model.html#a8fe0357e4fee83e9facc697703dbcd9a">data</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Decrypts TCP data.</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>+ (NSArray &lt;<a class="code hl_interface" href="interface_thing_smart_socket_read_model.html">ThingSmartSocketReadModel</a> *&gt; *)tcpResponseWithData:(NSData *)data gwId:(NSString *)gwId lpv:(NSString *)lpv localKey:(NSString *)localKey localKeyData:(NSData *)localKeyData;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>+ (<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> &lt;<a class="code hl_interface" href="interface_thing_smart_socket_read_model.html">ThingSmartSocketReadModel</a> *&gt; *)tcpResponseWithData:(NSData *)data gwId:(NSString *)gwId lpv:(NSString *)lpv localKey:(NSString *)localKey localKeyData:(NSData *)localKeyData;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Decrypts UDP data.</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>+ (NSArray &lt;<a class="code hl_interface" href="interface_thing_smart_socket_read_model.html">ThingSmartSocketReadModel</a> *&gt; *)udpResponseWithData:(NSData *)data;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>+ (<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> &lt;<a class="code hl_interface" href="interface_thing_smart_socket_read_model.html">ThingSmartSocketReadModel</a> *&gt; *)udpResponseWithData:(NSData *)data;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>- (NSDictionary *)<a class="code hl_function" href="interface_thing_smart_socket_read_model.html#a42c7bd909986b98f405c6ecde3dbf891">attribute</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">//NS_ASSUME_NONNULL_END</span></div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_socket_read_model_html"><div class="ttname"><a href="interface_thing_smart_socket_read_model.html">ThingSmartSocketReadModel</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_read_model_8h_source.html#l00012">ThingSmartSocketReadModel.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_socket_read_model_html_a260ee443f56daae5a7dd92a03b332f7e"><div class="ttname"><a href="interface_thing_smart_socket_read_model.html#a260ee443f56daae5a7dd92a03b332f7e">ThingSmartSocketReadModel::type</a></div><div class="ttdeci">int type</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_read_model_8h_source.html#l00015">ThingSmartSocketReadModel.h:15</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_socket_read_model_html_a42c7bd909986b98f405c6ecde3dbf891"><div class="ttname"><a href="interface_thing_smart_socket_read_model.html#a42c7bd909986b98f405c6ecde3dbf891">-[ThingSmartSocketReadModel attribute]</a></div><div class="ttdeci">NSDictionary * attribute()</div></div>

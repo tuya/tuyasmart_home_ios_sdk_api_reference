@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartPairingCoreKit/Build/ThingSmartPairingCoreKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartPairingCoreKit.framework/Headers/ThingPairingProtocol.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartPairingCoreKit/Build/ThingSmartPairingCoreKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartPairingCoreKit.framework/Headers/ThingPairingProtocol.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -123,10 +122,10 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_pairin
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>- (void)pairingWithConfiguration:(<span class="keywordtype">id</span>&lt;<a class="code hl_interface" href="interface_thing_smart_pair_configuration.html">ThingSmartPairConfiguration</a>&gt;)config;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>- (void)resumeWithConfiguration:(<span class="keywordtype">id</span>&lt;<a class="code hl_interface" href="interface_thing_smart_pair_configuration.html">ThingSmartPairConfiguration</a>&gt;)config;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>- (void)pairingWithConfiguration:(<span class="keywordtype">id</span>&lt;<a class="code hl_interface" href="interface_thing_smart_pair_configuration.html">ThingSmartPairConfiguration</a>&gt;)config</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                        logTrack:(nullable <span class="keywordtype">id</span>&lt;<a class="code hl_interface" href="interface_thing_smart_log_track_configuration.html">ThingSmartLogTrackConfiguration</a>&gt;)logTrack;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>- (void)pairingWithConfiguration:(<span class="keywordtype">id</span>&lt;<a class="code hl_interface" href="interface_thing_smart_pair_configuration.html">ThingSmartPairConfiguration</a>&gt;)config</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                        logTrack:(nullable <span class="keywordtype">id</span>&lt;<a class="code hl_interface" href="interface_thing_smart_log_track_configuration.html">ThingSmartLogTrackConfiguration</a>&gt;)logTrack;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>- (void)<a class="code hl_function" href="protocol_thing_pairing_protocol-p.html#aa32e093a9f73f44b2cf25be3a3798639">stopPairing</a>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">@optional</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
@@ -136,21 +135,24 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_pairin
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>- (void)deviceStatusCheck:(NSString *)devId;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>- (void)<a class="code hl_function" href="protocol_thing_pairing_protocol-p.html#aa32e093a9f73f44b2cf25be3a3798639">stopPairing</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>- (void)<a class="code hl_function" href="protocol_thing_pairing_protocol-p.html#aace847c7e49ede69407744ef9cb4c21c">continueConfigSecurityLevelDevice</a>;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>- (void)<a class="code hl_function" href="protocol_thing_pairing_protocol-p.html#aace847c7e49ede69407744ef9cb4c21c">continueConfigSecurityLevelDevice</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>- (int)resumeConfigWiFi:(<a class="code hl_interface" href="interface_thing_smart_pairing_resume_config_wi_fi_param.html">ThingSmartPairingResumeConfigWiFiParam</a>*)param error:(NSError**)error;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>- (int)resumeConfigWiFi:(<a class="code hl_interface" href="interface_thing_smart_pairing_resume_config_wi_fi_param.html">ThingSmartPairingResumeConfigWiFiParam</a>*)param error:(NSError**)error;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>- (void)resumeWithConfiguration:(<span class="keywordtype">id</span>&lt;<a class="code hl_interface" href="interface_thing_smart_pair_configuration.html">ThingSmartPairConfiguration</a>&gt;)config;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>- (void)scanConnectableWiFiList:(<a class="code hl_interface" href="interface_thing_smart_pairing_scan_wi_fi_list_param.html">ThingSmartPairingScanWiFiListParam</a>*)param</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                        success:(<span class="keywordtype">void</span>(^)(NSArray &lt;<a class="code hl_interface" href="interface_thing_smart_pairing_wi_fi_info.html">ThingSmartPairingWiFiInfo</a>*&gt;*_Nullable listArray))success</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                        success:(<span class="keywordtype">void</span>(^)(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> &lt;<a class="code hl_interface" href="interface_thing_smart_pairing_wi_fi_info.html">ThingSmartPairingWiFiInfo</a>*&gt;*_Nullable listArray))success</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                        failure:(<span class="keywordtype">void</span>(^)(NSError *_Nullable error))failure;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>- (void)<a class="code hl_function" href="protocol_thing_pairing_protocol-p.html#a705423bc215417b3b20ef5719c359b67">resetDevice</a>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>- (BOOL)<a class="code hl_function" href="protocol_thing_pairing_protocol-p.html#aeca45ed6ffa8975c2a1a3fff9df5dcea">reuseTCPConnection</a>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>NS_ASSUME_NONNULL_END</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_log_track_configuration_html"><div class="ttname"><a href="interface_thing_smart_log_track_configuration.html">ThingSmartLogTrackConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_log_track_configuration_8h_source.html#l00032">ThingSmartLogTrackConfiguration.h:32</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_pair_configuration_html"><div class="ttname"><a href="interface_thing_smart_pair_configuration.html">ThingSmartPairConfiguration</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pair_configuration_8h_source.html#l00042">ThingSmartPairConfiguration.h:42</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_pairing_resume_config_wi_fi_param_html"><div class="ttname"><a href="interface_thing_smart_pairing_resume_config_wi_fi_param.html">ThingSmartPairingResumeConfigWiFiParam</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_param_8h_source.html#l00037">ThingSmartPairingParam.h:37</a></div></div>
@@ -169,6 +171,7 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_pairin
 <div class="ttc" id="aprotocol_thing_pairing_protocol-p_html_aace847c7e49ede69407744ef9cb4c21c"><div class="ttname"><a href="protocol_thing_pairing_protocol-p.html#aace847c7e49ede69407744ef9cb4c21c">-[ThingPairingProtocol-p continueConfigSecurityLevelDevice]</a></div><div class="ttdeci">void continueConfigSecurityLevelDevice()</div></div>
 <div class="ttc" id="aprotocol_thing_pairing_protocol-p_html_ab7d090832cc4fab47899b325633bfa97"><div class="ttname"><a href="protocol_thing_pairing_protocol-p.html#ab7d090832cc4fab47899b325633bfa97">ThingPairingProtocol-p::registerString</a></div><div class="ttdeci">NSString * registerString</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_pairing_protocol_8h_source.html#l00020">ThingPairingProtocol.h:20</a></div></div>
 <div class="ttc" id="aprotocol_thing_pairing_protocol-p_html_ae34b12ccc62c87334aba3a6b089bc747"><div class="ttname"><a href="protocol_thing_pairing_protocol-p.html#ae34b12ccc62c87334aba3a6b089bc747">ThingPairingProtocol-p::token</a></div><div class="ttdeci">NSString * token</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_pairing_protocol_8h_source.html#l00022">ThingPairingProtocol.h:22</a></div></div>
+<div class="ttc" id="aprotocol_thing_pairing_protocol-p_html_aeca45ed6ffa8975c2a1a3fff9df5dcea"><div class="ttname"><a href="protocol_thing_pairing_protocol-p.html#aeca45ed6ffa8975c2a1a3fff9df5dcea">-[ThingPairingProtocol-p reuseTCPConnection]</a></div><div class="ttdeci">BOOL reuseTCPConnection()</div></div>
 <div class="ttc" id="aprotocol_thing_pairing_protocol-p_html_aff9a06785b0f0d082795c071a794e3b1"><div class="ttname"><a href="protocol_thing_pairing_protocol-p.html#aff9a06785b0f0d082795c071a794e3b1">ThingPairingProtocol-p::config</a></div><div class="ttdeci">id&lt; ThingSmartPairConfiguration &gt; config</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_pairing_protocol_8h_source.html#l00030">ThingPairingProtocol.h:30</a></div></div>
 <div class="ttc" id="ax86__64-simulator_2_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_pairing_manager_8h_html"><div class="ttname"><a href="x86__64-simulator_2_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_pairing_manager_8h.html">ThingPairingManager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

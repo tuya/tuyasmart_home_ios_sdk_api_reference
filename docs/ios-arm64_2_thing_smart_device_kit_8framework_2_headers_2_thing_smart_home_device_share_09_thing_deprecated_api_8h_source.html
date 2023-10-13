@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Home SDK: ThingSmartDeviceKit/Build/ThingSmartDeviceKit.xcframework/ios-arm64/ThingSmartDeviceKit.framework/Headers/ThingSmartHomeDeviceShare+ThingDeprecatedApi.h Source File</title>
+<title>Tuya iOS Smart Life App SDK API Doc: ThingSmartDeviceKit/Build/ThingSmartDeviceKit.xcframework/ios-arm64/ThingSmartDeviceKit.framework/Headers/ThingSmartHomeDeviceShare+ThingDeprecatedApi.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,8 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="tuya (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.1.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK API Doc<span id="projectnumber">&#160;5.2.0</span>
    </div>
   </td>
  </tr>
@@ -102,7 +101,7 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_device_kit_8fr
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>- (void)addShareWithHomeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>               countryCode:(NSString *)countryCode</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>               userAccount:(NSString *)userAccount</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    devIds:(NSArray &lt;NSString *&gt; *)devIds</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    devIds:(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a> &lt;NSString *&gt; *)devIds</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                   success:(<span class="keywordtype">void</span>(^)(<a class="code hl_interface" href="interface_thing_smart_share_member_model.html">ThingSmartShareMemberModel</a> *model))success</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                   failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure __deprecated_msg(&quot;This method is deprecated, Use [<a class="code hl_interface" href="interface_thing_smart_home_device_share.html">ThingSmartHomeDeviceShare</a>   addDeviceShareWithRequestModel:success:failure:]&quot;);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
@@ -132,7 +131,7 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_device_kit_8fr
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                                  failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure __deprecated_msg(&quot;This method is deprecated, Use [<a class="code hl_interface" href="interface_thing_smart_device.html">ThingSmartDevice</a> removeReceiveDeviceShareWithSuccess:failure:]&quot;);</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>- (void)getShareMemberListWithHomeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                             success:(<span class="keywordtype">void</span>(^)(NSArray&lt;<a class="code hl_interface" href="interface_thing_smart_share_member_model.html">ThingSmartShareMemberModel</a> *&gt; *list))success</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                             success:(<span class="keywordtype">void</span>(^)(<a class="code hl_interface" href="interface_n_s_array.html">NSArray</a>&lt;<a class="code hl_interface" href="interface_thing_smart_share_member_model.html">ThingSmartShareMemberModel</a> *&gt; *list))success</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                             failure:(<a class="code hl_typedef" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)failure __deprecated_msg(&quot;This method is deprecated, Use [<a class="code hl_interface" href="interface_thing_smart_home_device_share.html">ThingSmartHomeDeviceShare</a> getShareMemberListWithSpaceId:success:failure:]&quot;);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>- (void)addGroupShareToMemberWithHomeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId</div>
@@ -146,6 +145,7 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_device_kit_8fr
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="category_thing_smart_home_device_share_07_thing_deprecated_api_08.html#a629208e05ed93b013e796c45d0698cc2">  102</a></span>NS_ASSUME_NONNULL_END</div>
 <div class="ttc" id="acategory_thing_smart_home_device_share_07_thing_deprecated_api_08_html"><div class="ttname"><a href="category_thing_smart_home_device_share_07_thing_deprecated_api_08.html">ThingSmartHomeDeviceShare(ThingDeprecatedApi)</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_device_share_09_thing_deprecated_api_8h_source.html#l00012">ThingSmartHomeDeviceShare+ThingDeprecatedApi.h:12</a></div></div>
+<div class="ttc" id="ainterface_n_s_array_html"><div class="ttname"><a href="interface_n_s_array.html">NSArray</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_array_09_thing_safe_8h_source.html#l00012">NSArray+ThingSafe.h:12</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_device_html"><div class="ttname"><a href="interface_thing_smart_device.html">ThingSmartDevice</a></div><div class="ttdoc">The basic operation class of ThingSmartDevice contains the model of basic information,...</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_source.html#l00195">ThingSmartDevice.h:196</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_group_html"><div class="ttname"><a href="interface_thing_smart_group.html">ThingSmartGroup</a></div><div class="ttdoc">The group of smart devices allows you to create groups, send group commands, and update basic group i...</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_group_8h_source.html#l00067">ThingSmartGroup.h:68</a></div></div>
 <div class="ttc" id="ainterface_thing_smart_home_device_share_html"><div class="ttname"><a href="interface_thing_smart_home_device_share.html">ThingSmartHomeDeviceShare</a></div><div class="ttdoc">Shares devices based on device types.</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_share_kit_8framework_2_headers_2_thing_smart_share_kit_api_8h_source.html#l00013">ThingSmartShareKitApi.h:14</a></div></div>

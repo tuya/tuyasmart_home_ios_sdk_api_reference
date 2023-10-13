@@ -87,6 +87,10 @@ var _thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_pr
       [ "ThingBLEConfigType_MOUNTINGSINFO_OTA_OFFSET", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644af275ea1f5562470454a259eb0051be86", null ],
       [ "ThingBLEConfigType_MOUNTINGSINFO_OTA_DATA", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644a8dbbe75e5fa15373bdc97f8437da9fff", null ],
       [ "ThingBLEConfigType_MOUNTINGSINFO_OTA_END", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644ae45e3b095e9b53ba0e2933fb73ee8504", null ],
+      [ "ThingBLEConfigType_REMOTECONTROL_CERT", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644a9e54d68edf129eb6ee3b44ca0a054bae", null ],
+      [ "ThingBLEConfigType_REMOTECONTROL_GROUP_ADD", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644a4248d74d7ea9e5ec7efcabb6a5d5c02d", null ],
+      [ "ThingBLEConfigType_REMOTECONTROL_GROUP_DEL", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644a8f5b75699a055ce6e7f4a0556a8e90f3", null ],
+      [ "ThingBLEConfigType_REMOTECONTROL_GROUP_QUERY", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644a028325de501ec0b3f3edef548789c8b7", null ],
       [ "ThingBLEConfigType_QRY_DEV_INFO", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644a1b48e62d04973641337f500cd768f8a5", null ],
       [ "ThingBLEConfigType_PAIR", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644a96283cbd0e57207b85debdf5bb0b913c", null ],
       [ "ThingBLEConfigType_CMD", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644ab07a5cf66c6bcf63b6cc3ba6d0ac2061", null ],
@@ -171,7 +175,11 @@ var _thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_pr
       [ "ThingBLEConfigType_MOUNTINGSINFO_OTA_INFO", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644aca97cb157d85e1859ed6f151f009d9e5", null ],
       [ "ThingBLEConfigType_MOUNTINGSINFO_OTA_OFFSET", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644af275ea1f5562470454a259eb0051be86", null ],
       [ "ThingBLEConfigType_MOUNTINGSINFO_OTA_DATA", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644a8dbbe75e5fa15373bdc97f8437da9fff", null ],
-      [ "ThingBLEConfigType_MOUNTINGSINFO_OTA_END", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644ae45e3b095e9b53ba0e2933fb73ee8504", null ]
+      [ "ThingBLEConfigType_MOUNTINGSINFO_OTA_END", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644ae45e3b095e9b53ba0e2933fb73ee8504", null ],
+      [ "ThingBLEConfigType_REMOTECONTROL_CERT", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644a9e54d68edf129eb6ee3b44ca0a054bae", null ],
+      [ "ThingBLEConfigType_REMOTECONTROL_GROUP_ADD", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644a4248d74d7ea9e5ec7efcabb6a5d5c02d", null ],
+      [ "ThingBLEConfigType_REMOTECONTROL_GROUP_DEL", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644a8f5b75699a055ce6e7f4a0556a8e90f3", null ],
+      [ "ThingBLEConfigType_REMOTECONTROL_GROUP_QUERY", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a33372a9a9923c93faa2d116121e7d644a028325de501ec0b3f3edef548789c8b7", null ]
     ] ],
     [ "NS_ENUM", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h.html#a31492ffdc3c65a70aa21c8513759b2cc", null ]
 ];
