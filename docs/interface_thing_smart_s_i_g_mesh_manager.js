@@ -88,6 +88,7 @@ var interface_thing_smart_s_i_g_mesh_manager =
     [ "stopSerachDevice", "interface_thing_smart_s_i_g_mesh_manager.html#a2df34e3cc828b2b8019c11f934ca4cb7", null ],
     [ "stopSerachDevice", "interface_thing_smart_s_i_g_mesh_manager.html#a2df34e3cc828b2b8019c11f934ca4cb7", null ],
     [ "delegate", "interface_thing_smart_s_i_g_mesh_manager.html#a9069d3b4ff7919cd6c12f9224c6b971b", null ],
+    [ "groupEventService", "interface_thing_smart_s_i_g_mesh_manager.html#a910b3face8f5fdadea70d033ef88de21", null ],
     [ "isConnectOTAAddress", "interface_thing_smart_s_i_g_mesh_manager.html#a8bce79e856e5dcb2cb927e396008bbb4", null ],
     [ "isLogin", "interface_thing_smart_s_i_g_mesh_manager.html#ae88101efbfd63424fb7ab7a9418157ff", null ],
     [ "isPoweredOn", "interface_thing_smart_s_i_g_mesh_manager.html#a957c573bb5d4d2021168b444831ea29b", null ],

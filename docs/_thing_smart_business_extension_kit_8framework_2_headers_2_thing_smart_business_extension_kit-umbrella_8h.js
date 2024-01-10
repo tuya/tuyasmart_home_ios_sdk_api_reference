@@ -1,0 +1,6 @@
+var _thing_smart_business_extension_kit_8framework_2_headers_2_thing_smart_business_extension_kit_umbrella_8h =
+[
+    [ "FOUNDATION_EXPORT", "_thing_smart_business_extension_kit_8framework_2_headers_2_thing_smart_business_extension_kit-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "ThingSmartBusinessExtensionKitVersionNumber", "_thing_smart_business_extension_kit_8framework_2_headers_2_thing_smart_business_extension_kit-umbrella_8h.html#a2f896a73bde092b49352d213cac50934", null ],
+    [ "ThingSmartBusinessExtensionKitVersionString", "_thing_smart_business_extension_kit_8framework_2_headers_2_thing_smart_business_extension_kit-umbrella_8h.html#af312fba26160e6344469880e14851925", null ]
+];

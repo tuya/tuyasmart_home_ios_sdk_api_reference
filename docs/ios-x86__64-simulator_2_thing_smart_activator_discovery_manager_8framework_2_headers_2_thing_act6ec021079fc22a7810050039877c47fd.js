@@ -1,0 +1,4 @@
+var ios_x86__64_simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_act6ec021079fc22a7810050039877c47fd =
+[
+    [ "ThingActivatorSubDeviceGWResponseData", "interface_thing_activator_sub_device_g_w_response_data.html", "interface_thing_activator_sub_device_g_w_response_data" ]
+];

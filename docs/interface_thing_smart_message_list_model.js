@@ -3,6 +3,7 @@ var interface_thing_smart_message_list_model =
     [ "alarmType", "interface_thing_smart_message_list_model.html#a6629af9ce47c3c7027f4869df442f925", null ],
     [ "attachPicList", "interface_thing_smart_message_list_model.html#a5f537bcfeb5223be0c58b0a1c5db9d8a", null ],
     [ "dateTime", "interface_thing_smart_message_list_model.html#aa98ad5367cd2b9bc1a57a407afadfcb0", null ],
+    [ "extendParams", "interface_thing_smart_message_list_model.html#ac0e9365ee62c968e6e7e70b14c8c9e86", null ],
     [ "hasNotRead", "interface_thing_smart_message_list_model.html#aa7f3f97f858718e9cdec42f05c45190b", null ],
     [ "homeID", "interface_thing_smart_message_list_model.html#a97b8092a9ec8b0ba283130dc2dab267a", null ],
     [ "homeName", "interface_thing_smart_message_list_model.html#a9d9ebb940cefbcd6dd4bb33b24ccc86c", null ],

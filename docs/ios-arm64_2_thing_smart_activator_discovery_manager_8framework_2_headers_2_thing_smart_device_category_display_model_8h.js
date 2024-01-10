@@ -1,0 +1,4 @@
+var ios_arm64_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smart_device_category_display_model_8h =
+[
+    [ "ThingSmartDeviceCategoryDisplayModel", "interface_thing_smart_device_category_display_model.html", "interface_thing_smart_device_category_display_model" ]
+];

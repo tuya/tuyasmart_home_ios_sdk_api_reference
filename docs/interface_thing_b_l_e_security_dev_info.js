@@ -19,6 +19,7 @@ var interface_thing_b_l_e_security_dev_info =
     [ "isSecurityLevelDevice", "interface_thing_b_l_e_security_dev_info.html#a7e9daf24a1cd3baeec9d3b3d85e9456a", null ],
     [ "isSupportBeaconkey", "interface_thing_b_l_e_security_dev_info.html#a0463ce5efb84a6c26e4aae6d87088464", null ],
     [ "isSupportFitting", "interface_thing_b_l_e_security_dev_info.html#a02ad4ad14f271463060b4612eeeec5ad", null ],
+    [ "isSupportMasterSlaveDevice", "interface_thing_b_l_e_security_dev_info.html#ab44b70c340687e21f52839236b9254a6", null ],
     [ "isSupportPlugPlay", "interface_thing_b_l_e_security_dev_info.html#aac7a1dc3d8ab92b60194a72757fcf0f9", null ],
     [ "isSupportQueryWifiList", "interface_thing_b_l_e_security_dev_info.html#a73a1ce9b2ea6a6cfa7df106b3f853bfb", null ],
     [ "isSupportRegisterKey", "interface_thing_b_l_e_security_dev_info.html#aea9c1fba86c1754385339a73e890ab58", null ],

@@ -1,0 +1,4 @@
+var ios_x86__64_simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_actfda4884a30dcb85d4495c1bf3e635364 =
+[
+    [ "ThingActivatorBizSupportCheckResponseData", "interface_thing_activator_biz_support_check_response_data.html", "interface_thing_activator_biz_support_check_response_data" ]
+];
