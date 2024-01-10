@@ -1,0 +1,5 @@
+var ios_x86__64_simulator_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_family_dev6e0f01dada8b0a4615bbc81312db9c7f =
+[
+    [ "ThingSmartFamilyDeviceGroupOrderRequestModel", "interface_thing_smart_family_device_group_order_request_model.html", "interface_thing_smart_family_device_group_order_request_model" ],
+    [ "NS_ENUM", "ios-x86__64-simulator_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_family_dev6e0f01dada8b0a4615bbc81312db9c7f.html#a27c296eefa4bab86e028d21a6360e30d", null ]
+];

@@ -1,0 +1,4 @@
+var ios_x86__64_simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_devf11ec37344f7f827d1401bfb001a4224 =
+[
+    [ "ThingDeviceRepeatActiveResponseData", "interface_thing_device_repeat_active_response_data.html", "interface_thing_device_repeat_active_response_data" ]
+];

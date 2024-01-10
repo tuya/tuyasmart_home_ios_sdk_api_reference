@@ -10,6 +10,8 @@ var category_thing_smart_b_l_e_manager_07_biz_08 =
     [ "activeBLEWithAdvertisingData:homeId:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#af9419419408fecb729e11e4262d353e6", null ],
     [ "activeBLEWithUUID:homeId:productKey:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#af8c413146cf6f3612fe9890344e8fd00", null ],
     [ "activeBLEWithUUID:homeId:productKey:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#af8c413146cf6f3612fe9890344e8fd00", null ],
+    [ "bindSlaveDeviceWithSlaveDeviceId:masterDeviceId:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#af9296c78afcda2e5e911a3dfec5d1db8", null ],
+    [ "bindSlaveDeviceWithSlaveDeviceId:masterDeviceId:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#af9296c78afcda2e5e911a3dfec5d1db8", null ],
     [ "connectBLEWithUUID:productKey:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#aaaabb8b69f69f676c26a405dd4115a51", null ],
     [ "connectBLEWithUUID:productKey:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#aaaabb8b69f69f676c26a405dd4115a51", null ],
     [ "deviceStatueWithUUID:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a77f0de37eb28b2eb53380528945cea3d", null ],
@@ -28,6 +30,8 @@ var category_thing_smart_b_l_e_manager_07_biz_08 =
     [ "otaUpgradeStatusWithUUID:", "category_thing_smart_b_l_e_manager_07_biz_08.html#ac8bb0e63b48c368ee9f6afcb0c4bac7b", null ],
     [ "publishBleTransparentData:data:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a0927686cb46e150edf63aa85e12652e0", null ],
     [ "publishBleTransparentData:data:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a0927686cb46e150edf63aa85e12652e0", null ],
+    [ "publishFileWithDevId:fileId:fileIdentifier:fileVersion:fileData:fileType:progressBlock:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a7390c2d22106ccea0d3a078b97d771fa", null ],
+    [ "publishFileWithDevId:fileId:fileIdentifier:fileVersion:fileData:fileType:progressBlock:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a7390c2d22106ccea0d3a078b97d771fa", null ],
     [ "publishFileWithDevId:fileId:fileIdentifier:fileVersion:fileData:progressBlock:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a5d1d69905980c166647aba9e14b08848", null ],
     [ "publishFileWithDevId:fileId:fileIdentifier:fileVersion:fileData:progressBlock:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a5d1d69905980c166647aba9e14b08848", null ],
     [ "publishIoTTransparentData:devId:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#aa7737ff03c15195d117a9945933b7a0a", null ],
@@ -42,6 +46,10 @@ var category_thing_smart_b_l_e_manager_07_biz_08 =
     [ "queryDeviceInfoWithUUID:productId:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#ac8bf4be83d4cadb3d79a9fb01e664545", null ],
     [ "queryNameWithUUID:productKey:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a29ac8543506916ade553aef0e0e0ed16", null ],
     [ "queryNameWithUUID:productKey:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a29ac8543506916ade553aef0e0e0ed16", null ],
+    [ "querySlaveDpsWithSlaveDeviceId:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a615842a1e2308fbf8f703ed6cfe90ce3", null ],
+    [ "querySlaveDpsWithSlaveDeviceId:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a615842a1e2308fbf8f703ed6cfe90ce3", null ],
+    [ "querySlaveInfoWithMasterDeviceId:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#ad883559c45376502a8320c94ab8307e5", null ],
+    [ "querySlaveInfoWithMasterDeviceId:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#ad883559c45376502a8320c94ab8307e5", null ],
     [ "scanActivatedDeviceWithTimeInterval:scanHandler:finishHandler:", "category_thing_smart_b_l_e_manager_07_biz_08.html#aeeefcb96eb21331ba17d07039a84b890", null ],
     [ "scanActivatedDeviceWithTimeInterval:scanHandler:finishHandler:", "category_thing_smart_b_l_e_manager_07_biz_08.html#aeeefcb96eb21331ba17d07039a84b890", null ],
     [ "startBleBeaconListening", "category_thing_smart_b_l_e_manager_07_biz_08.html#afc297f61a018f3d3bf94f7adde034a8f", null ],
@@ -59,5 +67,7 @@ var category_thing_smart_b_l_e_manager_07_biz_08 =
     [ "stopFileTransfer:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a16b38c7161014998f792165f62c296ec", null ],
     [ "stopFileTransfer:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a16b38c7161014998f792165f62c296ec", null ],
     [ "stopListening:", "category_thing_smart_b_l_e_manager_07_biz_08.html#ae2fcc605a3e21c1e4ebac9dbb47ad8bc", null ],
-    [ "stopListening:", "category_thing_smart_b_l_e_manager_07_biz_08.html#ae2fcc605a3e21c1e4ebac9dbb47ad8bc", null ]
+    [ "stopListening:", "category_thing_smart_b_l_e_manager_07_biz_08.html#ae2fcc605a3e21c1e4ebac9dbb47ad8bc", null ],
+    [ "unBindSlaveDeviceWithSlaveDeviceId:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a67a73fe137f29d7a0a71b034cb7393c9", null ],
+    [ "unBindSlaveDeviceWithSlaveDeviceId:success:failure:", "category_thing_smart_b_l_e_manager_07_biz_08.html#a67a73fe137f29d7a0a71b034cb7393c9", null ]
 ];

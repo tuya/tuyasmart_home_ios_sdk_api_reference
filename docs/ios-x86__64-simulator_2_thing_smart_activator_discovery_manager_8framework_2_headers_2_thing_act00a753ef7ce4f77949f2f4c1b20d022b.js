@@ -1,0 +1,4 @@
+var ios_x86__64_simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_act00a753ef7ce4f77949f2f4c1b20d022b =
+[
+    [ "ThingActivatorParseQRCodeRequestData", "interface_thing_activator_parse_q_r_code_request_data.html", "interface_thing_activator_parse_q_r_code_request_data" ]
+];

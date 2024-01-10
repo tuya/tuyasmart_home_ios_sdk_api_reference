@@ -1,0 +1,4 @@
+var ios_x86__64_simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_act91d79380b9f3f734f0addbf57a775eb9 =
+[
+    [ "ThingActivatorNBDeviceBindResponseData", "interface_thing_activator_n_b_device_bind_response_data.html", "interface_thing_activator_n_b_device_bind_response_data" ]
+];

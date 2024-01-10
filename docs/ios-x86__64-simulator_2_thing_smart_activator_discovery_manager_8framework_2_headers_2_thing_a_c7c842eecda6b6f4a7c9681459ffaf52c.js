@@ -1,0 +1,4 @@
+var ios_x86__64_simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_a_c7c842eecda6b6f4a7c9681459ffaf52c =
+[
+    [ "ThingACTLinkmodeUrlResponseData", "interface_thing_a_c_t_linkmode_url_response_data.html", "interface_thing_a_c_t_linkmode_url_response_data" ]
+];

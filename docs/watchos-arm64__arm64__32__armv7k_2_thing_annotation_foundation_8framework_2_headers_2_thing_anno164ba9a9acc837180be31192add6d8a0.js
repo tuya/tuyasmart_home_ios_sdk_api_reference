@@ -1,0 +1,6 @@
+var watchos_arm64__arm64__32__armv7k_2_thing_annotation_foundation_8framework_2_headers_2_thing_anno164ba9a9acc837180be31192add6d8a0 =
+[
+    [ "FOUNDATION_EXPORT", "watchos-arm64__arm64__32__armv7k_2_thing_annotation_foundation_8framework_2_headers_2_thing_anno164ba9a9acc837180be31192add6d8a0.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "ThingAnnotationFoundationVersionNumber", "watchos-arm64__arm64__32__armv7k_2_thing_annotation_foundation_8framework_2_headers_2_thing_anno164ba9a9acc837180be31192add6d8a0.html#acfff1b323209879cb4f12cb7e9fe6627", null ],
+    [ "ThingAnnotationFoundationVersionString", "watchos-arm64__arm64__32__armv7k_2_thing_annotation_foundation_8framework_2_headers_2_thing_anno164ba9a9acc837180be31192add6d8a0.html#ab102dcb70412722b4dbe77733ca41782", null ]
+];

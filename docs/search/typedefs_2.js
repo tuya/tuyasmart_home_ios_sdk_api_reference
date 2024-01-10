@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['registerrouter_0',['registerRouter',['../ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_router_annotation_8h.html#a66289a7da31f1e1ce9a06d7978862c6d',1,'registerRouter():&#160;ThingRouterAnnotation.h'],['../ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_router_annotation_8h.html#a66289a7da31f1e1ce9a06d7978862c6d',1,'registerRouter():&#160;ThingRouterAnnotation.h'],['../watchos-arm64__arm64__32__armv7k_2_thing_annotation_foundation_8framework_2_headers_2_thing_router_annotation_8h.html#a66289a7da31f1e1ce9a06d7978862c6d',1,'registerRouter():&#160;ThingRouterAnnotation.h'],['../watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_router_annotation_8h.html#a66289a7da31f1e1ce9a06d7978862c6d',1,'registerRouter():&#160;ThingRouterAnnotation.h']]]
+];

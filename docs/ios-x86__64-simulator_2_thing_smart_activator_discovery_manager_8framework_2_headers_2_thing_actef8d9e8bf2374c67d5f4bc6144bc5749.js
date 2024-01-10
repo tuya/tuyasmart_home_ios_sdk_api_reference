@@ -1,0 +1,4 @@
+var ios_x86__64_simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_actef8d9e8bf2374c67d5f4bc6144bc5749 =
+[
+    [ "ThingActivatorSecondaryCategoryRequestData", "interface_thing_activator_secondary_category_request_data.html", "interface_thing_activator_secondary_category_request_data" ]
+];

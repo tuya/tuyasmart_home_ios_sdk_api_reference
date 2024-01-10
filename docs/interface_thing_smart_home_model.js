@@ -5,6 +5,7 @@ var interface_thing_smart_home_model =
     [ "__deprecated_msg", "interface_thing_smart_home_model.html#a3f7f1b0c27d9770b9c2d9054c3dff5b1", null ],
     [ "__deprecated_msg", "interface_thing_smart_home_model.html#a3f7f1b0c27d9770b9c2d9054c3dff5b1", null ],
     [ "backgroundUrl", "interface_thing_smart_home_model.html#abf7a144594f5ac1c4d3c7bc577a2b65b", null ],
+    [ "customRoleModel", "interface_thing_smart_home_model.html#a127b4ef297332cf6be7159a5392186c1", null ],
     [ "dealStatus", "interface_thing_smart_home_model.html#a8b17cd3d90064de09fe4e9c1bc5cea42", null ],
     [ "displayOrder", "interface_thing_smart_home_model.html#a984ad9098b16cc7e161f30d898496456", null ],
     [ "geoName", "interface_thing_smart_home_model.html#af6dc744534484b61fd73f1ec91792fb9", null ],

@@ -1,0 +1,4 @@
+var ios_arm64_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_activator_virtual_device_bind_request_data_8h =
+[
+    [ "ThingActivatorVirtualDeviceBindRequestData", "interface_thing_activator_virtual_device_bind_request_data.html", "interface_thing_activator_virtual_device_bind_request_data" ]
+];
