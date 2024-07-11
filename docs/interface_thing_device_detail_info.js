@@ -8,8 +8,10 @@ var interface_thing_device_detail_info =
     [ "ip", "interface_thing_device_detail_info.html#a97ea875c5426db8e535c115283aa944f", null ],
     [ "lanIp", "interface_thing_device_detail_info.html#a8ec52abd02c30fc24b8806f249637ec1", null ],
     [ "mac", "interface_thing_device_detail_info.html#acae7c36272e471e4ad77590d06e51fac", null ],
+    [ "matterActiveCode", "interface_thing_device_detail_info.html#a0e05b941e4de7954230f28397f13929f", null ],
     [ "netStrength", "interface_thing_device_detail_info.html#acb95c9fa2110696c5f82931cd29ea5c8", null ],
     [ "rsrp", "interface_thing_device_detail_info.html#a88f542fe10d2456fa35378e1c1896e96", null ],
+    [ "setChannelCapability", "interface_thing_device_detail_info.html#ac4b8f8131e90b0579afbc0055ad16eac", null ],
     [ "timezone", "interface_thing_device_detail_info.html#a2e4d356b24bf1fc145e420513922cfc8", null ],
     [ "vendorName", "interface_thing_device_detail_info.html#a73be4ddd467889cd51e50131f295b431", null ],
     [ "wifiSignal", "interface_thing_device_detail_info.html#aac5426bf5d4584ce67e7a9279b6486ec", null ]

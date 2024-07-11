@@ -38,6 +38,8 @@ var dir_3887f773b92ce0b682698bf2a316fd4f =
     [ "ThingSmartBLECoreEnums.h", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_core_enums_8h.html", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_core_enums_8h" ],
     [ "ThingSmartBLECoreKit.h", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_core_kit_8h.html", null ],
     [ "ThingSmartBLEDeviceProtocol.h", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_device_protocol_8h.html", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_device_protocol_8h" ],
+    [ "ThingSmartBLELocalDevice.h", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_local_device_8h.html", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_local_device_8h" ],
     [ "ThingSmartBLEManager.h", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h.html", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h" ],
-    [ "ThingSmartBLEMutliTsfDefine.h", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_mutli_tsf_define_8h.html", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_mutli_tsf_define_8h" ]
+    [ "ThingSmartBLEMutliTsfDefine.h", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_mutli_tsf_define_8h.html", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_mutli_tsf_define_8h" ],
+    [ "ThingSmartBLEPairConfiguration.h", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_pair_configuration_8h.html", "_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_pair_configuration_8h" ]
 ];

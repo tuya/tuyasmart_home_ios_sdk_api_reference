@@ -1,0 +1,26 @@
+var protocol_thing_activator_matter_interface_protocol_p =
+[
+    [ "cancelActivator", "protocol_thing_activator_matter_interface_protocol-p.html#ae066b0478450ae2ca5c05369edf0f86b", null ],
+    [ "cancelActivator", "protocol_thing_activator_matter_interface_protocol-p.html#ae066b0478450ae2ca5c05369edf0f86b", null ],
+    [ "connectDeviceWithConnectDeviceBuilder:timeout:", "protocol_thing_activator_matter_interface_protocol-p.html#aa9f7c62201cd2eb11fd56c746c4ee9d5", null ],
+    [ "connectDeviceWithConnectDeviceBuilder:timeout:", "protocol_thing_activator_matter_interface_protocol-p.html#aa9f7c62201cd2eb11fd56c746c4ee9d5", null ],
+    [ "continueCommissionDevice:WithSSID:password:", "protocol_thing_activator_matter_interface_protocol-p.html#a6f583d55f22d62f4f8635b910f27290c", null ],
+    [ "continueCommissionDevice:WithSSID:password:", "protocol_thing_activator_matter_interface_protocol-p.html#a6f583d55f22d62f4f8635b910f27290c", null ],
+    [ "continueCommissioningDevice:ignoreAttestationFailure:error:", "protocol_thing_activator_matter_interface_protocol-p.html#adac99a5c56e48af398b421ca62530a26", null ],
+    [ "continueCommissioningDevice:ignoreAttestationFailure:error:", "protocol_thing_activator_matter_interface_protocol-p.html#adac99a5c56e48af398b421ca62530a26", null ],
+    [ "getBroadingType", "protocol_thing_activator_matter_interface_protocol-p.html#a8dd426b6cd0f78a3be95137def8875ff", null ],
+    [ "getBroadingType", "protocol_thing_activator_matter_interface_protocol-p.html#a8dd426b6cd0f78a3be95137def8875ff", null ],
+    [ "parseSetupCode:", "protocol_thing_activator_matter_interface_protocol-p.html#a10113f505aa9b863848cb54c7e276e64", null ],
+    [ "parseSetupCode:", "protocol_thing_activator_matter_interface_protocol-p.html#a10113f505aa9b863848cb54c7e276e64", null ],
+    [ "setGatewayDeviceBeforePairing:devId:", "protocol_thing_activator_matter_interface_protocol-p.html#abea4258c6fb003c28fb272f3f65e5348", null ],
+    [ "setGatewayDeviceBeforePairing:devId:", "protocol_thing_activator_matter_interface_protocol-p.html#abea4258c6fb003c28fb272f3f65e5348", null ],
+    [ "setMatterConfigKey:", "protocol_thing_activator_matter_interface_protocol-p.html#a74d016bbac96e5646b71179c398f2435", null ],
+    [ "setMatterConfigKey:", "protocol_thing_activator_matter_interface_protocol-p.html#a74d016bbac96e5646b71179c398f2435", null ],
+    [ "startDiscovery", "protocol_thing_activator_matter_interface_protocol-p.html#abf7365d857c3d284084122502967d1bd", null ],
+    [ "startDiscovery", "protocol_thing_activator_matter_interface_protocol-p.html#abf7365d857c3d284084122502967d1bd", null ],
+    [ "startScanAvailableWIFI", "protocol_thing_activator_matter_interface_protocol-p.html#a6770d875fa73707355e930c80e361ec9", null ],
+    [ "startScanAvailableWIFI", "protocol_thing_activator_matter_interface_protocol-p.html#a6770d875fa73707355e930c80e361ec9", null ],
+    [ "stopDiscovery", "protocol_thing_activator_matter_interface_protocol-p.html#ae3e1022345f58f06232fc6ded0e48a50", null ],
+    [ "stopDiscovery", "protocol_thing_activator_matter_interface_protocol-p.html#ae3e1022345f58f06232fc6ded0e48a50", null ],
+    [ "delegate", "protocol_thing_activator_matter_interface_protocol-p.html#ae9d0f5f32975220c32ff5cc807210772", null ]
+];

@@ -1,0 +1,6 @@
+var ios_arm64_2_thing_smart_group_handle_biz_bundle_8framework_2_headers_2_thing_smart_group_handle_biz_bundle_umbrella_8h =
+[
+    [ "FOUNDATION_EXPORT", "ios-arm64_2_thing_smart_group_handle_biz_bundle_8framework_2_headers_2_thing_smart_group_handle_biz_bundle-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "ThingSmartGroupHandleBizBundleVersionNumber", "ios-arm64_2_thing_smart_group_handle_biz_bundle_8framework_2_headers_2_thing_smart_group_handle_biz_bundle-umbrella_8h.html#a1696a9df53a935ed8ac5e754ceb66c55", null ],
+    [ "ThingSmartGroupHandleBizBundleVersionString", "ios-arm64_2_thing_smart_group_handle_biz_bundle_8framework_2_headers_2_thing_smart_group_handle_biz_bundle-umbrella_8h.html#ab6e92715b11c6f3566de187a0b9d7d2f", null ]
+];

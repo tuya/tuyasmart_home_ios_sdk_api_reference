@@ -1,0 +1,28 @@
+var interface_thing_smart_door_bell_manager =
+[
+    [ "__deprecated_msg", "interface_thing_smart_door_bell_manager.html#a07ed8d0ff5004408718adf000d8565ba", null ],
+    [ "__deprecated_msg", "interface_thing_smart_door_bell_manager.html#a07ed8d0ff5004408718adf000d8565ba", null ],
+    [ "addObserver:", "interface_thing_smart_door_bell_manager.html#abb95bc53a41c35161d021171a502daa4", null ],
+    [ "addObserver:", "interface_thing_smart_door_bell_manager.html#abb95bc53a41c35161d021171a502daa4", null ],
+    [ "answerDoorBellCall:", "interface_thing_smart_door_bell_manager.html#a1ef564f2dc3868cc9cc0c1a0e67cdcf4", null ],
+    [ "answerDoorBellCall:", "interface_thing_smart_door_bell_manager.html#a1ef564f2dc3868cc9cc0c1a0e67cdcf4", null ],
+    [ "callModelWithMessageId:", "interface_thing_smart_door_bell_manager.html#a280a1cce2789ae39c36a4de49dd9e399", null ],
+    [ "callModelWithMessageId:", "interface_thing_smart_door_bell_manager.html#a280a1cce2789ae39c36a4de49dd9e399", null ],
+    [ "didReceiveVoipDatas:", "interface_thing_smart_door_bell_manager.html#a72ef34710c0d55fd9b0c954d241f9cc0", null ],
+    [ "didReceiveVoipDatas:", "interface_thing_smart_door_bell_manager.html#a72ef34710c0d55fd9b0c954d241f9cc0", null ],
+    [ "generateCall:", "interface_thing_smart_door_bell_manager.html#ab65f6fa7829854ff48f5e3da3f22db0e", null ],
+    [ "generateCall:", "interface_thing_smart_door_bell_manager.html#ab65f6fa7829854ff48f5e3da3f22db0e", null ],
+    [ "hangupDoorBellCall:", "interface_thing_smart_door_bell_manager.html#a9cd77b77a78fff528e672912c2d9e945", null ],
+    [ "hangupDoorBellCall:", "interface_thing_smart_door_bell_manager.html#a9cd77b77a78fff528e672912c2d9e945", null ],
+    [ "onPreviewSuccess:", "interface_thing_smart_door_bell_manager.html#a9e809d5baac26d750505e1faef11b8c9", null ],
+    [ "onPreviewSuccess:", "interface_thing_smart_door_bell_manager.html#a9e809d5baac26d750505e1faef11b8c9", null ],
+    [ "refuseDoorBellCall:", "interface_thing_smart_door_bell_manager.html#a42b4118048fea32cc82ec4a4cbcc98a0", null ],
+    [ "refuseDoorBellCall:", "interface_thing_smart_door_bell_manager.html#a42b4118048fea32cc82ec4a4cbcc98a0", null ],
+    [ "removeAllObservers", "interface_thing_smart_door_bell_manager.html#ae62a44154d085ff3d7e0574021a67b98", null ],
+    [ "removeAllObservers", "interface_thing_smart_door_bell_manager.html#ae62a44154d085ff3d7e0574021a67b98", null ],
+    [ "removeObserver:", "interface_thing_smart_door_bell_manager.html#a538508aa71675c10583ada43a76746ba", null ],
+    [ "removeObserver:", "interface_thing_smart_door_bell_manager.html#a538508aa71675c10583ada43a76746ba", null ],
+    [ "allObservers", "interface_thing_smart_door_bell_manager.html#a558e875383b013087464391f5d4f4210", null ],
+    [ "doorBellConfigDataSource", "interface_thing_smart_door_bell_manager.html#a84e639e8add43609d28997b414c1a8e5", null ],
+    [ "ignoreWhenCalling", "interface_thing_smart_door_bell_manager.html#af087df0d8143bacba0112839744eadfe", null ]
+];

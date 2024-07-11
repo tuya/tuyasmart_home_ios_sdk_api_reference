@@ -1,0 +1,6 @@
+var ios_arm64_2_thing_device_photo_library_module_8framework_2_headers_2_thing_device_photo_library_module_umbrella_8h =
+[
+    [ "FOUNDATION_EXPORT", "ios-arm64_2_thing_device_photo_library_module_8framework_2_headers_2_thing_device_photo_library_module-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "ThingDevicePhotoLibraryModuleVersionNumber", "ios-arm64_2_thing_device_photo_library_module_8framework_2_headers_2_thing_device_photo_library_module-umbrella_8h.html#aa2665d7b523c8562ac01d6b5ab7c3b02", null ],
+    [ "ThingDevicePhotoLibraryModuleVersionString", "ios-arm64_2_thing_device_photo_library_module_8framework_2_headers_2_thing_device_photo_library_module-umbrella_8h.html#a1c35f6dd92999ed1f10236047b381d30", null ]
+];

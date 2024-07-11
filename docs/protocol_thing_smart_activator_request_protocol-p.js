@@ -24,6 +24,8 @@ var protocol_thing_smart_activator_request_protocol_p =
     [ "requestParseQRCodeWithParam:success:failure:", "protocol_thing_smart_activator_request_protocol-p.html#a807c9b02ba8705ea2d0e2683adf9fe46", null ],
     [ "requestPrimaryCategoryWithParam:success:failure:", "protocol_thing_smart_activator_request_protocol-p.html#a48bb2eecf01135c96d5c0748a02a190d", null ],
     [ "requestPrimaryCategoryWithParam:success:failure:", "protocol_thing_smart_activator_request_protocol-p.html#a48bb2eecf01135c96d5c0748a02a190d", null ],
+    [ "requestProductActiveSuccessConfigWithParam:success:failure:", "protocol_thing_smart_activator_request_protocol-p.html#ac37ecb6693ef41d4d94d601441ffabb3", null ],
+    [ "requestProductActiveSuccessConfigWithParam:success:failure:", "protocol_thing_smart_activator_request_protocol-p.html#ac37ecb6693ef41d4d94d601441ffabb3", null ],
     [ "requestProductGuideWithParam:success:failure:", "protocol_thing_smart_activator_request_protocol-p.html#aa28b33a8c70f7353b8992628e06d8d28", null ],
     [ "requestProductGuideWithParam:success:failure:", "protocol_thing_smart_activator_request_protocol-p.html#aa28b33a8c70f7353b8992628e06d8d28", null ],
     [ "requestProductInfoWithParam:success:failure:", "protocol_thing_smart_activator_request_protocol-p.html#aa43e4343733f1938ae6a2256be951348", null ],

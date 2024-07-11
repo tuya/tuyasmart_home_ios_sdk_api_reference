@@ -1,0 +1,4 @@
+var dir_01dc50665e1d26d93162737cc4e307f7 =
+[
+    [ "ThingValueAddedServicePlugAPI-umbrella.h", "x86__64-simulator_2_thing_value_added_service_plug_a_p_i_8framework_2_headers_2_thing_value_adde7a87b65c8ef47164bb1435a6cc458fb3.html", "x86__64-simulator_2_thing_value_added_service_plug_a_p_i_8framework_2_headers_2_thing_value_adde7a87b65c8ef47164bb1435a6cc458fb3" ]
+];

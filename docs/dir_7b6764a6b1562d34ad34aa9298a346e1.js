@@ -1,0 +1,4 @@
+var dir_7b6764a6b1562d34ad34aa9298a346e1 =
+[
+    [ "ThingDeviceTinyBusinessPlugAPI-umbrella.h", "ios-arm64_2_thing_device_tiny_business_plug_a_p_i_8framework_2_headers_2_thing_device_tiny_business_plug_a_p_i-umbrella_8h.html", "ios-arm64_2_thing_device_tiny_business_plug_a_p_i_8framework_2_headers_2_thing_device_tiny_business_plug_a_p_i-umbrella_8h" ]
+];

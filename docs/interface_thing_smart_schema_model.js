@@ -7,5 +7,6 @@ var interface_thing_smart_schema_model =
     [ "mode", "interface_thing_smart_schema_model.html#ae6b413dd3f1dc11f4796682404a0e722", null ],
     [ "name", "interface_thing_smart_schema_model.html#a70e7f96968219ec30e8345c93c189969", null ],
     [ "property", "interface_thing_smart_schema_model.html#a8935b75c2e54d5ff3321e1786e9c31fd", null ],
+    [ "tsod_DPValue", "interface_thing_smart_schema_model.html#a5535a6d3687ded4e72f6875a84c46f6f", null ],
     [ "type", "interface_thing_smart_schema_model.html#a677f0e6cc8db81729085aa726b912f10", null ]
 ];

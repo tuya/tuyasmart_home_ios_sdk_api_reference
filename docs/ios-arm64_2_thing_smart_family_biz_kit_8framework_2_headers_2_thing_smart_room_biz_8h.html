@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: /Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartFamilyBizKit/ThingSmartFamilyBizKit.xcframework/ios-arm64/ThingSmartFamilyBizKit.framework/Headers/ThingSmartRoomBiz.h File Reference</title>
+<title>Tuya iOS Smart Life App SDK: ThingSmartFamilyBizKit/ThingSmartFamilyBizKit.xcframework/ios-arm64/ThingSmartFamilyBizKit.framework/Headers/ThingSmartRoomBiz.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -83,8 +84,7 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_family_biz_kit
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">ThingSmartRoomBiz.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -92,7 +92,11 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_family_biz_kit
 <code>#import &lt;ThingSmartDeviceKit/ThingSmartRoom.h&gt;</code><br />
 <code>#import &lt;ThingSmartDeviceKit/ThingSmartRoomModel.h&gt;</code><br />
 <code>#import &lt;ThingSmartDeviceKit/ThingSmartHomeModel.h&gt;</code><br />
+<code>#import &lt;ThingSmartUtil/ThingSmartUtil.h&gt;</code><br />
 <code>#import &quot;<a class="el" href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_default_room_item_8h_source.html">ThingSmartDefaultRoomItem.h</a>&quot;</code><br />
+<code>#import &quot;<a class="el" href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_room_tag_data_model_8h_source.html">ThingSmartRoomTagDataModel.h</a>&quot;</code><br />
+<code>#import &quot;<a class="el" href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_room_list_data_model_8h_source.html">ThingSmartRoomListDataModel.h</a>&quot;</code><br />
+<code>#import &quot;<a class="el" href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_diy_home_room_snapshot_8h_source.html">ThingDiyHomeRoomSnapshot.h</a>&quot;</code><br />
 </div>
 <p><a href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_room_biz_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -102,53 +106,13 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_room_biz.html">ThingSmartRoomBiz</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a32a79cd7d4562b2e058fc1f7b525c842"><td class="memItemLeft" align="right" valign="top">typedef void(^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_room_biz_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>) (void)</td></tr>
-<tr class="separator:a32a79cd7d4562b2e058fc1f7b525c842"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74d8849f89dd63458019fd96fd106f98"><td class="memItemLeft" align="right" valign="top">typedef void(^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_room_biz_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>) (NSError *error)</td></tr>
-<tr class="separator:a74d8849f89dd63458019fd96fd106f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a74d8849f89dd63458019fd96fd106f98" name="a74d8849f89dd63458019fd96fd106f98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74d8849f89dd63458019fd96fd106f98">&#9670;&nbsp;</a></span>ThingFailureError</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(^ ThingFailureError) (NSError *error)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_room_biz_8h_source.html#l00015">15</a> of file <a class="el" href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_room_biz_8h_source.html">ThingSmartRoomBiz.h</a>.</p>
-
-</div>
-</div>
-<a id="a32a79cd7d4562b2e058fc1f7b525c842" name="a32a79cd7d4562b2e058fc1f7b525c842"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32a79cd7d4562b2e058fc1f7b525c842">&#9670;&nbsp;</a></span>ThingSuccessHandler</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(^ ThingSuccessHandler) (void)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_room_biz_8h_source.html#l00014">14</a> of file <a class="el" href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_room_biz_8h_source.html">ThingSmartRoomBiz.h</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_350ab2d14705a2da30f5c4a8aeabf1fb.html">Volumes</a></li><li class="navelem"><a class="el" href="dir_b5508c5733aa93b21c7668144b6a10e6.html">work</a></li><li class="navelem"><a class="el" href="dir_9c2084141ba9d0a81a6d980b794b2bf3.html">source_code</a></li><li class="navelem"><a class="el" href="dir_9e235fb0c6055da3049adf9d594dd735.html">tuya</a></li><li class="navelem"><a class="el" href="dir_2eca0df6357931a63786b682b2a3523b.html">bizbundle</a></li><li class="navelem"><a class="el" href="dir_09caf3263995c8bca06aeee061548636.html">BizBundle</a></li><li class="navelem"><a class="el" href="dir_a739206a7d38e5a247a86838d8543d42.html">tuya-home-ios-sdk-sample-swift</a></li><li class="navelem"><a class="el" href="dir_36297105b3a1d1ff6152618f6a772449.html">Pods</a></li><li class="navelem"><a class="el" href="dir_5502d512bb5eb85f6aa80a4cf7595f09.html">ThingSmartFamilyBizKit</a></li><li class="navelem"><a class="el" href="dir_4175ae5e6433a1409be58bc1c1f810e9.html">ThingSmartFamilyBizKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_87eb71dbeab13b760f7197a02ae9e862.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_ca779f80e712a465309afddad09b27ee.html">ThingSmartFamilyBizKit.framework</a></li><li class="navelem"><a class="el" href="dir_bf550e57840e410cc3ec5a54257f9a6b.html">Headers</a></li><li class="navelem"><a class="el" href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_room_biz_8h.html">ThingSmartRoomBiz.h</a></li>
+    <li class="navelem"><a class="el" href="dir_c4d62ca6291d1943edd620a6e6c917bf.html">ThingSmartFamilyBizKit</a></li><li class="navelem"><a class="el" href="dir_576576a12010da4afceb044487b3cd9e.html">ThingSmartFamilyBizKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_8af872820065f3b9f7fed2d4f4a0026f.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_fbe20fd4d2f8a5d24be65d57fd174edd.html">ThingSmartFamilyBizKit.framework</a></li><li class="navelem"><a class="el" href="dir_16b7a0a998b70c3ffa0257b195929017.html">Headers</a></li><li class="navelem"><a class="el" href="ios-arm64_2_thing_smart_family_biz_kit_8framework_2_headers_2_thing_smart_room_biz_8h.html">ThingSmartRoomBiz.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

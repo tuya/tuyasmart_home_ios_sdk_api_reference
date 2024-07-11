@@ -1,0 +1,11 @@
+var ios_arm64_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_alarm_enum_8h =
+[
+    [ "ThingSecurityAlarmEnum", "ios-arm64_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_alarm_enum_8h.html#adb2613aa2a5d122bb3b420528a841b52", [
+      [ "ThingSecurityAlarmTypeAlarmPanic", "ios-arm64_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_alarm_enum_8h.html#adb2613aa2a5d122bb3b420528a841b52ae6f0c7ecfcb17cc0868165dda347d17d", null ],
+      [ "ThingSecurityAlarmTypeAlarmEmergency", "ios-arm64_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_alarm_enum_8h.html#adb2613aa2a5d122bb3b420528a841b52aad380464eeffa339a5b68b7787c41746", null ],
+      [ "ThingSecurityAlarmTypeAlarmFire", "ios-arm64_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_alarm_enum_8h.html#adb2613aa2a5d122bb3b420528a841b52a3799865ba3da956aa03f9253ad006974", null ],
+      [ "ThingSecurityAlarmTypeAlarmPanic", "ios-x86__64-simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_alarm_enum_8h.html#adb2613aa2a5d122bb3b420528a841b52ae6f0c7ecfcb17cc0868165dda347d17d", null ],
+      [ "ThingSecurityAlarmTypeAlarmEmergency", "ios-x86__64-simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_alarm_enum_8h.html#adb2613aa2a5d122bb3b420528a841b52aad380464eeffa339a5b68b7787c41746", null ],
+      [ "ThingSecurityAlarmTypeAlarmFire", "ios-x86__64-simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_alarm_enum_8h.html#adb2613aa2a5d122bb3b420528a841b52a3799865ba3da956aa03f9253ad006974", null ]
+    ] ]
+];

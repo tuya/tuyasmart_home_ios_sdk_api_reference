@@ -1,5 +1,6 @@
 var watchos_arm64__arm64__32__armv7k_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_defined_8h =
 [
+    [ "ThingSceneErrorBlock", "watchos-arm64__arm64__32__armv7k_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_defined_8h.html#a30726e45c2792705a878a090efbe989f", null ],
     [ "ThingSceneGetCityInfoCompletion", "watchos-arm64__arm64__32__armv7k_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_defined_8h.html#a582b253610a828fdd9382a725d2d0ce2", null ],
     [ "ThingSceneGetCityListCompletion", "watchos-arm64__arm64__32__armv7k_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_defined_8h.html#a44b65ec5683893848a9f4c1a03460e40", null ],
     [ "ThingSceneGetDeviceListCompletion", "watchos-arm64__arm64__32__armv7k_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_scene_defined_8h.html#ac723c2dfb1864cea3f3b21d7c8f37942", null ],

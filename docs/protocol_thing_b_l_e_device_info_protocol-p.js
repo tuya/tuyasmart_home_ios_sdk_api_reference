@@ -47,6 +47,7 @@ var protocol_thing_b_l_e_device_info_protocol_p =
     [ "isSupportReportConfigState", "protocol_thing_b_l_e_device_info_protocol-p.html#aa690d6238de8b1c0217b065fe214dbbf", null ],
     [ "isSupportUploadDeviceLog", "protocol_thing_b_l_e_device_info_protocol-p.html#aa9be736277268a460ded2fe66cb73073", null ],
     [ "isSupportV2Secret", "protocol_thing_b_l_e_device_info_protocol-p.html#a4b5e10286369b4a0ef7e695eeba9dc1a", null ],
+    [ "localActiveMgr", "protocol_thing_b_l_e_device_info_protocol-p.html#ae4bbd434572d71258dfc9cf3888a9159", null ],
     [ "mac", "protocol_thing_b_l_e_device_info_protocol-p.html#a0b74a8236cba5552ab737c747e57b198", null ],
     [ "maxMtuLen", "protocol_thing_b_l_e_device_info_protocol-p.html#aca6901a0662d38905aed4d09778d1b9a", null ],
     [ "mcuDv", "protocol_thing_b_l_e_device_info_protocol-p.html#a2ce57e11c40f886921b60d33bdd567ea", null ],

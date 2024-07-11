@@ -1,0 +1,27 @@
+var interface_t_u_n_i_download_file_manager_profile =
+[
+    [ "connectEnd", "interface_t_u_n_i_download_file_manager_profile.html#ae71d0e580fd45b5a80717ee0d6207c26", null ],
+    [ "connectStart", "interface_t_u_n_i_download_file_manager_profile.html#a51640d84363beb0209d84027c824be54", null ],
+    [ "domainLookupEnd", "interface_t_u_n_i_download_file_manager_profile.html#a74819cb61ff4a7e237b09cf11ee4a846", null ],
+    [ "domainLookupStart", "interface_t_u_n_i_download_file_manager_profile.html#aec24b0a845e33f63449a62a73342bd33", null ],
+    [ "downstreamThroughputKbpsEstimate", "interface_t_u_n_i_download_file_manager_profile.html#a436087aeef7df3e636e12732b70f2f55", null ],
+    [ "estimate_nettype", "interface_t_u_n_i_download_file_manager_profile.html#af1a44a409267f6ffc16597c50a1ab2a1", null ],
+    [ "fetchStart", "interface_t_u_n_i_download_file_manager_profile.html#aa8e6ea4a8b6f9fcdee0072e858108bf1", null ],
+    [ "httpRttEstimate", "interface_t_u_n_i_download_file_manager_profile.html#a8923dd290cb6fe3d5e49116444e22955", null ],
+    [ "peerIP", "interface_t_u_n_i_download_file_manager_profile.html#a45680e93f3d5e3a333ef8c51f6e394c3", null ],
+    [ "port", "interface_t_u_n_i_download_file_manager_profile.html#a35cca9417a8326744242c5a77a84f378", null ],
+    [ "receivedBytedCount", "interface_t_u_n_i_download_file_manager_profile.html#ae6f50d4e6ed13d58cdf0a429a6ed4124", null ],
+    [ "redirectEnd", "interface_t_u_n_i_download_file_manager_profile.html#abcdf91d09f0dd1ef8ccd270cb526d848", null ],
+    [ "redirectStart", "interface_t_u_n_i_download_file_manager_profile.html#a27e7f7b0d11e049b66f05cf483e7854c", null ],
+    [ "requestEnd", "interface_t_u_n_i_download_file_manager_profile.html#af4c6ed400b083210f5efb439b0122c5e", null ],
+    [ "requestStart", "interface_t_u_n_i_download_file_manager_profile.html#a3f486717e017d186a9b0aa89fc584f66", null ],
+    [ "responseEnd", "interface_t_u_n_i_download_file_manager_profile.html#a6e021974e3d0227ccc46bab9c57f0224", null ],
+    [ "responseStart", "interface_t_u_n_i_download_file_manager_profile.html#a4c68b01608d41fa412ba77e9c333db38", null ],
+    [ "rtt", "interface_t_u_n_i_download_file_manager_profile.html#a2c8d59a447925e54b54e69d5648b622d", null ],
+    [ "sendBytesCount", "interface_t_u_n_i_download_file_manager_profile.html#aee01df06d676cf50565a79c36eb1f322", null ],
+    [ "socketReused", "interface_t_u_n_i_download_file_manager_profile.html#a7cbe0f9aa37109bdd148abdaa531ee93", null ],
+    [ "SSLconnectionEnd", "interface_t_u_n_i_download_file_manager_profile.html#a64e3f99cb3958ad88a1e35e150ea561d", null ],
+    [ "SSLconnectionStart", "interface_t_u_n_i_download_file_manager_profile.html#ace3e44538be1f895d073114174cf1fd6", null ],
+    [ "throughputKbps", "interface_t_u_n_i_download_file_manager_profile.html#afd0e9e459c0c1d77bdc7ad6481b05edd", null ],
+    [ "transportRttEstimate", "interface_t_u_n_i_download_file_manager_profile.html#af9c7866587130bf97be4111a3390e82e", null ]
+];

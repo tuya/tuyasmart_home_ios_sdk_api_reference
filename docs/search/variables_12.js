@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['sample_5frate_0',['sample_rate',['../structimm__p2p__rtc__audio__codec.html#a64f0ad1468fb662bdffe2ddc52023728',1,'imm_p2p_rtc_audio_codec']]],
+  ['sei_1',['sei',['../structtag_thing_video_frame_info.html#a619be30faf63f9042748d10f6e4b246c',1,'tagThingVideoFrameInfo::sei()'],['../structtag_thing_sei_info.html#abb28c6dd012b69fbcec58ccd02a46ec4',1,'tagThingSeiInfo::sei()']]],
+  ['send_5fbuf_5fsize_2',['send_buf_size',['../structimm__p2p__rtc__options.html#ac38bd6991763e6259fbd835c01f90f90',1,'imm_p2p_rtc_options']]],
+  ['session_5fid_3',['session_id',['../structimm__p2p__rtc__session__info__t.html#a15723d51c7944bb3ef6f27d0ac13a2d0',1,'imm_p2p_rtc_session_info_t']]],
+  ['size_4',['size',['../structimm__p2p__rtc__frame__t.html#a07c350a649a782da89136182f259b3aa',1,'imm_p2p_rtc_frame_t::size()'],['../struct_thing_pixel_buffer_queue.html#ace203031943b2a79d149481da280a102',1,'ThingPixelBufferQueue::size()']]],
+  ['start_5ftime_5',['start_time',['../structimm__p2p__rtc__session__info__t.html#aca802b634909e158791d650e8f10f8be',1,'imm_p2p_rtc_session_info_t']]],
+  ['starttime_6',['startTime',['../struct____fragment_section____.html#a5ff537a5fb80eaef2675497ab79b7ce9',1,'__fragmentSection__']]],
+  ['state_7',['state',['../structimm__p2p__rtc__session__info__t.html#acc9c9ebb596bd5c3da74a3f64f7d0573',1,'imm_p2p_rtc_session_info_t']]],
+  ['sthingmachregisterdebugcodresetallstatus_8',['sThingMachRegisterDebugCodResetAllStatus',['../ios-arm64_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_debugger_8h.html#aaf68afd069076aab559e6b49a701db87',1,'sThingMachRegisterDebugCodResetAllStatus():&#160;ThingMachRegisterDebugger.h'],['../ios-arm64__x86__64-simulator_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_debugger_8h.html#aaf68afd069076aab559e6b49a701db87',1,'sThingMachRegisterDebugCodResetAllStatus():&#160;ThingMachRegisterDebugger.h'],['../watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_debugger_8h.html#aaf68afd069076aab559e6b49a701db87',1,'sThingMachRegisterDebugCodResetAllStatus():&#160;ThingMachRegisterDebugger.h'],['../watchos-arm64__i386__x86__64-simulator_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_debugger_8h.html#aaf68afd069076aab559e6b49a701db87',1,'sThingMachRegisterDebugCodResetAllStatus():&#160;ThingMachRegisterDebugger.h']]],
+  ['stream_5ftype_9',['stream_type',['../structimm__p2p__rtc__session__info__t.html#a52324de3c0723ee274ca69a97a0ee288',1,'imm_p2p_rtc_session_info_t']]],
+  ['stride_10',['stride',['../structtag_thing_decoder_ouput_param.html#a614c91c7ef3a17f7c0d5b849247e6381',1,'tagThingDecoderOuputParam']]],
+  ['strinfo_11',['strInfo',['../struct_thing_event_info.html#a87404013f61aa09fc35fd76029b57d1b',1,'ThingEventInfo::strInfo()'],['../struct_thing_msg_run_info.html#af4e872092f78746292034425e20ff211',1,'ThingMsgRunInfo::strInfo()']]],
+  ['strong_12',['strong',['../interface_thing_smart_result.html#a98d207f103de498d8667b9e7a7bffdaa',1,'ThingSmartResult']]],
+  ['sub_5fdev_5fid_13',['sub_dev_id',['../structimm__p2p__rtc__session__info__t.html#a6b15fe406aa8f90190e8a3153505ff94',1,'imm_p2p_rtc_session_info_t']]],
+  ['sweeperfilenameupdatewithdevid_14',['sweeperFileNameUpdateWithDevId',['../_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h.html#af6644c6f5b3695d269760c408228cfa9',1,'sweeperFileNameUpdateWithDevId():&#160;ThingSmartSweeper.h'],['../x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h.html#af6644c6f5b3695d269760c408228cfa9',1,'sweeperFileNameUpdateWithDevId():&#160;ThingSmartSweeper.h']]],
+  ['szdecodername_15',['szDecoderName',['../structtag_decoder_param.html#a85b28fbdba04fa8d5cc27650a21dc81d',1,'tagDecoderParam']]],
+  ['szdecodetype_16',['szDecodeType',['../structtag_decoder_param.html#a146b81325cbb165af5a6ba531e4b2392',1,'tagDecoderParam']]]
+];

@@ -1,0 +1,4 @@
+var ios_x86__64_simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_acte90800e3bea154c022dd866ad48b9993 =
+[
+    [ "ThingActivatorProductActiveSuccessConfigRequestData", "interface_thing_activator_product_active_success_config_request_data.html", "interface_thing_activator_product_active_success_config_request_data" ]
+];

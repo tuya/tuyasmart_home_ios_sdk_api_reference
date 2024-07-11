@@ -1,0 +1,7 @@
+var _thing_activator_plug_a_p_i_8framework_2_headers_2_thing_activator_search_result_step_config_protocol_8h =
+[
+    [ "<ThingActivatorSearchResultStepConfigProtocol>", "protocol_thing_activator_search_result_step_config_protocol-p.html", "protocol_thing_activator_search_result_step_config_protocol-p" ],
+    [ "ThingActivatorSearchResultCustomEditDeviceBlock", "_thing_activator_plug_a_p_i_8framework_2_headers_2_thing_activator_search_result_step_config_protocol_8h.html#a933e492308bd18fb41e06b6e6ff45a00", null ],
+    [ "ThingActivatorSearchResultCustomPairTimeoutBlock", "_thing_activator_plug_a_p_i_8framework_2_headers_2_thing_activator_search_result_step_config_protocol_8h.html#aa8f50ad4ea80f094a579b143cae2ff3a", null ],
+    [ "ThingActivatorSearchResultEditDeviceCompletion", "_thing_activator_plug_a_p_i_8framework_2_headers_2_thing_activator_search_result_step_config_protocol_8h.html#a8a6a13b905b4c61998ba4960bf170c76", null ]
+];

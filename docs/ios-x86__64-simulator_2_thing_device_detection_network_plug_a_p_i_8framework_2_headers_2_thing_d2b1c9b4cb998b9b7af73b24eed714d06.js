@@ -1,0 +1,6 @@
+var ios_x86__64_simulator_2_thing_device_detection_network_plug_a_p_i_8framework_2_headers_2_thing_d2b1c9b4cb998b9b7af73b24eed714d06 =
+[
+    [ "FOUNDATION_EXPORT", "ios-x86__64-simulator_2_thing_device_detection_network_plug_a_p_i_8framework_2_headers_2_thing_d2b1c9b4cb998b9b7af73b24eed714d06.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "ThingDeviceDetectionNetworkPlugAPIVersionNumber", "ios-x86__64-simulator_2_thing_device_detection_network_plug_a_p_i_8framework_2_headers_2_thing_d2b1c9b4cb998b9b7af73b24eed714d06.html#ae3bd82d2f03797d7f4cb77e8c759b47f", null ],
+    [ "ThingDeviceDetectionNetworkPlugAPIVersionString", "ios-x86__64-simulator_2_thing_device_detection_network_plug_a_p_i_8framework_2_headers_2_thing_d2b1c9b4cb998b9b7af73b24eed714d06.html#ae369d77401e811ab2e1819c22e44e464", null ]
+];

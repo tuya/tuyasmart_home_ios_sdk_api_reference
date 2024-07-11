@@ -1,0 +1,4 @@
+var ios_arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_once_d_n_d_request_model_8h =
+[
+    [ "ThingSmartMessageOnceDNDRequestModel", "interface_thing_smart_message_once_d_n_d_request_model.html", "interface_thing_smart_message_once_d_n_d_request_model" ]
+];

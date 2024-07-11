@@ -1,5 +1,6 @@
 var interface_thing_smart_scene_log_data =
 [
+    [ "actions", "interface_thing_smart_scene_log_data.html#a01cc315d7c8f10b5fd547a253ecba527", null ],
     [ "detailTime", "interface_thing_smart_scene_log_data.html#a6125a0614fdc4e0a8f7a97b400b8184d", null ],
     [ "eventId", "interface_thing_smart_scene_log_data.html#a9df6d5a934b77b33cc9c63f84e6d8dec", null ],
     [ "execResult", "interface_thing_smart_scene_log_data.html#ab6a8a39fba40829459f85255f979f47b", null ],

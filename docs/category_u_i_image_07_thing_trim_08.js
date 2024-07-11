@@ -1,0 +1,25 @@
+var category_u_i_image_07_thing_trim_08 =
+[
+    [ "thing_imageApplyingAlpha:", "category_u_i_image_07_thing_trim_08.html#a92a4fc1fbbe74a2d11fcacdb800c59ef", null ],
+    [ "thing_imageApplyingAlpha:", "category_u_i_image_07_thing_trim_08.html#a92a4fc1fbbe74a2d11fcacdb800c59ef", null ],
+    [ "thing_imageApplyingCornerRadius:", "category_u_i_image_07_thing_trim_08.html#a866711ccf4a455853804eb36d2bfd180", null ],
+    [ "thing_imageApplyingCornerRadius:", "category_u_i_image_07_thing_trim_08.html#a866711ccf4a455853804eb36d2bfd180", null ],
+    [ "thing_imageApplyingCornerRadius:withBorderWidth:borderColor:", "category_u_i_image_07_thing_trim_08.html#a1f6dd85f11713f7ed7e6c69290d5df35", null ],
+    [ "thing_imageApplyingCornerRadius:withBorderWidth:borderColor:", "category_u_i_image_07_thing_trim_08.html#a1f6dd85f11713f7ed7e6c69290d5df35", null ],
+    [ "thing_imageApplyingCropRect:", "category_u_i_image_07_thing_trim_08.html#af6d90ad70f8ac7a6f39e90d9c63afc44", null ],
+    [ "thing_imageApplyingCropRect:", "category_u_i_image_07_thing_trim_08.html#af6d90ad70f8ac7a6f39e90d9c63afc44", null ],
+    [ "thing_imageApplyingHorizontalFlip", "category_u_i_image_07_thing_trim_08.html#ab77c9cea45eff46df11a04c0d1ff64b7", null ],
+    [ "thing_imageApplyingHorizontalFlip", "category_u_i_image_07_thing_trim_08.html#ab77c9cea45eff46df11a04c0d1ff64b7", null ],
+    [ "thing_imageApplyingScale:", "category_u_i_image_07_thing_trim_08.html#af517f4e1db6607d72e3e677bec91e366", null ],
+    [ "thing_imageApplyingScale:", "category_u_i_image_07_thing_trim_08.html#af517f4e1db6607d72e3e677bec91e366", null ],
+    [ "thing_imageApplyingSize:", "category_u_i_image_07_thing_trim_08.html#a2301be460bc045055f6cb666378ac7c8", null ],
+    [ "thing_imageApplyingSize:", "category_u_i_image_07_thing_trim_08.html#a2301be460bc045055f6cb666378ac7c8", null ],
+    [ "thing_imageApplyingSize:withContentMode:", "category_u_i_image_07_thing_trim_08.html#a07d22435cb5b61411b11baae5c46ffcc", null ],
+    [ "thing_imageApplyingSize:withContentMode:", "category_u_i_image_07_thing_trim_08.html#a07d22435cb5b61411b11baae5c46ffcc", null ],
+    [ "thing_imageApplyingTintColor:", "category_u_i_image_07_thing_trim_08.html#ae5bf6c3c3e5a7d3eb4e9873a8a475a0e", null ],
+    [ "thing_imageApplyingTintColor:", "category_u_i_image_07_thing_trim_08.html#ae5bf6c3c3e5a7d3eb4e9873a8a475a0e", null ],
+    [ "thing_imageApplyingVerticalFlip", "category_u_i_image_07_thing_trim_08.html#a2d7710440acc315d74230aef288570b9", null ],
+    [ "thing_imageApplyingVerticalFlip", "category_u_i_image_07_thing_trim_08.html#a2d7710440acc315d74230aef288570b9", null ],
+    [ "thing_imageRotatedByDegrees:", "category_u_i_image_07_thing_trim_08.html#a99df3f953c3fefec109a13bfc221af5e", null ],
+    [ "thing_imageRotatedByDegrees:", "category_u_i_image_07_thing_trim_08.html#a99df3f953c3fefec109a13bfc221af5e", null ]
+];

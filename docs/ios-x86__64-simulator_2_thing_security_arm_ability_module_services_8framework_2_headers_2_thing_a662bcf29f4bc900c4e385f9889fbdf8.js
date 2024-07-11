@@ -1,0 +1,4 @@
+var ios_x86__64_simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_a662bcf29f4bc900c4e385f9889fbdf8 =
+[
+    [ "ThingSecuritSaveModeDeviceRuleModel", "interface_thing_securit_save_mode_device_rule_model.html", "interface_thing_securit_save_mode_device_rule_model" ]
+];

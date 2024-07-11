@@ -17,5 +17,6 @@ var dir_1fb313f6f2d2c5034b6bf33b447d37dc =
     [ "ThingSmartUser+LoginByQRCode.h", "ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_login_by_q_r_code_8h.html", "ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_login_by_q_r_code_8h" ],
     [ "ThingSmartUser+Region.h", "ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_region_8h.html", "ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_region_8h" ],
     [ "ThingSmartUser+WCSession.h", "ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_w_c_session_8h.html", "ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_w_c_session_8h" ],
-    [ "ThingSmartUser.h", "ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_8h.html", "ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_8h" ]
+    [ "ThingSmartUser.h", "ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_8h.html", "ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_8h" ],
+    [ "ThingSmartUserLoginJWTModel.h", "ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_login_j_w_t_model_8h.html", "ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_login_j_w_t_model_8h" ]
 ];

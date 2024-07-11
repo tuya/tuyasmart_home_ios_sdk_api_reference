@@ -19,5 +19,6 @@ var protocol_thing_smart_channel_reg_entry_p =
     [ "registSocket", "protocol_thing_smart_channel_reg_entry-p.html#a6f443ea6ed83f9631955770054bce6d4", null ],
     [ "registSocket", "protocol_thing_smart_channel_reg_entry-p.html#a6f443ea6ed83f9631955770054bce6d4", null ],
     [ "registSocket", "protocol_thing_smart_channel_reg_entry-p.html#a6f443ea6ed83f9631955770054bce6d4", null ],
-    [ "registSocket", "protocol_thing_smart_channel_reg_entry-p.html#a6f443ea6ed83f9631955770054bce6d4", null ]
+    [ "registSocket", "protocol_thing_smart_channel_reg_entry-p.html#a6f443ea6ed83f9631955770054bce6d4", null ],
+    [ "manualRegister", "protocol_thing_smart_channel_reg_entry-p.html#aa032bea9d5ac9991ef0c4b52e875c2f0", null ]
 ];

@@ -1,0 +1,6 @@
+var x86__64_simulator_2_thing_device_share_module_plug_a_p_i_8framework_2_headers_2_thing_device_sha56704011b0b1fe6e7f77663807b2db4a =
+[
+    [ "FOUNDATION_EXPORT", "x86__64-simulator_2_thing_device_share_module_plug_a_p_i_8framework_2_headers_2_thing_device_sha56704011b0b1fe6e7f77663807b2db4a.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "ThingDeviceShareModulePlugAPIVersionNumber", "x86__64-simulator_2_thing_device_share_module_plug_a_p_i_8framework_2_headers_2_thing_device_sha56704011b0b1fe6e7f77663807b2db4a.html#a6b10efe41e8a56df45d758597c6249e9", null ],
+    [ "ThingDeviceShareModulePlugAPIVersionString", "x86__64-simulator_2_thing_device_share_module_plug_a_p_i_8framework_2_headers_2_thing_device_sha56704011b0b1fe6e7f77663807b2db4a.html#aa3d1b79f9f2816b25c768544a779c0db", null ]
+];

@@ -1,5 +1,6 @@
 var interface_thing_b_l_e_adv_model =
 [
+    [ "bleCommunicationCapability", "interface_thing_b_l_e_adv_model.html#afef80db1b1ebe3915c902c391b27f1cb", null ],
     [ "bleProtocolV", "interface_thing_b_l_e_adv_model.html#a357b3005329409b0c696f94e14fa5e3f", null ],
     [ "bleType", "interface_thing_b_l_e_adv_model.html#aeae0886d8446f61027155161662abf40", null ],
     [ "isActive", "interface_thing_b_l_e_adv_model.html#af1b9d1f27b88d4ec97a7b4cc9063eeb4", null ],
@@ -9,6 +10,7 @@ var interface_thing_b_l_e_adv_model =
     [ "isRoaming", "interface_thing_b_l_e_adv_model.html#a55aaac1ba50599092c17d5508cc8643b", null ],
     [ "isSupport5G", "interface_thing_b_l_e_adv_model.html#aa446e69ed38e583796974c5ca617ebca", null ],
     [ "isSupportMultiUserShare", "interface_thing_b_l_e_adv_model.html#af36833f8503fbf774472c83b9aa38de8", null ],
+    [ "isSupportQueryWifiList", "interface_thing_b_l_e_adv_model.html#a1692ee5ab732c4011c85d836f895822c", null ],
     [ "isSupportV2Secret", "interface_thing_b_l_e_adv_model.html#a0d009153ced19e515486754fa14b1026", null ],
     [ "mac", "interface_thing_b_l_e_adv_model.html#a69b380f8a41f34a75d7ddf5155979cde", null ],
     [ "peripheral", "interface_thing_b_l_e_adv_model.html#ac7193f8dca6f956c393373a4ef46ef9a", null ],

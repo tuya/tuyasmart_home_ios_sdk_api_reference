@@ -1,0 +1,28 @@
+var interface_thing_av_logger =
+[
+    [ "deinitAvLogger", "interface_thing_av_logger.html#a405b136a2b4f3cc5dc205447f2f14fb2", null ],
+    [ "deinitAvLogger", "interface_thing_av_logger.html#a405b136a2b4f3cc5dc205447f2f14fb2", null ],
+    [ "enableDebug:", "interface_thing_av_logger.html#a4fd848993f9cfc46fbe7f29a238dc382", null ],
+    [ "enableDebug:", "interface_thing_av_logger.html#a4fd848993f9cfc46fbe7f29a238dc382", null ],
+    [ "enableFileDump:", "interface_thing_av_logger.html#a86c2446810f6cc178ec87483b0aa7255", null ],
+    [ "enableFileDump:", "interface_thing_av_logger.html#a86c2446810f6cc178ec87483b0aa7255", null ],
+    [ "enableLocalLogFileRecord:", "interface_thing_av_logger.html#a936f9ac32c4dd499351c19814f373c41", null ],
+    [ "enableLocalLogFileRecord:", "interface_thing_av_logger.html#a936f9ac32c4dd499351c19814f373c41", null ],
+    [ "enableLogReport:", "interface_thing_av_logger.html#a7cb8add96ff977d2bd9fb572d81d8b6d", null ],
+    [ "enableLogReport:", "interface_thing_av_logger.html#a7cb8add96ff977d2bd9fb572d81d8b6d", null ],
+    [ "getDumpStatus", "interface_thing_av_logger.html#ae178543f579f121c24b30b3f3b58efba", null ],
+    [ "getDumpStatus", "interface_thing_av_logger.html#ae178543f579f121c24b30b3f3b58efba", null ],
+    [ "getVersion", "interface_thing_av_logger.html#a2dda63d88fd1c90b5232c15440d94280", null ],
+    [ "getVersion", "interface_thing_av_logger.html#a2dda63d88fd1c90b5232c15440d94280", null ],
+    [ "initAvLoggerWithDelegate", "interface_thing_av_logger.html#aa176b976b5a5ec93e5dfe4d0eacd4c44", null ],
+    [ "initAvLoggerWithDelegate", "interface_thing_av_logger.html#aa176b976b5a5ec93e5dfe4d0eacd4c44", null ],
+    [ "NS_UNAVAILABLE", "interface_thing_av_logger.html#aa79f9dca2b0ca7b456fb6d148790738a", null ],
+    [ "NS_UNAVAILABLE", "interface_thing_av_logger.html#aa79f9dca2b0ca7b456fb6d148790738a", null ],
+    [ "setCacheFolder:", "interface_thing_av_logger.html#afb317d007d18300641af4bc68f0d6218", null ],
+    [ "setCacheFolder:", "interface_thing_av_logger.html#afb317d007d18300641af4bc68f0d6218", null ],
+    [ "setFileDumpFolder:", "interface_thing_av_logger.html#a345e10a3819adbc5499b756f3b38a7cb", null ],
+    [ "setFileDumpFolder:", "interface_thing_av_logger.html#a345e10a3819adbc5499b756f3b38a7cb", null ],
+    [ "setLogInterval:", "interface_thing_av_logger.html#aa6306aa94eb3abf219a26e52582600f8", null ],
+    [ "setLogInterval:", "interface_thing_av_logger.html#aa6306aa94eb3abf219a26e52582600f8", null ],
+    [ "delegate", "interface_thing_av_logger.html#a4ee4a124cce9dd2d954eed519e0c9ce6", null ]
+];

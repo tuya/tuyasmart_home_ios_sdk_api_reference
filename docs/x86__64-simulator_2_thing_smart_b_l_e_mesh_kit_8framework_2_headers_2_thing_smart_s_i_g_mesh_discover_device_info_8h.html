@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: /Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBLEMeshKit.framework/Headers/ThingSmartSIGMeshDiscoverDeviceInfo.h File Reference</title>
+<title>Tuya iOS Smart Life App SDK: ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBLEMeshKit.framework/Headers/ThingSmartSIGMeshDiscoverDeviceInfo.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -92,6 +93,7 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_b_l_e_
 <div class="contents">
 <div class="textblock"><code>#import &lt;Foundation/Foundation.h&gt;</code><br />
 <code>#import &lt;ThingBluetooth/ThingBLEAgent.h&gt;</code><br />
+<code>#import &quot;<a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_mesh_beacon_adversting_quick_frame_8h_source.html">ThingMeshBeaconAdverstingQuickFrame.h</a>&quot;</code><br />
 </div>
 <p><a href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -108,10 +110,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ae97be84ca670d29f2ba825082f428334"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html#ae97be84ca670d29f2ba825082f428334">ThingSIGMeshNodeActivatorType</a> : NSUInteger { <a class="el" href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html#ae97be84ca670d29f2ba825082f428334a48fd3b4e2f70ede5d1ab690aef76fad2">ThingSIGMeshNodeActivatorTypeStandard</a> = 0
+<tr class="memitem:ae97be84ca670d29f2ba825082f428334"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html#ae97be84ca670d29f2ba825082f428334">ThingSIGMeshNodeActivatorType</a> : NSUInteger { <br />
+&#160;&#160;<a class="el" href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html#ae97be84ca670d29f2ba825082f428334a48fd3b4e2f70ede5d1ab690aef76fad2">ThingSIGMeshNodeActivatorTypeStandard</a> = 0
 , <a class="el" href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html#ae97be84ca670d29f2ba825082f428334a550e84eaf0ffd80f50063616a87e8525">ThingSIGMeshNodeActivatorTypeQuick</a> = 1 &lt;&lt; 0
+, <a class="el" href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html#ae97be84ca670d29f2ba825082f428334ac135ef675febeacdc0ac323158cd3f38">ThingSIGMeshNodeActivatorTypeBeacon</a> = 2 &lt;&lt; 0
 , <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html#ae97be84ca670d29f2ba825082f428334a48fd3b4e2f70ede5d1ab690aef76fad2">ThingSIGMeshNodeActivatorTypeStandard</a> = 0
-, <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html#ae97be84ca670d29f2ba825082f428334a550e84eaf0ffd80f50063616a87e8525">ThingSIGMeshNodeActivatorTypeQuick</a> = 1 &lt;&lt; 0
+, <br />
+&#160;&#160;<a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html#ae97be84ca670d29f2ba825082f428334a550e84eaf0ffd80f50063616a87e8525">ThingSIGMeshNodeActivatorTypeQuick</a> = 1 &lt;&lt; 0
+, <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html#ae97be84ca670d29f2ba825082f428334ac135ef675febeacdc0ac323158cd3f38">ThingSIGMeshNodeActivatorTypeBeacon</a> = 2 &lt;&lt; 0
+<br />
  }</td></tr>
 <tr class="memdesc:ae97be84ca670d29f2ba825082f428334"><td class="mdescLeft">&#160;</td><td class="mdescRight">The activator type of the Bluetooth mesh node.  <a href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html#ae97be84ca670d29f2ba825082f428334">More...</a><br /></td></tr>
 <tr class="separator:ae97be84ca670d29f2ba825082f428334"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +142,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html#l00037">37</a> of file <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html">ThingSmartSIGMeshDiscoverDeviceInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html#l00041">41</a> of file <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html">ThingSmartSIGMeshDiscoverDeviceInfo.h</a>.</p>
 
 </div>
 </div>
@@ -158,13 +165,17 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ae97be84ca670d29f2ba825082f428334a550e84eaf0ffd80f50063616a87e8525" name="ae97be84ca670d29f2ba825082f428334a550e84eaf0ffd80f50063616a87e8525"></a>ThingSIGMeshNodeActivatorTypeQuick&#160;</td><td class="fielddoc"><p >Wi-Fi Easy Connect. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ae97be84ca670d29f2ba825082f428334ac135ef675febeacdc0ac323158cd3f38" name="ae97be84ca670d29f2ba825082f428334ac135ef675febeacdc0ac323158cd3f38"></a>ThingSIGMeshNodeActivatorTypeBeacon&#160;</td><td class="fielddoc"><p >Beacon Mesh. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ae97be84ca670d29f2ba825082f428334a48fd3b4e2f70ede5d1ab690aef76fad2" name="ae97be84ca670d29f2ba825082f428334a48fd3b4e2f70ede5d1ab690aef76fad2"></a>ThingSIGMeshNodeActivatorTypeStandard&#160;</td><td class="fielddoc"><p >Standard pairing. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ae97be84ca670d29f2ba825082f428334a550e84eaf0ffd80f50063616a87e8525" name="ae97be84ca670d29f2ba825082f428334a550e84eaf0ffd80f50063616a87e8525"></a>ThingSIGMeshNodeActivatorTypeQuick&#160;</td><td class="fielddoc"><p >Wi-Fi Easy Connect. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ae97be84ca670d29f2ba825082f428334ac135ef675febeacdc0ac323158cd3f38" name="ae97be84ca670d29f2ba825082f428334ac135ef675febeacdc0ac323158cd3f38"></a>ThingSIGMeshNodeActivatorTypeBeacon&#160;</td><td class="fielddoc"><p >Beacon Mesh. </p>
+</td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html#l00027">27</a> of file <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html">ThingSmartSIGMeshDiscoverDeviceInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html#l00028">28</a> of file <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html">ThingSmartSIGMeshDiscoverDeviceInfo.h</a>.</p>
 
 </div>
 </div>
@@ -201,7 +212,7 @@ Functions</h2></td></tr>
 <p >A provisioned device.</p>
 <p >A device that can be connected and controlled through a proxy.</p>
 
-<p class="definition">Definition at line <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html#l00011">11</a> of file <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html">ThingSmartSIGMeshDiscoverDeviceInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html#l00012">12</a> of file <a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h_source.html">ThingSmartSIGMeshDiscoverDeviceInfo.h</a>.</p>
 
 </div>
 </div>
@@ -210,7 +221,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_350ab2d14705a2da30f5c4a8aeabf1fb.html">Volumes</a></li><li class="navelem"><a class="el" href="dir_b5508c5733aa93b21c7668144b6a10e6.html">work</a></li><li class="navelem"><a class="el" href="dir_9c2084141ba9d0a81a6d980b794b2bf3.html">source_code</a></li><li class="navelem"><a class="el" href="dir_9e235fb0c6055da3049adf9d594dd735.html">tuya</a></li><li class="navelem"><a class="el" href="dir_2eca0df6357931a63786b682b2a3523b.html">bizbundle</a></li><li class="navelem"><a class="el" href="dir_09caf3263995c8bca06aeee061548636.html">BizBundle</a></li><li class="navelem"><a class="el" href="dir_a739206a7d38e5a247a86838d8543d42.html">tuya-home-ios-sdk-sample-swift</a></li><li class="navelem"><a class="el" href="dir_36297105b3a1d1ff6152618f6a772449.html">Pods</a></li><li class="navelem"><a class="el" href="dir_d4dcb12b063b68b53e3d834d9e5ccabb.html">ThingSmartBLEMeshKit</a></li><li class="navelem"><a class="el" href="dir_021ace6d54bb876878a9fb91b9352f5b.html">Build</a></li><li class="navelem"><a class="el" href="dir_f1e6031d46eaa2581c57b12ea7e45a09.html">ThingSmartBLEMeshKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_fbb7263a1cc3afddba66d1fc2ebf86e5.html">ios-arm64_x86_64-simulator</a></li><li class="navelem"><a class="el" href="dir_58981d840486dca92501cc4c6eabb767.html">ThingSmartBLEMeshKit.framework</a></li><li class="navelem"><a class="el" href="dir_5f9427cc2c4cfc4f6fc0f4e1da2194eb.html">Headers</a></li><li class="navelem"><a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html">ThingSmartSIGMeshDiscoverDeviceInfo.h</a></li>
+    <li class="navelem"><a class="el" href="dir_92d142800f4461cef921a71e4e6adcb4.html">ThingSmartBLEMeshKit</a></li><li class="navelem"><a class="el" href="dir_deae291299d1535a9d8b229005a2e01b.html">Build</a></li><li class="navelem"><a class="el" href="dir_935fb22a008a53000073a93d92b1809f.html">ThingSmartBLEMeshKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_15d8a7fbe4cfe6f077b3f855300ff9cd.html">ios-arm64_x86_64-simulator</a></li><li class="navelem"><a class="el" href="dir_3d47b037f6a007af28ad7ddd735bc056.html">ThingSmartBLEMeshKit.framework</a></li><li class="navelem"><a class="el" href="dir_a7cee05ea431898426fd7223a59b6839.html">Headers</a></li><li class="navelem"><a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_discover_device_info_8h.html">ThingSmartSIGMeshDiscoverDeviceInfo.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

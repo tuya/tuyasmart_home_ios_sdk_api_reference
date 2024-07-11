@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -119,6 +120,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a9969882d5271c930e306715fbce7c163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f10b90ba818612dd1fb66a718ea7f96"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_m_q_t_t_channel.html#a7f10b90ba818612dd1fb66a718ea7f96">removeDelegate:</a></td></tr>
 <tr class="separator:a7f10b90ba818612dd1fb66a718ea7f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f7ca4a0ab0d96ecfec1c82e11e5894"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_m_q_t_t_channel.html#a75f7ca4a0ab0d96ecfec1c82e11e5894">hasSubscribedTopic:</a></td></tr>
+<tr class="separator:a75f7ca4a0ab0d96ecfec1c82e11e5894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e6fc62d8a24e5b2b13c19c80199d1b3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_m_q_t_t_channel.html#a9e6fc62d8a24e5b2b13c19c80199d1b3">startConnectToHostWithMqttConfig:</a></td></tr>
 <tr class="separator:a9e6fc62d8a24e5b2b13c19c80199d1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a292958d9acddb8b8720ba19bd63d18fd"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_m_q_t_t_channel.html#a292958d9acddb8b8720ba19bd63d18fd">close</a></td></tr>
@@ -137,6 +140,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a9969882d5271c930e306715fbce7c163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f10b90ba818612dd1fb66a718ea7f96"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_m_q_t_t_channel.html#a7f10b90ba818612dd1fb66a718ea7f96">removeDelegate:</a></td></tr>
 <tr class="separator:a7f10b90ba818612dd1fb66a718ea7f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f7ca4a0ab0d96ecfec1c82e11e5894"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_m_q_t_t_channel.html#a75f7ca4a0ab0d96ecfec1c82e11e5894">hasSubscribedTopic:</a></td></tr>
+<tr class="separator:a75f7ca4a0ab0d96ecfec1c82e11e5894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
@@ -280,6 +285,54 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a75f7ca4a0ab0d96ecfec1c82e11e5894" name="a75f7ca4a0ab0d96ecfec1c82e11e5894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f7ca4a0ab0d96ecfec1c82e11e5894">&#9670;&nbsp;</a></span>hasSubscribedTopic: <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) hasSubscribedTopic: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>topic</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Whether MQTT channel has subscribed to a topic. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">topic</td><td>topic </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a75f7ca4a0ab0d96ecfec1c82e11e5894" name="a75f7ca4a0ab0d96ecfec1c82e11e5894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f7ca4a0ab0d96ecfec1c82e11e5894">&#9670;&nbsp;</a></span>hasSubscribedTopic: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) hasSubscribedTopic: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>topic</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Whether MQTT channel has subscribed to a topic. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">topic</td><td>topic </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad54945e1095fca22a8014ca0c80598fe" name="ad54945e1095fca22a8014ca0c80598fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad54945e1095fca22a8014ca0c80598fe">&#9670;&nbsp;</a></span>publishMessage:topic:success:failure: <span class="overload">[1/2]</span></h2>
 
@@ -301,13 +354,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h.html#ae3aa9bacb5c7dc6f20e04b208db97afb">ThingSuccessHandler</a>)&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="ios-x86__64-simulator_2_thing_group_handle_skt_a_p_i_8framework_2_headers_2_thing_business_group_protocol_8h.html#a2c44777df30b21b7a4f2f140f9a944d6">ThingFailureError</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -352,13 +405,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h.html#ae3aa9bacb5c7dc6f20e04b208db97afb">ThingSuccessHandler</a>)&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="ios-x86__64-simulator_2_thing_group_handle_skt_a_p_i_8framework_2_headers_2_thing_business_group_protocol_8h.html#a2c44777df30b21b7a4f2f140f9a944d6">ThingFailureError</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -403,13 +456,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h.html#ae3aa9bacb5c7dc6f20e04b208db97afb">ThingSuccessHandler</a>)&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="ios-x86__64-simulator_2_thing_group_handle_skt_a_p_i_8framework_2_headers_2_thing_business_group_protocol_8h.html#a2c44777df30b21b7a4f2f140f9a944d6">ThingFailureError</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -453,13 +506,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h.html#ae3aa9bacb5c7dc6f20e04b208db97afb">ThingSuccessHandler</a>)&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="ios-x86__64-simulator_2_thing_group_handle_skt_a_p_i_8framework_2_headers_2_thing_business_group_protocol_8h.html#a2c44777df30b21b7a4f2f140f9a944d6">ThingFailureError</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -637,13 +690,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h.html#ae3aa9bacb5c7dc6f20e04b208db97afb">ThingSuccessHandler</a>)&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="ios-x86__64-simulator_2_thing_group_handle_skt_a_p_i_8framework_2_headers_2_thing_business_group_protocol_8h.html#a2c44777df30b21b7a4f2f140f9a944d6">ThingFailureError</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -686,13 +739,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h.html#ae3aa9bacb5c7dc6f20e04b208db97afb">ThingSuccessHandler</a>)&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="ios-x86__64-simulator_2_thing_group_handle_skt_a_p_i_8framework_2_headers_2_thing_business_group_protocol_8h.html#a2c44777df30b21b7a4f2f140f9a944d6">ThingFailureError</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -729,13 +782,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h.html#ae3aa9bacb5c7dc6f20e04b208db97afb">ThingSuccessHandler</a>)&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="ios-x86__64-simulator_2_thing_group_handle_skt_a_p_i_8framework_2_headers_2_thing_business_group_protocol_8h.html#a2c44777df30b21b7a4f2f140f9a944d6">ThingFailureError</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -772,13 +825,13 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a32a79cd7d4562b2e058fc1f7b525c842">ThingSuccessHandler</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h.html#ae3aa9bacb5c7dc6f20e04b208db97afb">ThingSuccessHandler</a>)&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="ios-x86__64-simulator_2_thing_group_handle_skt_a_p_i_8framework_2_headers_2_thing_business_group_protocol_8h.html#a2c44777df30b21b7a4f2f140f9a944d6">ThingFailureError</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -875,8 +928,8 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartMQTTChannelKit/Build/ThingSmartMQTTChannelKit.xcframework/ios-arm64/ThingSmartMQTTChannelKit.framework/Headers/<a class="el" href="_thing_smart_m_q_t_t_channel_kit_8framework_2_headers_2_thing_smart_m_q_t_t_channel_8h_source.html">ThingSmartMQTTChannel.h</a></li>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartMQTTChannelKit/Build/ThingSmartMQTTChannelKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartMQTTChannelKit.framework/Headers/<a class="el" href="x86__64-simulator_2_thing_smart_m_q_t_t_channel_kit_8framework_2_headers_2_thing_smart_m_q_t_t_channel_8h_source.html">ThingSmartMQTTChannel.h</a></li>
+<li>ThingSmartMQTTChannelKit/Build/ThingSmartMQTTChannelKit.xcframework/ios-arm64/ThingSmartMQTTChannelKit.framework/Headers/<a class="el" href="_thing_smart_m_q_t_t_channel_kit_8framework_2_headers_2_thing_smart_m_q_t_t_channel_8h_source.html">ThingSmartMQTTChannel.h</a></li>
+<li>ThingSmartMQTTChannelKit/Build/ThingSmartMQTTChannelKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartMQTTChannelKit.framework/Headers/<a class="el" href="x86__64-simulator_2_thing_smart_m_q_t_t_channel_kit_8framework_2_headers_2_thing_smart_m_q_t_t_channel_8h_source.html">ThingSmartMQTTChannel.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

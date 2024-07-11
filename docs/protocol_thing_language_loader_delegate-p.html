@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -117,8 +118,17 @@ Instance Methods</h2></td></tr>
 <tr class="separator:aa2207ee1f9e90594cb616dc0b5550538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html#l00012">12</a> of file <a class="el" href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html">ThingLanguageLoader.h</a>.</p>
+<div class="textblock"><p >多语言代理的 before、after hooks 基于洋葱模型实现</p>
+<div class="fragment"><div class="line"><a class="code hl_property" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h.html#a8567e31b759386c9840833a38589e659">delegate</a> before → /<span class="keywordflow">return</span>/</div>
+<div class="line">   ↓</div>
+<div class="line">system</div>
+<div class="line">   ↓</div>
+<div class="line"><a class="code hl_property" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h.html#a8567e31b759386c9840833a38589e659">delegate</a> after</div>
+<div class="line">   ↓</div>
+<div class="line">/<span class="keywordflow">return</span>/</div>
+<div class="ttc" id="aios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_html_a8567e31b759386c9840833a38589e659"><div class="ttname"><a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h.html#a8567e31b759386c9840833a38589e659">delegate</a></div><div class="ttdeci">id&lt; ThingCoreCacheServiceDelegate &gt; delegate</div><div class="ttdoc">The devices and group core cache classes allow you to add, modify, and delete data models....</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source.html#l00030">ThingCoreCacheService.h:26</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html#l00023">23</a> of file <a class="el" href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html">ThingLanguageLoader.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="aa2207ee1f9e90594cb616dc0b5550538" name="aa2207ee1f9e90594cb616dc0b5550538"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2207ee1f9e90594cb616dc0b5550538">&#9670;&nbsp;</a></span>afterLocalizedWithKey:isFound:isCurrent:localizedString: <span class="overload">[1/4]</span></h2>
@@ -477,10 +487,10 @@ Instance Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this protocol was generated from the following files:<ul>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingFoundationKit/ThingFoundationKit.xcframework/ios-arm64/ThingFoundationKit.framework/Headers/<a class="el" href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html">ThingLanguageLoader.h</a></li>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingFoundationKit/ThingFoundationKit.xcframework/ios-arm64_x86_64-simulator/ThingFoundationKit.framework/Headers/<a class="el" href="ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html">ThingLanguageLoader.h</a></li>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingFoundationKit/ThingFoundationKit.xcframework/watchos-arm64_arm64_32_armv7k/ThingFoundationKit.framework/Headers/<a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html">ThingLanguageLoader.h</a></li>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingFoundationKit/ThingFoundationKit.xcframework/watchos-arm64_i386_x86_64-simulator/ThingFoundationKit.framework/Headers/<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html">ThingLanguageLoader.h</a></li>
+<li>ThingFoundationKit/ThingFoundationKit.xcframework/ios-arm64/ThingFoundationKit.framework/Headers/<a class="el" href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html">ThingLanguageLoader.h</a></li>
+<li>ThingFoundationKit/ThingFoundationKit.xcframework/ios-arm64_x86_64-simulator/ThingFoundationKit.framework/Headers/<a class="el" href="ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html">ThingLanguageLoader.h</a></li>
+<li>ThingFoundationKit/ThingFoundationKit.xcframework/watchos-arm64_arm64_32_armv7k/ThingFoundationKit.framework/Headers/<a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html">ThingLanguageLoader.h</a></li>
+<li>ThingFoundationKit/ThingFoundationKit.xcframework/watchos-arm64_i386_x86_64-simulator/ThingFoundationKit.framework/Headers/<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html">ThingLanguageLoader.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

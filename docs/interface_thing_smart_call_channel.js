@@ -1,0 +1,28 @@
+var interface_thing_smart_call_channel =
+[
+    [ "addDelegate:", "interface_thing_smart_call_channel.html#acc04e1bb0a632601ab600b7ff63cd9a7", null ],
+    [ "addDelegate:", "interface_thing_smart_call_channel.html#acc04e1bb0a632601ab600b7ff63cd9a7", null ],
+    [ "canStartCall", "interface_thing_smart_call_channel.html#a864889f17966e8dd3044492cfa235cdd", null ],
+    [ "canStartCall", "interface_thing_smart_call_channel.html#a864889f17966e8dd3044492cfa235cdd", null ],
+    [ "fetchDeviceCallAbilityByDevId:completion:", "interface_thing_smart_call_channel.html#ac1a0274cdee63de0fef667d453817e0d", null ],
+    [ "fetchDeviceCallAbilityByDevId:completion:", "interface_thing_smart_call_channel.html#ac1a0274cdee63de0fef667d453817e0d", null ],
+    [ "handlePushMessage:", "interface_thing_smart_call_channel.html#a88b88afe1649eeb368bf08d962aee90b", null ],
+    [ "handlePushMessage:", "interface_thing_smart_call_channel.html#a88b88afe1649eeb368bf08d962aee90b", null ],
+    [ "isOnCalling", "interface_thing_smart_call_channel.html#abf695c00a126a1c461ec6d5031bccb0d", null ],
+    [ "isOnCalling", "interface_thing_smart_call_channel.html#abf695c00a126a1c461ec6d5031bccb0d", null ],
+    [ "launch", "interface_thing_smart_call_channel.html#ae59d2bbafd7d06fa76be6e001c639046", null ],
+    [ "launch", "interface_thing_smart_call_channel.html#ae59d2bbafd7d06fa76be6e001c639046", null ],
+    [ "registerCallInterfaceManager:", "interface_thing_smart_call_channel.html#a092a720aa5228fcf4bd835dd15b5d58e", null ],
+    [ "registerCallInterfaceManager:", "interface_thing_smart_call_channel.html#a092a720aa5228fcf4bd835dd15b5d58e", null ],
+    [ "removeDelegate:", "interface_thing_smart_call_channel.html#a5844a885bd1b899c936620681fe4e940", null ],
+    [ "removeDelegate:", "interface_thing_smart_call_channel.html#a5844a885bd1b899c936620681fe4e940", null ],
+    [ "resubscribeMQTTUserTopic", "interface_thing_smart_call_channel.html#a758f47e298e4d6f06b2f0e2c4d1b05cc", null ],
+    [ "resubscribeMQTTUserTopic", "interface_thing_smart_call_channel.html#a758f47e298e4d6f06b2f0e2c4d1b05cc", null ],
+    [ "startCallWithTargetId:timeout:extra:success:failure:", "interface_thing_smart_call_channel.html#af6686a0a9e9d0ad38e42333ae7716d6a", null ],
+    [ "startCallWithTargetId:timeout:extra:success:failure:", "interface_thing_smart_call_channel.html#af6686a0a9e9d0ad38e42333ae7716d6a", null ],
+    [ "unregisterCallInterfaceManager:", "interface_thing_smart_call_channel.html#a65932a9a89a5cb29fa49578996050295", null ],
+    [ "unregisterCallInterfaceManager:", "interface_thing_smart_call_channel.html#a65932a9a89a5cb29fa49578996050295", null ],
+    [ "callInterfaceManagers", "interface_thing_smart_call_channel.html#ae4a7f6fe00d6adc0b2b8968e80b80ea7", null ],
+    [ "dataSource", "interface_thing_smart_call_channel.html#af0c923b06f9219c31782ec4b882adf8a", null ],
+    [ "sharedInstance", "interface_thing_smart_call_channel.html#a9d9e9f6c8b760f6fd872aeef333e28e9", null ]
+];

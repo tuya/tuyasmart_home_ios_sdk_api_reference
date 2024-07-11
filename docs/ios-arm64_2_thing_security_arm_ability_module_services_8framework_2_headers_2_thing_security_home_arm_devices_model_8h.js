@@ -1,0 +1,4 @@
+var ios_arm64_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_home_arm_devices_model_8h =
+[
+    [ "ThingSecurityHomeArmDevicesModel", "interface_thing_security_home_arm_devices_model.html", "interface_thing_security_home_arm_devices_model" ]
+];

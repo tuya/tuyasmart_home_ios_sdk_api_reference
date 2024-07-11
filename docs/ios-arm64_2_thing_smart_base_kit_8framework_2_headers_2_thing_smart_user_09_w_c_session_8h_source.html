@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: /Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartBaseKit/Build/ThingSmartBaseKit.xcframework/ios-arm64/ThingSmartBaseKit.framework/Headers/ThingSmartUser+WCSession.h Source File</title>
+<title>Tuya iOS Smart Life App SDK: ThingSmartBaseKit/Build/ThingSmartBaseKit.xcframework/ios-arm64/ThingSmartBaseKit.framework/Headers/ThingSmartUser+WCSession.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -86,36 +87,37 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_base_kit_8fram
 </div><!--header-->
 <div class="contents">
 <a href="ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_w_c_session_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// ThingSmartUser+WCSession.h</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// ThingSmartBaseKit</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//  ThingSmartUser+WCSession.h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  ThingSmartBaseKit</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// Copyright (c) 2014-2021 Thing Inc. (https://developer.thing.com)</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef ThingSmartUser_WCSession_h</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define ThingSmartUser_WCSession_h</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#import &quot;<a class="code" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_8h.html">ThingSmartUser.h</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//#import &lt;WatchConnectivity/WatchConnectivity.h&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">@class</span> WCSession, WCSessionUserInfoTransfer;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>NS_ASSUME_NONNULL_BEGIN</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">extern</span> NSString *<span class="keyword">const</span> <a class="code hl_variable" href="ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_w_c_session_8h.html#aa6cf45ea6dd51673779517d9beeb1fbe">ThingSmartUserWCSessionKey</a>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="category_thing_smart_user_07_w_c_session_08.html">   28</a></span><span class="keyword">@interface </span><a class="code hl_category" href="category_thing_smart_user_07_w_c_session_08.html">ThingSmartUser (WCSession)</a></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>- (BOOL)updateApplicationContext:(WCSession *)session API_AVAILABLE(ios(9.0));</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>- (void)didReceiveApplicationContext:(NSDictionary *)applicationContext API_AVAILABLE(watchos(2.0));</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">@end</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="category_thing_smart_user_07_w_c_session_08.html#a4d3ca5723ab95918941745c5974d7463">   42</a></span>NS_ASSUME_NONNULL_END</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">/* ThingSmartUser_WCSession_h */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="acategory_thing_smart_user_07_w_c_session_08_html"><div class="ttname"><a href="category_thing_smart_user_07_w_c_session_08.html">ThingSmartUser(WCSession)</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_w_c_session_8h_source.html#l00028">ThingSmartUser+WCSession.h:28</a></div></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//  Copyright (c) 2014-2024.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef ThingSmartUser_WCSession_h</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define ThingSmartUser_WCSession_h</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#import &quot;<a class="code" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_8h.html">ThingSmartUser.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//#import &lt;WatchConnectivity/WatchConnectivity.h&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">@class</span> WCSession, WCSessionUserInfoTransfer;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">extern</span> NSString *<span class="keyword">const</span> <a class="code hl_variable" href="ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_w_c_session_8h.html#aa6cf45ea6dd51673779517d9beeb1fbe">ThingSmartUserWCSessionKey</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="category_thing_smart_user_07_w_c_session_08.html">   29</a></span><span class="keyword">@interface </span><a class="code hl_category" href="category_thing_smart_user_07_w_c_session_08.html">ThingSmartUser (WCSession)</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>- (BOOL)updateApplicationContext:(WCSession *)session API_AVAILABLE(ios(9.0));</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>- (void)didReceiveApplicationContext:(NSDictionary *)applicationContext API_AVAILABLE(watchos(2.0));</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="category_thing_smart_user_07_w_c_session_08.html#a4d3ca5723ab95918941745c5974d7463">   43</a></span>NS_ASSUME_NONNULL_END</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif </span><span class="comment">/* ThingSmartUser_WCSession_h */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="acategory_thing_smart_user_07_w_c_session_08_html"><div class="ttname"><a href="category_thing_smart_user_07_w_c_session_08.html">ThingSmartUser(WCSession)</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_w_c_session_8h_source.html#l00029">ThingSmartUser+WCSession.h:29</a></div></div>
 <div class="ttc" id="aios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_w_c_session_8h_html_aa6cf45ea6dd51673779517d9beeb1fbe"><div class="ttname"><a href="ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_w_c_session_8h.html#aa6cf45ea6dd51673779517d9beeb1fbe">ThingSmartUserWCSessionKey</a></div><div class="ttdeci">NS_ASSUME_NONNULL_BEGIN NSString *const ThingSmartUserWCSessionKey</div></div>
 <div class="ttc" id="awatchos-arm64__i386__x86__64-simulator_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_8h_html"><div class="ttname"><a href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_8h.html">ThingSmartUser.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -123,7 +125,7 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_base_kit_8fram
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_350ab2d14705a2da30f5c4a8aeabf1fb.html">Volumes</a></li><li class="navelem"><a class="el" href="dir_b5508c5733aa93b21c7668144b6a10e6.html">work</a></li><li class="navelem"><a class="el" href="dir_9c2084141ba9d0a81a6d980b794b2bf3.html">source_code</a></li><li class="navelem"><a class="el" href="dir_9e235fb0c6055da3049adf9d594dd735.html">tuya</a></li><li class="navelem"><a class="el" href="dir_2eca0df6357931a63786b682b2a3523b.html">bizbundle</a></li><li class="navelem"><a class="el" href="dir_09caf3263995c8bca06aeee061548636.html">BizBundle</a></li><li class="navelem"><a class="el" href="dir_a739206a7d38e5a247a86838d8543d42.html">tuya-home-ios-sdk-sample-swift</a></li><li class="navelem"><a class="el" href="dir_36297105b3a1d1ff6152618f6a772449.html">Pods</a></li><li class="navelem"><a class="el" href="dir_5b9f3d3aea63715fbb0639fa9ad9b024.html">ThingSmartBaseKit</a></li><li class="navelem"><a class="el" href="dir_c842d35c784d6d2918ff0abac6f39d1c.html">Build</a></li><li class="navelem"><a class="el" href="dir_ed05a6f62123cce1179ffa5fe277bb7a.html">ThingSmartBaseKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_09b3127bb9fa028a39b011d17bb729f0.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_7a213d07d18d5b57e162433550905619.html">ThingSmartBaseKit.framework</a></li><li class="navelem"><a class="el" href="dir_b53470b9201d3625d5a444767b07074a.html">Headers</a></li><li class="navelem"><a class="el" href="ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_w_c_session_8h.html">ThingSmartUser+WCSession.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2724aea3f9645cd146954583a29c81af.html">ThingSmartBaseKit</a></li><li class="navelem"><a class="el" href="dir_3e0727b8d96b5b54014aa54816c6ca73.html">Build</a></li><li class="navelem"><a class="el" href="dir_63dbbe0c9ef58dada5545a2f8f9e86c7.html">ThingSmartBaseKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_0dbe5bd017feed32eec6ed56dfb54619.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_bcc193aa9e0ab747502242109be8215a.html">ThingSmartBaseKit.framework</a></li><li class="navelem"><a class="el" href="dir_1fb313f6f2d2c5034b6bf33b447d37dc.html">Headers</a></li><li class="navelem"><a class="el" href="ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_user_09_w_c_session_8h.html">ThingSmartUser+WCSession.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

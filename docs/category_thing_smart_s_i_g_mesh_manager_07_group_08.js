@@ -6,6 +6,8 @@ var category_thing_smart_s_i_g_mesh_manager_07_group_08 =
     [ "deleteDeviceToGroupWithDevId:groupAddress:", "category_thing_smart_s_i_g_mesh_manager_07_group_08.html#a53ef0cb9d16daf6fb6bed31337155007", null ],
     [ "findAllDevicesByVendorIdArray:", "category_thing_smart_s_i_g_mesh_manager_07_group_08.html#addc53075a51516a0d86aeb7bdf7cfc28", null ],
     [ "findAllDevicesByVendorIdArray:", "category_thing_smart_s_i_g_mesh_manager_07_group_08.html#addc53075a51516a0d86aeb7bdf7cfc28", null ],
+    [ "getSIGMeshSubDeviceList", "category_thing_smart_s_i_g_mesh_manager_07_group_08.html#aa1585f74cbb66ddb5b614584ac422d02", null ],
+    [ "getSIGMeshSubDeviceList", "category_thing_smart_s_i_g_mesh_manager_07_group_08.html#aa1585f74cbb66ddb5b614584ac422d02", null ],
     [ "handleDeviceToGroupWithDevId:groupAddress:isAdd:mainDevId:categoryCode:", "category_thing_smart_s_i_g_mesh_manager_07_group_08.html#aec8a5665e198b8af385eb297266e0e70", null ],
     [ "handleDeviceToGroupWithDevId:groupAddress:isAdd:mainDevId:categoryCode:", "category_thing_smart_s_i_g_mesh_manager_07_group_08.html#aec8a5665e198b8af385eb297266e0e70", null ],
     [ "queryGroupListWithDevid:", "category_thing_smart_s_i_g_mesh_manager_07_group_08.html#a13be6b07bc4792804273ddcc86daf5c7", null ],

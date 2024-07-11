@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: /Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingAnnotationFoundation/ThingAnnotationFoundation.xcframework/ios-x86_64-simulator/ThingAnnotationFoundation.framework/Headers/ThingAPIAnnotation.h Source File</title>
+<title>Tuya iOS Smart Life App SDK: ThingAnnotationFoundation/ThingAnnotationFoundation.xcframework/ios-x86_64-simulator/ThingAnnotationFoundation.framework/Headers/ThingAPIAnnotation.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -93,48 +94,42 @@ $(document).ready(function(){initNavTree('ios-x86__64-simulator_2_thing_annotati
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#import &quot;<a class="code" href="watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_register_a_p_i_protocol_8h.html">ThingRegisterAPIProtocol.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma mark ThingAnnotation</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">//实现协议，即提供协议</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//举例：ThingRegisterApiAnnotation(ThingLoginProtocol, ThingLoginProtocolImpl)</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//ThingLoginProtocol是登录协议 ThingLoginProtocolImpl是登录实现</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#a4669ed5f6a59cc264b802e737c5c2794">   13</a></span><span class="preprocessor">#define ThingRegisterAPIAnnotation(Protocol, IMPL) __ThingInterfaceAnnotation(Protocol,IMPL)</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//需要，可选协议。目前看可以只是用做脚本扫描，不需要记录数据到macho里面</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//举例：ThingRequireAPIAnnotation(ThingLoginProtocol)</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#ad68f7050563cd097ac3dd2af6076d65a">   17</a></span><span class="preprocessor">#define ThingRequireAPIAnnotation(Protocol)</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#a65efefe9609a8822dc76fae7eaac4308">   18</a></span><span class="preprocessor">#define ThingOptionalAPIAnnotation(Protocol)</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &lt;ThingMachRegister/ThingMachRegister.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#pragma mark ThingAnnotation</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//实现协议，即提供协议</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//举例：ThingRegisterApiAnnotation(ThingLoginProtocol, ThingLoginProtocolImpl)</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//ThingLoginProtocol是登录协议 ThingLoginProtocolImpl是登录实现</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#a4669ed5f6a59cc264b802e737c5c2794">   15</a></span><span class="preprocessor">#define ThingRegisterAPIAnnotation(Protocol, IMPL) __ThingInterfaceAnnotation(Protocol,IMPL)</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//需要，可选协议。目前看可以只是用做脚本扫描，不需要记录数据到macho里面</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//举例：ThingRequireAPIAnnotation(ThingLoginProtocol)</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#ad68f7050563cd097ac3dd2af6076d65a">   19</a></span><span class="preprocessor">#define ThingRequireAPIAnnotation(Protocol)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#a65efefe9609a8822dc76fae7eaac4308">   20</a></span><span class="preprocessor">#define ThingOptionalAPIAnnotation(Protocol)</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#pragma mark ThingAnnotationIMPL</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#ab898071398b359603a35c202e9c65f3b">   24</a></span><span class="keyword">extern</span> NSMutableArray *<a class="code hl_function" href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#a8f7ed06bc2dbc5daee7c49ed2be3f786">getProtocolSectionData</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#pragma mark ThingAnnotationIMPL</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_function" href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((packed)) {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * protocol;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * impl;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#a8c9a8fafa7305ac3c84ed1aadcd702ca">   29</a></span>} <a class="code hl_variable" href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#a8c9a8fafa7305ac3c84ed1aadcd702ca">_ThingMachRegisterProtocolStruct</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#adf3e1c2d5ea2c36656ea83aec0f5c39c">   32</a></span><span class="preprocessor">#define __ThingInterfaceAnnotation(Protocol,IMPL) \</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">static _ThingMachRegisterProtocolStruct  __##Protocol __attribute__((used, section(&quot;__RouterSection, Protocol&quot;</span>))) = {\</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>#Protocol,\</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>#IMPL,\</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="ttc" id="aios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h_html_a8c9a8fafa7305ac3c84ed1aadcd702ca"><div class="ttname"><a href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#a8c9a8fafa7305ac3c84ed1aadcd702ca">_ThingMachRegisterProtocolStruct</a></div><div class="ttdeci">_ThingMachRegisterProtocolStruct</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h_source.html#l00029">ThingAPIAnnotation.h:29</a></div></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#a8f7ed06bc2dbc5daee7c49ed2be3f786">   26</a></span><span class="keyword">extern</span> NSMutableArray *<a class="code hl_function" href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#a8f7ed06bc2dbc5daee7c49ed2be3f786">getProtocolSectionData</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#adf3e1c2d5ea2c36656ea83aec0f5c39c">   28</a></span><span class="preprocessor">#define __ThingInterfaceAnnotation(Protocol,IMPL) \</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">_ThingMachRegisterBase(_RegisterAPI_, Protocol, 0,\</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">NULL,\</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">(^id _Nonnull (NSString * t, NSString * k, NSUInteger p, id defaultV) { \</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">return @#IMPL;\</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">}))</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="ttc" id="aios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h_html_a8f7ed06bc2dbc5daee7c49ed2be3f786"><div class="ttname"><a href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#a8f7ed06bc2dbc5daee7c49ed2be3f786">getProtocolSectionData</a></div><div class="ttdeci">NSMutableArray * getProtocolSectionData(void)</div></div>
-<div class="ttc" id="aios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h_html_ab898071398b359603a35c202e9c65f3b"><div class="ttname"><a href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a></div><div class="ttdeci">struct __attribute__((packed))</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h_source.html#l00024">ThingAPIAnnotation.h:26</a></div></div>
 <div class="ttc" id="awatchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_register_a_p_i_protocol_8h_html"><div class="ttname"><a href="watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_register_a_p_i_protocol_8h.html">ThingRegisterAPIProtocol.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_350ab2d14705a2da30f5c4a8aeabf1fb.html">Volumes</a></li><li class="navelem"><a class="el" href="dir_b5508c5733aa93b21c7668144b6a10e6.html">work</a></li><li class="navelem"><a class="el" href="dir_9c2084141ba9d0a81a6d980b794b2bf3.html">source_code</a></li><li class="navelem"><a class="el" href="dir_9e235fb0c6055da3049adf9d594dd735.html">tuya</a></li><li class="navelem"><a class="el" href="dir_2eca0df6357931a63786b682b2a3523b.html">bizbundle</a></li><li class="navelem"><a class="el" href="dir_09caf3263995c8bca06aeee061548636.html">BizBundle</a></li><li class="navelem"><a class="el" href="dir_a739206a7d38e5a247a86838d8543d42.html">tuya-home-ios-sdk-sample-swift</a></li><li class="navelem"><a class="el" href="dir_36297105b3a1d1ff6152618f6a772449.html">Pods</a></li><li class="navelem"><a class="el" href="dir_85c2836c5b6c3385cd111a4fa9f33d92.html">ThingAnnotationFoundation</a></li><li class="navelem"><a class="el" href="dir_efa14d59099a1301ef35edeb053e6786.html">ThingAnnotationFoundation.xcframework</a></li><li class="navelem"><a class="el" href="dir_fb21caedaf1e7c40933e59c90128184b.html">ios-x86_64-simulator</a></li><li class="navelem"><a class="el" href="dir_cf42c3d99fa0ae8a80d5dd7b1577a3b1.html">ThingAnnotationFoundation.framework</a></li><li class="navelem"><a class="el" href="dir_76923f2f9162dbba1095c30f6b4adb87.html">Headers</a></li><li class="navelem"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html">ThingAPIAnnotation.h</a></li>
+    <li class="navelem"><a class="el" href="dir_91908d51dd475078c52a0ae1257c90df.html">ThingAnnotationFoundation</a></li><li class="navelem"><a class="el" href="dir_65d1bd719aea9d6480c77024f5b4586a.html">ThingAnnotationFoundation.xcframework</a></li><li class="navelem"><a class="el" href="dir_f0c107ecf8019a5be880e3c39a213b4e.html">ios-x86_64-simulator</a></li><li class="navelem"><a class="el" href="dir_47a0034c2dac1c2c628138bb54598142.html">ThingAnnotationFoundation.framework</a></li><li class="navelem"><a class="el" href="dir_ae6e40488caea4240b81a83dbe72d415.html">Headers</a></li><li class="navelem"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_a_p_i_annotation_8h.html">ThingAPIAnnotation.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

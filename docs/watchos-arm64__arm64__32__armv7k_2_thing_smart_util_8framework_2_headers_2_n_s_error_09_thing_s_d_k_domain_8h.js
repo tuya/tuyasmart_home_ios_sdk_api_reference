@@ -99,5 +99,6 @@ var watchos_arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_n
       [ "THING_GROUP_DEVICE_LIST_NOT_EMPTY", "watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_n_s_error_09_thing_s_d_k_domain_8h.html#a5d6e7308fddbab91ac31562f2e0bb1ceae7ea4aa5c311c4bbd803211c6fc41dec", null ],
       [ "THING_SOCKET_TCP_DISCONNECT", "watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_n_s_error_09_thing_s_d_k_domain_8h.html#a5d6e7308fddbab91ac31562f2e0bb1cea080b6e5f2c13d3e77b698bd0f653c0a1", null ],
       [ "THING_SOCKET_TCP_RESPONSE_ERROR", "watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_n_s_error_09_thing_s_d_k_domain_8h.html#a5d6e7308fddbab91ac31562f2e0bb1cea1bfad0b3ac6251873ca4269bcdc54a3d", null ]
-    ] ]
+    ] ],
+    [ "NS_ENUM", "watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_n_s_error_09_thing_s_d_k_domain_8h.html#a26feab86539aa9ab9e27d954ae16dfcb", null ]
 ];

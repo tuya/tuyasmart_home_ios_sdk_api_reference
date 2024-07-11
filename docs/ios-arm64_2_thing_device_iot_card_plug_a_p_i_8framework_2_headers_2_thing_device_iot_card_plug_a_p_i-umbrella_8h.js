@@ -1,0 +1,6 @@
+var ios_arm64_2_thing_device_iot_card_plug_a_p_i_8framework_2_headers_2_thing_device_iot_card_plug_a_p_i_umbrella_8h =
+[
+    [ "FOUNDATION_EXPORT", "ios-arm64_2_thing_device_iot_card_plug_a_p_i_8framework_2_headers_2_thing_device_iot_card_plug_a_p_i-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "ThingDeviceIotCardPlugAPIVersionNumber", "ios-arm64_2_thing_device_iot_card_plug_a_p_i_8framework_2_headers_2_thing_device_iot_card_plug_a_p_i-umbrella_8h.html#a2959aa61bec91400a74f70a803692171", null ],
+    [ "ThingDeviceIotCardPlugAPIVersionString", "ios-arm64_2_thing_device_iot_card_plug_a_p_i_8framework_2_headers_2_thing_device_iot_card_plug_a_p_i-umbrella_8h.html#a40ddcc7c5087577d738e6daafea977c7", null ]
+];

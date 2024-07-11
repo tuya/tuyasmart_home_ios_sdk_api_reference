@@ -22,5 +22,6 @@ var ios_arm64_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_t
     [ "ThingSmartActivatorTypeBroadbandModel", "interface_thing_smart_activator_type_broadband_model.html", "interface_thing_smart_activator_type_broadband_model" ],
     [ "ThingSmartActivatorTypeInstallCodeModel", "interface_thing_smart_activator_type_install_code_model.html", "interface_thing_smart_activator_type_install_code_model" ],
     [ "ThingSmartActivatorTypeBeaconModel", "interface_thing_smart_activator_type_beacon_model.html", null ],
+    [ "ThingSmartActivatorTypeGateway4GModel", "interface_thing_smart_activator_type_gateway4_g_model.html", "interface_thing_smart_activator_type_gateway4_g_model" ],
     [ "NS_ENUM", "ios-arm64_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smart_activator_type_model_8h.html#a33869cef6f15fa5031c00922866181cf", null ]
 ];

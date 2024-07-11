@@ -8,6 +8,8 @@ var protocol_thing_smart_s_i_g_mesh_manager_delegate_p =
     [ "didFinishToActiveDevList", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#ab2f32899ea634f4e0ed130b12d48bb83", null ],
     [ "didFinishToActiveDevList:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a7dbd7a0c20bdfb16b445135f4c5f8177", null ],
     [ "didFinishToActiveDevList:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a7dbd7a0c20bdfb16b445135f4c5f8177", null ],
+    [ "didProxyAndRelayStatusUpdated:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a41002c665b97d88ec5d10877003ef552", null ],
+    [ "didProxyAndRelayStatusUpdated:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a41002c665b97d88ec5d10877003ef552", null ],
     [ "listOfCustomModelIdWithSigMeshManager:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a63c0c1bed34209fab8bba1efee7a93c6", null ],
     [ "listOfCustomModelIdWithSigMeshManager:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a63c0c1bed34209fab8bba1efee7a93c6", null ],
     [ "newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a340ed31d15830885e3c4a6e64bc01302", null ],

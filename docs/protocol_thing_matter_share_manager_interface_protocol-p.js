@@ -1,0 +1,27 @@
+var protocol_thing_matter_share_manager_interface_protocol_p =
+[
+    [ "getDevicesFabricNodesWithdevIds:callback:", "protocol_thing_matter_share_manager_interface_protocol-p.html#acf0299245c6fc28901c32d59c7fcc3d6", null ],
+    [ "getDevicesFabricNodesWithdevIds:callback:", "protocol_thing_matter_share_manager_interface_protocol-p.html#acf0299245c6fc28901c32d59c7fcc3d6", null ],
+    [ "getDevicesFabricNodesWithdevIds:spaceId:callback:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a3183f5d99e564950c1f0caf40e9eb4c3", null ],
+    [ "getDevicesFabricNodesWithdevIds:spaceId:callback:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a3183f5d99e564950c1f0caf40e9eb4c3", null ],
+    [ "getDevicesLocalCacheFabricNodesWithdevIds:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a2d6594300b454229fb437b42f4147ea7", null ],
+    [ "getDevicesLocalCacheFabricNodesWithdevIds:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a2d6594300b454229fb437b42f4147ea7", null ],
+    [ "getMatterDeviceACLSyncStatusWithDevIds:success:failure:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a458645233e342e325ed3d2302a712cb3", null ],
+    [ "getMatterDeviceACLSyncStatusWithDevIds:success:failure:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a458645233e342e325ed3d2302a712cb3", null ],
+    [ "getMatterDeviceCachedACLSyncStatus", "protocol_thing_matter_share_manager_interface_protocol-p.html#a328b26d1619394ca9939138a675def4b", null ],
+    [ "getMatterDeviceCachedACLSyncStatus", "protocol_thing_matter_share_manager_interface_protocol-p.html#a328b26d1619394ca9939138a675def4b", null ],
+    [ "getMatterNodesCachedDeviceIds", "protocol_thing_matter_share_manager_interface_protocol-p.html#a0b8e5c16f02e0b35398f1f1084b04db8", null ],
+    [ "getMatterNodesCachedDeviceIds", "protocol_thing_matter_share_manager_interface_protocol-p.html#a0b8e5c16f02e0b35398f1f1084b04db8", null ],
+    [ "notifyAccessControlListWithDevId:success:failure:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a42a84ff3fb012415dd566a52e8e02350", null ],
+    [ "notifyAccessControlListWithDevId:success:failure:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a42a84ff3fb012415dd566a52e8e02350", null ],
+    [ "resetMatterNodes", "protocol_thing_matter_share_manager_interface_protocol-p.html#a0e8f941419cae2d5a943aaa00cf12457", null ],
+    [ "resetMatterNodes", "protocol_thing_matter_share_manager_interface_protocol-p.html#a0e8f941419cae2d5a943aaa00cf12457", null ],
+    [ "setMatterNodes:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a2cfcef3b687cecceaa116aaca7b40767", null ],
+    [ "setMatterNodes:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a2cfcef3b687cecceaa116aaca7b40767", null ],
+    [ "setMatterNodesCachedDevceIds:", "protocol_thing_matter_share_manager_interface_protocol-p.html#ae09c1b136b9c7220bff1a6edbb2f1197", null ],
+    [ "setMatterNodesCachedDevceIds:", "protocol_thing_matter_share_manager_interface_protocol-p.html#ae09c1b136b9c7220bff1a6edbb2f1197", null ],
+    [ "writeAccessControlListWithDevId:success:failure:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a508b8f6c19fa29d887ec08e42c9d60d5", null ],
+    [ "writeAccessControlListWithDevId:success:failure:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a508b8f6c19fa29d887ec08e42c9d60d5", null ],
+    [ "writeAccessControlListWithDevIds:callback:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a395dc948eed289ff374930c3fcaafad5", null ],
+    [ "writeAccessControlListWithDevIds:callback:", "protocol_thing_matter_share_manager_interface_protocol-p.html#a395dc948eed289ff374930c3fcaafad5", null ]
+];

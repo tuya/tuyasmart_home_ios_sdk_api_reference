@@ -1,0 +1,6 @@
+var ios_arm64_2_thing_smart_intelligence_module_8framework_2_headers_2_thing_smart_intelligence_module_umbrella_8h =
+[
+    [ "FOUNDATION_EXPORT", "ios-arm64_2_thing_smart_intelligence_module_8framework_2_headers_2_thing_smart_intelligence_module-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "ThingSmartIntelligenceModuleVersionNumber", "ios-arm64_2_thing_smart_intelligence_module_8framework_2_headers_2_thing_smart_intelligence_module-umbrella_8h.html#a1351fb7706ca40c0c25f61322f9c5d7f", null ],
+    [ "ThingSmartIntelligenceModuleVersionString", "ios-arm64_2_thing_smart_intelligence_module_8framework_2_headers_2_thing_smart_intelligence_module-umbrella_8h.html#aa151e15b40dbf8d152785ce54ca7d084", null ]
+];

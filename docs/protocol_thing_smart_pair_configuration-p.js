@@ -3,6 +3,8 @@ var protocol_thing_smart_pair_configuration_p =
     [ "apn", "protocol_thing_smart_pair_configuration-p.html#aeeb8512dbbdf21df2c79cf90fa187367", null ],
     [ "domainDic", "protocol_thing_smart_pair_configuration-p.html#aa84925aeae7baa49b00ea0074b973ee3", null ],
     [ "ecode", "protocol_thing_smart_pair_configuration-p.html#a38b31e5a6b7512261916c462be59b994", null ],
+    [ "enableEzDual", "protocol_thing_smart_pair_configuration-p.html#abf0b0efdb93977ed83282f68a1b811d0", null ],
+    [ "extendParams", "protocol_thing_smart_pair_configuration-p.html#a80d99798c4b75db11104a0446ec8ff20", null ],
     [ "gid", "protocol_thing_smart_pair_configuration-p.html#a4970f8aa58345fe2b97520824a460c0b", null ],
     [ "gwHost", "protocol_thing_smart_pair_configuration-p.html#a2425f4204ed5f13765a56ba7f24506eb", null ],
     [ "gwId", "protocol_thing_smart_pair_configuration-p.html#ae45c74048d11d8c81d8e0b1e82614ed3", null ],

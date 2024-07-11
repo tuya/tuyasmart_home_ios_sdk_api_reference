@@ -1,9 +1,9 @@
 var dir_79e5cf9d93c10ee34dab375b8129481a =
 [
     [ "ThingDeviceKitConfig.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_device_kit_config_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_device_kit_config_8h" ],
+    [ "ThingDiyHomeExtention.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_diy_home_extention_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_diy_home_extention_8h" ],
     [ "ThingHomeDataBuildMonitor.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_home_data_build_monitor_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_home_data_build_monitor_8h" ],
     [ "ThingHouseInformationBuildProtocol.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_house_information_build_protocol_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_house_information_build_protocol_8h" ],
-    [ "ThingSINodeProtocol.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_s_i_node_protocol_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_s_i_node_protocol_8h" ],
     [ "ThingSmartDevice+Home.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_device_09_home_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_device_09_home_8h" ],
     [ "ThingSmartDeviceKit.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_device_kit_8h.html", null ],
     [ "ThingSmartDeviceModel+Home.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_device_model_09_home_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_device_model_09_home_8h" ],
@@ -19,6 +19,8 @@ var dir_79e5cf9d93c10ee34dab375b8129481a =
     [ "ThingSmartHome+Weather.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_09_weather_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_09_weather_8h" ],
     [ "ThingSmartHome.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_8h" ],
     [ "ThingSmartHomeAddMemberRequestModel.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h" ],
+    [ "ThingSmartHomeCustomRoleListModel.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_custom_role_list_model_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_custom_role_list_model_8h" ],
+    [ "ThingSmartHomeCustomRoleRequestModel.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_custom_role_request_model_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_custom_role_request_model_8h" ],
     [ "ThingSmartHomeDeviceShare+ThingDeprecatedApi.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_device_share_09_thing_deprecated_api_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_device_share_09_thing_deprecated_api_8h" ],
     [ "ThingSmartHomeDeviceShare.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_device_share_8h.html", null ],
     [ "ThingSmartHomeInvitation.h", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_invitation_8h.html", "ios-arm64_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_invitation_8h" ],

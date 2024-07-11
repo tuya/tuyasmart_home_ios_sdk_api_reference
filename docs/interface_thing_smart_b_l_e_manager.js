@@ -158,6 +158,8 @@ var interface_thing_smart_b_l_e_manager =
     [ "startBleBeaconListening", "interface_thing_smart_b_l_e_manager.html#afc297f61a018f3d3bf94f7adde034a8f", null ],
     [ "startBleBeaconListeningWithDeviceId:", "interface_thing_smart_b_l_e_manager.html#abf823d365363945568dcbc7a7d0d4714", null ],
     [ "startBleBeaconListeningWithDeviceId:", "interface_thing_smart_b_l_e_manager.html#abf823d365363945568dcbc7a7d0d4714", null ],
+    [ "startCommRodScan", "interface_thing_smart_b_l_e_manager.html#a63c4415c3cab87dbd915a08817bd496c", null ],
+    [ "startCommRodScan", "interface_thing_smart_b_l_e_manager.html#a63c4415c3cab87dbd915a08817bd496c", null ],
     [ "startEnhancedQRListenWithCache:handler:configNotify:scanType:", "interface_thing_smart_b_l_e_manager.html#a75f711427102e6b4d601039a5a0a3ced", null ],
     [ "startEnhancedQRListenWithCache:handler:configNotify:scanType:", "interface_thing_smart_b_l_e_manager.html#a75f711427102e6b4d601039a5a0a3ced", null ],
     [ "startListenCore:handler:configNotify:scanType:", "interface_thing_smart_b_l_e_manager.html#aa016dff3eb2bf03e38b734a6525534d3", null ],

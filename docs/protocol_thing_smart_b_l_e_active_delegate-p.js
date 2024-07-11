@@ -18,6 +18,8 @@ var protocol_thing_smart_b_l_e_active_delegate_p =
     [ "registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:", "protocol_thing_smart_b_l_e_active_delegate-p.html#a8cc8559f43099512b326809d195b40a2", null ],
     [ "reportDps:devId:dpsTime:mode:reportType:", "protocol_thing_smart_b_l_e_active_delegate-p.html#a0e689c015d7f9093468c8e283e290b1d", null ],
     [ "reportDps:devId:dpsTime:mode:reportType:", "protocol_thing_smart_b_l_e_active_delegate-p.html#a0e689c015d7f9093468c8e283e290b1d", null ],
+    [ "reportDps:mac:dpsTime:mode:reportType:", "protocol_thing_smart_b_l_e_active_delegate-p.html#a9ce6fc4bf77d4a6a9c7f7c581c284677", null ],
+    [ "reportDps:mac:dpsTime:mode:reportType:", "protocol_thing_smart_b_l_e_active_delegate-p.html#a9ce6fc4bf77d4a6a9c7f7c581c284677", null ],
     [ "syncDeviceInfo:devId:handler:failure:", "protocol_thing_smart_b_l_e_active_delegate-p.html#a298af65d1980bc734414340fe5ee289f", null ],
     [ "syncDeviceInfo:devId:handler:failure:", "protocol_thing_smart_b_l_e_active_delegate-p.html#a298af65d1980bc734414340fe5ee289f", null ],
     [ "transEncKeyWithAdvModel:encKeyType:handler:failure:", "protocol_thing_smart_b_l_e_active_delegate-p.html#a557fc5f5a93f82fa9ed4d8dc44e77cd0", null ],

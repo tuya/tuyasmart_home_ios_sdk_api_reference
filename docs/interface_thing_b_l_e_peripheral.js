@@ -12,6 +12,8 @@ var interface_thing_b_l_e_peripheral =
     [ "readyToSendWriteWithoutResponseBlock", "interface_thing_b_l_e_peripheral.html#a0a7d051333101110250acaf4640e5911", null ],
     [ "retrieveServiceByUUID:", "interface_thing_b_l_e_peripheral.html#a4fa3e76361c7c92c7e4147123f631039", null ],
     [ "retrieveServiceByUUID:", "interface_thing_b_l_e_peripheral.html#a4fa3e76361c7c92c7e4147123f631039", null ],
+    [ "updatecbPeripheral:", "interface_thing_b_l_e_peripheral.html#a80fc669d2e352822fd0640f1375299f8", null ],
+    [ "updatecbPeripheral:", "interface_thing_b_l_e_peripheral.html#a80fc669d2e352822fd0640f1375299f8", null ],
     [ "advertisingData", "interface_thing_b_l_e_peripheral.html#aefb8719ed7625f2e6a12d25385b05be0", null ],
     [ "cbPeripheral", "interface_thing_b_l_e_peripheral.html#a525b839224cc96760bb046ca2e2e5b1a", null ],
     [ "didModifyServicesBlock", "interface_thing_b_l_e_peripheral.html#a7f73cf562eb2dbf1eb57d94eeff229d5", null ],

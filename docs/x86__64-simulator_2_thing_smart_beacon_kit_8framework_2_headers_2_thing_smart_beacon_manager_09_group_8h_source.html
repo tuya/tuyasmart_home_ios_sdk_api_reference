@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: /Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartBeaconKit/Build/ThingSmartBeaconKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBeaconKit.framework/Headers/ThingSmartBeaconManager+Group.h Source File</title>
+<title>Tuya iOS Smart Life App SDK: ThingSmartBeaconKit/Build/ThingSmartBeaconKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBeaconKit.framework/Headers/ThingSmartBeaconManager+Group.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -86,104 +87,105 @@ $(document).ready(function(){initNavTree('x86__64-simulator_2_thing_smart_beacon
 </div><!--header-->
 <div class="contents">
 <a href="x86__64-simulator_2_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// ThingSmartBLEManager.h</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// ThingSmartBLEKit</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//  ThingSmartBeaconManager+Group.h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  ThingSmartBeaconKit</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// Copyright (c) 2014-2021 Thing Inc. (https://developer.thing.com)</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//  Copyright (c) 2014-2024.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#import &quot;<a class="code" href="x86__64-simulator_2_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_8h.html">ThingSmartBeaconManager.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &lt;ThingSmartDeviceCoreKit/ThingSmartDeviceCoreKit.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>NS_ASSUME_NONNULL_BEGIN</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &quot;<a class="code" href="x86__64-simulator_2_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_8h.html">ThingSmartBeaconManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#import &lt;ThingSmartDeviceCoreKit/ThingSmartDeviceCoreKit.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>NS_ASSUME_NONNULL_BEGIN</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_smart_beacon_group_params_model.html">ThingSmartBeaconGroupParamsModel</a> : NSObject</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code hl_property" href="interface_thing_smart_beacon_group_params_model.html#aeb38c4815b7cf9a431cc4eb398e75e0b">groupName</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">@property</span> (nonatomic, assign) <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code hl_property" href="interface_thing_smart_beacon_group_params_model.html#a710db3ddcacbab4f02221e26b6350d1c">homeId</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code hl_property" href="interface_thing_smart_beacon_group_params_model.html#a7698e0e994c10d6c6e6f70c55ac5a7af">productId</a>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code hl_property" href="interface_thing_smart_beacon_group_params_model.html#a0f2c486916e5c793579b5cd6a905e6c8">beaconCategory</a>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="category_thing_smart_beacon_manager_07_group_08.html#afb6a7db89e4cec59850ce826478bdf88">   21</a></span><span class="keyword">@property</span> (nonatomic, assign) <a class="code hl_enumeration" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_group_model_8h.html#a61b8c89d047ed9bba54f4bec8ed5dd43">ThingSmartGroupType</a> <a class="code hl_property" href="interface_thing_smart_beacon_group_params_model.html#a987e1e37eb9270436fa226775053f5a5">groupType</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_smart_beacon_group_params_model.html">ThingSmartBeaconGroupParamsModel</a> : NSObject</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code hl_property" href="interface_thing_smart_beacon_group_params_model.html#aeb38c4815b7cf9a431cc4eb398e75e0b">groupName</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">@property</span> (nonatomic, assign) <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code hl_property" href="interface_thing_smart_beacon_group_params_model.html#a710db3ddcacbab4f02221e26b6350d1c">homeId</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code hl_property" href="interface_thing_smart_beacon_group_params_model.html#a7698e0e994c10d6c6e6f70c55ac5a7af">productId</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">@property</span> (nonatomic, strong) NSString *<a class="code hl_property" href="interface_thing_smart_beacon_group_params_model.html#a0f2c486916e5c793579b5cd6a905e6c8">beaconCategory</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="category_thing_smart_beacon_manager_07_group_08.html#afb6a7db89e4cec59850ce826478bdf88">   22</a></span><span class="keyword">@property</span> (nonatomic, assign) <a class="code hl_enumeration" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_group_model_8h.html#a61b8c89d047ed9bba54f4bec8ed5dd43">ThingSmartGroupType</a> <a class="code hl_property" href="interface_thing_smart_beacon_group_params_model.html#a987e1e37eb9270436fa226775053f5a5">groupType</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">@end</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">@interface </span><a class="code hl_category" href="category_thing_smart_beacon_manager_07_group_08.html">ThingSmartBeaconManager (Group)</a></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">@interface </span><a class="code hl_category" href="category_thing_smart_beacon_manager_07_group_08.html">ThingSmartBeaconManager (Group)</a></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>+ (void)createBeaconGroupWithGroupParams:(<a class="code hl_interface" href="interface_thing_smart_beacon_group_params_model.html">ThingSmartBeaconGroupParamsModel</a> *)paramsModel</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                                 success:(<span class="keywordtype">void</span>(^)(NSString *result))success</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                                 failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>+ (void)createBeaconGroupWithGroupName:(NSString *)groupName</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                                homeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                             productId:(NSString *)productId</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                                   pcc:(NSString *)beaconCategory</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                               success:(<span class="keywordtype">void</span>(^)(NSString *result))success</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                               failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>+ (void)createBeaconGroupWithGroupParams:(<a class="code hl_interface" href="interface_thing_smart_beacon_group_params_model.html">ThingSmartBeaconGroupParamsModel</a> *)paramsModel</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                                 success:(<span class="keywordtype">void</span>(^)(NSString *result))success</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                 failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>+ (void)createBeaconGroupWithGroupName:(NSString *)groupName</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                                homeId:(<span class="keywordtype">long</span> <span class="keywordtype">long</span>)homeId</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                             productId:(NSString *)productId</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                                   pcc:(NSString *)beaconCategory</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                               success:(<span class="keywordtype">void</span>(^)(NSString *result))success</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                               failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>- (void)addDeviceToGroupWithDevId:(NSString *)devId</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                          groupId:(NSString *)groupId</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                          success:(<span class="keywordtype">void</span>(^)(NSData *data))success</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                          failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>- (void)deleteDeviceFromGroupWithDevId:(NSString *)devId</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                               groupId:(NSString *)groupId</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                               success:(<span class="keywordtype">void</span>(^)(NSData *data))success</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                               failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>- (void)queryGroupsWithDevId:(NSString *)devId</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                     success:(<span class="keywordtype">void</span>(^)(NSData *data))success</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                     failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>- (void)publishGroupDps:(NSDictionary *)dps</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>             firstDevId:(NSString *)devId</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                groupId:(NSString *)groupId</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                success:(nullable <span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>- (void)addDeviceToGroupWithDevId:(NSString *)devId</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                          groupId:(NSString *)groupId</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                          success:(<span class="keywordtype">void</span>(^)(NSData *data))success</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                          failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>- (void)deleteDeviceFromGroupWithDevId:(NSString *)devId</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                               groupId:(NSString *)groupId</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                               success:(<span class="keywordtype">void</span>(^)(NSData *data))success</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                               failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>- (void)queryGroupsWithDevId:(NSString *)devId</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                     success:(<span class="keywordtype">void</span>(^)(NSData *data))success</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                     failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>- (void)publishGroupDps:(NSDictionary *)dps</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>             firstDevId:(NSString *)devId</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                groupId:(NSString *)groupId</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                success:(nullable <span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>- (void)removeDeviceGroupWithGroupId:(NSString *)groupId</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                            success:(nullable <span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                             failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>+ (void)addDeviceWithGroupId:(NSString *)groupId</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                    deviceId:(NSString *)deviceId</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                    success:(<span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                     failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>- (void)removeDeviceWithGroupId:(NSString *)groupId</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                       deviceId:(NSString *)deviceId</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                        success:(<span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                        failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>- (void)removeDeviceGroupWithGroupId:(NSString *)groupId</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                            success:(nullable <span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                             failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>+ (void)addDeviceWithGroupId:(NSString *)groupId</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                    deviceId:(NSString *)deviceId</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                    success:(<span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                     failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>- (void)removeDeviceWithGroupId:(NSString *)groupId</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                       deviceId:(NSString *)deviceId</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                        success:(<span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                        failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>+ (void)removeBeaconGroupGroupId:(NSString *)groupId</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                         success:(nullable <span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                         failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="keyword">@end</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>NS_ASSUME_NONNULL_END</div>
-<div class="ttc" id="acategory_thing_smart_beacon_manager_07_group_08_html"><div class="ttname"><a href="category_thing_smart_beacon_manager_07_group_08.html">ThingSmartBeaconManager(Group)</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00026">ThingSmartBeaconManager+Group.h:26</a></div></div>
-<div class="ttc" id="ainterface_thing_smart_beacon_group_params_model_html"><div class="ttname"><a href="interface_thing_smart_beacon_group_params_model.html">ThingSmartBeaconGroupParamsModel</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00015">ThingSmartBeaconManager+Group.h:16</a></div></div>
-<div class="ttc" id="ainterface_thing_smart_beacon_group_params_model_html_a0f2c486916e5c793579b5cd6a905e6c8"><div class="ttname"><a href="interface_thing_smart_beacon_group_params_model.html#a0f2c486916e5c793579b5cd6a905e6c8">ThingSmartBeaconGroupParamsModel::beaconCategory</a></div><div class="ttdeci">NSString * beaconCategory</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00020">ThingSmartBeaconManager+Group.h:20</a></div></div>
-<div class="ttc" id="ainterface_thing_smart_beacon_group_params_model_html_a710db3ddcacbab4f02221e26b6350d1c"><div class="ttname"><a href="interface_thing_smart_beacon_group_params_model.html#a710db3ddcacbab4f02221e26b6350d1c">ThingSmartBeaconGroupParamsModel::homeId</a></div><div class="ttdeci">long long homeId</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00018">ThingSmartBeaconManager+Group.h:18</a></div></div>
-<div class="ttc" id="ainterface_thing_smart_beacon_group_params_model_html_a7698e0e994c10d6c6e6f70c55ac5a7af"><div class="ttname"><a href="interface_thing_smart_beacon_group_params_model.html#a7698e0e994c10d6c6e6f70c55ac5a7af">ThingSmartBeaconGroupParamsModel::productId</a></div><div class="ttdeci">NSString * productId</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00019">ThingSmartBeaconManager+Group.h:19</a></div></div>
-<div class="ttc" id="ainterface_thing_smart_beacon_group_params_model_html_a987e1e37eb9270436fa226775053f5a5"><div class="ttname"><a href="interface_thing_smart_beacon_group_params_model.html#a987e1e37eb9270436fa226775053f5a5">ThingSmartBeaconGroupParamsModel::groupType</a></div><div class="ttdeci">ThingSmartGroupType groupType</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00021">ThingSmartBeaconManager+Group.h:21</a></div></div>
-<div class="ttc" id="ainterface_thing_smart_beacon_group_params_model_html_aeb38c4815b7cf9a431cc4eb398e75e0b"><div class="ttname"><a href="interface_thing_smart_beacon_group_params_model.html#aeb38c4815b7cf9a431cc4eb398e75e0b">ThingSmartBeaconGroupParamsModel::groupName</a></div><div class="ttdeci">NSString * groupName</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00017">ThingSmartBeaconManager+Group.h:17</a></div></div>
-<div class="ttc" id="aios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_group_model_8h_html_a61b8c89d047ed9bba54f4bec8ed5dd43"><div class="ttname"><a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_group_model_8h.html#a61b8c89d047ed9bba54f4bec8ed5dd43">ThingSmartGroupType</a></div><div class="ttdeci">ThingSmartGroupType</div><div class="ttdoc">The group type.</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_group_model_8h_source.html#l00011">ThingSmartGroupModel.h:11</a></div></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>+ (void)removeBeaconGroupGroupId:(NSString *)groupId</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                         success:(nullable <span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                         failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="acategory_thing_smart_beacon_manager_07_group_08_html"><div class="ttname"><a href="category_thing_smart_beacon_manager_07_group_08.html">ThingSmartBeaconManager(Group)</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00027">ThingSmartBeaconManager+Group.h:27</a></div></div>
+<div class="ttc" id="ainterface_thing_smart_beacon_group_params_model_html"><div class="ttname"><a href="interface_thing_smart_beacon_group_params_model.html">ThingSmartBeaconGroupParamsModel</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00016">ThingSmartBeaconManager+Group.h:17</a></div></div>
+<div class="ttc" id="ainterface_thing_smart_beacon_group_params_model_html_a0f2c486916e5c793579b5cd6a905e6c8"><div class="ttname"><a href="interface_thing_smart_beacon_group_params_model.html#a0f2c486916e5c793579b5cd6a905e6c8">ThingSmartBeaconGroupParamsModel::beaconCategory</a></div><div class="ttdeci">NSString * beaconCategory</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00021">ThingSmartBeaconManager+Group.h:21</a></div></div>
+<div class="ttc" id="ainterface_thing_smart_beacon_group_params_model_html_a710db3ddcacbab4f02221e26b6350d1c"><div class="ttname"><a href="interface_thing_smart_beacon_group_params_model.html#a710db3ddcacbab4f02221e26b6350d1c">ThingSmartBeaconGroupParamsModel::homeId</a></div><div class="ttdeci">long long homeId</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00019">ThingSmartBeaconManager+Group.h:19</a></div></div>
+<div class="ttc" id="ainterface_thing_smart_beacon_group_params_model_html_a7698e0e994c10d6c6e6f70c55ac5a7af"><div class="ttname"><a href="interface_thing_smart_beacon_group_params_model.html#a7698e0e994c10d6c6e6f70c55ac5a7af">ThingSmartBeaconGroupParamsModel::productId</a></div><div class="ttdeci">NSString * productId</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00020">ThingSmartBeaconManager+Group.h:20</a></div></div>
+<div class="ttc" id="ainterface_thing_smart_beacon_group_params_model_html_a987e1e37eb9270436fa226775053f5a5"><div class="ttname"><a href="interface_thing_smart_beacon_group_params_model.html#a987e1e37eb9270436fa226775053f5a5">ThingSmartBeaconGroupParamsModel::groupType</a></div><div class="ttdeci">ThingSmartGroupType groupType</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00022">ThingSmartBeaconManager+Group.h:22</a></div></div>
+<div class="ttc" id="ainterface_thing_smart_beacon_group_params_model_html_aeb38c4815b7cf9a431cc4eb398e75e0b"><div class="ttname"><a href="interface_thing_smart_beacon_group_params_model.html#aeb38c4815b7cf9a431cc4eb398e75e0b">ThingSmartBeaconGroupParamsModel::groupName</a></div><div class="ttdeci">NSString * groupName</div><div class="ttdef"><b>Definition:</b> <a href="_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h_source.html#l00018">ThingSmartBeaconManager+Group.h:18</a></div></div>
+<div class="ttc" id="aios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_group_model_8h_html_a61b8c89d047ed9bba54f4bec8ed5dd43"><div class="ttname"><a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_group_model_8h.html#a61b8c89d047ed9bba54f4bec8ed5dd43">ThingSmartGroupType</a></div><div class="ttdeci">ThingSmartGroupType</div><div class="ttdoc">The group type.</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_group_model_8h_source.html#l00012">ThingSmartGroupModel.h:12</a></div></div>
 <div class="ttc" id="ax86__64-simulator_2_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_8h_html"><div class="ttname"><a href="x86__64-simulator_2_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_8h.html">ThingSmartBeaconManager.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_350ab2d14705a2da30f5c4a8aeabf1fb.html">Volumes</a></li><li class="navelem"><a class="el" href="dir_b5508c5733aa93b21c7668144b6a10e6.html">work</a></li><li class="navelem"><a class="el" href="dir_9c2084141ba9d0a81a6d980b794b2bf3.html">source_code</a></li><li class="navelem"><a class="el" href="dir_9e235fb0c6055da3049adf9d594dd735.html">tuya</a></li><li class="navelem"><a class="el" href="dir_2eca0df6357931a63786b682b2a3523b.html">bizbundle</a></li><li class="navelem"><a class="el" href="dir_09caf3263995c8bca06aeee061548636.html">BizBundle</a></li><li class="navelem"><a class="el" href="dir_a739206a7d38e5a247a86838d8543d42.html">tuya-home-ios-sdk-sample-swift</a></li><li class="navelem"><a class="el" href="dir_36297105b3a1d1ff6152618f6a772449.html">Pods</a></li><li class="navelem"><a class="el" href="dir_b529cc937e2a7f1122ed35ac30bf8458.html">ThingSmartBeaconKit</a></li><li class="navelem"><a class="el" href="dir_7796692d4657437fd50229a25392682c.html">Build</a></li><li class="navelem"><a class="el" href="dir_aa5091255851cb2882e4aec1e7487d12.html">ThingSmartBeaconKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_36f02b568a1026fa991b39f7448c2c9e.html">ios-arm64_x86_64-simulator</a></li><li class="navelem"><a class="el" href="dir_52cf05b34da010985f537010587e72fb.html">ThingSmartBeaconKit.framework</a></li><li class="navelem"><a class="el" href="dir_42988397ff2479f1bc9d4ee61381d6b9.html">Headers</a></li><li class="navelem"><a class="el" href="x86__64-simulator_2_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h.html">ThingSmartBeaconManager+Group.h</a></li>
+    <li class="navelem"><a class="el" href="dir_e0aec2257e3d626727425be454a83964.html">ThingSmartBeaconKit</a></li><li class="navelem"><a class="el" href="dir_0f6ee1110c7a9dd3d0ed1f673ed1953b.html">Build</a></li><li class="navelem"><a class="el" href="dir_38bab3e2e447467791dc20e6aec52c31.html">ThingSmartBeaconKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_b1d780c0d2edcb2d917110507c9ca675.html">ios-arm64_x86_64-simulator</a></li><li class="navelem"><a class="el" href="dir_e1f0e705ef96edaf3527b7201be2f1b7.html">ThingSmartBeaconKit.framework</a></li><li class="navelem"><a class="el" href="dir_3037777789545dcc130f1c9082c141bc.html">Headers</a></li><li class="navelem"><a class="el" href="x86__64-simulator_2_thing_smart_beacon_kit_8framework_2_headers_2_thing_smart_beacon_manager_09_group_8h.html">ThingSmartBeaconManager+Group.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

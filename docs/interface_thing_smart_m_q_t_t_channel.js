@@ -6,6 +6,8 @@ var interface_thing_smart_m_q_t_t_channel =
     [ "close", "interface_thing_smart_m_q_t_t_channel.html#a292958d9acddb8b8720ba19bd63d18fd", null ],
     [ "connectState", "interface_thing_smart_m_q_t_t_channel.html#a9149baeb764d5a438237b01edde6316b", null ],
     [ "connectState", "interface_thing_smart_m_q_t_t_channel.html#a9149baeb764d5a438237b01edde6316b", null ],
+    [ "hasSubscribedTopic:", "interface_thing_smart_m_q_t_t_channel.html#a75f7ca4a0ab0d96ecfec1c82e11e5894", null ],
+    [ "hasSubscribedTopic:", "interface_thing_smart_m_q_t_t_channel.html#a75f7ca4a0ab0d96ecfec1c82e11e5894", null ],
     [ "publishMessage:topic:success:failure:", "interface_thing_smart_m_q_t_t_channel.html#ad54945e1095fca22a8014ca0c80598fe", null ],
     [ "publishMessage:topic:success:failure:", "interface_thing_smart_m_q_t_t_channel.html#ad54945e1095fca22a8014ca0c80598fe", null ],
     [ "publishMessageWithMessageModel:topic:success:failure:", "interface_thing_smart_m_q_t_t_channel.html#a965d61afc401d64e769fefc29ebc812d", null ],

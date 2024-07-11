@@ -2,6 +2,8 @@ var interface_thing_smart_directly_connected_activator =
 [
     [ "activeDirectlyConnectedDeviceWithDevieId:timeout:", "interface_thing_smart_directly_connected_activator.html#ad5d71ba998b3fb772da956b88f17c8f8", null ],
     [ "activeDirectlyConnectedDeviceWithDevieId:timeout:", "interface_thing_smart_directly_connected_activator.html#ad5d71ba998b3fb772da956b88f17c8f8", null ],
+    [ "deviceCloudActivateWithModel:success:failure:", "interface_thing_smart_directly_connected_activator.html#a392db00d55e26107e898d17cf3f1b95a", null ],
+    [ "deviceCloudActivateWithModel:success:failure:", "interface_thing_smart_directly_connected_activator.html#a392db00d55e26107e898d17cf3f1b95a", null ],
     [ "deviceCloudActivateWithUUID:groupId:groupType:success:failure:", "interface_thing_smart_directly_connected_activator.html#ac1736154f2a2ffd59c8d194cf05cd344", null ],
     [ "deviceCloudActivateWithUUID:groupId:groupType:success:failure:", "interface_thing_smart_directly_connected_activator.html#ac1736154f2a2ffd59c8d194cf05cd344", null ],
     [ "startSearchDevice", "interface_thing_smart_directly_connected_activator.html#ad8325fd8784b6665064e2a7e37086b58", null ],

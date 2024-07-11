@@ -24,5 +24,6 @@ var x86__64_simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_
       [ "ThingSmartBLETypeBLELTESecurity", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h.html#aee44427e147a215862d177a5662f087daf66eb1b2b7cd19d69bee2c2da6fee104", null ],
       [ "ThingSmartBLETypeBLEBeacon", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h.html#aee44427e147a215862d177a5662f087dac966c0edc87e49313ab9b8e3163cbe61", null ],
       [ "ThingSmartBLETypeBLEWifiPriorBLE", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h.html#aee44427e147a215862d177a5662f087da5ad33731fe7719d99ab480e639a3ffc9", null ]
-    ] ]
+    ] ],
+    [ "NS_OPTIONS", "x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h.html#a69cfae4ec28682aa247e2fa2e8c8000d", null ]
 ];

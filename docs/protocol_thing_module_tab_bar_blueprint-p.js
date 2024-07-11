@@ -44,6 +44,8 @@ var protocol_thing_module_tab_bar_blueprint_p =
     [ "setTabSeparatorImage:", "protocol_thing_module_tab_bar_blueprint-p.html#a4a9223d0f83f9693156d7f2626bffdb2", null ],
     [ "showTabWithIndex:", "protocol_thing_module_tab_bar_blueprint-p.html#a9d7c00b46df4f7a177543261821f8484", null ],
     [ "showTabWithIndex:", "protocol_thing_module_tab_bar_blueprint-p.html#a9d7c00b46df4f7a177543261821f8484", null ],
+    [ "showTabWithIndex:animated:", "protocol_thing_module_tab_bar_blueprint-p.html#af1053df25844979b4c27181bfae81a5c", null ],
+    [ "showTabWithIndex:animated:", "protocol_thing_module_tab_bar_blueprint-p.html#af1053df25844979b4c27181bfae81a5c", null ],
     [ "showTabWithModule:", "protocol_thing_module_tab_bar_blueprint-p.html#a5eae099059edae71631bb562beb17eaf", null ],
     [ "showTabWithModule:", "protocol_thing_module_tab_bar_blueprint-p.html#a5eae099059edae71631bb562beb17eaf", null ],
     [ "showTabWithModule:tag:", "protocol_thing_module_tab_bar_blueprint-p.html#aac3c948f9aad29b97bd8b5889530050d", null ],

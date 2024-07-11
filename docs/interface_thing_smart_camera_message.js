@@ -1,0 +1,27 @@
+var interface_thing_smart_camera_message =
+[
+    [ "cancelDownloadMessageAttachment:", "interface_thing_smart_camera_message.html#a8df64209cfdf928059feb8da2b269503", null ],
+    [ "cancelDownloadMessageAttachment:", "interface_thing_smart_camera_message.html#a8df64209cfdf928059feb8da2b269503", null ],
+    [ "getMessageSchemes:failure:", "interface_thing_smart_camera_message.html#a87b9da9d14bd48ba03f039e600c669bc", null ],
+    [ "getMessageSchemes:failure:", "interface_thing_smart_camera_message.html#a87b9da9d14bd48ba03f039e600c669bc", null ],
+    [ "initWithDeviceId:timeZone:", "interface_thing_smart_camera_message.html#a496c81a3947c9f5ae525335517514806", null ],
+    [ "initWithDeviceId:timeZone:", "interface_thing_smart_camera_message.html#a496c81a3947c9f5ae525335517514806", null ],
+    [ "messageDaysForYear:month:success:failure:", "interface_thing_smart_camera_message.html#a11da6d05f07c56387fa3215f46751c08", null ],
+    [ "messageDaysForYear:month:success:failure:", "interface_thing_smart_camera_message.html#a11da6d05f07c56387fa3215f46751c08", null ],
+    [ "messagesWithMessageCodes:offset:limit:startTime:endTime:customParams:success:failure:", "interface_thing_smart_camera_message.html#a967957f3e5428c4e6373752b46a70eec", null ],
+    [ "messagesWithMessageCodes:offset:limit:startTime:endTime:customParams:success:failure:", "interface_thing_smart_camera_message.html#a967957f3e5428c4e6373752b46a70eec", null ],
+    [ "messagesWithMessageCodes:Offset:limit:startTime:endTime:success:failure:", "interface_thing_smart_camera_message.html#ac301f4dadfca579c27bf642011c35757", null ],
+    [ "messagesWithMessageCodes:Offset:limit:startTime:endTime:success:failure:", "interface_thing_smart_camera_message.html#ac301f4dadfca579c27bf642011c35757", null ],
+    [ "removeMessagesWithMessageIds:success:failure:", "interface_thing_smart_camera_message.html#aa6fa72c065290df6a5fad9062b0a3dea", null ],
+    [ "removeMessagesWithMessageIds:success:failure:", "interface_thing_smart_camera_message.html#aa6fa72c065290df6a5fad9062b0a3dea", null ],
+    [ "startDownloadMessageAttachmentWithMeesageModel:attachType:filePath:success:progress:failure:", "interface_thing_smart_camera_message.html#ad8d1f6e0c5b7c6aecb2fddd832462a17", null ],
+    [ "startDownloadMessageAttachmentWithMeesageModel:attachType:filePath:success:progress:failure:", "interface_thing_smart_camera_message.html#ad8d1f6e0c5b7c6aecb2fddd832462a17", null ],
+    [ "startDownloadMessageAttachmentWithUrl:attachType:filePath:rotateDirection:success:progress:failure:", "interface_thing_smart_camera_message.html#a5c4a1863026f1b84c7095ceb61b8069b", null ],
+    [ "startDownloadMessageAttachmentWithUrl:attachType:filePath:rotateDirection:success:progress:failure:", "interface_thing_smart_camera_message.html#a5c4a1863026f1b84c7095ceb61b8069b", null ],
+    [ "startDownloadMessageAttachmentWithUrl:attachType:filePath:success:progress:failure:", "interface_thing_smart_camera_message.html#a68c9f35e27b78bfa67bc3e2a5338858e", null ],
+    [ "startDownloadMessageAttachmentWithUrl:attachType:filePath:success:progress:failure:", "interface_thing_smart_camera_message.html#a68c9f35e27b78bfa67bc3e2a5338858e", null ],
+    [ "startDownloadMessageImageOrVideoWithUrl:attachType:filePath:rotateDirection:mirrorDirection:success:progress:failure:", "interface_thing_smart_camera_message.html#a5f2737ec37b192087c3ead54c7f2bfe8", null ],
+    [ "startDownloadMessageImageOrVideoWithUrl:attachType:filePath:rotateDirection:mirrorDirection:success:progress:failure:", "interface_thing_smart_camera_message.html#a5f2737ec37b192087c3ead54c7f2bfe8", null ],
+    [ "enableEncryptedImage", "interface_thing_smart_camera_message.html#a54fe6cfe58761759bcd9e9c7f82967cb", null ],
+    [ "timeZone", "interface_thing_smart_camera_message.html#ab3d3d7dd265cead2322e1d140dfaa407", null ]
+];

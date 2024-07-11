@@ -1,0 +1,6 @@
+var _thing_o_t_a_general_external_a_p_i_8framework_2_headers_2_thing_o_t_a_general_external_a_p_i_umbrella_8h =
+[
+    [ "FOUNDATION_EXPORT", "_thing_o_t_a_general_external_a_p_i_8framework_2_headers_2_thing_o_t_a_general_external_a_p_i-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "ThingOTAGeneralExternalAPIVersionNumber", "_thing_o_t_a_general_external_a_p_i_8framework_2_headers_2_thing_o_t_a_general_external_a_p_i-umbrella_8h.html#aa3dc86756084d4fde6ea11b6cc7146e6", null ],
+    [ "ThingOTAGeneralExternalAPIVersionString", "_thing_o_t_a_general_external_a_p_i_8framework_2_headers_2_thing_o_t_a_general_external_a_p_i-umbrella_8h.html#afcbc77736152c141a90f030e89524c40", null ]
+];

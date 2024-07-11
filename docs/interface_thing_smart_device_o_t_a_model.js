@@ -19,8 +19,10 @@ var interface_thing_smart_device_o_t_a_model =
     [ "beaconCategory", "interface_thing_smart_device_o_t_a_model.html#a8c48191085e06d583345810c0afdf127", null ],
     [ "beaconKey", "interface_thing_smart_device_o_t_a_model.html#a64f24426963554f0f5a9952f9c23be0a", null ],
     [ "bluetoothCapability", "interface_thing_smart_device_o_t_a_model.html#a740c4c4341ec34fefff2b8216bf2c8dd", null ],
+    [ "cloudConnectLastUpdateTime", "interface_thing_smart_device_o_t_a_model.html#ab17ecec844831b074df5a793e8435d92", null ],
     [ "devId", "interface_thing_smart_device_o_t_a_model.html#a8c25cbe58b9bea548fc4372aa3db5544", null ],
     [ "gwBTSubDevOtaCap", "interface_thing_smart_device_o_t_a_model.html#a4f7eff788500df75110f1fde590597ad", null ],
+    [ "localConnectLastUpdateTime", "interface_thing_smart_device_o_t_a_model.html#a1b11b4c4701301146c64488de4b16a30", null ],
     [ "otaUpgradeStatus", "interface_thing_smart_device_o_t_a_model.html#a880170cda05bc9151e7053b1a25860bf", null ],
     [ "zigbeeInstallCode", "interface_thing_smart_device_o_t_a_model.html#ac5c35818c7fc3fde491d06ff73d5d0a4", null ]
 ];

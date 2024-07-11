@@ -1,0 +1,9 @@
+var ios_arm64_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_cancel_alarm_action_8h =
+[
+    [ "ThingSecurityCancelAlarmAction", "ios-arm64_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_cancel_alarm_action_8h.html#ae4732b592e626f67009f8e93a770c46c", [
+      [ "ThingSecurityCancelAlarmActionActionCancelAlarm", "ios-arm64_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_cancel_alarm_action_8h.html#ae4732b592e626f67009f8e93a770c46ca6a6aa204dddaad7fdb09d56acf783abe", null ],
+      [ "ThingSecurityCancelAlarmActionActionCancelAlarmDisarm", "ios-arm64_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_cancel_alarm_action_8h.html#ae4732b592e626f67009f8e93a770c46ca78cffcd2b7acb6957f8b0fe600649278", null ],
+      [ "ThingSecurityCancelAlarmActionActionCancelAlarm", "ios-x86__64-simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_cancel_alarm_action_8h.html#ae4732b592e626f67009f8e93a770c46ca6a6aa204dddaad7fdb09d56acf783abe", null ],
+      [ "ThingSecurityCancelAlarmActionActionCancelAlarmDisarm", "ios-x86__64-simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_cancel_alarm_action_8h.html#ae4732b592e626f67009f8e93a770c46ca78cffcd2b7acb6957f8b0fe600649278", null ]
+    ] ]
+];

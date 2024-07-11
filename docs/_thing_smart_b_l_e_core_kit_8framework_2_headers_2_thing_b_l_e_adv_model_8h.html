@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: /Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartBLECoreKit/Build/ThingSmartBLECoreKit.xcframework/ios-arm64/ThingSmartBLECoreKit.framework/Headers/ThingBLEAdvModel.h File Reference</title>
+<title>Tuya iOS Smart Life App SDK: ThingSmartBLECoreKit/Build/ThingSmartBLECoreKit.xcframework/ios-arm64/ThingSmartBLECoreKit.framework/Headers/ThingBLEAdvModel.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -84,7 +85,8 @@ $(document).ready(function(){initNavTree('_thing_smart_b_l_e_core_kit_8framework
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">ThingBLEAdvModel.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -131,6 +133,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aee44427e147a215862d177a5662f087d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The different types of Bluetooth LE devices.  <a href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h.html#aee44427e147a215862d177a5662f087d">More...</a><br /></td></tr>
 <tr class="separator:aee44427e147a215862d177a5662f087d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a69cfae4ec28682aa247e2fa2e8c8000d"><td class="memItemLeft" align="right" valign="top">typedef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h.html#a69cfae4ec28682aa247e2fa2e8c8000d">NS_OPTIONS</a> (NSUInteger, ThingSmartBLECommunicationCapability)</td></tr>
+<tr class="memdesc:a69cfae4ec28682aa247e2fa2e8c8000d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The communication capability of Bluetooth LE devices.  <a href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h.html#a69cfae4ec28682aa247e2fa2e8c8000d">More...</a><br /></td></tr>
+<tr class="separator:a69cfae4ec28682aa247e2fa2e8c8000d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="aee44427e147a215862d177a5662f087d" name="aee44427e147a215862d177a5662f087d"></a>
@@ -197,12 +205,55 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a69cfae4ec28682aa247e2fa2e8c8000d" name="a69cfae4ec28682aa247e2fa2e8c8000d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69cfae4ec28682aa247e2fa2e8c8000d">&#9670;&nbsp;</a></span>NS_OPTIONS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef NS_OPTIONS </td>
+          <td>(</td>
+          <td class="paramtype">NSUInteger&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ThingSmartBLECommunicationCapability&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The communication capability of Bluetooth LE devices. </p>
+<p >Register and bind devices through BLE</p>
+<p >Support MESH</p>
+<p >Capable of WiFi 2.4G communication and only supports dual-mode devices</p>
+<p >Capable of WiFi 5G communication and only supports dual-mode devices</p>
+<p >Capable of Zigbee communication</p>
+<p >Having NB communication capability</p>
+<p >Having Cellular communication capability</p>
+<p >Capable of WiFi 2.4G communication, only suitable for BLE+X device form</p>
+<p >Capable of WiFi 5G communication, only suitable for BLE+X device form</p>
+<p >Capable of wired communication (Ethernet)</p>
+
+<p class="definition">Definition at line <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source.html#l00034">34</a> of file <a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source.html">ThingBLEAdvModel.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_350ab2d14705a2da30f5c4a8aeabf1fb.html">Volumes</a></li><li class="navelem"><a class="el" href="dir_b5508c5733aa93b21c7668144b6a10e6.html">work</a></li><li class="navelem"><a class="el" href="dir_9c2084141ba9d0a81a6d980b794b2bf3.html">source_code</a></li><li class="navelem"><a class="el" href="dir_9e235fb0c6055da3049adf9d594dd735.html">tuya</a></li><li class="navelem"><a class="el" href="dir_2eca0df6357931a63786b682b2a3523b.html">bizbundle</a></li><li class="navelem"><a class="el" href="dir_09caf3263995c8bca06aeee061548636.html">BizBundle</a></li><li class="navelem"><a class="el" href="dir_a739206a7d38e5a247a86838d8543d42.html">tuya-home-ios-sdk-sample-swift</a></li><li class="navelem"><a class="el" href="dir_36297105b3a1d1ff6152618f6a772449.html">Pods</a></li><li class="navelem"><a class="el" href="dir_268a6750cb78b0c0d1b883ebe22bebc0.html">ThingSmartBLECoreKit</a></li><li class="navelem"><a class="el" href="dir_6ed5cc6c092ac8e5cd1a3c1e7852247a.html">Build</a></li><li class="navelem"><a class="el" href="dir_6cc2c577565a5488524b1c18560c2865.html">ThingSmartBLECoreKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_f23817b49d5b4c0bbcb5ddbb1a6b71cd.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_27765670a2b97cc07d66d02ffc2a5ff4.html">ThingSmartBLECoreKit.framework</a></li><li class="navelem"><a class="el" href="dir_e8d41dc3b19c72d338af15a1e64af9e6.html">Headers</a></li><li class="navelem"><a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h.html">ThingBLEAdvModel.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2682697f5ddf908ef75acdcfa469254e.html">ThingSmartBLECoreKit</a></li><li class="navelem"><a class="el" href="dir_71439560948c5f228564071db16d5caa.html">Build</a></li><li class="navelem"><a class="el" href="dir_34dc258e88d14a4fe28e52a698fc5e6b.html">ThingSmartBLECoreKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_d3a32a6a00ac49827a1297ea7c6d89ae.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_7ff6fa9933ba5ab7f77a4a0e8c048d37.html">ThingSmartBLECoreKit.framework</a></li><li class="navelem"><a class="el" href="dir_3887f773b92ce0b682698bf2a316fd4f.html">Headers</a></li><li class="navelem"><a class="el" href="_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h.html">ThingBLEAdvModel.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

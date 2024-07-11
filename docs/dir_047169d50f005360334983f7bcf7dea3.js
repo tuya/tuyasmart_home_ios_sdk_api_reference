@@ -1,0 +1,4 @@
+var dir_047169d50f005360334983f7bcf7dea3 =
+[
+    [ "ThingDeviceShareModulePlugAPI-umbrella.h", "_thing_device_share_module_plug_a_p_i_8framework_2_headers_2_thing_device_share_module_plug_a_p_i-umbrella_8h.html", "_thing_device_share_module_plug_a_p_i_8framework_2_headers_2_thing_device_share_module_plug_a_p_i-umbrella_8h" ]
+];

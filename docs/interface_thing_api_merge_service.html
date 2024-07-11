@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -254,6 +255,14 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a14500784e53d9388427098bf25a374d3 inherit pub_methods_interface_thing_smart_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14500784e53d9388427098bf25a374d3 inherit pub_methods_interface_thing_smart_request"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_request.html#a14500784e53d9388427098bf25a374d3">requestPostDataEncryptWithApiName:parameter:voiceData:version:success:failure:</a></td></tr>
 <tr class="separator:a14500784e53d9388427098bf25a374d3 inherit pub_methods_interface_thing_smart_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4997f350309fbb5325c2790b5960d1 inherit pub_methods_interface_thing_smart_request"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_request.html#a6f4997f350309fbb5325c2790b5960d1">customTokenRefreshWithDomain:apiName:params:commonParams:httpMethod:success:failure:</a></td></tr>
+<tr class="separator:a6f4997f350309fbb5325c2790b5960d1 inherit pub_methods_interface_thing_smart_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4997f350309fbb5325c2790b5960d1 inherit pub_methods_interface_thing_smart_request"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_request.html#a6f4997f350309fbb5325c2790b5960d1">customTokenRefreshWithDomain:apiName:params:commonParams:httpMethod:success:failure:</a></td></tr>
+<tr class="separator:a6f4997f350309fbb5325c2790b5960d1 inherit pub_methods_interface_thing_smart_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4997f350309fbb5325c2790b5960d1 inherit pub_methods_interface_thing_smart_request"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_request.html#a6f4997f350309fbb5325c2790b5960d1">customTokenRefreshWithDomain:apiName:params:commonParams:httpMethod:success:failure:</a></td></tr>
+<tr class="separator:a6f4997f350309fbb5325c2790b5960d1 inherit pub_methods_interface_thing_smart_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4997f350309fbb5325c2790b5960d1 inherit pub_methods_interface_thing_smart_request"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_smart_request.html#a6f4997f350309fbb5325c2790b5960d1">customTokenRefreshWithDomain:apiName:params:commonParams:httpMethod:success:failure:</a></td></tr>
+<tr class="separator:a6f4997f350309fbb5325c2790b5960d1 inherit pub_methods_interface_thing_smart_request"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -325,7 +334,7 @@ Additional Inherited Members</h2></td></tr>
 </ol>
 <p >@discussion Due to HTTP/2 multiplexing technology, it is not recommend for use now. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html#l00024">24</a> of file <a class="el" href="ios-arm64_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html">ThingApiMergeService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html#l00025">25</a> of file <a class="el" href="ios-arm64_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html">ThingApiMergeService.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a id="a737b384e08ea0b832a3576629233987c" name="a737b384e08ea0b832a3576629233987c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a737b384e08ea0b832a3576629233987c">&#9670;&nbsp;</a></span>addApiRequest:postData:version: <span class="overload">[1/4]</span></h2>
@@ -516,7 +525,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="ios-x86__64-simulator_2_thing_group_handle_skt_a_p_i_8framework_2_headers_2_thing_business_group_protocol_8h.html#a2c44777df30b21b7a4f2f140f9a944d6">ThingFailureError</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -558,7 +567,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="ios-x86__64-simulator_2_thing_group_handle_skt_a_p_i_8framework_2_headers_2_thing_business_group_protocol_8h.html#a2c44777df30b21b7a4f2f140f9a944d6">ThingFailureError</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -600,7 +609,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="ios-x86__64-simulator_2_thing_group_handle_skt_a_p_i_8framework_2_headers_2_thing_business_group_protocol_8h.html#a2c44777df30b21b7a4f2f140f9a944d6">ThingFailureError</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -642,7 +651,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(nullable <a class="el" href="ios-x86__64-simulator_2_thing_group_handle_skt_a_p_i_8framework_2_headers_2_thing_business_group_protocol_8h.html#a2c44777df30b21b7a4f2f140f9a944d6">ThingFailureError</a>)&#160;</td>
+          <td class="paramtype">(nullable <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h.html#a74d8849f89dd63458019fd96fd106f98">ThingFailureError</a>)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -684,15 +693,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html#l00026">26</a> of file <a class="el" href="ios-arm64_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html">ThingApiMergeService.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html#l00027">27</a> of file <a class="el" href="ios-arm64_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html">ThingApiMergeService.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartNetworkKit/Build/ThingSmartNetworkKit.xcframework/ios-arm64/ThingSmartNetworkKit.framework/Headers/<a class="el" href="ios-arm64_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html">ThingApiMergeService.h</a></li>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartNetworkKit/Build/ThingSmartNetworkKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartNetworkKit.framework/Headers/<a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html">ThingApiMergeService.h</a></li>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartNetworkKit/Build/ThingSmartNetworkKit.xcframework/watchos-arm64_arm64_32_armv7k/ThingSmartNetworkKit.framework/Headers/<a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html">ThingApiMergeService.h</a></li>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartNetworkKit/Build/ThingSmartNetworkKit.xcframework/watchos-arm64_i386_x86_64-simulator/ThingSmartNetworkKit.framework/Headers/<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html">ThingApiMergeService.h</a></li>
+<li>ThingSmartNetworkKit/Build/ThingSmartNetworkKit.xcframework/ios-arm64/ThingSmartNetworkKit.framework/Headers/<a class="el" href="ios-arm64_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html">ThingApiMergeService.h</a></li>
+<li>ThingSmartNetworkKit/Build/ThingSmartNetworkKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartNetworkKit.framework/Headers/<a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html">ThingApiMergeService.h</a></li>
+<li>ThingSmartNetworkKit/Build/ThingSmartNetworkKit.xcframework/watchos-arm64_arm64_32_armv7k/ThingSmartNetworkKit.framework/Headers/<a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html">ThingApiMergeService.h</a></li>
+<li>ThingSmartNetworkKit/Build/ThingSmartNetworkKit.xcframework/watchos-arm64_i386_x86_64-simulator/ThingSmartNetworkKit.framework/Headers/<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source.html">ThingApiMergeService.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

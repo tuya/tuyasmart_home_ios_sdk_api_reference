@@ -1,0 +1,4 @@
+var dir_930bf813b76fdf932eb7bc44d2a94168 =
+[
+    [ "ThingDeviceDetectionNetworkPlugAPI-umbrella.h", "ios-x86__64-simulator_2_thing_device_detection_network_plug_a_p_i_8framework_2_headers_2_thing_d2b1c9b4cb998b9b7af73b24eed714d06.html", "ios-x86__64-simulator_2_thing_device_detection_network_plug_a_p_i_8framework_2_headers_2_thing_d2b1c9b4cb998b9b7af73b24eed714d06" ]
+];

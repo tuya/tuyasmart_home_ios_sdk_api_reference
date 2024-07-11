@@ -11,5 +11,9 @@ var interface_thing_smart_h_t_t_p_d_n_s =
     [ "setHTTPDNSIntercepter:", "interface_thing_smart_h_t_t_p_d_n_s.html#a5be65bdd067329f1538e8622adb25883", null ],
     [ "setHTTPDNSIntercepter:", "interface_thing_smart_h_t_t_p_d_n_s.html#a5be65bdd067329f1538e8622adb25883", null ],
     [ "setHTTPDNSIntercepter:", "interface_thing_smart_h_t_t_p_d_n_s.html#a5be65bdd067329f1538e8622adb25883", null ],
-    [ "setHTTPDNSIntercepter:", "interface_thing_smart_h_t_t_p_d_n_s.html#a5be65bdd067329f1538e8622adb25883", null ]
+    [ "setHTTPDNSIntercepter:", "interface_thing_smart_h_t_t_p_d_n_s.html#a5be65bdd067329f1538e8622adb25883", null ],
+    [ "useHttpDNSWithError:", "interface_thing_smart_h_t_t_p_d_n_s.html#a7185dc4717b6cbbf8a1e22104e944033", null ],
+    [ "useHttpDNSWithError:", "interface_thing_smart_h_t_t_p_d_n_s.html#a7185dc4717b6cbbf8a1e22104e944033", null ],
+    [ "useHttpDNSWithError:", "interface_thing_smart_h_t_t_p_d_n_s.html#a7185dc4717b6cbbf8a1e22104e944033", null ],
+    [ "useHttpDNSWithError:", "interface_thing_smart_h_t_t_p_d_n_s.html#a7185dc4717b6cbbf8a1e22104e944033", null ]
 ];

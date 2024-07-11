@@ -2,6 +2,7 @@ var _thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframewor
 [
     [ "ThingSmartSceneActionModel", "interface_thing_smart_scene_action_model.html", "interface_thing_smart_scene_action_model" ],
     [ "NS_ENUM", "_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2watchos-arm64__arac039422d032656f4c97995b4d0a2f8f.html#a1702fb73032911fdae751f7fa040271f", null ],
+    [ "ACTION_EXECUTOR_AI", "_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2watchos-arm64__arac039422d032656f4c97995b4d0a2f8f.html#a6736f94c515ea1599fde7884b64c73d9", null ],
     [ "ACTION_EXECUTOR_APP_CALL", "_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2watchos-arm64__arac039422d032656f4c97995b4d0a2f8f.html#a9468a9d34a0a22dede84abe4a9bf3441", null ],
     [ "ACTION_EXECUTOR_APP_PUSH", "_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2watchos-arm64__arac039422d032656f4c97995b4d0a2f8f.html#a3a56babefb54a61a082c56a5e97e54b3", null ],
     [ "ACTION_EXECUTOR_ARMEDSTATE", "_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2watchos-arm64__arac039422d032656f4c97995b4d0a2f8f.html#ab2eccf7b86bf6abadd0008d4ef707d46", null ],

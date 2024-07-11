@@ -1,0 +1,14 @@
+var ios_x86__64_simulator_2_t_u_n_i_a_i_assistant_manager_8framework_2_private_headers_2_t_u_n_i_a_ib8507526fbf423f4d023438dc3f9d98f =
+[
+    [ "TUNIAIAssistantWebSocketManagerCallback", "interface_t_u_n_i_a_i_assistant_web_socket_manager_callback.html", "interface_t_u_n_i_a_i_assistant_web_socket_manager_callback" ],
+    [ "TUNIAIAssistantWebSocketManager", "interface_t_u_n_i_a_i_assistant_web_socket_manager.html", "interface_t_u_n_i_a_i_assistant_web_socket_manager" ],
+    [ "TUNIAIAssisantWebSocketMessageStatus", "ios-x86__64-simulator_2_t_u_n_i_a_i_assistant_manager_8framework_2_private_headers_2_t_u_n_i_a_ib8507526fbf423f4d023438dc3f9d98f.html#a2d7123f038ce6d410d0c8e1415d2efd6", null ],
+    [ "TUNIAIAssisantWebSocketMessageStatusSkillFinish", "ios-x86__64-simulator_2_t_u_n_i_a_i_assistant_manager_8framework_2_private_headers_2_t_u_n_i_a_ib8507526fbf423f4d023438dc3f9d98f.html#a8919570e7790ed14e54847fef53b2b7f", null ],
+    [ "TUNIAIAssisantWebSocketMessageStatusSpeechFinish", "ios-x86__64-simulator_2_t_u_n_i_a_i_assistant_manager_8framework_2_private_headers_2_t_u_n_i_a_ib8507526fbf423f4d023438dc3f9d98f.html#a90d010729392fc236b123cb166d7b3e0", null ],
+    [ "TUNIAIAssisantWebSocketMessageStatusTextFinish", "ios-x86__64-simulator_2_t_u_n_i_a_i_assistant_manager_8framework_2_private_headers_2_t_u_n_i_a_ib8507526fbf423f4d023438dc3f9d98f.html#afc9f7e325e90c30f2a854bf7fd752eef", null ],
+    [ "TUNIAIAssisantWebSocketMessageStatusTextMid", "ios-x86__64-simulator_2_t_u_n_i_a_i_assistant_manager_8framework_2_private_headers_2_t_u_n_i_a_ib8507526fbf423f4d023438dc3f9d98f.html#aaffdcac59db5de4c6882cd6adc97baad", null ],
+    [ "TUNIAIAssisantWebSocketMessageStatusTextStart", "ios-x86__64-simulator_2_t_u_n_i_a_i_assistant_manager_8framework_2_private_headers_2_t_u_n_i_a_ib8507526fbf423f4d023438dc3f9d98f.html#a8639aca9f2e1f43e3add0f5edb3c5d4e", null ],
+    [ "TUNIAIAssisantWebSocketRequestSkillName", "ios-x86__64-simulator_2_t_u_n_i_a_i_assistant_manager_8framework_2_private_headers_2_t_u_n_i_a_ib8507526fbf423f4d023438dc3f9d98f.html#a72e4e3e9a41663d4fc032ca285dd4659", null ],
+    [ "TUNIAIAssisantWebSocketRequestTextName", "ios-x86__64-simulator_2_t_u_n_i_a_i_assistant_manager_8framework_2_private_headers_2_t_u_n_i_a_ib8507526fbf423f4d023438dc3f9d98f.html#ac7691279a7a1900e3c4c360d845deb77", null ],
+    [ "TUNIAIAssistantWebSocketManagerComplete", "ios-x86__64-simulator_2_t_u_n_i_a_i_assistant_manager_8framework_2_private_headers_2_t_u_n_i_a_ib8507526fbf423f4d023438dc3f9d98f.html#a02d50b8325ef816621558772e8293e1a", null ]
+];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: /Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartUtil/Build/ThingSmartUtil.xcframework/watchos-arm64_arm64_32_armv7k/ThingSmartUtil.framework/Headers/ThingAntiReplayService.h Source File</title>
+<title>Tuya iOS Smart Life App SDK: ThingSmartUtil/Build/ThingSmartUtil.xcframework/watchos-arm64_arm64_32_armv7k/ThingSmartUtil.framework/Headers/ThingAntiReplayService.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -87,32 +88,31 @@ $(document).ready(function(){initNavTree('watchos-arm64__arm64__32__armv7k_2_thi
 <div class="contents">
 <a href="watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//  ThingAntiReplayService.h</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  ThingSmartKit</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  ThingSmartUtil</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//  Created by 冯晓 on 2016/10/28.</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//  Copyright © 2016年 Thing. All rights reserved.</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#import &quot;<a class="code" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_model_8h.html">ThingAntiReplayModel.h</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>NS_ASSUME_NONNULL_BEGIN</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//防重放攻击</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_anti_replay_service.html">ThingAntiReplayService</a> : NSObject</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>+ (instancetype)<a class="code hl_function" href="interface_thing_anti_replay_service.html#a9cfa776cd01e61b254a748017546da3d">sharedInstance</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>- (<a class="code hl_interface" href="interface_thing_anti_replay_model.html">ThingAntiReplayModel</a> *)getReplayPublishModel:(nonnull NSString *)devId;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>- (BOOL)isNormalReplayReport:(NSInteger)s r:(NSInteger)r devId:(nonnull NSString *)devId;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//  Copyright (c) 2014-2024 Tuya Inc. (https://developer.tuya.com)</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &quot;<a class="code" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_model_8h.html">ThingAntiReplayModel.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//防重放攻击</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_anti_replay_service.html">ThingAntiReplayService</a> : NSObject</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>+ (instancetype)<a class="code hl_function" href="interface_thing_anti_replay_service.html#a9cfa776cd01e61b254a748017546da3d">sharedInstance</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>- (<a class="code hl_interface" href="interface_thing_anti_replay_model.html">ThingAntiReplayModel</a> *)getReplayPublishModel:(nonnull NSString *)devId;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>- (BOOL)isNormalReplayReport:(NSInteger)s r:(NSInteger)r devId:(nonnull NSString *)devId;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">@end</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="interface_thing_anti_replay_service.html#a0191ffaf186b68afc28282ed510b285b">   26</a></span>NS_ASSUME_NONNULL_END</div>
-<div class="ttc" id="ainterface_thing_anti_replay_model_html"><div class="ttname"><a href="interface_thing_anti_replay_model.html">ThingAntiReplayModel</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_model_8h_source.html#l00009">ThingAntiReplayModel.h:10</a></div></div>
-<div class="ttc" id="ainterface_thing_anti_replay_service_html"><div class="ttname"><a href="interface_thing_anti_replay_service.html">ThingAntiReplayService</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source.html#l00015">ThingAntiReplayService.h:16</a></div></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="interface_thing_anti_replay_service.html#a0191ffaf186b68afc28282ed510b285b">   25</a></span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="ainterface_thing_anti_replay_model_html"><div class="ttname"><a href="interface_thing_anti_replay_model.html">ThingAntiReplayModel</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_model_8h_source.html#l00008">ThingAntiReplayModel.h:9</a></div></div>
+<div class="ttc" id="ainterface_thing_anti_replay_service_html"><div class="ttname"><a href="interface_thing_anti_replay_service.html">ThingAntiReplayService</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source.html#l00014">ThingAntiReplayService.h:15</a></div></div>
 <div class="ttc" id="ainterface_thing_anti_replay_service_html_a9cfa776cd01e61b254a748017546da3d"><div class="ttname"><a href="interface_thing_anti_replay_service.html#a9cfa776cd01e61b254a748017546da3d">+[ThingAntiReplayService sharedInstance]</a></div><div class="ttdeci">instancetype sharedInstance()</div></div>
 <div class="ttc" id="awatchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_model_8h_html"><div class="ttname"><a href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_model_8h.html">ThingAntiReplayModel.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('watchos-arm64__arm64__32__armv7k_2_thi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_350ab2d14705a2da30f5c4a8aeabf1fb.html">Volumes</a></li><li class="navelem"><a class="el" href="dir_b5508c5733aa93b21c7668144b6a10e6.html">work</a></li><li class="navelem"><a class="el" href="dir_9c2084141ba9d0a81a6d980b794b2bf3.html">source_code</a></li><li class="navelem"><a class="el" href="dir_9e235fb0c6055da3049adf9d594dd735.html">tuya</a></li><li class="navelem"><a class="el" href="dir_2eca0df6357931a63786b682b2a3523b.html">bizbundle</a></li><li class="navelem"><a class="el" href="dir_09caf3263995c8bca06aeee061548636.html">BizBundle</a></li><li class="navelem"><a class="el" href="dir_a739206a7d38e5a247a86838d8543d42.html">tuya-home-ios-sdk-sample-swift</a></li><li class="navelem"><a class="el" href="dir_36297105b3a1d1ff6152618f6a772449.html">Pods</a></li><li class="navelem"><a class="el" href="dir_1e8d25f812e6fae179fe2c0c4aeccf81.html">ThingSmartUtil</a></li><li class="navelem"><a class="el" href="dir_4d9e37e450e1f879cf490d0e4651fa97.html">Build</a></li><li class="navelem"><a class="el" href="dir_227eef9f2b39a7e1b797fb77dab71140.html">ThingSmartUtil.xcframework</a></li><li class="navelem"><a class="el" href="dir_adf087bfb71af1c2d85c0636fe7e8b79.html">watchos-arm64_arm64_32_armv7k</a></li><li class="navelem"><a class="el" href="dir_d6200d6b840a66167aef6b291e7daf4a.html">ThingSmartUtil.framework</a></li><li class="navelem"><a class="el" href="dir_7a07c0c26666ae8e9465df6854592f7e.html">Headers</a></li><li class="navelem"><a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h.html">ThingAntiReplayService.h</a></li>
+    <li class="navelem"><a class="el" href="dir_8a9eccfa76d0eb5089f6caa7cf789aee.html">ThingSmartUtil</a></li><li class="navelem"><a class="el" href="dir_3be5bec98c9d3151c83610af0d8a5189.html">Build</a></li><li class="navelem"><a class="el" href="dir_35a17d56b387ad3a3e7bf8f6c9029848.html">ThingSmartUtil.xcframework</a></li><li class="navelem"><a class="el" href="dir_35e0350ea77e0d6e9268f3314c280ee7.html">watchos-arm64_arm64_32_armv7k</a></li><li class="navelem"><a class="el" href="dir_bbfe57c210fe388c917a47a1572e76ba.html">ThingSmartUtil.framework</a></li><li class="navelem"><a class="el" href="dir_90236577eaf9140ad535d4e6b974c898.html">Headers</a></li><li class="navelem"><a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h.html">ThingAntiReplayService.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

@@ -1,6 +1,0 @@
-var dir_014a7f97792f055a718167d43ab38d1d =
-[
-    [ "ThingSmartBusinessExtensionConfig.h", "x86__64-simulator_2_thing_smart_business_extension_kit_8framework_2_headers_2_thing_smart_business_extension_config_8h.html", "x86__64-simulator_2_thing_smart_business_extension_kit_8framework_2_headers_2_thing_smart_business_extension_config_8h" ],
-    [ "ThingSmartBusinessExtensionKit-umbrella.h", "x86__64-simulator_2_thing_smart_business_extension_kit_8framework_2_headers_2_thing_smart_business_extension_kit-umbrella_8h.html", "x86__64-simulator_2_thing_smart_business_extension_kit_8framework_2_headers_2_thing_smart_business_extension_kit-umbrella_8h" ],
-    [ "ThingSmartBusinessExtensionKit.h", "x86__64-simulator_2_thing_smart_business_extension_kit_8framework_2_headers_2_thing_smart_business_extension_kit_8h.html", null ]
-];

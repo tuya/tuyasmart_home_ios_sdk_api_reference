@@ -1,0 +1,6 @@
+var ios_x86__64_simulator_2_thing_smart_device_detail_biz_bundle_8framework_2_headers_2_thing_smart_71e9e18c15df33aef8a825d8fb79c57f =
+[
+    [ "FOUNDATION_EXPORT", "ios-x86__64-simulator_2_thing_smart_device_detail_biz_bundle_8framework_2_headers_2_thing_smart_71e9e18c15df33aef8a825d8fb79c57f.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "ThingSmartDeviceDetailBizBundleVersionNumber", "ios-x86__64-simulator_2_thing_smart_device_detail_biz_bundle_8framework_2_headers_2_thing_smart_71e9e18c15df33aef8a825d8fb79c57f.html#af2737cafa3ec39da5977271ac8e799d7", null ],
+    [ "ThingSmartDeviceDetailBizBundleVersionString", "ios-x86__64-simulator_2_thing_smart_device_detail_biz_bundle_8framework_2_headers_2_thing_smart_71e9e18c15df33aef8a825d8fb79c57f.html#ad76913805556a680c2bf5e61e11e34b6", null ]
+];

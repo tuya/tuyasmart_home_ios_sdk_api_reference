@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: /Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingFoundationKit/ThingFoundationKit.xcframework/watchos-arm64_i386_x86_64-simulator/ThingFoundationKit.framework/Headers/ThingLanguageLoader.h Source File</title>
+<title>Tuya iOS Smart Life App SDK: ThingFoundationKit/ThingFoundationKit.xcframework/watchos-arm64_i386_x86_64-simulator/ThingFoundationKit.framework/Headers/ThingLanguageLoader.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -96,54 +97,54 @@ $(document).ready(function(){initNavTree('watchos-arm64__i386__x86__64-simulator
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>NS_ASSUME_NONNULL_BEGIN</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">@protocol </span><a class="code hl_protocol" href="protocol_thing_language_loader_delegate-p.html">ThingLanguageLoaderDelegate</a> &lt;NSObject&gt;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">@optional</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>- (nullable NSString *)beforeLocalizedWithKey:(NSString *)languageKey;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>- (nullable NSString *)afterLocalizedWithKey:(NSString *)languageKey</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                                     isFound:(BOOL)isFound</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                   isCurrent:(BOOL)isCurrent</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                             localizedString:(NSString *)localizedString;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">@end</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_language_loader.html">ThingLanguageLoader</a> : NSObject</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">@property</span> (nonatomic, weak) id&lt;ThingLanguageLoaderDelegate&gt; <a class="code hl_property" href="interface_thing_language_loader.html#a2d02248ce570da4625893ccb7d58f175">delegate</a>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">@property</span> (nonatomic, strong, readonly) NSBundle *<a class="code hl_property" href="interface_thing_language_loader.html#a105fd0838c18eec55db6ad6c38503fad">localizedBundle</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="interface_thing_language_loader.html#a22ff59b7a750080d73ee24261e07cf9e">   41</a></span><span class="keyword">@property</span> (nonatomic, copy, readonly) NSString *<a class="code hl_property" href="interface_thing_language_loader.html#a898e0c37b7222155efb3e331dd1d0dee">defaultLanguage</a>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>+ (instancetype)<a class="code hl_function" href="interface_thing_language_loader.html#ae3a381322d63fe6480b52b679ad55139">sharedInstance</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">@protocol </span><a class="code hl_protocol" href="protocol_thing_language_loader_delegate-p.html">ThingLanguageLoaderDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">@optional</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>- (nullable NSString *)beforeLocalizedWithKey:(NSString *)languageKey;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>- (nullable NSString *)afterLocalizedWithKey:(NSString *)languageKey</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                                     isFound:(BOOL)isFound</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                                   isCurrent:(BOOL)isCurrent</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                             localizedString:(NSString *)localizedString;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// 如果在特定语言bundle下，退回到上一层rootBundle中</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>+ (NSBundle *)languageRootBundle:(NSBundle *)bundle;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_language_loader.html">ThingLanguageLoader</a> : NSObject</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">@property</span> (nonatomic, weak) id&lt;ThingLanguageLoaderDelegate&gt; <a class="code hl_property" href="interface_thing_language_loader.html#a2d02248ce570da4625893ccb7d58f175">delegate</a>;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>- (void)registerLocalizedBundle:(NSBundle *)bundle defaultLanguage:(NSString *)defaultLanguage;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">@property</span> (nonatomic, strong, readonly) NSBundle *<a class="code hl_property" href="interface_thing_language_loader.html#a105fd0838c18eec55db6ad6c38503fad">localizedBundle</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="interface_thing_language_loader.html#a22ff59b7a750080d73ee24261e07cf9e">   52</a></span><span class="keyword">@property</span> (nonatomic, copy, readonly) NSString *<a class="code hl_property" href="interface_thing_language_loader.html#a898e0c37b7222155efb3e331dd1d0dee">defaultLanguage</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>+ (instancetype)<a class="code hl_function" href="interface_thing_language_loader.html#ae3a381322d63fe6480b52b679ad55139">sharedInstance</a>;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>- (BOOL)isExistLocalized:(NSString *)languageKey;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// 如果在特定语言bundle下，退回到上一层rootBundle中</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>+ (NSBundle *)languageRootBundle:(NSBundle *)bundle;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>- (NSString *)localizedString:(NSString *)languageKey;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>- (void)registerLocalizedBundle:(NSBundle *)bundle defaultLanguage:(NSString *)defaultLanguage;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="protocol_thing_language_loader_delegate-p.html#aa2207ee1f9e90594cb616dc0b5550538">   66</a></span>NS_ASSUME_NONNULL_END</div>
-<div class="ttc" id="ainterface_thing_language_loader_html"><div class="ttname"><a href="interface_thing_language_loader.html">ThingLanguageLoader</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html#l00034">ThingLanguageLoader.h:35</a></div></div>
-<div class="ttc" id="ainterface_thing_language_loader_html_a105fd0838c18eec55db6ad6c38503fad"><div class="ttname"><a href="interface_thing_language_loader.html#a105fd0838c18eec55db6ad6c38503fad">ThingLanguageLoader::localizedBundle</a></div><div class="ttdeci">NSBundle * localizedBundle</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html#l00040">ThingLanguageLoader.h:40</a></div></div>
-<div class="ttc" id="ainterface_thing_language_loader_html_a2d02248ce570da4625893ccb7d58f175"><div class="ttname"><a href="interface_thing_language_loader.html#a2d02248ce570da4625893ccb7d58f175">ThingLanguageLoader::delegate</a></div><div class="ttdeci">id&lt; ThingLanguageLoaderDelegate &gt; delegate</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html#l00036">ThingLanguageLoader.h:36</a></div></div>
-<div class="ttc" id="ainterface_thing_language_loader_html_a898e0c37b7222155efb3e331dd1d0dee"><div class="ttname"><a href="interface_thing_language_loader.html#a898e0c37b7222155efb3e331dd1d0dee">ThingLanguageLoader::defaultLanguage</a></div><div class="ttdeci">NSString * defaultLanguage</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html#l00041">ThingLanguageLoader.h:41</a></div></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>- (BOOL)isExistLocalized:(NSString *)languageKey;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>- (NSString *)localizedString:(NSString *)languageKey;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="protocol_thing_language_loader_delegate-p.html#aa2207ee1f9e90594cb616dc0b5550538">   77</a></span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="ainterface_thing_language_loader_html"><div class="ttname"><a href="interface_thing_language_loader.html">ThingLanguageLoader</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html#l00045">ThingLanguageLoader.h:46</a></div></div>
+<div class="ttc" id="ainterface_thing_language_loader_html_a105fd0838c18eec55db6ad6c38503fad"><div class="ttname"><a href="interface_thing_language_loader.html#a105fd0838c18eec55db6ad6c38503fad">ThingLanguageLoader::localizedBundle</a></div><div class="ttdeci">NSBundle * localizedBundle</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html#l00051">ThingLanguageLoader.h:51</a></div></div>
+<div class="ttc" id="ainterface_thing_language_loader_html_a2d02248ce570da4625893ccb7d58f175"><div class="ttname"><a href="interface_thing_language_loader.html#a2d02248ce570da4625893ccb7d58f175">ThingLanguageLoader::delegate</a></div><div class="ttdeci">id&lt; ThingLanguageLoaderDelegate &gt; delegate</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html#l00047">ThingLanguageLoader.h:47</a></div></div>
+<div class="ttc" id="ainterface_thing_language_loader_html_a898e0c37b7222155efb3e331dd1d0dee"><div class="ttname"><a href="interface_thing_language_loader.html#a898e0c37b7222155efb3e331dd1d0dee">ThingLanguageLoader::defaultLanguage</a></div><div class="ttdeci">NSString * defaultLanguage</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html#l00052">ThingLanguageLoader.h:52</a></div></div>
 <div class="ttc" id="ainterface_thing_language_loader_html_ae3a381322d63fe6480b52b679ad55139"><div class="ttname"><a href="interface_thing_language_loader.html#ae3a381322d63fe6480b52b679ad55139">+[ThingLanguageLoader sharedInstance]</a></div><div class="ttdeci">instancetype sharedInstance()</div></div>
-<div class="ttc" id="aprotocol_thing_language_loader_delegate-p_html"><div class="ttname"><a href="protocol_thing_language_loader_delegate-p.html">ThingLanguageLoaderDelegate-p</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html#l00012">ThingLanguageLoader.h:12</a></div></div>
+<div class="ttc" id="aprotocol_thing_language_loader_delegate-p_html"><div class="ttname"><a href="protocol_thing_language_loader_delegate-p.html">ThingLanguageLoaderDelegate-p</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source.html#l00023">ThingLanguageLoader.h:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_350ab2d14705a2da30f5c4a8aeabf1fb.html">Volumes</a></li><li class="navelem"><a class="el" href="dir_b5508c5733aa93b21c7668144b6a10e6.html">work</a></li><li class="navelem"><a class="el" href="dir_9c2084141ba9d0a81a6d980b794b2bf3.html">source_code</a></li><li class="navelem"><a class="el" href="dir_9e235fb0c6055da3049adf9d594dd735.html">tuya</a></li><li class="navelem"><a class="el" href="dir_2eca0df6357931a63786b682b2a3523b.html">bizbundle</a></li><li class="navelem"><a class="el" href="dir_09caf3263995c8bca06aeee061548636.html">BizBundle</a></li><li class="navelem"><a class="el" href="dir_a739206a7d38e5a247a86838d8543d42.html">tuya-home-ios-sdk-sample-swift</a></li><li class="navelem"><a class="el" href="dir_36297105b3a1d1ff6152618f6a772449.html">Pods</a></li><li class="navelem"><a class="el" href="dir_379e9c19380660f60f6367b444c84e63.html">ThingFoundationKit</a></li><li class="navelem"><a class="el" href="dir_f180e878e4a7a4fd2402186c2ff263f2.html">ThingFoundationKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_6c67da18d00900fcf470f3720e13d003.html">watchos-arm64_i386_x86_64-simulator</a></li><li class="navelem"><a class="el" href="dir_ed2be9bba362242432a06b2c8fa1f5f9.html">ThingFoundationKit.framework</a></li><li class="navelem"><a class="el" href="dir_5067a67a3bc838ad85836fc9cd9bf9c7.html">Headers</a></li><li class="navelem"><a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h.html">ThingLanguageLoader.h</a></li>
+    <li class="navelem"><a class="el" href="dir_ea7f8fd609ed92c7e61e9cbd1f5e21b8.html">ThingFoundationKit</a></li><li class="navelem"><a class="el" href="dir_a399e366e964b8aaa11975963874b740.html">ThingFoundationKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_336842f4bf0220538598c0b75f95b853.html">watchos-arm64_i386_x86_64-simulator</a></li><li class="navelem"><a class="el" href="dir_446fde8fc8b6130c202fbe37a1c0114f.html">ThingFoundationKit.framework</a></li><li class="navelem"><a class="el" href="dir_0ed01ccef51f90553118e7c79d8e554d.html">Headers</a></li><li class="navelem"><a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h.html">ThingLanguageLoader.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

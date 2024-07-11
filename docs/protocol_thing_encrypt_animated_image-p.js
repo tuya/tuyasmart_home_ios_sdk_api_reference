@@ -1,0 +1,27 @@
+var protocol_thing_encrypt_animated_image_p =
+[
+    [ "animatedImageBytesPerFrame", "protocol_thing_encrypt_animated_image-p.html#a83afc9601f266ec731531496460dadc2", null ],
+    [ "animatedImageBytesPerFrame", "protocol_thing_encrypt_animated_image-p.html#a83afc9601f266ec731531496460dadc2", null ],
+    [ "animatedImageBytesPerFrame", "protocol_thing_encrypt_animated_image-p.html#a83afc9601f266ec731531496460dadc2", null ],
+    [ "animatedImageBytesPerFrame", "protocol_thing_encrypt_animated_image-p.html#a83afc9601f266ec731531496460dadc2", null ],
+    [ "animatedImageContentsRectAtIndex:", "protocol_thing_encrypt_animated_image-p.html#a7cb9d76b790cab1d77863731ad5c2da6", null ],
+    [ "animatedImageContentsRectAtIndex:", "protocol_thing_encrypt_animated_image-p.html#a7cb9d76b790cab1d77863731ad5c2da6", null ],
+    [ "animatedImageContentsRectAtIndex:", "protocol_thing_encrypt_animated_image-p.html#a7cb9d76b790cab1d77863731ad5c2da6", null ],
+    [ "animatedImageContentsRectAtIndex:", "protocol_thing_encrypt_animated_image-p.html#a7cb9d76b790cab1d77863731ad5c2da6", null ],
+    [ "animatedImageDurationAtIndex:", "protocol_thing_encrypt_animated_image-p.html#a6886472c32276c579dddb4a8b0ac5835", null ],
+    [ "animatedImageDurationAtIndex:", "protocol_thing_encrypt_animated_image-p.html#a6886472c32276c579dddb4a8b0ac5835", null ],
+    [ "animatedImageDurationAtIndex:", "protocol_thing_encrypt_animated_image-p.html#a6886472c32276c579dddb4a8b0ac5835", null ],
+    [ "animatedImageDurationAtIndex:", "protocol_thing_encrypt_animated_image-p.html#a6886472c32276c579dddb4a8b0ac5835", null ],
+    [ "animatedImageFrameAtIndex:", "protocol_thing_encrypt_animated_image-p.html#a7936863714f41d09bd3b428977c5b1ca", null ],
+    [ "animatedImageFrameAtIndex:", "protocol_thing_encrypt_animated_image-p.html#a7936863714f41d09bd3b428977c5b1ca", null ],
+    [ "animatedImageFrameAtIndex:", "protocol_thing_encrypt_animated_image-p.html#a7936863714f41d09bd3b428977c5b1ca", null ],
+    [ "animatedImageFrameAtIndex:", "protocol_thing_encrypt_animated_image-p.html#a7936863714f41d09bd3b428977c5b1ca", null ],
+    [ "animatedImageFrameCount", "protocol_thing_encrypt_animated_image-p.html#a263789a85350fa24290b5df09bef6544", null ],
+    [ "animatedImageFrameCount", "protocol_thing_encrypt_animated_image-p.html#a263789a85350fa24290b5df09bef6544", null ],
+    [ "animatedImageFrameCount", "protocol_thing_encrypt_animated_image-p.html#a263789a85350fa24290b5df09bef6544", null ],
+    [ "animatedImageFrameCount", "protocol_thing_encrypt_animated_image-p.html#a263789a85350fa24290b5df09bef6544", null ],
+    [ "animatedImageLoopCount", "protocol_thing_encrypt_animated_image-p.html#add35ea274077527ce90017903200e794", null ],
+    [ "animatedImageLoopCount", "protocol_thing_encrypt_animated_image-p.html#add35ea274077527ce90017903200e794", null ],
+    [ "animatedImageLoopCount", "protocol_thing_encrypt_animated_image-p.html#add35ea274077527ce90017903200e794", null ],
+    [ "animatedImageLoopCount", "protocol_thing_encrypt_animated_image-p.html#add35ea274077527ce90017903200e794", null ]
+];

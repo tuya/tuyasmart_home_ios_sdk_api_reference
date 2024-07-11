@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: /Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingAnnotationFoundation/ThingAnnotationFoundation.xcframework/ios-x86_64-simulator/ThingAnnotationFoundation.framework/Headers/ThingLaunchAnnotation.h File Reference</title>
+<title>Tuya iOS Smart Life App SDK: ThingAnnotationFoundation/ThingAnnotationFoundation.xcframework/ios-x86_64-simulator/ThingAnnotationFoundation.framework/Headers/ThingLaunchAnnotation.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -84,15 +85,13 @@ $(document).ready(function(){initNavTree('ios-x86__64-simulator_2_thing_annotati
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">ThingLaunchAnnotation.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#import &lt;UIKit/UIKit.h&gt;</code><br />
 <code>#import &quot;<a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_register_launch_protocol_8h_source.html">ThingRegisterLaunchProtocol.h</a>&quot;</code><br />
+<code>#import &lt;ThingMachRegister/ThingMachRegister.h&gt;</code><br />
 </div>
 <p><a href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -103,45 +102,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a89491ffc9254f3abfeaf88140b9d38cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a89491ffc9254f3abfeaf88140b9d38cb">ThingLaunchBeforeType</a>&#160;&#160;&#160;&quot;PreMain&quot;</td></tr>
-<tr class="separator:a89491ffc9254f3abfeaf88140b9d38cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00b8eb871243911b3df8dd125c1543ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a00b8eb871243911b3df8dd125c1543ec">ThingLaunchSyncType</a>&#160;&#160;&#160;&quot;TaskSync&quot;</td></tr>
-<tr class="separator:a00b8eb871243911b3df8dd125c1543ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab4282326a4d96fcfab4fbda5bb4a7f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#aab4282326a4d96fcfab4fbda5bb4a7f2">ThingLaunchSyncOtherThreadType</a>&#160;&#160;&#160;&quot;TaskOther&quot;</td></tr>
-<tr class="separator:aab4282326a4d96fcfab4fbda5bb4a7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a118576f20a69f09118dc619561fae45a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a118576f20a69f09118dc619561fae45a">ThingLaunchBeforeAnnotation</a>(IMPL)&#160;&#160;&#160;<a class="el" href="watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a8dbba93614da6c343a3e44a73d1ced00">ThingLaunchAnnotation</a>(PreMain, IMPL)</td></tr>
-<tr class="separator:a118576f20a69f09118dc619561fae45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b786ec54ece2cbd90a41222b7c3bddc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a4b786ec54ece2cbd90a41222b7c3bddc">ThingLaunchSyncAnnotation</a>(IMPL)&#160;&#160;&#160;<a class="el" href="watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a8dbba93614da6c343a3e44a73d1ced00">ThingLaunchAnnotation</a>(TaskSync, IMPL)</td></tr>
-<tr class="separator:a4b786ec54ece2cbd90a41222b7c3bddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f14a733fe92dbc5db4fd8e4054424b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a8f14a733fe92dbc5db4fd8e4054424b8">ThingLaunchSyncOtherThreadAnnotation</a>(IMPL)&#160;&#160;&#160;<a class="el" href="watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a8dbba93614da6c343a3e44a73d1ced00">ThingLaunchAnnotation</a>(TaskOther, IMPL)</td></tr>
-<tr class="separator:a8f14a733fe92dbc5db4fd8e4054424b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dbba93614da6c343a3e44a73d1ced00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a8dbba93614da6c343a3e44a73d1ced00">ThingLaunchAnnotation</a>(NAME,  IMPL)&#160;&#160;&#160;<a class="el" href="watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#aee342c472e58f38f81989bb98cb2c967">__ThingLaunchAnnotation</a>(NAME, IMPL)</td></tr>
-<tr class="separator:a8dbba93614da6c343a3e44a73d1ced00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee342c472e58f38f81989bb98cb2c967"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#aee342c472e58f38f81989bb98cb2c967">__ThingLaunchAnnotation</a>(NAME,  IMPL)</td></tr>
-<tr class="separator:aee342c472e58f38f81989bb98cb2c967"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a0e7d2a84c196981253d5c6dca4b768e9"><td class="memItemLeft" align="right" valign="top">typedef void(^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a0e7d2a84c196981253d5c6dca4b768e9">_ThingAnnotationLaunchBlock</a>) (void)</td></tr>
-<tr class="separator:a0e7d2a84c196981253d5c6dca4b768e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae64f69f3aad7e0e2703dab302d5cd70f"><td class="memItemLeft" align="right" valign="top">typedef void(^&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#ae64f69f3aad7e0e2703dab302d5cd70f">ThingAnnotationRegisterLaunchBlock</a>) (int privacy, id block)</td></tr>
-<tr class="separator:ae64f69f3aad7e0e2703dab302d5cd70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ab898071398b359603a35c202e9c65f3b"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a> ((packed))</td></tr>
-<tr class="separator:ab898071398b359603a35c202e9c65f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fe53ef7ec618ea8c1433cc8c337b051"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_n_s_array.html">NSArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a0fe53ef7ec618ea8c1433cc8c337b051">getLaunchSectionData</a> (const char *type)</td></tr>
-<tr class="separator:a0fe53ef7ec618ea8c1433cc8c337b051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aa9483429fdba08ed1cf7f2ce328ce020"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#aa9483429fdba08ed1cf7f2ce328ce020">_ThingMachRegisterLaunchStruct</a></td></tr>
-<tr class="separator:aa9483429fdba08ed1cf7f2ce328ce020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390c8f957262471623c539ecaedeb9bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a390c8f957262471623c539ecaedeb9bc">ThingLaunchAnnotation</a>(IMPL)&#160;&#160;&#160;<a class="el" href="watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a80b5f755666f9dc2df284e2724e2c4fe">__ThingLaunchAnnotation</a>(IMPL)</td></tr>
+<tr class="separator:a390c8f957262471623c539ecaedeb9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b5f755666f9dc2df284e2724e2c4fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a80b5f755666f9dc2df284e2724e2c4fe">__ThingLaunchAnnotation</a>(IMPL)</td></tr>
+<tr class="separator:a80b5f755666f9dc2df284e2724e2c4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="aee342c472e58f38f81989bb98cb2c967" name="aee342c472e58f38f81989bb98cb2c967"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee342c472e58f38f81989bb98cb2c967">&#9670;&nbsp;</a></span>__ThingLaunchAnnotation</h2>
+<a id="a80b5f755666f9dc2df284e2724e2c4fe" name="a80b5f755666f9dc2df284e2724e2c4fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80b5f755666f9dc2df284e2724e2c4fe">&#9670;&nbsp;</a></span>__ThingLaunchAnnotation</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,33 +118,24 @@ Variables</h2></td></tr>
           <td class="memname">#define __ThingLaunchAnnotation</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname">IMPL</td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">IMPL&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <a class="code hl_variable" href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#aa9483429fdba08ed1cf7f2ce328ce020">_ThingMachRegisterLaunchStruct</a>  __Launch__##Name <a class="code hl_function" href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a>((used, section(<span class="stringliteral">&quot;__Launch, &quot;</span>#NAME))) = {\</div>
-<div class="line"><span class="preprocessor">#IMPL\</span></div>
-<div class="line"><span class="preprocessor">};</span></div>
-<div class="ttc" id="aios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_html_aa9483429fdba08ed1cf7f2ce328ce020"><div class="ttname"><a href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#aa9483429fdba08ed1cf7f2ce328ce020">_ThingMachRegisterLaunchStruct</a></div><div class="ttdeci">_ThingMachRegisterLaunchStruct</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00033">ThingLaunchAnnotation.h:33</a></div></div>
-<div class="ttc" id="aios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_html_ab898071398b359603a35c202e9c65f3b"><div class="ttname"><a href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#ab898071398b359603a35c202e9c65f3b">__attribute__</a></div><div class="ttdeci">struct __attribute__((packed))</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00029">ThingLaunchAnnotation.h:31</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="ios-arm64_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_8h.html#a3ed14843240ae65f22348b5df74ea1d6">_ThingMachRegisterBase</a>(__Launch, tasks, 0,\</div>
+<div class="line">NULL,\</div>
+<div class="line">(^<span class="keywordtype">id</span> _Nonnull (NSString * t, NSString * k, NSUInteger p, <span class="keywordtype">id</span> defaultV) { \</div>
+<div class="line">return @#IMPL;\</div>
+<div class="line">}))</div>
+<div class="ttc" id="aios-arm64_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_8h_html_a3ed14843240ae65f22348b5df74ea1d6"><div class="ttname"><a href="ios-arm64_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_8h.html#a3ed14843240ae65f22348b5df74ea1d6">_ThingMachRegisterBase</a></div><div class="ttdeci">#define _ThingMachRegisterBase(type, Key, priority, classBlock, creatorBlock)</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_8h_source.html#l00051">ThingMachRegisterDefine.h:51</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00037">37</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00042">42</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
 
 </div>
 </div>
-<a id="a8dbba93614da6c343a3e44a73d1ced00" name="a8dbba93614da6c343a3e44a73d1ced00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dbba93614da6c343a3e44a73d1ced00">&#9670;&nbsp;</a></span>ThingLaunchAnnotation</h2>
+<a id="a390c8f957262471623c539ecaedeb9bc" name="a390c8f957262471623c539ecaedeb9bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a390c8f957262471623c539ecaedeb9bc">&#9670;&nbsp;</a></span>ThingLaunchAnnotation</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,220 +144,13 @@ Variables</h2></td></tr>
           <td class="memname">#define ThingLaunchAnnotation</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">NAME, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">IMPL&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#aee342c472e58f38f81989bb98cb2c967">__ThingLaunchAnnotation</a>(NAME, IMPL)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00035">35</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
-
-</div>
-</div>
-<a id="a118576f20a69f09118dc619561fae45a" name="a118576f20a69f09118dc619561fae45a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a118576f20a69f09118dc619561fae45a">&#9670;&nbsp;</a></span>ThingLaunchBeforeAnnotation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ThingLaunchBeforeAnnotation</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
           <td class="paramname">IMPL</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a8dbba93614da6c343a3e44a73d1ced00">ThingLaunchAnnotation</a>(PreMain, IMPL)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a80b5f755666f9dc2df284e2724e2c4fe">__ThingLaunchAnnotation</a>(IMPL)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00018">18</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
-
-</div>
-</div>
-<a id="a89491ffc9254f3abfeaf88140b9d38cb" name="a89491ffc9254f3abfeaf88140b9d38cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89491ffc9254f3abfeaf88140b9d38cb">&#9670;&nbsp;</a></span>ThingLaunchBeforeType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ThingLaunchBeforeType&#160;&#160;&#160;&quot;PreMain&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00013">13</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
-
-</div>
-</div>
-<a id="a4b786ec54ece2cbd90a41222b7c3bddc" name="a4b786ec54ece2cbd90a41222b7c3bddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b786ec54ece2cbd90a41222b7c3bddc">&#9670;&nbsp;</a></span>ThingLaunchSyncAnnotation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ThingLaunchSyncAnnotation</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">IMPL</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a8dbba93614da6c343a3e44a73d1ced00">ThingLaunchAnnotation</a>(TaskSync, IMPL)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00020">20</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
-
-</div>
-</div>
-<a id="a8f14a733fe92dbc5db4fd8e4054424b8" name="a8f14a733fe92dbc5db4fd8e4054424b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f14a733fe92dbc5db4fd8e4054424b8">&#9670;&nbsp;</a></span>ThingLaunchSyncOtherThreadAnnotation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ThingLaunchSyncOtherThreadAnnotation</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">IMPL</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="watchos-i386-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html#a8dbba93614da6c343a3e44a73d1ced00">ThingLaunchAnnotation</a>(TaskOther, IMPL)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00022">22</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
-
-</div>
-</div>
-<a id="aab4282326a4d96fcfab4fbda5bb4a7f2" name="aab4282326a4d96fcfab4fbda5bb4a7f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab4282326a4d96fcfab4fbda5bb4a7f2">&#9670;&nbsp;</a></span>ThingLaunchSyncOtherThreadType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ThingLaunchSyncOtherThreadType&#160;&#160;&#160;&quot;TaskOther&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00015">15</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
-
-</div>
-</div>
-<a id="a00b8eb871243911b3df8dd125c1543ec" name="a00b8eb871243911b3df8dd125c1543ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00b8eb871243911b3df8dd125c1543ec">&#9670;&nbsp;</a></span>ThingLaunchSyncType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ThingLaunchSyncType&#160;&#160;&#160;&quot;TaskSync&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00014">14</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a0e7d2a84c196981253d5c6dca4b768e9" name="a0e7d2a84c196981253d5c6dca4b768e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e7d2a84c196981253d5c6dca4b768e9">&#9670;&nbsp;</a></span>_ThingAnnotationLaunchBlock</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(^ _ThingAnnotationLaunchBlock) (void)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00029">29</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
-
-</div>
-</div>
-<a id="ae64f69f3aad7e0e2703dab302d5cd70f" name="ae64f69f3aad7e0e2703dab302d5cd70f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae64f69f3aad7e0e2703dab302d5cd70f">&#9670;&nbsp;</a></span>ThingAnnotationRegisterLaunchBlock</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(^ ThingAnnotationRegisterLaunchBlock) (int privacy, id block)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00042">42</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ab898071398b359603a35c202e9c65f3b" name="ab898071398b359603a35c202e9c65f3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab898071398b359603a35c202e9c65f3b">&#9670;&nbsp;</a></span>__attribute__()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct __attribute__ </td>
-          <td>(</td>
-          <td class="paramtype">(packed)&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00029">29</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
-
-</div>
-</div>
-<a id="a0fe53ef7ec618ea8c1433cc8c337b051" name="a0fe53ef7ec618ea8c1433cc8c337b051"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fe53ef7ec618ea8c1433cc8c337b051">&#9670;&nbsp;</a></span>getLaunchSectionData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="interface_n_s_array.html">NSArray</a> * getLaunchSectionData </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="aa9483429fdba08ed1cf7f2ce328ce020" name="aa9483429fdba08ed1cf7f2ce328ce020"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9483429fdba08ed1cf7f2ce328ce020">&#9670;&nbsp;</a></span>_ThingMachRegisterLaunchStruct</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_ThingMachRegisterLaunchStruct</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00033">33</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html#l00037">37</a> of file <a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h_source.html">ThingLaunchAnnotation.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +159,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_350ab2d14705a2da30f5c4a8aeabf1fb.html">Volumes</a></li><li class="navelem"><a class="el" href="dir_b5508c5733aa93b21c7668144b6a10e6.html">work</a></li><li class="navelem"><a class="el" href="dir_9c2084141ba9d0a81a6d980b794b2bf3.html">source_code</a></li><li class="navelem"><a class="el" href="dir_9e235fb0c6055da3049adf9d594dd735.html">tuya</a></li><li class="navelem"><a class="el" href="dir_2eca0df6357931a63786b682b2a3523b.html">bizbundle</a></li><li class="navelem"><a class="el" href="dir_09caf3263995c8bca06aeee061548636.html">BizBundle</a></li><li class="navelem"><a class="el" href="dir_a739206a7d38e5a247a86838d8543d42.html">tuya-home-ios-sdk-sample-swift</a></li><li class="navelem"><a class="el" href="dir_36297105b3a1d1ff6152618f6a772449.html">Pods</a></li><li class="navelem"><a class="el" href="dir_85c2836c5b6c3385cd111a4fa9f33d92.html">ThingAnnotationFoundation</a></li><li class="navelem"><a class="el" href="dir_efa14d59099a1301ef35edeb053e6786.html">ThingAnnotationFoundation.xcframework</a></li><li class="navelem"><a class="el" href="dir_fb21caedaf1e7c40933e59c90128184b.html">ios-x86_64-simulator</a></li><li class="navelem"><a class="el" href="dir_cf42c3d99fa0ae8a80d5dd7b1577a3b1.html">ThingAnnotationFoundation.framework</a></li><li class="navelem"><a class="el" href="dir_76923f2f9162dbba1095c30f6b4adb87.html">Headers</a></li><li class="navelem"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html">ThingLaunchAnnotation.h</a></li>
+    <li class="navelem"><a class="el" href="dir_91908d51dd475078c52a0ae1257c90df.html">ThingAnnotationFoundation</a></li><li class="navelem"><a class="el" href="dir_65d1bd719aea9d6480c77024f5b4586a.html">ThingAnnotationFoundation.xcframework</a></li><li class="navelem"><a class="el" href="dir_f0c107ecf8019a5be880e3c39a213b4e.html">ios-x86_64-simulator</a></li><li class="navelem"><a class="el" href="dir_47a0034c2dac1c2c628138bb54598142.html">ThingAnnotationFoundation.framework</a></li><li class="navelem"><a class="el" href="dir_ae6e40488caea4240b81a83dbe72d415.html">Headers</a></li><li class="navelem"><a class="el" href="ios-x86__64-simulator_2_thing_annotation_foundation_8framework_2_headers_2_thing_launch_annotation_8h.html">ThingLaunchAnnotation.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

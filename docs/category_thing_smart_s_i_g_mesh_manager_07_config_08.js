@@ -39,5 +39,9 @@ var category_thing_smart_s_i_g_mesh_manager_07_config_08 =
     [ "sendVendorDataWithNodeId:vendorData:isQuery:useUnacknowledged:success:failure:", "category_thing_smart_s_i_g_mesh_manager_07_config_08.html#a7a44913937908446abc26426698e5946", null ],
     [ "sendVendorDataWithNodeId:vendorData:isQuery:useUnacknowledged:success:failure:", "category_thing_smart_s_i_g_mesh_manager_07_config_08.html#a7a44913937908446abc26426698e5946", null ],
     [ "startSceneDataTransfer:success:failure:", "category_thing_smart_s_i_g_mesh_manager_07_config_08.html#a687496dd4425fe4babe5bd26047ff8a2", null ],
-    [ "startSceneDataTransfer:success:failure:", "category_thing_smart_s_i_g_mesh_manager_07_config_08.html#a687496dd4425fe4babe5bd26047ff8a2", null ]
+    [ "startSceneDataTransfer:success:failure:", "category_thing_smart_s_i_g_mesh_manager_07_config_08.html#a687496dd4425fe4babe5bd26047ff8a2", null ],
+    [ "switchProxyState:forDeviceID:success:failure:", "category_thing_smart_s_i_g_mesh_manager_07_config_08.html#a050f395cbdf5b200e65d4009fe7fd244", null ],
+    [ "switchProxyState:forDeviceID:success:failure:", "category_thing_smart_s_i_g_mesh_manager_07_config_08.html#a050f395cbdf5b200e65d4009fe7fd244", null ],
+    [ "switchRelayState:forDeviceID:success:failure:", "category_thing_smart_s_i_g_mesh_manager_07_config_08.html#adfc5ea6894fef7dfb6f54377dfd2a259", null ],
+    [ "switchRelayState:forDeviceID:success:failure:", "category_thing_smart_s_i_g_mesh_manager_07_config_08.html#adfc5ea6894fef7dfb6f54377dfd2a259", null ]
 ];

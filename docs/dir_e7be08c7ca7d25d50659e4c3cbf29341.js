@@ -12,6 +12,7 @@ var dir_e7be08c7ca7d25d50659e4c3cbf29341 =
     [ "NSObject+ThingSDKURL.h", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_n_s_object_09_thing_s_d_k_u_r_l_8h.html", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_n_s_object_09_thing_s_d_k_u_r_l_8h" ],
     [ "ThingAntiReplayModel.h", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_model_8h.html", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_model_8h" ],
     [ "ThingAntiReplayService.h", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h.html", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h" ],
+    [ "ThingECDHService.h", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_e_c_d_h_service_8h.html", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_e_c_d_h_service_8h" ],
     [ "ThingNetworkStatusListener.h", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_network_status_listener_8h.html", null ],
     [ "ThingSDKConfig.h", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h.html", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_config_8h" ],
     [ "ThingSDKDevice.h", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_device_8h.html", "ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_device_8h" ],

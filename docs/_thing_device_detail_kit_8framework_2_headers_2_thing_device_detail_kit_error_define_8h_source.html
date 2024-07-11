@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: /Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingDeviceDetailKit/ThingDeviceDetailKit.xcframework/ios-arm64/ThingDeviceDetailKit.framework/Headers/ThingDeviceDetailKitErrorDefine.h Source File</title>
+<title>Tuya iOS Smart Life App SDK: ThingDeviceDetailKit/ThingDeviceDetailKit.xcframework/ios-arm64/ThingDeviceDetailKit.framework/Headers/ThingDeviceDetailKitErrorDefine.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -105,18 +106,28 @@ $(document).ready(function(){initNavTree('_thing_device_detail_kit_8framework_2_
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    ThingDeviceDetailKitTimerBleTransmissionTimeoutError = -10004, <span class="comment">//ble transmission time out</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    ThingDeviceDetailKitTimerBleDataParseError = -10005, <span class="comment">//ble data parse error</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    ThingDeviceDetailKitTimerDeviceCannotSyncError = -10006, <span class="comment">//device can not sync</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">extern</span> NSErrorDomain <span class="keyword">const</span> <a class="code hl_variable" href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h.html#a1849d1d97bf7fac0606fb577066c92d9">ThingDeviceTimerBleSyncErrorDomain</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h.html#a6f6129306edb00ebf3e0b0c605b48799">   30</a></span><span class="keyword">typedef</span> <a class="code hl_function" href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h.html#a191759ea5856eb206c4bcf3b9dd2e753">NS_ENUM</a>(NSInteger, ThingDeviceTimerBleSyncErrorCode) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    ThingTimerBleTimerProtocolErrorCode_DataError = -1,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    ThingTimerBleTimerProtocolErrorCode_Unknow  = 0x01</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>NS_ASSUME_NONNULL_END</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    ThingDeviceDetailKitChannelSetupTimeoutError = -10007, <span class="comment">//settup channel time out</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    ThingDeviceDetailKitChannelSetupSubDeviceExistError = -10008, <span class="comment">//sub device exist</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    ThingDeviceDetailKitChannelSetupDeviceCloudOfflineError = -10009, <span class="comment">//device cloud offline</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    ThingDeviceDetailKitChannelSetupUnsupportError = -10010, <span class="comment">//not support</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    ThingDeviceDetailKitChannelSetupDeviceSizeError = -10011, <span class="comment">//device size error</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    ThingDeviceDetailKitRebootDeviceOfflineError = -10021, <span class="comment">//device LAN and Cloud offline</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    ThingDeviceDetailKitRebootTimeoutError = -10022, <span class="comment">//reboot time out</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    ThingDeviceDetailKitRebootDeviceError = -10023, <span class="comment">//reboot generate error</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">extern</span> NSErrorDomain <span class="keyword">const</span> <a class="code hl_variable" href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h.html#a1849d1d97bf7fac0606fb577066c92d9">ThingDeviceTimerBleSyncErrorDomain</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h.html#a6f6129306edb00ebf3e0b0c605b48799">   40</a></span><span class="keyword">typedef</span> <a class="code hl_function" href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h.html#a191759ea5856eb206c4bcf3b9dd2e753">NS_ENUM</a>(NSInteger, ThingDeviceTimerBleSyncErrorCode) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    ThingTimerBleTimerProtocolErrorCode_DataError = -1,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    ThingTimerBleTimerProtocolErrorCode_Unknow  = 0x01</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>NS_ASSUME_NONNULL_END</div>
 <div class="ttc" id="a_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h_html_a1849d1d97bf7fac0606fb577066c92d9"><div class="ttname"><a href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h.html#a1849d1d97bf7fac0606fb577066c92d9">ThingDeviceTimerBleSyncErrorDomain</a></div><div class="ttdeci">NSErrorDomain const ThingDeviceTimerBleSyncErrorDomain</div><div class="ttdoc">蓝牙协议层错误</div></div>
 <div class="ttc" id="a_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h_html_a191759ea5856eb206c4bcf3b9dd2e753"><div class="ttname"><a href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h.html#a191759ea5856eb206c4bcf3b9dd2e753">NS_ENUM</a></div><div class="ttdeci">typedef NS_ENUM(NSInteger, ThingDeviceDetailKitError)</div><div class="ttdef"><b>Definition:</b> <a href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h_source.html#l00015">ThingDeviceDetailKitErrorDefine.h:15</a></div></div>
 <div class="ttc" id="a_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h_html_a3319227b7d93d9cfc10b213bdec17f06"><div class="ttname"><a href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h.html#a3319227b7d93d9cfc10b213bdec17f06">ThingDeviceDetailKitErrorDomain</a></div><div class="ttdeci">NS_ASSUME_NONNULL_BEGIN NSErrorDomain const ThingDeviceDetailKitErrorDomain</div><div class="ttdoc">通用错误</div></div>
@@ -125,7 +136,7 @@ $(document).ready(function(){initNavTree('_thing_device_detail_kit_8framework_2_
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_350ab2d14705a2da30f5c4a8aeabf1fb.html">Volumes</a></li><li class="navelem"><a class="el" href="dir_b5508c5733aa93b21c7668144b6a10e6.html">work</a></li><li class="navelem"><a class="el" href="dir_9c2084141ba9d0a81a6d980b794b2bf3.html">source_code</a></li><li class="navelem"><a class="el" href="dir_9e235fb0c6055da3049adf9d594dd735.html">tuya</a></li><li class="navelem"><a class="el" href="dir_2eca0df6357931a63786b682b2a3523b.html">bizbundle</a></li><li class="navelem"><a class="el" href="dir_09caf3263995c8bca06aeee061548636.html">BizBundle</a></li><li class="navelem"><a class="el" href="dir_a739206a7d38e5a247a86838d8543d42.html">tuya-home-ios-sdk-sample-swift</a></li><li class="navelem"><a class="el" href="dir_36297105b3a1d1ff6152618f6a772449.html">Pods</a></li><li class="navelem"><a class="el" href="dir_cdeea4367906f1131433ebd56f0723d9.html">ThingDeviceDetailKit</a></li><li class="navelem"><a class="el" href="dir_448a9573e631c3a967f5a9d12f9e13a3.html">ThingDeviceDetailKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_2e878041830ccd6c7ea17ab69b21212e.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_8a1ca0ff7422b3a0ae46792b33b2f346.html">ThingDeviceDetailKit.framework</a></li><li class="navelem"><a class="el" href="dir_eeeef39afc2ecf108ba3233cf335e521.html">Headers</a></li><li class="navelem"><a class="el" href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h.html">ThingDeviceDetailKitErrorDefine.h</a></li>
+    <li class="navelem"><a class="el" href="dir_b5015593981fa4b976f874c7ae4fa32e.html">ThingDeviceDetailKit</a></li><li class="navelem"><a class="el" href="dir_747b82fc5bf33174d60c8ed6e77ea37c.html">ThingDeviceDetailKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_d6f09ea5b402e34fcc1dcd669e7a585f.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_5b064e8e5830543f419967a18927fde0.html">ThingDeviceDetailKit.framework</a></li><li class="navelem"><a class="el" href="dir_bc0992fafe78c28a2460ff8ff1c4f548.html">Headers</a></li><li class="navelem"><a class="el" href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_kit_error_define_8h.html">ThingDeviceDetailKitErrorDefine.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

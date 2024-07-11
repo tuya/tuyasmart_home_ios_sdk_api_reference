@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -88,6 +89,7 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>handActiveFittingWithMainDeviceId:&#160;:&#160;<a class="el" href="interface_thing_smart_b_l_e_manager.html#a0c1449538c2436f0740e88bef13d1f48">ThingSmartBLEManager</a>, <a class="el" href="category_thing_smart_b_l_e_manager_07_biz_08.html#a0c1449538c2436f0740e88bef13d1f48">ThingSmartBLEManager(Biz)</a></li>
 <li>handleChipEncrypt:success:failure:&#160;:&#160;<a class="el" href="protocol_thing_smart_b_l_e_active_delegate-p.html#a62d178981fe990cf80d891333305b79b">&lt;ThingSmartBLEActiveDelegate&gt;</a></li>
 <li>handleConnectedDevices:&#160;:&#160;<a class="el" href="interface_thing_b_l_e_status_handler.html#a34416e91621137e470f7e3f9665a7db7">ThingBLEStatusHandler</a></li>
+<li>handleDeviceDetail:&#160;:&#160;<a class="el" href="protocol_thing_device_detail_protocol-p.html#adc3c72cba5298e4ce0399c4f3f66edd3">&lt;ThingDeviceDetailProtocol&gt;</a></li>
 <li>handleDeviceLinkEncryptState:&#160;:&#160;<a class="el" href="protocol_thing_b_l_e_config_protocol-p.html#af7a2deba75695f59b0564ee8aaf59432">&lt;ThingBLEConfigProtocol&gt;</a></li>
 <li>handleDeviceModel:forDeviceList:&#160;:&#160;<a class="el" href="protocol_thing_smart_activator_discovery_serializer-p.html#a787edfd2672c5a41ff9cfe6805d723fb">&lt;ThingSmartActivatorDiscoverySerializer&gt;</a></li>
 <li>handleDeviceToGroupWithDevId:groupAddress:isAdd:mainDevId:categoryCode:&#160;:&#160;<a class="el" href="interface_thing_smart_s_i_g_mesh_manager.html#aec8a5665e198b8af385eb297266e0e70">ThingSmartSIGMeshManager</a>, <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_group_08.html#aec8a5665e198b8af385eb297266e0e70">ThingSmartSIGMeshManager(Group)</a></li>
@@ -100,7 +102,10 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>handleNotfiyStateUpdate:&#160;:&#160;<a class="el" href="interface_thing_b_l_e_characteristic.html#a341cc5c914365ea902db007d872c7751">ThingBLECharacteristic</a>, <a class="el" href="category_thing_b_l_e_characteristic_07_tool_methods_08.html#a341cc5c914365ea902db007d872c7751">ThingBLECharacteristic(ToolMethods)</a></li>
 <li>handleNotifyData:deviceInfo:type:ackHeadData:completion:&#160;:&#160;<a class="el" href="interface_thing_b_l_e_data_manager.html#a8bcf976a5f5897e30283c2b751aa3dfe">ThingBLEDataManager</a></li>
 <li>handleNotifyData:deviceInfo:type:completion:&#160;:&#160;<a class="el" href="interface_thing_b_l_e_data_manager.html#aff5fd0a68e8db9e8a42b8882628cad6d">ThingBLEDataManager</a></li>
+<li>handleP2PType:&#160;:&#160;<a class="el" href="protocol_thing_smart_camera_maker-p.html#a8a4eaf52dcb135a750f53c1704746bf7">&lt;ThingSmartCameraMaker&gt;</a></li>
 <li>handlePeripheral:&#160;:&#160;<a class="el" href="protocol_thing_b_l_e_device_info_protocol-p.html#ab82f73556981192f830ea4842d8f1690">&lt;ThingBLEDeviceInfoProtocol&gt;</a></li>
+<li>handlePushMessage:&#160;:&#160;<a class="el" href="interface_thing_smart_call_channel.html#a88b88afe1649eeb368bf08d962aee90b">ThingSmartCallChannel</a></li>
+<li>handlePushMessageHandle:&#160;:&#160;<a class="el" href="protocol_thing_call_service_protocol-p.html#abfff180e90c028a501e28f9a42e189ef">&lt;ThingCallServiceProtocol&gt;</a></li>
 <li>handleReadValue:error:&#160;:&#160;<a class="el" href="interface_thing_b_l_e_characteristic.html#ace5207c22494735f4b96e6db6245e6f5">ThingBLECharacteristic</a>, <a class="el" href="category_thing_b_l_e_characteristic_07_tool_methods_08.html#ace5207c22494735f4b96e6db6245e6f5">ThingBLECharacteristic(ToolMethods)</a></li>
 <li>handleRemoteControlGroup:success:failure:&#160;:&#160;<a class="el" href="interface_thing_smart_device.html#a1e2c6759849cceab1a0eb4b5ee8fb383">ThingSmartDevice</a>, <a class="el" href="category_thing_smart_device_07_fitting_device_08.html#a1e2c6759849cceab1a0eb4b5ee8fb383">ThingSmartDevice(FittingDevice)</a></li>
 <li>handleRouteWithScheme:host:path:params:&#160;:&#160;<a class="el" href="protocol_thing_module_route_register_protocol-p.html#ac5407c3670734c103f73ee46ec3e82e3">&lt;ThingModuleRouteRegisterProtocol&gt;</a></li>
@@ -108,15 +113,45 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>handleSetNotified:WithError:&#160;:&#160;<a class="el" href="interface_thing_b_l_e_characteristic.html#ab2a47b75b54cb403d7e5a0cdf65852e2">ThingBLECharacteristic</a>, <a class="el" href="category_thing_b_l_e_characteristic_07_tool_methods_08.html#ab2a47b75b54cb403d7e5a0cdf65852e2">ThingBLECharacteristic(ToolMethods)</a></li>
 <li>handleTransparentData:&#160;:&#160;<a class="el" href="protocol_thing_b_l_e_config_protocol-p.html#af040b8efa4445491f9636a6cee44080f">&lt;ThingBLEConfigProtocol&gt;</a></li>
 <li>handleWrittenValueWithError:&#160;:&#160;<a class="el" href="interface_thing_b_l_e_characteristic.html#a010a65a088de8f616049f507e6bd2b59">ThingBLECharacteristic</a>, <a class="el" href="category_thing_b_l_e_characteristic_07_tool_methods_08.html#a010a65a088de8f616049f507e6bd2b59">ThingBLECharacteristic(ToolMethods)</a></li>
+<li>hangupDoorBellCall:&#160;:&#160;<a class="el" href="interface_thing_smart_door_bell_manager.html#a9cd77b77a78fff528e672912c2d9e945">ThingSmartDoorBellManager</a></li>
+<li>hangupDoorBellCallWithType:messageId:&#160;:&#160;<a class="el" href="interface_thing_smart_device.html#aa2250ec3fb0f1fe4e37f95b969656b22">ThingSmartDevice</a>, <a class="el" href="category_thing_smart_device_07doorbell_08.html#aa2250ec3fb0f1fe4e37f95b969656b22">ThingSmartDevice(doorbell)</a></li>
+<li>hasArmAbility:&#160;:&#160;<a class="el" href="protocol_thing_security_arm_ability_delegate-p.html#ad283861c5bb22f399fa28302dd8b9253">&lt;ThingSecurityArmAbilityDelegate&gt;</a></li>
+<li>hasArmAbilityWith:success:failure:&#160;:&#160;<a class="el" href="protocol_thing_security_arm_ability_protocol-p.html#a0506f2202880b1edc095e3ef04b1004c">&lt;ThingSecurityArmAbilityProtocol&gt;</a></li>
 <li>hasDetailPrepareWithType:&#160;:&#160;<a class="el" href="interface_thing_smart_device_category_model.html#a3aaa6f583be78ea751eae5cbd07e537c">ThingSmartDeviceCategoryModel</a></li>
+<li>hasExtendedAttribute:atPath:traverseLink:error:&#160;:&#160;<a class="el" href="interface_thing_encrypt_image_file_attribute_helper.html#a60e75e8165f6685067d0f92f40c86127">ThingEncryptImageFileAttributeHelper</a></li>
 <li>hasHomeCache:&#160;:&#160;<a class="el" href="interface_thing_smart_home_manager.html#a28223c47d4e924754cc6520854d49d8c">ThingSmartHomeManager</a></li>
+<li>hasListenrWithIdentifier:&#160;:&#160;<a class="el" href="interface_t_u_n_i_a_i_assistant_web_socket_manager.html#a72c41e3b0e4f54df5f67f9f42854c6fe">TUNIAIAssistantWebSocketManager</a></li>
+<li>hasNewLogsWithHomeId:success:failure:&#160;:&#160;<a class="el" href="interface_thing_smart_scene_manager.html#a3b1325ab7c67fafec17227ca7f1a09ea">ThingSmartSceneManager</a></li>
 <li>hasScannedBLEDeviceWithUUID:&#160;:&#160;<a class="el" href="protocol_thing_smart_b_l_e_config_protocol-p.html#ab1a390fe00a43659edae2ff4c2a8c7fa">&lt;ThingSmartBLEConfigProtocol&gt;</a></li>
+<li>hasSecurityGatewayOnlineState:&#160;:&#160;<a class="el" href="protocol_thing_security_arm_ability_delegate-p.html#acae2c79d3ac29d47c394cd2b532144ad">&lt;ThingSecurityArmAbilityDelegate&gt;</a></li>
+<li>hasSubscribedTopic:&#160;:&#160;<a class="el" href="interface_thing_smart_m_q_t_t_channel.html#a75f7ca4a0ab0d96ecfec1c82e11e5894">ThingSmartMQTTChannel</a></li>
 <li>hasTcpClientWithDevId:&#160;:&#160;<a class="el" href="interface_thing_smart_socket_channel.html#a0d192f7bccf3c5048bb6620e62f22642">ThingSmartSocketChannel</a></li>
+<li>hasVideo&#160;:&#160;<a class="el" href="protocol_thing_smart_call_kit_executer_data_source-p.html#ac72a019a231a83d1c3bd6d42f7e2e5c4">&lt;ThingSmartCallKitExecuterDataSource&gt;</a></li>
 <li>hasYuCloudOnlineWithDevId:&#160;:&#160;<a class="el" href="protocol_thing_smart_yu_net_reg_entry-p.html#a6f257ab374422367d534ca6e28d2840b">&lt;ThingSmartYuNetRegEntry&gt;</a></li>
 <li>hasYuLocalOnlineWithDevId:&#160;:&#160;<a class="el" href="protocol_thing_smart_yu_net_reg_entry-p.html#a19aa0b7a234363d720158a625497985d">&lt;ThingSmartYuNetRegEntry&gt;</a></li>
+<li>headerObservingWithRequestId:&#160;:&#160;<a class="el" href="interface_t_u_n_i_download_manager.html#a7b58f724d2eadf8b02d53dd381e9206f">TUNIDownloadManager</a>, <a class="el" href="interface_t_u_n_i_upload_manager.html#a4d2a85495e575ad333858568b2a7e9b2">TUNIUploadManager</a></li>
+<li>headersFilter&#160;:&#160;<a class="el" href="interface_thing_encrypt_web_image_manager.html#aed171d7a9a4d1becf0b3f3b0ec03312d">ThingEncryptWebImageManager</a></li>
+<li>headLineColor&#160;:&#160;<a class="el" href="protocol_thing_theme_manager_protocol-p.html#afc8e625ad255bea1beb6a1cf75c7df0d">&lt;ThingThemeManagerProtocol&gt;</a></li>
+<li>height&#160;:&#160;<a class="el" href="interface_thing_group_edit_h_u_d_loading_animation_view.html#a6e414aa4c1924c2b6a4201fb86e84740">ThingGroupEditHUDLoadingAnimationView</a>, <a class="el" href="class_limited_c_v_pixel_buffer_pool.html#a7cac4274b6fc5ac6c11ae80b6e00fb78">LimitedCVPixelBufferPool</a></li>
 <li>hexStringFromString:&#160;:&#160;<a class="el" href="interface_thing_b_l_e_utils.html#a2d40f9509ffd9deb70b2161fc6bfceda">ThingBLEUtils</a></li>
 <li>hexStrToBCDCode:&#160;:&#160;<a class="el" href="interface_thing_b_l_e_utils.html#a7fde32ef771f03b48bbe9ac363203bf4">ThingBLEUtils</a></li>
+<li>hiddenRedBot:success:fail:&#160;:&#160;<a class="el" href="interface_t_u_n_i_mini_program_manager.html#ad761511ce77159272f80ef3e9eb871eb">TUNIMiniProgramManager</a></li>
+<li>hideBoardTitleIcon:fail:&#160;:&#160;<a class="el" href="interface_t_u_n_i_mini_program_manager.html#a6a13a2015103118a8d766b1e59f194bf">TUNIMiniProgramManager</a></li>
+<li>hideBoardTitleIconSync&#160;:&#160;<a class="el" href="interface_t_u_n_i_mini_program_manager.html#a8593d7f1b4b0e8bc5661d773b136b773">TUNIMiniProgramManager</a></li>
+<li>hideEmptyView&#160;:&#160;<a class="el" href="interface_thing_group_base_view.html#aa7ff18fc05ef5e93450964fc2fc60a57">ThingGroupBaseView</a></li>
+<li>hideLoading:fail:&#160;:&#160;<a class="el" href="interface_t_u_n_i_interaction_manager.html#ab89ecdf4992d965b88128fdc57a8256e">TUNIInteractionManager</a></li>
+<li>hideMenuButton:fail:&#160;:&#160;<a class="el" href="interface_t_u_n_i_mini_program_manager.html#a9bc8f0dbf25cedddf2954b8a25db3ec7">TUNIMiniProgramManager</a></li>
+<li>hiden&#160;:&#160;<a class="el" href="interface_thing_popup_item.html#a2c464c0a4d992d3c2b517339aaf37629">ThingPopupItem</a></li>
+<li>hidenAnimated:&#160;:&#160;<a class="el" href="interface_thing_popup_item.html#a86c9bc8d66ecdd0c0e495e5d5ef4f5b5">ThingPopupItem</a></li>
+<li>hidenOtaAlert:&#160;:&#160;<a class="el" href="protocol_thing_o_t_a_general_protocol-p.html#ab946d24800a64ae4c95b1ebd8e85b930">&lt;ThingOTAGeneralProtocol&gt;</a></li>
+<li>hidenOtaAlertIfNeed&#160;:&#160;<a class="el" href="interface_t_r_c_t_panel_o_t_a_listener.html#a7ea1d98273781a43a6372e027f3134b6">TRCTPanelOTAListener</a></li>
+<li>hideRedPointAtIndex:&#160;:&#160;<a class="el" href="interface_thing_segmented_control.html#aacb0d540cab1a80c7eaa17518689604a">ThingSegmentedControl</a></li>
+<li>hideStatusBar:fail:&#160;:&#160;<a class="el" href="interface_t_u_n_i_mini_program_manager.html#afec8940a19a0b15f1a075d3112889655">TUNIMiniProgramManager</a></li>
+<li>hideToast:fail:&#160;:&#160;<a class="el" href="interface_t_u_n_i_interaction_manager.html#a61265b2c1581ec00944e3c486859d823">TUNIInteractionManager</a></li>
+<li>hideWarning&#160;:&#160;<a class="el" href="interface_thing_group_base_view.html#a730cad137f0a112eb84e21a9a045ae57">ThingGroupBaseView</a></li>
+<li>hidInductiveUnlock:deviceID:status:&#160;:&#160;<a class="el" href="protocol_thing_o_d_hid_inductive_unlock_delegate-p.html#a0032ba74a3299f323cb3c017111d3f52">&lt;ThingODHidInductiveUnlockDelegate&gt;</a></li>
 <li>highwayRequestWithDomain:pathName:headerParams:queryParams:bodyParams:httpMethod:success:failure:&#160;:&#160;<a class="el" href="interface_thing_smart_request.html#a0f1ad33502d426d88659113c910d0c3f">ThingSmartRequest</a></li>
+<li>hitExtend&#160;:&#160;<a class="el" href="interface_thing_navigation_bar_item_maker.html#a4ae35fe81fec2b6bb6c30e49c0d82c94">ThingNavigationBarItemMaker</a></li>
 <li>hmacWithData:keyData:type:&#160;:&#160;<a class="el" href="interface_thing_digest_impl.html#a8aecb19f9ee0d1a64b538ab4dc3020cb">ThingDigestImpl</a></li>
 <li>home:device:dpsUpdate:&#160;:&#160;<a class="el" href="protocol_thing_smart_home_delegate-p.html#a2895607350dca1d1e4bf9f986acf4fb9">&lt;ThingSmartHomeDelegate&gt;</a></li>
 <li>home:device:firmwareUpgradeStatusModel:&#160;:&#160;<a class="el" href="protocol_thing_smart_home_delegate-p.html#ac784dc7612e4ae3881f7f0f28b75fa04">&lt;ThingSmartHomeDelegate&gt;</a></li>
@@ -134,17 +169,26 @@ $(document).ready(function(){initNavTree('functions_func_h.html',''); initResiza
 <li>home:groupInfoUpdate:&#160;:&#160;<a class="el" href="protocol_thing_smart_home_delegate-p.html#afcc34c88aa026fde6fa97adf0ca55aac">&lt;ThingSmartHomeDelegate&gt;</a></li>
 <li>home:roomInfoUpdate:&#160;:&#160;<a class="el" href="protocol_thing_smart_home_delegate-p.html#aa5c3ce16c03c8c2d100e6bd8a93498c2">&lt;ThingSmartHomeDelegate&gt;</a></li>
 <li>home:roomRelationUpdate:&#160;:&#160;<a class="el" href="protocol_thing_smart_home_delegate-p.html#ab7d45d8eba275c4ec6fc95481b872f79">&lt;ThingSmartHomeDelegate&gt;</a></li>
+<li>homeAdminValidation&#160;:&#160;<a class="el" href="protocol_thing_smart_house_index_protocol-p.html#a5998d04e34a1527389490d2c028cf8e0">&lt;ThingSmartHouseIndexProtocol&gt;</a></li>
+<li>homeDidAlarm&#160;:&#160;<a class="el" href="protocol_thing_security_arm_ability_delegate-p.html#adc0f2cbfb0d4864c74f8e59fe575f0e3">&lt;ThingSecurityArmAbilityDelegate&gt;</a></li>
+<li>homeDidCancelAlarm&#160;:&#160;<a class="el" href="protocol_thing_security_arm_ability_delegate-p.html#a5d3bbb399188d22a0e1e1638ffd20155">&lt;ThingSecurityArmAbilityDelegate&gt;</a></li>
+<li>homeDidEnterModeWithMode:delayTime:&#160;:&#160;<a class="el" href="protocol_thing_security_arm_ability_delegate-p.html#a2534d98411c58a9e1c3667c2d1e0739b">&lt;ThingSecurityArmAbilityDelegate&gt;</a></li>
 <li>homeDidUpdateInfo:&#160;:&#160;<a class="el" href="protocol_thing_smart_home_delegate-p.html#a898b1a2944921958268c36e7acbd2ea6">&lt;ThingSmartHomeDelegate&gt;</a></li>
 <li>homeDidUpdateRoomInfo:&#160;:&#160;<a class="el" href="protocol_thing_smart_home_delegate-p.html#a6641abc0be5ed70fd07902418585e9c4">&lt;ThingSmartHomeDelegate&gt;</a></li>
 <li>homeDidUpdateSharedInfo:&#160;:&#160;<a class="el" href="protocol_thing_smart_home_delegate-p.html#aef9d1911fb097501b61c4860451021ff">&lt;ThingSmartHomeDelegate&gt;</a></li>
-<li>homeDisplayOrder&#160;:&#160;<a class="el" href="protocol_thing_s_i_node-p.html#a5ee6cede7a8eb8e51f413e3fe4ffb033">&lt;ThingSINode&gt;</a></li>
 <li>homeKitActivator:didReceiveHomeKitDevice:error:&#160;:&#160;<a class="el" href="protocol_thing_smart_home_kit_activator_delegate-p.html#a85aa5025912b6cf1c2206f45af8e114b">&lt;ThingSmartHomeKitActivatorDelegate&gt;</a></li>
+<li>homeKitDeviceWithAccessory:&#160;:&#160;<a class="el" href="interface_thing_homekit_device.html#a5735c06f18b5371832248347b8293b43">ThingHomekitDevice</a></li>
+<li>homeKitService&#160;:&#160;<a class="el" href="protocol_thing_home_kit_protocol-p.html#a6af25a7c16806cb13aeebc6d8ba82f56">&lt;ThingHomeKitProtocol&gt;</a></li>
 <li>homeManager:didAddHome:&#160;:&#160;<a class="el" href="protocol_thing_smart_home_manager_delegate-p.html#ad3c020c70e92bcd886d3a27de59aba35">&lt;ThingSmartHomeManagerDelegate&gt;</a></li>
 <li>homeManager:didRemoveHome:&#160;:&#160;<a class="el" href="protocol_thing_smart_home_manager_delegate-p.html#aa539bcf319f19379351904262c97f1ce">&lt;ThingSmartHomeManagerDelegate&gt;</a></li>
 <li>homeManager:didRemoveHome:homeModel:&#160;:&#160;<a class="el" href="protocol_thing_smart_home_manager_delegate-p.html#a5c6d69f5a6a4d4ccb17764fe3dbcfba7">&lt;ThingSmartHomeManagerDelegate&gt;</a></li>
+<li>homeManagerAuthorizationStatus&#160;:&#160;<a class="el" href="interface_thing_auth_tool_home_kit.html#a553d1bc648ed18256049e4ac03a9180b">ThingAuthToolHomeKit</a>, <a class="el" href="protocol_thing_home_kit_auth_protocol-p.html#a017fead85e01a673cbc924edf3b43ccd">&lt;ThingHomeKitAuthProtocol&gt;</a></li>
 <li>homeModelWithHomeID:&#160;:&#160;<a class="el" href="interface_thing_smart_home_model.html#ad8ed6ec44c0fdf8f1de47f4444720669">ThingSmartHomeModel</a></li>
+<li>homeOnlineStateDidChangeWithOnline:&#160;:&#160;<a class="el" href="protocol_thing_security_arm_ability_delegate-p.html#a5ca12dbdc1f02553301949840c49517a">&lt;ThingSecurityArmAbilityDelegate&gt;</a></li>
+<li>homeWillAlarmWithDelayTime:&#160;:&#160;<a class="el" href="protocol_thing_security_arm_ability_delegate-p.html#a41b663d92923c5684a893cd042e8ac18">&lt;ThingSecurityArmAbilityDelegate&gt;</a></li>
 <li>homeWithHomeId:&#160;:&#160;<a class="el" href="interface_thing_smart_home.html#afd2d75423220590ceb3298021abc6dbf">ThingSmartHome</a></li>
 <li>hookInfoWith:selector:&#160;:&#160;<a class="el" href="interface_thing_module_hook_info.html#a7a8f1906c6a7bc55f5bf986aa6592c14">ThingModuleHookInfo</a></li>
+<li>hookProxyOfProtocol:&#160;:&#160;<a class="el" href="interface_thing_module_mix_bridge.html#a8bffb99e69f05826bbf65009fed32c91">ThingModuleMixBridge</a></li>
 <li>hookService:ofSelector:withModuleCls:&#160;:&#160;<a class="el" href="interface_thing_module_mix_bridge.html#a3368d32cfa2da58606e6c67414e0ed86">ThingModuleMixBridge</a></li>
 <li>hsvColorWithBright:temp:&#160;:&#160;<a class="el" href="interface_thing_smart_scene_color_helper.html#add0a4f3f632cc0e347bcbc76cd1f7b80">ThingSmartSceneColorHelper</a></li>
 <li>hsvWithBright:temp:&#160;:&#160;<a class="el" href="interface_thing_smart_scene_color_helper.html#a02edf7a643dc44d754dff7e65c2c8f91">ThingSmartSceneColorHelper</a></li>

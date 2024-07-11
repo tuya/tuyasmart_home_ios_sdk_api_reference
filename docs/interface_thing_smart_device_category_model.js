@@ -12,6 +12,8 @@ var interface_thing_smart_device_category_model =
     [ "fromFeedback", "interface_thing_smart_device_category_model.html#af5ffe7a5a2d48d0391746aca0625c27b", null ],
     [ "icon", "interface_thing_smart_device_category_model.html#ab8d2feed6633c7db03cf1bab8d5d82f2", null ],
     [ "linkModes", "interface_thing_smart_device_category_model.html#a7784161218b327cb76b96611c1361ed8", null ],
+    [ "manualType", "interface_thing_smart_device_category_model.html#a16c9ac18ceae31aa2da1e2d208c5fd9e", null ],
+    [ "manualUrl", "interface_thing_smart_device_category_model.html#aabdec4a24eea018ab918b89e1dc5d517", null ],
     [ "name", "interface_thing_smart_device_category_model.html#ac51dfebb422fcbbf489cf781d7ad104a", null ],
     [ "nProcess", "interface_thing_smart_device_category_model.html#ad65c5d3d47b62914d4f3c093db460275", null ],
     [ "pid", "interface_thing_smart_device_category_model.html#a9e3869c7a09f1e61e69e8afc30e369dc", null ],

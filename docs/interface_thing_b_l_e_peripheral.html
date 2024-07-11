@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -110,6 +111,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a493d18fc0d432d9342b3c496e1d6b89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fa3e76361c7c92c7e4147123f631039"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_thing_b_l_e_service.html">ThingBLEService</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_b_l_e_peripheral.html#a4fa3e76361c7c92c7e4147123f631039">retrieveServiceByUUID:</a></td></tr>
 <tr class="separator:a4fa3e76361c7c92c7e4147123f631039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80fc669d2e352822fd0640f1375299f8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_b_l_e_peripheral.html#a80fc669d2e352822fd0640f1375299f8">updatecbPeripheral:</a></td></tr>
+<tr class="separator:a80fc669d2e352822fd0640f1375299f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece00587c528bde0100f29fd1db3df0c"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_b_l_e_peripheral.html#aece00587c528bde0100f29fd1db3df0c">initWithCBPeripheral:</a></td></tr>
 <tr class="separator:aece00587c528bde0100f29fd1db3df0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca9fe9c40089562f1180de20fb53e892"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_b_l_e_peripheral.html#aca9fe9c40089562f1180de20fb53e892">discoverServicesWithCompletion:</a></td></tr>
@@ -120,6 +123,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a493d18fc0d432d9342b3c496e1d6b89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fa3e76361c7c92c7e4147123f631039"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_thing_b_l_e_service.html">ThingBLEService</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_b_l_e_peripheral.html#a4fa3e76361c7c92c7e4147123f631039">retrieveServiceByUUID:</a></td></tr>
 <tr class="separator:a4fa3e76361c7c92c7e4147123f631039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80fc669d2e352822fd0640f1375299f8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_b_l_e_peripheral.html#a80fc669d2e352822fd0640f1375299f8">updatecbPeripheral:</a></td></tr>
+<tr class="separator:a80fc669d2e352822fd0640f1375299f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a7d051333101110250acaf4640e5911"><td class="memItemLeft" align="right" valign="top">(void(^))&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_b_l_e_peripheral.html#a0a7d051333101110250acaf4640e5911">readyToSendWriteWithoutResponseBlock</a></td></tr>
 <tr class="separator:a0a7d051333101110250acaf4640e5911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf6773269fcfe5e7c164e794ccbd2caf"><td class="memItemLeft" align="right" valign="top">(void(^))&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_thing_b_l_e_peripheral.html#aaf6773269fcfe5e7c164e794ccbd2caf">didModifyServicesBlock</a></td></tr>
@@ -478,6 +483,44 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a80fc669d2e352822fd0640f1375299f8" name="a80fc669d2e352822fd0640f1375299f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80fc669d2e352822fd0640f1375299f8">&#9670;&nbsp;</a></span>updatecbPeripheral: <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) updatecbPeripheral: </td>
+          <td></td>
+          <td class="paramtype">(CBPeripheral *)&#160;</td>
+          <td class="paramname"><em>cbPeripheral</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Update current cbPeripheral when find new service; </p>
+
+</div>
+</div>
+<a id="a80fc669d2e352822fd0640f1375299f8" name="a80fc669d2e352822fd0640f1375299f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80fc669d2e352822fd0640f1375299f8">&#9670;&nbsp;</a></span>updatecbPeripheral: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) updatecbPeripheral: </td>
+          <td></td>
+          <td class="paramtype">(CBPeripheral *)&#160;</td>
+          <td class="paramname"><em>cbPeripheral</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Update current cbPeripheral when find new service; </p>
+
+</div>
+</div>
 <h2 class="groupheader">Property Documentation</h2>
 <a id="aefb8719ed7625f2e6a12d25385b05be0" name="aefb8719ed7625f2e6a12d25385b05be0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aefb8719ed7625f2e6a12d25385b05be0">&#9670;&nbsp;</a></span>advertisingData</h2>
@@ -519,7 +562,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">atomic</span><span class="mlabel">strong</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -760,7 +803,7 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">weak</span></span>  </td>
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">atomic</span><span class="mlabel">copy</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -771,8 +814,8 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingBluetooth/Build/ThingBluetooth.xcframework/ios-arm64/ThingBluetooth.framework/Headers/<a class="el" href="_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_peripheral_8h_source.html">ThingBLEPeripheral.h</a></li>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingBluetooth/Build/ThingBluetooth.xcframework/ios-arm64_x86_64-simulator/ThingBluetooth.framework/Headers/<a class="el" href="x86__64-simulator_2_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_peripheral_8h_source.html">ThingBLEPeripheral.h</a></li>
+<li>ThingBluetooth/Build/ThingBluetooth.xcframework/ios-arm64/ThingBluetooth.framework/Headers/<a class="el" href="_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_peripheral_8h_source.html">ThingBLEPeripheral.h</a></li>
+<li>ThingBluetooth/Build/ThingBluetooth.xcframework/ios-arm64_x86_64-simulator/ThingBluetooth.framework/Headers/<a class="el" href="x86__64-simulator_2_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_peripheral_8h_source.html">ThingBLEPeripheral.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

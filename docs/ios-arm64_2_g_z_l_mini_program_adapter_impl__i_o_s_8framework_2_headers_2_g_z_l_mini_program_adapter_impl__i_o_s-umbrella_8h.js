@@ -1,0 +1,6 @@
+var ios_arm64_2_g_z_l_mini_program_adapter_impl__i_o_s_8framework_2_headers_2_g_z_l_mini_program_adapter_impl__i_o_s_umbrella_8h =
+[
+    [ "FOUNDATION_EXPORT", "ios-arm64_2_g_z_l_mini_program_adapter_impl__i_o_s_8framework_2_headers_2_g_z_l_mini_program_adapter_impl__i_o_s-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
+    [ "GZLMiniProgramAdapterImpl_iOSVersionNumber", "ios-arm64_2_g_z_l_mini_program_adapter_impl__i_o_s_8framework_2_headers_2_g_z_l_mini_program_adapter_impl__i_o_s-umbrella_8h.html#afd82778c79cb3ff6816e6275db742b57", null ],
+    [ "GZLMiniProgramAdapterImpl_iOSVersionString", "ios-arm64_2_g_z_l_mini_program_adapter_impl__i_o_s_8framework_2_headers_2_g_z_l_mini_program_adapter_impl__i_o_s-umbrella_8h.html#a6b18243de32f32f0d9c31911ee8b0812", null ]
+];

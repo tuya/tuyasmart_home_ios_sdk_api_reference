@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -108,6 +109,9 @@ Instance Methods</h2></td></tr>
 <tr class="separator:afca4d09a35bf847393fbdac9f7dad562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13be6b07bc4792804273ddcc86daf5c7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_group_08.html#a13be6b07bc4792804273ddcc86daf5c7">queryGroupListWithDevid:</a></td></tr>
 <tr class="separator:a13be6b07bc4792804273ddcc86daf5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1585f74cbb66ddb5b614584ac422d02"><td class="memItemLeft" align="right" valign="top">(NSMutableArray&lt; NSString * &gt; *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_group_08.html#aa1585f74cbb66ddb5b614584ac422d02">getSIGMeshSubDeviceList</a></td></tr>
+<tr class="memdesc:aa1585f74cbb66ddb5b614584ac422d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sigmesh子设备列表  <a href="category_thing_smart_s_i_g_mesh_manager_07_group_08.html#aa1585f74cbb66ddb5b614584ac422d02">More...</a><br /></td></tr>
+<tr class="separator:aa1585f74cbb66ddb5b614584ac422d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b85d8a758a03a8a4b994c1129384a6"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_group_08.html#ab6b85d8a758a03a8a4b994c1129384a6">addDeviceToGroupWithDevId:groupAddress:</a></td></tr>
 <tr class="separator:ab6b85d8a758a03a8a4b994c1129384a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec8a5665e198b8af385eb297266e0e70"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_group_08.html#aec8a5665e198b8af385eb297266e0e70">handleDeviceToGroupWithDevId:groupAddress:isAdd:mainDevId:categoryCode:</a></td></tr>
@@ -120,6 +124,9 @@ Instance Methods</h2></td></tr>
 <tr class="separator:afca4d09a35bf847393fbdac9f7dad562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13be6b07bc4792804273ddcc86daf5c7"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_group_08.html#a13be6b07bc4792804273ddcc86daf5c7">queryGroupListWithDevid:</a></td></tr>
 <tr class="separator:a13be6b07bc4792804273ddcc86daf5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1585f74cbb66ddb5b614584ac422d02"><td class="memItemLeft" align="right" valign="top">(NSMutableArray&lt; NSString * &gt; *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_thing_smart_s_i_g_mesh_manager_07_group_08.html#aa1585f74cbb66ddb5b614584ac422d02">getSIGMeshSubDeviceList</a></td></tr>
+<tr class="memdesc:aa1585f74cbb66ddb5b614584ac422d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sigmesh子设备列表  <a href="category_thing_smart_s_i_g_mesh_manager_07_group_08.html#aa1585f74cbb66ddb5b614584ac422d02">More...</a><br /></td></tr>
+<tr class="separator:aa1585f74cbb66ddb5b614584ac422d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The Bluetooth mesh activator category for the Bluetooth mesh manager. </p>
@@ -312,6 +319,48 @@ Instance Methods</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Extends class <a class="el" href="interface_thing_smart_s_i_g_mesh_manager.html#addc53075a51516a0d86aeb7bdf7cfc28">ThingSmartSIGMeshManager</a>.</p>
+
+</div>
+</div>
+<a id="aa1585f74cbb66ddb5b614584ac422d02" name="aa1585f74cbb66ddb5b614584ac422d02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1585f74cbb66ddb5b614584ac422d02">&#9670;&nbsp;</a></span>getSIGMeshSubDeviceList <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSMutableArray&lt; NSString * &gt; *) getSIGMeshSubDeviceList </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取sigmesh子设备列表 </p>
+
+<p>Extends class <a class="el" href="interface_thing_smart_s_i_g_mesh_manager.html#aa1585f74cbb66ddb5b614584ac422d02">ThingSmartSIGMeshManager</a>.</p>
+
+</div>
+</div>
+<a id="aa1585f74cbb66ddb5b614584ac422d02" name="aa1585f74cbb66ddb5b614584ac422d02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1585f74cbb66ddb5b614584ac422d02">&#9670;&nbsp;</a></span>getSIGMeshSubDeviceList <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSMutableArray&lt; NSString * &gt; *) getSIGMeshSubDeviceList </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取sigmesh子设备列表 </p>
+
+<p>Extends class <a class="el" href="interface_thing_smart_s_i_g_mesh_manager.html#aa1585f74cbb66ddb5b614584ac422d02">ThingSmartSIGMeshManager</a>.</p>
 
 </div>
 </div>
@@ -536,8 +585,8 @@ Instance Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this category was generated from the following files:<ul>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64/ThingSmartBLEMeshKit.framework/Headers/<a class="el" href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_09_group_8h_source.html">ThingSmartSIGMeshManager+Group.h</a></li>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBLEMeshKit.framework/Headers/<a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_09_group_8h_source.html">ThingSmartSIGMeshManager+Group.h</a></li>
+<li>ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64/ThingSmartBLEMeshKit.framework/Headers/<a class="el" href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_09_group_8h_source.html">ThingSmartSIGMeshManager+Group.h</a></li>
+<li>ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBLEMeshKit.framework/Headers/<a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_09_group_8h_source.html">ThingSmartSIGMeshManager+Group.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

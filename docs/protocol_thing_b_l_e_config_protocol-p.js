@@ -44,6 +44,8 @@ var protocol_thing_b_l_e_config_protocol_p =
     [ "publishFileWithDeviceInfo:fileId:fileIdentifier:fileVersion:fileData:progressBlock:success:failure:", "protocol_thing_b_l_e_config_protocol-p.html#a332759543711ddab4e27f1a51dd986c7", null ],
     [ "publishIoTTransparentDataWithDeviceInfo:type:data:success:failure:", "protocol_thing_b_l_e_config_protocol-p.html#afc45350c82fc5c7144aa06aa16db273f", null ],
     [ "publishIoTTransparentDataWithDeviceInfo:type:data:success:failure:", "protocol_thing_b_l_e_config_protocol-p.html#afc45350c82fc5c7144aa06aa16db273f", null ],
+    [ "publishSplitCommandWithDeviceInfo:type:head:data:success:failure:", "protocol_thing_b_l_e_config_protocol-p.html#a4d6d2ed910791b81e9e90c153f8f2765", null ],
+    [ "publishSplitCommandWithDeviceInfo:type:head:data:success:failure:", "protocol_thing_b_l_e_config_protocol-p.html#a4d6d2ed910791b81e9e90c153f8f2765", null ],
     [ "publishTransparentDataWithDeviceInfo:data:success:failure:", "protocol_thing_b_l_e_config_protocol-p.html#afdbd3cde14c22fd648e0e0ff9db7d18f", null ],
     [ "publishTransparentDataWithDeviceInfo:data:success:failure:", "protocol_thing_b_l_e_config_protocol-p.html#afdbd3cde14c22fd648e0e0ff9db7d18f", null ],
     [ "publishWifiTransportDataWithDeviceInfo:data:success:failure:", "protocol_thing_b_l_e_config_protocol-p.html#a0f21326197d9c269ee23a41af39332d0", null ],

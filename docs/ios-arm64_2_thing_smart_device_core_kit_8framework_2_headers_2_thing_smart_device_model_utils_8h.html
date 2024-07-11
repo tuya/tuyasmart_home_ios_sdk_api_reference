@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: /Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/ios-arm64/ThingSmartDeviceCoreKit.framework/Headers/ThingSmartDeviceModelUtils.h File Reference</title>
+<title>Tuya iOS Smart Life App SDK: ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/ios-arm64/ThingSmartDeviceCoreKit.framework/Headers/ThingSmartDeviceModelUtils.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -104,39 +105,44 @@ Enumerations</h2></td></tr>
 , <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2">ThingSmartDeviceUpgradeStatusDownloaded</a> = 6
 , <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728">ThingSmartDeviceUpgradeStatusTimeout</a> = 7
 , <br />
-&#160;&#160;<a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f">ThingSmartDeviceUpgradeStatusLocalPrepare</a> = 100
+&#160;&#160;<a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5aa9dc3c1d483329e56f36e589cca5703d">ThingSmartDeviceUpgradeStatusInQueue</a> = 13
+, <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f">ThingSmartDeviceUpgradeStatusLocalPrepare</a> = 100
 , <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5adea47281f73ed55c548d5f6609a20549">ThingSmartDeviceUpgradeStatusDefault</a> = 0
 , <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5acc013c2bb2533b4cc51efe577d52536a">ThingSmartDeviceUpgradeStatusReady</a> = 1
-, <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5abc8927c5aaee429170410b96dbcd6cf3">ThingSmartDeviceUpgradeStatusUpgrading</a> = 2
 , <br />
-&#160;&#160;<a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a23081044a6d621a5ba8b013b4d3ecbf3">ThingSmartDeviceUpgradeStatusSuccess</a> = 3
+&#160;&#160;<a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5abc8927c5aaee429170410b96dbcd6cf3">ThingSmartDeviceUpgradeStatusUpgrading</a> = 2
+, <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a23081044a6d621a5ba8b013b4d3ecbf3">ThingSmartDeviceUpgradeStatusSuccess</a> = 3
 , <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a91ea7f006cca71b5d48bb53576e5ac05">ThingSmartDeviceUpgradeStatusFailure</a> = 4
 , <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a24576a3717eeeffbed9fad83de8256c2">ThingSmartDeviceUpgradeStatusWaitingExectue</a> = 5
-, <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2">ThingSmartDeviceUpgradeStatusDownloaded</a> = 6
 , <br />
-&#160;&#160;<a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728">ThingSmartDeviceUpgradeStatusTimeout</a> = 7
+&#160;&#160;<a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2">ThingSmartDeviceUpgradeStatusDownloaded</a> = 6
+, <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728">ThingSmartDeviceUpgradeStatusTimeout</a> = 7
+, <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5aa9dc3c1d483329e56f36e589cca5703d">ThingSmartDeviceUpgradeStatusInQueue</a> = 13
 , <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f">ThingSmartDeviceUpgradeStatusLocalPrepare</a> = 100
-, <a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5adea47281f73ed55c548d5f6609a20549">ThingSmartDeviceUpgradeStatusDefault</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5adea47281f73ed55c548d5f6609a20549">ThingSmartDeviceUpgradeStatusDefault</a> = 0
 , <a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5acc013c2bb2533b4cc51efe577d52536a">ThingSmartDeviceUpgradeStatusReady</a> = 1
-, <br />
-&#160;&#160;<a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5abc8927c5aaee429170410b96dbcd6cf3">ThingSmartDeviceUpgradeStatusUpgrading</a> = 2
+, <a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5abc8927c5aaee429170410b96dbcd6cf3">ThingSmartDeviceUpgradeStatusUpgrading</a> = 2
 , <a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a23081044a6d621a5ba8b013b4d3ecbf3">ThingSmartDeviceUpgradeStatusSuccess</a> = 3
-, <a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a91ea7f006cca71b5d48bb53576e5ac05">ThingSmartDeviceUpgradeStatusFailure</a> = 4
-, <a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a24576a3717eeeffbed9fad83de8256c2">ThingSmartDeviceUpgradeStatusWaitingExectue</a> = 5
 , <br />
-&#160;&#160;<a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2">ThingSmartDeviceUpgradeStatusDownloaded</a> = 6
+&#160;&#160;<a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a91ea7f006cca71b5d48bb53576e5ac05">ThingSmartDeviceUpgradeStatusFailure</a> = 4
+, <a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a24576a3717eeeffbed9fad83de8256c2">ThingSmartDeviceUpgradeStatusWaitingExectue</a> = 5
+, <a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2">ThingSmartDeviceUpgradeStatusDownloaded</a> = 6
 , <a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728">ThingSmartDeviceUpgradeStatusTimeout</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5aa9dc3c1d483329e56f36e589cca5703d">ThingSmartDeviceUpgradeStatusInQueue</a> = 13
 , <a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f">ThingSmartDeviceUpgradeStatusLocalPrepare</a> = 100
 , <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5adea47281f73ed55c548d5f6609a20549">ThingSmartDeviceUpgradeStatusDefault</a> = 0
+, <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5acc013c2bb2533b4cc51efe577d52536a">ThingSmartDeviceUpgradeStatusReady</a> = 1
 , <br />
-&#160;&#160;<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5acc013c2bb2533b4cc51efe577d52536a">ThingSmartDeviceUpgradeStatusReady</a> = 1
-, <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5abc8927c5aaee429170410b96dbcd6cf3">ThingSmartDeviceUpgradeStatusUpgrading</a> = 2
+&#160;&#160;<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5abc8927c5aaee429170410b96dbcd6cf3">ThingSmartDeviceUpgradeStatusUpgrading</a> = 2
 , <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a23081044a6d621a5ba8b013b4d3ecbf3">ThingSmartDeviceUpgradeStatusSuccess</a> = 3
 , <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a91ea7f006cca71b5d48bb53576e5ac05">ThingSmartDeviceUpgradeStatusFailure</a> = 4
+, <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a24576a3717eeeffbed9fad83de8256c2">ThingSmartDeviceUpgradeStatusWaitingExectue</a> = 5
 , <br />
-&#160;&#160;<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5a24576a3717eeeffbed9fad83de8256c2">ThingSmartDeviceUpgradeStatusWaitingExectue</a> = 5
-, <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2">ThingSmartDeviceUpgradeStatusDownloaded</a> = 6
+&#160;&#160;<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2">ThingSmartDeviceUpgradeStatusDownloaded</a> = 6
 , <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728">ThingSmartDeviceUpgradeStatusTimeout</a> = 7
+, <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5aa9dc3c1d483329e56f36e589cca5703d">ThingSmartDeviceUpgradeStatusInQueue</a> = 13
 , <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html#ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f">ThingSmartDeviceUpgradeStatusLocalPrepare</a> = 100
 <br />
  }</td></tr>
@@ -180,23 +186,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728" name="ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728"></a>ThingSmartDeviceUpgradeStatusTimeout&#160;</td><td class="fielddoc"><p >Timeout: The update timed out. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f" name="ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f"></a>ThingSmartDeviceUpgradeStatusLocalPrepare&#160;</td><td class="fielddoc"><p >LocalPrepare: The app local prepare status. (when the device is linking, switch to sub device, app downloding firmware ....) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5adea47281f73ed55c548d5f6609a20549" name="ad7e00a45a7dd2493a5986d429fb991c5adea47281f73ed55c548d5f6609a20549"></a>ThingSmartDeviceUpgradeStatusDefault&#160;</td><td class="fielddoc"><p >Default: No update is required. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5acc013c2bb2533b4cc51efe577d52536a" name="ad7e00a45a7dd2493a5986d429fb991c5acc013c2bb2533b4cc51efe577d52536a"></a>ThingSmartDeviceUpgradeStatusReady&#160;</td><td class="fielddoc"><p >Ready: The hardware is ready. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5abc8927c5aaee429170410b96dbcd6cf3" name="ad7e00a45a7dd2493a5986d429fb991c5abc8927c5aaee429170410b96dbcd6cf3"></a>ThingSmartDeviceUpgradeStatusUpgrading&#160;</td><td class="fielddoc"><p >Upgrading: The update is in progress. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5a23081044a6d621a5ba8b013b4d3ecbf3" name="ad7e00a45a7dd2493a5986d429fb991c5a23081044a6d621a5ba8b013b4d3ecbf3"></a>ThingSmartDeviceUpgradeStatusSuccess&#160;</td><td class="fielddoc"><p >Success: The update is completed. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5a91ea7f006cca71b5d48bb53576e5ac05" name="ad7e00a45a7dd2493a5986d429fb991c5a91ea7f006cca71b5d48bb53576e5ac05"></a>ThingSmartDeviceUpgradeStatusFailure&#160;</td><td class="fielddoc"><p >Failure: The update has an exception. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5a24576a3717eeeffbed9fad83de8256c2" name="ad7e00a45a7dd2493a5986d429fb991c5a24576a3717eeeffbed9fad83de8256c2"></a>ThingSmartDeviceUpgradeStatusWaitingExectue&#160;</td><td class="fielddoc"><p >NB-IoT devices wait to execute NB-IoT tasks. Device tasks have been sent but not yet executed. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2" name="ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2"></a>ThingSmartDeviceUpgradeStatusDownloaded&#160;</td><td class="fielddoc"><p >NB-IoT devices have downloaded NB-IoT firmware. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728" name="ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728"></a>ThingSmartDeviceUpgradeStatusTimeout&#160;</td><td class="fielddoc"><p >Timeout: The update timed out. </p>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5aa9dc3c1d483329e56f36e589cca5703d" name="ad7e00a45a7dd2493a5986d429fb991c5aa9dc3c1d483329e56f36e589cca5703d"></a>ThingSmartDeviceUpgradeStatusInQueue&#160;</td><td class="fielddoc"><p >InQueue: The update is in the queue. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f" name="ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f"></a>ThingSmartDeviceUpgradeStatusLocalPrepare&#160;</td><td class="fielddoc"><p >LocalPrepare: The app local prepare status. (when the device is linking, switch to sub device, app downloding firmware ....) </p>
 </td></tr>
@@ -216,6 +206,8 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728" name="ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728"></a>ThingSmartDeviceUpgradeStatusTimeout&#160;</td><td class="fielddoc"><p >Timeout: The update timed out. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5aa9dc3c1d483329e56f36e589cca5703d" name="ad7e00a45a7dd2493a5986d429fb991c5aa9dc3c1d483329e56f36e589cca5703d"></a>ThingSmartDeviceUpgradeStatusInQueue&#160;</td><td class="fielddoc"><p >InQueue: The update is in the queue. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f" name="ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f"></a>ThingSmartDeviceUpgradeStatusLocalPrepare&#160;</td><td class="fielddoc"><p >LocalPrepare: The app local prepare status. (when the device is linking, switch to sub device, app downloding firmware ....) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5adea47281f73ed55c548d5f6609a20549" name="ad7e00a45a7dd2493a5986d429fb991c5adea47281f73ed55c548d5f6609a20549"></a>ThingSmartDeviceUpgradeStatusDefault&#160;</td><td class="fielddoc"><p >Default: No update is required. </p>
@@ -233,12 +225,34 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2" name="ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2"></a>ThingSmartDeviceUpgradeStatusDownloaded&#160;</td><td class="fielddoc"><p >NB-IoT devices have downloaded NB-IoT firmware. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728" name="ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728"></a>ThingSmartDeviceUpgradeStatusTimeout&#160;</td><td class="fielddoc"><p >Timeout: The update timed out. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5aa9dc3c1d483329e56f36e589cca5703d" name="ad7e00a45a7dd2493a5986d429fb991c5aa9dc3c1d483329e56f36e589cca5703d"></a>ThingSmartDeviceUpgradeStatusInQueue&#160;</td><td class="fielddoc"><p >InQueue: The update is in the queue. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f" name="ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f"></a>ThingSmartDeviceUpgradeStatusLocalPrepare&#160;</td><td class="fielddoc"><p >LocalPrepare: The app local prepare status. (when the device is linking, switch to sub device, app downloding firmware ....) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5adea47281f73ed55c548d5f6609a20549" name="ad7e00a45a7dd2493a5986d429fb991c5adea47281f73ed55c548d5f6609a20549"></a>ThingSmartDeviceUpgradeStatusDefault&#160;</td><td class="fielddoc"><p >Default: No update is required. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5acc013c2bb2533b4cc51efe577d52536a" name="ad7e00a45a7dd2493a5986d429fb991c5acc013c2bb2533b4cc51efe577d52536a"></a>ThingSmartDeviceUpgradeStatusReady&#160;</td><td class="fielddoc"><p >Ready: The hardware is ready. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5abc8927c5aaee429170410b96dbcd6cf3" name="ad7e00a45a7dd2493a5986d429fb991c5abc8927c5aaee429170410b96dbcd6cf3"></a>ThingSmartDeviceUpgradeStatusUpgrading&#160;</td><td class="fielddoc"><p >Upgrading: The update is in progress. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5a23081044a6d621a5ba8b013b4d3ecbf3" name="ad7e00a45a7dd2493a5986d429fb991c5a23081044a6d621a5ba8b013b4d3ecbf3"></a>ThingSmartDeviceUpgradeStatusSuccess&#160;</td><td class="fielddoc"><p >Success: The update is completed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5a91ea7f006cca71b5d48bb53576e5ac05" name="ad7e00a45a7dd2493a5986d429fb991c5a91ea7f006cca71b5d48bb53576e5ac05"></a>ThingSmartDeviceUpgradeStatusFailure&#160;</td><td class="fielddoc"><p >Failure: The update has an exception. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5a24576a3717eeeffbed9fad83de8256c2" name="ad7e00a45a7dd2493a5986d429fb991c5a24576a3717eeeffbed9fad83de8256c2"></a>ThingSmartDeviceUpgradeStatusWaitingExectue&#160;</td><td class="fielddoc"><p >NB-IoT devices wait to execute NB-IoT tasks. Device tasks have been sent but not yet executed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2" name="ad7e00a45a7dd2493a5986d429fb991c5ac5df337d7810167c0302c9eb78966bb2"></a>ThingSmartDeviceUpgradeStatusDownloaded&#160;</td><td class="fielddoc"><p >NB-IoT devices have downloaded NB-IoT firmware. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728" name="ad7e00a45a7dd2493a5986d429fb991c5afebd3d58ae2eaf6258bbc7a552b3e728"></a>ThingSmartDeviceUpgradeStatusTimeout&#160;</td><td class="fielddoc"><p >Timeout: The update timed out. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5aa9dc3c1d483329e56f36e589cca5703d" name="ad7e00a45a7dd2493a5986d429fb991c5aa9dc3c1d483329e56f36e589cca5703d"></a>ThingSmartDeviceUpgradeStatusInQueue&#160;</td><td class="fielddoc"><p >InQueue: The update is in the queue. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f" name="ad7e00a45a7dd2493a5986d429fb991c5aff04e864d32592f65730923d30fe933f"></a>ThingSmartDeviceUpgradeStatusLocalPrepare&#160;</td><td class="fielddoc"><p >LocalPrepare: The app local prepare status. (when the device is linking, switch to sub device, app downloding firmware ....) </p>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h_source.html#l00011">11</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h_source.html">ThingSmartDeviceModelUtils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h_source.html#l00012">12</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h_source.html">ThingSmartDeviceModelUtils.h</a>.</p>
 
 </div>
 </div>
@@ -273,7 +287,7 @@ Functions</h2></td></tr>
 <p >Generic firmware update. (General update such as MCU, WiFi, BLE and other hardware module firmware in the device.)</p>
 <p >Update PID-specific firmware. (General update such as product schema, panel settings, multilingual settings, and shortcut control)</p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h_source.html#l00025">25</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h_source.html">ThingSmartDeviceModelUtils.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h_source.html#l00027">27</a> of file <a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h_source.html">ThingSmartDeviceModelUtils.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +296,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_350ab2d14705a2da30f5c4a8aeabf1fb.html">Volumes</a></li><li class="navelem"><a class="el" href="dir_b5508c5733aa93b21c7668144b6a10e6.html">work</a></li><li class="navelem"><a class="el" href="dir_9c2084141ba9d0a81a6d980b794b2bf3.html">source_code</a></li><li class="navelem"><a class="el" href="dir_9e235fb0c6055da3049adf9d594dd735.html">tuya</a></li><li class="navelem"><a class="el" href="dir_2eca0df6357931a63786b682b2a3523b.html">bizbundle</a></li><li class="navelem"><a class="el" href="dir_09caf3263995c8bca06aeee061548636.html">BizBundle</a></li><li class="navelem"><a class="el" href="dir_a739206a7d38e5a247a86838d8543d42.html">tuya-home-ios-sdk-sample-swift</a></li><li class="navelem"><a class="el" href="dir_36297105b3a1d1ff6152618f6a772449.html">Pods</a></li><li class="navelem"><a class="el" href="dir_826ff95c2556d0c1e66ae70dd9be8469.html">ThingSmartDeviceCoreKit</a></li><li class="navelem"><a class="el" href="dir_9bee19d7a449a8fcd928e0735b46f346.html">Build</a></li><li class="navelem"><a class="el" href="dir_d2acf59b378482beb6e97cb75cf8fe79.html">ThingSmartDeviceCoreKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_b1731c45c1b544747a2f58357fd09994.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_7de43d4486f8e89bffae6df9b500d66b.html">ThingSmartDeviceCoreKit.framework</a></li><li class="navelem"><a class="el" href="dir_e7896d2557f0de8af98cef24b03ec9cc.html">Headers</a></li><li class="navelem"><a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html">ThingSmartDeviceModelUtils.h</a></li>
+    <li class="navelem"><a class="el" href="dir_3a032b61856320095cc22c8e666cb665.html">ThingSmartDeviceCoreKit</a></li><li class="navelem"><a class="el" href="dir_ae889865f5a9bd0c36a452ae54c8cd8d.html">Build</a></li><li class="navelem"><a class="el" href="dir_6117133496ab37cf068ac8dce667b0c6.html">ThingSmartDeviceCoreKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_1bb5e9260edc7fdf8e11e29b4c32c707.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_75c988c275889f728b1c63ff1d8b70c0.html">ThingSmartDeviceCoreKit.framework</a></li><li class="navelem"><a class="el" href="dir_07bc91ba6121faff2c38fbd56d3ea0f0.html">Headers</a></li><li class="navelem"><a class="el" href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h.html">ThingSmartDeviceModelUtils.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

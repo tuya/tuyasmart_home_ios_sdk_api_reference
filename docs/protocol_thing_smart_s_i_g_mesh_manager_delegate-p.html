@@ -24,8 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.8.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
    </div>
   </td>
  </tr>
@@ -116,6 +117,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a21d2f7f01a434ef8b466145ce5d1652c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c97825f0cd6e373b273fadc84afaa8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a60c97825f0cd6e373b273fadc84afaa8">notifyCentralManagerDidDisconnectPeripheral:</a></td></tr>
 <tr class="separator:a60c97825f0cd6e373b273fadc84afaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41002c665b97d88ec5d10877003ef552"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a41002c665b97d88ec5d10877003ef552">didProxyAndRelayStatusUpdated:</a></td></tr>
+<tr class="separator:a41002c665b97d88ec5d10877003ef552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09f317688be0b4a18591aadce210fc04"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a09f317688be0b4a18591aadce210fc04">sigMeshManager:didScanedDevice:</a></td></tr>
 <tr class="separator:a09f317688be0b4a18591aadce210fc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08e0b76c3efa2a001533559291035c86"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a08e0b76c3efa2a001533559291035c86">sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:</a></td></tr>
@@ -161,6 +164,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a21d2f7f01a434ef8b466145ce5d1652c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c97825f0cd6e373b273fadc84afaa8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a60c97825f0cd6e373b273fadc84afaa8">notifyCentralManagerDidDisconnectPeripheral:</a></td></tr>
 <tr class="separator:a60c97825f0cd6e373b273fadc84afaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41002c665b97d88ec5d10877003ef552"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a41002c665b97d88ec5d10877003ef552">didProxyAndRelayStatusUpdated:</a></td></tr>
+<tr class="separator:a41002c665b97d88ec5d10877003ef552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09f317688be0b4a18591aadce210fc04"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a09f317688be0b4a18591aadce210fc04">sigMeshManager:didScanedDevice:</a></td></tr>
 <tr class="separator:a09f317688be0b4a18591aadce210fc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08e0b76c3efa2a001533559291035c86"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a08e0b76c3efa2a001533559291035c86">sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:</a></td></tr>
@@ -339,6 +344,42 @@ Instance Methods</h2></td></tr>
           <td></td>
           <td class="paramtype">(<a class="el" href="interface_thing_smart_s_i_g_mesh_manager.html">ThingSmartSIGMeshManager</a> *)&#160;</td>
           <td class="paramname"><em>manager</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41002c665b97d88ec5d10877003ef552" name="a41002c665b97d88ec5d10877003ef552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41002c665b97d88ec5d10877003ef552">&#9670;&nbsp;</a></span>didProxyAndRelayStatusUpdated: <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) didProxyAndRelayStatusUpdated: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>devId</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41002c665b97d88ec5d10877003ef552" name="a41002c665b97d88ec5d10877003ef552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41002c665b97d88ec5d10877003ef552">&#9670;&nbsp;</a></span>didProxyAndRelayStatusUpdated: <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) didProxyAndRelayStatusUpdated: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>devId</em></td>
           <td></td>
         </tr>
       </table>
@@ -1359,8 +1400,8 @@ Instance Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this protocol was generated from the following files:<ul>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64/ThingSmartBLEMeshKit.framework/Headers/<a class="el" href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_8h_source.html">ThingSmartSIGMeshManager.h</a></li>
-<li>/Volumes/work/source_code/tuya/bizbundle/BizBundle/tuya-home-ios-sdk-sample-swift/Pods/ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBLEMeshKit.framework/Headers/<a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_8h_source.html">ThingSmartSIGMeshManager.h</a></li>
+<li>ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64/ThingSmartBLEMeshKit.framework/Headers/<a class="el" href="_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_8h_source.html">ThingSmartSIGMeshManager.h</a></li>
+<li>ThingSmartBLEMeshKit/Build/ThingSmartBLEMeshKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartBLEMeshKit.framework/Headers/<a class="el" href="x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_8h_source.html">ThingSmartSIGMeshManager.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

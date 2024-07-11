@@ -1,0 +1,28 @@
+var watchos_arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h =
+[
+    [ "ThingEncryptImageFrame", "interface_thing_encrypt_image_frame.html", "interface_thing_encrypt_image_frame" ],
+    [ "ThingEncryptImageDecoder", "interface_thing_encrypt_image_decoder.html", "interface_thing_encrypt_image_decoder" ],
+    [ "ThingEncryptImageEncoder", "interface_thing_encrypt_image_encoder.html", "interface_thing_encrypt_image_encoder" ],
+    [ "UIImage(ThingImageCoder)", "category_u_i_image_07_thing_image_coder_08.html", "category_u_i_image_07_thing_image_coder_08" ],
+    [ "NS_ENUM", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a07918fcb1dc98c8f4ec1e21baaf91be7", null ],
+    [ "NS_ENUM", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#af99de39b43dd01cf945d462311747799", null ],
+    [ "NS_ENUM", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a2048e0bbeb04d674efa7adc09074ac2d", null ],
+    [ "ThingCGColorSpaceGetDeviceGray", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a08356fa25996ca40473940a284e4ab2b", null ],
+    [ "ThingCGColorSpaceGetDeviceRGB", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a97a42cc70f517f99fb4633c2875233a9", null ],
+    [ "ThingCGColorSpaceIsDeviceGray", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#af9bd11b85e2905950018cd675152772b", null ],
+    [ "ThingCGColorSpaceIsDeviceRGB", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a657fa0055e9f382d49c3f95fe079b28a", null ],
+    [ "ThingCGImageCreateAffineTransformCopy", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#ae4370f164e95445c90795256337cbf03", null ],
+    [ "ThingCGImageCreateCopyWithOrientation", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a40cd311d0dc29ca2422bb546abed95c3", null ],
+    [ "ThingCGImageCreateDecodedCopy", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a2b35bd63fafc9b039dd3be36079fc171", null ],
+    [ "ThingCGImageCreateEncodedData", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#adba2f7e25dc818cd506b5f54fe2712ae", null ],
+    [ "ThingCGImageCreateEncodedWebPData", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a6ce3aee2a33b3803b53c4dfdc16a4e92", null ],
+    [ "ThingCGImageCreateWithWebPData", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a8cb76a25501e4b2475c3d7c2aa1bc194", null ],
+    [ "ThingImageDetectType", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#aa6505c0e141635ed5ca816af900a9fcb", null ],
+    [ "ThingImageGetWebPFrameCount", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a6a515c0113c2d876fa4d53158223db97", null ],
+    [ "ThingImageTypeFromUTType", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a1057172708f13c03883cc613ea7608b6", null ],
+    [ "ThingImageTypeGetExtension", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a132b7d4b4c58ef05836a442a6fe94213", null ],
+    [ "ThingImageTypeToUTType", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a19340bc2318bfb9f6afd3c9b3a635efe", null ],
+    [ "ThingImageWebPAvailable", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a61da17b2bd600c0f8eb3f8e4bec2ae35", null ],
+    [ "ThingUIImageOrientationFromEXIFValue", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#a18cb2160185a383bcd77c3f5eb0839f6", null ],
+    [ "ThingUIImageOrientationToEXIFValue", "watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h.html#ae1760617a6b58f731439fb5c3c0dfbfe", null ]
+];

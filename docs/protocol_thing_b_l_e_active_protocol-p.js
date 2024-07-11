@@ -14,6 +14,8 @@ var protocol_thing_b_l_e_active_protocol_p =
     [ "multiActiveWithDevice:ssid:passwd:token:handlerDelegate:success:failure:", "protocol_thing_b_l_e_active_protocol-p.html#ad02bd176f050830e9e602871be9f8b56", null ],
     [ "pairWithToken:ssid:pwd:", "protocol_thing_b_l_e_active_protocol-p.html#a96a39f1e27b358a2432484c440b7a5b3", null ],
     [ "pairWithToken:ssid:pwd:", "protocol_thing_b_l_e_active_protocol-p.html#a96a39f1e27b358a2432484c440b7a5b3", null ],
+    [ "pairWithTokenWithDevice:token:ssid:pwd:", "protocol_thing_b_l_e_active_protocol-p.html#a314843f9b9818d431ab7a8b4a6e24160", null ],
+    [ "pairWithTokenWithDevice:token:ssid:pwd:", "protocol_thing_b_l_e_active_protocol-p.html#a314843f9b9818d431ab7a8b4a6e24160", null ],
     [ "pairZigbeeSubDeviceWithBleChannel:success:failure:", "protocol_thing_b_l_e_active_protocol-p.html#a8ce8164ed1d24c03d5ab6aeae599d441", null ],
     [ "pairZigbeeSubDeviceWithBleChannel:success:failure:", "protocol_thing_b_l_e_active_protocol-p.html#a8ce8164ed1d24c03d5ab6aeae599d441", null ],
     [ "publishGatewayInfoWithBleChannel:gatewayInfo:success:failure:", "protocol_thing_b_l_e_active_protocol-p.html#a9b084f6483c907c2ea184ef40f07a761", null ],

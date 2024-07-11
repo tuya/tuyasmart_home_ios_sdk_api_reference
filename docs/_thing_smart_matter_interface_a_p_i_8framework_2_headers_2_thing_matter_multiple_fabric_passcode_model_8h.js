@@ -1,0 +1,4 @@
+var _thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_multiple_fabric_passcode_model_8h =
+[
+    [ "ThingMatterMultipleFabricPasscodeModel", "interface_thing_matter_multiple_fabric_passcode_model.html", "interface_thing_matter_multiple_fabric_passcode_model" ]
+];
