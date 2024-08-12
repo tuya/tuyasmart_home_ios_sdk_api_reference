@@ -1,0 +1,231 @@
+\hypertarget{interface_t_smart_scene_precondition_param}{}\doxysection{TSmart\+Scene\+Precondition\+Param Class Reference}
+\label{interface_t_smart_scene_precondition_param}\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+
+
+{\ttfamily \#import $<$TSmart\+Scene\+Precondition\+Param.\+h$>$}
+
+Inheritance diagram for TSmart\+Scene\+Precondition\+Param\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.386139cm]{interface_t_smart_scene_precondition_param}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_t_smart_scene_precondition_param_a94f0688f3746787611d917db70a0726a}{string\+From\+Precondition\+Type}}
+\begin{DoxyCompactList}\small\item\em Returns a description string based on the precondition\+Type. It includes allday, daytime, night, custom. \end{DoxyCompactList}\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_t_smart_scene_precondition_param_a94f0688f3746787611d917db70a0726a}{string\+From\+Precondition\+Type}}
+\begin{DoxyCompactList}\small\item\em Returns a description string based on the precondition\+Type. It includes allday, daytime, night, custom. \end{DoxyCompactList}\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_t_smart_scene_precondition_param_a94f0688f3746787611d917db70a0726a}{string\+From\+Precondition\+Type}}
+\begin{DoxyCompactList}\small\item\em Returns a description string based on the precondition\+Type. It includes allday, daytime, night, custom. \end{DoxyCompactList}\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_t_smart_scene_precondition_param_a94f0688f3746787611d917db70a0726a}{string\+From\+Precondition\+Type}}
+\begin{DoxyCompactList}\small\item\em Returns a description string based on the precondition\+Type. It includes allday, daytime, night, custom. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_t_smart_scene_precondition_param_ae2230e0388619d2dfb0cfd4671d44bf7}{scene\+ID}}
+\begin{DoxyCompactList}\small\item\em The scene id. You can pass nil when create an automation scene. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_t_smart_scene_precondition_param_a1ddd91be6a13d502c92efbe09d7060a7}{condition\+ID}}
+\begin{DoxyCompactList}\small\item\em The current condition id. You need to pass the original condition id when editing scene for automation scene. \end{DoxyCompactList}\item 
+TSmart\+Scene\+Precondition\+Type \mbox{\hyperlink{interface_t_smart_scene_precondition_param_a0b3e448244df0d9ba3647da4347bf754}{precondition\+Type}}
+\begin{DoxyCompactList}\small\item\em The precondition type, detail see {\ttfamily TSmart\+Scene\+Precondition\+Type}. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_t_smart_scene_precondition_param_aa1afc76c43b9f0f9cb07c62e8c35dbd8}{begin\+Date}}
+\begin{DoxyCompactList}\small\item\em The begin date. eg\+:\char`\"{}00\+:59\char`\"{}. When the precondition\+Type is {\ttfamily TSmart\+Scene\+Precondition\+Type\+Custom}, the begin\+Date must be passed. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_t_smart_scene_precondition_param_a97c4a2a27af1174ee0bc0a1d34049bbd}{end\+Date}}
+\begin{DoxyCompactList}\small\item\em The end date. eg\+:\char`\"{}18\+:30\char`\"{}. When the precondition\+Type is {\ttfamily TSmart\+Scene\+Precondition\+Type\+Custom}, the end\+Date must be passed. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_t_smart_scene_precondition_param_a65d4219608b274510c8b72cc0545cde4}{loops}}
+\begin{DoxyCompactList}\small\item\em The loop description, the data format is \char`\"{}1111111\char`\"{}. Each bit indicates the Sunday to Saturday, 1 means valid, 0 means invalid. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_t_smart_scene_precondition_param_aabd6ca4cbd49e2f491871c7b9e55be00}{city\+Id}}
+\begin{DoxyCompactList}\small\item\em The current city id. When the precondition\+Type is {\ttfamily TSmart\+Scene\+Precondition\+Type\+All\+Day}, you don\textquotesingle{}t have to pass city\+Id. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_t_smart_scene_precondition_param_a798eb24184576e84a76344215b611907}{city\+Name}}
+\begin{DoxyCompactList}\small\item\em The current city name. When the precondition\+Type is {\ttfamily TSmart\+Scene\+Precondition\+Type\+All\+Day}, you don\textquotesingle{}t have to pass city\+Name. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_t_smart_scene_precondition_param_a7df5873965bddbfbe1b22156c7f8ce30}{time\+Zone\+Id}}
+\begin{DoxyCompactList}\small\item\em The timezone id, default is \char`\"{}\+Asia/\+Shanghai\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source_l00026}{26}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source}{TSmart\+Scene\+Precondition\+Param.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_a94f0688f3746787611d917db70a0726a}\label{interface_t_smart_scene_precondition_param_a94f0688f3746787611d917db70a0726a}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!stringFromPreconditionType@{stringFromPreconditionType}}
+\index{stringFromPreconditionType@{stringFromPreconditionType}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{stringFromPreconditionType}{stringFromPreconditionType}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) string\+From\+Precondition\+Type \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Returns a description string based on the precondition\+Type. It includes allday, daytime, night, custom. 
+
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_a94f0688f3746787611d917db70a0726a}\label{interface_t_smart_scene_precondition_param_a94f0688f3746787611d917db70a0726a}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!stringFromPreconditionType@{stringFromPreconditionType}}
+\index{stringFromPreconditionType@{stringFromPreconditionType}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{stringFromPreconditionType}{stringFromPreconditionType}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) string\+From\+Precondition\+Type \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Returns a description string based on the precondition\+Type. It includes allday, daytime, night, custom. 
+
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_a94f0688f3746787611d917db70a0726a}\label{interface_t_smart_scene_precondition_param_a94f0688f3746787611d917db70a0726a}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!stringFromPreconditionType@{stringFromPreconditionType}}
+\index{stringFromPreconditionType@{stringFromPreconditionType}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{stringFromPreconditionType}{stringFromPreconditionType}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) string\+From\+Precondition\+Type \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Returns a description string based on the precondition\+Type. It includes allday, daytime, night, custom. 
+
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_a94f0688f3746787611d917db70a0726a}\label{interface_t_smart_scene_precondition_param_a94f0688f3746787611d917db70a0726a}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!stringFromPreconditionType@{stringFromPreconditionType}}
+\index{stringFromPreconditionType@{stringFromPreconditionType}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{stringFromPreconditionType}{stringFromPreconditionType}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) string\+From\+Precondition\+Type \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Returns a description string based on the precondition\+Type. It includes allday, daytime, night, custom. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_aa1afc76c43b9f0f9cb07c62e8c35dbd8}\label{interface_t_smart_scene_precondition_param_aa1afc76c43b9f0f9cb07c62e8c35dbd8}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!beginDate@{beginDate}}
+\index{beginDate@{beginDate}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{beginDate}{beginDate}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) begin\+Date\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The begin date. eg\+:\char`\"{}00\+:59\char`\"{}. When the precondition\+Type is {\ttfamily TSmart\+Scene\+Precondition\+Type\+Custom}, the begin\+Date must be passed. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source_l00038}{38}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source}{TSmart\+Scene\+Precondition\+Param.\+h}}.
+
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_aabd6ca4cbd49e2f491871c7b9e55be00}\label{interface_t_smart_scene_precondition_param_aabd6ca4cbd49e2f491871c7b9e55be00}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!cityId@{cityId}}
+\index{cityId@{cityId}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{cityId}{cityId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) city\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The current city id. When the precondition\+Type is {\ttfamily TSmart\+Scene\+Precondition\+Type\+All\+Day}, you don\textquotesingle{}t have to pass city\+Id. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source_l00047}{47}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source}{TSmart\+Scene\+Precondition\+Param.\+h}}.
+
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_a798eb24184576e84a76344215b611907}\label{interface_t_smart_scene_precondition_param_a798eb24184576e84a76344215b611907}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!cityName@{cityName}}
+\index{cityName@{cityName}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{cityName}{cityName}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) city\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The current city name. When the precondition\+Type is {\ttfamily TSmart\+Scene\+Precondition\+Type\+All\+Day}, you don\textquotesingle{}t have to pass city\+Name. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source_l00050}{50}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source}{TSmart\+Scene\+Precondition\+Param.\+h}}.
+
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_a1ddd91be6a13d502c92efbe09d7060a7}\label{interface_t_smart_scene_precondition_param_a1ddd91be6a13d502c92efbe09d7060a7}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!conditionID@{conditionID}}
+\index{conditionID@{conditionID}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{conditionID}{conditionID}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) condition\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The current condition id. You need to pass the original condition id when editing scene for automation scene. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source_l00032}{32}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source}{TSmart\+Scene\+Precondition\+Param.\+h}}.
+
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_a97c4a2a27af1174ee0bc0a1d34049bbd}\label{interface_t_smart_scene_precondition_param_a97c4a2a27af1174ee0bc0a1d34049bbd}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!endDate@{endDate}}
+\index{endDate@{endDate}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{endDate}{endDate}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) end\+Date\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The end date. eg\+:\char`\"{}18\+:30\char`\"{}. When the precondition\+Type is {\ttfamily TSmart\+Scene\+Precondition\+Type\+Custom}, the end\+Date must be passed. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source_l00041}{41}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source}{TSmart\+Scene\+Precondition\+Param.\+h}}.
+
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_a65d4219608b274510c8b72cc0545cde4}\label{interface_t_smart_scene_precondition_param_a65d4219608b274510c8b72cc0545cde4}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!loops@{loops}}
+\index{loops@{loops}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{loops}{loops}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) loops\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The loop description, the data format is \char`\"{}1111111\char`\"{}. Each bit indicates the Sunday to Saturday, 1 means valid, 0 means invalid. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source_l00044}{44}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source}{TSmart\+Scene\+Precondition\+Param.\+h}}.
+
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_a0b3e448244df0d9ba3647da4347bf754}\label{interface_t_smart_scene_precondition_param_a0b3e448244df0d9ba3647da4347bf754}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!preconditionType@{preconditionType}}
+\index{preconditionType@{preconditionType}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{preconditionType}{preconditionType}}
+{\footnotesize\ttfamily -\/ (TSmart\+Scene\+Precondition\+Type) precondition\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The precondition type, detail see {\ttfamily TSmart\+Scene\+Precondition\+Type}. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source_l00035}{35}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source}{TSmart\+Scene\+Precondition\+Param.\+h}}.
+
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_ae2230e0388619d2dfb0cfd4671d44bf7}\label{interface_t_smart_scene_precondition_param_ae2230e0388619d2dfb0cfd4671d44bf7}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!sceneID@{sceneID}}
+\index{sceneID@{sceneID}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{sceneID}{sceneID}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) scene\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The scene id. You can pass nil when create an automation scene. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source_l00029}{29}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source}{TSmart\+Scene\+Precondition\+Param.\+h}}.
+
+\mbox{\Hypertarget{interface_t_smart_scene_precondition_param_a7df5873965bddbfbe1b22156c7f8ce30}\label{interface_t_smart_scene_precondition_param_a7df5873965bddbfbe1b22156c7f8ce30}} 
+\index{TSmartScenePreconditionParam@{TSmartScenePreconditionParam}!timeZoneId@{timeZoneId}}
+\index{timeZoneId@{timeZoneId}!TSmartScenePreconditionParam@{TSmartScenePreconditionParam}}
+\doxysubsubsection{\texorpdfstring{timeZoneId}{timeZoneId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) time\+Zone\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The timezone id, default is \char`\"{}\+Asia/\+Shanghai\char`\"{}. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source_l00053}{53}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h_source}{TSmart\+Scene\+Precondition\+Param.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Scene\+Core\+Kit/\+Build/\+Thing\+Smart\+Scene\+Core\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Scene\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h}{TSmart\+Scene\+Precondition\+Param.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Scene\+Core\+Kit/\+Build/\+Thing\+Smart\+Scene\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Scene\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h}{TSmart\+Scene\+Precondition\+Param.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Scene\+Core\+Kit/\+Build/\+Thing\+Smart\+Scene\+Core\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Scene\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h}{TSmart\+Scene\+Precondition\+Param.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Scene\+Core\+Kit/\+Build/\+Thing\+Smart\+Scene\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Scene\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_scene_core_kit_8framework_2_headers_2_t_smart_scene_precondition_param_8h}{TSmart\+Scene\+Precondition\+Param.\+h}}\end{DoxyCompactItemize}

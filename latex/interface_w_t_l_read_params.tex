@@ -1,0 +1,74 @@
+\hypertarget{interface_w_t_l_read_params}{}\doxysection{WTLRead\+Params Class Reference}
+\label{interface_w_t_l_read_params}\index{WTLReadParams@{WTLReadParams}}
+
+
+{\ttfamily \#import $<$WTLCluster.\+h$>$}
+
+Inheritance diagram for WTLRead\+Params\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_w_t_l_read_params}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(BOOL filter\+By\+Fabric) -\/ \mbox{\hyperlink{interface_w_t_l_read_params_a90029eae59335ffede9a68cecc536e99}{API\+\_\+\+AVAILABLE}}
+\item 
+(NSNumber $\ast$min\+Event\+Number) -\/ \mbox{\hyperlink{interface_w_t_l_read_params_a7397dd9f2bd059b814b28a42f157a4d1}{API\+\_\+\+AVAILABLE}}
+\item 
+(NSNumber $\ast$fabric\+Filtered) -\/ \mbox{\hyperlink{interface_w_t_l_read_params_a71d4a61e70d4fc1e083d5120eaff0484}{WTL\+\_\+\+DEPRECATED}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} This is used to control the behavior of attribute/event reads and subscribes. If not provided (i.\+e. nil passed for the \mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} argument), will be treated as if a default-\/initialized object was passed in. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_cluster_8h_source_l00089}{89}} of file \mbox{\hyperlink{_w_t_l_cluster_8h_source}{WTLCluster.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_read_params_a90029eae59335ffede9a68cecc536e99}\label{interface_w_t_l_read_params_a90029eae59335ffede9a68cecc536e99}} 
+\index{WTLReadParams@{WTLReadParams}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLReadParams@{WTLReadParams}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL filter\+By\+Fabric) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+Whether the read/subscribe is fabric-\/filtered. The default is YES.
+
+If YES, the read/subscribe is fabric-\/filtered and will only see things associated with the fabric of the reader/subscriber.
+
+If NO, the read/subscribe is not fabric-\/filtered and will see all non-\/fabric-\/sensitive data for the given attribute path. 
+
+Implemented in \mbox{\hyperlink{interface_w_t_l_subscribe_params_abe1c4bc6dee79171f349257ac74ffd97}{WTLSubscribe\+Params}}, \mbox{\hyperlink{interface_w_t_l_subscribe_params_a5709a73bccb2b9cd2f1847cd360c9397}{WTLSubscribe\+Params}}, \mbox{\hyperlink{interface_w_t_l_subscribe_params_a389b4a2c30b0792b43659d64cecc9c2b}{WTLSubscribe\+Params}}, \mbox{\hyperlink{interface_w_t_l_subscribe_params_acb10458398656bab46452401daede6cc}{WTLSubscribe\+Params}}, and \mbox{\hyperlink{interface_w_t_l_subscribe_params_ae5f4300ae15af3ceb7ac10bb61c00faa}{WTLSubscribe\+Params}}.
+
+\mbox{\Hypertarget{interface_w_t_l_read_params_a7397dd9f2bd059b814b28a42f157a4d1}\label{interface_w_t_l_read_params_a7397dd9f2bd059b814b28a42f157a4d1}} 
+\index{WTLReadParams@{WTLReadParams}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLReadParams@{WTLReadParams}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$min\+Event\+Number) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+Sets a filter for which events will be reported in the read/subscribe interaction.
+
+If nil (the default value), all of the queued events will be reported from lowest to highest event number.
+
+If not nil, queued events with an event number smaller than min\+Event\+Number will not be reported. 
+
+Implemented in \mbox{\hyperlink{interface_w_t_l_subscribe_params_abe1c4bc6dee79171f349257ac74ffd97}{WTLSubscribe\+Params}}, \mbox{\hyperlink{interface_w_t_l_subscribe_params_a5709a73bccb2b9cd2f1847cd360c9397}{WTLSubscribe\+Params}}, \mbox{\hyperlink{interface_w_t_l_subscribe_params_a389b4a2c30b0792b43659d64cecc9c2b}{WTLSubscribe\+Params}}, \mbox{\hyperlink{interface_w_t_l_subscribe_params_acb10458398656bab46452401daede6cc}{WTLSubscribe\+Params}}, and \mbox{\hyperlink{interface_w_t_l_subscribe_params_ae5f4300ae15af3ceb7ac10bb61c00faa}{WTLSubscribe\+Params}}.
+
+\mbox{\Hypertarget{interface_w_t_l_read_params_a71d4a61e70d4fc1e083d5120eaff0484}\label{interface_w_t_l_read_params_a71d4a61e70d4fc1e083d5120eaff0484}} 
+\index{WTLReadParams@{WTLReadParams}!WTL\_DEPRECATED@{WTL\_DEPRECATED}}
+\index{WTL\_DEPRECATED@{WTL\_DEPRECATED}!WTLReadParams@{WTLReadParams}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED}{WTL\_DEPRECATED}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$fabric\+Filtered) WTL\+\_\+\+DEPRECATED \begin{DoxyParamCaption}\item[{(\char`\"{}Please use filter\+By\+Fabric\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_read_params_07_deprecated_08_a71d4a61e70d4fc1e083d5120eaff0484}{WTLRead\+Params(\+Deprecated)}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_cluster_8h}{WTLCluster.\+h}}\end{DoxyCompactItemize}

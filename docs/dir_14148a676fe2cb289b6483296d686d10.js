@@ -1,7 +1,0 @@
-var dir_14148a676fe2cb289b6483296d686d10 =
-[
-    [ "ThingDeviceDetailExternalProtocol.h", "_thing_device_detail_plug_a_p_i_2_thing_device_detail_plug_a_p_i_8xcframework_2ios-arm64_2_thinga3c9696a774f2d70e9344cd7d9969cf3.html", "_thing_device_detail_plug_a_p_i_2_thing_device_detail_plug_a_p_i_8xcframework_2ios-arm64_2_thinga3c9696a774f2d70e9344cd7d9969cf3" ],
-    [ "ThingDeviceDetailPlugAPI-umbrella.h", "ios-arm64_2_thing_device_detail_plug_a_p_i_8framework_2_headers_2_thing_device_detail_plug_a_p_i-umbrella_8h.html", "ios-arm64_2_thing_device_detail_plug_a_p_i_8framework_2_headers_2_thing_device_detail_plug_a_p_i-umbrella_8h" ],
-    [ "ThingDeviceDetailPlugAPI.h", "ios-arm64_2_thing_device_detail_plug_a_p_i_8framework_2_headers_2_thing_device_detail_plug_a_p_i_8h.html", "ios-arm64_2_thing_device_detail_plug_a_p_i_8framework_2_headers_2_thing_device_detail_plug_a_p_i_8h" ],
-    [ "ThingDeviceDetailPlugAPIModel.h", "ios-arm64_2_thing_device_detail_plug_a_p_i_8framework_2_headers_2_thing_device_detail_plug_a_p_i_model_8h.html", "ios-arm64_2_thing_device_detail_plug_a_p_i_8framework_2_headers_2_thing_device_detail_plug_a_p_i_model_8h" ]
-];

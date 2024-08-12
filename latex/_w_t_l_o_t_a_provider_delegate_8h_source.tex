@@ -1,0 +1,100 @@
+\hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source}{}\doxysection{WTLOTAProvider\+Delegate.\+h}
+\label{_w_t_l_o_t_a_provider_delegate_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLOTAProviderDelegate.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLOTAProviderDelegate.h}}
+\mbox{\hyperlink{_w_t_l_o_t_a_provider_delegate_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00019}00019 \textcolor{preprocessor}{\#import <Water/WTLCluster.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00020}00020 \textcolor{preprocessor}{\#import <Water/WTLCommandPayloadsObjc.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00021}00021 \textcolor{preprocessor}{\#import <Water/WTLDefines.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00023}00023 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00025}00025 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00038}\mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p}{00038}} \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p}{WTLOTAProviderDelegate}} <NSObject>}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00039}00039 \textcolor{keyword}{@optional}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00049}00049 -\/ (void)handleQueryImageForNodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00050}00050                        controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00051}00051                            params:(WTLOTASoftwareUpdateProviderClusterQueryImageParams *)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00052}00052                        completion:(\textcolor{keywordtype}{void} (\string^)(WTLOTASoftwareUpdateProviderClusterQueryImageResponseParams * \_Nullable data,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00053}00053                                       NSError * \_Nullable \mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00054}00054     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00056}00056 -\/ (void)handleQueryImageForNodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00057}00057                        controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00058}00058                            params:(WTLOtaSoftwareUpdateProviderClusterQueryImageParams *)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00059}00059                 completionHandler:(\textcolor{keywordtype}{void} (\string^)(WTLOtaSoftwareUpdateProviderClusterQueryImageResponseParams * \_Nullable data,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00060}00060                                       NSError * \_Nullable \mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))completionHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00061}00061     WTL\_DEPRECATED\_WITH\_REPLACEMENT("{}handleQueryImageForNodeID:controller:params:completion:"{},  macos(13.0, 13.3),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00062}00062         watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00073}00073 -\/ (void)handleApplyUpdateRequestForNodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00074}00074                                controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00075}00075                                    params:(WTLOTASoftwareUpdateProviderClusterApplyUpdateRequestParams *)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00076}00076                                completion:(\textcolor{keywordtype}{void} (\string^)(WTLOTASoftwareUpdateProviderClusterApplyUpdateResponseParams * \_Nullable data,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00077}00077                                               NSError * \_Nullable \mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00078}00078     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00080}00080 -\/ (void)handleApplyUpdateRequestForNodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00081}00081                                controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00082}00082                                    params:(WTLOtaSoftwareUpdateProviderClusterApplyUpdateRequestParams *)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00083}00083                         completionHandler:(\textcolor{keywordtype}{void} (\string^)(WTLOtaSoftwareUpdateProviderClusterApplyUpdateResponseParams * \_Nullable data,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00084}00084                                               NSError * \_Nullable \mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))completionHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00085}00085     WTL\_DEPRECATED\_WITH\_REPLACEMENT("{}handleApplyUpdateRequestForNodeID:controller:params:completion:"{}, }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00086}00086         macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00096}00096 -\/ (void)handleNotifyUpdateAppliedForNodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00097}00097                                 controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00098}00098                                     params:(WTLOTASoftwareUpdateProviderClusterNotifyUpdateAppliedParams *)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00099}00099                                 completion:(\mbox{\hyperlink{_w_t_l_cluster_8h_adce6546b3c587c00857ef587702441ca}{WTLStatusCompletion}})completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00100}00100     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00102}00102 -\/ (void)handleNotifyUpdateAppliedForNodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00103}00103                                 controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00104}00104                                     params:(WTLOtaSoftwareUpdateProviderClusterNotifyUpdateAppliedParams *)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00105}00105                          completionHandler:(StatusCompletion)completionHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00106}00106     WTL\_DEPRECATED\_WITH\_REPLACEMENT("{}handleNotifyUpdateAppliedForNodeID:controller:params:completion:"{}, }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00107}00107         macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00114}00114 -\/ (void)handleBDXTransferSessionBeginForNodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00115}00115                                     controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00116}00116                                 fileDesignator:(NSString *)fileDesignator}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00117}00117                                         offset:(NSNumber *)offset}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00118}00118                                     completion:(\mbox{\hyperlink{_w_t_l_cluster_8h_adce6546b3c587c00857ef587702441ca}{WTLStatusCompletion}})completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00119}00119     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00121}00121 -\/ (void)handleBDXTransferSessionBeginForNodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00122}00122                                     controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00123}00123                                 fileDesignator:(NSString *)fileDesignator}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00124}00124                                         offset:(NSNumber *)offset}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00125}00125                              completionHandler:(StatusCompletion)completionHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00126}00126     WTL\_DEPRECATED\_WITH\_REPLACEMENT("{}handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completion:"{},}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00127}00127          macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00128}00128 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00134}00134 -\/ (void)handleBDXTransferSessionEndForNodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00135}00135                                   controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00136}00136                                        error:(NSError * \_Nullable)error;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00137}00137 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00143}00143 -\/ (void)handleBDXQueryForNodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00144}00144                      controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00145}00145                       blockSize:(NSNumber *)blockSize}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00146}00146                      blockIndex:(NSNumber *)blockIndex}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00147}00147                     bytesToSkip:(NSNumber *)bytesToSkip}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00148}00148                      completion:(\textcolor{keywordtype}{void} (\string^)(NSData * \_Nullable data, BOOL isEOF))completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00149}00149     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00150}00150 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00151}00151 -\/ (void)handleBDXQueryForNodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00152}00152                      controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00153}00153                       blockSize:(NSNumber *)blockSize}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00154}00154                      blockIndex:(NSNumber *)blockIndex}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00155}00155                     bytesToSkip:(NSNumber *)bytesToSkip}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00156}00156               completionHandler:(\textcolor{keywordtype}{void} (\string^)(NSData * \_Nullable data, BOOL isEOF))completionHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00157}00157     WTL\_DEPRECATED\_WITH\_REPLACEMENT("{}handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completion:"{},}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00158}00158          macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00159}00159 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00160}00160 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00161}00161 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_provider_delegate_8h_source_l00162}\mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p_a659698869663728cb479b9cb2950d62b}{00162}} NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

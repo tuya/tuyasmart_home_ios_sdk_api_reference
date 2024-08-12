@@ -1,0 +1,4 @@
+var category_w_t_l_operational_credentials_cluster_add_trusted_root_certificate_params_07_deprecated_08 =
+[
+    [ "WTL_DEPRECATED", "category_w_t_l_operational_credentials_cluster_add_trusted_root_certificate_params_07_deprecated_08.html#a4e249cae4c3ef54e571d65bd975c1af3", null ]
+];

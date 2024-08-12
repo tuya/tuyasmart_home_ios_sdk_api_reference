@@ -1,4 +1,0 @@
-var dir_e343dc23acb21b03b8c64825ee78374f =
-[
-    [ "ThingSmartPushNotificationModule-umbrella.h", "ios-x86__64-simulator_2_thing_smart_push_notification_module_8framework_2_headers_2_thing_smart_15bbfadda0d9fec33fed93fa18e3c3df.html", "ios-x86__64-simulator_2_thing_smart_push_notification_module_8framework_2_headers_2_thing_smart_15bbfadda0d9fec33fed93fa18e3c3df" ]
-];

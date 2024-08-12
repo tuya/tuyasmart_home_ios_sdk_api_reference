@@ -1,4 +1,0 @@
-var ios_x86__64_simulator_2_t_u_n_i_d_l_web_view_manager_8framework_2_private_headers_2_t_u_n_i_web_view_java_script_8h =
-[
-    [ "TUNIWebViewMessageJs", "ios-x86__64-simulator_2_t_u_n_i_d_l_web_view_manager_8framework_2_private_headers_2_t_u_n_i_web_view_java_script_8h.html#ae80b00305b17ce18a218f9395621eb41", null ]
-];

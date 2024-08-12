@@ -1,0 +1,202 @@
+\hypertarget{interface_thing_api_merge_service}{}\doxysection{Thing\+Api\+Merge\+Service Class Reference}
+\label{interface_thing_api_merge_service}\index{ThingApiMergeService@{ThingApiMergeService}}
+
+
+\mbox{\hyperlink{interface_thing_api_merge_service}{Thing\+Api\+Merge\+Service}} is used for making several requests in one HTTP request.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Api\+Merge\+Service.\+h$>$}
+
+Inheritance diagram for Thing\+Api\+Merge\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.781457cm]{interface_thing_api_merge_service}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_api_merge_service_a737b384e08ea0b832a3576629233987c}{add\+Api\+Request\+:post\+Data\+:version\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_api_merge_service_affd7fd378dbae2cf23a2e6a44467464a}{send\+Request\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_api_merge_service_a737b384e08ea0b832a3576629233987c}{add\+Api\+Request\+:post\+Data\+:version\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_api_merge_service_affd7fd378dbae2cf23a2e6a44467464a}{send\+Request\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_api_merge_service_a737b384e08ea0b832a3576629233987c}{add\+Api\+Request\+:post\+Data\+:version\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_api_merge_service_affd7fd378dbae2cf23a2e6a44467464a}{send\+Request\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_api_merge_service_a737b384e08ea0b832a3576629233987c}{add\+Api\+Request\+:post\+Data\+:version\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_api_merge_service_affd7fd378dbae2cf23a2e6a44467464a}{send\+Request\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_thing_s_d_k_safe_mutable_array}{Thing\+SDKSafe\+Mutable\+Array}} $\ast$ \mbox{\hyperlink{interface_thing_api_merge_service_a3970d60b4812f7123000f38f37767ae0}{request\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interface_thing_api_merge_service}{Thing\+Api\+Merge\+Service}} is used for making several requests in one HTTP request. 
+
+This class is used for reduce the number of network requests. Use it with the following steps\+:
+\begin{DoxyEnumerate}
+\item Create a \mbox{\hyperlink{interface_thing_api_merge_service}{Thing\+Api\+Merge\+Service}} instance
+\item Add several request by {\ttfamily -\/\mbox{[}\mbox{\hyperlink{interface_thing_api_merge_service}{Thing\+Api\+Merge\+Service}} add\+Api\+Request\+:post\+Data\+:version\+:\mbox{]}}
+\item Send\+Requests by {\ttfamily -\/ \mbox{[}\mbox{\hyperlink{interface_thing_api_merge_service}{Thing\+Api\+Merge\+Service}} send\+Request\+:success\+:failure\mbox{]}}. requests will be sent and received together.
+\end{DoxyEnumerate}
+
+@discussion Due to HTTP/2 multiplexing technology, it is not recommend for use now. 
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source_l00025}{25}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source}{Thing\+Api\+Merge\+Service.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_api_merge_service_a737b384e08ea0b832a3576629233987c}\label{interface_thing_api_merge_service_a737b384e08ea0b832a3576629233987c}} 
+\index{ThingApiMergeService@{ThingApiMergeService}!addApiRequest:postData:version:@{addApiRequest:postData:version:}}
+\index{addApiRequest:postData:version:@{addApiRequest:postData:version:}!ThingApiMergeService@{ThingApiMergeService}}
+\doxysubsubsection{\texorpdfstring{addApiRequest:postData:version:}{addApiRequest:postData:version:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) add\+Api\+Request\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{api\+Name }\item[{post\+Data\+:(NSDictionary $\ast$)}]{post\+Data }\item[{version\+:(NSString $\ast$)}]{version }\end{DoxyParamCaption}}
+
+Add api request. 
+\begin{DoxyParams}{Parameters}
+{\em api\+Name} & Api name. \\
+\hline
+{\em post\+Data} & Post data. \\
+\hline
+{\em version} & Version. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_api_merge_service_a737b384e08ea0b832a3576629233987c}\label{interface_thing_api_merge_service_a737b384e08ea0b832a3576629233987c}} 
+\index{ThingApiMergeService@{ThingApiMergeService}!addApiRequest:postData:version:@{addApiRequest:postData:version:}}
+\index{addApiRequest:postData:version:@{addApiRequest:postData:version:}!ThingApiMergeService@{ThingApiMergeService}}
+\doxysubsubsection{\texorpdfstring{addApiRequest:postData:version:}{addApiRequest:postData:version:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) add\+Api\+Request\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{api\+Name }\item[{post\+Data\+:(NSDictionary $\ast$)}]{post\+Data }\item[{version\+:(NSString $\ast$)}]{version }\end{DoxyParamCaption}}
+
+Add api request. 
+\begin{DoxyParams}{Parameters}
+{\em api\+Name} & Api name. \\
+\hline
+{\em post\+Data} & Post data. \\
+\hline
+{\em version} & Version. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_api_merge_service_a737b384e08ea0b832a3576629233987c}\label{interface_thing_api_merge_service_a737b384e08ea0b832a3576629233987c}} 
+\index{ThingApiMergeService@{ThingApiMergeService}!addApiRequest:postData:version:@{addApiRequest:postData:version:}}
+\index{addApiRequest:postData:version:@{addApiRequest:postData:version:}!ThingApiMergeService@{ThingApiMergeService}}
+\doxysubsubsection{\texorpdfstring{addApiRequest:postData:version:}{addApiRequest:postData:version:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) add\+Api\+Request\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{api\+Name }\item[{post\+Data\+:(NSDictionary $\ast$)}]{post\+Data }\item[{version\+:(NSString $\ast$)}]{version }\end{DoxyParamCaption}}
+
+Add api request. 
+\begin{DoxyParams}{Parameters}
+{\em api\+Name} & Api name. \\
+\hline
+{\em post\+Data} & Post data. \\
+\hline
+{\em version} & Version. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_api_merge_service_a737b384e08ea0b832a3576629233987c}\label{interface_thing_api_merge_service_a737b384e08ea0b832a3576629233987c}} 
+\index{ThingApiMergeService@{ThingApiMergeService}!addApiRequest:postData:version:@{addApiRequest:postData:version:}}
+\index{addApiRequest:postData:version:@{addApiRequest:postData:version:}!ThingApiMergeService@{ThingApiMergeService}}
+\doxysubsubsection{\texorpdfstring{addApiRequest:postData:version:}{addApiRequest:postData:version:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) add\+Api\+Request\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{api\+Name }\item[{post\+Data\+:(NSDictionary $\ast$)}]{post\+Data }\item[{version\+:(NSString $\ast$)}]{version }\end{DoxyParamCaption}}
+
+Add api request. 
+\begin{DoxyParams}{Parameters}
+{\em api\+Name} & Api name. \\
+\hline
+{\em post\+Data} & Post data. \\
+\hline
+{\em version} & Version. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_api_merge_service_affd7fd378dbae2cf23a2e6a44467464a}\label{interface_thing_api_merge_service_affd7fd378dbae2cf23a2e6a44467464a}} 
+\index{ThingApiMergeService@{ThingApiMergeService}!sendRequest:success:failure:@{sendRequest:success:failure:}}
+\index{sendRequest:success:failure:@{sendRequest:success:failure:}!ThingApiMergeService@{ThingApiMergeService}}
+\doxysubsubsection{\texorpdfstring{sendRequest:success:failure:}{sendRequest:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) send\+Request\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{get\+Data }\item[{success\+:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_api_merge_model}{Thing\+Api\+Merge\+Model}} $\ast$ $>$ $\ast$list))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Send request. 
+\begin{DoxyParams}{Parameters}
+{\em get\+Data} & Get data. \\
+\hline
+{\em success} & Called when the task finishes successfully. A list of \mbox{\hyperlink{interface_thing_api_merge_model}{Thing\+Api\+Merge\+Model}} will be returned. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_api_merge_service_affd7fd378dbae2cf23a2e6a44467464a}\label{interface_thing_api_merge_service_affd7fd378dbae2cf23a2e6a44467464a}} 
+\index{ThingApiMergeService@{ThingApiMergeService}!sendRequest:success:failure:@{sendRequest:success:failure:}}
+\index{sendRequest:success:failure:@{sendRequest:success:failure:}!ThingApiMergeService@{ThingApiMergeService}}
+\doxysubsubsection{\texorpdfstring{sendRequest:success:failure:}{sendRequest:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) send\+Request\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{get\+Data }\item[{success\+:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_api_merge_model}{Thing\+Api\+Merge\+Model}} $\ast$ $>$ $\ast$list))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Send request. 
+\begin{DoxyParams}{Parameters}
+{\em get\+Data} & Get data. \\
+\hline
+{\em success} & Called when the task finishes successfully. A list of \mbox{\hyperlink{interface_thing_api_merge_model}{Thing\+Api\+Merge\+Model}} will be returned. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_api_merge_service_affd7fd378dbae2cf23a2e6a44467464a}\label{interface_thing_api_merge_service_affd7fd378dbae2cf23a2e6a44467464a}} 
+\index{ThingApiMergeService@{ThingApiMergeService}!sendRequest:success:failure:@{sendRequest:success:failure:}}
+\index{sendRequest:success:failure:@{sendRequest:success:failure:}!ThingApiMergeService@{ThingApiMergeService}}
+\doxysubsubsection{\texorpdfstring{sendRequest:success:failure:}{sendRequest:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) send\+Request\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{get\+Data }\item[{success\+:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_api_merge_model}{Thing\+Api\+Merge\+Model}} $\ast$ $>$ $\ast$list))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Send request. 
+\begin{DoxyParams}{Parameters}
+{\em get\+Data} & Get data. \\
+\hline
+{\em success} & Called when the task finishes successfully. A list of \mbox{\hyperlink{interface_thing_api_merge_model}{Thing\+Api\+Merge\+Model}} will be returned. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_api_merge_service_affd7fd378dbae2cf23a2e6a44467464a}\label{interface_thing_api_merge_service_affd7fd378dbae2cf23a2e6a44467464a}} 
+\index{ThingApiMergeService@{ThingApiMergeService}!sendRequest:success:failure:@{sendRequest:success:failure:}}
+\index{sendRequest:success:failure:@{sendRequest:success:failure:}!ThingApiMergeService@{ThingApiMergeService}}
+\doxysubsubsection{\texorpdfstring{sendRequest:success:failure:}{sendRequest:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) send\+Request\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{get\+Data }\item[{success\+:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_api_merge_model}{Thing\+Api\+Merge\+Model}} $\ast$ $>$ $\ast$list))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Send request. 
+\begin{DoxyParams}{Parameters}
+{\em get\+Data} & Get data. \\
+\hline
+{\em success} & Called when the task finishes successfully. A list of \mbox{\hyperlink{interface_thing_api_merge_model}{Thing\+Api\+Merge\+Model}} will be returned. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_api_merge_service_a3970d60b4812f7123000f38f37767ae0}\label{interface_thing_api_merge_service_a3970d60b4812f7123000f38f37767ae0}} 
+\index{ThingApiMergeService@{ThingApiMergeService}!requestList@{requestList}}
+\index{requestList@{requestList}!ThingApiMergeService@{ThingApiMergeService}}
+\doxysubsubsection{\texorpdfstring{requestList}{requestList}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_s_d_k_safe_mutable_array}{Thing\+SDKSafe\+Mutable\+Array}} $\ast$) request\+List\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source_l00027}{27}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h_source}{Thing\+Api\+Merge\+Service.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Network\+Kit/\+Build/\+Thing\+Smart\+Network\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Network\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h}{Thing\+Api\+Merge\+Service.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Network\+Kit/\+Build/\+Thing\+Smart\+Network\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Network\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h}{Thing\+Api\+Merge\+Service.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Network\+Kit/\+Build/\+Thing\+Smart\+Network\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Network\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h}{Thing\+Api\+Merge\+Service.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Network\+Kit/\+Build/\+Thing\+Smart\+Network\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Network\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_network_kit_8framework_2_headers_2_thing_api_merge_service_8h}{Thing\+Api\+Merge\+Service.\+h}}\end{DoxyCompactItemize}

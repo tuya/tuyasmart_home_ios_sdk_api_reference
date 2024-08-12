@@ -1,0 +1,446 @@
+\hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Device\+Core\+Kit.framework/\+Headers/\+Thing\+Smart\+Device\+Model.h File Reference}
+\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingSmartDeviceCoreKit.framework/Headers/ThingSmartDeviceModel.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingSmartDeviceCoreKit.framework/Headers/ThingSmartDeviceModel.h}}
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Schema\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Device\+Module\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Stand\+Schema\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Communication.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Thing\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+UIComponent.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+UIPanel\+Model.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}}
+\begin{DoxyCompactList}\small\item\em The information about the device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637}{Thing\+Smart\+Device\+Model\+Type}} \+: NSUInteger \{ \newline
+\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ad0007ebc18e2a6d63ac3c0fbea4b13de}{Thing\+Smart\+Device\+Model\+Type\+Wifi\+Dev}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a668c7e7a7fabe1daad636706b40caea6}{Thing\+Smart\+Device\+Model\+Type\+Ble}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a5b2238bd9bbe44171cec6b1c7af00c57}{Thing\+Smart\+Device\+Model\+Type\+Gprs}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a34f5fa1a60b0091c21583055011e38de}{Thing\+Smart\+Device\+Model\+Type\+NBIoT}}
+, \newline
+\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6bf0903ef4027e672b06b38eae956be9}{Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Gateway}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ae1b8ede891295c7ba2d7b3cd9de26b6e}{Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Sub\+Dev}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a56d826fb9bf1286e3444079b563b0360}{Thing\+Smart\+Device\+Model\+Type\+Mesh\+Ble\+Sub\+Dev}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af3254c6f3ca013317fc2f6f96313db14}{Thing\+Smart\+Device\+Model\+Type\+Infrared\+Gateway}}
+, \newline
+\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6d9d0e95254c38c303bd8d7a82d58f07}{Thing\+Smart\+Device\+Model\+Type\+Infrared\+Sub\+Dev}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af6ba9f145a10a7eaa0553a3424065f25}{Thing\+Smart\+Device\+Model\+Type\+Wifi\+Gateway}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a3264e2bcbed1d65c599916ea4d0f7995}{Thing\+Smart\+Device\+Model\+Type\+Wifi\+Sub\+Dev}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a969c74e59109a8eb90054c6828ef8b98}{Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Gateway}}
+, \newline
+\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637acbd5816d28d63ce9326991e376b4daf1}{Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Sub\+Dev}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a9f0a406d69e7f70acbe3d30545bbd6cb}{Thing\+Smart\+Device\+Model\+Type\+Beacon}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a0c353b6d4617a04aeab47e01bd7180d1}{Thing\+Smart\+Device\+Model\+Type\+Cat1}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a1acf46f12ee506d47212514f71bee564}{Thing\+Smart\+Device\+Model\+Type\+Thread\+Gateway}}
+, \newline
+\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a4136029dea99cf9a79a64a52b1c31c48}{Thing\+Smart\+Device\+Model\+Type\+Thread\+Sub\+Dev}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637add3e986bf8b7cd4cecc45a210c9ae6db}{Thing\+Smart\+Device\+Model\+Type\+Fitting}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ad0007ebc18e2a6d63ac3c0fbea4b13de}{Thing\+Smart\+Device\+Model\+Type\+Wifi\+Dev}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a668c7e7a7fabe1daad636706b40caea6}{Thing\+Smart\+Device\+Model\+Type\+Ble}}
+, \newline
+\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a5b2238bd9bbe44171cec6b1c7af00c57}{Thing\+Smart\+Device\+Model\+Type\+Gprs}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a34f5fa1a60b0091c21583055011e38de}{Thing\+Smart\+Device\+Model\+Type\+NBIoT}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6bf0903ef4027e672b06b38eae956be9}{Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Gateway}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ae1b8ede891295c7ba2d7b3cd9de26b6e}{Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Sub\+Dev}}
+, \newline
+\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a56d826fb9bf1286e3444079b563b0360}{Thing\+Smart\+Device\+Model\+Type\+Mesh\+Ble\+Sub\+Dev}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af3254c6f3ca013317fc2f6f96313db14}{Thing\+Smart\+Device\+Model\+Type\+Infrared\+Gateway}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6d9d0e95254c38c303bd8d7a82d58f07}{Thing\+Smart\+Device\+Model\+Type\+Infrared\+Sub\+Dev}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af6ba9f145a10a7eaa0553a3424065f25}{Thing\+Smart\+Device\+Model\+Type\+Wifi\+Gateway}}
+, \newline
+\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a3264e2bcbed1d65c599916ea4d0f7995}{Thing\+Smart\+Device\+Model\+Type\+Wifi\+Sub\+Dev}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a969c74e59109a8eb90054c6828ef8b98}{Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Gateway}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637acbd5816d28d63ce9326991e376b4daf1}{Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Sub\+Dev}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a9f0a406d69e7f70acbe3d30545bbd6cb}{Thing\+Smart\+Device\+Model\+Type\+Beacon}}
+, \newline
+\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a0c353b6d4617a04aeab47e01bd7180d1}{Thing\+Smart\+Device\+Model\+Type\+Cat1}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a1acf46f12ee506d47212514f71bee564}{Thing\+Smart\+Device\+Model\+Type\+Thread\+Gateway}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a4136029dea99cf9a79a64a52b1c31c48}{Thing\+Smart\+Device\+Model\+Type\+Thread\+Sub\+Dev}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637add3e986bf8b7cd4cecc45a210c9ae6db}{Thing\+Smart\+Device\+Model\+Type\+Fitting}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ad0007ebc18e2a6d63ac3c0fbea4b13de}{Thing\+Smart\+Device\+Model\+Type\+Wifi\+Dev}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a668c7e7a7fabe1daad636706b40caea6}{Thing\+Smart\+Device\+Model\+Type\+Ble}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a5b2238bd9bbe44171cec6b1c7af00c57}{Thing\+Smart\+Device\+Model\+Type\+Gprs}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a34f5fa1a60b0091c21583055011e38de}{Thing\+Smart\+Device\+Model\+Type\+NBIoT}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6bf0903ef4027e672b06b38eae956be9}{Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Gateway}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ae1b8ede891295c7ba2d7b3cd9de26b6e}{Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Sub\+Dev}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a56d826fb9bf1286e3444079b563b0360}{Thing\+Smart\+Device\+Model\+Type\+Mesh\+Ble\+Sub\+Dev}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af3254c6f3ca013317fc2f6f96313db14}{Thing\+Smart\+Device\+Model\+Type\+Infrared\+Gateway}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6d9d0e95254c38c303bd8d7a82d58f07}{Thing\+Smart\+Device\+Model\+Type\+Infrared\+Sub\+Dev}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af6ba9f145a10a7eaa0553a3424065f25}{Thing\+Smart\+Device\+Model\+Type\+Wifi\+Gateway}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a3264e2bcbed1d65c599916ea4d0f7995}{Thing\+Smart\+Device\+Model\+Type\+Wifi\+Sub\+Dev}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a969c74e59109a8eb90054c6828ef8b98}{Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Gateway}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637acbd5816d28d63ce9326991e376b4daf1}{Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Sub\+Dev}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a9f0a406d69e7f70acbe3d30545bbd6cb}{Thing\+Smart\+Device\+Model\+Type\+Beacon}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a0c353b6d4617a04aeab47e01bd7180d1}{Thing\+Smart\+Device\+Model\+Type\+Cat1}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a1acf46f12ee506d47212514f71bee564}{Thing\+Smart\+Device\+Model\+Type\+Thread\+Gateway}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a4136029dea99cf9a79a64a52b1c31c48}{Thing\+Smart\+Device\+Model\+Type\+Thread\+Sub\+Dev}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637add3e986bf8b7cd4cecc45a210c9ae6db}{Thing\+Smart\+Device\+Model\+Type\+Fitting}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ad0007ebc18e2a6d63ac3c0fbea4b13de}{Thing\+Smart\+Device\+Model\+Type\+Wifi\+Dev}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a668c7e7a7fabe1daad636706b40caea6}{Thing\+Smart\+Device\+Model\+Type\+Ble}}
+, \newline
+\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a5b2238bd9bbe44171cec6b1c7af00c57}{Thing\+Smart\+Device\+Model\+Type\+Gprs}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a34f5fa1a60b0091c21583055011e38de}{Thing\+Smart\+Device\+Model\+Type\+NBIoT}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6bf0903ef4027e672b06b38eae956be9}{Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Gateway}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ae1b8ede891295c7ba2d7b3cd9de26b6e}{Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Sub\+Dev}}
+, \newline
+\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a56d826fb9bf1286e3444079b563b0360}{Thing\+Smart\+Device\+Model\+Type\+Mesh\+Ble\+Sub\+Dev}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af3254c6f3ca013317fc2f6f96313db14}{Thing\+Smart\+Device\+Model\+Type\+Infrared\+Gateway}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6d9d0e95254c38c303bd8d7a82d58f07}{Thing\+Smart\+Device\+Model\+Type\+Infrared\+Sub\+Dev}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af6ba9f145a10a7eaa0553a3424065f25}{Thing\+Smart\+Device\+Model\+Type\+Wifi\+Gateway}}
+, \newline
+\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a3264e2bcbed1d65c599916ea4d0f7995}{Thing\+Smart\+Device\+Model\+Type\+Wifi\+Sub\+Dev}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a969c74e59109a8eb90054c6828ef8b98}{Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Gateway}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637acbd5816d28d63ce9326991e376b4daf1}{Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Sub\+Dev}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a9f0a406d69e7f70acbe3d30545bbd6cb}{Thing\+Smart\+Device\+Model\+Type\+Beacon}}
+, \newline
+\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a0c353b6d4617a04aeab47e01bd7180d1}{Thing\+Smart\+Device\+Model\+Type\+Cat1}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a1acf46f12ee506d47212514f71bee564}{Thing\+Smart\+Device\+Model\+Type\+Thread\+Gateway}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a4136029dea99cf9a79a64a52b1c31c48}{Thing\+Smart\+Device\+Model\+Type\+Thread\+Sub\+Dev}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637add3e986bf8b7cd4cecc45a210c9ae6db}{Thing\+Smart\+Device\+Model\+Type\+Fitting}}
+ \}
+\begin{DoxyCompactList}\small\item\em The device types. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a60ba9c108731286269b1da99ea723a6c}{NS\+\_\+\+OPTIONS}} (NSUInteger, Thing\+Smart\+Device\+Online\+Type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637}} 
+\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelType@{ThingSmartDeviceModelType}}
+\index{ThingSmartDeviceModelType@{ThingSmartDeviceModelType}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartDeviceModelType}{ThingSmartDeviceModelType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637}{Thing\+Smart\+Device\+Model\+Type}} \+: NSUInteger}
+
+
+
+The device types. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeWifiDev@{ThingSmartDeviceModelTypeWifiDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeWifiDev@{ThingSmartDeviceModelTypeWifiDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ad0007ebc18e2a6d63ac3c0fbea4b13de}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ad0007ebc18e2a6d63ac3c0fbea4b13de}} 
+Thing\+Smart\+Device\+Model\+Type\+Wifi\+Dev&Wi-\/\+Fi. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeBle@{ThingSmartDeviceModelTypeBle}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeBle@{ThingSmartDeviceModelTypeBle}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a668c7e7a7fabe1daad636706b40caea6}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a668c7e7a7fabe1daad636706b40caea6}} 
+Thing\+Smart\+Device\+Model\+Type\+Ble&Single Point Bluetooth Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeGprs@{ThingSmartDeviceModelTypeGprs}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeGprs@{ThingSmartDeviceModelTypeGprs}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a5b2238bd9bbe44171cec6b1c7af00c57}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a5b2238bd9bbe44171cec6b1c7af00c57}} 
+Thing\+Smart\+Device\+Model\+Type\+Gprs&GPRS. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeNBIoT@{ThingSmartDeviceModelTypeNBIoT}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeNBIoT@{ThingSmartDeviceModelTypeNBIoT}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a34f5fa1a60b0091c21583055011e38de}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a34f5fa1a60b0091c21583055011e38de}} 
+Thing\+Smart\+Device\+Model\+Type\+NBIoT&NB-\/\+IoT. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeZigbeeGateway@{ThingSmartDeviceModelTypeZigbeeGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeZigbeeGateway@{ThingSmartDeviceModelTypeZigbeeGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6bf0903ef4027e672b06b38eae956be9}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6bf0903ef4027e672b06b38eae956be9}} 
+Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Gateway&Zigbee Gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeZigbeeSubDev@{ThingSmartDeviceModelTypeZigbeeSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeZigbeeSubDev@{ThingSmartDeviceModelTypeZigbeeSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ae1b8ede891295c7ba2d7b3cd9de26b6e}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ae1b8ede891295c7ba2d7b3cd9de26b6e}} 
+Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Sub\+Dev&Zigbee sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeMeshBleSubDev@{ThingSmartDeviceModelTypeMeshBleSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeMeshBleSubDev@{ThingSmartDeviceModelTypeMeshBleSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a56d826fb9bf1286e3444079b563b0360}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a56d826fb9bf1286e3444079b563b0360}} 
+Thing\+Smart\+Device\+Model\+Type\+Mesh\+Ble\+Sub\+Dev&Mesh. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeInfraredGateway@{ThingSmartDeviceModelTypeInfraredGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeInfraredGateway@{ThingSmartDeviceModelTypeInfraredGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af3254c6f3ca013317fc2f6f96313db14}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af3254c6f3ca013317fc2f6f96313db14}} 
+Thing\+Smart\+Device\+Model\+Type\+Infrared\+Gateway&Infrared gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeInfraredSubDev@{ThingSmartDeviceModelTypeInfraredSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeInfraredSubDev@{ThingSmartDeviceModelTypeInfraredSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6d9d0e95254c38c303bd8d7a82d58f07}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6d9d0e95254c38c303bd8d7a82d58f07}} 
+Thing\+Smart\+Device\+Model\+Type\+Infrared\+Sub\+Dev&Infrared sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeWifiGateway@{ThingSmartDeviceModelTypeWifiGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeWifiGateway@{ThingSmartDeviceModelTypeWifiGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af6ba9f145a10a7eaa0553a3424065f25}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af6ba9f145a10a7eaa0553a3424065f25}} 
+Thing\+Smart\+Device\+Model\+Type\+Wifi\+Gateway&Wi-\/\+Fi Gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeWifiSubDev@{ThingSmartDeviceModelTypeWifiSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeWifiSubDev@{ThingSmartDeviceModelTypeWifiSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a3264e2bcbed1d65c599916ea4d0f7995}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a3264e2bcbed1d65c599916ea4d0f7995}} 
+Thing\+Smart\+Device\+Model\+Type\+Wifi\+Sub\+Dev&Wi-\/\+Fi sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeSIGMeshGateway@{ThingSmartDeviceModelTypeSIGMeshGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeSIGMeshGateway@{ThingSmartDeviceModelTypeSIGMeshGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a969c74e59109a8eb90054c6828ef8b98}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a969c74e59109a8eb90054c6828ef8b98}} 
+Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Gateway&SIG Mesh Gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeSIGMeshSubDev@{ThingSmartDeviceModelTypeSIGMeshSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeSIGMeshSubDev@{ThingSmartDeviceModelTypeSIGMeshSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637acbd5816d28d63ce9326991e376b4daf1}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637acbd5816d28d63ce9326991e376b4daf1}} 
+Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Sub\+Dev&SIG Mesh sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeBeacon@{ThingSmartDeviceModelTypeBeacon}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeBeacon@{ThingSmartDeviceModelTypeBeacon}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a9f0a406d69e7f70acbe3d30545bbd6cb}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a9f0a406d69e7f70acbe3d30545bbd6cb}} 
+Thing\+Smart\+Device\+Model\+Type\+Beacon&Ble Beacon. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeCat1@{ThingSmartDeviceModelTypeCat1}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeCat1@{ThingSmartDeviceModelTypeCat1}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a0c353b6d4617a04aeab47e01bd7180d1}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a0c353b6d4617a04aeab47e01bd7180d1}} 
+Thing\+Smart\+Device\+Model\+Type\+Cat1&Cat.\+1. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeThreadGateway@{ThingSmartDeviceModelTypeThreadGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeThreadGateway@{ThingSmartDeviceModelTypeThreadGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a1acf46f12ee506d47212514f71bee564}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a1acf46f12ee506d47212514f71bee564}} 
+Thing\+Smart\+Device\+Model\+Type\+Thread\+Gateway&Thread gateway device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeThreadSubDev@{ThingSmartDeviceModelTypeThreadSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeThreadSubDev@{ThingSmartDeviceModelTypeThreadSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a4136029dea99cf9a79a64a52b1c31c48}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a4136029dea99cf9a79a64a52b1c31c48}} 
+Thing\+Smart\+Device\+Model\+Type\+Thread\+Sub\+Dev&Thread sub device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeFitting@{ThingSmartDeviceModelTypeFitting}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeFitting@{ThingSmartDeviceModelTypeFitting}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637add3e986bf8b7cd4cecc45a210c9ae6db}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637add3e986bf8b7cd4cecc45a210c9ae6db}} 
+Thing\+Smart\+Device\+Model\+Type\+Fitting&Fitting device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeWifiDev@{ThingSmartDeviceModelTypeWifiDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeWifiDev@{ThingSmartDeviceModelTypeWifiDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ad0007ebc18e2a6d63ac3c0fbea4b13de}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ad0007ebc18e2a6d63ac3c0fbea4b13de}} 
+Thing\+Smart\+Device\+Model\+Type\+Wifi\+Dev&Wi-\/\+Fi. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeBle@{ThingSmartDeviceModelTypeBle}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeBle@{ThingSmartDeviceModelTypeBle}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a668c7e7a7fabe1daad636706b40caea6}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a668c7e7a7fabe1daad636706b40caea6}} 
+Thing\+Smart\+Device\+Model\+Type\+Ble&Single Point Bluetooth Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeGprs@{ThingSmartDeviceModelTypeGprs}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeGprs@{ThingSmartDeviceModelTypeGprs}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a5b2238bd9bbe44171cec6b1c7af00c57}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a5b2238bd9bbe44171cec6b1c7af00c57}} 
+Thing\+Smart\+Device\+Model\+Type\+Gprs&GPRS. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeNBIoT@{ThingSmartDeviceModelTypeNBIoT}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeNBIoT@{ThingSmartDeviceModelTypeNBIoT}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a34f5fa1a60b0091c21583055011e38de}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a34f5fa1a60b0091c21583055011e38de}} 
+Thing\+Smart\+Device\+Model\+Type\+NBIoT&NB-\/\+IoT. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeZigbeeGateway@{ThingSmartDeviceModelTypeZigbeeGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeZigbeeGateway@{ThingSmartDeviceModelTypeZigbeeGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6bf0903ef4027e672b06b38eae956be9}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6bf0903ef4027e672b06b38eae956be9}} 
+Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Gateway&Zigbee Gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeZigbeeSubDev@{ThingSmartDeviceModelTypeZigbeeSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeZigbeeSubDev@{ThingSmartDeviceModelTypeZigbeeSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ae1b8ede891295c7ba2d7b3cd9de26b6e}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ae1b8ede891295c7ba2d7b3cd9de26b6e}} 
+Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Sub\+Dev&Zigbee sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeMeshBleSubDev@{ThingSmartDeviceModelTypeMeshBleSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeMeshBleSubDev@{ThingSmartDeviceModelTypeMeshBleSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a56d826fb9bf1286e3444079b563b0360}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a56d826fb9bf1286e3444079b563b0360}} 
+Thing\+Smart\+Device\+Model\+Type\+Mesh\+Ble\+Sub\+Dev&Mesh. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeInfraredGateway@{ThingSmartDeviceModelTypeInfraredGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeInfraredGateway@{ThingSmartDeviceModelTypeInfraredGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af3254c6f3ca013317fc2f6f96313db14}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af3254c6f3ca013317fc2f6f96313db14}} 
+Thing\+Smart\+Device\+Model\+Type\+Infrared\+Gateway&Infrared gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeInfraredSubDev@{ThingSmartDeviceModelTypeInfraredSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeInfraredSubDev@{ThingSmartDeviceModelTypeInfraredSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6d9d0e95254c38c303bd8d7a82d58f07}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6d9d0e95254c38c303bd8d7a82d58f07}} 
+Thing\+Smart\+Device\+Model\+Type\+Infrared\+Sub\+Dev&Infrared sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeWifiGateway@{ThingSmartDeviceModelTypeWifiGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeWifiGateway@{ThingSmartDeviceModelTypeWifiGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af6ba9f145a10a7eaa0553a3424065f25}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af6ba9f145a10a7eaa0553a3424065f25}} 
+Thing\+Smart\+Device\+Model\+Type\+Wifi\+Gateway&Wi-\/\+Fi Gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeWifiSubDev@{ThingSmartDeviceModelTypeWifiSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeWifiSubDev@{ThingSmartDeviceModelTypeWifiSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a3264e2bcbed1d65c599916ea4d0f7995}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a3264e2bcbed1d65c599916ea4d0f7995}} 
+Thing\+Smart\+Device\+Model\+Type\+Wifi\+Sub\+Dev&Wi-\/\+Fi sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeSIGMeshGateway@{ThingSmartDeviceModelTypeSIGMeshGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeSIGMeshGateway@{ThingSmartDeviceModelTypeSIGMeshGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a969c74e59109a8eb90054c6828ef8b98}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a969c74e59109a8eb90054c6828ef8b98}} 
+Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Gateway&SIG Mesh Gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeSIGMeshSubDev@{ThingSmartDeviceModelTypeSIGMeshSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeSIGMeshSubDev@{ThingSmartDeviceModelTypeSIGMeshSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637acbd5816d28d63ce9326991e376b4daf1}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637acbd5816d28d63ce9326991e376b4daf1}} 
+Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Sub\+Dev&SIG Mesh sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeBeacon@{ThingSmartDeviceModelTypeBeacon}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeBeacon@{ThingSmartDeviceModelTypeBeacon}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a9f0a406d69e7f70acbe3d30545bbd6cb}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a9f0a406d69e7f70acbe3d30545bbd6cb}} 
+Thing\+Smart\+Device\+Model\+Type\+Beacon&Ble Beacon. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeCat1@{ThingSmartDeviceModelTypeCat1}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeCat1@{ThingSmartDeviceModelTypeCat1}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a0c353b6d4617a04aeab47e01bd7180d1}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a0c353b6d4617a04aeab47e01bd7180d1}} 
+Thing\+Smart\+Device\+Model\+Type\+Cat1&Cat.\+1. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeThreadGateway@{ThingSmartDeviceModelTypeThreadGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeThreadGateway@{ThingSmartDeviceModelTypeThreadGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a1acf46f12ee506d47212514f71bee564}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a1acf46f12ee506d47212514f71bee564}} 
+Thing\+Smart\+Device\+Model\+Type\+Thread\+Gateway&Thread gateway device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeThreadSubDev@{ThingSmartDeviceModelTypeThreadSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeThreadSubDev@{ThingSmartDeviceModelTypeThreadSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a4136029dea99cf9a79a64a52b1c31c48}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a4136029dea99cf9a79a64a52b1c31c48}} 
+Thing\+Smart\+Device\+Model\+Type\+Thread\+Sub\+Dev&Thread sub device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeFitting@{ThingSmartDeviceModelTypeFitting}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeFitting@{ThingSmartDeviceModelTypeFitting}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637add3e986bf8b7cd4cecc45a210c9ae6db}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637add3e986bf8b7cd4cecc45a210c9ae6db}} 
+Thing\+Smart\+Device\+Model\+Type\+Fitting&Fitting device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeWifiDev@{ThingSmartDeviceModelTypeWifiDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeWifiDev@{ThingSmartDeviceModelTypeWifiDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ad0007ebc18e2a6d63ac3c0fbea4b13de}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ad0007ebc18e2a6d63ac3c0fbea4b13de}} 
+Thing\+Smart\+Device\+Model\+Type\+Wifi\+Dev&Wi-\/\+Fi. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeBle@{ThingSmartDeviceModelTypeBle}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeBle@{ThingSmartDeviceModelTypeBle}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a668c7e7a7fabe1daad636706b40caea6}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a668c7e7a7fabe1daad636706b40caea6}} 
+Thing\+Smart\+Device\+Model\+Type\+Ble&Single Point Bluetooth Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeGprs@{ThingSmartDeviceModelTypeGprs}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeGprs@{ThingSmartDeviceModelTypeGprs}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a5b2238bd9bbe44171cec6b1c7af00c57}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a5b2238bd9bbe44171cec6b1c7af00c57}} 
+Thing\+Smart\+Device\+Model\+Type\+Gprs&GPRS. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeNBIoT@{ThingSmartDeviceModelTypeNBIoT}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeNBIoT@{ThingSmartDeviceModelTypeNBIoT}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a34f5fa1a60b0091c21583055011e38de}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a34f5fa1a60b0091c21583055011e38de}} 
+Thing\+Smart\+Device\+Model\+Type\+NBIoT&NB-\/\+IoT. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeZigbeeGateway@{ThingSmartDeviceModelTypeZigbeeGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeZigbeeGateway@{ThingSmartDeviceModelTypeZigbeeGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6bf0903ef4027e672b06b38eae956be9}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6bf0903ef4027e672b06b38eae956be9}} 
+Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Gateway&Zigbee Gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeZigbeeSubDev@{ThingSmartDeviceModelTypeZigbeeSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeZigbeeSubDev@{ThingSmartDeviceModelTypeZigbeeSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ae1b8ede891295c7ba2d7b3cd9de26b6e}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ae1b8ede891295c7ba2d7b3cd9de26b6e}} 
+Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Sub\+Dev&Zigbee sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeMeshBleSubDev@{ThingSmartDeviceModelTypeMeshBleSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeMeshBleSubDev@{ThingSmartDeviceModelTypeMeshBleSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a56d826fb9bf1286e3444079b563b0360}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a56d826fb9bf1286e3444079b563b0360}} 
+Thing\+Smart\+Device\+Model\+Type\+Mesh\+Ble\+Sub\+Dev&Mesh. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeInfraredGateway@{ThingSmartDeviceModelTypeInfraredGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeInfraredGateway@{ThingSmartDeviceModelTypeInfraredGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af3254c6f3ca013317fc2f6f96313db14}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af3254c6f3ca013317fc2f6f96313db14}} 
+Thing\+Smart\+Device\+Model\+Type\+Infrared\+Gateway&Infrared gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeInfraredSubDev@{ThingSmartDeviceModelTypeInfraredSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeInfraredSubDev@{ThingSmartDeviceModelTypeInfraredSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6d9d0e95254c38c303bd8d7a82d58f07}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6d9d0e95254c38c303bd8d7a82d58f07}} 
+Thing\+Smart\+Device\+Model\+Type\+Infrared\+Sub\+Dev&Infrared sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeWifiGateway@{ThingSmartDeviceModelTypeWifiGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeWifiGateway@{ThingSmartDeviceModelTypeWifiGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af6ba9f145a10a7eaa0553a3424065f25}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af6ba9f145a10a7eaa0553a3424065f25}} 
+Thing\+Smart\+Device\+Model\+Type\+Wifi\+Gateway&Wi-\/\+Fi Gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeWifiSubDev@{ThingSmartDeviceModelTypeWifiSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeWifiSubDev@{ThingSmartDeviceModelTypeWifiSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a3264e2bcbed1d65c599916ea4d0f7995}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a3264e2bcbed1d65c599916ea4d0f7995}} 
+Thing\+Smart\+Device\+Model\+Type\+Wifi\+Sub\+Dev&Wi-\/\+Fi sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeSIGMeshGateway@{ThingSmartDeviceModelTypeSIGMeshGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeSIGMeshGateway@{ThingSmartDeviceModelTypeSIGMeshGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a969c74e59109a8eb90054c6828ef8b98}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a969c74e59109a8eb90054c6828ef8b98}} 
+Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Gateway&SIG Mesh Gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeSIGMeshSubDev@{ThingSmartDeviceModelTypeSIGMeshSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeSIGMeshSubDev@{ThingSmartDeviceModelTypeSIGMeshSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637acbd5816d28d63ce9326991e376b4daf1}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637acbd5816d28d63ce9326991e376b4daf1}} 
+Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Sub\+Dev&SIG Mesh sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeBeacon@{ThingSmartDeviceModelTypeBeacon}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeBeacon@{ThingSmartDeviceModelTypeBeacon}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a9f0a406d69e7f70acbe3d30545bbd6cb}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a9f0a406d69e7f70acbe3d30545bbd6cb}} 
+Thing\+Smart\+Device\+Model\+Type\+Beacon&Ble Beacon. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeCat1@{ThingSmartDeviceModelTypeCat1}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeCat1@{ThingSmartDeviceModelTypeCat1}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a0c353b6d4617a04aeab47e01bd7180d1}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a0c353b6d4617a04aeab47e01bd7180d1}} 
+Thing\+Smart\+Device\+Model\+Type\+Cat1&Cat.\+1. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeThreadGateway@{ThingSmartDeviceModelTypeThreadGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeThreadGateway@{ThingSmartDeviceModelTypeThreadGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a1acf46f12ee506d47212514f71bee564}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a1acf46f12ee506d47212514f71bee564}} 
+Thing\+Smart\+Device\+Model\+Type\+Thread\+Gateway&Thread gateway device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeThreadSubDev@{ThingSmartDeviceModelTypeThreadSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeThreadSubDev@{ThingSmartDeviceModelTypeThreadSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a4136029dea99cf9a79a64a52b1c31c48}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a4136029dea99cf9a79a64a52b1c31c48}} 
+Thing\+Smart\+Device\+Model\+Type\+Thread\+Sub\+Dev&Thread sub device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeFitting@{ThingSmartDeviceModelTypeFitting}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeFitting@{ThingSmartDeviceModelTypeFitting}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637add3e986bf8b7cd4cecc45a210c9ae6db}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637add3e986bf8b7cd4cecc45a210c9ae6db}} 
+Thing\+Smart\+Device\+Model\+Type\+Fitting&Fitting device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeWifiDev@{ThingSmartDeviceModelTypeWifiDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeWifiDev@{ThingSmartDeviceModelTypeWifiDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ad0007ebc18e2a6d63ac3c0fbea4b13de}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ad0007ebc18e2a6d63ac3c0fbea4b13de}} 
+Thing\+Smart\+Device\+Model\+Type\+Wifi\+Dev&Wi-\/\+Fi. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeBle@{ThingSmartDeviceModelTypeBle}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeBle@{ThingSmartDeviceModelTypeBle}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a668c7e7a7fabe1daad636706b40caea6}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a668c7e7a7fabe1daad636706b40caea6}} 
+Thing\+Smart\+Device\+Model\+Type\+Ble&Single Point Bluetooth Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeGprs@{ThingSmartDeviceModelTypeGprs}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeGprs@{ThingSmartDeviceModelTypeGprs}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a5b2238bd9bbe44171cec6b1c7af00c57}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a5b2238bd9bbe44171cec6b1c7af00c57}} 
+Thing\+Smart\+Device\+Model\+Type\+Gprs&GPRS. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeNBIoT@{ThingSmartDeviceModelTypeNBIoT}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeNBIoT@{ThingSmartDeviceModelTypeNBIoT}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a34f5fa1a60b0091c21583055011e38de}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a34f5fa1a60b0091c21583055011e38de}} 
+Thing\+Smart\+Device\+Model\+Type\+NBIoT&NB-\/\+IoT. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeZigbeeGateway@{ThingSmartDeviceModelTypeZigbeeGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeZigbeeGateway@{ThingSmartDeviceModelTypeZigbeeGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6bf0903ef4027e672b06b38eae956be9}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6bf0903ef4027e672b06b38eae956be9}} 
+Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Gateway&Zigbee Gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeZigbeeSubDev@{ThingSmartDeviceModelTypeZigbeeSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeZigbeeSubDev@{ThingSmartDeviceModelTypeZigbeeSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ae1b8ede891295c7ba2d7b3cd9de26b6e}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637ae1b8ede891295c7ba2d7b3cd9de26b6e}} 
+Thing\+Smart\+Device\+Model\+Type\+Zigbee\+Sub\+Dev&Zigbee sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeMeshBleSubDev@{ThingSmartDeviceModelTypeMeshBleSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeMeshBleSubDev@{ThingSmartDeviceModelTypeMeshBleSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a56d826fb9bf1286e3444079b563b0360}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a56d826fb9bf1286e3444079b563b0360}} 
+Thing\+Smart\+Device\+Model\+Type\+Mesh\+Ble\+Sub\+Dev&Mesh. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeInfraredGateway@{ThingSmartDeviceModelTypeInfraredGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeInfraredGateway@{ThingSmartDeviceModelTypeInfraredGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af3254c6f3ca013317fc2f6f96313db14}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af3254c6f3ca013317fc2f6f96313db14}} 
+Thing\+Smart\+Device\+Model\+Type\+Infrared\+Gateway&Infrared gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeInfraredSubDev@{ThingSmartDeviceModelTypeInfraredSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeInfraredSubDev@{ThingSmartDeviceModelTypeInfraredSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6d9d0e95254c38c303bd8d7a82d58f07}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a6d9d0e95254c38c303bd8d7a82d58f07}} 
+Thing\+Smart\+Device\+Model\+Type\+Infrared\+Sub\+Dev&Infrared sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeWifiGateway@{ThingSmartDeviceModelTypeWifiGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeWifiGateway@{ThingSmartDeviceModelTypeWifiGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af6ba9f145a10a7eaa0553a3424065f25}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637af6ba9f145a10a7eaa0553a3424065f25}} 
+Thing\+Smart\+Device\+Model\+Type\+Wifi\+Gateway&Wi-\/\+Fi Gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeWifiSubDev@{ThingSmartDeviceModelTypeWifiSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeWifiSubDev@{ThingSmartDeviceModelTypeWifiSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a3264e2bcbed1d65c599916ea4d0f7995}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a3264e2bcbed1d65c599916ea4d0f7995}} 
+Thing\+Smart\+Device\+Model\+Type\+Wifi\+Sub\+Dev&Wi-\/\+Fi sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeSIGMeshGateway@{ThingSmartDeviceModelTypeSIGMeshGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeSIGMeshGateway@{ThingSmartDeviceModelTypeSIGMeshGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a969c74e59109a8eb90054c6828ef8b98}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a969c74e59109a8eb90054c6828ef8b98}} 
+Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Gateway&SIG Mesh Gateway. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeSIGMeshSubDev@{ThingSmartDeviceModelTypeSIGMeshSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeSIGMeshSubDev@{ThingSmartDeviceModelTypeSIGMeshSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637acbd5816d28d63ce9326991e376b4daf1}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637acbd5816d28d63ce9326991e376b4daf1}} 
+Thing\+Smart\+Device\+Model\+Type\+SIGMesh\+Sub\+Dev&SIG Mesh sub\+Device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeBeacon@{ThingSmartDeviceModelTypeBeacon}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeBeacon@{ThingSmartDeviceModelTypeBeacon}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a9f0a406d69e7f70acbe3d30545bbd6cb}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a9f0a406d69e7f70acbe3d30545bbd6cb}} 
+Thing\+Smart\+Device\+Model\+Type\+Beacon&Ble Beacon. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeCat1@{ThingSmartDeviceModelTypeCat1}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeCat1@{ThingSmartDeviceModelTypeCat1}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a0c353b6d4617a04aeab47e01bd7180d1}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a0c353b6d4617a04aeab47e01bd7180d1}} 
+Thing\+Smart\+Device\+Model\+Type\+Cat1&Cat.\+1. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeThreadGateway@{ThingSmartDeviceModelTypeThreadGateway}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeThreadGateway@{ThingSmartDeviceModelTypeThreadGateway}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a1acf46f12ee506d47212514f71bee564}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a1acf46f12ee506d47212514f71bee564}} 
+Thing\+Smart\+Device\+Model\+Type\+Thread\+Gateway&Thread gateway device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeThreadSubDev@{ThingSmartDeviceModelTypeThreadSubDev}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeThreadSubDev@{ThingSmartDeviceModelTypeThreadSubDev}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a4136029dea99cf9a79a64a52b1c31c48}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637a4136029dea99cf9a79a64a52b1c31c48}} 
+Thing\+Smart\+Device\+Model\+Type\+Thread\+Sub\+Dev&Thread sub device. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingSmartDeviceModelTypeFitting@{ThingSmartDeviceModelTypeFitting}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!ThingSmartDeviceModelTypeFitting@{ThingSmartDeviceModelTypeFitting}}}\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637add3e986bf8b7cd4cecc45a210c9ae6db}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a3997c3e38a5302546203dec683586637add3e986bf8b7cd4cecc45a210c9ae6db}} 
+Thing\+Smart\+Device\+Model\+Type\+Fitting&Fitting device. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_source_l00020}{20}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_source}{Thing\+Smart\+Device\+Model.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a60ba9c108731286269b1da99ea723a6c}\label{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_a60ba9c108731286269b1da99ea723a6c}} 
+\index{ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}!NS\_OPTIONS@{NS\_OPTIONS}}
+\index{NS\_OPTIONS@{NS\_OPTIONS}!ThingSmartDeviceModel.h@{ThingSmartDeviceModel.h}}
+\doxysubsubsection{\texorpdfstring{NS\_OPTIONS()}{NS\_OPTIONS()}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+OPTIONS (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{Thing\+Smart\+Device\+Online\+Type}]{ }\end{DoxyParamCaption})}
+
+Offline
+
+Wi-\/\+Fi online
+
+Local online
+
+Bluetooth LE online
+
+Bluetooth LE mesh online
+
+beacon online
+
+dayu online
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_source_l00078}{78}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_8h_source}{Thing\+Smart\+Device\+Model.\+h}}.
+

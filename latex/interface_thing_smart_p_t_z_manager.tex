@@ -1,0 +1,961 @@
+\hypertarget{interface_thing_smart_p_t_z_manager}{}\doxysection{Thing\+Smart\+PTZManager Class Reference}
+\label{interface_thing_smart_p_t_z_manager}\index{ThingSmartPTZManager@{ThingSmartPTZManager}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+PTZManager.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+PTZManager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_p_t_z_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_af4f2bb08d2886a79ee502c30275203c5}{init\+With\+Device\+Id\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a4a27d0455dae0835b3beb8886533086e}{is\+Support\+PTZControl}}
+\begin{DoxyCompactList}\small\item\em Is support PTZ control. \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a5060b7003a3d4432e73e8ec4296b97ae}{request\+Supported\+PTZControl\+Directions}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_af58eca38d385903c5144689253366177}{start\+PTZWith\+Direction\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_af57d2b270b9f4fc2295a0ee4b4cd9927}{stop\+PTZWith\+Success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a2176823d4696de30d0a57b7335c12505}{is\+Support\+Zoom\+Action}}
+\begin{DoxyCompactList}\small\item\em Is support zoom action. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_adf5d58ce31e00bd9ee15480c6ee4c812}{start\+PTZZoom\+With\+Is\+Enlarge\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a9fb072ebbafeaf2d46bf19c72f368343}{stop\+Zoom\+Action\+With\+Success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a27b225383ebca782973b03aba811daca}{is\+Support\+Collection\+Point}}
+\begin{DoxyCompactList}\small\item\em Is support collection point. \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a950f49db557c13de2be3c001966c71e5}{could\+Operate\+Collection\+Point}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a389cbf9de0e60bd51dfc29a04c50cf4e}{request\+Collection\+Point\+List\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a4e74dac4ad01e79f4686d850a745b249}{add\+Collection\+Point\+With\+Name\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_abd94b8c4498c1a3e6218edb661592e52}{delete\+Collection\+Points\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a5cfc07f16c1e60ca50b765e4b9fe2ed4}{rename\+Collection\+Point\+:name\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_aae66f77c1ad5a508d7959ebaac103dc1}{view\+Collection\+Point\+:success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a779c7bd8bf93236aab403a0f0c5efca6}{is\+Support\+Cruise}}
+\begin{DoxyCompactList}\small\item\em Is support cruise. \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_ac85a39c300a5b317d20657eb3642bbf6}{is\+Open\+Cruise}}
+\begin{DoxyCompactList}\small\item\em Get current cruise open state. \end{DoxyCompactList}\item 
+(Thing\+Smart\+PTZControl\+Cruise\+Mode) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a5a8e2c5a8b5a16b7a28aae482d940a06}{get\+Current\+Cruise\+Mode}}
+\item 
+(Thing\+Smart\+PTZControl\+Cruise\+Time\+Mode) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a6a4e2d728d358722bd02172c2adfbd11}{get\+Current\+Cruise\+Time\+Mode}}
+\item 
+(Thing\+Smart\+PTZControl\+Cruise\+State) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a7e93ae1da635e164d501507d33682980}{get\+Current\+Cruise\+State}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a23acb2ced4a7f4fbc7be92907c0c53b4}{get\+Current\+Cruise\+Time}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_ada1bff385617c2466903b6de12702ba0}{set\+Cruise\+Open\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a5be66f0c594b082a856b9c8a7ff360c5}{set\+Cruise\+Mode\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a40e2200e63a204af33ca3d1e17d9cfa6}{set\+Cruise\+Time\+Mode\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a28644702523c196349d4d35d60f7ee06}{set\+Cruise\+State\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a5bd7c7362244445175221ae9381c55b0}{set\+Cruise\+Custom\+With\+Start\+Time\+:end\+Time\+:success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a1ff9b1c7567cce011f83c76d11b742e0}{is\+Support\+Motion\+Tracking}}
+\begin{DoxyCompactList}\small\item\em Is support motion\+Tracking. \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_aa5ec4aa905c5e8ab15ba81d897c79261}{is\+Open\+Motion\+Tracking}}
+\begin{DoxyCompactList}\small\item\em Is open motion\+Tracking. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_acb3dd32baf62a485307e3959d0d6d554}{set\+Motion\+Tracking\+State\+:success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_aa21d8afa6ff72fc48d57da86a76cffa6}{is\+Support\+Preset\+Point}}
+\begin{DoxyCompactList}\small\item\em Is support preset point. \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a7fb03c8a0bff411ea18133c59aa92e69}{request\+Supported\+Preset\+Points}}
+\begin{DoxyCompactList}\small\item\em Get preset points, eg, \mbox{[}\char`\"{}1\char`\"{},\char`\"{}2\char`\"{},\char`\"{}3\char`\"{},\char`\"{}4\char`\"{}\mbox{]}. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_aa24a1b932b008b32a9580a4cf34ab8ea}{view\+Preset\+Point\+With\+Index\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a47340529398b9a12bc6a0ffb22530f60}{set\+Preset\+Point\+With\+Index\+:success\+:failure\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_af4f2bb08d2886a79ee502c30275203c5}{init\+With\+Device\+Id\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a4a27d0455dae0835b3beb8886533086e}{is\+Support\+PTZControl}}
+\begin{DoxyCompactList}\small\item\em Is support PTZ control. \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a5060b7003a3d4432e73e8ec4296b97ae}{request\+Supported\+PTZControl\+Directions}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_af58eca38d385903c5144689253366177}{start\+PTZWith\+Direction\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_af57d2b270b9f4fc2295a0ee4b4cd9927}{stop\+PTZWith\+Success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a2176823d4696de30d0a57b7335c12505}{is\+Support\+Zoom\+Action}}
+\begin{DoxyCompactList}\small\item\em Is support zoom action. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_adf5d58ce31e00bd9ee15480c6ee4c812}{start\+PTZZoom\+With\+Is\+Enlarge\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a9fb072ebbafeaf2d46bf19c72f368343}{stop\+Zoom\+Action\+With\+Success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a27b225383ebca782973b03aba811daca}{is\+Support\+Collection\+Point}}
+\begin{DoxyCompactList}\small\item\em Is support collection point. \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a950f49db557c13de2be3c001966c71e5}{could\+Operate\+Collection\+Point}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a389cbf9de0e60bd51dfc29a04c50cf4e}{request\+Collection\+Point\+List\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a4e74dac4ad01e79f4686d850a745b249}{add\+Collection\+Point\+With\+Name\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_abd94b8c4498c1a3e6218edb661592e52}{delete\+Collection\+Points\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a5cfc07f16c1e60ca50b765e4b9fe2ed4}{rename\+Collection\+Point\+:name\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_aae66f77c1ad5a508d7959ebaac103dc1}{view\+Collection\+Point\+:success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a779c7bd8bf93236aab403a0f0c5efca6}{is\+Support\+Cruise}}
+\begin{DoxyCompactList}\small\item\em Is support cruise. \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_ac85a39c300a5b317d20657eb3642bbf6}{is\+Open\+Cruise}}
+\begin{DoxyCompactList}\small\item\em Get current cruise open state. \end{DoxyCompactList}\item 
+(Thing\+Smart\+PTZControl\+Cruise\+Mode) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a5a8e2c5a8b5a16b7a28aae482d940a06}{get\+Current\+Cruise\+Mode}}
+\item 
+(Thing\+Smart\+PTZControl\+Cruise\+Time\+Mode) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a6a4e2d728d358722bd02172c2adfbd11}{get\+Current\+Cruise\+Time\+Mode}}
+\item 
+(Thing\+Smart\+PTZControl\+Cruise\+State) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a7e93ae1da635e164d501507d33682980}{get\+Current\+Cruise\+State}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a23acb2ced4a7f4fbc7be92907c0c53b4}{get\+Current\+Cruise\+Time}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_ada1bff385617c2466903b6de12702ba0}{set\+Cruise\+Open\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a5be66f0c594b082a856b9c8a7ff360c5}{set\+Cruise\+Mode\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a40e2200e63a204af33ca3d1e17d9cfa6}{set\+Cruise\+Time\+Mode\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a28644702523c196349d4d35d60f7ee06}{set\+Cruise\+State\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a5bd7c7362244445175221ae9381c55b0}{set\+Cruise\+Custom\+With\+Start\+Time\+:end\+Time\+:success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a1ff9b1c7567cce011f83c76d11b742e0}{is\+Support\+Motion\+Tracking}}
+\begin{DoxyCompactList}\small\item\em Is support motion\+Tracking. \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_aa5ec4aa905c5e8ab15ba81d897c79261}{is\+Open\+Motion\+Tracking}}
+\begin{DoxyCompactList}\small\item\em Is open motion\+Tracking. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_acb3dd32baf62a485307e3959d0d6d554}{set\+Motion\+Tracking\+State\+:success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_aa21d8afa6ff72fc48d57da86a76cffa6}{is\+Support\+Preset\+Point}}
+\begin{DoxyCompactList}\small\item\em Is support preset point. \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a7fb03c8a0bff411ea18133c59aa92e69}{request\+Supported\+Preset\+Points}}
+\begin{DoxyCompactList}\small\item\em Get preset points, eg, \mbox{[}\char`\"{}1\char`\"{},\char`\"{}2\char`\"{},\char`\"{}3\char`\"{},\char`\"{}4\char`\"{}\mbox{]}. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_aa24a1b932b008b32a9580a4cf34ab8ea}{view\+Preset\+Point\+With\+Index\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_a47340529398b9a12bc6a0ffb22530f60}{set\+Preset\+Point\+With\+Index\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p}{Thing\+Smart\+PTZManager\+Deletate}} $>$ \mbox{\hyperlink{interface_thing_smart_p_t_z_manager_aa859dd42a9240e3cd1a63141f4539103}{delegate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_p_t_z_manager_8h_source_l00113}{113}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_p_t_z_manager_8h_source}{Thing\+Smart\+PTZManager.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a4e74dac4ad01e79f4686d850a745b249}\label{interface_thing_smart_p_t_z_manager_a4e74dac4ad01e79f4686d850a745b249}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!addCollectionPointWithName:success:failure:@{addCollectionPointWithName:success:failure:}}
+\index{addCollectionPointWithName:success:failure:@{addCollectionPointWithName:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{addCollectionPointWithName:success:failure:}{addCollectionPointWithName:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Collection\+Point\+With\+Name\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{name }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Add collection point 
+\begin{DoxyParams}{Parameters}
+{\em name} & Collection point name \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a4e74dac4ad01e79f4686d850a745b249}\label{interface_thing_smart_p_t_z_manager_a4e74dac4ad01e79f4686d850a745b249}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!addCollectionPointWithName:success:failure:@{addCollectionPointWithName:success:failure:}}
+\index{addCollectionPointWithName:success:failure:@{addCollectionPointWithName:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{addCollectionPointWithName:success:failure:}{addCollectionPointWithName:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Collection\+Point\+With\+Name\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{name }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Add collection point 
+\begin{DoxyParams}{Parameters}
+{\em name} & Collection point name \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a950f49db557c13de2be3c001966c71e5}\label{interface_thing_smart_p_t_z_manager_a950f49db557c13de2be3c001966c71e5}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!couldOperateCollectionPoint@{couldOperateCollectionPoint}}
+\index{couldOperateCollectionPoint@{couldOperateCollectionPoint}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{couldOperateCollectionPoint}{couldOperateCollectionPoint}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) could\+Operate\+Collection\+Point \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Could operate collection point. Only in non-\/cruise mode, can operate collection point \mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a950f49db557c13de2be3c001966c71e5}\label{interface_thing_smart_p_t_z_manager_a950f49db557c13de2be3c001966c71e5}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!couldOperateCollectionPoint@{couldOperateCollectionPoint}}
+\index{couldOperateCollectionPoint@{couldOperateCollectionPoint}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{couldOperateCollectionPoint}{couldOperateCollectionPoint}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) could\+Operate\+Collection\+Point \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Could operate collection point. Only in non-\/cruise mode, can operate collection point \mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_abd94b8c4498c1a3e6218edb661592e52}\label{interface_thing_smart_p_t_z_manager_abd94b8c4498c1a3e6218edb661592e52}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!deleteCollectionPoints:success:failure:@{deleteCollectionPoints:success:failure:}}
+\index{deleteCollectionPoints:success:failure:@{deleteCollectionPoints:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{deleteCollectionPoints:success:failure:}{deleteCollectionPoints:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) delete\+Collection\+Points\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_camera_collection_point_model}{Thing\+Camera\+Collection\+Point\+Model}} $\ast$ $>$ $\ast$)}]{models }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Delete collection points 
+\begin{DoxyParams}{Parameters}
+{\em models} & The collection point model array you want to remove \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_abd94b8c4498c1a3e6218edb661592e52}\label{interface_thing_smart_p_t_z_manager_abd94b8c4498c1a3e6218edb661592e52}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!deleteCollectionPoints:success:failure:@{deleteCollectionPoints:success:failure:}}
+\index{deleteCollectionPoints:success:failure:@{deleteCollectionPoints:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{deleteCollectionPoints:success:failure:}{deleteCollectionPoints:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) delete\+Collection\+Points\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_camera_collection_point_model}{Thing\+Camera\+Collection\+Point\+Model}} $\ast$ $>$ $\ast$)}]{models }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Delete collection points 
+\begin{DoxyParams}{Parameters}
+{\em models} & The collection point model array you want to remove \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a5a8e2c5a8b5a16b7a28aae482d940a06}\label{interface_thing_smart_p_t_z_manager_a5a8e2c5a8b5a16b7a28aae482d940a06}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!getCurrentCruiseMode@{getCurrentCruiseMode}}
+\index{getCurrentCruiseMode@{getCurrentCruiseMode}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentCruiseMode}{getCurrentCruiseMode}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (Thing\+Smart\+PTZControl\+Cruise\+Mode) get\+Current\+Cruise\+Mode \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get current cruise mode 0, Panoramic cruise; 1, Preset point cruise \mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a5a8e2c5a8b5a16b7a28aae482d940a06}\label{interface_thing_smart_p_t_z_manager_a5a8e2c5a8b5a16b7a28aae482d940a06}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!getCurrentCruiseMode@{getCurrentCruiseMode}}
+\index{getCurrentCruiseMode@{getCurrentCruiseMode}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentCruiseMode}{getCurrentCruiseMode}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (Thing\+Smart\+PTZControl\+Cruise\+Mode) get\+Current\+Cruise\+Mode \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get current cruise mode 0, Panoramic cruise; 1, Preset point cruise \mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a7e93ae1da635e164d501507d33682980}\label{interface_thing_smart_p_t_z_manager_a7e93ae1da635e164d501507d33682980}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!getCurrentCruiseState@{getCurrentCruiseState}}
+\index{getCurrentCruiseState@{getCurrentCruiseState}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentCruiseState}{getCurrentCruiseState}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (Thing\+Smart\+PTZControl\+Cruise\+State) get\+Current\+Cruise\+State \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get current cruise state 0，\+Panoramic cruising；1，\+Collection point cruising；2，\+Not in cruising \mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a7e93ae1da635e164d501507d33682980}\label{interface_thing_smart_p_t_z_manager_a7e93ae1da635e164d501507d33682980}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!getCurrentCruiseState@{getCurrentCruiseState}}
+\index{getCurrentCruiseState@{getCurrentCruiseState}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentCruiseState}{getCurrentCruiseState}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (Thing\+Smart\+PTZControl\+Cruise\+State) get\+Current\+Cruise\+State \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get current cruise state 0，\+Panoramic cruising；1，\+Collection point cruising；2，\+Not in cruising \mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a23acb2ced4a7f4fbc7be92907c0c53b4}\label{interface_thing_smart_p_t_z_manager_a23acb2ced4a7f4fbc7be92907c0c53b4}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!getCurrentCruiseTime@{getCurrentCruiseTime}}
+\index{getCurrentCruiseTime@{getCurrentCruiseTime}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentCruiseTime}{getCurrentCruiseTime}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) get\+Current\+Cruise\+Time \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get current cruise time Format：start\+Time-\/end\+Time，eg, \char`\"{}09\+:00-\/18\+:00\char`\"{} \mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a23acb2ced4a7f4fbc7be92907c0c53b4}\label{interface_thing_smart_p_t_z_manager_a23acb2ced4a7f4fbc7be92907c0c53b4}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!getCurrentCruiseTime@{getCurrentCruiseTime}}
+\index{getCurrentCruiseTime@{getCurrentCruiseTime}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentCruiseTime}{getCurrentCruiseTime}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) get\+Current\+Cruise\+Time \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get current cruise time Format：start\+Time-\/end\+Time，eg, \char`\"{}09\+:00-\/18\+:00\char`\"{} \mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a6a4e2d728d358722bd02172c2adfbd11}\label{interface_thing_smart_p_t_z_manager_a6a4e2d728d358722bd02172c2adfbd11}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!getCurrentCruiseTimeMode@{getCurrentCruiseTimeMode}}
+\index{getCurrentCruiseTimeMode@{getCurrentCruiseTimeMode}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentCruiseTimeMode}{getCurrentCruiseTimeMode}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (Thing\+Smart\+PTZControl\+Cruise\+Time\+Mode) get\+Current\+Cruise\+Time\+Mode \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get current cruise time mode 0, Full day cruise; 1, Custom time cruise \mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a6a4e2d728d358722bd02172c2adfbd11}\label{interface_thing_smart_p_t_z_manager_a6a4e2d728d358722bd02172c2adfbd11}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!getCurrentCruiseTimeMode@{getCurrentCruiseTimeMode}}
+\index{getCurrentCruiseTimeMode@{getCurrentCruiseTimeMode}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentCruiseTimeMode}{getCurrentCruiseTimeMode}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (Thing\+Smart\+PTZControl\+Cruise\+Time\+Mode) get\+Current\+Cruise\+Time\+Mode \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get current cruise time mode 0, Full day cruise; 1, Custom time cruise \mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_af4f2bb08d2886a79ee502c30275203c5}\label{interface_thing_smart_p_t_z_manager_af4f2bb08d2886a79ee502c30275203c5}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!initWithDeviceId:@{initWithDeviceId:}}
+\index{initWithDeviceId:@{initWithDeviceId:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{initWithDeviceId:}{initWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+Initialization 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & Device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_af4f2bb08d2886a79ee502c30275203c5}\label{interface_thing_smart_p_t_z_manager_af4f2bb08d2886a79ee502c30275203c5}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!initWithDeviceId:@{initWithDeviceId:}}
+\index{initWithDeviceId:@{initWithDeviceId:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{initWithDeviceId:}{initWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+Initialization 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & Device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_ac85a39c300a5b317d20657eb3642bbf6}\label{interface_thing_smart_p_t_z_manager_ac85a39c300a5b317d20657eb3642bbf6}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isOpenCruise@{isOpenCruise}}
+\index{isOpenCruise@{isOpenCruise}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isOpenCruise}{isOpenCruise}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Open\+Cruise \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Get current cruise open state. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_ac85a39c300a5b317d20657eb3642bbf6}\label{interface_thing_smart_p_t_z_manager_ac85a39c300a5b317d20657eb3642bbf6}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isOpenCruise@{isOpenCruise}}
+\index{isOpenCruise@{isOpenCruise}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isOpenCruise}{isOpenCruise}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Open\+Cruise \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Get current cruise open state. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_aa5ec4aa905c5e8ab15ba81d897c79261}\label{interface_thing_smart_p_t_z_manager_aa5ec4aa905c5e8ab15ba81d897c79261}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isOpenMotionTracking@{isOpenMotionTracking}}
+\index{isOpenMotionTracking@{isOpenMotionTracking}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isOpenMotionTracking}{isOpenMotionTracking}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Open\+Motion\+Tracking \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is open motion\+Tracking. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_aa5ec4aa905c5e8ab15ba81d897c79261}\label{interface_thing_smart_p_t_z_manager_aa5ec4aa905c5e8ab15ba81d897c79261}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isOpenMotionTracking@{isOpenMotionTracking}}
+\index{isOpenMotionTracking@{isOpenMotionTracking}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isOpenMotionTracking}{isOpenMotionTracking}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Open\+Motion\+Tracking \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is open motion\+Tracking. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a27b225383ebca782973b03aba811daca}\label{interface_thing_smart_p_t_z_manager_a27b225383ebca782973b03aba811daca}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isSupportCollectionPoint@{isSupportCollectionPoint}}
+\index{isSupportCollectionPoint@{isSupportCollectionPoint}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isSupportCollectionPoint}{isSupportCollectionPoint}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Collection\+Point \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is support collection point. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a27b225383ebca782973b03aba811daca}\label{interface_thing_smart_p_t_z_manager_a27b225383ebca782973b03aba811daca}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isSupportCollectionPoint@{isSupportCollectionPoint}}
+\index{isSupportCollectionPoint@{isSupportCollectionPoint}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isSupportCollectionPoint}{isSupportCollectionPoint}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Collection\+Point \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is support collection point. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a779c7bd8bf93236aab403a0f0c5efca6}\label{interface_thing_smart_p_t_z_manager_a779c7bd8bf93236aab403a0f0c5efca6}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isSupportCruise@{isSupportCruise}}
+\index{isSupportCruise@{isSupportCruise}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isSupportCruise}{isSupportCruise}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Cruise \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is support cruise. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a779c7bd8bf93236aab403a0f0c5efca6}\label{interface_thing_smart_p_t_z_manager_a779c7bd8bf93236aab403a0f0c5efca6}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isSupportCruise@{isSupportCruise}}
+\index{isSupportCruise@{isSupportCruise}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isSupportCruise}{isSupportCruise}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Cruise \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is support cruise. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a1ff9b1c7567cce011f83c76d11b742e0}\label{interface_thing_smart_p_t_z_manager_a1ff9b1c7567cce011f83c76d11b742e0}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isSupportMotionTracking@{isSupportMotionTracking}}
+\index{isSupportMotionTracking@{isSupportMotionTracking}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isSupportMotionTracking}{isSupportMotionTracking}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Motion\+Tracking \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is support motion\+Tracking. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a1ff9b1c7567cce011f83c76d11b742e0}\label{interface_thing_smart_p_t_z_manager_a1ff9b1c7567cce011f83c76d11b742e0}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isSupportMotionTracking@{isSupportMotionTracking}}
+\index{isSupportMotionTracking@{isSupportMotionTracking}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isSupportMotionTracking}{isSupportMotionTracking}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Motion\+Tracking \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is support motion\+Tracking. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_aa21d8afa6ff72fc48d57da86a76cffa6}\label{interface_thing_smart_p_t_z_manager_aa21d8afa6ff72fc48d57da86a76cffa6}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isSupportPresetPoint@{isSupportPresetPoint}}
+\index{isSupportPresetPoint@{isSupportPresetPoint}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isSupportPresetPoint}{isSupportPresetPoint}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Preset\+Point \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is support preset point. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_aa21d8afa6ff72fc48d57da86a76cffa6}\label{interface_thing_smart_p_t_z_manager_aa21d8afa6ff72fc48d57da86a76cffa6}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isSupportPresetPoint@{isSupportPresetPoint}}
+\index{isSupportPresetPoint@{isSupportPresetPoint}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isSupportPresetPoint}{isSupportPresetPoint}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Preset\+Point \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is support preset point. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a4a27d0455dae0835b3beb8886533086e}\label{interface_thing_smart_p_t_z_manager_a4a27d0455dae0835b3beb8886533086e}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isSupportPTZControl@{isSupportPTZControl}}
+\index{isSupportPTZControl@{isSupportPTZControl}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isSupportPTZControl}{isSupportPTZControl}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+PTZControl \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is support PTZ control. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a4a27d0455dae0835b3beb8886533086e}\label{interface_thing_smart_p_t_z_manager_a4a27d0455dae0835b3beb8886533086e}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isSupportPTZControl@{isSupportPTZControl}}
+\index{isSupportPTZControl@{isSupportPTZControl}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isSupportPTZControl}{isSupportPTZControl}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+PTZControl \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is support PTZ control. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a2176823d4696de30d0a57b7335c12505}\label{interface_thing_smart_p_t_z_manager_a2176823d4696de30d0a57b7335c12505}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isSupportZoomAction@{isSupportZoomAction}}
+\index{isSupportZoomAction@{isSupportZoomAction}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isSupportZoomAction}{isSupportZoomAction}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Zoom\+Action \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is support zoom action. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a2176823d4696de30d0a57b7335c12505}\label{interface_thing_smart_p_t_z_manager_a2176823d4696de30d0a57b7335c12505}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!isSupportZoomAction@{isSupportZoomAction}}
+\index{isSupportZoomAction@{isSupportZoomAction}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{isSupportZoomAction}{isSupportZoomAction}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Zoom\+Action \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Is support zoom action. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a5cfc07f16c1e60ca50b765e4b9fe2ed4}\label{interface_thing_smart_p_t_z_manager_a5cfc07f16c1e60ca50b765e4b9fe2ed4}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!renameCollectionPoint:name:success:failure:@{renameCollectionPoint:name:success:failure:}}
+\index{renameCollectionPoint:name:success:failure:@{renameCollectionPoint:name:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{renameCollectionPoint:name:success:failure:}{renameCollectionPoint:name:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) rename\+Collection\+Point\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_camera_collection_point_model}{Thing\+Camera\+Collection\+Point\+Model}} $\ast$)}]{model }\item[{name\+:(NSString $\ast$)}]{name }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Modify collection point name 
+\begin{DoxyParams}{Parameters}
+{\em model} & Collection point model \\
+\hline
+{\em name} & New name \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a5cfc07f16c1e60ca50b765e4b9fe2ed4}\label{interface_thing_smart_p_t_z_manager_a5cfc07f16c1e60ca50b765e4b9fe2ed4}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!renameCollectionPoint:name:success:failure:@{renameCollectionPoint:name:success:failure:}}
+\index{renameCollectionPoint:name:success:failure:@{renameCollectionPoint:name:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{renameCollectionPoint:name:success:failure:}{renameCollectionPoint:name:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) rename\+Collection\+Point\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_camera_collection_point_model}{Thing\+Camera\+Collection\+Point\+Model}} $\ast$)}]{model }\item[{name\+:(NSString $\ast$)}]{name }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Modify collection point name 
+\begin{DoxyParams}{Parameters}
+{\em model} & Collection point model \\
+\hline
+{\em name} & New name \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a389cbf9de0e60bd51dfc29a04c50cf4e}\label{interface_thing_smart_p_t_z_manager_a389cbf9de0e60bd51dfc29a04c50cf4e}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!requestCollectionPointListWithSuccess:failure:@{requestCollectionPointListWithSuccess:failure:}}
+\index{requestCollectionPointListWithSuccess:failure:@{requestCollectionPointListWithSuccess:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{requestCollectionPointListWithSuccess:failure:}{requestCollectionPointListWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) request\+Collection\+Point\+List\+With\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a9b2841d4f6e0c2a2e62dc4fa7451bc9a}{Thing\+Success\+List}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Get collection points 
+\begin{DoxyParams}{Parameters}
+{\em success} & Successful callback In the list is some Thing\+Camera\+Collection\+Point\+Models \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a389cbf9de0e60bd51dfc29a04c50cf4e}\label{interface_thing_smart_p_t_z_manager_a389cbf9de0e60bd51dfc29a04c50cf4e}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!requestCollectionPointListWithSuccess:failure:@{requestCollectionPointListWithSuccess:failure:}}
+\index{requestCollectionPointListWithSuccess:failure:@{requestCollectionPointListWithSuccess:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{requestCollectionPointListWithSuccess:failure:}{requestCollectionPointListWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) request\+Collection\+Point\+List\+With\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a9b2841d4f6e0c2a2e62dc4fa7451bc9a}{Thing\+Success\+List}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Get collection points 
+\begin{DoxyParams}{Parameters}
+{\em success} & Successful callback In the list is some Thing\+Camera\+Collection\+Point\+Models \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a7fb03c8a0bff411ea18133c59aa92e69}\label{interface_thing_smart_p_t_z_manager_a7fb03c8a0bff411ea18133c59aa92e69}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!requestSupportedPresetPoints@{requestSupportedPresetPoints}}
+\index{requestSupportedPresetPoints@{requestSupportedPresetPoints}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{requestSupportedPresetPoints}{requestSupportedPresetPoints}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) request\+Supported\+Preset\+Points \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Get preset points, eg, \mbox{[}\char`\"{}1\char`\"{},\char`\"{}2\char`\"{},\char`\"{}3\char`\"{},\char`\"{}4\char`\"{}\mbox{]}. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a7fb03c8a0bff411ea18133c59aa92e69}\label{interface_thing_smart_p_t_z_manager_a7fb03c8a0bff411ea18133c59aa92e69}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!requestSupportedPresetPoints@{requestSupportedPresetPoints}}
+\index{requestSupportedPresetPoints@{requestSupportedPresetPoints}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{requestSupportedPresetPoints}{requestSupportedPresetPoints}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) request\+Supported\+Preset\+Points \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Get preset points, eg, \mbox{[}\char`\"{}1\char`\"{},\char`\"{}2\char`\"{},\char`\"{}3\char`\"{},\char`\"{}4\char`\"{}\mbox{]}. 
+
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a5060b7003a3d4432e73e8ec4296b97ae}\label{interface_thing_smart_p_t_z_manager_a5060b7003a3d4432e73e8ec4296b97ae}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!requestSupportedPTZControlDirections@{requestSupportedPTZControlDirections}}
+\index{requestSupportedPTZControlDirections@{requestSupportedPTZControlDirections}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{requestSupportedPTZControlDirections}{requestSupportedPTZControlDirections}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) request\+Supported\+PTZControl\+Directions \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get all supported directions Eg, \mbox{[}\char`\"{}0\char`\"{},\char`\"{}1\char`\"{},\char`\"{}2\char`\"{},\char`\"{}3\char`\"{},\char`\"{}4\char`\"{},\char`\"{}5\char`\"{},\char`\"{}6\char`\"{},\char`\"{}7\char`\"{}\mbox{]} \mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a5060b7003a3d4432e73e8ec4296b97ae}\label{interface_thing_smart_p_t_z_manager_a5060b7003a3d4432e73e8ec4296b97ae}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!requestSupportedPTZControlDirections@{requestSupportedPTZControlDirections}}
+\index{requestSupportedPTZControlDirections@{requestSupportedPTZControlDirections}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{requestSupportedPTZControlDirections}{requestSupportedPTZControlDirections}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) request\+Supported\+PTZControl\+Directions \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get all supported directions Eg, \mbox{[}\char`\"{}0\char`\"{},\char`\"{}1\char`\"{},\char`\"{}2\char`\"{},\char`\"{}3\char`\"{},\char`\"{}4\char`\"{},\char`\"{}5\char`\"{},\char`\"{}6\char`\"{},\char`\"{}7\char`\"{}\mbox{]} \mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a5bd7c7362244445175221ae9381c55b0}\label{interface_thing_smart_p_t_z_manager_a5bd7c7362244445175221ae9381c55b0}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setCruiseCustomWithStartTime:endTime:success:failure:@{setCruiseCustomWithStartTime:endTime:success:failure:}}
+\index{setCruiseCustomWithStartTime:endTime:success:failure:@{setCruiseCustomWithStartTime:endTime:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setCruiseCustomWithStartTime:endTime:success:failure:}{setCruiseCustomWithStartTime:endTime:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Cruise\+Custom\+With\+Start\+Time\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{start\+Time }\item[{end\+Time\+:(NSString $\ast$)}]{end\+Time }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Set custom time for cruise 
+\begin{DoxyParams}{Parameters}
+{\em start\+Time} & Format \char`\"{}00\+:00\char`\"{} \\
+\hline
+{\em end\+Time} & Format \char`\"{}00\+:00\char`\"{} \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a5bd7c7362244445175221ae9381c55b0}\label{interface_thing_smart_p_t_z_manager_a5bd7c7362244445175221ae9381c55b0}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setCruiseCustomWithStartTime:endTime:success:failure:@{setCruiseCustomWithStartTime:endTime:success:failure:}}
+\index{setCruiseCustomWithStartTime:endTime:success:failure:@{setCruiseCustomWithStartTime:endTime:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setCruiseCustomWithStartTime:endTime:success:failure:}{setCruiseCustomWithStartTime:endTime:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Cruise\+Custom\+With\+Start\+Time\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{start\+Time }\item[{end\+Time\+:(NSString $\ast$)}]{end\+Time }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Set custom time for cruise 
+\begin{DoxyParams}{Parameters}
+{\em start\+Time} & Format \char`\"{}00\+:00\char`\"{} \\
+\hline
+{\em end\+Time} & Format \char`\"{}00\+:00\char`\"{} \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a5be66f0c594b082a856b9c8a7ff360c5}\label{interface_thing_smart_p_t_z_manager_a5be66f0c594b082a856b9c8a7ff360c5}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setCruiseMode:success:failure:@{setCruiseMode:success:failure:}}
+\index{setCruiseMode:success:failure:@{setCruiseMode:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setCruiseMode:success:failure:}{setCruiseMode:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Cruise\+Mode\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+PTZControl\+Cruise\+Mode)}]{mode }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Set cruise mode 
+\begin{DoxyParams}{Parameters}
+{\em mode} & Cruise mode, 0, Panoramic cruise; 1, Preset point cruise \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a5be66f0c594b082a856b9c8a7ff360c5}\label{interface_thing_smart_p_t_z_manager_a5be66f0c594b082a856b9c8a7ff360c5}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setCruiseMode:success:failure:@{setCruiseMode:success:failure:}}
+\index{setCruiseMode:success:failure:@{setCruiseMode:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setCruiseMode:success:failure:}{setCruiseMode:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Cruise\+Mode\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+PTZControl\+Cruise\+Mode)}]{mode }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Set cruise mode 
+\begin{DoxyParams}{Parameters}
+{\em mode} & Cruise mode, 0, Panoramic cruise; 1, Preset point cruise \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_ada1bff385617c2466903b6de12702ba0}\label{interface_thing_smart_p_t_z_manager_ada1bff385617c2466903b6de12702ba0}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setCruiseOpen:success:failure:@{setCruiseOpen:success:failure:}}
+\index{setCruiseOpen:success:failure:@{setCruiseOpen:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setCruiseOpen:success:failure:}{setCruiseOpen:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Cruise\+Open\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{is\+Open }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Open or close cruise switch 
+\begin{DoxyParams}{Parameters}
+{\em is\+Open} & YES，open；\+NO，close \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_ada1bff385617c2466903b6de12702ba0}\label{interface_thing_smart_p_t_z_manager_ada1bff385617c2466903b6de12702ba0}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setCruiseOpen:success:failure:@{setCruiseOpen:success:failure:}}
+\index{setCruiseOpen:success:failure:@{setCruiseOpen:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setCruiseOpen:success:failure:}{setCruiseOpen:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Cruise\+Open\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{is\+Open }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Open or close cruise switch 
+\begin{DoxyParams}{Parameters}
+{\em is\+Open} & YES，open；\+NO，close \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a28644702523c196349d4d35d60f7ee06}\label{interface_thing_smart_p_t_z_manager_a28644702523c196349d4d35d60f7ee06}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setCruiseState:success:failure:@{setCruiseState:success:failure:}}
+\index{setCruiseState:success:failure:@{setCruiseState:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setCruiseState:success:failure:}{setCruiseState:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Cruise\+State\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+PTZControl\+Cruise\+State)}]{state }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Set cruise state 
+\begin{DoxyParams}{Parameters}
+{\em state} & cruise state，0, Panoramic cruise; 1, Collection point cruise; 2, Not in cruise \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a28644702523c196349d4d35d60f7ee06}\label{interface_thing_smart_p_t_z_manager_a28644702523c196349d4d35d60f7ee06}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setCruiseState:success:failure:@{setCruiseState:success:failure:}}
+\index{setCruiseState:success:failure:@{setCruiseState:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setCruiseState:success:failure:}{setCruiseState:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Cruise\+State\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+PTZControl\+Cruise\+State)}]{state }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Set cruise state 
+\begin{DoxyParams}{Parameters}
+{\em state} & cruise state，0, Panoramic cruise; 1, Collection point cruise; 2, Not in cruise \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a40e2200e63a204af33ca3d1e17d9cfa6}\label{interface_thing_smart_p_t_z_manager_a40e2200e63a204af33ca3d1e17d9cfa6}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setCruiseTimeMode:success:failure:@{setCruiseTimeMode:success:failure:}}
+\index{setCruiseTimeMode:success:failure:@{setCruiseTimeMode:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setCruiseTimeMode:success:failure:}{setCruiseTimeMode:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Cruise\+Time\+Mode\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+PTZControl\+Cruise\+Time\+Mode)}]{time\+Mode }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Set cruise time mode 
+\begin{DoxyParams}{Parameters}
+{\em time\+Mode} & Cruise time mode，0、\+Full day cruise; 1、\+Custom time cruise \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a40e2200e63a204af33ca3d1e17d9cfa6}\label{interface_thing_smart_p_t_z_manager_a40e2200e63a204af33ca3d1e17d9cfa6}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setCruiseTimeMode:success:failure:@{setCruiseTimeMode:success:failure:}}
+\index{setCruiseTimeMode:success:failure:@{setCruiseTimeMode:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setCruiseTimeMode:success:failure:}{setCruiseTimeMode:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Cruise\+Time\+Mode\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+PTZControl\+Cruise\+Time\+Mode)}]{time\+Mode }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Set cruise time mode 
+\begin{DoxyParams}{Parameters}
+{\em time\+Mode} & Cruise time mode，0、\+Full day cruise; 1、\+Custom time cruise \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_acb3dd32baf62a485307e3959d0d6d554}\label{interface_thing_smart_p_t_z_manager_acb3dd32baf62a485307e3959d0d6d554}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setMotionTrackingState:success:failure:@{setMotionTrackingState:success:failure:}}
+\index{setMotionTrackingState:success:failure:@{setMotionTrackingState:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setMotionTrackingState:success:failure:}{setMotionTrackingState:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Motion\+Tracking\+State\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{is\+Open }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Open or close motion\+Tracking 
+\begin{DoxyParams}{Parameters}
+{\em is\+Open} & YES，open action；\+NO，is close action \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_acb3dd32baf62a485307e3959d0d6d554}\label{interface_thing_smart_p_t_z_manager_acb3dd32baf62a485307e3959d0d6d554}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setMotionTrackingState:success:failure:@{setMotionTrackingState:success:failure:}}
+\index{setMotionTrackingState:success:failure:@{setMotionTrackingState:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setMotionTrackingState:success:failure:}{setMotionTrackingState:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Motion\+Tracking\+State\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{is\+Open }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Open or close motion\+Tracking 
+\begin{DoxyParams}{Parameters}
+{\em is\+Open} & YES，open action；\+NO，is close action \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a47340529398b9a12bc6a0ffb22530f60}\label{interface_thing_smart_p_t_z_manager_a47340529398b9a12bc6a0ffb22530f60}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setPresetPointWithIndex:success:failure:@{setPresetPointWithIndex:success:failure:}}
+\index{setPresetPointWithIndex:success:failure:@{setPresetPointWithIndex:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setPresetPointWithIndex:success:failure:}{setPresetPointWithIndex:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Preset\+Point\+With\+Index\+: \begin{DoxyParamCaption}\item[{(NSInteger)}]{index }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Set the preset point at index 
+\begin{DoxyParams}{Parameters}
+{\em index} & Enumeration value of preset point, which is get from request\+Supported\+Preset\+Points api \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a47340529398b9a12bc6a0ffb22530f60}\label{interface_thing_smart_p_t_z_manager_a47340529398b9a12bc6a0ffb22530f60}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!setPresetPointWithIndex:success:failure:@{setPresetPointWithIndex:success:failure:}}
+\index{setPresetPointWithIndex:success:failure:@{setPresetPointWithIndex:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{setPresetPointWithIndex:success:failure:}{setPresetPointWithIndex:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Preset\+Point\+With\+Index\+: \begin{DoxyParamCaption}\item[{(NSInteger)}]{index }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Set the preset point at index 
+\begin{DoxyParams}{Parameters}
+{\em index} & Enumeration value of preset point, which is get from request\+Supported\+Preset\+Points api \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_af58eca38d385903c5144689253366177}\label{interface_thing_smart_p_t_z_manager_af58eca38d385903c5144689253366177}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!startPTZWithDirection:success:failure:@{startPTZWithDirection:success:failure:}}
+\index{startPTZWithDirection:success:failure:@{startPTZWithDirection:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{startPTZWithDirection:success:failure:}{startPTZWithDirection:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+PTZWith\+Direction\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+PTZControl\+Direction)}]{direction }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Start PTZ control 
+\begin{DoxyParams}{Parameters}
+{\em direction} & Direction enumeration \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback error.\+code, 8，\+Already reached the limit；9，\+It is being calibrated, please wait \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_af58eca38d385903c5144689253366177}\label{interface_thing_smart_p_t_z_manager_af58eca38d385903c5144689253366177}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!startPTZWithDirection:success:failure:@{startPTZWithDirection:success:failure:}}
+\index{startPTZWithDirection:success:failure:@{startPTZWithDirection:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{startPTZWithDirection:success:failure:}{startPTZWithDirection:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+PTZWith\+Direction\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+PTZControl\+Direction)}]{direction }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Start PTZ control 
+\begin{DoxyParams}{Parameters}
+{\em direction} & Direction enumeration \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback error.\+code, 8，\+Already reached the limit；9，\+It is being calibrated, please wait \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_adf5d58ce31e00bd9ee15480c6ee4c812}\label{interface_thing_smart_p_t_z_manager_adf5d58ce31e00bd9ee15480c6ee4c812}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!startPTZZoomWithIsEnlarge:success:failure:@{startPTZZoomWithIsEnlarge:success:failure:}}
+\index{startPTZZoomWithIsEnlarge:success:failure:@{startPTZZoomWithIsEnlarge:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{startPTZZoomWithIsEnlarge:success:failure:}{startPTZZoomWithIsEnlarge:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+PTZZoom\+With\+Is\+Enlarge\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{is\+Enlarge }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Start zooming 
+\begin{DoxyParams}{Parameters}
+{\em is\+Enlarge} & YES，\+Get bigger；\+NO，\+Get smaller \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_adf5d58ce31e00bd9ee15480c6ee4c812}\label{interface_thing_smart_p_t_z_manager_adf5d58ce31e00bd9ee15480c6ee4c812}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!startPTZZoomWithIsEnlarge:success:failure:@{startPTZZoomWithIsEnlarge:success:failure:}}
+\index{startPTZZoomWithIsEnlarge:success:failure:@{startPTZZoomWithIsEnlarge:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{startPTZZoomWithIsEnlarge:success:failure:}{startPTZZoomWithIsEnlarge:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+PTZZoom\+With\+Is\+Enlarge\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{is\+Enlarge }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Start zooming 
+\begin{DoxyParams}{Parameters}
+{\em is\+Enlarge} & YES，\+Get bigger；\+NO，\+Get smaller \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_af57d2b270b9f4fc2295a0ee4b4cd9927}\label{interface_thing_smart_p_t_z_manager_af57d2b270b9f4fc2295a0ee4b4cd9927}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!stopPTZWithSuccess:failure:@{stopPTZWithSuccess:failure:}}
+\index{stopPTZWithSuccess:failure:@{stopPTZWithSuccess:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{stopPTZWithSuccess:failure:}{stopPTZWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+PTZWith\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Stop PTZ control 
+\begin{DoxyParams}{Parameters}
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_af57d2b270b9f4fc2295a0ee4b4cd9927}\label{interface_thing_smart_p_t_z_manager_af57d2b270b9f4fc2295a0ee4b4cd9927}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!stopPTZWithSuccess:failure:@{stopPTZWithSuccess:failure:}}
+\index{stopPTZWithSuccess:failure:@{stopPTZWithSuccess:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{stopPTZWithSuccess:failure:}{stopPTZWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+PTZWith\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Stop PTZ control 
+\begin{DoxyParams}{Parameters}
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a9fb072ebbafeaf2d46bf19c72f368343}\label{interface_thing_smart_p_t_z_manager_a9fb072ebbafeaf2d46bf19c72f368343}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!stopZoomActionWithSuccess:failure:@{stopZoomActionWithSuccess:failure:}}
+\index{stopZoomActionWithSuccess:failure:@{stopZoomActionWithSuccess:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{stopZoomActionWithSuccess:failure:}{stopZoomActionWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Zoom\+Action\+With\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Stop zooming 
+\begin{DoxyParams}{Parameters}
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_a9fb072ebbafeaf2d46bf19c72f368343}\label{interface_thing_smart_p_t_z_manager_a9fb072ebbafeaf2d46bf19c72f368343}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!stopZoomActionWithSuccess:failure:@{stopZoomActionWithSuccess:failure:}}
+\index{stopZoomActionWithSuccess:failure:@{stopZoomActionWithSuccess:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{stopZoomActionWithSuccess:failure:}{stopZoomActionWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Zoom\+Action\+With\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Stop zooming 
+\begin{DoxyParams}{Parameters}
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_aae66f77c1ad5a508d7959ebaac103dc1}\label{interface_thing_smart_p_t_z_manager_aae66f77c1ad5a508d7959ebaac103dc1}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!viewCollectionPoint:success:failure:@{viewCollectionPoint:success:failure:}}
+\index{viewCollectionPoint:success:failure:@{viewCollectionPoint:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{viewCollectionPoint:success:failure:}{viewCollectionPoint:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) view\+Collection\+Point\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_camera_collection_point_model}{Thing\+Camera\+Collection\+Point\+Model}} $\ast$)}]{model }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+View collection point 
+\begin{DoxyParams}{Parameters}
+{\em model} & Collection point model \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_aae66f77c1ad5a508d7959ebaac103dc1}\label{interface_thing_smart_p_t_z_manager_aae66f77c1ad5a508d7959ebaac103dc1}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!viewCollectionPoint:success:failure:@{viewCollectionPoint:success:failure:}}
+\index{viewCollectionPoint:success:failure:@{viewCollectionPoint:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{viewCollectionPoint:success:failure:}{viewCollectionPoint:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) view\+Collection\+Point\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_camera_collection_point_model}{Thing\+Camera\+Collection\+Point\+Model}} $\ast$)}]{model }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+View collection point 
+\begin{DoxyParams}{Parameters}
+{\em model} & Collection point model \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_aa24a1b932b008b32a9580a4cf34ab8ea}\label{interface_thing_smart_p_t_z_manager_aa24a1b932b008b32a9580a4cf34ab8ea}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!viewPresetPointWithIndex:success:failure:@{viewPresetPointWithIndex:success:failure:}}
+\index{viewPresetPointWithIndex:success:failure:@{viewPresetPointWithIndex:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{viewPresetPointWithIndex:success:failure:}{viewPresetPointWithIndex:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) view\+Preset\+Point\+With\+Index\+: \begin{DoxyParamCaption}\item[{(NSInteger)}]{index }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+View the preset point at Index 
+\begin{DoxyParams}{Parameters}
+{\em index} & Enumeration value of preset point, which is get from request\+Supported\+Preset\+Points api \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_aa24a1b932b008b32a9580a4cf34ab8ea}\label{interface_thing_smart_p_t_z_manager_aa24a1b932b008b32a9580a4cf34ab8ea}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!viewPresetPointWithIndex:success:failure:@{viewPresetPointWithIndex:success:failure:}}
+\index{viewPresetPointWithIndex:success:failure:@{viewPresetPointWithIndex:success:failure:}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{viewPresetPointWithIndex:success:failure:}{viewPresetPointWithIndex:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) view\+Preset\+Point\+With\+Index\+: \begin{DoxyParamCaption}\item[{(NSInteger)}]{index }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+View the preset point at Index 
+\begin{DoxyParams}{Parameters}
+{\em index} & Enumeration value of preset point, which is get from request\+Supported\+Preset\+Points api \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failed callback \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_p_t_z_manager_aa859dd42a9240e3cd1a63141f4539103}\label{interface_thing_smart_p_t_z_manager_aa859dd42a9240e3cd1a63141f4539103}} 
+\index{ThingSmartPTZManager@{ThingSmartPTZManager}!delegate@{delegate}}
+\index{delegate@{delegate}!ThingSmartPTZManager@{ThingSmartPTZManager}}
+\doxysubsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p}{Thing\+Smart\+PTZManager\+Deletate}} $>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_p_t_z_manager_8h_source_l00115}{115}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_p_t_z_manager_8h_source}{Thing\+Smart\+PTZManager.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Camera\+Kit/\+Build/\+Thing\+Smart\+Camera\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Camera\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_p_t_z_manager_8h}{Thing\+Smart\+PTZManager.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Camera\+Kit/\+Build/\+Thing\+Smart\+Camera\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Camera\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_p_t_z_manager_8h}{Thing\+Smart\+PTZManager.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,34 @@
+\hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source}{}\doxysection{Thing\+Group\+Beacon\+Service.\+h}
+\label{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingGroupManagerKit/ThingGroupManagerKit.xcframework/ios-\/arm64/ThingGroupManagerKit.framework/Headers/ThingGroupBeaconService.h@{/Users/humtong/Downloads/Pods\_副本/ThingGroupManagerKit/ThingGroupManagerKit.xcframework/ios-\/arm64/ThingGroupManagerKit.framework/Headers/ThingGroupBeaconService.h}}
+\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00002}00002 \textcolor{comment}{//  ThingGroupBeaconService.h}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00003}00003 \textcolor{comment}{//  ThingGroupManagerKit}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00005}00005 \textcolor{comment}{//  Created by jesse on 2021/5/28.}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00008}00008 \textcolor{preprocessor}{\#import "{}\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_base_service_8h}{ThingGroupBaseService.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00009}00009 \textcolor{preprocessor}{\#import "{}\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_service_protocol_8h}{ThingGroupServiceProtocol.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00010}00010 \textcolor{preprocessor}{\#import <ThingSmartDeviceCoreKit/ThingSmartDeviceCoreKit.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00013}00013 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00016}00016 \textcolor{keyword}{extern} NSErrorDomain \textcolor{keyword}{const} \mbox{\hyperlink{x86__64-simulator_2_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_acf0bcf20c333207b4895cf341609bc29}{ThingBluetoothBeaconErrorDomain}};}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00018}00018 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_group_beacon_service}{ThingGroupBeaconService}} : \mbox{\hyperlink{interface_thing_group_base_service}{ThingGroupBaseService}} <\mbox{\hyperlink{protocol_thing_group_service_protocol-p}{ThingGroupServiceProtocol}}>}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00021}00021 \textcolor{keyword}{@property} (nonatomic, copy, readonly, nullable) NSString *\mbox{\hyperlink{interface_thing_group_beacon_service_ae72aca14ce1486af22753154879fa52c}{groupId}};}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00023}\mbox{\hyperlink{interface_thing_group_beacon_service_aafe278ad9663d29ab1feb79feea84d60}{00023}} \textcolor{keyword}{@property} (nonatomic, copy, readonly, nullable) NSString *\mbox{\hyperlink{interface_thing_group_beacon_service_aae9a69f2d06075c5e17f6fa29d2960f9}{devId}};}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00027}00027 -\/ (BOOL)isBeaconGroupSupportDevice:(\mbox{\hyperlink{interface_thing_smart_device_model}{ThingSmartDeviceModel}} *)deviceModel;}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00029}00029 \textcolor{preprocessor}{\#pragma mark -\/ Timer -\/}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00031}00031 -\/ (void)\mbox{\hyperlink{interface_thing_group_beacon_service_a39b42da6c138ce701c9b405765de30e1}{timerInvalidate}};}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00032}00032 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_beacon_service_8h_source_l00034}00034 NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

@@ -8,5 +8,6 @@ var interface_thing_smart_dp_parser =
     [ "displayDp", "interface_thing_smart_dp_parser.html#ac9ce0f36ac87a83d1b452652176c99a3", null ],
     [ "dpDataSource", "interface_thing_smart_dp_parser.html#ae45f26c76fadcaecfb0a4c10afd3cb89", null ],
     [ "operableDp", "interface_thing_smart_dp_parser.html#ab7bc2dac5b9b0bf40560c67826536ca3", null ],
+    [ "standardDpCodes", "interface_thing_smart_dp_parser.html#aec71ebee7cf500c01b9d2d3504bb141d", null ],
     [ "switchDp", "interface_thing_smart_dp_parser.html#a08f9ed91f89e1e781ebb83605f370a38", null ]
 ];

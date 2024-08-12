@@ -1,0 +1,29 @@
+\hypertarget{_w_t_l_logging_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.framework/\+Headers/\+WTLLogging.h File Reference}
+\label{_w_t_l_logging_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLLogging.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLLogging.h}}
+{\ttfamily \#import $<$Water/\+WTLDefines.\+h$>$}\newline
+{\ttfamily \#import $<$os/log.\+h$>$}\newline
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN void \mbox{\hyperlink{_w_t_l_logging_8h_ab837bd90780165fff5b84f7b14bb8b44}{Thing\+Matter\+SDKLog\+Info}} (NSInteger level, NSString $\ast$module, const char $\ast$file, const char $\ast$function, NSUInteger line, const char $\ast$message,...)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_w_t_l_logging_8h_ab837bd90780165fff5b84f7b14bb8b44}\label{_w_t_l_logging_8h_ab837bd90780165fff5b84f7b14bb8b44}} 
+\index{WTLLogging.h@{WTLLogging.h}!ThingMatterSDKLogInfo@{ThingMatterSDKLogInfo}}
+\index{ThingMatterSDKLogInfo@{ThingMatterSDKLogInfo}!WTLLogging.h@{WTLLogging.h}}
+\doxysubsubsection{\texorpdfstring{ThingMatterSDKLogInfo()}{ThingMatterSDKLogInfo()}}
+{\footnotesize\ttfamily NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN void Thing\+Matter\+SDKLog\+Info (\begin{DoxyParamCaption}\item[{NSInteger}]{level,  }\item[{NSString $\ast$}]{module,  }\item[{const char $\ast$}]{file,  }\item[{const char $\ast$}]{function,  }\item[{NSUInteger}]{line,  }\item[{const char $\ast$}]{message,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Arranges for log messages from the Matter stack to be delivered to a callback block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+Type\+Threshold} & only messages up to (and including) the specified log type will be delivered \\
+\hline
+{\em callback} & the block to call, or nil to disable the log callback.\\
+\hline
+\end{DoxyParams}
+The callback block may be called concurrently and/or from arbitrary threads. It SHALL NOT call back directly or indirectly into any Matter APIs, nor block the calling thread for a non-\/trivial amount of time. 

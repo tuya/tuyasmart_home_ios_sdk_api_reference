@@ -1,0 +1,159 @@
+\hypertarget{interface_thing_smart_p2p_config_service}{}\doxysection{Thing\+Smart\+P2p\+Config\+Service Class Reference}
+\label{interface_thing_smart_p2p_config_service}\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+P2p\+Config\+Service.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+P2p\+Config\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_p2p_config_service}
+\end{center}
+\end{figure}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_p2p_config_service_acfcf5c86a588f81c8100e834772fbe82}{request\+Config\+With\+Device\+Model\+:trace\+Id\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em 获取 p2p config，如果本地有缓存，会从缓存获取 \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_p2p_config_service_aad2b3d9aa8c2aa5d30a0ac1646868f37}{request\+Config\+With\+Device\+Model\+:trace\+Id\+:extra\+Data\+:success\+:failure\+:}}
+\item 
+(NSDictionary $\ast$) + \mbox{\hyperlink{interface_thing_smart_p2p_config_service_afc466f88f8d05e28cbb55b4de36d7b0c}{get\+Cached\+Config\+With\+Device\+Model\+:}}
+\begin{DoxyCompactList}\small\item\em 获取缓存的 p2p config \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_p2p_config_service_ade6278061c2c3f8221ceb3b9fc773d87}{cache\+Config\+:for\+Device\+Model\+:}}
+\begin{DoxyCompactList}\small\item\em 将 p2p config 缓存到本地 \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_p2p_config_service_a28188ae19963e99280fae3cc141f7985}{remove\+Cached\+Config\+For\+Device\+Model\+:}}
+\begin{DoxyCompactList}\small\item\em 移除本地缓存的 p2p config \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_p2p_config_service_a1059940ed6cf218c48a6f373a4477b8e}{query\+Device\+Skills\+From\+Local\+Channel\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_p2p_config_service_acfcf5c86a588f81c8100e834772fbe82}{request\+Config\+With\+Device\+Model\+:trace\+Id\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em 获取 p2p config，如果本地有缓存，会从缓存获取 \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_p2p_config_service_aad2b3d9aa8c2aa5d30a0ac1646868f37}{request\+Config\+With\+Device\+Model\+:trace\+Id\+:extra\+Data\+:success\+:failure\+:}}
+\item 
+(NSDictionary $\ast$) + \mbox{\hyperlink{interface_thing_smart_p2p_config_service_afc466f88f8d05e28cbb55b4de36d7b0c}{get\+Cached\+Config\+With\+Device\+Model\+:}}
+\begin{DoxyCompactList}\small\item\em 获取缓存的 p2p config \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_p2p_config_service_ade6278061c2c3f8221ceb3b9fc773d87}{cache\+Config\+:for\+Device\+Model\+:}}
+\begin{DoxyCompactList}\small\item\em 将 p2p config 缓存到本地 \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_p2p_config_service_a28188ae19963e99280fae3cc141f7985}{remove\+Cached\+Config\+For\+Device\+Model\+:}}
+\begin{DoxyCompactList}\small\item\em 移除本地缓存的 p2p config \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_p2p_config_service_a1059940ed6cf218c48a6f373a4477b8e}{query\+Device\+Skills\+From\+Local\+Channel\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_m_8framework_2_headers_2_thing_smart_p2p_config_service_8h_source_l00012}{12}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_m_8framework_2_headers_2_thing_smart_p2p_config_service_8h_source}{Thing\+Smart\+P2p\+Config\+Service.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_p2p_config_service_ade6278061c2c3f8221ceb3b9fc773d87}\label{interface_thing_smart_p2p_config_service_ade6278061c2c3f8221ceb3b9fc773d87}} 
+\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}!cacheConfig:forDeviceModel:@{cacheConfig:forDeviceModel:}}
+\index{cacheConfig:forDeviceModel:@{cacheConfig:forDeviceModel:}!ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+\doxysubsubsection{\texorpdfstring{cacheConfig:forDeviceModel:}{cacheConfig:forDeviceModel:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) cache\+Config\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{config }\item[{for\+Device\+Model\+:(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+
+
+将 p2p config 缓存到本地 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_config_service_ade6278061c2c3f8221ceb3b9fc773d87}\label{interface_thing_smart_p2p_config_service_ade6278061c2c3f8221ceb3b9fc773d87}} 
+\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}!cacheConfig:forDeviceModel:@{cacheConfig:forDeviceModel:}}
+\index{cacheConfig:forDeviceModel:@{cacheConfig:forDeviceModel:}!ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+\doxysubsubsection{\texorpdfstring{cacheConfig:forDeviceModel:}{cacheConfig:forDeviceModel:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) cache\+Config\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{config }\item[{for\+Device\+Model\+:(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+
+
+将 p2p config 缓存到本地 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_config_service_afc466f88f8d05e28cbb55b4de36d7b0c}\label{interface_thing_smart_p2p_config_service_afc466f88f8d05e28cbb55b4de36d7b0c}} 
+\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}!getCachedConfigWithDeviceModel:@{getCachedConfigWithDeviceModel:}}
+\index{getCachedConfigWithDeviceModel:@{getCachedConfigWithDeviceModel:}!ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+\doxysubsubsection{\texorpdfstring{getCachedConfigWithDeviceModel:}{getCachedConfigWithDeviceModel:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (NSDictionary $\ast$) get\+Cached\+Config\+With\+Device\+Model\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+
+
+获取缓存的 p2p config 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_config_service_afc466f88f8d05e28cbb55b4de36d7b0c}\label{interface_thing_smart_p2p_config_service_afc466f88f8d05e28cbb55b4de36d7b0c}} 
+\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}!getCachedConfigWithDeviceModel:@{getCachedConfigWithDeviceModel:}}
+\index{getCachedConfigWithDeviceModel:@{getCachedConfigWithDeviceModel:}!ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+\doxysubsubsection{\texorpdfstring{getCachedConfigWithDeviceModel:}{getCachedConfigWithDeviceModel:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (NSDictionary $\ast$) get\+Cached\+Config\+With\+Device\+Model\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+
+
+获取缓存的 p2p config 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_config_service_a1059940ed6cf218c48a6f373a4477b8e}\label{interface_thing_smart_p2p_config_service_a1059940ed6cf218c48a6f373a4477b8e}} 
+\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}!queryDeviceSkillsFromLocalChannel:@{queryDeviceSkillsFromLocalChannel:}}
+\index{queryDeviceSkillsFromLocalChannel:@{queryDeviceSkillsFromLocalChannel:}!ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+\doxysubsubsection{\texorpdfstring{queryDeviceSkillsFromLocalChannel:}{queryDeviceSkillsFromLocalChannel:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) query\+Device\+Skills\+From\+Local\+Channel\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_config_service_a1059940ed6cf218c48a6f373a4477b8e}\label{interface_thing_smart_p2p_config_service_a1059940ed6cf218c48a6f373a4477b8e}} 
+\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}!queryDeviceSkillsFromLocalChannel:@{queryDeviceSkillsFromLocalChannel:}}
+\index{queryDeviceSkillsFromLocalChannel:@{queryDeviceSkillsFromLocalChannel:}!ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+\doxysubsubsection{\texorpdfstring{queryDeviceSkillsFromLocalChannel:}{queryDeviceSkillsFromLocalChannel:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) query\+Device\+Skills\+From\+Local\+Channel\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_config_service_a28188ae19963e99280fae3cc141f7985}\label{interface_thing_smart_p2p_config_service_a28188ae19963e99280fae3cc141f7985}} 
+\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}!removeCachedConfigForDeviceModel:@{removeCachedConfigForDeviceModel:}}
+\index{removeCachedConfigForDeviceModel:@{removeCachedConfigForDeviceModel:}!ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+\doxysubsubsection{\texorpdfstring{removeCachedConfigForDeviceModel:}{removeCachedConfigForDeviceModel:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) remove\+Cached\+Config\+For\+Device\+Model\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+
+
+移除本地缓存的 p2p config 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_config_service_a28188ae19963e99280fae3cc141f7985}\label{interface_thing_smart_p2p_config_service_a28188ae19963e99280fae3cc141f7985}} 
+\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}!removeCachedConfigForDeviceModel:@{removeCachedConfigForDeviceModel:}}
+\index{removeCachedConfigForDeviceModel:@{removeCachedConfigForDeviceModel:}!ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+\doxysubsubsection{\texorpdfstring{removeCachedConfigForDeviceModel:}{removeCachedConfigForDeviceModel:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) remove\+Cached\+Config\+For\+Device\+Model\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+
+
+移除本地缓存的 p2p config 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_config_service_aad2b3d9aa8c2aa5d30a0ac1646868f37}\label{interface_thing_smart_p2p_config_service_aad2b3d9aa8c2aa5d30a0ac1646868f37}} 
+\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}!requestConfigWithDeviceModel:traceId:extraData:success:failure:@{requestConfigWithDeviceModel:traceId:extraData:success:failure:}}
+\index{requestConfigWithDeviceModel:traceId:extraData:success:failure:@{requestConfigWithDeviceModel:traceId:extraData:success:failure:}!ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+\doxysubsubsection{\texorpdfstring{requestConfigWithDeviceModel:traceId:extraData:success:failure:}{requestConfigWithDeviceModel:traceId:extraData:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) request\+Config\+With\+Device\+Model\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\item[{trace\+Id\+:(NSString $\ast$)}]{trace\+Id }\item[{extra\+Data\+:(NSDictionary $\ast$)}]{extra\+Data }\item[{success\+:(void($^\wedge$)(NSDictionary $\ast$config, BOOL from\+Cache))}]{success }\item[{failure\+:(void($^\wedge$)(NSInteger err\+Code))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_config_service_aad2b3d9aa8c2aa5d30a0ac1646868f37}\label{interface_thing_smart_p2p_config_service_aad2b3d9aa8c2aa5d30a0ac1646868f37}} 
+\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}!requestConfigWithDeviceModel:traceId:extraData:success:failure:@{requestConfigWithDeviceModel:traceId:extraData:success:failure:}}
+\index{requestConfigWithDeviceModel:traceId:extraData:success:failure:@{requestConfigWithDeviceModel:traceId:extraData:success:failure:}!ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+\doxysubsubsection{\texorpdfstring{requestConfigWithDeviceModel:traceId:extraData:success:failure:}{requestConfigWithDeviceModel:traceId:extraData:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) request\+Config\+With\+Device\+Model\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\item[{trace\+Id\+:(NSString $\ast$)}]{trace\+Id }\item[{extra\+Data\+:(NSDictionary $\ast$)}]{extra\+Data }\item[{success\+:(void($^\wedge$)(NSDictionary $\ast$config, BOOL from\+Cache))}]{success }\item[{failure\+:(void($^\wedge$)(NSInteger err\+Code))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_config_service_acfcf5c86a588f81c8100e834772fbe82}\label{interface_thing_smart_p2p_config_service_acfcf5c86a588f81c8100e834772fbe82}} 
+\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}!requestConfigWithDeviceModel:traceId:success:failure:@{requestConfigWithDeviceModel:traceId:success:failure:}}
+\index{requestConfigWithDeviceModel:traceId:success:failure:@{requestConfigWithDeviceModel:traceId:success:failure:}!ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+\doxysubsubsection{\texorpdfstring{requestConfigWithDeviceModel:traceId:success:failure:}{requestConfigWithDeviceModel:traceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) request\+Config\+With\+Device\+Model\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\item[{trace\+Id\+:(NSString $\ast$)}]{trace\+Id }\item[{success\+:(void($^\wedge$)(NSDictionary $\ast$config, BOOL from\+Cache))}]{success }\item[{failure\+:(void($^\wedge$)(NSInteger err\+Code))}]{failure }\end{DoxyParamCaption}}
+
+
+
+获取 p2p config，如果本地有缓存，会从缓存获取 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_config_service_acfcf5c86a588f81c8100e834772fbe82}\label{interface_thing_smart_p2p_config_service_acfcf5c86a588f81c8100e834772fbe82}} 
+\index{ThingSmartP2pConfigService@{ThingSmartP2pConfigService}!requestConfigWithDeviceModel:traceId:success:failure:@{requestConfigWithDeviceModel:traceId:success:failure:}}
+\index{requestConfigWithDeviceModel:traceId:success:failure:@{requestConfigWithDeviceModel:traceId:success:failure:}!ThingSmartP2pConfigService@{ThingSmartP2pConfigService}}
+\doxysubsubsection{\texorpdfstring{requestConfigWithDeviceModel:traceId:success:failure:}{requestConfigWithDeviceModel:traceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) request\+Config\+With\+Device\+Model\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\item[{trace\+Id\+:(NSString $\ast$)}]{trace\+Id }\item[{success\+:(void($^\wedge$)(NSDictionary $\ast$config, BOOL from\+Cache))}]{success }\item[{failure\+:(void($^\wedge$)(NSInteger err\+Code))}]{failure }\end{DoxyParamCaption}}
+
+
+
+获取 p2p config，如果本地有缓存，会从缓存获取 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Camera\+M/\+Build/\+Thing\+Smart\+Camera\+M.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Camera\+M.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_m_8framework_2_headers_2_thing_smart_p2p_config_service_8h}{Thing\+Smart\+P2p\+Config\+Service.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Camera\+M/\+Build/\+Thing\+Smart\+Camera\+M.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Camera\+M.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_p2p_config_service_8h}{Thing\+Smart\+P2p\+Config\+Service.\+h}}\end{DoxyCompactItemize}

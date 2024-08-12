@@ -1,4 +1,0 @@
-var ios_x86__64_simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_0c1c6892f640f793b8e8b9e217a33b48 =
-[
-    [ "ThingSecurityHomeArmedModeModel", "interface_thing_security_home_armed_mode_model.html", "interface_thing_security_home_armed_mode_model" ]
-];

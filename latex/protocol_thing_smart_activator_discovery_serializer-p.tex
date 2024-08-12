@@ -1,0 +1,98 @@
+\hypertarget{protocol_thing_smart_activator_discovery_serializer-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+Activator\+Discovery\+Serializer\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_activator_discovery_serializer-p}\index{$<$ThingSmartActivatorDiscoverySerializer$>$@{$<$ThingSmartActivatorDiscoverySerializer$>$}}
+
+
+Search Result Processing.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Activator\+Discovery\+Serializer.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+Activator\+Discovery\+Serializer\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocol_thing_smart_activator_discovery_serializer-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_discovery_serializer-p_af2b9dc067847bd3215518d223e891334}{is\+Device\+Model\+Valid\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_discovery_serializer-p_a787edfd2672c5a41ff9cfe6805d723fb}{handle\+Device\+Model\+:for\+Device\+List\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_discovery_serializer-p_af2b9dc067847bd3215518d223e891334}{is\+Device\+Model\+Valid\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_discovery_serializer-p_a787edfd2672c5a41ff9cfe6805d723fb}{handle\+Device\+Model\+:for\+Device\+List\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Search Result Processing. 
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smad3348c6aab502a3a4f3c4922b9aadf26_source_l00016}{16}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smad3348c6aab502a3a4f3c4922b9aadf26_source}{Thing\+Smart\+Activator\+Discovery\+Serializer.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_activator_discovery_serializer-p_a787edfd2672c5a41ff9cfe6805d723fb}\label{protocol_thing_smart_activator_discovery_serializer-p_a787edfd2672c5a41ff9cfe6805d723fb}} 
+\index{$<$ThingSmartActivatorDiscoverySerializer$>$@{$<$ThingSmartActivatorDiscoverySerializer$>$}!handleDeviceModel:forDeviceList:@{handleDeviceModel:forDeviceList:}}
+\index{handleDeviceModel:forDeviceList:@{handleDeviceModel:forDeviceList:}!$<$ThingSmartActivatorDiscoverySerializer$>$@{$<$ThingSmartActivatorDiscoverySerializer$>$}}
+\doxysubsubsection{\texorpdfstring{handleDeviceModel:forDeviceList:}{handleDeviceModel:forDeviceList:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (nullable \mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$) handle\+Device\+Model\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$)}]{model }\item[{for\+Device\+List\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$ $>$ $\ast$)}]{list }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Custom processing for search results. 
+\begin{DoxyParams}{Parameters}
+{\em model} & Newly found device in the search \\
+\hline
+{\em list} & List of current devices found in the search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the processed device 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_thing_smart_activator_discovery_serializer-p_a787edfd2672c5a41ff9cfe6805d723fb}\label{protocol_thing_smart_activator_discovery_serializer-p_a787edfd2672c5a41ff9cfe6805d723fb}} 
+\index{$<$ThingSmartActivatorDiscoverySerializer$>$@{$<$ThingSmartActivatorDiscoverySerializer$>$}!handleDeviceModel:forDeviceList:@{handleDeviceModel:forDeviceList:}}
+\index{handleDeviceModel:forDeviceList:@{handleDeviceModel:forDeviceList:}!$<$ThingSmartActivatorDiscoverySerializer$>$@{$<$ThingSmartActivatorDiscoverySerializer$>$}}
+\doxysubsubsection{\texorpdfstring{handleDeviceModel:forDeviceList:}{handleDeviceModel:forDeviceList:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (nullable \mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$) handle\+Device\+Model\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$)}]{model }\item[{for\+Device\+List\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$ $>$ $\ast$)}]{list }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Custom processing for search results. 
+\begin{DoxyParams}{Parameters}
+{\em model} & Newly found device in the search \\
+\hline
+{\em list} & List of current devices found in the search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the processed device 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_thing_smart_activator_discovery_serializer-p_af2b9dc067847bd3215518d223e891334}\label{protocol_thing_smart_activator_discovery_serializer-p_af2b9dc067847bd3215518d223e891334}} 
+\index{$<$ThingSmartActivatorDiscoverySerializer$>$@{$<$ThingSmartActivatorDiscoverySerializer$>$}!isDeviceModelValid:@{isDeviceModelValid:}}
+\index{isDeviceModelValid:@{isDeviceModelValid:}!$<$ThingSmartActivatorDiscoverySerializer$>$@{$<$ThingSmartActivatorDiscoverySerializer$>$}}
+\doxysubsubsection{\texorpdfstring{isDeviceModelValid:}{isDeviceModelValid:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Device\+Model\+Valid\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$)}]{model }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Determine if a search result is valid for a device. 
+\begin{DoxyParams}{Parameters}
+{\em model} & Search result \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_discovery_serializer-p_af2b9dc067847bd3215518d223e891334}\label{protocol_thing_smart_activator_discovery_serializer-p_af2b9dc067847bd3215518d223e891334}} 
+\index{$<$ThingSmartActivatorDiscoverySerializer$>$@{$<$ThingSmartActivatorDiscoverySerializer$>$}!isDeviceModelValid:@{isDeviceModelValid:}}
+\index{isDeviceModelValid:@{isDeviceModelValid:}!$<$ThingSmartActivatorDiscoverySerializer$>$@{$<$ThingSmartActivatorDiscoverySerializer$>$}}
+\doxysubsubsection{\texorpdfstring{isDeviceModelValid:}{isDeviceModelValid:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Device\+Model\+Valid\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$)}]{model }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Determine if a search result is valid for a device. 
+\begin{DoxyParams}{Parameters}
+{\em model} & Search result \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Activator\+Discovery\+Manager/\+Thing\+Smart\+Activator\+Discovery\+Manager.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Smart\+Activator\+Discovery\+Manager.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smad3348c6aab502a3a4f3c4922b9aadf26}{Thing\+Smart\+Activator\+Discovery\+Serializer.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Activator\+Discovery\+Manager/\+Thing\+Smart\+Activator\+Discovery\+Manager.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Activator\+Discovery\+Manager.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smart_activator_discovery_serializer_8h}{Thing\+Smart\+Activator\+Discovery\+Serializer.\+h}}\end{DoxyCompactItemize}

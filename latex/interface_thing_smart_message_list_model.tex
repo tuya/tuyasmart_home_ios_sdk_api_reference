@@ -1,0 +1,322 @@
+\hypertarget{interface_thing_smart_message_list_model}{}\doxysection{Thing\+Smart\+Message\+List\+Model Class Reference}
+\label{interface_thing_smart_message_list_model}\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+
+
+The model of a message list.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Message\+List\+Model.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Message\+List\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.489362cm]{interface_thing_smart_message_list_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_message_list_model_aeca4090b487b48853ecf5e14451d6dba}{msg\+Id}}
+\begin{DoxyCompactList}\small\item\em The identifier of a message. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_message_list_model_a88731d79820f802a96f866ae7cfd945b}{msg\+Type\+Content}}
+\begin{DoxyCompactList}\small\item\em The title of a message. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_message_list_model_aa1f544ded864884f94b2cc3b47e6ef9e}{msg\+Content}}
+\begin{DoxyCompactList}\small\item\em The content of a message. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_message_list_model_aa98ad5367cd2b9bc1a57a407afadfcb0}{date\+Time}}
+\begin{DoxyCompactList}\small\item\em The formatted date and time. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_message_list_model_a45ab9f4b6512f039d7bd7dc91ce53c44}{time}}
+\begin{DoxyCompactList}\small\item\em The timestamp of a message. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_message_list_model_a073f029ed5a725c9e668dc78a500072a}{icon}}
+\begin{DoxyCompactList}\small\item\em The icon of a message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_message_attach_model}{Thing\+Smart\+Message\+Attach\+Model}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{interface_thing_smart_message_list_model_a5f537bcfeb5223be0c58b0a1c5db9d8a}{attach\+Pic\+List}}
+\begin{DoxyCompactList}\small\item\em A list of attachments. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_smart_message_list_model_aa7f3f97f858718e9cdec42f05c45190b}{has\+Not\+Read}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_message_list_model_a024dcc6a8568283464a16e037727f559}{msg\+Src\+Id}}
+\begin{DoxyCompactList}\small\item\em The device ID. Only alert messages support this field. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_message_list_model_a6629af9ce47c3c7027f4869df442f925}{alarm\+Type}}
+\begin{DoxyCompactList}\small\item\em Valid values\+: {\ttfamily 1} means an alert message. {\ttfamily 2} means an automation message. Only alert messages support this field to distinguish between alert messages and automation messages. The home messages and notifications are ignored. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_message_list_model_a5f829379c94059a2b9ec46453034f37f}{msg\+Type}}
+\begin{DoxyCompactList}\small\item\em The type of message. Valid values\+: {\ttfamily 0} means system messages. {\ttfamily 1} means that new devices are added. {\ttfamily 2} means that new friends are added. {\ttfamily 4} means device alerts. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_message_list_model_ab677ebd9dfc52cbfd7ca02a12c9a0f2f}{msg\+Code}}
+\begin{DoxyCompactList}\small\item\em The code of message. \end{DoxyCompactList}\item 
+long long \mbox{\hyperlink{interface_thing_smart_message_list_model_a97b8092a9ec8b0ba283130dc2dab267a}{home\+ID}}
+\begin{DoxyCompactList}\small\item\em The ID of the current home. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_message_list_model_a9d9ebb940cefbcd6dd4bb33b24ccc86c}{home\+Name}}
+\begin{DoxyCompactList}\small\item\em The name of the current home. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_smart_message_list_model_a303b2873138a16ac63505f3d0c8f4111}{is\+Need\+Pull\+Enc\+Key}}
+\begin{DoxyCompactList}\small\item\em Is it necessary to pull the key to decrypt attach\+Pic\+List. If is\+Need\+Pull\+Enc\+Key is true, you need to get the decryption key by calling fetch\+Message\+Decrypt\+Key\+With\+Encrypt\+Request\+Model\+: success\+: failure\+: \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_thing_smart_message_list_model_extend}{Thing\+Smart\+Message\+List\+Model\+Extend}} $\ast$ \mbox{\hyperlink{interface_thing_smart_message_list_model_ac0e9365ee62c968e6e7e70b14c8c9e86}{extend\+Params}}
+\begin{DoxyCompactList}\small\item\em Not all information will be available, some messages will return the orientation of the image, etc. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_message_list_model_a3ecd2c4769bcdc33ad7726a106c3ae1e}{action\+URL}}
+\begin{DoxyCompactList}\small\item\em The URL to navigate to when the message is clicked. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_message_list_model_ac92a58374031a605c1469fbe913d79bb}{attach\+Pics}}
+\begin{DoxyCompactList}\small\item\em Attachments (e.\+g., image.\+jpg; video.\+mp4; video.\+jpg; etc.) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The model of a message list. 
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00060}{60}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_a3ecd2c4769bcdc33ad7726a106c3ae1e}\label{interface_thing_smart_message_list_model_a3ecd2c4769bcdc33ad7726a106c3ae1e}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!actionURL@{actionURL}}
+\index{actionURL@{actionURL}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{actionURL}{actionURL}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) action\+URL\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The URL to navigate to when the message is clicked. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00110}{110}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_a6629af9ce47c3c7027f4869df442f925}\label{interface_thing_smart_message_list_model_a6629af9ce47c3c7027f4869df442f925}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!alarmType@{alarmType}}
+\index{alarmType@{alarmType}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{alarmType}{alarmType}}
+{\footnotesize\ttfamily -\/ (NSInteger) alarm\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Valid values\+: {\ttfamily 1} means an alert message. {\ttfamily 2} means an automation message. Only alert messages support this field to distinguish between alert messages and automation messages. The home messages and notifications are ignored. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00089}{89}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_a5f537bcfeb5223be0c58b0a1c5db9d8a}\label{interface_thing_smart_message_list_model_a5f537bcfeb5223be0c58b0a1c5db9d8a}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!attachPicList@{attachPicList}}
+\index{attachPicList@{attachPicList}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{attachPicList}{attachPicList}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_message_attach_model}{Thing\+Smart\+Message\+Attach\+Model}} $\ast$ $>$ $\ast$) attach\+Pic\+List\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+A list of attachments. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00081}{81}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_ac92a58374031a605c1469fbe913d79bb}\label{interface_thing_smart_message_list_model_ac92a58374031a605c1469fbe913d79bb}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!attachPics@{attachPics}}
+\index{attachPics@{attachPics}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{attachPics}{attachPics}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) attach\+Pics\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Attachments (e.\+g., image.\+jpg; video.\+mp4; video.\+jpg; etc.) 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00113}{113}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_aa98ad5367cd2b9bc1a57a407afadfcb0}\label{interface_thing_smart_message_list_model_aa98ad5367cd2b9bc1a57a407afadfcb0}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!dateTime@{dateTime}}
+\index{dateTime@{dateTime}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{dateTime}{dateTime}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) date\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The formatted date and time. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00072}{72}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_ac0e9365ee62c968e6e7e70b14c8c9e86}\label{interface_thing_smart_message_list_model_ac0e9365ee62c968e6e7e70b14c8c9e86}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!extendParams@{extendParams}}
+\index{extendParams@{extendParams}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{extendParams}{extendParams}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_smart_message_list_model_extend}{Thing\+Smart\+Message\+List\+Model\+Extend}} $\ast$) extend\+Params\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Not all information will be available, some messages will return the orientation of the image, etc. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00107}{107}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_aa7f3f97f858718e9cdec42f05c45190b}\label{interface_thing_smart_message_list_model_aa7f3f97f858718e9cdec42f05c45190b}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!hasNotRead@{hasNotRead}}
+\index{hasNotRead@{hasNotRead}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{hasNotRead}{hasNotRead}}
+{\footnotesize\ttfamily -\/ (BOOL) has\+Not\+Read\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00083}{83}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_a97b8092a9ec8b0ba283130dc2dab267a}\label{interface_thing_smart_message_list_model_a97b8092a9ec8b0ba283130dc2dab267a}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!homeID@{homeID}}
+\index{homeID@{homeID}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{homeID}{homeID}}
+{\footnotesize\ttfamily -\/ (long long) home\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The ID of the current home. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00098}{98}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_a9d9ebb940cefbcd6dd4bb33b24ccc86c}\label{interface_thing_smart_message_list_model_a9d9ebb940cefbcd6dd4bb33b24ccc86c}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!homeName@{homeName}}
+\index{homeName@{homeName}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{homeName}{homeName}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) home\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The name of the current home. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00101}{101}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_a073f029ed5a725c9e668dc78a500072a}\label{interface_thing_smart_message_list_model_a073f029ed5a725c9e668dc78a500072a}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!icon@{icon}}
+\index{icon@{icon}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{icon}{icon}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) icon\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The icon of a message. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00078}{78}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_a303b2873138a16ac63505f3d0c8f4111}\label{interface_thing_smart_message_list_model_a303b2873138a16ac63505f3d0c8f4111}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!isNeedPullEncKey@{isNeedPullEncKey}}
+\index{isNeedPullEncKey@{isNeedPullEncKey}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{isNeedPullEncKey}{isNeedPullEncKey}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Need\+Pull\+Enc\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Is it necessary to pull the key to decrypt attach\+Pic\+List. If is\+Need\+Pull\+Enc\+Key is true, you need to get the decryption key by calling fetch\+Message\+Decrypt\+Key\+With\+Encrypt\+Request\+Model\+: success\+: failure\+: 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00104}{104}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_ab677ebd9dfc52cbfd7ca02a12c9a0f2f}\label{interface_thing_smart_message_list_model_ab677ebd9dfc52cbfd7ca02a12c9a0f2f}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!msgCode@{msgCode}}
+\index{msgCode@{msgCode}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{msgCode}{msgCode}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) msg\+Code\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The code of message. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00095}{95}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_aa1f544ded864884f94b2cc3b47e6ef9e}\label{interface_thing_smart_message_list_model_aa1f544ded864884f94b2cc3b47e6ef9e}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!msgContent@{msgContent}}
+\index{msgContent@{msgContent}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{msgContent}{msgContent}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) msg\+Content\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The content of a message. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00069}{69}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_aeca4090b487b48853ecf5e14451d6dba}\label{interface_thing_smart_message_list_model_aeca4090b487b48853ecf5e14451d6dba}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!msgId@{msgId}}
+\index{msgId@{msgId}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{msgId}{msgId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) msg\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The identifier of a message. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00063}{63}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_a024dcc6a8568283464a16e037727f559}\label{interface_thing_smart_message_list_model_a024dcc6a8568283464a16e037727f559}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!msgSrcId@{msgSrcId}}
+\index{msgSrcId@{msgSrcId}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{msgSrcId}{msgSrcId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) msg\+Src\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The device ID. Only alert messages support this field. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00086}{86}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_a5f829379c94059a2b9ec46453034f37f}\label{interface_thing_smart_message_list_model_a5f829379c94059a2b9ec46453034f37f}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!msgType@{msgType}}
+\index{msgType@{msgType}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{msgType}{msgType}}
+{\footnotesize\ttfamily -\/ (NSInteger) msg\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The type of message. Valid values\+: {\ttfamily 0} means system messages. {\ttfamily 1} means that new devices are added. {\ttfamily 2} means that new friends are added. {\ttfamily 4} means device alerts. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00092}{92}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_a88731d79820f802a96f866ae7cfd945b}\label{interface_thing_smart_message_list_model_a88731d79820f802a96f866ae7cfd945b}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!msgTypeContent@{msgTypeContent}}
+\index{msgTypeContent@{msgTypeContent}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{msgTypeContent}{msgTypeContent}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) msg\+Type\+Content\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The title of a message. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00066}{66}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_message_list_model_a45ab9f4b6512f039d7bd7dc91ce53c44}\label{interface_thing_smart_message_list_model_a45ab9f4b6512f039d7bd7dc91ce53c44}} 
+\index{ThingSmartMessageListModel@{ThingSmartMessageListModel}!time@{time}}
+\index{time@{time}!ThingSmartMessageListModel@{ThingSmartMessageListModel}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily -\/ (NSInteger) time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The timestamp of a message. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source_l00075}{75}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source}{Thing\+Smart\+Message\+List\+Model.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Message\+Kit/\+Build/\+Thing\+Smart\+Message\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Message\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h}{Thing\+Smart\+Message\+List\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Message\+Kit/\+Build/\+Thing\+Smart\+Message\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Message\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h}{Thing\+Smart\+Message\+List\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Message\+Kit/\+Build/\+Thing\+Smart\+Message\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Message\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h}{Thing\+Smart\+Message\+List\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Message\+Kit/\+Build/\+Thing\+Smart\+Message\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Message\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h}{Thing\+Smart\+Message\+List\+Model.\+h}}\end{DoxyCompactItemize}

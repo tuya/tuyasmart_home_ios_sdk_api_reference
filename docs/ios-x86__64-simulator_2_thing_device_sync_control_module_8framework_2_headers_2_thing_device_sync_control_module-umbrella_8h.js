@@ -1,6 +1,0 @@
-var ios_x86__64_simulator_2_thing_device_sync_control_module_8framework_2_headers_2_thing_device_sync_control_module_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "ios-x86__64-simulator_2_thing_device_sync_control_module_8framework_2_headers_2_thing_device_sync_control_module-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingDeviceSyncControlModuleVersionNumber", "ios-x86__64-simulator_2_thing_device_sync_control_module_8framework_2_headers_2_thing_device_sync_control_module-umbrella_8h.html#ae7bc1cba9f139e88c475c5cd662da1e0", null ],
-    [ "ThingDeviceSyncControlModuleVersionString", "ios-x86__64-simulator_2_thing_device_sync_control_module_8framework_2_headers_2_thing_device_sync_control_module-umbrella_8h.html#abeaf6eb24e457a82718d80966a84a5ff", null ]
-];

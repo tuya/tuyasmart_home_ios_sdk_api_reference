@@ -1,0 +1,171 @@
+\hypertarget{protocol_thing_smart_activator_ble_protocol-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+Activator\+Ble\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_activator_ble_protocol-p}\index{$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Activator\+Ble\+Protocol.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+Activator\+Ble\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocol_thing_smart_activator_ble_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_ble_protocol-p_ada44c33a0f40d04a35c210326fffc6be}{config\+Multimode\+Device\+Dual\+Wifi\+Channel\+:model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_ble_protocol-p_a2da1438f1b956f4a97a80182164586e6}{config\+Multimode\+Device\+Dual\+Ble\+Channel\+:model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_ble_protocol-p_a0bbbea22b966edc30b29d8c7dbd1e0b5}{switch\+Zigbee\+Sub\+Device\+To\+Zigbee\+Activator\+:devices\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_ble_protocol-p_ac9404e0ae7fba38b4299d18f10e43292}{current\+Space\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_ble_protocol-p_ad43f85ba739b48b4b44fb722b051ff26}{scan\+Wifi\+List\+:activator\+Type\+Model\+:device\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_ble_protocol-p_ada44c33a0f40d04a35c210326fffc6be}{config\+Multimode\+Device\+Dual\+Wifi\+Channel\+:model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_ble_protocol-p_a2da1438f1b956f4a97a80182164586e6}{config\+Multimode\+Device\+Dual\+Ble\+Channel\+:model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_ble_protocol-p_a0bbbea22b966edc30b29d8c7dbd1e0b5}{switch\+Zigbee\+Sub\+Device\+To\+Zigbee\+Activator\+:devices\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_ble_protocol-p_ac9404e0ae7fba38b4299d18f10e43292}{current\+Space\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_ble_protocol-p_ad43f85ba739b48b4b44fb722b051ff26}{scan\+Wifi\+List\+:activator\+Type\+Model\+:device\+Model\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smart_activator_ble_protocol_8h_source_l00012}{12}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smart_activator_ble_protocol_8h_source}{Thing\+Smart\+Activator\+Ble\+Protocol.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_activator_ble_protocol-p_a2da1438f1b956f4a97a80182164586e6}\label{protocol_thing_smart_activator_ble_protocol-p_a2da1438f1b956f4a97a80182164586e6}} 
+\index{$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}!configMultimodeDeviceDualBleChannel:model:@{configMultimodeDeviceDualBleChannel:model:}}
+\index{configMultimodeDeviceDualBleChannel:model:@{configMultimodeDeviceDualBleChannel:model:}!$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{configMultimodeDeviceDualBleChannel:model:}{configMultimodeDeviceDualBleChannel:model:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) config\+Multimode\+Device\+Dual\+Ble\+Channel\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_type_model}{Thing\+Smart\+Activator\+Type\+Model}} $\ast$)}]{activator\+Type }\item[{model\+:(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+Activate Bluetooth channel for Bluetooth dual-\/mode devices (only activate Bluetooth), the result is provided through network configuration callback 
+\begin{DoxyParams}{Parameters}
+{\em activator\+Type} & Network configuration type, please use \mbox{\hyperlink{interface_thing_smart_activator_type_ble_model}{Thing\+Smart\+Activator\+Type\+Ble\+Model}} \\
+\hline
+{\em device\+Model} & Device model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_ble_protocol-p_a2da1438f1b956f4a97a80182164586e6}\label{protocol_thing_smart_activator_ble_protocol-p_a2da1438f1b956f4a97a80182164586e6}} 
+\index{$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}!configMultimodeDeviceDualBleChannel:model:@{configMultimodeDeviceDualBleChannel:model:}}
+\index{configMultimodeDeviceDualBleChannel:model:@{configMultimodeDeviceDualBleChannel:model:}!$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{configMultimodeDeviceDualBleChannel:model:}{configMultimodeDeviceDualBleChannel:model:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) config\+Multimode\+Device\+Dual\+Ble\+Channel\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_type_model}{Thing\+Smart\+Activator\+Type\+Model}} $\ast$)}]{activator\+Type }\item[{model\+:(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+Activate Bluetooth channel for Bluetooth dual-\/mode devices (only activate Bluetooth), the result is provided through network configuration callback 
+\begin{DoxyParams}{Parameters}
+{\em activator\+Type} & Network configuration type, please use \mbox{\hyperlink{interface_thing_smart_activator_type_ble_model}{Thing\+Smart\+Activator\+Type\+Ble\+Model}} \\
+\hline
+{\em device\+Model} & Device model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_ble_protocol-p_ada44c33a0f40d04a35c210326fffc6be}\label{protocol_thing_smart_activator_ble_protocol-p_ada44c33a0f40d04a35c210326fffc6be}} 
+\index{$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}!configMultimodeDeviceDualWifiChannel:model:@{configMultimodeDeviceDualWifiChannel:model:}}
+\index{configMultimodeDeviceDualWifiChannel:model:@{configMultimodeDeviceDualWifiChannel:model:}!$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{configMultimodeDeviceDualWifiChannel:model:}{configMultimodeDeviceDualWifiChannel:model:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) config\+Multimode\+Device\+Dual\+Wifi\+Channel\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_type_model}{Thing\+Smart\+Activator\+Type\+Model}} $\ast$)}]{activator\+Type }\item[{model\+:(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+Configure Wi-\/\+Fi channel for Bluetooth dual-\/mode devices (Bluetooth channel is already activated), the result is provided through network configuration callback 
+\begin{DoxyParams}{Parameters}
+{\em activator\+Type} & Network configuration type, please use Activator\+Type\+Ble\+Model \\
+\hline
+{\em device\+Model} & Device model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_ble_protocol-p_ada44c33a0f40d04a35c210326fffc6be}\label{protocol_thing_smart_activator_ble_protocol-p_ada44c33a0f40d04a35c210326fffc6be}} 
+\index{$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}!configMultimodeDeviceDualWifiChannel:model:@{configMultimodeDeviceDualWifiChannel:model:}}
+\index{configMultimodeDeviceDualWifiChannel:model:@{configMultimodeDeviceDualWifiChannel:model:}!$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{configMultimodeDeviceDualWifiChannel:model:}{configMultimodeDeviceDualWifiChannel:model:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) config\+Multimode\+Device\+Dual\+Wifi\+Channel\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_type_model}{Thing\+Smart\+Activator\+Type\+Model}} $\ast$)}]{activator\+Type }\item[{model\+:(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+Configure Wi-\/\+Fi channel for Bluetooth dual-\/mode devices (Bluetooth channel is already activated), the result is provided through network configuration callback 
+\begin{DoxyParams}{Parameters}
+{\em activator\+Type} & Network configuration type, please use Activator\+Type\+Ble\+Model \\
+\hline
+{\em device\+Model} & Device model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_ble_protocol-p_ac9404e0ae7fba38b4299d18f10e43292}\label{protocol_thing_smart_activator_ble_protocol-p_ac9404e0ae7fba38b4299d18f10e43292}} 
+\index{$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}!currentSpaceId:@{currentSpaceId:}}
+\index{currentSpaceId:@{currentSpaceId:}!$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{currentSpaceId:}{currentSpaceId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) current\+Space\+Id\+: \begin{DoxyParamCaption}\item[{(long long)}]{space\+Id }\end{DoxyParamCaption}}
+
+Set current home ID 
+\begin{DoxyParams}{Parameters}
+{\em space\+Id} & home ID \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_ble_protocol-p_ac9404e0ae7fba38b4299d18f10e43292}\label{protocol_thing_smart_activator_ble_protocol-p_ac9404e0ae7fba38b4299d18f10e43292}} 
+\index{$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}!currentSpaceId:@{currentSpaceId:}}
+\index{currentSpaceId:@{currentSpaceId:}!$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{currentSpaceId:}{currentSpaceId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) current\+Space\+Id\+: \begin{DoxyParamCaption}\item[{(long long)}]{space\+Id }\end{DoxyParamCaption}}
+
+Set current home ID 
+\begin{DoxyParams}{Parameters}
+{\em space\+Id} & home ID \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_ble_protocol-p_ad43f85ba739b48b4b44fb722b051ff26}\label{protocol_thing_smart_activator_ble_protocol-p_ad43f85ba739b48b4b44fb722b051ff26}} 
+\index{$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}!scanWifiList:activatorTypeModel:deviceModel:@{scanWifiList:activatorTypeModel:deviceModel:}}
+\index{scanWifiList:activatorTypeModel:deviceModel:@{scanWifiList:activatorTypeModel:deviceModel:}!$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{scanWifiList:activatorTypeModel:deviceModel:}{scanWifiList:activatorTypeModel:deviceModel:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) scan\+Wifi\+List\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_scan_wifi_param}{Thing\+Smart\+Activator\+Scan\+Wifi\+Param}} $\ast$)}]{param }\item[{activator\+Type\+Model\+:(\mbox{\hyperlink{interface_thing_smart_activator_type_model}{Thing\+Smart\+Activator\+Type\+Model}} $\ast$)}]{activator\+Type\+Model }\item[{device\+Model\+:(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_activator_ble_protocol-p_ad43f85ba739b48b4b44fb722b051ff26}\label{protocol_thing_smart_activator_ble_protocol-p_ad43f85ba739b48b4b44fb722b051ff26}} 
+\index{$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}!scanWifiList:activatorTypeModel:deviceModel:@{scanWifiList:activatorTypeModel:deviceModel:}}
+\index{scanWifiList:activatorTypeModel:deviceModel:@{scanWifiList:activatorTypeModel:deviceModel:}!$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{scanWifiList:activatorTypeModel:deviceModel:}{scanWifiList:activatorTypeModel:deviceModel:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) scan\+Wifi\+List\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_scan_wifi_param}{Thing\+Smart\+Activator\+Scan\+Wifi\+Param}} $\ast$)}]{param }\item[{activator\+Type\+Model\+:(\mbox{\hyperlink{interface_thing_smart_activator_type_model}{Thing\+Smart\+Activator\+Type\+Model}} $\ast$)}]{activator\+Type\+Model }\item[{device\+Model\+:(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$)}]{device\+Model }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_activator_ble_protocol-p_a0bbbea22b966edc30b29d8c7dbd1e0b5}\label{protocol_thing_smart_activator_ble_protocol-p_a0bbbea22b966edc30b29d8c7dbd1e0b5}} 
+\index{$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}!switchZigbeeSubDeviceToZigbeeActivator:devices:success:failure:@{switchZigbeeSubDeviceToZigbeeActivator:devices:success:failure:}}
+\index{switchZigbeeSubDeviceToZigbeeActivator:devices:success:failure:@{switchZigbeeSubDeviceToZigbeeActivator:devices:success:failure:}!$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{switchZigbeeSubDeviceToZigbeeActivator:devices:success:failure:}{switchZigbeeSubDeviceToZigbeeActivator:devices:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) switch\+Zigbee\+Sub\+Device\+To\+Zigbee\+Activator\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_type_model}{Thing\+Smart\+Activator\+Type\+Model}} $\ast$)}]{activator\+Type }\item[{devices\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$ $>$ $\ast$)}]{devices }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Switching ble-\/zigbee devices to a sub-\/device pairing network 
+\begin{DoxyParams}{Parameters}
+{\em activator\+Type} & Network configuration type, please use \mbox{\hyperlink{interface_thing_smart_activator_type_ble_model}{Thing\+Smart\+Activator\+Type\+Ble\+Model}} \\
+\hline
+{\em devices} & ble-\/zigbee devices \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_ble_protocol-p_a0bbbea22b966edc30b29d8c7dbd1e0b5}\label{protocol_thing_smart_activator_ble_protocol-p_a0bbbea22b966edc30b29d8c7dbd1e0b5}} 
+\index{$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}!switchZigbeeSubDeviceToZigbeeActivator:devices:success:failure:@{switchZigbeeSubDeviceToZigbeeActivator:devices:success:failure:}}
+\index{switchZigbeeSubDeviceToZigbeeActivator:devices:success:failure:@{switchZigbeeSubDeviceToZigbeeActivator:devices:success:failure:}!$<$ThingSmartActivatorBleProtocol$>$@{$<$ThingSmartActivatorBleProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{switchZigbeeSubDeviceToZigbeeActivator:devices:success:failure:}{switchZigbeeSubDeviceToZigbeeActivator:devices:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) switch\+Zigbee\+Sub\+Device\+To\+Zigbee\+Activator\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_type_model}{Thing\+Smart\+Activator\+Type\+Model}} $\ast$)}]{activator\+Type }\item[{devices\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$ $>$ $\ast$)}]{devices }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Switching ble-\/zigbee devices to a sub-\/device pairing network 
+\begin{DoxyParams}{Parameters}
+{\em activator\+Type} & Network configuration type, please use \mbox{\hyperlink{interface_thing_smart_activator_type_ble_model}{Thing\+Smart\+Activator\+Type\+Ble\+Model}} \\
+\hline
+{\em devices} & ble-\/zigbee devices \\
+\hline
+{\em success} & Successful callback \\
+\hline
+{\em failure} & Failure callback \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Activator\+Discovery\+Manager/\+Thing\+Smart\+Activator\+Discovery\+Manager.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Smart\+Activator\+Discovery\+Manager.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smart_activator_ble_protocol_8h}{Thing\+Smart\+Activator\+Ble\+Protocol.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Activator\+Discovery\+Manager/\+Thing\+Smart\+Activator\+Discovery\+Manager.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Activator\+Discovery\+Manager.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smart_activator_ble_protocol_8h}{Thing\+Smart\+Activator\+Ble\+Protocol.\+h}}\end{DoxyCompactItemize}

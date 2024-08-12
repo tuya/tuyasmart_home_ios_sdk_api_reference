@@ -1,6 +1,0 @@
-var x86__64_simulator_2_thing_smart_outdoor_plug_a_p_i_8framework_2_headers_2_thing_smart_outdoor_plug_a_p_i_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "x86__64-simulator_2_thing_smart_outdoor_plug_a_p_i_8framework_2_headers_2_thing_smart_outdoor_plug_a_p_i-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingSmartOutdoorPlugAPIVersionNumber", "x86__64-simulator_2_thing_smart_outdoor_plug_a_p_i_8framework_2_headers_2_thing_smart_outdoor_plug_a_p_i-umbrella_8h.html#a1ecc8a375cbdb0fb2dfcad5c0b4fa780", null ],
-    [ "ThingSmartOutdoorPlugAPIVersionString", "x86__64-simulator_2_thing_smart_outdoor_plug_a_p_i_8framework_2_headers_2_thing_smart_outdoor_plug_a_p_i-umbrella_8h.html#ae09f96dfc46429e966a68e979a681967", null ]
-];

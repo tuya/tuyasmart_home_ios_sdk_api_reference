@@ -1,0 +1,273 @@
+\hypertarget{interface_thing_a_e_s_impl}{}\doxysection{Thing\+AESImpl Class Reference}
+\label{interface_thing_a_e_s_impl}\index{ThingAESImpl@{ThingAESImpl}}
+
+
+{\ttfamily \#import $<$Thing\+AESImpl.\+h$>$}
+
+Inheritance diagram for Thing\+AESImpl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_a_e_s_impl}
+\end{center}
+\end{figure}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_a42e96e8ca33fee8367d479f34eab5f9b}{encrypt\+Data\+:key\+Data\+:config\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}{decrypt\+Data\+:key\+Data\+:config\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_ab0473c5e28d35e5303f4b37181ae5ef4}{encrypt\+Data\+:key\+Data\+:key\+Size\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_a0fb7ef0517e41d2c5726b00d01f5ed9d}{decrypt\+Data\+:key\+Data\+:key\+Size\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_a42e96e8ca33fee8367d479f34eab5f9b}{encrypt\+Data\+:key\+Data\+:config\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}{decrypt\+Data\+:key\+Data\+:config\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_ab0473c5e28d35e5303f4b37181ae5ef4}{encrypt\+Data\+:key\+Data\+:key\+Size\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_a0fb7ef0517e41d2c5726b00d01f5ed9d}{decrypt\+Data\+:key\+Data\+:key\+Size\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_a42e96e8ca33fee8367d479f34eab5f9b}{encrypt\+Data\+:key\+Data\+:config\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}{decrypt\+Data\+:key\+Data\+:config\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_ab0473c5e28d35e5303f4b37181ae5ef4}{encrypt\+Data\+:key\+Data\+:key\+Size\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_a0fb7ef0517e41d2c5726b00d01f5ed9d}{decrypt\+Data\+:key\+Data\+:key\+Size\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_a42e96e8ca33fee8367d479f34eab5f9b}{encrypt\+Data\+:key\+Data\+:config\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}{decrypt\+Data\+:key\+Data\+:config\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_ab0473c5e28d35e5303f4b37181ae5ef4}{encrypt\+Data\+:key\+Data\+:key\+Size\+:}}
+\item 
+(NSData $\ast$) + \mbox{\hyperlink{interface_thing_a_e_s_impl_a0fb7ef0517e41d2c5726b00d01f5ed9d}{decrypt\+Data\+:key\+Data\+:key\+Size\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00045}{45}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source}{Thing\+AESImpl.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}\label{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}} 
+\index{ThingAESImpl@{ThingAESImpl}!decryptData:keyData:config:@{decryptData:keyData:config:}}
+\index{decryptData:keyData:config:@{decryptData:keyData:config:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{decryptData:keyData:config:}{decryptData:keyData:config:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) decrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{config\+:(\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} $\ast$)}]{config }\end{DoxyParamCaption}}
+
+AES解密数据
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 需要加密的内容 \\
+\hline
+{\em key\+Data} & 秘钥 \\
+\hline
+{\em config} & 解密配置, 默认可以使用+ \mbox{[}\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} default\+Config\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+解密后的内容 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}\label{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}} 
+\index{ThingAESImpl@{ThingAESImpl}!decryptData:keyData:config:@{decryptData:keyData:config:}}
+\index{decryptData:keyData:config:@{decryptData:keyData:config:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{decryptData:keyData:config:}{decryptData:keyData:config:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) decrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{config\+:(\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} $\ast$)}]{config }\end{DoxyParamCaption}}
+
+AES解密数据
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 需要加密的内容 \\
+\hline
+{\em key\+Data} & 秘钥 \\
+\hline
+{\em config} & 解密配置, 默认可以使用+ \mbox{[}\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} default\+Config\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+解密后的内容 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}\label{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}} 
+\index{ThingAESImpl@{ThingAESImpl}!decryptData:keyData:config:@{decryptData:keyData:config:}}
+\index{decryptData:keyData:config:@{decryptData:keyData:config:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{decryptData:keyData:config:}{decryptData:keyData:config:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) decrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{config\+:(\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} $\ast$)}]{config }\end{DoxyParamCaption}}
+
+AES解密数据
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 需要加密的内容 \\
+\hline
+{\em key\+Data} & 秘钥 \\
+\hline
+{\em config} & 解密配置, 默认可以使用+ \mbox{[}\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} default\+Config\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+解密后的内容 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}\label{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}} 
+\index{ThingAESImpl@{ThingAESImpl}!decryptData:keyData:config:@{decryptData:keyData:config:}}
+\index{decryptData:keyData:config:@{decryptData:keyData:config:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{decryptData:keyData:config:}{decryptData:keyData:config:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) decrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{config\+:(\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} $\ast$)}]{config }\end{DoxyParamCaption}}
+
+AES解密数据
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 需要加密的内容 \\
+\hline
+{\em key\+Data} & 秘钥 \\
+\hline
+{\em config} & 解密配置, 默认可以使用+ \mbox{[}\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} default\+Config\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+解密后的内容 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_a0fb7ef0517e41d2c5726b00d01f5ed9d}\label{interface_thing_a_e_s_impl_a0fb7ef0517e41d2c5726b00d01f5ed9d}} 
+\index{ThingAESImpl@{ThingAESImpl}!decryptData:keyData:keySize:@{decryptData:keyData:keySize:}}
+\index{decryptData:keyData:keySize:@{decryptData:keyData:keySize:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{decryptData:keyData:keySize:}{decryptData:keyData:keySize:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) decrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{key\+Size\+:(Thing\+AESKey\+Size)}]{key\+Size }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_a0fb7ef0517e41d2c5726b00d01f5ed9d}\label{interface_thing_a_e_s_impl_a0fb7ef0517e41d2c5726b00d01f5ed9d}} 
+\index{ThingAESImpl@{ThingAESImpl}!decryptData:keyData:keySize:@{decryptData:keyData:keySize:}}
+\index{decryptData:keyData:keySize:@{decryptData:keyData:keySize:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{decryptData:keyData:keySize:}{decryptData:keyData:keySize:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) decrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{key\+Size\+:(Thing\+AESKey\+Size)}]{key\+Size }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_a0fb7ef0517e41d2c5726b00d01f5ed9d}\label{interface_thing_a_e_s_impl_a0fb7ef0517e41d2c5726b00d01f5ed9d}} 
+\index{ThingAESImpl@{ThingAESImpl}!decryptData:keyData:keySize:@{decryptData:keyData:keySize:}}
+\index{decryptData:keyData:keySize:@{decryptData:keyData:keySize:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{decryptData:keyData:keySize:}{decryptData:keyData:keySize:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) decrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{key\+Size\+:(Thing\+AESKey\+Size)}]{key\+Size }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_a0fb7ef0517e41d2c5726b00d01f5ed9d}\label{interface_thing_a_e_s_impl_a0fb7ef0517e41d2c5726b00d01f5ed9d}} 
+\index{ThingAESImpl@{ThingAESImpl}!decryptData:keyData:keySize:@{decryptData:keyData:keySize:}}
+\index{decryptData:keyData:keySize:@{decryptData:keyData:keySize:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{decryptData:keyData:keySize:}{decryptData:keyData:keySize:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) decrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{key\+Size\+:(Thing\+AESKey\+Size)}]{key\+Size }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_a42e96e8ca33fee8367d479f34eab5f9b}\label{interface_thing_a_e_s_impl_a42e96e8ca33fee8367d479f34eab5f9b}} 
+\index{ThingAESImpl@{ThingAESImpl}!encryptData:keyData:config:@{encryptData:keyData:config:}}
+\index{encryptData:keyData:config:@{encryptData:keyData:config:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{encryptData:keyData:config:}{encryptData:keyData:config:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) encrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{config\+:(\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} $\ast$)}]{config }\end{DoxyParamCaption}}
+
+AES加密数据
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 需要加密的内容 \\
+\hline
+{\em key\+Data} & 秘钥 \\
+\hline
+{\em config} & 加密配置, 默认可以使用+ \mbox{[}\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} default\+Config\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+加密后的内容 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_a42e96e8ca33fee8367d479f34eab5f9b}\label{interface_thing_a_e_s_impl_a42e96e8ca33fee8367d479f34eab5f9b}} 
+\index{ThingAESImpl@{ThingAESImpl}!encryptData:keyData:config:@{encryptData:keyData:config:}}
+\index{encryptData:keyData:config:@{encryptData:keyData:config:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{encryptData:keyData:config:}{encryptData:keyData:config:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) encrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{config\+:(\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} $\ast$)}]{config }\end{DoxyParamCaption}}
+
+AES加密数据
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 需要加密的内容 \\
+\hline
+{\em key\+Data} & 秘钥 \\
+\hline
+{\em config} & 加密配置, 默认可以使用+ \mbox{[}\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} default\+Config\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+加密后的内容 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_a42e96e8ca33fee8367d479f34eab5f9b}\label{interface_thing_a_e_s_impl_a42e96e8ca33fee8367d479f34eab5f9b}} 
+\index{ThingAESImpl@{ThingAESImpl}!encryptData:keyData:config:@{encryptData:keyData:config:}}
+\index{encryptData:keyData:config:@{encryptData:keyData:config:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{encryptData:keyData:config:}{encryptData:keyData:config:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) encrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{config\+:(\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} $\ast$)}]{config }\end{DoxyParamCaption}}
+
+AES加密数据
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 需要加密的内容 \\
+\hline
+{\em key\+Data} & 秘钥 \\
+\hline
+{\em config} & 加密配置, 默认可以使用+ \mbox{[}\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} default\+Config\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+加密后的内容 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_a42e96e8ca33fee8367d479f34eab5f9b}\label{interface_thing_a_e_s_impl_a42e96e8ca33fee8367d479f34eab5f9b}} 
+\index{ThingAESImpl@{ThingAESImpl}!encryptData:keyData:config:@{encryptData:keyData:config:}}
+\index{encryptData:keyData:config:@{encryptData:keyData:config:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{encryptData:keyData:config:}{encryptData:keyData:config:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) encrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{config\+:(\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} $\ast$)}]{config }\end{DoxyParamCaption}}
+
+AES加密数据
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & 需要加密的内容 \\
+\hline
+{\em key\+Data} & 秘钥 \\
+\hline
+{\em config} & 加密配置, 默认可以使用+ \mbox{[}\mbox{\hyperlink{interface_thing_a_e_s_config}{Thing\+AESConfig}} default\+Config\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+加密后的内容 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_ab0473c5e28d35e5303f4b37181ae5ef4}\label{interface_thing_a_e_s_impl_ab0473c5e28d35e5303f4b37181ae5ef4}} 
+\index{ThingAESImpl@{ThingAESImpl}!encryptData:keyData:keySize:@{encryptData:keyData:keySize:}}
+\index{encryptData:keyData:keySize:@{encryptData:keyData:keySize:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{encryptData:keyData:keySize:}{encryptData:keyData:keySize:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) encrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{key\+Size\+:(Thing\+AESKey\+Size)}]{key\+Size }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_ab0473c5e28d35e5303f4b37181ae5ef4}\label{interface_thing_a_e_s_impl_ab0473c5e28d35e5303f4b37181ae5ef4}} 
+\index{ThingAESImpl@{ThingAESImpl}!encryptData:keyData:keySize:@{encryptData:keyData:keySize:}}
+\index{encryptData:keyData:keySize:@{encryptData:keyData:keySize:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{encryptData:keyData:keySize:}{encryptData:keyData:keySize:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) encrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{key\+Size\+:(Thing\+AESKey\+Size)}]{key\+Size }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_ab0473c5e28d35e5303f4b37181ae5ef4}\label{interface_thing_a_e_s_impl_ab0473c5e28d35e5303f4b37181ae5ef4}} 
+\index{ThingAESImpl@{ThingAESImpl}!encryptData:keyData:keySize:@{encryptData:keyData:keySize:}}
+\index{encryptData:keyData:keySize:@{encryptData:keyData:keySize:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{encryptData:keyData:keySize:}{encryptData:keyData:keySize:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) encrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{key\+Size\+:(Thing\+AESKey\+Size)}]{key\+Size }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_a_e_s_impl_ab0473c5e28d35e5303f4b37181ae5ef4}\label{interface_thing_a_e_s_impl_ab0473c5e28d35e5303f4b37181ae5ef4}} 
+\index{ThingAESImpl@{ThingAESImpl}!encryptData:keyData:keySize:@{encryptData:keyData:keySize:}}
+\index{encryptData:keyData:keySize:@{encryptData:keyData:keySize:}!ThingAESImpl@{ThingAESImpl}}
+\doxysubsubsection{\texorpdfstring{encryptData:keyData:keySize:}{encryptData:keyData:keySize:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (NSData $\ast$) encrypt\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{key\+Data\+:(NSData $\ast$)}]{key\+Data }\item[{key\+Size\+:(Thing\+AESKey\+Size)}]{key\+Size }\end{DoxyParamCaption}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Foundation\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h}{Thing\+AESImpl.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Foundation\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h}{Thing\+AESImpl.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Foundation\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h}{Thing\+AESImpl.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Foundation\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h}{Thing\+AESImpl.\+h}}\end{DoxyCompactItemize}

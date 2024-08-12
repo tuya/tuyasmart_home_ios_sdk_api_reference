@@ -1,0 +1,73 @@
+\hypertarget{protocol_thing_smart_b_l_e_active_protocol-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+BLEActive\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_b_l_e_active_protocol-p}\index{$<$ThingSmartBLEActiveProtocol$>$@{$<$ThingSmartBLEActiveProtocol$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+BLEDevice\+Protocol.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+BLEActive\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_thing_smart_b_l_e_active_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_protocol-p_ae352ef01fc0ea68ffa5a79f1d6398fec}{start\+Active\+With\+Device\+:home\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_protocol-p_ae352ef01fc0ea68ffa5a79f1d6398fec}{start\+Active\+With\+Device\+:home\+Id\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_device_protocol_8h_source_l00043}{43}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_device_protocol_8h_source}{Thing\+Smart\+BLEDevice\+Protocol.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_protocol-p_ae352ef01fc0ea68ffa5a79f1d6398fec}\label{protocol_thing_smart_b_l_e_active_protocol-p_ae352ef01fc0ea68ffa5a79f1d6398fec}} 
+\index{$<$ThingSmartBLEActiveProtocol$>$@{$<$ThingSmartBLEActiveProtocol$>$}!startActiveWithDevice:homeId:success:failure:@{startActiveWithDevice:homeId:success:failure:}}
+\index{startActiveWithDevice:homeId:success:failure:@{startActiveWithDevice:homeId:success:failure:}!$<$ThingSmartBLEActiveProtocol$>$@{$<$ThingSmartBLEActiveProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{startActiveWithDevice:homeId:success:failure:}{startActiveWithDevice:homeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Active\+With\+Device\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_b_l_e_device_protocol-p}{Thing\+Smart\+BLEDevice\+Protocol}} $>$)}]{device\+Info }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Activates the Bluetooth LE device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & The advertising\+Data model for the Bluetooth LE device. \\
+\hline
+{\em home\+Id} & The ID of the current home. \\
+\hline
+{\em success} & Called when the task is finished. Device\+Model is returned. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_protocol-p_ae352ef01fc0ea68ffa5a79f1d6398fec}\label{protocol_thing_smart_b_l_e_active_protocol-p_ae352ef01fc0ea68ffa5a79f1d6398fec}} 
+\index{$<$ThingSmartBLEActiveProtocol$>$@{$<$ThingSmartBLEActiveProtocol$>$}!startActiveWithDevice:homeId:success:failure:@{startActiveWithDevice:homeId:success:failure:}}
+\index{startActiveWithDevice:homeId:success:failure:@{startActiveWithDevice:homeId:success:failure:}!$<$ThingSmartBLEActiveProtocol$>$@{$<$ThingSmartBLEActiveProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{startActiveWithDevice:homeId:success:failure:}{startActiveWithDevice:homeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Active\+With\+Device\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_b_l_e_device_protocol-p}{Thing\+Smart\+BLEDevice\+Protocol}} $>$)}]{device\+Info }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Activates the Bluetooth LE device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & The advertising\+Data model for the Bluetooth LE device. \\
+\hline
+{\em home\+Id} & The ID of the current home. \\
+\hline
+{\em success} & Called when the task is finished. Device\+Model is returned. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_device_protocol_8h}{Thing\+Smart\+BLEDevice\+Protocol.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_device_protocol_8h}{Thing\+Smart\+BLEDevice\+Protocol.\+h}}\end{DoxyCompactItemize}

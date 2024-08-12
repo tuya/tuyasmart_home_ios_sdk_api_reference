@@ -1,0 +1,156 @@
+\hypertarget{_w_t_l_certificate_info_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.framework/\+Headers/\+WTLCertificate\+Info.h File Reference}
+\label{_w_t_l_certificate_info_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLCertificateInfo.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLCertificateInfo.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import $<$Water/\+WTLCertificates.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+NS\+\_\+\+SWIFT\+\_\+\+SENDABLE \mbox{\hyperlink{_w_t_l_certificate_info_8h_afca5a371fa25861456b6a28671f34317}{API\+\_\+\+AVAILABLE}} (instancetype) init \mbox{\hyperlink{_w_t_l_clusters_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\+\_\+\+UNAVAILABLE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+nullable instancetype \mbox{\hyperlink{_w_t_l_certificate_info_8h_a04307d76a42526869e4664a5d101a4a1}{init\+With\+TLVBytes}}
+\item 
+WTLDistinguished\+Name\+Info $\ast$ \mbox{\hyperlink{_w_t_l_certificate_info_8h_a6eba80b338171b4bef023ecc1054e17a}{issuer}}
+\item 
+WTLDistinguished\+Name\+Info $\ast$ \mbox{\hyperlink{_w_t_l_certificate_info_8h_a04b5ff3b09bae25f6a2b5b1cc045d52b}{subject}}
+\item 
+NSDate $\ast$ \mbox{\hyperlink{_w_t_l_certificate_info_8h_a7aa5bf3cce7fc0f402a59fc1cd5699a9}{not\+Before}}
+\item 
+NSDate $\ast$ \mbox{\hyperlink{_w_t_l_certificate_info_8h_a0837de1cf78412c84b39f35ff476ea0e}{not\+After}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{_w_t_l_certificate_info_8h_ab5516419187ddb2a199430b277696c2c}{node\+ID}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{_w_t_l_certificate_info_8h_a24cc1e4082a028658318f9805b5bf0ab}{fabric\+ID}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{_w_t_l_certificate_info_8h_a2b561bd9de267d22acc860f5d0e4d536}{root\+CACertificate\+ID}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{_w_t_l_certificate_info_8h_adf5069330953fd365692f82be3dedbd2}{intermediate\+CACertificate\+ID}}
+\item 
+NSSet$<$ NSNumber $\ast$ $>$ $\ast$ \mbox{\hyperlink{_w_t_l_certificate_info_8h_abe6583d6db0352086f282119d0b24c18}{case\+Authenticated\+Tags}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_w_t_l_certificate_info_8h_afca5a371fa25861456b6a28671f34317}\label{_w_t_l_certificate_info_8h_afca5a371fa25861456b6a28671f34317}} 
+\index{WTLCertificateInfo.h@{WTLCertificateInfo.h}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLCertificateInfo.h@{WTLCertificateInfo.h}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE()}{API\_AVAILABLE()}}
+{\footnotesize\ttfamily NS\+\_\+\+SWIFT\+\_\+\+SENDABLE API\+\_\+\+AVAILABLE (\begin{DoxyParamCaption}\item[{instancetype}]{ }\end{DoxyParamCaption})}
+
+Exposes Matter-\/specific information from an operational X.\+509 certificate.
+
+Note\+: This class does not support parsing certificates related to Device Attestation.
+
+Represents the Matter-\/specific components of an X.\+509 Distinguished Name. 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_w_t_l_certificate_info_8h_abe6583d6db0352086f282119d0b24c18}\label{_w_t_l_certificate_info_8h_abe6583d6db0352086f282119d0b24c18}} 
+\index{WTLCertificateInfo.h@{WTLCertificateInfo.h}!caseAuthenticatedTags@{caseAuthenticatedTags}}
+\index{caseAuthenticatedTags@{caseAuthenticatedTags}!WTLCertificateInfo.h@{WTLCertificateInfo.h}}
+\doxysubsubsection{\texorpdfstring{caseAuthenticatedTags}{caseAuthenticatedTags}}
+{\footnotesize\ttfamily NSSet$<$NSNumber $\ast$$>$$\ast$ case\+Authenticated\+Tags\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [assign]}}
+
+The set of CASE Authenticated Tags contained in the DN. Maybe be non-\/empty for the subject of a valid node operational certificate. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_certificate_info_8h_source_l00108}{108}} of file \mbox{\hyperlink{_w_t_l_certificate_info_8h_source}{WTLCertificate\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_certificate_info_8h_a24cc1e4082a028658318f9805b5bf0ab}\label{_w_t_l_certificate_info_8h_a24cc1e4082a028658318f9805b5bf0ab}} 
+\index{WTLCertificateInfo.h@{WTLCertificateInfo.h}!fabricID@{fabricID}}
+\index{fabricID@{fabricID}!WTLCertificateInfo.h@{WTLCertificateInfo.h}}
+\doxysubsubsection{\texorpdfstring{fabricID}{fabricID}}
+{\footnotesize\ttfamily NSNumber$\ast$ fabric\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [assign]}}
+
+The Fabric ID contained in the DN, if any. Will be non-\/nil for the subject of a valid node operational certificate, and may be non-\/nil for the subject of a valid intermediate or root certificate. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_certificate_info_8h_source_l00090}{90}} of file \mbox{\hyperlink{_w_t_l_certificate_info_8h_source}{WTLCertificate\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_certificate_info_8h_a04307d76a42526869e4664a5d101a4a1}\label{_w_t_l_certificate_info_8h_a04307d76a42526869e4664a5d101a4a1}} 
+\index{WTLCertificateInfo.h@{WTLCertificateInfo.h}!initWithTLVBytes@{initWithTLVBytes}}
+\index{initWithTLVBytes@{initWithTLVBytes}!WTLCertificateInfo.h@{WTLCertificateInfo.h}}
+\doxysubsubsection{\texorpdfstring{initWithTLVBytes}{initWithTLVBytes}}
+{\footnotesize\ttfamily nullable instancetype init\+With\+TLVBytes}
+
+Initializes the receiver with an operational certificate in Matter TLV format.
+
+This can be a node operational certificate, a Matter intermediate certificate, or a Matter root certificate. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_certificate_info_8h_source_l00042}{42}} of file \mbox{\hyperlink{_w_t_l_certificate_info_8h_source}{WTLCertificate\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_certificate_info_8h_adf5069330953fd365692f82be3dedbd2}\label{_w_t_l_certificate_info_8h_adf5069330953fd365692f82be3dedbd2}} 
+\index{WTLCertificateInfo.h@{WTLCertificateInfo.h}!intermediateCACertificateID@{intermediateCACertificateID}}
+\index{intermediateCACertificateID@{intermediateCACertificateID}!WTLCertificateInfo.h@{WTLCertificateInfo.h}}
+\doxysubsubsection{\texorpdfstring{intermediateCACertificateID}{intermediateCACertificateID}}
+{\footnotesize\ttfamily NSNumber$\ast$ intermediate\+CACertificate\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [assign]}}
+
+The {\ttfamily ICAC} ID contained in the DN, if any. Will be non-\/nil for the subject of a valid intermediate certificate. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_certificate_info_8h_source_l00102}{102}} of file \mbox{\hyperlink{_w_t_l_certificate_info_8h_source}{WTLCertificate\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_certificate_info_8h_a6eba80b338171b4bef023ecc1054e17a}\label{_w_t_l_certificate_info_8h_a6eba80b338171b4bef023ecc1054e17a}} 
+\index{WTLCertificateInfo.h@{WTLCertificateInfo.h}!issuer@{issuer}}
+\index{issuer@{issuer}!WTLCertificateInfo.h@{WTLCertificateInfo.h}}
+\doxysubsubsection{\texorpdfstring{issuer}{issuer}}
+{\footnotesize\ttfamily WTLDistinguished\+Name\+Info$\ast$ issuer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [assign]}}
+
+The Distinguished Name of the issuer of the certificate.
+
+For a node operational certificate, the issuer will match the subject of the root certificate or intermediate certificate that represents the entity that issued the node operational certificate.
+
+For an intermediate certificate, the issuer will match the subject of the root certificate.
+
+Matter root certificates are self-\/signed, i.\+e. the issuer and the subject are the same. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_certificate_info_8h_source_l00057}{57}} of file \mbox{\hyperlink{_w_t_l_certificate_info_8h_source}{WTLCertificate\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_certificate_info_8h_ab5516419187ddb2a199430b277696c2c}\label{_w_t_l_certificate_info_8h_ab5516419187ddb2a199430b277696c2c}} 
+\index{WTLCertificateInfo.h@{WTLCertificateInfo.h}!nodeID@{nodeID}}
+\index{nodeID@{nodeID}!WTLCertificateInfo.h@{WTLCertificateInfo.h}}
+\doxysubsubsection{\texorpdfstring{nodeID}{nodeID}}
+{\footnotesize\ttfamily NSNumber$\ast$ node\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [assign]}}
+
+The Node ID contained in the DN, if any. Will be non-\/nil for the subject of a valid node operational certificate. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_certificate_info_8h_source_l00083}{83}} of file \mbox{\hyperlink{_w_t_l_certificate_info_8h_source}{WTLCertificate\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_certificate_info_8h_a0837de1cf78412c84b39f35ff476ea0e}\label{_w_t_l_certificate_info_8h_a0837de1cf78412c84b39f35ff476ea0e}} 
+\index{WTLCertificateInfo.h@{WTLCertificateInfo.h}!notAfter@{notAfter}}
+\index{notAfter@{notAfter}!WTLCertificateInfo.h@{WTLCertificateInfo.h}}
+\doxysubsubsection{\texorpdfstring{notAfter}{notAfter}}
+{\footnotesize\ttfamily NSDate$\ast$ not\+After\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_certificate_info_8h_source_l00065}{65}} of file \mbox{\hyperlink{_w_t_l_certificate_info_8h_source}{WTLCertificate\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_certificate_info_8h_a7aa5bf3cce7fc0f402a59fc1cd5699a9}\label{_w_t_l_certificate_info_8h_a7aa5bf3cce7fc0f402a59fc1cd5699a9}} 
+\index{WTLCertificateInfo.h@{WTLCertificateInfo.h}!notBefore@{notBefore}}
+\index{notBefore@{notBefore}!WTLCertificateInfo.h@{WTLCertificateInfo.h}}
+\doxysubsubsection{\texorpdfstring{notBefore}{notBefore}}
+{\footnotesize\ttfamily NSDate$\ast$ not\+Before\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_certificate_info_8h_source_l00064}{64}} of file \mbox{\hyperlink{_w_t_l_certificate_info_8h_source}{WTLCertificate\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_certificate_info_8h_a2b561bd9de267d22acc860f5d0e4d536}\label{_w_t_l_certificate_info_8h_a2b561bd9de267d22acc860f5d0e4d536}} 
+\index{WTLCertificateInfo.h@{WTLCertificateInfo.h}!rootCACertificateID@{rootCACertificateID}}
+\index{rootCACertificateID@{rootCACertificateID}!WTLCertificateInfo.h@{WTLCertificateInfo.h}}
+\doxysubsubsection{\texorpdfstring{rootCACertificateID}{rootCACertificateID}}
+{\footnotesize\ttfamily NSNumber$\ast$ root\+CACertificate\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [assign]}}
+
+The {\ttfamily RCAC} ID contained in the DN, if any. Will be non-\/nil for the subject of a valid root certificate. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_certificate_info_8h_source_l00096}{96}} of file \mbox{\hyperlink{_w_t_l_certificate_info_8h_source}{WTLCertificate\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_certificate_info_8h_a04b5ff3b09bae25f6a2b5b1cc045d52b}\label{_w_t_l_certificate_info_8h_a04b5ff3b09bae25f6a2b5b1cc045d52b}} 
+\index{WTLCertificateInfo.h@{WTLCertificateInfo.h}!subject@{subject}}
+\index{subject@{subject}!WTLCertificateInfo.h@{WTLCertificateInfo.h}}
+\doxysubsubsection{\texorpdfstring{subject}{subject}}
+{\footnotesize\ttfamily WTLDistinguished\+Name\+Info$\ast$ subject\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [assign]}}
+
+The Distinguished Name of the entity represented by the certificate. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_certificate_info_8h_source_l00062}{62}} of file \mbox{\hyperlink{_w_t_l_certificate_info_8h_source}{WTLCertificate\+Info.\+h}}.
+

@@ -1,0 +1,90 @@
+\hypertarget{protocol_w_t_l_keypair-p}{}\doxysection{\texorpdfstring{$<$}{<}WTLKeypair\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_w_t_l_keypair-p}\index{$<$WTLKeypair$>$@{$<$WTLKeypair$>$}}
+
+
+{\ttfamily \#import $<$WTLKeypair.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}WTLKeypair\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocol_w_t_l_keypair-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(Sec\+Key\+Ref) -\/ \mbox{\hyperlink{protocol_w_t_l_keypair-p_a149421665d0c12b5ea53843f3d6b14ef}{public\+Key}}
+\begin{DoxyCompactList}\small\item\em Return public key for the keypair. \end{DoxyCompactList}\item 
+(NSData $\ast$) -\/ \mbox{\hyperlink{protocol_w_t_l_keypair-p_afca0ec024c2149ab93aaa53dc76e52e6}{sign\+Message\+ECDSA\+\_\+\+RAW\+:}}
+\begin{DoxyCompactList}\small\item\em A function to sign a message using ECDSA. \end{DoxyCompactList}\item 
+(NSData $\ast$) -\/ \mbox{\hyperlink{protocol_w_t_l_keypair-p_acfd9e4e27e13180a46ea629626d6cfc1}{sign\+Message\+ECDSA\+\_\+\+DER\+:}}
+\begin{DoxyCompactList}\small\item\em A function to sign a message using ECDSA. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Copyright (c) 2021 Project CHIP Authors
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb}http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. This protocol is used by the Matter framework to sign messages with a private key and verify signatures with a public key.
+
+The Matter framework may call keypair methods from arbitrary threads and concurrently.
+
+Implementations of the keypair methods must not call into any Matter framework APIs. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_keypair_8h_source_l00033}{33}} of file \mbox{\hyperlink{_w_t_l_keypair_8h_source}{WTLKeypair.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_w_t_l_keypair-p_a149421665d0c12b5ea53843f3d6b14ef}\label{protocol_w_t_l_keypair-p_a149421665d0c12b5ea53843f3d6b14ef}} 
+\index{$<$WTLKeypair$>$@{$<$WTLKeypair$>$}!publicKey@{publicKey}}
+\index{publicKey@{publicKey}!$<$WTLKeypair$>$@{$<$WTLKeypair$>$}}
+\doxysubsubsection{\texorpdfstring{publicKey}{publicKey}}
+{\footnotesize\ttfamily -\/ (Sec\+Key\+Ref) public\+Key \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+
+
+Return public key for the keypair. 
+
+\mbox{\Hypertarget{protocol_w_t_l_keypair-p_acfd9e4e27e13180a46ea629626d6cfc1}\label{protocol_w_t_l_keypair-p_acfd9e4e27e13180a46ea629626d6cfc1}} 
+\index{$<$WTLKeypair$>$@{$<$WTLKeypair$>$}!signMessageECDSA\_DER:@{signMessageECDSA\_DER:}}
+\index{signMessageECDSA\_DER:@{signMessageECDSA\_DER:}!$<$WTLKeypair$>$@{$<$WTLKeypair$>$}}
+\doxysubsubsection{\texorpdfstring{signMessageECDSA\_DER:}{signMessageECDSA\_DER:}}
+{\footnotesize\ttfamily -\/ (NSData $\ast$) sign\+Message\+ECDSA\+\_\+\+DER\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+A function to sign a message using ECDSA. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message that needs to be signed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An ASN.\+1 DER-\/encoded signature (per X9.\+62).
+\end{DoxyReturn}
+Either this selector or sign\+Message\+ECDSA\+\_\+\+RAW must be supported by a \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}. \mbox{\Hypertarget{protocol_w_t_l_keypair-p_afca0ec024c2149ab93aaa53dc76e52e6}\label{protocol_w_t_l_keypair-p_afca0ec024c2149ab93aaa53dc76e52e6}} 
+\index{$<$WTLKeypair$>$@{$<$WTLKeypair$>$}!signMessageECDSA\_RAW:@{signMessageECDSA\_RAW:}}
+\index{signMessageECDSA\_RAW:@{signMessageECDSA\_RAW:}!$<$WTLKeypair$>$@{$<$WTLKeypair$>$}}
+\doxysubsubsection{\texorpdfstring{signMessageECDSA\_RAW:}{signMessageECDSA\_RAW:}}
+{\footnotesize\ttfamily -\/ (NSData $\ast$) sign\+Message\+ECDSA\+\_\+\+RAW\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+A function to sign a message using ECDSA. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Message that needs to be signed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A signature that consists of\+: 2 EC elements (r and s), in raw \texorpdfstring{$<$}{<}r,s\texorpdfstring{$>$}{>} point form (see SEC1). Sometimes also called RFC 4754 form or P1363 form.
+\end{DoxyReturn}
+Either this selector or sign\+Message\+ECDSA\+\_\+\+DER must be supported by a \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}. 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_keypair_8h}{WTLKeypair.\+h}}\end{DoxyCompactItemize}

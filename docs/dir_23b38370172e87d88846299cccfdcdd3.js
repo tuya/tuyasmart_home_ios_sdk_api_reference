@@ -1,4 +1,0 @@
-var dir_23b38370172e87d88846299cccfdcdd3 =
-[
-    [ "ThingDeviceEvaluationPlugAPI-umbrella.h", "_thing_device_evaluation_plug_a_p_i_8framework_2_headers_2_thing_device_evaluation_plug_a_p_i-umbrella_8h.html", "_thing_device_evaluation_plug_a_p_i_8framework_2_headers_2_thing_device_evaluation_plug_a_p_i-umbrella_8h" ]
-];

@@ -1,0 +1,274 @@
+\hypertarget{interface_thing_smart_performance_gateway}{}\doxysection{Thing\+Smart\+Performance\+Gateway Class Reference}
+\label{interface_thing_smart_performance_gateway}\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+
+
+为了增强体验，高性能网关在配网完成后将子设备自动绑定到网关下，当存在多个高性能网关时则引导用户配置  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Performance\+Gateway.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Performance\+Gateway\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_performance_gateway}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{interface_thing_smart_performance_gateway_a66de1b8650d51dba22a103b27dda0989}{Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Complete}}) (Thing\+Smart\+Performance\+Gateway\+Action\+Type action\+Type, NSDictionary $\ast$\+\_\+\+\_\+nullable user\+Info)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{interface_thing_smart_performance_gateway_a66de1b8650d51dba22a103b27dda0989}{Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Complete}}) (Thing\+Smart\+Performance\+Gateway\+Action\+Type action\+Type, NSDictionary $\ast$\+\_\+\+\_\+nullable user\+Info)
+\end{DoxyCompactItemize}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_performance_gateway_abbee822c346687a3a06f0d21e1fe3f0b}{should\+Bind\+For\+Success\+Activator\+Devices\+:}}
+\item 
+(typedef) -\/ \mbox{\hyperlink{interface_thing_smart_performance_gateway_a9a5c4cec8fafb91621e85453164b534e}{NS\+\_\+\+ENUM}}
+\item 
+(typedef) -\/ \mbox{\hyperlink{interface_thing_smart_performance_gateway_aff866cf4fdebd08f9ac7e93dd8a78d81}{NS\+\_\+\+ENUM}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_performance_gateway_a5f0465ac42632d0a566779136ccc26cc}{auto\+Bind\+Room\+Devices\+With\+Room\+ID\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_performance_gateway_a84823aeb339994d94eaf968bb9039901}{auto\+Binding\+Gateway\+:sub\+Device\+IDList\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em 与 {\ttfamily \mbox{\hyperlink{interface_thing_smart_performance_gateway_service}{Thing\+Smart\+Performance\+Gateway\+Service}}} 同名方法一致 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_performance_gateway_abbee822c346687a3a06f0d21e1fe3f0b}{should\+Bind\+For\+Success\+Activator\+Devices\+:}}
+\item 
+(typedef) -\/ \mbox{\hyperlink{interface_thing_smart_performance_gateway_a9a5c4cec8fafb91621e85453164b534e}{NS\+\_\+\+ENUM}}
+\item 
+(typedef) -\/ \mbox{\hyperlink{interface_thing_smart_performance_gateway_aff866cf4fdebd08f9ac7e93dd8a78d81}{NS\+\_\+\+ENUM}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_performance_gateway_a5f0465ac42632d0a566779136ccc26cc}{auto\+Bind\+Room\+Devices\+With\+Room\+ID\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_performance_gateway_a84823aeb339994d94eaf968bb9039901}{auto\+Binding\+Gateway\+:sub\+Device\+IDList\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em 与 {\ttfamily \mbox{\hyperlink{interface_thing_smart_performance_gateway_service}{Thing\+Smart\+Performance\+Gateway\+Service}}} 同名方法一致 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$const \mbox{\hyperlink{interface_thing_smart_performance_gateway_a1ebd028ca977e7f385c872d0e157b341}{Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Error\+Key}}
+\begin{DoxyCompactList}\small\item\em value\+:NSError$\ast$ \+\_\+\+\_\+nullable 错误信息 \end{DoxyCompactList}\item 
+NSString $\ast$const \mbox{\hyperlink{interface_thing_smart_performance_gateway_a47d388f18eede711c428a55965417263}{Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Gateway\+Property\+Key}}
+\begin{DoxyCompactList}\small\item\em value\+:Thing\+Smart\+Performance\+Gateway\+Property$\ast$ \+\_\+\+\_\+nonnull 网关属性 \end{DoxyCompactList}\item 
+NSString $\ast$const \mbox{\hyperlink{interface_thing_smart_performance_gateway_acdecf44402b3958875a66a128158116e}{Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Sub\+Device\+IDList\+Key}}
+\begin{DoxyCompactList}\small\item\em value\+:\mbox{\hyperlink{interface_n_s_array}{NSArray$<$\+NSString $\ast$$>$}} $\ast$ \+\_\+\+\_\+nonnull 子设备id列表 \end{DoxyCompactList}\item 
+NSString $\ast$const \mbox{\hyperlink{interface_thing_smart_performance_gateway_a5c7bdc0de260f1bdc850494f37276a93}{Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Gateway\+Mini\+App\+URLKey}}
+\begin{DoxyCompactList}\small\item\em value\+:NSString$\ast$ \+\_\+\+\_\+nonnull mini\+App URL 地址 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+为了增强体验，高性能网关在配网完成后将子设备自动绑定到网关下，当存在多个高性能网关时则引导用户配置 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source_l00017}{17}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source}{Thing\+Smart\+Performance\+Gateway.\+h}}.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_a66de1b8650d51dba22a103b27dda0989}\label{interface_thing_smart_performance_gateway_a66de1b8650d51dba22a103b27dda0989}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!ThingSmartPerformanceGatewayAutoBindComplete@{ThingSmartPerformanceGatewayAutoBindComplete}}
+\index{ThingSmartPerformanceGatewayAutoBindComplete@{ThingSmartPerformanceGatewayAutoBindComplete}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{ThingSmartPerformanceGatewayAutoBindComplete}{ThingSmartPerformanceGatewayAutoBindComplete}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (typedef void($^\wedge$ Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Complete) (Thing\+Smart\+Performance\+Gateway\+Action\+Type action\+Type, NSDictionary $\ast$\+\_\+\+\_\+nullable user\+Info))}
+
+获取网关属性
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item action\+Type\+:{\ttfamily Thing\+Smart\+Performance\+Gateway\+Action\+Type}
+\item user\+Info\+: 额外信息 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Error\+Key} , {\ttfamily action\+Type} 为 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Action\+Type\+Idle} 时可以处理 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Gateway\+Property\+Key} {\ttfamily action\+Type} 为 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Action\+Type\+Auto} 时可以处理 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Sub\+Device\+IDList\+Key} {\ttfamily action\+Type} 为 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Action\+Type\+Auto} 时可以处理 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Gateway\+Mini\+App\+URLKey}, {\ttfamily action\+Type} 为 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Action\+Type\+Manual} 时可以处理 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source_l00059}{59}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source}{Thing\+Smart\+Performance\+Gateway.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_a66de1b8650d51dba22a103b27dda0989}\label{interface_thing_smart_performance_gateway_a66de1b8650d51dba22a103b27dda0989}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!ThingSmartPerformanceGatewayAutoBindComplete@{ThingSmartPerformanceGatewayAutoBindComplete}}
+\index{ThingSmartPerformanceGatewayAutoBindComplete@{ThingSmartPerformanceGatewayAutoBindComplete}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{ThingSmartPerformanceGatewayAutoBindComplete}{ThingSmartPerformanceGatewayAutoBindComplete}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (typedef void($^\wedge$ Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Complete) (Thing\+Smart\+Performance\+Gateway\+Action\+Type action\+Type, NSDictionary $\ast$\+\_\+\+\_\+nullable user\+Info))}
+
+获取网关属性
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item action\+Type\+:{\ttfamily Thing\+Smart\+Performance\+Gateway\+Action\+Type}
+\item user\+Info\+: 额外信息 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Error\+Key} , {\ttfamily action\+Type} 为 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Action\+Type\+Idle} 时可以处理 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Gateway\+Property\+Key} {\ttfamily action\+Type} 为 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Action\+Type\+Auto} 时可以处理 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Sub\+Device\+IDList\+Key} {\ttfamily action\+Type} 为 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Action\+Type\+Auto} 时可以处理 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Gateway\+Mini\+App\+URLKey}, {\ttfamily action\+Type} 为 {\ttfamily Thing\+Smart\+Performance\+Gateway\+Action\+Type\+Manual} 时可以处理 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source_l00059}{59}} of file \mbox{\hyperlink{_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source}{Thing\+Smart\+Performance\+Gateway.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_a84823aeb339994d94eaf968bb9039901}\label{interface_thing_smart_performance_gateway_a84823aeb339994d94eaf968bb9039901}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!autoBindingGateway:subDeviceIDList:success:failure:@{autoBindingGateway:subDeviceIDList:success:failure:}}
+\index{autoBindingGateway:subDeviceIDList:success:failure:@{autoBindingGateway:subDeviceIDList:success:failure:}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{autoBindingGateway:subDeviceIDList:success:failure:}{autoBindingGateway:subDeviceIDList:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) auto\+Binding\+Gateway\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_performance_gateway_property}{Thing\+Smart\+Performance\+Gateway\+Property}} $\ast$)}]{gateway\+Property }\item[{sub\+Device\+IDList\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{sub\+Device\+IDList }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a69c1e753c6b7729845fff29427d408b8}{Thing\+Success\+BOOL}} \+\_\+\+\_\+nullable)}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}} \+\_\+\+\_\+nullable)}]{failure }\end{DoxyParamCaption}}
+
+
+
+与 {\ttfamily \mbox{\hyperlink{interface_thing_smart_performance_gateway_service}{Thing\+Smart\+Performance\+Gateway\+Service}}} 同名方法一致 
+
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_a84823aeb339994d94eaf968bb9039901}\label{interface_thing_smart_performance_gateway_a84823aeb339994d94eaf968bb9039901}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!autoBindingGateway:subDeviceIDList:success:failure:@{autoBindingGateway:subDeviceIDList:success:failure:}}
+\index{autoBindingGateway:subDeviceIDList:success:failure:@{autoBindingGateway:subDeviceIDList:success:failure:}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{autoBindingGateway:subDeviceIDList:success:failure:}{autoBindingGateway:subDeviceIDList:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) auto\+Binding\+Gateway\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_performance_gateway_property}{Thing\+Smart\+Performance\+Gateway\+Property}} $\ast$)}]{gateway\+Property }\item[{sub\+Device\+IDList\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{sub\+Device\+IDList }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a69c1e753c6b7729845fff29427d408b8}{Thing\+Success\+BOOL}} \+\_\+\+\_\+nullable)}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}} \+\_\+\+\_\+nullable)}]{failure }\end{DoxyParamCaption}}
+
+
+
+与 {\ttfamily \mbox{\hyperlink{interface_thing_smart_performance_gateway_service}{Thing\+Smart\+Performance\+Gateway\+Service}}} 同名方法一致 
+
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_a5f0465ac42632d0a566779136ccc26cc}\label{interface_thing_smart_performance_gateway_a5f0465ac42632d0a566779136ccc26cc}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!autoBindRoomDevicesWithRoomID:complete:@{autoBindRoomDevicesWithRoomID:complete:}}
+\index{autoBindRoomDevicesWithRoomID:complete:@{autoBindRoomDevicesWithRoomID:complete:}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{autoBindRoomDevicesWithRoomID:complete:}{autoBindRoomDevicesWithRoomID:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) auto\+Bind\+Room\+Devices\+With\+Room\+ID\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_activator_definition_8h_a3fbbf66694ba96d04a9c35b0735dce65}{Thing\+Smart\+Home\+ID}})}]{home\+ID }\item[{complete\+:(\mbox{\hyperlink{interface_thing_smart_performance_gateway_a66de1b8650d51dba22a103b27dda0989}{Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Complete}})}]{complete }\end{DoxyParamCaption}}
+
+将房间下的网关与子设备进行自动绑定
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item home\+ID\+: 房间id
+\item complete\+: 会有三种结果，1. 无法进行自动绑定 2. 满足条件自动由云端完成绑定 3. 跳转至手动绑定页面完成绑定 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_performance_gateway_a5f0465ac42632d0a566779136ccc26cc}\label{interface_thing_smart_performance_gateway_a5f0465ac42632d0a566779136ccc26cc}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!autoBindRoomDevicesWithRoomID:complete:@{autoBindRoomDevicesWithRoomID:complete:}}
+\index{autoBindRoomDevicesWithRoomID:complete:@{autoBindRoomDevicesWithRoomID:complete:}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{autoBindRoomDevicesWithRoomID:complete:}{autoBindRoomDevicesWithRoomID:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) auto\+Bind\+Room\+Devices\+With\+Room\+ID\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_activator_definition_8h_a3fbbf66694ba96d04a9c35b0735dce65}{Thing\+Smart\+Home\+ID}})}]{home\+ID }\item[{complete\+:(\mbox{\hyperlink{interface_thing_smart_performance_gateway_a66de1b8650d51dba22a103b27dda0989}{Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Complete}})}]{complete }\end{DoxyParamCaption}}
+
+将房间下的网关与子设备进行自动绑定
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item home\+ID\+: 房间id
+\item complete\+: 会有三种结果，1. 无法进行自动绑定 2. 满足条件自动由云端完成绑定 3. 跳转至手动绑定页面完成绑定 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_performance_gateway_a9a5c4cec8fafb91621e85453164b534e}\label{interface_thing_smart_performance_gateway_a9a5c4cec8fafb91621e85453164b534e}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM}{NS\_ENUM}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (typedef) NS\+\_\+\+ENUM \begin{DoxyParamCaption}\item[{(NSInteger)}]{ }\item[{(Thing\+Smart\+Performance\+Gateway\+Action\+Type)}]{ }\end{DoxyParamCaption}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source_l00025}{25}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source}{Thing\+Smart\+Performance\+Gateway.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_a9a5c4cec8fafb91621e85453164b534e}\label{interface_thing_smart_performance_gateway_a9a5c4cec8fafb91621e85453164b534e}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM}{NS\_ENUM}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (typedef) NS\+\_\+\+ENUM \begin{DoxyParamCaption}\item[{(NSInteger)}]{ }\item[{(Thing\+Smart\+Performance\+Gateway\+Action\+Type)}]{ }\end{DoxyParamCaption}}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source_l00025}{25}} of file \mbox{\hyperlink{_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source}{Thing\+Smart\+Performance\+Gateway.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_aff866cf4fdebd08f9ac7e93dd8a78d81}\label{interface_thing_smart_performance_gateway_aff866cf4fdebd08f9ac7e93dd8a78d81}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM}{NS\_ENUM}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (typedef) NS\+\_\+\+ENUM \begin{DoxyParamCaption}\item[{(NSInteger)}]{ }\item[{(Thing\+Smart\+Performance\+Gateway\+Action\+Type\+Error\+Code)}]{ }\end{DoxyParamCaption}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source_l00031}{31}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source}{Thing\+Smart\+Performance\+Gateway.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_aff866cf4fdebd08f9ac7e93dd8a78d81}\label{interface_thing_smart_performance_gateway_aff866cf4fdebd08f9ac7e93dd8a78d81}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM}{NS\_ENUM}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (typedef) NS\+\_\+\+ENUM \begin{DoxyParamCaption}\item[{(NSInteger)}]{ }\item[{(Thing\+Smart\+Performance\+Gateway\+Action\+Type\+Error\+Code)}]{ }\end{DoxyParamCaption}}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source_l00031}{31}} of file \mbox{\hyperlink{_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source}{Thing\+Smart\+Performance\+Gateway.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_abbee822c346687a3a06f0d21e1fe3f0b}\label{interface_thing_smart_performance_gateway_abbee822c346687a3a06f0d21e1fe3f0b}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!shouldBindForSuccessActivatorDevices:@{shouldBindForSuccessActivatorDevices:}}
+\index{shouldBindForSuccessActivatorDevices:@{shouldBindForSuccessActivatorDevices:}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{shouldBindForSuccessActivatorDevices:}{shouldBindForSuccessActivatorDevices:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) should\+Bind\+For\+Success\+Activator\+Devices\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$)}]{success\+Activator\+Devices }\end{DoxyParamCaption}}
+
+是否存在可以自动绑定的网关或子设备
+\begin{DoxyItemize}
+\item Parameter devices\+: 配网成功的设备 
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_performance_gateway_abbee822c346687a3a06f0d21e1fe3f0b}\label{interface_thing_smart_performance_gateway_abbee822c346687a3a06f0d21e1fe3f0b}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!shouldBindForSuccessActivatorDevices:@{shouldBindForSuccessActivatorDevices:}}
+\index{shouldBindForSuccessActivatorDevices:@{shouldBindForSuccessActivatorDevices:}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{shouldBindForSuccessActivatorDevices:}{shouldBindForSuccessActivatorDevices:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) should\+Bind\+For\+Success\+Activator\+Devices\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$)}]{success\+Activator\+Devices }\end{DoxyParamCaption}}
+
+是否存在可以自动绑定的网关或子设备
+\begin{DoxyItemize}
+\item Parameter devices\+: 配网成功的设备 
+\end{DoxyItemize}
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_a1ebd028ca977e7f385c872d0e157b341}\label{interface_thing_smart_performance_gateway_a1ebd028ca977e7f385c872d0e157b341}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!ThingSmartPerformanceGatewayAutoBindErrorKey@{ThingSmartPerformanceGatewayAutoBindErrorKey}}
+\index{ThingSmartPerformanceGatewayAutoBindErrorKey@{ThingSmartPerformanceGatewayAutoBindErrorKey}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{ThingSmartPerformanceGatewayAutoBindErrorKey}{ThingSmartPerformanceGatewayAutoBindErrorKey}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$const) Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Error\+Key}
+
+
+
+value\+:NSError$\ast$ \+\_\+\+\_\+nullable 错误信息 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source_l00043}{43}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source}{Thing\+Smart\+Performance\+Gateway.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_a5c7bdc0de260f1bdc850494f37276a93}\label{interface_thing_smart_performance_gateway_a5c7bdc0de260f1bdc850494f37276a93}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!ThingSmartPerformanceGatewayAutoBindGatewayMiniAppURLKey@{ThingSmartPerformanceGatewayAutoBindGatewayMiniAppURLKey}}
+\index{ThingSmartPerformanceGatewayAutoBindGatewayMiniAppURLKey@{ThingSmartPerformanceGatewayAutoBindGatewayMiniAppURLKey}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{ThingSmartPerformanceGatewayAutoBindGatewayMiniAppURLKey}{ThingSmartPerformanceGatewayAutoBindGatewayMiniAppURLKey}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$const) Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Gateway\+Mini\+App\+URLKey}
+
+
+
+value\+:NSString$\ast$ \+\_\+\+\_\+nonnull mini\+App URL 地址 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source_l00049}{49}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source}{Thing\+Smart\+Performance\+Gateway.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_a47d388f18eede711c428a55965417263}\label{interface_thing_smart_performance_gateway_a47d388f18eede711c428a55965417263}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!ThingSmartPerformanceGatewayAutoBindGatewayPropertyKey@{ThingSmartPerformanceGatewayAutoBindGatewayPropertyKey}}
+\index{ThingSmartPerformanceGatewayAutoBindGatewayPropertyKey@{ThingSmartPerformanceGatewayAutoBindGatewayPropertyKey}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{ThingSmartPerformanceGatewayAutoBindGatewayPropertyKey}{ThingSmartPerformanceGatewayAutoBindGatewayPropertyKey}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$const) Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Gateway\+Property\+Key}
+
+
+
+value\+:Thing\+Smart\+Performance\+Gateway\+Property$\ast$ \+\_\+\+\_\+nonnull 网关属性 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source_l00045}{45}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source}{Thing\+Smart\+Performance\+Gateway.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_performance_gateway_acdecf44402b3958875a66a128158116e}\label{interface_thing_smart_performance_gateway_acdecf44402b3958875a66a128158116e}} 
+\index{ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}!ThingSmartPerformanceGatewayAutoBindSubDeviceIDListKey@{ThingSmartPerformanceGatewayAutoBindSubDeviceIDListKey}}
+\index{ThingSmartPerformanceGatewayAutoBindSubDeviceIDListKey@{ThingSmartPerformanceGatewayAutoBindSubDeviceIDListKey}!ThingSmartPerformanceGateway@{ThingSmartPerformanceGateway}}
+\doxysubsubsection{\texorpdfstring{ThingSmartPerformanceGatewayAutoBindSubDeviceIDListKey}{ThingSmartPerformanceGatewayAutoBindSubDeviceIDListKey}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$const) Thing\+Smart\+Performance\+Gateway\+Auto\+Bind\+Sub\+Device\+IDList\+Key}
+
+
+
+value\+:\mbox{\hyperlink{interface_n_s_array}{NSArray$<$\+NSString $\ast$$>$}} $\ast$ \+\_\+\+\_\+nonnull 子设备id列表 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source_l00047}{47}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h_source}{Thing\+Smart\+Performance\+Gateway.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Activator\+Kit/\+Build/\+Thing\+Smart\+Activator\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Activator\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h}{Thing\+Smart\+Performance\+Gateway.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Activator\+Kit/\+Build/\+Thing\+Smart\+Activator\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Activator\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_activator_kit_8framework_2_headers_2_thing_smart_performance_gateway_8h}{Thing\+Smart\+Performance\+Gateway.\+h}}\end{DoxyCompactItemize}

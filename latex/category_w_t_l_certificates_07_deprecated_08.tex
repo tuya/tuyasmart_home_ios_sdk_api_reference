@@ -1,0 +1,72 @@
+\hypertarget{category_w_t_l_certificates_07_deprecated_08}{}\doxysection{WTLCertificates(Deprecated) Category Reference}
+\label{category_w_t_l_certificates_07_deprecated_08}\index{WTLCertificates(Deprecated)@{WTLCertificates(Deprecated)}}
+
+
+{\ttfamily \#import $<$WTLCertificates.\+h$>$}
+
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(nullable NSData $\ast$) + \mbox{\hyperlink{category_w_t_l_certificates_07_deprecated_08_a59de84b5e9bc4b7eaf1deca94067d727}{generate\+Root\+Certificate\+:issuer\+Id\+:fabric\+Id\+:error\+:}}
+\item 
+(nullable NSData $\ast$) + \mbox{\hyperlink{category_w_t_l_certificates_07_deprecated_08_a3629d96c7a67e3af19988371ed4512a0}{generate\+Intermediate\+Certificate\+:root\+Certificate\+:intermediate\+Public\+Key\+:issuer\+Id\+:fabric\+Id\+:error\+:}}
+\item 
+(nullable NSData $\ast$) + \mbox{\hyperlink{category_w_t_l_certificates_07_deprecated_08_ae9480597fdac7c7b16a107b1319e2661}{generate\+Operational\+Certificate\+:signing\+Certificate\+:operational\+Public\+Key\+:fabric\+Id\+:node\+Id\+:case\+Authenticated\+Tags\+:error\+:}}
+\item 
+(nullable NSData $\ast$) + \mbox{\hyperlink{category_w_t_l_certificates_07_deprecated_08_a06d1fd682213eb6a86f3bbbcdc61a1c2}{generate\+Certificate\+Signing\+Request\+:error\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_certificates_8h_source_l00174}{174}} of file \mbox{\hyperlink{_w_t_l_certificates_8h_source}{WTLCertificates.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{category_w_t_l_certificates_07_deprecated_08_a06d1fd682213eb6a86f3bbbcdc61a1c2}\label{category_w_t_l_certificates_07_deprecated_08_a06d1fd682213eb6a86f3bbbcdc61a1c2}} 
+\index{WTLCertificates(Deprecated)@{WTLCertificates(Deprecated)}!generateCertificateSigningRequest:error:@{generateCertificateSigningRequest:error:}}
+\index{generateCertificateSigningRequest:error:@{generateCertificateSigningRequest:error:}!WTLCertificates(Deprecated)@{WTLCertificates(Deprecated)}}
+\doxysubsubsection{\texorpdfstring{generateCertificateSigningRequest:error:}{generateCertificateSigningRequest:error:}}
+{\footnotesize\ttfamily + (nullable NSData $\ast$) generate\+Certificate\+Signing\+Request\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{keypair }\item[{error\+:(\char`\"{}Please use create\+Certificate\+Signing\+Request\+:error\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Extends class \mbox{\hyperlink{interface_w_t_l_certificates_a06d1fd682213eb6a86f3bbbcdc61a1c2}{WTLCertificates}}.
+
+\mbox{\Hypertarget{category_w_t_l_certificates_07_deprecated_08_a3629d96c7a67e3af19988371ed4512a0}\label{category_w_t_l_certificates_07_deprecated_08_a3629d96c7a67e3af19988371ed4512a0}} 
+\index{WTLCertificates(Deprecated)@{WTLCertificates(Deprecated)}!generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:@{generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:}}
+\index{generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:@{generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:}!WTLCertificates(Deprecated)@{WTLCertificates(Deprecated)}}
+\doxysubsubsection{\texorpdfstring{generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:}{generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:}}
+{\footnotesize\ttfamily + (nullable NSData $\ast$) generate\+Intermediate\+Certificate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{root\+Keypair }\item[{root\+Certificate\+:(NSData $\ast$)}]{root\+Certificate }\item[{intermediate\+Public\+Key\+:(Sec\+Key\+Ref)}]{intermediate\+Public\+Key }\item[{issuer\+Id\+:(nullable NSNumber $\ast$)}]{issuer\+Id }\item[{fabric\+Id\+:(nullable NSNumber $\ast$)}]{fabric\+Id }\item[{error\+:(\char`\"{}Please use create\+Intermediate\+Certificate\+:root\+Certificate\+:intermediate\+Public\+Key\+:issuer\+ID\+:fabric\+ID\+:error\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Extends class \mbox{\hyperlink{interface_w_t_l_certificates_a3629d96c7a67e3af19988371ed4512a0}{WTLCertificates}}.
+
+\mbox{\Hypertarget{category_w_t_l_certificates_07_deprecated_08_ae9480597fdac7c7b16a107b1319e2661}\label{category_w_t_l_certificates_07_deprecated_08_ae9480597fdac7c7b16a107b1319e2661}} 
+\index{WTLCertificates(Deprecated)@{WTLCertificates(Deprecated)}!generateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:@{generateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:}}
+\index{generateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:@{generateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:}!WTLCertificates(Deprecated)@{WTLCertificates(Deprecated)}}
+\doxysubsubsection{\texorpdfstring{generateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:}{generateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:}}
+{\footnotesize\ttfamily + (nullable NSData $\ast$) generate\+Operational\+Certificate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{signing\+Keypair }\item[{signing\+Certificate\+:(NSData $\ast$)}]{signing\+Certificate }\item[{operational\+Public\+Key\+:(Sec\+Key\+Ref)}]{operational\+Public\+Key }\item[{fabric\+Id\+:(NSNumber $\ast$)}]{fabric\+Id }\item[{node\+Id\+:(NSNumber $\ast$)}]{node\+Id }\item[{case\+Authenticated\+Tags\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSNumber $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{case\+Authenticated\+Tags }\item[{error\+:(\char`\"{}Plase use \char`\"{} \char`\"{}create\+Operational\+Certificate\+:signing\+Certificate\+:operational\+Public\+Key\+:fabric\+ID\+:node\+ID\+:case\+Authenticated\+Tags\+:error\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Extends class \mbox{\hyperlink{interface_w_t_l_certificates_ae9480597fdac7c7b16a107b1319e2661}{WTLCertificates}}.
+
+\mbox{\Hypertarget{category_w_t_l_certificates_07_deprecated_08_a59de84b5e9bc4b7eaf1deca94067d727}\label{category_w_t_l_certificates_07_deprecated_08_a59de84b5e9bc4b7eaf1deca94067d727}} 
+\index{WTLCertificates(Deprecated)@{WTLCertificates(Deprecated)}!generateRootCertificate:issuerId:fabricId:error:@{generateRootCertificate:issuerId:fabricId:error:}}
+\index{generateRootCertificate:issuerId:fabricId:error:@{generateRootCertificate:issuerId:fabricId:error:}!WTLCertificates(Deprecated)@{WTLCertificates(Deprecated)}}
+\doxysubsubsection{\texorpdfstring{generateRootCertificate:issuerId:fabricId:error:}{generateRootCertificate:issuerId:fabricId:error:}}
+{\footnotesize\ttfamily + (nullable NSData $\ast$) generate\+Root\+Certificate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{keypair }\item[{issuer\+Id\+:(nullable NSNumber $\ast$)}]{issuer\+Id }\item[{fabric\+Id\+:(nullable NSNumber $\ast$)}]{fabric\+Id }\item[{error\+:(\char`\"{}Please use create\+Root\+Certificate\+:issuer\+ID\+:fabric\+ID\+:error\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Extends class \mbox{\hyperlink{interface_w_t_l_certificates_a59de84b5e9bc4b7eaf1deca94067d727}{WTLCertificates}}.
+
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_certificates_8h}{WTLCertificates.\+h}}\end{DoxyCompactItemize}

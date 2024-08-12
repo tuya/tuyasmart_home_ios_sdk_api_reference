@@ -1,0 +1,217 @@
+\hypertarget{protocol_thing_smart_sweeper_device_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+Sweeper\+Device\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_sweeper_device_delegate-p}\index{$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Sweeper\+Device.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+Sweeper\+Device\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.544303cm]{protocol_thing_smart_sweeper_device_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_sweeper_device_delegate-p_ae8095589a572145ebba50264a5040b9a}{sweeper\+Device\+:did\+Receive\+Stream\+Data\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_sweeper_device_delegate-p_acc3d56e6a3eaf3491eefeba47600ff31}{sweeper\+Device\+:did\+Receive\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_sweeper_device_delegate-p_a20d993c3c29cb8571d102691f46c259a}{sweeper\+Device\+:did\+Receive\+Message\+:download\+Data\+:download\+Error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_sweeper_device_delegate-p_a9b02dd7ed414e25a9bc9f32e91171fc9}{sweeper\+Device\+:type\+:download\+Status\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_sweeper_device_delegate-p_a640e56f58f2bf4f686d5f444f12492e6}{sweeper\+Device\+:type\+:download\+Progress\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_sweeper_device_delegate-p_ae8095589a572145ebba50264a5040b9a}{sweeper\+Device\+:did\+Receive\+Stream\+Data\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_sweeper_device_delegate-p_acc3d56e6a3eaf3491eefeba47600ff31}{sweeper\+Device\+:did\+Receive\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_sweeper_device_delegate-p_a20d993c3c29cb8571d102691f46c259a}{sweeper\+Device\+:did\+Receive\+Message\+:download\+Data\+:download\+Error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_sweeper_device_delegate-p_a9b02dd7ed414e25a9bc9f32e91171fc9}{sweeper\+Device\+:type\+:download\+Status\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_sweeper_device_delegate-p_a640e56f58f2bf4f686d5f444f12492e6}{sweeper\+Device\+:type\+:download\+Progress\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h_source_l00036}{36}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h_source}{Thing\+Smart\+Sweeper\+Device.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_sweeper_device_delegate-p_acc3d56e6a3eaf3491eefeba47600ff31}\label{protocol_thing_smart_sweeper_device_delegate-p_acc3d56e6a3eaf3491eefeba47600ff31}} 
+\index{$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}!sweeperDevice:didReceiveMessage:@{sweeperDevice:didReceiveMessage:}}
+\index{sweeperDevice:didReceiveMessage:@{sweeperDevice:didReceiveMessage:}!$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sweeperDevice:didReceiveMessage:}{sweeperDevice:didReceiveMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sweeper\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_sweeper_device}{Thing\+Smart\+Sweeper\+Device}} $\ast$)}]{sweeper\+Device }\item[{did\+Receive\+Message\+:(\mbox{\hyperlink{interface_thing_smart_sweeper_m_q_t_t_message}{Thing\+Smart\+Sweeper\+MQTTMessage}} $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+扫地机数据通道的文件信息回调
+
+
+\begin{DoxyParams}{Parameters}
+{\em sweeper\+Device} & instance \\
+\hline
+{\em message} & MQTT消息体 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_sweeper_device_delegate-p_acc3d56e6a3eaf3491eefeba47600ff31}\label{protocol_thing_smart_sweeper_device_delegate-p_acc3d56e6a3eaf3491eefeba47600ff31}} 
+\index{$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}!sweeperDevice:didReceiveMessage:@{sweeperDevice:didReceiveMessage:}}
+\index{sweeperDevice:didReceiveMessage:@{sweeperDevice:didReceiveMessage:}!$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sweeperDevice:didReceiveMessage:}{sweeperDevice:didReceiveMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sweeper\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_sweeper_device}{Thing\+Smart\+Sweeper\+Device}} $\ast$)}]{sweeper\+Device }\item[{did\+Receive\+Message\+:(\mbox{\hyperlink{interface_thing_smart_sweeper_m_q_t_t_message}{Thing\+Smart\+Sweeper\+MQTTMessage}} $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+扫地机数据通道的文件信息回调
+
+
+\begin{DoxyParams}{Parameters}
+{\em sweeper\+Device} & instance \\
+\hline
+{\em message} & MQTT消息体 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_sweeper_device_delegate-p_a20d993c3c29cb8571d102691f46c259a}\label{protocol_thing_smart_sweeper_device_delegate-p_a20d993c3c29cb8571d102691f46c259a}} 
+\index{$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}!sweeperDevice:didReceiveMessage:downloadData:downloadError:@{sweeperDevice:didReceiveMessage:downloadData:downloadError:}}
+\index{sweeperDevice:didReceiveMessage:downloadData:downloadError:@{sweeperDevice:didReceiveMessage:downloadData:downloadError:}!$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sweeperDevice:didReceiveMessage:downloadData:downloadError:}{sweeperDevice:didReceiveMessage:downloadData:downloadError:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sweeper\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_sweeper_device}{Thing\+Smart\+Sweeper\+Device}} $\ast$)}]{sweeper\+Device }\item[{did\+Receive\+Message\+:(\mbox{\hyperlink{interface_thing_smart_sweeper_m_q_t_t_message}{Thing\+Smart\+Sweeper\+MQTTMessage}} $\ast$)}]{message }\item[{download\+Data\+:(nullable NSData $\ast$)}]{data }\item[{download\+Error\+:(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+扫地机数据通道的文件信息回调 (当 should\+Auto\+Download\+Data 的值为 True 时，\+SDK 会下载文件内容)
+
+
+\begin{DoxyParams}{Parameters}
+{\em sweeper\+Device} & instance \\
+\hline
+{\em message} & MQTT消息体 \\
+\hline
+{\em data} & 文件下载后的二进制数据 \\
+\hline
+{\em error} & 下载文件的错误 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_sweeper_device_delegate-p_a20d993c3c29cb8571d102691f46c259a}\label{protocol_thing_smart_sweeper_device_delegate-p_a20d993c3c29cb8571d102691f46c259a}} 
+\index{$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}!sweeperDevice:didReceiveMessage:downloadData:downloadError:@{sweeperDevice:didReceiveMessage:downloadData:downloadError:}}
+\index{sweeperDevice:didReceiveMessage:downloadData:downloadError:@{sweeperDevice:didReceiveMessage:downloadData:downloadError:}!$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sweeperDevice:didReceiveMessage:downloadData:downloadError:}{sweeperDevice:didReceiveMessage:downloadData:downloadError:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sweeper\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_sweeper_device}{Thing\+Smart\+Sweeper\+Device}} $\ast$)}]{sweeper\+Device }\item[{did\+Receive\+Message\+:(\mbox{\hyperlink{interface_thing_smart_sweeper_m_q_t_t_message}{Thing\+Smart\+Sweeper\+MQTTMessage}} $\ast$)}]{message }\item[{download\+Data\+:(nullable NSData $\ast$)}]{data }\item[{download\+Error\+:(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+扫地机数据通道的文件信息回调 (当 should\+Auto\+Download\+Data 的值为 True 时，\+SDK 会下载文件内容)
+
+
+\begin{DoxyParams}{Parameters}
+{\em sweeper\+Device} & instance \\
+\hline
+{\em message} & MQTT消息体 \\
+\hline
+{\em data} & 文件下载后的二进制数据 \\
+\hline
+{\em error} & 下载文件的错误 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_sweeper_device_delegate-p_ae8095589a572145ebba50264a5040b9a}\label{protocol_thing_smart_sweeper_device_delegate-p_ae8095589a572145ebba50264a5040b9a}} 
+\index{$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}!sweeperDevice:didReceiveStreamData:@{sweeperDevice:didReceiveStreamData:}}
+\index{sweeperDevice:didReceiveStreamData:@{sweeperDevice:didReceiveStreamData:}!$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sweeperDevice:didReceiveStreamData:}{sweeperDevice:didReceiveStreamData:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sweeper\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_sweeper_device}{Thing\+Smart\+Sweeper\+Device}} $\ast$)}]{sweeper\+Device }\item[{did\+Receive\+Stream\+Data\+:(NSData $\ast$)}]{data }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+When received device stream data, the delegate will execute. 扫地机数据通道的流数据回调
+
+
+\begin{DoxyParams}{Parameters}
+{\em sweeper\+Device} & instance \\
+\hline
+{\em data} & Received Data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_sweeper_device_delegate-p_ae8095589a572145ebba50264a5040b9a}\label{protocol_thing_smart_sweeper_device_delegate-p_ae8095589a572145ebba50264a5040b9a}} 
+\index{$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}!sweeperDevice:didReceiveStreamData:@{sweeperDevice:didReceiveStreamData:}}
+\index{sweeperDevice:didReceiveStreamData:@{sweeperDevice:didReceiveStreamData:}!$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sweeperDevice:didReceiveStreamData:}{sweeperDevice:didReceiveStreamData:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sweeper\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_sweeper_device}{Thing\+Smart\+Sweeper\+Device}} $\ast$)}]{sweeper\+Device }\item[{did\+Receive\+Stream\+Data\+:(NSData $\ast$)}]{data }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+When received device stream data, the delegate will execute. 扫地机数据通道的流数据回调
+
+
+\begin{DoxyParams}{Parameters}
+{\em sweeper\+Device} & instance \\
+\hline
+{\em data} & Received Data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_sweeper_device_delegate-p_a640e56f58f2bf4f686d5f444f12492e6}\label{protocol_thing_smart_sweeper_device_delegate-p_a640e56f58f2bf4f686d5f444f12492e6}} 
+\index{$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}!sweeperDevice:type:downloadProgress:@{sweeperDevice:type:downloadProgress:}}
+\index{sweeperDevice:type:downloadProgress:@{sweeperDevice:type:downloadProgress:}!$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sweeperDevice:type:downloadProgress:}{sweeperDevice:type:downloadProgress:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sweeper\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_sweeper_device}{Thing\+Smart\+Sweeper\+Device}} $\ast$)}]{sweeper\+Device }\item[{type\+:(NSString $\ast$)}]{type }\item[{download\+Progress\+:(int)}]{progress }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+文件下载进度
+
+
+\begin{DoxyParams}{Parameters}
+{\em sweeper\+Device} & instance \\
+\hline
+{\em type} & 文件类型 \\
+\hline
+{\em progress} & 下载进度 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_sweeper_device_delegate-p_a640e56f58f2bf4f686d5f444f12492e6}\label{protocol_thing_smart_sweeper_device_delegate-p_a640e56f58f2bf4f686d5f444f12492e6}} 
+\index{$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}!sweeperDevice:type:downloadProgress:@{sweeperDevice:type:downloadProgress:}}
+\index{sweeperDevice:type:downloadProgress:@{sweeperDevice:type:downloadProgress:}!$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sweeperDevice:type:downloadProgress:}{sweeperDevice:type:downloadProgress:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sweeper\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_sweeper_device}{Thing\+Smart\+Sweeper\+Device}} $\ast$)}]{sweeper\+Device }\item[{type\+:(NSString $\ast$)}]{type }\item[{download\+Progress\+:(int)}]{progress }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+文件下载进度
+
+
+\begin{DoxyParams}{Parameters}
+{\em sweeper\+Device} & instance \\
+\hline
+{\em type} & 文件类型 \\
+\hline
+{\em progress} & 下载进度 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_sweeper_device_delegate-p_a9b02dd7ed414e25a9bc9f32e91171fc9}\label{protocol_thing_smart_sweeper_device_delegate-p_a9b02dd7ed414e25a9bc9f32e91171fc9}} 
+\index{$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}!sweeperDevice:type:downloadStatus:@{sweeperDevice:type:downloadStatus:}}
+\index{sweeperDevice:type:downloadStatus:@{sweeperDevice:type:downloadStatus:}!$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sweeperDevice:type:downloadStatus:}{sweeperDevice:type:downloadStatus:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sweeper\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_sweeper_device}{Thing\+Smart\+Sweeper\+Device}} $\ast$)}]{sweeper\+Device }\item[{type\+:(NSString $\ast$)}]{type }\item[{download\+Status\+:(Thing\+Smart\+Sweeper\+File\+Download\+Status)}]{status }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+文件下载状态
+
+
+\begin{DoxyParams}{Parameters}
+{\em sweeper\+Device} & instance \\
+\hline
+{\em type} & 文件类型 \\
+\hline
+{\em status} & 状态 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_sweeper_device_delegate-p_a9b02dd7ed414e25a9bc9f32e91171fc9}\label{protocol_thing_smart_sweeper_device_delegate-p_a9b02dd7ed414e25a9bc9f32e91171fc9}} 
+\index{$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}!sweeperDevice:type:downloadStatus:@{sweeperDevice:type:downloadStatus:}}
+\index{sweeperDevice:type:downloadStatus:@{sweeperDevice:type:downloadStatus:}!$<$ThingSmartSweeperDeviceDelegate$>$@{$<$ThingSmartSweeperDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sweeperDevice:type:downloadStatus:}{sweeperDevice:type:downloadStatus:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sweeper\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_sweeper_device}{Thing\+Smart\+Sweeper\+Device}} $\ast$)}]{sweeper\+Device }\item[{type\+:(NSString $\ast$)}]{type }\item[{download\+Status\+:(Thing\+Smart\+Sweeper\+File\+Download\+Status)}]{status }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+文件下载状态
+
+
+\begin{DoxyParams}{Parameters}
+{\em sweeper\+Device} & instance \\
+\hline
+{\em type} & 文件类型 \\
+\hline
+{\em status} & 状态 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Sweeper\+Kit/\+Build/\+Thing\+Smart\+Sweeper\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Sweeper\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h}{Thing\+Smart\+Sweeper\+Device.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Sweeper\+Kit/\+Build/\+Thing\+Smart\+Sweeper\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Sweeper\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h}{Thing\+Smart\+Sweeper\+Device.\+h}}\end{DoxyCompactItemize}

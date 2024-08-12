@@ -1,4 +1,0 @@
-var dir_97cb10ff1e7a5c7633eb0685e57d377c =
-[
-    [ "ThingDevicePhotoLibraryModule-umbrella.h", "ios-x86__64-simulator_2_thing_device_photo_library_module_8framework_2_headers_2_thing_device_photo_library_module-umbrella_8h.html", "ios-x86__64-simulator_2_thing_device_photo_library_module_8framework_2_headers_2_thing_device_photo_library_module-umbrella_8h" ]
-];

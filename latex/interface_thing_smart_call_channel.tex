@@ -1,0 +1,321 @@
+\hypertarget{interface_thing_smart_call_channel}{}\doxysection{Thing\+Smart\+Call\+Channel Class Reference}
+\label{interface_thing_smart_call_channel}\index{ThingSmartCallChannel@{ThingSmartCallChannel}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Call\+Channel.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Call\+Channel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_call_channel}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_ae59d2bbafd7d06fa76be6e001c639046}{launch}}
+\begin{DoxyCompactList}\small\item\em launch services, call firstly. \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_a092a720aa5228fcf4bd835dd15b5d58e}{register\+Call\+Interface\+Manager\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_a65932a9a89a5cb29fa49578996050295}{unregister\+Call\+Interface\+Manager\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_a758f47e298e4d6f06b2f0e2c4d1b05cc}{resubscribe\+MQTTUser\+Topic}}
+\begin{DoxyCompactList}\small\item\em if subscribe failed, can call it. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_ac1a0274cdee63de0fef667d453817e0d}{fetch\+Device\+Call\+Ability\+By\+Dev\+Id\+:completion\+:}}
+\begin{DoxyCompactList}\small\item\em fetch device call ability from cloud, which is dependent on device\textquotesingle{}s ability and product\textquotesingle{}s advanced ability. \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_abf695c00a126a1c461ec6d5031bccb0d}{is\+On\+Calling}}
+\begin{DoxyCompactList}\small\item\em whether app is on calling \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_a864889f17966e8dd3044492cfa235cdd}{can\+Start\+Call}}
+\begin{DoxyCompactList}\small\item\em whether app can start call \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_af6686a0a9e9d0ad38e42333ae7716d6a}{start\+Call\+With\+Target\+Id\+:timeout\+:extra\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em start call \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_acc04e1bb0a632601ab600b7ff63cd9a7}{add\+Delegate\+:}}
+\begin{DoxyCompactList}\small\item\em add delegate \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_a5844a885bd1b899c936620681fe4e940}{remove\+Delegate\+:}}
+\begin{DoxyCompactList}\small\item\em remove delegate \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_a88b88afe1649eeb368bf08d962aee90b}{handle\+Push\+Message\+:}}
+\begin{DoxyCompactList}\small\item\em deal with push/\+Vo\+IP message \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_ae59d2bbafd7d06fa76be6e001c639046}{launch}}
+\begin{DoxyCompactList}\small\item\em launch services, call firstly. \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_a092a720aa5228fcf4bd835dd15b5d58e}{register\+Call\+Interface\+Manager\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_a65932a9a89a5cb29fa49578996050295}{unregister\+Call\+Interface\+Manager\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_a758f47e298e4d6f06b2f0e2c4d1b05cc}{resubscribe\+MQTTUser\+Topic}}
+\begin{DoxyCompactList}\small\item\em if subscribe failed, can call it. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_ac1a0274cdee63de0fef667d453817e0d}{fetch\+Device\+Call\+Ability\+By\+Dev\+Id\+:completion\+:}}
+\begin{DoxyCompactList}\small\item\em fetch device call ability from cloud, which is dependent on device\textquotesingle{}s ability and product\textquotesingle{}s advanced ability. \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_abf695c00a126a1c461ec6d5031bccb0d}{is\+On\+Calling}}
+\begin{DoxyCompactList}\small\item\em whether app is on calling \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_a864889f17966e8dd3044492cfa235cdd}{can\+Start\+Call}}
+\begin{DoxyCompactList}\small\item\em whether app can start call \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_af6686a0a9e9d0ad38e42333ae7716d6a}{start\+Call\+With\+Target\+Id\+:timeout\+:extra\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em start call \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_acc04e1bb0a632601ab600b7ff63cd9a7}{add\+Delegate\+:}}
+\begin{DoxyCompactList}\small\item\em add delegate \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_a5844a885bd1b899c936620681fe4e940}{remove\+Delegate\+:}}
+\begin{DoxyCompactList}\small\item\em remove delegate \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_call_channel_a88b88afe1649eeb368bf08d962aee90b}{handle\+Push\+Message\+:}}
+\begin{DoxyCompactList}\small\item\em deal with push/\+Vo\+IP message \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_thing_smart_call_channel}{Thing\+Smart\+Call\+Channel}} $\ast$ \mbox{\hyperlink{interface_thing_smart_call_channel_a9d9e9f6c8b760f6fd872aeef333e28e9}{shared\+Instance}}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_smart_call_channel_data_source-p}{Thing\+Smart\+Call\+Channel\+Data\+Source}} $>$ \mbox{\hyperlink{interface_thing_smart_call_channel_af0c923b06f9219c31782ec4b882adf8a}{data\+Source}}
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ id$<$ \mbox{\hyperlink{protocol_thing_call_interface_manager-p}{Thing\+Call\+Interface\+Manager}} $>$ $>$ $\ast$ \mbox{\hyperlink{interface_thing_smart_call_channel_ae4a7f6fe00d6adc0b2b8968e80b80ea7}{call\+Interface\+Managers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_8h_source_l00047}{47}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_8h_source}{Thing\+Smart\+Call\+Channel.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_call_channel_acc04e1bb0a632601ab600b7ff63cd9a7}\label{interface_thing_smart_call_channel_acc04e1bb0a632601ab600b7ff63cd9a7}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!addDelegate:@{addDelegate:}}
+\index{addDelegate:@{addDelegate:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{addDelegate:}{addDelegate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) add\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_call_channel_delegate-p}{Thing\+Smart\+Call\+Channel\+Delegate}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+
+
+add delegate 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_acc04e1bb0a632601ab600b7ff63cd9a7}\label{interface_thing_smart_call_channel_acc04e1bb0a632601ab600b7ff63cd9a7}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!addDelegate:@{addDelegate:}}
+\index{addDelegate:@{addDelegate:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{addDelegate:}{addDelegate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) add\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_call_channel_delegate-p}{Thing\+Smart\+Call\+Channel\+Delegate}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+
+
+add delegate 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_a864889f17966e8dd3044492cfa235cdd}\label{interface_thing_smart_call_channel_a864889f17966e8dd3044492cfa235cdd}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!canStartCall@{canStartCall}}
+\index{canStartCall@{canStartCall}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{canStartCall}{canStartCall}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) can\+Start\+Call \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+whether app can start call 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_a864889f17966e8dd3044492cfa235cdd}\label{interface_thing_smart_call_channel_a864889f17966e8dd3044492cfa235cdd}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!canStartCall@{canStartCall}}
+\index{canStartCall@{canStartCall}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{canStartCall}{canStartCall}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) can\+Start\+Call \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+whether app can start call 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_ac1a0274cdee63de0fef667d453817e0d}\label{interface_thing_smart_call_channel_ac1a0274cdee63de0fef667d453817e0d}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!fetchDeviceCallAbilityByDevId:completion:@{fetchDeviceCallAbilityByDevId:completion:}}
+\index{fetchDeviceCallAbilityByDevId:completion:@{fetchDeviceCallAbilityByDevId:completion:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{fetchDeviceCallAbilityByDevId:completion:}{fetchDeviceCallAbilityByDevId:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) fetch\+Device\+Call\+Ability\+By\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{completion\+:(\mbox{\hyperlink{_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_constants_8h_a8c00c9278a5211c0778788a114de9d7b}{Thing\+Smart\+Call\+Fetch\+Completion}})}]{completion }\end{DoxyParamCaption}}
+
+
+
+fetch device call ability from cloud, which is dependent on device\textquotesingle{}s ability and product\textquotesingle{}s advanced ability. 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_ac1a0274cdee63de0fef667d453817e0d}\label{interface_thing_smart_call_channel_ac1a0274cdee63de0fef667d453817e0d}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!fetchDeviceCallAbilityByDevId:completion:@{fetchDeviceCallAbilityByDevId:completion:}}
+\index{fetchDeviceCallAbilityByDevId:completion:@{fetchDeviceCallAbilityByDevId:completion:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{fetchDeviceCallAbilityByDevId:completion:}{fetchDeviceCallAbilityByDevId:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) fetch\+Device\+Call\+Ability\+By\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{completion\+:(\mbox{\hyperlink{_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_constants_8h_a8c00c9278a5211c0778788a114de9d7b}{Thing\+Smart\+Call\+Fetch\+Completion}})}]{completion }\end{DoxyParamCaption}}
+
+
+
+fetch device call ability from cloud, which is dependent on device\textquotesingle{}s ability and product\textquotesingle{}s advanced ability. 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_a88b88afe1649eeb368bf08d962aee90b}\label{interface_thing_smart_call_channel_a88b88afe1649eeb368bf08d962aee90b}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!handlePushMessage:@{handlePushMessage:}}
+\index{handlePushMessage:@{handlePushMessage:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{handlePushMessage:}{handlePushMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) handle\+Push\+Message\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{message }\end{DoxyParamCaption}}
+
+
+
+deal with push/\+Vo\+IP message 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_a88b88afe1649eeb368bf08d962aee90b}\label{interface_thing_smart_call_channel_a88b88afe1649eeb368bf08d962aee90b}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!handlePushMessage:@{handlePushMessage:}}
+\index{handlePushMessage:@{handlePushMessage:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{handlePushMessage:}{handlePushMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) handle\+Push\+Message\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{message }\end{DoxyParamCaption}}
+
+
+
+deal with push/\+Vo\+IP message 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_abf695c00a126a1c461ec6d5031bccb0d}\label{interface_thing_smart_call_channel_abf695c00a126a1c461ec6d5031bccb0d}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!isOnCalling@{isOnCalling}}
+\index{isOnCalling@{isOnCalling}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{isOnCalling}{isOnCalling}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+On\+Calling \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+whether app is on calling 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_abf695c00a126a1c461ec6d5031bccb0d}\label{interface_thing_smart_call_channel_abf695c00a126a1c461ec6d5031bccb0d}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!isOnCalling@{isOnCalling}}
+\index{isOnCalling@{isOnCalling}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{isOnCalling}{isOnCalling}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+On\+Calling \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+whether app is on calling 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_ae59d2bbafd7d06fa76be6e001c639046}\label{interface_thing_smart_call_channel_ae59d2bbafd7d06fa76be6e001c639046}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!launch@{launch}}
+\index{launch@{launch}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{launch}{launch}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) launch \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+launch services, call firstly. 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_ae59d2bbafd7d06fa76be6e001c639046}\label{interface_thing_smart_call_channel_ae59d2bbafd7d06fa76be6e001c639046}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!launch@{launch}}
+\index{launch@{launch}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{launch}{launch}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) launch \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+launch services, call firstly. 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_a092a720aa5228fcf4bd835dd15b5d58e}\label{interface_thing_smart_call_channel_a092a720aa5228fcf4bd835dd15b5d58e}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!registerCallInterfaceManager:@{registerCallInterfaceManager:}}
+\index{registerCallInterfaceManager:@{registerCallInterfaceManager:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{registerCallInterfaceManager:}{registerCallInterfaceManager:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) register\+Call\+Interface\+Manager\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_call_interface_manager-p}{Thing\+Call\+Interface\+Manager}} $>$)}]{call\+Interface\+Manager }\end{DoxyParamCaption}}
+
+register call interface manager, interface manager generate/present/dismiss call interface, if call interface manager or identifier is invalid, return false, weak reference. \mbox{\Hypertarget{interface_thing_smart_call_channel_a092a720aa5228fcf4bd835dd15b5d58e}\label{interface_thing_smart_call_channel_a092a720aa5228fcf4bd835dd15b5d58e}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!registerCallInterfaceManager:@{registerCallInterfaceManager:}}
+\index{registerCallInterfaceManager:@{registerCallInterfaceManager:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{registerCallInterfaceManager:}{registerCallInterfaceManager:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) register\+Call\+Interface\+Manager\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_call_interface_manager-p}{Thing\+Call\+Interface\+Manager}} $>$)}]{call\+Interface\+Manager }\end{DoxyParamCaption}}
+
+register call interface manager, interface manager generate/present/dismiss call interface, if call interface manager or identifier is invalid, return false, weak reference. \mbox{\Hypertarget{interface_thing_smart_call_channel_a5844a885bd1b899c936620681fe4e940}\label{interface_thing_smart_call_channel_a5844a885bd1b899c936620681fe4e940}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!removeDelegate:@{removeDelegate:}}
+\index{removeDelegate:@{removeDelegate:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{removeDelegate:}{removeDelegate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_call_channel_delegate-p}{Thing\+Smart\+Call\+Channel\+Delegate}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+
+
+remove delegate 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_a5844a885bd1b899c936620681fe4e940}\label{interface_thing_smart_call_channel_a5844a885bd1b899c936620681fe4e940}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!removeDelegate:@{removeDelegate:}}
+\index{removeDelegate:@{removeDelegate:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{removeDelegate:}{removeDelegate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_call_channel_delegate-p}{Thing\+Smart\+Call\+Channel\+Delegate}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+
+
+remove delegate 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_a758f47e298e4d6f06b2f0e2c4d1b05cc}\label{interface_thing_smart_call_channel_a758f47e298e4d6f06b2f0e2c4d1b05cc}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!resubscribeMQTTUserTopic@{resubscribeMQTTUserTopic}}
+\index{resubscribeMQTTUserTopic@{resubscribeMQTTUserTopic}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{resubscribeMQTTUserTopic}{resubscribeMQTTUserTopic}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) resubscribe\+MQTTUser\+Topic \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+if subscribe failed, can call it. 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_a758f47e298e4d6f06b2f0e2c4d1b05cc}\label{interface_thing_smart_call_channel_a758f47e298e4d6f06b2f0e2c4d1b05cc}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!resubscribeMQTTUserTopic@{resubscribeMQTTUserTopic}}
+\index{resubscribeMQTTUserTopic@{resubscribeMQTTUserTopic}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{resubscribeMQTTUserTopic}{resubscribeMQTTUserTopic}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) resubscribe\+MQTTUser\+Topic \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+if subscribe failed, can call it. 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_af6686a0a9e9d0ad38e42333ae7716d6a}\label{interface_thing_smart_call_channel_af6686a0a9e9d0ad38e42333ae7716d6a}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!startCallWithTargetId:timeout:extra:success:failure:@{startCallWithTargetId:timeout:extra:success:failure:}}
+\index{startCallWithTargetId:timeout:extra:success:failure:@{startCallWithTargetId:timeout:extra:success:failure:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{startCallWithTargetId:timeout:extra:success:failure:}{startCallWithTargetId:timeout:extra:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Call\+With\+Target\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{target\+Id }\item[{timeout\+:(NSInteger)}]{timeout }\item[{extra\+:(NSDictionary $\ast$)}]{extra }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_constants_8h_a3e4159f205484fe0a4e4537e6f70b3a8}{Thing\+Smart\+Call\+Success}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_constants_8h_a884a5b8fec25b6c6987c65641f5251d7}{Thing\+Smart\+Call\+Failure}})}]{failure }\end{DoxyParamCaption}}
+
+
+
+start call 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_af6686a0a9e9d0ad38e42333ae7716d6a}\label{interface_thing_smart_call_channel_af6686a0a9e9d0ad38e42333ae7716d6a}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!startCallWithTargetId:timeout:extra:success:failure:@{startCallWithTargetId:timeout:extra:success:failure:}}
+\index{startCallWithTargetId:timeout:extra:success:failure:@{startCallWithTargetId:timeout:extra:success:failure:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{startCallWithTargetId:timeout:extra:success:failure:}{startCallWithTargetId:timeout:extra:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Call\+With\+Target\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{target\+Id }\item[{timeout\+:(NSInteger)}]{timeout }\item[{extra\+:(NSDictionary $\ast$)}]{extra }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_constants_8h_a3e4159f205484fe0a4e4537e6f70b3a8}{Thing\+Smart\+Call\+Success}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_constants_8h_a884a5b8fec25b6c6987c65641f5251d7}{Thing\+Smart\+Call\+Failure}})}]{failure }\end{DoxyParamCaption}}
+
+
+
+start call 
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_a65932a9a89a5cb29fa49578996050295}\label{interface_thing_smart_call_channel_a65932a9a89a5cb29fa49578996050295}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!unregisterCallInterfaceManager:@{unregisterCallInterfaceManager:}}
+\index{unregisterCallInterfaceManager:@{unregisterCallInterfaceManager:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{unregisterCallInterfaceManager:}{unregisterCallInterfaceManager:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) unregister\+Call\+Interface\+Manager\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_call_interface_manager-p}{Thing\+Call\+Interface\+Manager}} $>$)}]{call\+Interface\+Manager }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_a65932a9a89a5cb29fa49578996050295}\label{interface_thing_smart_call_channel_a65932a9a89a5cb29fa49578996050295}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!unregisterCallInterfaceManager:@{unregisterCallInterfaceManager:}}
+\index{unregisterCallInterfaceManager:@{unregisterCallInterfaceManager:}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{unregisterCallInterfaceManager:}{unregisterCallInterfaceManager:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) unregister\+Call\+Interface\+Manager\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_call_interface_manager-p}{Thing\+Call\+Interface\+Manager}} $>$)}]{call\+Interface\+Manager }\end{DoxyParamCaption}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_call_channel_ae4a7f6fe00d6adc0b2b8968e80b80ea7}\label{interface_thing_smart_call_channel_ae4a7f6fe00d6adc0b2b8968e80b80ea7}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!callInterfaceManagers@{callInterfaceManagers}}
+\index{callInterfaceManagers@{callInterfaceManagers}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{callInterfaceManagers}{callInterfaceManagers}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ id$<$ \mbox{\hyperlink{protocol_thing_call_interface_manager-p}{Thing\+Call\+Interface\+Manager}} $>$ $>$ $\ast$) call\+Interface\+Managers\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_8h_source_l00060}{60}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_8h_source}{Thing\+Smart\+Call\+Channel.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_af0c923b06f9219c31782ec4b882adf8a}\label{interface_thing_smart_call_channel_af0c923b06f9219c31782ec4b882adf8a}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!dataSource@{dataSource}}
+\index{dataSource@{dataSource}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{dataSource}{dataSource}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_smart_call_channel_data_source-p}{Thing\+Smart\+Call\+Channel\+Data\+Source}} $>$) data\+Source\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_8h_source_l00051}{51}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_8h_source}{Thing\+Smart\+Call\+Channel.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_call_channel_a9d9e9f6c8b760f6fd872aeef333e28e9}\label{interface_thing_smart_call_channel_a9d9e9f6c8b760f6fd872aeef333e28e9}} 
+\index{ThingSmartCallChannel@{ThingSmartCallChannel}!sharedInstance@{sharedInstance}}
+\index{sharedInstance@{sharedInstance}!ThingSmartCallChannel@{ThingSmartCallChannel}}
+\doxysubsubsection{\texorpdfstring{sharedInstance}{sharedInstance}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_smart_call_channel}{Thing\+Smart\+Call\+Channel}} $\ast$) shared\+Instance\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_8h_source_l00049}{49}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_8h_source}{Thing\+Smart\+Call\+Channel.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Call\+Channel\+Kit/\+Build/\+Thing\+Smart\+Call\+Channel\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Call\+Channel\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_8h}{Thing\+Smart\+Call\+Channel.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Call\+Channel\+Kit/\+Build/\+Thing\+Smart\+Call\+Channel\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Call\+Channel\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_channel_8h}{Thing\+Smart\+Call\+Channel.\+h}}\end{DoxyCompactItemize}

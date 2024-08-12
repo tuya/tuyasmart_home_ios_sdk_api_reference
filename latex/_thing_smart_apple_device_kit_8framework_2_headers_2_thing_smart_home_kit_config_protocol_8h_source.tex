@@ -1,0 +1,38 @@
+\hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source}{}\doxysection{Thing\+Smart\+Home\+Kit\+Config\+Protocol.\+h}
+\label{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartAppleDeviceKit/Build/ThingSmartAppleDeviceKit.xcframework/ios-\/arm64/ThingSmartAppleDeviceKit.framework/Headers/ThingSmartHomeKitConfigProtocol.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartAppleDeviceKit/Build/ThingSmartAppleDeviceKit.xcframework/ios-\/arm64/ThingSmartAppleDeviceKit.framework/Headers/ThingSmartHomeKitConfigProtocol.h}}
+\mbox{\hyperlink{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00001}\mbox{\hyperlink{protocol_thing_smart_home_kit_config_protocol-p_a930b0c7880115cec72fd8ed934573fc1}{00001}} \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00002}00002 \textcolor{comment}{//  ThingSmartHomeKitConfigProtocol.h}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00003}00003 \textcolor{comment}{//  ThingSmartAppleDeviceKit}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00005}00005 \textcolor{comment}{//  Created by \_\_shuq on 2021/6/1.}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00008}00008 \textcolor{preprocessor}{\#ifndef ThingSmartHomeKitConfigProtocol\_h}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00009}00009 \textcolor{preprocessor}{\#define ThingSmartHomeKitConfigProtocol\_h}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00011}00011 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_thing_smart_home_kit_device}{ThingSmartHomeKitDevice}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00012}00012 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_thing_smart_device_model}{ThingSmartDeviceModel}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00014}00014 \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_thing_smart_home_kit_config_protocol-p}{ThingSmartHomeKitConfigProtocol}} <NSObject>}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00024}00024 -\/ (void)startConfigDevice:(\mbox{\hyperlink{interface_thing_smart_home_kit_device}{ThingSmartHomeKitDevice}} *)device}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00025}00025                    bleAdv:(NSData *)bleAdv}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00026}00026                   timeout:(NSTimeInterval)timeout}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00027}00027                    homeId:(\textcolor{keywordtype}{long} \textcolor{keywordtype}{long})homeId}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00028}00028                   success:(\textcolor{keywordtype}{void} (\string^)(\mbox{\hyperlink{interface_thing_smart_device_model}{ThingSmartDeviceModel}} *deviceModel))success}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00029}00029                   failure:(\textcolor{keywordtype}{void} (\string^)(NSError *\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))failure;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00032}00032 -\/ (void)\mbox{\hyperlink{protocol_thing_smart_home_kit_config_protocol-p_a75e099420d2b899e68900052b30e6dca}{stopConfigDevice}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00034}00034 \textcolor{keyword}{@optional}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00038}00038 -\/ (BOOL)isBLEDevicePairable:(NSData *)advertisingData;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00040}00040 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_config_protocol_8h_source_l00042}00042 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* ThingSmartHomeKitConfigProtocol\_h */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

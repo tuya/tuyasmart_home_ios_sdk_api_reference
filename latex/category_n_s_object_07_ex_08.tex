@@ -1,0 +1,280 @@
+\hypertarget{category_n_s_object_07_ex_08}{}\doxysection{NSObject(Ex) Category Reference}
+\label{category_n_s_object_07_ex_08}\index{NSObject(Ex)@{NSObject(Ex)}}
+
+
+{\ttfamily \#import $<$NSObject+\+Ex.\+h$>$}
+
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{category_n_s_object_07_ex_08_a9871630e81aeba34aa45c4fd3f28c967}{bk\+\_\+perform\+Block\+:after\+Delay\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{category_n_s_object_07_ex_08_ad0ad358c164729f6e940432dcb466264}{bk\+\_\+perform\+Block\+:on\+Queue\+:after\+Delay\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{category_n_s_object_07_ex_08_a9871630e81aeba34aa45c4fd3f28c967}{bk\+\_\+perform\+Block\+:after\+Delay\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{category_n_s_object_07_ex_08_ad0ad358c164729f6e940432dcb466264}{bk\+\_\+perform\+Block\+:on\+Queue\+:after\+Delay\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \mbox{\hyperlink{category_n_s_object_07_ex_08_adc0a6f1d86da8df0e552357848c0cbf5}{bk\+\_\+perform\+Block\+:after\+Delay\+:}}
+\item 
+(id) + \mbox{\hyperlink{category_n_s_object_07_ex_08_a7386ed097f7282ada0b9d0f3ee0ff1f5}{bk\+\_\+perform\+Block\+:on\+Queue\+:after\+Delay\+:}}
+\item 
+(void) + \mbox{\hyperlink{category_n_s_object_07_ex_08_afc1738bf70a2fbf3cd53d61ace192cfb}{bk\+\_\+cancel\+Block\+:}}
+\item 
+(id) + \mbox{\hyperlink{category_n_s_object_07_ex_08_adc0a6f1d86da8df0e552357848c0cbf5}{bk\+\_\+perform\+Block\+:after\+Delay\+:}}
+\item 
+(id) + \mbox{\hyperlink{category_n_s_object_07_ex_08_a7386ed097f7282ada0b9d0f3ee0ff1f5}{bk\+\_\+perform\+Block\+:on\+Queue\+:after\+Delay\+:}}
+\item 
+(void) + \mbox{\hyperlink{category_n_s_object_07_ex_08_afc1738bf70a2fbf3cd53d61ace192cfb}{bk\+\_\+cancel\+Block\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_blocks_kit_8framework_2_headers_2_n_s_object_09_ex_8h_source_l00012}{12}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_blocks_kit_8framework_2_headers_2_n_s_object_09_ex_8h_source}{NSObject+\+Ex.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{category_n_s_object_07_ex_08_afc1738bf70a2fbf3cd53d61ace192cfb}\label{category_n_s_object_07_ex_08_afc1738bf70a2fbf3cd53d61ace192cfb}} 
+\index{NSObject(Ex)@{NSObject(Ex)}!bk\_cancelBlock:@{bk\_cancelBlock:}}
+\index{bk\_cancelBlock:@{bk\_cancelBlock:}!NSObject(Ex)@{NSObject(Ex)}}
+\doxysubsubsection{\texorpdfstring{bk\_cancelBlock:}{bk\_cancelBlock:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) bk\+\_\+cancel\+Block\+: \begin{DoxyParamCaption}\item[{(id)}]{block }\end{DoxyParamCaption}}
+
+Cancels the potential execution of a block.
+
+\begin{DoxyWarning}{Warning}
+{\itshape Important\+:} It is not recommended to cancel a block executed with no delay (a delay of 0.\+0). While it it still possible to catch the block before GCD has executed it, it has likely already been executed and disposed of.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A pointer to a containing block, as returned from one of the {\ttfamily perform\+Block} selectors. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{category_n_s_object_07_ex_08_afc1738bf70a2fbf3cd53d61ace192cfb}\label{category_n_s_object_07_ex_08_afc1738bf70a2fbf3cd53d61ace192cfb}} 
+\index{NSObject(Ex)@{NSObject(Ex)}!bk\_cancelBlock:@{bk\_cancelBlock:}}
+\index{bk\_cancelBlock:@{bk\_cancelBlock:}!NSObject(Ex)@{NSObject(Ex)}}
+\doxysubsubsection{\texorpdfstring{bk\_cancelBlock:}{bk\_cancelBlock:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) bk\+\_\+cancel\+Block\+: \begin{DoxyParamCaption}\item[{(id)}]{block }\end{DoxyParamCaption}}
+
+Cancels the potential execution of a block.
+
+\begin{DoxyWarning}{Warning}
+{\itshape Important\+:} It is not recommended to cancel a block executed with no delay (a delay of 0.\+0). While it it still possible to catch the block before GCD has executed it, it has likely already been executed and disposed of.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A pointer to a containing block, as returned from one of the {\ttfamily perform\+Block} selectors. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{category_n_s_object_07_ex_08_a9871630e81aeba34aa45c4fd3f28c967}\label{category_n_s_object_07_ex_08_a9871630e81aeba34aa45c4fd3f28c967}} 
+\index{NSObject(Ex)@{NSObject(Ex)}!bk\_performBlock:afterDelay:@{bk\_performBlock:afterDelay:}}
+\index{bk\_performBlock:afterDelay:@{bk\_performBlock:afterDelay:}!NSObject(Ex)@{NSObject(Ex)}}
+\doxysubsubsection{\texorpdfstring{bk\_performBlock:afterDelay:}{bk\_performBlock:afterDelay:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (id) bk\+\_\+perform\+Block\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(id obj))}]{block }\item[{after\+Delay\+:(NSTime\+Interval)}]{delay }\end{DoxyParamCaption}}
+
+Executes a block after a given delay on the reciever.
+
+\mbox{[}array perform\+Block\+:$^\wedge$(id obj) \{ \mbox{[}obj add\+Object\+:self\mbox{]}; \mbox{[}self release\mbox{]}; \} after\+Delay\+:0.\+5f\mbox{]};
+
+\begin{DoxyWarning}{Warning}
+{\itshape Important\+:} Use of the {\bfseries{self}} reference in a block will reference the current implementation context. The block argument, {\ttfamily obj}, should be used instead.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A single-\/argument code block, where {\ttfamily obj} is the reciever. \\
+\hline
+{\em delay} & A measure in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the block that may or may not execute the given block. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_object_07_ex_08_a9871630e81aeba34aa45c4fd3f28c967}\label{category_n_s_object_07_ex_08_a9871630e81aeba34aa45c4fd3f28c967}} 
+\index{NSObject(Ex)@{NSObject(Ex)}!bk\_performBlock:afterDelay:@{bk\_performBlock:afterDelay:}}
+\index{bk\_performBlock:afterDelay:@{bk\_performBlock:afterDelay:}!NSObject(Ex)@{NSObject(Ex)}}
+\doxysubsubsection{\texorpdfstring{bk\_performBlock:afterDelay:}{bk\_performBlock:afterDelay:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (id) bk\+\_\+perform\+Block\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(id obj))}]{block }\item[{after\+Delay\+:(NSTime\+Interval)}]{delay }\end{DoxyParamCaption}}
+
+Executes a block after a given delay on the reciever.
+
+\mbox{[}array perform\+Block\+:$^\wedge$(id obj) \{ \mbox{[}obj add\+Object\+:self\mbox{]}; \mbox{[}self release\mbox{]}; \} after\+Delay\+:0.\+5f\mbox{]};
+
+\begin{DoxyWarning}{Warning}
+{\itshape Important\+:} Use of the {\bfseries{self}} reference in a block will reference the current implementation context. The block argument, {\ttfamily obj}, should be used instead.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A single-\/argument code block, where {\ttfamily obj} is the reciever. \\
+\hline
+{\em delay} & A measure in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the block that may or may not execute the given block. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_object_07_ex_08_adc0a6f1d86da8df0e552357848c0cbf5}\label{category_n_s_object_07_ex_08_adc0a6f1d86da8df0e552357848c0cbf5}} 
+\index{NSObject(Ex)@{NSObject(Ex)}!bk\_performBlock:afterDelay:@{bk\_performBlock:afterDelay:}}
+\index{bk\_performBlock:afterDelay:@{bk\_performBlock:afterDelay:}!NSObject(Ex)@{NSObject(Ex)}}
+\doxysubsubsection{\texorpdfstring{bk\_performBlock:afterDelay:}{bk\_performBlock:afterDelay:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (id) bk\+\_\+perform\+Block\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{block }\item[{after\+Delay\+:(NSTime\+Interval)}]{delay }\end{DoxyParamCaption}}
+
+Executes a block after a given delay.
+
+This class method is functionally identical to its instance method version. It still executes asynchronously via GCD. However, the current context is not passed so that the block is performed in a general context.
+
+Block execution is very useful, particularly for small events that you would like delayed.
+
+\mbox{[}object perform\+Block\+:$^\wedge$\{ \mbox{[}\mbox{[}UIDevice current\+Device\mbox{]} begin\+Generating\+Device\+Orientation\+Notifications\mbox{]}; \} after\+Delay\+:0.\+5f\mbox{]};
+
+\begin{DoxySeeAlso}{See also}
+perform\+Block\+:after\+Delay\+: 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A code block. \\
+\hline
+{\em delay} & A measure in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the block that may or may not execute the given block. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_object_07_ex_08_adc0a6f1d86da8df0e552357848c0cbf5}\label{category_n_s_object_07_ex_08_adc0a6f1d86da8df0e552357848c0cbf5}} 
+\index{NSObject(Ex)@{NSObject(Ex)}!bk\_performBlock:afterDelay:@{bk\_performBlock:afterDelay:}}
+\index{bk\_performBlock:afterDelay:@{bk\_performBlock:afterDelay:}!NSObject(Ex)@{NSObject(Ex)}}
+\doxysubsubsection{\texorpdfstring{bk\_performBlock:afterDelay:}{bk\_performBlock:afterDelay:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (id) bk\+\_\+perform\+Block\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{block }\item[{after\+Delay\+:(NSTime\+Interval)}]{delay }\end{DoxyParamCaption}}
+
+Executes a block after a given delay.
+
+This class method is functionally identical to its instance method version. It still executes asynchronously via GCD. However, the current context is not passed so that the block is performed in a general context.
+
+Block execution is very useful, particularly for small events that you would like delayed.
+
+\mbox{[}object perform\+Block\+:$^\wedge$\{ \mbox{[}\mbox{[}UIDevice current\+Device\mbox{]} begin\+Generating\+Device\+Orientation\+Notifications\mbox{]}; \} after\+Delay\+:0.\+5f\mbox{]};
+
+\begin{DoxySeeAlso}{See also}
+perform\+Block\+:after\+Delay\+: 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A code block. \\
+\hline
+{\em delay} & A measure in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the block that may or may not execute the given block. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_object_07_ex_08_ad0ad358c164729f6e940432dcb466264}\label{category_n_s_object_07_ex_08_ad0ad358c164729f6e940432dcb466264}} 
+\index{NSObject(Ex)@{NSObject(Ex)}!bk\_performBlock:onQueue:afterDelay:@{bk\_performBlock:onQueue:afterDelay:}}
+\index{bk\_performBlock:onQueue:afterDelay:@{bk\_performBlock:onQueue:afterDelay:}!NSObject(Ex)@{NSObject(Ex)}}
+\doxysubsubsection{\texorpdfstring{bk\_performBlock:onQueue:afterDelay:}{bk\_performBlock:onQueue:afterDelay:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (id) bk\+\_\+perform\+Block\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(id obj))}]{block }\item[{on\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{after\+Delay\+:(NSTime\+Interval)}]{delay }\end{DoxyParamCaption}}
+
+Executes a block in the background after a given delay.
+
+This class method is functionally identical to {\ttfamily -\/ (id)bk\+\_\+perform\+Block\+:after\+Delay\+:}, except the block will be performed on the specified thread instead of the main thread.
+
+\begin{DoxySeeAlso}{See also}
+perform\+Block\+:after\+Delay\+: 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A code block. \\
+\hline
+{\em queue} & A background queue. \\
+\hline
+{\em delay} & A measure in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the block that may or may not execute the given block. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_object_07_ex_08_ad0ad358c164729f6e940432dcb466264}\label{category_n_s_object_07_ex_08_ad0ad358c164729f6e940432dcb466264}} 
+\index{NSObject(Ex)@{NSObject(Ex)}!bk\_performBlock:onQueue:afterDelay:@{bk\_performBlock:onQueue:afterDelay:}}
+\index{bk\_performBlock:onQueue:afterDelay:@{bk\_performBlock:onQueue:afterDelay:}!NSObject(Ex)@{NSObject(Ex)}}
+\doxysubsubsection{\texorpdfstring{bk\_performBlock:onQueue:afterDelay:}{bk\_performBlock:onQueue:afterDelay:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (id) bk\+\_\+perform\+Block\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(id obj))}]{block }\item[{on\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{after\+Delay\+:(NSTime\+Interval)}]{delay }\end{DoxyParamCaption}}
+
+Executes a block in the background after a given delay.
+
+This class method is functionally identical to {\ttfamily -\/ (id)bk\+\_\+perform\+Block\+:after\+Delay\+:}, except the block will be performed on the specified thread instead of the main thread.
+
+\begin{DoxySeeAlso}{See also}
+perform\+Block\+:after\+Delay\+: 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A code block. \\
+\hline
+{\em queue} & A background queue. \\
+\hline
+{\em delay} & A measure in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the block that may or may not execute the given block. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_object_07_ex_08_a7386ed097f7282ada0b9d0f3ee0ff1f5}\label{category_n_s_object_07_ex_08_a7386ed097f7282ada0b9d0f3ee0ff1f5}} 
+\index{NSObject(Ex)@{NSObject(Ex)}!bk\_performBlock:onQueue:afterDelay:@{bk\_performBlock:onQueue:afterDelay:}}
+\index{bk\_performBlock:onQueue:afterDelay:@{bk\_performBlock:onQueue:afterDelay:}!NSObject(Ex)@{NSObject(Ex)}}
+\doxysubsubsection{\texorpdfstring{bk\_performBlock:onQueue:afterDelay:}{bk\_performBlock:onQueue:afterDelay:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (id) bk\+\_\+perform\+Block\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{block }\item[{on\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{after\+Delay\+:(NSTime\+Interval)}]{delay }\end{DoxyParamCaption}}
+
+Executes a block in the background after a given delay.
+
+This class method is functionally identical to {\ttfamily + (id)bk\+\_\+perform\+Block\+:after\+Delay\+:}, except the block will be performed on the specified thread instead of the main thread.
+
+\begin{DoxySeeAlso}{See also}
+perform\+Block\+:after\+Delay\+: 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A code block. \\
+\hline
+{\em queue} & A background queue. \\
+\hline
+{\em delay} & A measure in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the block that may or may not execute the given block. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{category_n_s_object_07_ex_08_a7386ed097f7282ada0b9d0f3ee0ff1f5}\label{category_n_s_object_07_ex_08_a7386ed097f7282ada0b9d0f3ee0ff1f5}} 
+\index{NSObject(Ex)@{NSObject(Ex)}!bk\_performBlock:onQueue:afterDelay:@{bk\_performBlock:onQueue:afterDelay:}}
+\index{bk\_performBlock:onQueue:afterDelay:@{bk\_performBlock:onQueue:afterDelay:}!NSObject(Ex)@{NSObject(Ex)}}
+\doxysubsubsection{\texorpdfstring{bk\_performBlock:onQueue:afterDelay:}{bk\_performBlock:onQueue:afterDelay:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (id) bk\+\_\+perform\+Block\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{block }\item[{on\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{after\+Delay\+:(NSTime\+Interval)}]{delay }\end{DoxyParamCaption}}
+
+Executes a block in the background after a given delay.
+
+This class method is functionally identical to {\ttfamily + (id)bk\+\_\+perform\+Block\+:after\+Delay\+:}, except the block will be performed on the specified thread instead of the main thread.
+
+\begin{DoxySeeAlso}{See also}
+perform\+Block\+:after\+Delay\+: 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em block} & A code block. \\
+\hline
+{\em queue} & A background queue. \\
+\hline
+{\em delay} & A measure in seconds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the block that may or may not execute the given block. 
+\end{DoxyReturn}
+
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Block\+Kit/\+Blocks\+Kit.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Blocks\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_blocks_kit_8framework_2_headers_2_n_s_object_09_ex_8h}{NSObject+\+Ex.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Block\+Kit/\+Blocks\+Kit.\+xcframework/ios-\/arm64/\+Blocks\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_blocks_kit_8framework_2_headers_2_n_s_object_09_ex_8h}{NSObject+\+Ex.\+h}}\end{DoxyCompactItemize}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: ThingDeviceDetailKit/ThingDeviceDetailKit.xcframework/ios-arm64/ThingDeviceDetailKit.framework/Headers/ThingDeviceInfoUtils.h Source File</title>
+<title>Tuya iOS Smart Life App SDK: /Users/humtong/Downloads/Pods_副本/ThingDeviceDetailKit/ThingDeviceDetailKit.xcframework/ios-arm64/ThingDeviceDetailKit.framework/Headers/ThingDeviceInfoUtils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.15.0</span>
    </div>
   </td>
  </tr>
@@ -98,27 +98,28 @@ $(document).ready(function(){initNavTree('_thing_device_detail_kit_8framework_2_
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>NS_ASSUME_NONNULL_BEGIN</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="interface_thing_device_info_utils.html">   13</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_device_info_utils.html">ThingDeviceInfoUtils</a> : NSObject</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_thing_device_info_utils.html">ThingDeviceInfoUtils</a> : NSObject</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>+ (void)getMatterDeviceInfoWithUUID:(NSString *)uuid success:(<span class="keywordtype">void</span>(^)(NSDictionary *dict))success failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>+ (void)getMatterDeviceInfoWithUUID:(NSString *)uuid success:(<span class="keywordtype">void</span>(^)(NSDictionary *dict))success failure:(<span class="keywordtype">void</span>(^)(NSError *<a class="code hl_variable" href="_w_t_l_cluster_8h.html#a6710b99207ceec3a7b09cadf04f4e246">error</a>))failure;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>+ (void)device:(<a class="code hl_interface" href="interface_thing_smart_device.html">ThingSmartDevice</a> *)device getHardwareInfoSuccess:(<span class="keywordtype">void</span>(^)(NSDictionary *dict))success failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>+ (void)getHardwareInfoWithDeviceId:(NSString *)deviceId Success:(<span class="keywordtype">void</span>(^)(NSDictionary *dict))success failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>+ (void)device:(<a class="code hl_interface" href="interface_thing_smart_device.html">ThingSmartDevice</a> *)device getHardwareInfoSuccess:(<span class="keywordtype">void</span>(^)(NSDictionary *dict))success failure:(<span class="keywordtype">void</span>(^)(NSError *<a class="code hl_variable" href="_w_t_l_cluster_8h.html#a6710b99207ceec3a7b09cadf04f4e246">error</a>))failure;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>+ (void)getHardwareInfoWithDeviceId:(NSString *)deviceId Success:(<span class="keywordtype">void</span>(^)(NSDictionary *dict))success failure:(<span class="keywordtype">void</span>(^)(NSError *<a class="code hl_variable" href="_w_t_l_cluster_8h.html#a6710b99207ceec3a7b09cadf04f4e246">error</a>))failure;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>+ (NSString *)<a class="code hl_function" href="interface_thing_device_info_utils.html#a8e36aefaf8b6c4c31f0dda115891036c">generateUniqueId</a>;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="interface_thing_device_info_utils.html#a15d9124a77f6eca62366df300d0898a5">   27</a></span>NS_ASSUME_NONNULL_END</div>
-<div class="ttc" id="ainterface_thing_device_info_utils_html"><div class="ttname"><a href="interface_thing_device_info_utils.html">ThingDeviceInfoUtils</a></div><div class="ttdef"><b>Definition:</b> <a href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_info_utils_8h_source.html#l00013">ThingDeviceInfoUtils.h:14</a></div></div>
+<div class="ttc" id="a_w_t_l_cluster_8h_html_a6710b99207ceec3a7b09cadf04f4e246"><div class="ttname"><a href="_w_t_l_cluster_8h.html#a6710b99207ceec3a7b09cadf04f4e246">error</a></div><div class="ttdeci">NSError *_Nullable error</div><div class="ttdef"><b>Definition:</b> <a href="_w_t_l_cluster_8h_source.html#l00021">WTLCluster.h:21</a></div></div>
+<div class="ttc" id="ainterface_thing_device_info_utils_html"><div class="ttname"><a href="interface_thing_device_info_utils.html">ThingDeviceInfoUtils</a></div><div class="ttdef"><b>Definition:</b> <a href="x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_info_utils_8h_source.html#l00013">ThingDeviceInfoUtils.h:14</a></div></div>
 <div class="ttc" id="ainterface_thing_device_info_utils_html_a8e36aefaf8b6c4c31f0dda115891036c"><div class="ttname"><a href="interface_thing_device_info_utils.html#a8e36aefaf8b6c4c31f0dda115891036c">+[ThingDeviceInfoUtils generateUniqueId]</a></div><div class="ttdeci">NSString * generateUniqueId()</div></div>
-<div class="ttc" id="ainterface_thing_smart_device_html"><div class="ttname"><a href="interface_thing_smart_device.html">ThingSmartDevice</a></div><div class="ttdoc">The basic operation class of ThingSmartDevice contains the model of basic information,...</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_source.html#l00196">ThingSmartDevice.h:197</a></div></div>
+<div class="ttc" id="ainterface_thing_smart_device_html"><div class="ttname"><a href="interface_thing_smart_device.html">ThingSmartDevice</a></div><div class="ttdoc">The basic operation class of ThingSmartDevice contains the model of basic information,...</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_source.html#l00196">ThingSmartDevice.h:197</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_b5015593981fa4b976f874c7ae4fa32e.html">ThingDeviceDetailKit</a></li><li class="navelem"><a class="el" href="dir_747b82fc5bf33174d60c8ed6e77ea37c.html">ThingDeviceDetailKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_d6f09ea5b402e34fcc1dcd669e7a585f.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_5b064e8e5830543f419967a18927fde0.html">ThingDeviceDetailKit.framework</a></li><li class="navelem"><a class="el" href="dir_bc0992fafe78c28a2460ff8ff1c4f548.html">Headers</a></li><li class="navelem"><a class="el" href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_info_utils_8h.html">ThingDeviceInfoUtils.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2c12105386bcc5c3935feab96f296a41.html">Downloads</a></li><li class="navelem"><a class="el" href="dir_bd9edb8e3735a0b00a8a02eaea3de015.html">Pods_副本</a></li><li class="navelem"><a class="el" href="dir_c85fc0d925b4041828d1f20d610c4bbd.html">ThingDeviceDetailKit</a></li><li class="navelem"><a class="el" href="dir_ad6f45fd5fa6d99e9b21bc28a9d0e78b.html">ThingDeviceDetailKit.xcframework</a></li><li class="navelem"><a class="el" href="dir_672d190015516ecb0c5cc36554d2a616.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_1d0a58ad24c45889d55fd51ba4eb6fef.html">ThingDeviceDetailKit.framework</a></li><li class="navelem"><a class="el" href="dir_70b029be78d3cccbc99c3cd367cf16b2.html">Headers</a></li><li class="navelem"><a class="el" href="_thing_device_detail_kit_8framework_2_headers_2_thing_device_info_utils_8h.html">ThingDeviceInfoUtils.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

@@ -1,0 +1,113 @@
+\hypertarget{interface_thing_smart_matter_manager}{}\doxysection{Thing\+Smart\+Matter\+Manager Class Reference}
+\label{interface_thing_smart_matter_manager}\index{ThingSmartMatterManager@{ThingSmartMatterManager}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Matter\+Manager.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Matter\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_matter_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_matter_manager_afe465b70df93ac5357c7a46f6727e5a7}{load\+Fabric\+With\+Space\+Id\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em share\+Instance. \end{DoxyCompactList}\item 
+(uint64\+\_\+t) -\/ \mbox{\hyperlink{interface_thing_smart_matter_manager_ace4ebffb2b09192ecea9a14ce20c250d}{current\+Compressed\+Fabric\+ID}}
+\begin{DoxyCompactList}\small\item\em load current home matter compressed fabric\+ID \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_matter_manager_afe465b70df93ac5357c7a46f6727e5a7}{load\+Fabric\+With\+Space\+Id\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em share\+Instance. \end{DoxyCompactList}\item 
+(uint64\+\_\+t) -\/ \mbox{\hyperlink{interface_thing_smart_matter_manager_ace4ebffb2b09192ecea9a14ce20c250d}{current\+Compressed\+Fabric\+ID}}
+\begin{DoxyCompactList}\small\item\em load current home matter compressed fabric\+ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+long long \mbox{\hyperlink{interface_thing_smart_matter_manager_abc5578432da8f3a4d44982f89facb4db}{space\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_manager_8h_source_l00012}{12}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_manager_8h_source}{Thing\+Smart\+Matter\+Manager.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_matter_manager_ace4ebffb2b09192ecea9a14ce20c250d}\label{interface_thing_smart_matter_manager_ace4ebffb2b09192ecea9a14ce20c250d}} 
+\index{ThingSmartMatterManager@{ThingSmartMatterManager}!currentCompressedFabricID@{currentCompressedFabricID}}
+\index{currentCompressedFabricID@{currentCompressedFabricID}!ThingSmartMatterManager@{ThingSmartMatterManager}}
+\doxysubsubsection{\texorpdfstring{currentCompressedFabricID}{currentCompressedFabricID}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (uint64\+\_\+t) current\+Compressed\+Fabric\+ID \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+load current home matter compressed fabric\+ID 
+
+\mbox{\Hypertarget{interface_thing_smart_matter_manager_ace4ebffb2b09192ecea9a14ce20c250d}\label{interface_thing_smart_matter_manager_ace4ebffb2b09192ecea9a14ce20c250d}} 
+\index{ThingSmartMatterManager@{ThingSmartMatterManager}!currentCompressedFabricID@{currentCompressedFabricID}}
+\index{currentCompressedFabricID@{currentCompressedFabricID}!ThingSmartMatterManager@{ThingSmartMatterManager}}
+\doxysubsubsection{\texorpdfstring{currentCompressedFabricID}{currentCompressedFabricID}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (uint64\+\_\+t) current\+Compressed\+Fabric\+ID \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+load current home matter compressed fabric\+ID 
+
+\mbox{\Hypertarget{interface_thing_smart_matter_manager_afe465b70df93ac5357c7a46f6727e5a7}\label{interface_thing_smart_matter_manager_afe465b70df93ac5357c7a46f6727e5a7}} 
+\index{ThingSmartMatterManager@{ThingSmartMatterManager}!loadFabricWithSpaceId:success:failure:@{loadFabricWithSpaceId:success:failure:}}
+\index{loadFabricWithSpaceId:success:failure:@{loadFabricWithSpaceId:success:failure:}!ThingSmartMatterManager@{ThingSmartMatterManager}}
+\doxysubsubsection{\texorpdfstring{loadFabricWithSpaceId:success:failure:}{loadFabricWithSpaceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) load\+Fabric\+With\+Space\+Id\+: \begin{DoxyParamCaption}\item[{(long long)}]{space\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+
+
+share\+Instance. 
+
+load the fabric by space id.
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item space\+Id\+: the space id. (aka home id).
+\item success\+: Called when the task is finished.
+\item failure\+: Called when the task is interrupted by an error. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_matter_manager_afe465b70df93ac5357c7a46f6727e5a7}\label{interface_thing_smart_matter_manager_afe465b70df93ac5357c7a46f6727e5a7}} 
+\index{ThingSmartMatterManager@{ThingSmartMatterManager}!loadFabricWithSpaceId:success:failure:@{loadFabricWithSpaceId:success:failure:}}
+\index{loadFabricWithSpaceId:success:failure:@{loadFabricWithSpaceId:success:failure:}!ThingSmartMatterManager@{ThingSmartMatterManager}}
+\doxysubsubsection{\texorpdfstring{loadFabricWithSpaceId:success:failure:}{loadFabricWithSpaceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) load\+Fabric\+With\+Space\+Id\+: \begin{DoxyParamCaption}\item[{(long long)}]{space\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+
+
+share\+Instance. 
+
+load the fabric by space id.
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item space\+Id\+: the space id. (aka home id).
+\item success\+: Called when the task is finished.
+\item failure\+: Called when the task is interrupted by an error. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_matter_manager_abc5578432da8f3a4d44982f89facb4db}\label{interface_thing_smart_matter_manager_abc5578432da8f3a4d44982f89facb4db}} 
+\index{ThingSmartMatterManager@{ThingSmartMatterManager}!spaceId@{spaceId}}
+\index{spaceId@{spaceId}!ThingSmartMatterManager@{ThingSmartMatterManager}}
+\doxysubsubsection{\texorpdfstring{spaceId}{spaceId}}
+{\footnotesize\ttfamily -\/ (long long) space\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_manager_8h_source_l00014}{14}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_manager_8h_source}{Thing\+Smart\+Matter\+Manager.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Thing\+Smart\+Matter\+Kit.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Smart\+Matter\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_manager_8h}{Thing\+Smart\+Matter\+Manager.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Thing\+Smart\+Matter\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Matter\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_manager_8h}{Thing\+Smart\+Matter\+Manager.\+h}}\end{DoxyCompactItemize}

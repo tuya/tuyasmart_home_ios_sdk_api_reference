@@ -1,4 +1,0 @@
-var ios_x86__64_simulator_2_t_u_n_i_online_service_manager_8framework_2_private_headers_2_t_u_n_i_on776e59996fdf720e9b132aa1db024162 =
-[
-    [ "TUNIOnlineServiceManagerCustomerServiceRes", "interface_t_u_n_i_online_service_manager_customer_service_res.html", "interface_t_u_n_i_online_service_manager_customer_service_res" ]
-];

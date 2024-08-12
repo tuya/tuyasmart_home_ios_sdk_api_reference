@@ -1,6 +1,0 @@
-var ios_x86__64_simulator_2_thing_smart_theme_manager_biz_bundle_8framework_2_headers_2_thing_smart_c3932b4f15cea3a5730305085a8df851 =
-[
-    [ "FOUNDATION_EXPORT", "ios-x86__64-simulator_2_thing_smart_theme_manager_biz_bundle_8framework_2_headers_2_thing_smart_c3932b4f15cea3a5730305085a8df851.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingSmartThemeManagerBizBundleVersionNumber", "ios-x86__64-simulator_2_thing_smart_theme_manager_biz_bundle_8framework_2_headers_2_thing_smart_c3932b4f15cea3a5730305085a8df851.html#a2cf10136626c49d55f683b6815de492b", null ],
-    [ "ThingSmartThemeManagerBizBundleVersionString", "ios-x86__64-simulator_2_thing_smart_theme_manager_biz_bundle_8framework_2_headers_2_thing_smart_c3932b4f15cea3a5730305085a8df851.html#a004e9ee79469f7ee59d0aa6496e22075", null ]
-];

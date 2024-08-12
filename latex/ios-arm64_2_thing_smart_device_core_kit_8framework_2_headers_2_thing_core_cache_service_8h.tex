@@ -1,0 +1,651 @@
+\hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.xcframework/ios-\/arm64/\+Thing\+Smart\+Device\+Core\+Kit.framework/\+Headers/\+Thing\+Core\+Cache\+Service.h File Reference}
+\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/ios-\/arm64/ThingSmartDeviceCoreKit.framework/Headers/ThingCoreCacheService.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/ios-\/arm64/ThingSmartDeviceCoreKit.framework/Headers/ThingCoreCacheService.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Device\+Advanced\+Ability.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+protocol \mbox{\hyperlink{protocol_thing_core_cache_service_delegate-p}{$<$\+Thing\+Core\+Cache\+Service\+Delegate$>$}}
+\begin{DoxyCompactList}\small\item\em The delegate of the Thing\+Core\+Cache\+Service class provides the callback of device or group status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a7a1abcc86c887d9a3795d52dec50b116}{set\+Cache\+Handler\+Queue\+:}} (dispatch\+\_\+queue\+\_\+t queue)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ad20897c5c8bd47f5d4005989bead0e55}{reset}} ()
+\item 
+\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a0d378c3777b63041ccef8775319bfd4d}{get\+Device\+Info\+With\+Dev\+Id\+:}} (NSString $\ast$dev\+Id)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_af0e16ac2032d0df807bf2549c94a09ed}{add\+Device\+Model\+:}} (\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$device\+Model)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_aa9295d8e8c66b084f37944c049f2a0ae}{add\+Device\+Model\+:completion\+:}} (\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$device\+Model,\mbox{[}completion\mbox{]} nullable void($^\wedge$ completion)(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$device))
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_acd2276fcf638ac942a7d2a2498fbedbf}{add\+Device\+Model\+List\+:}} (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$device\+Model\+List)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a90d6721a743c129f6f34c53940011f85}{add\+Device\+Model\+List\+:completion\+:}} (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$device\+Model\+List,\mbox{[}completion\mbox{]} nullable void($^\wedge$ completion)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$device\+List))
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a72c422fd9a08faef9ed33e6ab585e43c}{remove\+Device\+With\+Dev\+Id\+:}} (NSString $\ast$dev\+Id)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a107f5fbe9c7f9fcfde8240553178f21a}{remove\+Device\+With\+Dev\+Id\+:completion\+:}} (NSString $\ast$dev\+Id,\mbox{[}completion\mbox{]} nullable void($^\wedge$ completion)(NSString $\ast$dev\+Id))
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a81b04ed2f10ae3a42b2d3e4c7b0801a6}{get\+All\+Device\+List}} ()
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_af9c64c78eaf4ba97da437c9a70256743}{update\+Device\+Ota\+Info\+With\+List\+:}} (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$ $>$ $\ast$ota\+List)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_aa8895aab964c63541782a72d6118cc34}{update\+Device\+Ota\+Info\+With\+List\+:completion\+:}} (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$ $>$ $\ast$ota\+List,\mbox{[}completion\mbox{]} nullable void($^\wedge$ completion)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$ $>$ $\ast$))
+\item 
+\mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_af7a0abf96156f00af584c8b1f6d3a14d}{get\+Device\+Ota\+Info\+With\+Dev\+Id\+:}} (NSString $\ast$dev\+Id)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a9630bed70aa6c9fd8c32d7e1fca89623}{update\+Device\+Ota\+Mode\+:}} (\mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$ota\+Model)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_abd3e42710fff80bb012ad068bbd24706}{update\+Device\+Ota\+Model\+:completion\+:}} (\mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$ota\+Model,\mbox{[}completion\mbox{]} nullable void($^\wedge$ completion)(\mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$))
+\item 
+BOOL \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ad3d4e42975a7768b8cdf0fcebf53f1a4}{validate\+Cach\+Roam\+Device\+SN\+:}} (NSDictionary $\ast$message)
+\item 
+\mbox{\hyperlink{interface_thing_smart_group_model}{Thing\+Smart\+Group\+Model}} $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a9e390aee49597488673f7a265c94eb65}{get\+Group\+Info\+With\+Group\+Id\+:}} (long long group\+Id)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a0a314e07df0d9fb998be9e363464554b}{add\+Group\+Model\+:}} (\mbox{\hyperlink{interface_thing_smart_group_model}{Thing\+Smart\+Group\+Model}} $\ast$group\+Model)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a697b9ab37f8bbf436164340831f3a940}{add\+Group\+Model\+:completion\+:}} (\mbox{\hyperlink{interface_thing_smart_group_model}{Thing\+Smart\+Group\+Model}} $\ast$group\+Model,\mbox{[}completion\mbox{]} nullable void($^\wedge$ completion)(\mbox{\hyperlink{interface_thing_smart_group_model}{Thing\+Smart\+Group\+Model}} $\ast$group))
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a03f198511883e549b08aa3583561385e}{remove\+Group\+With\+Group\+Id\+:}} (long long group\+Id)
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_group_model}{Thing\+Smart\+Group\+Model}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a43116fd3b9c35655c95cd17f36e9d3fa}{get\+All\+Group\+List}} ()
+\item 
+NSDictionary $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a824a5165ddb9ff22860da7f07b3ea19f}{get\+Group\+Product\+With\+Product\+Id\+:}} (NSString $\ast$product\+Id)
+\item 
+NSDictionary $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a623a1d1796746b2784cfa988e6f68c90}{get\+Group\+Product\+With\+Product\+Id\+:product\+Ver\+:}} (NSString $\ast$product\+Id,\mbox{[}product\+Ver\mbox{]} NSString $\ast$product\+Ver)
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a5daca2389714cb3c5c995a0b7e112ba2}{get\+Device\+List\+With\+Group\+Id\+:}} (long long group\+Id)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_abe47d1d2745a3da075d1807b01baa5f9}{update\+Group\+Product\+List\+:}} (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary $\ast$ $>$ $\ast$group\+Product\+List)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a5462bb795e802cee910fbc1f8f056885}{update\+Device\+Group\+Relation\+With\+Device\+List\+:group\+Id\+:}} (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$device\+List,\mbox{[}group\+Id\mbox{]} long long group\+Id)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a402e94dfaab28eb3f236bd03f0ca93e9}{update\+Device\+Group\+Relation\+With\+Device\+List\+:group\+Id\+:should\+Notify\+:}} (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$device\+List,\mbox{[}group\+Id\mbox{]} long long group\+Id,\mbox{[}should\+Notify\mbox{]} BOOL should\+Notify)
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a669fa25476fed7f01da08387629c1ce3}{get\+Device\+List\+With\+Home\+Id\+:}} (long long home\+Id)
+\item 
+\mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a9e2d909e16395b9ef1344a46c893933e}{get\+Mesh\+Model\+With\+Mesh\+Id\+:}} (NSString $\ast$mesh\+Id)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ad0f826ed57347f4d4a17b7d9d81b148b}{update\+Mesh\+Model\+:}} (\mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$mesh\+Model)
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a39cc5c451bca1faaeabfaee09cec7412}{get\+All\+Mesh\+List}} ()
+\item 
+NSInteger \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ad66f0a496515b3b6fe1eab84c9bcffe4}{get\+Mesh\+Group\+Address\+From\+Local\+With\+Mesh\+Id\+:}} (NSString $\ast$mesh\+Id)
+\item 
+NSInteger \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a04613e27c1511c61f7e7cd2b01ff05f6}{get\+Mesh\+Group\+Count\+From\+Local\+With\+Mesh\+Id\+:}} (NSString $\ast$mesh\+Id)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a34b898efb50e253aff81fbb5cc6cb08a}{remove\+Mesh\+Group\+With\+Address\+:mesh\+Id\+:}} (NSInteger address,\mbox{[}mesh\+Id\mbox{]} NSString $\ast$mesh\+Id)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a568951628c16e3e06ad39585714d358d}{add\+Thing\+Model\+:completion\+:}} (\mbox{\hyperlink{interface_thing_smart_thing_model}{Thing\+Smart\+Thing\+Model}} $\ast$model,\mbox{[}completion\mbox{]} nullable void($^\wedge$ completion)(\mbox{\hyperlink{interface_thing_smart_thing_model}{Thing\+Smart\+Thing\+Model}} $\ast$thing\+Model))
+\item 
+nullable \mbox{\hyperlink{interface_thing_smart_thing_model}{Thing\+Smart\+Thing\+Model}} $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_aed5bd16bf5867e6ec47eb27899101f76}{get\+Thing\+Model\+With\+Product\+Id\+:product\+Version\+:}} (NSString $\ast$product\+Id,\mbox{[}product\+Version\mbox{]} NSString $\ast$product\+Version)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ab9679de1ea0206c6cbf35114938e5ea5}{add\+Advanced\+Ability\+Model\+:completion\+:}} (\mbox{\hyperlink{interface_thing_smart_device_advanced_ability}{Thing\+Smart\+Device\+Advanced\+Ability}} $\ast$model,\mbox{[}completion\mbox{]} nullable void($^\wedge$ completion)(\mbox{\hyperlink{interface_thing_smart_device_advanced_ability}{Thing\+Smart\+Device\+Advanced\+Ability}} $\ast$thing\+Model))
+\item 
+BOOL \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a20fa95a07a76ccb9d9a1fd6ae109e01e}{has\+Advanced\+Ability\+With\+Dev\+Id\+:code\+:}} (NSString $\ast$dev\+Id,\mbox{[}code\mbox{]} NSString $\ast$code)
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_advanced_ability}{Thing\+Smart\+Device\+Advanced\+Ability}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a962abc058cd477a8dee4b5f4c072c6f8}{get\+Ability\+List}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_core_cache_service_delegate-p}{Thing\+Core\+Cache\+Service\+Delegate}} $>$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a8567e31b759386c9840833a38589e659}{delegate}}
+\begin{DoxyCompactList}\small\item\em The devices and group core cache classes allow you to add, modify, and delete data models. You can also subscribe to MQTT messages. \end{DoxyCompactList}\item 
+NSMutable\+Dictionary$<$ NSString $\ast$, \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a6d24342bfcfe9e20336f297b3626bcfc}{device\+Data}}
+\begin{DoxyCompactList}\small\item\em The device cache. \end{DoxyCompactList}\item 
+NSMutable\+Dictionary$<$ NSString $\ast$, \mbox{\hyperlink{interface_thing_smart_group_model}{Thing\+Smart\+Group\+Model}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_aae30e2268e218eec9b2acf3c04789ef8}{group\+Data}}
+\begin{DoxyCompactList}\small\item\em The group caching. \end{DoxyCompactList}\item 
+NSMutable\+Dictionary$<$ NSString $\ast$, NSDictionary $\ast$ $>$ $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ac9850f8507bdc5da2fe559c3544e506d}{group\+Product\+Data}}
+\begin{DoxyCompactList}\small\item\em The group product information cache. \end{DoxyCompactList}\item 
+NSMutable\+Dictionary$<$ NSString $\ast$, NSMutable\+Array$<$ NSString $\ast$ $>$ $\ast$ $>$ $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a89237a0445b67945d6dd188a04a5e29d}{group\+Device\+Relation}}
+\begin{DoxyCompactList}\small\item\em The group device relationship cache. \end{DoxyCompactList}\item 
+NSMutable\+Dictionary$<$ NSString $\ast$, \mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a0fe964d8ebe5f918afcdbcda1bd26503}{mesh\+Data}}
+\begin{DoxyCompactList}\small\item\em The mesh information. \end{DoxyCompactList}\item 
+NSMutable\+Dictionary $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_abb1e096474b8283301752bf1d9f2933b}{mesh\+Group\+Add\+Data}}
+\begin{DoxyCompactList}\small\item\em The mesh group information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ab9679de1ea0206c6cbf35114938e5ea5}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ab9679de1ea0206c6cbf35114938e5ea5}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!addAdvancedAbilityModel:completion:@{addAdvancedAbilityModel:completion:}}
+\index{addAdvancedAbilityModel:completion:@{addAdvancedAbilityModel:completion:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{addAdvancedAbilityModel:completion:()}{addAdvancedAbilityModel:completion:()}}
+{\footnotesize\ttfamily void add\+Advanced\+Ability\+Model\+:completion\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_thing_smart_device_advanced_ability}{Thing\+Smart\+Device\+Advanced\+Ability}} $\ast$}]{model,  }\item[{\mbox{[}completion\mbox{]} nullable void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_device_advanced_ability}{Thing\+Smart\+Device\+Advanced\+Ability}} $\ast$thing\+Model)}]{completion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_af0e16ac2032d0df807bf2549c94a09ed}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_af0e16ac2032d0df807bf2549c94a09ed}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!addDeviceModel:@{addDeviceModel:}}
+\index{addDeviceModel:@{addDeviceModel:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{addDeviceModel:()}{addDeviceModel:()}}
+{\footnotesize\ttfamily void add\+Device\+Model\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$}]{device\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Adds a device to the cache.
+
+After you add the device to the cache, subscribe to the topic of the device\textquotesingle{}s MQTT messages. Make sure that the local key and protocol version are both configured. After the device is added, you can accept callbacks by implementing {\ttfamily device\+Did\+Add\+:} of {\ttfamily \mbox{\hyperlink{protocol_thing_core_cache_service_delegate-p}{Thing\+Core\+Cache\+Service\+Delegate}}}. The tasks to add devices, subscribe to messages, and execute callbacks are run in the asynchronous thread. The asynchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Model} & The model of the device to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_aa9295d8e8c66b084f37944c049f2a0ae}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_aa9295d8e8c66b084f37944c049f2a0ae}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!addDeviceModel:completion:@{addDeviceModel:completion:}}
+\index{addDeviceModel:completion:@{addDeviceModel:completion:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{addDeviceModel:completion:()}{addDeviceModel:completion:()}}
+{\footnotesize\ttfamily void add\+Device\+Model\+:completion\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$}]{device\+Model,  }\item[{\mbox{[}completion\mbox{]} nullable void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$device)}]{completion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Adds a device to the cache.
+
+After you add the device to the cache, subscribe to the topic of the device\textquotesingle{}s MQTT messages. Make sure that the local key and protocol version are both configured. During the process, you can set the completion block or implement the {\ttfamily device\+Did\+Add\+:} of the proxy {\ttfamily \mbox{\hyperlink{protocol_thing_core_cache_service_delegate-p}{Thing\+Core\+Cache\+Service\+Delegate}}} to handle the result of the event. The completion block is called and followed by the delegate. The tasks to add devices, subscribe to messages, block, and execute callbacks are run in the asynchronous thread. The asynchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Model} & The device model to be added. \\
+\hline
+{\em completion} & The callback after the completion of the join block. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_acd2276fcf638ac942a7d2a2498fbedbf}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_acd2276fcf638ac942a7d2a2498fbedbf}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!addDeviceModelList:@{addDeviceModelList:}}
+\index{addDeviceModelList:@{addDeviceModelList:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{addDeviceModelList:()}{addDeviceModelList:()}}
+{\footnotesize\ttfamily void add\+Device\+Model\+List\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$}]{device\+Model\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Adds multiple devices to the cache in an operation.
+
+After you add the device to the cache, subscribe to the topic of each device\textquotesingle{}s MQTT messages. Make sure that the local key and protocol version are both configured. After the device is added, you can accept callbacks by implementing {\ttfamily device\+List\+Did\+Add\+:} of {\ttfamily \mbox{\hyperlink{protocol_thing_core_cache_service_delegate-p}{Thing\+Core\+Cache\+Service\+Delegate}}}. The tasks to add devices, subscribe to messages, and execute callbacks are run in the asynchronous thread. The asynchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Model\+List} & The group of devices to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a90d6721a743c129f6f34c53940011f85}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a90d6721a743c129f6f34c53940011f85}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!addDeviceModelList:completion:@{addDeviceModelList:completion:}}
+\index{addDeviceModelList:completion:@{addDeviceModelList:completion:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{addDeviceModelList:completion:()}{addDeviceModelList:completion:()}}
+{\footnotesize\ttfamily void add\+Device\+Model\+List\+:completion\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$}]{device\+Model\+List,  }\item[{\mbox{[}completion\mbox{]} nullable void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$device\+List)}]{completion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Adds multiple devices to the cache in an operation.
+
+After you add the device to the cache, subscribe to the topic of each device\textquotesingle{}s MQTT messages. Make sure that the local key and protocol version are both configured. During the process, you can set the completion block or implement the {\ttfamily device\+List\+Did\+Add\+:} of the proxy {\ttfamily \mbox{\hyperlink{protocol_thing_core_cache_service_delegate-p}{Thing\+Core\+Cache\+Service\+Delegate}}} to handle the result of the event. The completion block is called and followed by the delegate. The tasks to add devices, subscribe to messages, and execute callbacks are run in the asynchronous thread. The asynchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Model\+List} & The group of devices to be added. \\
+\hline
+{\em completion} & The callback after the completion of the join block. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a0a314e07df0d9fb998be9e363464554b}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a0a314e07df0d9fb998be9e363464554b}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!addGroupModel:@{addGroupModel:}}
+\index{addGroupModel:@{addGroupModel:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{addGroupModel:()}{addGroupModel:()}}
+{\footnotesize\ttfamily void add\+Group\+Model\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_thing_smart_group_model}{Thing\+Smart\+Group\+Model}} $\ast$}]{group\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Adds a group to the cache.
+
+After you add the group to the cache, subscribe to the topic of the group\textquotesingle{}s MQTT messages. Make sure that the local key and protocol version are both configured. After the group is added, you can accept callbacks by implementing {\ttfamily group\+Did\+Add\+:} of {\ttfamily \mbox{\hyperlink{protocol_thing_core_cache_service_delegate-p}{Thing\+Core\+Cache\+Service\+Delegate}}}. The tasks to add groups, subscribe to messages, and execute callbacks are run in the asynchronous threads. The asynchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Model} & The group model to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a697b9ab37f8bbf436164340831f3a940}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a697b9ab37f8bbf436164340831f3a940}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!addGroupModel:completion:@{addGroupModel:completion:}}
+\index{addGroupModel:completion:@{addGroupModel:completion:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{addGroupModel:completion:()}{addGroupModel:completion:()}}
+{\footnotesize\ttfamily void add\+Group\+Model\+:completion\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_thing_smart_group_model}{Thing\+Smart\+Group\+Model}} $\ast$}]{group\+Model,  }\item[{\mbox{[}completion\mbox{]} nullable void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_group_model}{Thing\+Smart\+Group\+Model}} $\ast$group)}]{completion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Adds a group to the cache.
+
+After you add the group to the cache, subscribe to the topic of the group\textquotesingle{}s MQTT messages. Make sure that the local key and protocol version are both configured. During the process, you can set the completion block or implement the proxy {\ttfamily group\+Did\+Add\+:} of {\ttfamily \mbox{\hyperlink{protocol_thing_core_cache_service_delegate-p}{Thing\+Core\+Cache\+Service\+Delegate}}} to handle the result of the event. The completion block is called and followed by the delegate. The tasks to add devices, subscribe to messages, and execute callbacks are run in the asynchronous thread. The asynchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Model} & The group model to be joined. \\
+\hline
+{\em completion} & Callback after the completion of the join block. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a568951628c16e3e06ad39585714d358d}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a568951628c16e3e06ad39585714d358d}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!addThingModel:completion:@{addThingModel:completion:}}
+\index{addThingModel:completion:@{addThingModel:completion:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{addThingModel:completion:()}{addThingModel:completion:()}}
+{\footnotesize\ttfamily void add\+Thing\+Model\+:completion\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_thing_smart_thing_model}{Thing\+Smart\+Thing\+Model}} $\ast$}]{model,  }\item[{\mbox{[}completion\mbox{]} nullable void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_thing_model}{Thing\+Smart\+Thing\+Model}} $\ast$thing\+Model)}]{completion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a962abc058cd477a8dee4b5f4c072c6f8}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a962abc058cd477a8dee4b5f4c072c6f8}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getAbilityList@{getAbilityList}}
+\index{getAbilityList@{getAbilityList}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getAbilityList()}{getAbilityList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_advanced_ability}{Thing\+Smart\+Device\+Advanced\+Ability}} $\ast$ $>$ $\ast$ get\+Ability\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a81b04ed2f10ae3a42b2d3e4c7b0801a6}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a81b04ed2f10ae3a42b2d3e4c7b0801a6}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getAllDeviceList@{getAllDeviceList}}
+\index{getAllDeviceList@{getAllDeviceList}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getAllDeviceList()}{getAllDeviceList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$ get\+All\+Device\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns all devices in the cache. The synchronous queue. \mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a43116fd3b9c35655c95cd17f36e9d3fa}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a43116fd3b9c35655c95cd17f36e9d3fa}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getAllGroupList@{getAllGroupList}}
+\index{getAllGroupList@{getAllGroupList}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getAllGroupList()}{getAllGroupList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_group_model}{Thing\+Smart\+Group\+Model}} $\ast$ $>$ $\ast$ get\+All\+Group\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns all groups in the cache. The synchronous queue. \mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a39cc5c451bca1faaeabfaee09cec7412}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a39cc5c451bca1faaeabfaee09cec7412}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getAllMeshList@{getAllMeshList}}
+\index{getAllMeshList@{getAllMeshList}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getAllMeshList()}{getAllMeshList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$ $>$ $\ast$ get\+All\+Mesh\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a0d378c3777b63041ccef8775319bfd4d}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a0d378c3777b63041ccef8775319bfd4d}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getDeviceInfoWithDevId:@{getDeviceInfoWithDevId:}}
+\index{getDeviceInfoWithDevId:@{getDeviceInfoWithDevId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getDeviceInfoWithDevId:()}{getDeviceInfoWithDevId:()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ get\+Device\+Info\+With\+Dev\+Id\+: (\begin{DoxyParamCaption}\item[{NSString $\ast$}]{dev\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the device by device ID to synchronize device information. The synchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & The device ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a5daca2389714cb3c5c995a0b7e112ba2}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a5daca2389714cb3c5c995a0b7e112ba2}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getDeviceListWithGroupId:@{getDeviceListWithGroupId:}}
+\index{getDeviceListWithGroupId:@{getDeviceListWithGroupId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getDeviceListWithGroupId:()}{getDeviceListWithGroupId:()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$ get\+Device\+List\+With\+Group\+Id\+: (\begin{DoxyParamCaption}\item[{long long}]{group\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a list of devices in a group. The synchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Id} & The group ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a669fa25476fed7f01da08387629c1ce3}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a669fa25476fed7f01da08387629c1ce3}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getDeviceListWithHomeId:@{getDeviceListWithHomeId:}}
+\index{getDeviceListWithHomeId:@{getDeviceListWithHomeId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getDeviceListWithHomeId:()}{getDeviceListWithHomeId:()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$ get\+Device\+List\+With\+Home\+Id\+: (\begin{DoxyParamCaption}\item[{long long}]{home\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_af7a0abf96156f00af584c8b1f6d3a14d}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_af7a0abf96156f00af584c8b1f6d3a14d}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getDeviceOtaInfoWithDevId:@{getDeviceOtaInfoWithDevId:}}
+\index{getDeviceOtaInfoWithDevId:@{getDeviceOtaInfoWithDevId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getDeviceOtaInfoWithDevId:()}{getDeviceOtaInfoWithDevId:()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$ get\+Device\+Ota\+Info\+With\+Dev\+Id\+: (\begin{DoxyParamCaption}\item[{NSString $\ast$}]{dev\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a device OTA information. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & The device ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a9e390aee49597488673f7a265c94eb65}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a9e390aee49597488673f7a265c94eb65}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getGroupInfoWithGroupId:@{getGroupInfoWithGroupId:}}
+\index{getGroupInfoWithGroupId:@{getGroupInfoWithGroupId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getGroupInfoWithGroupId:()}{getGroupInfoWithGroupId:()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_thing_smart_group_model}{Thing\+Smart\+Group\+Model}} $\ast$ get\+Group\+Info\+With\+Group\+Id\+: (\begin{DoxyParamCaption}\item[{long long}]{group\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the group cache information by group ID. The synchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Id} & The group ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a824a5165ddb9ff22860da7f07b3ea19f}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a824a5165ddb9ff22860da7f07b3ea19f}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getGroupProductWithProductId:@{getGroupProductWithProductId:}}
+\index{getGroupProductWithProductId:@{getGroupProductWithProductId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getGroupProductWithProductId:()}{getGroupProductWithProductId:()}}
+{\footnotesize\ttfamily NSDictionary $\ast$ get\+Group\+Product\+With\+Product\+Id\+: (\begin{DoxyParamCaption}\item[{NSString $\ast$}]{product\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the group product information by product ID. The synchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em product\+Id} & The product ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a623a1d1796746b2784cfa988e6f68c90}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a623a1d1796746b2784cfa988e6f68c90}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getGroupProductWithProductId:productVer:@{getGroupProductWithProductId:productVer:}}
+\index{getGroupProductWithProductId:productVer:@{getGroupProductWithProductId:productVer:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getGroupProductWithProductId:productVer:()}{getGroupProductWithProductId:productVer:()}}
+{\footnotesize\ttfamily NSDictionary $\ast$ get\+Group\+Product\+With\+Product\+Id\+:product\+Ver\+: (\begin{DoxyParamCaption}\item[{NSString $\ast$}]{product\+Id,  }\item[{\mbox{[}product\+Ver\mbox{]} NSString $\ast$}]{product\+Ver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the group product information by product ID and product\+Ver . 
+\begin{DoxyParams}{Parameters}
+{\em product\+Id} & The product ID. \\
+\hline
+{\em product\+Ver} & The product Version. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ad66f0a496515b3b6fe1eab84c9bcffe4}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ad66f0a496515b3b6fe1eab84c9bcffe4}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getMeshGroupAddressFromLocalWithMeshId:@{getMeshGroupAddressFromLocalWithMeshId:}}
+\index{getMeshGroupAddressFromLocalWithMeshId:@{getMeshGroupAddressFromLocalWithMeshId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getMeshGroupAddressFromLocalWithMeshId:()}{getMeshGroupAddressFromLocalWithMeshId:()}}
+{\footnotesize\ttfamily NSInteger get\+Mesh\+Group\+Address\+From\+Local\+With\+Mesh\+Id\+: (\begin{DoxyParamCaption}\item[{NSString $\ast$}]{mesh\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a04613e27c1511c61f7e7cd2b01ff05f6}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a04613e27c1511c61f7e7cd2b01ff05f6}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getMeshGroupCountFromLocalWithMeshId:@{getMeshGroupCountFromLocalWithMeshId:}}
+\index{getMeshGroupCountFromLocalWithMeshId:@{getMeshGroupCountFromLocalWithMeshId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getMeshGroupCountFromLocalWithMeshId:()}{getMeshGroupCountFromLocalWithMeshId:()}}
+{\footnotesize\ttfamily NSInteger get\+Mesh\+Group\+Count\+From\+Local\+With\+Mesh\+Id\+: (\begin{DoxyParamCaption}\item[{NSString $\ast$}]{mesh\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a9e2d909e16395b9ef1344a46c893933e}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a9e2d909e16395b9ef1344a46c893933e}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getMeshModelWithMeshId:@{getMeshModelWithMeshId:}}
+\index{getMeshModelWithMeshId:@{getMeshModelWithMeshId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getMeshModelWithMeshId:()}{getMeshModelWithMeshId:()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$ get\+Mesh\+Model\+With\+Mesh\+Id\+: (\begin{DoxyParamCaption}\item[{NSString $\ast$}]{mesh\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the mesh information. The synchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Id} & The mesh ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_aed5bd16bf5867e6ec47eb27899101f76}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_aed5bd16bf5867e6ec47eb27899101f76}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!getThingModelWithProductId:productVersion:@{getThingModelWithProductId:productVersion:}}
+\index{getThingModelWithProductId:productVersion:@{getThingModelWithProductId:productVersion:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{getThingModelWithProductId:productVersion:()}{getThingModelWithProductId:productVersion:()}}
+{\footnotesize\ttfamily nullable \mbox{\hyperlink{interface_thing_smart_thing_model}{Thing\+Smart\+Thing\+Model}} $\ast$ get\+Thing\+Model\+With\+Product\+Id\+:product\+Version\+: (\begin{DoxyParamCaption}\item[{NSString $\ast$}]{product\+Id,  }\item[{\mbox{[}product\+Version\mbox{]} NSString $\ast$}]{product\+Version }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a20fa95a07a76ccb9d9a1fd6ae109e01e}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a20fa95a07a76ccb9d9a1fd6ae109e01e}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!hasAdvancedAbilityWithDevId:code:@{hasAdvancedAbilityWithDevId:code:}}
+\index{hasAdvancedAbilityWithDevId:code:@{hasAdvancedAbilityWithDevId:code:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{hasAdvancedAbilityWithDevId:code:()}{hasAdvancedAbilityWithDevId:code:()}}
+{\footnotesize\ttfamily BOOL has\+Advanced\+Ability\+With\+Dev\+Id\+:code\+: (\begin{DoxyParamCaption}\item[{NSString $\ast$}]{dev\+Id,  }\item[{\mbox{[}code\mbox{]} NSString $\ast$}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a72c422fd9a08faef9ed33e6ab585e43c}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a72c422fd9a08faef9ed33e6ab585e43c}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!removeDeviceWithDevId:@{removeDeviceWithDevId:}}
+\index{removeDeviceWithDevId:@{removeDeviceWithDevId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{removeDeviceWithDevId:()}{removeDeviceWithDevId:()}}
+{\footnotesize\ttfamily void remove\+Device\+With\+Dev\+Id\+: (\begin{DoxyParamCaption}\item[{NSString $\ast$}]{dev\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Deletes the cached data of the device by device ID.
+
+If the data is already deleted, the deletion task is not run to avoid duplicate operations. After the deletion, the subscription to the MQTT topic of the device is canceled. During the deletion process, you can handle the result of the event by implementing {\ttfamily device\+Did\+Remove\+:} of {\ttfamily \mbox{\hyperlink{protocol_thing_core_cache_service_delegate-p}{Thing\+Core\+Cache\+Service\+Delegate}}}. The tasks to delete devices, unsubscribe from messages, and execute callbacks are run in the asynchronous thread. The asynchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & The ID of the device to be removed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a107f5fbe9c7f9fcfde8240553178f21a}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a107f5fbe9c7f9fcfde8240553178f21a}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!removeDeviceWithDevId:completion:@{removeDeviceWithDevId:completion:}}
+\index{removeDeviceWithDevId:completion:@{removeDeviceWithDevId:completion:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{removeDeviceWithDevId:completion:()}{removeDeviceWithDevId:completion:()}}
+{\footnotesize\ttfamily void remove\+Device\+With\+Dev\+Id\+:completion\+: (\begin{DoxyParamCaption}\item[{NSString $\ast$}]{dev\+Id,  }\item[{\mbox{[}completion\mbox{]} nullable void($^\wedge$)(NSString $\ast$dev\+Id)}]{completion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Delete the cached data of the device by device ID.
+
+If the data is already deleted, the deletion task is not run to avoid duplicate operations. After deletion, the subscription to the MQTT topic of the device is canceled. During the deletion process, you can set the completion block or implement {\ttfamily device\+Did\+Remove\+:} as a proxy for {\ttfamily \mbox{\hyperlink{protocol_thing_core_cache_service_delegate-p}{Thing\+Core\+Cache\+Service\+Delegate}}} to handle the result of the event. The completion block is called and followed by the delegate. The tasks to add devices, subscribe to messages, block, and execute callbacks are run in the asynchronous thread. The asynchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & The device ID to be deleted. \\
+\hline
+{\em completion} & The callback block after the completion of the deletion. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a03f198511883e549b08aa3583561385e}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a03f198511883e549b08aa3583561385e}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!removeGroupWithGroupId:@{removeGroupWithGroupId:}}
+\index{removeGroupWithGroupId:@{removeGroupWithGroupId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{removeGroupWithGroupId:()}{removeGroupWithGroupId:()}}
+{\footnotesize\ttfamily void remove\+Group\+With\+Group\+Id\+: (\begin{DoxyParamCaption}\item[{long long}]{group\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Deletes the cached data of a group by group ID.
+
+If the group is already deleted, the deletion task is not run to avoid duplicate operations. After deletion, the subscription to the MQTT topic of the device is canceled. During the deletion process, you can handle the result of the event by implementing {\ttfamily group\+Did\+Remove\+:} of {\ttfamily \mbox{\hyperlink{protocol_thing_core_cache_service_delegate-p}{Thing\+Core\+Cache\+Service\+Delegate}}}. The tasks to delete groups, unsubscribe from messages, and execute callbacks are run in the asynchronous thread. The asynchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Id} & The device ID to be removed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a34b898efb50e253aff81fbb5cc6cb08a}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a34b898efb50e253aff81fbb5cc6cb08a}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!removeMeshGroupWithAddress:meshId:@{removeMeshGroupWithAddress:meshId:}}
+\index{removeMeshGroupWithAddress:meshId:@{removeMeshGroupWithAddress:meshId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{removeMeshGroupWithAddress:meshId:()}{removeMeshGroupWithAddress:meshId:()}}
+{\footnotesize\ttfamily void remove\+Mesh\+Group\+With\+Address\+:mesh\+Id\+: (\begin{DoxyParamCaption}\item[{NSInteger}]{address,  }\item[{\mbox{[}mesh\+Id\mbox{]} NSString $\ast$}]{mesh\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ad20897c5c8bd47f5d4005989bead0e55}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ad20897c5c8bd47f5d4005989bead0e55}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!reset@{reset}}
+\index{reset@{reset}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Clears the cached data. The asynchronous queue. \mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a7a1abcc86c887d9a3795d52dec50b116}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a7a1abcc86c887d9a3795d52dec50b116}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!setCacheHandlerQueue:@{setCacheHandlerQueue:}}
+\index{setCacheHandlerQueue:@{setCacheHandlerQueue:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{setCacheHandlerQueue:()}{setCacheHandlerQueue:()}}
+{\footnotesize\ttfamily void set\+Cache\+Handler\+Queue\+: (\begin{DoxyParamCaption}\item[{dispatch\+\_\+queue\+\_\+t}]{queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the queue for processing the cached data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em queue} & The queue. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a5462bb795e802cee910fbc1f8f056885}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a5462bb795e802cee910fbc1f8f056885}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!updateDeviceGroupRelationWithDeviceList:groupId:@{updateDeviceGroupRelationWithDeviceList:groupId:}}
+\index{updateDeviceGroupRelationWithDeviceList:groupId:@{updateDeviceGroupRelationWithDeviceList:groupId:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{updateDeviceGroupRelationWithDeviceList:groupId:()}{updateDeviceGroupRelationWithDeviceList:groupId:()}}
+{\footnotesize\ttfamily void update\+Device\+Group\+Relation\+With\+Device\+List\+:group\+Id\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$}]{device\+List,  }\item[{\mbox{[}group\+Id\mbox{]} long long}]{group\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The batch update group allows you to update device information relationships. The asynchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+List} & The device list. \\
+\hline
+{\em group\+Id} & The group ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a402e94dfaab28eb3f236bd03f0ca93e9}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a402e94dfaab28eb3f236bd03f0ca93e9}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!updateDeviceGroupRelationWithDeviceList:groupId:shouldNotify:@{updateDeviceGroupRelationWithDeviceList:groupId:shouldNotify:}}
+\index{updateDeviceGroupRelationWithDeviceList:groupId:shouldNotify:@{updateDeviceGroupRelationWithDeviceList:groupId:shouldNotify:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{updateDeviceGroupRelationWithDeviceList:groupId:shouldNotify:()}{updateDeviceGroupRelationWithDeviceList:groupId:shouldNotify:()}}
+{\footnotesize\ttfamily void update\+Device\+Group\+Relation\+With\+Device\+List\+:group\+Id\+:should\+Notify\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$}]{device\+List,  }\item[{\mbox{[}group\+Id\mbox{]} long long}]{group\+Id,  }\item[{\mbox{[}should\+Notify\mbox{]} BOOL}]{should\+Notify }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The batch update group allows you to update device information relationships. The asynchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+List} & The device list. \\
+\hline
+{\em group\+Id} & The group ID. \\
+\hline
+{\em should\+Notify} & Specifies whether to send notifications. If the value is set to {\ttfamily yes}, {\ttfamily k\+Notification\+Group\+Update} is sent. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_af9c64c78eaf4ba97da437c9a70256743}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_af9c64c78eaf4ba97da437c9a70256743}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!updateDeviceOtaInfoWithList:@{updateDeviceOtaInfoWithList:}}
+\index{updateDeviceOtaInfoWithList:@{updateDeviceOtaInfoWithList:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{updateDeviceOtaInfoWithList:()}{updateDeviceOtaInfoWithList:()}}
+{\footnotesize\ttfamily void update\+Device\+Ota\+Info\+With\+List\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$ $>$ $\ast$}]{ota\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Updates the over-\/the-\/air (OTA) information. 
+\begin{DoxyParams}{Parameters}
+{\em ota\+List} & A list of device OTA information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_aa8895aab964c63541782a72d6118cc34}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_aa8895aab964c63541782a72d6118cc34}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!updateDeviceOtaInfoWithList:completion:@{updateDeviceOtaInfoWithList:completion:}}
+\index{updateDeviceOtaInfoWithList:completion:@{updateDeviceOtaInfoWithList:completion:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{updateDeviceOtaInfoWithList:completion:()}{updateDeviceOtaInfoWithList:completion:()}}
+{\footnotesize\ttfamily void update\+Device\+Ota\+Info\+With\+List\+:completion\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$ $>$ $\ast$}]{ota\+List,  }\item[{\mbox{[}completion\mbox{]} nullable void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$ $>$ $\ast$)}]{completion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Updates the over-\/the-\/air (OTA) information. 
+\begin{DoxyParams}{Parameters}
+{\em ota\+List} & A list of device OTA information. \\
+\hline
+{\em completion} & The callback block after the completion of the update. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a9630bed70aa6c9fd8c32d7e1fca89623}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a9630bed70aa6c9fd8c32d7e1fca89623}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!updateDeviceOtaMode:@{updateDeviceOtaMode:}}
+\index{updateDeviceOtaMode:@{updateDeviceOtaMode:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{updateDeviceOtaMode:()}{updateDeviceOtaMode:()}}
+{\footnotesize\ttfamily void update\+Device\+Ota\+Mode\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$}]{ota\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+update the over-\/the-\/air (OTA) information. 
+\begin{DoxyParams}{Parameters}
+{\em ota\+Model} & device OTA information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_abd3e42710fff80bb012ad068bbd24706}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_abd3e42710fff80bb012ad068bbd24706}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!updateDeviceOtaModel:completion:@{updateDeviceOtaModel:completion:}}
+\index{updateDeviceOtaModel:completion:@{updateDeviceOtaModel:completion:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{updateDeviceOtaModel:completion:()}{updateDeviceOtaModel:completion:()}}
+{\footnotesize\ttfamily void update\+Device\+Ota\+Model\+:completion\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$}]{ota\+Model,  }\item[{\mbox{[}completion\mbox{]} nullable void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_device_o_t_a_model}{Thing\+Smart\+Device\+OTAModel}} $\ast$)}]{completion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+update the over-\/the-\/air (OTA) information. 
+\begin{DoxyParams}{Parameters}
+{\em ota\+Model} & device OTA information. \\
+\hline
+{\em completion} & The callback block after the completion of the update. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_abe47d1d2745a3da075d1807b01baa5f9}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_abe47d1d2745a3da075d1807b01baa5f9}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!updateGroupProductList:@{updateGroupProductList:}}
+\index{updateGroupProductList:@{updateGroupProductList:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{updateGroupProductList:()}{updateGroupProductList:()}}
+{\footnotesize\ttfamily void update\+Group\+Product\+List\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary $\ast$ $>$ $\ast$}]{group\+Product\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Updates information about multiple products in an operation. The asynchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Product\+List} & A list of product information in the JSON format. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ad0f826ed57347f4d4a17b7d9d81b148b}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ad0f826ed57347f4d4a17b7d9d81b148b}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!updateMeshModel:@{updateMeshModel:}}
+\index{updateMeshModel:@{updateMeshModel:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{updateMeshModel:()}{updateMeshModel:()}}
+{\footnotesize\ttfamily void update\+Mesh\+Model\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$}]{mesh\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Updates mesh information. The synchronous queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Model} & The mesh information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ad3d4e42975a7768b8cdf0fcebf53f1a4}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ad3d4e42975a7768b8cdf0fcebf53f1a4}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!validateCachRoamDeviceSN:@{validateCachRoamDeviceSN:}}
+\index{validateCachRoamDeviceSN:@{validateCachRoamDeviceSN:}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{validateCachRoamDeviceSN:()}{validateCachRoamDeviceSN:()}}
+{\footnotesize\ttfamily BOOL validate\+Cach\+Roam\+Device\+SN\+: (\begin{DoxyParamCaption}\item[{NSDictionary $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Verify that the SN of the current device is valid. If yes is returned, the cache is updated 
+\begin{DoxyParams}{Parameters}
+{\em message} & mqtt message \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a8567e31b759386c9840833a38589e659}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a8567e31b759386c9840833a38589e659}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!delegate@{delegate}}
+\index{delegate@{delegate}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily id$<$\mbox{\hyperlink{protocol_thing_core_cache_service_delegate-p}{Thing\+Core\+Cache\+Service\+Delegate}}$>$ delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+The devices and group core cache classes allow you to add, modify, and delete data models. You can also subscribe to MQTT messages. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source_l00030}{30}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source}{Thing\+Core\+Cache\+Service.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a6d24342bfcfe9e20336f297b3626bcfc}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a6d24342bfcfe9e20336f297b3626bcfc}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!deviceData@{deviceData}}
+\index{deviceData@{deviceData}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{deviceData}{deviceData}}
+{\footnotesize\ttfamily NSMutable\+Dictionary$<$NSString $\ast$, \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$$>$$\ast$ device\+Data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The device cache. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source_l00033}{33}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source}{Thing\+Core\+Cache\+Service.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_aae30e2268e218eec9b2acf3c04789ef8}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_aae30e2268e218eec9b2acf3c04789ef8}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!groupData@{groupData}}
+\index{groupData@{groupData}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{groupData}{groupData}}
+{\footnotesize\ttfamily NSMutable\+Dictionary$<$NSString $\ast$, \mbox{\hyperlink{interface_thing_smart_group_model}{Thing\+Smart\+Group\+Model}} $\ast$$>$$\ast$ group\+Data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The group caching. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source_l00036}{36}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source}{Thing\+Core\+Cache\+Service.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a89237a0445b67945d6dd188a04a5e29d}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a89237a0445b67945d6dd188a04a5e29d}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!groupDeviceRelation@{groupDeviceRelation}}
+\index{groupDeviceRelation@{groupDeviceRelation}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{groupDeviceRelation}{groupDeviceRelation}}
+{\footnotesize\ttfamily NSMutable\+Dictionary$<$NSString $\ast$, NSMutable\+Array$<$NSString $\ast$$>$ $\ast$$>$$\ast$ group\+Device\+Relation\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The group device relationship cache. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source_l00042}{42}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source}{Thing\+Core\+Cache\+Service.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ac9850f8507bdc5da2fe559c3544e506d}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_ac9850f8507bdc5da2fe559c3544e506d}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!groupProductData@{groupProductData}}
+\index{groupProductData@{groupProductData}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{groupProductData}{groupProductData}}
+{\footnotesize\ttfamily NSMutable\+Dictionary$<$NSString $\ast$, NSDictionary $\ast$$>$$\ast$ group\+Product\+Data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The group product information cache. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source_l00039}{39}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source}{Thing\+Core\+Cache\+Service.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a0fe964d8ebe5f918afcdbcda1bd26503}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a0fe964d8ebe5f918afcdbcda1bd26503}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!meshData@{meshData}}
+\index{meshData@{meshData}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{meshData}{meshData}}
+{\footnotesize\ttfamily NSMutable\+Dictionary$<$NSString $\ast$, \mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$$>$$\ast$ mesh\+Data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The mesh information. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source_l00045}{45}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source}{Thing\+Core\+Cache\+Service.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_abb1e096474b8283301752bf1d9f2933b}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_abb1e096474b8283301752bf1d9f2933b}} 
+\index{ThingCoreCacheService.h@{ThingCoreCacheService.h}!meshGroupAddData@{meshGroupAddData}}
+\index{meshGroupAddData@{meshGroupAddData}!ThingCoreCacheService.h@{ThingCoreCacheService.h}}
+\doxysubsubsection{\texorpdfstring{meshGroupAddData}{meshGroupAddData}}
+{\footnotesize\ttfamily NSMutable\+Dictionary$\ast$ mesh\+Group\+Add\+Data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The mesh group information. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source_l00048}{48}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_source}{Thing\+Core\+Cache\+Service.\+h}}.
+

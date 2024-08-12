@@ -1,0 +1,197 @@
+\hypertarget{interface_thing_smart_matter_multiple_fabric_passcode_model}{}\doxysection{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model Class Reference}
+\label{interface_thing_smart_matter_multiple_fabric_passcode_model}\index{ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.931034cm]{interface_thing_smart_matter_multiple_fabric_passcode_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSUInteger \mbox{\hyperlink{interface_thing_smart_matter_multiple_fabric_passcode_model_a88ca0b15a6721b5a4933832b3f72c63a}{limit\+Count}}
+\begin{DoxyCompactList}\small\item\em Avaliable fabric count. \end{DoxyCompactList}\item 
+NSUInteger \mbox{\hyperlink{interface_thing_smart_matter_multiple_fabric_passcode_model_abec1d372a101b269b0f1c1f8a0637056}{passcode}}
+\begin{DoxyCompactList}\small\item\em Setup Code. (000000001-\/99999998) \end{DoxyCompactList}\item 
+NSUInteger \mbox{\hyperlink{interface_thing_smart_matter_multiple_fabric_passcode_model_a04cec5e0e33f2d228807d170cb96682a}{iteration}}
+\begin{DoxyCompactList}\small\item\em PBKDF Iterations. (1000$\sim$100000) \end{DoxyCompactList}\item 
+NSUInteger \mbox{\hyperlink{interface_thing_smart_matter_multiple_fabric_passcode_model_a9a49efed04263bb9c185041f9c6fd571}{expired}}
+\begin{DoxyCompactList}\small\item\em passcode expired time \end{DoxyCompactList}\item 
+NSUInteger \mbox{\hyperlink{interface_thing_smart_matter_multiple_fabric_passcode_model_a5bb0e5e2c37e94d8edeca2cae4c4db75}{duration}}
+\begin{DoxyCompactList}\small\item\em The window open timeout. 180 s $\sim$ 900 s. \end{DoxyCompactList}\item 
+NSUInteger \mbox{\hyperlink{interface_thing_smart_matter_multiple_fabric_passcode_model_a96fc98152d49061756f5c22566a4608a}{discriminator}}
+\begin{DoxyCompactList}\small\item\em Device discriminator. (0x000-\/0xfff) \end{DoxyCompactList}\item 
+NSUInteger \mbox{\hyperlink{interface_thing_smart_matter_multiple_fabric_passcode_model_af5f49fbc2172e114082bd1d05f43393d}{version}}
+\begin{DoxyCompactList}\small\item\em Pass code version. \end{DoxyCompactList}\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_thing_smart_matter_multiple_fabric_passcode_model_add6c292f837597e63715b4c859f4996d}{vendor\+Id}}
+\begin{DoxyCompactList}\small\item\em Matter vendor id. (aka\+: vid) \end{DoxyCompactList}\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_thing_smart_matter_multiple_fabric_passcode_model_a5933a7193b6fb448dc83fa7aa8eb46a6}{pid}}
+\begin{DoxyCompactList}\small\item\em Matter product id. (aka\+: pid) \end{DoxyCompactList}\item 
+NSUInteger \mbox{\hyperlink{interface_thing_smart_matter_multiple_fabric_passcode_model_a5cba3382293b3fdc2324f6ae80e76258}{discovery\+Capabilities}}
+\begin{DoxyCompactList}\small\item\em Device discovery capability. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Model used for Matter Multiple Fabric Flow.
+
+
+\begin{DoxyItemize}
+\item Use {\ttfamily -\/get\+Multiple\+Fabric\+Passcode\+Completion\+:} or {\ttfamily -\/get\+Multiple\+Fabric\+Passcode\+Force\+Refresh\+Completion} to get this model.
+\item Use {\ttfamily -\/send\+Enhanced\+Commissioning\+Command\+With\+Fabric\+Passcode\+Model\+:success\+:failure\+:} to open ECM pairing window. 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source_l00016}{16}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_matter_multiple_fabric_passcode_model_a5cba3382293b3fdc2324f6ae80e76258}\label{interface_thing_smart_matter_multiple_fabric_passcode_model_a5cba3382293b3fdc2324f6ae80e76258}} 
+\index{ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}!discoveryCapabilities@{discoveryCapabilities}}
+\index{discoveryCapabilities@{discoveryCapabilities}!ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}}
+\doxysubsubsection{\texorpdfstring{discoveryCapabilities}{discoveryCapabilities}}
+{\footnotesize\ttfamily -\/ (NSUInteger) discovery\+Capabilities\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Device discovery capability. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source_l00037}{37}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_matter_multiple_fabric_passcode_model_a96fc98152d49061756f5c22566a4608a}\label{interface_thing_smart_matter_multiple_fabric_passcode_model_a96fc98152d49061756f5c22566a4608a}} 
+\index{ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}!discriminator@{discriminator}}
+\index{discriminator@{discriminator}!ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}}
+\doxysubsubsection{\texorpdfstring{discriminator}{discriminator}}
+{\footnotesize\ttfamily -\/ (NSUInteger) discriminator\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Device discriminator. (0x000-\/0xfff) 
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source_l00029}{29}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_matter_multiple_fabric_passcode_model_a5bb0e5e2c37e94d8edeca2cae4c4db75}\label{interface_thing_smart_matter_multiple_fabric_passcode_model_a5bb0e5e2c37e94d8edeca2cae4c4db75}} 
+\index{ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}!duration@{duration}}
+\index{duration@{duration}!ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}}
+\doxysubsubsection{\texorpdfstring{duration}{duration}}
+{\footnotesize\ttfamily -\/ (NSUInteger) duration\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The window open timeout. 180 s $\sim$ 900 s. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source_l00027}{27}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_matter_multiple_fabric_passcode_model_a9a49efed04263bb9c185041f9c6fd571}\label{interface_thing_smart_matter_multiple_fabric_passcode_model_a9a49efed04263bb9c185041f9c6fd571}} 
+\index{ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}!expired@{expired}}
+\index{expired@{expired}!ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}}
+\doxysubsubsection{\texorpdfstring{expired}{expired}}
+{\footnotesize\ttfamily -\/ (NSUInteger) expired\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+passcode expired time 
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source_l00025}{25}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_matter_multiple_fabric_passcode_model_a04cec5e0e33f2d228807d170cb96682a}\label{interface_thing_smart_matter_multiple_fabric_passcode_model_a04cec5e0e33f2d228807d170cb96682a}} 
+\index{ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}!iteration@{iteration}}
+\index{iteration@{iteration}!ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}}
+\doxysubsubsection{\texorpdfstring{iteration}{iteration}}
+{\footnotesize\ttfamily -\/ (NSUInteger) iteration\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+PBKDF Iterations. (1000$\sim$100000) 
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source_l00023}{23}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_matter_multiple_fabric_passcode_model_a88ca0b15a6721b5a4933832b3f72c63a}\label{interface_thing_smart_matter_multiple_fabric_passcode_model_a88ca0b15a6721b5a4933832b3f72c63a}} 
+\index{ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}!limitCount@{limitCount}}
+\index{limitCount@{limitCount}!ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}}
+\doxysubsubsection{\texorpdfstring{limitCount}{limitCount}}
+{\footnotesize\ttfamily -\/ (NSUInteger) limit\+Count\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Avaliable fabric count. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source_l00019}{19}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_matter_multiple_fabric_passcode_model_abec1d372a101b269b0f1c1f8a0637056}\label{interface_thing_smart_matter_multiple_fabric_passcode_model_abec1d372a101b269b0f1c1f8a0637056}} 
+\index{ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}!passcode@{passcode}}
+\index{passcode@{passcode}!ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}}
+\doxysubsubsection{\texorpdfstring{passcode}{passcode}}
+{\footnotesize\ttfamily -\/ (NSUInteger) passcode\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Setup Code. (000000001-\/99999998) 
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source_l00021}{21}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_matter_multiple_fabric_passcode_model_a5933a7193b6fb448dc83fa7aa8eb46a6}\label{interface_thing_smart_matter_multiple_fabric_passcode_model_a5933a7193b6fb448dc83fa7aa8eb46a6}} 
+\index{ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}!pid@{pid}}
+\index{pid@{pid}!ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}}
+\doxysubsubsection{\texorpdfstring{pid}{pid}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$) pid\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Matter product id. (aka\+: pid) 
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source_l00035}{35}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_matter_multiple_fabric_passcode_model_add6c292f837597e63715b4c859f4996d}\label{interface_thing_smart_matter_multiple_fabric_passcode_model_add6c292f837597e63715b4c859f4996d}} 
+\index{ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}!vendorId@{vendorId}}
+\index{vendorId@{vendorId}!ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}}
+\doxysubsubsection{\texorpdfstring{vendorId}{vendorId}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$) vendor\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Matter vendor id. (aka\+: vid) 
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source_l00033}{33}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_matter_multiple_fabric_passcode_model_af5f49fbc2172e114082bd1d05f43393d}\label{interface_thing_smart_matter_multiple_fabric_passcode_model_af5f49fbc2172e114082bd1d05f43393d}} 
+\index{ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}!version@{version}}
+\index{version@{version}!ThingSmartMatterMultipleFabricPasscodeModel@{ThingSmartMatterMultipleFabricPasscodeModel}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily -\/ (NSUInteger) version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Pass code version. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source_l00031}{31}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h_source}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Thing\+Smart\+Matter\+Kit.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Smart\+Matter\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Thing\+Smart\+Matter\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Matter\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_matter_kit_8framework_2_headers_2_thing_smart_matter_multiple_fabric_passcode_model_8h}{Thing\+Smart\+Matter\+Multiple\+Fabric\+Passcode\+Model.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+\hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Camera\+SDK/\+Build/\+Thing\+Camera\+SDK.xcframework/ios-\/arm64/\+Thing\+Camera\+SDK.framework/\+Headers/\+Thing\+Audio\+Queue\+Pcm\+Picker.h File Reference}
+\label{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingCameraSDK/Build/ThingCameraSDK.xcframework/ios-\/arm64/ThingCameraSDK.framework/Headers/ThingAudioQueuePcmPicker.h@{/Users/humtong/Downloads/Pods\_副本/ThingCameraSDK/Build/ThingCameraSDK.xcframework/ios-\/arm64/ThingCameraSDK.framework/Headers/ThingAudioQueuePcmPicker.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import $<$Core\+Audio/\+Core\+Audio\+Types.\+h$>$}\newline
+{\ttfamily \#import $<$Audio\+Toolbox/\+Audio\+Toolbox.\+h$>$}\newline
+{\ttfamily \#import $<$AVFoundation/\+AVFoundation.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_a_q_callback_struct}{AQCallback\+Struct}}
+\item 
+protocol \mbox{\hyperlink{protocol_thing_audio_queue_pcm_picker_delegate-p}{$<$\+Thing\+Audio\+Queue\+Pcm\+Picker\+Delegate$>$}}
+\item 
+class \mbox{\hyperlink{interface_thing_audio_queue_pcm_picker}{Thing\+Audio\+Queue\+Pcm\+Picker}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a742457b53960c1e832b8e97d4a23d81b}{k\+Number\+Buffers}}~3
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_aaa2e4174eb01a3147651eaf1c1e76fb5}{t\+\_\+sample}}~SInt16
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a5e4419793f7d1f22311d947ed9b11ec5}{k\+Sampling\+Rate}}~20000
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a9a5591788b082cfe521df5cb37734fb8}{k\+Number\+Channels}}~1
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_affdd7d4b324323e253fcf9be4eea2964}{k\+Bits\+Per\+Channels}}~(sizeof(\mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_aaa2e4174eb01a3147651eaf1c1e76fb5}{t\+\_\+sample}}) $\ast$ 8)
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_adff9f85977cd04f4b7dccb3269142ed0}{k\+Bytes\+Per\+Frame}}~(\mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a9a5591788b082cfe521df5cb37734fb8}{k\+Number\+Channels}} $\ast$ sizeof(\mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_aaa2e4174eb01a3147651eaf1c1e76fb5}{t\+\_\+sample}}))
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a4ff741d313eb4ad1a606812e84e7bfcc}{k\+Frame\+Size}}~1024
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_a_q_callback_struct}{AQCallback\+Struct}} \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_adf3920455e1091141ce8f5692e528b28}{AQCallback\+Struct}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_affdd7d4b324323e253fcf9be4eea2964}\label{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_affdd7d4b324323e253fcf9be4eea2964}} 
+\index{ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}!kBitsPerChannels@{kBitsPerChannels}}
+\index{kBitsPerChannels@{kBitsPerChannels}!ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}}
+\doxysubsubsection{\texorpdfstring{kBitsPerChannels}{kBitsPerChannels}}
+{\footnotesize\ttfamily \#define k\+Bits\+Per\+Channels~(sizeof(\mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_aaa2e4174eb01a3147651eaf1c1e76fb5}{t\+\_\+sample}}) $\ast$ 8)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source_l00018}{18}} of file \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source}{Thing\+Audio\+Queue\+Pcm\+Picker.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_adff9f85977cd04f4b7dccb3269142ed0}\label{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_adff9f85977cd04f4b7dccb3269142ed0}} 
+\index{ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}!kBytesPerFrame@{kBytesPerFrame}}
+\index{kBytesPerFrame@{kBytesPerFrame}!ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}}
+\doxysubsubsection{\texorpdfstring{kBytesPerFrame}{kBytesPerFrame}}
+{\footnotesize\ttfamily \#define k\+Bytes\+Per\+Frame~(\mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a9a5591788b082cfe521df5cb37734fb8}{k\+Number\+Channels}} $\ast$ sizeof(\mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_aaa2e4174eb01a3147651eaf1c1e76fb5}{t\+\_\+sample}}))}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source_l00019}{19}} of file \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source}{Thing\+Audio\+Queue\+Pcm\+Picker.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a4ff741d313eb4ad1a606812e84e7bfcc}\label{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a4ff741d313eb4ad1a606812e84e7bfcc}} 
+\index{ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}!kFrameSize@{kFrameSize}}
+\index{kFrameSize@{kFrameSize}!ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}}
+\doxysubsubsection{\texorpdfstring{kFrameSize}{kFrameSize}}
+{\footnotesize\ttfamily \#define k\+Frame\+Size~1024}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source_l00020}{20}} of file \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source}{Thing\+Audio\+Queue\+Pcm\+Picker.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a742457b53960c1e832b8e97d4a23d81b}\label{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a742457b53960c1e832b8e97d4a23d81b}} 
+\index{ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}!kNumberBuffers@{kNumberBuffers}}
+\index{kNumberBuffers@{kNumberBuffers}!ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}}
+\doxysubsubsection{\texorpdfstring{kNumberBuffers}{kNumberBuffers}}
+{\footnotesize\ttfamily \#define k\+Number\+Buffers~3}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source_l00014}{14}} of file \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source}{Thing\+Audio\+Queue\+Pcm\+Picker.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a9a5591788b082cfe521df5cb37734fb8}\label{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a9a5591788b082cfe521df5cb37734fb8}} 
+\index{ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}!kNumberChannels@{kNumberChannels}}
+\index{kNumberChannels@{kNumberChannels}!ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}}
+\doxysubsubsection{\texorpdfstring{kNumberChannels}{kNumberChannels}}
+{\footnotesize\ttfamily \#define k\+Number\+Channels~1}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source_l00017}{17}} of file \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source}{Thing\+Audio\+Queue\+Pcm\+Picker.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a5e4419793f7d1f22311d947ed9b11ec5}\label{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_a5e4419793f7d1f22311d947ed9b11ec5}} 
+\index{ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}!kSamplingRate@{kSamplingRate}}
+\index{kSamplingRate@{kSamplingRate}!ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}}
+\doxysubsubsection{\texorpdfstring{kSamplingRate}{kSamplingRate}}
+{\footnotesize\ttfamily \#define k\+Sampling\+Rate~20000}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source_l00016}{16}} of file \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source}{Thing\+Audio\+Queue\+Pcm\+Picker.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_aaa2e4174eb01a3147651eaf1c1e76fb5}\label{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_aaa2e4174eb01a3147651eaf1c1e76fb5}} 
+\index{ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}!t\_sample@{t\_sample}}
+\index{t\_sample@{t\_sample}!ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}}
+\doxysubsubsection{\texorpdfstring{t\_sample}{t\_sample}}
+{\footnotesize\ttfamily \#define t\+\_\+sample~SInt16}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source_l00015}{15}} of file \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_source}{Thing\+Audio\+Queue\+Pcm\+Picker.\+h}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_adf3920455e1091141ce8f5692e528b28}\label{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_audio_queue_pcm_picker_8h_adf3920455e1091141ce8f5692e528b28}} 
+\index{ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}!AQCallbackStruct@{AQCallbackStruct}}
+\index{AQCallbackStruct@{AQCallbackStruct}!ThingAudioQueuePcmPicker.h@{ThingAudioQueuePcmPicker.h}}
+\doxysubsubsection{\texorpdfstring{AQCallbackStruct}{AQCallbackStruct}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_a_q_callback_struct}{AQCallback\+Struct}} \mbox{\hyperlink{struct_a_q_callback_struct}{AQCallback\+Struct}}}
+

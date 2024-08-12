@@ -1,6 +1,0 @@
-var ios_arm64_2_thing_smart_skill_quick_bind_biz_bundle_8framework_2_headers_2_thing_smart_skill_quick_bind_biz_bundle_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "ios-arm64_2_thing_smart_skill_quick_bind_biz_bundle_8framework_2_headers_2_thing_smart_skill_quick_bind_biz_bundle-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingSmartSkillQuickBindBizBundleVersionNumber", "ios-arm64_2_thing_smart_skill_quick_bind_biz_bundle_8framework_2_headers_2_thing_smart_skill_quick_bind_biz_bundle-umbrella_8h.html#af9e90b4b0fc0108bfb222f94f863e4df", null ],
-    [ "ThingSmartSkillQuickBindBizBundleVersionString", "ios-arm64_2_thing_smart_skill_quick_bind_biz_bundle_8framework_2_headers_2_thing_smart_skill_quick_bind_biz_bundle-umbrella_8h.html#a6f4af78615591b0544b09b907d94f4d6", null ]
-];

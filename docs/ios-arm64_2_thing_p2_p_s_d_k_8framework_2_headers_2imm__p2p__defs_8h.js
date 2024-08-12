@@ -105,77 +105,77 @@ var ios_arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h =
     [ "imm_p2p_rtc_video_codec_t", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a24227f220ab046bab5fc280cb3604bc5", null ],
     [ "rtc_state_e", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ac132caceff1a35518773245ff644c145", null ],
     [ "imm_p2p_rtc_connection_type", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a12292a633668044a1efacb1382277abc", [
-      [ "imm_p2p_rtc_connection_type_p2p", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a12292a633668044a1efacb1382277abcac5335dd326113a77e51c27731328fee4", null ],
-      [ "imm_p2p_rtc_connection_type_webrtc", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a12292a633668044a1efacb1382277abca60f849b3f369653c6bfbbc91b93e413d", null ],
       [ "imm_p2p_rtc_connection_type_p2p", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a12292a633668044a1efacb1382277abcac5335dd326113a77e51c27731328fee4", null ],
-      [ "imm_p2p_rtc_connection_type_webrtc", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a12292a633668044a1efacb1382277abca60f849b3f369653c6bfbbc91b93e413d", null ]
+      [ "imm_p2p_rtc_connection_type_webrtc", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a12292a633668044a1efacb1382277abca60f849b3f369653c6bfbbc91b93e413d", null ],
+      [ "imm_p2p_rtc_connection_type_p2p", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a12292a633668044a1efacb1382277abcac5335dd326113a77e51c27731328fee4", null ],
+      [ "imm_p2p_rtc_connection_type_webrtc", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a12292a633668044a1efacb1382277abca60f849b3f369653c6bfbbc91b93e413d", null ]
     ] ],
     [ "imm_p2p_rtc_frame_type_e", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#adaa71f9c399e198ffbdc290e1902a3bf", [
-      [ "imm_p2p_rtc_frame_type_audio", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#adaa71f9c399e198ffbdc290e1902a3bfa7394f3c17dbb709b2bee1456ab7544b2", null ],
-      [ "imm_p2p_rtc_frame_type_video_p", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#adaa71f9c399e198ffbdc290e1902a3bfa9ea7a105542a75cdd0fc2b63816f7687", null ],
-      [ "imm_p2p_rtc_frame_type_video_i", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#adaa71f9c399e198ffbdc290e1902a3bfa8eb2821add8fb402f2e357a975324e02", null ],
       [ "imm_p2p_rtc_frame_type_audio", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#adaa71f9c399e198ffbdc290e1902a3bfa7394f3c17dbb709b2bee1456ab7544b2", null ],
       [ "imm_p2p_rtc_frame_type_video_p", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#adaa71f9c399e198ffbdc290e1902a3bfa9ea7a105542a75cdd0fc2b63816f7687", null ],
-      [ "imm_p2p_rtc_frame_type_video_i", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#adaa71f9c399e198ffbdc290e1902a3bfa8eb2821add8fb402f2e357a975324e02", null ]
+      [ "imm_p2p_rtc_frame_type_video_i", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#adaa71f9c399e198ffbdc290e1902a3bfa8eb2821add8fb402f2e357a975324e02", null ],
+      [ "imm_p2p_rtc_frame_type_audio", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#adaa71f9c399e198ffbdc290e1902a3bfa7394f3c17dbb709b2bee1456ab7544b2", null ],
+      [ "imm_p2p_rtc_frame_type_video_p", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#adaa71f9c399e198ffbdc290e1902a3bfa9ea7a105542a75cdd0fc2b63816f7687", null ],
+      [ "imm_p2p_rtc_frame_type_video_i", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#adaa71f9c399e198ffbdc290e1902a3bfa8eb2821add8fb402f2e357a975324e02", null ]
     ] ],
     [ "imm_p2p_rtc_log_level", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595", [
-      [ "IMM_P2P_LOG_TRACE", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595a754c20ccaa7f0d8dfc3574fca357ca67", null ],
-      [ "IMM_P2P_LOG_DEBUG", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595af3d7e1aa6207737ee2cc33011e5dd74d", null ],
-      [ "IMM_P2P_LOG_INFO", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595ad8b0e6c4f8cf303977eee4933eaef023", null ],
-      [ "IMM_P2P_LOG_WARN", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595ad47471dba76bf012f27b923a82979eee", null ],
-      [ "IMM_P2P_LOG_ERROR", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595ad6f2e6c44d994cf1d264362b2f007f62", null ],
-      [ "IMM_P2P_LOG_FATAL", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595aba7668a07e4833b608b988e2b2a6c4cd", null ],
       [ "IMM_P2P_LOG_TRACE", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595a754c20ccaa7f0d8dfc3574fca357ca67", null ],
       [ "IMM_P2P_LOG_DEBUG", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595af3d7e1aa6207737ee2cc33011e5dd74d", null ],
       [ "IMM_P2P_LOG_INFO", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595ad8b0e6c4f8cf303977eee4933eaef023", null ],
       [ "IMM_P2P_LOG_WARN", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595ad47471dba76bf012f27b923a82979eee", null ],
       [ "IMM_P2P_LOG_ERROR", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595ad6f2e6c44d994cf1d264362b2f007f62", null ],
-      [ "IMM_P2P_LOG_FATAL", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595aba7668a07e4833b608b988e2b2a6c4cd", null ]
+      [ "IMM_P2P_LOG_FATAL", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595aba7668a07e4833b608b988e2b2a6c4cd", null ],
+      [ "IMM_P2P_LOG_TRACE", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595a754c20ccaa7f0d8dfc3574fca357ca67", null ],
+      [ "IMM_P2P_LOG_DEBUG", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595af3d7e1aa6207737ee2cc33011e5dd74d", null ],
+      [ "IMM_P2P_LOG_INFO", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595ad8b0e6c4f8cf303977eee4933eaef023", null ],
+      [ "IMM_P2P_LOG_WARN", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595ad47471dba76bf012f27b923a82979eee", null ],
+      [ "IMM_P2P_LOG_ERROR", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595ad6f2e6c44d994cf1d264362b2f007f62", null ],
+      [ "IMM_P2P_LOG_FATAL", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#ab0278b614995fd0e10ed2d6ab2a78595aba7668a07e4833b608b988e2b2a6c4cd", null ]
     ] ],
     [ "imm_p2p_rtc_security_level", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4", [
-      [ "IMM_P2P_SECURITY_LEVEL_0", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4a00794c06e612751e505a1a1aa9f56341", null ],
-      [ "IMM_P2P_SECURITY_LEVEL_1", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4a8cbe16e531bd6e903be514d01759bf00", null ],
-      [ "IMM_P2P_SECURITY_LEVEL_2", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4ade493736fbc521c4349921bf0cbd841d", null ],
-      [ "IMM_P2P_SECURITY_LEVEL_3", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4ae87a592c92eb7fd276e3b84e56413da4", null ],
-      [ "IMM_P2P_SECURITY_LEVEL_4", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4af50dbc0e7ae31a479b168f324a578f2d", null ],
-      [ "IMM_P2P_SECURITY_LEVEL_5", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4abdf14af1652f258afa0207d9d77d2bd8", null ],
-      [ "IMM_P2P_SECURITY_LEVEL_MAX", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4a9bfd487e924a6d3c81cb1f447f695034", null ],
       [ "IMM_P2P_SECURITY_LEVEL_0", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4a00794c06e612751e505a1a1aa9f56341", null ],
       [ "IMM_P2P_SECURITY_LEVEL_1", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4a8cbe16e531bd6e903be514d01759bf00", null ],
       [ "IMM_P2P_SECURITY_LEVEL_2", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4ade493736fbc521c4349921bf0cbd841d", null ],
       [ "IMM_P2P_SECURITY_LEVEL_3", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4ae87a592c92eb7fd276e3b84e56413da4", null ],
       [ "IMM_P2P_SECURITY_LEVEL_4", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4af50dbc0e7ae31a479b168f324a578f2d", null ],
       [ "IMM_P2P_SECURITY_LEVEL_5", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4abdf14af1652f258afa0207d9d77d2bd8", null ],
-      [ "IMM_P2P_SECURITY_LEVEL_MAX", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4a9bfd487e924a6d3c81cb1f447f695034", null ]
+      [ "IMM_P2P_SECURITY_LEVEL_MAX", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4a9bfd487e924a6d3c81cb1f447f695034", null ],
+      [ "IMM_P2P_SECURITY_LEVEL_0", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4a00794c06e612751e505a1a1aa9f56341", null ],
+      [ "IMM_P2P_SECURITY_LEVEL_1", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4a8cbe16e531bd6e903be514d01759bf00", null ],
+      [ "IMM_P2P_SECURITY_LEVEL_2", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4ade493736fbc521c4349921bf0cbd841d", null ],
+      [ "IMM_P2P_SECURITY_LEVEL_3", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4ae87a592c92eb7fd276e3b84e56413da4", null ],
+      [ "IMM_P2P_SECURITY_LEVEL_4", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4af50dbc0e7ae31a479b168f324a578f2d", null ],
+      [ "IMM_P2P_SECURITY_LEVEL_5", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4abdf14af1652f258afa0207d9d77d2bd8", null ],
+      [ "IMM_P2P_SECURITY_LEVEL_MAX", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a74b45abf979f6942385a82d08bad42a4a9bfd487e924a6d3c81cb1f447f695034", null ]
     ] ],
     [ "imm_p2p_rtc_upnp_port_protocol", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a432294076fd9d5e826c51c39e99c527a", [
-      [ "imm_p2p_rtc_upnp_port_protocol_udp", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a432294076fd9d5e826c51c39e99c527aaf6bc7861d1792557de20b81366699f6c", null ],
-      [ "imm_p2p_rtc_upnp_port_protocol_tcp", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a432294076fd9d5e826c51c39e99c527aa7c1bdd8148e5adf07be8c9efcc4d3624", null ],
       [ "imm_p2p_rtc_upnp_port_protocol_udp", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a432294076fd9d5e826c51c39e99c527aaf6bc7861d1792557de20b81366699f6c", null ],
-      [ "imm_p2p_rtc_upnp_port_protocol_tcp", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a432294076fd9d5e826c51c39e99c527aa7c1bdd8148e5adf07be8c9efcc4d3624", null ]
+      [ "imm_p2p_rtc_upnp_port_protocol_tcp", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a432294076fd9d5e826c51c39e99c527aa7c1bdd8148e5adf07be8c9efcc4d3624", null ],
+      [ "imm_p2p_rtc_upnp_port_protocol_udp", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a432294076fd9d5e826c51c39e99c527aaf6bc7861d1792557de20b81366699f6c", null ],
+      [ "imm_p2p_rtc_upnp_port_protocol_tcp", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a432294076fd9d5e826c51c39e99c527aa7c1bdd8148e5adf07be8c9efcc4d3624", null ]
     ] ],
     [ "rtc_active_state_e", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919d", [
-      [ "RTC_PRE_NOT_ACTIVE", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919da18911c148a122f8d8ea7836f690b3b8c", null ],
-      [ "RTC_PRE_ACTIVATING", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919dae0818d73f972a4a368c4bc28e7ddb47f", null ],
-      [ "RTC_PRE_ACTIVE", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919da7af4ebaf33e2cb2103f22f0027f6c81a", null ],
-      [ "RTC_PRE_SUSPENDING", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919daf8feeb1d446a6adfdfeb5fc9108acfe7", null ],
       [ "RTC_PRE_NOT_ACTIVE", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919da18911c148a122f8d8ea7836f690b3b8c", null ],
       [ "RTC_PRE_ACTIVATING", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919dae0818d73f972a4a368c4bc28e7ddb47f", null ],
       [ "RTC_PRE_ACTIVE", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919da7af4ebaf33e2cb2103f22f0027f6c81a", null ],
-      [ "RTC_PRE_SUSPENDING", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919daf8feeb1d446a6adfdfeb5fc9108acfe7", null ]
+      [ "RTC_PRE_SUSPENDING", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919daf8feeb1d446a6adfdfeb5fc9108acfe7", null ],
+      [ "RTC_PRE_NOT_ACTIVE", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919da18911c148a122f8d8ea7836f690b3b8c", null ],
+      [ "RTC_PRE_ACTIVATING", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919dae0818d73f972a4a368c4bc28e7ddb47f", null ],
+      [ "RTC_PRE_ACTIVE", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919da7af4ebaf33e2cb2103f22f0027f6c81a", null ],
+      [ "RTC_PRE_SUSPENDING", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a20b36a1411cc5219c9b1b290595f919daf8feeb1d446a6adfdfeb5fc9108acfe7", null ]
     ] ],
     [ "rtc_state", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61f", [
-      [ "RTC_STATE_GET_TOKEN", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61fac416a2bb0060f36dc2454130ca980945", null ],
-      [ "RTC_STATE_P2P_CONNECT", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61faf31437a0d452dbb68993fdbf58d785fa", null ],
-      [ "RTC_STATE_DTLS_SRTP_KEY_NEGO", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61fa2b47e277b61076d5b1db376419eeb84f", null ],
-      [ "RTC_STATE_STREAM", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61fa2fe248387984f449ff9da70100f22dc2", null ],
-      [ "RTC_STATE_FAILED", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61fa5ea5e96233d99408d63be7f2363d24cd", null ],
-      [ "RTC_STATE_NUMBER", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61faf363a70f93cd3b5ebc505ac1d6ad7ad3", null ],
       [ "RTC_STATE_GET_TOKEN", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61fac416a2bb0060f36dc2454130ca980945", null ],
       [ "RTC_STATE_P2P_CONNECT", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61faf31437a0d452dbb68993fdbf58d785fa", null ],
       [ "RTC_STATE_DTLS_SRTP_KEY_NEGO", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61fa2b47e277b61076d5b1db376419eeb84f", null ],
       [ "RTC_STATE_STREAM", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61fa2fe248387984f449ff9da70100f22dc2", null ],
       [ "RTC_STATE_FAILED", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61fa5ea5e96233d99408d63be7f2363d24cd", null ],
-      [ "RTC_STATE_NUMBER", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61faf363a70f93cd3b5ebc505ac1d6ad7ad3", null ]
+      [ "RTC_STATE_NUMBER", "ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61faf363a70f93cd3b5ebc505ac1d6ad7ad3", null ],
+      [ "RTC_STATE_GET_TOKEN", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61fac416a2bb0060f36dc2454130ca980945", null ],
+      [ "RTC_STATE_P2P_CONNECT", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61faf31437a0d452dbb68993fdbf58d785fa", null ],
+      [ "RTC_STATE_DTLS_SRTP_KEY_NEGO", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61fa2b47e277b61076d5b1db376419eeb84f", null ],
+      [ "RTC_STATE_STREAM", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61fa2fe248387984f449ff9da70100f22dc2", null ],
+      [ "RTC_STATE_FAILED", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61fa5ea5e96233d99408d63be7f2363d24cd", null ],
+      [ "RTC_STATE_NUMBER", "ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h.html#a81de29414ab3ae104a5dfa7dbefba61faf363a70f93cd3b5ebc505ac1d6ad7ad3", null ]
     ] ]
 ];

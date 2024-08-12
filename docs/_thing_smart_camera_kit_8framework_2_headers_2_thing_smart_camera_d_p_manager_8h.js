@@ -3,7 +3,7 @@ var _thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manage
     [ "<ThingSmartCameraDPObserver>", "protocol_thing_smart_camera_d_p_observer-p.html", "protocol_thing_smart_camera_d_p_observer-p" ],
     [ "<ThingSmartCameraDPDataSource>", "protocol_thing_smart_camera_d_p_data_source-p.html", "protocol_thing_smart_camera_d_p_data_source-p" ],
     [ "ThingSmartCameraDPManager", "interface_thing_smart_camera_d_p_manager.html", "interface_thing_smart_camera_d_p_manager" ],
-    [ "NS_EXTENSIBLE_STRING_ENUM", "_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h.html#ad1dfe322dbfdfef643f832ede1e85ee4", null ],
+    [ "NS_EXTENSIBLE_STRING_ENUM", "_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h.html#a9ca19c33235fd041cc754914fad1c504", null ],
     [ "NS_ENUM", "_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h.html#aa671c7a07af42490c256ca742b832716", null ],
     [ "ThingSmartCameraBasicFlipDPName", "_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h.html#a55e533a281fdda173f550f4c1166f249", null ],
     [ "ThingSmartCameraBasicIndicatorDPName", "_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h.html#af827192e325bd521efe1c34cac313ad4", null ],

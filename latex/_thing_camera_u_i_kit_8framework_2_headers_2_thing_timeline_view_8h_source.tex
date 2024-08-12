@@ -1,0 +1,105 @@
+\hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{}\doxysection{Thing\+Timeline\+View.\+h}
+\label{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingCameraUIKit/Build/ThingCameraUIKit.xcframework/ios-\/arm64/ThingCameraUIKit.framework/Headers/ThingTimelineView.h@{/Users/humtong/Downloads/Pods\_副本/ThingCameraUIKit/Build/ThingCameraUIKit.xcframework/ios-\/arm64/ThingCameraUIKit.framework/Headers/ThingTimelineView.h}}
+\mbox{\hyperlink{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00002}00002 \textcolor{comment}{//  ThingTimelineView.h}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00003}00003 \textcolor{comment}{//  ThingCameraUIKit}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00005}00005 \textcolor{comment}{//  Created by 傅浪 on 2018/9/22.}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00008}00008 \textcolor{preprocessor}{\#import <UIKit/UIKit.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00009}00009 \textcolor{preprocessor}{\#import "{}\mbox{\hyperlink{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_source_8h}{ThingTimelineViewSource.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00011}\mbox{\hyperlink{protocol_thing_timeline_view_delegate-p_ac1957febb966c4dde26f01bdf313ef77}{00011}} \textcolor{keyword}{typedef} \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_a94cb189c0f7bf6713444f4acea3ca9ff}{NS\_ENUM}}(NSUInteger, ThingTimelineUnitMode) \{}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00012}00012     ThingTimelineUnitMode\_60,    }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00013}00013     ThingTimelineUnitMode\_300,   }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00014}00014     ThingTimelineUnitMode\_600,   }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00015}00015     ThingTimelineUnitMode\_900,   }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00016}00016     ThingTimelineUnitMode\_1800,  }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00017}00017     ThingTimelineUnitMode\_3600,  }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00018}00018 \};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00020}00020 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_thing_timeline_view}{ThingTimelineView}}, \mbox{\hyperlink{interface_thing_async_display_layer}{ThingAsyncDisplayLayer}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00022}00022 \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_thing_timeline_view_delegate-p}{ThingTimelineViewDelegate}} <NSObject>}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00024}00024 \textcolor{keyword}{@optional}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00027}00027 -\/ (void)timelineViewWillBeginDragging:(\mbox{\hyperlink{interface_thing_timeline_view}{ThingTimelineView}} *)timeLineView;}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00030}00030 -\/ (void)timelineViewDidEndDragging:(\mbox{\hyperlink{interface_thing_timeline_view}{ThingTimelineView}} *)timeLineView willDecelerate:(BOOL)decelerate;}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00033}00033 -\/ (void)timelineViewDidScroll:(\mbox{\hyperlink{interface_thing_timeline_view}{ThingTimelineView}} *)timeLineView time:(NSTimeInterval)timeInterval isDragging:(BOOL)isDragging;}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00038}00038 -\/ (void)timelineView:(\mbox{\hyperlink{interface_thing_timeline_view}{ThingTimelineView}} *)timeLineView didEndScrollingAtTime:(NSTimeInterval)timeInterval inSource:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_thing_timeline_view_source-p}{ThingTimelineViewSource}}>)source;}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00040}00040 \textcolor{comment}{// time line view is scaled}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00041}00041 -\/ (void)timelineView:(\mbox{\hyperlink{interface_thing_timeline_view}{ThingTimelineView}} *)timeLineView scaleToUnitMode:(ThingTimelineUnitMode)unitMode;}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00043}00043 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00045}00045 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_timeline_view}{ThingTimelineView}} : UIView }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00048}00048 \textcolor{keyword}{@property} (nonatomic, assign) CGFloat \mbox{\hyperlink{interface_thing_timeline_view_a679e420de1de98a76ab81f68dd7fc2d5}{spacePerUnit}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00051}00051 \textcolor{keyword}{@property} (nonatomic, assign) ThingTimelineUnitMode \mbox{\hyperlink{interface_thing_timeline_view_a62d87a3c0559d833cf4c1c25c0d2af0d}{unitMode}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00054}00054 \textcolor{keyword}{@property} (nonatomic, strong) UIColor *\mbox{\hyperlink{interface_thing_timeline_view_aff57b53695cc15650a4b98cd2c4d54ff}{tickMarkColor}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00056}00056 \textcolor{keyword}{@property} (nonatomic, strong) \mbox{\hyperlink{interface_n_s_array}{NSArray}} *\mbox{\hyperlink{interface_thing_timeline_view_a433b6e46a59a44e8945b2b14321ad052}{backgroundGradientColors}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00057}00057 \textcolor{keyword}{@property} (nonatomic, strong) \mbox{\hyperlink{interface_n_s_array}{NSArray}} *\mbox{\hyperlink{interface_thing_timeline_view_a4c10e5b6d7e2b44880ba96a230427d60}{backgroundGradientLocations}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00060}00060 \textcolor{keyword}{@property} (nonatomic, strong) UIColor *\mbox{\hyperlink{interface_thing_timeline_view_a6d6a8bc961f578d3bc9ce0fc127c3af8}{contentColor}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00062}00062 \textcolor{keyword}{@property} (nonatomic, copy) \mbox{\hyperlink{interface_n_s_array}{NSArray}} *\mbox{\hyperlink{interface_thing_timeline_view_a36e79422b3f96afc9eb8d38d36c274c4}{contentGradientColors}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00063}00063 \textcolor{keyword}{@property} (nonatomic, strong) \mbox{\hyperlink{interface_n_s_array}{NSArray}} *\mbox{\hyperlink{interface_thing_timeline_view_ac42d543932dc53221c84ade3da7b5389}{contentGradientLocations}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00064}00064 \textcolor{keyword}{@property} (nonatomic, copy) \mbox{\hyperlink{interface_n_s_array}{NSArray}} *\mbox{\hyperlink{interface_thing_timeline_view_a1fa1a98d654c0d456e692db427c11e67}{eventGradientColors}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00067}00067 \textcolor{keyword}{@property} (nonatomic, assign) CGFloat \mbox{\hyperlink{interface_thing_timeline_view_abf9db00b152e51dd7d704a310eade027}{timeHeaderHeight}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00069}00069 \textcolor{keyword}{@property} (nonatomic, assign) CGFloat \mbox{\hyperlink{interface_thing_timeline_view_a899d74f74e109e212289bfc87f79572c}{timeTextTop}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00072}00072 \textcolor{keyword}{@property} (nonatomic, strong) NSDictionary *\mbox{\hyperlink{interface_thing_timeline_view_aa0d127ada5d1dfe1d8be4a61b9b6614b}{timeStringAttributes}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00075}00075 \textcolor{keyword}{@property} (nonatomic, assign) BOOL \mbox{\hyperlink{interface_thing_timeline_view_a8f9d70c72dd898788cd236607011083a}{showTimeText}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00078}00078 \textcolor{keyword}{@property} (nonatomic, assign) BOOL \mbox{\hyperlink{interface_thing_timeline_view_adec1a365a2e5025b63ac9213f7aee199}{showShortMark}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00081}00081 \textcolor{keyword}{@property} (nonatomic, assign) NSTimeInterval \mbox{\hyperlink{interface_thing_timeline_view_ae2a5ef408d413bdf2bcfa863c389b559}{currentTime}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00084}00084 \textcolor{keyword}{@property} (nonatomic, strong) NSDate *\mbox{\hyperlink{interface_thing_timeline_view_ae6d1f5f667a33a6addaade4dd69f10a2}{date}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00087}00087 \textcolor{keyword}{@property} (nonatomic, strong) NSTimeZone *\mbox{\hyperlink{interface_thing_timeline_view_ab4486c83d7946cfebe4aa601b42c985d}{timeZone}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00090}00090 \textcolor{keyword}{@property} (nonatomic, assign, readonly) BOOL \mbox{\hyperlink{interface_thing_timeline_view_aef3391f8fc3f0f3c8c489ab397cb9ef2}{isDragging}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00093}00093 \textcolor{keyword}{@property} (nonatomic, assign, readonly) BOOL \mbox{\hyperlink{interface_thing_timeline_view_a06cf2406c4352dad12c437f087969fa7}{isDecelerating}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00096}00096 \textcolor{keyword}{@property} (nonatomic, strong) UIColor *\mbox{\hyperlink{interface_thing_timeline_view_ad5331a24271b25da56fff7906664298f}{midLineColor}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00099}00099 \textcolor{keyword}{@property} (nonatomic, strong) UIColor *\mbox{\hyperlink{interface_thing_timeline_view_a687bca10dd5e399e714b1a6a5799417c}{selectionBoxColor}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00101}00101 \textcolor{keyword}{@property} (nonatomic, assign, readonly) NSRange \mbox{\hyperlink{interface_thing_timeline_view_af12f7baa8b3db9b85fe12b4721692300}{selectedTimeRange}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00103}00103 \textcolor{keyword}{@property} (nonatomic, assign, readonly) BOOL \mbox{\hyperlink{interface_thing_timeline_view_a414a29e9c533db85acc766c683ae423e}{isSelectionEnabled}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00106}00106 \textcolor{keyword}{@property} (nonatomic, strong) UIColor *\mbox{\hyperlink{interface_thing_timeline_view_ae213e99f68c9009cee149d4c616b8339}{selectionTimeBackgroundColor}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00107}00107 \textcolor{keyword}{@property} (nonatomic, strong) UIColor *\mbox{\hyperlink{interface_thing_timeline_view_a71b8d2a299629fdc98e129b9f359b8a4}{selectionTimeTextColor}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00108}00108 \textcolor{keyword}{@property} (nonatomic, assign) NSUInteger \mbox{\hyperlink{interface_thing_timeline_view_aa0cabc15b876393b5901ed5a9f3a4723}{selectionTimeTextFontSize}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00111}00111 \textcolor{keyword}{@property} (nonatomic, copy) \mbox{\hyperlink{interface_n_s_array}{NSArray}}<id<ThingTimelineViewSource>> *\mbox{\hyperlink{interface_thing_timeline_view_a110819b5efefdb4cd112308d8203da24}{sourceModels}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00114}00114 \textcolor{keyword}{@property} (nonatomic, copy) \mbox{\hyperlink{interface_n_s_array}{NSArray}}<id<ThingTimelineViewSource>> *\mbox{\hyperlink{interface_thing_timeline_view_a91f17f0981dff35481cc7c0935fdfdfc}{AIDetectionSourceModels}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00117}00117 \textcolor{keyword}{@property} (nonatomic, copy) \mbox{\hyperlink{interface_n_s_array}{NSArray}} *\mbox{\hyperlink{interface_thing_timeline_view_aacde42a895f1ae0242ddc4ac0b9e3a49}{aiEventContentGradientColors}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00119}\mbox{\hyperlink{interface_thing_timeline_view_a4fb34bd09db8016f24c46573617dfd5c}{00119}} \textcolor{keyword}{@property} (nonatomic, weak) id<ThingTimelineViewDelegate> \mbox{\hyperlink{interface_thing_timeline_view_a6d5e0774a9098183df264cee71e826e1}{delegate}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00125}00125 -\/ (void)enableSelectionModeWithMinLength:(NSInteger)min maxLength:(NSInteger)max;}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00128}00128 -\/ (NSRange)\mbox{\hyperlink{interface_thing_timeline_view_a255aff916fffeef423d9fdd10922a164}{finishSelection}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00131}00131 -\/ (void)setCurrentTime:(NSTimeInterval)currentTime animated:(BOOL)animated;}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00133}00133 \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

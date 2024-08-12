@@ -1,0 +1,102 @@
+\hypertarget{protocol_w_t_l_device_controller_server_protocol-p}{}\doxysection{\texorpdfstring{$<$}{<}WTLDevice\+Controller\+Server\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_w_t_l_device_controller_server_protocol-p}\index{$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}}
+
+
+{\ttfamily \#import $<$WTLDevice\+Controller+\+XPC.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}WTLDevice\+Controller\+Server\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_w_t_l_device_controller_server_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p_a07d363694b0a394ba2ee52feccf551f6}{get\+Device\+Controller\+With\+Fabric\+Id\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p_a88ab38a6ddf03d7a003caf18c6147552}{get\+Any\+Device\+Controller\+With\+Completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p_a2369c489801f1de88786a3a51da2884e}{read\+Attribute\+With\+Controller\+:node\+Id\+:endpoint\+Id\+:cluster\+Id\+:attribute\+Id\+:params\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p_a9716a89638f2a2a0d01326cdd7628d73}{write\+Attribute\+With\+Controller\+:node\+Id\+:endpoint\+Id\+:cluster\+Id\+:attribute\+Id\+:value\+:timed\+Write\+Timeout\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p_a0bbd134c5860fa51c5221b138bb6d8ce}{invoke\+Command\+With\+Controller\+:node\+Id\+:endpoint\+Id\+:cluster\+Id\+:command\+Id\+:fields\+:timed\+Invoke\+Timeout\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p_abfa29b9cf0530c90dca5ff8e68f85fb1}{subscribe\+Attribute\+With\+Controller\+:node\+Id\+:endpoint\+Id\+:cluster\+Id\+:attribute\+Id\+:min\+Interval\+:max\+Interval\+:params\+:established\+Handler\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p_a7cae6aa089bd0af8c1920668e2337933}{stop\+Reports\+With\+Controller\+:node\+Id\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p_a6a37673db05567d6bf95932db17dfc9f}{subscribe\+With\+Controller\+:node\+Id\+:min\+Interval\+:max\+Interval\+:params\+:should\+Cache\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p_ac0d4685b37b4cba988333047bbcaf2d7}{read\+Attribute\+Cache\+With\+Controller\+:node\+Id\+:endpoint\+Id\+:cluster\+Id\+:attribute\+Id\+:completion\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Protocol that remote object must support over XPC 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_source_l00093}{93}} of file \mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_source}{WTLDevice\+Controller+\+XPC.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_w_t_l_device_controller_server_protocol-p_a88ab38a6ddf03d7a003caf18c6147552}\label{protocol_w_t_l_device_controller_server_protocol-p_a88ab38a6ddf03d7a003caf18c6147552}} 
+\index{$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}!getAnyDeviceControllerWithCompletion:@{getAnyDeviceControllerWithCompletion:}}
+\index{getAnyDeviceControllerWithCompletion:@{getAnyDeviceControllerWithCompletion:}!$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getAnyDeviceControllerWithCompletion:}{getAnyDeviceControllerWithCompletion:}}
+{\footnotesize\ttfamily -\/ (void) get\+Any\+Device\+Controller\+With\+Completion\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a65dc93ddb92189d498cfbfc25d416cfc}{WTLDevice\+Controller\+Getter\+Handler}})}]{completion }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Gets any available device controller ID \mbox{\Hypertarget{protocol_w_t_l_device_controller_server_protocol-p_a07d363694b0a394ba2ee52feccf551f6}\label{protocol_w_t_l_device_controller_server_protocol-p_a07d363694b0a394ba2ee52feccf551f6}} 
+\index{$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}!getDeviceControllerWithFabricId:completion:@{getDeviceControllerWithFabricId:completion:}}
+\index{getDeviceControllerWithFabricId:completion:@{getDeviceControllerWithFabricId:completion:}!$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getDeviceControllerWithFabricId:completion:}{getDeviceControllerWithFabricId:completion:}}
+{\footnotesize\ttfamily -\/ (void) get\+Device\+Controller\+With\+Fabric\+Id\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{fabric\+Id }\item[{completion\+:(\char`\"{}This never called.\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Gets device controller ID corresponding to a specific fabric ID \mbox{\Hypertarget{protocol_w_t_l_device_controller_server_protocol-p_a0bbd134c5860fa51c5221b138bb6d8ce}\label{protocol_w_t_l_device_controller_server_protocol-p_a0bbd134c5860fa51c5221b138bb6d8ce}} 
+\index{$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}!invokeCommandWithController:nodeId:endpointId:clusterId:commandId:fields:timedInvokeTimeout:completion:@{invokeCommandWithController:nodeId:endpointId:clusterId:commandId:fields:timedInvokeTimeout:completion:}}
+\index{invokeCommandWithController:nodeId:endpointId:clusterId:commandId:fields:timedInvokeTimeout:completion:@{invokeCommandWithController:nodeId:endpointId:clusterId:commandId:fields:timedInvokeTimeout:completion:}!$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{invokeCommandWithController:nodeId:endpointId:clusterId:commandId:fields:timedInvokeTimeout:completion:}{invokeCommandWithController:nodeId:endpointId:clusterId:commandId:fields:timedInvokeTimeout:completion:}}
+{\footnotesize\ttfamily -\/ (void) invoke\+Command\+With\+Controller\+: \begin{DoxyParamCaption}\item[{(id \+\_\+\+Nullable)}]{controller }\item[{node\+Id\+:(uint64\+\_\+t)}]{node\+Id }\item[{endpoint\+Id\+:(NSNumber $\ast$)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$)}]{cluster\+Id }\item[{command\+Id\+:(NSNumber $\ast$)}]{command\+Id }\item[{fields\+:(id)}]{fields }\item[{timed\+Invoke\+Timeout\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{timeout\+Ms }\item[{completion\+:(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a264860f6fb724e9c6f70effc392e1b39}{WTLValues\+Handler}})}]{completion }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Requests invoking command \mbox{\Hypertarget{protocol_w_t_l_device_controller_server_protocol-p_ac0d4685b37b4cba988333047bbcaf2d7}\label{protocol_w_t_l_device_controller_server_protocol-p_ac0d4685b37b4cba988333047bbcaf2d7}} 
+\index{$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}!readAttributeCacheWithController:nodeId:endpointId:clusterId:attributeId:completion:@{readAttributeCacheWithController:nodeId:endpointId:clusterId:attributeId:completion:}}
+\index{readAttributeCacheWithController:nodeId:endpointId:clusterId:attributeId:completion:@{readAttributeCacheWithController:nodeId:endpointId:clusterId:attributeId:completion:}!$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{readAttributeCacheWithController:nodeId:endpointId:clusterId:attributeId:completion:}{readAttributeCacheWithController:nodeId:endpointId:clusterId:attributeId:completion:}}
+{\footnotesize\ttfamily -\/ (void) read\+Attribute\+Cache\+With\+Controller\+: \begin{DoxyParamCaption}\item[{(id \+\_\+\+Nullable)}]{controller }\item[{node\+Id\+:(uint64\+\_\+t)}]{node\+Id }\item[{endpoint\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{cluster\+Id }\item[{attribute\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{attribute\+Id }\item[{completion\+:(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a264860f6fb724e9c6f70effc392e1b39}{WTLValues\+Handler}})}]{completion }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Requests reading attribute cache \mbox{\Hypertarget{protocol_w_t_l_device_controller_server_protocol-p_a2369c489801f1de88786a3a51da2884e}\label{protocol_w_t_l_device_controller_server_protocol-p_a2369c489801f1de88786a3a51da2884e}} 
+\index{$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}!readAttributeWithController:nodeId:endpointId:clusterId:attributeId:params:completion:@{readAttributeWithController:nodeId:endpointId:clusterId:attributeId:params:completion:}}
+\index{readAttributeWithController:nodeId:endpointId:clusterId:attributeId:params:completion:@{readAttributeWithController:nodeId:endpointId:clusterId:attributeId:params:completion:}!$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{readAttributeWithController:nodeId:endpointId:clusterId:attributeId:params:completion:}{readAttributeWithController:nodeId:endpointId:clusterId:attributeId:params:completion:}}
+{\footnotesize\ttfamily -\/ (void) read\+Attribute\+With\+Controller\+: \begin{DoxyParamCaption}\item[{(id \+\_\+\+Nullable)}]{controller }\item[{node\+Id\+:(uint64\+\_\+t)}]{node\+Id }\item[{endpoint\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{cluster\+Id }\item[{attribute\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{attribute\+Id }\item[{params\+:(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable)}]{params }\item[{completion\+:(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a264860f6fb724e9c6f70effc392e1b39}{WTLValues\+Handler}})}]{completion }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Requests reading attribute \mbox{\Hypertarget{protocol_w_t_l_device_controller_server_protocol-p_a7cae6aa089bd0af8c1920668e2337933}\label{protocol_w_t_l_device_controller_server_protocol-p_a7cae6aa089bd0af8c1920668e2337933}} 
+\index{$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}!stopReportsWithController:nodeId:completion:@{stopReportsWithController:nodeId:completion:}}
+\index{stopReportsWithController:nodeId:completion:@{stopReportsWithController:nodeId:completion:}!$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{stopReportsWithController:nodeId:completion:}{stopReportsWithController:nodeId:completion:}}
+{\footnotesize\ttfamily -\/ (void) stop\+Reports\+With\+Controller\+: \begin{DoxyParamCaption}\item[{(id \+\_\+\+Nullable)}]{controller }\item[{node\+Id\+:(uint64\+\_\+t)}]{node\+Id }\item[{completion\+:(dispatch\+\_\+block\+\_\+t)}]{completion }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Requests to stop reporting \mbox{\Hypertarget{protocol_w_t_l_device_controller_server_protocol-p_abfa29b9cf0530c90dca5ff8e68f85fb1}\label{protocol_w_t_l_device_controller_server_protocol-p_abfa29b9cf0530c90dca5ff8e68f85fb1}} 
+\index{$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}!subscribeAttributeWithController:nodeId:endpointId:clusterId:attributeId:minInterval:maxInterval:params:establishedHandler:@{subscribeAttributeWithController:nodeId:endpointId:clusterId:attributeId:minInterval:maxInterval:params:establishedHandler:}}
+\index{subscribeAttributeWithController:nodeId:endpointId:clusterId:attributeId:minInterval:maxInterval:params:establishedHandler:@{subscribeAttributeWithController:nodeId:endpointId:clusterId:attributeId:minInterval:maxInterval:params:establishedHandler:}!$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{subscribeAttributeWithController:nodeId:endpointId:clusterId:attributeId:minInterval:maxInterval:params:establishedHandler:}{subscribeAttributeWithController:nodeId:endpointId:clusterId:attributeId:minInterval:maxInterval:params:establishedHandler:}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+Attribute\+With\+Controller\+: \begin{DoxyParamCaption}\item[{(id \+\_\+\+Nullable)}]{controller }\item[{node\+Id\+:(uint64\+\_\+t)}]{node\+Id }\item[{endpoint\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{cluster\+Id }\item[{attribute\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{attribute\+Id }\item[{min\+Interval\+:(NSNumber $\ast$)}]{min\+Interval }\item[{max\+Interval\+:(NSNumber $\ast$)}]{max\+Interval }\item[{params\+:(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable)}]{params }\item[{established\+Handler\+:(dispatch\+\_\+block\+\_\+t)}]{established\+Handler }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Requests subscribing attribute. The min\+Interval/max\+Interval arguments override whatever intervals might be present in params. \mbox{\Hypertarget{protocol_w_t_l_device_controller_server_protocol-p_a6a37673db05567d6bf95932db17dfc9f}\label{protocol_w_t_l_device_controller_server_protocol-p_a6a37673db05567d6bf95932db17dfc9f}} 
+\index{$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}!subscribeWithController:nodeId:minInterval:maxInterval:params:shouldCache:completion:@{subscribeWithController:nodeId:minInterval:maxInterval:params:shouldCache:completion:}}
+\index{subscribeWithController:nodeId:minInterval:maxInterval:params:shouldCache:completion:@{subscribeWithController:nodeId:minInterval:maxInterval:params:shouldCache:completion:}!$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{subscribeWithController:nodeId:minInterval:maxInterval:params:shouldCache:completion:}{subscribeWithController:nodeId:minInterval:maxInterval:params:shouldCache:completion:}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+With\+Controller\+: \begin{DoxyParamCaption}\item[{(id \+\_\+\+Nullable)}]{controller }\item[{node\+Id\+:(uint64\+\_\+t)}]{node\+Id }\item[{min\+Interval\+:(NSNumber $\ast$)}]{min\+Interval }\item[{max\+Interval\+:(NSNumber $\ast$)}]{max\+Interval }\item[{params\+:(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable)}]{params }\item[{should\+Cache\+:(BOOL)}]{should\+Cache }\item[{completion\+:(\mbox{\hyperlink{_w_t_l_cluster_8h_adce6546b3c587c00857ef587702441ca}{WTLStatus\+Completion}})}]{completion }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Requests subscription of all attributes. The min\+Interval/max\+Interval arguments override whatever intervals might be present in params. \mbox{\Hypertarget{protocol_w_t_l_device_controller_server_protocol-p_a9716a89638f2a2a0d01326cdd7628d73}\label{protocol_w_t_l_device_controller_server_protocol-p_a9716a89638f2a2a0d01326cdd7628d73}} 
+\index{$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}!writeAttributeWithController:nodeId:endpointId:clusterId:attributeId:value:timedWriteTimeout:completion:@{writeAttributeWithController:nodeId:endpointId:clusterId:attributeId:value:timedWriteTimeout:completion:}}
+\index{writeAttributeWithController:nodeId:endpointId:clusterId:attributeId:value:timedWriteTimeout:completion:@{writeAttributeWithController:nodeId:endpointId:clusterId:attributeId:value:timedWriteTimeout:completion:}!$<$WTLDeviceControllerServerProtocol$>$@{$<$WTLDeviceControllerServerProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{writeAttributeWithController:nodeId:endpointId:clusterId:attributeId:value:timedWriteTimeout:completion:}{writeAttributeWithController:nodeId:endpointId:clusterId:attributeId:value:timedWriteTimeout:completion:}}
+{\footnotesize\ttfamily -\/ (void) write\+Attribute\+With\+Controller\+: \begin{DoxyParamCaption}\item[{(id \+\_\+\+Nullable)}]{controller }\item[{node\+Id\+:(uint64\+\_\+t)}]{node\+Id }\item[{endpoint\+Id\+:(NSNumber $\ast$)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$)}]{cluster\+Id }\item[{attribute\+Id\+:(NSNumber $\ast$)}]{attribute\+Id }\item[{value\+:(id)}]{value }\item[{timed\+Write\+Timeout\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{timeout\+Ms }\item[{completion\+:(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a264860f6fb724e9c6f70effc392e1b39}{WTLValues\+Handler}})}]{completion }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Requests writing attribute 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h}{WTLDevice\+Controller+\+XPC.\+h}}\end{DoxyCompactItemize}

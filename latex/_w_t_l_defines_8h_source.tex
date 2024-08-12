@@ -1,0 +1,49 @@
+\hypertarget{_w_t_l_defines_8h_source}{}\doxysection{WTLDefines.\+h}
+\label{_w_t_l_defines_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDefines.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDefines.h}}
+\mbox{\hyperlink{_w_t_l_defines_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00020}00020 \textcolor{preprocessor}{\#pragma mark -\/ Attribute macros}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00022}\mbox{\hyperlink{_w_t_l_defines_8h_a09b0e17aec62878bd5bdf19da1638df2}{00022}} \textcolor{preprocessor}{\#define WTL\_EXPORT \_\_attribute\_\_((visibility("{}default"{}})))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00024}00024 \textcolor{preprocessor}{\#ifdef \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00025}00025 \textcolor{preprocessor}{\#define WTL\_EXTERN extern "{}C"{}} WTL\_EXPORT}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00026}00026 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00027}\mbox{\hyperlink{_w_t_l_defines_8h_a24eb3d03f35f2f61bbd8df36fee6d417}{00027}} \textcolor{preprocessor}{\#define WTL\_EXTERN extern WTL\_EXPORT}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00028}00028 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00030}00030 \textcolor{preprocessor}{\#if \_\_has\_attribute(\_\_swift\_attr\_\_)}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00031}00031 \textcolor{preprocessor}{\#define WTL\_SWIFT\_DISFAVORED\_OVERLOAD \_\_attribute\_\_((\_\_swift\_attr\_\_("{}@\_disfavoredOverload"{}})))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00032}00032 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00033}\mbox{\hyperlink{_w_t_l_defines_8h_a84363c45778420700fa596d116df3927}{00033}} \textcolor{preprocessor}{\#define WTL\_SWIFT\_DISFAVORED\_OVERLOAD}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00034}00034 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00036}00036 \textcolor{preprocessor}{\#pragma mark -\/ Deprecation macros (can be overriden via build system)}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00038}00038 \textcolor{preprocessor}{\#ifndef WTL\_DEPRECATED}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00039}\mbox{\hyperlink{_w_t_l_defines_8h_a7e03a091c94319bf3cac9352bb2c3aff}{00039}} \textcolor{preprocessor}{\#define WTL\_DEPRECATED(...) API\_DEPRECATED(\_\_VA\_ARGS\_\_) WTL\_SWIFT\_DISFAVORED\_OVERLOAD}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00040}00040 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00042}00042 \textcolor{preprocessor}{\#ifndef WTL\_DEPRECATED\_WITH\_REPLACEMENT}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00043}\mbox{\hyperlink{_w_t_l_defines_8h_a1807f92bc7b8211528ccacc9e21203d6}{00043}} \textcolor{preprocessor}{\#define WTL\_DEPRECATED\_WITH\_REPLACEMENT(...) API\_DEPRECATED\_WITH\_REPLACEMENT(\_\_VA\_ARGS\_\_) WTL\_SWIFT\_DISFAVORED\_OVERLOAD}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00044}00044 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00046}00046 \textcolor{preprocessor}{\#ifndef WTL\_NEWLY\_DEPRECATED}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00047}\mbox{\hyperlink{_w_t_l_defines_8h_a44a69c0544b4e3a830445dae784eee64}{00047}} \textcolor{preprocessor}{\#define WTL\_NEWLY\_DEPRECATED(message)}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00048}00048 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00050}00050 \textcolor{preprocessor}{\#ifndef WTL\_NEWLY\_AVAILABLE}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00051}\mbox{\hyperlink{_w_t_l_defines_8h_a69d9531bc87c9b7a2474da67d62161d7}{00051}} \textcolor{preprocessor}{\#define WTL\_NEWLY\_AVAILABLE}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00052}00052 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00054}00054 \textcolor{preprocessor}{\#pragma mark -\/ Types}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00056}\mbox{\hyperlink{_w_t_l_defines_8h_a65443dbe5d9d296956f3c0666f6a9f71}{00056}} \textcolor{keyword}{typedef} NSData * \mbox{\hyperlink{_w_t_l_defines_8h_a65443dbe5d9d296956f3c0666f6a9f71}{WTLTLVBytes}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00057}\mbox{\hyperlink{_w_t_l_defines_8h_a4efd552c6622c4fb6aee847e31a52634}{00057}} \textcolor{keyword}{typedef} NSData * \mbox{\hyperlink{_w_t_l_defines_8h_a4efd552c6622c4fb6aee847e31a52634}{WTLCSRDERBytes}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00058}\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{00058}} \textcolor{keyword}{typedef} NSData * \mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_defines_8h_source_l00059}\mbox{\hyperlink{_w_t_l_defines_8h_a80edc0c3fcd1e58989eb7fc59408d12b}{00059}} \textcolor{keyword}{typedef} NSData * \mbox{\hyperlink{_w_t_l_defines_8h_a80edc0c3fcd1e58989eb7fc59408d12b}{WTLCertificateTLVBytes}};}
+
+\end{DoxyCode}

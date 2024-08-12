@@ -1,6 +1,0 @@
-var ios_x86__64_simulator_2_thing_smart_push_notification_module_8framework_2_headers_2_thing_smart_15bbfadda0d9fec33fed93fa18e3c3df =
-[
-    [ "FOUNDATION_EXPORT", "ios-x86__64-simulator_2_thing_smart_push_notification_module_8framework_2_headers_2_thing_smart_15bbfadda0d9fec33fed93fa18e3c3df.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingSmartPushNotificationModuleVersionNumber", "ios-x86__64-simulator_2_thing_smart_push_notification_module_8framework_2_headers_2_thing_smart_15bbfadda0d9fec33fed93fa18e3c3df.html#a0e684e4bf0363849c2c9ef169c54cee8", null ],
-    [ "ThingSmartPushNotificationModuleVersionString", "ios-x86__64-simulator_2_thing_smart_push_notification_module_8framework_2_headers_2_thing_smart_15bbfadda0d9fec33fed93fa18e3c3df.html#aa20dda5233f3e0dd85631eefc341561f", null ]
-];

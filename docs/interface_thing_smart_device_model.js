@@ -1,5 +1,7 @@
 var interface_thing_smart_device_model =
 [
+    [ "__attribute__", "interface_thing_smart_device_model.html#a7415f9e2131dc0165a3bf0ec3dff6787", null ],
+    [ "__attribute__", "interface_thing_smart_device_model.html#a7415f9e2131dc0165a3bf0ec3dff6787", null ],
     [ "__deprecated_msg", "interface_thing_smart_device_model.html#a3256a527bda57bd23f22cb3e5f44486b", null ],
     [ "__deprecated_msg", "interface_thing_smart_device_model.html#a3256a527bda57bd23f22cb3e5f44486b", null ],
     [ "__deprecated_msg", "interface_thing_smart_device_model.html#a3256a527bda57bd23f22cb3e5f44486b", null ],
@@ -28,8 +30,6 @@ var interface_thing_smart_device_model =
     [ "canBeBindGateway", "interface_thing_smart_device_model.html#a9d961540e177e07b1b531c51a73b5dfe", null ],
     [ "canBeBindSubDevice", "interface_thing_smart_device_model.html#a490e6388fa278c6808f475c39930e419", null ],
     [ "canBeBindSubDevice", "interface_thing_smart_device_model.html#a490e6388fa278c6808f475c39930e419", null ],
-    [ "canCreateGroup", "interface_thing_smart_device_model.html#a9c72b187b52e39026a0da8c8c7f18761", null ],
-    [ "canCreateGroup", "interface_thing_smart_device_model.html#a9c72b187b52e39026a0da8c8c7f18761", null ],
     [ "capabilityIsSupport:", "interface_thing_smart_device_model.html#a6d03c9d20da466c295f31aaff44428e5", null ],
     [ "capabilityIsSupport:", "interface_thing_smart_device_model.html#a6d03c9d20da466c295f31aaff44428e5", null ],
     [ "capabilityIsSupport:", "interface_thing_smart_device_model.html#a6d03c9d20da466c295f31aaff44428e5", null ],
@@ -118,6 +118,8 @@ var interface_thing_smart_device_model =
     [ "switchDpsValueFromDps:", "interface_thing_smart_device_model.html#a5fc5010bc348cb4fc33bdc809c1ccad4", null ],
     [ "switchDpsValueFromDps:", "interface_thing_smart_device_model.html#a5fc5010bc348cb4fc33bdc809c1ccad4", null ],
     [ "switchDpsValueFromDps:", "interface_thing_smart_device_model.html#a5fc5010bc348cb4fc33bdc809c1ccad4", null ],
+    [ "thingsdk_associatedHomeKitDeviceForHomeManager:", "interface_thing_smart_device_model.html#a08003f7b44a6e97f47aa346c1dc3590d", null ],
+    [ "thingsdk_associatedHomeKitDeviceForHomeManager:", "interface_thing_smart_device_model.html#a08003f7b44a6e97f47aa346c1dc3590d", null ],
     [ "tsod_schemaMWithCode:", "interface_thing_smart_device_model.html#a3635295227424c6e2ff7af700bf11557", null ],
     [ "tsod_schemaMWithCode:", "interface_thing_smart_device_model.html#a3635295227424c6e2ff7af700bf11557", null ],
     [ "uiPanelModel", "interface_thing_smart_device_model.html#a15f24755c8974bb191b097fe3028ccde", null ],

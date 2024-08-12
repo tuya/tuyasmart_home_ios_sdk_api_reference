@@ -1,0 +1,187 @@
+\hypertarget{interface_thing_smart_thing_model}{}\doxysection{Thing\+Smart\+Thing\+Model Class Reference}
+\label{interface_thing_smart_thing_model}\index{ThingSmartThingModel@{ThingSmartThingModel}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Thing\+Model.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Thing\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.879195cm]{interface_thing_smart_thing_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSDictionary $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_thing_model_a73778f1bf7d07e7c6e627ac7f63b289a}{dps\+From\+Properties\+:}}
+\item 
+(NSDictionary $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_thing_model_a73778f1bf7d07e7c6e627ac7f63b289a}{dps\+From\+Properties\+:}}
+\item 
+(NSDictionary $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_thing_model_a73778f1bf7d07e7c6e627ac7f63b289a}{dps\+From\+Properties\+:}}
+\item 
+(NSDictionary $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_thing_model_a73778f1bf7d07e7c6e627ac7f63b289a}{dps\+From\+Properties\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_thing_model_aaf6b4857181585681d243aa2d0c8241a}{model\+Id}}
+\begin{DoxyCompactList}\small\item\em The thing model\textquotesingle{}s id. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_thing_model_ac54fca6f2a8d626df830a60a8261114f}{product\+Id}}
+\begin{DoxyCompactList}\small\item\em The thing model\textquotesingle{}s product id. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_thing_model_a0b7853387376659d5ef625ea6f7eeacd}{product\+Version}}
+\begin{DoxyCompactList}\small\item\em The thing model\textquotesingle{}s product version. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_thing_service_model}{Thing\+Smart\+Thing\+Service\+Model}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{interface_thing_smart_thing_model_a5868c0b49dd679c4cc5defcd59b6538d}{services}}
+\begin{DoxyCompactList}\small\item\em The thing model\textquotesingle{}s services. \end{DoxyCompactList}\item 
+NSDictionary $\ast$ \mbox{\hyperlink{interface_thing_smart_thing_model_a97d958db09af929dc860b9ef9dd5ebcf}{extensions}}
+\begin{DoxyCompactList}\small\item\em The thing model\textquotesingle{}s extensions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source_l00018}{18}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source}{Thing\+Smart\+Thing\+Model.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_thing_model_a73778f1bf7d07e7c6e627ac7f63b289a}\label{interface_thing_smart_thing_model_a73778f1bf7d07e7c6e627ac7f63b289a}} 
+\index{ThingSmartThingModel@{ThingSmartThingModel}!dpsFromProperties:@{dpsFromProperties:}}
+\index{dpsFromProperties:@{dpsFromProperties:}!ThingSmartThingModel@{ThingSmartThingModel}}
+\doxysubsubsection{\texorpdfstring{dpsFromProperties:}{dpsFromProperties:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) dps\+From\+Properties\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{properties }\end{DoxyParamCaption}}
+
+Transfer properties to dps formate
+
+Example\+: Input\+: \{ \char`\"{}code\+\_\+name\char`\"{}\+: \{ \char`\"{}value\char`\"{}\+: \char`\"{}xxx\char`\"{}, \char`\"{}time\char`\"{}\+: 1234567890 \} \} The property\textquotesingle{}s code=\char`\"{}code\+\_\+name\char`\"{}, ability\+Id=\char`\"{}101\char`\"{}. Output\+: \{ \char`\"{}dps\char`\"{}\+: \{ \char`\"{}101\char`\"{}\+: \char`\"{}xxx\char`\"{} \}, \char`\"{}dps\+Time\char`\"{}\+: \{ \char`\"{}101\char`\"{}\+: 1234567890 \} \}
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & properties \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_thing_model_a73778f1bf7d07e7c6e627ac7f63b289a}\label{interface_thing_smart_thing_model_a73778f1bf7d07e7c6e627ac7f63b289a}} 
+\index{ThingSmartThingModel@{ThingSmartThingModel}!dpsFromProperties:@{dpsFromProperties:}}
+\index{dpsFromProperties:@{dpsFromProperties:}!ThingSmartThingModel@{ThingSmartThingModel}}
+\doxysubsubsection{\texorpdfstring{dpsFromProperties:}{dpsFromProperties:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) dps\+From\+Properties\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{properties }\end{DoxyParamCaption}}
+
+Transfer properties to dps formate
+
+Example\+: Input\+: \{ \char`\"{}code\+\_\+name\char`\"{}\+: \{ \char`\"{}value\char`\"{}\+: \char`\"{}xxx\char`\"{}, \char`\"{}time\char`\"{}\+: 1234567890 \} \} The property\textquotesingle{}s code=\char`\"{}code\+\_\+name\char`\"{}, ability\+Id=\char`\"{}101\char`\"{}. Output\+: \{ \char`\"{}dps\char`\"{}\+: \{ \char`\"{}101\char`\"{}\+: \char`\"{}xxx\char`\"{} \}, \char`\"{}dps\+Time\char`\"{}\+: \{ \char`\"{}101\char`\"{}\+: 1234567890 \} \}
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & properties \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_thing_model_a73778f1bf7d07e7c6e627ac7f63b289a}\label{interface_thing_smart_thing_model_a73778f1bf7d07e7c6e627ac7f63b289a}} 
+\index{ThingSmartThingModel@{ThingSmartThingModel}!dpsFromProperties:@{dpsFromProperties:}}
+\index{dpsFromProperties:@{dpsFromProperties:}!ThingSmartThingModel@{ThingSmartThingModel}}
+\doxysubsubsection{\texorpdfstring{dpsFromProperties:}{dpsFromProperties:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) dps\+From\+Properties\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{properties }\end{DoxyParamCaption}}
+
+Transfer properties to dps formate
+
+Example\+: Input\+: \{ \char`\"{}code\+\_\+name\char`\"{}\+: \{ \char`\"{}value\char`\"{}\+: \char`\"{}xxx\char`\"{}, \char`\"{}time\char`\"{}\+: 1234567890 \} \} The property\textquotesingle{}s code=\char`\"{}code\+\_\+name\char`\"{}, ability\+Id=\char`\"{}101\char`\"{}. Output\+: \{ \char`\"{}dps\char`\"{}\+: \{ \char`\"{}101\char`\"{}\+: \char`\"{}xxx\char`\"{} \}, \char`\"{}dps\+Time\char`\"{}\+: \{ \char`\"{}101\char`\"{}\+: 1234567890 \} \}
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & properties \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_thing_model_a73778f1bf7d07e7c6e627ac7f63b289a}\label{interface_thing_smart_thing_model_a73778f1bf7d07e7c6e627ac7f63b289a}} 
+\index{ThingSmartThingModel@{ThingSmartThingModel}!dpsFromProperties:@{dpsFromProperties:}}
+\index{dpsFromProperties:@{dpsFromProperties:}!ThingSmartThingModel@{ThingSmartThingModel}}
+\doxysubsubsection{\texorpdfstring{dpsFromProperties:}{dpsFromProperties:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) dps\+From\+Properties\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{properties }\end{DoxyParamCaption}}
+
+Transfer properties to dps formate
+
+Example\+: Input\+: \{ \char`\"{}code\+\_\+name\char`\"{}\+: \{ \char`\"{}value\char`\"{}\+: \char`\"{}xxx\char`\"{}, \char`\"{}time\char`\"{}\+: 1234567890 \} \} The property\textquotesingle{}s code=\char`\"{}code\+\_\+name\char`\"{}, ability\+Id=\char`\"{}101\char`\"{}. Output\+: \{ \char`\"{}dps\char`\"{}\+: \{ \char`\"{}101\char`\"{}\+: \char`\"{}xxx\char`\"{} \}, \char`\"{}dps\+Time\char`\"{}\+: \{ \char`\"{}101\char`\"{}\+: 1234567890 \} \}
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & properties \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_thing_model_a97d958db09af929dc860b9ef9dd5ebcf}\label{interface_thing_smart_thing_model_a97d958db09af929dc860b9ef9dd5ebcf}} 
+\index{ThingSmartThingModel@{ThingSmartThingModel}!extensions@{extensions}}
+\index{extensions@{extensions}!ThingSmartThingModel@{ThingSmartThingModel}}
+\doxysubsubsection{\texorpdfstring{extensions}{extensions}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) extensions\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The thing model\textquotesingle{}s extensions. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source_l00028}{28}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source}{Thing\+Smart\+Thing\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_thing_model_aaf6b4857181585681d243aa2d0c8241a}\label{interface_thing_smart_thing_model_aaf6b4857181585681d243aa2d0c8241a}} 
+\index{ThingSmartThingModel@{ThingSmartThingModel}!modelId@{modelId}}
+\index{modelId@{modelId}!ThingSmartThingModel@{ThingSmartThingModel}}
+\doxysubsubsection{\texorpdfstring{modelId}{modelId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) model\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The thing model\textquotesingle{}s id. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source_l00020}{20}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source}{Thing\+Smart\+Thing\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_thing_model_ac54fca6f2a8d626df830a60a8261114f}\label{interface_thing_smart_thing_model_ac54fca6f2a8d626df830a60a8261114f}} 
+\index{ThingSmartThingModel@{ThingSmartThingModel}!productId@{productId}}
+\index{productId@{productId}!ThingSmartThingModel@{ThingSmartThingModel}}
+\doxysubsubsection{\texorpdfstring{productId}{productId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) product\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The thing model\textquotesingle{}s product id. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source_l00022}{22}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source}{Thing\+Smart\+Thing\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_thing_model_a0b7853387376659d5ef625ea6f7eeacd}\label{interface_thing_smart_thing_model_a0b7853387376659d5ef625ea6f7eeacd}} 
+\index{ThingSmartThingModel@{ThingSmartThingModel}!productVersion@{productVersion}}
+\index{productVersion@{productVersion}!ThingSmartThingModel@{ThingSmartThingModel}}
+\doxysubsubsection{\texorpdfstring{productVersion}{productVersion}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) product\+Version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The thing model\textquotesingle{}s product version. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source_l00024}{24}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source}{Thing\+Smart\+Thing\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_thing_model_a5868c0b49dd679c4cc5defcd59b6538d}\label{interface_thing_smart_thing_model_a5868c0b49dd679c4cc5defcd59b6538d}} 
+\index{ThingSmartThingModel@{ThingSmartThingModel}!services@{services}}
+\index{services@{services}!ThingSmartThingModel@{ThingSmartThingModel}}
+\doxysubsubsection{\texorpdfstring{services}{services}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_thing_service_model}{Thing\+Smart\+Thing\+Service\+Model}} $\ast$ $>$ $\ast$) services\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The thing model\textquotesingle{}s services. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source_l00026}{26}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h_source}{Thing\+Smart\+Thing\+Model.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h}{Thing\+Smart\+Thing\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h}{Thing\+Smart\+Thing\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h}{Thing\+Smart\+Thing\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_thing_model_8h}{Thing\+Smart\+Thing\+Model.\+h}}\end{DoxyCompactItemize}

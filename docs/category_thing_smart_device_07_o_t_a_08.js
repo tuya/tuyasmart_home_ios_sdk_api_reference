@@ -35,5 +35,9 @@ var category_thing_smart_device_07_o_t_a_08 =
     [ "startFirmwareUpgrade:", "category_thing_smart_device_07_o_t_a_08.html#ad6fcd4eb105b25a59900947c2171657a", null ],
     [ "startFirmwareUpgrade:", "category_thing_smart_device_07_o_t_a_08.html#ad6fcd4eb105b25a59900947c2171657a", null ],
     [ "startFirmwareUpgrade:", "category_thing_smart_device_07_o_t_a_08.html#ad6fcd4eb105b25a59900947c2171657a", null ],
-    [ "startFirmwareUpgrade:", "category_thing_smart_device_07_o_t_a_08.html#ad6fcd4eb105b25a59900947c2171657a", null ]
+    [ "startFirmwareUpgrade:", "category_thing_smart_device_07_o_t_a_08.html#ad6fcd4eb105b25a59900947c2171657a", null ],
+    [ "updateBootOTAWithSingleBootStatus:", "category_thing_smart_device_07_o_t_a_08.html#a1a3c5f4022de55ebed7b278cc4efe749", null ],
+    [ "updateBootOTAWithSingleBootStatus:", "category_thing_smart_device_07_o_t_a_08.html#a1a3c5f4022de55ebed7b278cc4efe749", null ],
+    [ "updateBootOTAWithSingleBootStatus:", "category_thing_smart_device_07_o_t_a_08.html#a1a3c5f4022de55ebed7b278cc4efe749", null ],
+    [ "updateBootOTAWithSingleBootStatus:", "category_thing_smart_device_07_o_t_a_08.html#a1a3c5f4022de55ebed7b278cc4efe749", null ]
 ];

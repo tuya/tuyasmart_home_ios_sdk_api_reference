@@ -1,0 +1,315 @@
+\hypertarget{protocol_thing_matter_share_manager_interface_protocol-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Matter\+Share\+Manager\+Interface\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_matter_share_manager_interface_protocol-p}\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Matter\+Share\+Manager\+Interface\+Protocol.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Matter\+Share\+Manager\+Interface\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.978799cm]{protocol_thing_matter_share_manager_interface_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a508b8f6c19fa29d887ec08e42c9d60d5}{write\+Access\+Control\+List\+With\+Dev\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a395dc948eed289ff374930c3fcaafad5}{write\+Access\+Control\+List\+With\+Dev\+Ids\+:callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a42a84ff3fb012415dd566a52e8e02350}{notify\+Access\+Control\+List\+With\+Dev\+Id\+:success\+:failure\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_a_c_l_sync_status_model}{Thing\+Smart\+Matter\+ACLSync\+Status\+Model}} $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a328b26d1619394ca9939138a675def4b}{get\+Matter\+Device\+Cached\+ACLSync\+Status}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a458645233e342e325ed3d2302a712cb3}{get\+Matter\+Device\+ACLSync\+Status\+With\+Dev\+Ids\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em 获取 matter 设备 ACL 同步状态。 \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a0b8e5c16f02e0b35398f1f1084b04db8}{get\+Matter\+Nodes\+Cached\+Device\+Ids}}
+\begin{DoxyCompactList}\small\item\em 获取所有已经缓存的设备节点\+ID \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_ae09c1b136b9c7220bff1a6edbb2f1197}{set\+Matter\+Nodes\+Cached\+Devce\+Ids\+:}}
+\begin{DoxyCompactList}\small\item\em 缓存设备节点\+ID \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_node_model}{Thing\+Smart\+Matter\+Node\+Model}} $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a2d6594300b454229fb437b42f4147ea7}{get\+Devices\+Local\+Cache\+Fabric\+Nodes\+Withdev\+Ids\+:}}
+\begin{DoxyCompactList}\small\item\em 获取当前家庭所有设备节点信息的混存数据 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_acf0299245c6fc28901c32d59c7fcc3d6}{get\+Devices\+Fabric\+Nodes\+Withdev\+Ids\+:callback\+:}}
+\begin{DoxyCompactList}\small\item\em 获取当前家庭所有设备的节点信息 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a3183f5d99e564950c1f0caf40e9eb4c3}{get\+Devices\+Fabric\+Nodes\+Withdev\+Ids\+:space\+Id\+:callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a2cfcef3b687cecceaa116aaca7b40767}{set\+Matter\+Nodes\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a0e8f941419cae2d5a943aaa00cf12457}{reset\+Matter\+Nodes}}
+\begin{DoxyCompactList}\small\item\em 重置（初始化）设备节点信息 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a508b8f6c19fa29d887ec08e42c9d60d5}{write\+Access\+Control\+List\+With\+Dev\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a395dc948eed289ff374930c3fcaafad5}{write\+Access\+Control\+List\+With\+Dev\+Ids\+:callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a42a84ff3fb012415dd566a52e8e02350}{notify\+Access\+Control\+List\+With\+Dev\+Id\+:success\+:failure\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_a_c_l_sync_status_model}{Thing\+Smart\+Matter\+ACLSync\+Status\+Model}} $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a328b26d1619394ca9939138a675def4b}{get\+Matter\+Device\+Cached\+ACLSync\+Status}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a458645233e342e325ed3d2302a712cb3}{get\+Matter\+Device\+ACLSync\+Status\+With\+Dev\+Ids\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em 获取 matter 设备 ACL 同步状态。 \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a0b8e5c16f02e0b35398f1f1084b04db8}{get\+Matter\+Nodes\+Cached\+Device\+Ids}}
+\begin{DoxyCompactList}\small\item\em 获取所有已经缓存的设备节点\+ID \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_ae09c1b136b9c7220bff1a6edbb2f1197}{set\+Matter\+Nodes\+Cached\+Devce\+Ids\+:}}
+\begin{DoxyCompactList}\small\item\em 缓存设备节点\+ID \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_node_model}{Thing\+Smart\+Matter\+Node\+Model}} $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a2d6594300b454229fb437b42f4147ea7}{get\+Devices\+Local\+Cache\+Fabric\+Nodes\+Withdev\+Ids\+:}}
+\begin{DoxyCompactList}\small\item\em 获取当前家庭所有设备节点信息的混存数据 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_acf0299245c6fc28901c32d59c7fcc3d6}{get\+Devices\+Fabric\+Nodes\+Withdev\+Ids\+:callback\+:}}
+\begin{DoxyCompactList}\small\item\em 获取当前家庭所有设备的节点信息 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a3183f5d99e564950c1f0caf40e9eb4c3}{get\+Devices\+Fabric\+Nodes\+Withdev\+Ids\+:space\+Id\+:callback\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a2cfcef3b687cecceaa116aaca7b40767}{set\+Matter\+Nodes\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_manager_interface_protocol-p_a0e8f941419cae2d5a943aaa00cf12457}{reset\+Matter\+Nodes}}
+\begin{DoxyCompactList}\small\item\em 重置（初始化）设备节点信息 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_manager_interface_protocol_8h_source_l00014}{14}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_manager_interface_protocol_8h_source}{Thing\+Matter\+Share\+Manager\+Interface\+Protocol.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_acf0299245c6fc28901c32d59c7fcc3d6}\label{protocol_thing_matter_share_manager_interface_protocol-p_acf0299245c6fc28901c32d59c7fcc3d6}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!getDevicesFabricNodesWithdevIds:callback:@{getDevicesFabricNodesWithdevIds:callback:}}
+\index{getDevicesFabricNodesWithdevIds:callback:@{getDevicesFabricNodesWithdevIds:callback:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getDevicesFabricNodesWithdevIds:callback:}{getDevicesFabricNodesWithdevIds:callback:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Devices\+Fabric\+Nodes\+Withdev\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+Ids }\item[{callback\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_node_model}{Thing\+Smart\+Matter\+Node\+Model}} $\ast$ $>$ $\ast$result))}]{callback }\end{DoxyParamCaption}}
+
+
+
+获取当前家庭所有设备的节点信息 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_acf0299245c6fc28901c32d59c7fcc3d6}\label{protocol_thing_matter_share_manager_interface_protocol-p_acf0299245c6fc28901c32d59c7fcc3d6}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!getDevicesFabricNodesWithdevIds:callback:@{getDevicesFabricNodesWithdevIds:callback:}}
+\index{getDevicesFabricNodesWithdevIds:callback:@{getDevicesFabricNodesWithdevIds:callback:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getDevicesFabricNodesWithdevIds:callback:}{getDevicesFabricNodesWithdevIds:callback:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Devices\+Fabric\+Nodes\+Withdev\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+Ids }\item[{callback\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_node_model}{Thing\+Smart\+Matter\+Node\+Model}} $\ast$ $>$ $\ast$result))}]{callback }\end{DoxyParamCaption}}
+
+
+
+获取当前家庭所有设备的节点信息 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a3183f5d99e564950c1f0caf40e9eb4c3}\label{protocol_thing_matter_share_manager_interface_protocol-p_a3183f5d99e564950c1f0caf40e9eb4c3}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!getDevicesFabricNodesWithdevIds:spaceId:callback:@{getDevicesFabricNodesWithdevIds:spaceId:callback:}}
+\index{getDevicesFabricNodesWithdevIds:spaceId:callback:@{getDevicesFabricNodesWithdevIds:spaceId:callback:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getDevicesFabricNodesWithdevIds:spaceId:callback:}{getDevicesFabricNodesWithdevIds:spaceId:callback:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Devices\+Fabric\+Nodes\+Withdev\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+Ids }\item[{space\+Id\+:(long long)}]{space\+Id }\item[{callback\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_node_model}{Thing\+Smart\+Matter\+Node\+Model}} $\ast$ $>$ $\ast$result))}]{callback }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a3183f5d99e564950c1f0caf40e9eb4c3}\label{protocol_thing_matter_share_manager_interface_protocol-p_a3183f5d99e564950c1f0caf40e9eb4c3}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!getDevicesFabricNodesWithdevIds:spaceId:callback:@{getDevicesFabricNodesWithdevIds:spaceId:callback:}}
+\index{getDevicesFabricNodesWithdevIds:spaceId:callback:@{getDevicesFabricNodesWithdevIds:spaceId:callback:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getDevicesFabricNodesWithdevIds:spaceId:callback:}{getDevicesFabricNodesWithdevIds:spaceId:callback:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Devices\+Fabric\+Nodes\+Withdev\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+Ids }\item[{space\+Id\+:(long long)}]{space\+Id }\item[{callback\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_node_model}{Thing\+Smart\+Matter\+Node\+Model}} $\ast$ $>$ $\ast$result))}]{callback }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a2d6594300b454229fb437b42f4147ea7}\label{protocol_thing_matter_share_manager_interface_protocol-p_a2d6594300b454229fb437b42f4147ea7}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!getDevicesLocalCacheFabricNodesWithdevIds:@{getDevicesLocalCacheFabricNodesWithdevIds:}}
+\index{getDevicesLocalCacheFabricNodesWithdevIds:@{getDevicesLocalCacheFabricNodesWithdevIds:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getDevicesLocalCacheFabricNodesWithdevIds:}{getDevicesLocalCacheFabricNodesWithdevIds:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_node_model}{Thing\+Smart\+Matter\+Node\+Model}} $\ast$ $>$ $\ast$) get\+Devices\+Local\+Cache\+Fabric\+Nodes\+Withdev\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+Ids }\end{DoxyParamCaption}}
+
+
+
+获取当前家庭所有设备节点信息的混存数据 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a2d6594300b454229fb437b42f4147ea7}\label{protocol_thing_matter_share_manager_interface_protocol-p_a2d6594300b454229fb437b42f4147ea7}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!getDevicesLocalCacheFabricNodesWithdevIds:@{getDevicesLocalCacheFabricNodesWithdevIds:}}
+\index{getDevicesLocalCacheFabricNodesWithdevIds:@{getDevicesLocalCacheFabricNodesWithdevIds:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getDevicesLocalCacheFabricNodesWithdevIds:}{getDevicesLocalCacheFabricNodesWithdevIds:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_node_model}{Thing\+Smart\+Matter\+Node\+Model}} $\ast$ $>$ $\ast$) get\+Devices\+Local\+Cache\+Fabric\+Nodes\+Withdev\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+Ids }\end{DoxyParamCaption}}
+
+
+
+获取当前家庭所有设备节点信息的混存数据 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a458645233e342e325ed3d2302a712cb3}\label{protocol_thing_matter_share_manager_interface_protocol-p_a458645233e342e325ed3d2302a712cb3}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!getMatterDeviceACLSyncStatusWithDevIds:success:failure:@{getMatterDeviceACLSyncStatusWithDevIds:success:failure:}}
+\index{getMatterDeviceACLSyncStatusWithDevIds:success:failure:@{getMatterDeviceACLSyncStatusWithDevIds:success:failure:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getMatterDeviceACLSyncStatusWithDevIds:success:failure:}{getMatterDeviceACLSyncStatusWithDevIds:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Matter\+Device\+ACLSync\+Status\+With\+Dev\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+Ids }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_a_c_l_sync_status_model}{Thing\+Smart\+Matter\+ACLSync\+Status\+Model}} $\ast$ $>$ $\ast$result))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+
+
+获取 matter 设备 ACL 同步状态。 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a458645233e342e325ed3d2302a712cb3}\label{protocol_thing_matter_share_manager_interface_protocol-p_a458645233e342e325ed3d2302a712cb3}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!getMatterDeviceACLSyncStatusWithDevIds:success:failure:@{getMatterDeviceACLSyncStatusWithDevIds:success:failure:}}
+\index{getMatterDeviceACLSyncStatusWithDevIds:success:failure:@{getMatterDeviceACLSyncStatusWithDevIds:success:failure:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getMatterDeviceACLSyncStatusWithDevIds:success:failure:}{getMatterDeviceACLSyncStatusWithDevIds:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Matter\+Device\+ACLSync\+Status\+With\+Dev\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+Ids }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_a_c_l_sync_status_model}{Thing\+Smart\+Matter\+ACLSync\+Status\+Model}} $\ast$ $>$ $\ast$result))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+
+
+获取 matter 设备 ACL 同步状态。 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a328b26d1619394ca9939138a675def4b}\label{protocol_thing_matter_share_manager_interface_protocol-p_a328b26d1619394ca9939138a675def4b}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!getMatterDeviceCachedACLSyncStatus@{getMatterDeviceCachedACLSyncStatus}}
+\index{getMatterDeviceCachedACLSyncStatus@{getMatterDeviceCachedACLSyncStatus}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getMatterDeviceCachedACLSyncStatus}{getMatterDeviceCachedACLSyncStatus}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_a_c_l_sync_status_model}{Thing\+Smart\+Matter\+ACLSync\+Status\+Model}} $\ast$ $>$ $\ast$) get\+Matter\+Device\+Cached\+ACLSync\+Status \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+获取 matter 设备 ACL 同步状态的缓存数据。 注意：暂时仅无脑缓存上次接口请求的数据，如果有“在切换 Fabric 时清空缓存的需求”请在业务层自行处理。 \mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a328b26d1619394ca9939138a675def4b}\label{protocol_thing_matter_share_manager_interface_protocol-p_a328b26d1619394ca9939138a675def4b}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!getMatterDeviceCachedACLSyncStatus@{getMatterDeviceCachedACLSyncStatus}}
+\index{getMatterDeviceCachedACLSyncStatus@{getMatterDeviceCachedACLSyncStatus}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getMatterDeviceCachedACLSyncStatus}{getMatterDeviceCachedACLSyncStatus}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_a_c_l_sync_status_model}{Thing\+Smart\+Matter\+ACLSync\+Status\+Model}} $\ast$ $>$ $\ast$) get\+Matter\+Device\+Cached\+ACLSync\+Status \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+获取 matter 设备 ACL 同步状态的缓存数据。 注意：暂时仅无脑缓存上次接口请求的数据，如果有“在切换 Fabric 时清空缓存的需求”请在业务层自行处理。 \mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a0b8e5c16f02e0b35398f1f1084b04db8}\label{protocol_thing_matter_share_manager_interface_protocol-p_a0b8e5c16f02e0b35398f1f1084b04db8}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!getMatterNodesCachedDeviceIds@{getMatterNodesCachedDeviceIds}}
+\index{getMatterNodesCachedDeviceIds@{getMatterNodesCachedDeviceIds}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getMatterNodesCachedDeviceIds}{getMatterNodesCachedDeviceIds}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$) get\+Matter\+Nodes\+Cached\+Device\+Ids \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+获取所有已经缓存的设备节点\+ID 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a0b8e5c16f02e0b35398f1f1084b04db8}\label{protocol_thing_matter_share_manager_interface_protocol-p_a0b8e5c16f02e0b35398f1f1084b04db8}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!getMatterNodesCachedDeviceIds@{getMatterNodesCachedDeviceIds}}
+\index{getMatterNodesCachedDeviceIds@{getMatterNodesCachedDeviceIds}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getMatterNodesCachedDeviceIds}{getMatterNodesCachedDeviceIds}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$) get\+Matter\+Nodes\+Cached\+Device\+Ids \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+获取所有已经缓存的设备节点\+ID 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a42a84ff3fb012415dd566a52e8e02350}\label{protocol_thing_matter_share_manager_interface_protocol-p_a42a84ff3fb012415dd566a52e8e02350}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!notifyAccessControlListWithDevId:success:failure:@{notifyAccessControlListWithDevId:success:failure:}}
+\index{notifyAccessControlListWithDevId:success:failure:@{notifyAccessControlListWithDevId:success:failure:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{notifyAccessControlListWithDevId:success:failure:}{notifyAccessControlListWithDevId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Access\+Control\+List\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+通知设备写入\+ACL
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & dev\+Id \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a42a84ff3fb012415dd566a52e8e02350}\label{protocol_thing_matter_share_manager_interface_protocol-p_a42a84ff3fb012415dd566a52e8e02350}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!notifyAccessControlListWithDevId:success:failure:@{notifyAccessControlListWithDevId:success:failure:}}
+\index{notifyAccessControlListWithDevId:success:failure:@{notifyAccessControlListWithDevId:success:failure:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{notifyAccessControlListWithDevId:success:failure:}{notifyAccessControlListWithDevId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Access\+Control\+List\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+通知设备写入\+ACL
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & dev\+Id \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a0e8f941419cae2d5a943aaa00cf12457}\label{protocol_thing_matter_share_manager_interface_protocol-p_a0e8f941419cae2d5a943aaa00cf12457}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!resetMatterNodes@{resetMatterNodes}}
+\index{resetMatterNodes@{resetMatterNodes}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{resetMatterNodes}{resetMatterNodes}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) reset\+Matter\+Nodes \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+重置（初始化）设备节点信息 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a0e8f941419cae2d5a943aaa00cf12457}\label{protocol_thing_matter_share_manager_interface_protocol-p_a0e8f941419cae2d5a943aaa00cf12457}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!resetMatterNodes@{resetMatterNodes}}
+\index{resetMatterNodes@{resetMatterNodes}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{resetMatterNodes}{resetMatterNodes}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) reset\+Matter\+Nodes \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+重置（初始化）设备节点信息 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a2cfcef3b687cecceaa116aaca7b40767}\label{protocol_thing_matter_share_manager_interface_protocol-p_a2cfcef3b687cecceaa116aaca7b40767}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!setMatterNodes:@{setMatterNodes:}}
+\index{setMatterNodes:@{setMatterNodes:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setMatterNodes:}{setMatterNodes:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Matter\+Nodes\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_node_model}{Thing\+Smart\+Matter\+Node\+Model}} $\ast$ $>$ $\ast$)}]{node\+Model\+List }\end{DoxyParamCaption}}
+
+设置当前家庭所有设备的节点信息 param node\+Model\+List 设备节点信息 \mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a2cfcef3b687cecceaa116aaca7b40767}\label{protocol_thing_matter_share_manager_interface_protocol-p_a2cfcef3b687cecceaa116aaca7b40767}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!setMatterNodes:@{setMatterNodes:}}
+\index{setMatterNodes:@{setMatterNodes:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setMatterNodes:}{setMatterNodes:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Matter\+Nodes\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_matter_node_model}{Thing\+Smart\+Matter\+Node\+Model}} $\ast$ $>$ $\ast$)}]{node\+Model\+List }\end{DoxyParamCaption}}
+
+设置当前家庭所有设备的节点信息 param node\+Model\+List 设备节点信息 \mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_ae09c1b136b9c7220bff1a6edbb2f1197}\label{protocol_thing_matter_share_manager_interface_protocol-p_ae09c1b136b9c7220bff1a6edbb2f1197}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!setMatterNodesCachedDevceIds:@{setMatterNodesCachedDevceIds:}}
+\index{setMatterNodesCachedDevceIds:@{setMatterNodesCachedDevceIds:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setMatterNodesCachedDevceIds:}{setMatterNodesCachedDevceIds:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Matter\+Nodes\+Cached\+Devce\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+IDs }\end{DoxyParamCaption}}
+
+
+
+缓存设备节点\+ID 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_ae09c1b136b9c7220bff1a6edbb2f1197}\label{protocol_thing_matter_share_manager_interface_protocol-p_ae09c1b136b9c7220bff1a6edbb2f1197}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!setMatterNodesCachedDevceIds:@{setMatterNodesCachedDevceIds:}}
+\index{setMatterNodesCachedDevceIds:@{setMatterNodesCachedDevceIds:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setMatterNodesCachedDevceIds:}{setMatterNodesCachedDevceIds:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Matter\+Nodes\+Cached\+Devce\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+IDs }\end{DoxyParamCaption}}
+
+
+
+缓存设备节点\+ID 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a508b8f6c19fa29d887ec08e42c9d60d5}\label{protocol_thing_matter_share_manager_interface_protocol-p_a508b8f6c19fa29d887ec08e42c9d60d5}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!writeAccessControlListWithDevId:success:failure:@{writeAccessControlListWithDevId:success:failure:}}
+\index{writeAccessControlListWithDevId:success:failure:@{writeAccessControlListWithDevId:success:failure:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{writeAccessControlListWithDevId:success:failure:}{writeAccessControlListWithDevId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) write\+Access\+Control\+List\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+write\+Access\+Control\+List 写入\+ACL
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & dev\+Id \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a508b8f6c19fa29d887ec08e42c9d60d5}\label{protocol_thing_matter_share_manager_interface_protocol-p_a508b8f6c19fa29d887ec08e42c9d60d5}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!writeAccessControlListWithDevId:success:failure:@{writeAccessControlListWithDevId:success:failure:}}
+\index{writeAccessControlListWithDevId:success:failure:@{writeAccessControlListWithDevId:success:failure:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{writeAccessControlListWithDevId:success:failure:}{writeAccessControlListWithDevId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) write\+Access\+Control\+List\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+write\+Access\+Control\+List 写入\+ACL
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & dev\+Id \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a395dc948eed289ff374930c3fcaafad5}\label{protocol_thing_matter_share_manager_interface_protocol-p_a395dc948eed289ff374930c3fcaafad5}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!writeAccessControlListWithDevIds:callback:@{writeAccessControlListWithDevIds:callback:}}
+\index{writeAccessControlListWithDevIds:callback:@{writeAccessControlListWithDevIds:callback:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{writeAccessControlListWithDevIds:callback:}{writeAccessControlListWithDevIds:callback:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) write\+Access\+Control\+List\+With\+Dev\+Ids\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+Ids }\item[{callback\+:(void($^\wedge$)(void))}]{callback }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_matter_share_manager_interface_protocol-p_a395dc948eed289ff374930c3fcaafad5}\label{protocol_thing_matter_share_manager_interface_protocol-p_a395dc948eed289ff374930c3fcaafad5}} 
+\index{$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}!writeAccessControlListWithDevIds:callback:@{writeAccessControlListWithDevIds:callback:}}
+\index{writeAccessControlListWithDevIds:callback:@{writeAccessControlListWithDevIds:callback:}!$<$ThingMatterShareManagerInterfaceProtocol$>$@{$<$ThingMatterShareManagerInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{writeAccessControlListWithDevIds:callback:}{writeAccessControlListWithDevIds:callback:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) write\+Access\+Control\+List\+With\+Dev\+Ids\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+Ids }\item[{callback\+:(void($^\wedge$)(void))}]{callback }\end{DoxyParamCaption}}
+
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Interface\+API/\+Thing\+Smart\+Matter\+Interface\+API.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Matter\+Interface\+API.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_manager_interface_protocol_8h}{Thing\+Matter\+Share\+Manager\+Interface\+Protocol.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Interface\+API/\+Thing\+Smart\+Matter\+Interface\+API.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Matter\+Interface\+API.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_manager_interface_protocol_8h}{Thing\+Matter\+Share\+Manager\+Interface\+Protocol.\+h}}\end{DoxyCompactItemize}

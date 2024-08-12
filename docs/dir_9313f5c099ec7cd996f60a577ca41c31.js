@@ -1,4 +1,0 @@
-var dir_9313f5c099ec7cd996f60a577ca41c31 =
-[
-    [ "ThingDeviceAccessoryManagePlugAPI-umbrella.h", "ios-x86__64-simulator_2_thing_device_accessory_manage_plug_a_p_i_8framework_2_headers_2_thing_de9472e1fa34fe7dc32ba2240617e9e718.html", "ios-x86__64-simulator_2_thing_device_accessory_manage_plug_a_p_i_8framework_2_headers_2_thing_de9472e1fa34fe7dc32ba2240617e9e718" ]
-];

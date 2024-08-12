@@ -1,0 +1,91 @@
+\hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{}\doxysection{Thing\+Encrypt\+Image\+KVStorage.\+h}
+\label{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingEncryptImage/Build/ThingEncryptImage.xcframework/ios-\/arm64/ThingEncryptImage.framework/Headers/ThingEncryptImageKVStorage.h@{/Users/humtong/Downloads/Pods\_副本/ThingEncryptImage/Build/ThingEncryptImage.xcframework/ios-\/arm64/ThingEncryptImage.framework/Headers/ThingEncryptImageKVStorage.h}}
+\mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00002}00002 \textcolor{comment}{//  ThingEncryptImageKVStrorage.h}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00003}00003 \textcolor{comment}{//  ThingEncryptImage}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00005}00005 \textcolor{comment}{//  Created by Jake Hu on 2020/1/31.}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00008}00008 \textcolor{preprocessor}{\#import <UIKit/UIKit.h>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00009}00009 \textcolor{preprocessor}{\#import "{}\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h}{ThingEncryptWebImageCompat.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00011}00011 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00017}00017 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{ThingEncryptKVStorageItem}} : NSObject}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00018}00018 \textcolor{keyword}{@property} (nonatomic, strong) NSString *\mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_a2340832f5ae5c7f9b7e7dba399a734e3}{key}};                }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00019}00019 \textcolor{keyword}{@property} (nonatomic, strong) NSData *\mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_a1d6ead3e27224da8e911e73b7217a6a0}{value}};                }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00020}00020 \textcolor{keyword}{@property} (nullable, nonatomic, strong) NSString *\mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_ad5e298e023cab4d831f7dd27cc18d4c3}{filename}}; }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00021}00021 \textcolor{keyword}{@property} (nonatomic) \textcolor{keywordtype}{int} \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_a62052776a8201188361fae4be6b2d191}{size}};                             }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00022}00022 \textcolor{keyword}{@property} (nonatomic) \textcolor{keywordtype}{int} \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_a4ad8dc621ed319626beebf07b66655ff}{modTime}};                          }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00023}00023 \textcolor{keyword}{@property} (nonatomic) \textcolor{keywordtype}{int} \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_a129a08d59794eff0df1032f2fbaa5e18}{accessTime}};                       }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00024}00024 \textcolor{keyword}{@property} (nullable, nonatomic, strong) NSData *\mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_a02dc03c8d36b3fd324b9a73b9c90520a}{extendedData}}; }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00025}00025 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00042}00042 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage}{ThingEncryptImageKVStorage}} : NSObject}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00044}00044 \textcolor{preprocessor}{\#pragma mark -\/ Attribute}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00049}00049 \textcolor{keyword}{@property} (nonatomic, readonly) NSString *path;        }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00050}00050 \textcolor{keyword}{@property} (nonatomic, readonly) NSString *dataDirectory;        }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00051}\mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}{00051}} \textcolor{keyword}{@property} (nonatomic) BOOL errorLogsEnabled;           }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00053}00053 \textcolor{preprocessor}{\#pragma mark -\/ Initializer}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00057}00057 -\/ (instancetype)init UNAVAILABLE\_ATTRIBUTE;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00058}00058 + (instancetype)new UNAVAILABLE\_ATTRIBUTE;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00069}00069 -\/ (nullable instancetype)initWithPath:(NSString *)path NS\_DESIGNATED\_INITIALIZER;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00072}00072 \textcolor{preprocessor}{\#pragma mark -\/ Save Items}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00088}00088 -\/ (BOOL)saveItem:(\mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{ThingEncryptKVStorageItem}} *)item;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00097}00097 -\/ (BOOL)saveItemWithKey:(NSString *)key value:(NSData *)value;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00110}00110 -\/ (BOOL)saveItemWithKey:(NSString *)key}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00111}00111                   value:(NSData *)value}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00112}00112                filename:(nullable NSString *)filename}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00113}00113            extendedData:(nullable NSData *)extendedData;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00115}00115 \textcolor{preprocessor}{\#pragma mark -\/ Remove Items}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00126}00126 -\/ (BOOL)removeItemForKey:(NSString *)key;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00135}00135 -\/ (BOOL)removeItemForKeys:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}<NSString *> *)keys;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00136}00136 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00143}00143 -\/ (BOOL)removeItemsEarlierThanTime:(\textcolor{keywordtype}{int})time;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00152}00152 -\/ (BOOL)removeItemsToFitSize:(\textcolor{keywordtype}{int})maxSize;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00153}00153 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00162}00162 -\/ (BOOL)removeAllItems;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00163}00163 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00169}00169 -\/ (BOOL)removeItemsAtPath:(NSString *)path;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00170}00170 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00171}00171 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00172}00172 \textcolor{preprocessor}{\#pragma mark -\/ Get Items}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00176}00176 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00183}00183 -\/ (nullable \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{ThingEncryptKVStorageItem}} *)getItemForKey:(NSString *)key;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00184}00184 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00191}00191 -\/ (nullable NSData *)getItemValueForKey:(NSString *)key;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00192}00192 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00200}00200 -\/ (nullable NSDictionary<NSString *, NSData *> *)getItemValueForKeys:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}<NSString *> *)keys;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00201}00201 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00208}00208 -\/ (nullable NSString *)cachePathForKey:(nonnull NSString *)key;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00209}00209 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00210}00210 \textcolor{preprocessor}{\#pragma mark -\/ Get Storage Status}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00214}00214 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00222}00222 -\/ (BOOL)itemExistsForKey:(NSString *)key;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00223}00223 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00228}00228 -\/ (int)getItemsCount;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00229}00229 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00234}00234 -\/ (int)getItemsSize;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00235}00235 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00236}00236 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00237}00237 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00238}00238 NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

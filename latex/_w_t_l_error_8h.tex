@@ -1,0 +1,77 @@
+\hypertarget{_w_t_l_error_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.framework/\+Headers/\+WTLError.h File Reference}
+\label{_w_t_l_error_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLError.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLError.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{_w_t_l_error_8h_afb3cef5835f1003a57cd71c6553f24a2}{NS\+\_\+\+ERROR\+\_\+\+ENUM}} (\mbox{\hyperlink{_w_t_l_error_8h_a3593621b6d25a44e6847b922ea3f77d6}{WTLError\+Domain}}, WTLError\+Code)
+\item 
+typedef \mbox{\hyperlink{_w_t_l_error_8h_aedaa0effc2ba807813b18a6eec7c8564}{NS\+\_\+\+ERROR\+\_\+\+ENUM}} (\mbox{\hyperlink{_w_t_l_error_8h_ac2c9a169828ef046e11f69a3e9fd5701}{WTLInteraction\+Error\+Domain}}, WTLInteraction\+Error\+Code)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_feedback_kit_8framework_2_headers_2_thing_smart_fe0b5cb8e9f07cbefb855ca9f2b1c4974_af7ed8a8cc695841daf9b3c196c8b6bfa}{FOUNDATION\+\_\+\+EXPORT}} NSError\+Domain const \mbox{\hyperlink{_w_t_l_error_8h_a3593621b6d25a44e6847b922ea3f77d6}{WTLError\+Domain}}
+\item 
+\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_feedback_kit_8framework_2_headers_2_thing_smart_fe0b5cb8e9f07cbefb855ca9f2b1c4974_af7ed8a8cc695841daf9b3c196c8b6bfa}{FOUNDATION\+\_\+\+EXPORT}} NSError\+Domain const \mbox{\hyperlink{_w_t_l_error_8h_ac2c9a169828ef046e11f69a3e9fd5701}{WTLInteraction\+Error\+Domain}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_w_t_l_error_8h_afb3cef5835f1003a57cd71c6553f24a2}\label{_w_t_l_error_8h_afb3cef5835f1003a57cd71c6553f24a2}} 
+\index{WTLError.h@{WTLError.h}!NS\_ERROR\_ENUM@{NS\_ERROR\_ENUM}}
+\index{NS\_ERROR\_ENUM@{NS\_ERROR\_ENUM}!WTLError.h@{WTLError.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ERROR\_ENUM()}{NS\_ERROR\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ERROR\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_w_t_l_error_8h_a3593621b6d25a44e6847b922ea3f77d6}{WTLError\+Domain}}}]{,  }\item[{WTLError\+Code}]{ }\end{DoxyParamCaption})}
+
+WTLError\+Domain contains errors caused by data processing the framework itself is performing. These can be caused by invalid values provided to a framework API, failure to decode an incoming message, and so forth.
+
+This error domain also contains errors that are communicated via success responses from a server but mapped to an error on the client.
+
+Errors reported by the server side of a Matter interaction via the normal Matter error-\/reporting mechanisms use WTLInteraction\+Error\+Domain instead. WTLError\+Code\+General\+Error represents a generic Matter error with no further categorization.
+
+The user\+Info will have a key named "{}error\+Code"{} whose value will be an integer representing the underlying Matter error code. These integer values should not be assumed to be stable across releases, but may be useful in logging and debugging.
+
+WTLError\+Code\+Fabric\+Exists is returned when trying to commission a device into a fabric when it\textquotesingle{}s already part of that fabric.
+
+Definition at line \mbox{\hyperlink{_w_t_l_error_8h_source_l00037}{37}} of file \mbox{\hyperlink{_w_t_l_error_8h_source}{WTLError.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_error_8h_aedaa0effc2ba807813b18a6eec7c8564}\label{_w_t_l_error_8h_aedaa0effc2ba807813b18a6eec7c8564}} 
+\index{WTLError.h@{WTLError.h}!NS\_ERROR\_ENUM@{NS\_ERROR\_ENUM}}
+\index{NS\_ERROR\_ENUM@{NS\_ERROR\_ENUM}!WTLError.h@{WTLError.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ERROR\_ENUM()}{NS\_ERROR\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ERROR\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_w_t_l_error_8h_ac2c9a169828ef046e11f69a3e9fd5701}{WTLInteraction\+Error\+Domain}}}]{,  }\item[{WTLInteraction\+Error\+Code}]{ }\end{DoxyParamCaption})}
+
+WTLInteraction\+Error\+Domain contains errors that represent a Matter Status\+IB error. These represent errors reported by the other side of a Matter interaction.
+
+When the code is WTLInteraction\+Error\+Code\+Failure the user\+Info may have a key named "{}cluster\+Status"{} whose value is the cluster-\/specific status that was reported. This key will be absent if there was no cluster-\/specific status. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_error_8h_source_l00076}{76}} of file \mbox{\hyperlink{_w_t_l_error_8h_source}{WTLError.\+h}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_w_t_l_error_8h_a3593621b6d25a44e6847b922ea3f77d6}\label{_w_t_l_error_8h_a3593621b6d25a44e6847b922ea3f77d6}} 
+\index{WTLError.h@{WTLError.h}!WTLErrorDomain@{WTLErrorDomain}}
+\index{WTLErrorDomain@{WTLErrorDomain}!WTLError.h@{WTLError.h}}
+\doxysubsubsection{\texorpdfstring{WTLErrorDomain}{WTLErrorDomain}}
+{\footnotesize\ttfamily NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_feedback_kit_8framework_2_headers_2_thing_smart_fe0b5cb8e9f07cbefb855ca9f2b1c4974_af7ed8a8cc695841daf9b3c196c8b6bfa}{FOUNDATION\+\_\+\+EXPORT}} NSError\+Domain const WTLError\+Domain}
+
+Copyright (c) 2020 Project CHIP Authors
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb}http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_error_8h_source_l00021}{21}} of file \mbox{\hyperlink{_w_t_l_error_8h_source}{WTLError.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_error_8h_ac2c9a169828ef046e11f69a3e9fd5701}\label{_w_t_l_error_8h_ac2c9a169828ef046e11f69a3e9fd5701}} 
+\index{WTLError.h@{WTLError.h}!WTLInteractionErrorDomain@{WTLInteractionErrorDomain}}
+\index{WTLInteractionErrorDomain@{WTLInteractionErrorDomain}!WTLError.h@{WTLError.h}}
+\doxysubsubsection{\texorpdfstring{WTLInteractionErrorDomain}{WTLInteractionErrorDomain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_feedback_kit_8framework_2_headers_2_thing_smart_fe0b5cb8e9f07cbefb855ca9f2b1c4974_af7ed8a8cc695841daf9b3c196c8b6bfa}{FOUNDATION\+\_\+\+EXPORT}} NSError\+Domain const WTLInteraction\+Error\+Domain}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_error_8h_source_l00023}{23}} of file \mbox{\hyperlink{_w_t_l_error_8h_source}{WTLError.\+h}}.
+

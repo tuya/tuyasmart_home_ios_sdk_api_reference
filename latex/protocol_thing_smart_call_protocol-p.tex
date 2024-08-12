@@ -1,0 +1,155 @@
+\hypertarget{protocol_thing_smart_call_protocol-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+Call\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_call_protocol-p}\index{$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Call\+Protocol.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+Call\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.164948cm]{protocol_thing_smart_call_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+BOOL \mbox{\hyperlink{protocol_thing_smart_call_protocol-p_a6db58d48d7abf6d99c32623ccaf5de39}{outgoing}}
+\begin{DoxyCompactList}\small\item\em whether is call out \end{DoxyCompactList}\item 
+Thing\+Smart\+Call\+Type \mbox{\hyperlink{protocol_thing_smart_call_protocol-p_af321d49957301260455439599f692987}{call\+Type}}
+\begin{DoxyCompactList}\small\item\em call type \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{protocol_thing_smart_call_protocol-p_a08cbdcca85e7019049676518cad41781}{accepted}}
+\begin{DoxyCompactList}\small\item\em whether the call has accepted. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{protocol_thing_smart_call_protocol-p_a43fba4dbf105520853341dd33aff70e6}{answered}}
+\begin{DoxyCompactList}\small\item\em whether the peer has answered. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{protocol_thing_smart_call_protocol-p_a660290cd18003286c36ccb3150340d8b}{connected}}
+\begin{DoxyCompactList}\small\item\em whether the connection is connected. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{protocol_thing_smart_call_protocol-p_aa22d945fa16b07933932fe0a2ee5f51a}{end}}
+\begin{DoxyCompactList}\small\item\em whether the call ended. \end{DoxyCompactList}\item 
+NSUUID $\ast$ \mbox{\hyperlink{protocol_thing_smart_call_protocol-p_ab69badc54eb436e30ecf60479aee693c}{uuid}}
+\begin{DoxyCompactList}\small\item\em uuid,if use call\+Kit, set it. \end{DoxyCompactList}\item 
+id$<$ \mbox{\hyperlink{protocol_thing_smart_call_event_message_ext-p}{Thing\+Smart\+Call\+Event\+Message\+Ext}} $>$ \mbox{\hyperlink{protocol_thing_smart_call_protocol-p_a406aa90063765bb3e1e87d87730d2396}{extra\+Model}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source_l00015}{15}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source}{Thing\+Smart\+Call\+Protocol.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_call_protocol-p_a08cbdcca85e7019049676518cad41781}\label{protocol_thing_smart_call_protocol-p_a08cbdcca85e7019049676518cad41781}} 
+\index{$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}!accepted@{accepted}}
+\index{accepted@{accepted}!$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{accepted}{accepted}}
+{\footnotesize\ttfamily -\/ (BOOL) accepted\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+whether the call has accepted. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source_l00024}{24}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source}{Thing\+Smart\+Call\+Protocol.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_smart_call_protocol-p_a43fba4dbf105520853341dd33aff70e6}\label{protocol_thing_smart_call_protocol-p_a43fba4dbf105520853341dd33aff70e6}} 
+\index{$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}!answered@{answered}}
+\index{answered@{answered}!$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{answered}{answered}}
+{\footnotesize\ttfamily -\/ (BOOL) answered\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+whether the peer has answered. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source_l00027}{27}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source}{Thing\+Smart\+Call\+Protocol.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_smart_call_protocol-p_af321d49957301260455439599f692987}\label{protocol_thing_smart_call_protocol-p_af321d49957301260455439599f692987}} 
+\index{$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}!callType@{callType}}
+\index{callType@{callType}!$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{callType}{callType}}
+{\footnotesize\ttfamily -\/ (Thing\+Smart\+Call\+Type) call\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+call type 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source_l00021}{21}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source}{Thing\+Smart\+Call\+Protocol.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_smart_call_protocol-p_a660290cd18003286c36ccb3150340d8b}\label{protocol_thing_smart_call_protocol-p_a660290cd18003286c36ccb3150340d8b}} 
+\index{$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}!connected@{connected}}
+\index{connected@{connected}!$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{connected}{connected}}
+{\footnotesize\ttfamily -\/ (BOOL) connected\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+whether the connection is connected. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source_l00030}{30}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source}{Thing\+Smart\+Call\+Protocol.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_smart_call_protocol-p_aa22d945fa16b07933932fe0a2ee5f51a}\label{protocol_thing_smart_call_protocol-p_aa22d945fa16b07933932fe0a2ee5f51a}} 
+\index{$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}!end@{end}}
+\index{end@{end}!$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily -\/ (BOOL) end\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+whether the call ended. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source_l00033}{33}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source}{Thing\+Smart\+Call\+Protocol.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_smart_call_protocol-p_a406aa90063765bb3e1e87d87730d2396}\label{protocol_thing_smart_call_protocol-p_a406aa90063765bb3e1e87d87730d2396}} 
+\index{$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}!extraModel@{extraModel}}
+\index{extraModel@{extraModel}!$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{extraModel}{extraModel}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_smart_call_event_message_ext-p}{Thing\+Smart\+Call\+Event\+Message\+Ext}} $>$) extra\+Model\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [optional]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source_l00039}{39}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source}{Thing\+Smart\+Call\+Protocol.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_smart_call_protocol-p_a6db58d48d7abf6d99c32623ccaf5de39}\label{protocol_thing_smart_call_protocol-p_a6db58d48d7abf6d99c32623ccaf5de39}} 
+\index{$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}!outgoing@{outgoing}}
+\index{outgoing@{outgoing}!$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{outgoing}{outgoing}}
+{\footnotesize\ttfamily -\/ (BOOL) outgoing\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+whether is call out 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source_l00018}{18}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source}{Thing\+Smart\+Call\+Protocol.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_smart_call_protocol-p_ab69badc54eb436e30ecf60479aee693c}\label{protocol_thing_smart_call_protocol-p_ab69badc54eb436e30ecf60479aee693c}} 
+\index{$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}!uuid@{uuid}}
+\index{uuid@{uuid}!$<$ThingSmartCallProtocol$>$@{$<$ThingSmartCallProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{uuid}{uuid}}
+{\footnotesize\ttfamily -\/ (NSUUID$\ast$) uuid\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+uuid,if use call\+Kit, set it. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source_l00036}{36}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h_source}{Thing\+Smart\+Call\+Protocol.\+h}}.
+
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Call\+Channel\+Kit/\+Build/\+Thing\+Smart\+Call\+Channel\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Call\+Channel\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h}{Thing\+Smart\+Call\+Protocol.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Call\+Channel\+Kit/\+Build/\+Thing\+Smart\+Call\+Channel\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Call\+Channel\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_protocol_8h}{Thing\+Smart\+Call\+Protocol.\+h}}\end{DoxyCompactItemize}

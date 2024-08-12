@@ -1,0 +1,185 @@
+\hypertarget{protocol_thing_encrypt_web_image_prefetcher_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Encrypt\+Web\+Image\+Prefetcher\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_encrypt_web_image_prefetcher_delegate-p}\index{$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Encrypt\+Web\+Image\+Prefetcher.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Encrypt\+Web\+Image\+Prefetcher\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.010830cm]{protocol_thing_encrypt_web_image_prefetcher_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_encrypt_web_image_prefetcher_delegate-p_adf9e4abddf0f2e614aa8d9dc649d359f}{encrypt\+Image\+Prefetcher\+:did\+Prefetch\+URL\+:finished\+Count\+:total\+Count\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_encrypt_web_image_prefetcher_delegate-p_aaaaa041d32d39c560334642881d139b3}{encrypt\+Image\+Prefetcher\+:did\+Finish\+With\+Total\+Count\+:skipped\+Count\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_encrypt_web_image_prefetcher_delegate-p_adf9e4abddf0f2e614aa8d9dc649d359f}{encrypt\+Image\+Prefetcher\+:did\+Prefetch\+URL\+:finished\+Count\+:total\+Count\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_encrypt_web_image_prefetcher_delegate-p_aaaaa041d32d39c560334642881d139b3}{encrypt\+Image\+Prefetcher\+:did\+Finish\+With\+Total\+Count\+:skipped\+Count\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_encrypt_web_image_prefetcher_delegate-p_adf9e4abddf0f2e614aa8d9dc649d359f}{encrypt\+Image\+Prefetcher\+:did\+Prefetch\+URL\+:finished\+Count\+:total\+Count\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_encrypt_web_image_prefetcher_delegate-p_aaaaa041d32d39c560334642881d139b3}{encrypt\+Image\+Prefetcher\+:did\+Finish\+With\+Total\+Count\+:skipped\+Count\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_encrypt_web_image_prefetcher_delegate-p_adf9e4abddf0f2e614aa8d9dc649d359f}{encrypt\+Image\+Prefetcher\+:did\+Prefetch\+URL\+:finished\+Count\+:total\+Count\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_encrypt_web_image_prefetcher_delegate-p_aaaaa041d32d39c560334642881d139b3}{encrypt\+Image\+Prefetcher\+:did\+Finish\+With\+Total\+Count\+:skipped\+Count\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_prefetcher_8h_source_l00032}{32}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_prefetcher_8h_source}{Thing\+Encrypt\+Web\+Image\+Prefetcher.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_encrypt_web_image_prefetcher_delegate-p_aaaaa041d32d39c560334642881d139b3}\label{protocol_thing_encrypt_web_image_prefetcher_delegate-p_aaaaa041d32d39c560334642881d139b3}} 
+\index{$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}!encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:@{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}}
+\index{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:@{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}!$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) encrypt\+Image\+Prefetcher\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_thing_encrypt_web_image_prefetcher}{Thing\+Encrypt\+Web\+Image\+Prefetcher}} $\ast$)}]{image\+Prefetcher }\item[{did\+Finish\+With\+Total\+Count\+:(NSUInteger)}]{total\+Count }\item[{skipped\+Count\+:(NSUInteger)}]{skipped\+Count }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Called when all images are prefetched. Which means it\textquotesingle{}s called when all URLs from all of prefetching finished. 
+\begin{DoxyParams}{Parameters}
+{\em image\+Prefetcher} & The current image prefetcher \\
+\hline
+{\em total\+Count} & The total number of images that were prefetched (whether successful or not) \\
+\hline
+{\em skipped\+Count} & The total number of images that were skipped \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_encrypt_web_image_prefetcher_delegate-p_aaaaa041d32d39c560334642881d139b3}\label{protocol_thing_encrypt_web_image_prefetcher_delegate-p_aaaaa041d32d39c560334642881d139b3}} 
+\index{$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}!encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:@{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}}
+\index{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:@{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}!$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) encrypt\+Image\+Prefetcher\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_thing_encrypt_web_image_prefetcher}{Thing\+Encrypt\+Web\+Image\+Prefetcher}} $\ast$)}]{image\+Prefetcher }\item[{did\+Finish\+With\+Total\+Count\+:(NSUInteger)}]{total\+Count }\item[{skipped\+Count\+:(NSUInteger)}]{skipped\+Count }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Called when all images are prefetched. Which means it\textquotesingle{}s called when all URLs from all of prefetching finished. 
+\begin{DoxyParams}{Parameters}
+{\em image\+Prefetcher} & The current image prefetcher \\
+\hline
+{\em total\+Count} & The total number of images that were prefetched (whether successful or not) \\
+\hline
+{\em skipped\+Count} & The total number of images that were skipped \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_encrypt_web_image_prefetcher_delegate-p_aaaaa041d32d39c560334642881d139b3}\label{protocol_thing_encrypt_web_image_prefetcher_delegate-p_aaaaa041d32d39c560334642881d139b3}} 
+\index{$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}!encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:@{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}}
+\index{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:@{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}!$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) encrypt\+Image\+Prefetcher\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_thing_encrypt_web_image_prefetcher}{Thing\+Encrypt\+Web\+Image\+Prefetcher}} $\ast$)}]{image\+Prefetcher }\item[{did\+Finish\+With\+Total\+Count\+:(NSUInteger)}]{total\+Count }\item[{skipped\+Count\+:(NSUInteger)}]{skipped\+Count }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Called when all images are prefetched. Which means it\textquotesingle{}s called when all URLs from all of prefetching finished. 
+\begin{DoxyParams}{Parameters}
+{\em image\+Prefetcher} & The current image prefetcher \\
+\hline
+{\em total\+Count} & The total number of images that were prefetched (whether successful or not) \\
+\hline
+{\em skipped\+Count} & The total number of images that were skipped \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_encrypt_web_image_prefetcher_delegate-p_aaaaa041d32d39c560334642881d139b3}\label{protocol_thing_encrypt_web_image_prefetcher_delegate-p_aaaaa041d32d39c560334642881d139b3}} 
+\index{$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}!encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:@{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}}
+\index{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:@{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}!$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}{encryptImagePrefetcher:didFinishWithTotalCount:skippedCount:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) encrypt\+Image\+Prefetcher\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_thing_encrypt_web_image_prefetcher}{Thing\+Encrypt\+Web\+Image\+Prefetcher}} $\ast$)}]{image\+Prefetcher }\item[{did\+Finish\+With\+Total\+Count\+:(NSUInteger)}]{total\+Count }\item[{skipped\+Count\+:(NSUInteger)}]{skipped\+Count }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Called when all images are prefetched. Which means it\textquotesingle{}s called when all URLs from all of prefetching finished. 
+\begin{DoxyParams}{Parameters}
+{\em image\+Prefetcher} & The current image prefetcher \\
+\hline
+{\em total\+Count} & The total number of images that were prefetched (whether successful or not) \\
+\hline
+{\em skipped\+Count} & The total number of images that were skipped \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_encrypt_web_image_prefetcher_delegate-p_adf9e4abddf0f2e614aa8d9dc649d359f}\label{protocol_thing_encrypt_web_image_prefetcher_delegate-p_adf9e4abddf0f2e614aa8d9dc649d359f}} 
+\index{$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}!encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:@{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}}
+\index{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:@{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}!$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) encrypt\+Image\+Prefetcher\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_thing_encrypt_web_image_prefetcher}{Thing\+Encrypt\+Web\+Image\+Prefetcher}} $\ast$)}]{image\+Prefetcher }\item[{did\+Prefetch\+URL\+:(nullable NSURL $\ast$)}]{image\+URL }\item[{finished\+Count\+:(NSUInteger)}]{finished\+Count }\item[{total\+Count\+:(NSUInteger)}]{total\+Count }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Called when an image was prefetched. Which means it\textquotesingle{}s called when one URL from any of prefetching finished.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Prefetcher} & The current image prefetcher \\
+\hline
+{\em image\+URL} & The image url that was prefetched \\
+\hline
+{\em finished\+Count} & The total number of images that were prefetched (successful or not) \\
+\hline
+{\em total\+Count} & The total number of images that were to be prefetched \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_encrypt_web_image_prefetcher_delegate-p_adf9e4abddf0f2e614aa8d9dc649d359f}\label{protocol_thing_encrypt_web_image_prefetcher_delegate-p_adf9e4abddf0f2e614aa8d9dc649d359f}} 
+\index{$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}!encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:@{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}}
+\index{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:@{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}!$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) encrypt\+Image\+Prefetcher\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_thing_encrypt_web_image_prefetcher}{Thing\+Encrypt\+Web\+Image\+Prefetcher}} $\ast$)}]{image\+Prefetcher }\item[{did\+Prefetch\+URL\+:(nullable NSURL $\ast$)}]{image\+URL }\item[{finished\+Count\+:(NSUInteger)}]{finished\+Count }\item[{total\+Count\+:(NSUInteger)}]{total\+Count }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Called when an image was prefetched. Which means it\textquotesingle{}s called when one URL from any of prefetching finished.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Prefetcher} & The current image prefetcher \\
+\hline
+{\em image\+URL} & The image url that was prefetched \\
+\hline
+{\em finished\+Count} & The total number of images that were prefetched (successful or not) \\
+\hline
+{\em total\+Count} & The total number of images that were to be prefetched \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_encrypt_web_image_prefetcher_delegate-p_adf9e4abddf0f2e614aa8d9dc649d359f}\label{protocol_thing_encrypt_web_image_prefetcher_delegate-p_adf9e4abddf0f2e614aa8d9dc649d359f}} 
+\index{$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}!encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:@{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}}
+\index{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:@{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}!$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) encrypt\+Image\+Prefetcher\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_thing_encrypt_web_image_prefetcher}{Thing\+Encrypt\+Web\+Image\+Prefetcher}} $\ast$)}]{image\+Prefetcher }\item[{did\+Prefetch\+URL\+:(nullable NSURL $\ast$)}]{image\+URL }\item[{finished\+Count\+:(NSUInteger)}]{finished\+Count }\item[{total\+Count\+:(NSUInteger)}]{total\+Count }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Called when an image was prefetched. Which means it\textquotesingle{}s called when one URL from any of prefetching finished.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Prefetcher} & The current image prefetcher \\
+\hline
+{\em image\+URL} & The image url that was prefetched \\
+\hline
+{\em finished\+Count} & The total number of images that were prefetched (successful or not) \\
+\hline
+{\em total\+Count} & The total number of images that were to be prefetched \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_encrypt_web_image_prefetcher_delegate-p_adf9e4abddf0f2e614aa8d9dc649d359f}\label{protocol_thing_encrypt_web_image_prefetcher_delegate-p_adf9e4abddf0f2e614aa8d9dc649d359f}} 
+\index{$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}!encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:@{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}}
+\index{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:@{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}!$<$ThingEncryptWebImagePrefetcherDelegate$>$@{$<$ThingEncryptWebImagePrefetcherDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}{encryptImagePrefetcher:didPrefetchURL:finishedCount:totalCount:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) encrypt\+Image\+Prefetcher\+: \begin{DoxyParamCaption}\item[{(nonnull \mbox{\hyperlink{interface_thing_encrypt_web_image_prefetcher}{Thing\+Encrypt\+Web\+Image\+Prefetcher}} $\ast$)}]{image\+Prefetcher }\item[{did\+Prefetch\+URL\+:(nullable NSURL $\ast$)}]{image\+URL }\item[{finished\+Count\+:(NSUInteger)}]{finished\+Count }\item[{total\+Count\+:(NSUInteger)}]{total\+Count }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Called when an image was prefetched. Which means it\textquotesingle{}s called when one URL from any of prefetching finished.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Prefetcher} & The current image prefetcher \\
+\hline
+{\em image\+URL} & The image url that was prefetched \\
+\hline
+{\em finished\+Count} & The total number of images that were prefetched (successful or not) \\
+\hline
+{\em total\+Count} & The total number of images that were to be prefetched \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Encrypt\+Image.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_prefetcher_8h}{Thing\+Encrypt\+Web\+Image\+Prefetcher.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Encrypt\+Image.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_prefetcher_8h}{Thing\+Encrypt\+Web\+Image\+Prefetcher.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.\+xcframework/ios-\/arm64/\+Thing\+Encrypt\+Image.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_prefetcher_8h}{Thing\+Encrypt\+Web\+Image\+Prefetcher.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Encrypt\+Image.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_prefetcher_8h}{Thing\+Encrypt\+Web\+Image\+Prefetcher.\+h}}\end{DoxyCompactItemize}

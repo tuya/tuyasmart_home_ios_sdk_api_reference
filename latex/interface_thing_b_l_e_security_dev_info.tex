@@ -1,0 +1,559 @@
+\hypertarget{interface_thing_b_l_e_security_dev_info}{}\doxysection{Thing\+BLESecurity\+Dev\+Info Class Reference}
+\label{interface_thing_b_l_e_security_dev_info}\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+
+
+{\ttfamily \#import $<$Thing\+BLEDev\+Info.\+h$>$}
+
+Inheritance diagram for Thing\+BLESecurity\+Dev\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_b_l_e_security_dev_info}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a668de1023b09d1d2edc27389ce80a852}{uuid}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a7598d5dd97d5e908a82e7f47bec3325a}{dv}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a545994aff3bc064289920541cc09497a}{dv2}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a3285caefa84f62d163f2fc9b1871636c}{sv}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_ab2625526850001147eb92ab63313ec45}{sv2}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a1bb4cb44527855116eb247daa1808029}{use\+\_\+sv2}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a496023620f6d8a8660c0aa4dbb14ea86}{use\+\_\+dv2}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_ae6a611c1ae83cb109abd8590082e1f58}{pv}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a388a32fdc2316dbca7a4b0e0b565796a}{flag}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a3d2579cdd396fa4fb69d899922241628}{ble\+Type}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a9612d3ae5503156d377bacbdb82b031b}{bond}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a4c318c704456149389f3521562a94501}{srand}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a2332ea646bedc8567ed369084a27d78c}{auth\+Key}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a211d61883c1b481ebfdd367f95fac7f1}{ability}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a0f27a8c38f65c28b355221f07dd76cbb}{dev\+Id}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a2b82a085fd71bc223527939ad93a2db1}{mcu\+Dv}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_af8cecea643fe7677ce10d59cf5865a3b}{mcu\+Sv}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a5de8afd0eec5ee39206c221771fb5e2b}{ble\+Mac}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_adae66116270bf02fb0c914530965d5a0}{zigbee\+Mac}}
+\item 
+NSMutable\+Array $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_abffc75542f5a3fc83d7e465195d213c2}{channel\+\_\+modules}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_aea9c1fba86c1754385339a73e890ab58}{is\+Support\+Register\+Key}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_aac7a1dc3d8ab92b60194a72757fcf0f9}{is\+Support\+Plug\+Play}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a32706b8f51daaee0aefac5ad8cf5b0ea}{cert\+Check}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_ac39f5d65124a74b83981420820901da5}{advance\+Encrypt}}
+\begin{DoxyCompactList}\small\item\em 是否需要云端双向验证证书(大于 4.\+0 的协议) \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a0463ce5efb84a6c26e4aae6d87088464}{is\+Support\+Beaconkey}}
+\begin{DoxyCompactList}\small\item\em 是否支持高级加密（即双向认证）(大于 4.\+0 的协议) \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a15f37d49474f4cce298f8a767e2ed46e}{ble\+Capability}}
+\begin{DoxyCompactList}\small\item\em 是否需要获取 beacon\+Key \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a84c04591955912260dadbd19ad934588}{packet\+Max\+Size}}
+\begin{DoxyCompactList}\small\item\em 蓝牙能力 \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_ae258d2450b97625d7e6768d962909bb9}{is\+Link\+Encrypt}}
+\begin{DoxyCompactList}\small\item\em 应用层分包的最大长度 \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a73ab7c1a82a64e094b325dfd4377dd59}{is\+Force\+Link\+Device}}
+\begin{DoxyCompactList}\small\item\em 当前蓝牙连接是否已经 LINK 层加密 \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a7e9daf24a1cd3baeec9d3b3d85e9456a}{is\+Security\+Level\+Device}}
+\begin{DoxyCompactList}\small\item\em 是否需要强制 LINK 层加密 \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a73a1ce9b2ea6a6cfa7df106b3f853bfb}{is\+Support\+Query\+Wifi\+List}}
+\begin{DoxyCompactList}\small\item\em 是否需要安全级别配置 \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a9b007f9308c0923091b49ae4ded30638}{is\+Support\+Report\+Config\+State}}
+\begin{DoxyCompactList}\small\item\em 是否支持查询wifi列表 \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a97b42ecf11a81e6b9ac57ecccfd52222}{is\+Support\+Upload\+Device\+Log}}
+\begin{DoxyCompactList}\small\item\em 是否支持主动上报配网阶段状态码 \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a02ad4ad14f271463060b4612eeeec5ad}{is\+Support\+Fitting}}
+\begin{DoxyCompactList}\small\item\em 是否支持日志采集传输 \end{DoxyCompactList}\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a51069f6967f3d6d9ae361a2b6f1ed40e}{sl\+Value}}
+\begin{DoxyCompactList}\small\item\em 是否支持蓝牙配件 \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_afbec1d8e5321d2a628fb43703147f4b4}{is\+Executed\+V2\+Secret}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a66499d2cbb397df452abf8600aedd4c3}{is\+Support\+V2\+Secret}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_ab44b70c340687e21f52839236b9254a6}{is\+Support\+Master\+Slave\+Device}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a7ed75b32eea3cb6cedef1ba75b684e0d}{boot\+OTASupport}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info_a7f5008ebd97a1d55f959aba30ffb00b7}{boot\+OTABeing}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+安全协议的设备信息 model 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00027}{27}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a211d61883c1b481ebfdd367f95fac7f1}\label{interface_thing_b_l_e_security_dev_info_a211d61883c1b481ebfdd367f95fac7f1}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!ability@{ability}}
+\index{ability@{ability}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{ability}{ability}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) ability\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00042}{42}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_ac39f5d65124a74b83981420820901da5}\label{interface_thing_b_l_e_security_dev_info_ac39f5d65124a74b83981420820901da5}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!advanceEncrypt@{advanceEncrypt}}
+\index{advanceEncrypt@{advanceEncrypt}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{advanceEncrypt}{advanceEncrypt}}
+{\footnotesize\ttfamily -\/ (BOOL) advance\+Encrypt\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+是否需要云端双向验证证书(大于 4.\+0 的协议) 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00052}{52}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a2332ea646bedc8567ed369084a27d78c}\label{interface_thing_b_l_e_security_dev_info_a2332ea646bedc8567ed369084a27d78c}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!authKey@{authKey}}
+\index{authKey@{authKey}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{authKey}{authKey}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) auth\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00041}{41}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a15f37d49474f4cce298f8a767e2ed46e}\label{interface_thing_b_l_e_security_dev_info_a15f37d49474f4cce298f8a767e2ed46e}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!bleCapability@{bleCapability}}
+\index{bleCapability@{bleCapability}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{bleCapability}{bleCapability}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) ble\+Capability\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+是否需要获取 beacon\+Key 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00054}{54}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a5de8afd0eec5ee39206c221771fb5e2b}\label{interface_thing_b_l_e_security_dev_info_a5de8afd0eec5ee39206c221771fb5e2b}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!bleMac@{bleMac}}
+\index{bleMac@{bleMac}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{bleMac}{bleMac}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) ble\+Mac\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00046}{46}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a3d2579cdd396fa4fb69d899922241628}\label{interface_thing_b_l_e_security_dev_info_a3d2579cdd396fa4fb69d899922241628}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!bleType@{bleType}}
+\index{bleType@{bleType}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{bleType}{bleType}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) ble\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00038}{38}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a9612d3ae5503156d377bacbdb82b031b}\label{interface_thing_b_l_e_security_dev_info_a9612d3ae5503156d377bacbdb82b031b}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!bond@{bond}}
+\index{bond@{bond}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{bond}{bond}}
+{\footnotesize\ttfamily -\/ (BOOL) bond\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00039}{39}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a7f5008ebd97a1d55f959aba30ffb00b7}\label{interface_thing_b_l_e_security_dev_info_a7f5008ebd97a1d55f959aba30ffb00b7}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!bootOTABeing@{bootOTABeing}}
+\index{bootOTABeing@{bootOTABeing}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{bootOTABeing}{bootOTABeing}}
+{\footnotesize\ttfamily -\/ (BOOL) boot\+OTABeing\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00076}{76}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a7ed75b32eea3cb6cedef1ba75b684e0d}\label{interface_thing_b_l_e_security_dev_info_a7ed75b32eea3cb6cedef1ba75b684e0d}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!bootOTASupport@{bootOTASupport}}
+\index{bootOTASupport@{bootOTASupport}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{bootOTASupport}{bootOTASupport}}
+{\footnotesize\ttfamily -\/ (BOOL) boot\+OTASupport\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00074}{74}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a32706b8f51daaee0aefac5ad8cf5b0ea}\label{interface_thing_b_l_e_security_dev_info_a32706b8f51daaee0aefac5ad8cf5b0ea}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!certCheck@{certCheck}}
+\index{certCheck@{certCheck}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{certCheck}{certCheck}}
+{\footnotesize\ttfamily -\/ (BOOL) cert\+Check\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00051}{51}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_abffc75542f5a3fc83d7e465195d213c2}\label{interface_thing_b_l_e_security_dev_info_abffc75542f5a3fc83d7e465195d213c2}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!channel\_modules@{channel\_modules}}
+\index{channel\_modules@{channel\_modules}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{channel\_modules}{channel\_modules}}
+{\footnotesize\ttfamily -\/ (NSMutable\+Array $\ast$) channel\+\_\+modules\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00048}{48}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a0f27a8c38f65c28b355221f07dd76cbb}\label{interface_thing_b_l_e_security_dev_info_a0f27a8c38f65c28b355221f07dd76cbb}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!devId@{devId}}
+\index{devId@{devId}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{devId}{devId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) dev\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00043}{43}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a7598d5dd97d5e908a82e7f47bec3325a}\label{interface_thing_b_l_e_security_dev_info_a7598d5dd97d5e908a82e7f47bec3325a}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!dv@{dv}}
+\index{dv@{dv}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{dv}{dv}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) dv\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00030}{30}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a545994aff3bc064289920541cc09497a}\label{interface_thing_b_l_e_security_dev_info_a545994aff3bc064289920541cc09497a}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!dv2@{dv2}}
+\index{dv2@{dv2}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{dv2}{dv2}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) dv2\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00031}{31}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a388a32fdc2316dbca7a4b0e0b565796a}\label{interface_thing_b_l_e_security_dev_info_a388a32fdc2316dbca7a4b0e0b565796a}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!flag@{flag}}
+\index{flag@{flag}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{flag}{flag}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) flag\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00037}{37}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_afbec1d8e5321d2a628fb43703147f4b4}\label{interface_thing_b_l_e_security_dev_info_afbec1d8e5321d2a628fb43703147f4b4}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isExecutedV2Secret@{isExecutedV2Secret}}
+\index{isExecutedV2Secret@{isExecutedV2Secret}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isExecutedV2Secret}{isExecutedV2Secret}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Executed\+V2\+Secret\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+安全级别 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00069}{69}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a73ab7c1a82a64e094b325dfd4377dd59}\label{interface_thing_b_l_e_security_dev_info_a73ab7c1a82a64e094b325dfd4377dd59}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isForceLinkDevice@{isForceLinkDevice}}
+\index{isForceLinkDevice@{isForceLinkDevice}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isForceLinkDevice}{isForceLinkDevice}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Force\+Link\+Device\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+当前蓝牙连接是否已经 LINK 层加密 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00057}{57}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_ae258d2450b97625d7e6768d962909bb9}\label{interface_thing_b_l_e_security_dev_info_ae258d2450b97625d7e6768d962909bb9}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isLinkEncrypt@{isLinkEncrypt}}
+\index{isLinkEncrypt@{isLinkEncrypt}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isLinkEncrypt}{isLinkEncrypt}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Link\+Encrypt\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+应用层分包的最大长度 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00056}{56}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a7e9daf24a1cd3baeec9d3b3d85e9456a}\label{interface_thing_b_l_e_security_dev_info_a7e9daf24a1cd3baeec9d3b3d85e9456a}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isSecurityLevelDevice@{isSecurityLevelDevice}}
+\index{isSecurityLevelDevice@{isSecurityLevelDevice}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isSecurityLevelDevice}{isSecurityLevelDevice}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Security\+Level\+Device\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+是否需要强制 LINK 层加密 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00058}{58}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a0463ce5efb84a6c26e4aae6d87088464}\label{interface_thing_b_l_e_security_dev_info_a0463ce5efb84a6c26e4aae6d87088464}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isSupportBeaconkey@{isSupportBeaconkey}}
+\index{isSupportBeaconkey@{isSupportBeaconkey}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isSupportBeaconkey}{isSupportBeaconkey}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Beaconkey\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+是否支持高级加密（即双向认证）(大于 4.\+0 的协议) 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00053}{53}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a02ad4ad14f271463060b4612eeeec5ad}\label{interface_thing_b_l_e_security_dev_info_a02ad4ad14f271463060b4612eeeec5ad}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isSupportFitting@{isSupportFitting}}
+\index{isSupportFitting@{isSupportFitting}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isSupportFitting}{isSupportFitting}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Fitting\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+是否支持日志采集传输 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00066}{66}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_ab44b70c340687e21f52839236b9254a6}\label{interface_thing_b_l_e_security_dev_info_ab44b70c340687e21f52839236b9254a6}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isSupportMasterSlaveDevice@{isSupportMasterSlaveDevice}}
+\index{isSupportMasterSlaveDevice@{isSupportMasterSlaveDevice}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isSupportMasterSlaveDevice}{isSupportMasterSlaveDevice}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Master\+Slave\+Device\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00071}{71}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_aac7a1dc3d8ab92b60194a72757fcf0f9}\label{interface_thing_b_l_e_security_dev_info_aac7a1dc3d8ab92b60194a72757fcf0f9}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isSupportPlugPlay@{isSupportPlugPlay}}
+\index{isSupportPlugPlay@{isSupportPlugPlay}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isSupportPlugPlay}{isSupportPlugPlay}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Plug\+Play\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00050}{50}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a73a1ce9b2ea6a6cfa7df106b3f853bfb}\label{interface_thing_b_l_e_security_dev_info_a73a1ce9b2ea6a6cfa7df106b3f853bfb}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isSupportQueryWifiList@{isSupportQueryWifiList}}
+\index{isSupportQueryWifiList@{isSupportQueryWifiList}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isSupportQueryWifiList}{isSupportQueryWifiList}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Query\+Wifi\+List\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+是否需要安全级别配置 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00061}{61}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_aea9c1fba86c1754385339a73e890ab58}\label{interface_thing_b_l_e_security_dev_info_aea9c1fba86c1754385339a73e890ab58}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isSupportRegisterKey@{isSupportRegisterKey}}
+\index{isSupportRegisterKey@{isSupportRegisterKey}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isSupportRegisterKey}{isSupportRegisterKey}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Register\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00049}{49}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a9b007f9308c0923091b49ae4ded30638}\label{interface_thing_b_l_e_security_dev_info_a9b007f9308c0923091b49ae4ded30638}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isSupportReportConfigState@{isSupportReportConfigState}}
+\index{isSupportReportConfigState@{isSupportReportConfigState}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isSupportReportConfigState}{isSupportReportConfigState}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Report\+Config\+State\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+是否支持查询wifi列表 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00062}{62}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a97b42ecf11a81e6b9ac57ecccfd52222}\label{interface_thing_b_l_e_security_dev_info_a97b42ecf11a81e6b9ac57ecccfd52222}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isSupportUploadDeviceLog@{isSupportUploadDeviceLog}}
+\index{isSupportUploadDeviceLog@{isSupportUploadDeviceLog}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isSupportUploadDeviceLog}{isSupportUploadDeviceLog}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Upload\+Device\+Log\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+是否支持主动上报配网阶段状态码 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00064}{64}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a66499d2cbb397df452abf8600aedd4c3}\label{interface_thing_b_l_e_security_dev_info_a66499d2cbb397df452abf8600aedd4c3}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!isSupportV2Secret@{isSupportV2Secret}}
+\index{isSupportV2Secret@{isSupportV2Secret}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{isSupportV2Secret}{isSupportV2Secret}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+V2\+Secret\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00070}{70}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a2b82a085fd71bc223527939ad93a2db1}\label{interface_thing_b_l_e_security_dev_info_a2b82a085fd71bc223527939ad93a2db1}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!mcuDv@{mcuDv}}
+\index{mcuDv@{mcuDv}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{mcuDv}{mcuDv}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) mcu\+Dv\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00044}{44}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_af8cecea643fe7677ce10d59cf5865a3b}\label{interface_thing_b_l_e_security_dev_info_af8cecea643fe7677ce10d59cf5865a3b}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!mcuSv@{mcuSv}}
+\index{mcuSv@{mcuSv}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{mcuSv}{mcuSv}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) mcu\+Sv\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00045}{45}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a84c04591955912260dadbd19ad934588}\label{interface_thing_b_l_e_security_dev_info_a84c04591955912260dadbd19ad934588}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!packetMaxSize@{packetMaxSize}}
+\index{packetMaxSize@{packetMaxSize}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{packetMaxSize}{packetMaxSize}}
+{\footnotesize\ttfamily -\/ (NSInteger) packet\+Max\+Size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+蓝牙能力 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00055}{55}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_ae6a611c1ae83cb109abd8590082e1f58}\label{interface_thing_b_l_e_security_dev_info_ae6a611c1ae83cb109abd8590082e1f58}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!pv@{pv}}
+\index{pv@{pv}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{pv}{pv}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) pv\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00036}{36}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a51069f6967f3d6d9ae361a2b6f1ed40e}\label{interface_thing_b_l_e_security_dev_info_a51069f6967f3d6d9ae361a2b6f1ed40e}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!slValue@{slValue}}
+\index{slValue@{slValue}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{slValue}{slValue}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$) sl\+Value\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+是否支持蓝牙配件 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00067}{67}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a4c318c704456149389f3521562a94501}\label{interface_thing_b_l_e_security_dev_info_a4c318c704456149389f3521562a94501}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!srand@{srand}}
+\index{srand@{srand}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{srand}{srand}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) srand\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00040}{40}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a3285caefa84f62d163f2fc9b1871636c}\label{interface_thing_b_l_e_security_dev_info_a3285caefa84f62d163f2fc9b1871636c}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!sv@{sv}}
+\index{sv@{sv}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{sv}{sv}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) sv\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00032}{32}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_ab2625526850001147eb92ab63313ec45}\label{interface_thing_b_l_e_security_dev_info_ab2625526850001147eb92ab63313ec45}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!sv2@{sv2}}
+\index{sv2@{sv2}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{sv2}{sv2}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) sv2\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00033}{33}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a496023620f6d8a8660c0aa4dbb14ea86}\label{interface_thing_b_l_e_security_dev_info_a496023620f6d8a8660c0aa4dbb14ea86}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!use\_dv2@{use\_dv2}}
+\index{use\_dv2@{use\_dv2}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{use\_dv2}{use\_dv2}}
+{\footnotesize\ttfamily -\/ (BOOL) use\+\_\+dv2\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00035}{35}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a1bb4cb44527855116eb247daa1808029}\label{interface_thing_b_l_e_security_dev_info_a1bb4cb44527855116eb247daa1808029}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!use\_sv2@{use\_sv2}}
+\index{use\_sv2@{use\_sv2}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{use\_sv2}{use\_sv2}}
+{\footnotesize\ttfamily -\/ (BOOL) use\+\_\+sv2\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00034}{34}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_a668de1023b09d1d2edc27389ce80a852}\label{interface_thing_b_l_e_security_dev_info_a668de1023b09d1d2edc27389ce80a852}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!uuid@{uuid}}
+\index{uuid@{uuid}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{uuid}{uuid}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) uuid\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00029}{29}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_security_dev_info_adae66116270bf02fb0c914530965d5a0}\label{interface_thing_b_l_e_security_dev_info_adae66116270bf02fb0c914530965d5a0}} 
+\index{ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}!zigbeeMac@{zigbeeMac}}
+\index{zigbeeMac@{zigbeeMac}!ThingBLESecurityDevInfo@{ThingBLESecurityDevInfo}}
+\doxysubsubsection{\texorpdfstring{zigbeeMac}{zigbeeMac}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) zigbee\+Mac\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source_l00047}{47}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h_source}{Thing\+BLEDev\+Info.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h}{Thing\+BLEDev\+Info.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_dev_info_8h}{Thing\+BLEDev\+Info.\+h}}\end{DoxyCompactItemize}

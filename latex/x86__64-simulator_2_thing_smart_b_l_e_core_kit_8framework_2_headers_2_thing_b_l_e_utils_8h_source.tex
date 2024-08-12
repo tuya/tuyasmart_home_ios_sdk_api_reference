@@ -1,0 +1,81 @@
+\hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source}{}\doxysection{Thing\+BLEUtils.\+h}
+\label{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartBLECoreKit/Build/ThingSmartBLECoreKit.xcframework/ios-\/arm64\_x86\_64-\/simulator/ThingSmartBLECoreKit.framework/Headers/ThingBLEUtils.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartBLECoreKit/Build/ThingSmartBLECoreKit.xcframework/ios-\/arm64\_x86\_64-\/simulator/ThingSmartBLECoreKit.framework/Headers/ThingBLEUtils.h}}
+\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00001}\mbox{\hyperlink{interface_thing_b_l_e_utils_a4bd38f570c5f30845fbc1caea42b5c07}{00001}} \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00002}00002 \textcolor{comment}{//  ThingBLEUtils.h}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00003}00003 \textcolor{comment}{//  ThingSmartKit}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00005}00005 \textcolor{comment}{//  Created by 冯晓 on 2017/2/9.}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00006}00006 \textcolor{comment}{//  Copyright (c) 2014-\/2021 Thing Inc. (https://developer.thing.com)}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00007}00007 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00009}00009 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00010}00010 \textcolor{preprocessor}{\#import "{}\mbox{\hyperlink{_thing_smart_b_l_e_core_kit_8framework_2_headers_2_n_s_object_09_thing_s_d_k_sub_value_8h}{NSObject+ThingSDKSubValue.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00011}00011 \textcolor{preprocessor}{\#import "{}\mbox{\hyperlink{_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_device_info_protocol_8h}{ThingBLEDeviceInfoProtocol.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00013}\mbox{\hyperlink{interface_thing_b_l_e_utils}{00013}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_b_l_e_utils}{ThingBLEUtils}} : NSObject}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00016}00016 + (NSString *)hexStrToBCDCode:(NSString *)hexStr;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00018}00018 \textcolor{comment}{// x.y.z 版本号字符串转成四字节十六进制字符串}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00019}00019 + (NSString *)versionStringToHexString:(NSString *)versionStr;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00021}00021 \textcolor{comment}{// string 转换成 hexString}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00022}00022 + (NSString *)hexStringFromString:(NSString *)string;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00024}00024 \textcolor{comment}{// hexString 转换成 String}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00025}00025 + (NSString *)stringFromHexString:(NSString *)hexString;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00027}00027 \textcolor{comment}{// 16进制字符串转10进制字符串}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00028}00028 + (NSString *)numberWithHexString:(NSString *)hexString;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00029}00029 \textcolor{comment}{// 十六进制转二进制}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00030}00030 + (NSString *)getBinaryByHex:(NSString *)hex;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00031}00031 \textcolor{comment}{// 二进制十六转进制}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00032}00032 + (NSString *)getHexByBinary:(NSString *)binary;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00034}00034 \textcolor{comment}{// 把int 变成 16进制的字符串}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00035}00035 + (NSString *)ToHex:(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int})number;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00037}00037 \textcolor{comment}{// 十六进制转换为自定义字符串表}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00038}00038 + (NSString *)getCustomPariseByBinary:(NSString *)hex;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00040}00040 \textcolor{comment}{// 自定义字符串表转换为十六进制}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00041}00041 + (NSString *)getHexByCustomParise:(NSString *)string;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00043}00043 \textcolor{comment}{// 大端小端互转}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00044}00044 + (NSString *)dataTransfromBigOrSmall:(NSString *)string;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00046}00046 \textcolor{comment}{// 字符串前位补零操作}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00047}00047 + (NSString *)addZeroToFront:(NSString *)str withLength:(\textcolor{keywordtype}{int})length;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00049}00049 \textcolor{comment}{// 字符串后位补零操作}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00050}00050 + (NSString *)addZeroToBack:(NSString *)str withLength:(\textcolor{keywordtype}{int})length;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00052}00052 \textcolor{comment}{// CRC32}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00053}00053 + (int32\_t)crc32:(NSData *)data;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00055}00055 + (NSString *)md5WithData:(NSData *)data;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00057}00057 \textcolor{comment}{// 生成随机字符串}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00058}00058 + (NSString *)generateTradeNO:(\textcolor{keywordtype}{int})kNumber;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00060}00060 + (BOOL)containVisiableString:(NSString *)string;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00062}00062 \textcolor{comment}{//二进制转十进制}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00063}00063 + (NSInteger)getDecimalByBinary:(NSString *)binary;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00066}00066 + (NSString *)standardMacString2MacString:(NSString *)standardMacString;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00068}00068 + (NSString *)tyHexString:(NSString *)str;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00070}00070 + (NSDictionary *)dicFromJsonData:(NSData *)data;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00072}00072 + (\mbox{\hyperlink{interface_n_s_array}{NSArray}} *)arrayFromJsonData:(NSData *)data;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00073}00073 \textcolor{comment}{// 分包}}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00074}00074 + (void)sendDeviceActiveInfo:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{ThingBLEDeviceInfoProtocol}}>)dev data:(NSData *)data packageMaxSize:(NSInteger)maxSize type:(\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_cryptology_protcol_8h_a33372a9a9923c93faa2d116121e7d644}{ThingBLEConfigType}})type success:(\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a32a79cd7d4562b2e058fc1f7b525c842}{ThingSuccessHandler}})success failure:(\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a74d8849f89dd63458019fd96fd106f98}{ThingFailureError}})failure;}
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_utils_8h_source_l00076}00076 \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

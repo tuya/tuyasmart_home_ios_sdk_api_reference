@@ -1,0 +1,108 @@
+\hypertarget{_w_t_l_setup_payload_8h_source}{}\doxysection{WTLSetup\+Payload.\+h}
+\label{_w_t_l_setup_payload_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLSetupPayload.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLSetupPayload.h}}
+\mbox{\hyperlink{_w_t_l_setup_payload_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Water/WTLDefines.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00020}00020 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00022}\mbox{\hyperlink{_w_t_l_setup_payload_8h_a9bec718220d207e5c39dafc666d51b9a}{00022}} \textcolor{keyword}{typedef} \mbox{\hyperlink{_w_t_l_setup_payload_8h_a9bec718220d207e5c39dafc666d51b9a}{NS\_OPTIONS}}(NSUInteger, WTLDiscoveryCapabilities) \{}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00023}00023     WTLDiscoveryCapabilitiesUnknown = 0, \textcolor{comment}{// Device capabilities are not known (e.g. all we have is a numeric code).}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00024}00024     WTLDiscoveryCapabilitiesNone \mbox{\hyperlink{_w_t_l_defines_8h_a1807f92bc7b8211528ccacc9e21203d6}{WTL\_DEPRECATED\_WITH\_REPLACEMENT}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00025}00025         \textcolor{stringliteral}{"{}WTLDiscoveryCapabilitiesUnknown"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00026}00026     = 0,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00027}00027     WTLDiscoveryCapabilitiesSoftAP = 1 << 0, \textcolor{comment}{// Device supports WiFi softAP}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00028}00028     WTLDiscoveryCapabilitiesBLE = 1 << 1, \textcolor{comment}{// Device supports BLE}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00029}00029     WTLDiscoveryCapabilitiesOnNetwork = 1 << 2, \textcolor{comment}{// Device supports On Network setup}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00031}00031     WTLDiscoveryCapabilitiesAllMask}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00032}00032     = WTLDiscoveryCapabilitiesSoftAP | WTLDiscoveryCapabilitiesBLE | WTLDiscoveryCapabilitiesOnNetwork,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00033}00033 \};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00035}\mbox{\hyperlink{_w_t_l_setup_payload_8h_acf195b92e3e9b1ba3e8ddd5fd114c925}{00035}} \textcolor{keyword}{typedef} \mbox{\hyperlink{_w_t_l_setup_payload_8h_acf195b92e3e9b1ba3e8ddd5fd114c925}{NS\_ENUM}}(NSUInteger, WTLCommissioningFlow) \{}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00036}00036     WTLCommissioningFlowStandard = 0, \textcolor{comment}{// Device automatically enters commissioning mode upon power-\/up}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00037}00037     WTLCommissioningFlowUserActionRequired = 1, \textcolor{comment}{// Device requires a user interaction to enter commissioning mode}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00038}00038     WTLCommissioningFlowCustom = 2, \textcolor{comment}{// Commissioning steps should be retrieved from the distributed compliance ledger}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00039}00039     WTLCommissioningFlowInvalid = 3,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00040}00040 \};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00042}\mbox{\hyperlink{_w_t_l_setup_payload_8h_abce55f9079d5b296ab23b87cf60700c3}{00042}} \textcolor{keyword}{typedef} \mbox{\hyperlink{_w_t_l_setup_payload_8h_acf195b92e3e9b1ba3e8ddd5fd114c925}{NS\_ENUM}}(NSUInteger, WTLOptionalQRCodeInfoType) \{}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00043}00043     WTLOptionalQRCodeInfoTypeUnknown \mbox{\hyperlink{_w_t_l_defines_8h_a7e03a091c94319bf3cac9352bb2c3aff}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00044}00044         \textcolor{stringliteral}{"{}The type is never actually unknown"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4)),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00045}00045     WTLOptionalQRCodeInfoTypeString,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00046}00046     WTLOptionalQRCodeInfoTypeInt32,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00047}00047 \};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00053}\mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info}{00053}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info}{WTLOptionalQRCodeInfo}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00055}\mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info_a8642cfc4d4f6b0e1f24a76d17c22687b}{00055}} \textcolor{keyword}{@property} (nonatomic, assign) WTLOptionalQRCodeInfoType type \mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info_a8642cfc4d4f6b0e1f24a76d17c22687b}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00060}\mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info_a61ebdf6d1d6aea73e1253aec702f48e1}{00060}} \textcolor{keyword}{@property} (nonatomic, copy) NSNumber * \mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info_a61ebdf6d1d6aea73e1253aec702f48e1}{tag}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00066}\mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info_ab7acbecb09889ef84ca30a4a74f95e51}{00066}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSNumber * \mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info_ab7acbecb09889ef84ca30a4a74f95e51}{integerValue}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00067}\mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info_a25140e7eb6bcaeedd9ed20c06cbceee3}{00067}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString * \mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info_a25140e7eb6bcaeedd9ed20c06cbceee3}{stringValue}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00069}00069 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00077}\mbox{\hyperlink{interface_w_t_l_setup_payload}{00077}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetupPayload}} : NSObject <NSSecureCoding>}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00079}\mbox{\hyperlink{interface_w_t_l_setup_payload_a9578660cd8b07a2e76912e8a8defcc07}{00079}} \textcolor{keyword}{@property} (nonatomic, copy) NSNumber * version;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00080}\mbox{\hyperlink{interface_w_t_l_setup_payload_aa9ad625ca7c6ca289b0a5c31ec1a8860}{00080}} \textcolor{keyword}{@property} (nonatomic, copy) NSNumber * \mbox{\hyperlink{_w_t_l_fabric_info_8h_aa847c51e6ff914c7603c882d1845d433}{vendorID}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00081}\mbox{\hyperlink{interface_w_t_l_setup_payload_a50a7fa383a826016926691c679330e61}{00081}} \textcolor{keyword}{@property} (nonatomic, copy) NSNumber * productID;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00082}\mbox{\hyperlink{interface_w_t_l_setup_payload_a9f3f8cc327df214ad3f29a4dbcee86d6}{00082}} \textcolor{keyword}{@property} (nonatomic, assign) WTLCommissioningFlow commissioningFlow;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00084}\mbox{\hyperlink{interface_w_t_l_setup_payload_a16d33f0708ec686f1757d133ceefc20f}{00084}} \textcolor{keyword}{@property} (nonatomic, strong) \mbox{\hyperlink{interface_n_s_array}{NSArray <WTLOptionalQRCodeInfo *>}} *allQRCodeInfoArray;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00091}00091 \textcolor{keyword}{@property} (nonatomic, assign)}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00092}\mbox{\hyperlink{interface_w_t_l_setup_payload_ac9265ba53fc88dd4937c95af809f10bf}{00092}}     WTLDiscoveryCapabilities discoveryCapabilities \mbox{\hyperlink{interface_w_t_l_setup_payload_ac9265ba53fc88dd4937c95af809f10bf}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00093}\mbox{\hyperlink{interface_w_t_l_setup_payload_af19485917faf09a22d359f02ece97941}{00093}} \textcolor{keyword}{@property} (nonatomic, copy) NSNumber * discriminator;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00101}\mbox{\hyperlink{interface_w_t_l_setup_payload_a96fdb6bc1d10ff7646683af673c9f9d1}{00101}} \textcolor{keyword}{@property} (nonatomic, assign) BOOL hasShortDiscriminator;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00102}\mbox{\hyperlink{interface_w_t_l_setup_payload_a130750e5c9bc2b741129e81529d89c18}{00102}} \textcolor{keyword}{@property} (nonatomic, copy) NSNumber * setupPasscode \mbox{\hyperlink{interface_w_t_l_setup_payload_a130750e5c9bc2b741129e81529d89c18}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00104}\mbox{\hyperlink{interface_w_t_l_setup_payload_a297d065bbd8975170d96a03c979fba4c}{00104}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString * serialNumber;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00105}00105 -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}<\mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info}{WTLOptionalQRCodeInfo}} *> * \_Nullable)getAllOptionalVendorData:(NSError * \_\_autoreleasing *)error;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00110}00110 + (NSUInteger)generateRandomPIN;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00115}00115 + (NSNumber *)generateRandomSetupPasscode \mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info_a8642cfc4d4f6b0e1f24a76d17c22687b}{API\_AVAILABLE}}( macos(13.1), watchos(9.2), tvos(16.2));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00122}00122 + (\mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetupPayload}} * \_Nullable)setupPayloadWithOnboardingPayload:(NSString *)onboardingPayload}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00123}00123                                                            error:(NSError * \_\_autoreleasing *)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00124}00124     API\_AVAILABLE( macos(13.1), watchos(9.2), tvos(16.2));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00130}00130 -\/ (instancetype)initWithSetupPasscode:(NSNumber *)setupPasscode}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00131}00131                         discriminator:(NSNumber *)discriminator API\_AVAILABLE( macos(13.1), watchos(9.2), tvos(16.2));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00134}00134 -\/ (NSString * \_Nullable)manualEntryCode;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00142}00142 -\/ (NSString * \_Nullable)qrCodeString:(NSError * \_\_autoreleasing *)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00143}00143     API\_AVAILABLE( macos(13.1), watchos(9.2), tvos(16.2));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00145}00145 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00146}00146 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00147}\mbox{\hyperlink{category_w_t_l_optional_q_r_code_info_07_deprecated_08}{00147}} \textcolor{keyword}{@interface }\mbox{\hyperlink{category_w_t_l_optional_q_r_code_info_07_deprecated_08}{WTLOptionalQRCodeInfo (Deprecated)}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00148}00148 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00149}00149 \textcolor{keyword}{@property} (nonatomic, copy)}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00150}\mbox{\hyperlink{category_w_t_l_optional_q_r_code_info_07_deprecated_08_aaa6e54b936f573b2c7d4e3474c95480d}{00150}}     NSNumber * infoType \mbox{\hyperlink{category_w_t_l_optional_q_r_code_info_07_deprecated_08_aaa6e54b936f573b2c7d4e3474c95480d}{WTL\_DEPRECATED}}(\textcolor{stringliteral}{"{}Please use type"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00151}00151 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00152}00152 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00153}00153 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00154}\mbox{\hyperlink{category_w_t_l_setup_payload_07_deprecated_08}{00154}} \textcolor{keyword}{@interface }\mbox{\hyperlink{category_w_t_l_setup_payload_07_deprecated_08}{WTLSetupPayload (Deprecated)}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00155}00155 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00156}\mbox{\hyperlink{category_w_t_l_setup_payload_07_deprecated_08_a2e7e0846316caf52e49777e7d522f53e}{00156}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSNumber * rendezvousInformation \mbox{\hyperlink{category_w_t_l_setup_payload_07_deprecated_08_a2e7e0846316caf52e49777e7d522f53e}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00157}00157     \textcolor{stringliteral}{"{}Please use discoveryCapabilities"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00158}\mbox{\hyperlink{category_w_t_l_setup_payload_07_deprecated_08_af2afccfb47a778b5eb72b062b07de108}{00158}} \textcolor{keyword}{@property} (nonatomic, copy) NSNumber * setUpPINCode \mbox{\hyperlink{category_w_t_l_optional_q_r_code_info_07_deprecated_08_aaa6e54b936f573b2c7d4e3474c95480d}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00159}00159     \textcolor{stringliteral}{"{}Please use setupPasscode"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00160}00160 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00161}00161 -\/ (instancetype)init \mbox{\hyperlink{category_w_t_l_optional_q_r_code_info_07_deprecated_08_aaa6e54b936f573b2c7d4e3474c95480d}{WTL\_DEPRECATED}}("{}Please use initWithSetupPasscode or setupPayloadWithOnboardingPayload"{}, }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00162}00162     macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00163}00163 + (instancetype)new \mbox{\hyperlink{category_w_t_l_optional_q_r_code_info_07_deprecated_08_aaa6e54b936f573b2c7d4e3474c95480d}{WTL\_DEPRECATED}}("{}Please use initWithSetupPasscode or setupPayloadWithOnboardingPayload"{}, }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00164}00164     macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00165}00165 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00166}00166 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_setup_payload_8h_source_l00168}00168 NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

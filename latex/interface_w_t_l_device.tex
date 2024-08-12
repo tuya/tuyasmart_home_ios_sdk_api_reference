@@ -1,0 +1,246 @@
+\hypertarget{interface_w_t_l_device}{}\doxysection{WTLDevice Class Reference}
+\label{interface_w_t_l_device}\index{WTLDevice@{WTLDevice}}
+
+
+{\ttfamily \#import $<$WTLDevice.\+h$>$}
+
+Inheritance diagram for WTLDevice\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_w_t_l_device}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_device_abb47bff70cec187b01e8871059f1686f}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(NSDate $\ast$estimated\+Start\+Time) -\/ \mbox{\hyperlink{interface_w_t_l_device_a5fbeebf421cebb264f65f313925fe27c}{API\+\_\+\+AVAILABLE}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_abeecd2b9078cf821005dccd06447833a}{set\+Delegate\+:queue\+:}}
+\item 
+(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$) -\/ \mbox{\hyperlink{interface_w_t_l_device_a99eb122cb92bae7cc21a695e0d8675a3}{read\+Attribute\+With\+Endpoint\+ID\+:cluster\+ID\+:attribute\+ID\+:params\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_a27cfffd15b14a29b20c3fb1b2a2093e6}{write\+Attribute\+With\+Endpoint\+ID\+:cluster\+ID\+:attribute\+ID\+:value\+:expected\+Value\+Interval\+:timed\+Write\+Timeout\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_abe0f0f73ce3c977ceed7533f9e14f1c2}{invoke\+Command\+With\+Endpoint\+ID\+:cluster\+ID\+:command\+ID\+:command\+Fields\+:expected\+Values\+:expected\+Value\+Interval\+:timed\+Invoke\+Timeout\+:queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_a928cfb3bc7a0907c9170fb4e7ef1d809}{open\+Commissioning\+Window\+With\+Setup\+Passcode\+:discriminator\+:duration\+:queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_ae272b9e17cfebb84d7bcc91482885669}{open\+Commissioning\+Window\+With\+Discriminator\+:duration\+:queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_a9cbb26dd16571e34670c35159dd32ca7}{invoke\+Command\+With\+Endpoint\+ID\+:cluster\+ID\+:command\+ID\+:command\+Fields\+:expected\+Values\+:expected\+Value\+Interval\+:timed\+Invoke\+Timeout\+:client\+Queue\+:completion\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_w_t_l_device_abb47bff70cec187b01e8871059f1686f}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(\mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} $\ast$) + \mbox{\hyperlink{interface_w_t_l_device_af7f559f7224c8d3f2727198b3a10af57}{device\+With\+Node\+ID\+:controller\+:}}
+\item 
+(\mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} $\ast$) + \mbox{\hyperlink{interface_w_t_l_device_ae7610756e928c58bf25ddc51b64ad4ff}{device\+With\+Node\+ID\+:device\+Controller\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+WTLDevice\+State \mbox{\hyperlink{interface_w_t_l_device_ac3c55fff22968cae845d7972414dbdee}{state}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_8h_source_l00034}{34}} of file \mbox{\hyperlink{_w_t_l_device_8h_source}{WTLDevice.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_device_a5fbeebf421cebb264f65f313925fe27c}\label{interface_w_t_l_device_a5fbeebf421cebb264f65f313925fe27c}} 
+\index{WTLDevice@{WTLDevice}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}}
+{\footnotesize\ttfamily -\/ (NSDate $\ast$estimated\+Start\+Time) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+4))}]{ }\item[{(watchos(9.\+5))}]{ }\item[{(tvos(16.\+5))}]{ }\end{DoxyParamCaption}}
+
+The estimated device system start time.
+
+A device can report its events with either calendar time or time since system start time. When events are reported with time since system start time, this property will return an estimation of the device system start time. Because a device may report timestamps this way due to the lack of a wall clock, system start time can only be estimated based on event receive time and the timestamp value, and this estimation may change over time.
+
+Device reboots may also cause the estimated device start time to jump forward.
+
+If events are always reported with calendar time, then this property will return nil. \mbox{\Hypertarget{interface_w_t_l_device_af7f559f7224c8d3f2727198b3a10af57}\label{interface_w_t_l_device_af7f559f7224c8d3f2727198b3a10af57}} 
+\index{WTLDevice@{WTLDevice}!deviceWithNodeID:controller:@{deviceWithNodeID:controller:}}
+\index{deviceWithNodeID:controller:@{deviceWithNodeID:controller:}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{deviceWithNodeID:controller:}{deviceWithNodeID:controller:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} $\ast$) device\+With\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+TODO\+: Document usage better
+
+Directly instantiate a \mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} with a \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} as a shim.
+
+All device-\/specific information would be stored on the device controller, and retrieved when performing actions using a combination of \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} and WTLAsync\+Callback\+Queue. \mbox{\Hypertarget{interface_w_t_l_device_ae7610756e928c58bf25ddc51b64ad4ff}\label{interface_w_t_l_device_ae7610756e928c58bf25ddc51b64ad4ff}} 
+\index{WTLDevice@{WTLDevice}!deviceWithNodeID:deviceController:@{deviceWithNodeID:deviceController:}}
+\index{deviceWithNodeID:deviceController:@{deviceWithNodeID:deviceController:}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{deviceWithNodeID:deviceController:}{deviceWithNodeID:deviceController:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} $\ast$) device\+With\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{node\+ID }\item[{device\+Controller\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_device_af7f559f7224c8d3f2727198b3a10af57}{device\+With\+Node\+ID\+:controller\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+Deprecated \mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} APIs. 
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_07_deprecated_08_ae7610756e928c58bf25ddc51b64ad4ff}{WTLDevice(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_a9cbb26dd16571e34670c35159dd32ca7}\label{interface_w_t_l_device_a9cbb26dd16571e34670c35159dd32ca7}} 
+\index{WTLDevice@{WTLDevice}!invokeCommandWithEndpointID:clusterID:commandID:commandFields:expectedValues:expectedValueInterval:timedInvokeTimeout:clientQueue:completion:@{invokeCommandWithEndpointID:clusterID:commandID:commandFields:expectedValues:expectedValueInterval:timedInvokeTimeout:clientQueue:completion:}}
+\index{invokeCommandWithEndpointID:clusterID:commandID:commandFields:expectedValues:expectedValueInterval:timedInvokeTimeout:clientQueue:completion:@{invokeCommandWithEndpointID:clusterID:commandID:commandFields:expectedValues:expectedValueInterval:timedInvokeTimeout:clientQueue:completion:}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{invokeCommandWithEndpointID:clusterID:commandID:commandFields:expectedValues:expectedValueInterval:timedInvokeTimeout:clientQueue:completion:}{invokeCommandWithEndpointID:clusterID:commandID:commandFields:expectedValues:expectedValueInterval:timedInvokeTimeout:clientQueue:completion:}}
+{\footnotesize\ttfamily -\/ (void) invoke\+Command\+With\+Endpoint\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{endpoint\+ID }\item[{cluster\+ID\+:(NSNumber $\ast$)}]{cluster\+ID }\item[{command\+ID\+:(NSNumber $\ast$)}]{command\+ID }\item[{command\+Fields\+:(id)}]{command\+Fields }\item[{expected\+Values\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{expected\+Values }\item[{expected\+Value\+Interval\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{expected\+Value\+Interval }\item[{timed\+Invoke\+Timeout\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{timeout }\item[{client\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(\char`\"{}Please use \char`\"{} \char`\"{}invoke\+Command\+With\+Endpoint\+ID\+:cluster\+ID\+:command\+ID\+:command\+Fields\+:expected\+Values\+:expected\+Value\+Interval\+:\char`\"{} \char`\"{}timed\+Invoke\+Timeout\+:queue\+:completion\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_07_deprecated_08_a9cbb26dd16571e34670c35159dd32ca7}{WTLDevice(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_abe0f0f73ce3c977ceed7533f9e14f1c2}\label{interface_w_t_l_device_abe0f0f73ce3c977ceed7533f9e14f1c2}} 
+\index{WTLDevice@{WTLDevice}!invokeCommandWithEndpointID:clusterID:commandID:commandFields:expectedValues:expectedValueInterval:timedInvokeTimeout:queue:completion:@{invokeCommandWithEndpointID:clusterID:commandID:commandFields:expectedValues:expectedValueInterval:timedInvokeTimeout:queue:completion:}}
+\index{invokeCommandWithEndpointID:clusterID:commandID:commandFields:expectedValues:expectedValueInterval:timedInvokeTimeout:queue:completion:@{invokeCommandWithEndpointID:clusterID:commandID:commandFields:expectedValues:expectedValueInterval:timedInvokeTimeout:queue:completion:}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{invokeCommandWithEndpointID:clusterID:commandID:commandFields:expectedValues:expectedValueInterval:timedInvokeTimeout:queue:completion:}{invokeCommandWithEndpointID:clusterID:commandID:commandFields:expectedValues:expectedValueInterval:timedInvokeTimeout:queue:completion:}}
+{\footnotesize\ttfamily -\/ (void) invoke\+Command\+With\+Endpoint\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{endpoint\+ID }\item[{cluster\+ID\+:(NSNumber $\ast$)}]{cluster\+ID }\item[{command\+ID\+:(NSNumber $\ast$)}]{command\+ID }\item[{command\+Fields\+:(id)}]{command\+Fields }\item[{expected\+Values\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{expected\+Values }\item[{expected\+Value\+Interval\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{expected\+Value\+Interval }\item[{timed\+Invoke\+Timeout\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{timeout }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Invoke a command with a designated command path
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+Fields} & command fields object. The object must be a data-\/value NSDictionary object as described in the WTLDevice\+Response\+Handler. The attribute must be a Structure, i.\+e., the NSDictionary WTLType\+Key key must have the value WTLStructure\+Value\+Type.\\
+\hline
+{\em expected\+Values} & array of dictionaries containing the expected values in the same format as attribute read completion handler. Requires WTLAttribute\+Path\+Key values. See WTLDevice\+Response\+Handler definition for dictionary details. The expected\+Values and expected\+Value\+Interval arguments need to be both nil or both non-\/nil, or both will be both ignored.\\
+\hline
+\end{DoxyParams}
+TODO\+: document better the expected\+Values is how this command is expected to change attributes when read, and that the next read\+Attribute will get these values
+
+
+\begin{DoxyParams}{Parameters}
+{\em expected\+Value\+Interval} & maximum interval in milliseconds during which reads of the attribute will return the value being written. If the value is less than 1, both this value and expected\+Values will be ignored. If this value is greater than UINT32\+\_\+\+MAX, it will be clamped to UINT32\+\_\+\+MAX.\\
+\hline
+{\em timeout} & timeout in milliseconds for timed invoke, or nil. This value must be within \mbox{[}1, UINT16\+\_\+\+MAX\mbox{]}, and will be clamped to this range.\\
+\hline
+{\em completion} & response handler will receive either values or error. A path-\/specific error status from the command invocation will result in an error being passed to the completion, so values will only be passed in when the command succeeds. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_t_l_device_abb47bff70cec187b01e8871059f1686f}\label{interface_w_t_l_device_abb47bff70cec187b01e8871059f1686f}} 
+\index{WTLDevice@{WTLDevice}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_abb47bff70cec187b01e8871059f1686f}\label{interface_w_t_l_device_abb47bff70cec187b01e8871059f1686f}} 
+\index{WTLDevice@{WTLDevice}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_ae272b9e17cfebb84d7bcc91482885669}\label{interface_w_t_l_device_ae272b9e17cfebb84d7bcc91482885669}} 
+\index{WTLDevice@{WTLDevice}!openCommissioningWindowWithDiscriminator:duration:queue:completion:@{openCommissioningWindowWithDiscriminator:duration:queue:completion:}}
+\index{openCommissioningWindowWithDiscriminator:duration:queue:completion:@{openCommissioningWindowWithDiscriminator:duration:queue:completion:}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{openCommissioningWindowWithDiscriminator:duration:queue:completion:}{openCommissioningWindowWithDiscriminator:duration:queue:completion:}}
+{\footnotesize\ttfamily -\/ (void) open\+Commissioning\+Window\+With\+Discriminator\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{discriminator }\item[{duration\+:(NSNumber $\ast$)}]{duration }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(WTLDevice\+Open\+Commissioning\+Window\+Handler)}]{WTL\+\_\+\+NEWLY\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Open a commissioning window on the device, using a random setup passcode.
+
+On success, completion will be called on queue with the \mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}} that can be used to commission the device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em discriminator} & The discriminator to use for the commissionable advertisement. \\
+\hline
+{\em duration} & Duration, in seconds, during which the commissioning window will be open. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_t_l_device_a928cfb3bc7a0907c9170fb4e7ef1d809}\label{interface_w_t_l_device_a928cfb3bc7a0907c9170fb4e7ef1d809}} 
+\index{WTLDevice@{WTLDevice}!openCommissioningWindowWithSetupPasscode:discriminator:duration:queue:completion:@{openCommissioningWindowWithSetupPasscode:discriminator:duration:queue:completion:}}
+\index{openCommissioningWindowWithSetupPasscode:discriminator:duration:queue:completion:@{openCommissioningWindowWithSetupPasscode:discriminator:duration:queue:completion:}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{openCommissioningWindowWithSetupPasscode:discriminator:duration:queue:completion:}{openCommissioningWindowWithSetupPasscode:discriminator:duration:queue:completion:}}
+{\footnotesize\ttfamily -\/ (void) open\+Commissioning\+Window\+With\+Setup\+Passcode\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{setup\+Passcode }\item[{discriminator\+:(NSNumber $\ast$)}]{discriminator }\item[{duration\+:(NSNumber $\ast$)}]{duration }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(macos(13.\+1))}]{ }\item[{(watchos(9.\+2))}]{ }\item[{(tvos(16.\+2))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Open a commissioning window on the device.
+
+On success, completion will be called on queue with the \mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}} that can be used to commission the device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em setup\+Passcode} & The setup passcode to use for the commissioning window. See \mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}}\textquotesingle{}s generate\+Random\+Setup\+Passcode for generating a valid random passcode. \\
+\hline
+{\em discriminator} & The discriminator to use for the commissionable advertisement. \\
+\hline
+{\em duration} & Duration, in seconds, during which the commissioning window will be open. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_t_l_device_a99eb122cb92bae7cc21a695e0d8675a3}\label{interface_w_t_l_device_a99eb122cb92bae7cc21a695e0d8675a3}} 
+\index{WTLDevice@{WTLDevice}!readAttributeWithEndpointID:clusterID:attributeID:params:@{readAttributeWithEndpointID:clusterID:attributeID:params:}}
+\index{readAttributeWithEndpointID:clusterID:attributeID:params:@{readAttributeWithEndpointID:clusterID:attributeID:params:}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{readAttributeWithEndpointID:clusterID:attributeID:params:}{readAttributeWithEndpointID:clusterID:attributeID:params:}}
+{\footnotesize\ttfamily -\/ (NSDictionary$<$ NSString $\ast$, id $>$ $\ast$) read\+Attribute\+With\+Endpoint\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{endpoint\+ID }\item[{cluster\+ID\+:(NSNumber $\ast$)}]{cluster\+ID }\item[{attribute\+ID\+:(NSNumber $\ast$)}]{attribute\+ID }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\end{DoxyParamCaption}}
+
+Read attribute in a designated attribute path
+
+TODO\+: Need to document that this returns \char`\"{}the system\textquotesingle{}s best guess\char`\"{} of attribute values.
+
+\begin{DoxyReturn}{Returns}
+a data-\/value dictionary of the attribute as described in WTLDevice\+Response\+Handler 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_t_l_device_abeecd2b9078cf821005dccd06447833a}\label{interface_w_t_l_device_abeecd2b9078cf821005dccd06447833a}} 
+\index{WTLDevice@{WTLDevice}!setDelegate:queue:@{setDelegate:queue:}}
+\index{setDelegate:queue:@{setDelegate:queue:}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{setDelegate:queue:}{setDelegate:queue:}}
+{\footnotesize\ttfamily -\/ (void) set\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_device_delegate-p}{WTLDevice\+Delegate}} $>$)}]{delegate }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\end{DoxyParamCaption}}
+
+Set the delegate to receive asynchronous callbacks about the device.
+
+The delegate will be called on the provided queue, for attribute reports, event reports, and device state changes. \mbox{\Hypertarget{interface_w_t_l_device_a27cfffd15b14a29b20c3fb1b2a2093e6}\label{interface_w_t_l_device_a27cfffd15b14a29b20c3fb1b2a2093e6}} 
+\index{WTLDevice@{WTLDevice}!writeAttributeWithEndpointID:clusterID:attributeID:value:expectedValueInterval:timedWriteTimeout:@{writeAttributeWithEndpointID:clusterID:attributeID:value:expectedValueInterval:timedWriteTimeout:}}
+\index{writeAttributeWithEndpointID:clusterID:attributeID:value:expectedValueInterval:timedWriteTimeout:@{writeAttributeWithEndpointID:clusterID:attributeID:value:expectedValueInterval:timedWriteTimeout:}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{writeAttributeWithEndpointID:clusterID:attributeID:value:expectedValueInterval:timedWriteTimeout:}{writeAttributeWithEndpointID:clusterID:attributeID:value:expectedValueInterval:timedWriteTimeout:}}
+{\footnotesize\ttfamily -\/ (void) write\+Attribute\+With\+Endpoint\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{endpoint\+ID }\item[{cluster\+ID\+:(NSNumber $\ast$)}]{cluster\+ID }\item[{attribute\+ID\+:(NSNumber $\ast$)}]{attribute\+ID }\item[{value\+:(id)}]{value }\item[{expected\+Value\+Interval\+:(NSNumber $\ast$)}]{expected\+Value\+Interval }\item[{timed\+Write\+Timeout\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{timeout }\end{DoxyParamCaption}}
+
+Write to attribute in a designated attribute path
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & A data-\/value NSDictionary object as described in WTLDevice\+Response\+Handler.\\
+\hline
+{\em expected\+Value\+Interval} & maximum interval in milliseconds during which reads of the attribute will return the value being written. This value must be within \mbox{[}1, UINT32\+\_\+\+MAX\mbox{]}, and will be clamped to this range.\\
+\hline
+\end{DoxyParams}
+TODO\+: document that -\/read\+Attribute... will return the expected value for the \mbox{[}endpoint,cluster,attribute\mbox{]} until one of the following\+:
+\begin{DoxyEnumerate}
+\item Another write for the same attribute happens.
+\item expected\+Value\+Interval\+Ms (clamped) expires. Need to figure out phrasing here.
+\item We succeed at writing the attribute.
+\item We fail at writing the attribute and give up on the write
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeout} & timeout in milliseconds for timed write, or nil. This value must be within \mbox{[}1, UINT16\+\_\+\+MAX\mbox{]}, and will be clamped to this range. TODO\+: make timeout arguments uniform \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_t_l_device_ac3c55fff22968cae845d7972414dbdee}\label{interface_w_t_l_device_ac3c55fff22968cae845d7972414dbdee}} 
+\index{WTLDevice@{WTLDevice}!state@{state}}
+\index{state@{state}!WTLDevice@{WTLDevice}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily -\/ (WTLDevice\+State) state\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+The current state of the device.
+
+The three states\+: WTLDevice\+State\+Unknown Unable to determine the state of the device at the moment.
+
+WTLDevice\+State\+Reachable Communication with the device is expected to succeed.
+
+WTLDevice\+State\+Unreachable The device is currently unreachable. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_8h_source_l00063}{63}} of file \mbox{\hyperlink{_w_t_l_device_8h_source}{WTLDevice.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_device_8h}{WTLDevice.\+h}}\end{DoxyCompactItemize}

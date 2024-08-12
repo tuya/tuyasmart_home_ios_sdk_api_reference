@@ -1,0 +1,75 @@
+\hypertarget{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+P2\+PSDK/\+Build/\+Thing\+P2\+PSDK.xcframework/ios-\/arm64/\+Thing\+P2\+PSDK.framework/\+Headers/\+Thing\+P2\+PSdk.h File Reference}
+\label{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingP2PSDK/Build/ThingP2PSDK.xcframework/ios-\/arm64/ThingP2PSDK.framework/Headers/ThingP2PSdk.h@{/Users/humtong/Downloads/Pods\_副本/ThingP2PSDK/Build/ThingP2PSDK.xcframework/ios-\/arm64/ThingP2PSDK.framework/Headers/ThingP2PSdk.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}imm\+\_\+p2p\+\_\+defs.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{interface_thing_p2_p_sdk}{Thing\+P2\+PSdk}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_a05c0783166070422e042b132c02335f7}{Thing\+MQTTSender}}) (BOOL LANmode, NSString $\ast$remote\+Id, NSString $\ast$signal)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_a8d3288d908dd043f5118e2bf06ef7041}{Thing\+Apm\+Log\+Sender}}) (NSString $\ast$event\+Name, NSString $\ast$value)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_ab7a3f994c423e30df09f1808577ebd61}{Thing\+Native\+Log\+Sender}}) (NSInteger level, NSString $\ast$module, const char $\ast$file, const char $\ast$function, NSUInteger line, NSString $\ast$message)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_a5ea087cb40a6398ee9985bb385c363bf}{Thing\+Full\+Link\+Log\+Sender}}) (NSString $\ast$type, NSDictionary $\ast$attribute, NSDictionary $\ast$infos, NSString $\ast$track\+Type, NSString $\ast$identifier)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_a264b4472c2a22bd7d4ea459316710f74}{Thing\+Https\+Request}}) (NSString $\ast$api, NSString $\ast$dev\+Id, NSDictionary $\ast$post\+Data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_a8d3288d908dd043f5118e2bf06ef7041}\label{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_a8d3288d908dd043f5118e2bf06ef7041}} 
+\index{ThingP2PSdk.h@{ThingP2PSdk.h}!ThingApmLogSender@{ThingApmLogSender}}
+\index{ThingApmLogSender@{ThingApmLogSender}!ThingP2PSdk.h@{ThingP2PSdk.h}}
+\doxysubsubsection{\texorpdfstring{ThingApmLogSender}{ThingApmLogSender}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Apm\+Log\+Sender) (NSString $\ast$event\+Name, NSString $\ast$value)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_source_l00013}{13}} of file \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_source}{Thing\+P2\+PSdk.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_a5ea087cb40a6398ee9985bb385c363bf}\label{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_a5ea087cb40a6398ee9985bb385c363bf}} 
+\index{ThingP2PSdk.h@{ThingP2PSdk.h}!ThingFullLinkLogSender@{ThingFullLinkLogSender}}
+\index{ThingFullLinkLogSender@{ThingFullLinkLogSender}!ThingP2PSdk.h@{ThingP2PSdk.h}}
+\doxysubsubsection{\texorpdfstring{ThingFullLinkLogSender}{ThingFullLinkLogSender}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Full\+Link\+Log\+Sender) (NSString $\ast$type, NSDictionary $\ast$attribute, NSDictionary $\ast$infos, NSString $\ast$track\+Type, NSString $\ast$identifier)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_source_l00015}{15}} of file \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_source}{Thing\+P2\+PSdk.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_a264b4472c2a22bd7d4ea459316710f74}\label{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_a264b4472c2a22bd7d4ea459316710f74}} 
+\index{ThingP2PSdk.h@{ThingP2PSdk.h}!ThingHttpsRequest@{ThingHttpsRequest}}
+\index{ThingHttpsRequest@{ThingHttpsRequest}!ThingP2PSdk.h@{ThingP2PSdk.h}}
+\doxysubsubsection{\texorpdfstring{ThingHttpsRequest}{ThingHttpsRequest}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Https\+Request) (NSString $\ast$api, NSString $\ast$dev\+Id, NSDictionary $\ast$post\+Data)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_source_l00016}{16}} of file \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_source}{Thing\+P2\+PSdk.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_a05c0783166070422e042b132c02335f7}\label{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_a05c0783166070422e042b132c02335f7}} 
+\index{ThingP2PSdk.h@{ThingP2PSdk.h}!ThingMQTTSender@{ThingMQTTSender}}
+\index{ThingMQTTSender@{ThingMQTTSender}!ThingP2PSdk.h@{ThingP2PSdk.h}}
+\doxysubsubsection{\texorpdfstring{ThingMQTTSender}{ThingMQTTSender}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+MQTTSender) (BOOL LANmode, NSString $\ast$remote\+Id, NSString $\ast$signal)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_source_l00012}{12}} of file \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_source}{Thing\+P2\+PSdk.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_ab7a3f994c423e30df09f1808577ebd61}\label{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_ab7a3f994c423e30df09f1808577ebd61}} 
+\index{ThingP2PSdk.h@{ThingP2PSdk.h}!ThingNativeLogSender@{ThingNativeLogSender}}
+\index{ThingNativeLogSender@{ThingNativeLogSender}!ThingP2PSdk.h@{ThingP2PSdk.h}}
+\doxysubsubsection{\texorpdfstring{ThingNativeLogSender}{ThingNativeLogSender}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Native\+Log\+Sender) (NSInteger level, NSString $\ast$module, const char $\ast$file, const char $\ast$function, NSUInteger line, NSString $\ast$message)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_source_l00014}{14}} of file \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2_thing_p2_p_sdk_8h_source}{Thing\+P2\+PSdk.\+h}}.
+

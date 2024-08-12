@@ -1,0 +1,319 @@
+\hypertarget{interface_thing_smart_ext_module_manager}{}\doxysection{Thing\+Smart\+Ext\+Module\+Manager Class Reference}
+\label{interface_thing_smart_ext_module_manager}\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Ext\+Module\+Manager.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Ext\+Module\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_ext_module_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_ab40813d2bae4634f100d922917f45325}{register\+Ext\+Module\+Status\+Listening\+Delegate\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_a60ecebfb0314279e9b4755b613e30641}{unregister\+Ext\+Module\+Status\+Listening\+Delegate\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_a1026df8e89688c18f369fccdcd926f30}{active\+Exten\+Module\+By\+BLEActived\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_a95fac0e39131e13792b54eac2af233b3}{activate\+Extended\+Module\+:params\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_a20398dfbe0809cacbd249f72a5a49524}{activate\+Extended\+Module\+:automatic\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_a0bf21552da8a4f587f6c181f9efda32a}{activate\+Extended\+Wi\+Fi\+Module\+:automatic\+:ssid\+:password\+:success\+:failure\+:}}
+\item 
+(NSInteger) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_ada0227cfbd901ea8ca3a7904cc008174}{get\+Ext\+Module\+Type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_a25843a101f83ed00d02fb78fa0fdb2cb}{save\+Extended\+Module\+Info\+Data\+:for\+Device\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_ab40813d2bae4634f100d922917f45325}{register\+Ext\+Module\+Status\+Listening\+Delegate\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_a60ecebfb0314279e9b4755b613e30641}{unregister\+Ext\+Module\+Status\+Listening\+Delegate\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_a1026df8e89688c18f369fccdcd926f30}{active\+Exten\+Module\+By\+BLEActived\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_a95fac0e39131e13792b54eac2af233b3}{activate\+Extended\+Module\+:params\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_a20398dfbe0809cacbd249f72a5a49524}{activate\+Extended\+Module\+:automatic\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_a0bf21552da8a4f587f6c181f9efda32a}{activate\+Extended\+Wi\+Fi\+Module\+:automatic\+:ssid\+:password\+:success\+:failure\+:}}
+\item 
+(NSInteger) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_ada0227cfbd901ea8ca3a7904cc008174}{get\+Ext\+Module\+Type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ext_module_manager_a25843a101f83ed00d02fb78fa0fdb2cb}{save\+Extended\+Module\+Info\+Data\+:for\+Device\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_ext_module_manager_8h_source_l00035}{35}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_ext_module_manager_8h_source}{Thing\+Smart\+Ext\+Module\+Manager.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_a20398dfbe0809cacbd249f72a5a49524}\label{interface_thing_smart_ext_module_manager_a20398dfbe0809cacbd249f72a5a49524}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!activateExtendedModule:automatic:success:failure:@{activateExtendedModule:automatic:success:failure:}}
+\index{activateExtendedModule:automatic:success:failure:@{activateExtendedModule:automatic:success:failure:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{activateExtendedModule:automatic:success:failure:}{activateExtendedModule:automatic:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) activate\+Extended\+Module\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{automatic\+:(BOOL)}]{automatic }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Activate the extended module. If it is Wi\+Fi, it will return an error because the SSID and password are not entered 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em automatic} & YES Automatic NO manual. If NO, need to wait for the MQTT response result \\
+\hline
+{\em success} & If successfully activated, this block is called. \\
+\hline
+{\em failure} & If activation fails, this block calls back an error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_a20398dfbe0809cacbd249f72a5a49524}\label{interface_thing_smart_ext_module_manager_a20398dfbe0809cacbd249f72a5a49524}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!activateExtendedModule:automatic:success:failure:@{activateExtendedModule:automatic:success:failure:}}
+\index{activateExtendedModule:automatic:success:failure:@{activateExtendedModule:automatic:success:failure:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{activateExtendedModule:automatic:success:failure:}{activateExtendedModule:automatic:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) activate\+Extended\+Module\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{automatic\+:(BOOL)}]{automatic }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Activate the extended module. If it is Wi\+Fi, it will return an error because the SSID and password are not entered 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em automatic} & YES Automatic NO manual. If NO, need to wait for the MQTT response result \\
+\hline
+{\em success} & If successfully activated, this block is called. \\
+\hline
+{\em failure} & If activation fails, this block calls back an error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_a95fac0e39131e13792b54eac2af233b3}\label{interface_thing_smart_ext_module_manager_a95fac0e39131e13792b54eac2af233b3}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!activateExtendedModule:params:success:failure:@{activateExtendedModule:params:success:failure:}}
+\index{activateExtendedModule:params:success:failure:@{activateExtendedModule:params:success:failure:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{activateExtendedModule:params:success:failure:}{activateExtendedModule:params:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) activate\+Extended\+Module\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{params\+:(nullable \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_ext_module_manager_8h_a2e8c116cd4b85159332ae2a586ef39c4}{Thing\+Ble\+Ext\+Module\+Active\+Dictionary}} $\ast$)}]{params }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Activate the extended module via bluetooth. If the extended module is Wi\+Fi, activating the module requires entering SSID and password. \begin{DoxyWarning}{Warning}
+This method can be called to activate the extended module only after the bluetooth main module is activated. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em params} & see {\ttfamily \mbox{\hyperlink{}{Thing\+Ble\+Ext\+Module\+Active\+Key}}} {\ttfamily Thing\+Ble\+Ext\+Module\+Active\+Dictionary} \\
+\hline
+{\em success} & If successfully activated, this block is called. \\
+\hline
+{\em failure} & If activation fails, this block calls back an error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_a95fac0e39131e13792b54eac2af233b3}\label{interface_thing_smart_ext_module_manager_a95fac0e39131e13792b54eac2af233b3}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!activateExtendedModule:params:success:failure:@{activateExtendedModule:params:success:failure:}}
+\index{activateExtendedModule:params:success:failure:@{activateExtendedModule:params:success:failure:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{activateExtendedModule:params:success:failure:}{activateExtendedModule:params:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) activate\+Extended\+Module\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{params\+:(nullable \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_ext_module_manager_8h_a2e8c116cd4b85159332ae2a586ef39c4}{Thing\+Ble\+Ext\+Module\+Active\+Dictionary}} $\ast$)}]{params }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Activate the extended module via bluetooth. If the extended module is Wi\+Fi, activating the module requires entering SSID and password. \begin{DoxyWarning}{Warning}
+This method can be called to activate the extended module only after the bluetooth main module is activated. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em params} & see {\ttfamily \mbox{\hyperlink{}{Thing\+Ble\+Ext\+Module\+Active\+Key}}} {\ttfamily Thing\+Ble\+Ext\+Module\+Active\+Dictionary} \\
+\hline
+{\em success} & If successfully activated, this block is called. \\
+\hline
+{\em failure} & If activation fails, this block calls back an error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_a0bf21552da8a4f587f6c181f9efda32a}\label{interface_thing_smart_ext_module_manager_a0bf21552da8a4f587f6c181f9efda32a}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!activateExtendedWiFiModule:automatic:ssid:password:success:failure:@{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}}
+\index{activateExtendedWiFiModule:automatic:ssid:password:success:failure:@{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) activate\+Extended\+Wi\+Fi\+Module\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{automatic\+:(BOOL)}]{automatic }\item[{ssid\+:(NSString $\ast$)}]{ssid }\item[{password\+:(NSString $\ast$)}]{pwd }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Activate the extended Wi\+Fi module. SSID and password required. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em automatic} & YES Automatic NO manual. If NO, need to wait for the MQTT response result \\
+\hline
+{\em ssid} & Wi\+Fi SSID \\
+\hline
+{\em pwd} & Wi\+Fi password \\
+\hline
+{\em success} & If successfully activated, this block is called. \\
+\hline
+{\em failure} & If activation fails, this block calls back an error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_a0bf21552da8a4f587f6c181f9efda32a}\label{interface_thing_smart_ext_module_manager_a0bf21552da8a4f587f6c181f9efda32a}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!activateExtendedWiFiModule:automatic:ssid:password:success:failure:@{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}}
+\index{activateExtendedWiFiModule:automatic:ssid:password:success:failure:@{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) activate\+Extended\+Wi\+Fi\+Module\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{automatic\+:(BOOL)}]{automatic }\item[{ssid\+:(NSString $\ast$)}]{ssid }\item[{password\+:(NSString $\ast$)}]{pwd }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Activate the extended Wi\+Fi module. SSID and password required. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em automatic} & YES Automatic NO manual. If NO, need to wait for the MQTT response result \\
+\hline
+{\em ssid} & Wi\+Fi SSID \\
+\hline
+{\em pwd} & Wi\+Fi password \\
+\hline
+{\em success} & If successfully activated, this block is called. \\
+\hline
+{\em failure} & If activation fails, this block calls back an error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_a1026df8e89688c18f369fccdcd926f30}\label{interface_thing_smart_ext_module_manager_a1026df8e89688c18f369fccdcd926f30}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!activeExtenModuleByBLEActived:success:failure:@{activeExtenModuleByBLEActived:success:failure:}}
+\index{activeExtenModuleByBLEActived:success:failure:@{activeExtenModuleByBLEActived:success:failure:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{activeExtenModuleByBLEActived:success:failure:}{activeExtenModuleByBLEActived:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) active\+Exten\+Module\+By\+BLEActived\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Activating the extended module via bluetooth. If the extended module is Wi\+Fi, it will return an error because SSID and password need to be entered \begin{DoxySeeAlso}{See also}
+{\itshape active\+Ext\+Module\+By\+BLEActived\+:params\+:success\+:\mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a40010724599157eec59d4bd3a738f2c2}{failure}}} 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+This method can be called to activate the extended module only after the bluetooth main module is activated. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em success} & If successfully activated, this block is called. \\
+\hline
+{\em failure} & If it cannot be activated, call back an error message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_a1026df8e89688c18f369fccdcd926f30}\label{interface_thing_smart_ext_module_manager_a1026df8e89688c18f369fccdcd926f30}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!activeExtenModuleByBLEActived:success:failure:@{activeExtenModuleByBLEActived:success:failure:}}
+\index{activeExtenModuleByBLEActived:success:failure:@{activeExtenModuleByBLEActived:success:failure:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{activeExtenModuleByBLEActived:success:failure:}{activeExtenModuleByBLEActived:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) active\+Exten\+Module\+By\+BLEActived\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Activating the extended module via bluetooth. If the extended module is Wi\+Fi, it will return an error because SSID and password need to be entered \begin{DoxySeeAlso}{See also}
+{\itshape active\+Ext\+Module\+By\+BLEActived\+:params\+:success\+:\mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a40010724599157eec59d4bd3a738f2c2}{failure}}} 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+This method can be called to activate the extended module only after the bluetooth main module is activated. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em success} & If successfully activated, this block is called. \\
+\hline
+{\em failure} & If it cannot be activated, call back an error message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_ada0227cfbd901ea8ca3a7904cc008174}\label{interface_thing_smart_ext_module_manager_ada0227cfbd901ea8ca3a7904cc008174}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!getExtModuleType:@{getExtModuleType:}}
+\index{getExtModuleType:@{getExtModuleType:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{getExtModuleType:}{getExtModuleType:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSInteger) get\+Ext\+Module\+Type\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+Get the extended module type -\/1：\+Module not found，0\+:Module not plugged in，1\+:\+NB，2\+:Wi-\/\+Fi，3\+:Cat.\+X, 04\+:Zigbee 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_ada0227cfbd901ea8ca3a7904cc008174}\label{interface_thing_smart_ext_module_manager_ada0227cfbd901ea8ca3a7904cc008174}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!getExtModuleType:@{getExtModuleType:}}
+\index{getExtModuleType:@{getExtModuleType:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{getExtModuleType:}{getExtModuleType:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSInteger) get\+Ext\+Module\+Type\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+Get the extended module type -\/1：\+Module not found，0\+:Module not plugged in，1\+:\+NB，2\+:Wi-\/\+Fi，3\+:Cat.\+X, 04\+:Zigbee 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_ab40813d2bae4634f100d922917f45325}\label{interface_thing_smart_ext_module_manager_ab40813d2bae4634f100d922917f45325}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!registerExtModuleStatusListeningDelegate:@{registerExtModuleStatusListeningDelegate:}}
+\index{registerExtModuleStatusListeningDelegate:@{registerExtModuleStatusListeningDelegate:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{registerExtModuleStatusListeningDelegate:}{registerExtModuleStatusListeningDelegate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) register\+Ext\+Module\+Status\+Listening\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_ext_module_status_listening_delegate-p}{Thing\+Smart\+Ext\+Module\+Status\+Listening\+Delegate}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+Register an delegate to listen to the plug-\/in status of the extended module \begin{DoxySeeAlso}{See also}
+{\ttfamily \mbox{\hyperlink{protocol_thing_smart_ext_module_status_listening_delegate-p}{Thing\+Smart\+Ext\+Module\+Status\+Listening\+Delegate}}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & delegate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_ab40813d2bae4634f100d922917f45325}\label{interface_thing_smart_ext_module_manager_ab40813d2bae4634f100d922917f45325}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!registerExtModuleStatusListeningDelegate:@{registerExtModuleStatusListeningDelegate:}}
+\index{registerExtModuleStatusListeningDelegate:@{registerExtModuleStatusListeningDelegate:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{registerExtModuleStatusListeningDelegate:}{registerExtModuleStatusListeningDelegate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) register\+Ext\+Module\+Status\+Listening\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_ext_module_status_listening_delegate-p}{Thing\+Smart\+Ext\+Module\+Status\+Listening\+Delegate}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+Register an delegate to listen to the plug-\/in status of the extended module \begin{DoxySeeAlso}{See also}
+{\ttfamily \mbox{\hyperlink{protocol_thing_smart_ext_module_status_listening_delegate-p}{Thing\+Smart\+Ext\+Module\+Status\+Listening\+Delegate}}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & delegate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_a25843a101f83ed00d02fb78fa0fdb2cb}\label{interface_thing_smart_ext_module_manager_a25843a101f83ed00d02fb78fa0fdb2cb}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!saveExtendedModuleInfoData:forDevice:@{saveExtendedModuleInfoData:forDevice:}}
+\index{saveExtendedModuleInfoData:forDevice:@{saveExtendedModuleInfoData:forDevice:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{saveExtendedModuleInfoData:forDevice:}{saveExtendedModuleInfoData:forDevice:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) save\+Extended\+Module\+Info\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{for\+Device\+:(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+Save the module information data actively reported by the Bluetooth 0x50 command 
+\begin{DoxyParams}{Parameters}
+{\em data} & module info data \\
+\hline
+{\em dev\+Id} & device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_a25843a101f83ed00d02fb78fa0fdb2cb}\label{interface_thing_smart_ext_module_manager_a25843a101f83ed00d02fb78fa0fdb2cb}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!saveExtendedModuleInfoData:forDevice:@{saveExtendedModuleInfoData:forDevice:}}
+\index{saveExtendedModuleInfoData:forDevice:@{saveExtendedModuleInfoData:forDevice:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{saveExtendedModuleInfoData:forDevice:}{saveExtendedModuleInfoData:forDevice:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) save\+Extended\+Module\+Info\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{for\+Device\+:(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+Save the module information data actively reported by the Bluetooth 0x50 command 
+\begin{DoxyParams}{Parameters}
+{\em data} & module info data \\
+\hline
+{\em dev\+Id} & device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_a60ecebfb0314279e9b4755b613e30641}\label{interface_thing_smart_ext_module_manager_a60ecebfb0314279e9b4755b613e30641}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!unregisterExtModuleStatusListeningDelegate:@{unregisterExtModuleStatusListeningDelegate:}}
+\index{unregisterExtModuleStatusListeningDelegate:@{unregisterExtModuleStatusListeningDelegate:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{unregisterExtModuleStatusListeningDelegate:}{unregisterExtModuleStatusListeningDelegate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) unregister\+Ext\+Module\+Status\+Listening\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_ext_module_status_listening_delegate-p}{Thing\+Smart\+Ext\+Module\+Status\+Listening\+Delegate}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+If you do not need to get the plug-\/in status of the extension module, call this method 
+\begin{DoxyParams}{Parameters}
+{\em delegate} & delegate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ext_module_manager_a60ecebfb0314279e9b4755b613e30641}\label{interface_thing_smart_ext_module_manager_a60ecebfb0314279e9b4755b613e30641}} 
+\index{ThingSmartExtModuleManager@{ThingSmartExtModuleManager}!unregisterExtModuleStatusListeningDelegate:@{unregisterExtModuleStatusListeningDelegate:}}
+\index{unregisterExtModuleStatusListeningDelegate:@{unregisterExtModuleStatusListeningDelegate:}!ThingSmartExtModuleManager@{ThingSmartExtModuleManager}}
+\doxysubsubsection{\texorpdfstring{unregisterExtModuleStatusListeningDelegate:}{unregisterExtModuleStatusListeningDelegate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) unregister\+Ext\+Module\+Status\+Listening\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_ext_module_status_listening_delegate-p}{Thing\+Smart\+Ext\+Module\+Status\+Listening\+Delegate}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+If you do not need to get the plug-\/in status of the extension module, call this method 
+\begin{DoxyParams}{Parameters}
+{\em delegate} & delegate \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEKit/\+Build/\+Thing\+Smart\+BLEKit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLEKit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_ext_module_manager_8h}{Thing\+Smart\+Ext\+Module\+Manager.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEKit/\+Build/\+Thing\+Smart\+BLEKit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLEKit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_ext_module_manager_8h}{Thing\+Smart\+Ext\+Module\+Manager.\+h}}\end{DoxyCompactItemize}

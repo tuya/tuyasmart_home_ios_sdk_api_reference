@@ -1,6 +1,0 @@
-var dir_b083bc4f0a6868712d26198639ba68b1 =
-[
-    [ "ThingLangsPersistentStore.h", "ios-arm64_2_thing_smart_langs_extra_biz_bundle_8framework_2_headers_2_thing_langs_persistent_store_8h.html", "ios-arm64_2_thing_smart_langs_extra_biz_bundle_8framework_2_headers_2_thing_langs_persistent_store_8h" ],
-    [ "ThingSmartLangsExtraBizBundle-umbrella.h", "ios-arm64_2_thing_smart_langs_extra_biz_bundle_8framework_2_headers_2_thing_smart_langs_extra_biz_bundle-umbrella_8h.html", "ios-arm64_2_thing_smart_langs_extra_biz_bundle_8framework_2_headers_2_thing_smart_langs_extra_biz_bundle-umbrella_8h" ],
-    [ "ThingSmartLangsManager.h", "ios-arm64_2_thing_smart_langs_extra_biz_bundle_8framework_2_headers_2_thing_smart_langs_manager_8h.html", "ios-arm64_2_thing_smart_langs_extra_biz_bundle_8framework_2_headers_2_thing_smart_langs_manager_8h" ]
-];

@@ -1,0 +1,238 @@
+\hypertarget{class_thing_video_decoder}{}\doxysection{Thing\+Video\+Decoder Class Reference}
+\label{class_thing_video_decoder}\index{ThingVideoDecoder@{ThingVideoDecoder}}
+
+
+{\ttfamily \#include $<$Thing\+Video\+Decoder\+Sdk\+APIs.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_thing_video_decoder_a1dd17c64be372c150d26d927d6a9c1fc}{Decode\+Frame}} (const \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a8ce98b051d15a7a9929becbe2dd0e1ee}{Thing\+Decoder\+Input\+Param}} \&param, void $\ast$userdata)=0
+\item 
+virtual void \mbox{\hyperlink{class_thing_video_decoder_a5d5fe40c4ce0e50fe0815d15b9d756f2}{Set\+Callback}} (\mbox{\hyperlink{class_thing_video_decoder_interface}{Thing\+Video\+Decoder\+Interface}} $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a8567e31b759386c9840833a38589e659}{delegate}})=0
+\item 
+virtual void \mbox{\hyperlink{class_thing_video_decoder_acbae895c49445995b2b6817d80c173c1}{Set\+Callback\+Func}} (\mbox{\hyperlink{ios-arm64_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a24175c036f68aeb66502e90294fc2e6c}{Thingfn\+Video\+Frame\+Recved}} func\+Video\+Frame\+Recved, void $\ast$obj)=0
+\item 
+virtual int \mbox{\hyperlink{class_thing_video_decoder_a6c98f5612ba9919fb41d26344d8e707f}{Set\+Output\+Type}} (\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_add7c7a7a63059ab836e5fb7f8082f6ed}{Thing\+\_\+\+OUTPUT\+\_\+\+YUV\+\_\+\+TPYE\+\_\+\+ID}} id)=0
+\item 
+virtual void \mbox{\hyperlink{class_thing_video_decoder_a6c554bd50781cd4c855ce192a56ad942}{Get\+Sei\+Info}} (unsigned char $\ast$stream, int size, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a144fb0a610eeba2ea492d8e5f00955c4}{Thing\+Sei\+Info}} \&sei\+Info)=0
+\item 
+virtual void \mbox{\hyperlink{class_thing_video_decoder_a059351d091c0e338f74411e1fdd31302}{Get\+Cur\+Decoder\+Param}} (\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_ad349f69689131ea99479ea16279ee1d9}{Thing\+Decoder\+Param}} \&param)=0
+\item 
+virtual \mbox{\hyperlink{class_thing_video_decoder_ab9387b93fd4bcc6bea7568855d30d4e5}{$\sim$\+Thing\+Video\+Decoder}} ()
+\item 
+virtual int \mbox{\hyperlink{class_thing_video_decoder_a1dd17c64be372c150d26d927d6a9c1fc}{Decode\+Frame}} (const \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a8ce98b051d15a7a9929becbe2dd0e1ee}{Thing\+Decoder\+Input\+Param}} \&param, void $\ast$userdata)=0
+\item 
+virtual void \mbox{\hyperlink{class_thing_video_decoder_a5d5fe40c4ce0e50fe0815d15b9d756f2}{Set\+Callback}} (\mbox{\hyperlink{class_thing_video_decoder_interface}{Thing\+Video\+Decoder\+Interface}} $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_core_cache_service_8h_a8567e31b759386c9840833a38589e659}{delegate}})=0
+\item 
+virtual void \mbox{\hyperlink{class_thing_video_decoder_acbae895c49445995b2b6817d80c173c1}{Set\+Callback\+Func}} (\mbox{\hyperlink{ios-arm64_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a24175c036f68aeb66502e90294fc2e6c}{Thingfn\+Video\+Frame\+Recved}} func\+Video\+Frame\+Recved, void $\ast$obj)=0
+\item 
+virtual int \mbox{\hyperlink{class_thing_video_decoder_a6c98f5612ba9919fb41d26344d8e707f}{Set\+Output\+Type}} (\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_add7c7a7a63059ab836e5fb7f8082f6ed}{Thing\+\_\+\+OUTPUT\+\_\+\+YUV\+\_\+\+TPYE\+\_\+\+ID}} id)=0
+\item 
+virtual void \mbox{\hyperlink{class_thing_video_decoder_a6c554bd50781cd4c855ce192a56ad942}{Get\+Sei\+Info}} (unsigned char $\ast$stream, int size, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a144fb0a610eeba2ea492d8e5f00955c4}{Thing\+Sei\+Info}} \&sei\+Info)=0
+\item 
+virtual void \mbox{\hyperlink{class_thing_video_decoder_a059351d091c0e338f74411e1fdd31302}{Get\+Cur\+Decoder\+Param}} (\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_ad349f69689131ea99479ea16279ee1d9}{Thing\+Decoder\+Param}} \&param)=0
+\item 
+virtual \mbox{\hyperlink{class_thing_video_decoder_ab9387b93fd4bcc6bea7568855d30d4e5}{$\sim$\+Thing\+Video\+Decoder}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_decoder_sdk_a_p_is_8h_source_l00023}{23}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_decoder_sdk_a_p_is_8h_source}{Thing\+Video\+Decoder\+Sdk\+APIs.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_thing_video_decoder_ab9387b93fd4bcc6bea7568855d30d4e5}\label{class_thing_video_decoder_ab9387b93fd4bcc6bea7568855d30d4e5}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!````~ThingVideoDecoder@{$\sim$ThingVideoDecoder}}
+\index{````~ThingVideoDecoder@{$\sim$ThingVideoDecoder}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{$\sim$ThingVideoDecoder()}{~ThingVideoDecoder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual Thing\+Video\+Decoder\+::$\sim$\+Thing\+Video\+Decoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_decoder_sdk_a_p_is_8h_source_l00065}{65}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_decoder_sdk_a_p_is_8h_source}{Thing\+Video\+Decoder\+Sdk\+APIs.\+h}}.
+
+\mbox{\Hypertarget{class_thing_video_decoder_ab9387b93fd4bcc6bea7568855d30d4e5}\label{class_thing_video_decoder_ab9387b93fd4bcc6bea7568855d30d4e5}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!````~ThingVideoDecoder@{$\sim$ThingVideoDecoder}}
+\index{````~ThingVideoDecoder@{$\sim$ThingVideoDecoder}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{$\sim$ThingVideoDecoder()}{~ThingVideoDecoder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual Thing\+Video\+Decoder\+::$\sim$\+Thing\+Video\+Decoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_decoder_sdk_a_p_is_8h_source_l00065}{65}} of file \mbox{\hyperlink{ios-arm64_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_decoder_sdk_a_p_is_8h_source}{Thing\+Video\+Decoder\+Sdk\+APIs.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_thing_video_decoder_a1dd17c64be372c150d26d927d6a9c1fc}\label{class_thing_video_decoder_a1dd17c64be372c150d26d927d6a9c1fc}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!DecodeFrame@{DecodeFrame}}
+\index{DecodeFrame@{DecodeFrame}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{DecodeFrame()}{DecodeFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual int Thing\+Video\+Decoder\+::\+Decode\+Frame (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a8ce98b051d15a7a9929becbe2dd0e1ee}{Thing\+Decoder\+Input\+Param}} \&}]{param,  }\item[{void $\ast$}]{userdata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Description 解码视频流
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & 解码器输入参数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/成功 other-\/失败 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_thing_video_decoder_a1dd17c64be372c150d26d927d6a9c1fc}\label{class_thing_video_decoder_a1dd17c64be372c150d26d927d6a9c1fc}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!DecodeFrame@{DecodeFrame}}
+\index{DecodeFrame@{DecodeFrame}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{DecodeFrame()}{DecodeFrame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int Thing\+Video\+Decoder\+::\+Decode\+Frame (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a8ce98b051d15a7a9929becbe2dd0e1ee}{Thing\+Decoder\+Input\+Param}} \&}]{param,  }\item[{void $\ast$}]{userdata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Description 解码视频流
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & 解码器输入参数 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/成功 other-\/失败 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_thing_video_decoder_a059351d091c0e338f74411e1fdd31302}\label{class_thing_video_decoder_a059351d091c0e338f74411e1fdd31302}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!GetCurDecoderParam@{GetCurDecoderParam}}
+\index{GetCurDecoderParam@{GetCurDecoderParam}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{GetCurDecoderParam()}{GetCurDecoderParam()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Thing\+Video\+Decoder\+::\+Get\+Cur\+Decoder\+Param (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_ad349f69689131ea99479ea16279ee1d9}{Thing\+Decoder\+Param}} \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Description 获取当前解码器的参数
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & 当前解码器的参数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_thing_video_decoder_a059351d091c0e338f74411e1fdd31302}\label{class_thing_video_decoder_a059351d091c0e338f74411e1fdd31302}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!GetCurDecoderParam@{GetCurDecoderParam}}
+\index{GetCurDecoderParam@{GetCurDecoderParam}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{GetCurDecoderParam()}{GetCurDecoderParam()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Thing\+Video\+Decoder\+::\+Get\+Cur\+Decoder\+Param (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_ad349f69689131ea99479ea16279ee1d9}{Thing\+Decoder\+Param}} \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Description 获取当前解码器的参数
+
+
+\begin{DoxyParams}{Parameters}
+{\em param} & 当前解码器的参数 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_thing_video_decoder_a6c554bd50781cd4c855ce192a56ad942}\label{class_thing_video_decoder_a6c554bd50781cd4c855ce192a56ad942}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!GetSeiInfo@{GetSeiInfo}}
+\index{GetSeiInfo@{GetSeiInfo}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{GetSeiInfo()}{GetSeiInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Thing\+Video\+Decoder\+::\+Get\+Sei\+Info (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{stream,  }\item[{int}]{size,  }\item[{\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a144fb0a610eeba2ea492d8e5f00955c4}{Thing\+Sei\+Info}} \&}]{sei\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Description 从解析码流获取\+SEI信息
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & 码流 \\
+\hline
+{\em size} & 码流长度 \\
+\hline
+{\em sei\+Info} & SEI信息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_thing_video_decoder_a6c554bd50781cd4c855ce192a56ad942}\label{class_thing_video_decoder_a6c554bd50781cd4c855ce192a56ad942}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!GetSeiInfo@{GetSeiInfo}}
+\index{GetSeiInfo@{GetSeiInfo}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{GetSeiInfo()}{GetSeiInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Thing\+Video\+Decoder\+::\+Get\+Sei\+Info (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{stream,  }\item[{int}]{size,  }\item[{\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a144fb0a610eeba2ea492d8e5f00955c4}{Thing\+Sei\+Info}} \&}]{sei\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Description 从解析码流获取\+SEI信息
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & 码流 \\
+\hline
+{\em size} & 码流长度 \\
+\hline
+{\em sei\+Info} & SEI信息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_thing_video_decoder_a5d5fe40c4ce0e50fe0815d15b9d756f2}\label{class_thing_video_decoder_a5d5fe40c4ce0e50fe0815d15b9d756f2}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!SetCallback@{SetCallback}}
+\index{SetCallback@{SetCallback}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{SetCallback()}{SetCallback()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Thing\+Video\+Decoder\+::\+Set\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_thing_video_decoder_interface}{Thing\+Video\+Decoder\+Interface}} $\ast$}]{delegate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Description 设置回调（接受解码后的数据）
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & 继承\+Thing\+Video\+Decoder\+Interface的指针 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_thing_video_decoder_a5d5fe40c4ce0e50fe0815d15b9d756f2}\label{class_thing_video_decoder_a5d5fe40c4ce0e50fe0815d15b9d756f2}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!SetCallback@{SetCallback}}
+\index{SetCallback@{SetCallback}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{SetCallback()}{SetCallback()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Thing\+Video\+Decoder\+::\+Set\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_thing_video_decoder_interface}{Thing\+Video\+Decoder\+Interface}} $\ast$}]{delegate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Description 设置回调（接受解码后的数据）
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & 继承\+Thing\+Video\+Decoder\+Interface的指针 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_thing_video_decoder_acbae895c49445995b2b6817d80c173c1}\label{class_thing_video_decoder_acbae895c49445995b2b6817d80c173c1}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!SetCallbackFunc@{SetCallbackFunc}}
+\index{SetCallbackFunc@{SetCallbackFunc}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{SetCallbackFunc()}{SetCallbackFunc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Thing\+Video\+Decoder\+::\+Set\+Callback\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ios-arm64_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a24175c036f68aeb66502e90294fc2e6c}{Thingfn\+Video\+Frame\+Recved}}}]{func\+Video\+Frame\+Recved,  }\item[{void $\ast$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_thing_video_decoder_acbae895c49445995b2b6817d80c173c1}\label{class_thing_video_decoder_acbae895c49445995b2b6817d80c173c1}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!SetCallbackFunc@{SetCallbackFunc}}
+\index{SetCallbackFunc@{SetCallbackFunc}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{SetCallbackFunc()}{SetCallbackFunc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Thing\+Video\+Decoder\+::\+Set\+Callback\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ios-arm64_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a24175c036f68aeb66502e90294fc2e6c}{Thingfn\+Video\+Frame\+Recved}}}]{func\+Video\+Frame\+Recved,  }\item[{void $\ast$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_thing_video_decoder_a6c98f5612ba9919fb41d26344d8e707f}\label{class_thing_video_decoder_a6c98f5612ba9919fb41d26344d8e707f}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!SetOutputType@{SetOutputType}}
+\index{SetOutputType@{SetOutputType}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{SetOutputType()}{SetOutputType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual int Thing\+Video\+Decoder\+::\+Set\+Output\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_add7c7a7a63059ab836e5fb7f8082f6ed}{Thing\+\_\+\+OUTPUT\+\_\+\+YUV\+\_\+\+TPYE\+\_\+\+ID}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Description 设置解码后\+YUV格式输出类型，当前只支持设置ffmpeg解码输出类型为yuv420p
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & YUV格式类型 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/成功 other-\/失败 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_thing_video_decoder_a6c98f5612ba9919fb41d26344d8e707f}\label{class_thing_video_decoder_a6c98f5612ba9919fb41d26344d8e707f}} 
+\index{ThingVideoDecoder@{ThingVideoDecoder}!SetOutputType@{SetOutputType}}
+\index{SetOutputType@{SetOutputType}!ThingVideoDecoder@{ThingVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{SetOutputType()}{SetOutputType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual int Thing\+Video\+Decoder\+::\+Set\+Output\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_add7c7a7a63059ab836e5fb7f8082f6ed}{Thing\+\_\+\+OUTPUT\+\_\+\+YUV\+\_\+\+TPYE\+\_\+\+ID}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Description 设置解码后\+YUV格式输出类型，当前只支持设置ffmpeg解码输出类型为yuv420p
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & YUV格式类型 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/成功 other-\/失败 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Video\+Codec\+SDK/\+Build/\+Thing\+Video\+Codec\+SDK.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Video\+Codec\+SDK.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_decoder_sdk_a_p_is_8h}{Thing\+Video\+Decoder\+Sdk\+APIs.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Video\+Codec\+SDK/\+Build/\+Thing\+Video\+Codec\+SDK.\+xcframework/ios-\/arm64/\+Thing\+Video\+Codec\+SDK.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_decoder_sdk_a_p_is_8h}{Thing\+Video\+Decoder\+Sdk\+APIs.\+h}}\end{DoxyCompactItemize}

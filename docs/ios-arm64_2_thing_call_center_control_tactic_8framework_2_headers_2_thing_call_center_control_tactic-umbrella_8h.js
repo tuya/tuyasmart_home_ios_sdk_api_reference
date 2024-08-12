@@ -1,6 +1,0 @@
-var ios_arm64_2_thing_call_center_control_tactic_8framework_2_headers_2_thing_call_center_control_tactic_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "ios-arm64_2_thing_call_center_control_tactic_8framework_2_headers_2_thing_call_center_control_tactic-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingCallCenterControlTacticVersionNumber", "ios-arm64_2_thing_call_center_control_tactic_8framework_2_headers_2_thing_call_center_control_tactic-umbrella_8h.html#abad9c30bd2dd8f429b11a1f60e4fb768", null ],
-    [ "ThingCallCenterControlTacticVersionString", "ios-arm64_2_thing_call_center_control_tactic_8framework_2_headers_2_thing_call_center_control_tactic-umbrella_8h.html#a3ba01aa368f3f89192adfc63caf01d64", null ]
-];

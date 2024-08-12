@@ -1,0 +1,208 @@
+\hypertarget{interface_thing_upgrade_manager}{}\doxysection{Thing\+Upgrade\+Manager Class Reference}
+\label{interface_thing_upgrade_manager}\index{ThingUpgradeManager@{ThingUpgradeManager}}
+
+
+{\ttfamily \#import $<$Thing\+Upgrade\+Manager.\+h$>$}
+
+Inheritance diagram for Thing\+Upgrade\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_upgrade_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_upgrade_manager_a1c4aa446d943a0afef00f42abe82cab2}{init\+With\+Device\+Id\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_upgrade_manager_a3ca461be087085f1c3b5e4bd91270caa}{support\+Upgrade}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_upgrade_manager_aaa3ffaf8210c3804ef16e02985e0ada9}{get\+Upgrade\+Info\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_upgrade_manager_ad5cd640cc0e1f09dfe762575d51744bb}{get\+Upgrade\+Status\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_upgrade_manager_afa649eb8f096dc953e9309b6138c3e73}{start\+Upgrade\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_upgrade_manager_a390df0d4e877d05d62c5841b366d566d}{stop\+Upgrade}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_upgrade_manager_a1c4aa446d943a0afef00f42abe82cab2}{init\+With\+Device\+Id\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_upgrade_manager_a3ca461be087085f1c3b5e4bd91270caa}{support\+Upgrade}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_upgrade_manager_aaa3ffaf8210c3804ef16e02985e0ada9}{get\+Upgrade\+Info\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_upgrade_manager_ad5cd640cc0e1f09dfe762575d51744bb}{get\+Upgrade\+Status\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_upgrade_manager_afa649eb8f096dc953e9309b6138c3e73}{start\+Upgrade\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_upgrade_manager_a390df0d4e877d05d62c5841b366d566d}{stop\+Upgrade}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(BOOL) + \mbox{\hyperlink{interface_thing_upgrade_manager_afc124a19c2d3e619f07b2d47bfd2ad07}{device\+Support\+Upgrade\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_upgrade_manager_aa616924fda179ee8340f9d3ffdf29414}{get\+Upgrade\+Info\+With\+Device\+Id\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_upgrade_manager_a9c3fefd3f178e35385029d7956f45b58}{get\+Upgrade\+Status\+With\+Device\+Id\+:success\+:failure\+:}}
+\item 
+(BOOL) + \mbox{\hyperlink{interface_thing_upgrade_manager_afc124a19c2d3e619f07b2d47bfd2ad07}{device\+Support\+Upgrade\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_upgrade_manager_aa616924fda179ee8340f9d3ffdf29414}{get\+Upgrade\+Info\+With\+Device\+Id\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_upgrade_manager_a9c3fefd3f178e35385029d7956f45b58}{get\+Upgrade\+Status\+With\+Device\+Id\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_upgrade_manager_a58c0cf82f872496f1a4ae327f13cea30}{device\+Id}}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_upgrade_manager_listener-p}{Thing\+Upgrade\+Manager\+Listener}} $>$ \mbox{\hyperlink{interface_thing_upgrade_manager_af0b259554e67871d8a85ef0b9c8be3a2}{listener}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_upgrade_manager_8h_source_l00021}{21}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_upgrade_manager_8h_source}{Thing\+Upgrade\+Manager.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_upgrade_manager_afc124a19c2d3e619f07b2d47bfd2ad07}\label{interface_thing_upgrade_manager_afc124a19c2d3e619f07b2d47bfd2ad07}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!deviceSupportUpgrade:@{deviceSupportUpgrade:}}
+\index{deviceSupportUpgrade:@{deviceSupportUpgrade:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{deviceSupportUpgrade:}{deviceSupportUpgrade:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (BOOL) device\+Support\+Upgrade\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_afc124a19c2d3e619f07b2d47bfd2ad07}\label{interface_thing_upgrade_manager_afc124a19c2d3e619f07b2d47bfd2ad07}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!deviceSupportUpgrade:@{deviceSupportUpgrade:}}
+\index{deviceSupportUpgrade:@{deviceSupportUpgrade:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{deviceSupportUpgrade:}{deviceSupportUpgrade:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (BOOL) device\+Support\+Upgrade\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_aa616924fda179ee8340f9d3ffdf29414}\label{interface_thing_upgrade_manager_aa616924fda179ee8340f9d3ffdf29414}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!getUpgradeInfoWithDeviceId:success:failure:@{getUpgradeInfoWithDeviceId:success:failure:}}
+\index{getUpgradeInfoWithDeviceId:success:failure:@{getUpgradeInfoWithDeviceId:success:failure:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{getUpgradeInfoWithDeviceId:success:failure:}{getUpgradeInfoWithDeviceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) get\+Upgrade\+Info\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_upgrade_info}{Thing\+Upgrade\+Info}} $\ast$info))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_aa616924fda179ee8340f9d3ffdf29414}\label{interface_thing_upgrade_manager_aa616924fda179ee8340f9d3ffdf29414}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!getUpgradeInfoWithDeviceId:success:failure:@{getUpgradeInfoWithDeviceId:success:failure:}}
+\index{getUpgradeInfoWithDeviceId:success:failure:@{getUpgradeInfoWithDeviceId:success:failure:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{getUpgradeInfoWithDeviceId:success:failure:}{getUpgradeInfoWithDeviceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) get\+Upgrade\+Info\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_upgrade_info}{Thing\+Upgrade\+Info}} $\ast$info))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_aaa3ffaf8210c3804ef16e02985e0ada9}\label{interface_thing_upgrade_manager_aaa3ffaf8210c3804ef16e02985e0ada9}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!getUpgradeInfoWithSuccess:failure:@{getUpgradeInfoWithSuccess:failure:}}
+\index{getUpgradeInfoWithSuccess:failure:@{getUpgradeInfoWithSuccess:failure:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{getUpgradeInfoWithSuccess:failure:}{getUpgradeInfoWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Upgrade\+Info\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_thing_upgrade_info}{Thing\+Upgrade\+Info}} $\ast$info))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_aaa3ffaf8210c3804ef16e02985e0ada9}\label{interface_thing_upgrade_manager_aaa3ffaf8210c3804ef16e02985e0ada9}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!getUpgradeInfoWithSuccess:failure:@{getUpgradeInfoWithSuccess:failure:}}
+\index{getUpgradeInfoWithSuccess:failure:@{getUpgradeInfoWithSuccess:failure:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{getUpgradeInfoWithSuccess:failure:}{getUpgradeInfoWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Upgrade\+Info\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_thing_upgrade_info}{Thing\+Upgrade\+Info}} $\ast$info))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_a9c3fefd3f178e35385029d7956f45b58}\label{interface_thing_upgrade_manager_a9c3fefd3f178e35385029d7956f45b58}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!getUpgradeStatusWithDeviceId:success:failure:@{getUpgradeStatusWithDeviceId:success:failure:}}
+\index{getUpgradeStatusWithDeviceId:success:failure:@{getUpgradeStatusWithDeviceId:success:failure:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{getUpgradeStatusWithDeviceId:success:failure:}{getUpgradeStatusWithDeviceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) get\+Upgrade\+Status\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model}} $\ast$status))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_a9c3fefd3f178e35385029d7956f45b58}\label{interface_thing_upgrade_manager_a9c3fefd3f178e35385029d7956f45b58}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!getUpgradeStatusWithDeviceId:success:failure:@{getUpgradeStatusWithDeviceId:success:failure:}}
+\index{getUpgradeStatusWithDeviceId:success:failure:@{getUpgradeStatusWithDeviceId:success:failure:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{getUpgradeStatusWithDeviceId:success:failure:}{getUpgradeStatusWithDeviceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) get\+Upgrade\+Status\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model}} $\ast$status))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_ad5cd640cc0e1f09dfe762575d51744bb}\label{interface_thing_upgrade_manager_ad5cd640cc0e1f09dfe762575d51744bb}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!getUpgradeStatusWithSuccess:failure:@{getUpgradeStatusWithSuccess:failure:}}
+\index{getUpgradeStatusWithSuccess:failure:@{getUpgradeStatusWithSuccess:failure:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{getUpgradeStatusWithSuccess:failure:}{getUpgradeStatusWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Upgrade\+Status\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model}} $\ast$status))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_ad5cd640cc0e1f09dfe762575d51744bb}\label{interface_thing_upgrade_manager_ad5cd640cc0e1f09dfe762575d51744bb}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!getUpgradeStatusWithSuccess:failure:@{getUpgradeStatusWithSuccess:failure:}}
+\index{getUpgradeStatusWithSuccess:failure:@{getUpgradeStatusWithSuccess:failure:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{getUpgradeStatusWithSuccess:failure:}{getUpgradeStatusWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Upgrade\+Status\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model}} $\ast$status))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_a1c4aa446d943a0afef00f42abe82cab2}\label{interface_thing_upgrade_manager_a1c4aa446d943a0afef00f42abe82cab2}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!initWithDeviceId:@{initWithDeviceId:}}
+\index{initWithDeviceId:@{initWithDeviceId:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{initWithDeviceId:}{initWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_a1c4aa446d943a0afef00f42abe82cab2}\label{interface_thing_upgrade_manager_a1c4aa446d943a0afef00f42abe82cab2}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!initWithDeviceId:@{initWithDeviceId:}}
+\index{initWithDeviceId:@{initWithDeviceId:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{initWithDeviceId:}{initWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_afa649eb8f096dc953e9309b6138c3e73}\label{interface_thing_upgrade_manager_afa649eb8f096dc953e9309b6138c3e73}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!startUpgrade:@{startUpgrade:}}
+\index{startUpgrade:@{startUpgrade:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{startUpgrade:}{startUpgrade:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Upgrade\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_upgrade_info}{Thing\+Upgrade\+Info}} $\ast$)}]{info }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_afa649eb8f096dc953e9309b6138c3e73}\label{interface_thing_upgrade_manager_afa649eb8f096dc953e9309b6138c3e73}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!startUpgrade:@{startUpgrade:}}
+\index{startUpgrade:@{startUpgrade:}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{startUpgrade:}{startUpgrade:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Upgrade\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_upgrade_info}{Thing\+Upgrade\+Info}} $\ast$)}]{info }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_a390df0d4e877d05d62c5841b366d566d}\label{interface_thing_upgrade_manager_a390df0d4e877d05d62c5841b366d566d}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!stopUpgrade@{stopUpgrade}}
+\index{stopUpgrade@{stopUpgrade}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{stopUpgrade}{stopUpgrade}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Upgrade \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_a390df0d4e877d05d62c5841b366d566d}\label{interface_thing_upgrade_manager_a390df0d4e877d05d62c5841b366d566d}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!stopUpgrade@{stopUpgrade}}
+\index{stopUpgrade@{stopUpgrade}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{stopUpgrade}{stopUpgrade}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Upgrade \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_a3ca461be087085f1c3b5e4bd91270caa}\label{interface_thing_upgrade_manager_a3ca461be087085f1c3b5e4bd91270caa}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!supportUpgrade@{supportUpgrade}}
+\index{supportUpgrade@{supportUpgrade}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{supportUpgrade}{supportUpgrade}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) support\+Upgrade \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_a3ca461be087085f1c3b5e4bd91270caa}\label{interface_thing_upgrade_manager_a3ca461be087085f1c3b5e4bd91270caa}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!supportUpgrade@{supportUpgrade}}
+\index{supportUpgrade@{supportUpgrade}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{supportUpgrade}{supportUpgrade}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) support\+Upgrade \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_upgrade_manager_a58c0cf82f872496f1a4ae327f13cea30}\label{interface_thing_upgrade_manager_a58c0cf82f872496f1a4ae327f13cea30}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!deviceId@{deviceId}}
+\index{deviceId@{deviceId}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{deviceId}{deviceId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) device\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_upgrade_manager_8h_source_l00023}{23}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_upgrade_manager_8h_source}{Thing\+Upgrade\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_upgrade_manager_af0b259554e67871d8a85ef0b9c8be3a2}\label{interface_thing_upgrade_manager_af0b259554e67871d8a85ef0b9c8be3a2}} 
+\index{ThingUpgradeManager@{ThingUpgradeManager}!listener@{listener}}
+\index{listener@{listener}!ThingUpgradeManager@{ThingUpgradeManager}}
+\doxysubsubsection{\texorpdfstring{listener}{listener}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_upgrade_manager_listener-p}{Thing\+Upgrade\+Manager\+Listener}} $>$) listener\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_upgrade_manager_8h_source_l00024}{24}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_upgrade_manager_8h_source}{Thing\+Upgrade\+Manager.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Device\+Detail\+Kit/\+Thing\+Device\+Detail\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Device\+Detail\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_upgrade_manager_8h}{Thing\+Upgrade\+Manager.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Device\+Detail\+Kit/\+Thing\+Device\+Detail\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Device\+Detail\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_device_detail_kit_8framework_2_headers_2_thing_upgrade_manager_8h}{Thing\+Upgrade\+Manager.\+h}}\end{DoxyCompactItemize}

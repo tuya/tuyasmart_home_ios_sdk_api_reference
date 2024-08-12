@@ -1,0 +1,96 @@
+\hypertarget{protocol_w_t_l_device_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}WTLDevice\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_w_t_l_device_delegate-p}\index{$<$WTLDeviceDelegate$>$@{$<$WTLDeviceDelegate$>$}}
+
+
+{\ttfamily \#import $<$WTLDevice.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}WTLDevice\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_w_t_l_device_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_delegate-p_ab71a1c2ce7e6ebfa69dfb51e6aa2bb5f}{device\+:state\+Changed\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_delegate-p_a1cbb49392ecd5fd41090abc481f6db2c}{device\+:received\+Attribute\+Report\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_delegate-p_ad98ea9fb041a5b54656f8a9bb406e5cc}{device\+:received\+Event\+Report\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_device_delegate-p_abe3d03847113a82495bdb053d9dc6357}{device\+Became\+Active\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_8h_source_l00205}{205}} of file \mbox{\hyperlink{_w_t_l_device_8h_source}{WTLDevice.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_w_t_l_device_delegate-p_a1cbb49392ecd5fd41090abc481f6db2c}\label{protocol_w_t_l_device_delegate-p_a1cbb49392ecd5fd41090abc481f6db2c}} 
+\index{$<$WTLDeviceDelegate$>$@{$<$WTLDeviceDelegate$>$}!device:receivedAttributeReport:@{device:receivedAttributeReport:}}
+\index{device:receivedAttributeReport:@{device:receivedAttributeReport:}!$<$WTLDeviceDelegate$>$@{$<$WTLDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:receivedAttributeReport:}{device:receivedAttributeReport:}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} $\ast$)}]{device }\item[{received\+Attribute\+Report\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$)}]{attribute\+Report }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Notifies delegate of attribute reports from the \mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em attribute\+Report} & An array of response-\/value objects as described in WTLDevice\+Response\+Handler \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_t_l_device_delegate-p_ad98ea9fb041a5b54656f8a9bb406e5cc}\label{protocol_w_t_l_device_delegate-p_ad98ea9fb041a5b54656f8a9bb406e5cc}} 
+\index{$<$WTLDeviceDelegate$>$@{$<$WTLDeviceDelegate$>$}!device:receivedEventReport:@{device:receivedEventReport:}}
+\index{device:receivedEventReport:@{device:receivedEventReport:}!$<$WTLDeviceDelegate$>$@{$<$WTLDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:receivedEventReport:}{device:receivedEventReport:}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} $\ast$)}]{device }\item[{received\+Event\+Report\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$)}]{event\+Report }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+Notifies delegate of event reports from the \mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Report} & An array of response-\/value objects as described in WTLDevice\+Response\+Handler \begin{DoxyVerb}           In addition to the WTLEventPathKey and WTLDataKey containing the path and event values, eventReport also contains
+           these keys:
+
+           WTLEventNumberKey : NSNumber-wrapped uint64_t value. Monotonically increasing, and consecutive event reports
+                               should have consecutive numbers unless device reboots, or if events are lost.
+           WTLEventPriorityKey : NSNumber-wrapped WTLEventPriority value.
+           WTLEventTimeTypeKey : NSNumber-wrapped WTLEventTimeType value.
+           WTLEventSystemUpTimeKey : NSNumber-wrapped NSTimeInterval value.
+           WTLEventTimestampDateKey : NSDate object.
+
+           Only one of WTLEventTimestampDateKey and WTLEventSystemUpTimeKey will be present, depending on the value for
+           WTLEventTimeTypeKey.
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_t_l_device_delegate-p_ab71a1c2ce7e6ebfa69dfb51e6aa2bb5f}\label{protocol_w_t_l_device_delegate-p_ab71a1c2ce7e6ebfa69dfb51e6aa2bb5f}} 
+\index{$<$WTLDeviceDelegate$>$@{$<$WTLDeviceDelegate$>$}!device:stateChanged:@{device:stateChanged:}}
+\index{device:stateChanged:@{device:stateChanged:}!$<$WTLDeviceDelegate$>$@{$<$WTLDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:stateChanged:}{device:stateChanged:}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} $\ast$)}]{device }\item[{state\+Changed\+:(WTLDevice\+State)}]{state }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [required]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The current state of the device \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_w_t_l_device_delegate-p_abe3d03847113a82495bdb053d9dc6357}\label{protocol_w_t_l_device_delegate-p_abe3d03847113a82495bdb053d9dc6357}} 
+\index{$<$WTLDeviceDelegate$>$@{$<$WTLDeviceDelegate$>$}!deviceBecameActive:@{deviceBecameActive:}}
+\index{deviceBecameActive:@{deviceBecameActive:}!$<$WTLDeviceDelegate$>$@{$<$WTLDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceBecameActive:}{deviceBecameActive:}}
+{\footnotesize\ttfamily -\/ (void) device\+Became\+Active\+: \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Notifies delegate the device is currently actively communicating.
+
+This can be used as a hint that now is a good time to send commands to the device, especially if the device is sleepy and might not be active very often. 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_device_8h}{WTLDevice.\+h}}\end{DoxyCompactItemize}

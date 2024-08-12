@@ -1,4 +1,0 @@
-var dir_8c4b06beef721155bfbe82fec9d0357b =
-[
-    [ "ThingDeviceEvaluationPlugAPI-umbrella.h", "x86__64-simulator_2_thing_device_evaluation_plug_a_p_i_8framework_2_headers_2_thing_device_evaluation_plug_a_p_i-umbrella_8h.html", "x86__64-simulator_2_thing_device_evaluation_plug_a_p_i_8framework_2_headers_2_thing_device_evaluation_plug_a_p_i-umbrella_8h" ]
-];

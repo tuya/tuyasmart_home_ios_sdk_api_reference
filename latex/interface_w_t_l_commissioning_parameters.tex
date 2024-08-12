@@ -1,0 +1,162 @@
+\hypertarget{interface_w_t_l_commissioning_parameters}{}\doxysection{WTLCommissioning\+Parameters Class Reference}
+\label{interface_w_t_l_commissioning_parameters}\index{WTLCommissioningParameters@{WTLCommissioningParameters}}
+
+
+{\ttfamily \#import $<$WTLCommissioning\+Parameters.\+h$>$}
+
+Inheritance diagram for WTLCommissioning\+Parameters\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_w_t_l_commissioning_parameters}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSData $\ast$\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a7c6c21abef026ce68c14fa92d97984f5}{csr\+Nonce}}) -\/ \mbox{\hyperlink{interface_w_t_l_commissioning_parameters_ac34211c69011e37d17baf3de5c07a7f2}{API\+\_\+\+AVAILABLE}}
+\item 
+(NSNumber $\ast$fail\+Safe\+Timeout) -\/ \mbox{\hyperlink{interface_w_t_l_commissioning_parameters_a69ebe061055509c2a29a648b853b23d0}{API\+\_\+\+AVAILABLE}}
+\item 
+(NSData $\ast$CSRNonce) -\/ \mbox{\hyperlink{interface_w_t_l_commissioning_parameters_a8d6e06cde7aa7ec47cb11bf710128401}{WTL\+\_\+\+DEPRECATED\+\_\+\+WITH\+\_\+\+REPLACEMENT}}
+\item 
+(NSNumber $\ast$fail\+Safe\+Expiry\+Timeout\+Secs) -\/ \mbox{\hyperlink{interface_w_t_l_commissioning_parameters_ad4a5cddb6e820f7d7e57b1c79ed7c733}{WTL\+\_\+\+DEPRECATED\+\_\+\+WITH\+\_\+\+REPLACEMENT}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSData $\ast$ \mbox{\hyperlink{interface_w_t_l_commissioning_parameters_a339845f74fd37d8f7f358d084f16b39f}{attestation\+Nonce}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{interface_w_t_l_commissioning_parameters_ac8420b821dc5593b92eb311f2768af70}{wifi\+SSID}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{interface_w_t_l_commissioning_parameters_abd6b1c5b06ebd7cd30cda43bf74442b5}{wifi\+Credentials}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{interface_w_t_l_commissioning_parameters_a9bb8aba241bb2db7cbba14c2cb325928}{thread\+Operational\+Dataset}}
+\item 
+id$<$ \mbox{\hyperlink{protocol_w_t_l_device_attestation_delegate-p}{WTLDevice\+Attestation\+Delegate}} $>$ \mbox{\hyperlink{interface_w_t_l_commissioning_parameters_a23ee1cfe73691e18f4ca4d5e9f90b98b}{device\+Attestation\+Delegate}}
+\item 
+BOOL skip\+Commissioning\+Complete \mbox{\hyperlink{interface_w_t_l_commissioning_parameters_a621d1eb29cc2fa0621219b7cbaf2edbc}{WTL\+\_\+\+NEWLY\+\_\+\+AVAILABLE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Information that can be provided to commission\+With\+Node\+ID to commision devices. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source_l00028}{28}} of file \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source}{WTLCommissioning\+Parameters.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_commissioning_parameters_ac34211c69011e37d17baf3de5c07a7f2}\label{interface_w_t_l_commissioning_parameters_ac34211c69011e37d17baf3de5c07a7f2}} 
+\index{WTLCommissioningParameters@{WTLCommissioningParameters}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLCommissioningParameters@{WTLCommissioningParameters}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSData $\ast$\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a7c6c21abef026ce68c14fa92d97984f5}{csr\+Nonce}}) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+The nonce to use when requesting a CSR for the node\textquotesingle{}s operational certificate.
+
+If nil, a random nonce will be generated automatically.
+
+If not nil, must be 32 bytes of data. \mbox{\Hypertarget{interface_w_t_l_commissioning_parameters_a69ebe061055509c2a29a648b853b23d0}\label{interface_w_t_l_commissioning_parameters_a69ebe061055509c2a29a648b853b23d0}} 
+\index{WTLCommissioningParameters@{WTLCommissioningParameters}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLCommissioningParameters@{WTLCommissioningParameters}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$fail\+Safe\+Timeout) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+The timeout, in seconds, to set for the fail-\/safe when calling into the device\+Attestation\+Delegate and waiting for it to respond.
+
+If nil, the fail-\/safe will not be extended before calling into the device\+Attestation\+Delegate. \mbox{\Hypertarget{interface_w_t_l_commissioning_parameters_a8d6e06cde7aa7ec47cb11bf710128401}\label{interface_w_t_l_commissioning_parameters_a8d6e06cde7aa7ec47cb11bf710128401}} 
+\index{WTLCommissioningParameters@{WTLCommissioningParameters}!WTL\_DEPRECATED\_WITH\_REPLACEMENT@{WTL\_DEPRECATED\_WITH\_REPLACEMENT}}
+\index{WTL\_DEPRECATED\_WITH\_REPLACEMENT@{WTL\_DEPRECATED\_WITH\_REPLACEMENT}!WTLCommissioningParameters@{WTLCommissioningParameters}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED\_WITH\_REPLACEMENT}{WTL\_DEPRECATED\_WITH\_REPLACEMENT}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSData $\ast$CSRNonce) WTL\+\_\+\+DEPRECATED\+\_\+\+WITH\+\_\+\+REPLACEMENT \begin{DoxyParamCaption}\item[{(\char`\"{}csr\+Nonce\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_commissioning_parameters_07_deprecated_08_a8d6e06cde7aa7ec47cb11bf710128401}{WTLCommissioning\+Parameters(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_commissioning_parameters_ad4a5cddb6e820f7d7e57b1c79ed7c733}\label{interface_w_t_l_commissioning_parameters_ad4a5cddb6e820f7d7e57b1c79ed7c733}} 
+\index{WTLCommissioningParameters@{WTLCommissioningParameters}!WTL\_DEPRECATED\_WITH\_REPLACEMENT@{WTL\_DEPRECATED\_WITH\_REPLACEMENT}}
+\index{WTL\_DEPRECATED\_WITH\_REPLACEMENT@{WTL\_DEPRECATED\_WITH\_REPLACEMENT}!WTLCommissioningParameters@{WTLCommissioningParameters}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED\_WITH\_REPLACEMENT}{WTL\_DEPRECATED\_WITH\_REPLACEMENT}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$fail\+Safe\+Expiry\+Timeout\+Secs) WTL\+\_\+\+DEPRECATED\+\_\+\+WITH\+\_\+\+REPLACEMENT \begin{DoxyParamCaption}\item[{(\char`\"{}fail\+Safe\+Timeout\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_commissioning_parameters_07_deprecated_08_ad4a5cddb6e820f7d7e57b1c79ed7c733}{WTLCommissioning\+Parameters(\+Deprecated)}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_t_l_commissioning_parameters_a339845f74fd37d8f7f358d084f16b39f}\label{interface_w_t_l_commissioning_parameters_a339845f74fd37d8f7f358d084f16b39f}} 
+\index{WTLCommissioningParameters@{WTLCommissioningParameters}!attestationNonce@{attestationNonce}}
+\index{attestationNonce@{attestationNonce}!WTLCommissioningParameters@{WTLCommissioningParameters}}
+\doxysubsubsection{\texorpdfstring{attestationNonce}{attestationNonce}}
+{\footnotesize\ttfamily -\/ (NSData$\ast$) attestation\+Nonce\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The nonce to use when requesting attestation information from the device.
+
+If nil, a random nonce will be generated automatically.
+
+If not nil, must be 32 bytes of data. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source_l00047}{47}} of file \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source}{WTLCommissioning\+Parameters.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_commissioning_parameters_a23ee1cfe73691e18f4ca4d5e9f90b98b}\label{interface_w_t_l_commissioning_parameters_a23ee1cfe73691e18f4ca4d5e9f90b98b}} 
+\index{WTLCommissioningParameters@{WTLCommissioningParameters}!deviceAttestationDelegate@{deviceAttestationDelegate}}
+\index{deviceAttestationDelegate@{deviceAttestationDelegate}!WTLCommissioningParameters@{WTLCommissioningParameters}}
+\doxysubsubsection{\texorpdfstring{deviceAttestationDelegate}{deviceAttestationDelegate}}
+{\footnotesize\ttfamily -\/ (id$<$\mbox{\hyperlink{protocol_w_t_l_device_attestation_delegate-p}{WTLDevice\+Attestation\+Delegate}}$>$) device\+Attestation\+Delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+An optional delegate that can be notified upon completion of device attestation. See documentation for \mbox{\hyperlink{protocol_w_t_l_device_attestation_delegate-p}{WTLDevice\+Attestation\+Delegate}} for details.
+
+The delegate methods will be invoked on an arbitrary thread. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source_l00072}{72}} of file \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source}{WTLCommissioning\+Parameters.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_commissioning_parameters_a9bb8aba241bb2db7cbba14c2cb325928}\label{interface_w_t_l_commissioning_parameters_a9bb8aba241bb2db7cbba14c2cb325928}} 
+\index{WTLCommissioningParameters@{WTLCommissioningParameters}!threadOperationalDataset@{threadOperationalDataset}}
+\index{threadOperationalDataset@{threadOperationalDataset}!WTLCommissioningParameters@{WTLCommissioningParameters}}
+\doxysubsubsection{\texorpdfstring{threadOperationalDataset}{threadOperationalDataset}}
+{\footnotesize\ttfamily -\/ (NSData$\ast$) thread\+Operational\+Dataset\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The Thread operational dataset, if available. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source_l00063}{63}} of file \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source}{WTLCommissioning\+Parameters.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_commissioning_parameters_abd6b1c5b06ebd7cd30cda43bf74442b5}\label{interface_w_t_l_commissioning_parameters_abd6b1c5b06ebd7cd30cda43bf74442b5}} 
+\index{WTLCommissioningParameters@{WTLCommissioningParameters}!wifiCredentials@{wifiCredentials}}
+\index{wifiCredentials@{wifiCredentials}!WTLCommissioningParameters@{WTLCommissioningParameters}}
+\doxysubsubsection{\texorpdfstring{wifiCredentials}{wifiCredentials}}
+{\footnotesize\ttfamily -\/ (NSData$\ast$) wifi\+Credentials\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The Wi-\/\+Fi Credentials. Allowed to be nil or 0-\/length data for an open network, as long as wifi\+SSID is not nil. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source_l00058}{58}} of file \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source}{WTLCommissioning\+Parameters.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_commissioning_parameters_ac8420b821dc5593b92eb311f2768af70}\label{interface_w_t_l_commissioning_parameters_ac8420b821dc5593b92eb311f2768af70}} 
+\index{WTLCommissioningParameters@{WTLCommissioningParameters}!wifiSSID@{wifiSSID}}
+\index{wifiSSID@{wifiSSID}!WTLCommissioningParameters@{WTLCommissioningParameters}}
+\doxysubsubsection{\texorpdfstring{wifiSSID}{wifiSSID}}
+{\footnotesize\ttfamily -\/ (NSData$\ast$) wifi\+SSID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The Wi-\/\+Fi SSID, if available. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source_l00052}{52}} of file \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source}{WTLCommissioning\+Parameters.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_commissioning_parameters_a621d1eb29cc2fa0621219b7cbaf2edbc}\label{interface_w_t_l_commissioning_parameters_a621d1eb29cc2fa0621219b7cbaf2edbc}} 
+\index{WTLCommissioningParameters@{WTLCommissioningParameters}!WTL\_NEWLY\_AVAILABLE@{WTL\_NEWLY\_AVAILABLE}}
+\index{WTL\_NEWLY\_AVAILABLE@{WTL\_NEWLY\_AVAILABLE}!WTLCommissioningParameters@{WTLCommissioningParameters}}
+\doxysubsubsection{\texorpdfstring{WTL\_NEWLY\_AVAILABLE}{WTL\_NEWLY\_AVAILABLE}}
+{\footnotesize\ttfamily -\/ (BOOL skip\+Commissioning\+Complete) WTL\+\_\+\+NEWLY\+\_\+\+AVAILABLE\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Only perform the PASE steps of commissioning. If set to YES, commissioning will be completed by another admin on the network.
+
+Defaults to NO. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source_l00089}{89}} of file \mbox{\hyperlink{_w_t_l_commissioning_parameters_8h_source}{WTLCommissioning\+Parameters.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_commissioning_parameters_8h}{WTLCommissioning\+Parameters.\+h}}\end{DoxyCompactItemize}

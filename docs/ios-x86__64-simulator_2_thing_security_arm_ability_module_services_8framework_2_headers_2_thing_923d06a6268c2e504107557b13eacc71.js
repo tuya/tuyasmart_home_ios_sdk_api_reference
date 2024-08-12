@@ -1,4 +1,0 @@
-var ios_x86__64_simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_923d06a6268c2e504107557b13eacc71 =
-[
-    [ "ThingSecurityAlarmOperationModel", "interface_thing_security_alarm_operation_model.html", "interface_thing_security_alarm_operation_model" ]
-];

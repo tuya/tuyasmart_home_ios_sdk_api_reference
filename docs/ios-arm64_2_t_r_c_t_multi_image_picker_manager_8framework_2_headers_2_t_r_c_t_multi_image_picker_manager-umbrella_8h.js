@@ -1,6 +1,0 @@
-var ios_arm64_2_t_r_c_t_multi_image_picker_manager_8framework_2_headers_2_t_r_c_t_multi_image_picker_manager_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "ios-arm64_2_t_r_c_t_multi_image_picker_manager_8framework_2_headers_2_t_r_c_t_multi_image_picker_manager-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "TRCTMultiImagePickerManagerVersionNumber", "ios-arm64_2_t_r_c_t_multi_image_picker_manager_8framework_2_headers_2_t_r_c_t_multi_image_picker_manager-umbrella_8h.html#a680a875e2605fc96c11240f3ed23c52c", null ],
-    [ "TRCTMultiImagePickerManagerVersionString", "ios-arm64_2_t_r_c_t_multi_image_picker_manager_8framework_2_headers_2_t_r_c_t_multi_image_picker_manager-umbrella_8h.html#a8f3eff26440a667a560c75820fda9e20", null ]
-];

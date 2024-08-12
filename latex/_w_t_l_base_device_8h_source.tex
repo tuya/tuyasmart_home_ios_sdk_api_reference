@@ -1,0 +1,371 @@
+\hypertarget{_w_t_l_base_device_8h_source}{}\doxysection{WTLBase\+Device.\+h}
+\label{_w_t_l_base_device_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLBaseDevice.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLBaseDevice.h}}
+\mbox{\hyperlink{_w_t_l_base_device_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00020}00020 \textcolor{preprocessor}{\#import <Water/WTLCluster.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00021}00021 \textcolor{preprocessor}{\#import <Water/WTLDefines.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00023}00023 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetupPayload}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00024}00024 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00026}00026 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00090}\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{00090}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})(\mbox{\hyperlink{interface_n_s_array}{NSArray<NSDictionary<NSString *, id>}} *> * \_Nullable values, NSError * \_Nullable \mbox{\hyperlink{_w_t_l_base_device_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00097}\mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{00097}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{WTLDeviceReportHandler}})(\mbox{\hyperlink{interface_n_s_array}{NSArray}} * values);}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00098}\mbox{\hyperlink{_w_t_l_base_device_8h_afa0cd905259a1e4838660d0cb47ef6e8}{00098}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{_w_t_l_base_device_8h_afa0cd905259a1e4838660d0cb47ef6e8}{WTLDeviceErrorHandler}})(NSError * \mbox{\hyperlink{_w_t_l_base_device_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00108}\mbox{\hyperlink{_w_t_l_base_device_8h_a0afbfa6be4e20b42f2ce662deadb8942}{00108}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{_w_t_l_base_device_8h_a0afbfa6be4e20b42f2ce662deadb8942}{WTLDeviceResubscriptionScheduledHandler}})(NSError * \mbox{\hyperlink{_w_t_l_base_device_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}, NSNumber * resubscriptionDelay);}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00113}\mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{00113}} \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}( macos(13.1), watchos(9.2), tvos(16.2))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00114}\mbox{\hyperlink{_w_t_l_base_device_8h_a6710b99207ceec3a7b09cadf04f4e246}{00114}} typedef \textcolor{keywordtype}{void} (\string^WTLDeviceOpenCommissioningWindowHandler)(\mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetupPayload}} * \_Nullable payload, NSError * \_Nullable \mbox{\hyperlink{_w_t_l_base_device_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00116}00116 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_ad3f201f3aac8e4195d974afee7297c40}{WTLAttributePathKey}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00117}00117 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_aecbcf2450f8334365b845216b6b054f6}{WTLCommandPathKey}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00118}00118 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_a259745e71265e2904033240d53242a0a}{WTLEventPathKey}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00119}00119 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_acb4f168e65adad28c87c5111667befe9}{WTLDataKey}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00120}00120 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_aed030584eb687a7bc16e49fc82f3e5c5}{WTLErrorKey}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00121}00121 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_a3afccf21aa04f8b2eab852c4812c04ac}{WTLTypeKey}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00122}00122 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_afaeeb07392d573db3dd48ef41bcf9aa8}{WTLValueKey}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00123}00123 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_a631a5cb99b59347defa4a20cfc14556c}{WTLContextTagKey}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00124}00124 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_ab21b71d787e64e111fca1940b8f734bc}{WTLSignedIntegerValueType}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00125}00125 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_adf6164d793a5ab65025074b5ed8bc95f}{WTLUnsignedIntegerValueType}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00126}00126 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_a3d72d4a2edf37b98b920b6657e3a9110}{WTLBooleanValueType}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00127}00127 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_a304076b002ffb103f73740bffc21c831}{WTLUTF8StringValueType}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00128}00128 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_a9ded8bd2f49bc1a9549de8040f8ff1aa}{WTLOctetStringValueType}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00129}00129 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_a3ba3f2829d80e00fe48912591bfb67c8}{WTLFloatValueType}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00130}00130 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_a5af554b9646cb032b8b88fafeb9de01f}{WTLDoubleValueType}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00131}00131 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_ad40ba432fd7247981f37ad4ae276ef26}{WTLNullValueType}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00132}00132 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_aed68aca1befdcaa9c5f028526f463250}{WTLStructureValueType}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00133}00133 extern NSString * const \mbox{\hyperlink{_w_t_l_base_device_8h_a8e39d667ce41e3f109a57161a39df9b3}{WTLArrayValueType}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00134}\mbox{\hyperlink{_w_t_l_base_device_8h_a2996e4cc1a3a88a2365bd62473d93b2c}{00134}} extern NSString * const WTLEventNumberKey \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}(macos(13.4), watchos(9.5), tvos(16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00135}00135 extern NSString * const WTLEventPriorityKey \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}(macos(13.4), watchos(9.5), tvos(16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00136}00136 extern NSString * const WTLEventTimeTypeKey \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}(macos(13.4), watchos(9.5), tvos(16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00137}00137 extern NSString * const WTLEventSystemUpTimeKey \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}(macos(13.4), watchos(9.5), tvos(16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00138}00138 extern NSString * const WTLEventTimestampDateKey \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}(macos(13.4), watchos(9.5), tvos(16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00140}00140 @class WTLClusterStateCacheContainer;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00141}00141 @class WTLAttributeCacheContainer;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00142}00142 @class \mbox{\hyperlink{interface_w_t_l_read_params}{WTLReadParams}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00143}00143 @class \mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribeParams}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00145}\mbox{\hyperlink{_w_t_l_base_device_8h_a1c51076877242f1424478ad737e81dd1}{00145}} typedef \mbox{\hyperlink{_w_t_l_base_device_8h_a1c51076877242f1424478ad737e81dd1}{NS\_ENUM}}(uint8\_t, WTLTransportType) \{}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00146}00146     WTLTransportTypeUndefined = 0,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00147}00147     WTLTransportTypeUDP,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00148}00148     WTLTransportTypeBLE,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00149}00149     WTLTransportTypeTCP,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00150}\mbox{\hyperlink{_w_t_l_base_device_8h_aac9c6e13d0afe999a9aeff09b52037e9}{00150}} \} \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00151}00151 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00157}00157 \mbox{\hyperlink{_w_t_l_defines_8h_a69d9531bc87c9b7a2474da67d62161d7}{WTL\_NEWLY\_AVAILABLE}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00158}\mbox{\hyperlink{interface_w_t_l_attribute_request_path}{00158}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_attribute_request_path}{WTLAttributeRequestPath}} : NSObject <NSCopying>}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00159}\mbox{\hyperlink{interface_w_t_l_attribute_request_path_ab093e1baddb1b2872415e6e321d7b31a}{00159}} \textcolor{keyword}{@property} (nonatomic, readonly, copy, nullable) NSNumber * \mbox{\hyperlink{interface_w_t_l_attribute_request_path_ab093e1baddb1b2872415e6e321d7b31a}{endpoint}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00160}\mbox{\hyperlink{interface_w_t_l_attribute_request_path_ada825b71934869d5fb020e438a314846}{00160}} \textcolor{keyword}{@property} (nonatomic, readonly, copy, nullable) NSNumber * \mbox{\hyperlink{interface_w_t_l_attribute_request_path_ada825b71934869d5fb020e438a314846}{cluster}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00161}\mbox{\hyperlink{interface_w_t_l_attribute_request_path_a064f54827ea63864da6204766ba9b646}{00161}} \textcolor{keyword}{@property} (nonatomic, readonly, copy, nullable) NSNumber * \mbox{\hyperlink{interface_w_t_l_attribute_request_path_a064f54827ea63864da6204766ba9b646}{attribute}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00163}00163 + (\mbox{\hyperlink{interface_w_t_l_attribute_request_path}{WTLAttributeRequestPath}} *)requestPathWithEndpointID:(NSNumber * \_Nullable)endpointID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00164}00164                                              clusterID:(NSNumber * \_Nullable)clusterID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00165}00165                                            attributeID:(NSNumber * \_Nullable)attributeID WTL\_NEWLY\_AVAILABLE;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00166}00166 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00173}00173 \mbox{\hyperlink{_w_t_l_defines_8h_a69d9531bc87c9b7a2474da67d62161d7}{WTL\_NEWLY\_AVAILABLE}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00174}\mbox{\hyperlink{interface_w_t_l_event_request_path}{00174}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_event_request_path}{WTLEventRequestPath}} : NSObject <NSCopying>}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00175}\mbox{\hyperlink{interface_w_t_l_event_request_path_a38417c9fc70b5fb6c9388ee5d911dcb7}{00175}} \textcolor{keyword}{@property} (nonatomic, readonly, copy, nullable) NSNumber * \mbox{\hyperlink{interface_w_t_l_attribute_request_path_ab093e1baddb1b2872415e6e321d7b31a}{endpoint}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00176}\mbox{\hyperlink{interface_w_t_l_event_request_path_ac39447797ce067ab76e1e81678728afe}{00176}} \textcolor{keyword}{@property} (nonatomic, readonly, copy, nullable) NSNumber * \mbox{\hyperlink{interface_w_t_l_attribute_request_path_ada825b71934869d5fb020e438a314846}{cluster}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00177}\mbox{\hyperlink{interface_w_t_l_base_device_a957dc2cbc0531402f02f021bf8815ba4}{00177}} \textcolor{keyword}{@property} (nonatomic, readonly, copy, nullable) NSNumber * event;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00179}00179 + (\mbox{\hyperlink{interface_w_t_l_event_request_path}{WTLEventRequestPath}} *)requestPathWithEndpointID:(NSNumber * \_Nullable)endpointID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00180}00180                                          clusterID:(NSNumber * \_Nullable)clusterID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00181}00181                                            eventID:(NSNumber * \_Nullable)eventID WTL\_NEWLY\_AVAILABLE;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00182}00182 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00183}00183 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00184}\mbox{\hyperlink{interface_w_t_l_base_device}{00184}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_base_device}{WTLBaseDevice}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00185}00185 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00186}00186 -\/ (instancetype)init \mbox{\hyperlink{_w_t_l_base_device_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00187}00187 + (instancetype)new \mbox{\hyperlink{_w_t_l_base_device_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00188}00188 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00195}00195 + (\mbox{\hyperlink{interface_w_t_l_base_device}{WTLBaseDevice}} *)deviceWithNodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00196}00196                          controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00197}00197     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00198}00198 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00202}00202 -\/ (void)\mbox{\hyperlink{interface_w_t_l_base_device_ad6a3949239c8a51ffcdbc33f55743e70}{invalidateCASESession}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00203}00203 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00208}\mbox{\hyperlink{interface_w_t_l_base_device_a416c10f2e6d277094116c6010952bb80}{00208}} \textcolor{keyword}{@property} (readonly) WTLTransportType sessionTransportType \mbox{\hyperlink{interface_w_t_l_base_device_a416c10f2e6d277094116c6010952bb80}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00209}00209 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00249}00249 -\/ (void)subscribeWithQueue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00250}00250                         params:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribeParams}} *)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00251}00251     clusterStateCacheContainer:(WTLClusterStateCacheContainer * \_Nullable)clusterStateCacheContainer}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00252}00252         attributeReportHandler:(\mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{WTLDeviceReportHandler}} \_Nullable)attributeReportHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00253}00253             eventReportHandler:(\mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{WTLDeviceReportHandler}} \_Nullable)eventReportHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00254}00254                   errorHandler:(\mbox{\hyperlink{_w_t_l_base_device_8h_afa0cd905259a1e4838660d0cb47ef6e8}{WTLDeviceErrorHandler}})errorHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00255}00255        subscriptionEstablished:(\mbox{\hyperlink{_w_t_l_cluster_8h_a810a6df656356ef2e182f84dca940a5a}{WTLSubscriptionEstablishedHandler}} \_Nullable)subscriptionEstablished}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00256}00256        resubscriptionScheduled:(\mbox{\hyperlink{_w_t_l_base_device_8h_a0afbfa6be4e20b42f2ce662deadb8942}{WTLDeviceResubscriptionScheduledHandler}} \_Nullable)resubscriptionScheduled}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00257}00257     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00258}00258 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00280}00280 -\/ (void)readAttributesWithEndpointID:(NSNumber * \_Nullable)endpointID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00281}00281                            clusterID:(NSNumber * \_Nullable)clusterID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00282}00282                          attributeID:(NSNumber * \_Nullable)attributeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00283}00283                               params:(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLReadParams}} * \_Nullable)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00284}00284                                queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00285}00285                           completion:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00286}00286     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00287}00287 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00303}00303 -\/ (void)readAttributePaths:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}<\mbox{\hyperlink{interface_w_t_l_attribute_request_path}{WTLAttributeRequestPath}} *> * \_Nullable)attributePaths}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00304}00304                 eventPaths:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}<\mbox{\hyperlink{interface_w_t_l_event_request_path}{WTLEventRequestPath}} *> * \_Nullable)eventPaths}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00305}00305                     params:(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLReadParams}} * \_Nullable)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00306}00306                      queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00307}00307                 completion:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})completion WTL\_NEWLY\_AVAILABLE;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00308}00308 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00327}00327 -\/ (void)writeAttributeWithEndpointID:(NSNumber *)endpointID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00328}00328                            clusterID:(NSNumber *)clusterID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00329}00329                          attributeID:(NSNumber *)attributeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00330}00330                                value:(\textcolor{keywordtype}{id})value}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00331}00331                    timedWriteTimeout:(NSNumber * \_Nullable)timeoutMs}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00332}00332                                queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00333}00333                           completion:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00334}00334     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00335}00335 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00351}00351 -\/ (void)invokeCommandWithEndpointID:(NSNumber *)endpointID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00352}00352                           clusterID:(NSNumber *)clusterID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00353}00353                           commandID:(NSNumber *)commandID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00354}00354                       commandFields:(\textcolor{keywordtype}{id})commandFields}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00355}00355                  timedInvokeTimeout:(NSNumber * \_Nullable)timeoutMs}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00356}00356                               queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00357}00357                          completion:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00358}00358     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00359}00359 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00387}00387 -\/ (void)subscribeToAttributesWithEndpointID:(NSNumber * \_Nullable)endpointID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00388}00388                                   clusterID:(NSNumber * \_Nullable)clusterID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00389}00389                                 attributeID:(NSNumber * \_Nullable)attributeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00390}00390                                      params:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribeParams}} * \_Nullable)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00391}00391                                       queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00392}00392                               reportHandler:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})reportHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00393}00393                     subscriptionEstablished:(\mbox{\hyperlink{_w_t_l_cluster_8h_a810a6df656356ef2e182f84dca940a5a}{WTLSubscriptionEstablishedHandler}} \_Nullable)subscriptionEstablished}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00394}00394     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00395}00395 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00420}00420 -\/ (void)subscribeToAttributePaths:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}<\mbox{\hyperlink{interface_w_t_l_attribute_request_path}{WTLAttributeRequestPath}} *> * \_Nullable)attributePaths}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00421}00421                        eventPaths:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}<\mbox{\hyperlink{interface_w_t_l_event_request_path}{WTLEventRequestPath}} *> * \_Nullable)eventPaths}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00422}00422                            params:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribeParams}} * \_Nullable)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00423}00423                             queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00424}00424                     reportHandler:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})reportHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00425}00425           subscriptionEstablished:(\mbox{\hyperlink{_w_t_l_cluster_8h_a810a6df656356ef2e182f84dca940a5a}{WTLSubscriptionEstablishedHandler}} \_Nullable)subscriptionEstablished}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00426}00426           resubscriptionScheduled:(\mbox{\hyperlink{_w_t_l_base_device_8h_a0afbfa6be4e20b42f2ce662deadb8942}{WTLDeviceResubscriptionScheduledHandler}} \_Nullable)resubscriptionScheduled WTL\_NEWLY\_AVAILABLE;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00427}00427 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00435}00435 -\/ (void)deregisterReportHandlersWithQueue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00436}00436                                completion:(dispatch\_block\_t)completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00437}00437     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00438}00438 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00453}00453 -\/ (void)openCommissioningWindowWithSetupPasscode:(NSNumber *)setupPasscode}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00454}00454                                    discriminator:(NSNumber *)discriminator}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00455}00455                                         duration:(NSNumber *)duration}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00456}00456                                            queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00457}00457                                       completion:(WTLDeviceOpenCommissioningWindowHandler)completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00458}00458     API\_AVAILABLE( macos(13.1), watchos(9.2), tvos(16.2));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00459}00459 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00471}00471 -\/ (void)openCommissioningWindowWithDiscriminator:(NSNumber *)discriminator}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00472}00472                                         duration:(NSNumber *)duration}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00473}00473                                            queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00474}00474                                       completion:(WTLDeviceOpenCommissioningWindowHandler)completion WTL\_NEWLY\_AVAILABLE;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00475}00475 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00495}00495 -\/ (void)readEventsWithEndpointID:(NSNumber * \_Nullable)endpointID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00496}00496                        clusterID:(NSNumber * \_Nullable)clusterID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00497}00497                          eventID:(NSNumber * \_Nullable)eventID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00498}00498                           params:(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLReadParams}} * \_Nullable)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00499}00499                            queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00500}00500                       completion:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00501}00501     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00502}00502 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00527}00527 -\/ (void)subscribeToEventsWithEndpointID:(NSNumber * \_Nullable)endpointID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00528}00528                               clusterID:(NSNumber * \_Nullable)clusterID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00529}00529                                 eventID:(NSNumber * \_Nullable)eventID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00530}00530                                  params:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribeParams}} * \_Nullable)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00531}00531                                   queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00532}00532                           reportHandler:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})reportHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00533}00533                 subscriptionEstablished:(\mbox{\hyperlink{_w_t_l_cluster_8h_a810a6df656356ef2e182f84dca940a5a}{WTLSubscriptionEstablishedHandler}} \_Nullable)subscriptionEstablished}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00534}00534     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00535}00535 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00536}00536 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00541}00541 \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00542}00542 \textcolor{keyword}{@interface }WTLClusterPath : NSObject <NSCopying>}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00543}00543 \textcolor{keyword}{@property} (nonatomic, readonly, copy) NSNumber * \mbox{\hyperlink{interface_w_t_l_attribute_request_path_ab093e1baddb1b2872415e6e321d7b31a}{endpoint}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00544}\mbox{\hyperlink{_w_t_l_base_device_8h_a538896a2c80933467e47a86beba8b2c5}{00544}} \textcolor{keyword}{@property} (nonatomic, readonly, copy) NSNumber * \mbox{\hyperlink{interface_w_t_l_attribute_request_path_ada825b71934869d5fb020e438a314846}{cluster}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00545}00545 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00546}\mbox{\hyperlink{_w_t_l_base_device_8h_a9be32f7564640182fa8a008d2202b9f2}{00546}} + (WTLClusterPath *)\mbox{\hyperlink{_w_t_l_base_device_8h_a9be32f7564640182fa8a008d2202b9f2}{clusterPathWithEndpointID}}:(NSNumber *)endpointID clusterID:(NSNumber *)clusterID;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00547}00547 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00548}\mbox{\hyperlink{_w_t_l_base_device_8h_a7ce30558a2e627651ffe88c2982fbaff}{00548}} -\/ (instancetype)init \mbox{\hyperlink{_w_t_l_base_device_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00549}00549 + (instancetype)new \mbox{\hyperlink{_w_t_l_base_device_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00550}00550 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00551}00551 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00556}\mbox{\hyperlink{interface_w_t_l_attribute_path}{00556}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_attribute_path}{WTLAttributePath}} : WTLClusterPath}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00557}\mbox{\hyperlink{interface_w_t_l_attribute_path_aafdd6ddd6d803fc66dec81ff5c9a9900}{00557}} \textcolor{keyword}{@property} (nonatomic, readonly, copy) NSNumber * \mbox{\hyperlink{interface_w_t_l_attribute_request_path_a064f54827ea63864da6204766ba9b646}{attribute}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00558}00558 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00559}00559 + (\mbox{\hyperlink{interface_w_t_l_attribute_path}{WTLAttributePath}} *)attributePathWithEndpointID:(NSNumber *)endpointID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00560}00560                                         clusterID:(NSNumber *)clusterID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00561}00561                                       attributeID:(NSNumber *)attributeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00562}00562     \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00563}00563 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00564}00564 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00570}\mbox{\hyperlink{interface_w_t_l_event_path}{00570}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_event_path}{WTLEventPath}} : WTLClusterPath}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00571}\mbox{\hyperlink{interface_w_t_l_event_path_a0b2981dad59082d32ea11871341ead61}{00571}} \textcolor{keyword}{@property} (nonatomic, readonly, copy) NSNumber * event;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00572}00572 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00573}00573 + (\mbox{\hyperlink{interface_w_t_l_event_path}{WTLEventPath}} *)eventPathWithEndpointID:(NSNumber *)endpointID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00574}00574                                 clusterID:(NSNumber *)clusterID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00575}00575                                   eventID:(NSNumber *)eventID \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00576}00576 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00577}00577 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00582}\mbox{\hyperlink{interface_w_t_l_command_path}{00582}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_command_path}{WTLCommandPath}} : WTLClusterPath}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00583}\mbox{\hyperlink{interface_w_t_l_command_path_a893598531eb917a907e58ee0829c3a42}{00583}} \textcolor{keyword}{@property} (nonatomic, readonly, copy) NSNumber * command;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00584}00584 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00585}00585 + (\mbox{\hyperlink{interface_w_t_l_command_path}{WTLCommandPath}} *)commandPathWithEndpointID:(NSNumber *)endpointID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00586}00586                                     clusterID:(NSNumber *)clusterID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00587}00587                                     commandID:(NSNumber *)commandID \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00588}00588 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00589}00589 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00590}\mbox{\hyperlink{interface_w_t_l_attribute_report}{00590}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_attribute_report}{WTLAttributeReport}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00591}\mbox{\hyperlink{interface_w_t_l_attribute_report_adea2f9792e100fd6d38df6a26fca5d09}{00591}} \textcolor{keyword}{@property} (nonatomic, readonly, copy) \mbox{\hyperlink{interface_w_t_l_attribute_path}{WTLAttributePath}} * path;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00592}00592 \textcolor{comment}{// value is nullable because nullable attributes can have nil as value.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00593}\mbox{\hyperlink{interface_w_t_l_attribute_report_aca498fd99485a16b98c2ad5d754df549}{00593}} \textcolor{keyword}{@property} (nonatomic, readonly, copy, nullable) \textcolor{keywordtype}{id} value;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00594}00594 \textcolor{comment}{// If this specific path resulted in an error, the error (in the}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00595}00595 \textcolor{comment}{// WTLInteractionErrorDomain or WTLErrorDomain) that corresponds to this}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00596}00596 \textcolor{comment}{// path.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00597}\mbox{\hyperlink{interface_w_t_l_attribute_report_a6f7305c4b951d066eee729b342ba84d4}{00597}} \textcolor{keyword}{@property} (nonatomic, readonly, copy, nullable) NSError * \mbox{\hyperlink{_w_t_l_base_device_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00598}00598 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00599}00599 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00600}\mbox{\hyperlink{_w_t_l_base_device_8h_aa29819634adcbf0887a6b2600a1e898d}{00600}} \textcolor{keyword}{typedef} \mbox{\hyperlink{_w_t_l_base_device_8h_a1c51076877242f1424478ad737e81dd1}{NS\_ENUM}}(NSUInteger, WTLEventTimeType) \{}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00601}00601     WTLEventTimeTypeSystemUpTime = 0,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00602}00602     WTLEventTimeTypeTimestampDate}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00603}00603 \} \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}(macos(13.4), watchos(9.5), tvos(16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00604}00604 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00605}\mbox{\hyperlink{_w_t_l_base_device_8h_a77873a0032d305a7afa6fc0baa275ae0}{00605}} \textcolor{keyword}{typedef} \mbox{\hyperlink{_w_t_l_base_device_8h_a1c51076877242f1424478ad737e81dd1}{NS\_ENUM}}(NSUInteger, WTLEventPriority) \{}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00606}00606     WTLEventPriorityDebug = 0,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00607}00607     WTLEventPriorityInfo = 1,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00608}00608     WTLEventPriorityCritical = 2}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00609}00609 \} \mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\_AVAILABLE}}(macos(13.4), watchos(9.5), tvos(16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00610}00610 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00611}\mbox{\hyperlink{interface_w_t_l_event_report}{00611}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_event_report}{WTLEventReport}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00612}\mbox{\hyperlink{interface_w_t_l_event_report_ab3b1aa73b0a63e38ae0ea3cc2cf5020b}{00612}} \textcolor{keyword}{@property} (nonatomic, readonly, copy) \mbox{\hyperlink{interface_w_t_l_event_path}{WTLEventPath}} * path;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00613}\mbox{\hyperlink{interface_w_t_l_event_report_ad745a6975eeab3371c0de241e0f8b0d4}{00613}} \textcolor{keyword}{@property} (nonatomic, readonly, copy) NSNumber * eventNumber; \textcolor{comment}{// EventNumber type (uint64\_t)}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00614}\mbox{\hyperlink{interface_w_t_l_event_report_a6da1fc3685d3e7ef691229c344f59472}{00614}} \textcolor{keyword}{@property} (nonatomic, readonly, copy) NSNumber * priority; \textcolor{comment}{// PriorityLevel type (WTLEventPriority)}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00615}00615 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00616}00616 \textcolor{comment}{// Either systemUpTime or timestampDate will be valid depending on eventTimeType}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00617}\mbox{\hyperlink{interface_w_t_l_event_report_a13d89e3f82df8119c85d551b1dd917bd}{00617}} \textcolor{keyword}{@property} (nonatomic, readonly) WTLEventTimeType eventTimeType \mbox{\hyperlink{interface_w_t_l_event_report_a13d89e3f82df8119c85d551b1dd917bd}{API\_AVAILABLE}}(macos(13.4), watchos(9.5), tvos(16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00618}\mbox{\hyperlink{interface_w_t_l_event_report_a965243abd2e26f3471cfca7fb0a3d851}{00618}} \textcolor{keyword}{@property} (nonatomic, readonly) NSTimeInterval systemUpTime \mbox{\hyperlink{interface_w_t_l_event_report_a965243abd2e26f3471cfca7fb0a3d851}{API\_AVAILABLE}}(macos(13.4), watchos(9.5), tvos(16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00619}00619 \textcolor{keyword}{@property} (nonatomic, readonly, copy, nullable)}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00620}\mbox{\hyperlink{interface_w_t_l_event_report_aeab3a109aeea21e272033473594f3004}{00620}}     NSDate * timestampDate \mbox{\hyperlink{interface_w_t_l_event_report_aeab3a109aeea21e272033473594f3004}{API\_AVAILABLE}}(macos(13.4), watchos(9.5), tvos(16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00621}00621 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00622}00622 \textcolor{comment}{// An instance of one of the event payload interfaces.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00623}\mbox{\hyperlink{interface_w_t_l_event_report_a143663fae8e5c87c14b6e79a6981df7b}{00623}} \textcolor{keyword}{@property} (nonatomic, readonly, copy) \textcolor{keywordtype}{id} value;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00624}00624 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00625}00625 \textcolor{comment}{// If this specific path resulted in an error, the error (in the}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00626}00626 \textcolor{comment}{// WTLInteractionErrorDomain or WTLErrorDomain) that corresponds to this}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00627}00627 \textcolor{comment}{// path.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00628}\mbox{\hyperlink{category_w_t_l_attribute_path_07_deprecated_08_ac58da40766a00efcf7f68085b0eb4672}{00628}} \textcolor{keyword}{@property} (nonatomic, readonly, copy, nullable) NSError * \mbox{\hyperlink{_w_t_l_base_device_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00629}00629 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00630}00630 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00631}\mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08}{00631}} \textcolor{keyword}{@interface }\mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08}{WTLBaseDevice (Deprecated)}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00632}00632 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00636}00636 -\/ (void)subscribeWithQueue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00637}00637                 minInterval:(uint16\_t)minInterval}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00638}00638                 maxInterval:(uint16\_t)maxInterval}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00639}00639                      params:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribeParams}} * \_Nullable)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00640}00640              cacheContainer:(WTLAttributeCacheContainer * \_Nullable)attributeCacheContainer}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00641}00641      attributeReportHandler:(\mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{WTLDeviceReportHandler}} \_Nullable)attributeReportHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00642}00642          eventReportHandler:(\mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{WTLDeviceReportHandler}} \_Nullable)eventReportHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00643}00643                errorHandler:(\mbox{\hyperlink{_w_t_l_base_device_8h_afa0cd905259a1e4838660d0cb47ef6e8}{WTLDeviceErrorHandler}})errorHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00644}00644     subscriptionEstablished:(dispatch\_block\_t \_Nullable)subscriptionEstablishedHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00645}00645     resubscriptionScheduled:(\mbox{\hyperlink{_w_t_l_base_device_8h_a0afbfa6be4e20b42f2ce662deadb8942}{WTLDeviceResubscriptionScheduledHandler}} \_Nullable)resubscriptionScheduledHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00646}00646     WTL\_DEPRECATED("{}Please use "{}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00647}00647                    "{}subscribeWithQueue:params:clusterStateCacheContainer:attributeReportHandler:eventReportHandler:errorHandler:"{}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00648}00648                    "{}subscriptionEstablished:resubscriptionScheduled:"{},}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00649}00649          macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00650}00650 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00651}00651 -\/ (void)readAttributeWithEndpointId:(NSNumber * \_Nullable)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00652}00652                           clusterId:(NSNumber * \_Nullable)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00653}00653                         attributeId:(NSNumber * \_Nullable)attributeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00654}00654                              params:(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLReadParams}} * \_Nullable)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00655}00655                         clientQueue:(dispatch\_queue\_t)clientQueue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00656}00656                          completion:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00657}00657     WTL\_DEPRECATED("{}Please use readAttributesWithEndpointID:clusterID:attributeID:params:queue:completion:"{}, }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00658}00658         macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00659}00659 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00660}00660 -\/ (void)writeAttributeWithEndpointId:(NSNumber *)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00661}00661                            clusterId:(NSNumber *)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00662}00662                          attributeId:(NSNumber *)attributeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00663}00663                                value:(\textcolor{keywordtype}{id})value}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00664}00664                    timedWriteTimeout:(NSNumber * \_Nullable)timeoutMs}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00665}00665                          clientQueue:(dispatch\_queue\_t)clientQueue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00666}00666                           completion:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00667}00667     WTL\_DEPRECATED("{}Please use writeAttributeWithEndpointID:clusterID:attributeID:value:timedWriteTimeout:queue:completion:"{},}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00668}00668          macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00669}00669 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00670}00670 -\/ (void)invokeCommandWithEndpointId:(NSNumber *)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00671}00671                           clusterId:(NSNumber *)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00672}00672                           commandId:(NSNumber *)commandId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00673}00673                       commandFields:(\textcolor{keywordtype}{id})commandFields}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00674}00674                  timedInvokeTimeout:(NSNumber * \_Nullable)timeoutMs}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00675}00675                         clientQueue:(dispatch\_queue\_t)clientQueue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00676}00676                          completion:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00677}00677     WTL\_DEPRECATED("{}Please use invokeCommandWithEndpointID:clusterID:commandID:commandFields:timedInvokeTimeout:queue:completion"{},}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00678}00678          macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00679}00679 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00680}00680 -\/ (void)subscribeAttributeWithEndpointId:(NSNumber * \_Nullable)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00681}00681                                clusterId:(NSNumber * \_Nullable)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00682}00682                              attributeId:(NSNumber * \_Nullable)attributeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00683}00683                              minInterval:(NSNumber *)minInterval}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00684}00684                              maxInterval:(NSNumber *)maxInterval}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00685}00685                                   params:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribeParams}} * \_Nullable)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00686}00686                              clientQueue:(dispatch\_queue\_t)clientQueue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00687}00687                            reportHandler:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})reportHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00688}00688                  subscriptionEstablished:(dispatch\_block\_t \_Nullable)subscriptionEstablishedHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00689}00689     WTL\_DEPRECATED("{}Please use "{}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00690}00690                    "{}subscribeToAttributesWithEndpointID:clusterID:attributeID:params:queue:"{}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00691}00691                    "{}reportHandler:subscriptionEstablished:"{},}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00692}00692          macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00693}00693 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00694}00694 -\/ (void)deregisterReportHandlersWithClientQueue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00695}00695                                      completion:(dispatch\_block\_t)completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00696}00696     WTL\_DEPRECATED("{}Pease use deregisterReportHandlersWithQueue:completion:"{},  macos(13.0, 13.3), watchos(9.1, 9.4),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00697}00697         tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00698}00698 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00699}00699 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00700}00700 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00701}\mbox{\hyperlink{category_w_t_l_attribute_path_07_deprecated_08}{00701}} \textcolor{keyword}{@interface }\mbox{\hyperlink{category_w_t_l_attribute_path_07_deprecated_08}{WTLAttributePath (Deprecated)}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00702}00702 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00703}00703 + (instancetype)attributePathWithEndpointId:(NSNumber *)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00704}00704                                   clusterId:(NSNumber *)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00705}00705                                 attributeId:(NSNumber *)attributeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00706}00706     WTL\_DEPRECATED("{}Please use attributePathWithEndpointID:clusterID:attributeID:"{},  macos(13.0, 13.3),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00707}00707         watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00708}00708 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00709}00709 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00710}00710 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00711}\mbox{\hyperlink{category_w_t_l_event_path_07_deprecated_08}{00711}} \textcolor{keyword}{@interface }\mbox{\hyperlink{category_w_t_l_event_path_07_deprecated_08}{WTLEventPath (Deprecated)}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00712}00712 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00713}00713 + (instancetype)eventPathWithEndpointId:(NSNumber *)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00714}00714                               clusterId:(NSNumber *)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00715}00715                                 eventId:(NSNumber *)eventId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00716}00716     WTL\_DEPRECATED("{}Please use eventPathWithEndpointID:clusterID:eventID:"{},  macos(13.0, 13.3), watchos(9.1, 9.4),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00717}00717         tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00718}00718 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00719}00719 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00720}00720 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00721}\mbox{\hyperlink{category_w_t_l_command_path_07_deprecated_08}{00721}} \textcolor{keyword}{@interface }\mbox{\hyperlink{category_w_t_l_command_path_07_deprecated_08}{WTLCommandPath (Deprecated)}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00722}00722 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00723}00723 + (instancetype)commandPathWithEndpointId:(NSNumber *)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00724}00724                                 clusterId:(NSNumber *)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00725}00725                                 commandId:(NSNumber *)commandId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00726}00726     WTL\_DEPRECATED("{}Please use commandPathWithEndpointID:clusterID:commandID:"{},  macos(13.0, 13.3),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00727}00727         watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00728}00728 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00729}00729 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00730}00730 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00731}\mbox{\hyperlink{category_w_t_l_event_report_07_deprecated_08}{00731}} \textcolor{keyword}{@interface }\mbox{\hyperlink{category_w_t_l_event_report_07_deprecated_08}{WTLEventReport (Deprecated)}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00732}\mbox{\hyperlink{category_w_t_l_event_report_07_deprecated_08_a7787cac653a6cb4ab096d598aa9f65fb}{00732}} \textcolor{keyword}{@property} (nonatomic, readonly, copy) NSNumber * timestamp \mbox{\hyperlink{category_w_t_l_event_report_07_deprecated_08_a7787cac653a6cb4ab096d598aa9f65fb}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00733}00733     \textcolor{stringliteral}{"{}Please use timestampDate and systemUpTime"{}}, macos(13.0, 13.4), watchos(9.1, 9.5), tvos(16.1, 16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00734}00734 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00735}00735 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_base_device_8h_source_l00736}00736 NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

@@ -1,0 +1,5 @@
+var ios_arm64__x86__64_simulator_2_thing_smart_scene_core_kit_8framework_2_headers_2_thing_smart_sce5af5d1308e13d7f2ec008e4e79d5b500 =
+[
+    [ "ThingSmartSceneConditionExtendConfigModel", "interface_thing_smart_scene_condition_extend_config_model.html", "interface_thing_smart_scene_condition_extend_config_model" ],
+    [ "ThingSmartSceneConditionExtendConfigList", "interface_thing_smart_scene_condition_extend_config_list.html", "interface_thing_smart_scene_condition_extend_config_list" ]
+];

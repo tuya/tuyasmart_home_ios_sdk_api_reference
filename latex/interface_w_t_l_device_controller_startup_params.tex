@@ -1,0 +1,380 @@
+\hypertarget{interface_w_t_l_device_controller_startup_params}{}\doxysection{WTLDevice\+Controller\+Startup\+Params Class Reference}
+\label{interface_w_t_l_device_controller_startup_params}\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+
+
+{\ttfamily \#import $<$WTLDevice\+Controller\+Startup\+Params.\+h$>$}
+
+Inheritance diagram for WTLDevice\+Controller\+Startup\+Params\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_w_t_l_device_controller_startup_params}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_ac6308b205875091f5fb7dc2c35fabb69}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_a1fa72e374524947d82fe9dd1f756e4c6}{init\+With\+IPK\+:fabric\+ID\+:noc\+Signer\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_abb432c82850993666f95732bfd920beb}{init\+With\+IPK\+:operational\+Keypair\+:operational\+Certificate\+:intermediate\+Certificate\+:root\+Certificate\+:}}
+\item 
+(NSNumber $\ast$\mbox{\hyperlink{_w_t_l_fabric_info_8h_a24cc1e4082a028658318f9805b5bf0ab}{fabric\+ID}}) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_a874e81700ee598c3c325a018f771e0f7}{API\+\_\+\+AVAILABLE}}
+\item 
+(NSNumber $\ast$\mbox{\hyperlink{_w_t_l_fabric_info_8h_aa847c51e6ff914c7603c882d1845d433}{vendor\+ID}}) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_ad6c7e2cc5be63fbdf09dd9fc84d02352}{API\+\_\+\+AVAILABLE}}
+\item 
+(NSNumber $\ast$\mbox{\hyperlink{_w_t_l_fabric_info_8h_ab5516419187ddb2a199430b277696c2c}{node\+ID}}) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_ac415a32bc5de3077045c921627bcf6f5}{API\+\_\+\+AVAILABLE}}
+\item 
+(id$<$ WTLOperational\+Certificate\+Issuer $>$ operational\+Certificate\+Issuer) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_a15b630c900218300599acba27da9b3d2}{API\+\_\+\+AVAILABLE}}
+\item 
+(dispatch\+\_\+queue\+\_\+t operational\+Certificate\+Issuer\+Queue) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_a58984d89d19fbf7a1600692f6c7dea8a}{API\+\_\+\+AVAILABLE}}
+\item 
+(uint64\+\_\+t fabric\+Id) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_a834542ae7ebaf4a8918bee9582e26b61}{WTL\+\_\+\+DEPRECATED}}
+\item 
+(NSNumber $\ast$vendor\+Id) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_ae746b5d687af66b99023151b2966f19e}{WTL\+\_\+\+DEPRECATED}}
+\item 
+(NSNumber $\ast$node\+Id) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_a050afc79d762e388767c9e0b76d948c4}{WTL\+\_\+\+DEPRECATED}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_a7d1f32445e1464420ba7a142c7852bbd}{init\+With\+Signing\+Keypair\+:fabric\+Id\+:ipk\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_ac918c49d1b3ce5d7a52bc76b9215fb85}{init\+With\+Operational\+Keypair\+:operational\+Certificate\+:intermediate\+Certificate\+:root\+Certificate\+:ipk\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_ac6308b205875091f5fb7dc2c35fabb69}{NS\+\_\+\+UNAVAILABLE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_aa75d891fba5258e2cff929761d40892c}{noc\+Signer}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_a52b882992b9341a44152db3b680181a0}{ipk}}
+\item 
+NSSet$<$ NSNumber $\ast$ $>$ $\ast$\mbox{\hyperlink{_w_t_l_certificate_info_8h_abe6583d6db0352086f282119d0b24c18}{case\+Authenticated\+Tags}} \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_ab0287ff138b23859a77ca8b76d352731}{WTL\+\_\+\+NEWLY\+\_\+\+AVAILABLE}}
+\item 
+\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_a22b6f7edb1e19c2d8f39d63320801648}{root\+Certificate}}
+\item 
+\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_a2a6f2d1c42e480b2a9b55a4164b30931}{intermediate\+Certificate}}
+\item 
+\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_a8a61c3bc6be7fd878d520b3c910fe0ed}{operational\+Certificate}}
+\item 
+id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$ \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_ab852a910d4388bae0d9f32c60ab84860}{operational\+Keypair}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source_l00026}{26}} of file \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source}{WTLDevice\+Controller\+Startup\+Params.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_a874e81700ee598c3c325a018f771e0f7}\label{interface_w_t_l_device_controller_startup_params_a874e81700ee598c3c325a018f771e0f7}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$\mbox{\hyperlink{_w_t_l_fabric_info_8h_a24cc1e4082a028658318f9805b5bf0ab}{fabric\+ID}}) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+Fabric id for the controller. Must be set to a nonzero value. This is scoped by the root public key, which is determined as follows\+:
+
+
+\begin{DoxyItemize}
+\item If a root certificate is provided, it is the public key of the root certificate.
+\item If a root certificate is not provided, the root public key is the public key of the noc\+Signer keypair, since in this case we are not using an intermediate certificate. 
+\end{DoxyItemize}\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_ad6c7e2cc5be63fbdf09dd9fc84d02352}\label{interface_w_t_l_device_controller_startup_params_ad6c7e2cc5be63fbdf09dd9fc84d02352}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$\mbox{\hyperlink{_w_t_l_fabric_info_8h_aa847c51e6ff914c7603c882d1845d433}{vendor\+ID}}) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+Vendor ID (allocated by the Connectivity Standards Alliance) for this controller.
+
+If not nil, must not be the \char`\"{}standard\char`\"{} vendor id (0).
+
+When creating a new fabric\+:
+
+
+\begin{DoxyItemize}
+\item Must not be nil.
+\end{DoxyItemize}
+
+When using an existing fabric\+:
+
+
+\begin{DoxyItemize}
+\item Will override existing value if not nil. Otherwise existing value will be used. 
+\end{DoxyItemize}\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_ac415a32bc5de3077045c921627bcf6f5}\label{interface_w_t_l_device_controller_startup_params_ac415a32bc5de3077045c921627bcf6f5}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$\mbox{\hyperlink{_w_t_l_fabric_info_8h_ab5516419187ddb2a199430b277696c2c}{node\+ID}}) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+Node id for this controller.
+
+If operational\+Certificate is not nil, must be nil. The provided operational certificate will be used as-\/is.
+
+If not nil, must be a valid Matter operational node id.
+
+If operational\+Certificate is nil, node\+ID and operational\+Keypair are used to determine an operational certificate, as follows\+:
+
+
+\begin{DoxyItemize}
+\item When creating a new fabric\+:
+\end{DoxyItemize}
+
+$\ast$$\ast$ node\+ID is allowed to be nil to indicate that a random node id should be generated.
+
+
+\begin{DoxyItemize}
+\item When using an existing fabric\+:
+\end{DoxyItemize}
+
+$\ast$$\ast$ node\+ID is allowed to be nil to indicate that the existing operational node id should be used. The existing operational keys will also be used, unless operational\+Keypair is provided. The existing case\+Authenticated\+Tags will be used.
+
+$\ast$$\ast$ If node\+ID is not nil, a new operational certificate will be generated for the provided node id (even if that matches the existing node id), using either the operational\+Keypair if that is provided or a new randomly generated operational key, and using the provided case\+Authenticated\+Tags. \mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_a15b630c900218300599acba27da9b3d2}\label{interface_w_t_l_device_controller_startup_params_a15b630c900218300599acba27da9b3d2}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily -\/ (id$<$ WTLOperational\+Certificate\+Issuer $>$ operational\+Certificate\+Issuer) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+The certificate issuer delegate to use for issuing operational certificates when commmissioning devices. Allowed to be nil if this controller either does not issue operational certificates at all or internally generates the certificates to be issued. In the latter case, noc\+Signer must not be nil. \mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_a58984d89d19fbf7a1600692f6c7dea8a}\label{interface_w_t_l_device_controller_startup_params_a58984d89d19fbf7a1600692f6c7dea8a}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily -\/ (dispatch\+\_\+queue\+\_\+t operational\+Certificate\+Issuer\+Queue) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+The dispatch queue on which operational\+Certificate\+Issuer should be called. Allowed to be nil if and only if operational\+Certificate\+Issuer is nil. \mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_a1fa72e374524947d82fe9dd1f756e4c6}\label{interface_w_t_l_device_controller_startup_params_a1fa72e374524947d82fe9dd1f756e4c6}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!initWithIPK:fabricID:nocSigner:@{initWithIPK:fabricID:nocSigner:}}
+\index{initWithIPK:fabricID:nocSigner:@{initWithIPK:fabricID:nocSigner:}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{initWithIPK:fabricID:nocSigner:}{initWithIPK:fabricID:nocSigner:}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+IPK\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{ipk }\item[{fabric\+ID\+:(NSNumber $\ast$)}]{fabric\+ID }\item[{noc\+Signer\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Prepare to initialize a controller given a keypair to use for signing operational certificates.
+
+A controller created from \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params}{WTLDevice\+Controller\+Startup\+Params}} initialized with this method will be able to issue operational certificates to devices it commissions, using noc\+Signer to sign them.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ipk} & The Identity Protection Key, must be 16 bytes in length \\
+\hline
+{\em fabric\+ID} & The fabric identifier, must be non-\/zero. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_abb432c82850993666f95732bfd920beb}\label{interface_w_t_l_device_controller_startup_params_abb432c82850993666f95732bfd920beb}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!initWithIPK:operationalKeypair:operationalCertificate:intermediateCertificate:rootCertificate:@{initWithIPK:operationalKeypair:operationalCertificate:intermediateCertificate:rootCertificate:}}
+\index{initWithIPK:operationalKeypair:operationalCertificate:intermediateCertificate:rootCertificate:@{initWithIPK:operationalKeypair:operationalCertificate:intermediateCertificate:rootCertificate:}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{initWithIPK:operationalKeypair:operationalCertificate:intermediateCertificate:rootCertificate:}{initWithIPK:operationalKeypair:operationalCertificate:intermediateCertificate:rootCertificate:}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+IPK\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{ipk }\item[{operational\+Keypair\+:(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{operational\+Keypair }\item[{operational\+Certificate\+:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}})}]{operational\+Certificate }\item[{intermediate\+Certificate\+:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \+\_\+\+Nullable)}]{intermediate\+Certificate }\item[{root\+Certificate\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Prepare to initialize a controller that is not able to sign operational certificates itself, and therefore needs to be provided with a complete operational certificate chain. This initialization method should be used when none of the certificate-\/signing private keys are available locally.
+
+A controller created from \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params}{WTLDevice\+Controller\+Startup\+Params}} initialized with this method will not be able to commission devices unless operational\+Certificate\+Issuer and operational\+Certificate\+Issuer\+Queue are set.
+
+The fabric id and node id to use for the controller will be derived from the provided operational\+Certificate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ipk} & The Identity Protection Key, must be 16 bytes in length \\
+\hline
+{\em intermediate\+Certificate} & may be nil if operational\+Certificate is directly signed by root\+Certificate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_ac918c49d1b3ce5d7a52bc76b9215fb85}\label{interface_w_t_l_device_controller_startup_params_ac918c49d1b3ce5d7a52bc76b9215fb85}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!initWithOperationalKeypair:operationalCertificate:intermediateCertificate:rootCertificate:ipk:@{initWithOperationalKeypair:operationalCertificate:intermediateCertificate:rootCertificate:ipk:}}
+\index{initWithOperationalKeypair:operationalCertificate:intermediateCertificate:rootCertificate:ipk:@{initWithOperationalKeypair:operationalCertificate:intermediateCertificate:rootCertificate:ipk:}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{initWithOperationalKeypair:operationalCertificate:intermediateCertificate:rootCertificate:ipk:}{initWithOperationalKeypair:operationalCertificate:intermediateCertificate:rootCertificate:ipk:}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Operational\+Keypair\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{operational\+Keypair }\item[{operational\+Certificate\+:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}})}]{operational\+Certificate }\item[{intermediate\+Certificate\+:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \+\_\+\+Nullable)}]{intermediate\+Certificate }\item[{root\+Certificate\+:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}})}]{root\+Certificate }\item[{ipk\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_abb432c82850993666f95732bfd920beb}{init\+With\+IPK\+:operational\+Keypair\+:operational\+Certificate\+:intermediate\+Certificate\+:root\+Certificate\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_startup_params_07_deprecated_08_ac918c49d1b3ce5d7a52bc76b9215fb85}{WTLDevice\+Controller\+Startup\+Params(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_a7d1f32445e1464420ba7a142c7852bbd}\label{interface_w_t_l_device_controller_startup_params_a7d1f32445e1464420ba7a142c7852bbd}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!initWithSigningKeypair:fabricId:ipk:@{initWithSigningKeypair:fabricId:ipk:}}
+\index{initWithSigningKeypair:fabricId:ipk:@{initWithSigningKeypair:fabricId:ipk:}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{initWithSigningKeypair:fabricId:ipk:}{initWithSigningKeypair:fabricId:ipk:}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Signing\+Keypair\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{noc\+Signer }\item[{fabric\+Id\+:(uint64\+\_\+t)}]{fabric\+Id }\item[{ipk\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params_a1fa72e374524947d82fe9dd1f756e4c6}{init\+With\+IPK\+:fabric\+ID\+:noc\+Signer\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_startup_params_07_deprecated_08_a7d1f32445e1464420ba7a142c7852bbd}{WTLDevice\+Controller\+Startup\+Params(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_ac6308b205875091f5fb7dc2c35fabb69}\label{interface_w_t_l_device_controller_startup_params_ac6308b205875091f5fb7dc2c35fabb69}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_ac6308b205875091f5fb7dc2c35fabb69}\label{interface_w_t_l_device_controller_startup_params_ac6308b205875091f5fb7dc2c35fabb69}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_a834542ae7ebaf4a8918bee9582e26b61}\label{interface_w_t_l_device_controller_startup_params_a834542ae7ebaf4a8918bee9582e26b61}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!WTL\_DEPRECATED@{WTL\_DEPRECATED}}
+\index{WTL\_DEPRECATED@{WTL\_DEPRECATED}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED}{WTL\_DEPRECATED}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (uint64\+\_\+t fabric\+Id) WTL\+\_\+\+DEPRECATED \begin{DoxyParamCaption}\item[{(\char`\"{}Please use \mbox{\hyperlink{_w_t_l_fabric_info_8h_a24cc1e4082a028658318f9805b5bf0ab}{fabric\+ID}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_startup_params_07_deprecated_08_a834542ae7ebaf4a8918bee9582e26b61}{WTLDevice\+Controller\+Startup\+Params(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_a050afc79d762e388767c9e0b76d948c4}\label{interface_w_t_l_device_controller_startup_params_a050afc79d762e388767c9e0b76d948c4}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!WTL\_DEPRECATED@{WTL\_DEPRECATED}}
+\index{WTL\_DEPRECATED@{WTL\_DEPRECATED}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED}{WTL\_DEPRECATED}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$node\+Id) WTL\+\_\+\+DEPRECATED \begin{DoxyParamCaption}\item[{(\char`\"{}Please use \mbox{\hyperlink{_w_t_l_fabric_info_8h_ab5516419187ddb2a199430b277696c2c}{node\+ID}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_startup_params_07_deprecated_08_a050afc79d762e388767c9e0b76d948c4}{WTLDevice\+Controller\+Startup\+Params(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_ae746b5d687af66b99023151b2966f19e}\label{interface_w_t_l_device_controller_startup_params_ae746b5d687af66b99023151b2966f19e}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!WTL\_DEPRECATED@{WTL\_DEPRECATED}}
+\index{WTL\_DEPRECATED@{WTL\_DEPRECATED}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED}{WTL\_DEPRECATED}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$vendor\+Id) WTL\+\_\+\+DEPRECATED \begin{DoxyParamCaption}\item[{(\char`\"{}Please use \mbox{\hyperlink{_w_t_l_fabric_info_8h_aa847c51e6ff914c7603c882d1845d433}{vendor\+ID}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_startup_params_07_deprecated_08_ae746b5d687af66b99023151b2966f19e}{WTLDevice\+Controller\+Startup\+Params(\+Deprecated)}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_a2a6f2d1c42e480b2a9b55a4164b30931}\label{interface_w_t_l_device_controller_startup_params_a2a6f2d1c42e480b2a9b55a4164b30931}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!intermediateCertificate@{intermediateCertificate}}
+\index{intermediateCertificate@{intermediateCertificate}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{intermediateCertificate}{intermediateCertificate}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}}) intermediate\+Certificate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Intermediate certificate, in X.\+509 DER form, to use.
+
+If not nil, root\+Certificate must not be nil, and the intermediate certificate must be signed by root\+Certificate.
+
+If not nil, and noc\+Signer is not nil, the public key of this certificate must match the public key of noc\+Signer.
+
+When creating a new fabric\+:
+
+
+\begin{DoxyItemize}
+\item Must not be nil if an intermediate CA is being used.
+\item Must be nil if an intermediate CA is not being used.
+\end{DoxyItemize}
+
+When using an existing fabric\+:
+
+
+\begin{DoxyItemize}
+\item If not nil, will be used as the intermediate certificate for issuing operational certificates.
+\item If nil\+:
+\begin{DoxyItemize}
+\item If noc\+Signer is not nil, there is an existing intermediate certificate, and it matches the noc\+Signer public key, the existing intermediate certificate will be used.
+\item Otherwise the fabric will not use an intermediate certificate. This allows switching from using an intermediate CA to not using one. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source_l00222}{222}} of file \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source}{WTLDevice\+Controller\+Startup\+Params.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_a52b882992b9341a44152db3b680181a0}\label{interface_w_t_l_device_controller_startup_params_a52b882992b9341a44152db3b680181a0}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!ipk@{ipk}}
+\index{ipk@{ipk}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{ipk}{ipk}}
+{\footnotesize\ttfamily -\/ (NSData$\ast$) ipk\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+IPK to use for the controller\textquotesingle{}s fabric. Allowed to change from the last time a controller was started on this fabric if a new IPK has been distributed to all the devices the controller wants to interact with. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source_l00098}{98}} of file \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source}{WTLDevice\+Controller\+Startup\+Params.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_aa75d891fba5258e2cff929761d40892c}\label{interface_w_t_l_device_controller_startup_params_aa75d891fba5258e2cff929761d40892c}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!nocSigner@{nocSigner}}
+\index{nocSigner@{nocSigner}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{nocSigner}{nocSigner}}
+{\footnotesize\ttfamily -\/ (id$<$\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}$>$) noc\+Signer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Keypair used to sign operational certificates. This is the root CA keypair if not using an intermediate CA, the intermediate CA\textquotesingle{}s keypair otherwise.
+
+Allowed to be nil if this controller will not be issuing internally-\/generated operational certificates. In that case, the \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params}{WTLDevice\+Controller\+Startup\+Params}} object must be initialized using init\+With\+IPK\+:operational\+Keypair\+:operational\+Certificate\+:intermediate\+Certificate\+:root\+Certificate\+: (to provide the operational credentials for t2he controller itself). 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source_l00078}{78}} of file \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source}{WTLDevice\+Controller\+Startup\+Params.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_a8a61c3bc6be7fd878d520b3c910fe0ed}\label{interface_w_t_l_device_controller_startup_params_a8a61c3bc6be7fd878d520b3c910fe0ed}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!operationalCertificate@{operationalCertificate}}
+\index{operationalCertificate@{operationalCertificate}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{operationalCertificate}{operationalCertificate}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}}) operational\+Certificate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Operational certificate, in X.\+509 DER form, to use.
+
+If not nil, will be used as the operational certificate. In this case operational\+Keypair must not be nil.
+
+If nil, an operational certificate will be determined as described in the documentation for node\+ID. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source_l00233}{233}} of file \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source}{WTLDevice\+Controller\+Startup\+Params.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_ab852a910d4388bae0d9f32c60ab84860}\label{interface_w_t_l_device_controller_startup_params_ab852a910d4388bae0d9f32c60ab84860}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!operationalKeypair@{operationalKeypair}}
+\index{operationalKeypair@{operationalKeypair}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{operationalKeypair}{operationalKeypair}}
+{\footnotesize\ttfamily -\/ (id$<$\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}$>$) operational\+Keypair\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Operational keypair to use. If operational\+Certificate is not nil, the public key must match operational\+Certificate.
+
+If not nil, and if operational\+Certificate is nil, a new operational certificate will be generated for the given operational\+Keypair. The node id for that certificate will be determined as described in the documentation for node\+ID. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source_l00244}{244}} of file \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source}{WTLDevice\+Controller\+Startup\+Params.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_a22b6f7edb1e19c2d8f39d63320801648}\label{interface_w_t_l_device_controller_startup_params_a22b6f7edb1e19c2d8f39d63320801648}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!rootCertificate@{rootCertificate}}
+\index{rootCertificate@{rootCertificate}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{rootCertificate}{rootCertificate}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}}) root\+Certificate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Root certificate, in X.\+509 DER form, to use.
+
+Must not be nil if an intermediate CA is being used, to allow determination of the root public key.
+
+If not nil, and if an intermediate CA is not being used, the public key of this certificate must match the public key of noc\+Signer, if noc\+Signer is not nil.
+
+When creating a new fabric\+:
+
+
+\begin{DoxyItemize}
+\item May be nil if noc\+Signer is not nil and an intermediate CA is not being used. In that case the noc\+Signer keypair, which is the keypair for the root certificate, will be used to generate and sign a root certificate, with a random issuer id. In this case, the fabric\+ID will be included in the root certificate\textquotesingle{}s subject DN.
+\end{DoxyItemize}
+
+When using an existing fabric\+:
+
+
+\begin{DoxyItemize}
+\item May be nil if noc\+Signer is not nil and an intermediate CA is not being used. In that case, the existing root certificate for the fabric will be used.
+\item If not nil must satisfy the following properties\+:
+
+1) The public key must match the public key of the existing root certificate. 2) The subject DN must match the subject DN of the existing root certificate. 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source_l00190}{190}} of file \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source}{WTLDevice\+Controller\+Startup\+Params.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_startup_params_ab0287ff138b23859a77ca8b76d352731}\label{interface_w_t_l_device_controller_startup_params_ab0287ff138b23859a77ca8b76d352731}} 
+\index{WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}!WTL\_NEWLY\_AVAILABLE@{WTL\_NEWLY\_AVAILABLE}}
+\index{WTL\_NEWLY\_AVAILABLE@{WTL\_NEWLY\_AVAILABLE}!WTLDeviceControllerStartupParams@{WTLDeviceControllerStartupParams}}
+\doxysubsubsection{\texorpdfstring{WTL\_NEWLY\_AVAILABLE}{WTL\_NEWLY\_AVAILABLE}}
+{\footnotesize\ttfamily -\/ (NSSet$<$NSNumber $\ast$$>$$\ast$ \mbox{\hyperlink{_w_t_l_certificate_info_8h_abe6583d6db0352086f282119d0b24c18}{case\+Authenticated\+Tags}}) WTL\+\_\+\+NEWLY\+\_\+\+AVAILABLE\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+CASE authenticated tags to use for this controller\textquotesingle{}s operational certificate.
+
+Only allowed to be not nil if node\+ID is not nil. In particular, if operational\+Certificate is not nil, must be nil. The provided operational certificate will be used as-\/is.
+
+If not nil, must contain at most 3 numbers, which are expected to be 32-\/bit unsigned Case Authenticated Tag values. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source_l00157}{157}} of file \mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h_source}{WTLDevice\+Controller\+Startup\+Params.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_device_controller_startup_params_8h}{WTLDevice\+Controller\+Startup\+Params.\+h}}\end{DoxyCompactItemize}

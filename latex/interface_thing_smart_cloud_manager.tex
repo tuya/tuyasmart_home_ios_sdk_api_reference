@@ -1,0 +1,1616 @@
+\hypertarget{interface_thing_smart_cloud_manager}{}\doxysection{Thing\+Smart\+Cloud\+Manager Class Reference}
+\label{interface_thing_smart_cloud_manager}\index{ThingSmartCloudManager@{ThingSmartCloudManager}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Cloud\+Manager.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Cloud\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_cloud_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a42127d4f220c42f2ffd3e084d116fd80}{init\+With\+Device\+Id\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ab2342adfefea27369a2578cd2b850f5c}{config\+Cloud\+Data\+Tags\+:}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_acacf8c4f5f71e0d980f0bf97867d2819}{config\+Cloud\+Data\+Tags\+V2\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a4d9b90c6cabbaf1be78e27052e05c34f}{fetch\+Cloud\+Storage\+State\+Completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a2e462c9a5d7011b75a6e8b36e317df80}{load\+Cloud\+Data\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a9d04c247b8ed5187863baa3231769252}{re\+Load\+Cloud\+Days\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a71bf16c08ca078f5fa4baa1cab9789b6}{enable\+AIDetect\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a275e42f1557a9e04ce30dc2c61952c91}{query\+AIDetect\+Config\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a3954fde522a7ff9e62c307cfd1907ee5}{enable\+AIDetect\+Event\+Type\+:enable\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a2f4c3bcd653fa9c39b9d7a98f4b25cd9}{time\+Events\+With\+Cloud\+Day\+:offset\+:limit\+:ai\+Codes\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a8ce5d99ea2f2e49800d77d8e0e9ec57e}{time\+Events\+With\+Cloud\+Day\+:offset\+:limit\+:success\+:failure\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_af648efefcae303a7293066659ce80fdb}{get\+Cloud\+Urls\+With\+Start\+Time\+:end\+Time\+:is\+Event\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a6909147960dfa4ae57766b784dda39c3}{get\+Cloud\+Urls\+With\+Start\+Time\+:end\+Time\+:is\+Event\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ac512e459c10ff2036072060622d8fef2}{time\+Line\+With\+Cloud\+Day\+:success\+:failure\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_abe0703bae00723405453db9b9a747d32}{play\+Cloud\+Video\+With\+Start\+Time\+:end\+Time\+:is\+Event\+:on\+Response\+:on\+Finished\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_adb8145afef02c39754971c6876373952}{pause\+Play\+Cloud\+Video}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a60f56504ca3592caf9022ba33b34b8bb}{resume\+Play\+Cloud\+Video}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ab175959a9b16bf867707932f28f24c70}{stop\+Play\+Cloud\+Video}}
+\item 
+(UIView$<$ \mbox{\hyperlink{protocol_thing_smart_video_view_type-p}{Thing\+Smart\+Video\+View\+Type}} $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ac48fc09379034a175330fb8facbef0da}{video\+View}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_aa30b9465af7b151d7dae990a1f22d8cb}{enable\+Mute\+:success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_af7d5b6e6962de09a2bf27fe2e64f688d}{is\+Muted}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a61137bf896eaa99d7b60957749440182}{start\+Record}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_aee0b3f8dab6e00d9a824651b1a8c4141}{start\+Record\+At\+Path\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_af6bab1a6f5a17e5dc4fd90040dc63a3a}{stop\+Record}}
+\item 
+(UIImage $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a27dcf870019a0a20c1382425c7676f9a}{snap\+Shoot}}
+\item 
+(UIImage $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_acf40d3c8053c287335592676c99984dd}{snap\+Shoot\+At\+Path\+:thumbnil\+Path\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_abaa4cdb1cb594a34cb21d52616b4b513}{destroy}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a7220ea2a452b37f30c4bc7d84953167e}{download\+Cloud\+Video\+With\+Range\+:file\+Path\+:success\+:progress\+:failure\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a82b182bd7dd9ebe575933ff764a1bf80}{pause\+Download\+Cloud\+Video}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_abf7381028e843c8d9dcf11ab9a80d96c}{resume\+Download\+Cloud\+Video\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a950cd34fcd07e17404f0db81bbf1aeb7}{cancel\+Download\+Cloud\+Video}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a4e6f741cc5a6b1ebd8582849ef6282a6}{delete\+Cloud\+Video\+With\+Range\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a3c5b83015ad239f0606823adfe5eb941}{delete\+Cloud\+Video\+With\+Dev\+Id\+:time\+Range\+:ext\+Params\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a9b2dad620efa388f428b7832b19f60ef}{delete\+All\+Day\+Cloud\+Video\+With\+Range\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ad5f5e2f8ee3cb3c665be9ec3306f338e}{delete\+All\+Day\+Cloud\+Video\+With\+Dev\+Id\+:time\+Range\+:ext\+Params\+:success\+:failure\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a349c100c518c6778206e2a7880359827}{set\+Cloud\+Video\+Play\+Speed\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ae4ca7ee4298ff8eeaf38f50d2301b7f5}{set\+Video\+Direction\+:horizontal\+Mirror\+:}}
+\begin{DoxyCompactList}\small\item\em Set the video rotation. \end{DoxyCompactList}\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a911ca0cf2a191d392ac3d0a3ca9e067b}{set\+Video\+Direction\+:mirror\+:}}
+\begin{DoxyCompactList}\small\item\em Set the video rotation and mirror. \end{DoxyCompactList}\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a818f975f2afa6feb42d1430cc4918753}{play\+Video\+Message\+With\+Url\+:start\+Time\+:encrypt\+Key\+:on\+Response\+:on\+Finish\+:}}
+\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}} pause\+Play\+:\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a982ea90e84d6fef5001582d8c66829c5}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}} resume\+Play\+:\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_af5f3388f79ef9240f5882bf6ebb5a029}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}} stop\+Play\+:\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a0bf764ffeeb62de2783abe9e9f57a594}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a03a5d86dc02af9e8a7461bbe73901f48}{play\+Audio\+Message\+With\+Url\+:start\+Time\+:encrypt\+Key\+:on\+Response\+:on\+Finish\+:}}
+\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}} pause\+Play\+:\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a982ea90e84d6fef5001582d8c66829c5}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}} resume\+Play\+:\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_af5f3388f79ef9240f5882bf6ebb5a029}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}} stop\+Play\+:\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a0bf764ffeeb62de2783abe9e9f57a594}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a42127d4f220c42f2ffd3e084d116fd80}{init\+With\+Device\+Id\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ab2342adfefea27369a2578cd2b850f5c}{config\+Cloud\+Data\+Tags\+:}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_acacf8c4f5f71e0d980f0bf97867d2819}{config\+Cloud\+Data\+Tags\+V2\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a4d9b90c6cabbaf1be78e27052e05c34f}{fetch\+Cloud\+Storage\+State\+Completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a2e462c9a5d7011b75a6e8b36e317df80}{load\+Cloud\+Data\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a9d04c247b8ed5187863baa3231769252}{re\+Load\+Cloud\+Days\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a71bf16c08ca078f5fa4baa1cab9789b6}{enable\+AIDetect\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a275e42f1557a9e04ce30dc2c61952c91}{query\+AIDetect\+Config\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a3954fde522a7ff9e62c307cfd1907ee5}{enable\+AIDetect\+Event\+Type\+:enable\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a2f4c3bcd653fa9c39b9d7a98f4b25cd9}{time\+Events\+With\+Cloud\+Day\+:offset\+:limit\+:ai\+Codes\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a8ce5d99ea2f2e49800d77d8e0e9ec57e}{time\+Events\+With\+Cloud\+Day\+:offset\+:limit\+:success\+:failure\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_af648efefcae303a7293066659ce80fdb}{get\+Cloud\+Urls\+With\+Start\+Time\+:end\+Time\+:is\+Event\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a6909147960dfa4ae57766b784dda39c3}{get\+Cloud\+Urls\+With\+Start\+Time\+:end\+Time\+:is\+Event\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ac512e459c10ff2036072060622d8fef2}{time\+Line\+With\+Cloud\+Day\+:success\+:failure\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_abe0703bae00723405453db9b9a747d32}{play\+Cloud\+Video\+With\+Start\+Time\+:end\+Time\+:is\+Event\+:on\+Response\+:on\+Finished\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_adb8145afef02c39754971c6876373952}{pause\+Play\+Cloud\+Video}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a60f56504ca3592caf9022ba33b34b8bb}{resume\+Play\+Cloud\+Video}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ab175959a9b16bf867707932f28f24c70}{stop\+Play\+Cloud\+Video}}
+\item 
+(UIView$<$ \mbox{\hyperlink{protocol_thing_smart_video_view_type-p}{Thing\+Smart\+Video\+View\+Type}} $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ac48fc09379034a175330fb8facbef0da}{video\+View}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_aa30b9465af7b151d7dae990a1f22d8cb}{enable\+Mute\+:success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_af7d5b6e6962de09a2bf27fe2e64f688d}{is\+Muted}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a61137bf896eaa99d7b60957749440182}{start\+Record}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_aee0b3f8dab6e00d9a824651b1a8c4141}{start\+Record\+At\+Path\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_af6bab1a6f5a17e5dc4fd90040dc63a3a}{stop\+Record}}
+\item 
+(UIImage $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a27dcf870019a0a20c1382425c7676f9a}{snap\+Shoot}}
+\item 
+(UIImage $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_acf40d3c8053c287335592676c99984dd}{snap\+Shoot\+At\+Path\+:thumbnil\+Path\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_abaa4cdb1cb594a34cb21d52616b4b513}{destroy}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a7220ea2a452b37f30c4bc7d84953167e}{download\+Cloud\+Video\+With\+Range\+:file\+Path\+:success\+:progress\+:failure\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a82b182bd7dd9ebe575933ff764a1bf80}{pause\+Download\+Cloud\+Video}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_abf7381028e843c8d9dcf11ab9a80d96c}{resume\+Download\+Cloud\+Video\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a950cd34fcd07e17404f0db81bbf1aeb7}{cancel\+Download\+Cloud\+Video}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a4e6f741cc5a6b1ebd8582849ef6282a6}{delete\+Cloud\+Video\+With\+Range\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a3c5b83015ad239f0606823adfe5eb941}{delete\+Cloud\+Video\+With\+Dev\+Id\+:time\+Range\+:ext\+Params\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a9b2dad620efa388f428b7832b19f60ef}{delete\+All\+Day\+Cloud\+Video\+With\+Range\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ad5f5e2f8ee3cb3c665be9ec3306f338e}{delete\+All\+Day\+Cloud\+Video\+With\+Dev\+Id\+:time\+Range\+:ext\+Params\+:success\+:failure\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a349c100c518c6778206e2a7880359827}{set\+Cloud\+Video\+Play\+Speed\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ae4ca7ee4298ff8eeaf38f50d2301b7f5}{set\+Video\+Direction\+:horizontal\+Mirror\+:}}
+\begin{DoxyCompactList}\small\item\em Set the video rotation. \end{DoxyCompactList}\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a911ca0cf2a191d392ac3d0a3ca9e067b}{set\+Video\+Direction\+:mirror\+:}}
+\begin{DoxyCompactList}\small\item\em Set the video rotation and mirror. \end{DoxyCompactList}\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a818f975f2afa6feb42d1430cc4918753}{play\+Video\+Message\+With\+Url\+:start\+Time\+:encrypt\+Key\+:on\+Response\+:on\+Finish\+:}}
+\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}} pause\+Play\+:\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a982ea90e84d6fef5001582d8c66829c5}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}} resume\+Play\+:\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_af5f3388f79ef9240f5882bf6ebb5a029}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}} stop\+Play\+:\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a0bf764ffeeb62de2783abe9e9f57a594}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a03a5d86dc02af9e8a7461bbe73901f48}{play\+Audio\+Message\+With\+Url\+:start\+Time\+:encrypt\+Key\+:on\+Response\+:on\+Finish\+:}}
+\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}} pause\+Play\+:\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a982ea90e84d6fef5001582d8c66829c5}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}} resume\+Play\+:\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_af5f3388f79ef9240f5882bf6ebb5a029}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}} stop\+Play\+:\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a0bf764ffeeb62de2783abe9e9f57a594}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(BOOL) + \mbox{\hyperlink{interface_thing_smart_cloud_manager_acd387e1db231cd29bd0c5d878beec998}{is\+Support\+Cloud\+Storage\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_cloud_manager_acab6ad64cf3187f931669e8adec602b8}{fetch\+Secret\+Key\+With\+Dev\+Id\+:completion\+:}}
+\item 
+(BOOL) + \mbox{\hyperlink{interface_thing_smart_cloud_manager_acd387e1db231cd29bd0c5d878beec998}{is\+Support\+Cloud\+Storage\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_cloud_manager_acab6ad64cf3187f931669e8adec602b8}{fetch\+Secret\+Key\+With\+Dev\+Id\+:completion\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_cloud_manager_af56c768a6fc909ab50f17a2c1cff06ca}{dev\+Id}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_smart_cloud_manager_ab54f08dd19365fd480ed468b92686852}{auto\+Render}}
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_cloud_day_model}{Thing\+Smart\+Cloud\+Day\+Model}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ab433fccb5c33c954691d8467a7cd66ff}{cloud\+Days}}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_smart_cloud_manager_delegate-p}{Thing\+Smart\+Cloud\+Manager\+Delegate}} $>$ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a4d1a582847b5ae10443ba84e27331ac0}{delegate}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_cloud_manager_a4fd876a2f6eefade883af3b7fa92386f}{encrypt\+Key}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_cloud_manager_ac8cd8568838f7a0321d6ea33e14b65ef}{auth\+Json}}
+\item 
+NSTime\+Zone $\ast$ \mbox{\hyperlink{interface_thing_smart_cloud_manager_aab845bd4a17cb71f02d2ba8a0bb54250}{time\+Zone}}
+\item 
+CGSize \mbox{\hyperlink{interface_thing_smart_cloud_manager_a474ca86b1522533e09f74db86506c615}{video\+Stretch\+Size}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_smart_cloud_manager_a992f9608cc54661a5a23ed57b9b01d52}{enable\+Encrypted\+Image}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source_l00044}{44}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source}{Thing\+Smart\+Cloud\+Manager.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a0bf764ffeeb62de2783abe9e9f57a594}\label{interface_thing_smart_cloud_manager_a0bf764ffeeb62de2783abe9e9f57a594}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [1/12]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}}) stop\+Play\+: \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} stop play audio \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 停止播放音频 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_af5f3388f79ef9240f5882bf6ebb5a029}\label{interface_thing_smart_cloud_manager_af5f3388f79ef9240f5882bf6ebb5a029}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [2/12]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}}) resume\+Play\+: \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} resume play audio \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 恢复播放音频 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a982ea90e84d6fef5001582d8c66829c5}\label{interface_thing_smart_cloud_manager_a982ea90e84d6fef5001582d8c66829c5}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [3/12]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}}) pause\+Play\+: \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} pause play audio \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 暂停播放音频 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a0bf764ffeeb62de2783abe9e9f57a594}\label{interface_thing_smart_cloud_manager_a0bf764ffeeb62de2783abe9e9f57a594}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [4/12]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}}) stop\+Play\+: \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} stop play video \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 停止播放视频 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_af5f3388f79ef9240f5882bf6ebb5a029}\label{interface_thing_smart_cloud_manager_af5f3388f79ef9240f5882bf6ebb5a029}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [5/12]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}}) resume\+Play\+: \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} resume play video \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 恢复播放视频 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a982ea90e84d6fef5001582d8c66829c5}\label{interface_thing_smart_cloud_manager_a982ea90e84d6fef5001582d8c66829c5}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [6/12]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}}) pause\+Play\+: \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} pause play video \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 暂停播放视频 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_af5f3388f79ef9240f5882bf6ebb5a029}\label{interface_thing_smart_cloud_manager_af5f3388f79ef9240f5882bf6ebb5a029}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [7/12]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}}) resume\+Play\+: \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} resume play audio \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 恢复播放音频 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a982ea90e84d6fef5001582d8c66829c5}\label{interface_thing_smart_cloud_manager_a982ea90e84d6fef5001582d8c66829c5}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [8/12]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}}) pause\+Play\+: \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} pause play audio \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 暂停播放音频 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a0bf764ffeeb62de2783abe9e9f57a594}\label{interface_thing_smart_cloud_manager_a0bf764ffeeb62de2783abe9e9f57a594}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [9/12]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}}) stop\+Play\+: \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} stop play audio \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 停止播放音频 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a0bf764ffeeb62de2783abe9e9f57a594}\label{interface_thing_smart_cloud_manager_a0bf764ffeeb62de2783abe9e9f57a594}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [10/12]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}}) stop\+Play\+: \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} stop play video \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 停止播放视频 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a982ea90e84d6fef5001582d8c66829c5}\label{interface_thing_smart_cloud_manager_a982ea90e84d6fef5001582d8c66829c5}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [11/12]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}}) pause\+Play\+: \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} pause play video \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 暂停播放视频 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_af5f3388f79ef9240f5882bf6ebb5a029}\label{interface_thing_smart_cloud_manager_af5f3388f79ef9240f5882bf6ebb5a029}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [12/12]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_camera_message_media_player}{Thing\+Smart\+Camera\+Message\+Media\+Player}}) resume\+Play\+: \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} resume play video \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 恢复播放视频 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a950cd34fcd07e17404f0db81bbf1aeb7}\label{interface_thing_smart_cloud_manager_a950cd34fcd07e17404f0db81bbf1aeb7}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!cancelDownloadCloudVideo@{cancelDownloadCloudVideo}}
+\index{cancelDownloadCloudVideo@{cancelDownloadCloudVideo}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{cancelDownloadCloudVideo}{cancelDownloadCloudVideo}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) cancel\+Download\+Cloud\+Video \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} cancel cloud video download task \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 取消云存储视频下载 \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_a950cd34fcd07e17404f0db81bbf1aeb7}\label{interface_thing_smart_cloud_manager_a950cd34fcd07e17404f0db81bbf1aeb7}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!cancelDownloadCloudVideo@{cancelDownloadCloudVideo}}
+\index{cancelDownloadCloudVideo@{cancelDownloadCloudVideo}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{cancelDownloadCloudVideo}{cancelDownloadCloudVideo}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) cancel\+Download\+Cloud\+Video \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} cancel cloud video download task \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 取消云存储视频下载 \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_ab2342adfefea27369a2578cd2b850f5c}\label{interface_thing_smart_cloud_manager_ab2342adfefea27369a2578cd2b850f5c}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!configCloudDataTags:@{configCloudDataTags:}}
+\index{configCloudDataTags:@{configCloudDataTags:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{configCloudDataTags:}{configCloudDataTags:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) config\+Cloud\+Data\+Tags\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{json\+Cloud\+Data\+Tags }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} config cloud data tags. if you want reqeust cloud data for service api by yourself instead of use \char`\"{}load\+Cloud\+Data\+:\char`\"{}, you shoud call this method before play cloud video. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 配置云端数据标签。如果您想要自己调用api代替使用“load\+Cloud\+Data”请求云端数据，您应该再播放云端视频之前调用此方法。 \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Cloud\+Data\+Tags} & \mbox{[}$^\wedge$en\mbox{]}cloud data tags\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}云数据标签\mbox{[}\$zh\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ab2342adfefea27369a2578cd2b850f5c}\label{interface_thing_smart_cloud_manager_ab2342adfefea27369a2578cd2b850f5c}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!configCloudDataTags:@{configCloudDataTags:}}
+\index{configCloudDataTags:@{configCloudDataTags:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{configCloudDataTags:}{configCloudDataTags:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) config\+Cloud\+Data\+Tags\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{json\+Cloud\+Data\+Tags }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} config cloud data tags. if you want reqeust cloud data for service api by yourself instead of use \char`\"{}load\+Cloud\+Data\+:\char`\"{}, you shoud call this method before play cloud video. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 配置云端数据标签。如果您想要自己调用api代替使用“load\+Cloud\+Data”请求云端数据，您应该再播放云端视频之前调用此方法。 \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Cloud\+Data\+Tags} & \mbox{[}$^\wedge$en\mbox{]}cloud data tags\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}云数据标签\mbox{[}\$zh\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_acacf8c4f5f71e0d980f0bf97867d2819}\label{interface_thing_smart_cloud_manager_acacf8c4f5f71e0d980f0bf97867d2819}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!configCloudDataTagsV2:@{configCloudDataTagsV2:}}
+\index{configCloudDataTagsV2:@{configCloudDataTagsV2:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{configCloudDataTagsV2:}{configCloudDataTagsV2:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) config\+Cloud\+Data\+Tags\+V2\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{json\+Cloud\+Data\+Tags }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_acacf8c4f5f71e0d980f0bf97867d2819}\label{interface_thing_smart_cloud_manager_acacf8c4f5f71e0d980f0bf97867d2819}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!configCloudDataTagsV2:@{configCloudDataTagsV2:}}
+\index{configCloudDataTagsV2:@{configCloudDataTagsV2:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{configCloudDataTagsV2:}{configCloudDataTagsV2:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) config\+Cloud\+Data\+Tags\+V2\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{json\+Cloud\+Data\+Tags }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ad5f5e2f8ee3cb3c665be9ec3306f338e}\label{interface_thing_smart_cloud_manager_ad5f5e2f8ee3cb3c665be9ec3306f338e}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!deleteAllDayCloudVideoWithDevId:timeRange:extParams:success:failure:@{deleteAllDayCloudVideoWithDevId:timeRange:extParams:success:failure:}}
+\index{deleteAllDayCloudVideoWithDevId:timeRange:extParams:success:failure:@{deleteAllDayCloudVideoWithDevId:timeRange:extParams:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{deleteAllDayCloudVideoWithDevId:timeRange:extParams:success:failure:}{deleteAllDayCloudVideoWithDevId:timeRange:extParams:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) delete\+All\+Day\+Cloud\+Video\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{time\+Range\+:(NSRange)}]{time\+Range }\item[{ext\+Params\+:(NSDictionary $\ast$)}]{ext\+Params }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} delete cloud video which during the time range \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 删除指定设备一个全天时间段里的云存储视频 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & \mbox{[}$^\wedge$en\mbox{]} specified device id \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 指定设备id \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em time\+Range} & \mbox{[}$^\wedge$en\mbox{]} the time range to delete \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 需要删除的时间段 \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em ext\+Params} & \mbox{[}$^\wedge$en\mbox{]} ext params \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 扩展参数 \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ad5f5e2f8ee3cb3c665be9ec3306f338e}\label{interface_thing_smart_cloud_manager_ad5f5e2f8ee3cb3c665be9ec3306f338e}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!deleteAllDayCloudVideoWithDevId:timeRange:extParams:success:failure:@{deleteAllDayCloudVideoWithDevId:timeRange:extParams:success:failure:}}
+\index{deleteAllDayCloudVideoWithDevId:timeRange:extParams:success:failure:@{deleteAllDayCloudVideoWithDevId:timeRange:extParams:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{deleteAllDayCloudVideoWithDevId:timeRange:extParams:success:failure:}{deleteAllDayCloudVideoWithDevId:timeRange:extParams:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) delete\+All\+Day\+Cloud\+Video\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{time\+Range\+:(NSRange)}]{time\+Range }\item[{ext\+Params\+:(NSDictionary $\ast$)}]{ext\+Params }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} delete cloud video which during the time range \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 删除指定设备一个全天时间段里的云存储视频 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & \mbox{[}$^\wedge$en\mbox{]} specified device id \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 指定设备id \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em time\+Range} & \mbox{[}$^\wedge$en\mbox{]} the time range to delete \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 需要删除的时间段 \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em ext\+Params} & \mbox{[}$^\wedge$en\mbox{]} ext params \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 扩展参数 \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a9b2dad620efa388f428b7832b19f60ef}\label{interface_thing_smart_cloud_manager_a9b2dad620efa388f428b7832b19f60ef}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!deleteAllDayCloudVideoWithRange:success:failure:@{deleteAllDayCloudVideoWithRange:success:failure:}}
+\index{deleteAllDayCloudVideoWithRange:success:failure:@{deleteAllDayCloudVideoWithRange:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{deleteAllDayCloudVideoWithRange:success:failure:}{deleteAllDayCloudVideoWithRange:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) delete\+All\+Day\+Cloud\+Video\+With\+Range\+: \begin{DoxyParamCaption}\item[{(NSRange)}]{time\+Range }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} delete current device\textquotesingle{}s cloud video which during the time range \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 删除当前设备一个全天时间段里的云存储视频 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em time\+Range} & \mbox{[}$^\wedge$en\mbox{]} the time range to delete \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 需要删除的时间段 \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a9b2dad620efa388f428b7832b19f60ef}\label{interface_thing_smart_cloud_manager_a9b2dad620efa388f428b7832b19f60ef}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!deleteAllDayCloudVideoWithRange:success:failure:@{deleteAllDayCloudVideoWithRange:success:failure:}}
+\index{deleteAllDayCloudVideoWithRange:success:failure:@{deleteAllDayCloudVideoWithRange:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{deleteAllDayCloudVideoWithRange:success:failure:}{deleteAllDayCloudVideoWithRange:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) delete\+All\+Day\+Cloud\+Video\+With\+Range\+: \begin{DoxyParamCaption}\item[{(NSRange)}]{time\+Range }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} delete current device\textquotesingle{}s cloud video which during the time range \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 删除当前设备一个全天时间段里的云存储视频 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em time\+Range} & \mbox{[}$^\wedge$en\mbox{]} the time range to delete \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 需要删除的时间段 \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a3c5b83015ad239f0606823adfe5eb941}\label{interface_thing_smart_cloud_manager_a3c5b83015ad239f0606823adfe5eb941}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!deleteCloudVideoWithDevId:timeRange:extParams:success:failure:@{deleteCloudVideoWithDevId:timeRange:extParams:success:failure:}}
+\index{deleteCloudVideoWithDevId:timeRange:extParams:success:failure:@{deleteCloudVideoWithDevId:timeRange:extParams:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{deleteCloudVideoWithDevId:timeRange:extParams:success:failure:}{deleteCloudVideoWithDevId:timeRange:extParams:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) delete\+Cloud\+Video\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{time\+Range\+:(NSRange)}]{time\+Range }\item[{ext\+Params\+:(NSDictionary $\ast$)}]{ext\+Params }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} delete cloud video which during the time range \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 删除指定设备一个时间段里的云存储视频 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & \mbox{[}$^\wedge$en\mbox{]} specified device id \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 指定设备id \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em time\+Range} & \mbox{[}$^\wedge$en\mbox{]} the time range to delete \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 需要删除的时间段 \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em ext\+Params} & \mbox{[}$^\wedge$en\mbox{]} ext params \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 扩展参数 \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a3c5b83015ad239f0606823adfe5eb941}\label{interface_thing_smart_cloud_manager_a3c5b83015ad239f0606823adfe5eb941}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!deleteCloudVideoWithDevId:timeRange:extParams:success:failure:@{deleteCloudVideoWithDevId:timeRange:extParams:success:failure:}}
+\index{deleteCloudVideoWithDevId:timeRange:extParams:success:failure:@{deleteCloudVideoWithDevId:timeRange:extParams:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{deleteCloudVideoWithDevId:timeRange:extParams:success:failure:}{deleteCloudVideoWithDevId:timeRange:extParams:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) delete\+Cloud\+Video\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{time\+Range\+:(NSRange)}]{time\+Range }\item[{ext\+Params\+:(NSDictionary $\ast$)}]{ext\+Params }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} delete cloud video which during the time range \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 删除指定设备一个时间段里的云存储视频 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & \mbox{[}$^\wedge$en\mbox{]} specified device id \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 指定设备id \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em time\+Range} & \mbox{[}$^\wedge$en\mbox{]} the time range to delete \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 需要删除的时间段 \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em ext\+Params} & \mbox{[}$^\wedge$en\mbox{]} ext params \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 扩展参数 \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a4e6f741cc5a6b1ebd8582849ef6282a6}\label{interface_thing_smart_cloud_manager_a4e6f741cc5a6b1ebd8582849ef6282a6}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!deleteCloudVideoWithRange:success:failure:@{deleteCloudVideoWithRange:success:failure:}}
+\index{deleteCloudVideoWithRange:success:failure:@{deleteCloudVideoWithRange:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{deleteCloudVideoWithRange:success:failure:}{deleteCloudVideoWithRange:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) delete\+Cloud\+Video\+With\+Range\+: \begin{DoxyParamCaption}\item[{(NSRange)}]{time\+Range }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} delete current device\textquotesingle{}s cloud video which during the time range \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 删除当前设备一个时间段里的云存储视频 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em time\+Range} & \mbox{[}$^\wedge$en\mbox{]} the time range to delete \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 需要删除的时间段 \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a4e6f741cc5a6b1ebd8582849ef6282a6}\label{interface_thing_smart_cloud_manager_a4e6f741cc5a6b1ebd8582849ef6282a6}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!deleteCloudVideoWithRange:success:failure:@{deleteCloudVideoWithRange:success:failure:}}
+\index{deleteCloudVideoWithRange:success:failure:@{deleteCloudVideoWithRange:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{deleteCloudVideoWithRange:success:failure:}{deleteCloudVideoWithRange:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) delete\+Cloud\+Video\+With\+Range\+: \begin{DoxyParamCaption}\item[{(NSRange)}]{time\+Range }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} delete current device\textquotesingle{}s cloud video which during the time range \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 删除当前设备一个时间段里的云存储视频 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em time\+Range} & \mbox{[}$^\wedge$en\mbox{]} the time range to delete \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 需要删除的时间段 \mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_abaa4cdb1cb594a34cb21d52616b4b513}\label{interface_thing_smart_cloud_manager_abaa4cdb1cb594a34cb21d52616b4b513}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!destroy@{destroy}}
+\index{destroy@{destroy}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{destroy}{destroy}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) destroy \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} destory resource \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 销毁 资源 \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_abaa4cdb1cb594a34cb21d52616b4b513}\label{interface_thing_smart_cloud_manager_abaa4cdb1cb594a34cb21d52616b4b513}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!destroy@{destroy}}
+\index{destroy@{destroy}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{destroy}{destroy}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) destroy \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} destory resource \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 销毁 资源 \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_a7220ea2a452b37f30c4bc7d84953167e}\label{interface_thing_smart_cloud_manager_a7220ea2a452b37f30c4bc7d84953167e}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!downloadCloudVideoWithRange:filePath:success:progress:failure:@{downloadCloudVideoWithRange:filePath:success:progress:failure:}}
+\index{downloadCloudVideoWithRange:filePath:success:progress:failure:@{downloadCloudVideoWithRange:filePath:success:progress:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{downloadCloudVideoWithRange:filePath:success:progress:failure:}{downloadCloudVideoWithRange:filePath:success:progress:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) download\+Cloud\+Video\+With\+Range\+: \begin{DoxyParamCaption}\item[{(NSRange)}]{time\+Range }\item[{file\+Path\+:(NSString $\ast$)}]{video\+Path }\item[{success\+:(\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_a09e1ada5df4df0790e91256f967b662a}{Download\+Success}})}]{success }\item[{progress\+:(\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_a463b8ec495e9abdd86854b6ec52ce7ca}{Download\+Progress}})}]{progress }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_a381c586248a1042572c4d7bfb282c1b1}{Download\+Failure}})}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a7220ea2a452b37f30c4bc7d84953167e}\label{interface_thing_smart_cloud_manager_a7220ea2a452b37f30c4bc7d84953167e}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!downloadCloudVideoWithRange:filePath:success:progress:failure:@{downloadCloudVideoWithRange:filePath:success:progress:failure:}}
+\index{downloadCloudVideoWithRange:filePath:success:progress:failure:@{downloadCloudVideoWithRange:filePath:success:progress:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{downloadCloudVideoWithRange:filePath:success:progress:failure:}{downloadCloudVideoWithRange:filePath:success:progress:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) download\+Cloud\+Video\+With\+Range\+: \begin{DoxyParamCaption}\item[{(NSRange)}]{time\+Range }\item[{file\+Path\+:(NSString $\ast$)}]{video\+Path }\item[{success\+:(\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_a09e1ada5df4df0790e91256f967b662a}{Download\+Success}})}]{success }\item[{progress\+:(\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_a463b8ec495e9abdd86854b6ec52ce7ca}{Download\+Progress}})}]{progress }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_a381c586248a1042572c4d7bfb282c1b1}{Download\+Failure}})}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a71bf16c08ca078f5fa4baa1cab9789b6}\label{interface_thing_smart_cloud_manager_a71bf16c08ca078f5fa4baa1cab9789b6}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!enableAIDetect:success:failure:@{enableAIDetect:success:failure:}}
+\index{enableAIDetect:success:failure:@{enableAIDetect:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{enableAIDetect:success:failure:}{enableAIDetect:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) enable\+AIDetect\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{enable }\item[{success\+:(void($^\wedge$)(BOOL result))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+是否开启ai分析能力
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item enable\+: 是否开启ai分析能力
+\item success\+: 成功回调
+\item failure\+: 失败回调 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a71bf16c08ca078f5fa4baa1cab9789b6}\label{interface_thing_smart_cloud_manager_a71bf16c08ca078f5fa4baa1cab9789b6}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!enableAIDetect:success:failure:@{enableAIDetect:success:failure:}}
+\index{enableAIDetect:success:failure:@{enableAIDetect:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{enableAIDetect:success:failure:}{enableAIDetect:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) enable\+AIDetect\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{enable }\item[{success\+:(void($^\wedge$)(BOOL result))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+是否开启ai分析能力
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item enable\+: 是否开启ai分析能力
+\item success\+: 成功回调
+\item failure\+: 失败回调 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a3954fde522a7ff9e62c307cfd1907ee5}\label{interface_thing_smart_cloud_manager_a3954fde522a7ff9e62c307cfd1907ee5}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!enableAIDetectEventType:enable:success:failure:@{enableAIDetectEventType:enable:success:failure:}}
+\index{enableAIDetectEventType:enable:success:failure:@{enableAIDetectEventType:enable:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{enableAIDetectEventType:enable:success:failure:}{enableAIDetectEventType:enable:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) enable\+AIDetect\+Event\+Type\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{type }\item[{enable\+:(BOOL)}]{enable }\item[{success\+:(void($^\wedge$)(BOOL result))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+更新ai分析事件类型
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item dev\+Id\+: 设备id
+\item ai\+Code\+: ai侦测类型code
+\item enable\+State\+: 是否可用0-\/不可用，1-\/可用
+\item success\+: 成功回调
+\item failure\+: 失败回调 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a3954fde522a7ff9e62c307cfd1907ee5}\label{interface_thing_smart_cloud_manager_a3954fde522a7ff9e62c307cfd1907ee5}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!enableAIDetectEventType:enable:success:failure:@{enableAIDetectEventType:enable:success:failure:}}
+\index{enableAIDetectEventType:enable:success:failure:@{enableAIDetectEventType:enable:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{enableAIDetectEventType:enable:success:failure:}{enableAIDetectEventType:enable:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) enable\+AIDetect\+Event\+Type\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{type }\item[{enable\+:(BOOL)}]{enable }\item[{success\+:(void($^\wedge$)(BOOL result))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+更新ai分析事件类型
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item dev\+Id\+: 设备id
+\item ai\+Code\+: ai侦测类型code
+\item enable\+State\+: 是否可用0-\/不可用，1-\/可用
+\item success\+: 成功回调
+\item failure\+: 失败回调 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_cloud_manager_aa30b9465af7b151d7dae990a1f22d8cb}\label{interface_thing_smart_cloud_manager_aa30b9465af7b151d7dae990a1f22d8cb}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!enableMute:success:failure:@{enableMute:success:failure:}}
+\index{enableMute:success:failure:@{enableMute:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{enableMute:success:failure:}{enableMute:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) enable\+Mute\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{mute }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} set mute. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 设置静音 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em mute} & \mbox{[}$^\wedge$en\mbox{]}mute sound.\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}是否静音\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success call back. \\
+\hline
+{\em failure} & failed call back. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_aa30b9465af7b151d7dae990a1f22d8cb}\label{interface_thing_smart_cloud_manager_aa30b9465af7b151d7dae990a1f22d8cb}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!enableMute:success:failure:@{enableMute:success:failure:}}
+\index{enableMute:success:failure:@{enableMute:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{enableMute:success:failure:}{enableMute:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) enable\+Mute\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{mute }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} set mute. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 设置静音 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em mute} & \mbox{[}$^\wedge$en\mbox{]}mute sound.\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}是否静音\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success call back. \\
+\hline
+{\em failure} & failed call back. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a4d9b90c6cabbaf1be78e27052e05c34f}\label{interface_thing_smart_cloud_manager_a4d9b90c6cabbaf1be78e27052e05c34f}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!fetchCloudStorageStateCompletion:@{fetchCloudStorageStateCompletion:}}
+\index{fetchCloudStorageStateCompletion:@{fetchCloudStorageStateCompletion:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{fetchCloudStorageStateCompletion:}{fetchCloudStorageStateCompletion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) fetch\+Cloud\+Storage\+State\+Completion\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(Thing\+Smart\+Cloud\+State state))}]{completion }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} fetch cloud storage service state \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取云存储服务状态 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em completion} & callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a4d9b90c6cabbaf1be78e27052e05c34f}\label{interface_thing_smart_cloud_manager_a4d9b90c6cabbaf1be78e27052e05c34f}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!fetchCloudStorageStateCompletion:@{fetchCloudStorageStateCompletion:}}
+\index{fetchCloudStorageStateCompletion:@{fetchCloudStorageStateCompletion:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{fetchCloudStorageStateCompletion:}{fetchCloudStorageStateCompletion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) fetch\+Cloud\+Storage\+State\+Completion\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(Thing\+Smart\+Cloud\+State state))}]{completion }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} fetch cloud storage service state \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取云存储服务状态 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em completion} & callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_acab6ad64cf3187f931669e8adec602b8}\label{interface_thing_smart_cloud_manager_acab6ad64cf3187f931669e8adec602b8}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!fetchSecretKeyWithDevId:completion:@{fetchSecretKeyWithDevId:completion:}}
+\index{fetchSecretKeyWithDevId:completion:@{fetchSecretKeyWithDevId:completion:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{fetchSecretKeyWithDevId:completion:}{fetchSecretKeyWithDevId:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) fetch\+Secret\+Key\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{completion\+:(\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_a2a16054af15e1e717971a06034947023}{Thing\+Fetch\+Secret\+Key\+Completion}})}]{completion }\end{DoxyParamCaption}}
+
+fetch secret key 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & @completion return secret key or error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_acab6ad64cf3187f931669e8adec602b8}\label{interface_thing_smart_cloud_manager_acab6ad64cf3187f931669e8adec602b8}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!fetchSecretKeyWithDevId:completion:@{fetchSecretKeyWithDevId:completion:}}
+\index{fetchSecretKeyWithDevId:completion:@{fetchSecretKeyWithDevId:completion:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{fetchSecretKeyWithDevId:completion:}{fetchSecretKeyWithDevId:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) fetch\+Secret\+Key\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{completion\+:(\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_a2a16054af15e1e717971a06034947023}{Thing\+Fetch\+Secret\+Key\+Completion}})}]{completion }\end{DoxyParamCaption}}
+
+fetch secret key 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & @completion return secret key or error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_af648efefcae303a7293066659ce80fdb}\label{interface_thing_smart_cloud_manager_af648efefcae303a7293066659ce80fdb}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!getCloudUrlsWithStartTime:endTime:isEvent:@{getCloudUrlsWithStartTime:endTime:isEvent:}}
+\index{getCloudUrlsWithStartTime:endTime:isEvent:@{getCloudUrlsWithStartTime:endTime:isEvent:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{getCloudUrlsWithStartTime:endTime:isEvent:}{getCloudUrlsWithStartTime:endTime:isEvent:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) get\+Cloud\+Urls\+With\+Start\+Time\+: \begin{DoxyParamCaption}\item[{(int)}]{start\+Time }\item[{end\+Time\+:(int)}]{end\+Time }\item[{is\+Event\+:(bool)}]{is\+Event }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get cloud urls \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取云存储url数组 \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_af648efefcae303a7293066659ce80fdb}\label{interface_thing_smart_cloud_manager_af648efefcae303a7293066659ce80fdb}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!getCloudUrlsWithStartTime:endTime:isEvent:@{getCloudUrlsWithStartTime:endTime:isEvent:}}
+\index{getCloudUrlsWithStartTime:endTime:isEvent:@{getCloudUrlsWithStartTime:endTime:isEvent:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{getCloudUrlsWithStartTime:endTime:isEvent:}{getCloudUrlsWithStartTime:endTime:isEvent:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) get\+Cloud\+Urls\+With\+Start\+Time\+: \begin{DoxyParamCaption}\item[{(int)}]{start\+Time }\item[{end\+Time\+:(int)}]{end\+Time }\item[{is\+Event\+:(bool)}]{is\+Event }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get cloud urls \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取云存储url数组 \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_a6909147960dfa4ae57766b784dda39c3}\label{interface_thing_smart_cloud_manager_a6909147960dfa4ae57766b784dda39c3}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!getCloudUrlsWithStartTime:endTime:isEvent:failure:@{getCloudUrlsWithStartTime:endTime:isEvent:failure:}}
+\index{getCloudUrlsWithStartTime:endTime:isEvent:failure:@{getCloudUrlsWithStartTime:endTime:isEvent:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{getCloudUrlsWithStartTime:endTime:isEvent:failure:}{getCloudUrlsWithStartTime:endTime:isEvent:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) get\+Cloud\+Urls\+With\+Start\+Time\+: \begin{DoxyParamCaption}\item[{(int)}]{start\+Time }\item[{end\+Time\+:(int)}]{end\+Time }\item[{is\+Event\+:(bool)}]{is\+Event }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get cloud urls \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取云存储url数组 \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_a6909147960dfa4ae57766b784dda39c3}\label{interface_thing_smart_cloud_manager_a6909147960dfa4ae57766b784dda39c3}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!getCloudUrlsWithStartTime:endTime:isEvent:failure:@{getCloudUrlsWithStartTime:endTime:isEvent:failure:}}
+\index{getCloudUrlsWithStartTime:endTime:isEvent:failure:@{getCloudUrlsWithStartTime:endTime:isEvent:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{getCloudUrlsWithStartTime:endTime:isEvent:failure:}{getCloudUrlsWithStartTime:endTime:isEvent:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) get\+Cloud\+Urls\+With\+Start\+Time\+: \begin{DoxyParamCaption}\item[{(int)}]{start\+Time }\item[{end\+Time\+:(int)}]{end\+Time }\item[{is\+Event\+:(bool)}]{is\+Event }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get cloud urls \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取云存储url数组 \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_a42127d4f220c42f2ffd3e084d116fd80}\label{interface_thing_smart_cloud_manager_a42127d4f220c42f2ffd3e084d116fd80}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!initWithDeviceId:@{initWithDeviceId:}}
+\index{initWithDeviceId:@{initWithDeviceId:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{initWithDeviceId:}{initWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a42127d4f220c42f2ffd3e084d116fd80}\label{interface_thing_smart_cloud_manager_a42127d4f220c42f2ffd3e084d116fd80}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!initWithDeviceId:@{initWithDeviceId:}}
+\index{initWithDeviceId:@{initWithDeviceId:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{initWithDeviceId:}{initWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_af7d5b6e6962de09a2bf27fe2e64f688d}\label{interface_thing_smart_cloud_manager_af7d5b6e6962de09a2bf27fe2e64f688d}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!isMuted@{isMuted}}
+\index{isMuted@{isMuted}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{isMuted}{isMuted}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Muted \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get mute state. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取静音状态 \mbox{[}\$zh\mbox{]} \begin{DoxyReturn}{Returns}
+BOOL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_af7d5b6e6962de09a2bf27fe2e64f688d}\label{interface_thing_smart_cloud_manager_af7d5b6e6962de09a2bf27fe2e64f688d}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!isMuted@{isMuted}}
+\index{isMuted@{isMuted}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{isMuted}{isMuted}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Muted \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get mute state. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取静音状态 \mbox{[}\$zh\mbox{]} \begin{DoxyReturn}{Returns}
+BOOL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_acd387e1db231cd29bd0c5d878beec998}\label{interface_thing_smart_cloud_manager_acd387e1db231cd29bd0c5d878beec998}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!isSupportCloudStorage:@{isSupportCloudStorage:}}
+\index{isSupportCloudStorage:@{isSupportCloudStorage:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{isSupportCloudStorage:}{isSupportCloudStorage:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (BOOL) is\+Support\+Cloud\+Storage\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+whether to support cloud storage 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & get from Device\+Model. Please obtain the device information first \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cloud\+Storage is supported. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_acd387e1db231cd29bd0c5d878beec998}\label{interface_thing_smart_cloud_manager_acd387e1db231cd29bd0c5d878beec998}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!isSupportCloudStorage:@{isSupportCloudStorage:}}
+\index{isSupportCloudStorage:@{isSupportCloudStorage:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{isSupportCloudStorage:}{isSupportCloudStorage:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (BOOL) is\+Support\+Cloud\+Storage\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+whether to support cloud storage 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & get from Device\+Model. Please obtain the device information first \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cloud\+Storage is supported. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a2e462c9a5d7011b75a6e8b36e317df80}\label{interface_thing_smart_cloud_manager_a2e462c9a5d7011b75a6e8b36e317df80}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!loadCloudData:@{loadCloudData:}}
+\index{loadCloudData:@{loadCloudData:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{loadCloudData:}{loadCloudData:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) load\+Cloud\+Data\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(Thing\+Smart\+Cloud\+State state))}]{complete }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} load cloud data \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 加载云端数据 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em complete} & callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a2e462c9a5d7011b75a6e8b36e317df80}\label{interface_thing_smart_cloud_manager_a2e462c9a5d7011b75a6e8b36e317df80}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!loadCloudData:@{loadCloudData:}}
+\index{loadCloudData:@{loadCloudData:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{loadCloudData:}{loadCloudData:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) load\+Cloud\+Data\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(Thing\+Smart\+Cloud\+State state))}]{complete }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} load cloud data \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 加载云端数据 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em complete} & callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a82b182bd7dd9ebe575933ff764a1bf80}\label{interface_thing_smart_cloud_manager_a82b182bd7dd9ebe575933ff764a1bf80}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!pauseDownloadCloudVideo@{pauseDownloadCloudVideo}}
+\index{pauseDownloadCloudVideo@{pauseDownloadCloudVideo}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{pauseDownloadCloudVideo}{pauseDownloadCloudVideo}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) pause\+Download\+Cloud\+Video \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} pause cloud video download task \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 暂停云存储视频下载 \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_a82b182bd7dd9ebe575933ff764a1bf80}\label{interface_thing_smart_cloud_manager_a82b182bd7dd9ebe575933ff764a1bf80}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!pauseDownloadCloudVideo@{pauseDownloadCloudVideo}}
+\index{pauseDownloadCloudVideo@{pauseDownloadCloudVideo}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{pauseDownloadCloudVideo}{pauseDownloadCloudVideo}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) pause\+Download\+Cloud\+Video \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} pause cloud video download task \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 暂停云存储视频下载 \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_adb8145afef02c39754971c6876373952}\label{interface_thing_smart_cloud_manager_adb8145afef02c39754971c6876373952}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!pausePlayCloudVideo@{pausePlayCloudVideo}}
+\index{pausePlayCloudVideo@{pausePlayCloudVideo}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{pausePlayCloudVideo}{pausePlayCloudVideo}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) pause\+Play\+Cloud\+Video \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} pause play \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 暂停播放 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}$^\wedge$en\mbox{]}err\+Code 0 is success\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}err\+Code 0 为成功\mbox{[}\$zh\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_adb8145afef02c39754971c6876373952}\label{interface_thing_smart_cloud_manager_adb8145afef02c39754971c6876373952}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!pausePlayCloudVideo@{pausePlayCloudVideo}}
+\index{pausePlayCloudVideo@{pausePlayCloudVideo}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{pausePlayCloudVideo}{pausePlayCloudVideo}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) pause\+Play\+Cloud\+Video \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} pause play \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 暂停播放 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}$^\wedge$en\mbox{]}err\+Code 0 is success\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}err\+Code 0 为成功\mbox{[}\$zh\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a03a5d86dc02af9e8a7461bbe73901f48}\label{interface_thing_smart_cloud_manager_a03a5d86dc02af9e8a7461bbe73901f48}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!playAudioMessageWithUrl:startTime:encryptKey:onResponse:onFinish:@{playAudioMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}}
+\index{playAudioMessageWithUrl:startTime:encryptKey:onResponse:onFinish:@{playAudioMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{playAudioMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}{playAudioMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) play\+Audio\+Message\+With\+Url\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{url }\item[{start\+Time\+:(int)}]{n\+Start\+Time }\item[{encrypt\+Key\+:(NSString $\ast$)}]{encrypt\+Key }\item[{on\+Response\+:(void($^\wedge$)(int err\+Code))}]{callback }\item[{on\+Finish\+:(\char`\"{}Use -\/ instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg\mbox{[}\+Thing\+Smart\+Camera\+Message\+Media\+Player play\+Message\+:attachment\+Type\+:success\+:failure\+:finished\+:\mbox{]} }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} play encrypt audio in detect message \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 在侦测消息中播放加密音频 \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & \mbox{[}$^\wedge$en\mbox{]}audio path\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}音频路径\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em n\+Start\+Time} & \mbox{[}$^\wedge$en\mbox{]}Start time to play\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}开始播放时间\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em encrypt\+Key} & \mbox{[}$^\wedge$en\mbox{]}encrypt key\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}加密key\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em callback} & start callback \\
+\hline
+{\em finihed\+Call\+Back} & finish callback\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a03a5d86dc02af9e8a7461bbe73901f48}\label{interface_thing_smart_cloud_manager_a03a5d86dc02af9e8a7461bbe73901f48}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!playAudioMessageWithUrl:startTime:encryptKey:onResponse:onFinish:@{playAudioMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}}
+\index{playAudioMessageWithUrl:startTime:encryptKey:onResponse:onFinish:@{playAudioMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{playAudioMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}{playAudioMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) play\+Audio\+Message\+With\+Url\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{url }\item[{start\+Time\+:(int)}]{n\+Start\+Time }\item[{encrypt\+Key\+:(NSString $\ast$)}]{encrypt\+Key }\item[{on\+Response\+:(void($^\wedge$)(int err\+Code))}]{callback }\item[{on\+Finish\+:(\char`\"{}Use -\/ instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg\mbox{[}\+Thing\+Smart\+Camera\+Message\+Media\+Player play\+Message\+:attachment\+Type\+:success\+:failure\+:finished\+:\mbox{]} }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} play encrypt audio in detect message \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 在侦测消息中播放加密音频 \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & \mbox{[}$^\wedge$en\mbox{]}audio path\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}音频路径\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em n\+Start\+Time} & \mbox{[}$^\wedge$en\mbox{]}Start time to play\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}开始播放时间\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em encrypt\+Key} & \mbox{[}$^\wedge$en\mbox{]}encrypt key\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}加密key\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em callback} & start callback \\
+\hline
+{\em finihed\+Call\+Back} & finish callback\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_abe0703bae00723405453db9b9a747d32}\label{interface_thing_smart_cloud_manager_abe0703bae00723405453db9b9a747d32}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!playCloudVideoWithStartTime:endTime:isEvent:onResponse:onFinished:@{playCloudVideoWithStartTime:endTime:isEvent:onResponse:onFinished:}}
+\index{playCloudVideoWithStartTime:endTime:isEvent:onResponse:onFinished:@{playCloudVideoWithStartTime:endTime:isEvent:onResponse:onFinished:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{playCloudVideoWithStartTime:endTime:isEvent:onResponse:onFinished:}{playCloudVideoWithStartTime:endTime:isEvent:onResponse:onFinished:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) play\+Cloud\+Video\+With\+Start\+Time\+: \begin{DoxyParamCaption}\item[{(long)}]{start\+Time }\item[{end\+Time\+:(long)}]{end\+Time }\item[{is\+Event\+:(BOOL)}]{is\+Event }\item[{on\+Response\+:(void($^\wedge$)(int err\+Code))}]{response\+Callback }\item[{on\+Finished\+:(void($^\wedge$)(int err\+Code))}]{finished\+Callback }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} play cloud video \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 播放云端视频 \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Time} & \mbox{[}$^\wedge$en\mbox{]}start time\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}开始时间\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em end\+Time} & \mbox{[}$^\wedge$en\mbox{]}end time. cloud video will auto continue util the last video finished in the day\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}结束时间，云视频将会自动继续播放直到当天最后一个视频\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em is\+Event} & \mbox{[}$^\wedge$en\mbox{]}YES is the time event, NO is the time line video.\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}YES 是时间片事件，\+NO是时间轴视频\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em response\+Callback} & \mbox{[}$^\wedge$en\mbox{]}err\+Code 0 is success, negative is failed.\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}error\+Code 0 是成功，负数为失败\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em finished\+Callback} & \mbox{[}$^\wedge$en\mbox{]}video is finished\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}视频已经结束\mbox{[}\$zh\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_abe0703bae00723405453db9b9a747d32}\label{interface_thing_smart_cloud_manager_abe0703bae00723405453db9b9a747d32}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!playCloudVideoWithStartTime:endTime:isEvent:onResponse:onFinished:@{playCloudVideoWithStartTime:endTime:isEvent:onResponse:onFinished:}}
+\index{playCloudVideoWithStartTime:endTime:isEvent:onResponse:onFinished:@{playCloudVideoWithStartTime:endTime:isEvent:onResponse:onFinished:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{playCloudVideoWithStartTime:endTime:isEvent:onResponse:onFinished:}{playCloudVideoWithStartTime:endTime:isEvent:onResponse:onFinished:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) play\+Cloud\+Video\+With\+Start\+Time\+: \begin{DoxyParamCaption}\item[{(long)}]{start\+Time }\item[{end\+Time\+:(long)}]{end\+Time }\item[{is\+Event\+:(BOOL)}]{is\+Event }\item[{on\+Response\+:(void($^\wedge$)(int err\+Code))}]{response\+Callback }\item[{on\+Finished\+:(void($^\wedge$)(int err\+Code))}]{finished\+Callback }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} play cloud video \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 播放云端视频 \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Time} & \mbox{[}$^\wedge$en\mbox{]}start time\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}开始时间\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em end\+Time} & \mbox{[}$^\wedge$en\mbox{]}end time. cloud video will auto continue util the last video finished in the day\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}结束时间，云视频将会自动继续播放直到当天最后一个视频\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em is\+Event} & \mbox{[}$^\wedge$en\mbox{]}YES is the time event, NO is the time line video.\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}YES 是时间片事件，\+NO是时间轴视频\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em response\+Callback} & \mbox{[}$^\wedge$en\mbox{]}err\+Code 0 is success, negative is failed.\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}error\+Code 0 是成功，负数为失败\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em finished\+Callback} & \mbox{[}$^\wedge$en\mbox{]}video is finished\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}视频已经结束\mbox{[}\$zh\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a818f975f2afa6feb42d1430cc4918753}\label{interface_thing_smart_cloud_manager_a818f975f2afa6feb42d1430cc4918753}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!playVideoMessageWithUrl:startTime:encryptKey:onResponse:onFinish:@{playVideoMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}}
+\index{playVideoMessageWithUrl:startTime:encryptKey:onResponse:onFinish:@{playVideoMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{playVideoMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}{playVideoMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) play\+Video\+Message\+With\+Url\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{url }\item[{start\+Time\+:(int)}]{n\+Start\+Time }\item[{encrypt\+Key\+:(NSString $\ast$)}]{encrypt\+Key }\item[{on\+Response\+:(void($^\wedge$)(int err\+Code))}]{callback }\item[{on\+Finish\+:(\char`\"{}Use -\/ instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg\mbox{[}\+Thing\+Smart\+Camera\+Message\+Media\+Player play\+Message\+:attachment\+Type\+:success\+:failure\+:finished\+:\mbox{]} }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} play encrypt video in detect message \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 在侦测消息追踪播放加密视频 \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & \mbox{[}$^\wedge$en\mbox{]}video path\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}视频路径\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em n\+Start\+Time} & \mbox{[}$^\wedge$en\mbox{]}Start time to play\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}开始播放的时间\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em encrypt\+Key} & \mbox{[}$^\wedge$en\mbox{]}encrypt key\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}加密key\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em callback} & start callback \\
+\hline
+{\em finihed\+Call\+Back} & finish callback\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a818f975f2afa6feb42d1430cc4918753}\label{interface_thing_smart_cloud_manager_a818f975f2afa6feb42d1430cc4918753}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!playVideoMessageWithUrl:startTime:encryptKey:onResponse:onFinish:@{playVideoMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}}
+\index{playVideoMessageWithUrl:startTime:encryptKey:onResponse:onFinish:@{playVideoMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{playVideoMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}{playVideoMessageWithUrl:startTime:encryptKey:onResponse:onFinish:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) play\+Video\+Message\+With\+Url\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{url }\item[{start\+Time\+:(int)}]{n\+Start\+Time }\item[{encrypt\+Key\+:(NSString $\ast$)}]{encrypt\+Key }\item[{on\+Response\+:(void($^\wedge$)(int err\+Code))}]{callback }\item[{on\+Finish\+:(\char`\"{}Use -\/ instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg\mbox{[}\+Thing\+Smart\+Camera\+Message\+Media\+Player play\+Message\+:attachment\+Type\+:success\+:failure\+:finished\+:\mbox{]} }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} play encrypt video in detect message \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 在侦测消息追踪播放加密视频 \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & \mbox{[}$^\wedge$en\mbox{]}video path\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}视频路径\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em n\+Start\+Time} & \mbox{[}$^\wedge$en\mbox{]}Start time to play\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}开始播放的时间\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em encrypt\+Key} & \mbox{[}$^\wedge$en\mbox{]}encrypt key\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}加密key\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em callback} & start callback \\
+\hline
+{\em finihed\+Call\+Back} & finish callback\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a275e42f1557a9e04ce30dc2c61952c91}\label{interface_thing_smart_cloud_manager_a275e42f1557a9e04ce30dc2c61952c91}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!queryAIDetectConfigSuccess:failure:@{queryAIDetectConfigSuccess:failure:}}
+\index{queryAIDetectConfigSuccess:failure:@{queryAIDetectConfigSuccess:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{queryAIDetectConfigSuccess:failure:}{queryAIDetectConfigSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) query\+AIDetect\+Config\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_thing_camera_a_i_detect_config_model}{Thing\+Camera\+AIDetect\+Config\+Model}} $\ast$model))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+查下设备ai配置信息
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item success\+: 成功回调
+\item failure\+: 失败回调 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a275e42f1557a9e04ce30dc2c61952c91}\label{interface_thing_smart_cloud_manager_a275e42f1557a9e04ce30dc2c61952c91}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!queryAIDetectConfigSuccess:failure:@{queryAIDetectConfigSuccess:failure:}}
+\index{queryAIDetectConfigSuccess:failure:@{queryAIDetectConfigSuccess:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{queryAIDetectConfigSuccess:failure:}{queryAIDetectConfigSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) query\+AIDetect\+Config\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_thing_camera_a_i_detect_config_model}{Thing\+Camera\+AIDetect\+Config\+Model}} $\ast$model))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+查下设备ai配置信息
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item success\+: 成功回调
+\item failure\+: 失败回调 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a9d04c247b8ed5187863baa3231769252}\label{interface_thing_smart_cloud_manager_a9d04c247b8ed5187863baa3231769252}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!reLoadCloudDays:@{reLoadCloudDays:}}
+\index{reLoadCloudDays:@{reLoadCloudDays:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{reLoadCloudDays:}{reLoadCloudDays:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) re\+Load\+Cloud\+Days\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_cloud_day_model}{Thing\+Smart\+Cloud\+Day\+Model}} $\ast$ $>$ $\ast$\mbox{\hyperlink{interface_thing_smart_cloud_manager_ab433fccb5c33c954691d8467a7cd66ff}{cloud\+Days}}))}]{complete }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} reload cloud days \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 重新加载云端日期数据 \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em complete} & callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a9d04c247b8ed5187863baa3231769252}\label{interface_thing_smart_cloud_manager_a9d04c247b8ed5187863baa3231769252}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!reLoadCloudDays:@{reLoadCloudDays:}}
+\index{reLoadCloudDays:@{reLoadCloudDays:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{reLoadCloudDays:}{reLoadCloudDays:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) re\+Load\+Cloud\+Days\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_cloud_day_model}{Thing\+Smart\+Cloud\+Day\+Model}} $\ast$ $>$ $\ast$\mbox{\hyperlink{interface_thing_smart_cloud_manager_ab433fccb5c33c954691d8467a7cd66ff}{cloud\+Days}}))}]{complete }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} reload cloud days \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 重新加载云端日期数据 \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em complete} & callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_abf7381028e843c8d9dcf11ab9a80d96c}\label{interface_thing_smart_cloud_manager_abf7381028e843c8d9dcf11ab9a80d96c}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!resumeDownloadCloudVideo:@{resumeDownloadCloudVideo:}}
+\index{resumeDownloadCloudVideo:@{resumeDownloadCloudVideo:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{resumeDownloadCloudVideo:}{resumeDownloadCloudVideo:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) resume\+Download\+Cloud\+Video\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_a381c586248a1042572c4d7bfb282c1b1}{Download\+Failure}})}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} resume cloud video download task \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 恢复云存储视频下载 \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em failure} & \mbox{[}$^\wedge$en\mbox{]} resume success callback. \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 恢复下载失败回调。 \mbox{[}\$zh\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_abf7381028e843c8d9dcf11ab9a80d96c}\label{interface_thing_smart_cloud_manager_abf7381028e843c8d9dcf11ab9a80d96c}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!resumeDownloadCloudVideo:@{resumeDownloadCloudVideo:}}
+\index{resumeDownloadCloudVideo:@{resumeDownloadCloudVideo:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{resumeDownloadCloudVideo:}{resumeDownloadCloudVideo:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) resume\+Download\+Cloud\+Video\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_a381c586248a1042572c4d7bfb282c1b1}{Download\+Failure}})}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} resume cloud video download task \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 恢复云存储视频下载 \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em failure} & \mbox{[}$^\wedge$en\mbox{]} resume success callback. \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 恢复下载失败回调。 \mbox{[}\$zh\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a60f56504ca3592caf9022ba33b34b8bb}\label{interface_thing_smart_cloud_manager_a60f56504ca3592caf9022ba33b34b8bb}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!resumePlayCloudVideo@{resumePlayCloudVideo}}
+\index{resumePlayCloudVideo@{resumePlayCloudVideo}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{resumePlayCloudVideo}{resumePlayCloudVideo}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) resume\+Play\+Cloud\+Video \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} resume play \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 恢复播放 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}$^\wedge$en\mbox{]}err\+Code 0 is success\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}err\+Code 0 为成功\mbox{[}\$zh\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a60f56504ca3592caf9022ba33b34b8bb}\label{interface_thing_smart_cloud_manager_a60f56504ca3592caf9022ba33b34b8bb}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!resumePlayCloudVideo@{resumePlayCloudVideo}}
+\index{resumePlayCloudVideo@{resumePlayCloudVideo}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{resumePlayCloudVideo}{resumePlayCloudVideo}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) resume\+Play\+Cloud\+Video \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} resume play \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 恢复播放 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}$^\wedge$en\mbox{]}err\+Code 0 is success\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}err\+Code 0 为成功\mbox{[}\$zh\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a349c100c518c6778206e2a7880359827}\label{interface_thing_smart_cloud_manager_a349c100c518c6778206e2a7880359827}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!setCloudVideoPlaySpeed:@{setCloudVideoPlaySpeed:}}
+\index{setCloudVideoPlaySpeed:@{setCloudVideoPlaySpeed:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{setCloudVideoPlaySpeed:}{setCloudVideoPlaySpeed:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) set\+Cloud\+Video\+Play\+Speed\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Camera\+Play\+Back\+Speed)}]{speed }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} Set cloud storage multiplier playback speed\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 设置云存储倍速播放速率 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em speed} & \mbox{[}$^\wedge$en\mbox{]} multiplier playback speed \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 倍速播放速率 \mbox{[}\$zh\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}$^\wedge$en\mbox{]}error code\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}错误码\mbox{[}\$zh\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a349c100c518c6778206e2a7880359827}\label{interface_thing_smart_cloud_manager_a349c100c518c6778206e2a7880359827}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!setCloudVideoPlaySpeed:@{setCloudVideoPlaySpeed:}}
+\index{setCloudVideoPlaySpeed:@{setCloudVideoPlaySpeed:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{setCloudVideoPlaySpeed:}{setCloudVideoPlaySpeed:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) set\+Cloud\+Video\+Play\+Speed\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Camera\+Play\+Back\+Speed)}]{speed }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} Set cloud storage multiplier playback speed\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 设置云存储倍速播放速率 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em speed} & \mbox{[}$^\wedge$en\mbox{]} multiplier playback speed \mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]} 倍速播放速率 \mbox{[}\$zh\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}$^\wedge$en\mbox{]}error code\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}错误码\mbox{[}\$zh\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ae4ca7ee4298ff8eeaf38f50d2301b7f5}\label{interface_thing_smart_cloud_manager_ae4ca7ee4298ff8eeaf38f50d2301b7f5}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!setVideoDirection:horizontalMirror:@{setVideoDirection:horizontalMirror:}}
+\index{setVideoDirection:horizontalMirror:@{setVideoDirection:horizontalMirror:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{setVideoDirection:horizontalMirror:}{setVideoDirection:horizontalMirror:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) set\+Video\+Direction\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Video\+Rotate\+Direction)}]{direction }\item[{horizontal\+Mirror\+:(BOOL)}]{horizontal\+Mirror }\end{DoxyParamCaption}}
+
+
+
+Set the video rotation. 
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ae4ca7ee4298ff8eeaf38f50d2301b7f5}\label{interface_thing_smart_cloud_manager_ae4ca7ee4298ff8eeaf38f50d2301b7f5}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!setVideoDirection:horizontalMirror:@{setVideoDirection:horizontalMirror:}}
+\index{setVideoDirection:horizontalMirror:@{setVideoDirection:horizontalMirror:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{setVideoDirection:horizontalMirror:}{setVideoDirection:horizontalMirror:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) set\+Video\+Direction\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Video\+Rotate\+Direction)}]{direction }\item[{horizontal\+Mirror\+:(BOOL)}]{horizontal\+Mirror }\end{DoxyParamCaption}}
+
+
+
+Set the video rotation. 
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a911ca0cf2a191d392ac3d0a3ca9e067b}\label{interface_thing_smart_cloud_manager_a911ca0cf2a191d392ac3d0a3ca9e067b}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!setVideoDirection:mirror:@{setVideoDirection:mirror:}}
+\index{setVideoDirection:mirror:@{setVideoDirection:mirror:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{setVideoDirection:mirror:}{setVideoDirection:mirror:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) set\+Video\+Direction\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Video\+Rotate\+Direction)}]{direction }\item[{mirror\+:(Thing\+Smart\+Video\+Mirror\+Direction)}]{mirror }\end{DoxyParamCaption}}
+
+
+
+Set the video rotation and mirror. 
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a911ca0cf2a191d392ac3d0a3ca9e067b}\label{interface_thing_smart_cloud_manager_a911ca0cf2a191d392ac3d0a3ca9e067b}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!setVideoDirection:mirror:@{setVideoDirection:mirror:}}
+\index{setVideoDirection:mirror:@{setVideoDirection:mirror:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{setVideoDirection:mirror:}{setVideoDirection:mirror:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) set\+Video\+Direction\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Video\+Rotate\+Direction)}]{direction }\item[{mirror\+:(Thing\+Smart\+Video\+Mirror\+Direction)}]{mirror }\end{DoxyParamCaption}}
+
+
+
+Set the video rotation and mirror. 
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a27dcf870019a0a20c1382425c7676f9a}\label{interface_thing_smart_cloud_manager_a27dcf870019a0a20c1382425c7676f9a}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!snapShoot@{snapShoot}}
+\index{snapShoot@{snapShoot}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{snapShoot}{snapShoot}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (UIImage $\ast$) snap\+Shoot \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get a screenshot of th video and save it to photo album. photo asset collection name is bundle name, \char`\"{}\mbox{[}\+NSBundle main\+Bundle\mbox{]}.\+info\+Dictionary\mbox{[}(\+\_\+\+\_\+bridge NSString $\ast$)k\+CFBundle\+Name\+Key\mbox{]}\char`\"{}. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取视频的截图并存储到系统相册。照片 asset collection 名称为 bundle name，\char`\"{}\mbox{[}\+NSBundle main\+Bundle\mbox{]}.\+info\+Dictionary\mbox{[}(\+\_\+\+\_\+bridge NSString $\ast$)k\+CFBundle\+Name\+Key\mbox{]}\char`\"{} \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_a27dcf870019a0a20c1382425c7676f9a}\label{interface_thing_smart_cloud_manager_a27dcf870019a0a20c1382425c7676f9a}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!snapShoot@{snapShoot}}
+\index{snapShoot@{snapShoot}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{snapShoot}{snapShoot}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (UIImage $\ast$) snap\+Shoot \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get a screenshot of th video and save it to photo album. photo asset collection name is bundle name, \char`\"{}\mbox{[}\+NSBundle main\+Bundle\mbox{]}.\+info\+Dictionary\mbox{[}(\+\_\+\+\_\+bridge NSString $\ast$)k\+CFBundle\+Name\+Key\mbox{]}\char`\"{}. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取视频的截图并存储到系统相册。照片 asset collection 名称为 bundle name，\char`\"{}\mbox{[}\+NSBundle main\+Bundle\mbox{]}.\+info\+Dictionary\mbox{[}(\+\_\+\+\_\+bridge NSString $\ast$)k\+CFBundle\+Name\+Key\mbox{]}\char`\"{} \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_acf40d3c8053c287335592676c99984dd}\label{interface_thing_smart_cloud_manager_acf40d3c8053c287335592676c99984dd}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!snapShootAtPath:thumbnilPath:@{snapShootAtPath:thumbnilPath:}}
+\index{snapShootAtPath:thumbnilPath:@{snapShootAtPath:thumbnilPath:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{snapShootAtPath:thumbnilPath:}{snapShootAtPath:thumbnilPath:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (UIImage $\ast$) snap\+Shoot\+At\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{file\+Path }\item[{thumbnil\+Path\+:(NSString $\ast$)}]{thumbnil\+Path }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get a screenshot of the video and save it to file path. if you do not need a thumbnil, set thumbnil\+Path nil. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取视频的截图并存储到指定的目录，如果不需要缩略图，设置 thumbnil\+Path 为nil \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_acf40d3c8053c287335592676c99984dd}\label{interface_thing_smart_cloud_manager_acf40d3c8053c287335592676c99984dd}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!snapShootAtPath:thumbnilPath:@{snapShootAtPath:thumbnilPath:}}
+\index{snapShootAtPath:thumbnilPath:@{snapShootAtPath:thumbnilPath:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{snapShootAtPath:thumbnilPath:}{snapShootAtPath:thumbnilPath:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (UIImage $\ast$) snap\+Shoot\+At\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{file\+Path }\item[{thumbnil\+Path\+:(NSString $\ast$)}]{thumbnil\+Path }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get a screenshot of the video and save it to file path. if you do not need a thumbnil, set thumbnil\+Path nil. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取视频的截图并存储到指定的目录，如果不需要缩略图，设置 thumbnil\+Path 为nil \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_a61137bf896eaa99d7b60957749440182}\label{interface_thing_smart_cloud_manager_a61137bf896eaa99d7b60957749440182}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!startRecord@{startRecord}}
+\index{startRecord@{startRecord}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{startRecord}{startRecord}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) start\+Record \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} start record. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 开始录制 \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_a61137bf896eaa99d7b60957749440182}\label{interface_thing_smart_cloud_manager_a61137bf896eaa99d7b60957749440182}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!startRecord@{startRecord}}
+\index{startRecord@{startRecord}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{startRecord}{startRecord}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) start\+Record \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} start record. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 开始录制 \mbox{[}\$zh\mbox{]} \mbox{\Hypertarget{interface_thing_smart_cloud_manager_aee0b3f8dab6e00d9a824651b1a8c4141}\label{interface_thing_smart_cloud_manager_aee0b3f8dab6e00d9a824651b1a8c4141}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!startRecordAtPath:@{startRecordAtPath:}}
+\index{startRecordAtPath:@{startRecordAtPath:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{startRecordAtPath:}{startRecordAtPath:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) start\+Record\+At\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{file\+Path }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} start record and the video will save to the file path. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 开始录制，并且视频将会存到filepath \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & \mbox{[}$^\wedge$en\mbox{]}save path\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}保存路径\mbox{[}\$zh\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_aee0b3f8dab6e00d9a824651b1a8c4141}\label{interface_thing_smart_cloud_manager_aee0b3f8dab6e00d9a824651b1a8c4141}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!startRecordAtPath:@{startRecordAtPath:}}
+\index{startRecordAtPath:@{startRecordAtPath:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{startRecordAtPath:}{startRecordAtPath:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) start\+Record\+At\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{file\+Path }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} start record and the video will save to the file path. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 开始录制，并且视频将会存到filepath \mbox{[}\$zh\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & \mbox{[}$^\wedge$en\mbox{]}save path\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}保存路径\mbox{[}\$zh\mbox{]} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ab175959a9b16bf867707932f28f24c70}\label{interface_thing_smart_cloud_manager_ab175959a9b16bf867707932f28f24c70}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!stopPlayCloudVideo@{stopPlayCloudVideo}}
+\index{stopPlayCloudVideo@{stopPlayCloudVideo}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{stopPlayCloudVideo}{stopPlayCloudVideo}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) stop\+Play\+Cloud\+Video \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} stop play \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 停止播放 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}$^\wedge$en\mbox{]}err\+Code 0 is success\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}err\+Code 0 为成功\mbox{[}\$zh\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ab175959a9b16bf867707932f28f24c70}\label{interface_thing_smart_cloud_manager_ab175959a9b16bf867707932f28f24c70}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!stopPlayCloudVideo@{stopPlayCloudVideo}}
+\index{stopPlayCloudVideo@{stopPlayCloudVideo}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{stopPlayCloudVideo}{stopPlayCloudVideo}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) stop\+Play\+Cloud\+Video \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} stop play \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 停止播放 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}$^\wedge$en\mbox{]}err\+Code 0 is success\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}err\+Code 0 为成功\mbox{[}\$zh\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_af6bab1a6f5a17e5dc4fd90040dc63a3a}\label{interface_thing_smart_cloud_manager_af6bab1a6f5a17e5dc4fd90040dc63a3a}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!stopRecord@{stopRecord}}
+\index{stopRecord@{stopRecord}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{stopRecord}{stopRecord}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) stop\+Record \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} stop record. video will save to photo album. photo asset collection name is bundle name, \char`\"{}\mbox{[}\+NSBundle main\+Bundle\mbox{]}.\+info\+Dictionary\mbox{[}(\+\_\+\+\_\+bridge NSString $\ast$)k\+CFBundle\+Name\+Key\mbox{]}\char`\"{}. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 停止录制，视频将会存在系统相册。相片asset collection名称为 bundle name，\char`\"{}\mbox{[}\+NSBundle main\+Bundle\mbox{]}.\+info\+Dictionary\mbox{[}(\+\_\+\+\_\+bridge NSString $\ast$)k\+CFBundle\+Name\+Key\mbox{]}\char`\"{} \mbox{[}\$zh\mbox{]} \begin{DoxyReturn}{Returns}
+\mbox{[}$^\wedge$en\mbox{]}error code. return 0 as record success.\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}错误码，返回0代表记录成功\mbox{[}\$zh\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_af6bab1a6f5a17e5dc4fd90040dc63a3a}\label{interface_thing_smart_cloud_manager_af6bab1a6f5a17e5dc4fd90040dc63a3a}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!stopRecord@{stopRecord}}
+\index{stopRecord@{stopRecord}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{stopRecord}{stopRecord}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) stop\+Record \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} stop record. video will save to photo album. photo asset collection name is bundle name, \char`\"{}\mbox{[}\+NSBundle main\+Bundle\mbox{]}.\+info\+Dictionary\mbox{[}(\+\_\+\+\_\+bridge NSString $\ast$)k\+CFBundle\+Name\+Key\mbox{]}\char`\"{}. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 停止录制，视频将会存在系统相册。相片asset collection名称为 bundle name，\char`\"{}\mbox{[}\+NSBundle main\+Bundle\mbox{]}.\+info\+Dictionary\mbox{[}(\+\_\+\+\_\+bridge NSString $\ast$)k\+CFBundle\+Name\+Key\mbox{]}\char`\"{} \mbox{[}\$zh\mbox{]} \begin{DoxyReturn}{Returns}
+\mbox{[}$^\wedge$en\mbox{]}error code. return 0 as record success.\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}错误码，返回0代表记录成功\mbox{[}\$zh\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a2f4c3bcd653fa9c39b9d7a98f4b25cd9}\label{interface_thing_smart_cloud_manager_a2f4c3bcd653fa9c39b9d7a98f4b25cd9}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!timeEventsWithCloudDay:offset:limit:aiCodes:success:failure:@{timeEventsWithCloudDay:offset:limit:aiCodes:success:failure:}}
+\index{timeEventsWithCloudDay:offset:limit:aiCodes:success:failure:@{timeEventsWithCloudDay:offset:limit:aiCodes:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{timeEventsWithCloudDay:offset:limit:aiCodes:success:failure:}{timeEventsWithCloudDay:offset:limit:aiCodes:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) time\+Events\+With\+Cloud\+Day\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_cloud_day_model}{Thing\+Smart\+Cloud\+Day\+Model}} $\ast$)}]{cloud\+Day }\item[{offset\+:(int)}]{offset }\item[{limit\+:(int)}]{limit }\item[{ai\+Codes\+:(NSString $\ast$)}]{ai\+Codes }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_cloud_time_event_model}{Thing\+Smart\+Cloud\+Time\+Event\+Model}} $\ast$ $>$ $\ast$time\+Events))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get time event of the day \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取某天的时间片数据 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em cloud\+Day} & \mbox{[}$^\wedge$en\mbox{]}target day\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}目标日期\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em offset} & \mbox{[}$^\wedge$en\mbox{]}event index offset\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}事件索引偏移量\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em limit} & \mbox{[}$^\wedge$en\mbox{]}event count limit, -\/1 is get all\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}事件数量限制，-\/1代表所有\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em ai\+Codes} & ai 类型 \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a2f4c3bcd653fa9c39b9d7a98f4b25cd9}\label{interface_thing_smart_cloud_manager_a2f4c3bcd653fa9c39b9d7a98f4b25cd9}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!timeEventsWithCloudDay:offset:limit:aiCodes:success:failure:@{timeEventsWithCloudDay:offset:limit:aiCodes:success:failure:}}
+\index{timeEventsWithCloudDay:offset:limit:aiCodes:success:failure:@{timeEventsWithCloudDay:offset:limit:aiCodes:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{timeEventsWithCloudDay:offset:limit:aiCodes:success:failure:}{timeEventsWithCloudDay:offset:limit:aiCodes:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) time\+Events\+With\+Cloud\+Day\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_cloud_day_model}{Thing\+Smart\+Cloud\+Day\+Model}} $\ast$)}]{cloud\+Day }\item[{offset\+:(int)}]{offset }\item[{limit\+:(int)}]{limit }\item[{ai\+Codes\+:(NSString $\ast$)}]{ai\+Codes }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_cloud_time_event_model}{Thing\+Smart\+Cloud\+Time\+Event\+Model}} $\ast$ $>$ $\ast$time\+Events))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get time event of the day \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取某天的时间片数据 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em cloud\+Day} & \mbox{[}$^\wedge$en\mbox{]}target day\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}目标日期\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em offset} & \mbox{[}$^\wedge$en\mbox{]}event index offset\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}事件索引偏移量\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em limit} & \mbox{[}$^\wedge$en\mbox{]}event count limit, -\/1 is get all\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}事件数量限制，-\/1代表所有\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em ai\+Codes} & ai 类型 \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a8ce5d99ea2f2e49800d77d8e0e9ec57e}\label{interface_thing_smart_cloud_manager_a8ce5d99ea2f2e49800d77d8e0e9ec57e}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!timeEventsWithCloudDay:offset:limit:success:failure:@{timeEventsWithCloudDay:offset:limit:success:failure:}}
+\index{timeEventsWithCloudDay:offset:limit:success:failure:@{timeEventsWithCloudDay:offset:limit:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{timeEventsWithCloudDay:offset:limit:success:failure:}{timeEventsWithCloudDay:offset:limit:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) time\+Events\+With\+Cloud\+Day\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_cloud_day_model}{Thing\+Smart\+Cloud\+Day\+Model}} $\ast$)}]{cloud\+Day }\item[{offset\+:(int)}]{offset }\item[{limit\+:(int)}]{limit }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_cloud_time_event_model}{Thing\+Smart\+Cloud\+Time\+Event\+Model}} $\ast$ $>$ $\ast$time\+Events))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get time event of the day \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取某天的时间片数据 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em cloud\+Day} & \mbox{[}$^\wedge$en\mbox{]}target day\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}目标日期\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em offset} & \mbox{[}$^\wedge$en\mbox{]}event index offset\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}事件索引偏移量\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em limit} & \mbox{[}$^\wedge$en\mbox{]}event count limit, -\/1 is get all\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}事件数量限制，-\/1代表所有\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a8ce5d99ea2f2e49800d77d8e0e9ec57e}\label{interface_thing_smart_cloud_manager_a8ce5d99ea2f2e49800d77d8e0e9ec57e}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!timeEventsWithCloudDay:offset:limit:success:failure:@{timeEventsWithCloudDay:offset:limit:success:failure:}}
+\index{timeEventsWithCloudDay:offset:limit:success:failure:@{timeEventsWithCloudDay:offset:limit:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{timeEventsWithCloudDay:offset:limit:success:failure:}{timeEventsWithCloudDay:offset:limit:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) time\+Events\+With\+Cloud\+Day\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_cloud_day_model}{Thing\+Smart\+Cloud\+Day\+Model}} $\ast$)}]{cloud\+Day }\item[{offset\+:(int)}]{offset }\item[{limit\+:(int)}]{limit }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_cloud_time_event_model}{Thing\+Smart\+Cloud\+Time\+Event\+Model}} $\ast$ $>$ $\ast$time\+Events))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get time event of the day \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取某天的时间片数据 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em cloud\+Day} & \mbox{[}$^\wedge$en\mbox{]}target day\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}目标日期\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em offset} & \mbox{[}$^\wedge$en\mbox{]}event index offset\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}事件索引偏移量\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em limit} & \mbox{[}$^\wedge$en\mbox{]}event count limit, -\/1 is get all\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}事件数量限制，-\/1代表所有\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ac512e459c10ff2036072060622d8fef2}\label{interface_thing_smart_cloud_manager_ac512e459c10ff2036072060622d8fef2}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!timeLineWithCloudDay:success:failure:@{timeLineWithCloudDay:success:failure:}}
+\index{timeLineWithCloudDay:success:failure:@{timeLineWithCloudDay:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{timeLineWithCloudDay:success:failure:}{timeLineWithCloudDay:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) time\+Line\+With\+Cloud\+Day\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_cloud_day_model}{Thing\+Smart\+Cloud\+Day\+Model}} $\ast$)}]{cloud\+Day }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_cloud_time_piece_model}{Thing\+Smart\+Cloud\+Time\+Piece\+Model}} $\ast$ $>$ $\ast$time\+Pieces))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get time line data of the day \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取某天的时间轴数据 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em cloud\+Day} & \mbox{[}$^\wedge$en\mbox{]}target day\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}目标日期\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ac512e459c10ff2036072060622d8fef2}\label{interface_thing_smart_cloud_manager_ac512e459c10ff2036072060622d8fef2}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!timeLineWithCloudDay:success:failure:@{timeLineWithCloudDay:success:failure:}}
+\index{timeLineWithCloudDay:success:failure:@{timeLineWithCloudDay:success:failure:}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{timeLineWithCloudDay:success:failure:}{timeLineWithCloudDay:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) time\+Line\+With\+Cloud\+Day\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_cloud_day_model}{Thing\+Smart\+Cloud\+Day\+Model}} $\ast$)}]{cloud\+Day }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_cloud_time_piece_model}{Thing\+Smart\+Cloud\+Time\+Piece\+Model}} $\ast$ $>$ $\ast$time\+Pieces))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} get time line data of the day \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 获取某天的时间轴数据 \mbox{[}\$zh\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em cloud\+Day} & \mbox{[}$^\wedge$en\mbox{]}target day\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}目标日期\mbox{[}\$zh\mbox{]} \\
+\hline
+{\em success} & success callback \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ac48fc09379034a175330fb8facbef0da}\label{interface_thing_smart_cloud_manager_ac48fc09379034a175330fb8facbef0da}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!videoView@{videoView}}
+\index{videoView@{videoView}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{videoView}{videoView}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (UIView$<$ \mbox{\hyperlink{protocol_thing_smart_video_view_type-p}{Thing\+Smart\+Video\+View\+Type}} $>$ $\ast$) video\+View \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} video frame render view \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 视频帧渲染视图 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+render view 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ac48fc09379034a175330fb8facbef0da}\label{interface_thing_smart_cloud_manager_ac48fc09379034a175330fb8facbef0da}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!videoView@{videoView}}
+\index{videoView@{videoView}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{videoView}{videoView}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (UIView$<$ \mbox{\hyperlink{protocol_thing_smart_video_view_type-p}{Thing\+Smart\+Video\+View\+Type}} $>$ $\ast$) video\+View \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{[}$^\wedge$en\mbox{]} video frame render view \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 视频帧渲染视图 \mbox{[}\$zh\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+render view 
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ac8cd8568838f7a0321d6ea33e14b65ef}\label{interface_thing_smart_cloud_manager_ac8cd8568838f7a0321d6ea33e14b65ef}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!authJson@{authJson}}
+\index{authJson@{authJson}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{authJson}{authJson}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) auth\+Json\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source_l00070}{70}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source}{Thing\+Smart\+Cloud\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ab54f08dd19365fd480ed468b92686852}\label{interface_thing_smart_cloud_manager_ab54f08dd19365fd480ed468b92686852}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!autoRender@{autoRender}}
+\index{autoRender@{autoRender}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{autoRender}{autoRender}}
+{\footnotesize\ttfamily -\/ (BOOL) auto\+Render\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source_l00062}{62}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source}{Thing\+Smart\+Cloud\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_ab433fccb5c33c954691d8467a7cd66ff}\label{interface_thing_smart_cloud_manager_ab433fccb5c33c954691d8467a7cd66ff}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!cloudDays@{cloudDays}}
+\index{cloudDays@{cloudDays}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{cloudDays}{cloudDays}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_cloud_day_model}{Thing\+Smart\+Cloud\+Day\+Model}} $\ast$ $>$ $\ast$) cloud\+Days\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source_l00064}{64}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source}{Thing\+Smart\+Cloud\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a4d1a582847b5ae10443ba84e27331ac0}\label{interface_thing_smart_cloud_manager_a4d1a582847b5ae10443ba84e27331ac0}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!delegate@{delegate}}
+\index{delegate@{delegate}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_smart_cloud_manager_delegate-p}{Thing\+Smart\+Cloud\+Manager\+Delegate}} $>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source_l00066}{66}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source}{Thing\+Smart\+Cloud\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_af56c768a6fc909ab50f17a2c1cff06ca}\label{interface_thing_smart_cloud_manager_af56c768a6fc909ab50f17a2c1cff06ca}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!devId@{devId}}
+\index{devId@{devId}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{devId}{devId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) dev\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source_l00060}{60}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source}{Thing\+Smart\+Cloud\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a992f9608cc54661a5a23ed57b9b01d52}\label{interface_thing_smart_cloud_manager_a992f9608cc54661a5a23ed57b9b01d52}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!enableEncryptedImage@{enableEncryptedImage}}
+\index{enableEncryptedImage@{enableEncryptedImage}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{enableEncryptedImage}{enableEncryptedImage}}
+{\footnotesize\ttfamily -\/ (BOOL) enable\+Encrypted\+Image\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+\mbox{[}$^\wedge$en\mbox{]} Enable image encryption, which is disabled by default. After opening, the pictures carried in the event model will be encrypted, and you need to use the Thing\+Encrypt\+Image component to display or download the pictures. \mbox{[}\$en\mbox{]}
+
+\mbox{[}$^\wedge$zh\mbox{]} 开启图片加密，默认为关闭。打开后，云存储事件中携带的图片会加密，需要使用 Thing\+Encrypt\+Image 组件显示或者下载图片。 \mbox{[}\$zh\mbox{]} 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source_l00085}{85}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source}{Thing\+Smart\+Cloud\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a4fd876a2f6eefade883af3b7fa92386f}\label{interface_thing_smart_cloud_manager_a4fd876a2f6eefade883af3b7fa92386f}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!encryptKey@{encryptKey}}
+\index{encryptKey@{encryptKey}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{encryptKey}{encryptKey}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) encrypt\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source_l00068}{68}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source}{Thing\+Smart\+Cloud\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_aab845bd4a17cb71f02d2ba8a0bb54250}\label{interface_thing_smart_cloud_manager_aab845bd4a17cb71f02d2ba8a0bb54250}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!timeZone@{timeZone}}
+\index{timeZone@{timeZone}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{timeZone}{timeZone}}
+{\footnotesize\ttfamily -\/ (NSTime\+Zone $\ast$) time\+Zone\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source_l00072}{72}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source}{Thing\+Smart\+Cloud\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_cloud_manager_a474ca86b1522533e09f74db86506c615}\label{interface_thing_smart_cloud_manager_a474ca86b1522533e09f74db86506c615}} 
+\index{ThingSmartCloudManager@{ThingSmartCloudManager}!videoStretchSize@{videoStretchSize}}
+\index{videoStretchSize@{videoStretchSize}!ThingSmartCloudManager@{ThingSmartCloudManager}}
+\doxysubsubsection{\texorpdfstring{videoStretchSize}{videoStretchSize}}
+{\footnotesize\ttfamily -\/ (CGSize) video\+Stretch\+Size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source_l00074}{74}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h_source}{Thing\+Smart\+Cloud\+Manager.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Camera\+Kit/\+Build/\+Thing\+Smart\+Camera\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Camera\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h}{Thing\+Smart\+Cloud\+Manager.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Camera\+Kit/\+Build/\+Thing\+Smart\+Camera\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Camera\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_cloud_manager_8h}{Thing\+Smart\+Cloud\+Manager.\+h}}\end{DoxyCompactItemize}

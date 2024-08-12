@@ -1,0 +1,207 @@
+\hypertarget{interface_w_t_l_certificates}{}\doxysection{WTLCertificates Class Reference}
+\label{interface_w_t_l_certificates}\index{WTLCertificates@{WTLCertificates}}
+
+
+{\ttfamily \#import $<$WTLCertificates.\+h$>$}
+
+Inheritance diagram for WTLCertificates\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_w_t_l_certificates}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_certificates_a84c53b9638561d64f3e6734c45e47740}{NS\+\_\+\+UNAVAILABLE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_w_t_l_certificates_a84c53b9638561d64f3e6734c45e47740}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_certificates_abfe4221fc671bdcedd857109247f1f04}{create\+Root\+Certificate\+:issuer\+ID\+:fabric\+ID\+:error\+:}}
+\item 
+(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_certificates_a7ce829130d4f5693115f0a02724ff130}{create\+Intermediate\+Certificate\+:root\+Certificate\+:intermediate\+Public\+Key\+:issuer\+ID\+:fabric\+ID\+:error\+:}}
+\item 
+(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_certificates_a05a80050dc0a49cf3f47007513551ef6}{create\+Operational\+Certificate\+:signing\+Certificate\+:operational\+Public\+Key\+:fabric\+ID\+:node\+ID\+:case\+Authenticated\+Tags\+:error\+:}}
+\item 
+(BOOL) + \mbox{\hyperlink{interface_w_t_l_certificates_a846b07649e982796ea9107f16506aced}{keypair\+:matches\+Certificate\+:}}
+\item 
+(BOOL) + \mbox{\hyperlink{interface_w_t_l_certificates_a2298d40becebb3b5c334e361b4d85efc}{is\+Certificate\+:equal\+To\+:}}
+\item 
+(\mbox{\hyperlink{_w_t_l_defines_8h_a4efd552c6622c4fb6aee847e31a52634}{WTLCSRDERBytes}} \+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_certificates_ae846a33d90a775b159b5054b5acd322a}{create\+Certificate\+Signing\+Request\+:error\+:}}
+\item 
+(\mbox{\hyperlink{_w_t_l_defines_8h_a80edc0c3fcd1e58989eb7fc59408d12b}{WTLCertificate\+TLVBytes}} \+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_certificates_a5d94be064f990c4b9bafd0006bc39004}{convert\+X509\+Certificate\+:}}
+\item 
+(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_certificates_a4333303405e4667d7a59e59b62f6f687}{convert\+Matter\+Certificate\+:}}
+\item 
+(NSData $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_certificates_af8b61cd5cabd25ff80619bc7262a0de6}{public\+Key\+From\+CSR\+:error\+:}}
+\item 
+(nullable NSData $\ast$) + \mbox{\hyperlink{interface_w_t_l_certificates_a59de84b5e9bc4b7eaf1deca94067d727}{generate\+Root\+Certificate\+:issuer\+Id\+:fabric\+Id\+:error\+:}}
+\item 
+(nullable NSData $\ast$) + \mbox{\hyperlink{interface_w_t_l_certificates_a3629d96c7a67e3af19988371ed4512a0}{generate\+Intermediate\+Certificate\+:root\+Certificate\+:intermediate\+Public\+Key\+:issuer\+Id\+:fabric\+Id\+:error\+:}}
+\item 
+(nullable NSData $\ast$) + \mbox{\hyperlink{interface_w_t_l_certificates_ae9480597fdac7c7b16a107b1319e2661}{generate\+Operational\+Certificate\+:signing\+Certificate\+:operational\+Public\+Key\+:fabric\+Id\+:node\+Id\+:case\+Authenticated\+Tags\+:error\+:}}
+\item 
+(nullable NSData $\ast$) + \mbox{\hyperlink{interface_w_t_l_certificates_a06d1fd682213eb6a86f3bbbcdc61a1c2}{generate\+Certificate\+Signing\+Request\+:error\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_certificates_8h_source_l00029}{29}} of file \mbox{\hyperlink{_w_t_l_certificates_8h_source}{WTLCertificates.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_certificates_a4333303405e4667d7a59e59b62f6f687}\label{interface_w_t_l_certificates_a4333303405e4667d7a59e59b62f6f687}} 
+\index{WTLCertificates@{WTLCertificates}!convertMatterCertificate:@{convertMatterCertificate:}}
+\index{convertMatterCertificate:@{convertMatterCertificate:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{convertMatterCertificate:}{convertMatterCertificate:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \+\_\+\+Nullable) convert\+Matter\+Certificate\+: \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Convert the given Matter TLV encoded certificate to the X.\+509v3 DER encoded format.
+
+Returns nil if the conversion fails (e.\+g. if the input data cannot be parsed as a Matter TLV encoded certificate, or if the certificate cannot be represented in the X.\+509v3 DER format). \mbox{\Hypertarget{interface_w_t_l_certificates_a5d94be064f990c4b9bafd0006bc39004}\label{interface_w_t_l_certificates_a5d94be064f990c4b9bafd0006bc39004}} 
+\index{WTLCertificates@{WTLCertificates}!convertX509Certificate:@{convertX509Certificate:}}
+\index{convertX509Certificate:@{convertX509Certificate:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{convertX509Certificate:}{convertX509Certificate:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{_w_t_l_defines_8h_a80edc0c3fcd1e58989eb7fc59408d12b}{WTLCertificate\+TLVBytes}} \+\_\+\+Nullable) convert\+X509\+Certificate\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}})}]{x509\+Certificate }\end{DoxyParamCaption}}
+
+Convert the given X.\+509v3 DER encoded certificate to the Matter certificate format.
+
+Returns nil if the conversion fails (e.\+g. if the input data cannot be parsed as a DER encoded X.\+509 certificate, or if the certificate cannot be represented in the Matter certificate format). \mbox{\Hypertarget{interface_w_t_l_certificates_ae846a33d90a775b159b5054b5acd322a}\label{interface_w_t_l_certificates_ae846a33d90a775b159b5054b5acd322a}} 
+\index{WTLCertificates@{WTLCertificates}!createCertificateSigningRequest:error:@{createCertificateSigningRequest:error:}}
+\index{createCertificateSigningRequest:error:@{createCertificateSigningRequest:error:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{createCertificateSigningRequest:error:}{createCertificateSigningRequest:error:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{_w_t_l_defines_8h_a4efd552c6622c4fb6aee847e31a52634}{WTLCSRDERBytes}} \+\_\+\+Nullable) create\+Certificate\+Signing\+Request\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{keypair }\item[{error\+:(NSError $\ast$\+\_\+\+\_\+autoreleasing \+\_\+\+Nullable $\ast$\+\_\+\+Nullable)}]{error }\end{DoxyParamCaption}}
+
+Generate a PKCS\#10 certificate signing request from a \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}. This can then be used to request an operational or ICA certificate from an external certificate authority.
+
+The CSR will have the subject OU DN set to \textquotesingle{}CSA\textquotesingle{}, because omitting all identifying information altogether often trips up CSR parsing code. The CA being used should expect this and ignore the request subject, producing a subject that matches the rules for Matter certificates.
+
+On failure returns nil and if \char`\"{}error\char`\"{} is not null sets $\ast$error to the relevant error. \mbox{\Hypertarget{interface_w_t_l_certificates_a7ce829130d4f5693115f0a02724ff130}\label{interface_w_t_l_certificates_a7ce829130d4f5693115f0a02724ff130}} 
+\index{WTLCertificates@{WTLCertificates}!createIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerID:fabricID:error:@{createIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerID:fabricID:error:}}
+\index{createIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerID:fabricID:error:@{createIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerID:fabricID:error:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{createIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerID:fabricID:error:}{createIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerID:fabricID:error:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \+\_\+\+Nullable) create\+Intermediate\+Certificate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{root\+Keypair }\item[{root\+Certificate\+:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}})}]{root\+Certificate }\item[{intermediate\+Public\+Key\+:(Sec\+Key\+Ref)}]{intermediate\+Public\+Key }\item[{issuer\+ID\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{issuer\+ID }\item[{fabric\+ID\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{fabric\+ID }\item[{error\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Create an intermediate X.\+509 DER encoded certificate that has the right fields to be a valid Matter intermediate certificate.
+
+If issuer\+ID is not nil, it\textquotesingle{}s unsigned\+Long\+Long\+Value will be used for the matter-\/icac-\/id attribute in the subject distinguished name of the resulting certificate.
+
+If issuer\+ID is nil, a random value will be generated for matter-\/icac-\/id.
+
+If fabric\+ID is not nil, it will be included in the subject DN of the certificate. In this case it must be a valid Matter fabric id.
+
+On failure returns nil and if \char`\"{}error\char`\"{} is not null sets $\ast$error to the relevant error. \mbox{\Hypertarget{interface_w_t_l_certificates_a05a80050dc0a49cf3f47007513551ef6}\label{interface_w_t_l_certificates_a05a80050dc0a49cf3f47007513551ef6}} 
+\index{WTLCertificates@{WTLCertificates}!createOperationalCertificate:signingCertificate:operationalPublicKey:fabricID:nodeID:caseAuthenticatedTags:error:@{createOperationalCertificate:signingCertificate:operationalPublicKey:fabricID:nodeID:caseAuthenticatedTags:error:}}
+\index{createOperationalCertificate:signingCertificate:operationalPublicKey:fabricID:nodeID:caseAuthenticatedTags:error:@{createOperationalCertificate:signingCertificate:operationalPublicKey:fabricID:nodeID:caseAuthenticatedTags:error:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{createOperationalCertificate:signingCertificate:operationalPublicKey:fabricID:nodeID:caseAuthenticatedTags:error:}{createOperationalCertificate:signingCertificate:operationalPublicKey:fabricID:nodeID:caseAuthenticatedTags:error:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \+\_\+\+Nullable) create\+Operational\+Certificate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{signing\+Keypair }\item[{signing\+Certificate\+:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}})}]{signing\+Certificate }\item[{operational\+Public\+Key\+:(Sec\+Key\+Ref)}]{operational\+Public\+Key }\item[{fabric\+ID\+:(NSNumber $\ast$)}]{fabric\+ID }\item[{node\+ID\+:(NSNumber $\ast$)}]{node\+ID }\item[{case\+Authenticated\+Tags\+:(NSSet$<$ NSNumber $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{case\+Authenticated\+Tags }\item[{error\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Create an X.\+509 DER encoded certificate that has the right fields to be a valid Matter operational certificate.
+
+signing\+Keypair and signing\+Certificate are the root or intermediate that is signing the operational certificate.
+
+node\+ID and fabric\+ID are expected to be 64-\/bit unsigned integers.
+
+node\+ID must be a valid Matter operational node id.
+
+fabric\+ID must be a valid Matter fabric id.
+
+case\+Authenticated\+Tags may be nil to indicate no CASE Authenticated Tags should be used. If case\+Authenticated\+Tags is not nil, it must contain at most 3 numbers, which are expected to be 32-\/bit unsigned Case Authenticated Tag values.
+
+On failure returns nil and if \char`\"{}error\char`\"{} is not null sets $\ast$error to the relevant error. \mbox{\Hypertarget{interface_w_t_l_certificates_abfe4221fc671bdcedd857109247f1f04}\label{interface_w_t_l_certificates_abfe4221fc671bdcedd857109247f1f04}} 
+\index{WTLCertificates@{WTLCertificates}!createRootCertificate:issuerID:fabricID:error:@{createRootCertificate:issuerID:fabricID:error:}}
+\index{createRootCertificate:issuerID:fabricID:error:@{createRootCertificate:issuerID:fabricID:error:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{createRootCertificate:issuerID:fabricID:error:}{createRootCertificate:issuerID:fabricID:error:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \+\_\+\+Nullable) create\+Root\+Certificate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{keypair }\item[{issuer\+ID\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{issuer\+ID }\item[{fabric\+ID\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{fabric\+ID }\item[{error\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Create a root (self-\/signed) X.\+509 DER encoded certificate that has the right fields to be a valid Matter root certificate.
+
+If issuer\+ID is not nil, it\textquotesingle{}s unsigned\+Long\+Long\+Value will be used for the matter-\/rcac-\/id attribute in the subject distinguished name of the resulting certificate.
+
+If issuer\+ID is nil, a random value will be generated for matter-\/rcac-\/id.
+
+If fabric\+ID is not nil, it will be included in the subject DN of the certificate. In this case it must be a valid Matter fabric id.
+
+On failure returns nil and if \char`\"{}error\char`\"{} is not null sets $\ast$error to the relevant error. \mbox{\Hypertarget{interface_w_t_l_certificates_a06d1fd682213eb6a86f3bbbcdc61a1c2}\label{interface_w_t_l_certificates_a06d1fd682213eb6a86f3bbbcdc61a1c2}} 
+\index{WTLCertificates@{WTLCertificates}!generateCertificateSigningRequest:error:@{generateCertificateSigningRequest:error:}}
+\index{generateCertificateSigningRequest:error:@{generateCertificateSigningRequest:error:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{generateCertificateSigningRequest:error:}{generateCertificateSigningRequest:error:}}
+{\footnotesize\ttfamily + (nullable NSData $\ast$) generate\+Certificate\+Signing\+Request\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{keypair }\item[{error\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_certificates_ae846a33d90a775b159b5054b5acd322a}{create\+Certificate\+Signing\+Request\+:error\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_certificates_07_deprecated_08_a06d1fd682213eb6a86f3bbbcdc61a1c2}{WTLCertificates(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_certificates_a3629d96c7a67e3af19988371ed4512a0}\label{interface_w_t_l_certificates_a3629d96c7a67e3af19988371ed4512a0}} 
+\index{WTLCertificates@{WTLCertificates}!generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:@{generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:}}
+\index{generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:@{generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:}{generateIntermediateCertificate:rootCertificate:intermediatePublicKey:issuerId:fabricId:error:}}
+{\footnotesize\ttfamily + (nullable NSData $\ast$) generate\+Intermediate\+Certificate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{root\+Keypair }\item[{root\+Certificate\+:(NSData $\ast$)}]{root\+Certificate }\item[{intermediate\+Public\+Key\+:(Sec\+Key\+Ref)}]{intermediate\+Public\+Key }\item[{issuer\+Id\+:(nullable NSNumber $\ast$)}]{issuer\+Id }\item[{fabric\+Id\+:(nullable NSNumber $\ast$)}]{fabric\+Id }\item[{error\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_certificates_a7ce829130d4f5693115f0a02724ff130}{create\+Intermediate\+Certificate\+:root\+Certificate\+:intermediate\+Public\+Key\+:issuer\+ID\+:fabric\+ID\+:error\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_certificates_07_deprecated_08_a3629d96c7a67e3af19988371ed4512a0}{WTLCertificates(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_certificates_ae9480597fdac7c7b16a107b1319e2661}\label{interface_w_t_l_certificates_ae9480597fdac7c7b16a107b1319e2661}} 
+\index{WTLCertificates@{WTLCertificates}!generateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:@{generateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:}}
+\index{generateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:@{generateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{generateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:}{generateOperationalCertificate:signingCertificate:operationalPublicKey:fabricId:nodeId:caseAuthenticatedTags:error:}}
+{\footnotesize\ttfamily + (nullable NSData $\ast$) generate\+Operational\+Certificate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{signing\+Keypair }\item[{signing\+Certificate\+:(NSData $\ast$)}]{signing\+Certificate }\item[{operational\+Public\+Key\+:(Sec\+Key\+Ref)}]{operational\+Public\+Key }\item[{fabric\+Id\+:(NSNumber $\ast$)}]{fabric\+Id }\item[{node\+Id\+:(NSNumber $\ast$)}]{node\+Id }\item[{case\+Authenticated\+Tags\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSNumber $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{case\+Authenticated\+Tags }\item[{error\+:(\char`\"{}Plase use \char`\"{} \char`\"{}\mbox{\hyperlink{interface_w_t_l_certificates_a05a80050dc0a49cf3f47007513551ef6}{create\+Operational\+Certificate\+:signing\+Certificate\+:operational\+Public\+Key\+:fabric\+ID\+:node\+ID\+:case\+Authenticated\+Tags\+:error\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_certificates_07_deprecated_08_ae9480597fdac7c7b16a107b1319e2661}{WTLCertificates(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_certificates_a59de84b5e9bc4b7eaf1deca94067d727}\label{interface_w_t_l_certificates_a59de84b5e9bc4b7eaf1deca94067d727}} 
+\index{WTLCertificates@{WTLCertificates}!generateRootCertificate:issuerId:fabricId:error:@{generateRootCertificate:issuerId:fabricId:error:}}
+\index{generateRootCertificate:issuerId:fabricId:error:@{generateRootCertificate:issuerId:fabricId:error:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{generateRootCertificate:issuerId:fabricId:error:}{generateRootCertificate:issuerId:fabricId:error:}}
+{\footnotesize\ttfamily + (nullable NSData $\ast$) generate\+Root\+Certificate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{keypair }\item[{issuer\+Id\+:(nullable NSNumber $\ast$)}]{issuer\+Id }\item[{fabric\+Id\+:(nullable NSNumber $\ast$)}]{fabric\+Id }\item[{error\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_certificates_abfe4221fc671bdcedd857109247f1f04}{create\+Root\+Certificate\+:issuer\+ID\+:fabric\+ID\+:error\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_certificates_07_deprecated_08_a59de84b5e9bc4b7eaf1deca94067d727}{WTLCertificates(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_certificates_a2298d40becebb3b5c334e361b4d85efc}\label{interface_w_t_l_certificates_a2298d40becebb3b5c334e361b4d85efc}} 
+\index{WTLCertificates@{WTLCertificates}!isCertificate:equalTo:@{isCertificate:equalTo:}}
+\index{isCertificate:equalTo:@{isCertificate:equalTo:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{isCertificate:equalTo:}{isCertificate:equalTo:}}
+{\footnotesize\ttfamily + (BOOL) is\+Certificate\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}})}]{certificate1 }\item[{equal\+To\+:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}})}]{certificate2 }\end{DoxyParamCaption}}
+
+Check whether two X.\+509 DER encoded certificates are equivalent, in the sense of having the same public key and the same subject DN. Returns NO if public keys or subject DNs cannot be extracted from the certificates. \mbox{\Hypertarget{interface_w_t_l_certificates_a846b07649e982796ea9107f16506aced}\label{interface_w_t_l_certificates_a846b07649e982796ea9107f16506aced}} 
+\index{WTLCertificates@{WTLCertificates}!keypair:matchesCertificate:@{keypair:matchesCertificate:}}
+\index{keypair:matchesCertificate:@{keypair:matchesCertificate:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{keypair:matchesCertificate:}{keypair:matchesCertificate:}}
+{\footnotesize\ttfamily + (BOOL) keypair\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}} $>$)}]{keypair }\item[{matches\+Certificate\+:(NSData $\ast$)}]{certificate }\end{DoxyParamCaption}}
+
+Check whether the given keypair\textquotesingle{}s public key matches the given certificate\textquotesingle{}s public key. The certificate is expected to be an X.\+509 DER encoded certificate.
+
+Will return NO on failures to extract public keys from the objects. \mbox{\Hypertarget{interface_w_t_l_certificates_a84c53b9638561d64f3e6734c45e47740}\label{interface_w_t_l_certificates_a84c53b9638561d64f3e6734c45e47740}} 
+\index{WTLCertificates@{WTLCertificates}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_certificates_a84c53b9638561d64f3e6734c45e47740}\label{interface_w_t_l_certificates_a84c53b9638561d64f3e6734c45e47740}} 
+\index{WTLCertificates@{WTLCertificates}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_certificates_af8b61cd5cabd25ff80619bc7262a0de6}\label{interface_w_t_l_certificates_af8b61cd5cabd25ff80619bc7262a0de6}} 
+\index{WTLCertificates@{WTLCertificates}!publicKeyFromCSR:error:@{publicKeyFromCSR:error:}}
+\index{publicKeyFromCSR:error:@{publicKeyFromCSR:error:}!WTLCertificates@{WTLCertificates}}
+\doxysubsubsection{\texorpdfstring{publicKeyFromCSR:error:}{publicKeyFromCSR:error:}}
+{\footnotesize\ttfamily + (NSData $\ast$\+\_\+\+Nullable) public\+Key\+From\+CSR\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_w_t_l_defines_8h_a4efd552c6622c4fb6aee847e31a52634}{WTLCSRDERBytes}})}]{csr }\item[{error\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Extract the public key from the given PKCS\#10 certificate signing request. This is the public key that a certificate issued in response to the request would need to have. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_certificates_8h}{WTLCertificates.\+h}}\end{DoxyCompactItemize}

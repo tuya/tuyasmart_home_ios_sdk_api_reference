@@ -1,0 +1,246 @@
+\hypertarget{interface_thing_smart_schema_property_model}{}\doxysection{Thing\+Smart\+Schema\+Property\+Model Class Reference}
+\label{interface_thing_smart_schema_property_model}\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+
+
+The device schema property.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Schema\+Property\+Model.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Schema\+Property\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.320755cm]{interface_thing_smart_schema_property_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_schema_property_model_a058de58bcd657bd2015d677c38d51227}{type}}
+\begin{DoxyCompactList}\small\item\em The type of object. enum\+: enumerated $\vert$ bool\+: Boolean $\vert$ string\+: character $\vert$ value\+: numeric $\vert$ bitmap\+: fault $\vert$ array\+: list $\vert$ struct\+: struct properties. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_schema_property_model_a8f188ab6a006754f6a111f59a01d4581}{unit}}
+\begin{DoxyCompactList}\small\item\em The unit, such as °C. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interface_thing_smart_schema_property_model_ace4bc05d633355f6577ff8ffaa2b2bfe}{min}}
+\begin{DoxyCompactList}\small\item\em The minimum value of the numeric type. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interface_thing_smart_schema_property_model_ab107f23dd338053ae53c2d16e4189f23}{max}}
+\begin{DoxyCompactList}\small\item\em The maximum value of the numeric type. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interface_thing_smart_schema_property_model_a2f7baa84e2c6fa2e381f4f906590740b}{step}}
+\begin{DoxyCompactList}\small\item\em The numerical step. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_schema_property_model_a02cca029eb1e96804bda1e1fd492f0bc}{scale}}
+\begin{DoxyCompactList}\small\item\em The exponent of 10 in the numeric type, multiplied by the corresponding transmission value, is equal to the actual value and is used to avoid fractional transmission. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_schema_property_model_aae0ec2edbd13f94ad363134dce63cd0f}{maxlen}}
+\begin{DoxyCompactList}\small\item\em The maximum number of bits of the fault type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$ \mbox{\hyperlink{interface_thing_smart_schema_property_model_a6aab73a2a4f7f3822cd83022297960ec}{label}}
+\begin{DoxyCompactList}\small\item\em Detailed description of the fault type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$ \mbox{\hyperlink{interface_thing_smart_schema_property_model_a75d571bc312ca165954503f778a3c7e6}{range}}
+\begin{DoxyCompactList}\small\item\em The scope of the enumeration type. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_schema_property_model_a6feabe95bbd8e47a62207dc9d9602cde}{selected\+Value}}
+\begin{DoxyCompactList}\small\item\em The specified value. \end{DoxyCompactList}\item 
+NSDictionary $\ast$ \mbox{\hyperlink{interface_thing_smart_schema_property_model_aca345317f302776f8c8c727de50a5f4e}{properties}}
+\begin{DoxyCompactList}\small\item\em Detailed descroption of the struct type. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_schema_property_model_a04e8a29e9006d7aace7e10f23d918491}{max\+Size}}
+\begin{DoxyCompactList}\small\item\em The maximum size of the array type. \end{DoxyCompactList}\item 
+NSDictionary $\ast$ \mbox{\hyperlink{interface_thing_smart_schema_property_model_a471472039793b4a72d434f1e602f54f7}{element\+Type\+Spec}}
+\begin{DoxyCompactList}\small\item\em The element type spec of the array type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The device schema property. 
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00016}{16}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_a471472039793b4a72d434f1e602f54f7}\label{interface_thing_smart_schema_property_model_a471472039793b4a72d434f1e602f54f7}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!elementTypeSpec@{elementTypeSpec}}
+\index{elementTypeSpec@{elementTypeSpec}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{elementTypeSpec}{elementTypeSpec}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) element\+Type\+Spec\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The element type spec of the array type. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00055}{55}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_a6aab73a2a4f7f3822cd83022297960ec}\label{interface_thing_smart_schema_property_model_a6aab73a2a4f7f3822cd83022297960ec}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!label@{label}}
+\index{label@{label}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{label}{label}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) label\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Detailed description of the fault type. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00040}{40}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_ab107f23dd338053ae53c2d16e4189f23}\label{interface_thing_smart_schema_property_model_ab107f23dd338053ae53c2d16e4189f23}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!max@{max}}
+\index{max@{max}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{max}{max}}
+{\footnotesize\ttfamily -\/ (double) max\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The maximum value of the numeric type. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00028}{28}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_aae0ec2edbd13f94ad363134dce63cd0f}\label{interface_thing_smart_schema_property_model_aae0ec2edbd13f94ad363134dce63cd0f}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!maxlen@{maxlen}}
+\index{maxlen@{maxlen}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{maxlen}{maxlen}}
+{\footnotesize\ttfamily -\/ (NSInteger) maxlen\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The maximum number of bits of the fault type. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00037}{37}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_a04e8a29e9006d7aace7e10f23d918491}\label{interface_thing_smart_schema_property_model_a04e8a29e9006d7aace7e10f23d918491}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!maxSize@{maxSize}}
+\index{maxSize@{maxSize}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{maxSize}{maxSize}}
+{\footnotesize\ttfamily -\/ (NSInteger) max\+Size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The maximum size of the array type. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00052}{52}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_ace4bc05d633355f6577ff8ffaa2b2bfe}\label{interface_thing_smart_schema_property_model_ace4bc05d633355f6577ff8ffaa2b2bfe}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!min@{min}}
+\index{min@{min}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{min}{min}}
+{\footnotesize\ttfamily -\/ (double) min\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The minimum value of the numeric type. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00025}{25}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_aca345317f302776f8c8c727de50a5f4e}\label{interface_thing_smart_schema_property_model_aca345317f302776f8c8c727de50a5f4e}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!properties@{properties}}
+\index{properties@{properties}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{properties}{properties}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) properties\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Detailed descroption of the struct type. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00049}{49}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_a75d571bc312ca165954503f778a3c7e6}\label{interface_thing_smart_schema_property_model_a75d571bc312ca165954503f778a3c7e6}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!range@{range}}
+\index{range@{range}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{range}{range}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) range\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The scope of the enumeration type. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00043}{43}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_a02cca029eb1e96804bda1e1fd492f0bc}\label{interface_thing_smart_schema_property_model_a02cca029eb1e96804bda1e1fd492f0bc}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!scale@{scale}}
+\index{scale@{scale}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily -\/ (NSInteger) scale\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The exponent of 10 in the numeric type, multiplied by the corresponding transmission value, is equal to the actual value and is used to avoid fractional transmission. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00034}{34}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_a6feabe95bbd8e47a62207dc9d9602cde}\label{interface_thing_smart_schema_property_model_a6feabe95bbd8e47a62207dc9d9602cde}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!selectedValue@{selectedValue}}
+\index{selectedValue@{selectedValue}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{selectedValue}{selectedValue}}
+{\footnotesize\ttfamily -\/ (NSInteger) selected\+Value\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The specified value. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00046}{46}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_a2f7baa84e2c6fa2e381f4f906590740b}\label{interface_thing_smart_schema_property_model_a2f7baa84e2c6fa2e381f4f906590740b}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!step@{step}}
+\index{step@{step}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{step}{step}}
+{\footnotesize\ttfamily -\/ (double) step\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The numerical step. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00031}{31}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_a058de58bcd657bd2015d677c38d51227}\label{interface_thing_smart_schema_property_model_a058de58bcd657bd2015d677c38d51227}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!type@{type}}
+\index{type@{type}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The type of object. enum\+: enumerated $\vert$ bool\+: Boolean $\vert$ string\+: character $\vert$ value\+: numeric $\vert$ bitmap\+: fault $\vert$ array\+: list $\vert$ struct\+: struct properties. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00019}{19}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_schema_property_model_a8f188ab6a006754f6a111f59a01d4581}\label{interface_thing_smart_schema_property_model_a8f188ab6a006754f6a111f59a01d4581}} 
+\index{ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}!unit@{unit}}
+\index{unit@{unit}!ThingSmartSchemaPropertyModel@{ThingSmartSchemaPropertyModel}}
+\doxysubsubsection{\texorpdfstring{unit}{unit}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) unit\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The unit, such as °C. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source_l00022}{22}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h_source}{Thing\+Smart\+Schema\+Property\+Model.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h}{Thing\+Smart\+Schema\+Property\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thin2a028f033237cdbaa2e626c8c7db82a1}{Thing\+Smart\+Schema\+Property\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h}{Thing\+Smart\+Schema\+Property\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_schema_property_model_8h}{Thing\+Smart\+Schema\+Property\+Model.\+h}}\end{DoxyCompactItemize}

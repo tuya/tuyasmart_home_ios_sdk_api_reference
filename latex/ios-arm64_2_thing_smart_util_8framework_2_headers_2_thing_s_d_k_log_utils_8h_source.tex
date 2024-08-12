@@ -1,0 +1,42 @@
+\hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source}{}\doxysection{Thing\+SDKLog\+Utils.\+h}
+\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-\/arm64/ThingSmartUtil.framework/Headers/ThingSDKLogUtils.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-\/arm64/ThingSmartUtil.framework/Headers/ThingSDKLogUtils.h}}
+\mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00001}\mbox{\hyperlink{interface_thing_s_d_k_log_utils_a7afc9fd1f5244e58012d0970dcd66948}{00001}} \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00002}00002 \textcolor{comment}{//  ThingSDKLogUtils.h}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00003}00003 \textcolor{comment}{//  ThingSmartUtil}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00005}00005 \textcolor{comment}{//  Copyright (c) 2014-\/2024 Tuya Inc. (https://developer.tuya.com)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00008}00008 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00011}00011 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_s_d_k_log_utils}{ThingSDKLogUtils}} : NSObject}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00013}00013 \textcolor{comment}{// Prints bytes.}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00014}00014 + (void)thingsdk\_logByte:(uint8\_t *)bytes len:(\textcolor{keywordtype}{int})len str:(NSString *)str;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00016}00016 + (void)thingsdk\_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00018}00018 + (void)thingsdk\_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute identifier:(NSString *)identifier;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00020}00020 \textcolor{comment}{/* Starts an event that indicates a period.}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00021}00021 \textcolor{comment}{ }}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00022}00022 \textcolor{comment}{ @params type The name of the event.}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00023}00023 \textcolor{comment}{ @params attributes Common parameters of the event.}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00024}00024 \textcolor{comment}{ @params infos The information about the event.}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00025}00025 \textcolor{comment}{ @params identifier The ID of the event. The value is generated in the call of [xxx thing\_apm\_identifier].}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00026}00026 \textcolor{comment}{ @params trackType The status of the tracked point. (trackType = @"{}begin"{} Begin / @"{}track"{} Send/ @"{}end"{} End)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00027}00027 \textcolor{comment}{ }}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00028}00028 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00029}00029 + (void)thingsdk\_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute infos:(NSDictionary *)infos trackType:(NSString *)trackType identifier:(NSString *)identifier;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00031}00031 + (NSString *)\mbox{\hyperlink{interface_thing_s_d_k_log_utils_a7afc9fd1f5244e58012d0970dcd66948}{thingsdk\_eventIdentifiter}};}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00041}00041 + (void)thingsdk\_eventWithType:(NSString *)type attribute:(NSDictionary *)attribute identify:(NSString *)identify maxCount:(\textcolor{keywordtype}{int})maxCount handler:(NSDictionary *(\string^)(NSInteger index, \mbox{\hyperlink{interface_n_s_array}{NSArray}} * datas))handler;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_log_utils_8h_source_l00043}00043 \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

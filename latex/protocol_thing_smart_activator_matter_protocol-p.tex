@@ -1,0 +1,208 @@
+\hypertarget{protocol_thing_smart_activator_matter_protocol-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+Activator\+Matter\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_activator_matter_protocol-p}\index{$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Activator\+Matter\+Protocol.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+Activator\+Matter\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocol_thing_smart_activator_matter_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_matter_protocol-p_a0dcf49e40ce49e2bdc68a58149bf52b1}{parse\+Setup\+Code\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_matter_protocol-p_a838f04509938659a8d32bd5f4dc06bcc}{continue\+Commissioning\+Device\+:ignore\+Attestation\+Failure\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_matter_protocol-p_a479f4e72a438e3dd80bd9a9cfd397467}{continue\+Commission\+Device\+:type\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_matter_protocol-p_a36a6d91413adc6cfa32673b9bad76611}{start\+Scan\+Available\+WIFI}}
+\begin{DoxyCompactList}\small\item\em scan device acvailable wifi list. \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_matter_protocol-p_a0dcf49e40ce49e2bdc68a58149bf52b1}{parse\+Setup\+Code\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_matter_protocol-p_a838f04509938659a8d32bd5f4dc06bcc}{continue\+Commissioning\+Device\+:ignore\+Attestation\+Failure\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_matter_protocol-p_a479f4e72a438e3dd80bd9a9cfd397467}{continue\+Commission\+Device\+:type\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_activator_matter_protocol-p_a36a6d91413adc6cfa32673b9bad76611}{start\+Scan\+Available\+WIFI}}
+\begin{DoxyCompactList}\small\item\em scan device acvailable wifi list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{protocol_thing_smart_activator_matter_protocol-p_a19363d0244d44a29da5df588e7858ab7}{set\+Matter\+Config\+Key\+:}}
+\item 
+(void) + \mbox{\hyperlink{protocol_thing_smart_activator_matter_protocol-p_a19363d0244d44a29da5df588e7858ab7}{set\+Matter\+Config\+Key\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smart_activator_matter_protocol_8h_source_l00012}{12}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smart_activator_matter_protocol_8h_source}{Thing\+Smart\+Activator\+Matter\+Protocol.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_activator_matter_protocol-p_a479f4e72a438e3dd80bd9a9cfd397467}\label{protocol_thing_smart_activator_matter_protocol-p_a479f4e72a438e3dd80bd9a9cfd397467}} 
+\index{$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}!continueCommissionDevice:typeModel:@{continueCommissionDevice:typeModel:}}
+\index{continueCommissionDevice:typeModel:@{continueCommissionDevice:typeModel:}!$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{continueCommissionDevice:typeModel:}{continueCommissionDevice:typeModel:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) continue\+Commission\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$)}]{device\+Model }\item[{type\+Model\+:(\mbox{\hyperlink{interface_thing_smart_activator_type_matter_model}{Thing\+Smart\+Activator\+Type\+Matter\+Model}} $\ast$)}]{type\+Model }\end{DoxyParamCaption}}
+
+Continue pair WIFI or Thread matter device when session establishment completed.
+
+{\bfseries{Notice\+:}} There are some rules before use this api to continue pair the matter device.
+\begin{DoxyEnumerate}
+\item Can only be used after the {\ttfamily -\/ matter\+Commissioning\+Session\+Establishment\+Complete\+:}
+\item The {\ttfamily routing\+Type} must be equal to {\ttfamily Thing\+Matter\+Routing\+Type\+Thing}. ({\ttfamily routing\+Type} can be known by {\ttfamily -\/matter\+Routing\+Complete\+:})
+\item If you are pairing thread device  and want to set gateway device, you can set gwid in \mbox{\hyperlink{interface_thing_smart_activator_type_matter_model}{Thing\+Smart\+Activator\+Type\+Matter\+Model}} and use this api after the {\ttfamily -\/ matter\+Commissioning\+Session\+Establishment\+Complete\+:}
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Model} & the matter devicemodel. \\
+\hline
+{\em type\+Model} & Network configuration type. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_matter_protocol-p_a479f4e72a438e3dd80bd9a9cfd397467}\label{protocol_thing_smart_activator_matter_protocol-p_a479f4e72a438e3dd80bd9a9cfd397467}} 
+\index{$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}!continueCommissionDevice:typeModel:@{continueCommissionDevice:typeModel:}}
+\index{continueCommissionDevice:typeModel:@{continueCommissionDevice:typeModel:}!$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{continueCommissionDevice:typeModel:}{continueCommissionDevice:typeModel:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) continue\+Commission\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$)}]{device\+Model }\item[{type\+Model\+:(\mbox{\hyperlink{interface_thing_smart_activator_type_matter_model}{Thing\+Smart\+Activator\+Type\+Matter\+Model}} $\ast$)}]{type\+Model }\end{DoxyParamCaption}}
+
+Continue pair WIFI or Thread matter device when session establishment completed.
+
+{\bfseries{Notice\+:}} There are some rules before use this api to continue pair the matter device.
+\begin{DoxyEnumerate}
+\item Can only be used after the {\ttfamily -\/ matter\+Commissioning\+Session\+Establishment\+Complete\+:}
+\item The {\ttfamily routing\+Type} must be equal to {\ttfamily Thing\+Matter\+Routing\+Type\+Thing}. ({\ttfamily routing\+Type} can be known by {\ttfamily -\/matter\+Routing\+Complete\+:})
+\item If you are pairing thread device  and want to set gateway device, you can set gwid in \mbox{\hyperlink{interface_thing_smart_activator_type_matter_model}{Thing\+Smart\+Activator\+Type\+Matter\+Model}} and use this api after the {\ttfamily -\/ matter\+Commissioning\+Session\+Establishment\+Complete\+:}
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Model} & the matter devicemodel. \\
+\hline
+{\em type\+Model} & Network configuration type. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_matter_protocol-p_a838f04509938659a8d32bd5f4dc06bcc}\label{protocol_thing_smart_activator_matter_protocol-p_a838f04509938659a8d32bd5f4dc06bcc}} 
+\index{$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}!continueCommissioningDevice:ignoreAttestationFailure:error:@{continueCommissioningDevice:ignoreAttestationFailure:error:}}
+\index{continueCommissioningDevice:ignoreAttestationFailure:error:@{continueCommissioningDevice:ignoreAttestationFailure:error:}!$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{continueCommissioningDevice:ignoreAttestationFailure:error:}{continueCommissioningDevice:ignoreAttestationFailure:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) continue\+Commissioning\+Device\+: \begin{DoxyParamCaption}\item[{(void $\ast$)}]{device }\item[{ignore\+Attestation\+Failure\+:(BOOL)}]{ignore\+Attestation\+Failure }\item[{error\+:(NSError $\ast$\+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Continue the pairing or NOT.
+
+{\bfseries{Notice\+:}} Can only be used after the {\ttfamily -\/matter\+Device\+Attestation\+:error\+:} delegate callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & It MUST BE the device object through the {\ttfamily -\/matter\+Device\+Attestation\+:error\+:} delegate callback. \\
+\hline
+{\em ignore\+Attestation\+Failure} & Ignore the attestation fail or NOT. {\ttfamily YES} -\/ continue pairing, {\ttfamily NO} -\/ interrupt pairing. \\
+\hline
+{\em error} & the error info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_matter_protocol-p_a838f04509938659a8d32bd5f4dc06bcc}\label{protocol_thing_smart_activator_matter_protocol-p_a838f04509938659a8d32bd5f4dc06bcc}} 
+\index{$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}!continueCommissioningDevice:ignoreAttestationFailure:error:@{continueCommissioningDevice:ignoreAttestationFailure:error:}}
+\index{continueCommissioningDevice:ignoreAttestationFailure:error:@{continueCommissioningDevice:ignoreAttestationFailure:error:}!$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{continueCommissioningDevice:ignoreAttestationFailure:error:}{continueCommissioningDevice:ignoreAttestationFailure:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) continue\+Commissioning\+Device\+: \begin{DoxyParamCaption}\item[{(void $\ast$)}]{device }\item[{ignore\+Attestation\+Failure\+:(BOOL)}]{ignore\+Attestation\+Failure }\item[{error\+:(NSError $\ast$\+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Continue the pairing or NOT.
+
+{\bfseries{Notice\+:}} Can only be used after the {\ttfamily -\/matter\+Device\+Attestation\+:error\+:} delegate callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & It MUST BE the device object through the {\ttfamily -\/matter\+Device\+Attestation\+:error\+:} delegate callback. \\
+\hline
+{\em ignore\+Attestation\+Failure} & Ignore the attestation fail or NOT. {\ttfamily YES} -\/ continue pairing, {\ttfamily NO} -\/ interrupt pairing. \\
+\hline
+{\em error} & the error info. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_matter_protocol-p_a0dcf49e40ce49e2bdc68a58149bf52b1}\label{protocol_thing_smart_activator_matter_protocol-p_a0dcf49e40ce49e2bdc68a58149bf52b1}} 
+\index{$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}!parseSetupCode:@{parseSetupCode:}}
+\index{parseSetupCode:@{parseSetupCode:}!$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{parseSetupCode:}{parseSetupCode:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$) parse\+Setup\+Code\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{qr\+String }\end{DoxyParamCaption}}
+
+Check the matter code is legal or not. Returns nil if it is invalid. 
+\begin{DoxyParams}{Parameters}
+{\em qr\+String} & The matter QRCode string or Manual Code string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_matter_protocol-p_a0dcf49e40ce49e2bdc68a58149bf52b1}\label{protocol_thing_smart_activator_matter_protocol-p_a0dcf49e40ce49e2bdc68a58149bf52b1}} 
+\index{$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}!parseSetupCode:@{parseSetupCode:}}
+\index{parseSetupCode:@{parseSetupCode:}!$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{parseSetupCode:}{parseSetupCode:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_smart_activator_device_model}{Thing\+Smart\+Activator\+Device\+Model}} $\ast$) parse\+Setup\+Code\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{qr\+String }\end{DoxyParamCaption}}
+
+Check the matter code is legal or not. Returns nil if it is invalid. 
+\begin{DoxyParams}{Parameters}
+{\em qr\+String} & The matter QRCode string or Manual Code string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_activator_matter_protocol-p_a19363d0244d44a29da5df588e7858ab7}\label{protocol_thing_smart_activator_matter_protocol-p_a19363d0244d44a29da5df588e7858ab7}} 
+\index{$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}!setMatterConfigKey:@{setMatterConfigKey:}}
+\index{setMatterConfigKey:@{setMatterConfigKey:}!$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setMatterConfigKey:}{setMatterConfigKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) set\+Matter\+Config\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{config\+Key }\end{DoxyParamCaption}}
+
+Set your {\ttfamily App Groups identify} to share data with {\ttfamily Matter Extension}
+
+{\bfseries{Notice}}
+\begin{DoxyEnumerate}
+\item Please check the {\ttfamily config\+Key} must be same as the {\ttfamily App Groups identify} which is both chose it to {\ttfamily Matter Extension Target} and your {\ttfamily App Main Target}.
+\item Please call this API before start pairing, Usually this api is called after the App is started and before the matter device activator starts.
+\end{DoxyEnumerate}
+\begin{DoxyItemize}
+\item Parameter config\+Key\+: The App Groups identify. 
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_smart_activator_matter_protocol-p_a19363d0244d44a29da5df588e7858ab7}\label{protocol_thing_smart_activator_matter_protocol-p_a19363d0244d44a29da5df588e7858ab7}} 
+\index{$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}!setMatterConfigKey:@{setMatterConfigKey:}}
+\index{setMatterConfigKey:@{setMatterConfigKey:}!$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{setMatterConfigKey:}{setMatterConfigKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) set\+Matter\+Config\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{config\+Key }\end{DoxyParamCaption}}
+
+Set your {\ttfamily App Groups identify} to share data with {\ttfamily Matter Extension}
+
+{\bfseries{Notice}}
+\begin{DoxyEnumerate}
+\item Please check the {\ttfamily config\+Key} must be same as the {\ttfamily App Groups identify} which is both chose it to {\ttfamily Matter Extension Target} and your {\ttfamily App Main Target}.
+\item Please call this API before start pairing, Usually this api is called after the App is started and before the matter device activator starts.
+\end{DoxyEnumerate}
+\begin{DoxyItemize}
+\item Parameter config\+Key\+: The App Groups identify. 
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_smart_activator_matter_protocol-p_a36a6d91413adc6cfa32673b9bad76611}\label{protocol_thing_smart_activator_matter_protocol-p_a36a6d91413adc6cfa32673b9bad76611}} 
+\index{$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}!startScanAvailableWIFI@{startScanAvailableWIFI}}
+\index{startScanAvailableWIFI@{startScanAvailableWIFI}!$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{startScanAvailableWIFI}{startScanAvailableWIFI}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Scan\+Available\+WIFI \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+scan device acvailable wifi list. 
+
+\mbox{\Hypertarget{protocol_thing_smart_activator_matter_protocol-p_a36a6d91413adc6cfa32673b9bad76611}\label{protocol_thing_smart_activator_matter_protocol-p_a36a6d91413adc6cfa32673b9bad76611}} 
+\index{$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}!startScanAvailableWIFI@{startScanAvailableWIFI}}
+\index{startScanAvailableWIFI@{startScanAvailableWIFI}!$<$ThingSmartActivatorMatterProtocol$>$@{$<$ThingSmartActivatorMatterProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{startScanAvailableWIFI}{startScanAvailableWIFI}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Scan\+Available\+WIFI \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+scan device acvailable wifi list. 
+
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Activator\+Discovery\+Manager/\+Thing\+Smart\+Activator\+Discovery\+Manager.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Smart\+Activator\+Discovery\+Manager.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smart_activator_matter_protocol_8h}{Thing\+Smart\+Activator\+Matter\+Protocol.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Activator\+Discovery\+Manager/\+Thing\+Smart\+Activator\+Discovery\+Manager.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Activator\+Discovery\+Manager.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_activator_discovery_manager_8framework_2_headers_2_thing_smart_activator_matter_protocol_8h}{Thing\+Smart\+Activator\+Matter\+Protocol.\+h}}\end{DoxyCompactItemize}

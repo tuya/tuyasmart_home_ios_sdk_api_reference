@@ -1,0 +1,174 @@
+\hypertarget{protocol_thing_language_loader_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Language\+Loader\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_language_loader_delegate-p}\index{$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Language\+Loader.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Language\+Loader\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.327014cm]{protocol_thing_language_loader_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{protocol_thing_language_loader_delegate-p_a224c6f2c566326139b91ccb2d8a3b3a0}{before\+Localized\+With\+Key\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{protocol_thing_language_loader_delegate-p_aa2207ee1f9e90594cb616dc0b5550538}{after\+Localized\+With\+Key\+:is\+Found\+:is\+Current\+:localized\+String\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{protocol_thing_language_loader_delegate-p_a224c6f2c566326139b91ccb2d8a3b3a0}{before\+Localized\+With\+Key\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{protocol_thing_language_loader_delegate-p_aa2207ee1f9e90594cb616dc0b5550538}{after\+Localized\+With\+Key\+:is\+Found\+:is\+Current\+:localized\+String\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{protocol_thing_language_loader_delegate-p_a224c6f2c566326139b91ccb2d8a3b3a0}{before\+Localized\+With\+Key\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{protocol_thing_language_loader_delegate-p_aa2207ee1f9e90594cb616dc0b5550538}{after\+Localized\+With\+Key\+:is\+Found\+:is\+Current\+:localized\+String\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{protocol_thing_language_loader_delegate-p_a224c6f2c566326139b91ccb2d8a3b3a0}{before\+Localized\+With\+Key\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{protocol_thing_language_loader_delegate-p_aa2207ee1f9e90594cb616dc0b5550538}{after\+Localized\+With\+Key\+:is\+Found\+:is\+Current\+:localized\+String\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+多语言代理的 before、after hooks 基于洋葱模型实现
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a635b292c6056d8511c5a0b4a11e1dd70}{delegate}} before → /\textcolor{keywordflow}{return}/}
+\DoxyCodeLine{   ↓}
+\DoxyCodeLine{system}
+\DoxyCodeLine{   ↓}
+\DoxyCodeLine{\mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a635b292c6056d8511c5a0b4a11e1dd70}{delegate}} after}
+\DoxyCodeLine{   ↓}
+\DoxyCodeLine{/\textcolor{keywordflow}{return}/}
+
+\end{DoxyCode}
+ 
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source_l00023}{23}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h_source}{Thing\+Language\+Loader.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_language_loader_delegate-p_aa2207ee1f9e90594cb616dc0b5550538}\label{protocol_thing_language_loader_delegate-p_aa2207ee1f9e90594cb616dc0b5550538}} 
+\index{$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}!afterLocalizedWithKey:isFound:isCurrent:localizedString:@{afterLocalizedWithKey:isFound:isCurrent:localizedString:}}
+\index{afterLocalizedWithKey:isFound:isCurrent:localizedString:@{afterLocalizedWithKey:isFound:isCurrent:localizedString:}!$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{afterLocalizedWithKey:isFound:isCurrent:localizedString:}{afterLocalizedWithKey:isFound:isCurrent:localizedString:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) after\+Localized\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{language\+Key }\item[{is\+Found\+:(BOOL)}]{is\+Found }\item[{is\+Current\+:(BOOL)}]{is\+Current }\item[{localized\+String\+:(NSString $\ast$)}]{localized\+String }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在获取多语言后的回调方法，如果该回调返回了非nil值，则localized\+String方法会返回这个值。 可以用这个方法运行时修改工程多语言，如果对翻译的内容不满意可以做替换等等 
+\begin{DoxyParams}{Parameters}
+{\em language\+Key} & 多语言key \\
+\hline
+{\em is\+Found} & 是否找到了多语言翻译 \\
+\hline
+{\em is\+Current} & 当is\+Found为\+True时，这个字段才有效。是否在main bundle(不是默认的语言bundle)中取到的多语言翻译。 \\
+\hline
+{\em localized\+String} & 多语言翻译的内容，如果is\+Found为\+NO，则localized\+String==language\+Key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_language_loader_delegate-p_aa2207ee1f9e90594cb616dc0b5550538}\label{protocol_thing_language_loader_delegate-p_aa2207ee1f9e90594cb616dc0b5550538}} 
+\index{$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}!afterLocalizedWithKey:isFound:isCurrent:localizedString:@{afterLocalizedWithKey:isFound:isCurrent:localizedString:}}
+\index{afterLocalizedWithKey:isFound:isCurrent:localizedString:@{afterLocalizedWithKey:isFound:isCurrent:localizedString:}!$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{afterLocalizedWithKey:isFound:isCurrent:localizedString:}{afterLocalizedWithKey:isFound:isCurrent:localizedString:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) after\+Localized\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{language\+Key }\item[{is\+Found\+:(BOOL)}]{is\+Found }\item[{is\+Current\+:(BOOL)}]{is\+Current }\item[{localized\+String\+:(NSString $\ast$)}]{localized\+String }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在获取多语言后的回调方法，如果该回调返回了非nil值，则localized\+String方法会返回这个值。 可以用这个方法运行时修改工程多语言，如果对翻译的内容不满意可以做替换等等 
+\begin{DoxyParams}{Parameters}
+{\em language\+Key} & 多语言key \\
+\hline
+{\em is\+Found} & 是否找到了多语言翻译 \\
+\hline
+{\em is\+Current} & 当is\+Found为\+True时，这个字段才有效。是否在main bundle(不是默认的语言bundle)中取到的多语言翻译。 \\
+\hline
+{\em localized\+String} & 多语言翻译的内容，如果is\+Found为\+NO，则localized\+String==language\+Key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_language_loader_delegate-p_aa2207ee1f9e90594cb616dc0b5550538}\label{protocol_thing_language_loader_delegate-p_aa2207ee1f9e90594cb616dc0b5550538}} 
+\index{$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}!afterLocalizedWithKey:isFound:isCurrent:localizedString:@{afterLocalizedWithKey:isFound:isCurrent:localizedString:}}
+\index{afterLocalizedWithKey:isFound:isCurrent:localizedString:@{afterLocalizedWithKey:isFound:isCurrent:localizedString:}!$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{afterLocalizedWithKey:isFound:isCurrent:localizedString:}{afterLocalizedWithKey:isFound:isCurrent:localizedString:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) after\+Localized\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{language\+Key }\item[{is\+Found\+:(BOOL)}]{is\+Found }\item[{is\+Current\+:(BOOL)}]{is\+Current }\item[{localized\+String\+:(NSString $\ast$)}]{localized\+String }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在获取多语言后的回调方法，如果该回调返回了非nil值，则localized\+String方法会返回这个值。 可以用这个方法运行时修改工程多语言，如果对翻译的内容不满意可以做替换等等 
+\begin{DoxyParams}{Parameters}
+{\em language\+Key} & 多语言key \\
+\hline
+{\em is\+Found} & 是否找到了多语言翻译 \\
+\hline
+{\em is\+Current} & 当is\+Found为\+True时，这个字段才有效。是否在main bundle(不是默认的语言bundle)中取到的多语言翻译。 \\
+\hline
+{\em localized\+String} & 多语言翻译的内容，如果is\+Found为\+NO，则localized\+String==language\+Key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_language_loader_delegate-p_aa2207ee1f9e90594cb616dc0b5550538}\label{protocol_thing_language_loader_delegate-p_aa2207ee1f9e90594cb616dc0b5550538}} 
+\index{$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}!afterLocalizedWithKey:isFound:isCurrent:localizedString:@{afterLocalizedWithKey:isFound:isCurrent:localizedString:}}
+\index{afterLocalizedWithKey:isFound:isCurrent:localizedString:@{afterLocalizedWithKey:isFound:isCurrent:localizedString:}!$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{afterLocalizedWithKey:isFound:isCurrent:localizedString:}{afterLocalizedWithKey:isFound:isCurrent:localizedString:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) after\+Localized\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{language\+Key }\item[{is\+Found\+:(BOOL)}]{is\+Found }\item[{is\+Current\+:(BOOL)}]{is\+Current }\item[{localized\+String\+:(NSString $\ast$)}]{localized\+String }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在获取多语言后的回调方法，如果该回调返回了非nil值，则localized\+String方法会返回这个值。 可以用这个方法运行时修改工程多语言，如果对翻译的内容不满意可以做替换等等 
+\begin{DoxyParams}{Parameters}
+{\em language\+Key} & 多语言key \\
+\hline
+{\em is\+Found} & 是否找到了多语言翻译 \\
+\hline
+{\em is\+Current} & 当is\+Found为\+True时，这个字段才有效。是否在main bundle(不是默认的语言bundle)中取到的多语言翻译。 \\
+\hline
+{\em localized\+String} & 多语言翻译的内容，如果is\+Found为\+NO，则localized\+String==language\+Key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_language_loader_delegate-p_a224c6f2c566326139b91ccb2d8a3b3a0}\label{protocol_thing_language_loader_delegate-p_a224c6f2c566326139b91ccb2d8a3b3a0}} 
+\index{$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}!beforeLocalizedWithKey:@{beforeLocalizedWithKey:}}
+\index{beforeLocalizedWithKey:@{beforeLocalizedWithKey:}!$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{beforeLocalizedWithKey:}{beforeLocalizedWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) before\+Localized\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{language\+Key }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在获取多语言前的回调方法，如果该回调返回了非nil值，则localized\+String方法会返回这个值。 可以用这个方法运行时修改工程多语言，如果走了before就不会再走下面的after方法了 
+\begin{DoxyParams}{Parameters}
+{\em language\+Key} & 多语言key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_language_loader_delegate-p_a224c6f2c566326139b91ccb2d8a3b3a0}\label{protocol_thing_language_loader_delegate-p_a224c6f2c566326139b91ccb2d8a3b3a0}} 
+\index{$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}!beforeLocalizedWithKey:@{beforeLocalizedWithKey:}}
+\index{beforeLocalizedWithKey:@{beforeLocalizedWithKey:}!$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{beforeLocalizedWithKey:}{beforeLocalizedWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) before\+Localized\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{language\+Key }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在获取多语言前的回调方法，如果该回调返回了非nil值，则localized\+String方法会返回这个值。 可以用这个方法运行时修改工程多语言，如果走了before就不会再走下面的after方法了 
+\begin{DoxyParams}{Parameters}
+{\em language\+Key} & 多语言key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_language_loader_delegate-p_a224c6f2c566326139b91ccb2d8a3b3a0}\label{protocol_thing_language_loader_delegate-p_a224c6f2c566326139b91ccb2d8a3b3a0}} 
+\index{$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}!beforeLocalizedWithKey:@{beforeLocalizedWithKey:}}
+\index{beforeLocalizedWithKey:@{beforeLocalizedWithKey:}!$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{beforeLocalizedWithKey:}{beforeLocalizedWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) before\+Localized\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{language\+Key }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在获取多语言前的回调方法，如果该回调返回了非nil值，则localized\+String方法会返回这个值。 可以用这个方法运行时修改工程多语言，如果走了before就不会再走下面的after方法了 
+\begin{DoxyParams}{Parameters}
+{\em language\+Key} & 多语言key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_language_loader_delegate-p_a224c6f2c566326139b91ccb2d8a3b3a0}\label{protocol_thing_language_loader_delegate-p_a224c6f2c566326139b91ccb2d8a3b3a0}} 
+\index{$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}!beforeLocalizedWithKey:@{beforeLocalizedWithKey:}}
+\index{beforeLocalizedWithKey:@{beforeLocalizedWithKey:}!$<$ThingLanguageLoaderDelegate$>$@{$<$ThingLanguageLoaderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{beforeLocalizedWithKey:}{beforeLocalizedWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) before\+Localized\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{language\+Key }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+在获取多语言前的回调方法，如果该回调返回了非nil值，则localized\+String方法会返回这个值。 可以用这个方法运行时修改工程多语言，如果走了before就不会再走下面的after方法了 
+\begin{DoxyParams}{Parameters}
+{\em language\+Key} & 多语言key \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Foundation\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h}{Thing\+Language\+Loader.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Foundation\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h}{Thing\+Language\+Loader.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Foundation\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h}{Thing\+Language\+Loader.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Foundation\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_language_loader_8h}{Thing\+Language\+Loader.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,149 @@
+\hypertarget{protocol_thing_timeline_view_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Timeline\+View\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_timeline_view_delegate-p}\index{$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Timeline\+View.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Timeline\+View\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_thing_timeline_view_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_timeline_view_delegate-p_a7d1fe018265ccbbcea0baf1f28e1c32e}{timeline\+View\+Will\+Begin\+Dragging\+:}}
+\begin{DoxyCompactList}\small\item\em timeline view begin dragging \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_timeline_view_delegate-p_ad0df6e8bfb30e48c4910f1caf4b5e6ac}{timeline\+View\+Did\+End\+Dragging\+:will\+Decelerate\+:}}
+\begin{DoxyCompactList}\small\item\em time line view did end dragging. decelerate is true if it will continue moving afterwards \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_timeline_view_delegate-p_ae5ee71c7b044cecbc6d94c2c1b084544}{timeline\+View\+Did\+Scroll\+:time\+:is\+Dragging\+:}}
+\begin{DoxyCompactList}\small\item\em time line view did scroll to time interval. is\+Dragging is true if it is being dragging \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_timeline_view_delegate-p_ac1957febb966c4dde26f01bdf313ef77}{timeline\+View\+:did\+End\+Scrolling\+At\+Time\+:in\+Source\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_timeline_view_delegate-p_a5591aec3e5c1d9c5847dad58be89bf9f}{timeline\+View\+:scale\+To\+Unit\+Mode\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_timeline_view_delegate-p_a7d1fe018265ccbbcea0baf1f28e1c32e}{timeline\+View\+Will\+Begin\+Dragging\+:}}
+\begin{DoxyCompactList}\small\item\em timeline view begin dragging \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_timeline_view_delegate-p_ad0df6e8bfb30e48c4910f1caf4b5e6ac}{timeline\+View\+Did\+End\+Dragging\+:will\+Decelerate\+:}}
+\begin{DoxyCompactList}\small\item\em time line view did end dragging. decelerate is true if it will continue moving afterwards \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_timeline_view_delegate-p_ae5ee71c7b044cecbc6d94c2c1b084544}{timeline\+View\+Did\+Scroll\+:time\+:is\+Dragging\+:}}
+\begin{DoxyCompactList}\small\item\em time line view did scroll to time interval. is\+Dragging is true if it is being dragging \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_timeline_view_delegate-p_ac1957febb966c4dde26f01bdf313ef77}{timeline\+View\+:did\+End\+Scrolling\+At\+Time\+:in\+Source\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_timeline_view_delegate-p_a5591aec3e5c1d9c5847dad58be89bf9f}{timeline\+View\+:scale\+To\+Unit\+Mode\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00022}{22}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_timeline_view_delegate-p_ac1957febb966c4dde26f01bdf313ef77}\label{protocol_thing_timeline_view_delegate-p_ac1957febb966c4dde26f01bdf313ef77}} 
+\index{$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}!timelineView:didEndScrollingAtTime:inSource:@{timelineView:didEndScrollingAtTime:inSource:}}
+\index{timelineView:didEndScrollingAtTime:inSource:@{timelineView:didEndScrollingAtTime:inSource:}!$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{timelineView:didEndScrollingAtTime:inSource:}{timelineView:didEndScrollingAtTime:inSource:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) timeline\+View\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_timeline_view}{Thing\+Timeline\+View}} $\ast$)}]{time\+Line\+View }\item[{did\+End\+Scrolling\+At\+Time\+:(NSTime\+Interval)}]{time\+Interval }\item[{in\+Source\+:(id$<$ \mbox{\hyperlink{protocol_thing_timeline_view_source-p}{Thing\+Timeline\+View\+Source}} $>$)}]{source }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+time line view did end scrolling. 
+\begin{DoxyParams}{Parameters}
+{\em time\+Interval} & selected time when scrolling end \\
+\hline
+{\em source} & if source is not nil which contains the selected time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_timeline_view_delegate-p_ac1957febb966c4dde26f01bdf313ef77}\label{protocol_thing_timeline_view_delegate-p_ac1957febb966c4dde26f01bdf313ef77}} 
+\index{$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}!timelineView:didEndScrollingAtTime:inSource:@{timelineView:didEndScrollingAtTime:inSource:}}
+\index{timelineView:didEndScrollingAtTime:inSource:@{timelineView:didEndScrollingAtTime:inSource:}!$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{timelineView:didEndScrollingAtTime:inSource:}{timelineView:didEndScrollingAtTime:inSource:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) timeline\+View\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_timeline_view}{Thing\+Timeline\+View}} $\ast$)}]{time\+Line\+View }\item[{did\+End\+Scrolling\+At\+Time\+:(NSTime\+Interval)}]{time\+Interval }\item[{in\+Source\+:(id$<$ \mbox{\hyperlink{protocol_thing_timeline_view_source-p}{Thing\+Timeline\+View\+Source}} $>$)}]{source }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+time line view did end scrolling. 
+\begin{DoxyParams}{Parameters}
+{\em time\+Interval} & selected time when scrolling end \\
+\hline
+{\em source} & if source is not nil which contains the selected time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_timeline_view_delegate-p_a5591aec3e5c1d9c5847dad58be89bf9f}\label{protocol_thing_timeline_view_delegate-p_a5591aec3e5c1d9c5847dad58be89bf9f}} 
+\index{$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}!timelineView:scaleToUnitMode:@{timelineView:scaleToUnitMode:}}
+\index{timelineView:scaleToUnitMode:@{timelineView:scaleToUnitMode:}!$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{timelineView:scaleToUnitMode:}{timelineView:scaleToUnitMode:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) timeline\+View\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_timeline_view}{Thing\+Timeline\+View}} $\ast$)}]{time\+Line\+View }\item[{scale\+To\+Unit\+Mode\+:(Thing\+Timeline\+Unit\+Mode)}]{unit\+Mode }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_timeline_view_delegate-p_a5591aec3e5c1d9c5847dad58be89bf9f}\label{protocol_thing_timeline_view_delegate-p_a5591aec3e5c1d9c5847dad58be89bf9f}} 
+\index{$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}!timelineView:scaleToUnitMode:@{timelineView:scaleToUnitMode:}}
+\index{timelineView:scaleToUnitMode:@{timelineView:scaleToUnitMode:}!$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{timelineView:scaleToUnitMode:}{timelineView:scaleToUnitMode:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) timeline\+View\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_timeline_view}{Thing\+Timeline\+View}} $\ast$)}]{time\+Line\+View }\item[{scale\+To\+Unit\+Mode\+:(Thing\+Timeline\+Unit\+Mode)}]{unit\+Mode }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_timeline_view_delegate-p_ad0df6e8bfb30e48c4910f1caf4b5e6ac}\label{protocol_thing_timeline_view_delegate-p_ad0df6e8bfb30e48c4910f1caf4b5e6ac}} 
+\index{$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}!timelineViewDidEndDragging:willDecelerate:@{timelineViewDidEndDragging:willDecelerate:}}
+\index{timelineViewDidEndDragging:willDecelerate:@{timelineViewDidEndDragging:willDecelerate:}!$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{timelineViewDidEndDragging:willDecelerate:}{timelineViewDidEndDragging:willDecelerate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) timeline\+View\+Did\+End\+Dragging\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_timeline_view}{Thing\+Timeline\+View}} $\ast$)}]{time\+Line\+View }\item[{will\+Decelerate\+:(BOOL)}]{decelerate }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+time line view did end dragging. decelerate is true if it will continue moving afterwards 
+
+\mbox{\Hypertarget{protocol_thing_timeline_view_delegate-p_ad0df6e8bfb30e48c4910f1caf4b5e6ac}\label{protocol_thing_timeline_view_delegate-p_ad0df6e8bfb30e48c4910f1caf4b5e6ac}} 
+\index{$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}!timelineViewDidEndDragging:willDecelerate:@{timelineViewDidEndDragging:willDecelerate:}}
+\index{timelineViewDidEndDragging:willDecelerate:@{timelineViewDidEndDragging:willDecelerate:}!$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{timelineViewDidEndDragging:willDecelerate:}{timelineViewDidEndDragging:willDecelerate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) timeline\+View\+Did\+End\+Dragging\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_timeline_view}{Thing\+Timeline\+View}} $\ast$)}]{time\+Line\+View }\item[{will\+Decelerate\+:(BOOL)}]{decelerate }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+time line view did end dragging. decelerate is true if it will continue moving afterwards 
+
+\mbox{\Hypertarget{protocol_thing_timeline_view_delegate-p_ae5ee71c7b044cecbc6d94c2c1b084544}\label{protocol_thing_timeline_view_delegate-p_ae5ee71c7b044cecbc6d94c2c1b084544}} 
+\index{$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}!timelineViewDidScroll:time:isDragging:@{timelineViewDidScroll:time:isDragging:}}
+\index{timelineViewDidScroll:time:isDragging:@{timelineViewDidScroll:time:isDragging:}!$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{timelineViewDidScroll:time:isDragging:}{timelineViewDidScroll:time:isDragging:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) timeline\+View\+Did\+Scroll\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_timeline_view}{Thing\+Timeline\+View}} $\ast$)}]{time\+Line\+View }\item[{time\+:(NSTime\+Interval)}]{time\+Interval }\item[{is\+Dragging\+:(BOOL)}]{is\+Dragging }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+time line view did scroll to time interval. is\+Dragging is true if it is being dragging 
+
+\mbox{\Hypertarget{protocol_thing_timeline_view_delegate-p_ae5ee71c7b044cecbc6d94c2c1b084544}\label{protocol_thing_timeline_view_delegate-p_ae5ee71c7b044cecbc6d94c2c1b084544}} 
+\index{$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}!timelineViewDidScroll:time:isDragging:@{timelineViewDidScroll:time:isDragging:}}
+\index{timelineViewDidScroll:time:isDragging:@{timelineViewDidScroll:time:isDragging:}!$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{timelineViewDidScroll:time:isDragging:}{timelineViewDidScroll:time:isDragging:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) timeline\+View\+Did\+Scroll\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_timeline_view}{Thing\+Timeline\+View}} $\ast$)}]{time\+Line\+View }\item[{time\+:(NSTime\+Interval)}]{time\+Interval }\item[{is\+Dragging\+:(BOOL)}]{is\+Dragging }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+time line view did scroll to time interval. is\+Dragging is true if it is being dragging 
+
+\mbox{\Hypertarget{protocol_thing_timeline_view_delegate-p_a7d1fe018265ccbbcea0baf1f28e1c32e}\label{protocol_thing_timeline_view_delegate-p_a7d1fe018265ccbbcea0baf1f28e1c32e}} 
+\index{$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}!timelineViewWillBeginDragging:@{timelineViewWillBeginDragging:}}
+\index{timelineViewWillBeginDragging:@{timelineViewWillBeginDragging:}!$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{timelineViewWillBeginDragging:}{timelineViewWillBeginDragging:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) timeline\+View\+Will\+Begin\+Dragging\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_timeline_view}{Thing\+Timeline\+View}} $\ast$)}]{time\+Line\+View }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+timeline view begin dragging 
+
+\mbox{\Hypertarget{protocol_thing_timeline_view_delegate-p_a7d1fe018265ccbbcea0baf1f28e1c32e}\label{protocol_thing_timeline_view_delegate-p_a7d1fe018265ccbbcea0baf1f28e1c32e}} 
+\index{$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}!timelineViewWillBeginDragging:@{timelineViewWillBeginDragging:}}
+\index{timelineViewWillBeginDragging:@{timelineViewWillBeginDragging:}!$<$ThingTimelineViewDelegate$>$@{$<$ThingTimelineViewDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{timelineViewWillBeginDragging:}{timelineViewWillBeginDragging:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) timeline\+View\+Will\+Begin\+Dragging\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_timeline_view}{Thing\+Timeline\+View}} $\ast$)}]{time\+Line\+View }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+timeline view begin dragging 
+
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Camera\+UIKit/\+Build/\+Thing\+Camera\+UIKit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Camera\+UIKit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h}{Thing\+Timeline\+View.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Camera\+UIKit/\+Build/\+Thing\+Camera\+UIKit.\+xcframework/ios-\/arm64/\+Thing\+Camera\+UIKit.\+framework/\+Headers/\mbox{\hyperlink{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h}{Thing\+Timeline\+View.\+h}}\end{DoxyCompactItemize}

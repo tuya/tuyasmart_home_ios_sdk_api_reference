@@ -1,0 +1,44 @@
+\hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source}{}\doxysection{Thing\+Async\+Display\+Layer.\+h}
+\label{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingCameraUIKit/Build/ThingCameraUIKit.xcframework/ios-\/arm64/ThingCameraUIKit.framework/Headers/ThingAsyncDisplayLayer.h@{/Users/humtong/Downloads/Pods\_副本/ThingCameraUIKit/Build/ThingCameraUIKit.xcframework/ios-\/arm64/ThingCameraUIKit.framework/Headers/ThingAsyncDisplayLayer.h}}
+\mbox{\hyperlink{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00001}\mbox{\hyperlink{protocol_thing_async_display_layer_delegate-p_aea36d0f6b1c2f8d82c9a1cb746522aae}{00001}} \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00002}00002 \textcolor{comment}{//  ThingAsyncDisplayLayer.h}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00003}00003 \textcolor{comment}{//  ThingCameraUIKit}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00005}00005 \textcolor{comment}{//  Created by 傅浪 on 2018/5/3.}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00006}00006 \textcolor{comment}{//  Copyright © 2018年 傅浪. All rights reserved.}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00007}00007 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00009}00009 \textcolor{preprocessor}{\#import <UIKit/UIKit.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00010}00010 \textcolor{preprocessor}{\#import <QuartzCore/QuartzCore.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00012}00012 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_thing_async_display_layer}{ThingAsyncDisplayLayer}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00013}00013 \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_thing_async_display_layer_delegate-p}{ThingAsyncDisplayLayerDelegate}} <NSObject>}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00014}00014 \textcolor{keyword}{@optional}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00015}00015 -\/ (void)asyncDisplayLayerWillDisplay:(\mbox{\hyperlink{interface_thing_async_display_layer}{ThingAsyncDisplayLayer}} *)layer;}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00017}00017 -\/ (void)asyncDisplayLayer:(\mbox{\hyperlink{interface_thing_async_display_layer}{ThingAsyncDisplayLayer}} *)layer}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00018}00018                  drawRect:(CGRect)rect}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00019}00019                 inContext:(CGContextRef)ctx}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00020}00020               isCancelled:(BOOL(\string^)(\textcolor{keywordtype}{void}))isCancelled;}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00022}00022 -\/ (void)asyncDisplayLayer:(\mbox{\hyperlink{interface_thing_async_display_layer}{ThingAsyncDisplayLayer}} *)layer didDisplay:(BOOL)complete;}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00024}00024 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00026}00026 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_async_display_layer}{ThingAsyncDisplayLayer}} : CALayer}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00028}00028 \textcolor{keyword}{@property} (nonatomic, assign) BOOL \mbox{\hyperlink{interface_thing_async_display_layer_af931714562ff26dba4625c4e851f531d}{displaysAsynchronously}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00030}00030 \textcolor{keyword}{@property} (nonatomic, assign) BOOL \mbox{\hyperlink{interface_thing_async_display_layer_ae31da165641442ec366a9f7db37976b2}{autoCancel}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00032}00032 \textcolor{keyword}{@property} (nonatomic, strong) dispatch\_queue\_t \mbox{\hyperlink{interface_thing_async_display_layer_ab0d845b552dd7e2b889764e60f0344ac}{displaysQueue}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00034}\mbox{\hyperlink{interface_thing_async_display_layer_aacf0470ddaa2efa9d1da62b43d6e354e}{00034}} \textcolor{keyword}{@property} (nonatomic, weak) id<ThingAsyncDisplayLayerDelegate> \mbox{\hyperlink{interface_thing_async_display_layer_ab4b26218b04f32798e3ae6443c515980}{displayDelegate}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00036}00036 -\/ (void)\mbox{\hyperlink{interface_thing_async_display_layer_aacf0470ddaa2efa9d1da62b43d6e354e}{cancel}};}
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_thing_camera_u_i_kit_8framework_2_headers_2_thing_async_display_layer_8h_source_l00038}00038 \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

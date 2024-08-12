@@ -1,0 +1,94 @@
+\hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Foundation\+Kit.framework/\+Headers/\+Thing\+KVOController.h File Reference}
+\label{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingFoundationKit/ThingFoundationKit.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingFoundationKit.framework/Headers/ThingKVOController.h@{/Users/humtong/Downloads/Pods\_副本/ThingFoundationKit/ThingFoundationKit.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingFoundationKit.framework/Headers/ThingKVOController.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{interface_thing_k_v_o_controller}{Thing\+KVOController}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a1f75a3ae92eabd605a70e617b0402ed4}{Thing\+KVOKey\+Path}}(KEYPATH)
+\item 
+\#define \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a47964177d5bec8562cf38716b1bacec9}{Thing\+KVOClass\+Key\+Path}}(CLASS,  KEYPATH)~@(((void)(NO \&\& ((void)((CLASS $\ast$)(nil)).KEYPATH, NO)), \#KEYPATH))
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a0143e9eaa42199e814cbf44554c7931d}{Thing\+KVONotification\+Block}}) (id \+\_\+\+Nullable observer, id object, NSDictionary$<$ NSKey\+Value\+Change\+Key, id $>$ $\ast$change)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN NSString $\ast$const \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a548ddb9e365d5bbb2d3708466b320a40}{Thing\+KVONotification\+Key\+Path\+Key}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a47964177d5bec8562cf38716b1bacec9}\label{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a47964177d5bec8562cf38716b1bacec9}} 
+\index{ThingKVOController.h@{ThingKVOController.h}!ThingKVOClassKeyPath@{ThingKVOClassKeyPath}}
+\index{ThingKVOClassKeyPath@{ThingKVOClassKeyPath}!ThingKVOController.h@{ThingKVOController.h}}
+\doxysubsubsection{\texorpdfstring{ThingKVOClassKeyPath}{ThingKVOClassKeyPath}}
+{\footnotesize\ttfamily \#define Thing\+KVOClass\+Key\+Path(\begin{DoxyParamCaption}\item[{}]{CLASS,  }\item[{}]{KEYPATH }\end{DoxyParamCaption})~@(((void)(NO \&\& ((void)((CLASS $\ast$)(nil)).KEYPATH, NO)), \#KEYPATH))}
+
+This macro ensures that key path exists at compile time. Given a receiver type and a key path, it verifies at compile time that the key path exists, without calling it.
+
+For example\+:
+
+\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a47964177d5bec8562cf38716b1bacec9}{Thing\+KVOClass\+Key\+Path(\+NSString, length)}} =\texorpdfstring{$>$}{>} "{}length\char`\"{} \+Thing\+KVOClass\+Key\+Path(\+NSString, lowercase\+String.\+length) =$>$ @\char`\"{}lowercase\+String.\+length"{} 
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_source_l00035}{35}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_source}{Thing\+KVOController.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a1f75a3ae92eabd605a70e617b0402ed4}\label{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a1f75a3ae92eabd605a70e617b0402ed4}} 
+\index{ThingKVOController.h@{ThingKVOController.h}!ThingKVOKeyPath@{ThingKVOKeyPath}}
+\index{ThingKVOKeyPath@{ThingKVOKeyPath}!ThingKVOController.h@{ThingKVOController.h}}
+\doxysubsubsection{\texorpdfstring{ThingKVOKeyPath}{ThingKVOKeyPath}}
+{\footnotesize\ttfamily \#define Thing\+KVOKey\+Path(\begin{DoxyParamCaption}\item[{}]{KEYPATH }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@(((void)(NO \&\& ((\textcolor{keywordtype}{void})KEYPATH, NO)), \(\backslash\)}
+\DoxyCodeLine{(\{ \textcolor{keyword}{const} \textcolor{keywordtype}{char} *thingkvokeypath = strchr(\#KEYPATH, \textcolor{charliteral}{'.'}); NSCAssert(thingkvokeypath, \textcolor{stringliteral}{@"{}Provided key path is invalid."{}}); thingkvokeypath + 1; \})))}
+
+\end{DoxyCode}
+This macro ensures that key path exists at compile time. Given a real receiver with a key path as you would call it, it verifies at compile time that the key path exists, without calling it.
+
+For example\+:
+
+Thing\+KVOKey\+Path(string.\+length) =\texorpdfstring{$>$}{>} "{}length\char`\"{}  \+Or even the complex case\+:  \+Thing\+KVOKey\+Path(string.\+lowercase\+String.\+length) =$>$ @\char`\"{}lowercase\+String.\+length"{}. 
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_source_l00022}{22}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_source}{Thing\+KVOController.\+h}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a0143e9eaa42199e814cbf44554c7931d}\label{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a0143e9eaa42199e814cbf44554c7931d}} 
+\index{ThingKVOController.h@{ThingKVOController.h}!ThingKVONotificationBlock@{ThingKVONotificationBlock}}
+\index{ThingKVONotificationBlock@{ThingKVONotificationBlock}!ThingKVOController.h@{ThingKVOController.h}}
+\doxysubsubsection{\texorpdfstring{ThingKVONotificationBlock}{ThingKVONotificationBlock}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+KVONotification\+Block) (id \+\_\+\+Nullable observer, id object, NSDictionary$<$ NSKey\+Value\+Change\+Key, id $>$ $\ast$change)}
+
+@abstract Block called on key-\/value change notification. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer of the change. \\
+\hline
+{\em object} & The object changed. \\
+\hline
+{\em change} & The change dictionary which also includes {\ttfamily Thing\+KVONotification\+Key\+Path\+Key} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_source_l00051}{51}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_source}{Thing\+KVOController.\+h}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a548ddb9e365d5bbb2d3708466b320a40}\label{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_k_v_o_controller_8h_a548ddb9e365d5bbb2d3708466b320a40}} 
+\index{ThingKVOController.h@{ThingKVOController.h}!ThingKVONotificationKeyPathKey@{ThingKVONotificationKeyPathKey}}
+\index{ThingKVONotificationKeyPathKey@{ThingKVONotificationKeyPathKey}!ThingKVOController.h@{ThingKVOController.h}}
+\doxysubsubsection{\texorpdfstring{ThingKVONotificationKeyPathKey}{ThingKVONotificationKeyPathKey}}
+{\footnotesize\ttfamily NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN NSString$\ast$ const Thing\+KVONotification\+Key\+Path\+Key\hspace{0.3cm}{\ttfamily [extern]}}
+
+Key provided in the {\ttfamily change} dictionary of {\ttfamily Thing\+KVONotification\+Block} that\textquotesingle{}s value represents the key-\/path being observed 

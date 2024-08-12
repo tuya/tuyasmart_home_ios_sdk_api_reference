@@ -1,0 +1,208 @@
+\hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.xcframework/ios-\/arm64/\+Thing\+Smart\+Device\+Core\+Kit.framework/\+Headers/\+Thing\+Smart\+Device.h File Reference}
+\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/ios-\/arm64/ThingSmartDeviceCoreKit.framework/Headers/ThingSmartDevice.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/ios-\/arm64/ThingSmartDeviceCoreKit.framework/Headers/ThingSmartDevice.h}}
+{\ttfamily \#import $<$UIKit/\+UIKit.\+h$>$}\newline
+{\ttfamily \#import $<$Thing\+Smart\+Util/\+Thing\+Smart\+Util.\+h$>$}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Firmware\+Upgrade\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Device\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+MQTTMessage\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Lan\+Message\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Backup\+Wifi\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Device\+OTAModel.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+protocol \mbox{\hyperlink{protocol_thing_smart_device_delegate-p}{$<$\+Thing\+Smart\+Device\+Delegate$>$}}
+\begin{DoxyCompactList}\small\item\em The delegate for the \mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} class, used for getting all device status updates. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}}
+\begin{DoxyCompactList}\small\item\em The basic operation class of \mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} contains the model of basic information, including the device, DPs to send, update device information, and other common API operations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729}{Thing\+Device\+Online\+Mode}} \+: NSUInteger \{ \newline
+\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3ae07428ba125d9f97d8da1561d5c2f3}{Thing\+Device\+Online\+Mode\+Local}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3fc3bdc02ac9fa05b02a461f3fa5df9b}{Thing\+Device\+Online\+Mode\+Internet}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729aec693b283f23c34cf371768d8f3567a4}{Thing\+Device\+Online\+Mode\+Offline}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3ae07428ba125d9f97d8da1561d5c2f3}{Thing\+Device\+Online\+Mode\+Local}}
+, \newline
+\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3fc3bdc02ac9fa05b02a461f3fa5df9b}{Thing\+Device\+Online\+Mode\+Internet}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729aec693b283f23c34cf371768d8f3567a4}{Thing\+Device\+Online\+Mode\+Offline}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3ae07428ba125d9f97d8da1561d5c2f3}{Thing\+Device\+Online\+Mode\+Local}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3fc3bdc02ac9fa05b02a461f3fa5df9b}{Thing\+Device\+Online\+Mode\+Internet}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729aec693b283f23c34cf371768d8f3567a4}{Thing\+Device\+Online\+Mode\+Offline}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3ae07428ba125d9f97d8da1561d5c2f3}{Thing\+Device\+Online\+Mode\+Local}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3fc3bdc02ac9fa05b02a461f3fa5df9b}{Thing\+Device\+Online\+Mode\+Internet}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729aec693b283f23c34cf371768d8f3567a4}{Thing\+Device\+Online\+Mode\+Offline}}
+ \}
+\begin{DoxyCompactList}\small\item\em The device online status. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52}{Thing\+Device\+Publish\+Mode}} \+: NSUInteger \{ \newline
+\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af92e41afefb3ed929a4908fd0cd9fb37}{Thing\+Device\+Publish\+Mode\+Local}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52a991e80e6f4640f44f660bc3d3463b0ff}{Thing\+Device\+Publish\+Mode\+Internet}}
+, \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af9e9fd3ad1eb99ab980cf034bbdeb8bf}{Thing\+Device\+Publish\+Mode\+Auto}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af92e41afefb3ed929a4908fd0cd9fb37}{Thing\+Device\+Publish\+Mode\+Local}}
+, \newline
+\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52a991e80e6f4640f44f660bc3d3463b0ff}{Thing\+Device\+Publish\+Mode\+Internet}}
+, \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af9e9fd3ad1eb99ab980cf034bbdeb8bf}{Thing\+Device\+Publish\+Mode\+Auto}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af92e41afefb3ed929a4908fd0cd9fb37}{Thing\+Device\+Publish\+Mode\+Local}}
+, \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52a991e80e6f4640f44f660bc3d3463b0ff}{Thing\+Device\+Publish\+Mode\+Internet}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af9e9fd3ad1eb99ab980cf034bbdeb8bf}{Thing\+Device\+Publish\+Mode\+Auto}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af92e41afefb3ed929a4908fd0cd9fb37}{Thing\+Device\+Publish\+Mode\+Local}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52a991e80e6f4640f44f660bc3d3463b0ff}{Thing\+Device\+Publish\+Mode\+Internet}}
+, \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af9e9fd3ad1eb99ab980cf034bbdeb8bf}{Thing\+Device\+Publish\+Mode\+Auto}}
+ \}
+\begin{DoxyCompactList}\small\item\em The DP sending channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a285de64bfcbea02affcf869ac58199bf}{NS\+\_\+\+ENUM}} (NSUInteger, Thing\+Smart\+Thing\+Message\+Type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729}} 
+\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineMode@{ThingDeviceOnlineMode}}
+\index{ThingDeviceOnlineMode@{ThingDeviceOnlineMode}!ThingSmartDevice.h@{ThingSmartDevice.h}}
+\doxysubsubsection{\texorpdfstring{ThingDeviceOnlineMode}{ThingDeviceOnlineMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729}{Thing\+Device\+Online\+Mode}} \+: NSUInteger}
+
+
+
+The device online status. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDeviceOnlineModeLocal@{ThingDeviceOnlineModeLocal}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineModeLocal@{ThingDeviceOnlineModeLocal}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3ae07428ba125d9f97d8da1561d5c2f3}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3ae07428ba125d9f97d8da1561d5c2f3}} 
+Thing\+Device\+Online\+Mode\+Local&Connected to a LAN. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDeviceOnlineModeInternet@{ThingDeviceOnlineModeInternet}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineModeInternet@{ThingDeviceOnlineModeInternet}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3fc3bdc02ac9fa05b02a461f3fa5df9b}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3fc3bdc02ac9fa05b02a461f3fa5df9b}} 
+Thing\+Device\+Online\+Mode\+Internet&Connected to the Internet. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDeviceOnlineModeOffline@{ThingDeviceOnlineModeOffline}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineModeOffline@{ThingDeviceOnlineModeOffline}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729aec693b283f23c34cf371768d8f3567a4}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729aec693b283f23c34cf371768d8f3567a4}} 
+Thing\+Device\+Online\+Mode\+Offline&Goes offline. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDeviceOnlineModeLocal@{ThingDeviceOnlineModeLocal}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineModeLocal@{ThingDeviceOnlineModeLocal}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3ae07428ba125d9f97d8da1561d5c2f3}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3ae07428ba125d9f97d8da1561d5c2f3}} 
+Thing\+Device\+Online\+Mode\+Local&Connected to a LAN. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDeviceOnlineModeInternet@{ThingDeviceOnlineModeInternet}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineModeInternet@{ThingDeviceOnlineModeInternet}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3fc3bdc02ac9fa05b02a461f3fa5df9b}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3fc3bdc02ac9fa05b02a461f3fa5df9b}} 
+Thing\+Device\+Online\+Mode\+Internet&Connected to the Internet. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDeviceOnlineModeOffline@{ThingDeviceOnlineModeOffline}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineModeOffline@{ThingDeviceOnlineModeOffline}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729aec693b283f23c34cf371768d8f3567a4}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729aec693b283f23c34cf371768d8f3567a4}} 
+Thing\+Device\+Online\+Mode\+Offline&Goes offline. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDeviceOnlineModeLocal@{ThingDeviceOnlineModeLocal}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineModeLocal@{ThingDeviceOnlineModeLocal}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3ae07428ba125d9f97d8da1561d5c2f3}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3ae07428ba125d9f97d8da1561d5c2f3}} 
+Thing\+Device\+Online\+Mode\+Local&Connected to a LAN. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDeviceOnlineModeInternet@{ThingDeviceOnlineModeInternet}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineModeInternet@{ThingDeviceOnlineModeInternet}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3fc3bdc02ac9fa05b02a461f3fa5df9b}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3fc3bdc02ac9fa05b02a461f3fa5df9b}} 
+Thing\+Device\+Online\+Mode\+Internet&Connected to the Internet. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDeviceOnlineModeOffline@{ThingDeviceOnlineModeOffline}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineModeOffline@{ThingDeviceOnlineModeOffline}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729aec693b283f23c34cf371768d8f3567a4}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729aec693b283f23c34cf371768d8f3567a4}} 
+Thing\+Device\+Online\+Mode\+Offline&Goes offline. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDeviceOnlineModeLocal@{ThingDeviceOnlineModeLocal}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineModeLocal@{ThingDeviceOnlineModeLocal}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3ae07428ba125d9f97d8da1561d5c2f3}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3ae07428ba125d9f97d8da1561d5c2f3}} 
+Thing\+Device\+Online\+Mode\+Local&Connected to a LAN. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDeviceOnlineModeInternet@{ThingDeviceOnlineModeInternet}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineModeInternet@{ThingDeviceOnlineModeInternet}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3fc3bdc02ac9fa05b02a461f3fa5df9b}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729a3fc3bdc02ac9fa05b02a461f3fa5df9b}} 
+Thing\+Device\+Online\+Mode\+Internet&Connected to the Internet. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDeviceOnlineModeOffline@{ThingDeviceOnlineModeOffline}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDeviceOnlineModeOffline@{ThingDeviceOnlineModeOffline}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729aec693b283f23c34cf371768d8f3567a4}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_af99a74cb61ef2666841320858d931729aec693b283f23c34cf371768d8f3567a4}} 
+Thing\+Device\+Online\+Mode\+Offline&Goes offline. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_source_l00024}{24}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_source}{Thing\+Smart\+Device.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52}} 
+\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishMode@{ThingDevicePublishMode}}
+\index{ThingDevicePublishMode@{ThingDevicePublishMode}!ThingSmartDevice.h@{ThingSmartDevice.h}}
+\doxysubsubsection{\texorpdfstring{ThingDevicePublishMode}{ThingDevicePublishMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52}{Thing\+Device\+Publish\+Mode}} \+: NSUInteger}
+
+
+
+The DP sending channel. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDevicePublishModeLocal@{ThingDevicePublishModeLocal}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishModeLocal@{ThingDevicePublishModeLocal}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af92e41afefb3ed929a4908fd0cd9fb37}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af92e41afefb3ed929a4908fd0cd9fb37}} 
+Thing\+Device\+Publish\+Mode\+Local&Over the LAN. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDevicePublishModeInternet@{ThingDevicePublishModeInternet}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishModeInternet@{ThingDevicePublishModeInternet}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52a991e80e6f4640f44f660bc3d3463b0ff}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52a991e80e6f4640f44f660bc3d3463b0ff}} 
+Thing\+Device\+Publish\+Mode\+Internet&Over the Internet. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDevicePublishModeAuto@{ThingDevicePublishModeAuto}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishModeAuto@{ThingDevicePublishModeAuto}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af9e9fd3ad1eb99ab980cf034bbdeb8bf}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af9e9fd3ad1eb99ab980cf034bbdeb8bf}} 
+Thing\+Device\+Publish\+Mode\+Auto&Automatically selects a channel to send DPs. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDevicePublishModeLocal@{ThingDevicePublishModeLocal}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishModeLocal@{ThingDevicePublishModeLocal}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af92e41afefb3ed929a4908fd0cd9fb37}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af92e41afefb3ed929a4908fd0cd9fb37}} 
+Thing\+Device\+Publish\+Mode\+Local&Over the LAN. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDevicePublishModeInternet@{ThingDevicePublishModeInternet}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishModeInternet@{ThingDevicePublishModeInternet}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52a991e80e6f4640f44f660bc3d3463b0ff}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52a991e80e6f4640f44f660bc3d3463b0ff}} 
+Thing\+Device\+Publish\+Mode\+Internet&Over the Internet. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDevicePublishModeAuto@{ThingDevicePublishModeAuto}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishModeAuto@{ThingDevicePublishModeAuto}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af9e9fd3ad1eb99ab980cf034bbdeb8bf}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af9e9fd3ad1eb99ab980cf034bbdeb8bf}} 
+Thing\+Device\+Publish\+Mode\+Auto&Automatically selects a channel to send DPs. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDevicePublishModeLocal@{ThingDevicePublishModeLocal}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishModeLocal@{ThingDevicePublishModeLocal}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af92e41afefb3ed929a4908fd0cd9fb37}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af92e41afefb3ed929a4908fd0cd9fb37}} 
+Thing\+Device\+Publish\+Mode\+Local&Over the LAN. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDevicePublishModeInternet@{ThingDevicePublishModeInternet}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishModeInternet@{ThingDevicePublishModeInternet}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52a991e80e6f4640f44f660bc3d3463b0ff}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52a991e80e6f4640f44f660bc3d3463b0ff}} 
+Thing\+Device\+Publish\+Mode\+Internet&Over the Internet. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDevicePublishModeAuto@{ThingDevicePublishModeAuto}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishModeAuto@{ThingDevicePublishModeAuto}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af9e9fd3ad1eb99ab980cf034bbdeb8bf}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af9e9fd3ad1eb99ab980cf034bbdeb8bf}} 
+Thing\+Device\+Publish\+Mode\+Auto&Automatically selects a channel to send DPs. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDevicePublishModeLocal@{ThingDevicePublishModeLocal}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishModeLocal@{ThingDevicePublishModeLocal}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af92e41afefb3ed929a4908fd0cd9fb37}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af92e41afefb3ed929a4908fd0cd9fb37}} 
+Thing\+Device\+Publish\+Mode\+Local&Over the LAN. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDevicePublishModeInternet@{ThingDevicePublishModeInternet}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishModeInternet@{ThingDevicePublishModeInternet}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52a991e80e6f4640f44f660bc3d3463b0ff}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52a991e80e6f4640f44f660bc3d3463b0ff}} 
+Thing\+Device\+Publish\+Mode\+Internet&Over the Internet. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ThingDevicePublishModeAuto@{ThingDevicePublishModeAuto}!ThingSmartDevice.h@{ThingSmartDevice.h}}\index{ThingSmartDevice.h@{ThingSmartDevice.h}!ThingDevicePublishModeAuto@{ThingDevicePublishModeAuto}}}\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af9e9fd3ad1eb99ab980cf034bbdeb8bf}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a50b84a755602ec53223179ac76b23b52af9e9fd3ad1eb99ab980cf034bbdeb8bf}} 
+Thing\+Device\+Publish\+Mode\+Auto&Automatically selects a channel to send DPs. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_source_l00034}{34}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_source}{Thing\+Smart\+Device.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a285de64bfcbea02affcf869ac58199bf}\label{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_a285de64bfcbea02affcf869ac58199bf}} 
+\index{ThingSmartDevice.h@{ThingSmartDevice.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingSmartDevice.h@{ThingSmartDevice.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{Thing\+Smart\+Thing\+Message\+Type}]{ }\end{DoxyParamCaption})}
+
+Property thing message.
+
+Action thing message.
+
+Event thing message.
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_source_l00043}{43}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_source}{Thing\+Smart\+Device.\+h}}.
+

@@ -1,0 +1,1214 @@
+\hypertarget{protocol_thing_smart_device_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+Device\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_device_delegate-p}\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+
+
+The delegate for the \mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} class, used for getting all device status updates.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Device.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+Device\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.614174cm]{protocol_thing_smart_device_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_aa3c8a03d7c934dbcd4a3ac0316b85a6c}{device\+Info\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a305950284b2a7e5dd5f2c1f5761de120}{device\+Online\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_abf5d95dad076bab6c1d31e28d35f888d}{device\+Removed\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a0137feea1b604cfae2b8c50268df2cf6}{device\+:dps\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_aee7b871175d23dd813531c4c095293fc}{device\+:dp\+Commands\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a8120598d4fa2787b41b787db21170817}{device\+:group\+OTAId\+:firmware\+Type\+:progress\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ae36230a1f3565eab402d420f81c6ef49}{device\+:group\+OTAStatus\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a6a0875732cbea4764bf37d982f0b0263}{device\+:signal\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ab6d79c80bbb2c767ca61444e0717acf9}{device\+:did\+Receive\+Custom\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_acb3e500d9f6bf46a156ebf639458a279}{device\+:did\+Receive\+Lan\+Message\+:}}
+\begin{DoxyCompactList}\small\item\em Receives LAN custom messages. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a8986eb2cce53df0b85aaeb7bc26f2e38}{device\+:warning\+Info\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a4db87138b1e3a689f5a6d403d29ce909}{device\+:ota\+Update\+Status\+Changed\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a41fdbcfb74becf7b47dde8c279a93158}{device\+:did\+Receive\+Thing\+Message\+With\+Type\+:payload\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a1a6835077f2b7e479a43f1f2f1bd8131}{device\+:firmware\+Upgrade\+Progress\+:progress\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}{device\+:firmware\+Upgrade\+Status\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_af3825fae17f3631faf6e86356f6a1e06}{device\+:type\+:upgrade\+Status\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ad3f43dad293f5a54d79f51509d46b7ba}{device\+Firmware\+Upgrade\+Success\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ad08583d6ecc97bab88acaf2063243de1}{device\+Firmware\+Upgrade\+Failure\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_aed42c5a3f89bae7659614f7a79b32e62}{device\+Firmware\+Upgrading\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_aa3c8a03d7c934dbcd4a3ac0316b85a6c}{device\+Info\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a305950284b2a7e5dd5f2c1f5761de120}{device\+Online\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_abf5d95dad076bab6c1d31e28d35f888d}{device\+Removed\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a0137feea1b604cfae2b8c50268df2cf6}{device\+:dps\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_aee7b871175d23dd813531c4c095293fc}{device\+:dp\+Commands\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a8120598d4fa2787b41b787db21170817}{device\+:group\+OTAId\+:firmware\+Type\+:progress\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ae36230a1f3565eab402d420f81c6ef49}{device\+:group\+OTAStatus\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a6a0875732cbea4764bf37d982f0b0263}{device\+:signal\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ab6d79c80bbb2c767ca61444e0717acf9}{device\+:did\+Receive\+Custom\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_acb3e500d9f6bf46a156ebf639458a279}{device\+:did\+Receive\+Lan\+Message\+:}}
+\begin{DoxyCompactList}\small\item\em Receives LAN custom messages. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a8986eb2cce53df0b85aaeb7bc26f2e38}{device\+:warning\+Info\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a4db87138b1e3a689f5a6d403d29ce909}{device\+:ota\+Update\+Status\+Changed\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a41fdbcfb74becf7b47dde8c279a93158}{device\+:did\+Receive\+Thing\+Message\+With\+Type\+:payload\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a1a6835077f2b7e479a43f1f2f1bd8131}{device\+:firmware\+Upgrade\+Progress\+:progress\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}{device\+:firmware\+Upgrade\+Status\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_af3825fae17f3631faf6e86356f6a1e06}{device\+:type\+:upgrade\+Status\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ad3f43dad293f5a54d79f51509d46b7ba}{device\+Firmware\+Upgrade\+Success\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ad08583d6ecc97bab88acaf2063243de1}{device\+Firmware\+Upgrade\+Failure\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_aed42c5a3f89bae7659614f7a79b32e62}{device\+Firmware\+Upgrading\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_aa3c8a03d7c934dbcd4a3ac0316b85a6c}{device\+Info\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a305950284b2a7e5dd5f2c1f5761de120}{device\+Online\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_abf5d95dad076bab6c1d31e28d35f888d}{device\+Removed\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a0137feea1b604cfae2b8c50268df2cf6}{device\+:dps\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_aee7b871175d23dd813531c4c095293fc}{device\+:dp\+Commands\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a8120598d4fa2787b41b787db21170817}{device\+:group\+OTAId\+:firmware\+Type\+:progress\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ae36230a1f3565eab402d420f81c6ef49}{device\+:group\+OTAStatus\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a6a0875732cbea4764bf37d982f0b0263}{device\+:signal\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ab6d79c80bbb2c767ca61444e0717acf9}{device\+:did\+Receive\+Custom\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_acb3e500d9f6bf46a156ebf639458a279}{device\+:did\+Receive\+Lan\+Message\+:}}
+\begin{DoxyCompactList}\small\item\em Receives LAN custom messages. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a8986eb2cce53df0b85aaeb7bc26f2e38}{device\+:warning\+Info\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a4db87138b1e3a689f5a6d403d29ce909}{device\+:ota\+Update\+Status\+Changed\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a41fdbcfb74becf7b47dde8c279a93158}{device\+:did\+Receive\+Thing\+Message\+With\+Type\+:payload\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a1a6835077f2b7e479a43f1f2f1bd8131}{device\+:firmware\+Upgrade\+Progress\+:progress\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}{device\+:firmware\+Upgrade\+Status\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_af3825fae17f3631faf6e86356f6a1e06}{device\+:type\+:upgrade\+Status\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ad3f43dad293f5a54d79f51509d46b7ba}{device\+Firmware\+Upgrade\+Success\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ad08583d6ecc97bab88acaf2063243de1}{device\+Firmware\+Upgrade\+Failure\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_aed42c5a3f89bae7659614f7a79b32e62}{device\+Firmware\+Upgrading\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_aa3c8a03d7c934dbcd4a3ac0316b85a6c}{device\+Info\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a305950284b2a7e5dd5f2c1f5761de120}{device\+Online\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_abf5d95dad076bab6c1d31e28d35f888d}{device\+Removed\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a0137feea1b604cfae2b8c50268df2cf6}{device\+:dps\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_aee7b871175d23dd813531c4c095293fc}{device\+:dp\+Commands\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a8120598d4fa2787b41b787db21170817}{device\+:group\+OTAId\+:firmware\+Type\+:progress\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ae36230a1f3565eab402d420f81c6ef49}{device\+:group\+OTAStatus\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a6a0875732cbea4764bf37d982f0b0263}{device\+:signal\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ab6d79c80bbb2c767ca61444e0717acf9}{device\+:did\+Receive\+Custom\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_acb3e500d9f6bf46a156ebf639458a279}{device\+:did\+Receive\+Lan\+Message\+:}}
+\begin{DoxyCompactList}\small\item\em Receives LAN custom messages. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a8986eb2cce53df0b85aaeb7bc26f2e38}{device\+:warning\+Info\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a4db87138b1e3a689f5a6d403d29ce909}{device\+:ota\+Update\+Status\+Changed\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a41fdbcfb74becf7b47dde8c279a93158}{device\+:did\+Receive\+Thing\+Message\+With\+Type\+:payload\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a1a6835077f2b7e479a43f1f2f1bd8131}{device\+:firmware\+Upgrade\+Progress\+:progress\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}{device\+:firmware\+Upgrade\+Status\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_af3825fae17f3631faf6e86356f6a1e06}{device\+:type\+:upgrade\+Status\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ad3f43dad293f5a54d79f51509d46b7ba}{device\+Firmware\+Upgrade\+Success\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_ad08583d6ecc97bab88acaf2063243de1}{device\+Firmware\+Upgrade\+Failure\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_aed42c5a3f89bae7659614f7a79b32e62}{device\+Firmware\+Upgrading\+:type\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The delegate for the \mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} class, used for getting all device status updates. 
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_source_l00055}{55}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h_source}{Thing\+Smart\+Device.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ab6d79c80bbb2c767ca61444e0717acf9}\label{protocol_thing_smart_device_delegate-p_ab6d79c80bbb2c767ca61444e0717acf9}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:didReceiveCustomMessage:@{device:didReceiveCustomMessage:}}
+\index{device:didReceiveCustomMessage:@{device:didReceiveCustomMessage:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveCustomMessage:}{device:didReceiveCustomMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Custom\+Message\+:(\mbox{\hyperlink{interface_thing_smart_m_q_t_t_message_model}{Thing\+Smart\+MQTTMessage\+Model}} $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Receives MQTT custom messages. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em message} & The custom message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ab6d79c80bbb2c767ca61444e0717acf9}\label{protocol_thing_smart_device_delegate-p_ab6d79c80bbb2c767ca61444e0717acf9}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:didReceiveCustomMessage:@{device:didReceiveCustomMessage:}}
+\index{device:didReceiveCustomMessage:@{device:didReceiveCustomMessage:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveCustomMessage:}{device:didReceiveCustomMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Custom\+Message\+:(\mbox{\hyperlink{interface_thing_smart_m_q_t_t_message_model}{Thing\+Smart\+MQTTMessage\+Model}} $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Receives MQTT custom messages. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em message} & The custom message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ab6d79c80bbb2c767ca61444e0717acf9}\label{protocol_thing_smart_device_delegate-p_ab6d79c80bbb2c767ca61444e0717acf9}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:didReceiveCustomMessage:@{device:didReceiveCustomMessage:}}
+\index{device:didReceiveCustomMessage:@{device:didReceiveCustomMessage:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveCustomMessage:}{device:didReceiveCustomMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Custom\+Message\+:(\mbox{\hyperlink{interface_thing_smart_m_q_t_t_message_model}{Thing\+Smart\+MQTTMessage\+Model}} $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Receives MQTT custom messages. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em message} & The custom message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ab6d79c80bbb2c767ca61444e0717acf9}\label{protocol_thing_smart_device_delegate-p_ab6d79c80bbb2c767ca61444e0717acf9}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:didReceiveCustomMessage:@{device:didReceiveCustomMessage:}}
+\index{device:didReceiveCustomMessage:@{device:didReceiveCustomMessage:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveCustomMessage:}{device:didReceiveCustomMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Custom\+Message\+:(\mbox{\hyperlink{interface_thing_smart_m_q_t_t_message_model}{Thing\+Smart\+MQTTMessage\+Model}} $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Receives MQTT custom messages. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em message} & The custom message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_acb3e500d9f6bf46a156ebf639458a279}\label{protocol_thing_smart_device_delegate-p_acb3e500d9f6bf46a156ebf639458a279}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:didReceiveLanMessage:@{device:didReceiveLanMessage:}}
+\index{device:didReceiveLanMessage:@{device:didReceiveLanMessage:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveLanMessage:}{device:didReceiveLanMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Lan\+Message\+:(\mbox{\hyperlink{interface_thing_smart_lan_message_model}{Thing\+Smart\+Lan\+Message\+Model}} $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+Receives LAN custom messages. 
+
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_acb3e500d9f6bf46a156ebf639458a279}\label{protocol_thing_smart_device_delegate-p_acb3e500d9f6bf46a156ebf639458a279}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:didReceiveLanMessage:@{device:didReceiveLanMessage:}}
+\index{device:didReceiveLanMessage:@{device:didReceiveLanMessage:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveLanMessage:}{device:didReceiveLanMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Lan\+Message\+:(\mbox{\hyperlink{interface_thing_smart_lan_message_model}{Thing\+Smart\+Lan\+Message\+Model}} $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+Receives LAN custom messages. 
+
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_acb3e500d9f6bf46a156ebf639458a279}\label{protocol_thing_smart_device_delegate-p_acb3e500d9f6bf46a156ebf639458a279}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:didReceiveLanMessage:@{device:didReceiveLanMessage:}}
+\index{device:didReceiveLanMessage:@{device:didReceiveLanMessage:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveLanMessage:}{device:didReceiveLanMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Lan\+Message\+:(\mbox{\hyperlink{interface_thing_smart_lan_message_model}{Thing\+Smart\+Lan\+Message\+Model}} $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+Receives LAN custom messages. 
+
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_acb3e500d9f6bf46a156ebf639458a279}\label{protocol_thing_smart_device_delegate-p_acb3e500d9f6bf46a156ebf639458a279}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:didReceiveLanMessage:@{device:didReceiveLanMessage:}}
+\index{device:didReceiveLanMessage:@{device:didReceiveLanMessage:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveLanMessage:}{device:didReceiveLanMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Lan\+Message\+:(\mbox{\hyperlink{interface_thing_smart_lan_message_model}{Thing\+Smart\+Lan\+Message\+Model}} $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+Receives LAN custom messages. 
+
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a41fdbcfb74becf7b47dde8c279a93158}\label{protocol_thing_smart_device_delegate-p_a41fdbcfb74becf7b47dde8c279a93158}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:didReceiveThingMessageWithType:payload:@{device:didReceiveThingMessageWithType:payload:}}
+\index{device:didReceiveThingMessageWithType:payload:@{device:didReceiveThingMessageWithType:payload:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveThingMessageWithType:payload:}{device:didReceiveThingMessageWithType:payload:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Thing\+Message\+With\+Type\+:(Thing\+Smart\+Thing\+Message\+Type)}]{thing\+Message\+Type }\item[{payload\+:(NSDictionary $\ast$)}]{payload }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The thing message data update. Example\+: type == property\+: payload = \{ \char`\"{}code\+\_\+name1\char`\"{}\+: \{ \char`\"{}value\char`\"{}\+: \char`\"{}code\+\_\+value1\char`\"{}, \char`\"{}time\char`\"{}\+: 1234567890 \}, \char`\"{}code\+\_\+name2\char`\"{}\+: \{ \char`\"{}value\char`\"{}\+: 50, \char`\"{}time\char`\"{}\+: 1234567890 \} \} type == action\+: payload = \{ \char`\"{}action\+Code\char`\"{}\+: \char`\"{}test\+Action\char`\"{}, \char`\"{}output\+Params\char`\"{}\+: \{ \char`\"{}output\+Param1\char`\"{}\+:\char`\"{}output\+Value1\char`\"{}, \char`\"{}output\+Param2\char`\"{}\+:50 \} \} type == event\+: payload = \{ \char`\"{}event\+Code\char`\"{}\+: \char`\"{}test\+Event\char`\"{}, \char`\"{}output\+Params\char`\"{}\+: \{ \char`\"{}output\+Param1\char`\"{}\+:\mbox{[}\char`\"{}output\+Value1\char`\"{}, \char`\"{}output\+Value2\char`\"{}\mbox{]}, \char`\"{}output\+Param2\char`\"{}\+:false \} \} 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em thing\+Message\+Type} & The message type. \\
+\hline
+{\em payload} & The message payload. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a41fdbcfb74becf7b47dde8c279a93158}\label{protocol_thing_smart_device_delegate-p_a41fdbcfb74becf7b47dde8c279a93158}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:didReceiveThingMessageWithType:payload:@{device:didReceiveThingMessageWithType:payload:}}
+\index{device:didReceiveThingMessageWithType:payload:@{device:didReceiveThingMessageWithType:payload:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveThingMessageWithType:payload:}{device:didReceiveThingMessageWithType:payload:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Thing\+Message\+With\+Type\+:(Thing\+Smart\+Thing\+Message\+Type)}]{thing\+Message\+Type }\item[{payload\+:(NSDictionary $\ast$)}]{payload }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The thing message data update. Example\+: type == property\+: payload = \{ \char`\"{}code\+\_\+name1\char`\"{}\+: \{ \char`\"{}value\char`\"{}\+: \char`\"{}code\+\_\+value1\char`\"{}, \char`\"{}time\char`\"{}\+: 1234567890 \}, \char`\"{}code\+\_\+name2\char`\"{}\+: \{ \char`\"{}value\char`\"{}\+: 50, \char`\"{}time\char`\"{}\+: 1234567890 \} \} type == action\+: payload = \{ \char`\"{}action\+Code\char`\"{}\+: \char`\"{}test\+Action\char`\"{}, \char`\"{}output\+Params\char`\"{}\+: \{ \char`\"{}output\+Param1\char`\"{}\+:\char`\"{}output\+Value1\char`\"{}, \char`\"{}output\+Param2\char`\"{}\+:50 \} \} type == event\+: payload = \{ \char`\"{}event\+Code\char`\"{}\+: \char`\"{}test\+Event\char`\"{}, \char`\"{}output\+Params\char`\"{}\+: \{ \char`\"{}output\+Param1\char`\"{}\+:\mbox{[}\char`\"{}output\+Value1\char`\"{}, \char`\"{}output\+Value2\char`\"{}\mbox{]}, \char`\"{}output\+Param2\char`\"{}\+:false \} \} 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em thing\+Message\+Type} & The message type. \\
+\hline
+{\em payload} & The message payload. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a41fdbcfb74becf7b47dde8c279a93158}\label{protocol_thing_smart_device_delegate-p_a41fdbcfb74becf7b47dde8c279a93158}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:didReceiveThingMessageWithType:payload:@{device:didReceiveThingMessageWithType:payload:}}
+\index{device:didReceiveThingMessageWithType:payload:@{device:didReceiveThingMessageWithType:payload:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveThingMessageWithType:payload:}{device:didReceiveThingMessageWithType:payload:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Thing\+Message\+With\+Type\+:(Thing\+Smart\+Thing\+Message\+Type)}]{thing\+Message\+Type }\item[{payload\+:(NSDictionary $\ast$)}]{payload }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The thing message data update. Example\+: type == property\+: payload = \{ \char`\"{}code\+\_\+name1\char`\"{}\+: \{ \char`\"{}value\char`\"{}\+: \char`\"{}code\+\_\+value1\char`\"{}, \char`\"{}time\char`\"{}\+: 1234567890 \}, \char`\"{}code\+\_\+name2\char`\"{}\+: \{ \char`\"{}value\char`\"{}\+: 50, \char`\"{}time\char`\"{}\+: 1234567890 \} \} type == action\+: payload = \{ \char`\"{}action\+Code\char`\"{}\+: \char`\"{}test\+Action\char`\"{}, \char`\"{}output\+Params\char`\"{}\+: \{ \char`\"{}output\+Param1\char`\"{}\+:\char`\"{}output\+Value1\char`\"{}, \char`\"{}output\+Param2\char`\"{}\+:50 \} \} type == event\+: payload = \{ \char`\"{}event\+Code\char`\"{}\+: \char`\"{}test\+Event\char`\"{}, \char`\"{}output\+Params\char`\"{}\+: \{ \char`\"{}output\+Param1\char`\"{}\+:\mbox{[}\char`\"{}output\+Value1\char`\"{}, \char`\"{}output\+Value2\char`\"{}\mbox{]}, \char`\"{}output\+Param2\char`\"{}\+:false \} \} 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em thing\+Message\+Type} & The message type. \\
+\hline
+{\em payload} & The message payload. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a41fdbcfb74becf7b47dde8c279a93158}\label{protocol_thing_smart_device_delegate-p_a41fdbcfb74becf7b47dde8c279a93158}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:didReceiveThingMessageWithType:payload:@{device:didReceiveThingMessageWithType:payload:}}
+\index{device:didReceiveThingMessageWithType:payload:@{device:didReceiveThingMessageWithType:payload:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveThingMessageWithType:payload:}{device:didReceiveThingMessageWithType:payload:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Thing\+Message\+With\+Type\+:(Thing\+Smart\+Thing\+Message\+Type)}]{thing\+Message\+Type }\item[{payload\+:(NSDictionary $\ast$)}]{payload }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The thing message data update. Example\+: type == property\+: payload = \{ \char`\"{}code\+\_\+name1\char`\"{}\+: \{ \char`\"{}value\char`\"{}\+: \char`\"{}code\+\_\+value1\char`\"{}, \char`\"{}time\char`\"{}\+: 1234567890 \}, \char`\"{}code\+\_\+name2\char`\"{}\+: \{ \char`\"{}value\char`\"{}\+: 50, \char`\"{}time\char`\"{}\+: 1234567890 \} \} type == action\+: payload = \{ \char`\"{}action\+Code\char`\"{}\+: \char`\"{}test\+Action\char`\"{}, \char`\"{}output\+Params\char`\"{}\+: \{ \char`\"{}output\+Param1\char`\"{}\+:\char`\"{}output\+Value1\char`\"{}, \char`\"{}output\+Param2\char`\"{}\+:50 \} \} type == event\+: payload = \{ \char`\"{}event\+Code\char`\"{}\+: \char`\"{}test\+Event\char`\"{}, \char`\"{}output\+Params\char`\"{}\+: \{ \char`\"{}output\+Param1\char`\"{}\+:\mbox{[}\char`\"{}output\+Value1\char`\"{}, \char`\"{}output\+Value2\char`\"{}\mbox{]}, \char`\"{}output\+Param2\char`\"{}\+:false \} \} 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em thing\+Message\+Type} & The message type. \\
+\hline
+{\em payload} & The message payload. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_aee7b871175d23dd813531c4c095293fc}\label{protocol_thing_smart_device_delegate-p_aee7b871175d23dd813531c4c095293fc}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:dpCommandsUpdate:@{device:dpCommandsUpdate:}}
+\index{device:dpCommandsUpdate:@{device:dpCommandsUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:dpCommandsUpdate:}{device:dpCommandsUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{dp\+Commands\+Update\+:(NSDictionary $\ast$)}]{dp\+Codes }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The DP data updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em dp\+Codes} & The DP codes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_aee7b871175d23dd813531c4c095293fc}\label{protocol_thing_smart_device_delegate-p_aee7b871175d23dd813531c4c095293fc}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:dpCommandsUpdate:@{device:dpCommandsUpdate:}}
+\index{device:dpCommandsUpdate:@{device:dpCommandsUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:dpCommandsUpdate:}{device:dpCommandsUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{dp\+Commands\+Update\+:(NSDictionary $\ast$)}]{dp\+Codes }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The DP data updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em dp\+Codes} & The DP codes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_aee7b871175d23dd813531c4c095293fc}\label{protocol_thing_smart_device_delegate-p_aee7b871175d23dd813531c4c095293fc}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:dpCommandsUpdate:@{device:dpCommandsUpdate:}}
+\index{device:dpCommandsUpdate:@{device:dpCommandsUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:dpCommandsUpdate:}{device:dpCommandsUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{dp\+Commands\+Update\+:(NSDictionary $\ast$)}]{dp\+Codes }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The DP data updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em dp\+Codes} & The DP codes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_aee7b871175d23dd813531c4c095293fc}\label{protocol_thing_smart_device_delegate-p_aee7b871175d23dd813531c4c095293fc}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:dpCommandsUpdate:@{device:dpCommandsUpdate:}}
+\index{device:dpCommandsUpdate:@{device:dpCommandsUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:dpCommandsUpdate:}{device:dpCommandsUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{dp\+Commands\+Update\+:(NSDictionary $\ast$)}]{dp\+Codes }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The DP data updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em dp\+Codes} & The DP codes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a0137feea1b604cfae2b8c50268df2cf6}\label{protocol_thing_smart_device_delegate-p_a0137feea1b604cfae2b8c50268df2cf6}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:dpsUpdate:@{device:dpsUpdate:}}
+\index{device:dpsUpdate:@{device:dpsUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:dpsUpdate:}{device:dpsUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{dps\+Update\+:(NSDictionary $\ast$)}]{dps }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The DP data updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em dps} & The command dictionary. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a0137feea1b604cfae2b8c50268df2cf6}\label{protocol_thing_smart_device_delegate-p_a0137feea1b604cfae2b8c50268df2cf6}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:dpsUpdate:@{device:dpsUpdate:}}
+\index{device:dpsUpdate:@{device:dpsUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:dpsUpdate:}{device:dpsUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{dps\+Update\+:(NSDictionary $\ast$)}]{dps }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The DP data updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em dps} & The command dictionary. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a0137feea1b604cfae2b8c50268df2cf6}\label{protocol_thing_smart_device_delegate-p_a0137feea1b604cfae2b8c50268df2cf6}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:dpsUpdate:@{device:dpsUpdate:}}
+\index{device:dpsUpdate:@{device:dpsUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:dpsUpdate:}{device:dpsUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{dps\+Update\+:(NSDictionary $\ast$)}]{dps }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The DP data updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em dps} & The command dictionary. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a0137feea1b604cfae2b8c50268df2cf6}\label{protocol_thing_smart_device_delegate-p_a0137feea1b604cfae2b8c50268df2cf6}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:dpsUpdate:@{device:dpsUpdate:}}
+\index{device:dpsUpdate:@{device:dpsUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:dpsUpdate:}{device:dpsUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{dps\+Update\+:(NSDictionary $\ast$)}]{dps }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The DP data updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em dps} & The command dictionary. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a1a6835077f2b7e479a43f1f2f1bd8131}\label{protocol_thing_smart_device_delegate-p_a1a6835077f2b7e479a43f1f2f1bd8131}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:firmwareUpgradeProgress:progress:@{device:firmwareUpgradeProgress:progress:}}
+\index{device:firmwareUpgradeProgress:progress:@{device:firmwareUpgradeProgress:progress:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:firmwareUpgradeProgress:progress:}{device:firmwareUpgradeProgress:progress:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{firmware\+Upgrade\+Progress\+:(NSInteger)}]{type }\item[{progress\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:ota\+Update\+Status\+Changed\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The firmware update progress. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+{\em progress} & The update progress. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a1a6835077f2b7e479a43f1f2f1bd8131}\label{protocol_thing_smart_device_delegate-p_a1a6835077f2b7e479a43f1f2f1bd8131}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:firmwareUpgradeProgress:progress:@{device:firmwareUpgradeProgress:progress:}}
+\index{device:firmwareUpgradeProgress:progress:@{device:firmwareUpgradeProgress:progress:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:firmwareUpgradeProgress:progress:}{device:firmwareUpgradeProgress:progress:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{firmware\+Upgrade\+Progress\+:(NSInteger)}]{type }\item[{progress\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:ota\+Update\+Status\+Changed\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The firmware update progress. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+{\em progress} & The update progress. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a1a6835077f2b7e479a43f1f2f1bd8131}\label{protocol_thing_smart_device_delegate-p_a1a6835077f2b7e479a43f1f2f1bd8131}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:firmwareUpgradeProgress:progress:@{device:firmwareUpgradeProgress:progress:}}
+\index{device:firmwareUpgradeProgress:progress:@{device:firmwareUpgradeProgress:progress:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:firmwareUpgradeProgress:progress:}{device:firmwareUpgradeProgress:progress:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{firmware\+Upgrade\+Progress\+:(NSInteger)}]{type }\item[{progress\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:ota\+Update\+Status\+Changed\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The firmware update progress. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+{\em progress} & The update progress. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a1a6835077f2b7e479a43f1f2f1bd8131}\label{protocol_thing_smart_device_delegate-p_a1a6835077f2b7e479a43f1f2f1bd8131}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:firmwareUpgradeProgress:progress:@{device:firmwareUpgradeProgress:progress:}}
+\index{device:firmwareUpgradeProgress:progress:@{device:firmwareUpgradeProgress:progress:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:firmwareUpgradeProgress:progress:}{device:firmwareUpgradeProgress:progress:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{firmware\+Upgrade\+Progress\+:(NSInteger)}]{type }\item[{progress\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:ota\+Update\+Status\+Changed\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The firmware update progress. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+{\em progress} & The update progress. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}\label{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:firmwareUpgradeStatusModel:@{device:firmwareUpgradeStatusModel:}}
+\index{device:firmwareUpgradeStatusModel:@{device:firmwareUpgradeStatusModel:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:firmwareUpgradeStatusModel:}{device:firmwareUpgradeStatusModel:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{firmware\+Upgrade\+Status\+Model\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:ota\+Update\+Status\+Changed\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of changes in device firmware update status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em upgrade\+Status\+Model} & The model of the device update status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}\label{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:firmwareUpgradeStatusModel:@{device:firmwareUpgradeStatusModel:}}
+\index{device:firmwareUpgradeStatusModel:@{device:firmwareUpgradeStatusModel:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:firmwareUpgradeStatusModel:}{device:firmwareUpgradeStatusModel:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{firmware\+Upgrade\+Status\+Model\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:ota\+Update\+Status\+Changed\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of changes in device firmware update status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em upgrade\+Status\+Model} & The model of the device update status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}\label{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:firmwareUpgradeStatusModel:@{device:firmwareUpgradeStatusModel:}}
+\index{device:firmwareUpgradeStatusModel:@{device:firmwareUpgradeStatusModel:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:firmwareUpgradeStatusModel:}{device:firmwareUpgradeStatusModel:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{firmware\+Upgrade\+Status\+Model\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:ota\+Update\+Status\+Changed\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of changes in device firmware update status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em upgrade\+Status\+Model} & The model of the device update status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}\label{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:firmwareUpgradeStatusModel:@{device:firmwareUpgradeStatusModel:}}
+\index{device:firmwareUpgradeStatusModel:@{device:firmwareUpgradeStatusModel:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:firmwareUpgradeStatusModel:}{device:firmwareUpgradeStatusModel:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{firmware\+Upgrade\+Status\+Model\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:ota\+Update\+Status\+Changed\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of changes in device firmware update status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em upgrade\+Status\+Model} & The model of the device update status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a8120598d4fa2787b41b787db21170817}\label{protocol_thing_smart_device_delegate-p_a8120598d4fa2787b41b787db21170817}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:groupOTAId:firmwareType:progress:@{device:groupOTAId:firmwareType:progress:}}
+\index{device:groupOTAId:firmwareType:progress:@{device:groupOTAId:firmwareType:progress:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:groupOTAId:firmwareType:progress:}{device:groupOTAId:firmwareType:progress:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{group\+OTAId\+:(long)}]{group\+Id }\item[{firmware\+Type\+:(NSInteger)}]{type }\item[{progress\+:(double)}]{progress }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The group OTA task progress. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The gateway instance. \\
+\hline
+{\em group\+Id} & group OTA task id. \\
+\hline
+{\em type} & The firmware type. \\
+\hline
+{\em progress} & The update progress. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a8120598d4fa2787b41b787db21170817}\label{protocol_thing_smart_device_delegate-p_a8120598d4fa2787b41b787db21170817}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:groupOTAId:firmwareType:progress:@{device:groupOTAId:firmwareType:progress:}}
+\index{device:groupOTAId:firmwareType:progress:@{device:groupOTAId:firmwareType:progress:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:groupOTAId:firmwareType:progress:}{device:groupOTAId:firmwareType:progress:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{group\+OTAId\+:(long)}]{group\+Id }\item[{firmware\+Type\+:(NSInteger)}]{type }\item[{progress\+:(double)}]{progress }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The group OTA task progress. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The gateway instance. \\
+\hline
+{\em group\+Id} & group OTA task id. \\
+\hline
+{\em type} & The firmware type. \\
+\hline
+{\em progress} & The update progress. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a8120598d4fa2787b41b787db21170817}\label{protocol_thing_smart_device_delegate-p_a8120598d4fa2787b41b787db21170817}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:groupOTAId:firmwareType:progress:@{device:groupOTAId:firmwareType:progress:}}
+\index{device:groupOTAId:firmwareType:progress:@{device:groupOTAId:firmwareType:progress:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:groupOTAId:firmwareType:progress:}{device:groupOTAId:firmwareType:progress:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{group\+OTAId\+:(long)}]{group\+Id }\item[{firmware\+Type\+:(NSInteger)}]{type }\item[{progress\+:(double)}]{progress }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The group OTA task progress. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The gateway instance. \\
+\hline
+{\em group\+Id} & group OTA task id. \\
+\hline
+{\em type} & The firmware type. \\
+\hline
+{\em progress} & The update progress. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a8120598d4fa2787b41b787db21170817}\label{protocol_thing_smart_device_delegate-p_a8120598d4fa2787b41b787db21170817}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:groupOTAId:firmwareType:progress:@{device:groupOTAId:firmwareType:progress:}}
+\index{device:groupOTAId:firmwareType:progress:@{device:groupOTAId:firmwareType:progress:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:groupOTAId:firmwareType:progress:}{device:groupOTAId:firmwareType:progress:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{group\+OTAId\+:(long)}]{group\+Id }\item[{firmware\+Type\+:(NSInteger)}]{type }\item[{progress\+:(double)}]{progress }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The group OTA task progress. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The gateway instance. \\
+\hline
+{\em group\+Id} & group OTA task id. \\
+\hline
+{\em type} & The firmware type. \\
+\hline
+{\em progress} & The update progress. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ae36230a1f3565eab402d420f81c6ef49}\label{protocol_thing_smart_device_delegate-p_ae36230a1f3565eab402d420f81c6ef49}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:groupOTAStatusModel:@{device:groupOTAStatusModel:}}
+\index{device:groupOTAStatusModel:@{device:groupOTAStatusModel:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:groupOTAStatusModel:}{device:groupOTAStatusModel:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{group\+OTAStatus\+Model\+:(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model}} $\ast$)}]{upgrade\+Status\+Model }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The group OTA task status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The gateway device instance. \\
+\hline
+{\em upgrade\+Status\+Model} & The model of the update status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ae36230a1f3565eab402d420f81c6ef49}\label{protocol_thing_smart_device_delegate-p_ae36230a1f3565eab402d420f81c6ef49}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:groupOTAStatusModel:@{device:groupOTAStatusModel:}}
+\index{device:groupOTAStatusModel:@{device:groupOTAStatusModel:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:groupOTAStatusModel:}{device:groupOTAStatusModel:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{group\+OTAStatus\+Model\+:(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model}} $\ast$)}]{upgrade\+Status\+Model }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The group OTA task status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The gateway device instance. \\
+\hline
+{\em upgrade\+Status\+Model} & The model of the update status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ae36230a1f3565eab402d420f81c6ef49}\label{protocol_thing_smart_device_delegate-p_ae36230a1f3565eab402d420f81c6ef49}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:groupOTAStatusModel:@{device:groupOTAStatusModel:}}
+\index{device:groupOTAStatusModel:@{device:groupOTAStatusModel:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:groupOTAStatusModel:}{device:groupOTAStatusModel:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{group\+OTAStatus\+Model\+:(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model}} $\ast$)}]{upgrade\+Status\+Model }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The group OTA task status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The gateway device instance. \\
+\hline
+{\em upgrade\+Status\+Model} & The model of the update status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ae36230a1f3565eab402d420f81c6ef49}\label{protocol_thing_smart_device_delegate-p_ae36230a1f3565eab402d420f81c6ef49}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:groupOTAStatusModel:@{device:groupOTAStatusModel:}}
+\index{device:groupOTAStatusModel:@{device:groupOTAStatusModel:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:groupOTAStatusModel:}{device:groupOTAStatusModel:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{group\+OTAStatus\+Model\+:(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model}} $\ast$)}]{upgrade\+Status\+Model }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The group OTA task status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The gateway device instance. \\
+\hline
+{\em upgrade\+Status\+Model} & The model of the update status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a4db87138b1e3a689f5a6d403d29ce909}\label{protocol_thing_smart_device_delegate-p_a4db87138b1e3a689f5a6d403d29ce909}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:otaUpdateStatusChanged:@{device:otaUpdateStatusChanged:}}
+\index{device:otaUpdateStatusChanged:@{device:otaUpdateStatusChanged:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:otaUpdateStatusChanged:}{device:otaUpdateStatusChanged:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{ota\+Update\+Status\+Changed\+:(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model}} $\ast$)}]{status\+Model }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of changes in device normal firmware/pid version update\textquotesingle{}s status/progress Notice\+: sometimes the progress may \texorpdfstring{$<$}{<}0, when it occured please ignore the progress. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em status\+Model} & status/progress model. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a4db87138b1e3a689f5a6d403d29ce909}\label{protocol_thing_smart_device_delegate-p_a4db87138b1e3a689f5a6d403d29ce909}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:otaUpdateStatusChanged:@{device:otaUpdateStatusChanged:}}
+\index{device:otaUpdateStatusChanged:@{device:otaUpdateStatusChanged:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:otaUpdateStatusChanged:}{device:otaUpdateStatusChanged:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{ota\+Update\+Status\+Changed\+:(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model}} $\ast$)}]{status\+Model }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of changes in device normal firmware/pid version update\textquotesingle{}s status/progress Notice\+: sometimes the progress may \texorpdfstring{$<$}{<}0, when it occured please ignore the progress. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em status\+Model} & status/progress model. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a4db87138b1e3a689f5a6d403d29ce909}\label{protocol_thing_smart_device_delegate-p_a4db87138b1e3a689f5a6d403d29ce909}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:otaUpdateStatusChanged:@{device:otaUpdateStatusChanged:}}
+\index{device:otaUpdateStatusChanged:@{device:otaUpdateStatusChanged:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:otaUpdateStatusChanged:}{device:otaUpdateStatusChanged:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{ota\+Update\+Status\+Changed\+:(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model}} $\ast$)}]{status\+Model }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of changes in device normal firmware/pid version update\textquotesingle{}s status/progress Notice\+: sometimes the progress may \texorpdfstring{$<$}{<}0, when it occured please ignore the progress. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em status\+Model} & status/progress model. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a4db87138b1e3a689f5a6d403d29ce909}\label{protocol_thing_smart_device_delegate-p_a4db87138b1e3a689f5a6d403d29ce909}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:otaUpdateStatusChanged:@{device:otaUpdateStatusChanged:}}
+\index{device:otaUpdateStatusChanged:@{device:otaUpdateStatusChanged:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:otaUpdateStatusChanged:}{device:otaUpdateStatusChanged:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{ota\+Update\+Status\+Changed\+:(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model}} $\ast$)}]{status\+Model }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of changes in device normal firmware/pid version update\textquotesingle{}s status/progress Notice\+: sometimes the progress may \texorpdfstring{$<$}{<}0, when it occured please ignore the progress. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em status\+Model} & status/progress model. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a6a0875732cbea4764bf37d982f0b0263}\label{protocol_thing_smart_device_delegate-p_a6a0875732cbea4764bf37d982f0b0263}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:signal:@{device:signal:}}
+\index{device:signal:@{device:signal:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:signal:}{device:signal:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{signal\+:(NSString $\ast$)}]{signal }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback of Wi-\/\+Fi signal strength. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em signal} & The signal strength. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a6a0875732cbea4764bf37d982f0b0263}\label{protocol_thing_smart_device_delegate-p_a6a0875732cbea4764bf37d982f0b0263}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:signal:@{device:signal:}}
+\index{device:signal:@{device:signal:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:signal:}{device:signal:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{signal\+:(NSString $\ast$)}]{signal }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback of Wi-\/\+Fi signal strength. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em signal} & The signal strength. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a6a0875732cbea4764bf37d982f0b0263}\label{protocol_thing_smart_device_delegate-p_a6a0875732cbea4764bf37d982f0b0263}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:signal:@{device:signal:}}
+\index{device:signal:@{device:signal:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:signal:}{device:signal:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{signal\+:(NSString $\ast$)}]{signal }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback of Wi-\/\+Fi signal strength. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em signal} & The signal strength. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a6a0875732cbea4764bf37d982f0b0263}\label{protocol_thing_smart_device_delegate-p_a6a0875732cbea4764bf37d982f0b0263}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:signal:@{device:signal:}}
+\index{device:signal:@{device:signal:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:signal:}{device:signal:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{signal\+:(NSString $\ast$)}]{signal }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback of Wi-\/\+Fi signal strength. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em signal} & The signal strength. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_af3825fae17f3631faf6e86356f6a1e06}\label{protocol_thing_smart_device_delegate-p_af3825fae17f3631faf6e86356f6a1e06}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:type:upgradeStatus:@{device:type:upgradeStatus:}}
+\index{device:type:upgradeStatus:@{device:type:upgradeStatus:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:type:upgradeStatus:}{device:type:upgradeStatus:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(NSInteger)}]{type }\item[{upgrade\+Status\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:firmware\+Upgrade\+Status\+Model\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of changes in device firmware update status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+{\em upgrade\+Status} & The device update status. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000139}{Deprecated}}]This method is deprecated. Use \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}{device\+:firmware\+Upgrade\+Status\+Model\+:}} instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_af3825fae17f3631faf6e86356f6a1e06}\label{protocol_thing_smart_device_delegate-p_af3825fae17f3631faf6e86356f6a1e06}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:type:upgradeStatus:@{device:type:upgradeStatus:}}
+\index{device:type:upgradeStatus:@{device:type:upgradeStatus:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:type:upgradeStatus:}{device:type:upgradeStatus:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(NSInteger)}]{type }\item[{upgrade\+Status\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:firmware\+Upgrade\+Status\+Model\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of changes in device firmware update status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+{\em upgrade\+Status} & The device update status. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000145}{Deprecated}}]This method is deprecated. Use \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}{device\+:firmware\+Upgrade\+Status\+Model\+:}} instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_af3825fae17f3631faf6e86356f6a1e06}\label{protocol_thing_smart_device_delegate-p_af3825fae17f3631faf6e86356f6a1e06}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:type:upgradeStatus:@{device:type:upgradeStatus:}}
+\index{device:type:upgradeStatus:@{device:type:upgradeStatus:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:type:upgradeStatus:}{device:type:upgradeStatus:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(NSInteger)}]{type }\item[{upgrade\+Status\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:firmware\+Upgrade\+Status\+Model\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of changes in device firmware update status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+{\em upgrade\+Status} & The device update status. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000151}{Deprecated}}]This method is deprecated. Use \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}{device\+:firmware\+Upgrade\+Status\+Model\+:}} instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_af3825fae17f3631faf6e86356f6a1e06}\label{protocol_thing_smart_device_delegate-p_af3825fae17f3631faf6e86356f6a1e06}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:type:upgradeStatus:@{device:type:upgradeStatus:}}
+\index{device:type:upgradeStatus:@{device:type:upgradeStatus:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:type:upgradeStatus:}{device:type:upgradeStatus:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(NSInteger)}]{type }\item[{upgrade\+Status\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:firmware\+Upgrade\+Status\+Model\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of changes in device firmware update status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+{\em upgrade\+Status} & The device update status. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000133}{Deprecated}}]This method is deprecated. Use \mbox{\hyperlink{protocol_thing_smart_device_delegate-p_a7e5c951797795775b302cf8ac688bceb}{device\+:firmware\+Upgrade\+Status\+Model\+:}} instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a8986eb2cce53df0b85aaeb7bc26f2e38}\label{protocol_thing_smart_device_delegate-p_a8986eb2cce53df0b85aaeb7bc26f2e38}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:warningInfoUpdate:@{device:warningInfoUpdate:}}
+\index{device:warningInfoUpdate:@{device:warningInfoUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:warningInfoUpdate:}{device:warningInfoUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{warning\+Info\+Update\+:(NSDictionary $\ast$)}]{warning\+Info }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of warning information updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em warning\+Info} & The warning information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a8986eb2cce53df0b85aaeb7bc26f2e38}\label{protocol_thing_smart_device_delegate-p_a8986eb2cce53df0b85aaeb7bc26f2e38}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:warningInfoUpdate:@{device:warningInfoUpdate:}}
+\index{device:warningInfoUpdate:@{device:warningInfoUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:warningInfoUpdate:}{device:warningInfoUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{warning\+Info\+Update\+:(NSDictionary $\ast$)}]{warning\+Info }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of warning information updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em warning\+Info} & The warning information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a8986eb2cce53df0b85aaeb7bc26f2e38}\label{protocol_thing_smart_device_delegate-p_a8986eb2cce53df0b85aaeb7bc26f2e38}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:warningInfoUpdate:@{device:warningInfoUpdate:}}
+\index{device:warningInfoUpdate:@{device:warningInfoUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:warningInfoUpdate:}{device:warningInfoUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{warning\+Info\+Update\+:(NSDictionary $\ast$)}]{warning\+Info }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of warning information updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em warning\+Info} & The warning information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a8986eb2cce53df0b85aaeb7bc26f2e38}\label{protocol_thing_smart_device_delegate-p_a8986eb2cce53df0b85aaeb7bc26f2e38}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!device:warningInfoUpdate:@{device:warningInfoUpdate:}}
+\index{device:warningInfoUpdate:@{device:warningInfoUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:warningInfoUpdate:}{device:warningInfoUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{warning\+Info\+Update\+:(NSDictionary $\ast$)}]{warning\+Info }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The delegate of warning information updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em warning\+Info} & The warning information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ad08583d6ecc97bab88acaf2063243de1}\label{protocol_thing_smart_device_delegate-p_ad08583d6ecc97bab88acaf2063243de1}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceFirmwareUpgradeFailure:type:@{deviceFirmwareUpgradeFailure:type:}}
+\index{deviceFirmwareUpgradeFailure:type:@{deviceFirmwareUpgradeFailure:type:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceFirmwareUpgradeFailure:type:}{deviceFirmwareUpgradeFailure:type:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Firmware\+Upgrade\+Failure\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:upgrade\+Status\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Failure of device firmware updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000135}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+Device\+Delegate\+::device\+:upgrade\+Status\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ad08583d6ecc97bab88acaf2063243de1}\label{protocol_thing_smart_device_delegate-p_ad08583d6ecc97bab88acaf2063243de1}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceFirmwareUpgradeFailure:type:@{deviceFirmwareUpgradeFailure:type:}}
+\index{deviceFirmwareUpgradeFailure:type:@{deviceFirmwareUpgradeFailure:type:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceFirmwareUpgradeFailure:type:}{deviceFirmwareUpgradeFailure:type:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Firmware\+Upgrade\+Failure\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:upgrade\+Status\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Failure of device firmware updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000147}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+Device\+Delegate\+::device\+:upgrade\+Status\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ad08583d6ecc97bab88acaf2063243de1}\label{protocol_thing_smart_device_delegate-p_ad08583d6ecc97bab88acaf2063243de1}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceFirmwareUpgradeFailure:type:@{deviceFirmwareUpgradeFailure:type:}}
+\index{deviceFirmwareUpgradeFailure:type:@{deviceFirmwareUpgradeFailure:type:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceFirmwareUpgradeFailure:type:}{deviceFirmwareUpgradeFailure:type:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Firmware\+Upgrade\+Failure\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:upgrade\+Status\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Failure of device firmware updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000141}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+Device\+Delegate\+::device\+:upgrade\+Status\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ad08583d6ecc97bab88acaf2063243de1}\label{protocol_thing_smart_device_delegate-p_ad08583d6ecc97bab88acaf2063243de1}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceFirmwareUpgradeFailure:type:@{deviceFirmwareUpgradeFailure:type:}}
+\index{deviceFirmwareUpgradeFailure:type:@{deviceFirmwareUpgradeFailure:type:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceFirmwareUpgradeFailure:type:}{deviceFirmwareUpgradeFailure:type:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Firmware\+Upgrade\+Failure\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:upgrade\+Status\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Failure of device firmware updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000153}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+Device\+Delegate\+::device\+:upgrade\+Status\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ad3f43dad293f5a54d79f51509d46b7ba}\label{protocol_thing_smart_device_delegate-p_ad3f43dad293f5a54d79f51509d46b7ba}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceFirmwareUpgradeSuccess:type:@{deviceFirmwareUpgradeSuccess:type:}}
+\index{deviceFirmwareUpgradeSuccess:type:@{deviceFirmwareUpgradeSuccess:type:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceFirmwareUpgradeSuccess:type:}{deviceFirmwareUpgradeSuccess:type:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Firmware\+Upgrade\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:upgrade\+Status\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Success of device firmware updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000134}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+Device\+Delegate\+::device\+:upgrade\+Status\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ad3f43dad293f5a54d79f51509d46b7ba}\label{protocol_thing_smart_device_delegate-p_ad3f43dad293f5a54d79f51509d46b7ba}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceFirmwareUpgradeSuccess:type:@{deviceFirmwareUpgradeSuccess:type:}}
+\index{deviceFirmwareUpgradeSuccess:type:@{deviceFirmwareUpgradeSuccess:type:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceFirmwareUpgradeSuccess:type:}{deviceFirmwareUpgradeSuccess:type:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Firmware\+Upgrade\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:upgrade\+Status\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Success of device firmware updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000146}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+Device\+Delegate\+::device\+:upgrade\+Status\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ad3f43dad293f5a54d79f51509d46b7ba}\label{protocol_thing_smart_device_delegate-p_ad3f43dad293f5a54d79f51509d46b7ba}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceFirmwareUpgradeSuccess:type:@{deviceFirmwareUpgradeSuccess:type:}}
+\index{deviceFirmwareUpgradeSuccess:type:@{deviceFirmwareUpgradeSuccess:type:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceFirmwareUpgradeSuccess:type:}{deviceFirmwareUpgradeSuccess:type:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Firmware\+Upgrade\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:upgrade\+Status\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Success of device firmware updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000140}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+Device\+Delegate\+::device\+:upgrade\+Status\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_ad3f43dad293f5a54d79f51509d46b7ba}\label{protocol_thing_smart_device_delegate-p_ad3f43dad293f5a54d79f51509d46b7ba}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceFirmwareUpgradeSuccess:type:@{deviceFirmwareUpgradeSuccess:type:}}
+\index{deviceFirmwareUpgradeSuccess:type:@{deviceFirmwareUpgradeSuccess:type:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceFirmwareUpgradeSuccess:type:}{deviceFirmwareUpgradeSuccess:type:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Firmware\+Upgrade\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:upgrade\+Status\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Success of device firmware updates. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000152}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+Device\+Delegate\+::device\+:upgrade\+Status\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_aed42c5a3f89bae7659614f7a79b32e62}\label{protocol_thing_smart_device_delegate-p_aed42c5a3f89bae7659614f7a79b32e62}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceFirmwareUpgrading:type:@{deviceFirmwareUpgrading:type:}}
+\index{deviceFirmwareUpgrading:type:@{deviceFirmwareUpgrading:type:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceFirmwareUpgrading:type:}{deviceFirmwareUpgrading:type:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Firmware\+Upgrading\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:upgrade\+Status\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Device firmware updating. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000136}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+Device\+Delegate\+::device\+:upgrade\+Status\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_aed42c5a3f89bae7659614f7a79b32e62}\label{protocol_thing_smart_device_delegate-p_aed42c5a3f89bae7659614f7a79b32e62}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceFirmwareUpgrading:type:@{deviceFirmwareUpgrading:type:}}
+\index{deviceFirmwareUpgrading:type:@{deviceFirmwareUpgrading:type:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceFirmwareUpgrading:type:}{deviceFirmwareUpgrading:type:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Firmware\+Upgrading\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:upgrade\+Status\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Device firmware updating. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000148}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+Device\+Delegate\+::device\+:upgrade\+Status\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_aed42c5a3f89bae7659614f7a79b32e62}\label{protocol_thing_smart_device_delegate-p_aed42c5a3f89bae7659614f7a79b32e62}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceFirmwareUpgrading:type:@{deviceFirmwareUpgrading:type:}}
+\index{deviceFirmwareUpgrading:type:@{deviceFirmwareUpgrading:type:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceFirmwareUpgrading:type:}{deviceFirmwareUpgrading:type:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Firmware\+Upgrading\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:upgrade\+Status\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Device firmware updating. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000142}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+Device\+Delegate\+::device\+:upgrade\+Status\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_aed42c5a3f89bae7659614f7a79b32e62}\label{protocol_thing_smart_device_delegate-p_aed42c5a3f89bae7659614f7a79b32e62}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceFirmwareUpgrading:type:@{deviceFirmwareUpgrading:type:}}
+\index{deviceFirmwareUpgrading:type:@{deviceFirmwareUpgrading:type:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceFirmwareUpgrading:type:}{deviceFirmwareUpgrading:type:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Firmware\+Upgrading\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\item[{type\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use device\+:upgrade\+Status\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Device firmware updating. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+{\em type} & The device type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000154}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+Device\+Delegate\+::device\+:upgrade\+Status\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_aa3c8a03d7c934dbcd4a3ac0316b85a6c}\label{protocol_thing_smart_device_delegate-p_aa3c8a03d7c934dbcd4a3ac0316b85a6c}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceInfoUpdate:@{deviceInfoUpdate:}}
+\index{deviceInfoUpdate:@{deviceInfoUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceInfoUpdate:}{deviceInfoUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Info\+Update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Device information updates, such as the name and online status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_aa3c8a03d7c934dbcd4a3ac0316b85a6c}\label{protocol_thing_smart_device_delegate-p_aa3c8a03d7c934dbcd4a3ac0316b85a6c}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceInfoUpdate:@{deviceInfoUpdate:}}
+\index{deviceInfoUpdate:@{deviceInfoUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceInfoUpdate:}{deviceInfoUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Info\+Update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Device information updates, such as the name and online status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_aa3c8a03d7c934dbcd4a3ac0316b85a6c}\label{protocol_thing_smart_device_delegate-p_aa3c8a03d7c934dbcd4a3ac0316b85a6c}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceInfoUpdate:@{deviceInfoUpdate:}}
+\index{deviceInfoUpdate:@{deviceInfoUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceInfoUpdate:}{deviceInfoUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Info\+Update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Device information updates, such as the name and online status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_aa3c8a03d7c934dbcd4a3ac0316b85a6c}\label{protocol_thing_smart_device_delegate-p_aa3c8a03d7c934dbcd4a3ac0316b85a6c}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceInfoUpdate:@{deviceInfoUpdate:}}
+\index{deviceInfoUpdate:@{deviceInfoUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceInfoUpdate:}{deviceInfoUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Info\+Update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Device information updates, such as the name and online status. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a305950284b2a7e5dd5f2c1f5761de120}\label{protocol_thing_smart_device_delegate-p_a305950284b2a7e5dd5f2c1f5761de120}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceOnlineUpdate:@{deviceOnlineUpdate:}}
+\index{deviceOnlineUpdate:@{deviceOnlineUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceOnlineUpdate:}{deviceOnlineUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Online\+Update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Device online status updates 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a305950284b2a7e5dd5f2c1f5761de120}\label{protocol_thing_smart_device_delegate-p_a305950284b2a7e5dd5f2c1f5761de120}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceOnlineUpdate:@{deviceOnlineUpdate:}}
+\index{deviceOnlineUpdate:@{deviceOnlineUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceOnlineUpdate:}{deviceOnlineUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Online\+Update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Device online status updates 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a305950284b2a7e5dd5f2c1f5761de120}\label{protocol_thing_smart_device_delegate-p_a305950284b2a7e5dd5f2c1f5761de120}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceOnlineUpdate:@{deviceOnlineUpdate:}}
+\index{deviceOnlineUpdate:@{deviceOnlineUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceOnlineUpdate:}{deviceOnlineUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Online\+Update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Device online status updates 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_a305950284b2a7e5dd5f2c1f5761de120}\label{protocol_thing_smart_device_delegate-p_a305950284b2a7e5dd5f2c1f5761de120}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceOnlineUpdate:@{deviceOnlineUpdate:}}
+\index{deviceOnlineUpdate:@{deviceOnlineUpdate:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceOnlineUpdate:}{deviceOnlineUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Online\+Update\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Device online status updates 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_abf5d95dad076bab6c1d31e28d35f888d}\label{protocol_thing_smart_device_delegate-p_abf5d95dad076bab6c1d31e28d35f888d}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceRemoved:@{deviceRemoved:}}
+\index{deviceRemoved:@{deviceRemoved:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceRemoved:}{deviceRemoved:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Removed\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Indicates whether the device is removed. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_abf5d95dad076bab6c1d31e28d35f888d}\label{protocol_thing_smart_device_delegate-p_abf5d95dad076bab6c1d31e28d35f888d}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceRemoved:@{deviceRemoved:}}
+\index{deviceRemoved:@{deviceRemoved:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceRemoved:}{deviceRemoved:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Removed\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Indicates whether the device is removed. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_abf5d95dad076bab6c1d31e28d35f888d}\label{protocol_thing_smart_device_delegate-p_abf5d95dad076bab6c1d31e28d35f888d}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceRemoved:@{deviceRemoved:}}
+\index{deviceRemoved:@{deviceRemoved:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceRemoved:}{deviceRemoved:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Removed\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Indicates whether the device is removed. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_device_delegate-p_abf5d95dad076bab6c1d31e28d35f888d}\label{protocol_thing_smart_device_delegate-p_abf5d95dad076bab6c1d31e28d35f888d}} 
+\index{$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}!deviceRemoved:@{deviceRemoved:}}
+\index{deviceRemoved:@{deviceRemoved:}!$<$ThingSmartDeviceDelegate$>$@{$<$ThingSmartDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceRemoved:}{deviceRemoved:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) device\+Removed\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Indicates whether the device is removed. 
+\begin{DoxyParams}{Parameters}
+{\em device} & The device instance. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h}{Thing\+Smart\+Device.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h}{Thing\+Smart\+Device.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h}{Thing\+Smart\+Device.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_8h}{Thing\+Smart\+Device.\+h}}\end{DoxyCompactItemize}

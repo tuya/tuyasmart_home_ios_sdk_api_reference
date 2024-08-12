@@ -1,6 +1,0 @@
-var dir_d558508c42d1ac7d3c72dc7bba4b8794 =
-[
-    [ "ThingDeviceSyncPlugAPI-umbrella.h", "ios-x86__64-simulator_2_thing_device_sync_plug_a_p_i_8framework_2_headers_2_thing_device_sync_plug_a_p_i-umbrella_8h.html", "ios-x86__64-simulator_2_thing_device_sync_plug_a_p_i_8framework_2_headers_2_thing_device_sync_plug_a_p_i-umbrella_8h" ],
-    [ "ThingDeviceSyncPlugAPI.h", "ios-x86__64-simulator_2_thing_device_sync_plug_a_p_i_8framework_2_headers_2_thing_device_sync_plug_a_p_i_8h.html", "ios-x86__64-simulator_2_thing_device_sync_plug_a_p_i_8framework_2_headers_2_thing_device_sync_plug_a_p_i_8h" ],
-    [ "ThingDeviceSyncPlugAPIModel.h", "ios-x86__64-simulator_2_thing_device_sync_plug_a_p_i_8framework_2_headers_2_thing_device_sync_plug_a_p_i_model_8h.html", "ios-x86__64-simulator_2_thing_device_sync_plug_a_p_i_8framework_2_headers_2_thing_device_sync_plug_a_p_i_model_8h" ]
-];

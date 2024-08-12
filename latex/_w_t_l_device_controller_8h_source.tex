@@ -1,0 +1,174 @@
+\hypertarget{_w_t_l_device_controller_8h_source}{}\doxysection{WTLDevice\+Controller.\+h}
+\label{_w_t_l_device_controller_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDeviceController.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDeviceController.h}}
+\mbox{\hyperlink{_w_t_l_device_controller_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00020}00020 \textcolor{preprocessor}{\#import <Water/WTLOperationalCertificateIssuer.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00022}00022 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBaseDevice}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00024}00024 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00026}\mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{00026}} \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}(\textcolor{stringliteral}{"{}Please use WTLBaseDevice deviceWithNodeID"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00027}\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{00027}} typedef \textcolor{keywordtype}{void} (\string^WTLDeviceConnectionCallback)(\mbox{\hyperlink{interface_w_t_l_base_device}{WTLBaseDevice}} * \_Nullable device, NSError * \_Nullable \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00029}00029 @class \mbox{\hyperlink{interface_w_t_l_commissioning_parameters}{WTLCommissioningParameters}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00030}00030 @class \mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetupPayload}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00031}00031 @protocol WTLDevicePairingDelegate;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00032}00032 @protocol WTLDeviceControllerDelegate;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00034}\mbox{\hyperlink{interface_w_t_l_device_controller}{00034}} @interface \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00039}00039 -\/ (instancetype)init \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00040}00040 + (instancetype)new \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00045}\mbox{\hyperlink{interface_w_t_l_device_controller_ac4ecfa6c4bb581910eb1767593127b18}{00045}} @property (readonly, nonatomic, getter=isRunning) BOOL \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a8eda704255787367b60f4829bcb34d46}{running}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00051}00051 @property (readonly, nonatomic, nullable)}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00052}\mbox{\hyperlink{interface_w_t_l_device_controller_a24ebe7c8a5f689dd19b8e2f496df22f2}{00052}}     NSNumber * controllerNodeID \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00054}\mbox{\hyperlink{interface_w_t_l_device_controller_a3d349169ade5978274264e2482b26d74}{00054}} @property (readonly) \textcolor{keywordtype}{id}<WTLOperationalCertificateIssuer> operationalCertificateIssuer;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00055}\mbox{\hyperlink{interface_w_t_l_device_controller_acb2d73e92f651e6c24eb10753c14ffc8}{00055}} @property (readonly) dispatch\_queue\_t operationalCertificateIssuerQueue;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00057}\mbox{\hyperlink{interface_w_t_l_device_controller_a465f3ea39130b21b13e7b2057cbad941}{00057}} @property (nonatomic, assign) BOOL isPairingThingDevice;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00059}\mbox{\hyperlink{interface_w_t_l_device_controller_a941eb04a3a77c7b0cd809fb948a851f2}{00059}} @property (nonatomic, assign) BOOL isPairingLiteDevice;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00061}00061 -\/ (uint64\_t)getCompressedFabricId;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00063}00063 -\/ (uint64\_t)getFabricIndex;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00065}00065 -\/ (\textcolor{keywordtype}{void})cleanSession;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00067}00067 -\/ (nullable NSString *)getPeerAddressAndPort:(uint64\_t)deviceId;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00096}00096 -\/ (BOOL)setupCommissioningSessionWithPayload:(\mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetupPayload}} *)payload}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00097}00097                                    newNodeID:(NSNumber *)newNodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00098}00098                                        \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00099}00099     \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}( macos(13.1), watchos(9.2), tvos(16.2));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00101}00101 -\/ (BOOL)setupCommissioningSessionWithPayload:(\mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetupPayload}} *)payload newNodeID:(NSNumber *)newNodeID peripheral:(\textcolor{keywordtype}{void} *)peripheral \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError *\_\_autoreleasing  \_Nullable *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00106}00106 -\/ (BOOL)commissionNodeWithID:(NSNumber *)\mbox{\hyperlink{_w_t_l_certificate_info_8h_ab5516419187ddb2a199430b277696c2c}{nodeID}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00107}00107          commissioningParams:(\mbox{\hyperlink{interface_w_t_l_commissioning_parameters}{WTLCommissioningParameters}} *)commissioningParams}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00108}00108                        \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}} \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00116}00116 -\/ (BOOL)continueCommissioningDevice:(\textcolor{keywordtype}{void} *)opaqueDeviceHandle}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00117}00117            ignoreAttestationFailure:(BOOL)ignoreAttestationFailure}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00118}00118                               \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00124}00124 -\/ (BOOL)cancelCommissioningForNodeID:(NSNumber *)\mbox{\hyperlink{_w_t_l_certificate_info_8h_ab5516419187ddb2a199430b277696c2c}{nodeID}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00125}00125                                \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00126}00126     \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00132}00132 -\/ (nullable \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBaseDevice}} *)deviceBeingCommissionedWithNodeID:(NSNumber *)\mbox{\hyperlink{_w_t_l_certificate_info_8h_ab5516419187ddb2a199430b277696c2c}{nodeID}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00133}00133                                                         \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00134}00134     \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00146}00146 -\/ (\mbox{\hyperlink{interface_w_t_l_base_device}{WTLBaseDevice}} *)writeTokenWithNodeId:(NSNumber *)\mbox{\hyperlink{_w_t_l_certificate_info_8h_ab5516419187ddb2a199430b277696c2c}{nodeID}} activeToken:(NSString *)token \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00148}00148 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00149}00149 -\/ (\textcolor{keywordtype}{void})writeTokenAfterCase:(\textcolor{keywordtype}{long} \textcolor{keywordtype}{long})\mbox{\hyperlink{_w_t_l_certificate_info_8h_ab5516419187ddb2a199430b277696c2c}{nodeID}} activeToken:(NSString *)token;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00157}00157 -\/ (\textcolor{keywordtype}{void})setDeviceControllerDelegate:(\textcolor{keywordtype}{id}<WTLDeviceControllerDelegate>)\mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a635b292c6056d8511c5a0b4a11e1dd70}{delegate}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00158}00158                               queue:(dispatch\_queue\_t)queue \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00159}00159 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00166}00166 -\/ (NSData * \_Nullable)attestationChallengeForDeviceID:(NSNumber *)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00167}00167     \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00168}00168 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00179}00179 + (nullable NSData *)computePASEVerifierForSetupPasscode:(NSNumber *)setupPasscode}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00180}00180                                               iterations:(NSNumber *)iterations}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00181}00181                                                     salt:(NSData *)salt}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00182}00182                                                    \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00183}00183     \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00184}00184 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00190}00190 -\/ (\textcolor{keywordtype}{void})\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a93cdf254ed94ee57078c11f9cea397d8}{shutdown}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00191}00191 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00192}00192 -\/ (\textcolor{keywordtype}{void})updateAdminVendorID:(uint16\_t)vid;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00193}00193 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00194}00194 -\/ (BOOL)isDeviceSessionExistWithNodeId:(NSNumber *)\mbox{\hyperlink{_w_t_l_certificate_info_8h_ab5516419187ddb2a199430b277696c2c}{nodeID}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00195}00195 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00196}00196 -\/ (BOOL)shutdownDeviceSessionForNode:(NSNumber *)\mbox{\hyperlink{_w_t_l_certificate_info_8h_ab5516419187ddb2a199430b277696c2c}{nodeID}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00197}00197 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00198}00198 @end}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00199}00199 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00200}\mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08}{00200}} @interface \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} (Deprecated)}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00201}00201 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00202}\mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_a78b789d55ef0e6c542e602cae2596445}{00202}} @property (readonly, nonatomic, nullable) NSNumber * controllerNodeId \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00203}00203     "{}Please use controllerNodeID"{},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00204}00204 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00205}00205 -\/ (nullable NSData *)fetchAttestationChallengeForDeviceId:(uint64\_t)deviceId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00206}00206     \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00207}00207         "{}Please use attestationChallengeForDeviceID"{},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00208}00208 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00209}00209 -\/ (BOOL)getBaseDevice:(uint64\_t)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00210}00210                 queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00211}00211     completionHandler:(WTLDeviceConnectionCallback)completionHandler}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00212}00212     \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}("{}Please use [\mbox{\hyperlink{interface_w_t_l_base_device}{WTLBaseDevice}} deviceWithNodeID:controller:]"{},  macos(13.0, 13.3), watchos(9.1, 9.4),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00213}00213         tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00214}00214 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00215}00215 -\/ (BOOL)pairDevice:(uint64\_t)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00216}00216      discriminator:(uint16\_t)discriminator}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00217}00217       setupPINCode:(uint32\_t)setupPINCode}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00218}00218              \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00219}00219     \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}("{}Please use setupCommissioningSessionWithPayload:newNodeID:\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:"{},  macos(13.0, 13.3),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00220}00220         watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00221}00221 -\/ (BOOL)pairDevice:(uint64\_t)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00222}00222            address:(NSString *)address}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00223}00223               \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_aadbdd25b48e1f9226cefe59e9c124ac7}{port}}:(uint16\_t)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_aadbdd25b48e1f9226cefe59e9c124ac7}{port}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00224}00224       setupPINCode:(uint32\_t)setupPINCode}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00225}00225              \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00226}00226     \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}("{}Please use setupCommissioningSessionWithPayload:newNodeID:\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:"{},  macos(13.0, 13.3),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00227}00227         watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00228}00228 -\/ (BOOL)pairDevice:(uint64\_t)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00229}00229     onboardingPayload:(NSString *)onboardingPayload}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00230}00230                 \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00231}00231     \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}("{}Please use setupCommissioningSessionWithPayload:newNodeID:\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:"{},  macos(13.0, 13.3),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00232}00232         watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00233}00233 -\/ (BOOL)commissionDevice:(uint64\_t)deviceId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00234}00234      commissioningParams:(\mbox{\hyperlink{interface_w_t_l_commissioning_parameters}{WTLCommissioningParameters}} *)commissioningParams}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00235}00235                    \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00236}00236     \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}("{}Please use commissionNodeWithID:commissioningParams:\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:"{},  macos(13.0, 13.3),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00237}00237         watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00238}00238 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00239}00239 -\/ (BOOL)stopDevicePairing:(uint64\_t)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00240}00240                     \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00241}00241     \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00242}00242         "{}Please use cancelCommissioningForNodeID:\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:"{},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00243}00243 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00244}00244 -\/ (nullable \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBaseDevice}} *)getDeviceBeingCommissioned:(uint64\_t)deviceId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00245}00245                                                  \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00246}00246     \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}("{}Please use deviceBeingCommissionedWithNodeID:\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:"{},  macos(13.0, 13.3), watchos(9.1, 9.4),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00247}00247         tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00248}00248 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00249}00249 -\/ (BOOL)openPairingWindow:(uint64\_t)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00250}00250                  duration:(NSUInteger)duration}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00251}00251                     \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00252}00252     \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}("{}Please use \mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} or \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBaseDevice}} openCommissioningWindowWithSetupPasscode"{}, }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00253}00253         macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00254}00254 -\/ (nullable NSString *)openPairingWindowWithPIN:(uint64\_t)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00255}00255                                        duration:(NSUInteger)duration}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00256}00256                                   discriminator:(NSUInteger)discriminator}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00257}00257                                        setupPIN:(NSUInteger)setupPIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00258}00258                                           \mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:(NSError * \_\_autoreleasing *)\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00259}00259     \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}("{}Please use \mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} or \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBaseDevice}} openCommissioningWindowWithSetupPasscode"{}, }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00260}00260         macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00261}00261 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00262}00262 -\/ (nullable NSData *)computePaseVerifier:(uint32\_t)setupPincode}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00263}00263                               iterations:(uint32\_t)iterations}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00264}00264                                     salt:(NSData *)salt}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00265}00265     \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}("{}Please use computePASEVerifierForSetupPasscode:iterations:salt:\mbox{\hyperlink{_w_t_l_device_controller_8h_a804db6c2112ee755029c0a806cb92b64}{error}}:"{},  macos(13.0, 13.3),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00266}00266         watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00267}00267 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00268}00268 -\/ (\textcolor{keywordtype}{void})setPairingDelegate:(\textcolor{keywordtype}{id}<WTLDevicePairingDelegate>)\mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a635b292c6056d8511c5a0b4a11e1dd70}{delegate}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00269}00269                      queue:(dispatch\_queue\_t)queue \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}("{}Please use setDeviceControllerDelegate:"{}, }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00270}00270                                macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00271}00271 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00272}00272 -\/ (\textcolor{keywordtype}{void})setNocChainIssuer:(\textcolor{keywordtype}{id}<WTLNOCChainIssuer>)nocChainIssuer}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00273}00273                     queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00274}00274     \mbox{\hyperlink{_w_t_l_device_controller_8h_af713517c397f8b62d597f9d4f225ebc5}{WTL\_DEPRECATED}}("{}Please set the operationalCertificateIssuer in the \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params}{WTLDeviceControllerStartupParams}} instead."{}, }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00275}00275         macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00276}00276 @end}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00277}00277 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_8h_source_l00278}\mbox{\hyperlink{interface_w_t_l_device_controller_a67b7a9767a2857e40d5659146f28e7d6}{00278}} NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

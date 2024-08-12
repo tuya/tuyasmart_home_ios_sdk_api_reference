@@ -1,0 +1,4 @@
+var dir_342966c9e233f8634d857ec3c83ca20f =
+[
+    [ "ThingSmartBusinessExtensionKitMatterExtra-umbrella.h", "ios-arm64_2_thing_smart_business_extension_kit_matter_extra_8framework_2_headers_2_thing_smart_b78733dce4c83328184b2717aee03c0e2.html", "ios-arm64_2_thing_smart_business_extension_kit_matter_extra_8framework_2_headers_2_thing_smart_b78733dce4c83328184b2717aee03c0e2" ]
+];

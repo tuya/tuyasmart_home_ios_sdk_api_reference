@@ -1,6 +1,0 @@
-var _thing_device_evaluation_plug_a_p_i_8framework_2_headers_2_thing_device_evaluation_plug_a_p_i_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "_thing_device_evaluation_plug_a_p_i_8framework_2_headers_2_thing_device_evaluation_plug_a_p_i-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingDeviceEvaluationPlugAPIVersionNumber", "_thing_device_evaluation_plug_a_p_i_8framework_2_headers_2_thing_device_evaluation_plug_a_p_i-umbrella_8h.html#a0144f213c88309abaa34bdfe965de4d9", null ],
-    [ "ThingDeviceEvaluationPlugAPIVersionString", "_thing_device_evaluation_plug_a_p_i_8framework_2_headers_2_thing_device_evaluation_plug_a_p_i-umbrella_8h.html#a81c2a787af8ab229917ad0c9034d8afc", null ]
-];

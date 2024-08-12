@@ -1,0 +1,215 @@
+\hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+PTZManager\+Deletate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_p_t_z_manager_deletate-p}\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+PTZManager.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+PTZManager\+Deletate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_thing_smart_p_t_z_manager_deletate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p_a484476d5afb1873dc784d719f1411d31}{collection\+Point\+Action\+:action\+Type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p_a567f52c309e56d9da220b2969d47b46e}{did\+Update\+Cruise\+Switch\+State\+:is\+Open\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p_adac7fdf99a833fd6fa308f6af8f3102a}{did\+Update\+Cruise\+Mode\+:current\+Cruise\+Mode\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p_a22c4a3639da70bc7fdceecdbff2896eb}{did\+Update\+Cruise\+Time\+Mode\+:current\+Time\+Mode\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p_a5203814cd3fc2327c90a42ed932475d4}{did\+Update\+Cruise\+Time\+Mode\+Time\+:start\+Time\+:end\+Time\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p_a2a977100ad0801244f5a16c5cd63961a}{did\+Update\+Motion\+Tracking\+State\+:is\+Open\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p_a484476d5afb1873dc784d719f1411d31}{collection\+Point\+Action\+:action\+Type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p_a567f52c309e56d9da220b2969d47b46e}{did\+Update\+Cruise\+Switch\+State\+:is\+Open\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p_adac7fdf99a833fd6fa308f6af8f3102a}{did\+Update\+Cruise\+Mode\+:current\+Cruise\+Mode\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p_a22c4a3639da70bc7fdceecdbff2896eb}{did\+Update\+Cruise\+Time\+Mode\+:current\+Time\+Mode\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p_a5203814cd3fc2327c90a42ed932475d4}{did\+Update\+Cruise\+Time\+Mode\+Time\+:start\+Time\+:end\+Time\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_p_t_z_manager_deletate-p_a2a977100ad0801244f5a16c5cd63961a}{did\+Update\+Motion\+Tracking\+State\+:is\+Open\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_p_t_z_manager_8h_source_l00072}{72}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_p_t_z_manager_8h_source}{Thing\+Smart\+PTZManager.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p_a484476d5afb1873dc784d719f1411d31}\label{protocol_thing_smart_p_t_z_manager_deletate-p_a484476d5afb1873dc784d719f1411d31}} 
+\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}!collectionPointAction:actionType:@{collectionPointAction:actionType:}}
+\index{collectionPointAction:actionType:@{collectionPointAction:actionType:}!$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+\doxysubsubsection{\texorpdfstring{collectionPointAction:actionType:}{collectionPointAction:actionType:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) collection\+Point\+Action\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_p_t_z_manager}{Thing\+Smart\+PTZManager}} $\ast$)}]{manager }\item[{action\+Type\+:(NSInteger)}]{type }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Did execute collection\+Point action 
+\begin{DoxyParams}{Parameters}
+{\em manager} & PTZ management class \\
+\hline
+{\em type} & value\+:1, add collection\+Point; 2, remove collection\+Point; 3、 jump to specific collection\+Point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p_a484476d5afb1873dc784d719f1411d31}\label{protocol_thing_smart_p_t_z_manager_deletate-p_a484476d5afb1873dc784d719f1411d31}} 
+\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}!collectionPointAction:actionType:@{collectionPointAction:actionType:}}
+\index{collectionPointAction:actionType:@{collectionPointAction:actionType:}!$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+\doxysubsubsection{\texorpdfstring{collectionPointAction:actionType:}{collectionPointAction:actionType:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) collection\+Point\+Action\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_p_t_z_manager}{Thing\+Smart\+PTZManager}} $\ast$)}]{manager }\item[{action\+Type\+:(NSInteger)}]{type }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Did execute collection\+Point action 
+\begin{DoxyParams}{Parameters}
+{\em manager} & PTZ management class \\
+\hline
+{\em type} & value\+:1, add collection\+Point; 2, remove collection\+Point; 3、 jump to specific collection\+Point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p_adac7fdf99a833fd6fa308f6af8f3102a}\label{protocol_thing_smart_p_t_z_manager_deletate-p_adac7fdf99a833fd6fa308f6af8f3102a}} 
+\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}!didUpdateCruiseMode:currentCruiseMode:@{didUpdateCruiseMode:currentCruiseMode:}}
+\index{didUpdateCruiseMode:currentCruiseMode:@{didUpdateCruiseMode:currentCruiseMode:}!$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+\doxysubsubsection{\texorpdfstring{didUpdateCruiseMode:currentCruiseMode:}{didUpdateCruiseMode:currentCruiseMode:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Update\+Cruise\+Mode\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_p_t_z_manager}{Thing\+Smart\+PTZManager}} $\ast$)}]{manager }\item[{current\+Cruise\+Mode\+:(Thing\+Smart\+PTZControl\+Cruise\+Mode)}]{current\+Cruise\+Mode }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Cruise mode changed 
+\begin{DoxyParams}{Parameters}
+{\em manager} & PTZ management class \\
+\hline
+{\em current\+Cruise\+Mode} & Current cruise mode. Thing\+Smart\+PTZControl\+Cruise\+Mode\+Panoramic, panoramic mode; Thing\+Smart\+PTZControl\+Cruise\+Mode\+Collection\+Point, collection\+Point mode \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p_adac7fdf99a833fd6fa308f6af8f3102a}\label{protocol_thing_smart_p_t_z_manager_deletate-p_adac7fdf99a833fd6fa308f6af8f3102a}} 
+\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}!didUpdateCruiseMode:currentCruiseMode:@{didUpdateCruiseMode:currentCruiseMode:}}
+\index{didUpdateCruiseMode:currentCruiseMode:@{didUpdateCruiseMode:currentCruiseMode:}!$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+\doxysubsubsection{\texorpdfstring{didUpdateCruiseMode:currentCruiseMode:}{didUpdateCruiseMode:currentCruiseMode:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Update\+Cruise\+Mode\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_p_t_z_manager}{Thing\+Smart\+PTZManager}} $\ast$)}]{manager }\item[{current\+Cruise\+Mode\+:(Thing\+Smart\+PTZControl\+Cruise\+Mode)}]{current\+Cruise\+Mode }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Cruise mode changed 
+\begin{DoxyParams}{Parameters}
+{\em manager} & PTZ management class \\
+\hline
+{\em current\+Cruise\+Mode} & Current cruise mode. Thing\+Smart\+PTZControl\+Cruise\+Mode\+Panoramic, panoramic mode; Thing\+Smart\+PTZControl\+Cruise\+Mode\+Collection\+Point, collection\+Point mode \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p_a567f52c309e56d9da220b2969d47b46e}\label{protocol_thing_smart_p_t_z_manager_deletate-p_a567f52c309e56d9da220b2969d47b46e}} 
+\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}!didUpdateCruiseSwitchState:isOpen:@{didUpdateCruiseSwitchState:isOpen:}}
+\index{didUpdateCruiseSwitchState:isOpen:@{didUpdateCruiseSwitchState:isOpen:}!$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+\doxysubsubsection{\texorpdfstring{didUpdateCruiseSwitchState:isOpen:}{didUpdateCruiseSwitchState:isOpen:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Update\+Cruise\+Switch\+State\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_p_t_z_manager}{Thing\+Smart\+PTZManager}} $\ast$)}]{manager }\item[{is\+Open\+:(BOOL)}]{is\+Open }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Cruise switch state changed 
+\begin{DoxyParams}{Parameters}
+{\em manager} & PTZ management class \\
+\hline
+{\em is\+Open} & Cruise switch open state, YES, is opened; NO, is closed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p_a567f52c309e56d9da220b2969d47b46e}\label{protocol_thing_smart_p_t_z_manager_deletate-p_a567f52c309e56d9da220b2969d47b46e}} 
+\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}!didUpdateCruiseSwitchState:isOpen:@{didUpdateCruiseSwitchState:isOpen:}}
+\index{didUpdateCruiseSwitchState:isOpen:@{didUpdateCruiseSwitchState:isOpen:}!$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+\doxysubsubsection{\texorpdfstring{didUpdateCruiseSwitchState:isOpen:}{didUpdateCruiseSwitchState:isOpen:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Update\+Cruise\+Switch\+State\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_p_t_z_manager}{Thing\+Smart\+PTZManager}} $\ast$)}]{manager }\item[{is\+Open\+:(BOOL)}]{is\+Open }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Cruise switch state changed 
+\begin{DoxyParams}{Parameters}
+{\em manager} & PTZ management class \\
+\hline
+{\em is\+Open} & Cruise switch open state, YES, is opened; NO, is closed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p_a22c4a3639da70bc7fdceecdbff2896eb}\label{protocol_thing_smart_p_t_z_manager_deletate-p_a22c4a3639da70bc7fdceecdbff2896eb}} 
+\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}!didUpdateCruiseTimeMode:currentTimeMode:@{didUpdateCruiseTimeMode:currentTimeMode:}}
+\index{didUpdateCruiseTimeMode:currentTimeMode:@{didUpdateCruiseTimeMode:currentTimeMode:}!$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+\doxysubsubsection{\texorpdfstring{didUpdateCruiseTimeMode:currentTimeMode:}{didUpdateCruiseTimeMode:currentTimeMode:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Update\+Cruise\+Time\+Mode\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_p_t_z_manager}{Thing\+Smart\+PTZManager}} $\ast$)}]{manager }\item[{current\+Time\+Mode\+:(Thing\+Smart\+PTZControl\+Cruise\+Time\+Mode)}]{current\+Time\+Mode }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Cruise time mode changed 
+\begin{DoxyParams}{Parameters}
+{\em manager} & PTZ management class \\
+\hline
+{\em current\+Time\+Mode} & The current cruise time mode. Value is a Thing\+Smart\+PTZControl\+Cruise\+Time\+Mode enum. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p_a22c4a3639da70bc7fdceecdbff2896eb}\label{protocol_thing_smart_p_t_z_manager_deletate-p_a22c4a3639da70bc7fdceecdbff2896eb}} 
+\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}!didUpdateCruiseTimeMode:currentTimeMode:@{didUpdateCruiseTimeMode:currentTimeMode:}}
+\index{didUpdateCruiseTimeMode:currentTimeMode:@{didUpdateCruiseTimeMode:currentTimeMode:}!$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+\doxysubsubsection{\texorpdfstring{didUpdateCruiseTimeMode:currentTimeMode:}{didUpdateCruiseTimeMode:currentTimeMode:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Update\+Cruise\+Time\+Mode\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_p_t_z_manager}{Thing\+Smart\+PTZManager}} $\ast$)}]{manager }\item[{current\+Time\+Mode\+:(Thing\+Smart\+PTZControl\+Cruise\+Time\+Mode)}]{current\+Time\+Mode }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Cruise time mode changed 
+\begin{DoxyParams}{Parameters}
+{\em manager} & PTZ management class \\
+\hline
+{\em current\+Time\+Mode} & The current cruise time mode. Value is a Thing\+Smart\+PTZControl\+Cruise\+Time\+Mode enum. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p_a5203814cd3fc2327c90a42ed932475d4}\label{protocol_thing_smart_p_t_z_manager_deletate-p_a5203814cd3fc2327c90a42ed932475d4}} 
+\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}!didUpdateCruiseTimeModeTime:startTime:endTime:@{didUpdateCruiseTimeModeTime:startTime:endTime:}}
+\index{didUpdateCruiseTimeModeTime:startTime:endTime:@{didUpdateCruiseTimeModeTime:startTime:endTime:}!$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+\doxysubsubsection{\texorpdfstring{didUpdateCruiseTimeModeTime:startTime:endTime:}{didUpdateCruiseTimeModeTime:startTime:endTime:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Update\+Cruise\+Time\+Mode\+Time\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_p_t_z_manager}{Thing\+Smart\+PTZManager}} $\ast$)}]{manager }\item[{start\+Time\+:(NSString $\ast$)}]{start\+Time }\item[{end\+Time\+:(NSString $\ast$)}]{end\+Time }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Cruise time mode -\/ Cruise time updated 
+\begin{DoxyParams}{Parameters}
+{\em manager} & PTZ management class \\
+\hline
+{\em start\+Time} & The time to start cruising. Format\+:\char`\"{}\+HH\+:mm\char`\"{} \\
+\hline
+{\em end\+Time} & The time to end cruising.\+Format\+:\char`\"{}\+HH\+:mm\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p_a5203814cd3fc2327c90a42ed932475d4}\label{protocol_thing_smart_p_t_z_manager_deletate-p_a5203814cd3fc2327c90a42ed932475d4}} 
+\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}!didUpdateCruiseTimeModeTime:startTime:endTime:@{didUpdateCruiseTimeModeTime:startTime:endTime:}}
+\index{didUpdateCruiseTimeModeTime:startTime:endTime:@{didUpdateCruiseTimeModeTime:startTime:endTime:}!$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+\doxysubsubsection{\texorpdfstring{didUpdateCruiseTimeModeTime:startTime:endTime:}{didUpdateCruiseTimeModeTime:startTime:endTime:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Update\+Cruise\+Time\+Mode\+Time\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_p_t_z_manager}{Thing\+Smart\+PTZManager}} $\ast$)}]{manager }\item[{start\+Time\+:(NSString $\ast$)}]{start\+Time }\item[{end\+Time\+:(NSString $\ast$)}]{end\+Time }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Cruise time mode -\/ Cruise time updated 
+\begin{DoxyParams}{Parameters}
+{\em manager} & PTZ management class \\
+\hline
+{\em start\+Time} & The time to start cruising. Format\+:\char`\"{}\+HH\+:mm\char`\"{} \\
+\hline
+{\em end\+Time} & The time to end cruising.\+Format\+:\char`\"{}\+HH\+:mm\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p_a2a977100ad0801244f5a16c5cd63961a}\label{protocol_thing_smart_p_t_z_manager_deletate-p_a2a977100ad0801244f5a16c5cd63961a}} 
+\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}!didUpdateMotionTrackingState:isOpen:@{didUpdateMotionTrackingState:isOpen:}}
+\index{didUpdateMotionTrackingState:isOpen:@{didUpdateMotionTrackingState:isOpen:}!$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+\doxysubsubsection{\texorpdfstring{didUpdateMotionTrackingState:isOpen:}{didUpdateMotionTrackingState:isOpen:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Update\+Motion\+Tracking\+State\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_p_t_z_manager}{Thing\+Smart\+PTZManager}} $\ast$)}]{manager }\item[{is\+Open\+:(BOOL)}]{is\+Open }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The switch state of mobile tracking has changed 
+\begin{DoxyParams}{Parameters}
+{\em manager} & PTZ management class \\
+\hline
+{\em is\+Open} & The latest value of open state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_p_t_z_manager_deletate-p_a2a977100ad0801244f5a16c5cd63961a}\label{protocol_thing_smart_p_t_z_manager_deletate-p_a2a977100ad0801244f5a16c5cd63961a}} 
+\index{$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}!didUpdateMotionTrackingState:isOpen:@{didUpdateMotionTrackingState:isOpen:}}
+\index{didUpdateMotionTrackingState:isOpen:@{didUpdateMotionTrackingState:isOpen:}!$<$ThingSmartPTZManagerDeletate$>$@{$<$ThingSmartPTZManagerDeletate$>$}}
+\doxysubsubsection{\texorpdfstring{didUpdateMotionTrackingState:isOpen:}{didUpdateMotionTrackingState:isOpen:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Update\+Motion\+Tracking\+State\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_p_t_z_manager}{Thing\+Smart\+PTZManager}} $\ast$)}]{manager }\item[{is\+Open\+:(BOOL)}]{is\+Open }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The switch state of mobile tracking has changed 
+\begin{DoxyParams}{Parameters}
+{\em manager} & PTZ management class \\
+\hline
+{\em is\+Open} & The latest value of open state \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Camera\+Kit/\+Build/\+Thing\+Smart\+Camera\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Camera\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_p_t_z_manager_8h}{Thing\+Smart\+PTZManager.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Camera\+Kit/\+Build/\+Thing\+Smart\+Camera\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Camera\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_p_t_z_manager_8h}{Thing\+Smart\+PTZManager.\+h}}\end{DoxyCompactItemize}

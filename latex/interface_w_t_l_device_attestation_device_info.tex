@@ -1,0 +1,107 @@
+\hypertarget{interface_w_t_l_device_attestation_device_info}{}\doxysection{WTLDevice\+Attestation\+Device\+Info Class Reference}
+\label{interface_w_t_l_device_attestation_device_info}\index{WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}}
+
+
+{\ttfamily \#import $<$WTLDevice\+Attestation\+Delegate.\+h$>$}
+
+Inheritance diagram for WTLDevice\+Attestation\+Device\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_w_t_l_device_attestation_device_info}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a71093c82552b0145b96a3890e978d821}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(NSNumber $\ast$\mbox{\hyperlink{_w_t_l_fabric_info_8h_aa847c51e6ff914c7603c882d1845d433}{vendor\+ID}}) -\/ \mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_acef82c6375e817dd4aed72a7810a40d4}{API\+\_\+\+AVAILABLE}}
+\item 
+(NSNumber $\ast$product\+ID) -\/ \mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a3c16801562a2ffb4d6414c41f35e6acf}{API\+\_\+\+AVAILABLE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a71093c82552b0145b96a3890e978d821}{NS\+\_\+\+UNAVAILABLE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a91489bf83945d43131cb3737d5ab63da}{dac\+Certificate}}
+\item 
+\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a6f02bc758fbe7ef07c03cc170d114a2d}{dac\+PAICertificate}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a772f66646ef43531134d8633fa1a9df2}{certificate\+Declaration}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_delegate_8h_source_l00025}{25}} of file \mbox{\hyperlink{_w_t_l_device_attestation_delegate_8h_source}{WTLDevice\+Attestation\+Delegate.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_device_attestation_device_info_acef82c6375e817dd4aed72a7810a40d4}\label{interface_w_t_l_device_attestation_device_info_acef82c6375e817dd4aed72a7810a40d4}} 
+\index{WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$\mbox{\hyperlink{_w_t_l_fabric_info_8h_aa847c51e6ff914c7603c882d1845d433}{vendor\+ID}}) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+The vendor ID for the device from the Device Attestation Certificate. May be nil only if attestation was unsucessful. \mbox{\Hypertarget{interface_w_t_l_device_attestation_device_info_a3c16801562a2ffb4d6414c41f35e6acf}\label{interface_w_t_l_device_attestation_device_info_a3c16801562a2ffb4d6414c41f35e6acf}} 
+\index{WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$product\+ID) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+The product ID for the device from the Device Attestation Certificate. May be nil only if attestation was unsucessful. \mbox{\Hypertarget{interface_w_t_l_device_attestation_device_info_a71093c82552b0145b96a3890e978d821}\label{interface_w_t_l_device_attestation_device_info_a71093c82552b0145b96a3890e978d821}} 
+\index{WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_attestation_device_info_a71093c82552b0145b96a3890e978d821}\label{interface_w_t_l_device_attestation_device_info_a71093c82552b0145b96a3890e978d821}} 
+\index{WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_t_l_device_attestation_device_info_a772f66646ef43531134d8633fa1a9df2}\label{interface_w_t_l_device_attestation_device_info_a772f66646ef43531134d8633fa1a9df2}} 
+\index{WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}!certificateDeclaration@{certificateDeclaration}}
+\index{certificateDeclaration@{certificateDeclaration}!WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}}
+\doxysubsubsection{\texorpdfstring{certificateDeclaration}{certificateDeclaration}}
+{\footnotesize\ttfamily -\/ (NSData$\ast$) certificate\+Declaration\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_delegate_8h_source_l00042}{42}} of file \mbox{\hyperlink{_w_t_l_device_attestation_delegate_8h_source}{WTLDevice\+Attestation\+Delegate.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_attestation_device_info_a91489bf83945d43131cb3737d5ab63da}\label{interface_w_t_l_device_attestation_device_info_a91489bf83945d43131cb3737d5ab63da}} 
+\index{WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}!dacCertificate@{dacCertificate}}
+\index{dacCertificate@{dacCertificate}!WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}}
+\doxysubsubsection{\texorpdfstring{dacCertificate}{dacCertificate}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}}) dac\+Certificate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_delegate_8h_source_l00040}{40}} of file \mbox{\hyperlink{_w_t_l_device_attestation_delegate_8h_source}{WTLDevice\+Attestation\+Delegate.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_attestation_device_info_a6f02bc758fbe7ef07c03cc170d114a2d}\label{interface_w_t_l_device_attestation_device_info_a6f02bc758fbe7ef07c03cc170d114a2d}} 
+\index{WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}!dacPAICertificate@{dacPAICertificate}}
+\index{dacPAICertificate@{dacPAICertificate}!WTLDeviceAttestationDeviceInfo@{WTLDeviceAttestationDeviceInfo}}
+\doxysubsubsection{\texorpdfstring{dacPAICertificate}{dacPAICertificate}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}}) dac\+PAICertificate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_delegate_8h_source_l00041}{41}} of file \mbox{\hyperlink{_w_t_l_device_attestation_delegate_8h_source}{WTLDevice\+Attestation\+Delegate.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_device_attestation_delegate_8h}{WTLDevice\+Attestation\+Delegate.\+h}}\end{DoxyCompactItemize}

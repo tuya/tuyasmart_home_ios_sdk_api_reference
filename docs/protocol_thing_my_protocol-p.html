@@ -24,9 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.15.0</span>
    </div>
   </td>
  </tr>
@@ -91,8 +91,8 @@ $(document).ready(function(){initNavTree('protocol_thing_my_protocol-p.html','')
 <ol type="1">
 <li>通用注册： 注册类存在唯一键值 type + Key + priority；默认 priority 值为 0，当 type + Key 相等时，则只会生效高优先级 priority 注册 _ThingMachRegister 使用 [[className alloc] init] 创建注册类实例；如果希望自定义实例创建方法，比如返回单例，可以使用 _ThingMachRegisterBlock 自定义</li>
 </ol>
-<p >业务使用时，业务模块可以声明一些自己的快捷方法，比如（MyType 模块）: Case A 普通注册： // 声明 注册类的快捷操作 #define _MyMachRegister(Key, className) <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h.html#a15e2599bfd27a9729ff1cd6e22f212f1" title="快捷注册">_ThingMachRegister(MyType, Key, className)</a></p>
-<p >// 声明 获取一个实例的快捷操作 #define _MyMachRegisterFetch(Key) <a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h.html#a1be84338f9e726b5fb13c89f19cfb356" title="获取注册类的实例">_ThingMachRegisterFetch(MyType, Key)</a></p>
+<p >业务使用时，业务模块可以声明一些自己的快捷方法，比如（MyType 模块）: Case A 普通注册： // 声明 注册类的快捷操作 #define _MyMachRegister(Key, className) <a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h.html#a15e2599bfd27a9729ff1cd6e22f212f1" title="快捷注册">_ThingMachRegister(MyType, Key, className)</a></p>
+<p >// 声明 获取一个实例的快捷操作 #define _MyMachRegisterFetch(Key) <a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h.html#a1be84338f9e726b5fb13c89f19cfb356" title="获取注册类的实例">_ThingMachRegisterFetch(MyType, Key)</a></p>
 <p >// 使用 注册：_MyMachRegister(myKey, myClassName); 获取：id myClassInstance = _MyMachRegisterFetch(myKey); 获取：id myClassInstance = [[<a class="el" href="interface_thing_mach_register_manager.html" title="线程安全">ThingMachRegisterManager</a> shareInstance] generateWithType:"MyType" key:@"myKey"];
 
 Case B 注册有协议（ThingMyProtocol）的类:
@@ -114,7 +114,7 @@ Case B 注册有协议（ThingMyProtocol）的类:
 3. 注意:
   因为我们会使用 "_" 作为链接符， 所以不建议 type 、 Key里使用  "_" 。 </p>
 </div><hr/>The documentation for this protocol was generated from the following file:<ul>
-<li>ThingMachRegister/ThingMachRegister.xcframework/ios-arm64/ThingMachRegister.framework/Headers/<a class="el" href="ios-arm64_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_source.html">ThingMachRegisterDefineExt.h</a></li>
+<li>/Users/humtong/Downloads/Pods_副本/ThingMachRegister/ThingMachRegister.xcframework/ios-arm64_x86_64-simulator/ThingMachRegister.framework/Headers/<a class="el" href="ios-arm64__x86__64-simulator_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_source.html">ThingMachRegisterDefineExt.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

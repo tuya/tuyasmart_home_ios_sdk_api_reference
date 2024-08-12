@@ -1,0 +1,406 @@
+\hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+BLEMesh\+Manager\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_b_l_e_mesh_manager_delegate-p}\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+
+
+The Bluetooth LE mesh delegate that is instantiated when the Bluetooth LE mesh manager performs a specific action and receives messages.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+BLEMesh\+Manager.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+BLEMesh\+Manager\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_thing_b_l_e_mesh_manager_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a6a3624d292d1a3d266c67c46ec388af9}{central\+Manager\+Status\+Change\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a63446c1226dc037553bd5749c52746ae}{active\+Device\+Success\+With\+Name\+:device\+Id\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a7083a402ec5e8d8950d53905308c8c0c}{ble\+Mesh\+Manager\+:did\+Active\+Sub\+Device\+:dev\+Id\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a0f8abc268806af6919f118a4778dbab6}{active\+Wifi\+Device\+With\+Name\+:address\+:mac\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a89ed2d7c9dbf4ce119dc589777faa4f3}{ble\+Mesh\+Manager\+:did\+Fail\+To\+Active\+Device\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_ada6ce28b556c710488460a38e1e99536}{did\+Finish\+To\+Active\+Dev\+List}}
+\begin{DoxyCompactList}\small\item\em The callback that is used when the activation is completed. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a5a599360cebd70b95527f970493eb5e5}{notify\+Central\+Manager\+Did\+Disconnect\+Peripheral}}
+\begin{DoxyCompactList}\small\item\em The callback that is used when a device is disconnected. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a80b1bc8bdc3e126d21eec03763ddabef}{notify\+Firmware\+With\+Version\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a218a4b124282935f16241a867017e787}{notify\+Login\+Success\+With\+Address\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a2564334adedb3a9a4c8428df7d4f6a97}{device\+Add\+Group\+Address\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_ab9f0b2bc286f0d263b79573aa52e6470}{ble\+Mesh\+Manager\+:did\+Scaned\+Device\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_ae434139fb4445a4f0f97b9fd29b1cc5c}{notify\+Query\+Group\+Address\+:node\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a9e34b2e09a8ccf0bfc9bd0aa7b072d68}{did\+Connect\+Mesh\+Node\+And\+Login\+Mesh}}
+\begin{DoxyCompactList}\small\item\em The callback that is used when a mesh network is connected. This enables subsequent local communication. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a6a3624d292d1a3d266c67c46ec388af9}{central\+Manager\+Status\+Change\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a63446c1226dc037553bd5749c52746ae}{active\+Device\+Success\+With\+Name\+:device\+Id\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a7083a402ec5e8d8950d53905308c8c0c}{ble\+Mesh\+Manager\+:did\+Active\+Sub\+Device\+:dev\+Id\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a0f8abc268806af6919f118a4778dbab6}{active\+Wifi\+Device\+With\+Name\+:address\+:mac\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a89ed2d7c9dbf4ce119dc589777faa4f3}{ble\+Mesh\+Manager\+:did\+Fail\+To\+Active\+Device\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_ada6ce28b556c710488460a38e1e99536}{did\+Finish\+To\+Active\+Dev\+List}}
+\begin{DoxyCompactList}\small\item\em The callback that is used when the activation is completed. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a5a599360cebd70b95527f970493eb5e5}{notify\+Central\+Manager\+Did\+Disconnect\+Peripheral}}
+\begin{DoxyCompactList}\small\item\em The callback that is used when a device is disconnected. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a80b1bc8bdc3e126d21eec03763ddabef}{notify\+Firmware\+With\+Version\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a218a4b124282935f16241a867017e787}{notify\+Login\+Success\+With\+Address\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a2564334adedb3a9a4c8428df7d4f6a97}{device\+Add\+Group\+Address\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_ab9f0b2bc286f0d263b79573aa52e6470}{ble\+Mesh\+Manager\+:did\+Scaned\+Device\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_ae434139fb4445a4f0f97b9fd29b1cc5c}{notify\+Query\+Group\+Address\+:node\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_b_l_e_mesh_manager_delegate-p_a9e34b2e09a8ccf0bfc9bd0aa7b072d68}{did\+Connect\+Mesh\+Node\+And\+Login\+Mesh}}
+\begin{DoxyCompactList}\small\item\em The callback that is used when a mesh network is connected. This enables subsequent local communication. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Bluetooth LE mesh delegate that is instantiated when the Bluetooth LE mesh manager performs a specific action and receives messages. 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_manager_8h_source_l00022}{22}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_manager_8h_source}{Thing\+BLEMesh\+Manager.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a63446c1226dc037553bd5749c52746ae}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a63446c1226dc037553bd5749c52746ae}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!activeDeviceSuccessWithName:deviceId:error:@{activeDeviceSuccessWithName:deviceId:error:}}
+\index{activeDeviceSuccessWithName:deviceId:error:@{activeDeviceSuccessWithName:deviceId:error:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activeDeviceSuccessWithName:deviceId:error:}{activeDeviceSuccessWithName:deviceId:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) active\+Device\+Success\+With\+Name\+: \begin{DoxyParamCaption}\item[{(nullable NSString $\ast$)}]{name }\item[{device\+Id\+:(nullable NSString $\ast$)}]{device\+Id }\item[{error\+:(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback that is used to activate a sub-\/device. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The device name. \\
+\hline
+{\em device\+Id} & The device ID. \\
+\hline
+{\em error} & An error occurs while activating the sub-\/device. The values of `name' and \textquotesingle{}deviceid\textquotesingle{} are empty in the response. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a63446c1226dc037553bd5749c52746ae}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a63446c1226dc037553bd5749c52746ae}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!activeDeviceSuccessWithName:deviceId:error:@{activeDeviceSuccessWithName:deviceId:error:}}
+\index{activeDeviceSuccessWithName:deviceId:error:@{activeDeviceSuccessWithName:deviceId:error:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activeDeviceSuccessWithName:deviceId:error:}{activeDeviceSuccessWithName:deviceId:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) active\+Device\+Success\+With\+Name\+: \begin{DoxyParamCaption}\item[{(nullable NSString $\ast$)}]{name }\item[{device\+Id\+:(nullable NSString $\ast$)}]{device\+Id }\item[{error\+:(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback that is used to activate a sub-\/device. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The device name. \\
+\hline
+{\em device\+Id} & The device ID. \\
+\hline
+{\em error} & An error occurs while activating the sub-\/device. The values of `name' and \textquotesingle{}deviceid\textquotesingle{} are empty in the response. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a0f8abc268806af6919f118a4778dbab6}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a0f8abc268806af6919f118a4778dbab6}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!activeWifiDeviceWithName:address:mac:error:@{activeWifiDeviceWithName:address:mac:error:}}
+\index{activeWifiDeviceWithName:address:mac:error:@{activeWifiDeviceWithName:address:mac:error:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activeWifiDeviceWithName:address:mac:error:}{activeWifiDeviceWithName:address:mac:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) active\+Wifi\+Device\+With\+Name\+: \begin{DoxyParamCaption}\item[{(nullable NSString $\ast$)}]{name }\item[{address\+:(NSInteger)}]{address }\item[{mac\+:(NSInteger)}]{mac }\item[{error\+:(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback that is used to activate a gateway device. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The device name. \\
+\hline
+{\em address} & The device address. \\
+\hline
+{\em mac} & The gateway MAC. \\
+\hline
+{\em error} & An error occurs while processing the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a0f8abc268806af6919f118a4778dbab6}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a0f8abc268806af6919f118a4778dbab6}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!activeWifiDeviceWithName:address:mac:error:@{activeWifiDeviceWithName:address:mac:error:}}
+\index{activeWifiDeviceWithName:address:mac:error:@{activeWifiDeviceWithName:address:mac:error:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activeWifiDeviceWithName:address:mac:error:}{activeWifiDeviceWithName:address:mac:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) active\+Wifi\+Device\+With\+Name\+: \begin{DoxyParamCaption}\item[{(nullable NSString $\ast$)}]{name }\item[{address\+:(NSInteger)}]{address }\item[{mac\+:(NSInteger)}]{mac }\item[{error\+:(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback that is used to activate a gateway device. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The device name. \\
+\hline
+{\em address} & The device address. \\
+\hline
+{\em mac} & The gateway MAC. \\
+\hline
+{\em error} & An error occurs while processing the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a7083a402ec5e8d8950d53905308c8c0c}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a7083a402ec5e8d8950d53905308c8c0c}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!bleMeshManager:didActiveSubDevice:devId:error:@{bleMeshManager:didActiveSubDevice:devId:error:}}
+\index{bleMeshManager:didActiveSubDevice:devId:error:@{bleMeshManager:didActiveSubDevice:devId:error:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bleMeshManager:didActiveSubDevice:devId:error:}{bleMeshManager:didActiveSubDevice:devId:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) ble\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_mesh_manager}{Thing\+BLEMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Active\+Sub\+Device\+:(\mbox{\hyperlink{interface_thing_ble_mesh_device_model}{Thing\+Ble\+Mesh\+Device\+Model}} $\ast$)}]{device }\item[{dev\+Id\+:(NSString $\ast$)}]{dev\+Id }\item[{error\+:(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback that is used when a sub-\/device is activated. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_b_l_e_mesh_manager}{Thing\+BLEMesh\+Manager}}. \\
+\hline
+{\em device} & The value of \mbox{\hyperlink{interface_thing_ble_mesh_device_model}{Thing\+Ble\+Mesh\+Device\+Model}}. \\
+\hline
+{\em dev\+Id} & The device ID. \\
+\hline
+{\em error} & An error occurs while activating the sub-\/device. The values of `name' and \textquotesingle{}deviceid\textquotesingle{} are empty in the response. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a7083a402ec5e8d8950d53905308c8c0c}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a7083a402ec5e8d8950d53905308c8c0c}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!bleMeshManager:didActiveSubDevice:devId:error:@{bleMeshManager:didActiveSubDevice:devId:error:}}
+\index{bleMeshManager:didActiveSubDevice:devId:error:@{bleMeshManager:didActiveSubDevice:devId:error:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bleMeshManager:didActiveSubDevice:devId:error:}{bleMeshManager:didActiveSubDevice:devId:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) ble\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_mesh_manager}{Thing\+BLEMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Active\+Sub\+Device\+:(\mbox{\hyperlink{interface_thing_ble_mesh_device_model}{Thing\+Ble\+Mesh\+Device\+Model}} $\ast$)}]{device }\item[{dev\+Id\+:(NSString $\ast$)}]{dev\+Id }\item[{error\+:(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback that is used when a sub-\/device is activated. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_b_l_e_mesh_manager}{Thing\+BLEMesh\+Manager}}. \\
+\hline
+{\em device} & The value of \mbox{\hyperlink{interface_thing_ble_mesh_device_model}{Thing\+Ble\+Mesh\+Device\+Model}}. \\
+\hline
+{\em dev\+Id} & The device ID. \\
+\hline
+{\em error} & An error occurs while activating the sub-\/device. The values of `name' and \textquotesingle{}deviceid\textquotesingle{} are empty in the response. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a89ed2d7c9dbf4ce119dc589777faa4f3}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a89ed2d7c9dbf4ce119dc589777faa4f3}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!bleMeshManager:didFailToActiveDevice:error:@{bleMeshManager:didFailToActiveDevice:error:}}
+\index{bleMeshManager:didFailToActiveDevice:error:@{bleMeshManager:didFailToActiveDevice:error:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bleMeshManager:didFailToActiveDevice:error:}{bleMeshManager:didFailToActiveDevice:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) ble\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_mesh_manager}{Thing\+BLEMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Fail\+To\+Active\+Device\+:(\mbox{\hyperlink{interface_thing_ble_mesh_device_model}{Thing\+Ble\+Mesh\+Device\+Model}} $\ast$)}]{device }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback that is used when a device failed to be activated. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_b_l_e_mesh_manager}{Thing\+BLEMesh\+Manager}}. \\
+\hline
+{\em device} & The device. \\
+\hline
+{\em error} & An error occurs while processing the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a89ed2d7c9dbf4ce119dc589777faa4f3}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a89ed2d7c9dbf4ce119dc589777faa4f3}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!bleMeshManager:didFailToActiveDevice:error:@{bleMeshManager:didFailToActiveDevice:error:}}
+\index{bleMeshManager:didFailToActiveDevice:error:@{bleMeshManager:didFailToActiveDevice:error:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bleMeshManager:didFailToActiveDevice:error:}{bleMeshManager:didFailToActiveDevice:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) ble\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_mesh_manager}{Thing\+BLEMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Fail\+To\+Active\+Device\+:(\mbox{\hyperlink{interface_thing_ble_mesh_device_model}{Thing\+Ble\+Mesh\+Device\+Model}} $\ast$)}]{device }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback that is used when a device failed to be activated. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_b_l_e_mesh_manager}{Thing\+BLEMesh\+Manager}}. \\
+\hline
+{\em device} & The device. \\
+\hline
+{\em error} & An error occurs while processing the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_ab9f0b2bc286f0d263b79573aa52e6470}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_ab9f0b2bc286f0d263b79573aa52e6470}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!bleMeshManager:didScanedDevice:@{bleMeshManager:didScanedDevice:}}
+\index{bleMeshManager:didScanedDevice:@{bleMeshManager:didScanedDevice:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bleMeshManager:didScanedDevice:}{bleMeshManager:didScanedDevice:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) ble\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_mesh_manager}{Thing\+BLEMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Scaned\+Device\+:(\mbox{\hyperlink{interface_thing_ble_mesh_device_model}{Thing\+Ble\+Mesh\+Device\+Model}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Scans the devices to be paired. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_b_l_e_mesh_manager}{Thing\+BLEMesh\+Manager}}. \\
+\hline
+{\em device} & The value of \mbox{\hyperlink{interface_thing_ble_mesh_device_model}{Thing\+Ble\+Mesh\+Device\+Model}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_ab9f0b2bc286f0d263b79573aa52e6470}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_ab9f0b2bc286f0d263b79573aa52e6470}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!bleMeshManager:didScanedDevice:@{bleMeshManager:didScanedDevice:}}
+\index{bleMeshManager:didScanedDevice:@{bleMeshManager:didScanedDevice:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bleMeshManager:didScanedDevice:}{bleMeshManager:didScanedDevice:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) ble\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_mesh_manager}{Thing\+BLEMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Scaned\+Device\+:(\mbox{\hyperlink{interface_thing_ble_mesh_device_model}{Thing\+Ble\+Mesh\+Device\+Model}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Scans the devices to be paired. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_b_l_e_mesh_manager}{Thing\+BLEMesh\+Manager}}. \\
+\hline
+{\em device} & The value of \mbox{\hyperlink{interface_thing_ble_mesh_device_model}{Thing\+Ble\+Mesh\+Device\+Model}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a6a3624d292d1a3d266c67c46ec388af9}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a6a3624d292d1a3d266c67c46ec388af9}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!centralManagerStatusChange:@{centralManagerStatusChange:}}
+\index{centralManagerStatusChange:@{centralManagerStatusChange:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{centralManagerStatusChange:}{centralManagerStatusChange:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) central\+Manager\+Status\+Change\+: \begin{DoxyParamCaption}\item[{(CBManager\+State)}]{status }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback of the Bluetooth status. 
+\begin{DoxyParams}{Parameters}
+{\em status} & The Bluetooth status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a6a3624d292d1a3d266c67c46ec388af9}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a6a3624d292d1a3d266c67c46ec388af9}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!centralManagerStatusChange:@{centralManagerStatusChange:}}
+\index{centralManagerStatusChange:@{centralManagerStatusChange:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{centralManagerStatusChange:}{centralManagerStatusChange:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) central\+Manager\+Status\+Change\+: \begin{DoxyParamCaption}\item[{(CBManager\+State)}]{status }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback of the Bluetooth status. 
+\begin{DoxyParams}{Parameters}
+{\em status} & The Bluetooth status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a2564334adedb3a9a4c8428df7d4f6a97}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a2564334adedb3a9a4c8428df7d4f6a97}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!deviceAddGroupAddress:error:@{deviceAddGroupAddress:error:}}
+\index{deviceAddGroupAddress:error:@{deviceAddGroupAddress:error:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceAddGroupAddress:error:}{deviceAddGroupAddress:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+Add\+Group\+Address\+: \begin{DoxyParamCaption}\item[{(uint32\+\_\+t)}]{address }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback of group operations. For example, this callback is used when devices are added to or deleted from the group. 
+\begin{DoxyParams}{Parameters}
+{\em address} & The device address. \\
+\hline
+{\em error} & An error occurs while managing the devices in the group. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a2564334adedb3a9a4c8428df7d4f6a97}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a2564334adedb3a9a4c8428df7d4f6a97}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!deviceAddGroupAddress:error:@{deviceAddGroupAddress:error:}}
+\index{deviceAddGroupAddress:error:@{deviceAddGroupAddress:error:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceAddGroupAddress:error:}{deviceAddGroupAddress:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+Add\+Group\+Address\+: \begin{DoxyParamCaption}\item[{(uint32\+\_\+t)}]{address }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback of group operations. For example, this callback is used when devices are added to or deleted from the group. 
+\begin{DoxyParams}{Parameters}
+{\em address} & The device address. \\
+\hline
+{\em error} & An error occurs while managing the devices in the group. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a9e34b2e09a8ccf0bfc9bd0aa7b072d68}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a9e34b2e09a8ccf0bfc9bd0aa7b072d68}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!didConnectMeshNodeAndLoginMesh@{didConnectMeshNodeAndLoginMesh}}
+\index{didConnectMeshNodeAndLoginMesh@{didConnectMeshNodeAndLoginMesh}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didConnectMeshNodeAndLoginMesh}{didConnectMeshNodeAndLoginMesh}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Connect\+Mesh\+Node\+And\+Login\+Mesh \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+The callback that is used when a mesh network is connected. This enables subsequent local communication. 
+
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a9e34b2e09a8ccf0bfc9bd0aa7b072d68}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a9e34b2e09a8ccf0bfc9bd0aa7b072d68}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!didConnectMeshNodeAndLoginMesh@{didConnectMeshNodeAndLoginMesh}}
+\index{didConnectMeshNodeAndLoginMesh@{didConnectMeshNodeAndLoginMesh}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didConnectMeshNodeAndLoginMesh}{didConnectMeshNodeAndLoginMesh}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Connect\+Mesh\+Node\+And\+Login\+Mesh \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+The callback that is used when a mesh network is connected. This enables subsequent local communication. 
+
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_ada6ce28b556c710488460a38e1e99536}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_ada6ce28b556c710488460a38e1e99536}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!didFinishToActiveDevList@{didFinishToActiveDevList}}
+\index{didFinishToActiveDevList@{didFinishToActiveDevList}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didFinishToActiveDevList}{didFinishToActiveDevList}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Finish\+To\+Active\+Dev\+List \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+The callback that is used when the activation is completed. 
+
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_ada6ce28b556c710488460a38e1e99536}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_ada6ce28b556c710488460a38e1e99536}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!didFinishToActiveDevList@{didFinishToActiveDevList}}
+\index{didFinishToActiveDevList@{didFinishToActiveDevList}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didFinishToActiveDevList}{didFinishToActiveDevList}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Finish\+To\+Active\+Dev\+List \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+The callback that is used when the activation is completed. 
+
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a5a599360cebd70b95527f970493eb5e5}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a5a599360cebd70b95527f970493eb5e5}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!notifyCentralManagerDidDisconnectPeripheral@{notifyCentralManagerDidDisconnectPeripheral}}
+\index{notifyCentralManagerDidDisconnectPeripheral@{notifyCentralManagerDidDisconnectPeripheral}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifyCentralManagerDidDisconnectPeripheral}{notifyCentralManagerDidDisconnectPeripheral}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Central\+Manager\+Did\+Disconnect\+Peripheral \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+The callback that is used when a device is disconnected. 
+
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a5a599360cebd70b95527f970493eb5e5}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a5a599360cebd70b95527f970493eb5e5}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!notifyCentralManagerDidDisconnectPeripheral@{notifyCentralManagerDidDisconnectPeripheral}}
+\index{notifyCentralManagerDidDisconnectPeripheral@{notifyCentralManagerDidDisconnectPeripheral}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifyCentralManagerDidDisconnectPeripheral}{notifyCentralManagerDidDisconnectPeripheral}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Central\+Manager\+Did\+Disconnect\+Peripheral \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+The callback that is used when a device is disconnected. 
+
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a80b1bc8bdc3e126d21eec03763ddabef}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a80b1bc8bdc3e126d21eec03763ddabef}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!notifyFirmwareWithVersion:@{notifyFirmwareWithVersion:}}
+\index{notifyFirmwareWithVersion:@{notifyFirmwareWithVersion:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifyFirmwareWithVersion:}{notifyFirmwareWithVersion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Firmware\+With\+Version\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{version }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback of the version number. 
+\begin{DoxyParams}{Parameters}
+{\em version} & The version number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a80b1bc8bdc3e126d21eec03763ddabef}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a80b1bc8bdc3e126d21eec03763ddabef}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!notifyFirmwareWithVersion:@{notifyFirmwareWithVersion:}}
+\index{notifyFirmwareWithVersion:@{notifyFirmwareWithVersion:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifyFirmwareWithVersion:}{notifyFirmwareWithVersion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Firmware\+With\+Version\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{version }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The callback of the version number. 
+\begin{DoxyParams}{Parameters}
+{\em version} & The version number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a218a4b124282935f16241a867017e787}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a218a4b124282935f16241a867017e787}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!notifyLoginSuccessWithAddress:@{notifyLoginSuccessWithAddress:}}
+\index{notifyLoginSuccessWithAddress:@{notifyLoginSuccessWithAddress:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifyLoginSuccessWithAddress:}{notifyLoginSuccessWithAddress:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Login\+Success\+With\+Address\+: \begin{DoxyParamCaption}\item[{(uint32\+\_\+t)}]{address }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The notification of login success. Updates are required. 
+\begin{DoxyParams}{Parameters}
+{\em address} & The address of the connected device. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_a218a4b124282935f16241a867017e787}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_a218a4b124282935f16241a867017e787}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!notifyLoginSuccessWithAddress:@{notifyLoginSuccessWithAddress:}}
+\index{notifyLoginSuccessWithAddress:@{notifyLoginSuccessWithAddress:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifyLoginSuccessWithAddress:}{notifyLoginSuccessWithAddress:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Login\+Success\+With\+Address\+: \begin{DoxyParamCaption}\item[{(uint32\+\_\+t)}]{address }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The notification of login success. Updates are required. 
+\begin{DoxyParams}{Parameters}
+{\em address} & The address of the connected device. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_ae434139fb4445a4f0f97b9fd29b1cc5c}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_ae434139fb4445a4f0f97b9fd29b1cc5c}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!notifyQueryGroupAddress:nodeId:@{notifyQueryGroupAddress:nodeId:}}
+\index{notifyQueryGroupAddress:nodeId:@{notifyQueryGroupAddress:nodeId:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifyQueryGroupAddress:nodeId:}{notifyQueryGroupAddress:nodeId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Query\+Group\+Address\+: \begin{DoxyParamCaption}\item[{(uint32\+\_\+t)}]{local\+Id }\item[{node\+Id\+:(uint32\+\_\+t)}]{node\+Id }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_b_l_e_mesh_manager_delegate-p_ae434139fb4445a4f0f97b9fd29b1cc5c}\label{protocol_thing_b_l_e_mesh_manager_delegate-p_ae434139fb4445a4f0f97b9fd29b1cc5c}} 
+\index{$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}!notifyQueryGroupAddress:nodeId:@{notifyQueryGroupAddress:nodeId:}}
+\index{notifyQueryGroupAddress:nodeId:@{notifyQueryGroupAddress:nodeId:}!$<$ThingBLEMeshManagerDelegate$>$@{$<$ThingBLEMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifyQueryGroupAddress:nodeId:}{notifyQueryGroupAddress:nodeId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Query\+Group\+Address\+: \begin{DoxyParamCaption}\item[{(uint32\+\_\+t)}]{local\+Id }\item[{node\+Id\+:(uint32\+\_\+t)}]{node\+Id }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEMesh\+Kit/\+Build/\+Thing\+Smart\+BLEMesh\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLEMesh\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_manager_8h}{Thing\+BLEMesh\+Manager.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEMesh\+Kit/\+Build/\+Thing\+Smart\+BLEMesh\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLEMesh\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_manager_8h}{Thing\+BLEMesh\+Manager.\+h}}\end{DoxyCompactItemize}

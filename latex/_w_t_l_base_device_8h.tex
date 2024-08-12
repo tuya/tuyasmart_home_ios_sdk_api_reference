@@ -1,0 +1,428 @@
+\hypertarget{_w_t_l_base_device_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.framework/\+Headers/\+WTLBase\+Device.h File Reference}
+\label{_w_t_l_base_device_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLBaseDevice.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLBaseDevice.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import $<$Water/\+WTLCluster.\+h$>$}\newline
+{\ttfamily \#import $<$Water/\+WTLDefines.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{interface_w_t_l_attribute_request_path}{WTLAttribute\+Request\+Path}}
+\item 
+class \mbox{\hyperlink{interface_w_t_l_event_request_path}{WTLEvent\+Request\+Path}}
+\item 
+class \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}}
+\item 
+class \mbox{\hyperlink{interface_w_t_l_attribute_path}{WTLAttribute\+Path}}
+\item 
+class \mbox{\hyperlink{interface_w_t_l_event_path}{WTLEvent\+Path}}
+\item 
+class \mbox{\hyperlink{interface_w_t_l_command_path}{WTLCommand\+Path}}
+\item 
+class \mbox{\hyperlink{interface_w_t_l_attribute_report}{WTLAttribute\+Report}}
+\item 
+class \mbox{\hyperlink{interface_w_t_l_event_report}{WTLEvent\+Report}}
+\item 
+category \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08}{WTLBase\+Device(\+Deprecated)}}
+\item 
+category \mbox{\hyperlink{category_w_t_l_attribute_path_07_deprecated_08}{WTLAttribute\+Path(\+Deprecated)}}
+\item 
+category \mbox{\hyperlink{category_w_t_l_event_path_07_deprecated_08}{WTLEvent\+Path(\+Deprecated)}}
+\item 
+category \mbox{\hyperlink{category_w_t_l_command_path_07_deprecated_08}{WTLCommand\+Path(\+Deprecated)}}
+\item 
+category \mbox{\hyperlink{category_w_t_l_event_report_07_deprecated_08}{WTLEvent\+Report(\+Deprecated)}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{WTLDevice\+Report\+Handler}}) (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$values)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{_w_t_l_base_device_8h_afa0cd905259a1e4838660d0cb47ef6e8}{WTLDevice\+Error\+Handler}}) (NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}})
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{_w_t_l_base_device_8h_a0afbfa6be4e20b42f2ce662deadb8942}{WTLDevice\+Resubscription\+Scheduled\+Handler}}) (NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}, NSNumber $\ast$resubscription\+Delay)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}{API\+\_\+\+AVAILABLE}} (macos(13.\+1), watchos(9.\+2), tvos(16.\+2)) typedef void($^\wedge$WTLDevice\+Open\+Commissioning\+Window\+Handler)(\mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}} $\ast$\+\_\+\+Nullable payload
+\item 
+NSString $\ast$const WTLEvent\+Number\+Key \mbox{\hyperlink{_w_t_l_base_device_8h_a2996e4cc1a3a88a2365bd62473d93b2c}{API\+\_\+\+AVAILABLE}} (macos(13.\+4), watchos(9.\+5), tvos(16.\+5))
+\item 
+typedef \mbox{\hyperlink{_w_t_l_base_device_8h_a1c51076877242f1424478ad737e81dd1}{NS\+\_\+\+ENUM}} (uint8\+\_\+t, WTLTransport\+Type)
+\item 
+\mbox{\hyperlink{_w_t_l_base_device_8h_aac9c6e13d0afe999a9aeff09b52037e9}{API\+\_\+\+AVAILABLE}} (macos(13.\+3), watchos(9.\+4), tvos(16.\+4))
+\item 
+typedef \mbox{\hyperlink{_w_t_l_base_device_8h_aa29819634adcbf0887a6b2600a1e898d}{NS\+\_\+\+ENUM}} (NSUInteger, WTLEvent\+Time\+Type)
+\item 
+typedef \mbox{\hyperlink{_w_t_l_base_device_8h_a77873a0032d305a7afa6fc0baa275ae0}{NS\+\_\+\+ENUM}} (NSUInteger, WTLEvent\+Priority)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN typedef void($^\wedge$ \mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDevice\+Response\+Handler}} )(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable values, NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}})
+\item 
+NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_base_device_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_ad3f201f3aac8e4195d974afee7297c40}{WTLAttribute\+Path\+Key}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_aecbcf2450f8334365b845216b6b054f6}{WTLCommand\+Path\+Key}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_a259745e71265e2904033240d53242a0a}{WTLEvent\+Path\+Key}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_acb4f168e65adad28c87c5111667befe9}{WTLData\+Key}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_aed030584eb687a7bc16e49fc82f3e5c5}{WTLError\+Key}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_a3afccf21aa04f8b2eab852c4812c04ac}{WTLType\+Key}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_afaeeb07392d573db3dd48ef41bcf9aa8}{WTLValue\+Key}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_a631a5cb99b59347defa4a20cfc14556c}{WTLContext\+Tag\+Key}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_ab21b71d787e64e111fca1940b8f734bc}{WTLSigned\+Integer\+Value\+Type}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_adf6164d793a5ab65025074b5ed8bc95f}{WTLUnsigned\+Integer\+Value\+Type}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_a3d72d4a2edf37b98b920b6657e3a9110}{WTLBoolean\+Value\+Type}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_a304076b002ffb103f73740bffc21c831}{WTLUTF8\+String\+Value\+Type}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_a9ded8bd2f49bc1a9549de8040f8ff1aa}{WTLOctet\+String\+Value\+Type}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_a3ba3f2829d80e00fe48912591bfb67c8}{WTLFloat\+Value\+Type}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_a5af554b9646cb032b8b88fafeb9de01f}{WTLDouble\+Value\+Type}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_ad40ba432fd7247981f37ad4ae276ef26}{WTLNull\+Value\+Type}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_aed68aca1befdcaa9c5f028526f463250}{WTLStructure\+Value\+Type}}
+\item 
+NSString $\ast$const \mbox{\hyperlink{_w_t_l_base_device_8h_a8e39d667ce41e3f109a57161a39df9b3}{WTLArray\+Value\+Type}}
+\item 
+\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}{API\+\_\+\+AVAILABLE}}(macos(13.\+3), watchos(9.\+4), tvos(16.\+4)) @interface WTLCluster\+Path NSNumber $\ast$ \mbox{\hyperlink{_w_t_l_base_device_8h_a538896a2c80933467e47a86beba8b2c5}{cluster}}
+\item 
+WTLCluster\+Path $\ast$ \mbox{\hyperlink{_w_t_l_base_device_8h_a9be32f7564640182fa8a008d2202b9f2}{cluster\+Path\+With\+Endpoint\+ID}}
+\item 
+instancetype init \mbox{\hyperlink{_w_t_l_base_device_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\+\_\+\+UNAVAILABLE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_w_t_l_base_device_8h_afa0cd905259a1e4838660d0cb47ef6e8}\label{_w_t_l_base_device_8h_afa0cd905259a1e4838660d0cb47ef6e8}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLDeviceErrorHandler@{WTLDeviceErrorHandler}}
+\index{WTLDeviceErrorHandler@{WTLDeviceErrorHandler}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLDeviceErrorHandler}{WTLDeviceErrorHandler}}
+{\footnotesize\ttfamily typedef void($^\wedge$ WTLDevice\+Error\+Handler) (NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}})}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_base_device_8h_source_l00098}{98}} of file \mbox{\hyperlink{_w_t_l_base_device_8h_source}{WTLBase\+Device.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}\label{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLDeviceReportHandler@{WTLDeviceReportHandler}}
+\index{WTLDeviceReportHandler@{WTLDeviceReportHandler}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLDeviceReportHandler}{WTLDeviceReportHandler}}
+{\footnotesize\ttfamily typedef void($^\wedge$ WTLDevice\+Report\+Handler) (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$values)}
+
+Handler for -\/subscribe\+With\+Queue\+: attribute and event reports
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & This array contains \mbox{\hyperlink{interface_w_t_l_attribute_report}{WTLAttribute\+Report}} objects for attribute reports, and \mbox{\hyperlink{interface_w_t_l_event_report}{WTLEvent\+Report}} objects for event reports \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_base_device_8h_source_l00097}{97}} of file \mbox{\hyperlink{_w_t_l_base_device_8h_source}{WTLBase\+Device.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a0afbfa6be4e20b42f2ce662deadb8942}\label{_w_t_l_base_device_8h_a0afbfa6be4e20b42f2ce662deadb8942}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLDeviceResubscriptionScheduledHandler@{WTLDeviceResubscriptionScheduledHandler}}
+\index{WTLDeviceResubscriptionScheduledHandler@{WTLDeviceResubscriptionScheduledHandler}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLDeviceResubscriptionScheduledHandler}{WTLDeviceResubscriptionScheduledHandler}}
+{\footnotesize\ttfamily typedef void($^\wedge$ WTLDevice\+Resubscription\+Scheduled\+Handler) (NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}, NSNumber $\ast$resubscription\+Delay)}
+
+Handler for subscribe\+With\+Queue\+: resubscription scheduling notifications. This will be called when subscription loss is detected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & An error indicating the reason the subscription has been lost. \\
+\hline
+{\em resubscription\+Delay} & A delay, in milliseconds, before the next automatic resubscription will be attempted. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_base_device_8h_source_l00108}{108}} of file \mbox{\hyperlink{_w_t_l_base_device_8h_source}{WTLBase\+Device.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}\label{_w_t_l_base_device_8h_a158676787de490265ba8f95b6b43f06f}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE()}{API\_AVAILABLE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily API\+\_\+\+AVAILABLE (\begin{DoxyParamCaption}\item[{macos(13.\+1)}]{,  }\item[{watchos(9.\+2)}]{,  }\item[{tvos(16.\+2)}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Handler for open\+Commissioning\+Window\+With\+Setup\+Passcode. \mbox{\Hypertarget{_w_t_l_base_device_8h_aac9c6e13d0afe999a9aeff09b52037e9}\label{_w_t_l_base_device_8h_aac9c6e13d0afe999a9aeff09b52037e9}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE()}{API\_AVAILABLE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily API\+\_\+\+AVAILABLE (\begin{DoxyParamCaption}\item[{macos(13.\+3)}]{,  }\item[{watchos(9.\+4)}]{,  }\item[{tvos(16.\+4)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a2996e4cc1a3a88a2365bd62473d93b2c}\label{_w_t_l_base_device_8h_a2996e4cc1a3a88a2365bd62473d93b2c}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE()}{API\_AVAILABLE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily NSString $\ast$const WTLEvent\+Number\+Key API\+\_\+\+AVAILABLE (\begin{DoxyParamCaption}\item[{macos(13.\+4)}]{,  }\item[{watchos(9.\+5)}]{,  }\item[{tvos(16.\+5)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a77873a0032d305a7afa6fc0baa275ae0}\label{_w_t_l_base_device_8h_a77873a0032d305a7afa6fc0baa275ae0}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{WTLEvent\+Priority}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_base_device_8h_source_l00605}{605}} of file \mbox{\hyperlink{_w_t_l_base_device_8h_source}{WTLBase\+Device.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_aa29819634adcbf0887a6b2600a1e898d}\label{_w_t_l_base_device_8h_aa29819634adcbf0887a6b2600a1e898d}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{WTLEvent\+Time\+Type}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_base_device_8h_source_l00600}{600}} of file \mbox{\hyperlink{_w_t_l_base_device_8h_source}{WTLBase\+Device.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a1c51076877242f1424478ad737e81dd1}\label{_w_t_l_base_device_8h_a1c51076877242f1424478ad737e81dd1}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{,  }\item[{WTLTransport\+Type}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_base_device_8h_source_l00145}{145}} of file \mbox{\hyperlink{_w_t_l_base_device_8h_source}{WTLBase\+Device.\+h}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a538896a2c80933467e47a86beba8b2c5}\label{_w_t_l_base_device_8h_a538896a2c80933467e47a86beba8b2c5}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!cluster@{cluster}}
+\index{cluster@{cluster}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{cluster}{cluster}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}{API\+\_\+\+AVAILABLE}} (macos(13.\+3), watchos(9.\+4), tvos(16.\+4)) @interface WTLCluster\+Path NSNumber$\ast$ cluster\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+A path indicating a specific cluster on a device (i.\+e. without any wildcards). 
+
+Definition at line \mbox{\hyperlink{_w_t_l_base_device_8h_source_l00544}{544}} of file \mbox{\hyperlink{_w_t_l_base_device_8h_source}{WTLBase\+Device.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a9be32f7564640182fa8a008d2202b9f2}\label{_w_t_l_base_device_8h_a9be32f7564640182fa8a008d2202b9f2}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!clusterPathWithEndpointID@{clusterPathWithEndpointID}}
+\index{clusterPathWithEndpointID@{clusterPathWithEndpointID}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{clusterPathWithEndpointID}{clusterPathWithEndpointID}}
+{\footnotesize\ttfamily WTLCluster\+Path$\ast$ cluster\+Path\+With\+Endpoint\+ID}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_base_device_8h_source_l00546}{546}} of file \mbox{\hyperlink{_w_t_l_base_device_8h_source}{WTLBase\+Device.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a6710b99207ceec3a7b09cadf04f4e246}\label{_w_t_l_base_device_8h_a6710b99207ceec3a7b09cadf04f4e246}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!error@{error}}
+\index{error@{error}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily NSError$\ast$ \+\_\+\+Nullable error}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_base_device_8h_source_l00114}{114}} of file \mbox{\hyperlink{_w_t_l_base_device_8h_source}{WTLBase\+Device.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a7ce30558a2e627651ffe88c2982fbaff}\label{_w_t_l_base_device_8h_a7ce30558a2e627651ffe88c2982fbaff}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}}
+{\footnotesize\ttfamily instancetype new NS\+\_\+\+UNAVAILABLE}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_base_device_8h_source_l00548}{548}} of file \mbox{\hyperlink{_w_t_l_base_device_8h_source}{WTLBase\+Device.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a8e39d667ce41e3f109a57161a39df9b3}\label{_w_t_l_base_device_8h_a8e39d667ce41e3f109a57161a39df9b3}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLArrayValueType@{WTLArrayValueType}}
+\index{WTLArrayValueType@{WTLArrayValueType}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLArrayValueType}{WTLArrayValueType}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLArray\+Value\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_ad3f201f3aac8e4195d974afee7297c40}\label{_w_t_l_base_device_8h_ad3f201f3aac8e4195d974afee7297c40}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLAttributePathKey@{WTLAttributePathKey}}
+\index{WTLAttributePathKey@{WTLAttributePathKey}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLAttributePathKey}{WTLAttributePathKey}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLAttribute\+Path\+Key\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a3d72d4a2edf37b98b920b6657e3a9110}\label{_w_t_l_base_device_8h_a3d72d4a2edf37b98b920b6657e3a9110}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLBooleanValueType@{WTLBooleanValueType}}
+\index{WTLBooleanValueType@{WTLBooleanValueType}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLBooleanValueType}{WTLBooleanValueType}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLBoolean\+Value\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_aecbcf2450f8334365b845216b6b054f6}\label{_w_t_l_base_device_8h_aecbcf2450f8334365b845216b6b054f6}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLCommandPathKey@{WTLCommandPathKey}}
+\index{WTLCommandPathKey@{WTLCommandPathKey}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLCommandPathKey}{WTLCommandPathKey}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLCommand\+Path\+Key\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a631a5cb99b59347defa4a20cfc14556c}\label{_w_t_l_base_device_8h_a631a5cb99b59347defa4a20cfc14556c}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLContextTagKey@{WTLContextTagKey}}
+\index{WTLContextTagKey@{WTLContextTagKey}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLContextTagKey}{WTLContextTagKey}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLContext\+Tag\+Key\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_acb4f168e65adad28c87c5111667befe9}\label{_w_t_l_base_device_8h_acb4f168e65adad28c87c5111667befe9}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLDataKey@{WTLDataKey}}
+\index{WTLDataKey@{WTLDataKey}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLDataKey}{WTLDataKey}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLData\+Key\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}\label{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLDeviceResponseHandler@{WTLDeviceResponseHandler}}
+\index{WTLDeviceResponseHandler@{WTLDeviceResponseHandler}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLDeviceResponseHandler}{WTLDeviceResponseHandler}}
+{\footnotesize\ttfamily NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN typedef void($^\wedge$ WTLDevice\+Response\+Handler) (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable values, NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}) (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable}]{values,  }\item[{NSError $\ast$\+\_\+\+Nullable}]{error }\end{DoxyParamCaption})}
+
+Handler for read attribute response, write attribute response, invoke command response and reports.
+
+Handler will receive either values or error. Either one of the parameters will be nil.
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & Received values are an \mbox{\hyperlink{interface_n_s_array}{NSArray}} object with response-\/value element as described below. \begin{DoxyVerb}           A response-value is an NSDictionary object with the following key values:
+
+           WTLAttributePathKey : WTLAttributePath object. Included for attribute value.
+           WTLCommandPathKey : WTLCommandPath object. Included for command response.
+           WTLEventPathKey : WTLEventPath object. Included for event value.
+           WTLErrorKey : NSError object. Included to indicate an error.
+           WTLDataKey: Data-value NSDictionary object.
+                         Included when there is data and when there is no error.
+                         The data-value is described below.
+           WTLEventNumberKey : NSNumber-wrapped uint64_t value. Monotonically increasing, and consecutive event reports
+                               should have consecutive numbers unless device reboots, or if events are lost.
+                               Only present when both WTLEventPathKey and WTLDataKey are present.
+           WTLEventPriorityKey : NSNumber-wrapped WTLEventPriority value.
+                                 Only present when both WTLEventPathKey and WTLDataKey are present.
+           WTLEventTimeTypeKey : NSNumber-wrapped WTLEventTimeType value.
+                                 Only present when both WTLEventPathKey and WTLDataKey are present.
+           WTLEventSystemUpTimeKey : NSNumber-wrapped NSTimeInterval value.
+                                     Only present when WTLEventTimeTypeKey is WTLEventTimeTypeSystemUpTime.
+           WTLEventTimestampDateKey : NSDate object.
+                                      Only present when WTLEventTimeTypeKey is WTLEventTimeTypeTimestampDate.
+
+           Only one of WTLEventTimestampDateKey and WTLEventSystemUpTimeKey will be present, depending on the value for
+           WTLEventTimeTypeKey.
+
+           A data-value is an NSDictionary object with the following key values:
+
+           WTLTypeKey : data type. WTLSignedIntegerValueType, WTLUnsignedIntegerValueType, WTLBooleanValueType,
+                          WTLUTF8StringValueType, WTLOctetStringValueType, WTLFloatValueType, WTLDoubleValueType,
+                          WTLNullValueType, WTLStructureValueType or WTLArrayValueType.
+
+           WTLValueKey : data value. Per each data type, data value shall be the following object:
+
+                     WTLSignedIntegerValueType: NSNumber object.
+                     WTLUnsignedIntegerValueType: NSNumber object.
+                     WTLBooleanValueType: NSNumber object.
+                     WTLUTF8StringValueType: NSString object.
+                     WTLOctetStringValueType: NSData object.
+                     WTLFloatValueType: NSNumber object.
+                     WTLDoubleValueType: NSNumber object.
+                     WTLNullValueType: "value" key will not be included.
+                     WTLStructureValueType: structure-value NSArray object.
+                                              See below for the definition of structure-value.
+                     WTLArrayValueType: Array-value NSArray object. See below for the definition of array-value.
+
+           A structure-value is an NSArray object with NSDictionary objects as its elements. Each dictionary element will
+           contain the following key values.
+
+           WTLContextTagKey : NSNumber object as context tag.
+           WTLDataKey : Data-value NSDictionary object.
+
+           An array-value is an NSArray object with NSDictionary objects as its elements. Each dictionary element will
+           contain the following key values.
+
+           WTLDataKey : Data-value NSDictionary object.
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a5af554b9646cb032b8b88fafeb9de01f}\label{_w_t_l_base_device_8h_a5af554b9646cb032b8b88fafeb9de01f}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLDoubleValueType@{WTLDoubleValueType}}
+\index{WTLDoubleValueType@{WTLDoubleValueType}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLDoubleValueType}{WTLDoubleValueType}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLDouble\+Value\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_aed030584eb687a7bc16e49fc82f3e5c5}\label{_w_t_l_base_device_8h_aed030584eb687a7bc16e49fc82f3e5c5}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLErrorKey@{WTLErrorKey}}
+\index{WTLErrorKey@{WTLErrorKey}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLErrorKey}{WTLErrorKey}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLError\+Key\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a259745e71265e2904033240d53242a0a}\label{_w_t_l_base_device_8h_a259745e71265e2904033240d53242a0a}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLEventPathKey@{WTLEventPathKey}}
+\index{WTLEventPathKey@{WTLEventPathKey}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLEventPathKey}{WTLEventPathKey}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLEvent\+Path\+Key\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a3ba3f2829d80e00fe48912591bfb67c8}\label{_w_t_l_base_device_8h_a3ba3f2829d80e00fe48912591bfb67c8}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLFloatValueType@{WTLFloatValueType}}
+\index{WTLFloatValueType@{WTLFloatValueType}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLFloatValueType}{WTLFloatValueType}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLFloat\+Value\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_ad40ba432fd7247981f37ad4ae276ef26}\label{_w_t_l_base_device_8h_ad40ba432fd7247981f37ad4ae276ef26}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLNullValueType@{WTLNullValueType}}
+\index{WTLNullValueType@{WTLNullValueType}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLNullValueType}{WTLNullValueType}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLNull\+Value\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a9ded8bd2f49bc1a9549de8040f8ff1aa}\label{_w_t_l_base_device_8h_a9ded8bd2f49bc1a9549de8040f8ff1aa}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLOctetStringValueType@{WTLOctetStringValueType}}
+\index{WTLOctetStringValueType@{WTLOctetStringValueType}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLOctetStringValueType}{WTLOctetStringValueType}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLOctet\+String\+Value\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_ab21b71d787e64e111fca1940b8f734bc}\label{_w_t_l_base_device_8h_ab21b71d787e64e111fca1940b8f734bc}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLSignedIntegerValueType@{WTLSignedIntegerValueType}}
+\index{WTLSignedIntegerValueType@{WTLSignedIntegerValueType}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLSignedIntegerValueType}{WTLSignedIntegerValueType}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLSigned\+Integer\+Value\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_aed68aca1befdcaa9c5f028526f463250}\label{_w_t_l_base_device_8h_aed68aca1befdcaa9c5f028526f463250}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLStructureValueType@{WTLStructureValueType}}
+\index{WTLStructureValueType@{WTLStructureValueType}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLStructureValueType}{WTLStructureValueType}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLStructure\+Value\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a3afccf21aa04f8b2eab852c4812c04ac}\label{_w_t_l_base_device_8h_a3afccf21aa04f8b2eab852c4812c04ac}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLTypeKey@{WTLTypeKey}}
+\index{WTLTypeKey@{WTLTypeKey}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLTypeKey}{WTLTypeKey}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLType\+Key\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_adf6164d793a5ab65025074b5ed8bc95f}\label{_w_t_l_base_device_8h_adf6164d793a5ab65025074b5ed8bc95f}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLUnsignedIntegerValueType@{WTLUnsignedIntegerValueType}}
+\index{WTLUnsignedIntegerValueType@{WTLUnsignedIntegerValueType}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLUnsignedIntegerValueType}{WTLUnsignedIntegerValueType}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLUnsigned\+Integer\+Value\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_a304076b002ffb103f73740bffc21c831}\label{_w_t_l_base_device_8h_a304076b002ffb103f73740bffc21c831}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLUTF8StringValueType@{WTLUTF8StringValueType}}
+\index{WTLUTF8StringValueType@{WTLUTF8StringValueType}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLUTF8StringValueType}{WTLUTF8StringValueType}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLUTF8\+String\+Value\+Type\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_w_t_l_base_device_8h_afaeeb07392d573db3dd48ef41bcf9aa8}\label{_w_t_l_base_device_8h_afaeeb07392d573db3dd48ef41bcf9aa8}} 
+\index{WTLBaseDevice.h@{WTLBaseDevice.h}!WTLValueKey@{WTLValueKey}}
+\index{WTLValueKey@{WTLValueKey}!WTLBaseDevice.h@{WTLBaseDevice.h}}
+\doxysubsubsection{\texorpdfstring{WTLValueKey}{WTLValueKey}}
+{\footnotesize\ttfamily NSString$\ast$ const WTLValue\+Key\hspace{0.3cm}{\ttfamily [extern]}}
+

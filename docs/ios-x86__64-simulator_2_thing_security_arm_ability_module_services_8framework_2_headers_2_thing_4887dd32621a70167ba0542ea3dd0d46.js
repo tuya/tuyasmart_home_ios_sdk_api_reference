@@ -1,4 +1,0 @@
-var ios_x86__64_simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_4887dd32621a70167ba0542ea3dd0d46 =
-[
-    [ "ThingSecurityHomeEmptyStateModel", "interface_thing_security_home_empty_state_model.html", "interface_thing_security_home_empty_state_model" ]
-];

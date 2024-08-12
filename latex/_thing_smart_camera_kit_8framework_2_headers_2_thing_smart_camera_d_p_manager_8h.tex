@@ -1,0 +1,721 @@
+\hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Camera\+Kit/\+Build/\+Thing\+Smart\+Camera\+Kit.xcframework/ios-\/arm64/\+Thing\+Smart\+Camera\+Kit.framework/\+Headers/\+Thing\+Smart\+Camera\+DPManager.h File Reference}
+\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartCameraKit/Build/ThingSmartCameraKit.xcframework/ios-\/arm64/ThingSmartCameraKit.framework/Headers/ThingSmartCameraDPManager.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartCameraKit/Build/ThingSmartCameraKit.xcframework/ios-\/arm64/ThingSmartCameraKit.framework/Headers/ThingSmartCameraDPManager.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import $<$Thing\+Smart\+Camera\+Base/\+Thing\+Smart\+Camera\+Base.\+h$>$}\newline
+{\ttfamily \#import $<$Thing\+Smart\+Base\+Kit/\+Thing\+Smart\+Base\+Kit.\+h$>$}\newline
+{\ttfamily \#import $<$Thing\+Smart\+Device\+Core\+Kit/\+Thing\+Smart\+Device\+Core\+Kit.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+protocol \mbox{\hyperlink{protocol_thing_smart_camera_d_p_observer-p}{$<$\+Thing\+Smart\+Camera\+DPObserver$>$}}
+\item 
+protocol \mbox{\hyperlink{protocol_thing_smart_camera_d_p_data_source-p}{$<$\+Thing\+Smart\+Camera\+DPData\+Source$>$}}
+\item 
+class \mbox{\hyperlink{interface_thing_smart_camera_d_p_manager}{Thing\+Smart\+Camera\+DPManager}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef NSString $\ast$Thing\+Smart\+Camera\+DPKey \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a9ca19c33235fd041cc754914fad1c504}{NS\+\_\+\+EXTENSIBLE\+\_\+\+STRING\+\_\+\+ENUM}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_aa671c7a07af42490c256ca742b832716}{NS\+\_\+\+ENUM}} (NSUInteger, Thing\+Smart\+Camera\+SDCard\+Status)
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}sd card state\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}SD卡状态\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_af827192e325bd521efe1c34cac313ad4}{Thing\+Smart\+Camera\+Basic\+Indicator\+DPName}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}basic setting dp\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}基础设置dp\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a55e533a281fdda173f550f4c1166f249}{Thing\+Smart\+Camera\+Basic\+Flip\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_aad670009305085aad1eeeae5e0490b18}{Thing\+Smart\+Camera\+Basic\+OSDDPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a9769314436ca9d63a0534aae8a8a51e6}{Thing\+Smart\+Camera\+Basic\+Private\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a3d4c10285a7fb170d257daf7930d8525}{Thing\+Smart\+Camera\+Basic\+Nightvision\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_aa9e08d10dfb7dcdc8a626411cf053395}{Thing\+Smart\+Camera\+Basic\+PIRDPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a71d5d2d1ce809942c512c19ee166595a}{Thing\+Smart\+Camera\+Motion\+Detect\+DPName}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}motion detecting alarm\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}移动侦测告警\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a9ecda05e44b402bc4f9f76913a5da05b}{Thing\+Smart\+Camera\+Motion\+Sensitivity\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_abf5deeb0564d14732a2a65079ab57260}{Thing\+Smart\+Camera\+Decibel\+Detect\+DPName}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}decibel detecting alarm\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}分贝侦测告警\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ab03da5b09356b21d61a50bac74fcd504}{Thing\+Smart\+Camera\+Decibel\+Sensitivity\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a597075a2d2b5d59731138e896a6f0989}{Thing\+Smart\+Camera\+SDCard\+Status\+DPName}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}SD card\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}SD 卡\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ada16408d1f02502ed5664cf7cb584e28}{Thing\+Smart\+Camera\+SDCard\+Storage\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a3a800405ad8b59d76b82eab44cc1537e}{Thing\+Smart\+Camera\+SDCard\+Format\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a98e9dac977bcfa454c96d8c02ae3c283}{Thing\+Smart\+Camera\+SDCard\+Unmount\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a0af790fcc424bdb1510c46e9c0ab4175}{Thing\+Smart\+Camera\+SDCard\+Format\+State\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a60fd3feacb95dd8111d98b81fb866044}{Thing\+Smart\+Camera\+SDCard\+Record\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a5ce089f46bca4280dbb591fad71b1d28}{Thing\+Smart\+Camera\+SDCard\+Mute\+Record\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a60396a68be5f4e45b06e0996cb3a3ab6}{Thing\+Smart\+Camera\+Record\+Mode\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a19d75fd302ccd47c75a9a379e388cf08}{Thing\+Smart\+Camera\+PTZControl\+DPName}}
+\begin{DoxyCompactList}\small\item\em ptz \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a268d302635636804260c2e579b0285e4}{Thing\+Smart\+Camera\+PTZStop\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a56a09c73af5b4cfed6b774ff9ced1fc4}{Thing\+Smart\+Camera\+Wireless\+Electricity\+DPName}}
+\begin{DoxyCompactList}\small\item\em wireless \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a95ce9979d1750e66a03cb406507a64f1}{Thing\+Smart\+Camera\+Wireless\+Power\+Mode\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a12b6f752e3758ba47bd8038ca505a1e6}{Thing\+Smart\+Camera\+Wireless\+Lowpower\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a1c9e2825f1d23f21df0b3fc7d7e83ec1}{Thing\+Smart\+Camera\+Wireless\+Battery\+Lock\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a298c4e4b4eb2fc39b04c26d3dc394053}{Thing\+Smart\+Camera\+Wireless\+Awake\+DPName}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Nightvision const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_abf79a31c0e06c53b999879fb5cdb1737}{Thing\+Smart\+Camera\+Nightvision\+Auto}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}nightvision state values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}夜间模式状态值\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Nightvision const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_af574b031db53d3ea5f131d090c1c2d8b}{Thing\+Smart\+Camera\+Nightvision\+Off}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Nightvision const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ae7743032e39f088e68cf5ac16bac171e}{Thing\+Smart\+Camera\+Nightvision\+On}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+IPConfig const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a688e7c15ef4359bde0b333b87eb81817}{Thing\+Smart\+Camera\+IPConfig\+Dynamic}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}iptype config values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}onvif动态静态\+IP状态值\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+IPConfig const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a2422bf56eec625e97dabb57fff0843ce}{Thing\+Smart\+Camera\+IPConfig\+Static}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PIR const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a522fc0ef184472669b38cf53887b2527}{Thing\+Smart\+Camera\+PIRState\+Off}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}PIR state values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}PIR 状态值\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PIR const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a91dd2bc13b7b188ea204afcac11b458f}{Thing\+Smart\+Camera\+PIRState\+Low}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PIR const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ad9781098d668802d56404002f2686302}{Thing\+Smart\+Camera\+PIRState\+Medium}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PIR const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a7c65e1e50cfe0097c46e54789328ffa6}{Thing\+Smart\+Camera\+PIRState\+High}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PIR const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a1783ac4111544939ae7ed0302d225dcd}{Thing\+Smart\+Camera\+PIRState\+On}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Motion const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ad70601b4407dbffb3a0d49866656cb52}{Thing\+Smart\+Camera\+Motion\+Low}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}motion detecting sensitivity values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}移动侦测灵敏度值\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Motion const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a716150ea87e413c1a2e80ac67abde3ba}{Thing\+Smart\+Camera\+Motion\+Medium}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Motion const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a0df383ecefb5f14677ca684b2b20d18c}{Thing\+Smart\+Camera\+Motion\+High}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Decibel const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a92b26c6d6183b577da00a4c08e41205e}{Thing\+Smart\+Camera\+Decibel\+Low}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}decibel detecting sensitivity values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}分贝检测灵敏度值\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Decibel const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_acb8052813da3aa191f56842ed9b8751e}{Thing\+Smart\+Camera\+Decibel\+High}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Record\+Mode const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a06bd5b51f0ae0d7a6a557bda68f89ea8}{Thing\+Smart\+Camera\+Record\+Mode\+Event}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}sd card record mode values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}SD卡记录模式值\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Record\+Mode const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a3529fe3f7a1b39be3892fa608f235002}{Thing\+Smart\+Camera\+Record\+Mode\+Always}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Record\+Mode const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_aff09ab1b8db63306171c4f0ce3e97964}{Thing\+Smart\+Camera\+Record\+Moded\+Time}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PTZDirection const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a0d0e081149641c3d5bf873f2bbdc8d31}{Thing\+Smart\+Camera\+PTZDirection\+Up}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}ptz direction values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}ptz方向控制值\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PTZDirection const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ae4bbdaf529d407bee93ef3d626a38d14}{Thing\+Smart\+Camera\+PTZDirection\+Right}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PTZDirection const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a1ea4e487d5bd2e0b91f78dfea6dcea29}{Thing\+Smart\+Camera\+PTZDirection\+Down}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PTZDirection const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ac5570f32aea4ac9af12aed376ee79058}{Thing\+Smart\+Camera\+PTZDirection\+Left}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Power\+Mode const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ae85857b7daef449fc51266f01f1393e0}{Thing\+Smart\+Camera\+Power\+Mode\+Battery}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}Wireless device power mode values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}无线设备电量模式值\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Power\+Mode const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a0a07f2f9f78dbc3f838be608a84981dd}{Thing\+Smart\+Camera\+Power\+Mode\+Plug}}
+\item 
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a8de6284646a8ead593996cd233b67ebb}{Thing\+Smart\+Camera\+Outline\+DPName}}
+\begin{DoxyCompactList}\small\item\em \mbox{[}$^\wedge$en\mbox{]}Object outline\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}智慧画框\mbox{[}\$zh\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a9ca19c33235fd041cc754914fad1c504}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a9ca19c33235fd041cc754914fad1c504}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!NS\_EXTENSIBLE\_STRING\_ENUM@{NS\_EXTENSIBLE\_STRING\_ENUM}}
+\index{NS\_EXTENSIBLE\_STRING\_ENUM@{NS\_EXTENSIBLE\_STRING\_ENUM}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{NS\_EXTENSIBLE\_STRING\_ENUM}{NS\_EXTENSIBLE\_STRING\_ENUM}}
+{\footnotesize\ttfamily typedef NSString$\ast$ Thing\+Smart\+Camera\+IPConfig \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_device_09doorbell_8h_ad1dfe322dbfdfef643f832ede1e85ee4}{NS\+\_\+\+EXTENSIBLE\+\_\+\+STRING\+\_\+\+ENUM}}}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00013}{13}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_aa671c7a07af42490c256ca742b832716}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_aa671c7a07af42490c256ca742b832716}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{Thing\+Smart\+Camera\+SDCard\+Status}]{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}sd card state\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}SD卡状态\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00104}{104}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a55e533a281fdda173f550f4c1166f249}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a55e533a281fdda173f550f4c1166f249}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraBasicFlipDPName@{ThingSmartCameraBasicFlipDPName}}
+\index{ThingSmartCameraBasicFlipDPName@{ThingSmartCameraBasicFlipDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraBasicFlipDPName}{ThingSmartCameraBasicFlipDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Basic\+Flip\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00025}{25}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_af827192e325bd521efe1c34cac313ad4}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_af827192e325bd521efe1c34cac313ad4}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraBasicIndicatorDPName@{ThingSmartCameraBasicIndicatorDPName}}
+\index{ThingSmartCameraBasicIndicatorDPName@{ThingSmartCameraBasicIndicatorDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraBasicIndicatorDPName}{ThingSmartCameraBasicIndicatorDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Basic\+Indicator\+DPName}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}basic setting dp\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}基础设置dp\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00024}{24}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a3d4c10285a7fb170d257daf7930d8525}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a3d4c10285a7fb170d257daf7930d8525}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraBasicNightvisionDPName@{ThingSmartCameraBasicNightvisionDPName}}
+\index{ThingSmartCameraBasicNightvisionDPName@{ThingSmartCameraBasicNightvisionDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraBasicNightvisionDPName}{ThingSmartCameraBasicNightvisionDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Basic\+Nightvision\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00028}{28}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_aad670009305085aad1eeeae5e0490b18}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_aad670009305085aad1eeeae5e0490b18}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraBasicOSDDPName@{ThingSmartCameraBasicOSDDPName}}
+\index{ThingSmartCameraBasicOSDDPName@{ThingSmartCameraBasicOSDDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraBasicOSDDPName}{ThingSmartCameraBasicOSDDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Basic\+OSDDPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00026}{26}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_aa9e08d10dfb7dcdc8a626411cf053395}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_aa9e08d10dfb7dcdc8a626411cf053395}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraBasicPIRDPName@{ThingSmartCameraBasicPIRDPName}}
+\index{ThingSmartCameraBasicPIRDPName@{ThingSmartCameraBasicPIRDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraBasicPIRDPName}{ThingSmartCameraBasicPIRDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Basic\+PIRDPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00029}{29}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a9769314436ca9d63a0534aae8a8a51e6}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a9769314436ca9d63a0534aae8a8a51e6}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraBasicPrivateDPName@{ThingSmartCameraBasicPrivateDPName}}
+\index{ThingSmartCameraBasicPrivateDPName@{ThingSmartCameraBasicPrivateDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraBasicPrivateDPName}{ThingSmartCameraBasicPrivateDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Basic\+Private\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00027}{27}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_abf5deeb0564d14732a2a65079ab57260}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_abf5deeb0564d14732a2a65079ab57260}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraDecibelDetectDPName@{ThingSmartCameraDecibelDetectDPName}}
+\index{ThingSmartCameraDecibelDetectDPName@{ThingSmartCameraDecibelDetectDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraDecibelDetectDPName}{ThingSmartCameraDecibelDetectDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Decibel\+Detect\+DPName}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}decibel detecting alarm\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}分贝侦测告警\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00036}{36}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_acb8052813da3aa191f56842ed9b8751e}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_acb8052813da3aa191f56842ed9b8751e}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraDecibelHigh@{ThingSmartCameraDecibelHigh}}
+\index{ThingSmartCameraDecibelHigh@{ThingSmartCameraDecibelHigh}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraDecibelHigh}{ThingSmartCameraDecibelHigh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Decibel const Thing\+Smart\+Camera\+Decibel\+High}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00083}{83}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a92b26c6d6183b577da00a4c08e41205e}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a92b26c6d6183b577da00a4c08e41205e}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraDecibelLow@{ThingSmartCameraDecibelLow}}
+\index{ThingSmartCameraDecibelLow@{ThingSmartCameraDecibelLow}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraDecibelLow}{ThingSmartCameraDecibelLow}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Decibel const Thing\+Smart\+Camera\+Decibel\+Low}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}decibel detecting sensitivity values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}分贝检测灵敏度值\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00082}{82}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ab03da5b09356b21d61a50bac74fcd504}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ab03da5b09356b21d61a50bac74fcd504}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraDecibelSensitivityDPName@{ThingSmartCameraDecibelSensitivityDPName}}
+\index{ThingSmartCameraDecibelSensitivityDPName@{ThingSmartCameraDecibelSensitivityDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraDecibelSensitivityDPName}{ThingSmartCameraDecibelSensitivityDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Decibel\+Sensitivity\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00037}{37}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a688e7c15ef4359bde0b333b87eb81817}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a688e7c15ef4359bde0b333b87eb81817}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraIPConfigDynamic@{ThingSmartCameraIPConfigDynamic}}
+\index{ThingSmartCameraIPConfigDynamic@{ThingSmartCameraIPConfigDynamic}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraIPConfigDynamic}{ThingSmartCameraIPConfigDynamic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+IPConfig const Thing\+Smart\+Camera\+IPConfig\+Dynamic}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}iptype config values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}onvif动态静态\+IP状态值\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00066}{66}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a2422bf56eec625e97dabb57fff0843ce}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a2422bf56eec625e97dabb57fff0843ce}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraIPConfigStatic@{ThingSmartCameraIPConfigStatic}}
+\index{ThingSmartCameraIPConfigStatic@{ThingSmartCameraIPConfigStatic}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraIPConfigStatic}{ThingSmartCameraIPConfigStatic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+IPConfig const Thing\+Smart\+Camera\+IPConfig\+Static}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00067}{67}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a71d5d2d1ce809942c512c19ee166595a}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a71d5d2d1ce809942c512c19ee166595a}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraMotionDetectDPName@{ThingSmartCameraMotionDetectDPName}}
+\index{ThingSmartCameraMotionDetectDPName@{ThingSmartCameraMotionDetectDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraMotionDetectDPName}{ThingSmartCameraMotionDetectDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Motion\+Detect\+DPName}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}motion detecting alarm\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}移动侦测告警\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00032}{32}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a0df383ecefb5f14677ca684b2b20d18c}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a0df383ecefb5f14677ca684b2b20d18c}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraMotionHigh@{ThingSmartCameraMotionHigh}}
+\index{ThingSmartCameraMotionHigh@{ThingSmartCameraMotionHigh}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraMotionHigh}{ThingSmartCameraMotionHigh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Motion const Thing\+Smart\+Camera\+Motion\+High}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00079}{79}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ad70601b4407dbffb3a0d49866656cb52}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ad70601b4407dbffb3a0d49866656cb52}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraMotionLow@{ThingSmartCameraMotionLow}}
+\index{ThingSmartCameraMotionLow@{ThingSmartCameraMotionLow}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraMotionLow}{ThingSmartCameraMotionLow}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Motion const Thing\+Smart\+Camera\+Motion\+Low}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}motion detecting sensitivity values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}移动侦测灵敏度值\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00077}{77}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a716150ea87e413c1a2e80ac67abde3ba}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a716150ea87e413c1a2e80ac67abde3ba}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraMotionMedium@{ThingSmartCameraMotionMedium}}
+\index{ThingSmartCameraMotionMedium@{ThingSmartCameraMotionMedium}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraMotionMedium}{ThingSmartCameraMotionMedium}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Motion const Thing\+Smart\+Camera\+Motion\+Medium}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00078}{78}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a9ecda05e44b402bc4f9f76913a5da05b}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a9ecda05e44b402bc4f9f76913a5da05b}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraMotionSensitivityDPName@{ThingSmartCameraMotionSensitivityDPName}}
+\index{ThingSmartCameraMotionSensitivityDPName@{ThingSmartCameraMotionSensitivityDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraMotionSensitivityDPName}{ThingSmartCameraMotionSensitivityDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Motion\+Sensitivity\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00033}{33}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_abf79a31c0e06c53b999879fb5cdb1737}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_abf79a31c0e06c53b999879fb5cdb1737}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraNightvisionAuto@{ThingSmartCameraNightvisionAuto}}
+\index{ThingSmartCameraNightvisionAuto@{ThingSmartCameraNightvisionAuto}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraNightvisionAuto}{ThingSmartCameraNightvisionAuto}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Nightvision const Thing\+Smart\+Camera\+Nightvision\+Auto}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}nightvision state values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}夜间模式状态值\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00061}{61}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_af574b031db53d3ea5f131d090c1c2d8b}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_af574b031db53d3ea5f131d090c1c2d8b}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraNightvisionOff@{ThingSmartCameraNightvisionOff}}
+\index{ThingSmartCameraNightvisionOff@{ThingSmartCameraNightvisionOff}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraNightvisionOff}{ThingSmartCameraNightvisionOff}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Nightvision const Thing\+Smart\+Camera\+Nightvision\+Off}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00062}{62}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ae7743032e39f088e68cf5ac16bac171e}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ae7743032e39f088e68cf5ac16bac171e}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraNightvisionOn@{ThingSmartCameraNightvisionOn}}
+\index{ThingSmartCameraNightvisionOn@{ThingSmartCameraNightvisionOn}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraNightvisionOn}{ThingSmartCameraNightvisionOn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Nightvision const Thing\+Smart\+Camera\+Nightvision\+On}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00063}{63}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a8de6284646a8ead593996cd233b67ebb}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a8de6284646a8ead593996cd233b67ebb}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraOutlineDPName@{ThingSmartCameraOutlineDPName}}
+\index{ThingSmartCameraOutlineDPName@{ThingSmartCameraOutlineDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraOutlineDPName}{ThingSmartCameraOutlineDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Outline\+DPName}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}Object outline\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}智慧画框\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00101}{101}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a7c65e1e50cfe0097c46e54789328ffa6}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a7c65e1e50cfe0097c46e54789328ffa6}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPIRStateHigh@{ThingSmartCameraPIRStateHigh}}
+\index{ThingSmartCameraPIRStateHigh@{ThingSmartCameraPIRStateHigh}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPIRStateHigh}{ThingSmartCameraPIRStateHigh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PIR const Thing\+Smart\+Camera\+PIRState\+High}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00073}{73}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a91dd2bc13b7b188ea204afcac11b458f}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a91dd2bc13b7b188ea204afcac11b458f}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPIRStateLow@{ThingSmartCameraPIRStateLow}}
+\index{ThingSmartCameraPIRStateLow@{ThingSmartCameraPIRStateLow}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPIRStateLow}{ThingSmartCameraPIRStateLow}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PIR const Thing\+Smart\+Camera\+PIRState\+Low}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00071}{71}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ad9781098d668802d56404002f2686302}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ad9781098d668802d56404002f2686302}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPIRStateMedium@{ThingSmartCameraPIRStateMedium}}
+\index{ThingSmartCameraPIRStateMedium@{ThingSmartCameraPIRStateMedium}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPIRStateMedium}{ThingSmartCameraPIRStateMedium}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PIR const Thing\+Smart\+Camera\+PIRState\+Medium}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00072}{72}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a522fc0ef184472669b38cf53887b2527}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a522fc0ef184472669b38cf53887b2527}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPIRStateOff@{ThingSmartCameraPIRStateOff}}
+\index{ThingSmartCameraPIRStateOff@{ThingSmartCameraPIRStateOff}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPIRStateOff}{ThingSmartCameraPIRStateOff}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PIR const Thing\+Smart\+Camera\+PIRState\+Off}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}PIR state values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}PIR 状态值\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00070}{70}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a1783ac4111544939ae7ed0302d225dcd}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a1783ac4111544939ae7ed0302d225dcd}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPIRStateOn@{ThingSmartCameraPIRStateOn}}
+\index{ThingSmartCameraPIRStateOn@{ThingSmartCameraPIRStateOn}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPIRStateOn}{ThingSmartCameraPIRStateOn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PIR const Thing\+Smart\+Camera\+PIRState\+On}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00074}{74}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ae85857b7daef449fc51266f01f1393e0}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ae85857b7daef449fc51266f01f1393e0}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPowerModeBattery@{ThingSmartCameraPowerModeBattery}}
+\index{ThingSmartCameraPowerModeBattery@{ThingSmartCameraPowerModeBattery}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPowerModeBattery}{ThingSmartCameraPowerModeBattery}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Power\+Mode const Thing\+Smart\+Camera\+Power\+Mode\+Battery}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}Wireless device power mode values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}无线设备电量模式值\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00097}{97}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a0a07f2f9f78dbc3f838be608a84981dd}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a0a07f2f9f78dbc3f838be608a84981dd}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPowerModePlug@{ThingSmartCameraPowerModePlug}}
+\index{ThingSmartCameraPowerModePlug@{ThingSmartCameraPowerModePlug}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPowerModePlug}{ThingSmartCameraPowerModePlug}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Power\+Mode const Thing\+Smart\+Camera\+Power\+Mode\+Plug}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00098}{98}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a19d75fd302ccd47c75a9a379e388cf08}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a19d75fd302ccd47c75a9a379e388cf08}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPTZControlDPName@{ThingSmartCameraPTZControlDPName}}
+\index{ThingSmartCameraPTZControlDPName@{ThingSmartCameraPTZControlDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPTZControlDPName}{ThingSmartCameraPTZControlDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+PTZControl\+DPName}
+
+
+
+ptz 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00050}{50}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a1ea4e487d5bd2e0b91f78dfea6dcea29}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a1ea4e487d5bd2e0b91f78dfea6dcea29}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPTZDirectionDown@{ThingSmartCameraPTZDirectionDown}}
+\index{ThingSmartCameraPTZDirectionDown@{ThingSmartCameraPTZDirectionDown}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPTZDirectionDown}{ThingSmartCameraPTZDirectionDown}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PTZDirection const Thing\+Smart\+Camera\+PTZDirection\+Down}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00093}{93}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ac5570f32aea4ac9af12aed376ee79058}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ac5570f32aea4ac9af12aed376ee79058}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPTZDirectionLeft@{ThingSmartCameraPTZDirectionLeft}}
+\index{ThingSmartCameraPTZDirectionLeft@{ThingSmartCameraPTZDirectionLeft}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPTZDirectionLeft}{ThingSmartCameraPTZDirectionLeft}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PTZDirection const Thing\+Smart\+Camera\+PTZDirection\+Left}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00094}{94}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ae4bbdaf529d407bee93ef3d626a38d14}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ae4bbdaf529d407bee93ef3d626a38d14}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPTZDirectionRight@{ThingSmartCameraPTZDirectionRight}}
+\index{ThingSmartCameraPTZDirectionRight@{ThingSmartCameraPTZDirectionRight}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPTZDirectionRight}{ThingSmartCameraPTZDirectionRight}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PTZDirection const Thing\+Smart\+Camera\+PTZDirection\+Right}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00092}{92}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a0d0e081149641c3d5bf873f2bbdc8d31}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a0d0e081149641c3d5bf873f2bbdc8d31}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPTZDirectionUp@{ThingSmartCameraPTZDirectionUp}}
+\index{ThingSmartCameraPTZDirectionUp@{ThingSmartCameraPTZDirectionUp}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPTZDirectionUp}{ThingSmartCameraPTZDirectionUp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+PTZDirection const Thing\+Smart\+Camera\+PTZDirection\+Up}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}ptz direction values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}ptz方向控制值\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00091}{91}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a268d302635636804260c2e579b0285e4}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a268d302635636804260c2e579b0285e4}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraPTZStopDPName@{ThingSmartCameraPTZStopDPName}}
+\index{ThingSmartCameraPTZStopDPName@{ThingSmartCameraPTZStopDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraPTZStopDPName}{ThingSmartCameraPTZStopDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+PTZStop\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00051}{51}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a3529fe3f7a1b39be3892fa608f235002}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a3529fe3f7a1b39be3892fa608f235002}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraRecordModeAlways@{ThingSmartCameraRecordModeAlways}}
+\index{ThingSmartCameraRecordModeAlways@{ThingSmartCameraRecordModeAlways}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraRecordModeAlways}{ThingSmartCameraRecordModeAlways}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Record\+Mode const Thing\+Smart\+Camera\+Record\+Mode\+Always}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00087}{87}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a60396a68be5f4e45b06e0996cb3a3ab6}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a60396a68be5f4e45b06e0996cb3a3ab6}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraRecordModeDPName@{ThingSmartCameraRecordModeDPName}}
+\index{ThingSmartCameraRecordModeDPName@{ThingSmartCameraRecordModeDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraRecordModeDPName}{ThingSmartCameraRecordModeDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Record\+Mode\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00047}{47}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_aff09ab1b8db63306171c4f0ce3e97964}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_aff09ab1b8db63306171c4f0ce3e97964}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraRecordModedTime@{ThingSmartCameraRecordModedTime}}
+\index{ThingSmartCameraRecordModedTime@{ThingSmartCameraRecordModedTime}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraRecordModedTime}{ThingSmartCameraRecordModedTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Record\+Mode const Thing\+Smart\+Camera\+Record\+Moded\+Time}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00088}{88}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a06bd5b51f0ae0d7a6a557bda68f89ea8}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a06bd5b51f0ae0d7a6a557bda68f89ea8}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraRecordModeEvent@{ThingSmartCameraRecordModeEvent}}
+\index{ThingSmartCameraRecordModeEvent@{ThingSmartCameraRecordModeEvent}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraRecordModeEvent}{ThingSmartCameraRecordModeEvent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+Record\+Mode const Thing\+Smart\+Camera\+Record\+Mode\+Event}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}sd card record mode values\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}SD卡记录模式值\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00086}{86}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a3a800405ad8b59d76b82eab44cc1537e}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a3a800405ad8b59d76b82eab44cc1537e}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraSDCardFormatDPName@{ThingSmartCameraSDCardFormatDPName}}
+\index{ThingSmartCameraSDCardFormatDPName@{ThingSmartCameraSDCardFormatDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraSDCardFormatDPName}{ThingSmartCameraSDCardFormatDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+SDCard\+Format\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00042}{42}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a0af790fcc424bdb1510c46e9c0ab4175}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a0af790fcc424bdb1510c46e9c0ab4175}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraSDCardFormatStateDPName@{ThingSmartCameraSDCardFormatStateDPName}}
+\index{ThingSmartCameraSDCardFormatStateDPName@{ThingSmartCameraSDCardFormatStateDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraSDCardFormatStateDPName}{ThingSmartCameraSDCardFormatStateDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+SDCard\+Format\+State\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00044}{44}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a5ce089f46bca4280dbb591fad71b1d28}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a5ce089f46bca4280dbb591fad71b1d28}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraSDCardMuteRecordDPName@{ThingSmartCameraSDCardMuteRecordDPName}}
+\index{ThingSmartCameraSDCardMuteRecordDPName@{ThingSmartCameraSDCardMuteRecordDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraSDCardMuteRecordDPName}{ThingSmartCameraSDCardMuteRecordDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+SDCard\+Mute\+Record\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00046}{46}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a60fd3feacb95dd8111d98b81fb866044}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a60fd3feacb95dd8111d98b81fb866044}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraSDCardRecordDPName@{ThingSmartCameraSDCardRecordDPName}}
+\index{ThingSmartCameraSDCardRecordDPName@{ThingSmartCameraSDCardRecordDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraSDCardRecordDPName}{ThingSmartCameraSDCardRecordDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+SDCard\+Record\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00045}{45}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a597075a2d2b5d59731138e896a6f0989}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a597075a2d2b5d59731138e896a6f0989}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraSDCardStatusDPName@{ThingSmartCameraSDCardStatusDPName}}
+\index{ThingSmartCameraSDCardStatusDPName@{ThingSmartCameraSDCardStatusDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraSDCardStatusDPName}{ThingSmartCameraSDCardStatusDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+SDCard\+Status\+DPName}
+
+
+
+\mbox{[}$^\wedge$en\mbox{]}SD card\mbox{[}\$en\mbox{]} \mbox{[}$^\wedge$zh\mbox{]}SD 卡\mbox{[}\$zh\mbox{]} 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00040}{40}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ada16408d1f02502ed5664cf7cb584e28}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_ada16408d1f02502ed5664cf7cb584e28}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraSDCardStorageDPName@{ThingSmartCameraSDCardStorageDPName}}
+\index{ThingSmartCameraSDCardStorageDPName@{ThingSmartCameraSDCardStorageDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraSDCardStorageDPName}{ThingSmartCameraSDCardStorageDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+SDCard\+Storage\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00041}{41}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a98e9dac977bcfa454c96d8c02ae3c283}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a98e9dac977bcfa454c96d8c02ae3c283}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraSDCardUnmountDPName@{ThingSmartCameraSDCardUnmountDPName}}
+\index{ThingSmartCameraSDCardUnmountDPName@{ThingSmartCameraSDCardUnmountDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraSDCardUnmountDPName}{ThingSmartCameraSDCardUnmountDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+SDCard\+Unmount\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00043}{43}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a298c4e4b4eb2fc39b04c26d3dc394053}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a298c4e4b4eb2fc39b04c26d3dc394053}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraWirelessAwakeDPName@{ThingSmartCameraWirelessAwakeDPName}}
+\index{ThingSmartCameraWirelessAwakeDPName@{ThingSmartCameraWirelessAwakeDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraWirelessAwakeDPName}{ThingSmartCameraWirelessAwakeDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Wireless\+Awake\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00058}{58}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a1c9e2825f1d23f21df0b3fc7d7e83ec1}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a1c9e2825f1d23f21df0b3fc7d7e83ec1}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraWirelessBatteryLockDPName@{ThingSmartCameraWirelessBatteryLockDPName}}
+\index{ThingSmartCameraWirelessBatteryLockDPName@{ThingSmartCameraWirelessBatteryLockDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraWirelessBatteryLockDPName}{ThingSmartCameraWirelessBatteryLockDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Wireless\+Battery\+Lock\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00057}{57}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a56a09c73af5b4cfed6b774ff9ced1fc4}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a56a09c73af5b4cfed6b774ff9ced1fc4}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraWirelessElectricityDPName@{ThingSmartCameraWirelessElectricityDPName}}
+\index{ThingSmartCameraWirelessElectricityDPName@{ThingSmartCameraWirelessElectricityDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraWirelessElectricityDPName}{ThingSmartCameraWirelessElectricityDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Wireless\+Electricity\+DPName}
+
+
+
+wireless 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00054}{54}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a12b6f752e3758ba47bd8038ca505a1e6}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a12b6f752e3758ba47bd8038ca505a1e6}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraWirelessLowpowerDPName@{ThingSmartCameraWirelessLowpowerDPName}}
+\index{ThingSmartCameraWirelessLowpowerDPName@{ThingSmartCameraWirelessLowpowerDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraWirelessLowpowerDPName}{ThingSmartCameraWirelessLowpowerDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Wireless\+Lowpower\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00056}{56}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a95ce9979d1750e66a03cb406507a64f1}\label{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_a95ce9979d1750e66a03cb406507a64f1}} 
+\index{ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}!ThingSmartCameraWirelessPowerModeDPName@{ThingSmartCameraWirelessPowerModeDPName}}
+\index{ThingSmartCameraWirelessPowerModeDPName@{ThingSmartCameraWirelessPowerModeDPName}!ThingSmartCameraDPManager.h@{ThingSmartCameraDPManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingSmartCameraWirelessPowerModeDPName}{ThingSmartCameraWirelessPowerModeDPName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_defines_8h_adf4305d50390762499c4e8f48e91153d}{IPC\+\_\+\+EXTERN}} Thing\+Smart\+Camera\+DPKey const Thing\+Smart\+Camera\+Wireless\+Power\+Mode\+DPName}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source_l00055}{55}} of file \mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_camera_d_p_manager_8h_source}{Thing\+Smart\+Camera\+DPManager.\+h}}.
+

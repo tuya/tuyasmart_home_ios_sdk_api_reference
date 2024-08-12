@@ -1,0 +1,437 @@
+\hypertarget{protocol_thing_smart_pairing_handler_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+Pairing\+Handler\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_pairing_handler_delegate-p}\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Pairing\+Handler\+Delegate.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+Pairing\+Handler\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_thing_smart_pairing_handler_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_adc0adf6550a86b7bd88c4c0b9b5acc55}{pairing\+Device\+Ready}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_ae66fe2afbd904a9b465da7894e39926b}{pairing\+Device\+State\+Error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_aa5dc5d3bed39295c13cd43c5f729c3ad}{polling\+Device\+With\+Token\+:retry\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_af06f532e1094ca78a423c60ea302740e}{pairing\+With\+Result\+:error\+:step\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_aa36b213dea28da9bc3dca711290a8d0d}{pairing\+Success\+With\+Result\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a5e7cc0fa30fb645c3a4e7e5cb49c721f}{pairing\+Error\+:error\+Device\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a99fc984c4c590a592a8e1be014aba641}{pairing\+Did\+Pass\+Wi\+Fi\+To\+Security\+Level\+Device\+:}}
+\begin{DoxyCompactList}\small\item\em 有安全级别的设备传递完了wifi信息，等待下一步了 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a6f6eea5781804f3e858adcbb66db5370}{device\+Data\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a80d76c01a0016a2dfb93631c498fa5b1}{mesh\+Sub\+Device\+Data\+Update\+With\+Mesh\+Id\+:device\+Id\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a785b7e310d29f4c73ac74587486a952e}{check\+Device\+Status\+By\+Dev\+Id\+:token\+:ap\+Compensation\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a13f0befe203e9863f2d861ad667a0ce2}{fetch\+Init\+Key\+With\+UUID\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a8673132eb409ce1ba0cd40d3532acd32}{fetch\+PSKInfo\+With\+SL\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_aa6902e7e23c75ff34230a9d9e6ebcae2}{check\+Gateway\+Info\+:token\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em 查询网关绑定状态，是否需要重置 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a2876b0f2b7c8940f7fe077f271309336}{reset\+Device\+:token\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em 重置设备 \end{DoxyCompactList}\item 
+(NSDictionary $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a61a335117148740191f7b26f523a3bd7}{request\+Device\+Model}}
+\begin{DoxyCompactList}\small\item\em 获取设备模型中的 Origin\+Json \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a5b84fa72921faa20131575c78891aeee}{update\+Device\+Model\+With\+Body\+:data\+:lpv\+:type\+:}}
+\begin{DoxyCompactList}\small\item\em 更新设备模型 \end{DoxyCompactList}\item 
+(NSDictionary $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a0ca8760bcce37a3136dd896bf67cf7f3}{request\+Device\+Schema}}
+\begin{DoxyCompactList}\small\item\em 获取激活的 schema \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_ac631e7ad1f50c42a313351bc5cc3e710}{activator\+Device\+Successed}}
+\begin{DoxyCompactList}\small\item\em 免配网激活成功回调 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a0f27d2cceccc12e32f9c2ac0176bcea5}{activator\+Device\+Failure\+With\+Error\+:}}
+\begin{DoxyCompactList}\small\item\em 免配网激活失败回调 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a9bd05f5a99dd31017559960fd8b607a5}{did\+Failed\+To\+Connect\+Wi\+Fi\+To\+Device\+:uuid\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_adc0adf6550a86b7bd88c4c0b9b5acc55}{pairing\+Device\+Ready}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_ae66fe2afbd904a9b465da7894e39926b}{pairing\+Device\+State\+Error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_aa5dc5d3bed39295c13cd43c5f729c3ad}{polling\+Device\+With\+Token\+:retry\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_af06f532e1094ca78a423c60ea302740e}{pairing\+With\+Result\+:error\+:step\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_aa36b213dea28da9bc3dca711290a8d0d}{pairing\+Success\+With\+Result\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a5e7cc0fa30fb645c3a4e7e5cb49c721f}{pairing\+Error\+:error\+Device\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a99fc984c4c590a592a8e1be014aba641}{pairing\+Did\+Pass\+Wi\+Fi\+To\+Security\+Level\+Device\+:}}
+\begin{DoxyCompactList}\small\item\em 有安全级别的设备传递完了wifi信息，等待下一步了 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a6f6eea5781804f3e858adcbb66db5370}{device\+Data\+Update\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a80d76c01a0016a2dfb93631c498fa5b1}{mesh\+Sub\+Device\+Data\+Update\+With\+Mesh\+Id\+:device\+Id\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a785b7e310d29f4c73ac74587486a952e}{check\+Device\+Status\+By\+Dev\+Id\+:token\+:ap\+Compensation\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a13f0befe203e9863f2d861ad667a0ce2}{fetch\+Init\+Key\+With\+UUID\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a8673132eb409ce1ba0cd40d3532acd32}{fetch\+PSKInfo\+With\+SL\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_aa6902e7e23c75ff34230a9d9e6ebcae2}{check\+Gateway\+Info\+:token\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em 查询网关绑定状态，是否需要重置 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a2876b0f2b7c8940f7fe077f271309336}{reset\+Device\+:token\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em 重置设备 \end{DoxyCompactList}\item 
+(NSDictionary $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a61a335117148740191f7b26f523a3bd7}{request\+Device\+Model}}
+\begin{DoxyCompactList}\small\item\em 获取设备模型中的 Origin\+Json \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a5b84fa72921faa20131575c78891aeee}{update\+Device\+Model\+With\+Body\+:data\+:lpv\+:type\+:}}
+\begin{DoxyCompactList}\small\item\em 更新设备模型 \end{DoxyCompactList}\item 
+(NSDictionary $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a0ca8760bcce37a3136dd896bf67cf7f3}{request\+Device\+Schema}}
+\begin{DoxyCompactList}\small\item\em 获取激活的 schema \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_ac631e7ad1f50c42a313351bc5cc3e710}{activator\+Device\+Successed}}
+\begin{DoxyCompactList}\small\item\em 免配网激活成功回调 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a0f27d2cceccc12e32f9c2ac0176bcea5}{activator\+Device\+Failure\+With\+Error\+:}}
+\begin{DoxyCompactList}\small\item\em 免配网激活失败回调 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_pairing_handler_delegate-p_a9bd05f5a99dd31017559960fd8b607a5}{did\+Failed\+To\+Connect\+Wi\+Fi\+To\+Device\+:uuid\+:error\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_handler_delegate_8h_source_l00019}{19}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_handler_delegate_8h_source}{Thing\+Smart\+Pairing\+Handler\+Delegate.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a0f27d2cceccc12e32f9c2ac0176bcea5}\label{protocol_thing_smart_pairing_handler_delegate-p_a0f27d2cceccc12e32f9c2ac0176bcea5}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!activatorDeviceFailureWithError:@{activatorDeviceFailureWithError:}}
+\index{activatorDeviceFailureWithError:@{activatorDeviceFailureWithError:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activatorDeviceFailureWithError:}{activatorDeviceFailureWithError:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) activator\+Device\+Failure\+With\+Error\+: \begin{DoxyParamCaption}\item[{(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+免配网激活失败回调 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a0f27d2cceccc12e32f9c2ac0176bcea5}\label{protocol_thing_smart_pairing_handler_delegate-p_a0f27d2cceccc12e32f9c2ac0176bcea5}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!activatorDeviceFailureWithError:@{activatorDeviceFailureWithError:}}
+\index{activatorDeviceFailureWithError:@{activatorDeviceFailureWithError:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activatorDeviceFailureWithError:}{activatorDeviceFailureWithError:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) activator\+Device\+Failure\+With\+Error\+: \begin{DoxyParamCaption}\item[{(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+免配网激活失败回调 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_ac631e7ad1f50c42a313351bc5cc3e710}\label{protocol_thing_smart_pairing_handler_delegate-p_ac631e7ad1f50c42a313351bc5cc3e710}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!activatorDeviceSuccessed@{activatorDeviceSuccessed}}
+\index{activatorDeviceSuccessed@{activatorDeviceSuccessed}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activatorDeviceSuccessed}{activatorDeviceSuccessed}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) activator\+Device\+Successed \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+免配网激活成功回调 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_ac631e7ad1f50c42a313351bc5cc3e710}\label{protocol_thing_smart_pairing_handler_delegate-p_ac631e7ad1f50c42a313351bc5cc3e710}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!activatorDeviceSuccessed@{activatorDeviceSuccessed}}
+\index{activatorDeviceSuccessed@{activatorDeviceSuccessed}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activatorDeviceSuccessed}{activatorDeviceSuccessed}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) activator\+Device\+Successed \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+免配网激活成功回调 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a785b7e310d29f4c73ac74587486a952e}\label{protocol_thing_smart_pairing_handler_delegate-p_a785b7e310d29f4c73ac74587486a952e}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!checkDeviceStatusByDevId:token:apCompensation:@{checkDeviceStatusByDevId:token:apCompensation:}}
+\index{checkDeviceStatusByDevId:token:apCompensation:@{checkDeviceStatusByDevId:token:apCompensation:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{checkDeviceStatusByDevId:token:apCompensation:}{checkDeviceStatusByDevId:token:apCompensation:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) check\+Device\+Status\+By\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(nullable NSString $\ast$)}]{dev\+Id }\item[{token\+:(nullable NSString $\ast$)}]{token }\item[{ap\+Compensation\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{compensation }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a785b7e310d29f4c73ac74587486a952e}\label{protocol_thing_smart_pairing_handler_delegate-p_a785b7e310d29f4c73ac74587486a952e}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!checkDeviceStatusByDevId:token:apCompensation:@{checkDeviceStatusByDevId:token:apCompensation:}}
+\index{checkDeviceStatusByDevId:token:apCompensation:@{checkDeviceStatusByDevId:token:apCompensation:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{checkDeviceStatusByDevId:token:apCompensation:}{checkDeviceStatusByDevId:token:apCompensation:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) check\+Device\+Status\+By\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(nullable NSString $\ast$)}]{dev\+Id }\item[{token\+:(nullable NSString $\ast$)}]{token }\item[{ap\+Compensation\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{compensation }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_aa6902e7e23c75ff34230a9d9e6ebcae2}\label{protocol_thing_smart_pairing_handler_delegate-p_aa6902e7e23c75ff34230a9d9e6ebcae2}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!checkGatewayInfo:token:success:failure:@{checkGatewayInfo:token:success:failure:}}
+\index{checkGatewayInfo:token:success:failure:@{checkGatewayInfo:token:success:failure:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{checkGatewayInfo:token:success:failure:}{checkGatewayInfo:token:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) check\+Gateway\+Info\+: \begin{DoxyParamCaption}\item[{(nullable NSString $\ast$)}]{dev\+Id }\item[{token\+:(nullable NSString $\ast$)}]{token }\item[{success\+:(nullable void($^\wedge$)(void))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+查询网关绑定状态，是否需要重置 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_aa6902e7e23c75ff34230a9d9e6ebcae2}\label{protocol_thing_smart_pairing_handler_delegate-p_aa6902e7e23c75ff34230a9d9e6ebcae2}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!checkGatewayInfo:token:success:failure:@{checkGatewayInfo:token:success:failure:}}
+\index{checkGatewayInfo:token:success:failure:@{checkGatewayInfo:token:success:failure:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{checkGatewayInfo:token:success:failure:}{checkGatewayInfo:token:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) check\+Gateway\+Info\+: \begin{DoxyParamCaption}\item[{(nullable NSString $\ast$)}]{dev\+Id }\item[{token\+:(nullable NSString $\ast$)}]{token }\item[{success\+:(nullable void($^\wedge$)(void))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+查询网关绑定状态，是否需要重置 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a6f6eea5781804f3e858adcbb66db5370}\label{protocol_thing_smart_pairing_handler_delegate-p_a6f6eea5781804f3e858adcbb66db5370}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!deviceDataUpdate:@{deviceDataUpdate:}}
+\index{deviceDataUpdate:@{deviceDataUpdate:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceDataUpdate:}{deviceDataUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+Data\+Update\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a6f6eea5781804f3e858adcbb66db5370}\label{protocol_thing_smart_pairing_handler_delegate-p_a6f6eea5781804f3e858adcbb66db5370}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!deviceDataUpdate:@{deviceDataUpdate:}}
+\index{deviceDataUpdate:@{deviceDataUpdate:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{deviceDataUpdate:}{deviceDataUpdate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+Data\+Update\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a9bd05f5a99dd31017559960fd8b607a5}\label{protocol_thing_smart_pairing_handler_delegate-p_a9bd05f5a99dd31017559960fd8b607a5}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!didFailedToConnectWiFiToDevice:uuid:error:@{didFailedToConnectWiFiToDevice:uuid:error:}}
+\index{didFailedToConnectWiFiToDevice:uuid:error:@{didFailedToConnectWiFiToDevice:uuid:error:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didFailedToConnectWiFiToDevice:uuid:error:}{didFailedToConnectWiFiToDevice:uuid:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Failed\+To\+Connect\+Wi\+Fi\+To\+Device\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{ssid }\item[{uuid\+:(NSString $\ast$)}]{uuid }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a9bd05f5a99dd31017559960fd8b607a5}\label{protocol_thing_smart_pairing_handler_delegate-p_a9bd05f5a99dd31017559960fd8b607a5}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!didFailedToConnectWiFiToDevice:uuid:error:@{didFailedToConnectWiFiToDevice:uuid:error:}}
+\index{didFailedToConnectWiFiToDevice:uuid:error:@{didFailedToConnectWiFiToDevice:uuid:error:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didFailedToConnectWiFiToDevice:uuid:error:}{didFailedToConnectWiFiToDevice:uuid:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Failed\+To\+Connect\+Wi\+Fi\+To\+Device\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{ssid }\item[{uuid\+:(NSString $\ast$)}]{uuid }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a13f0befe203e9863f2d861ad667a0ce2}\label{protocol_thing_smart_pairing_handler_delegate-p_a13f0befe203e9863f2d861ad667a0ce2}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!fetchInitKeyWithUUID:success:failure:@{fetchInitKeyWithUUID:success:failure:}}
+\index{fetchInitKeyWithUUID:success:failure:@{fetchInitKeyWithUUID:success:failure:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{fetchInitKeyWithUUID:success:failure:}{fetchInitKeyWithUUID:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) fetch\+Init\+Key\+With\+UUID\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{success\+:(nullable void($^\wedge$)(NSString $\ast$init\+Key))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a13f0befe203e9863f2d861ad667a0ce2}\label{protocol_thing_smart_pairing_handler_delegate-p_a13f0befe203e9863f2d861ad667a0ce2}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!fetchInitKeyWithUUID:success:failure:@{fetchInitKeyWithUUID:success:failure:}}
+\index{fetchInitKeyWithUUID:success:failure:@{fetchInitKeyWithUUID:success:failure:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{fetchInitKeyWithUUID:success:failure:}{fetchInitKeyWithUUID:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) fetch\+Init\+Key\+With\+UUID\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{success\+:(nullable void($^\wedge$)(NSString $\ast$init\+Key))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a8673132eb409ce1ba0cd40d3532acd32}\label{protocol_thing_smart_pairing_handler_delegate-p_a8673132eb409ce1ba0cd40d3532acd32}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!fetchPSKInfoWithSL:success:failure:@{fetchPSKInfoWithSL:success:failure:}}
+\index{fetchPSKInfoWithSL:success:failure:@{fetchPSKInfoWithSL:success:failure:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{fetchPSKInfoWithSL:success:failure:}{fetchPSKInfoWithSL:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) fetch\+PSKInfo\+With\+SL\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{SL }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a8673132eb409ce1ba0cd40d3532acd32}\label{protocol_thing_smart_pairing_handler_delegate-p_a8673132eb409ce1ba0cd40d3532acd32}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!fetchPSKInfoWithSL:success:failure:@{fetchPSKInfoWithSL:success:failure:}}
+\index{fetchPSKInfoWithSL:success:failure:@{fetchPSKInfoWithSL:success:failure:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{fetchPSKInfoWithSL:success:failure:}{fetchPSKInfoWithSL:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) fetch\+PSKInfo\+With\+SL\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{SL }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a80d76c01a0016a2dfb93631c498fa5b1}\label{protocol_thing_smart_pairing_handler_delegate-p_a80d76c01a0016a2dfb93631c498fa5b1}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!meshSubDeviceDataUpdateWithMeshId:deviceId:error:@{meshSubDeviceDataUpdateWithMeshId:deviceId:error:}}
+\index{meshSubDeviceDataUpdateWithMeshId:deviceId:error:@{meshSubDeviceDataUpdateWithMeshId:deviceId:error:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{meshSubDeviceDataUpdateWithMeshId:deviceId:error:}{meshSubDeviceDataUpdateWithMeshId:deviceId:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) mesh\+Sub\+Device\+Data\+Update\+With\+Mesh\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Id }\item[{device\+Id\+:(NSString $\ast$)}]{device\+Id }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a80d76c01a0016a2dfb93631c498fa5b1}\label{protocol_thing_smart_pairing_handler_delegate-p_a80d76c01a0016a2dfb93631c498fa5b1}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!meshSubDeviceDataUpdateWithMeshId:deviceId:error:@{meshSubDeviceDataUpdateWithMeshId:deviceId:error:}}
+\index{meshSubDeviceDataUpdateWithMeshId:deviceId:error:@{meshSubDeviceDataUpdateWithMeshId:deviceId:error:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{meshSubDeviceDataUpdateWithMeshId:deviceId:error:}{meshSubDeviceDataUpdateWithMeshId:deviceId:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) mesh\+Sub\+Device\+Data\+Update\+With\+Mesh\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Id }\item[{device\+Id\+:(NSString $\ast$)}]{device\+Id }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_adc0adf6550a86b7bd88c4c0b9b5acc55}\label{protocol_thing_smart_pairing_handler_delegate-p_adc0adf6550a86b7bd88c4c0b9b5acc55}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pairingDeviceReady@{pairingDeviceReady}}
+\index{pairingDeviceReady@{pairingDeviceReady}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pairingDeviceReady}{pairingDeviceReady}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) pairing\+Device\+Ready \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_adc0adf6550a86b7bd88c4c0b9b5acc55}\label{protocol_thing_smart_pairing_handler_delegate-p_adc0adf6550a86b7bd88c4c0b9b5acc55}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pairingDeviceReady@{pairingDeviceReady}}
+\index{pairingDeviceReady@{pairingDeviceReady}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pairingDeviceReady}{pairingDeviceReady}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) pairing\+Device\+Ready \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_ae66fe2afbd904a9b465da7894e39926b}\label{protocol_thing_smart_pairing_handler_delegate-p_ae66fe2afbd904a9b465da7894e39926b}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pairingDeviceStateError:@{pairingDeviceStateError:}}
+\index{pairingDeviceStateError:@{pairingDeviceStateError:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pairingDeviceStateError:}{pairingDeviceStateError:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) pairing\+Device\+State\+Error\+: \begin{DoxyParamCaption}\item[{(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_ae66fe2afbd904a9b465da7894e39926b}\label{protocol_thing_smart_pairing_handler_delegate-p_ae66fe2afbd904a9b465da7894e39926b}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pairingDeviceStateError:@{pairingDeviceStateError:}}
+\index{pairingDeviceStateError:@{pairingDeviceStateError:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pairingDeviceStateError:}{pairingDeviceStateError:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) pairing\+Device\+State\+Error\+: \begin{DoxyParamCaption}\item[{(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a99fc984c4c590a592a8e1be014aba641}\label{protocol_thing_smart_pairing_handler_delegate-p_a99fc984c4c590a592a8e1be014aba641}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pairingDidPassWiFiToSecurityLevelDevice:@{pairingDidPassWiFiToSecurityLevelDevice:}}
+\index{pairingDidPassWiFiToSecurityLevelDevice:@{pairingDidPassWiFiToSecurityLevelDevice:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pairingDidPassWiFiToSecurityLevelDevice:}{pairingDidPassWiFiToSecurityLevelDevice:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) pairing\+Did\+Pass\+Wi\+Fi\+To\+Security\+Level\+Device\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+有安全级别的设备传递完了wifi信息，等待下一步了 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a99fc984c4c590a592a8e1be014aba641}\label{protocol_thing_smart_pairing_handler_delegate-p_a99fc984c4c590a592a8e1be014aba641}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pairingDidPassWiFiToSecurityLevelDevice:@{pairingDidPassWiFiToSecurityLevelDevice:}}
+\index{pairingDidPassWiFiToSecurityLevelDevice:@{pairingDidPassWiFiToSecurityLevelDevice:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pairingDidPassWiFiToSecurityLevelDevice:}{pairingDidPassWiFiToSecurityLevelDevice:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) pairing\+Did\+Pass\+Wi\+Fi\+To\+Security\+Level\+Device\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+有安全级别的设备传递完了wifi信息，等待下一步了 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a5e7cc0fa30fb645c3a4e7e5cb49c721f}\label{protocol_thing_smart_pairing_handler_delegate-p_a5e7cc0fa30fb645c3a4e7e5cb49c721f}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pairingError:errorDevice:@{pairingError:errorDevice:}}
+\index{pairingError:errorDevice:@{pairingError:errorDevice:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pairingError:errorDevice:}{pairingError:errorDevice:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) pairing\+Error\+: \begin{DoxyParamCaption}\item[{(nullable NSError $\ast$)}]{error }\item[{error\+Device\+:(nullable id)}]{error\+Device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a5e7cc0fa30fb645c3a4e7e5cb49c721f}\label{protocol_thing_smart_pairing_handler_delegate-p_a5e7cc0fa30fb645c3a4e7e5cb49c721f}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pairingError:errorDevice:@{pairingError:errorDevice:}}
+\index{pairingError:errorDevice:@{pairingError:errorDevice:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pairingError:errorDevice:}{pairingError:errorDevice:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) pairing\+Error\+: \begin{DoxyParamCaption}\item[{(nullable NSError $\ast$)}]{error }\item[{error\+Device\+:(nullable id)}]{error\+Device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_aa36b213dea28da9bc3dca711290a8d0d}\label{protocol_thing_smart_pairing_handler_delegate-p_aa36b213dea28da9bc3dca711290a8d0d}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pairingSuccessWithResult:@{pairingSuccessWithResult:}}
+\index{pairingSuccessWithResult:@{pairingSuccessWithResult:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pairingSuccessWithResult:}{pairingSuccessWithResult:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) pairing\+Success\+With\+Result\+: \begin{DoxyParamCaption}\item[{(nullable id)}]{result }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_aa36b213dea28da9bc3dca711290a8d0d}\label{protocol_thing_smart_pairing_handler_delegate-p_aa36b213dea28da9bc3dca711290a8d0d}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pairingSuccessWithResult:@{pairingSuccessWithResult:}}
+\index{pairingSuccessWithResult:@{pairingSuccessWithResult:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pairingSuccessWithResult:}{pairingSuccessWithResult:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) pairing\+Success\+With\+Result\+: \begin{DoxyParamCaption}\item[{(nullable id)}]{result }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_af06f532e1094ca78a423c60ea302740e}\label{protocol_thing_smart_pairing_handler_delegate-p_af06f532e1094ca78a423c60ea302740e}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pairingWithResult:error:step:@{pairingWithResult:error:step:}}
+\index{pairingWithResult:error:step:@{pairingWithResult:error:step:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pairingWithResult:error:step:}{pairingWithResult:error:step:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) pairing\+With\+Result\+: \begin{DoxyParamCaption}\item[{(nullable id)}]{result }\item[{error\+:(nullable NSError $\ast$)}]{error }\item[{step\+:(Thing\+Activator\+Step)}]{step }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_af06f532e1094ca78a423c60ea302740e}\label{protocol_thing_smart_pairing_handler_delegate-p_af06f532e1094ca78a423c60ea302740e}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pairingWithResult:error:step:@{pairingWithResult:error:step:}}
+\index{pairingWithResult:error:step:@{pairingWithResult:error:step:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pairingWithResult:error:step:}{pairingWithResult:error:step:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) pairing\+With\+Result\+: \begin{DoxyParamCaption}\item[{(nullable id)}]{result }\item[{error\+:(nullable NSError $\ast$)}]{error }\item[{step\+:(Thing\+Activator\+Step)}]{step }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_aa5dc5d3bed39295c13cd43c5f729c3ad}\label{protocol_thing_smart_pairing_handler_delegate-p_aa5dc5d3bed39295c13cd43c5f729c3ad}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pollingDeviceWithToken:retry:success:failure:@{pollingDeviceWithToken:retry:success:failure:}}
+\index{pollingDeviceWithToken:retry:success:failure:@{pollingDeviceWithToken:retry:success:failure:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pollingDeviceWithToken:retry:success:failure:}{pollingDeviceWithToken:retry:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) polling\+Device\+With\+Token\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{token }\item[{retry\+:(nullable \mbox{\hyperlink{_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_handler_delegate_8h_a0202f3971eddc8052cbf43b8cdba8630}{Thing\+Polling\+Retry}})}]{retry }\item[{success\+:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_pair_success_device}{Thing\+Smart\+Pair\+Success\+Device}} $\ast$\+\_\+\+Nullable device))}]{success }\item[{failure\+:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_pair_error_device}{Thing\+Smart\+Pair\+Error\+Device}} $\ast$\+\_\+\+Nullable device))}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+开始设备轮询 
+\begin{DoxyParams}{Parameters}
+{\em token} & token \\
+\hline
+{\em retry} & 重试回调 \\
+\hline
+{\em success} & 成功轮询到设备的回调 \\
+\hline
+{\em failure} & 轮询到配网失败的设备回调 @discuss\+: 开始设备轮询时从服务端拉取的设备信息不一定存在，所以需要多次触发接口查询设备是否成功配网，如果当前没有轮询到设备则需要调用 retry() 进行重试，轮询到设备后也有可能依然存在正在配网的设备正在上线中，所以依然需要调用 retry() , 不用担心循环的问题，在该方法中有超时和停止设定，当轮询到达一定时间时会自动停止，在手动调用 stop\+Config\+Wi\+Fi 时也会停止轮询操作。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_aa5dc5d3bed39295c13cd43c5f729c3ad}\label{protocol_thing_smart_pairing_handler_delegate-p_aa5dc5d3bed39295c13cd43c5f729c3ad}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!pollingDeviceWithToken:retry:success:failure:@{pollingDeviceWithToken:retry:success:failure:}}
+\index{pollingDeviceWithToken:retry:success:failure:@{pollingDeviceWithToken:retry:success:failure:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{pollingDeviceWithToken:retry:success:failure:}{pollingDeviceWithToken:retry:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) polling\+Device\+With\+Token\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{token }\item[{retry\+:(nullable \mbox{\hyperlink{_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_handler_delegate_8h_a0202f3971eddc8052cbf43b8cdba8630}{Thing\+Polling\+Retry}})}]{retry }\item[{success\+:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_pair_success_device}{Thing\+Smart\+Pair\+Success\+Device}} $\ast$\+\_\+\+Nullable device))}]{success }\item[{failure\+:(nullable void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_pair_error_device}{Thing\+Smart\+Pair\+Error\+Device}} $\ast$\+\_\+\+Nullable device))}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+开始设备轮询 
+\begin{DoxyParams}{Parameters}
+{\em token} & token \\
+\hline
+{\em retry} & 重试回调 \\
+\hline
+{\em success} & 成功轮询到设备的回调 \\
+\hline
+{\em failure} & 轮询到配网失败的设备回调 @discuss\+: 开始设备轮询时从服务端拉取的设备信息不一定存在，所以需要多次触发接口查询设备是否成功配网，如果当前没有轮询到设备则需要调用 retry() 进行重试，轮询到设备后也有可能依然存在正在配网的设备正在上线中，所以依然需要调用 retry() , 不用担心循环的问题，在该方法中有超时和停止设定，当轮询到达一定时间时会自动停止，在手动调用 stop\+Config\+Wi\+Fi 时也会停止轮询操作。 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a61a335117148740191f7b26f523a3bd7}\label{protocol_thing_smart_pairing_handler_delegate-p_a61a335117148740191f7b26f523a3bd7}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!requestDeviceModel@{requestDeviceModel}}
+\index{requestDeviceModel@{requestDeviceModel}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{requestDeviceModel}{requestDeviceModel}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) request\+Device\+Model \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+获取设备模型中的 Origin\+Json 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a61a335117148740191f7b26f523a3bd7}\label{protocol_thing_smart_pairing_handler_delegate-p_a61a335117148740191f7b26f523a3bd7}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!requestDeviceModel@{requestDeviceModel}}
+\index{requestDeviceModel@{requestDeviceModel}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{requestDeviceModel}{requestDeviceModel}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) request\+Device\+Model \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+获取设备模型中的 Origin\+Json 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a0ca8760bcce37a3136dd896bf67cf7f3}\label{protocol_thing_smart_pairing_handler_delegate-p_a0ca8760bcce37a3136dd896bf67cf7f3}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!requestDeviceSchema@{requestDeviceSchema}}
+\index{requestDeviceSchema@{requestDeviceSchema}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{requestDeviceSchema}{requestDeviceSchema}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) request\+Device\+Schema \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+获取激活的 schema 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a0ca8760bcce37a3136dd896bf67cf7f3}\label{protocol_thing_smart_pairing_handler_delegate-p_a0ca8760bcce37a3136dd896bf67cf7f3}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!requestDeviceSchema@{requestDeviceSchema}}
+\index{requestDeviceSchema@{requestDeviceSchema}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{requestDeviceSchema}{requestDeviceSchema}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) request\+Device\+Schema \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+获取激活的 schema 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a2876b0f2b7c8940f7fe077f271309336}\label{protocol_thing_smart_pairing_handler_delegate-p_a2876b0f2b7c8940f7fe077f271309336}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!resetDevice:token:success:failure:@{resetDevice:token:success:failure:}}
+\index{resetDevice:token:success:failure:@{resetDevice:token:success:failure:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{resetDevice:token:success:failure:}{resetDevice:token:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) reset\+Device\+: \begin{DoxyParamCaption}\item[{(nullable NSString $\ast$)}]{dev\+Id }\item[{token\+:(nullable NSString $\ast$)}]{token }\item[{success\+:(nullable void($^\wedge$)(void))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+重置设备 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a2876b0f2b7c8940f7fe077f271309336}\label{protocol_thing_smart_pairing_handler_delegate-p_a2876b0f2b7c8940f7fe077f271309336}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!resetDevice:token:success:failure:@{resetDevice:token:success:failure:}}
+\index{resetDevice:token:success:failure:@{resetDevice:token:success:failure:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{resetDevice:token:success:failure:}{resetDevice:token:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) reset\+Device\+: \begin{DoxyParamCaption}\item[{(nullable NSString $\ast$)}]{dev\+Id }\item[{token\+:(nullable NSString $\ast$)}]{token }\item[{success\+:(nullable void($^\wedge$)(void))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+重置设备 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a5b84fa72921faa20131575c78891aeee}\label{protocol_thing_smart_pairing_handler_delegate-p_a5b84fa72921faa20131575c78891aeee}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!updateDeviceModelWithBody:data:lpv:type:@{updateDeviceModelWithBody:data:lpv:type:}}
+\index{updateDeviceModelWithBody:data:lpv:type:@{updateDeviceModelWithBody:data:lpv:type:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{updateDeviceModelWithBody:data:lpv:type:}{updateDeviceModelWithBody:data:lpv:type:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+Device\+Model\+With\+Body\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{body }\item[{data\+:(NSData $\ast$)}]{data }\item[{lpv\+:(NSString $\ast$)}]{lpv }\item[{type\+:(int)}]{type }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+更新设备模型 
+
+\mbox{\Hypertarget{protocol_thing_smart_pairing_handler_delegate-p_a5b84fa72921faa20131575c78891aeee}\label{protocol_thing_smart_pairing_handler_delegate-p_a5b84fa72921faa20131575c78891aeee}} 
+\index{$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}!updateDeviceModelWithBody:data:lpv:type:@{updateDeviceModelWithBody:data:lpv:type:}}
+\index{updateDeviceModelWithBody:data:lpv:type:@{updateDeviceModelWithBody:data:lpv:type:}!$<$ThingSmartPairingHandlerDelegate$>$@{$<$ThingSmartPairingHandlerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{updateDeviceModelWithBody:data:lpv:type:}{updateDeviceModelWithBody:data:lpv:type:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+Device\+Model\+With\+Body\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{body }\item[{data\+:(NSData $\ast$)}]{data }\item[{lpv\+:(NSString $\ast$)}]{lpv }\item[{type\+:(int)}]{type }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+更新设备模型 
+
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Pairing\+Core\+Kit/\+Build/\+Thing\+Smart\+Pairing\+Core\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Pairing\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_handler_delegate_8h}{Thing\+Smart\+Pairing\+Handler\+Delegate.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Pairing\+Core\+Kit/\+Build/\+Thing\+Smart\+Pairing\+Core\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Pairing\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_pairing_core_kit_8framework_2_headers_2_thing_smart_pairing_handler_delegate_8h}{Thing\+Smart\+Pairing\+Handler\+Delegate.\+h}}\end{DoxyCompactItemize}

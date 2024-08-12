@@ -1,0 +1,64 @@
+\hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source}{}\doxysection{Thing\+Group\+Def.\+h}
+\label{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingGroupManagerKit/ThingGroupManagerKit.xcframework/ios-\/arm64/ThingGroupManagerKit.framework/Headers/ThingGroupDef.h@{/Users/humtong/Downloads/Pods\_副本/ThingGroupManagerKit/ThingGroupManagerKit.xcframework/ios-\/arm64/ThingGroupManagerKit.framework/Headers/ThingGroupDef.h}}
+\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00002}00002 \textcolor{comment}{//  ThingGroupDef.h}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00003}00003 \textcolor{comment}{//  Pods}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00005}00005 \textcolor{comment}{//  Created by yuheng on 2021/6/25.}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00008}00008 \textcolor{preprocessor}{\#ifndef ThingGroupDef\_h}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00009}00009 \textcolor{preprocessor}{\#define ThingGroupDef\_h}}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00011}00011 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_thing_smart_group_dev_list_model}{ThingSmartGroupDevListModel}};}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00013}\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a5de73c6cb77a3d7d2918363990800418}{00013}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{x86__64-simulator_2_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a5de73c6cb77a3d7d2918363990800418}{ThingGroupDevListResult}})(\mbox{\hyperlink{interface_n_s_array}{NSArray<ThingSmartGroupDevListModel *>}} *list);}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00014}\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a022bbaf949afcfac9411efb1557ed582}{00014}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{x86__64-simulator_2_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a022bbaf949afcfac9411efb1557ed582}{ThingGroupSuccess}})(NSString *groupId);}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00015}\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a54f151780763f3e8cc11a09cb9516e86}{00015}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{x86__64-simulator_2_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a54f151780763f3e8cc11a09cb9516e86}{ThingGroupFailure}})(NSError *\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}});}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00016}\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a3a69a879e72d9b484ad622bafc1aa706}{00016}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{x86__64-simulator_2_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a3a69a879e72d9b484ad622bafc1aa706}{ThingGroupResultFailure}})(NSDictionary <NSString *, id> * errorInfo);}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00017}\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_acca2ce28da8e918fa097b2ae9b8bbfd8}{00017}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{x86__64-simulator_2_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_acca2ce28da8e918fa097b2ae9b8bbfd8}{ThingGroupProcess}})(NSDictionary<NSString *,NSNumber *> *process);}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00019}\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a2ba64cdb58a7c5fd42fe56d74092cf5c}{00019}} \textcolor{keyword}{typedef} \mbox{\hyperlink{x86__64-simulator_2_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a2ba64cdb58a7c5fd42fe56d74092cf5c}{NS\_ENUM}}(NSInteger, ThingRemoteControlFilterType) \{}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00021}00021     ThingRemoteControlFilterTypePCC = 0,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00023}00023     ThingRemoteControlFilterTypeCategory = 1,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00024}00024 \};}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00026}\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_adb84aa5e0ea874555fc3af8a754c8057}{00026}} \textcolor{keyword}{typedef} \mbox{\hyperlink{x86__64-simulator_2_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a2ba64cdb58a7c5fd42fe56d74092cf5c}{NS\_ENUM}}(NSInteger, ThingGroupErrorType) \{}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00028}00028     ThingGroupErrorTypeLimit = 1,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00030}00030     ThingGroupErrorTypeSubDeviceTimeout = 2,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00032}00032     ThingGroupErrorTypeValueOutOfRange = 3,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00034}00034     ThingGroupErrorTypeWriteFileError = 4,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00036}00036     ThingGroupErrorTypeOther = 5,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00038}00038     ThingGroupErrorTypeRequestTimeout = 6,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00040}00040     ThingGroupErrorTypeSendCommandFailure = 7,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00042}00042     ThingGroupErrorTypeBLEPoweredOff = 8,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00043}00043 \};}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00045}\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a1bb2b3b7ddde075e0bf8174fa313c48f}{00045}} \textcolor{keyword}{typedef} \mbox{\hyperlink{x86__64-simulator_2_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a2ba64cdb58a7c5fd42fe56d74092cf5c}{NS\_ENUM}}(NSInteger, \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_s_i_g_mesh_error_code_8h_ad73092eda9cb69d28b94de7a8b023ae0}{ThingBleMeshHandleGroupError}}) \{}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00047}00047     ThingBleMeshHandleGroupTimeout = 1,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00049}00049     ThingBleMeshHandleGroupEmpty = 2,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00051}00051     ThingBleMeshHandleGroupFull = 3,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00053}00053     ThingBleMeshHandleGroupException = 4,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00054}00054 \};}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00056}\mbox{\hyperlink{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a3158473a6011c094e79b6796d2098377}{00056}} \textcolor{keyword}{typedef} \mbox{\hyperlink{x86__64-simulator_2_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_a2ba64cdb58a7c5fd42fe56d74092cf5c}{NS\_ENUM}}(NSInteger, ThingGroupBizType) \{}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00058}00058     ThingGroupBizTypeWiFi = 0,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00060}00060     ThingGroupBizTypeStandardWiFi = 1,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00062}00062     ThingGroupBizTypeZigbee = 2,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00064}00064     ThingGroupBizTypeBLEMesh = 3,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00066}00066     ThingGroupBizTypeSIGMesh = 4,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00068}00068     ThingGroupBizTypeStandardSIGMesh = 5,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00070}00070     ThingGroupBizTypeBeacon = 6,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00072}00072     ThingGroupBizTypeZigbeeRemoteControl = 7,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00074}00074     ThingGroupBizTypeBLEMeshRemoteControl = 8,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00076}00076     ThingGroupBizTypeSIGMeshRemoteControl = 9,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00078}00078     ThingGroupBizTypeStandardZigbee = 10,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00080}00080     ThingGroupBizTypeThread = 11,}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00081}00081 \};}
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_thing_group_manager_kit_8framework_2_headers_2_thing_group_def_8h_source_l00084}00084 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* ThingGroupDef\_h */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

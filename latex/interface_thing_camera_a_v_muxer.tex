@@ -1,0 +1,421 @@
+\hypertarget{interface_thing_camera_a_v_muxer}{}\doxysection{Thing\+Camera\+AVMuxer Class Reference}
+\label{interface_thing_camera_a_v_muxer}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+
+
+{\ttfamily \#import $<$Thing\+Camera\+AVMuxer.\+h$>$}
+
+Inheritance diagram for Thing\+Camera\+AVMuxer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_camera_a_v_muxer}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7058663d2906fb7fc6b29aad68949247}{init\+With\+Video\+Path\+:file\+\_\+name\+:rotate\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a464974ae1d9bbb978cb06cc126750c5c}{add\+Video\+Track\+:width\+:height\+:fps\+:bitrate\+:color\+\_\+fmt\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a5123804dfaa683a5962c45afb2eb440e}{add\+Audio\+Track\+:sample\+\_\+rate\+:channel\+:bitwidth\+:pcm\+Format\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_aaa9ecd84445c1db11b6d101919bf4a83}{start\+Record}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a840d55a50f4b00fcf34a98d569fb6047}{send\+Audio\+Frame\+With\+Pcm\+Data\+:size\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a98bdb1946c97aa0472f472747c1a647b}{send\+Video\+Frame\+With\+Pixbuffer\+Data\+:timestamp\+:}}
+\item 
+(CVPixel\+Buffer\+Ref) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_abd051b46f657dd1564e77edd6fe8666e}{send\+Video\+Frame\+With\+Yuv\+Data\+:u\+:v\+:width\+:height\+:timestamp\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a76f0b6f173e8d78b8cda11d6558b1b8d}{stop\+Record}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7058663d2906fb7fc6b29aad68949247}{init\+With\+Video\+Path\+:file\+\_\+name\+:rotate\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a464974ae1d9bbb978cb06cc126750c5c}{add\+Video\+Track\+:width\+:height\+:fps\+:bitrate\+:color\+\_\+fmt\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a5123804dfaa683a5962c45afb2eb440e}{add\+Audio\+Track\+:sample\+\_\+rate\+:channel\+:bitwidth\+:pcm\+Format\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_aaa9ecd84445c1db11b6d101919bf4a83}{start\+Record}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a840d55a50f4b00fcf34a98d569fb6047}{send\+Audio\+Frame\+With\+Pcm\+Data\+:size\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a98bdb1946c97aa0472f472747c1a647b}{send\+Video\+Frame\+With\+Pixbuffer\+Data\+:timestamp\+:}}
+\item 
+(CVPixel\+Buffer\+Ref) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_abd051b46f657dd1564e77edd6fe8666e}{send\+Video\+Frame\+With\+Yuv\+Data\+:u\+:v\+:width\+:height\+:timestamp\+:type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a76f0b6f173e8d78b8cda11d6558b1b8d}{stop\+Record}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3d}{en\+Muxer\+Color\+Fmt}} \{ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3da55cb3cde2ec64913eccd1263ea538d1a}{MUXER\+\_\+\+COLOR\+\_\+\+NV12}} = 0
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3daad95b5b13bc0b0885c23abfb080fd08c}{MUXER\+\_\+\+COLOR\+\_\+\+I420}}
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3da55cb3cde2ec64913eccd1263ea538d1a}{MUXER\+\_\+\+COLOR\+\_\+\+NV12}} = 0
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3daad95b5b13bc0b0885c23abfb080fd08c}{MUXER\+\_\+\+COLOR\+\_\+\+I420}}
+ \}
+\item 
+enum \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801f}{en\+Video\+Codec\+Fmt}} \{ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801faa73b195ccef6213998311d5fa47de9b9}{MUXER\+\_\+\+CODEC\+\_\+\+H264}} = 0
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801fa207f9b497f4af3b6cb17f227c85e1115}{MUXER\+\_\+\+CODEC\+\_\+\+H265}}
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801faa73b195ccef6213998311d5fa47de9b9}{MUXER\+\_\+\+CODEC\+\_\+\+H264}} = 0
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801fa207f9b497f4af3b6cb17f227c85e1115}{MUXER\+\_\+\+CODEC\+\_\+\+H265}}
+ \}
+\item 
+enum \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33ce}{en\+Audio\+Codec\+Fmt}} \{ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33cea742fea47fff1fbff2c3e9756367e2a91}{MUXER\+\_\+\+CODEC\+\_\+\+AAC}} = 0
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33cea742fea47fff1fbff2c3e9756367e2a91}{MUXER\+\_\+\+CODEC\+\_\+\+AAC}} = 0
+ \}
+\item 
+enum \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3d}{en\+Muxer\+Color\+Fmt}} \{ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3da55cb3cde2ec64913eccd1263ea538d1a}{MUXER\+\_\+\+COLOR\+\_\+\+NV12}} = 0
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3daad95b5b13bc0b0885c23abfb080fd08c}{MUXER\+\_\+\+COLOR\+\_\+\+I420}}
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3da55cb3cde2ec64913eccd1263ea538d1a}{MUXER\+\_\+\+COLOR\+\_\+\+NV12}} = 0
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3daad95b5b13bc0b0885c23abfb080fd08c}{MUXER\+\_\+\+COLOR\+\_\+\+I420}}
+ \}
+\item 
+enum \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801f}{en\+Video\+Codec\+Fmt}} \{ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801faa73b195ccef6213998311d5fa47de9b9}{MUXER\+\_\+\+CODEC\+\_\+\+H264}} = 0
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801fa207f9b497f4af3b6cb17f227c85e1115}{MUXER\+\_\+\+CODEC\+\_\+\+H265}}
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801faa73b195ccef6213998311d5fa47de9b9}{MUXER\+\_\+\+CODEC\+\_\+\+H264}} = 0
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801fa207f9b497f4af3b6cb17f227c85e1115}{MUXER\+\_\+\+CODEC\+\_\+\+H265}}
+ \}
+\item 
+enum \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33ce}{en\+Audio\+Codec\+Fmt}} \{ \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33cea742fea47fff1fbff2c3e9756367e2a91}{MUXER\+\_\+\+CODEC\+\_\+\+AAC}} = 0
+, \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33cea742fea47fff1fbff2c3e9756367e2a91}{MUXER\+\_\+\+CODEC\+\_\+\+AAC}} = 0
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_thing_camera_a_v_muxer_a712a89ad9ed5e816519cb1de194ff692}{k\+Thing\+Camera\+AVMuxer\+\_\+\+No\+Err}} = 0
+\item 
+\mbox{\hyperlink{interface_thing_camera_a_v_muxer_a77a8a8470f06a9eb10ed6e9d3f8e6757}{k\+Thing\+Camera\+AVMuxer\+\_\+\+Err}} = -\/1
+\item 
+\mbox{\hyperlink{interface_thing_camera_a_v_muxer_a9bad47af7e0a3da30b9ed9ab1feb7495}{k\+Thing\+Camera\+AVMuxer\+\_\+\+Invalid\+Param}} = -\/2
+\item 
+\mbox{\hyperlink{interface_thing_camera_a_v_muxer_a23dc65789276eb3a8229480b789d599d}{k\+Thing\+Camera\+AVMuxer\+\_\+\+Unsupported}} = -\/3
+\item 
+\mbox{\hyperlink{interface_thing_camera_a_v_muxer_a5c478ee7676a5e1c4fece785ad4d80f5}{k\+Thing\+Camera\+AVMuxer\+\_\+\+Undefined\+\_\+\+Behavior}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source_l00014}{14}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source}{Thing\+Camera\+AVMuxer.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33ce}\label{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33ce}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!enAudioCodecFmt@{enAudioCodecFmt}}
+\index{enAudioCodecFmt@{enAudioCodecFmt}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{enAudioCodecFmt}{enAudioCodecFmt}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (enum) \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33ce}{en\+Audio\+Codec\+Fmt}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_CODEC\_AAC@{MUXER\_CODEC\_AAC}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_CODEC\_AAC@{MUXER\_CODEC\_AAC}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33cea742fea47fff1fbff2c3e9756367e2a91}\label{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33cea742fea47fff1fbff2c3e9756367e2a91}} 
+MUXER\+\_\+\+CODEC\+\_\+\+AAC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_CODEC\_AAC@{MUXER\_CODEC\_AAC}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_CODEC\_AAC@{MUXER\_CODEC\_AAC}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33cea742fea47fff1fbff2c3e9756367e2a91}\label{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33cea742fea47fff1fbff2c3e9756367e2a91}} 
+MUXER\+\_\+\+CODEC\+\_\+\+AAC&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source_l00035}{35}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source}{Thing\+Camera\+AVMuxer.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33ce}\label{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33ce}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!enAudioCodecFmt@{enAudioCodecFmt}}
+\index{enAudioCodecFmt@{enAudioCodecFmt}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{enAudioCodecFmt}{enAudioCodecFmt}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (enum) \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33ce}{en\+Audio\+Codec\+Fmt}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_CODEC\_AAC@{MUXER\_CODEC\_AAC}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_CODEC\_AAC@{MUXER\_CODEC\_AAC}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33cea742fea47fff1fbff2c3e9756367e2a91}\label{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33cea742fea47fff1fbff2c3e9756367e2a91}} 
+MUXER\+\_\+\+CODEC\+\_\+\+AAC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_CODEC\_AAC@{MUXER\_CODEC\_AAC}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_CODEC\_AAC@{MUXER\_CODEC\_AAC}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33cea742fea47fff1fbff2c3e9756367e2a91}\label{interface_thing_camera_a_v_muxer_a0673b0b83b91091075a6840466ca33cea742fea47fff1fbff2c3e9756367e2a91}} 
+MUXER\+\_\+\+CODEC\+\_\+\+AAC&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source_l00035}{35}} of file \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source}{Thing\+Camera\+AVMuxer.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3d}\label{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3d}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!enMuxerColorFmt@{enMuxerColorFmt}}
+\index{enMuxerColorFmt@{enMuxerColorFmt}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{enMuxerColorFmt}{enMuxerColorFmt}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (enum) \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3d}{en\+Muxer\+Color\+Fmt}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_COLOR\_NV12@{MUXER\_COLOR\_NV12}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_COLOR\_NV12@{MUXER\_COLOR\_NV12}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3da55cb3cde2ec64913eccd1263ea538d1a}\label{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3da55cb3cde2ec64913eccd1263ea538d1a}} 
+MUXER\+\_\+\+COLOR\+\_\+\+NV12&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_COLOR\_I420@{MUXER\_COLOR\_I420}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_COLOR\_I420@{MUXER\_COLOR\_I420}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3daad95b5b13bc0b0885c23abfb080fd08c}\label{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3daad95b5b13bc0b0885c23abfb080fd08c}} 
+MUXER\+\_\+\+COLOR\+\_\+\+I420&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_COLOR\_NV12@{MUXER\_COLOR\_NV12}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_COLOR\_NV12@{MUXER\_COLOR\_NV12}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3da55cb3cde2ec64913eccd1263ea538d1a}\label{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3da55cb3cde2ec64913eccd1263ea538d1a}} 
+MUXER\+\_\+\+COLOR\+\_\+\+NV12&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_COLOR\_I420@{MUXER\_COLOR\_I420}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_COLOR\_I420@{MUXER\_COLOR\_I420}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3daad95b5b13bc0b0885c23abfb080fd08c}\label{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3daad95b5b13bc0b0885c23abfb080fd08c}} 
+MUXER\+\_\+\+COLOR\+\_\+\+I420&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source_l00024}{24}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source}{Thing\+Camera\+AVMuxer.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3d}\label{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3d}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!enMuxerColorFmt@{enMuxerColorFmt}}
+\index{enMuxerColorFmt@{enMuxerColorFmt}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{enMuxerColorFmt}{enMuxerColorFmt}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (enum) \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3d}{en\+Muxer\+Color\+Fmt}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_COLOR\_NV12@{MUXER\_COLOR\_NV12}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_COLOR\_NV12@{MUXER\_COLOR\_NV12}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3da55cb3cde2ec64913eccd1263ea538d1a}\label{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3da55cb3cde2ec64913eccd1263ea538d1a}} 
+MUXER\+\_\+\+COLOR\+\_\+\+NV12&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_COLOR\_I420@{MUXER\_COLOR\_I420}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_COLOR\_I420@{MUXER\_COLOR\_I420}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3daad95b5b13bc0b0885c23abfb080fd08c}\label{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3daad95b5b13bc0b0885c23abfb080fd08c}} 
+MUXER\+\_\+\+COLOR\+\_\+\+I420&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_COLOR\_NV12@{MUXER\_COLOR\_NV12}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_COLOR\_NV12@{MUXER\_COLOR\_NV12}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3da55cb3cde2ec64913eccd1263ea538d1a}\label{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3da55cb3cde2ec64913eccd1263ea538d1a}} 
+MUXER\+\_\+\+COLOR\+\_\+\+NV12&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_COLOR\_I420@{MUXER\_COLOR\_I420}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_COLOR\_I420@{MUXER\_COLOR\_I420}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3daad95b5b13bc0b0885c23abfb080fd08c}\label{interface_thing_camera_a_v_muxer_a7769f4036f9d5044910a8952fa07ee3daad95b5b13bc0b0885c23abfb080fd08c}} 
+MUXER\+\_\+\+COLOR\+\_\+\+I420&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source_l00024}{24}} of file \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source}{Thing\+Camera\+AVMuxer.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801f}\label{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801f}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!enVideoCodecFmt@{enVideoCodecFmt}}
+\index{enVideoCodecFmt@{enVideoCodecFmt}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{enVideoCodecFmt}{enVideoCodecFmt}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (enum) \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801f}{en\+Video\+Codec\+Fmt}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_CODEC\_H264@{MUXER\_CODEC\_H264}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_CODEC\_H264@{MUXER\_CODEC\_H264}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801faa73b195ccef6213998311d5fa47de9b9}\label{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801faa73b195ccef6213998311d5fa47de9b9}} 
+MUXER\+\_\+\+CODEC\+\_\+\+H264&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_CODEC\_H265@{MUXER\_CODEC\_H265}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_CODEC\_H265@{MUXER\_CODEC\_H265}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801fa207f9b497f4af3b6cb17f227c85e1115}\label{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801fa207f9b497f4af3b6cb17f227c85e1115}} 
+MUXER\+\_\+\+CODEC\+\_\+\+H265&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_CODEC\_H264@{MUXER\_CODEC\_H264}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_CODEC\_H264@{MUXER\_CODEC\_H264}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801faa73b195ccef6213998311d5fa47de9b9}\label{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801faa73b195ccef6213998311d5fa47de9b9}} 
+MUXER\+\_\+\+CODEC\+\_\+\+H264&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_CODEC\_H265@{MUXER\_CODEC\_H265}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_CODEC\_H265@{MUXER\_CODEC\_H265}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801fa207f9b497f4af3b6cb17f227c85e1115}\label{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801fa207f9b497f4af3b6cb17f227c85e1115}} 
+MUXER\+\_\+\+CODEC\+\_\+\+H265&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source_l00030}{30}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source}{Thing\+Camera\+AVMuxer.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801f}\label{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801f}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!enVideoCodecFmt@{enVideoCodecFmt}}
+\index{enVideoCodecFmt@{enVideoCodecFmt}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{enVideoCodecFmt}{enVideoCodecFmt}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (enum) \mbox{\hyperlink{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801f}{en\+Video\+Codec\+Fmt}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_CODEC\_H264@{MUXER\_CODEC\_H264}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_CODEC\_H264@{MUXER\_CODEC\_H264}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801faa73b195ccef6213998311d5fa47de9b9}\label{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801faa73b195ccef6213998311d5fa47de9b9}} 
+MUXER\+\_\+\+CODEC\+\_\+\+H264&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_CODEC\_H265@{MUXER\_CODEC\_H265}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_CODEC\_H265@{MUXER\_CODEC\_H265}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801fa207f9b497f4af3b6cb17f227c85e1115}\label{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801fa207f9b497f4af3b6cb17f227c85e1115}} 
+MUXER\+\_\+\+CODEC\+\_\+\+H265&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_CODEC\_H264@{MUXER\_CODEC\_H264}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_CODEC\_H264@{MUXER\_CODEC\_H264}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801faa73b195ccef6213998311d5fa47de9b9}\label{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801faa73b195ccef6213998311d5fa47de9b9}} 
+MUXER\+\_\+\+CODEC\+\_\+\+H264&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUXER\_CODEC\_H265@{MUXER\_CODEC\_H265}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!MUXER\_CODEC\_H265@{MUXER\_CODEC\_H265}}}\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801fa207f9b497f4af3b6cb17f227c85e1115}\label{interface_thing_camera_a_v_muxer_a2dcdd03a9e939d6eb062dc0973a4801fa207f9b497f4af3b6cb17f227c85e1115}} 
+MUXER\+\_\+\+CODEC\+\_\+\+H265&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source_l00030}{30}} of file \mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source}{Thing\+Camera\+AVMuxer.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a5123804dfaa683a5962c45afb2eb440e}\label{interface_thing_camera_a_v_muxer_a5123804dfaa683a5962c45afb2eb440e}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!addAudioTrack:sample\_rate:channel:bitwidth:pcmFormat:@{addAudioTrack:sample\_rate:channel:bitwidth:pcmFormat:}}
+\index{addAudioTrack:sample\_rate:channel:bitwidth:pcmFormat:@{addAudioTrack:sample\_rate:channel:bitwidth:pcmFormat:}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{addAudioTrack:sample\_rate:channel:bitwidth:pcmFormat:}{addAudioTrack:sample\_rate:channel:bitwidth:pcmFormat:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) add\+Audio\+Track\+: \begin{DoxyParamCaption}\item[{(int)}]{out\+\_\+audio\+\_\+codec }\item[{sample\+\_\+rate\+:(int)}]{sample\+Rate }\item[{channel\+:(int)}]{channels }\item[{bitwidth\+:(int)}]{bitwidth }\item[{pcm\+Format\+:(int)}]{pcm\+\_\+fmt }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a5123804dfaa683a5962c45afb2eb440e}\label{interface_thing_camera_a_v_muxer_a5123804dfaa683a5962c45afb2eb440e}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!addAudioTrack:sample\_rate:channel:bitwidth:pcmFormat:@{addAudioTrack:sample\_rate:channel:bitwidth:pcmFormat:}}
+\index{addAudioTrack:sample\_rate:channel:bitwidth:pcmFormat:@{addAudioTrack:sample\_rate:channel:bitwidth:pcmFormat:}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{addAudioTrack:sample\_rate:channel:bitwidth:pcmFormat:}{addAudioTrack:sample\_rate:channel:bitwidth:pcmFormat:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) add\+Audio\+Track\+: \begin{DoxyParamCaption}\item[{(int)}]{out\+\_\+audio\+\_\+codec }\item[{sample\+\_\+rate\+:(int)}]{sample\+Rate }\item[{channel\+:(int)}]{channels }\item[{bitwidth\+:(int)}]{bitwidth }\item[{pcm\+Format\+:(int)}]{pcm\+\_\+fmt }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a464974ae1d9bbb978cb06cc126750c5c}\label{interface_thing_camera_a_v_muxer_a464974ae1d9bbb978cb06cc126750c5c}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!addVideoTrack:width:height:fps:bitrate:color\_fmt:@{addVideoTrack:width:height:fps:bitrate:color\_fmt:}}
+\index{addVideoTrack:width:height:fps:bitrate:color\_fmt:@{addVideoTrack:width:height:fps:bitrate:color\_fmt:}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{addVideoTrack:width:height:fps:bitrate:color\_fmt:}{addVideoTrack:width:height:fps:bitrate:color\_fmt:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) add\+Video\+Track\+: \begin{DoxyParamCaption}\item[{(int)}]{out\+\_\+video\+\_\+codec }\item[{width\+:(int)}]{width }\item[{height\+:(int)}]{height }\item[{fps\+:(int)}]{fps }\item[{bitrate\+:(int)}]{bitrate }\item[{color\+\_\+fmt\+:(int)}]{color\+\_\+fmt }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a464974ae1d9bbb978cb06cc126750c5c}\label{interface_thing_camera_a_v_muxer_a464974ae1d9bbb978cb06cc126750c5c}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!addVideoTrack:width:height:fps:bitrate:color\_fmt:@{addVideoTrack:width:height:fps:bitrate:color\_fmt:}}
+\index{addVideoTrack:width:height:fps:bitrate:color\_fmt:@{addVideoTrack:width:height:fps:bitrate:color\_fmt:}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{addVideoTrack:width:height:fps:bitrate:color\_fmt:}{addVideoTrack:width:height:fps:bitrate:color\_fmt:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) add\+Video\+Track\+: \begin{DoxyParamCaption}\item[{(int)}]{out\+\_\+video\+\_\+codec }\item[{width\+:(int)}]{width }\item[{height\+:(int)}]{height }\item[{fps\+:(int)}]{fps }\item[{bitrate\+:(int)}]{bitrate }\item[{color\+\_\+fmt\+:(int)}]{color\+\_\+fmt }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a7058663d2906fb7fc6b29aad68949247}\label{interface_thing_camera_a_v_muxer_a7058663d2906fb7fc6b29aad68949247}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!initWithVideoPath:file\_name:rotate:@{initWithVideoPath:file\_name:rotate:}}
+\index{initWithVideoPath:file\_name:rotate:@{initWithVideoPath:file\_name:rotate:}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{initWithVideoPath:file\_name:rotate:}{initWithVideoPath:file\_name:rotate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Video\+Path\+: \begin{DoxyParamCaption}\item[{(const char $\ast$)}]{video\+\_\+path }\item[{file\+\_\+name\+:(const char $\ast$)}]{file\+\_\+name }\item[{rotate\+:(int)}]{rotate }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a7058663d2906fb7fc6b29aad68949247}\label{interface_thing_camera_a_v_muxer_a7058663d2906fb7fc6b29aad68949247}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!initWithVideoPath:file\_name:rotate:@{initWithVideoPath:file\_name:rotate:}}
+\index{initWithVideoPath:file\_name:rotate:@{initWithVideoPath:file\_name:rotate:}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{initWithVideoPath:file\_name:rotate:}{initWithVideoPath:file\_name:rotate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Video\+Path\+: \begin{DoxyParamCaption}\item[{(const char $\ast$)}]{video\+\_\+path }\item[{file\+\_\+name\+:(const char $\ast$)}]{file\+\_\+name }\item[{rotate\+:(int)}]{rotate }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a840d55a50f4b00fcf34a98d569fb6047}\label{interface_thing_camera_a_v_muxer_a840d55a50f4b00fcf34a98d569fb6047}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!sendAudioFrameWithPcmData:size:@{sendAudioFrameWithPcmData:size:}}
+\index{sendAudioFrameWithPcmData:size:@{sendAudioFrameWithPcmData:size:}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{sendAudioFrameWithPcmData:size:}{sendAudioFrameWithPcmData:size:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) send\+Audio\+Frame\+With\+Pcm\+Data\+: \begin{DoxyParamCaption}\item[{(const unsigned char $\ast$)}]{pcm\+Data }\item[{size\+:(int)}]{u\+Size }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a840d55a50f4b00fcf34a98d569fb6047}\label{interface_thing_camera_a_v_muxer_a840d55a50f4b00fcf34a98d569fb6047}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!sendAudioFrameWithPcmData:size:@{sendAudioFrameWithPcmData:size:}}
+\index{sendAudioFrameWithPcmData:size:@{sendAudioFrameWithPcmData:size:}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{sendAudioFrameWithPcmData:size:}{sendAudioFrameWithPcmData:size:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) send\+Audio\+Frame\+With\+Pcm\+Data\+: \begin{DoxyParamCaption}\item[{(const unsigned char $\ast$)}]{pcm\+Data }\item[{size\+:(int)}]{u\+Size }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a98bdb1946c97aa0472f472747c1a647b}\label{interface_thing_camera_a_v_muxer_a98bdb1946c97aa0472f472747c1a647b}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!sendVideoFrameWithPixbufferData:timestamp:@{sendVideoFrameWithPixbufferData:timestamp:}}
+\index{sendVideoFrameWithPixbufferData:timestamp:@{sendVideoFrameWithPixbufferData:timestamp:}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{sendVideoFrameWithPixbufferData:timestamp:}{sendVideoFrameWithPixbufferData:timestamp:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) send\+Video\+Frame\+With\+Pixbuffer\+Data\+: \begin{DoxyParamCaption}\item[{(const char $\ast$)}]{pix\+Buffer }\item[{timestamp\+:(long long)}]{timestamp }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a98bdb1946c97aa0472f472747c1a647b}\label{interface_thing_camera_a_v_muxer_a98bdb1946c97aa0472f472747c1a647b}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!sendVideoFrameWithPixbufferData:timestamp:@{sendVideoFrameWithPixbufferData:timestamp:}}
+\index{sendVideoFrameWithPixbufferData:timestamp:@{sendVideoFrameWithPixbufferData:timestamp:}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{sendVideoFrameWithPixbufferData:timestamp:}{sendVideoFrameWithPixbufferData:timestamp:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) send\+Video\+Frame\+With\+Pixbuffer\+Data\+: \begin{DoxyParamCaption}\item[{(const char $\ast$)}]{pix\+Buffer }\item[{timestamp\+:(long long)}]{timestamp }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_abd051b46f657dd1564e77edd6fe8666e}\label{interface_thing_camera_a_v_muxer_abd051b46f657dd1564e77edd6fe8666e}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!sendVideoFrameWithYuvData:u:v:width:height:timestamp:type:@{sendVideoFrameWithYuvData:u:v:width:height:timestamp:type:}}
+\index{sendVideoFrameWithYuvData:u:v:width:height:timestamp:type:@{sendVideoFrameWithYuvData:u:v:width:height:timestamp:type:}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{sendVideoFrameWithYuvData:u:v:width:height:timestamp:type:}{sendVideoFrameWithYuvData:u:v:width:height:timestamp:type:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (CVPixel\+Buffer\+Ref) send\+Video\+Frame\+With\+Yuv\+Data\+: \begin{DoxyParamCaption}\item[{(const uint8\+\_\+t $\ast$)}]{y }\item[{u\+:(const uint8\+\_\+t $\ast$)}]{u }\item[{v\+:(const uint8\+\_\+t $\ast$)}]{v }\item[{width\+:(int)}]{width }\item[{height\+:(int)}]{height }\item[{timestamp\+:(long long)}]{timestamp }\item[{type\+:(MP4\+\_\+\+COLOR\+\_\+\+FORMAT\+\_\+E)}]{type }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_abd051b46f657dd1564e77edd6fe8666e}\label{interface_thing_camera_a_v_muxer_abd051b46f657dd1564e77edd6fe8666e}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!sendVideoFrameWithYuvData:u:v:width:height:timestamp:type:@{sendVideoFrameWithYuvData:u:v:width:height:timestamp:type:}}
+\index{sendVideoFrameWithYuvData:u:v:width:height:timestamp:type:@{sendVideoFrameWithYuvData:u:v:width:height:timestamp:type:}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{sendVideoFrameWithYuvData:u:v:width:height:timestamp:type:}{sendVideoFrameWithYuvData:u:v:width:height:timestamp:type:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (CVPixel\+Buffer\+Ref) send\+Video\+Frame\+With\+Yuv\+Data\+: \begin{DoxyParamCaption}\item[{(const uint8\+\_\+t $\ast$)}]{y }\item[{u\+:(const uint8\+\_\+t $\ast$)}]{u }\item[{v\+:(const uint8\+\_\+t $\ast$)}]{v }\item[{width\+:(int)}]{width }\item[{height\+:(int)}]{height }\item[{timestamp\+:(long long)}]{timestamp }\item[{type\+:(MP4\+\_\+\+COLOR\+\_\+\+FORMAT\+\_\+E)}]{type }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_aaa9ecd84445c1db11b6d101919bf4a83}\label{interface_thing_camera_a_v_muxer_aaa9ecd84445c1db11b6d101919bf4a83}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!startRecord@{startRecord}}
+\index{startRecord@{startRecord}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{startRecord}{startRecord}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) start\+Record \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_aaa9ecd84445c1db11b6d101919bf4a83}\label{interface_thing_camera_a_v_muxer_aaa9ecd84445c1db11b6d101919bf4a83}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!startRecord@{startRecord}}
+\index{startRecord@{startRecord}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{startRecord}{startRecord}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) start\+Record \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a76f0b6f173e8d78b8cda11d6558b1b8d}\label{interface_thing_camera_a_v_muxer_a76f0b6f173e8d78b8cda11d6558b1b8d}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!stopRecord@{stopRecord}}
+\index{stopRecord@{stopRecord}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{stopRecord}{stopRecord}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Record \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a76f0b6f173e8d78b8cda11d6558b1b8d}\label{interface_thing_camera_a_v_muxer_a76f0b6f173e8d78b8cda11d6558b1b8d}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!stopRecord@{stopRecord}}
+\index{stopRecord@{stopRecord}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{stopRecord}{stopRecord}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Record \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a77a8a8470f06a9eb10ed6e9d3f8e6757}\label{interface_thing_camera_a_v_muxer_a77a8a8470f06a9eb10ed6e9d3f8e6757}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!kThingCameraAVMuxer\_Err@{kThingCameraAVMuxer\_Err}}
+\index{kThingCameraAVMuxer\_Err@{kThingCameraAVMuxer\_Err}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{kThingCameraAVMuxer\_Err}{kThingCameraAVMuxer\_Err}}
+{\footnotesize\ttfamily -\/ k\+Thing\+Camera\+AVMuxer\+\_\+\+Err = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source_l00018}{18}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source}{Thing\+Camera\+AVMuxer.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a9bad47af7e0a3da30b9ed9ab1feb7495}\label{interface_thing_camera_a_v_muxer_a9bad47af7e0a3da30b9ed9ab1feb7495}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!kThingCameraAVMuxer\_InvalidParam@{kThingCameraAVMuxer\_InvalidParam}}
+\index{kThingCameraAVMuxer\_InvalidParam@{kThingCameraAVMuxer\_InvalidParam}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{kThingCameraAVMuxer\_InvalidParam}{kThingCameraAVMuxer\_InvalidParam}}
+{\footnotesize\ttfamily -\/ k\+Thing\+Camera\+AVMuxer\+\_\+\+Invalid\+Param = -\/2\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source_l00019}{19}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source}{Thing\+Camera\+AVMuxer.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a712a89ad9ed5e816519cb1de194ff692}\label{interface_thing_camera_a_v_muxer_a712a89ad9ed5e816519cb1de194ff692}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!kThingCameraAVMuxer\_NoErr@{kThingCameraAVMuxer\_NoErr}}
+\index{kThingCameraAVMuxer\_NoErr@{kThingCameraAVMuxer\_NoErr}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{kThingCameraAVMuxer\_NoErr}{kThingCameraAVMuxer\_NoErr}}
+{\footnotesize\ttfamily -\/ k\+Thing\+Camera\+AVMuxer\+\_\+\+No\+Err = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source_l00017}{17}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source}{Thing\+Camera\+AVMuxer.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a5c478ee7676a5e1c4fece785ad4d80f5}\label{interface_thing_camera_a_v_muxer_a5c478ee7676a5e1c4fece785ad4d80f5}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!kThingCameraAVMuxer\_Undefined\_Behavior@{kThingCameraAVMuxer\_Undefined\_Behavior}}
+\index{kThingCameraAVMuxer\_Undefined\_Behavior@{kThingCameraAVMuxer\_Undefined\_Behavior}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{kThingCameraAVMuxer\_Undefined\_Behavior}{kThingCameraAVMuxer\_Undefined\_Behavior}}
+{\footnotesize\ttfamily -\/ k\+Thing\+Camera\+AVMuxer\+\_\+\+Undefined\+\_\+\+Behavior\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= -\/4}
+\DoxyCodeLine{\}kThingCameraAVMuxerErrCode}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source_l00021}{21}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source}{Thing\+Camera\+AVMuxer.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_camera_a_v_muxer_a23dc65789276eb3a8229480b789d599d}\label{interface_thing_camera_a_v_muxer_a23dc65789276eb3a8229480b789d599d}} 
+\index{ThingCameraAVMuxer@{ThingCameraAVMuxer}!kThingCameraAVMuxer\_Unsupported@{kThingCameraAVMuxer\_Unsupported}}
+\index{kThingCameraAVMuxer\_Unsupported@{kThingCameraAVMuxer\_Unsupported}!ThingCameraAVMuxer@{ThingCameraAVMuxer}}
+\doxysubsubsection{\texorpdfstring{kThingCameraAVMuxer\_Unsupported}{kThingCameraAVMuxer\_Unsupported}}
+{\footnotesize\ttfamily -\/ k\+Thing\+Camera\+AVMuxer\+\_\+\+Unsupported = -\/3\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source_l00020}{20}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h_source}{Thing\+Camera\+AVMuxer.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Camera\+SDK/\+Build/\+Thing\+Camera\+SDK.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Camera\+SDK.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h}{Thing\+Camera\+AVMuxer.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Camera\+SDK/\+Build/\+Thing\+Camera\+SDK.\+xcframework/ios-\/arm64/\+Thing\+Camera\+SDK.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_camera_a_v_muxer_8h}{Thing\+Camera\+AVMuxer.\+h}}\end{DoxyCompactItemize}

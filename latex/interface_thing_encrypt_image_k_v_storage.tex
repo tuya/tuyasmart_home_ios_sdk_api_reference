@@ -1,0 +1,1373 @@
+\hypertarget{interface_thing_encrypt_image_k_v_storage}{}\doxysection{Thing\+Encrypt\+Image\+KVStorage Class Reference}
+\label{interface_thing_encrypt_image_k_v_storage}\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+
+
+{\ttfamily \#import $<$Thing\+Encrypt\+Image\+KVStorage.\+h$>$}
+
+Inheritance diagram for Thing\+Encrypt\+Image\+KVStorage\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.481482cm]{interface_thing_encrypt_image_k_v_storage}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}{UNAVAILABLE\+\_\+\+ATTRIBUTE}}
+\item 
+(nullable instancetype) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a0f0f36702fdb04c4cd7705f73cc16393}{init\+With\+Path\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa3970b9809b37d41cbfa1a5e133d3e19}{save\+Item\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_acff007fab832675675181bb341c1fa2d}{save\+Item\+With\+Key\+:value\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a80591a8076a4dc1341ddee0591d4483b}{save\+Item\+With\+Key\+:value\+:filename\+:extended\+Data\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a435365a169dbc921286b0cb16a60d439}{remove\+Item\+For\+Key\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a1a8fefd860731effd602c789d6f602df}{remove\+Item\+For\+Keys\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ab624d0323b74b908e9bb4c3aa9674e55}{remove\+Items\+Earlier\+Than\+Time\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ad060448194bf05807378db460b266d6b}{remove\+Items\+To\+Fit\+Size\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a146345d7789bbc5f5e3f91200b19dafc}{remove\+All\+Items}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a59ac3681a962705397c12ca2e4420384}{remove\+Items\+At\+Path\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ad04487646aa488535818da768ed6e395}{get\+Item\+For\+Key\+:}}
+\item 
+(nullable NSData $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a04ee486f32967c3ba05348891e9a0d0a}{get\+Item\+Value\+For\+Key\+:}}
+\item 
+(nullable NSDictionary$<$ NSString $\ast$, NSData $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ae6b25e53c465704f11ff80afb7194352}{get\+Item\+Value\+For\+Keys\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}{cache\+Path\+For\+Key\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a99296f49a04fefc1f65d734142607b24}{item\+Exists\+For\+Key\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ad337f74e36e808158698022edab77333}{get\+Items\+Count}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ab83220dd55f439bc0df062bde10e9e1a}{get\+Items\+Size}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}{UNAVAILABLE\+\_\+\+ATTRIBUTE}}
+\item 
+(nullable instancetype) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a0f0f36702fdb04c4cd7705f73cc16393}{init\+With\+Path\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa3970b9809b37d41cbfa1a5e133d3e19}{save\+Item\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_acff007fab832675675181bb341c1fa2d}{save\+Item\+With\+Key\+:value\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a80591a8076a4dc1341ddee0591d4483b}{save\+Item\+With\+Key\+:value\+:filename\+:extended\+Data\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a435365a169dbc921286b0cb16a60d439}{remove\+Item\+For\+Key\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a1a8fefd860731effd602c789d6f602df}{remove\+Item\+For\+Keys\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ab624d0323b74b908e9bb4c3aa9674e55}{remove\+Items\+Earlier\+Than\+Time\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ad060448194bf05807378db460b266d6b}{remove\+Items\+To\+Fit\+Size\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a146345d7789bbc5f5e3f91200b19dafc}{remove\+All\+Items}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a59ac3681a962705397c12ca2e4420384}{remove\+Items\+At\+Path\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ad04487646aa488535818da768ed6e395}{get\+Item\+For\+Key\+:}}
+\item 
+(nullable NSData $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a04ee486f32967c3ba05348891e9a0d0a}{get\+Item\+Value\+For\+Key\+:}}
+\item 
+(nullable NSDictionary$<$ NSString $\ast$, NSData $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ae6b25e53c465704f11ff80afb7194352}{get\+Item\+Value\+For\+Keys\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}{cache\+Path\+For\+Key\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a99296f49a04fefc1f65d734142607b24}{item\+Exists\+For\+Key\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ad337f74e36e808158698022edab77333}{get\+Items\+Count}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ab83220dd55f439bc0df062bde10e9e1a}{get\+Items\+Size}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}{UNAVAILABLE\+\_\+\+ATTRIBUTE}}
+\item 
+(nullable instancetype) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a0f0f36702fdb04c4cd7705f73cc16393}{init\+With\+Path\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa3970b9809b37d41cbfa1a5e133d3e19}{save\+Item\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_acff007fab832675675181bb341c1fa2d}{save\+Item\+With\+Key\+:value\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a80591a8076a4dc1341ddee0591d4483b}{save\+Item\+With\+Key\+:value\+:filename\+:extended\+Data\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a435365a169dbc921286b0cb16a60d439}{remove\+Item\+For\+Key\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a1a8fefd860731effd602c789d6f602df}{remove\+Item\+For\+Keys\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ab624d0323b74b908e9bb4c3aa9674e55}{remove\+Items\+Earlier\+Than\+Time\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ad060448194bf05807378db460b266d6b}{remove\+Items\+To\+Fit\+Size\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a146345d7789bbc5f5e3f91200b19dafc}{remove\+All\+Items}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a59ac3681a962705397c12ca2e4420384}{remove\+Items\+At\+Path\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ad04487646aa488535818da768ed6e395}{get\+Item\+For\+Key\+:}}
+\item 
+(nullable NSData $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a04ee486f32967c3ba05348891e9a0d0a}{get\+Item\+Value\+For\+Key\+:}}
+\item 
+(nullable NSDictionary$<$ NSString $\ast$, NSData $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ae6b25e53c465704f11ff80afb7194352}{get\+Item\+Value\+For\+Keys\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}{cache\+Path\+For\+Key\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a99296f49a04fefc1f65d734142607b24}{item\+Exists\+For\+Key\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ad337f74e36e808158698022edab77333}{get\+Items\+Count}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ab83220dd55f439bc0df062bde10e9e1a}{get\+Items\+Size}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}{UNAVAILABLE\+\_\+\+ATTRIBUTE}}
+\item 
+(nullable instancetype) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a0f0f36702fdb04c4cd7705f73cc16393}{init\+With\+Path\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa3970b9809b37d41cbfa1a5e133d3e19}{save\+Item\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_acff007fab832675675181bb341c1fa2d}{save\+Item\+With\+Key\+:value\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a80591a8076a4dc1341ddee0591d4483b}{save\+Item\+With\+Key\+:value\+:filename\+:extended\+Data\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a435365a169dbc921286b0cb16a60d439}{remove\+Item\+For\+Key\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a1a8fefd860731effd602c789d6f602df}{remove\+Item\+For\+Keys\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ab624d0323b74b908e9bb4c3aa9674e55}{remove\+Items\+Earlier\+Than\+Time\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ad060448194bf05807378db460b266d6b}{remove\+Items\+To\+Fit\+Size\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a146345d7789bbc5f5e3f91200b19dafc}{remove\+All\+Items}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a59ac3681a962705397c12ca2e4420384}{remove\+Items\+At\+Path\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ad04487646aa488535818da768ed6e395}{get\+Item\+For\+Key\+:}}
+\item 
+(nullable NSData $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a04ee486f32967c3ba05348891e9a0d0a}{get\+Item\+Value\+For\+Key\+:}}
+\item 
+(nullable NSDictionary$<$ NSString $\ast$, NSData $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ae6b25e53c465704f11ff80afb7194352}{get\+Item\+Value\+For\+Keys\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}{cache\+Path\+For\+Key\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a99296f49a04fefc1f65d734142607b24}{item\+Exists\+For\+Key\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ad337f74e36e808158698022edab77333}{get\+Items\+Count}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_ab83220dd55f439bc0df062bde10e9e1a}{get\+Items\+Size}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}{UNAVAILABLE\+\_\+\+ATTRIBUTE}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}{UNAVAILABLE\+\_\+\+ATTRIBUTE}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}{UNAVAILABLE\+\_\+\+ATTRIBUTE}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}{UNAVAILABLE\+\_\+\+ATTRIBUTE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_aa37c33037594aa815537ff1d03dc5237}{path}}
+\begin{DoxyCompactList}\small\item\em The path of this storage. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a1a8f91a45ead61c83854a3058a4e6b2a}{data\+Directory}}
+\begin{DoxyCompactList}\small\item\em The data path of this storage. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage_a737eaf57b7af387040650281ea0b1f25}{error\+Logs\+Enabled}}
+\begin{DoxyCompactList}\small\item\em Set {\ttfamily YES} to enable error logs for debug. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Thing\+KVStorage is a key-\/value storage based on sqlite and file system. Thingpically, you should not use this class directly.
+
+@discussion The designated initializer for Thing\+KVStorage is {\ttfamily init\+With\+Path\+:}. After initialized, a directory is created based on the {\ttfamily path} to hold key-\/value data. Once initialized you should not read or write this directory without the instance.
+
+\begin{DoxyWarning}{Warning}
+The instance of this class is {\itshape NOT} thread safe, you need to make sure that there\textquotesingle{}s only one thread to access the instance at the same time. If you really need to process large amounts of data in multi-\/thread, you should split the data to multiple KVStorage instance (sharding). 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00042}{42}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{Thing\+Encrypt\+Image\+KVStorage.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}\label{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!cachePathForKey:@{cachePathForKey:}}
+\index{cachePathForKey:@{cachePathForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{cachePathForKey:}{cachePathForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) cache\+Path\+For\+Key\+: \begin{DoxyParamCaption}\item[{(nonnull NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+The cache path for key
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A string identifying the value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cache path for key. Or nil if the key can not associate to a path 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}\label{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!cachePathForKey:@{cachePathForKey:}}
+\index{cachePathForKey:@{cachePathForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{cachePathForKey:}{cachePathForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) cache\+Path\+For\+Key\+: \begin{DoxyParamCaption}\item[{(nonnull NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+The cache path for key
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A string identifying the value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cache path for key. Or nil if the key can not associate to a path 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}\label{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!cachePathForKey:@{cachePathForKey:}}
+\index{cachePathForKey:@{cachePathForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{cachePathForKey:}{cachePathForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) cache\+Path\+For\+Key\+: \begin{DoxyParamCaption}\item[{(nonnull NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+The cache path for key
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A string identifying the value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cache path for key. Or nil if the key can not associate to a path 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}\label{interface_thing_encrypt_image_k_v_storage_a00697d05ae26a1c82b31277ac8627c05}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!cachePathForKey:@{cachePathForKey:}}
+\index{cachePathForKey:@{cachePathForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{cachePathForKey:}{cachePathForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) cache\+Path\+For\+Key\+: \begin{DoxyParamCaption}\item[{(nonnull NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+The cache path for key
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A string identifying the value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cache path for key. Or nil if the key can not associate to a path 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ad04487646aa488535818da768ed6e395}\label{interface_thing_encrypt_image_k_v_storage_ad04487646aa488535818da768ed6e395}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemForKey:@{getItemForKey:}}
+\index{getItemForKey:@{getItemForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemForKey:}{getItemForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (nullable \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} $\ast$) get\+Item\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md64}{}\doxysubsection{@name Get Items}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md64}
+Get item with a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A specified key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Item for the key, or nil if not exists / error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ad04487646aa488535818da768ed6e395}\label{interface_thing_encrypt_image_k_v_storage_ad04487646aa488535818da768ed6e395}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemForKey:@{getItemForKey:}}
+\index{getItemForKey:@{getItemForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemForKey:}{getItemForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (nullable \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} $\ast$) get\+Item\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md48}{}\doxysubsection{@name Get Items}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md48}
+Get item with a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A specified key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Item for the key, or nil if not exists / error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ad04487646aa488535818da768ed6e395}\label{interface_thing_encrypt_image_k_v_storage_ad04487646aa488535818da768ed6e395}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemForKey:@{getItemForKey:}}
+\index{getItemForKey:@{getItemForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemForKey:}{getItemForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (nullable \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} $\ast$) get\+Item\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md32}{}\doxysubsection{@name Get Items}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md32}
+Get item with a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A specified key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Item for the key, or nil if not exists / error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ad04487646aa488535818da768ed6e395}\label{interface_thing_encrypt_image_k_v_storage_ad04487646aa488535818da768ed6e395}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemForKey:@{getItemForKey:}}
+\index{getItemForKey:@{getItemForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemForKey:}{getItemForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (nullable \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} $\ast$) get\+Item\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md16}{}\doxysubsection{@name Get Items}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md16}
+Get item with a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A specified key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Item for the key, or nil if not exists / error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ad337f74e36e808158698022edab77333}\label{interface_thing_encrypt_image_k_v_storage_ad337f74e36e808158698022edab77333}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemsCount@{getItemsCount}}
+\index{getItemsCount@{getItemsCount}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemsCount}{getItemsCount}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (int) get\+Items\+Count \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get total item count. \begin{DoxyReturn}{Returns}
+Total item count, -\/1 when an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ad337f74e36e808158698022edab77333}\label{interface_thing_encrypt_image_k_v_storage_ad337f74e36e808158698022edab77333}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemsCount@{getItemsCount}}
+\index{getItemsCount@{getItemsCount}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemsCount}{getItemsCount}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (int) get\+Items\+Count \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get total item count. \begin{DoxyReturn}{Returns}
+Total item count, -\/1 when an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ad337f74e36e808158698022edab77333}\label{interface_thing_encrypt_image_k_v_storage_ad337f74e36e808158698022edab77333}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemsCount@{getItemsCount}}
+\index{getItemsCount@{getItemsCount}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemsCount}{getItemsCount}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (int) get\+Items\+Count \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get total item count. \begin{DoxyReturn}{Returns}
+Total item count, -\/1 when an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ad337f74e36e808158698022edab77333}\label{interface_thing_encrypt_image_k_v_storage_ad337f74e36e808158698022edab77333}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemsCount@{getItemsCount}}
+\index{getItemsCount@{getItemsCount}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemsCount}{getItemsCount}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (int) get\+Items\+Count \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get total item count. \begin{DoxyReturn}{Returns}
+Total item count, -\/1 when an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ab83220dd55f439bc0df062bde10e9e1a}\label{interface_thing_encrypt_image_k_v_storage_ab83220dd55f439bc0df062bde10e9e1a}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemsSize@{getItemsSize}}
+\index{getItemsSize@{getItemsSize}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemsSize}{getItemsSize}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (int) get\+Items\+Size \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get item value\textquotesingle{}s total size in bytes. \begin{DoxyReturn}{Returns}
+Total size in bytes, -\/1 when an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ab83220dd55f439bc0df062bde10e9e1a}\label{interface_thing_encrypt_image_k_v_storage_ab83220dd55f439bc0df062bde10e9e1a}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemsSize@{getItemsSize}}
+\index{getItemsSize@{getItemsSize}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemsSize}{getItemsSize}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (int) get\+Items\+Size \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get item value\textquotesingle{}s total size in bytes. \begin{DoxyReturn}{Returns}
+Total size in bytes, -\/1 when an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ab83220dd55f439bc0df062bde10e9e1a}\label{interface_thing_encrypt_image_k_v_storage_ab83220dd55f439bc0df062bde10e9e1a}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemsSize@{getItemsSize}}
+\index{getItemsSize@{getItemsSize}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemsSize}{getItemsSize}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (int) get\+Items\+Size \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get item value\textquotesingle{}s total size in bytes. \begin{DoxyReturn}{Returns}
+Total size in bytes, -\/1 when an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ab83220dd55f439bc0df062bde10e9e1a}\label{interface_thing_encrypt_image_k_v_storage_ab83220dd55f439bc0df062bde10e9e1a}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemsSize@{getItemsSize}}
+\index{getItemsSize@{getItemsSize}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemsSize}{getItemsSize}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (int) get\+Items\+Size \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get item value\textquotesingle{}s total size in bytes. \begin{DoxyReturn}{Returns}
+Total size in bytes, -\/1 when an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a04ee486f32967c3ba05348891e9a0d0a}\label{interface_thing_encrypt_image_k_v_storage_a04ee486f32967c3ba05348891e9a0d0a}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemValueForKey:@{getItemValueForKey:}}
+\index{getItemValueForKey:@{getItemValueForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemValueForKey:}{getItemValueForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSData $\ast$) get\+Item\+Value\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+Get item value with a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A specified key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Item\textquotesingle{}s value, or nil if not exists / error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a04ee486f32967c3ba05348891e9a0d0a}\label{interface_thing_encrypt_image_k_v_storage_a04ee486f32967c3ba05348891e9a0d0a}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemValueForKey:@{getItemValueForKey:}}
+\index{getItemValueForKey:@{getItemValueForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemValueForKey:}{getItemValueForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSData $\ast$) get\+Item\+Value\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+Get item value with a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A specified key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Item\textquotesingle{}s value, or nil if not exists / error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a04ee486f32967c3ba05348891e9a0d0a}\label{interface_thing_encrypt_image_k_v_storage_a04ee486f32967c3ba05348891e9a0d0a}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemValueForKey:@{getItemValueForKey:}}
+\index{getItemValueForKey:@{getItemValueForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemValueForKey:}{getItemValueForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSData $\ast$) get\+Item\+Value\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+Get item value with a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A specified key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Item\textquotesingle{}s value, or nil if not exists / error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a04ee486f32967c3ba05348891e9a0d0a}\label{interface_thing_encrypt_image_k_v_storage_a04ee486f32967c3ba05348891e9a0d0a}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemValueForKey:@{getItemValueForKey:}}
+\index{getItemValueForKey:@{getItemValueForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemValueForKey:}{getItemValueForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSData $\ast$) get\+Item\+Value\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+Get item value with a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A specified key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Item\textquotesingle{}s value, or nil if not exists / error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ae6b25e53c465704f11ff80afb7194352}\label{interface_thing_encrypt_image_k_v_storage_ae6b25e53c465704f11ff80afb7194352}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemValueForKeys:@{getItemValueForKeys:}}
+\index{getItemValueForKeys:@{getItemValueForKeys:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemValueForKeys:}{getItemValueForKeys:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSDictionary$<$ NSString $\ast$, NSData $\ast$ $>$ $\ast$) get\+Item\+Value\+For\+Keys\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{keys }\end{DoxyParamCaption}}
+
+Get items value with an array of keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & An array of specified keys. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A dictionary which key is \textquotesingle{}key\textquotesingle{} and value is \textquotesingle{}value\textquotesingle{}, or nil if not exists / error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ae6b25e53c465704f11ff80afb7194352}\label{interface_thing_encrypt_image_k_v_storage_ae6b25e53c465704f11ff80afb7194352}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemValueForKeys:@{getItemValueForKeys:}}
+\index{getItemValueForKeys:@{getItemValueForKeys:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemValueForKeys:}{getItemValueForKeys:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSDictionary$<$ NSString $\ast$, NSData $\ast$ $>$ $\ast$) get\+Item\+Value\+For\+Keys\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{keys }\end{DoxyParamCaption}}
+
+Get items value with an array of keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & An array of specified keys. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A dictionary which key is \textquotesingle{}key\textquotesingle{} and value is \textquotesingle{}value\textquotesingle{}, or nil if not exists / error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ae6b25e53c465704f11ff80afb7194352}\label{interface_thing_encrypt_image_k_v_storage_ae6b25e53c465704f11ff80afb7194352}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemValueForKeys:@{getItemValueForKeys:}}
+\index{getItemValueForKeys:@{getItemValueForKeys:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemValueForKeys:}{getItemValueForKeys:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSDictionary$<$ NSString $\ast$, NSData $\ast$ $>$ $\ast$) get\+Item\+Value\+For\+Keys\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{keys }\end{DoxyParamCaption}}
+
+Get items value with an array of keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & An array of specified keys. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A dictionary which key is \textquotesingle{}key\textquotesingle{} and value is \textquotesingle{}value\textquotesingle{}, or nil if not exists / error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ae6b25e53c465704f11ff80afb7194352}\label{interface_thing_encrypt_image_k_v_storage_ae6b25e53c465704f11ff80afb7194352}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!getItemValueForKeys:@{getItemValueForKeys:}}
+\index{getItemValueForKeys:@{getItemValueForKeys:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{getItemValueForKeys:}{getItemValueForKeys:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (nullable NSDictionary$<$ NSString $\ast$, NSData $\ast$ $>$ $\ast$) get\+Item\+Value\+For\+Keys\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{keys }\end{DoxyParamCaption}}
+
+Get items value with an array of keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & An array of specified keys. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A dictionary which key is \textquotesingle{}key\textquotesingle{} and value is \textquotesingle{}value\textquotesingle{}, or nil if not exists / error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a0f0f36702fdb04c4cd7705f73cc16393}\label{interface_thing_encrypt_image_k_v_storage_a0f0f36702fdb04c4cd7705f73cc16393}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!initWithPath:@{initWithPath:}}
+\index{initWithPath:@{initWithPath:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{initWithPath:}{initWithPath:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (nullable instancetype) init\+With\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{NS\+\_\+\+DESIGNATED\+\_\+\+INITIALIZER }\end{DoxyParamCaption}}
+
+The designated initializer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Full path of a directory in which the storage will write data. If the directory is not exists, it will try to create one, otherwise it will read the data in this directory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new storage object, or nil if an error occurs. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Multiple instances with the same path will make the storage unstable. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a0f0f36702fdb04c4cd7705f73cc16393}\label{interface_thing_encrypt_image_k_v_storage_a0f0f36702fdb04c4cd7705f73cc16393}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!initWithPath:@{initWithPath:}}
+\index{initWithPath:@{initWithPath:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{initWithPath:}{initWithPath:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (nullable instancetype) init\+With\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{NS\+\_\+\+DESIGNATED\+\_\+\+INITIALIZER }\end{DoxyParamCaption}}
+
+The designated initializer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Full path of a directory in which the storage will write data. If the directory is not exists, it will try to create one, otherwise it will read the data in this directory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new storage object, or nil if an error occurs. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Multiple instances with the same path will make the storage unstable. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a0f0f36702fdb04c4cd7705f73cc16393}\label{interface_thing_encrypt_image_k_v_storage_a0f0f36702fdb04c4cd7705f73cc16393}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!initWithPath:@{initWithPath:}}
+\index{initWithPath:@{initWithPath:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{initWithPath:}{initWithPath:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (nullable instancetype) init\+With\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{NS\+\_\+\+DESIGNATED\+\_\+\+INITIALIZER }\end{DoxyParamCaption}}
+
+The designated initializer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Full path of a directory in which the storage will write data. If the directory is not exists, it will try to create one, otherwise it will read the data in this directory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new storage object, or nil if an error occurs. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Multiple instances with the same path will make the storage unstable. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a0f0f36702fdb04c4cd7705f73cc16393}\label{interface_thing_encrypt_image_k_v_storage_a0f0f36702fdb04c4cd7705f73cc16393}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!initWithPath:@{initWithPath:}}
+\index{initWithPath:@{initWithPath:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{initWithPath:}{initWithPath:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (nullable instancetype) init\+With\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{NS\+\_\+\+DESIGNATED\+\_\+\+INITIALIZER }\end{DoxyParamCaption}}
+
+The designated initializer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Full path of a directory in which the storage will write data. If the directory is not exists, it will try to create one, otherwise it will read the data in this directory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new storage object, or nil if an error occurs. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+Multiple instances with the same path will make the storage unstable. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a99296f49a04fefc1f65d734142607b24}\label{interface_thing_encrypt_image_k_v_storage_a99296f49a04fefc1f65d734142607b24}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!itemExistsForKey:@{itemExistsForKey:}}
+\index{itemExistsForKey:@{itemExistsForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{itemExistsForKey:}{itemExistsForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) item\+Exists\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md49}{}\doxysubsection{@name Get Storage Status}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md49}
+Whether an item exists for a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A specified key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily YES} if there\textquotesingle{}s an item exists for the key, {\ttfamily NO} if not exists or an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a99296f49a04fefc1f65d734142607b24}\label{interface_thing_encrypt_image_k_v_storage_a99296f49a04fefc1f65d734142607b24}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!itemExistsForKey:@{itemExistsForKey:}}
+\index{itemExistsForKey:@{itemExistsForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{itemExistsForKey:}{itemExistsForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) item\+Exists\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md17}{}\doxysubsection{@name Get Storage Status}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md17}
+Whether an item exists for a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A specified key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily YES} if there\textquotesingle{}s an item exists for the key, {\ttfamily NO} if not exists or an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a99296f49a04fefc1f65d734142607b24}\label{interface_thing_encrypt_image_k_v_storage_a99296f49a04fefc1f65d734142607b24}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!itemExistsForKey:@{itemExistsForKey:}}
+\index{itemExistsForKey:@{itemExistsForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{itemExistsForKey:}{itemExistsForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) item\+Exists\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md65}{}\doxysubsection{@name Get Storage Status}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md65}
+Whether an item exists for a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A specified key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily YES} if there\textquotesingle{}s an item exists for the key, {\ttfamily NO} if not exists or an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a99296f49a04fefc1f65d734142607b24}\label{interface_thing_encrypt_image_k_v_storage_a99296f49a04fefc1f65d734142607b24}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!itemExistsForKey:@{itemExistsForKey:}}
+\index{itemExistsForKey:@{itemExistsForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{itemExistsForKey:}{itemExistsForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) item\+Exists\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md33}{}\doxysubsection{@name Get Storage Status}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md33}
+Whether an item exists for a specified key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & A specified key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily YES} if there\textquotesingle{}s an item exists for the key, {\ttfamily NO} if not exists or an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a146345d7789bbc5f5e3f91200b19dafc}\label{interface_thing_encrypt_image_k_v_storage_a146345d7789bbc5f5e3f91200b19dafc}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeAllItems@{removeAllItems}}
+\index{removeAllItems@{removeAllItems}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeAllItems}{removeAllItems}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+All\+Items \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Remove all items in background queue.
+
+@discussion This method will remove the files and sqlite database to a trash folder, and then clear the folder in background queue.
+
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a146345d7789bbc5f5e3f91200b19dafc}\label{interface_thing_encrypt_image_k_v_storage_a146345d7789bbc5f5e3f91200b19dafc}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeAllItems@{removeAllItems}}
+\index{removeAllItems@{removeAllItems}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeAllItems}{removeAllItems}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+All\+Items \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Remove all items in background queue.
+
+@discussion This method will remove the files and sqlite database to a trash folder, and then clear the folder in background queue.
+
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a146345d7789bbc5f5e3f91200b19dafc}\label{interface_thing_encrypt_image_k_v_storage_a146345d7789bbc5f5e3f91200b19dafc}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeAllItems@{removeAllItems}}
+\index{removeAllItems@{removeAllItems}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeAllItems}{removeAllItems}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+All\+Items \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Remove all items in background queue.
+
+@discussion This method will remove the files and sqlite database to a trash folder, and then clear the folder in background queue.
+
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a146345d7789bbc5f5e3f91200b19dafc}\label{interface_thing_encrypt_image_k_v_storage_a146345d7789bbc5f5e3f91200b19dafc}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeAllItems@{removeAllItems}}
+\index{removeAllItems@{removeAllItems}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeAllItems}{removeAllItems}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+All\+Items \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Remove all items in background queue.
+
+@discussion This method will remove the files and sqlite database to a trash folder, and then clear the folder in background queue.
+
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a435365a169dbc921286b0cb16a60d439}\label{interface_thing_encrypt_image_k_v_storage_a435365a169dbc921286b0cb16a60d439}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemForKey:@{removeItemForKey:}}
+\index{removeItemForKey:@{removeItemForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemForKey:}{removeItemForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Item\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md15}{}\doxysubsection{@name Remove Items}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md15}
+Remove an item with \textquotesingle{}key\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The item\textquotesingle{}s key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a435365a169dbc921286b0cb16a60d439}\label{interface_thing_encrypt_image_k_v_storage_a435365a169dbc921286b0cb16a60d439}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemForKey:@{removeItemForKey:}}
+\index{removeItemForKey:@{removeItemForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemForKey:}{removeItemForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Item\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md63}{}\doxysubsection{@name Remove Items}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md63}
+Remove an item with \textquotesingle{}key\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The item\textquotesingle{}s key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a435365a169dbc921286b0cb16a60d439}\label{interface_thing_encrypt_image_k_v_storage_a435365a169dbc921286b0cb16a60d439}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemForKey:@{removeItemForKey:}}
+\index{removeItemForKey:@{removeItemForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemForKey:}{removeItemForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Item\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md31}{}\doxysubsection{@name Remove Items}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md31}
+Remove an item with \textquotesingle{}key\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The item\textquotesingle{}s key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a435365a169dbc921286b0cb16a60d439}\label{interface_thing_encrypt_image_k_v_storage_a435365a169dbc921286b0cb16a60d439}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemForKey:@{removeItemForKey:}}
+\index{removeItemForKey:@{removeItemForKey:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemForKey:}{removeItemForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Item\+For\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md47}{}\doxysubsection{@name Remove Items}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md47}
+Remove an item with \textquotesingle{}key\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The item\textquotesingle{}s key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a1a8fefd860731effd602c789d6f602df}\label{interface_thing_encrypt_image_k_v_storage_a1a8fefd860731effd602c789d6f602df}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemForKeys:@{removeItemForKeys:}}
+\index{removeItemForKeys:@{removeItemForKeys:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemForKeys:}{removeItemForKeys:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Item\+For\+Keys\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{keys }\end{DoxyParamCaption}}
+
+Remove items with an array of keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & An array of specified keys.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a1a8fefd860731effd602c789d6f602df}\label{interface_thing_encrypt_image_k_v_storage_a1a8fefd860731effd602c789d6f602df}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemForKeys:@{removeItemForKeys:}}
+\index{removeItemForKeys:@{removeItemForKeys:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemForKeys:}{removeItemForKeys:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Item\+For\+Keys\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{keys }\end{DoxyParamCaption}}
+
+Remove items with an array of keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & An array of specified keys.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a1a8fefd860731effd602c789d6f602df}\label{interface_thing_encrypt_image_k_v_storage_a1a8fefd860731effd602c789d6f602df}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemForKeys:@{removeItemForKeys:}}
+\index{removeItemForKeys:@{removeItemForKeys:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemForKeys:}{removeItemForKeys:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Item\+For\+Keys\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{keys }\end{DoxyParamCaption}}
+
+Remove items with an array of keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & An array of specified keys.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a1a8fefd860731effd602c789d6f602df}\label{interface_thing_encrypt_image_k_v_storage_a1a8fefd860731effd602c789d6f602df}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemForKeys:@{removeItemForKeys:}}
+\index{removeItemForKeys:@{removeItemForKeys:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemForKeys:}{removeItemForKeys:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Item\+For\+Keys\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{keys }\end{DoxyParamCaption}}
+
+Remove items with an array of keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em keys} & An array of specified keys.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a59ac3681a962705397c12ca2e4420384}\label{interface_thing_encrypt_image_k_v_storage_a59ac3681a962705397c12ca2e4420384}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemsAtPath:@{removeItemsAtPath:}}
+\index{removeItemsAtPath:@{removeItemsAtPath:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemsAtPath:}{removeItemsAtPath:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Items\+At\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{path }\end{DoxyParamCaption}}
+
+Remove all items under the given path in background queue.
+
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a59ac3681a962705397c12ca2e4420384}\label{interface_thing_encrypt_image_k_v_storage_a59ac3681a962705397c12ca2e4420384}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemsAtPath:@{removeItemsAtPath:}}
+\index{removeItemsAtPath:@{removeItemsAtPath:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemsAtPath:}{removeItemsAtPath:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Items\+At\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{path }\end{DoxyParamCaption}}
+
+Remove all items under the given path in background queue.
+
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a59ac3681a962705397c12ca2e4420384}\label{interface_thing_encrypt_image_k_v_storage_a59ac3681a962705397c12ca2e4420384}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemsAtPath:@{removeItemsAtPath:}}
+\index{removeItemsAtPath:@{removeItemsAtPath:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemsAtPath:}{removeItemsAtPath:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Items\+At\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{path }\end{DoxyParamCaption}}
+
+Remove all items under the given path in background queue.
+
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a59ac3681a962705397c12ca2e4420384}\label{interface_thing_encrypt_image_k_v_storage_a59ac3681a962705397c12ca2e4420384}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemsAtPath:@{removeItemsAtPath:}}
+\index{removeItemsAtPath:@{removeItemsAtPath:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemsAtPath:}{removeItemsAtPath:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Items\+At\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{path }\end{DoxyParamCaption}}
+
+Remove all items under the given path in background queue.
+
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ab624d0323b74b908e9bb4c3aa9674e55}\label{interface_thing_encrypt_image_k_v_storage_ab624d0323b74b908e9bb4c3aa9674e55}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemsEarlierThanTime:@{removeItemsEarlierThanTime:}}
+\index{removeItemsEarlierThanTime:@{removeItemsEarlierThanTime:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemsEarlierThanTime:}{removeItemsEarlierThanTime:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Items\+Earlier\+Than\+Time\+: \begin{DoxyParamCaption}\item[{(int)}]{time }\end{DoxyParamCaption}}
+
+Remove all items which last access time is earlier than a specified timestamp.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The specified unix timestamp. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ab624d0323b74b908e9bb4c3aa9674e55}\label{interface_thing_encrypt_image_k_v_storage_ab624d0323b74b908e9bb4c3aa9674e55}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemsEarlierThanTime:@{removeItemsEarlierThanTime:}}
+\index{removeItemsEarlierThanTime:@{removeItemsEarlierThanTime:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemsEarlierThanTime:}{removeItemsEarlierThanTime:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Items\+Earlier\+Than\+Time\+: \begin{DoxyParamCaption}\item[{(int)}]{time }\end{DoxyParamCaption}}
+
+Remove all items which last access time is earlier than a specified timestamp.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The specified unix timestamp. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ab624d0323b74b908e9bb4c3aa9674e55}\label{interface_thing_encrypt_image_k_v_storage_ab624d0323b74b908e9bb4c3aa9674e55}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemsEarlierThanTime:@{removeItemsEarlierThanTime:}}
+\index{removeItemsEarlierThanTime:@{removeItemsEarlierThanTime:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemsEarlierThanTime:}{removeItemsEarlierThanTime:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Items\+Earlier\+Than\+Time\+: \begin{DoxyParamCaption}\item[{(int)}]{time }\end{DoxyParamCaption}}
+
+Remove all items which last access time is earlier than a specified timestamp.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The specified unix timestamp. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ab624d0323b74b908e9bb4c3aa9674e55}\label{interface_thing_encrypt_image_k_v_storage_ab624d0323b74b908e9bb4c3aa9674e55}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemsEarlierThanTime:@{removeItemsEarlierThanTime:}}
+\index{removeItemsEarlierThanTime:@{removeItemsEarlierThanTime:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemsEarlierThanTime:}{removeItemsEarlierThanTime:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Items\+Earlier\+Than\+Time\+: \begin{DoxyParamCaption}\item[{(int)}]{time }\end{DoxyParamCaption}}
+
+Remove all items which last access time is earlier than a specified timestamp.
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The specified unix timestamp. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ad060448194bf05807378db460b266d6b}\label{interface_thing_encrypt_image_k_v_storage_ad060448194bf05807378db460b266d6b}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemsToFitSize:@{removeItemsToFitSize:}}
+\index{removeItemsToFitSize:@{removeItemsToFitSize:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemsToFitSize:}{removeItemsToFitSize:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Items\+To\+Fit\+Size\+: \begin{DoxyParamCaption}\item[{(int)}]{max\+Size }\end{DoxyParamCaption}}
+
+Remove items to make the total size not larger than a specified size. The least recently used (LRU) items will be removed first.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Size} & The specified size in bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ad060448194bf05807378db460b266d6b}\label{interface_thing_encrypt_image_k_v_storage_ad060448194bf05807378db460b266d6b}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemsToFitSize:@{removeItemsToFitSize:}}
+\index{removeItemsToFitSize:@{removeItemsToFitSize:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemsToFitSize:}{removeItemsToFitSize:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Items\+To\+Fit\+Size\+: \begin{DoxyParamCaption}\item[{(int)}]{max\+Size }\end{DoxyParamCaption}}
+
+Remove items to make the total size not larger than a specified size. The least recently used (LRU) items will be removed first.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Size} & The specified size in bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ad060448194bf05807378db460b266d6b}\label{interface_thing_encrypt_image_k_v_storage_ad060448194bf05807378db460b266d6b}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemsToFitSize:@{removeItemsToFitSize:}}
+\index{removeItemsToFitSize:@{removeItemsToFitSize:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemsToFitSize:}{removeItemsToFitSize:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Items\+To\+Fit\+Size\+: \begin{DoxyParamCaption}\item[{(int)}]{max\+Size }\end{DoxyParamCaption}}
+
+Remove items to make the total size not larger than a specified size. The least recently used (LRU) items will be removed first.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Size} & The specified size in bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_ad060448194bf05807378db460b266d6b}\label{interface_thing_encrypt_image_k_v_storage_ad060448194bf05807378db460b266d6b}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!removeItemsToFitSize:@{removeItemsToFitSize:}}
+\index{removeItemsToFitSize:@{removeItemsToFitSize:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{removeItemsToFitSize:}{removeItemsToFitSize:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) remove\+Items\+To\+Fit\+Size\+: \begin{DoxyParamCaption}\item[{(int)}]{max\+Size }\end{DoxyParamCaption}}
+
+Remove items to make the total size not larger than a specified size. The least recently used (LRU) items will be removed first.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Size} & The specified size in bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa3970b9809b37d41cbfa1a5e133d3e19}\label{interface_thing_encrypt_image_k_v_storage_aa3970b9809b37d41cbfa1a5e133d3e19}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!saveItem:@{saveItem:}}
+\index{saveItem:@{saveItem:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{saveItem:}{saveItem:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) save\+Item\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} $\ast$)}]{item }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md46}{}\doxysubsection{@name Save Items}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md46}
+Save an item or update the item with \textquotesingle{}key\textquotesingle{} if it already exists.
+
+@discussion This method will save the item.\+key, item.\+value, item.\+filename and item.\+extended\+Data to disk or sqlite, other properties will be ignored. item.\+key and item.\+value should not be empty (nil or zero length). the item.\+filename should not be empty.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & An item. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa3970b9809b37d41cbfa1a5e133d3e19}\label{interface_thing_encrypt_image_k_v_storage_aa3970b9809b37d41cbfa1a5e133d3e19}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!saveItem:@{saveItem:}}
+\index{saveItem:@{saveItem:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{saveItem:}{saveItem:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) save\+Item\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} $\ast$)}]{item }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md14}{}\doxysubsection{@name Save Items}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md14}
+Save an item or update the item with \textquotesingle{}key\textquotesingle{} if it already exists.
+
+@discussion This method will save the item.\+key, item.\+value, item.\+filename and item.\+extended\+Data to disk or sqlite, other properties will be ignored. item.\+key and item.\+value should not be empty (nil or zero length). the item.\+filename should not be empty.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & An item. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa3970b9809b37d41cbfa1a5e133d3e19}\label{interface_thing_encrypt_image_k_v_storage_aa3970b9809b37d41cbfa1a5e133d3e19}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!saveItem:@{saveItem:}}
+\index{saveItem:@{saveItem:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{saveItem:}{saveItem:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) save\+Item\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} $\ast$)}]{item }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md62}{}\doxysubsection{@name Save Items}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md62}
+Save an item or update the item with \textquotesingle{}key\textquotesingle{} if it already exists.
+
+@discussion This method will save the item.\+key, item.\+value, item.\+filename and item.\+extended\+Data to disk or sqlite, other properties will be ignored. item.\+key and item.\+value should not be empty (nil or zero length). the item.\+filename should not be empty.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & An item. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa3970b9809b37d41cbfa1a5e133d3e19}\label{interface_thing_encrypt_image_k_v_storage_aa3970b9809b37d41cbfa1a5e133d3e19}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!saveItem:@{saveItem:}}
+\index{saveItem:@{saveItem:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{saveItem:}{saveItem:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) save\+Item\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} $\ast$)}]{item }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md30}{}\doxysubsection{@name Save Items}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md30}
+Save an item or update the item with \textquotesingle{}key\textquotesingle{} if it already exists.
+
+@discussion This method will save the item.\+key, item.\+value, item.\+filename and item.\+extended\+Data to disk or sqlite, other properties will be ignored. item.\+key and item.\+value should not be empty (nil or zero length). the item.\+filename should not be empty.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & An item. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_acff007fab832675675181bb341c1fa2d}\label{interface_thing_encrypt_image_k_v_storage_acff007fab832675675181bb341c1fa2d}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!saveItemWithKey:value:@{saveItemWithKey:value:}}
+\index{saveItemWithKey:value:@{saveItemWithKey:value:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{saveItemWithKey:value:}{saveItemWithKey:value:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) save\+Item\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\item[{value\+:(NSData $\ast$)}]{value }\end{DoxyParamCaption}}
+
+Save an item or update the item with \textquotesingle{}key\textquotesingle{} if it already exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key, should not be empty (nil or zero length). \\
+\hline
+{\em value} & The key, should not be empty (nil or zero length). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_acff007fab832675675181bb341c1fa2d}\label{interface_thing_encrypt_image_k_v_storage_acff007fab832675675181bb341c1fa2d}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!saveItemWithKey:value:@{saveItemWithKey:value:}}
+\index{saveItemWithKey:value:@{saveItemWithKey:value:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{saveItemWithKey:value:}{saveItemWithKey:value:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) save\+Item\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\item[{value\+:(NSData $\ast$)}]{value }\end{DoxyParamCaption}}
+
+Save an item or update the item with \textquotesingle{}key\textquotesingle{} if it already exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key, should not be empty (nil or zero length). \\
+\hline
+{\em value} & The key, should not be empty (nil or zero length). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_acff007fab832675675181bb341c1fa2d}\label{interface_thing_encrypt_image_k_v_storage_acff007fab832675675181bb341c1fa2d}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!saveItemWithKey:value:@{saveItemWithKey:value:}}
+\index{saveItemWithKey:value:@{saveItemWithKey:value:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{saveItemWithKey:value:}{saveItemWithKey:value:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) save\+Item\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\item[{value\+:(NSData $\ast$)}]{value }\end{DoxyParamCaption}}
+
+Save an item or update the item with \textquotesingle{}key\textquotesingle{} if it already exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key, should not be empty (nil or zero length). \\
+\hline
+{\em value} & The key, should not be empty (nil or zero length). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_acff007fab832675675181bb341c1fa2d}\label{interface_thing_encrypt_image_k_v_storage_acff007fab832675675181bb341c1fa2d}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!saveItemWithKey:value:@{saveItemWithKey:value:}}
+\index{saveItemWithKey:value:@{saveItemWithKey:value:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{saveItemWithKey:value:}{saveItemWithKey:value:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) save\+Item\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\item[{value\+:(NSData $\ast$)}]{value }\end{DoxyParamCaption}}
+
+Save an item or update the item with \textquotesingle{}key\textquotesingle{} if it already exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key, should not be empty (nil or zero length). \\
+\hline
+{\em value} & The key, should not be empty (nil or zero length). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a80591a8076a4dc1341ddee0591d4483b}\label{interface_thing_encrypt_image_k_v_storage_a80591a8076a4dc1341ddee0591d4483b}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!saveItemWithKey:value:filename:extendedData:@{saveItemWithKey:value:filename:extendedData:}}
+\index{saveItemWithKey:value:filename:extendedData:@{saveItemWithKey:value:filename:extendedData:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{saveItemWithKey:value:filename:extendedData:}{saveItemWithKey:value:filename:extendedData:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) save\+Item\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\item[{value\+:(NSData $\ast$)}]{value }\item[{filename\+:(nullable NSString $\ast$)}]{filename }\item[{extended\+Data\+:(nullable NSData $\ast$)}]{extended\+Data }\end{DoxyParamCaption}}
+
+Save an item or update the item with \textquotesingle{}key\textquotesingle{} if it already exists. the {\ttfamily filename} should not be empty.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key, should not be empty (nil or zero length). \\
+\hline
+{\em value} & The key, should not be empty (nil or zero length). \\
+\hline
+{\em filename} & The filename. \\
+\hline
+{\em extended\+Data} & The extended data for this item (pass nil to ignore it).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a80591a8076a4dc1341ddee0591d4483b}\label{interface_thing_encrypt_image_k_v_storage_a80591a8076a4dc1341ddee0591d4483b}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!saveItemWithKey:value:filename:extendedData:@{saveItemWithKey:value:filename:extendedData:}}
+\index{saveItemWithKey:value:filename:extendedData:@{saveItemWithKey:value:filename:extendedData:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{saveItemWithKey:value:filename:extendedData:}{saveItemWithKey:value:filename:extendedData:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) save\+Item\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\item[{value\+:(NSData $\ast$)}]{value }\item[{filename\+:(nullable NSString $\ast$)}]{filename }\item[{extended\+Data\+:(nullable NSData $\ast$)}]{extended\+Data }\end{DoxyParamCaption}}
+
+Save an item or update the item with \textquotesingle{}key\textquotesingle{} if it already exists. the {\ttfamily filename} should not be empty.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key, should not be empty (nil or zero length). \\
+\hline
+{\em value} & The key, should not be empty (nil or zero length). \\
+\hline
+{\em filename} & The filename. \\
+\hline
+{\em extended\+Data} & The extended data for this item (pass nil to ignore it).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a80591a8076a4dc1341ddee0591d4483b}\label{interface_thing_encrypt_image_k_v_storage_a80591a8076a4dc1341ddee0591d4483b}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!saveItemWithKey:value:filename:extendedData:@{saveItemWithKey:value:filename:extendedData:}}
+\index{saveItemWithKey:value:filename:extendedData:@{saveItemWithKey:value:filename:extendedData:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{saveItemWithKey:value:filename:extendedData:}{saveItemWithKey:value:filename:extendedData:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) save\+Item\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\item[{value\+:(NSData $\ast$)}]{value }\item[{filename\+:(nullable NSString $\ast$)}]{filename }\item[{extended\+Data\+:(nullable NSData $\ast$)}]{extended\+Data }\end{DoxyParamCaption}}
+
+Save an item or update the item with \textquotesingle{}key\textquotesingle{} if it already exists. the {\ttfamily filename} should not be empty.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key, should not be empty (nil or zero length). \\
+\hline
+{\em value} & The key, should not be empty (nil or zero length). \\
+\hline
+{\em filename} & The filename. \\
+\hline
+{\em extended\+Data} & The extended data for this item (pass nil to ignore it).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a80591a8076a4dc1341ddee0591d4483b}\label{interface_thing_encrypt_image_k_v_storage_a80591a8076a4dc1341ddee0591d4483b}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!saveItemWithKey:value:filename:extendedData:@{saveItemWithKey:value:filename:extendedData:}}
+\index{saveItemWithKey:value:filename:extendedData:@{saveItemWithKey:value:filename:extendedData:}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{saveItemWithKey:value:filename:extendedData:}{saveItemWithKey:value:filename:extendedData:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) save\+Item\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\item[{value\+:(NSData $\ast$)}]{value }\item[{filename\+:(nullable NSString $\ast$)}]{filename }\item[{extended\+Data\+:(nullable NSData $\ast$)}]{extended\+Data }\end{DoxyParamCaption}}
+
+Save an item or update the item with \textquotesingle{}key\textquotesingle{} if it already exists. the {\ttfamily filename} should not be empty.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key, should not be empty (nil or zero length). \\
+\hline
+{\em value} & The key, should not be empty (nil or zero length). \\
+\hline
+{\em filename} & The filename. \\
+\hline
+{\em extended\+Data} & The extended data for this item (pass nil to ignore it).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether succeed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}\label{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}}
+\index{UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{UNAVAILABLE\_ATTRIBUTE}{UNAVAILABLE\_ATTRIBUTE}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily + (instancetype) UNAVAILABLE\+\_\+\+ATTRIBUTE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}\label{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}}
+\index{UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{UNAVAILABLE\_ATTRIBUTE}{UNAVAILABLE\_ATTRIBUTE}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily -\/ (instancetype) UNAVAILABLE\+\_\+\+ATTRIBUTE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md61}{}\doxysubsection{@name Initializer}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md61}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}\label{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}}
+\index{UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{UNAVAILABLE\_ATTRIBUTE}{UNAVAILABLE\_ATTRIBUTE}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily + (instancetype) UNAVAILABLE\+\_\+\+ATTRIBUTE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}\label{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}}
+\index{UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{UNAVAILABLE\_ATTRIBUTE}{UNAVAILABLE\_ATTRIBUTE}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily -\/ (instancetype) UNAVAILABLE\+\_\+\+ATTRIBUTE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md13}{}\doxysubsection{@name Initializer}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md13}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}\label{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}}
+\index{UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{UNAVAILABLE\_ATTRIBUTE}{UNAVAILABLE\_ATTRIBUTE}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily + (instancetype) UNAVAILABLE\+\_\+\+ATTRIBUTE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}\label{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}}
+\index{UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{UNAVAILABLE\_ATTRIBUTE}{UNAVAILABLE\_ATTRIBUTE}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily -\/ (instancetype) UNAVAILABLE\+\_\+\+ATTRIBUTE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md29}{}\doxysubsection{@name Initializer}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md29}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}\label{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}}
+\index{UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{UNAVAILABLE\_ATTRIBUTE}{UNAVAILABLE\_ATTRIBUTE}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily + (instancetype) UNAVAILABLE\+\_\+\+ATTRIBUTE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}\label{interface_thing_encrypt_image_k_v_storage_aa6470a0e4c24dc0556c1affedadb8411}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}}
+\index{UNAVAILABLE\_ATTRIBUTE@{UNAVAILABLE\_ATTRIBUTE}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{UNAVAILABLE\_ATTRIBUTE}{UNAVAILABLE\_ATTRIBUTE}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily -\/ (instancetype) UNAVAILABLE\+\_\+\+ATTRIBUTE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md45}{}\doxysubsection{@name Initializer}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md45}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a1a8f91a45ead61c83854a3058a4e6b2a}\label{interface_thing_encrypt_image_k_v_storage_a1a8f91a45ead61c83854a3058a4e6b2a}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!dataDirectory@{dataDirectory}}
+\index{dataDirectory@{dataDirectory}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{dataDirectory}{dataDirectory}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) data\+Directory\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The data path of this storage. 
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00050}{50}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{Thing\+Encrypt\+Image\+KVStorage.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_a737eaf57b7af387040650281ea0b1f25}\label{interface_thing_encrypt_image_k_v_storage_a737eaf57b7af387040650281ea0b1f25}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!errorLogsEnabled@{errorLogsEnabled}}
+\index{errorLogsEnabled@{errorLogsEnabled}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{errorLogsEnabled}{errorLogsEnabled}}
+{\footnotesize\ttfamily -\/ (BOOL) error\+Logs\+Enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Set {\ttfamily YES} to enable error logs for debug. 
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00051}{51}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{Thing\+Encrypt\+Image\+KVStorage.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_encrypt_image_k_v_storage_aa37c33037594aa815537ff1d03dc5237}\label{interface_thing_encrypt_image_k_v_storage_aa37c33037594aa815537ff1d03dc5237}} 
+\index{ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}!path@{path}}
+\index{path@{path}!ThingEncryptImageKVStorage@{ThingEncryptImageKVStorage}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) path\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The path of this storage. 
+
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md12}{}\doxysubsection{@name Attribute}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md12}
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md28}{}\doxysubsection{@name Attribute}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md28}
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md44}{}\doxysubsection{@name Attribute}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md44}
+============================================================================= \hypertarget{interface_thing_encrypt_image_k_v_storage_autotoc_md60}{}\doxysubsection{@name Attribute}\label{interface_thing_encrypt_image_k_v_storage_autotoc_md60}
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00049}{49}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{Thing\+Encrypt\+Image\+KVStorage.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Encrypt\+Image.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h}{Thing\+Encrypt\+Image\+KVStorage.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Encrypt\+Image.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h}{Thing\+Encrypt\+Image\+KVStorage.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.\+xcframework/ios-\/arm64/\+Thing\+Encrypt\+Image.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h}{Thing\+Encrypt\+Image\+KVStorage.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Encrypt\+Image.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h}{Thing\+Encrypt\+Image\+KVStorage.\+h}}\end{DoxyCompactItemize}

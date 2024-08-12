@@ -1,0 +1,554 @@
+\hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+SIGMesh\+Manager\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p}\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+
+
+The delegate of the Bluetooth mesh manager. The delegate is instantiated when the Bluetooth mesh manager processes messages.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+SIGMesh\+Manager.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+SIGMesh\+Manager\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_thing_smart_s_i_g_mesh_manager_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_adf9973d55a8f5c94ad094153b450cc0d}{sig\+Mesh\+Manager\+:did\+Active\+Sub\+Device\+:dev\+Id\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac0925f517060e09c3dbe851af1e971b1}{sig\+Mesh\+Manager\+:did\+Fail\+To\+Active\+Device\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ab2f32899ea634f4e0ed130b12d48bb83}{did\+Finish\+To\+Active\+Dev\+List}}
+\begin{DoxyCompactList}\small\item\em The callback that is used when the activation is completed. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a7dbd7a0c20bdfb16b445135f4c5f8177}{did\+Finish\+To\+Active\+Dev\+List\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a21d2f7f01a434ef8b466145ce5d1652c}{notify\+Central\+Manager\+Did\+Disconnect\+Peripheral}}
+\begin{DoxyCompactList}\small\item\em The callback that is used when a device is disconnected. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a60c97825f0cd6e373b273fadc84afaa8}{notify\+Central\+Manager\+Did\+Disconnect\+Peripheral\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a41002c665b97d88ec5d10877003ef552}{did\+Proxy\+And\+Relay\+Status\+Updated\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a09f317688be0b4a18591aadce210fc04}{sig\+Mesh\+Manager\+:did\+Scaned\+Device\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_aa59a7aee55a22a80a9e8a1e7a9e89404}{sig\+Mesh\+Manager\+:provisioned\+SIGMesh\+Device\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a08e0b76c3efa2a001533559291035c86}{sig\+Mesh\+Manager\+:did\+Handle\+Group\+With\+Group\+Address\+:device\+Node\+Id\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a340ed31d15830885e3c4a6e64bc01302}{new\+Sig\+Mesh\+Manager\+:did\+Handle\+Group\+With\+Group\+Address\+:device\+Node\+Id\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a15032d73ca712956a96f0b922fe44043}{sig\+Mesh\+Manager\+:query\+Group\+List\+:device\+Model\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac2877a1698e29c1249c1ddb064dd25b7}{notify\+SIGLogin\+Success\+:}}
+\begin{DoxyCompactList}\small\item\em The notification of login success. This parameter is required for an update. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a938de0d215ed88fad19ef7ad6db4227b}{notify\+SIGLogin\+Success}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ae4fd39d654b3331dc135763c466825a6}{notify\+SIGLogin\+Success\+:manager\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ad37fb19fd633765f17299a79747a1d10}{did\+Connect\+Mesh\+Node\+And\+Login\+Mesh}}
+\begin{DoxyCompactList}\small\item\em The callback that is used when a mesh network is connected. This enables subsequent local communication. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a605ed5cff2a524c45ee3d0d9a9e03e2b}{did\+Connect\+Mesh\+Node\+And\+Login\+Mesh\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a4bef5a9d30b09549a8bdef26e92c1cc5}{sig\+Mesh\+Manager\+:query\+Device\+Model\+:group\+Address\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac8c58a74a9f8d580f2ce8d966ba15e02}{sig\+Mesh\+Manager\+:did\+Received\+Custom\+Op\+Code\+Data\+:payload\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSNumber $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a63c0c1bed34209fab8bba1efee7a93c6}{list\+Of\+Custom\+Model\+Id\+With\+Sig\+Mesh\+Manager\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a52a95994dd4c9c8c0503c50993a9b0a5}{sig\+Mesh\+Manager\+:received\+Fitting\+Message\+:}}
+\item 
+(NSDictionary $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a738114d2232308f602ba89f2160ab620}{Optional\+Parameters\+To\+Register\+Device\+With\+The\+Cloud}}
+\begin{DoxyCompactList}\small\item\em Optional parameters to register the device with the cloud. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_adf9973d55a8f5c94ad094153b450cc0d}{sig\+Mesh\+Manager\+:did\+Active\+Sub\+Device\+:dev\+Id\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac0925f517060e09c3dbe851af1e971b1}{sig\+Mesh\+Manager\+:did\+Fail\+To\+Active\+Device\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ab2f32899ea634f4e0ed130b12d48bb83}{did\+Finish\+To\+Active\+Dev\+List}}
+\begin{DoxyCompactList}\small\item\em The callback that is used when the activation is completed. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a7dbd7a0c20bdfb16b445135f4c5f8177}{did\+Finish\+To\+Active\+Dev\+List\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a21d2f7f01a434ef8b466145ce5d1652c}{notify\+Central\+Manager\+Did\+Disconnect\+Peripheral}}
+\begin{DoxyCompactList}\small\item\em The callback that is used when a device is disconnected. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a60c97825f0cd6e373b273fadc84afaa8}{notify\+Central\+Manager\+Did\+Disconnect\+Peripheral\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a41002c665b97d88ec5d10877003ef552}{did\+Proxy\+And\+Relay\+Status\+Updated\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a09f317688be0b4a18591aadce210fc04}{sig\+Mesh\+Manager\+:did\+Scaned\+Device\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_aa59a7aee55a22a80a9e8a1e7a9e89404}{sig\+Mesh\+Manager\+:provisioned\+SIGMesh\+Device\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a08e0b76c3efa2a001533559291035c86}{sig\+Mesh\+Manager\+:did\+Handle\+Group\+With\+Group\+Address\+:device\+Node\+Id\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a340ed31d15830885e3c4a6e64bc01302}{new\+Sig\+Mesh\+Manager\+:did\+Handle\+Group\+With\+Group\+Address\+:device\+Node\+Id\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a15032d73ca712956a96f0b922fe44043}{sig\+Mesh\+Manager\+:query\+Group\+List\+:device\+Model\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac2877a1698e29c1249c1ddb064dd25b7}{notify\+SIGLogin\+Success\+:}}
+\begin{DoxyCompactList}\small\item\em The notification of login success. This parameter is required for an update. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a938de0d215ed88fad19ef7ad6db4227b}{notify\+SIGLogin\+Success}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ae4fd39d654b3331dc135763c466825a6}{notify\+SIGLogin\+Success\+:manager\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ad37fb19fd633765f17299a79747a1d10}{did\+Connect\+Mesh\+Node\+And\+Login\+Mesh}}
+\begin{DoxyCompactList}\small\item\em The callback that is used when a mesh network is connected. This enables subsequent local communication. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a605ed5cff2a524c45ee3d0d9a9e03e2b}{did\+Connect\+Mesh\+Node\+And\+Login\+Mesh\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a4bef5a9d30b09549a8bdef26e92c1cc5}{sig\+Mesh\+Manager\+:query\+Device\+Model\+:group\+Address\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac8c58a74a9f8d580f2ce8d966ba15e02}{sig\+Mesh\+Manager\+:did\+Received\+Custom\+Op\+Code\+Data\+:payload\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSNumber $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a63c0c1bed34209fab8bba1efee7a93c6}{list\+Of\+Custom\+Model\+Id\+With\+Sig\+Mesh\+Manager\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a52a95994dd4c9c8c0503c50993a9b0a5}{sig\+Mesh\+Manager\+:received\+Fitting\+Message\+:}}
+\item 
+(NSDictionary $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a738114d2232308f602ba89f2160ab620}{Optional\+Parameters\+To\+Register\+Device\+With\+The\+Cloud}}
+\begin{DoxyCompactList}\small\item\em Optional parameters to register the device with the cloud. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The delegate of the Bluetooth mesh manager. The delegate is instantiated when the Bluetooth mesh manager processes messages. 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_8h_source_l00026}{26}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_8h_source}{Thing\+Smart\+SIGMesh\+Manager.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ad37fb19fd633765f17299a79747a1d10}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ad37fb19fd633765f17299a79747a1d10}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!didConnectMeshNodeAndLoginMesh@{didConnectMeshNodeAndLoginMesh}}
+\index{didConnectMeshNodeAndLoginMesh@{didConnectMeshNodeAndLoginMesh}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didConnectMeshNodeAndLoginMesh}{didConnectMeshNodeAndLoginMesh}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Connect\+Mesh\+Node\+And\+Login\+Mesh \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+The callback that is used when a mesh network is connected. This enables subsequent local communication. 
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ad37fb19fd633765f17299a79747a1d10}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ad37fb19fd633765f17299a79747a1d10}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!didConnectMeshNodeAndLoginMesh@{didConnectMeshNodeAndLoginMesh}}
+\index{didConnectMeshNodeAndLoginMesh@{didConnectMeshNodeAndLoginMesh}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didConnectMeshNodeAndLoginMesh}{didConnectMeshNodeAndLoginMesh}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Connect\+Mesh\+Node\+And\+Login\+Mesh \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+The callback that is used when a mesh network is connected. This enables subsequent local communication. 
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a605ed5cff2a524c45ee3d0d9a9e03e2b}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a605ed5cff2a524c45ee3d0d9a9e03e2b}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!didConnectMeshNodeAndLoginMesh:@{didConnectMeshNodeAndLoginMesh:}}
+\index{didConnectMeshNodeAndLoginMesh:@{didConnectMeshNodeAndLoginMesh:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didConnectMeshNodeAndLoginMesh:}{didConnectMeshNodeAndLoginMesh:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Connect\+Mesh\+Node\+And\+Login\+Mesh\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a605ed5cff2a524c45ee3d0d9a9e03e2b}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a605ed5cff2a524c45ee3d0d9a9e03e2b}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!didConnectMeshNodeAndLoginMesh:@{didConnectMeshNodeAndLoginMesh:}}
+\index{didConnectMeshNodeAndLoginMesh:@{didConnectMeshNodeAndLoginMesh:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didConnectMeshNodeAndLoginMesh:}{didConnectMeshNodeAndLoginMesh:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Connect\+Mesh\+Node\+And\+Login\+Mesh\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ab2f32899ea634f4e0ed130b12d48bb83}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ab2f32899ea634f4e0ed130b12d48bb83}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!didFinishToActiveDevList@{didFinishToActiveDevList}}
+\index{didFinishToActiveDevList@{didFinishToActiveDevList}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didFinishToActiveDevList}{didFinishToActiveDevList}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Finish\+To\+Active\+Dev\+List \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+The callback that is used when the activation is completed. 
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ab2f32899ea634f4e0ed130b12d48bb83}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ab2f32899ea634f4e0ed130b12d48bb83}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!didFinishToActiveDevList@{didFinishToActiveDevList}}
+\index{didFinishToActiveDevList@{didFinishToActiveDevList}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didFinishToActiveDevList}{didFinishToActiveDevList}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Finish\+To\+Active\+Dev\+List \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+The callback that is used when the activation is completed. 
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a7dbd7a0c20bdfb16b445135f4c5f8177}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a7dbd7a0c20bdfb16b445135f4c5f8177}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!didFinishToActiveDevList:@{didFinishToActiveDevList:}}
+\index{didFinishToActiveDevList:@{didFinishToActiveDevList:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didFinishToActiveDevList:}{didFinishToActiveDevList:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Finish\+To\+Active\+Dev\+List\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a7dbd7a0c20bdfb16b445135f4c5f8177}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a7dbd7a0c20bdfb16b445135f4c5f8177}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!didFinishToActiveDevList:@{didFinishToActiveDevList:}}
+\index{didFinishToActiveDevList:@{didFinishToActiveDevList:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didFinishToActiveDevList:}{didFinishToActiveDevList:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Finish\+To\+Active\+Dev\+List\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a41002c665b97d88ec5d10877003ef552}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a41002c665b97d88ec5d10877003ef552}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!didProxyAndRelayStatusUpdated:@{didProxyAndRelayStatusUpdated:}}
+\index{didProxyAndRelayStatusUpdated:@{didProxyAndRelayStatusUpdated:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didProxyAndRelayStatusUpdated:}{didProxyAndRelayStatusUpdated:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Proxy\+And\+Relay\+Status\+Updated\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a41002c665b97d88ec5d10877003ef552}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a41002c665b97d88ec5d10877003ef552}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!didProxyAndRelayStatusUpdated:@{didProxyAndRelayStatusUpdated:}}
+\index{didProxyAndRelayStatusUpdated:@{didProxyAndRelayStatusUpdated:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didProxyAndRelayStatusUpdated:}{didProxyAndRelayStatusUpdated:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Proxy\+And\+Relay\+Status\+Updated\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a63c0c1bed34209fab8bba1efee7a93c6}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a63c0c1bed34209fab8bba1efee7a93c6}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!listOfCustomModelIdWithSigMeshManager:@{listOfCustomModelIdWithSigMeshManager:}}
+\index{listOfCustomModelIdWithSigMeshManager:@{listOfCustomModelIdWithSigMeshManager:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{listOfCustomModelIdWithSigMeshManager:}{listOfCustomModelIdWithSigMeshManager:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSNumber $\ast$ $>$ $\ast$) list\+Of\+Custom\+Model\+Id\+With\+Sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a63c0c1bed34209fab8bba1efee7a93c6}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a63c0c1bed34209fab8bba1efee7a93c6}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!listOfCustomModelIdWithSigMeshManager:@{listOfCustomModelIdWithSigMeshManager:}}
+\index{listOfCustomModelIdWithSigMeshManager:@{listOfCustomModelIdWithSigMeshManager:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{listOfCustomModelIdWithSigMeshManager:}{listOfCustomModelIdWithSigMeshManager:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSNumber $\ast$ $>$ $\ast$) list\+Of\+Custom\+Model\+Id\+With\+Sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a340ed31d15830885e3c4a6e64bc01302}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a340ed31d15830885e3c4a6e64bc01302}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:@{newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}}
+\index{newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:@{newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}{newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) new\+Sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Handle\+Group\+With\+Group\+Address\+:(NSString $\ast$)}]{group\+Address }\item[{device\+Node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a340ed31d15830885e3c4a6e64bc01302}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a340ed31d15830885e3c4a6e64bc01302}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:@{newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}}
+\index{newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:@{newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}{newSigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) new\+Sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Handle\+Group\+With\+Group\+Address\+:(NSString $\ast$)}]{group\+Address }\item[{device\+Node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a21d2f7f01a434ef8b466145ce5d1652c}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a21d2f7f01a434ef8b466145ce5d1652c}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!notifyCentralManagerDidDisconnectPeripheral@{notifyCentralManagerDidDisconnectPeripheral}}
+\index{notifyCentralManagerDidDisconnectPeripheral@{notifyCentralManagerDidDisconnectPeripheral}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifyCentralManagerDidDisconnectPeripheral}{notifyCentralManagerDidDisconnectPeripheral}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Central\+Manager\+Did\+Disconnect\+Peripheral \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+The callback that is used when a device is disconnected. 
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a21d2f7f01a434ef8b466145ce5d1652c}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a21d2f7f01a434ef8b466145ce5d1652c}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!notifyCentralManagerDidDisconnectPeripheral@{notifyCentralManagerDidDisconnectPeripheral}}
+\index{notifyCentralManagerDidDisconnectPeripheral@{notifyCentralManagerDidDisconnectPeripheral}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifyCentralManagerDidDisconnectPeripheral}{notifyCentralManagerDidDisconnectPeripheral}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Central\+Manager\+Did\+Disconnect\+Peripheral \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+The callback that is used when a device is disconnected. 
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a60c97825f0cd6e373b273fadc84afaa8}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a60c97825f0cd6e373b273fadc84afaa8}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!notifyCentralManagerDidDisconnectPeripheral:@{notifyCentralManagerDidDisconnectPeripheral:}}
+\index{notifyCentralManagerDidDisconnectPeripheral:@{notifyCentralManagerDidDisconnectPeripheral:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifyCentralManagerDidDisconnectPeripheral:}{notifyCentralManagerDidDisconnectPeripheral:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Central\+Manager\+Did\+Disconnect\+Peripheral\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a60c97825f0cd6e373b273fadc84afaa8}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a60c97825f0cd6e373b273fadc84afaa8}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!notifyCentralManagerDidDisconnectPeripheral:@{notifyCentralManagerDidDisconnectPeripheral:}}
+\index{notifyCentralManagerDidDisconnectPeripheral:@{notifyCentralManagerDidDisconnectPeripheral:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifyCentralManagerDidDisconnectPeripheral:}{notifyCentralManagerDidDisconnectPeripheral:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Central\+Manager\+Did\+Disconnect\+Peripheral\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a938de0d215ed88fad19ef7ad6db4227b}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a938de0d215ed88fad19ef7ad6db4227b}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!notifySIGLoginSuccess@{notifySIGLoginSuccess}}
+\index{notifySIGLoginSuccess@{notifySIGLoginSuccess}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifySIGLoginSuccess}{notifySIGLoginSuccess}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+SIGLogin\+Success \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a938de0d215ed88fad19ef7ad6db4227b}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a938de0d215ed88fad19ef7ad6db4227b}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!notifySIGLoginSuccess@{notifySIGLoginSuccess}}
+\index{notifySIGLoginSuccess@{notifySIGLoginSuccess}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifySIGLoginSuccess}{notifySIGLoginSuccess}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+SIGLogin\+Success \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac2877a1698e29c1249c1ddb064dd25b7}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac2877a1698e29c1249c1ddb064dd25b7}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!notifySIGLoginSuccess:@{notifySIGLoginSuccess:}}
+\index{notifySIGLoginSuccess:@{notifySIGLoginSuccess:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifySIGLoginSuccess:}{notifySIGLoginSuccess:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+SIGLogin\+Success\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{success }\end{DoxyParamCaption}}
+
+
+
+The notification of login success. This parameter is required for an update. 
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac2877a1698e29c1249c1ddb064dd25b7}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac2877a1698e29c1249c1ddb064dd25b7}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!notifySIGLoginSuccess:@{notifySIGLoginSuccess:}}
+\index{notifySIGLoginSuccess:@{notifySIGLoginSuccess:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifySIGLoginSuccess:}{notifySIGLoginSuccess:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+SIGLogin\+Success\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{success }\end{DoxyParamCaption}}
+
+
+
+The notification of login success. This parameter is required for an update. 
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ae4fd39d654b3331dc135763c466825a6}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ae4fd39d654b3331dc135763c466825a6}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!notifySIGLoginSuccess:manager:@{notifySIGLoginSuccess:manager:}}
+\index{notifySIGLoginSuccess:manager:@{notifySIGLoginSuccess:manager:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifySIGLoginSuccess:manager:}{notifySIGLoginSuccess:manager:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac2877a1698e29c1249c1ddb064dd25b7}{notify\+SIGLogin\+Success\+:}} \begin{DoxyParamCaption}\item[{(BOOL)}]{success }\item[{manager\+:(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ae4fd39d654b3331dc135763c466825a6}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ae4fd39d654b3331dc135763c466825a6}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!notifySIGLoginSuccess:manager:@{notifySIGLoginSuccess:manager:}}
+\index{notifySIGLoginSuccess:manager:@{notifySIGLoginSuccess:manager:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{notifySIGLoginSuccess:manager:}{notifySIGLoginSuccess:manager:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) \mbox{\hyperlink{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac2877a1698e29c1249c1ddb064dd25b7}{notify\+SIGLogin\+Success\+:}} \begin{DoxyParamCaption}\item[{(BOOL)}]{success }\item[{manager\+:(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a738114d2232308f602ba89f2160ab620}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a738114d2232308f602ba89f2160ab620}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!OptionalParametersToRegisterDeviceWithTheCloud@{OptionalParametersToRegisterDeviceWithTheCloud}}
+\index{OptionalParametersToRegisterDeviceWithTheCloud@{OptionalParametersToRegisterDeviceWithTheCloud}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{OptionalParametersToRegisterDeviceWithTheCloud}{OptionalParametersToRegisterDeviceWithTheCloud}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) Optional\+Parameters\+To\+Register\+Device\+With\+The\+Cloud \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Optional parameters to register the device with the cloud. 
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a738114d2232308f602ba89f2160ab620}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a738114d2232308f602ba89f2160ab620}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!OptionalParametersToRegisterDeviceWithTheCloud@{OptionalParametersToRegisterDeviceWithTheCloud}}
+\index{OptionalParametersToRegisterDeviceWithTheCloud@{OptionalParametersToRegisterDeviceWithTheCloud}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{OptionalParametersToRegisterDeviceWithTheCloud}{OptionalParametersToRegisterDeviceWithTheCloud}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) Optional\+Parameters\+To\+Register\+Device\+With\+The\+Cloud \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Optional parameters to register the device with the cloud. 
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_adf9973d55a8f5c94ad094153b450cc0d}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_adf9973d55a8f5c94ad094153b450cc0d}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:didActiveSubDevice:devId:error:@{sigMeshManager:didActiveSubDevice:devId:error:}}
+\index{sigMeshManager:didActiveSubDevice:devId:error:@{sigMeshManager:didActiveSubDevice:devId:error:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:didActiveSubDevice:devId:error:}{sigMeshManager:didActiveSubDevice:devId:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Active\+Sub\+Device\+:(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_discover_device_info}{Thing\+Smart\+SIGMesh\+Discover\+Device\+Info}} $\ast$)}]{device }\item[{dev\+Id\+:(NSString $\ast$)}]{dev\+Id }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}}
+
+The callback that is used when a sub-\/device is activated. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}}. \\
+\hline
+{\em device} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_discover_device_info}{Thing\+Smart\+SIGMesh\+Discover\+Device\+Info}}. \\
+\hline
+{\em dev\+Id} & The device ID. \\
+\hline
+{\em error} & An error occurs while activating the sub-\/device. The values of `name' and \textquotesingle{}deviceid\textquotesingle{} are empty in the response. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_adf9973d55a8f5c94ad094153b450cc0d}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_adf9973d55a8f5c94ad094153b450cc0d}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:didActiveSubDevice:devId:error:@{sigMeshManager:didActiveSubDevice:devId:error:}}
+\index{sigMeshManager:didActiveSubDevice:devId:error:@{sigMeshManager:didActiveSubDevice:devId:error:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:didActiveSubDevice:devId:error:}{sigMeshManager:didActiveSubDevice:devId:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Active\+Sub\+Device\+:(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_discover_device_info}{Thing\+Smart\+SIGMesh\+Discover\+Device\+Info}} $\ast$)}]{device }\item[{dev\+Id\+:(NSString $\ast$)}]{dev\+Id }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}}
+
+The callback that is used when a sub-\/device is activated. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}}. \\
+\hline
+{\em device} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_discover_device_info}{Thing\+Smart\+SIGMesh\+Discover\+Device\+Info}}. \\
+\hline
+{\em dev\+Id} & The device ID. \\
+\hline
+{\em error} & An error occurs while activating the sub-\/device. The values of `name' and \textquotesingle{}deviceid\textquotesingle{} are empty in the response. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac0925f517060e09c3dbe851af1e971b1}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac0925f517060e09c3dbe851af1e971b1}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:didFailToActiveDevice:error:@{sigMeshManager:didFailToActiveDevice:error:}}
+\index{sigMeshManager:didFailToActiveDevice:error:@{sigMeshManager:didFailToActiveDevice:error:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:didFailToActiveDevice:error:}{sigMeshManager:didFailToActiveDevice:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Fail\+To\+Active\+Device\+:(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_discover_device_info}{Thing\+Smart\+SIGMesh\+Discover\+Device\+Info}} $\ast$)}]{device }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}}
+
+The callback that is used when a device failed to be activated. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}}. \\
+\hline
+{\em device} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_discover_device_info}{Thing\+Smart\+SIGMesh\+Discover\+Device\+Info}}. \\
+\hline
+{\em error} & An error occurs while activating the device. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac0925f517060e09c3dbe851af1e971b1}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac0925f517060e09c3dbe851af1e971b1}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:didFailToActiveDevice:error:@{sigMeshManager:didFailToActiveDevice:error:}}
+\index{sigMeshManager:didFailToActiveDevice:error:@{sigMeshManager:didFailToActiveDevice:error:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:didFailToActiveDevice:error:}{sigMeshManager:didFailToActiveDevice:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Fail\+To\+Active\+Device\+:(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_discover_device_info}{Thing\+Smart\+SIGMesh\+Discover\+Device\+Info}} $\ast$)}]{device }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}}
+
+The callback that is used when a device failed to be activated. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}}. \\
+\hline
+{\em device} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_discover_device_info}{Thing\+Smart\+SIGMesh\+Discover\+Device\+Info}}. \\
+\hline
+{\em error} & An error occurs while activating the device. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a08e0b76c3efa2a001533559291035c86}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a08e0b76c3efa2a001533559291035c86}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:@{sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}}
+\index{sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:@{sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}{sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Handle\+Group\+With\+Group\+Address\+:(NSString $\ast$)}]{group\+Address }\item[{device\+Node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Completes the group operation. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}}. \\
+\hline
+{\em group\+Address} & The group mesh address in the hexadecimal format. \\
+\hline
+{\em node\+Id} & The device mesh node address in the hexadecimal format. \\
+\hline
+{\em error} & An error occurs while processing the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a08e0b76c3efa2a001533559291035c86}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a08e0b76c3efa2a001533559291035c86}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:@{sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}}
+\index{sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:@{sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}{sigMeshManager:didHandleGroupWithGroupAddress:deviceNodeId:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Handle\+Group\+With\+Group\+Address\+:(NSString $\ast$)}]{group\+Address }\item[{device\+Node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Completes the group operation. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}}. \\
+\hline
+{\em group\+Address} & The group mesh address in the hexadecimal format. \\
+\hline
+{\em node\+Id} & The device mesh node address in the hexadecimal format. \\
+\hline
+{\em error} & An error occurs while processing the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac8c58a74a9f8d580f2ce8d966ba15e02}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac8c58a74a9f8d580f2ce8d966ba15e02}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:didReceivedCustomOpCodeData:payload:@{sigMeshManager:didReceivedCustomOpCodeData:payload:}}
+\index{sigMeshManager:didReceivedCustomOpCodeData:payload:@{sigMeshManager:didReceivedCustomOpCodeData:payload:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:didReceivedCustomOpCodeData:payload:}{sigMeshManager:didReceivedCustomOpCodeData:payload:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Received\+Custom\+Op\+Code\+Data\+:(NSData $\ast$)}]{op\+Code }\item[{payload\+:(NSData $\ast$)}]{payload }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac8c58a74a9f8d580f2ce8d966ba15e02}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_ac8c58a74a9f8d580f2ce8d966ba15e02}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:didReceivedCustomOpCodeData:payload:@{sigMeshManager:didReceivedCustomOpCodeData:payload:}}
+\index{sigMeshManager:didReceivedCustomOpCodeData:payload:@{sigMeshManager:didReceivedCustomOpCodeData:payload:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:didReceivedCustomOpCodeData:payload:}{sigMeshManager:didReceivedCustomOpCodeData:payload:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Received\+Custom\+Op\+Code\+Data\+:(NSData $\ast$)}]{op\+Code }\item[{payload\+:(NSData $\ast$)}]{payload }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a09f317688be0b4a18591aadce210fc04}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a09f317688be0b4a18591aadce210fc04}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:didScanedDevice:@{sigMeshManager:didScanedDevice:}}
+\index{sigMeshManager:didScanedDevice:@{sigMeshManager:didScanedDevice:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:didScanedDevice:}{sigMeshManager:didScanedDevice:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Scaned\+Device\+:(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_discover_device_info}{Thing\+Smart\+SIGMesh\+Discover\+Device\+Info}} $\ast$)}]{device }\end{DoxyParamCaption}}
+
+Scans a device for pairing. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}}. \\
+\hline
+{\em device} & The value of Thing\+Smart\+SIGMesh\+Discover\+Device\+Inf. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a09f317688be0b4a18591aadce210fc04}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a09f317688be0b4a18591aadce210fc04}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:didScanedDevice:@{sigMeshManager:didScanedDevice:}}
+\index{sigMeshManager:didScanedDevice:@{sigMeshManager:didScanedDevice:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:didScanedDevice:}{sigMeshManager:didScanedDevice:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{did\+Scaned\+Device\+:(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_discover_device_info}{Thing\+Smart\+SIGMesh\+Discover\+Device\+Info}} $\ast$)}]{device }\end{DoxyParamCaption}}
+
+Scans a device for pairing. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}}. \\
+\hline
+{\em device} & The value of Thing\+Smart\+SIGMesh\+Discover\+Device\+Inf. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_aa59a7aee55a22a80a9e8a1e7a9e89404}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_aa59a7aee55a22a80a9e8a1e7a9e89404}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:provisionedSIGMeshDevice:@{sigMeshManager:provisionedSIGMeshDevice:}}
+\index{sigMeshManager:provisionedSIGMeshDevice:@{sigMeshManager:provisionedSIGMeshDevice:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:provisionedSIGMeshDevice:}{sigMeshManager:provisionedSIGMeshDevice:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{provisioned\+SIGMesh\+Device\+:(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_discover_device_info}{Thing\+Smart\+SIGMesh\+Discover\+Device\+Info}} $\ast$)}]{device }\end{DoxyParamCaption}}
+
+Scans a device for actived 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}}. \\
+\hline
+{\em device} & The value of Thing\+Smart\+SIGMesh\+Discover\+Device\+Inf. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_aa59a7aee55a22a80a9e8a1e7a9e89404}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_aa59a7aee55a22a80a9e8a1e7a9e89404}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:provisionedSIGMeshDevice:@{sigMeshManager:provisionedSIGMeshDevice:}}
+\index{sigMeshManager:provisionedSIGMeshDevice:@{sigMeshManager:provisionedSIGMeshDevice:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:provisionedSIGMeshDevice:}{sigMeshManager:provisionedSIGMeshDevice:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{provisioned\+SIGMesh\+Device\+:(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_discover_device_info}{Thing\+Smart\+SIGMesh\+Discover\+Device\+Info}} $\ast$)}]{device }\end{DoxyParamCaption}}
+
+Scans a device for actived 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}}. \\
+\hline
+{\em device} & The value of Thing\+Smart\+SIGMesh\+Discover\+Device\+Inf. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a4bef5a9d30b09549a8bdef26e92c1cc5}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a4bef5a9d30b09549a8bdef26e92c1cc5}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:queryDeviceModel:groupAddress:@{sigMeshManager:queryDeviceModel:groupAddress:}}
+\index{sigMeshManager:queryDeviceModel:groupAddress:@{sigMeshManager:queryDeviceModel:groupAddress:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:queryDeviceModel:groupAddress:}{sigMeshManager:queryDeviceModel:groupAddress:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{query\+Device\+Model\+:(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\item[{group\+Address\+:(uint32\+\_\+t)}]{group\+Address }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a4bef5a9d30b09549a8bdef26e92c1cc5}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a4bef5a9d30b09549a8bdef26e92c1cc5}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:queryDeviceModel:groupAddress:@{sigMeshManager:queryDeviceModel:groupAddress:}}
+\index{sigMeshManager:queryDeviceModel:groupAddress:@{sigMeshManager:queryDeviceModel:groupAddress:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:queryDeviceModel:groupAddress:}{sigMeshManager:queryDeviceModel:groupAddress:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{query\+Device\+Model\+:(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\item[{group\+Address\+:(uint32\+\_\+t)}]{group\+Address }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a15032d73ca712956a96f0b922fe44043}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a15032d73ca712956a96f0b922fe44043}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:queryGroupList:deviceModel:error:@{sigMeshManager:queryGroupList:deviceModel:error:}}
+\index{sigMeshManager:queryGroupList:deviceModel:error:@{sigMeshManager:queryGroupList:deviceModel:error:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:queryGroupList:deviceModel:error:}{sigMeshManager:queryGroupList:deviceModel:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{query\+Group\+List\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{group\+List }\item[{device\+Model\+:(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\item[{error\+:(NSString $\ast$\+\_\+\+Nullable)}]{error }\end{DoxyParamCaption}}
+
+Queries a list of device groups. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}}. \\
+\hline
+{\em group\+List} & A list of group addresses. \\
+\hline
+{\em device\+Model} & The device model. \\
+\hline
+{\em error} & An error occurs while processing the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a15032d73ca712956a96f0b922fe44043}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a15032d73ca712956a96f0b922fe44043}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:queryGroupList:deviceModel:error:@{sigMeshManager:queryGroupList:deviceModel:error:}}
+\index{sigMeshManager:queryGroupList:deviceModel:error:@{sigMeshManager:queryGroupList:deviceModel:error:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:queryGroupList:deviceModel:error:}{sigMeshManager:queryGroupList:deviceModel:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{query\+Group\+List\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{group\+List }\item[{device\+Model\+:(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\item[{error\+:(NSString $\ast$\+\_\+\+Nullable)}]{error }\end{DoxyParamCaption}}
+
+Queries a list of device groups. 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The value of \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}}. \\
+\hline
+{\em group\+List} & A list of group addresses. \\
+\hline
+{\em device\+Model} & The device model. \\
+\hline
+{\em error} & An error occurs while processing the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a52a95994dd4c9c8c0503c50993a9b0a5}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a52a95994dd4c9c8c0503c50993a9b0a5}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:receivedFittingMessage:@{sigMeshManager:receivedFittingMessage:}}
+\index{sigMeshManager:receivedFittingMessage:@{sigMeshManager:receivedFittingMessage:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:receivedFittingMessage:}{sigMeshManager:receivedFittingMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{received\+Fitting\+Message\+:(\mbox{\hyperlink{interface_thing_s_i_g_mesh_fitting_msg_model}{Thing\+SIGMesh\+Fitting\+Msg\+Model}} $\ast$)}]{message }\end{DoxyParamCaption}}
+
+Called when a message is received from a Fitting.
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item manager\+: manager
+\item message\+: Fitting\textquotesingle{}s message 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a52a95994dd4c9c8c0503c50993a9b0a5}\label{protocol_thing_smart_s_i_g_mesh_manager_delegate-p_a52a95994dd4c9c8c0503c50993a9b0a5}} 
+\index{$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}!sigMeshManager:receivedFittingMessage:@{sigMeshManager:receivedFittingMessage:}}
+\index{sigMeshManager:receivedFittingMessage:@{sigMeshManager:receivedFittingMessage:}!$<$ThingSmartSIGMeshManagerDelegate$>$@{$<$ThingSmartSIGMeshManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{sigMeshManager:receivedFittingMessage:}{sigMeshManager:receivedFittingMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sig\+Mesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$)}]{manager }\item[{received\+Fitting\+Message\+:(\mbox{\hyperlink{interface_thing_s_i_g_mesh_fitting_msg_model}{Thing\+SIGMesh\+Fitting\+Msg\+Model}} $\ast$)}]{message }\end{DoxyParamCaption}}
+
+Called when a message is received from a Fitting.
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item manager\+: manager
+\item message\+: Fitting\textquotesingle{}s message 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEMesh\+Kit/\+Build/\+Thing\+Smart\+BLEMesh\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLEMesh\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_8h}{Thing\+Smart\+SIGMesh\+Manager.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEMesh\+Kit/\+Build/\+Thing\+Smart\+BLEMesh\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLEMesh\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_s_i_g_mesh_manager_8h}{Thing\+Smart\+SIGMesh\+Manager.\+h}}\end{DoxyCompactItemize}

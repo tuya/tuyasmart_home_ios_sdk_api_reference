@@ -1,0 +1,132 @@
+\hypertarget{interface_thing_device_timer_ble_sync_task}{}\doxysection{Thing\+Device\+Timer\+Ble\+Sync\+Task Class Reference}
+\label{interface_thing_device_timer_ble_sync_task}\index{ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}}
+
+
+{\ttfamily \#import $<$Thing\+Device\+Timer\+Ble\+Sync\+Task.\+h$>$}
+
+Inheritance diagram for Thing\+Device\+Timer\+Ble\+Sync\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_device_timer_ble_sync_task}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void($^\wedge$)) -\/ \mbox{\hyperlink{interface_thing_device_timer_ble_sync_task_abc72c3c621848d7dd66c575d10d96118}{completion}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_device_timer_ble_sync_task_a70d67de3a0cc704b986ebb96310053f7}{task\+With\+Device\+Id\+:identifier\+:data\+:completion\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_device_timer_ble_sync_task_a70d67de3a0cc704b986ebb96310053f7}{task\+With\+Device\+Id\+:identifier\+:data\+:completion\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_device_timer_ble_sync_task_a228a350be72f49bc41a030f60956af9b}{device\+Id}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_device_timer_ble_sync_task_a399cf1c1052fe64637ca9d890c45a5c9}{identifier}}
+\begin{DoxyCompactList}\small\item\em 任务唯一标识，只是用来 debug \end{DoxyCompactList}\item 
+NSData $\ast$ \mbox{\hyperlink{interface_thing_device_timer_ble_sync_task_a1b82f343d61528f5557af05ea1e161ce}{data}}
+\begin{DoxyCompactList}\small\item\em 指令的 Data \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_device_timer_ble_sync_task_aedfc77b162347f3d5a9f90bba5464142}{desc}}
+\begin{DoxyCompactList}\small\item\em 任务描述信息 \end{DoxyCompactList}\item 
+void($^\wedge$ \mbox{\hyperlink{interface_thing_device_timer_ble_sync_task_aa47500fc8480782e64aeaac4dbe89c28}{completion}} )(NSData $\ast$\+\_\+\+Nullable \mbox{\hyperlink{interface_thing_device_timer_ble_sync_task_a1b82f343d61528f5557af05ea1e161ce}{data}}, NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_task_8h_source_l00012}{12}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_task_8h_source}{Thing\+Device\+Timer\+Ble\+Sync\+Task.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_task_abc72c3c621848d7dd66c575d10d96118}\label{interface_thing_device_timer_ble_sync_task_abc72c3c621848d7dd66c575d10d96118}} 
+\index{ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}!completion@{completion}}
+\index{completion@{completion}!ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}}
+\doxysubsubsection{\texorpdfstring{completion}{completion}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$)) completion \begin{DoxyParamCaption}\item[{(NSData $\ast$\+\_\+\+Nullable)}]{data }\item[{(NSError $\ast$\+\_\+\+Nullable)}]{error }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_task_a70d67de3a0cc704b986ebb96310053f7}\label{interface_thing_device_timer_ble_sync_task_a70d67de3a0cc704b986ebb96310053f7}} 
+\index{ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}!taskWithDeviceId:identifier:data:completion:@{taskWithDeviceId:identifier:data:completion:}}
+\index{taskWithDeviceId:identifier:data:completion:@{taskWithDeviceId:identifier:data:completion:}!ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}}
+\doxysubsubsection{\texorpdfstring{taskWithDeviceId:identifier:data:completion:}{taskWithDeviceId:identifier:data:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (instancetype) task\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\item[{identifier\+:(NSString $\ast$)}]{identifier }\item[{data\+:(NSData $\ast$)}]{data }\item[{completion\+:(void($^\wedge$)(NSData $\ast$\+\_\+\+Nullable \mbox{\hyperlink{interface_thing_device_timer_ble_sync_task_a1b82f343d61528f5557af05ea1e161ce}{data}}, NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{completion }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_task_a70d67de3a0cc704b986ebb96310053f7}\label{interface_thing_device_timer_ble_sync_task_a70d67de3a0cc704b986ebb96310053f7}} 
+\index{ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}!taskWithDeviceId:identifier:data:completion:@{taskWithDeviceId:identifier:data:completion:}}
+\index{taskWithDeviceId:identifier:data:completion:@{taskWithDeviceId:identifier:data:completion:}!ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}}
+\doxysubsubsection{\texorpdfstring{taskWithDeviceId:identifier:data:completion:}{taskWithDeviceId:identifier:data:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (instancetype) task\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\item[{identifier\+:(NSString $\ast$)}]{identifier }\item[{data\+:(NSData $\ast$)}]{data }\item[{completion\+:(void($^\wedge$)(NSData $\ast$\+\_\+\+Nullable \mbox{\hyperlink{interface_thing_device_timer_ble_sync_task_a1b82f343d61528f5557af05ea1e161ce}{data}}, NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{completion }\end{DoxyParamCaption}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_task_aa47500fc8480782e64aeaac4dbe89c28}\label{interface_thing_device_timer_ble_sync_task_aa47500fc8480782e64aeaac4dbe89c28}} 
+\index{ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}!completion@{completion}}
+\index{completion@{completion}!ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}}
+\doxysubsubsection{\texorpdfstring{completion}{completion}}
+{\footnotesize\ttfamily -\/ (void($^\wedge$ completion) (NSData $\ast$\+\_\+\+Nullable \mbox{\hyperlink{interface_thing_device_timer_ble_sync_task_a1b82f343d61528f5557af05ea1e161ce}{data}}, NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_task_a1b82f343d61528f5557af05ea1e161ce}\label{interface_thing_device_timer_ble_sync_task_a1b82f343d61528f5557af05ea1e161ce}} 
+\index{ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}!data@{data}}
+\index{data@{data}!ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily -\/ (NSData $\ast$) data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+指令的 Data 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_task_8h_source_l00020}{20}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_task_8h_source}{Thing\+Device\+Timer\+Ble\+Sync\+Task.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_task_aedfc77b162347f3d5a9f90bba5464142}\label{interface_thing_device_timer_ble_sync_task_aedfc77b162347f3d5a9f90bba5464142}} 
+\index{ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}!desc@{desc}}
+\index{desc@{desc}!ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}}
+\doxysubsubsection{\texorpdfstring{desc}{desc}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) desc\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+任务描述信息 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_task_8h_source_l00023}{23}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_task_8h_source}{Thing\+Device\+Timer\+Ble\+Sync\+Task.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_task_a228a350be72f49bc41a030f60956af9b}\label{interface_thing_device_timer_ble_sync_task_a228a350be72f49bc41a030f60956af9b}} 
+\index{ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}!deviceId@{deviceId}}
+\index{deviceId@{deviceId}!ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}}
+\doxysubsubsection{\texorpdfstring{deviceId}{deviceId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) device\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_task_8h_source_l00014}{14}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_task_8h_source}{Thing\+Device\+Timer\+Ble\+Sync\+Task.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_task_a399cf1c1052fe64637ca9d890c45a5c9}\label{interface_thing_device_timer_ble_sync_task_a399cf1c1052fe64637ca9d890c45a5c9}} 
+\index{ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}!identifier@{identifier}}
+\index{identifier@{identifier}!ThingDeviceTimerBleSyncTask@{ThingDeviceTimerBleSyncTask}}
+\doxysubsubsection{\texorpdfstring{identifier}{identifier}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) identifier\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+任务唯一标识，只是用来 debug 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_task_8h_source_l00017}{17}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_task_8h_source}{Thing\+Device\+Timer\+Ble\+Sync\+Task.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Device\+Detail\+Kit/\+Thing\+Device\+Detail\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Device\+Detail\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_task_8h}{Thing\+Device\+Timer\+Ble\+Sync\+Task.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Device\+Detail\+Kit/\+Thing\+Device\+Detail\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Device\+Detail\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_task_8h}{Thing\+Device\+Timer\+Ble\+Sync\+Task.\+h}}\end{DoxyCompactItemize}

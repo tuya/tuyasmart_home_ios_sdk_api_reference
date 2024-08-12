@@ -1,0 +1,1184 @@
+\hypertarget{interface_thing_smart_sweeper_device}{}\doxysection{Thing\+Smart\+Sweeper\+Device Class Reference}
+\label{interface_thing_smart_sweeper_device}\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Sweeper\+Device.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Sweeper\+Device\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.855492cm]{interface_thing_smart_sweeper_device}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_adc22bbc4668de4181e4893237df644b9}{subscribe\+Device\+Data\+Transfer}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a4bc30436ed546e81f654cda541389976}{unsubscribe\+Device\+Data\+Transfer}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a23b6e51021f65a392cce5c784769f7b8}{connect\+Device\+By\+P2\+P\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_ac3decdbe4c73ffbfc86f7b7f852ad1a9}{connect\+Device\+By\+P2\+P\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a2787fbaa6de58b39e9f516aef4ea0964}{start\+Observer\+Sweeper\+Data\+By\+P2\+P\+:receive\+P2\+PData\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a35c1af6868a59b21f765931ef27d4bbe}{stop\+Observer\+Sweeper\+Data\+By\+P2\+P\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_ab53c51e2bea8c26563d89497f1f09e4c}{on\+Destroy\+P2P}}
+\begin{DoxyCompactList}\small\item\em Destroy P2P SDK and cancel all task. \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a232e5b5b5379ba9b6cf757c215490be0}{P2\+PActive\+Check}}
+\begin{DoxyCompactList}\small\item\em Check p2p session is active. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_ab0592b0e4d5f12ba76eda92880aebb64}{init\+Cloud\+Config\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a3c2de9a2700f118ba4772b8f9b71b686}{update\+Cloud\+Config\+With\+Success\+:failure\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a52731c8439f3d5805c00b6457869b5d8}{get\+Cloud\+File\+Download\+URLWith\+Bucket\+:path\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a61572d78d2df2a13220c97c768278f58}{get\+Sweeper\+Data\+With\+Bucket\+:path\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_ae071c972c503d6a98beaebea88517761}{get\+Sweeper\+Current\+Path\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a3fb843ed766da055b3990f187681f4ec}{get\+Sweeper\+History\+Data\+With\+Limit\+:offset\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a6108bac4d91708abf39d33cadcc11f3e}{get\+Sweeper\+History\+Data\+With\+Limit\+:offset\+:start\+Time\+:end\+Time\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_adb10ab69a8ca86af3130e78e94ba3588}{remove\+Sweeper\+History\+Data\+With\+File\+Ids\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a27ce8d23a5482fb10e4defe8ba425778}{remove\+All\+History\+Data\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a43223e3a32c100ea4f168a0a266606a2}{get\+Sweeper\+Multi\+History\+Data\+With\+Limit\+:offset\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a5badab10c6eef8d562c6f20c8a198dbe}{get\+Sweeper\+Multi\+History\+Data\+With\+Limit\+:offset\+:start\+Time\+:end\+Time\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_afdf7a289f359becf3baedd1b494201ec}{remove\+All\+Multi\+History\+Data\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_af0f35a21379b5bf8446f70ac74cfba85}{query\+Latest\+Clean\+Record\+:start\+:size\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_acad977fbae4e6d1c0502c7af6ad0b8b1}{query\+Latest\+Clean\+Record\+V2\+:start\+:size\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_af4c16c310aef00d637ea7b15a1677c71}{get\+History\+Clean\+Record\+List\+:offset\+:limit\+:start\+Time\+:end\+Time\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_af8f0b3e4ec0806df49135db307ff86c0}{get\+Clean\+Record\+Detail\+:sub\+Record\+Id\+:start\+:size\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a397466b82f906f2823fc1142156d5c81}{get\+Clean\+Record\+Detail\+V2\+:sub\+Record\+Id\+:map\+Id\+:datatype\+:start\+:size\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a639b8970f63d92ea64d2093e529370a7}{delete\+History\+Clean\+Record\+:record\+Id\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a20ba29bf3e9b7865d110d0371ebffd83}{get\+File\+Download\+Info\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_ac27310f45038383c6593dff204963f24}{get\+File\+Download\+Info\+With\+Limit\+:offset\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_afa71de834e00784c8ad54c32249088c3}{download\+File\+With\+File\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a3343f7effba07f6bc096396d9a252793}{get\+File\+Download\+Rate\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a2c9cc28b8ae48b4fb590fa83ab122e3e}{sweeper\+File\+Name\+Update\+With\+File\+Id\+:file\+Name\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_adc22bbc4668de4181e4893237df644b9}{subscribe\+Device\+Data\+Transfer}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a4bc30436ed546e81f654cda541389976}{unsubscribe\+Device\+Data\+Transfer}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a23b6e51021f65a392cce5c784769f7b8}{connect\+Device\+By\+P2\+P\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_ac3decdbe4c73ffbfc86f7b7f852ad1a9}{connect\+Device\+By\+P2\+P\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a2787fbaa6de58b39e9f516aef4ea0964}{start\+Observer\+Sweeper\+Data\+By\+P2\+P\+:receive\+P2\+PData\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a35c1af6868a59b21f765931ef27d4bbe}{stop\+Observer\+Sweeper\+Data\+By\+P2\+P\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_ab53c51e2bea8c26563d89497f1f09e4c}{on\+Destroy\+P2P}}
+\begin{DoxyCompactList}\small\item\em Destroy P2P SDK and cancel all task. \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a232e5b5b5379ba9b6cf757c215490be0}{P2\+PActive\+Check}}
+\begin{DoxyCompactList}\small\item\em Check p2p session is active. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_ab0592b0e4d5f12ba76eda92880aebb64}{init\+Cloud\+Config\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a3c2de9a2700f118ba4772b8f9b71b686}{update\+Cloud\+Config\+With\+Success\+:failure\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a52731c8439f3d5805c00b6457869b5d8}{get\+Cloud\+File\+Download\+URLWith\+Bucket\+:path\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a61572d78d2df2a13220c97c768278f58}{get\+Sweeper\+Data\+With\+Bucket\+:path\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_ae071c972c503d6a98beaebea88517761}{get\+Sweeper\+Current\+Path\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a3fb843ed766da055b3990f187681f4ec}{get\+Sweeper\+History\+Data\+With\+Limit\+:offset\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a6108bac4d91708abf39d33cadcc11f3e}{get\+Sweeper\+History\+Data\+With\+Limit\+:offset\+:start\+Time\+:end\+Time\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_adb10ab69a8ca86af3130e78e94ba3588}{remove\+Sweeper\+History\+Data\+With\+File\+Ids\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a27ce8d23a5482fb10e4defe8ba425778}{remove\+All\+History\+Data\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a43223e3a32c100ea4f168a0a266606a2}{get\+Sweeper\+Multi\+History\+Data\+With\+Limit\+:offset\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a5badab10c6eef8d562c6f20c8a198dbe}{get\+Sweeper\+Multi\+History\+Data\+With\+Limit\+:offset\+:start\+Time\+:end\+Time\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_afdf7a289f359becf3baedd1b494201ec}{remove\+All\+Multi\+History\+Data\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_af0f35a21379b5bf8446f70ac74cfba85}{query\+Latest\+Clean\+Record\+:start\+:size\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_acad977fbae4e6d1c0502c7af6ad0b8b1}{query\+Latest\+Clean\+Record\+V2\+:start\+:size\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_af4c16c310aef00d637ea7b15a1677c71}{get\+History\+Clean\+Record\+List\+:offset\+:limit\+:start\+Time\+:end\+Time\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_af8f0b3e4ec0806df49135db307ff86c0}{get\+Clean\+Record\+Detail\+:sub\+Record\+Id\+:start\+:size\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a397466b82f906f2823fc1142156d5c81}{get\+Clean\+Record\+Detail\+V2\+:sub\+Record\+Id\+:map\+Id\+:datatype\+:start\+:size\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a639b8970f63d92ea64d2093e529370a7}{delete\+History\+Clean\+Record\+:record\+Id\+:complete\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a20ba29bf3e9b7865d110d0371ebffd83}{get\+File\+Download\+Info\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_ac27310f45038383c6593dff204963f24}{get\+File\+Download\+Info\+With\+Limit\+:offset\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_afa71de834e00784c8ad54c32249088c3}{download\+File\+With\+File\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a3343f7effba07f6bc096396d9a252793}{get\+File\+Download\+Rate\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a2c9cc28b8ae48b4fb590fa83ab122e3e}{sweeper\+File\+Name\+Update\+With\+File\+Id\+:file\+Name\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_smart_sweeper_device_delegate-p}{Thing\+Smart\+Sweeper\+Device\+Delegate}} $>$ \mbox{\hyperlink{interface_thing_smart_sweeper_device_a43518b6a9c1b072a488794eafb0d8b81}{delegate}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_smart_sweeper_device_ad9a27d34ee97972822611ab6046cbd5e}{should\+Auto\+Download\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h_source_l00087}{87}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h_source}{Thing\+Smart\+Sweeper\+Device.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a23b6e51021f65a392cce5c784769f7b8}\label{interface_thing_smart_sweeper_device_a23b6e51021f65a392cce5c784769f7b8}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!connectDeviceByP2P:failure:@{connectDeviceByP2P:failure:}}
+\index{connectDeviceByP2P:failure:@{connectDeviceByP2P:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{connectDeviceByP2P:failure:}{connectDeviceByP2P:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) connect\+Device\+By\+P2\+P\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Connect to device by P2P
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & callback when connect success \\
+\hline
+{\em failure} & callback when connect fail \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a23b6e51021f65a392cce5c784769f7b8}\label{interface_thing_smart_sweeper_device_a23b6e51021f65a392cce5c784769f7b8}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!connectDeviceByP2P:failure:@{connectDeviceByP2P:failure:}}
+\index{connectDeviceByP2P:failure:@{connectDeviceByP2P:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{connectDeviceByP2P:failure:}{connectDeviceByP2P:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) connect\+Device\+By\+P2\+P\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Connect to device by P2P
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & callback when connect success \\
+\hline
+{\em failure} & callback when connect fail \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_ac3decdbe4c73ffbfc86f7b7f852ad1a9}\label{interface_thing_smart_sweeper_device_ac3decdbe4c73ffbfc86f7b7f852ad1a9}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!connectDeviceByP2P:success:failure:@{connectDeviceByP2P:success:failure:}}
+\index{connectDeviceByP2P:success:failure:@{connectDeviceByP2P:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{connectDeviceByP2P:success:failure:}{connectDeviceByP2P:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) connect\+Device\+By\+P2\+P\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{is\+Stop\+Reconnect }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Connect to device by P2P
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Stop\+Reconnect} & is Stop the internal reconnection \\
+\hline
+{\em success} & callback when connect success \\
+\hline
+{\em failure} & callback when connect fail \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_ac3decdbe4c73ffbfc86f7b7f852ad1a9}\label{interface_thing_smart_sweeper_device_ac3decdbe4c73ffbfc86f7b7f852ad1a9}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!connectDeviceByP2P:success:failure:@{connectDeviceByP2P:success:failure:}}
+\index{connectDeviceByP2P:success:failure:@{connectDeviceByP2P:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{connectDeviceByP2P:success:failure:}{connectDeviceByP2P:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) connect\+Device\+By\+P2\+P\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{is\+Stop\+Reconnect }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Connect to device by P2P
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Stop\+Reconnect} & is Stop the internal reconnection \\
+\hline
+{\em success} & callback when connect success \\
+\hline
+{\em failure} & callback when connect fail \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a639b8970f63d92ea64d2093e529370a7}\label{interface_thing_smart_sweeper_device_a639b8970f63d92ea64d2093e529370a7}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!deleteHistoryCleanRecord:recordId:complete:@{deleteHistoryCleanRecord:recordId:complete:}}
+\index{deleteHistoryCleanRecord:recordId:complete:@{deleteHistoryCleanRecord:recordId:complete:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{deleteHistoryCleanRecord:recordId:complete:}{deleteHistoryCleanRecord:recordId:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) delete\+History\+Clean\+Record\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{record\+Id\+:(NSString $\ast$)}]{record\+Id }\item[{complete\+:(void($^\wedge$)(BOOL success, NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{complete }\end{DoxyParamCaption}}
+
+删除历史清扫记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备 ID \\
+\hline
+{\em record\+Id} & 清扫记录 ID \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a639b8970f63d92ea64d2093e529370a7}\label{interface_thing_smart_sweeper_device_a639b8970f63d92ea64d2093e529370a7}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!deleteHistoryCleanRecord:recordId:complete:@{deleteHistoryCleanRecord:recordId:complete:}}
+\index{deleteHistoryCleanRecord:recordId:complete:@{deleteHistoryCleanRecord:recordId:complete:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{deleteHistoryCleanRecord:recordId:complete:}{deleteHistoryCleanRecord:recordId:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) delete\+History\+Clean\+Record\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{record\+Id\+:(NSString $\ast$)}]{record\+Id }\item[{complete\+:(void($^\wedge$)(BOOL success, NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{complete }\end{DoxyParamCaption}}
+
+删除历史清扫记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备 ID \\
+\hline
+{\em record\+Id} & 清扫记录 ID \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_afa71de834e00784c8ad54c32249088c3}\label{interface_thing_smart_sweeper_device_afa71de834e00784c8ad54c32249088c3}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!downloadFileWithFileId:success:failure:@{downloadFileWithFileId:success:failure:}}
+\index{downloadFileWithFileId:success:failure:@{downloadFileWithFileId:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{downloadFileWithFileId:success:failure:}{downloadFileWithFileId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) download\+File\+With\+File\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{file\+Id }\item[{success\+:(void($^\wedge$)(id result))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+下发下载文件指令，设备开始下载文件, 升级成功或失败会通过 Thing\+Smart\+File\+Download\+Delegate 返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Id} & file\+Id of {\ttfamily \mbox{\hyperlink{interface_thing_smart_file_download_model}{Thing\+Smart\+File\+Download\+Model}}} \\
+\hline
+{\em success} & 成功回调 (status 0：未下载 1：下载中) \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_afa71de834e00784c8ad54c32249088c3}\label{interface_thing_smart_sweeper_device_afa71de834e00784c8ad54c32249088c3}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!downloadFileWithFileId:success:failure:@{downloadFileWithFileId:success:failure:}}
+\index{downloadFileWithFileId:success:failure:@{downloadFileWithFileId:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{downloadFileWithFileId:success:failure:}{downloadFileWithFileId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) download\+File\+With\+File\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{file\+Id }\item[{success\+:(void($^\wedge$)(id result))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+下发下载文件指令，设备开始下载文件, 升级成功或失败会通过 Thing\+Smart\+File\+Download\+Delegate 返回
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Id} & file\+Id of {\ttfamily \mbox{\hyperlink{interface_thing_smart_file_download_model}{Thing\+Smart\+File\+Download\+Model}}} \\
+\hline
+{\em success} & 成功回调 (status 0：未下载 1：下载中) \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_af8f0b3e4ec0806df49135db307ff86c0}\label{interface_thing_smart_sweeper_device_af8f0b3e4ec0806df49135db307ff86c0}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getCleanRecordDetail:subRecordId:start:size:complete:@{getCleanRecordDetail:subRecordId:start:size:complete:}}
+\index{getCleanRecordDetail:subRecordId:start:size:complete:@{getCleanRecordDetail:subRecordId:start:size:complete:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getCleanRecordDetail:subRecordId:start:size:complete:}{getCleanRecordDetail:subRecordId:start:size:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Clean\+Record\+Detail\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{sub\+Record\+Id\+:(NSInteger)}]{sub\+Record\+Id }\item[{start\+:(NSString $\ast$)}]{start }\item[{size\+:(NSInteger)}]{size }\item[{complete\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_sweeper_record_detail}{Thing\+Smart\+Sweeper\+Record\+Detail}} $\ast$model, NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{complete }\end{DoxyParamCaption}}
+
+流服务\+V1.0 清扫记录详情
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备 ID \\
+\hline
+{\em sub\+Record\+Id} & 清扫记录 ID，通过解析历史记录列表的value数据，根据数据长度使用不同的解析规则，规则见下表 \\
+\hline
+{\em start} & 开始位置。第一次传空，之后取下一页时填上一页返回值里的 start\+Row 值 \\
+\hline
+{\em size} & 查询数据的大小，固定参数为 500 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_af8f0b3e4ec0806df49135db307ff86c0}\label{interface_thing_smart_sweeper_device_af8f0b3e4ec0806df49135db307ff86c0}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getCleanRecordDetail:subRecordId:start:size:complete:@{getCleanRecordDetail:subRecordId:start:size:complete:}}
+\index{getCleanRecordDetail:subRecordId:start:size:complete:@{getCleanRecordDetail:subRecordId:start:size:complete:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getCleanRecordDetail:subRecordId:start:size:complete:}{getCleanRecordDetail:subRecordId:start:size:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Clean\+Record\+Detail\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{sub\+Record\+Id\+:(NSInteger)}]{sub\+Record\+Id }\item[{start\+:(NSString $\ast$)}]{start }\item[{size\+:(NSInteger)}]{size }\item[{complete\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_sweeper_record_detail}{Thing\+Smart\+Sweeper\+Record\+Detail}} $\ast$model, NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{complete }\end{DoxyParamCaption}}
+
+流服务\+V1.0 清扫记录详情
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备 ID \\
+\hline
+{\em sub\+Record\+Id} & 清扫记录 ID，通过解析历史记录列表的value数据，根据数据长度使用不同的解析规则，规则见下表 \\
+\hline
+{\em start} & 开始位置。第一次传空，之后取下一页时填上一页返回值里的 start\+Row 值 \\
+\hline
+{\em size} & 查询数据的大小，固定参数为 500 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a397466b82f906f2823fc1142156d5c81}\label{interface_thing_smart_sweeper_device_a397466b82f906f2823fc1142156d5c81}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getCleanRecordDetailV2:subRecordId:mapId:datatype:start:size:complete:@{getCleanRecordDetailV2:subRecordId:mapId:datatype:start:size:complete:}}
+\index{getCleanRecordDetailV2:subRecordId:mapId:datatype:start:size:complete:@{getCleanRecordDetailV2:subRecordId:mapId:datatype:start:size:complete:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getCleanRecordDetailV2:subRecordId:mapId:datatype:start:size:complete:}{getCleanRecordDetailV2:subRecordId:mapId:datatype:start:size:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Clean\+Record\+Detail\+V2\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{sub\+Record\+Id\+:(NSInteger)}]{sub\+Record\+Id }\item[{map\+Id\+:(NSInteger)}]{map\+Id }\item[{datatype\+:(NSInteger)}]{datatype }\item[{start\+:(NSString $\ast$)}]{start }\item[{size\+:(NSInteger)}]{size }\item[{complete\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_sweeper_record_detail}{Thing\+Smart\+Sweeper\+Record\+Detail}} $\ast$model, NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{complete }\end{DoxyParamCaption}}
+
+流服务\+V2.0 清扫记录详情
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备 ID \\
+\hline
+{\em sub\+Record\+Id} & 清扫记录 ID，通过解析历史记录列表的value数据，根据数据长度使用不同的解析规则，规则见下表 \\
+\hline
+{\em map\+Id} & 子地图 ID \\
+\hline
+{\em datatype} & 地图类型 \\
+\hline
+{\em start} & 开始位置。第一次传空，之后取下一页时填上一页返回值里的 start\+Row 值 \\
+\hline
+{\em size} & 查询数据的大小，固定参数为 500 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a397466b82f906f2823fc1142156d5c81}\label{interface_thing_smart_sweeper_device_a397466b82f906f2823fc1142156d5c81}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getCleanRecordDetailV2:subRecordId:mapId:datatype:start:size:complete:@{getCleanRecordDetailV2:subRecordId:mapId:datatype:start:size:complete:}}
+\index{getCleanRecordDetailV2:subRecordId:mapId:datatype:start:size:complete:@{getCleanRecordDetailV2:subRecordId:mapId:datatype:start:size:complete:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getCleanRecordDetailV2:subRecordId:mapId:datatype:start:size:complete:}{getCleanRecordDetailV2:subRecordId:mapId:datatype:start:size:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Clean\+Record\+Detail\+V2\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{sub\+Record\+Id\+:(NSInteger)}]{sub\+Record\+Id }\item[{map\+Id\+:(NSInteger)}]{map\+Id }\item[{datatype\+:(NSInteger)}]{datatype }\item[{start\+:(NSString $\ast$)}]{start }\item[{size\+:(NSInteger)}]{size }\item[{complete\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_sweeper_record_detail}{Thing\+Smart\+Sweeper\+Record\+Detail}} $\ast$model, NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{complete }\end{DoxyParamCaption}}
+
+流服务\+V2.0 清扫记录详情
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备 ID \\
+\hline
+{\em sub\+Record\+Id} & 清扫记录 ID，通过解析历史记录列表的value数据，根据数据长度使用不同的解析规则，规则见下表 \\
+\hline
+{\em map\+Id} & 子地图 ID \\
+\hline
+{\em datatype} & 地图类型 \\
+\hline
+{\em start} & 开始位置。第一次传空，之后取下一页时填上一页返回值里的 start\+Row 值 \\
+\hline
+{\em size} & 查询数据的大小，固定参数为 500 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a52731c8439f3d5805c00b6457869b5d8}\label{interface_thing_smart_sweeper_device_a52731c8439f3d5805c00b6457869b5d8}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getCloudFileDownloadURLWithBucket:path:@{getCloudFileDownloadURLWithBucket:path:}}
+\index{getCloudFileDownloadURLWithBucket:path:@{getCloudFileDownloadURLWithBucket:path:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getCloudFileDownloadURLWithBucket:path:}{getCloudFileDownloadURLWithBucket:path:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) get\+Cloud\+File\+Download\+URLWith\+Bucket\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{bucket }\item[{path\+:(NSString $\ast$)}]{path }\end{DoxyParamCaption}}
+
+获取数据文件地址
+
+
+\begin{DoxyParams}{Parameters}
+{\em bucket} & 文件存储的bucket \\
+\hline
+{\em path} & 文件路径 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a52731c8439f3d5805c00b6457869b5d8}\label{interface_thing_smart_sweeper_device_a52731c8439f3d5805c00b6457869b5d8}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getCloudFileDownloadURLWithBucket:path:@{getCloudFileDownloadURLWithBucket:path:}}
+\index{getCloudFileDownloadURLWithBucket:path:@{getCloudFileDownloadURLWithBucket:path:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getCloudFileDownloadURLWithBucket:path:}{getCloudFileDownloadURLWithBucket:path:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) get\+Cloud\+File\+Download\+URLWith\+Bucket\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{bucket }\item[{path\+:(NSString $\ast$)}]{path }\end{DoxyParamCaption}}
+
+获取数据文件地址
+
+
+\begin{DoxyParams}{Parameters}
+{\em bucket} & 文件存储的bucket \\
+\hline
+{\em path} & 文件路径 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_ac27310f45038383c6593dff204963f24}\label{interface_thing_smart_sweeper_device_ac27310f45038383c6593dff204963f24}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getFileDownloadInfoWithLimit:offset:success:failure:@{getFileDownloadInfoWithLimit:offset:success:failure:}}
+\index{getFileDownloadInfoWithLimit:offset:success:failure:@{getFileDownloadInfoWithLimit:offset:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getFileDownloadInfoWithLimit:offset:success:failure:}{getFileDownloadInfoWithLimit:offset:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+File\+Download\+Info\+With\+Limit\+: \begin{DoxyParamCaption}\item[{(NSUInteger)}]{limit }\item[{offset\+:(NSUInteger)}]{offset }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_file_download_model}{Thing\+Smart\+File\+Download\+Model}} $\ast$ $>$ $\ast$upgrade\+File\+List, NSUInteger \mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a0159ec71d0d4e81c758e75cf5aa8e22a}{total\+Count}}))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取文件信息（分页查询）
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & 一次获取数据的数量(建议最大不要超过100) \\
+\hline
+{\em offset} & 获取数据的偏移量(用于分页) \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_ac27310f45038383c6593dff204963f24}\label{interface_thing_smart_sweeper_device_ac27310f45038383c6593dff204963f24}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getFileDownloadInfoWithLimit:offset:success:failure:@{getFileDownloadInfoWithLimit:offset:success:failure:}}
+\index{getFileDownloadInfoWithLimit:offset:success:failure:@{getFileDownloadInfoWithLimit:offset:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getFileDownloadInfoWithLimit:offset:success:failure:}{getFileDownloadInfoWithLimit:offset:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+File\+Download\+Info\+With\+Limit\+: \begin{DoxyParamCaption}\item[{(NSUInteger)}]{limit }\item[{offset\+:(NSUInteger)}]{offset }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_file_download_model}{Thing\+Smart\+File\+Download\+Model}} $\ast$ $>$ $\ast$upgrade\+File\+List, NSUInteger \mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a0159ec71d0d4e81c758e75cf5aa8e22a}{total\+Count}}))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取文件信息（分页查询）
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & 一次获取数据的数量(建议最大不要超过100) \\
+\hline
+{\em offset} & 获取数据的偏移量(用于分页) \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a20ba29bf3e9b7865d110d0371ebffd83}\label{interface_thing_smart_sweeper_device_a20ba29bf3e9b7865d110d0371ebffd83}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getFileDownloadInfoWithSuccess:failure:@{getFileDownloadInfoWithSuccess:failure:}}
+\index{getFileDownloadInfoWithSuccess:failure:@{getFileDownloadInfoWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getFileDownloadInfoWithSuccess:failure:}{getFileDownloadInfoWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+File\+Download\+Info\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_file_download_model}{Thing\+Smart\+File\+Download\+Model}} $\ast$ $>$ $\ast$upgrade\+File\+List))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取文件信息
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a20ba29bf3e9b7865d110d0371ebffd83}\label{interface_thing_smart_sweeper_device_a20ba29bf3e9b7865d110d0371ebffd83}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getFileDownloadInfoWithSuccess:failure:@{getFileDownloadInfoWithSuccess:failure:}}
+\index{getFileDownloadInfoWithSuccess:failure:@{getFileDownloadInfoWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getFileDownloadInfoWithSuccess:failure:}{getFileDownloadInfoWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+File\+Download\+Info\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_file_download_model}{Thing\+Smart\+File\+Download\+Model}} $\ast$ $>$ $\ast$upgrade\+File\+List))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取文件信息
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a3343f7effba07f6bc096396d9a252793}\label{interface_thing_smart_sweeper_device_a3343f7effba07f6bc096396d9a252793}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getFileDownloadRateWithSuccess:failure:@{getFileDownloadRateWithSuccess:failure:}}
+\index{getFileDownloadRateWithSuccess:failure:@{getFileDownloadRateWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getFileDownloadRateWithSuccess:failure:}{getFileDownloadRateWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+File\+Download\+Rate\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_file_download_rate_model}{Thing\+Smart\+File\+Download\+Rate\+Model}} $\ast$rate\+Model))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取文件下载进度
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a3343f7effba07f6bc096396d9a252793}\label{interface_thing_smart_sweeper_device_a3343f7effba07f6bc096396d9a252793}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getFileDownloadRateWithSuccess:failure:@{getFileDownloadRateWithSuccess:failure:}}
+\index{getFileDownloadRateWithSuccess:failure:@{getFileDownloadRateWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getFileDownloadRateWithSuccess:failure:}{getFileDownloadRateWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+File\+Download\+Rate\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_file_download_rate_model}{Thing\+Smart\+File\+Download\+Rate\+Model}} $\ast$rate\+Model))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取文件下载进度
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_af4c16c310aef00d637ea7b15a1677c71}\label{interface_thing_smart_sweeper_device_af4c16c310aef00d637ea7b15a1677c71}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getHistoryCleanRecordList:offset:limit:startTime:endTime:complete:@{getHistoryCleanRecordList:offset:limit:startTime:endTime:complete:}}
+\index{getHistoryCleanRecordList:offset:limit:startTime:endTime:complete:@{getHistoryCleanRecordList:offset:limit:startTime:endTime:complete:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getHistoryCleanRecordList:offset:limit:startTime:endTime:complete:}{getHistoryCleanRecordList:offset:limit:startTime:endTime:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+History\+Clean\+Record\+List\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{offset\+:(NSInteger)}]{offset }\item[{limit\+:(NSInteger)}]{limit }\item[{start\+Time\+:(long long)}]{start\+Time }\item[{end\+Time\+:(long long)}]{end\+Time }\item[{complete\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_sweeper_record_list}{Thing\+Smart\+Sweeper\+Record\+List}} $\ast$ $>$ $\ast$list, NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{complete }\end{DoxyParamCaption}}
+
+历史清扫记录列表
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备 ID \\
+\hline
+{\em offset} & 分页偏移量 \\
+\hline
+{\em limit} & 分页大小 \\
+\hline
+{\em start\+Time} & 开始时间 \\
+\hline
+{\em end\+Time} & 结束时间 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_af4c16c310aef00d637ea7b15a1677c71}\label{interface_thing_smart_sweeper_device_af4c16c310aef00d637ea7b15a1677c71}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getHistoryCleanRecordList:offset:limit:startTime:endTime:complete:@{getHistoryCleanRecordList:offset:limit:startTime:endTime:complete:}}
+\index{getHistoryCleanRecordList:offset:limit:startTime:endTime:complete:@{getHistoryCleanRecordList:offset:limit:startTime:endTime:complete:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getHistoryCleanRecordList:offset:limit:startTime:endTime:complete:}{getHistoryCleanRecordList:offset:limit:startTime:endTime:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+History\+Clean\+Record\+List\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{offset\+:(NSInteger)}]{offset }\item[{limit\+:(NSInteger)}]{limit }\item[{start\+Time\+:(long long)}]{start\+Time }\item[{end\+Time\+:(long long)}]{end\+Time }\item[{complete\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_sweeper_record_list}{Thing\+Smart\+Sweeper\+Record\+List}} $\ast$ $>$ $\ast$list, NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{complete }\end{DoxyParamCaption}}
+
+历史清扫记录列表
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备 ID \\
+\hline
+{\em offset} & 分页偏移量 \\
+\hline
+{\em limit} & 分页大小 \\
+\hline
+{\em start\+Time} & 开始时间 \\
+\hline
+{\em end\+Time} & 结束时间 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_ae071c972c503d6a98beaebea88517761}\label{interface_thing_smart_sweeper_device_ae071c972c503d6a98beaebea88517761}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getSweeperCurrentPathWithSuccess:failure:@{getSweeperCurrentPathWithSuccess:failure:}}
+\index{getSweeperCurrentPathWithSuccess:failure:@{getSweeperCurrentPathWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getSweeperCurrentPathWithSuccess:failure:}{getSweeperCurrentPathWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sweeper\+Current\+Path\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSString $\ast$bucket, NSDictionary$<$ \mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h_a12bcb5a997e01d1bbd8c32ad2eebe25e}{Thing\+Smart\+Sweeper\+Current\+Path\+Key}}, NSString $\ast$ $>$ $\ast$paths))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取实时的地图文件信息
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & Success block \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_ae071c972c503d6a98beaebea88517761}\label{interface_thing_smart_sweeper_device_ae071c972c503d6a98beaebea88517761}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getSweeperCurrentPathWithSuccess:failure:@{getSweeperCurrentPathWithSuccess:failure:}}
+\index{getSweeperCurrentPathWithSuccess:failure:@{getSweeperCurrentPathWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getSweeperCurrentPathWithSuccess:failure:}{getSweeperCurrentPathWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sweeper\+Current\+Path\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSString $\ast$bucket, NSDictionary$<$ \mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h_a12bcb5a997e01d1bbd8c32ad2eebe25e}{Thing\+Smart\+Sweeper\+Current\+Path\+Key}}, NSString $\ast$ $>$ $\ast$paths))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取实时的地图文件信息
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & Success block \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a61572d78d2df2a13220c97c768278f58}\label{interface_thing_smart_sweeper_device_a61572d78d2df2a13220c97c768278f58}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getSweeperDataWithBucket:path:success:failure:@{getSweeperDataWithBucket:path:success:failure:}}
+\index{getSweeperDataWithBucket:path:success:failure:@{getSweeperDataWithBucket:path:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getSweeperDataWithBucket:path:success:failure:}{getSweeperDataWithBucket:path:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sweeper\+Data\+With\+Bucket\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{bucket }\item[{path\+:(NSString $\ast$)}]{path }\item[{success\+:(void($^\wedge$)(NSData $\ast$data))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取数据内容 OSS 错误码查询\+: \href{https://help.aliyun.com/document_detail/32005.html?spm=a2c4g.11186623.6.1328.609b28126VcNPW}{\texttt{ https\+://help.\+aliyun.\+com/document\+\_\+detail/32005.\+html?spm=a2c4g.\+11186623.\+6.\+1328.\+609b28126\+Vc\+NPW}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em bucket} & 文件存储的bucket \\
+\hline
+{\em path} & 文件路径 \\
+\hline
+{\em success} & 成功返回二进制地图数据 \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a61572d78d2df2a13220c97c768278f58}\label{interface_thing_smart_sweeper_device_a61572d78d2df2a13220c97c768278f58}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getSweeperDataWithBucket:path:success:failure:@{getSweeperDataWithBucket:path:success:failure:}}
+\index{getSweeperDataWithBucket:path:success:failure:@{getSweeperDataWithBucket:path:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getSweeperDataWithBucket:path:success:failure:}{getSweeperDataWithBucket:path:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sweeper\+Data\+With\+Bucket\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{bucket }\item[{path\+:(NSString $\ast$)}]{path }\item[{success\+:(void($^\wedge$)(NSData $\ast$data))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取数据内容 OSS 错误码查询\+: \href{https://help.aliyun.com/document_detail/32005.html?spm=a2c4g.11186623.6.1328.609b28126VcNPW}{\texttt{ https\+://help.\+aliyun.\+com/document\+\_\+detail/32005.\+html?spm=a2c4g.\+11186623.\+6.\+1328.\+609b28126\+Vc\+NPW}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em bucket} & 文件存储的bucket \\
+\hline
+{\em path} & 文件路径 \\
+\hline
+{\em success} & 成功返回二进制地图数据 \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a6108bac4d91708abf39d33cadcc11f3e}\label{interface_thing_smart_sweeper_device_a6108bac4d91708abf39d33cadcc11f3e}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getSweeperHistoryDataWithLimit:offset:startTime:endTime:success:failure:@{getSweeperHistoryDataWithLimit:offset:startTime:endTime:success:failure:}}
+\index{getSweeperHistoryDataWithLimit:offset:startTime:endTime:success:failure:@{getSweeperHistoryDataWithLimit:offset:startTime:endTime:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getSweeperHistoryDataWithLimit:offset:startTime:endTime:success:failure:}{getSweeperHistoryDataWithLimit:offset:startTime:endTime:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sweeper\+History\+Data\+With\+Limit\+: \begin{DoxyParamCaption}\item[{(NSUInteger)}]{limit }\item[{offset\+:(NSUInteger)}]{offset }\item[{start\+Time\+:(long)}]{start\+Time }\item[{end\+Time\+:(long)}]{end\+Time }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_sweeper_history_model}{Thing\+Smart\+Sweeper\+History\+Model}} $\ast$ $>$ $\ast$datas, NSUInteger \mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a0159ec71d0d4e81c758e75cf5aa8e22a}{total\+Count}}))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取扫地机历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & 一次获取数据的数量(建议最大不要超过100) \\
+\hline
+{\em offset} & 获取数据的偏移量(用于分页) \\
+\hline
+{\em start\+Time} & 起始时间戳 \\
+\hline
+{\em end\+Time} & 结束时间戳 \\
+\hline
+{\em success} & Success block \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a6108bac4d91708abf39d33cadcc11f3e}\label{interface_thing_smart_sweeper_device_a6108bac4d91708abf39d33cadcc11f3e}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getSweeperHistoryDataWithLimit:offset:startTime:endTime:success:failure:@{getSweeperHistoryDataWithLimit:offset:startTime:endTime:success:failure:}}
+\index{getSweeperHistoryDataWithLimit:offset:startTime:endTime:success:failure:@{getSweeperHistoryDataWithLimit:offset:startTime:endTime:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getSweeperHistoryDataWithLimit:offset:startTime:endTime:success:failure:}{getSweeperHistoryDataWithLimit:offset:startTime:endTime:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sweeper\+History\+Data\+With\+Limit\+: \begin{DoxyParamCaption}\item[{(NSUInteger)}]{limit }\item[{offset\+:(NSUInteger)}]{offset }\item[{start\+Time\+:(long)}]{start\+Time }\item[{end\+Time\+:(long)}]{end\+Time }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_sweeper_history_model}{Thing\+Smart\+Sweeper\+History\+Model}} $\ast$ $>$ $\ast$datas, NSUInteger \mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a0159ec71d0d4e81c758e75cf5aa8e22a}{total\+Count}}))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取扫地机历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & 一次获取数据的数量(建议最大不要超过100) \\
+\hline
+{\em offset} & 获取数据的偏移量(用于分页) \\
+\hline
+{\em start\+Time} & 起始时间戳 \\
+\hline
+{\em end\+Time} & 结束时间戳 \\
+\hline
+{\em success} & Success block \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a3fb843ed766da055b3990f187681f4ec}\label{interface_thing_smart_sweeper_device_a3fb843ed766da055b3990f187681f4ec}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getSweeperHistoryDataWithLimit:offset:success:failure:@{getSweeperHistoryDataWithLimit:offset:success:failure:}}
+\index{getSweeperHistoryDataWithLimit:offset:success:failure:@{getSweeperHistoryDataWithLimit:offset:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getSweeperHistoryDataWithLimit:offset:success:failure:}{getSweeperHistoryDataWithLimit:offset:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sweeper\+History\+Data\+With\+Limit\+: \begin{DoxyParamCaption}\item[{(NSUInteger)}]{limit }\item[{offset\+:(NSUInteger)}]{offset }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_sweeper_history_model}{Thing\+Smart\+Sweeper\+History\+Model}} $\ast$ $>$ $\ast$datas, NSUInteger \mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a0159ec71d0d4e81c758e75cf5aa8e22a}{total\+Count}}))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取扫地机历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & 一次获取数据的数量(建议最大不要超过100) \\
+\hline
+{\em offset} & 获取数据的偏移量(用于分页) \\
+\hline
+{\em success} & Success block \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a3fb843ed766da055b3990f187681f4ec}\label{interface_thing_smart_sweeper_device_a3fb843ed766da055b3990f187681f4ec}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getSweeperHistoryDataWithLimit:offset:success:failure:@{getSweeperHistoryDataWithLimit:offset:success:failure:}}
+\index{getSweeperHistoryDataWithLimit:offset:success:failure:@{getSweeperHistoryDataWithLimit:offset:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getSweeperHistoryDataWithLimit:offset:success:failure:}{getSweeperHistoryDataWithLimit:offset:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sweeper\+History\+Data\+With\+Limit\+: \begin{DoxyParamCaption}\item[{(NSUInteger)}]{limit }\item[{offset\+:(NSUInteger)}]{offset }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_sweeper_history_model}{Thing\+Smart\+Sweeper\+History\+Model}} $\ast$ $>$ $\ast$datas, NSUInteger \mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a0159ec71d0d4e81c758e75cf5aa8e22a}{total\+Count}}))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取扫地机历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & 一次获取数据的数量(建议最大不要超过100) \\
+\hline
+{\em offset} & 获取数据的偏移量(用于分页) \\
+\hline
+{\em success} & Success block \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a5badab10c6eef8d562c6f20c8a198dbe}\label{interface_thing_smart_sweeper_device_a5badab10c6eef8d562c6f20c8a198dbe}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getSweeperMultiHistoryDataWithLimit:offset:startTime:endTime:success:failure:@{getSweeperMultiHistoryDataWithLimit:offset:startTime:endTime:success:failure:}}
+\index{getSweeperMultiHistoryDataWithLimit:offset:startTime:endTime:success:failure:@{getSweeperMultiHistoryDataWithLimit:offset:startTime:endTime:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getSweeperMultiHistoryDataWithLimit:offset:startTime:endTime:success:failure:}{getSweeperMultiHistoryDataWithLimit:offset:startTime:endTime:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sweeper\+Multi\+History\+Data\+With\+Limit\+: \begin{DoxyParamCaption}\item[{(NSUInteger)}]{limit }\item[{offset\+:(NSUInteger)}]{offset }\item[{start\+Time\+:(long)}]{start\+Time }\item[{end\+Time\+:(long)}]{end\+Time }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_sweeper_history_model}{Thing\+Smart\+Sweeper\+History\+Model}} $\ast$ $>$ $\ast$datas, NSUInteger \mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a0159ec71d0d4e81c758e75cf5aa8e22a}{total\+Count}}))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取（多地图）扫地机历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & 一次获取数据的数量(建议最大不要超过100) \\
+\hline
+{\em offset} & 获取数据的偏移量(用于分页) \\
+\hline
+{\em start\+Time} & 起始时间戳 \\
+\hline
+{\em end\+Time} & 结束时间戳 \\
+\hline
+{\em success} & 成功结果回调 \\
+\hline
+{\em failure} & 失败结果回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a5badab10c6eef8d562c6f20c8a198dbe}\label{interface_thing_smart_sweeper_device_a5badab10c6eef8d562c6f20c8a198dbe}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getSweeperMultiHistoryDataWithLimit:offset:startTime:endTime:success:failure:@{getSweeperMultiHistoryDataWithLimit:offset:startTime:endTime:success:failure:}}
+\index{getSweeperMultiHistoryDataWithLimit:offset:startTime:endTime:success:failure:@{getSweeperMultiHistoryDataWithLimit:offset:startTime:endTime:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getSweeperMultiHistoryDataWithLimit:offset:startTime:endTime:success:failure:}{getSweeperMultiHistoryDataWithLimit:offset:startTime:endTime:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sweeper\+Multi\+History\+Data\+With\+Limit\+: \begin{DoxyParamCaption}\item[{(NSUInteger)}]{limit }\item[{offset\+:(NSUInteger)}]{offset }\item[{start\+Time\+:(long)}]{start\+Time }\item[{end\+Time\+:(long)}]{end\+Time }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_sweeper_history_model}{Thing\+Smart\+Sweeper\+History\+Model}} $\ast$ $>$ $\ast$datas, NSUInteger \mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a0159ec71d0d4e81c758e75cf5aa8e22a}{total\+Count}}))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取（多地图）扫地机历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & 一次获取数据的数量(建议最大不要超过100) \\
+\hline
+{\em offset} & 获取数据的偏移量(用于分页) \\
+\hline
+{\em start\+Time} & 起始时间戳 \\
+\hline
+{\em end\+Time} & 结束时间戳 \\
+\hline
+{\em success} & 成功结果回调 \\
+\hline
+{\em failure} & 失败结果回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a43223e3a32c100ea4f168a0a266606a2}\label{interface_thing_smart_sweeper_device_a43223e3a32c100ea4f168a0a266606a2}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getSweeperMultiHistoryDataWithLimit:offset:success:failure:@{getSweeperMultiHistoryDataWithLimit:offset:success:failure:}}
+\index{getSweeperMultiHistoryDataWithLimit:offset:success:failure:@{getSweeperMultiHistoryDataWithLimit:offset:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getSweeperMultiHistoryDataWithLimit:offset:success:failure:}{getSweeperMultiHistoryDataWithLimit:offset:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sweeper\+Multi\+History\+Data\+With\+Limit\+: \begin{DoxyParamCaption}\item[{(NSUInteger)}]{limit }\item[{offset\+:(NSUInteger)}]{offset }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_sweeper_history_model}{Thing\+Smart\+Sweeper\+History\+Model}} $\ast$ $>$ $\ast$datas, NSUInteger \mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a0159ec71d0d4e81c758e75cf5aa8e22a}{total\+Count}}))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取（多地图）扫地机历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & 一次获取数据的数量(建议最大不要超过100) \\
+\hline
+{\em offset} & 获取数据的偏移量(用于分页) \\
+\hline
+{\em success} & 成功结果回调 \\
+\hline
+{\em failure} & 失败结果回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a43223e3a32c100ea4f168a0a266606a2}\label{interface_thing_smart_sweeper_device_a43223e3a32c100ea4f168a0a266606a2}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!getSweeperMultiHistoryDataWithLimit:offset:success:failure:@{getSweeperMultiHistoryDataWithLimit:offset:success:failure:}}
+\index{getSweeperMultiHistoryDataWithLimit:offset:success:failure:@{getSweeperMultiHistoryDataWithLimit:offset:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{getSweeperMultiHistoryDataWithLimit:offset:success:failure:}{getSweeperMultiHistoryDataWithLimit:offset:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sweeper\+Multi\+History\+Data\+With\+Limit\+: \begin{DoxyParamCaption}\item[{(NSUInteger)}]{limit }\item[{offset\+:(NSUInteger)}]{offset }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_sweeper_history_model}{Thing\+Smart\+Sweeper\+History\+Model}} $\ast$ $>$ $\ast$datas, NSUInteger \mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a0159ec71d0d4e81c758e75cf5aa8e22a}{total\+Count}}))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+获取（多地图）扫地机历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit} & 一次获取数据的数量(建议最大不要超过100) \\
+\hline
+{\em offset} & 获取数据的偏移量(用于分页) \\
+\hline
+{\em success} & 成功结果回调 \\
+\hline
+{\em failure} & 失败结果回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_ab0592b0e4d5f12ba76eda92880aebb64}\label{interface_thing_smart_sweeper_device_ab0592b0e4d5f12ba76eda92880aebb64}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!initCloudConfigWithSuccess:failure:@{initCloudConfigWithSuccess:failure:}}
+\index{initCloudConfigWithSuccess:failure:@{initCloudConfigWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{initCloudConfigWithSuccess:failure:}{initCloudConfigWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) init\+Cloud\+Config\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSString $\ast$bucket))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+初始化云配置
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & 成功返回文件存储的bucket信息(用来获取文件的存储url) \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_ab0592b0e4d5f12ba76eda92880aebb64}\label{interface_thing_smart_sweeper_device_ab0592b0e4d5f12ba76eda92880aebb64}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!initCloudConfigWithSuccess:failure:@{initCloudConfigWithSuccess:failure:}}
+\index{initCloudConfigWithSuccess:failure:@{initCloudConfigWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{initCloudConfigWithSuccess:failure:}{initCloudConfigWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) init\+Cloud\+Config\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSString $\ast$bucket))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+初始化云配置
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & 成功返回文件存储的bucket信息(用来获取文件的存储url) \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_ab53c51e2bea8c26563d89497f1f09e4c}\label{interface_thing_smart_sweeper_device_ab53c51e2bea8c26563d89497f1f09e4c}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!onDestroyP2P@{onDestroyP2P}}
+\index{onDestroyP2P@{onDestroyP2P}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{onDestroyP2P}{onDestroyP2P}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Destroy\+P2P \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Destroy P2P SDK and cancel all task. 
+
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_ab53c51e2bea8c26563d89497f1f09e4c}\label{interface_thing_smart_sweeper_device_ab53c51e2bea8c26563d89497f1f09e4c}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!onDestroyP2P@{onDestroyP2P}}
+\index{onDestroyP2P@{onDestroyP2P}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{onDestroyP2P}{onDestroyP2P}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Destroy\+P2P \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Destroy P2P SDK and cancel all task. 
+
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a232e5b5b5379ba9b6cf757c215490be0}\label{interface_thing_smart_sweeper_device_a232e5b5b5379ba9b6cf757c215490be0}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!P2PActiveCheck@{P2PActiveCheck}}
+\index{P2PActiveCheck@{P2PActiveCheck}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{P2PActiveCheck}{P2PActiveCheck}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) P2\+PActive\+Check \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Check p2p session is active. 
+
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a232e5b5b5379ba9b6cf757c215490be0}\label{interface_thing_smart_sweeper_device_a232e5b5b5379ba9b6cf757c215490be0}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!P2PActiveCheck@{P2PActiveCheck}}
+\index{P2PActiveCheck@{P2PActiveCheck}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{P2PActiveCheck}{P2PActiveCheck}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) P2\+PActive\+Check \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Check p2p session is active. 
+
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_af0f35a21379b5bf8446f70ac74cfba85}\label{interface_thing_smart_sweeper_device_af0f35a21379b5bf8446f70ac74cfba85}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!queryLatestCleanRecord:start:size:complete:@{queryLatestCleanRecord:start:size:complete:}}
+\index{queryLatestCleanRecord:start:size:complete:@{queryLatestCleanRecord:start:size:complete:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{queryLatestCleanRecord:start:size:complete:}{queryLatestCleanRecord:start:size:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) query\+Latest\+Clean\+Record\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{start\+:(NSString $\ast$)}]{start }\item[{size\+:(NSInteger)}]{size }\item[{complete\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_sweeper_record_detail}{Thing\+Smart\+Sweeper\+Record\+Detail}} $\ast$model, NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{complete }\end{DoxyParamCaption}}
+
+流服务\+V1.0 查询最新一次清扫记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备 ID \\
+\hline
+{\em start} & 开始位置。第一次传空，之后取下一页时填上一页返回值里的 start\+Row 值 \\
+\hline
+{\em size} & 查询数据的大小，固定参数为 500 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_af0f35a21379b5bf8446f70ac74cfba85}\label{interface_thing_smart_sweeper_device_af0f35a21379b5bf8446f70ac74cfba85}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!queryLatestCleanRecord:start:size:complete:@{queryLatestCleanRecord:start:size:complete:}}
+\index{queryLatestCleanRecord:start:size:complete:@{queryLatestCleanRecord:start:size:complete:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{queryLatestCleanRecord:start:size:complete:}{queryLatestCleanRecord:start:size:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) query\+Latest\+Clean\+Record\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{start\+:(NSString $\ast$)}]{start }\item[{size\+:(NSInteger)}]{size }\item[{complete\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_sweeper_record_detail}{Thing\+Smart\+Sweeper\+Record\+Detail}} $\ast$model, NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{complete }\end{DoxyParamCaption}}
+
+流服务\+V1.0 查询最新一次清扫记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备 ID \\
+\hline
+{\em start} & 开始位置。第一次传空，之后取下一页时填上一页返回值里的 start\+Row 值 \\
+\hline
+{\em size} & 查询数据的大小，固定参数为 500 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_acad977fbae4e6d1c0502c7af6ad0b8b1}\label{interface_thing_smart_sweeper_device_acad977fbae4e6d1c0502c7af6ad0b8b1}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!queryLatestCleanRecordV2:start:size:complete:@{queryLatestCleanRecordV2:start:size:complete:}}
+\index{queryLatestCleanRecordV2:start:size:complete:@{queryLatestCleanRecordV2:start:size:complete:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{queryLatestCleanRecordV2:start:size:complete:}{queryLatestCleanRecordV2:start:size:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) query\+Latest\+Clean\+Record\+V2\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{start\+:(NSString $\ast$)}]{start }\item[{size\+:(NSInteger)}]{size }\item[{complete\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_sweeper_record_detail}{Thing\+Smart\+Sweeper\+Record\+Detail}} $\ast$model, NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{complete }\end{DoxyParamCaption}}
+
+流服务\+V2.0 查询最新一次清扫记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备 ID \\
+\hline
+{\em start} & 开始位置。第一次传空，之后取下一页时填上一页返回值里的 start\+Row 值 \\
+\hline
+{\em size} & 查询数据的大小，固定参数为 500 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_acad977fbae4e6d1c0502c7af6ad0b8b1}\label{interface_thing_smart_sweeper_device_acad977fbae4e6d1c0502c7af6ad0b8b1}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!queryLatestCleanRecordV2:start:size:complete:@{queryLatestCleanRecordV2:start:size:complete:}}
+\index{queryLatestCleanRecordV2:start:size:complete:@{queryLatestCleanRecordV2:start:size:complete:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{queryLatestCleanRecordV2:start:size:complete:}{queryLatestCleanRecordV2:start:size:complete:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) query\+Latest\+Clean\+Record\+V2\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{start\+:(NSString $\ast$)}]{start }\item[{size\+:(NSInteger)}]{size }\item[{complete\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_sweeper_record_detail}{Thing\+Smart\+Sweeper\+Record\+Detail}} $\ast$model, NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{complete }\end{DoxyParamCaption}}
+
+流服务\+V2.0 查询最新一次清扫记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备 ID \\
+\hline
+{\em start} & 开始位置。第一次传空，之后取下一页时填上一页返回值里的 start\+Row 值 \\
+\hline
+{\em size} & 查询数据的大小，固定参数为 500 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a27ce8d23a5482fb10e4defe8ba425778}\label{interface_thing_smart_sweeper_device_a27ce8d23a5482fb10e4defe8ba425778}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!removeAllHistoryDataWithSuccess:failure:@{removeAllHistoryDataWithSuccess:failure:}}
+\index{removeAllHistoryDataWithSuccess:failure:@{removeAllHistoryDataWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{removeAllHistoryDataWithSuccess:failure:}{removeAllHistoryDataWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+History\+Data\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{success }\item[{failure\+:(\char`\"{}This method is deprecated on 3.\+0.\+0\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+删除当前扫地机所有历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & Success block \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a27ce8d23a5482fb10e4defe8ba425778}\label{interface_thing_smart_sweeper_device_a27ce8d23a5482fb10e4defe8ba425778}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!removeAllHistoryDataWithSuccess:failure:@{removeAllHistoryDataWithSuccess:failure:}}
+\index{removeAllHistoryDataWithSuccess:failure:@{removeAllHistoryDataWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{removeAllHistoryDataWithSuccess:failure:}{removeAllHistoryDataWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+History\+Data\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{success }\item[{failure\+:(\char`\"{}This method is deprecated on 3.\+0.\+0\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+删除当前扫地机所有历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & Success block \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_afdf7a289f359becf3baedd1b494201ec}\label{interface_thing_smart_sweeper_device_afdf7a289f359becf3baedd1b494201ec}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!removeAllMultiHistoryDataWithSuccess:failure:@{removeAllMultiHistoryDataWithSuccess:failure:}}
+\index{removeAllMultiHistoryDataWithSuccess:failure:@{removeAllMultiHistoryDataWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{removeAllMultiHistoryDataWithSuccess:failure:}{removeAllMultiHistoryDataWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Multi\+History\+Data\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{success }\item[{failure\+:(\char`\"{}This method is deprecated on 3.\+0.\+0\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+删除当前（多地图）扫地机所有历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & 成功结果回调 \\
+\hline
+{\em failure} & 失败结果回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_afdf7a289f359becf3baedd1b494201ec}\label{interface_thing_smart_sweeper_device_afdf7a289f359becf3baedd1b494201ec}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!removeAllMultiHistoryDataWithSuccess:failure:@{removeAllMultiHistoryDataWithSuccess:failure:}}
+\index{removeAllMultiHistoryDataWithSuccess:failure:@{removeAllMultiHistoryDataWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{removeAllMultiHistoryDataWithSuccess:failure:}{removeAllMultiHistoryDataWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Multi\+History\+Data\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{success }\item[{failure\+:(\char`\"{}This method is deprecated on 3.\+0.\+0\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+删除当前（多地图）扫地机所有历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & 成功结果回调 \\
+\hline
+{\em failure} & 失败结果回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_adb10ab69a8ca86af3130e78e94ba3588}\label{interface_thing_smart_sweeper_device_adb10ab69a8ca86af3130e78e94ba3588}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!removeSweeperHistoryDataWithFileIds:success:failure:@{removeSweeperHistoryDataWithFileIds:success:failure:}}
+\index{removeSweeperHistoryDataWithFileIds:success:failure:@{removeSweeperHistoryDataWithFileIds:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{removeSweeperHistoryDataWithFileIds:success:failure:}{removeSweeperHistoryDataWithFileIds:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Sweeper\+History\+Data\+With\+File\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{file\+Ids }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+删除扫地机历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Ids} & 文件 id 数组 \\
+\hline
+{\em success} & Success block \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_adb10ab69a8ca86af3130e78e94ba3588}\label{interface_thing_smart_sweeper_device_adb10ab69a8ca86af3130e78e94ba3588}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!removeSweeperHistoryDataWithFileIds:success:failure:@{removeSweeperHistoryDataWithFileIds:success:failure:}}
+\index{removeSweeperHistoryDataWithFileIds:success:failure:@{removeSweeperHistoryDataWithFileIds:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{removeSweeperHistoryDataWithFileIds:success:failure:}{removeSweeperHistoryDataWithFileIds:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Sweeper\+History\+Data\+With\+File\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{file\+Ids }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+删除扫地机历史记录
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Ids} & 文件 id 数组 \\
+\hline
+{\em success} & Success block \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a2787fbaa6de58b39e9f516aef4ea0964}\label{interface_thing_smart_sweeper_device_a2787fbaa6de58b39e9f516aef4ea0964}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!startObserverSweeperDataByP2P:receiveP2PData:failure:@{startObserverSweeperDataByP2P:receiveP2PData:failure:}}
+\index{startObserverSweeperDataByP2P:receiveP2PData:failure:@{startObserverSweeperDataByP2P:receiveP2PData:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{startObserverSweeperDataByP2P:receiveP2PData:failure:}{startObserverSweeperDataByP2P:receiveP2PData:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Observer\+Sweeper\+Data\+By\+P2\+P\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Sweeper\+P2\+PDownload\+Type)}]{download\+Type }\item[{receive\+P2\+PData\+:(void($^\wedge$)(NSDictionary $\ast$data))}]{receive\+P2\+PData }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Start observer data from sweeper device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em download\+Type} & 0\+:download only once, 1\+: continuous download when device update. \\
+\hline
+{\em receive\+P2\+PData} & callback when observer success \\
+\hline
+{\em failure} & callback when connect fail \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a2787fbaa6de58b39e9f516aef4ea0964}\label{interface_thing_smart_sweeper_device_a2787fbaa6de58b39e9f516aef4ea0964}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!startObserverSweeperDataByP2P:receiveP2PData:failure:@{startObserverSweeperDataByP2P:receiveP2PData:failure:}}
+\index{startObserverSweeperDataByP2P:receiveP2PData:failure:@{startObserverSweeperDataByP2P:receiveP2PData:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{startObserverSweeperDataByP2P:receiveP2PData:failure:}{startObserverSweeperDataByP2P:receiveP2PData:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Observer\+Sweeper\+Data\+By\+P2\+P\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Sweeper\+P2\+PDownload\+Type)}]{download\+Type }\item[{receive\+P2\+PData\+:(void($^\wedge$)(NSDictionary $\ast$data))}]{receive\+P2\+PData }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Start observer data from sweeper device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em download\+Type} & 0\+:download only once, 1\+: continuous download when device update. \\
+\hline
+{\em receive\+P2\+PData} & callback when observer success \\
+\hline
+{\em failure} & callback when connect fail \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a35c1af6868a59b21f765931ef27d4bbe}\label{interface_thing_smart_sweeper_device_a35c1af6868a59b21f765931ef27d4bbe}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!stopObserverSweeperDataByP2P:failure:@{stopObserverSweeperDataByP2P:failure:}}
+\index{stopObserverSweeperDataByP2P:failure:@{stopObserverSweeperDataByP2P:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{stopObserverSweeperDataByP2P:failure:}{stopObserverSweeperDataByP2P:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Observer\+Sweeper\+Data\+By\+P2\+P\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Stop observer data from sweeper device. 
+\begin{DoxyParams}{Parameters}
+{\em success} & callback when stop success \\
+\hline
+{\em failure} & callback when stop fail \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a35c1af6868a59b21f765931ef27d4bbe}\label{interface_thing_smart_sweeper_device_a35c1af6868a59b21f765931ef27d4bbe}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!stopObserverSweeperDataByP2P:failure:@{stopObserverSweeperDataByP2P:failure:}}
+\index{stopObserverSweeperDataByP2P:failure:@{stopObserverSweeperDataByP2P:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{stopObserverSweeperDataByP2P:failure:}{stopObserverSweeperDataByP2P:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Observer\+Sweeper\+Data\+By\+P2\+P\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Stop observer data from sweeper device. 
+\begin{DoxyParams}{Parameters}
+{\em success} & callback when stop success \\
+\hline
+{\em failure} & callback when stop fail \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_adc22bbc4668de4181e4893237df644b9}\label{interface_thing_smart_sweeper_device_adc22bbc4668de4181e4893237df644b9}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!subscribeDeviceDataTransfer@{subscribeDeviceDataTransfer}}
+\index{subscribeDeviceDataTransfer@{subscribeDeviceDataTransfer}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{subscribeDeviceDataTransfer}{subscribeDeviceDataTransfer}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+Device\+Data\+Transfer \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+订阅设备的流数据 \mbox{\Hypertarget{interface_thing_smart_sweeper_device_adc22bbc4668de4181e4893237df644b9}\label{interface_thing_smart_sweeper_device_adc22bbc4668de4181e4893237df644b9}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!subscribeDeviceDataTransfer@{subscribeDeviceDataTransfer}}
+\index{subscribeDeviceDataTransfer@{subscribeDeviceDataTransfer}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{subscribeDeviceDataTransfer}{subscribeDeviceDataTransfer}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+Device\+Data\+Transfer \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+订阅设备的流数据 \mbox{\Hypertarget{interface_thing_smart_sweeper_device_a2c9cc28b8ae48b4fb590fa83ab122e3e}\label{interface_thing_smart_sweeper_device_a2c9cc28b8ae48b4fb590fa83ab122e3e}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!sweeperFileNameUpdateWithFileId:fileName:success:failure:@{sweeperFileNameUpdateWithFileId:fileName:success:failure:}}
+\index{sweeperFileNameUpdateWithFileId:fileName:success:failure:@{sweeperFileNameUpdateWithFileId:fileName:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{sweeperFileNameUpdateWithFileId:fileName:success:failure:}{sweeperFileNameUpdateWithFileId:fileName:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sweeper\+File\+Name\+Update\+With\+File\+Id\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{file\+Id }\item[{file\+Name\+:(NSString $\ast$)}]{file\+Name }\item[{success\+:(void($^\wedge$)(id result))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Update sweeper file name 
+\begin{DoxyParams}{Parameters}
+{\em file\+Id} & map id \\
+\hline
+{\em file\+Name} & file name \\
+\hline
+{\em success} & success call back \\
+\hline
+{\em failure} & failure call back \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a2c9cc28b8ae48b4fb590fa83ab122e3e}\label{interface_thing_smart_sweeper_device_a2c9cc28b8ae48b4fb590fa83ab122e3e}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!sweeperFileNameUpdateWithFileId:fileName:success:failure:@{sweeperFileNameUpdateWithFileId:fileName:success:failure:}}
+\index{sweeperFileNameUpdateWithFileId:fileName:success:failure:@{sweeperFileNameUpdateWithFileId:fileName:success:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{sweeperFileNameUpdateWithFileId:fileName:success:failure:}{sweeperFileNameUpdateWithFileId:fileName:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sweeper\+File\+Name\+Update\+With\+File\+Id\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{file\+Id }\item[{file\+Name\+:(NSString $\ast$)}]{file\+Name }\item[{success\+:(void($^\wedge$)(id result))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+Update sweeper file name 
+\begin{DoxyParams}{Parameters}
+{\em file\+Id} & map id \\
+\hline
+{\em file\+Name} & file name \\
+\hline
+{\em success} & success call back \\
+\hline
+{\em failure} & failure call back \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a4bc30436ed546e81f654cda541389976}\label{interface_thing_smart_sweeper_device_a4bc30436ed546e81f654cda541389976}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!unsubscribeDeviceDataTransfer@{unsubscribeDeviceDataTransfer}}
+\index{unsubscribeDeviceDataTransfer@{unsubscribeDeviceDataTransfer}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{unsubscribeDeviceDataTransfer}{unsubscribeDeviceDataTransfer}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) unsubscribe\+Device\+Data\+Transfer \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+取消订阅设备的流数据 \mbox{\Hypertarget{interface_thing_smart_sweeper_device_a4bc30436ed546e81f654cda541389976}\label{interface_thing_smart_sweeper_device_a4bc30436ed546e81f654cda541389976}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!unsubscribeDeviceDataTransfer@{unsubscribeDeviceDataTransfer}}
+\index{unsubscribeDeviceDataTransfer@{unsubscribeDeviceDataTransfer}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{unsubscribeDeviceDataTransfer}{unsubscribeDeviceDataTransfer}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) unsubscribe\+Device\+Data\+Transfer \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+取消订阅设备的流数据 \mbox{\Hypertarget{interface_thing_smart_sweeper_device_a3c2de9a2700f118ba4772b8f9b71b686}\label{interface_thing_smart_sweeper_device_a3c2de9a2700f118ba4772b8f9b71b686}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!updateCloudConfigWithSuccess:failure:@{updateCloudConfigWithSuccess:failure:}}
+\index{updateCloudConfigWithSuccess:failure:@{updateCloudConfigWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{updateCloudConfigWithSuccess:failure:}{updateCloudConfigWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+Cloud\+Config\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSString $\ast$bucket))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+更新云配置
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & 成功返回文件存储的bucket信息 \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a3c2de9a2700f118ba4772b8f9b71b686}\label{interface_thing_smart_sweeper_device_a3c2de9a2700f118ba4772b8f9b71b686}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!updateCloudConfigWithSuccess:failure:@{updateCloudConfigWithSuccess:failure:}}
+\index{updateCloudConfigWithSuccess:failure:@{updateCloudConfigWithSuccess:failure:}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{updateCloudConfigWithSuccess:failure:}{updateCloudConfigWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+Cloud\+Config\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSString $\ast$bucket))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+更新云配置
+
+
+\begin{DoxyParams}{Parameters}
+{\em success} & 成功返回文件存储的bucket信息 \\
+\hline
+{\em failure} & Failure block \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_a43518b6a9c1b072a488794eafb0d8b81}\label{interface_thing_smart_sweeper_device_a43518b6a9c1b072a488794eafb0d8b81}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!delegate@{delegate}}
+\index{delegate@{delegate}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_smart_sweeper_device_delegate-p}{Thing\+Smart\+Sweeper\+Device\+Delegate}} $>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h_source_l00089}{89}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h_source}{Thing\+Smart\+Sweeper\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_sweeper_device_ad9a27d34ee97972822611ab6046cbd5e}\label{interface_thing_smart_sweeper_device_ad9a27d34ee97972822611ab6046cbd5e}} 
+\index{ThingSmartSweeperDevice@{ThingSmartSweeperDevice}!shouldAutoDownloadData@{shouldAutoDownloadData}}
+\index{shouldAutoDownloadData@{shouldAutoDownloadData}!ThingSmartSweeperDevice@{ThingSmartSweeperDevice}}
+\doxysubsubsection{\texorpdfstring{shouldAutoDownloadData}{shouldAutoDownloadData}}
+{\footnotesize\ttfamily -\/ (BOOL) should\+Auto\+Download\+Data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Download laser sweeper binary data from map\+Path URL. Default false. 是否自动下载地图文件数据 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h_source_l00095}{95}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h_source}{Thing\+Smart\+Sweeper\+Device.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Sweeper\+Kit/\+Build/\+Thing\+Smart\+Sweeper\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Sweeper\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h}{Thing\+Smart\+Sweeper\+Device.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Sweeper\+Kit/\+Build/\+Thing\+Smart\+Sweeper\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Sweeper\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_device_8h}{Thing\+Smart\+Sweeper\+Device.\+h}}\end{DoxyCompactItemize}

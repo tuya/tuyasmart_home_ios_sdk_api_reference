@@ -1,0 +1,145 @@
+\hypertarget{interface_thing_encrypt_k_v_storage_item}{}\doxysection{Thing\+Encrypt\+KVStorage\+Item Class Reference}
+\label{interface_thing_encrypt_k_v_storage_item}\index{ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}}
+
+
+{\ttfamily \#import $<$Thing\+Encrypt\+Image\+KVStorage.\+h$>$}
+
+Inheritance diagram for Thing\+Encrypt\+KVStorage\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.573034cm]{interface_thing_encrypt_k_v_storage_item}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_a2340832f5ae5c7f9b7e7dba399a734e3}{key}}
+\begin{DoxyCompactList}\small\item\em key \end{DoxyCompactList}\item 
+NSData $\ast$ \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_a1d6ead3e27224da8e911e73b7217a6a0}{value}}
+\begin{DoxyCompactList}\small\item\em value \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_ad5e298e023cab4d831f7dd27cc18d4c3}{filename}}
+\begin{DoxyCompactList}\small\item\em filename (nil if inline) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_a62052776a8201188361fae4be6b2d191}{size}}
+\begin{DoxyCompactList}\small\item\em value\textquotesingle{}s size in bytes \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_a4ad8dc621ed319626beebf07b66655ff}{mod\+Time}}
+\begin{DoxyCompactList}\small\item\em modification unix timestamp \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_a129a08d59794eff0df1032f2fbaa5e18}{access\+Time}}
+\begin{DoxyCompactList}\small\item\em last access unix timestamp \end{DoxyCompactList}\item 
+NSData $\ast$ \mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item_a02dc03c8d36b3fd324b9a73b9c90520a}{extended\+Data}}
+\begin{DoxyCompactList}\small\item\em extended data (nil if no extended data) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interface_thing_encrypt_k_v_storage_item}{Thing\+Encrypt\+KVStorage\+Item}} is used by {\ttfamily \mbox{\hyperlink{interface_thing_encrypt_image_k_v_storage}{Thing\+Encrypt\+Image\+KVStorage}}} to store key-\/value pair and meta data. Thingpically, you should not use this class directly. 
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00017}{17}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{Thing\+Encrypt\+Image\+KVStorage.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_encrypt_k_v_storage_item_a129a08d59794eff0df1032f2fbaa5e18}\label{interface_thing_encrypt_k_v_storage_item_a129a08d59794eff0df1032f2fbaa5e18}} 
+\index{ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}!accessTime@{accessTime}}
+\index{accessTime@{accessTime}!ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}}
+\doxysubsubsection{\texorpdfstring{accessTime}{accessTime}}
+{\footnotesize\ttfamily -\/ (int) access\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+last access unix timestamp 
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00023}{23}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{Thing\+Encrypt\+Image\+KVStorage.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_encrypt_k_v_storage_item_a02dc03c8d36b3fd324b9a73b9c90520a}\label{interface_thing_encrypt_k_v_storage_item_a02dc03c8d36b3fd324b9a73b9c90520a}} 
+\index{ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}!extendedData@{extendedData}}
+\index{extendedData@{extendedData}!ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}}
+\doxysubsubsection{\texorpdfstring{extendedData}{extendedData}}
+{\footnotesize\ttfamily -\/ (NSData $\ast$) extended\+Data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+extended data (nil if no extended data) 
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00024}{24}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{Thing\+Encrypt\+Image\+KVStorage.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_encrypt_k_v_storage_item_ad5e298e023cab4d831f7dd27cc18d4c3}\label{interface_thing_encrypt_k_v_storage_item_ad5e298e023cab4d831f7dd27cc18d4c3}} 
+\index{ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}!filename@{filename}}
+\index{filename@{filename}!ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) filename\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+filename (nil if inline) 
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00020}{20}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{Thing\+Encrypt\+Image\+KVStorage.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_encrypt_k_v_storage_item_a2340832f5ae5c7f9b7e7dba399a734e3}\label{interface_thing_encrypt_k_v_storage_item_a2340832f5ae5c7f9b7e7dba399a734e3}} 
+\index{ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}!key@{key}}
+\index{key@{key}!ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+key 
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00018}{18}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{Thing\+Encrypt\+Image\+KVStorage.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_encrypt_k_v_storage_item_a4ad8dc621ed319626beebf07b66655ff}\label{interface_thing_encrypt_k_v_storage_item_a4ad8dc621ed319626beebf07b66655ff}} 
+\index{ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}!modTime@{modTime}}
+\index{modTime@{modTime}!ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}}
+\doxysubsubsection{\texorpdfstring{modTime}{modTime}}
+{\footnotesize\ttfamily -\/ (int) mod\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+modification unix timestamp 
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00022}{22}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{Thing\+Encrypt\+Image\+KVStorage.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_encrypt_k_v_storage_item_a62052776a8201188361fae4be6b2d191}\label{interface_thing_encrypt_k_v_storage_item_a62052776a8201188361fae4be6b2d191}} 
+\index{ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}!size@{size}}
+\index{size@{size}!ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily -\/ (int) size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+value\textquotesingle{}s size in bytes 
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00021}{21}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{Thing\+Encrypt\+Image\+KVStorage.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_encrypt_k_v_storage_item_a1d6ead3e27224da8e911e73b7217a6a0}\label{interface_thing_encrypt_k_v_storage_item_a1d6ead3e27224da8e911e73b7217a6a0}} 
+\index{ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}!value@{value}}
+\index{value@{value}!ThingEncryptKVStorageItem@{ThingEncryptKVStorageItem}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily -\/ (NSData $\ast$) value\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+value 
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source_l00019}{19}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h_source}{Thing\+Encrypt\+Image\+KVStorage.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Encrypt\+Image.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h}{Thing\+Encrypt\+Image\+KVStorage.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Encrypt\+Image.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h}{Thing\+Encrypt\+Image\+KVStorage.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.\+xcframework/ios-\/arm64/\+Thing\+Encrypt\+Image.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h}{Thing\+Encrypt\+Image\+KVStorage.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Encrypt\+Image.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_k_v_storage_8h}{Thing\+Encrypt\+Image\+KVStorage.\+h}}\end{DoxyCompactItemize}

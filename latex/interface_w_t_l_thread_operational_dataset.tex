@@ -1,0 +1,250 @@
+\hypertarget{interface_w_t_l_thread_operational_dataset}{}\doxysection{WTLThread\+Operational\+Dataset Class Reference}
+\label{interface_w_t_l_thread_operational_dataset}\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+
+
+{\ttfamily \#import $<$WTLThread\+Operational\+Dataset.\+h$>$}
+
+Inheritance diagram for WTLThread\+Operational\+Dataset\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_w_t_l_thread_operational_dataset}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_a8511f6fdbb7c31a21133fe2835848497}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(instancetype \+\_\+\+Nullable) -\/ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_a8ba552651166b26dd5b3d17240f9372e}{init\+With\+Network\+Name\+:extended\+PANID\+:master\+Key\+:\+PSKc\+:channel\+Number\+:pan\+ID\+:}}
+\item 
+(instancetype \+\_\+\+Nullable) -\/ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_a14427fa0c56d21112b39c70baead7cab}{init\+With\+Data\+:}}
+\item 
+(size\+\_\+t const WTLSize\+Thread\+Extended\+Pan\+Id) -\/ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_a477ddba8fd18aef4b7b8ed53c3a9f640}{WTL\+\_\+\+DEPRECATED}}
+\item 
+(size\+\_\+t const WTLSize\+Thread\+Extended\+PANID) -\/ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_abcae4a33ad8b3b8578e00d790c9f284d}{API\+\_\+\+AVAILABLE}}
+\item 
+(size\+\_\+t const WTLSize\+Thread\+PANID) -\/ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_af89406b1df2496acc1ef3aaa941b54ac}{API\+\_\+\+AVAILABLE}}
+\item 
+(NSNumber $\ast$channel\+Number) -\/ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_a01d0f61971bbe0b8416809ea87187cb8}{API\+\_\+\+AVAILABLE}}
+\item 
+(NSData $\ast$) -\/ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_ad47816d284bb41b79981451692ba5be1}{data}}
+\item 
+(nullable instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_a2883feb241be8c0cf9adde0f641840f1}{init\+With\+Network\+Name\+:extended\+PANID\+:master\+Key\+:\+PSKc\+:channel\+:pan\+ID\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_a8511f6fdbb7c31a21133fe2835848497}{NS\+\_\+\+UNAVAILABLE}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t const \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_a3766d36a238ee63301251a058c6b7bec}{WTLSize\+Thread\+Network\+Name}}
+\item 
+size\+\_\+t const \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_a7da998f1714aeec07867f04da5f5c57a}{WTLSize\+Thread\+Master\+Key}}
+\item 
+size\+\_\+t const \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_ad537b917f15ee5d1c4c2e0da6e72b245}{WTLSize\+Thread\+PSKc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_afbb67915530236c132a20ca3ef8bf122}{network\+Name}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_ab8d298a5f2e82b00d6c0a912b704a071}{extended\+PANID}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_ac633303e0d785a502d3f1554ae4d55bd}{master\+Key}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_a41108b2f60380e211a4d1dc9676e7336}{PSKc}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset_ae1fc9b53bf3ebd7c61b9030da0f87b87}{pan\+ID}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Copyright (c) 2021-\/2023 Project CHIP Authors
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb}http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset}{WTLThread\+Operational\+Dataset}} allows converting between an \char`\"{}expanded\char`\"{} view of the dataset (with the separate fields) and a single-\/blob NSData view.
+
+The latter can be used to pass Thread network credentials via \mbox{\hyperlink{interface_w_t_l_commissioning_parameters}{WTLCommissioning\+Parameters}}. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source_l00029}{29}} of file \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source}{WTLThread\+Operational\+Dataset.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_abcae4a33ad8b3b8578e00d790c9f284d}\label{interface_w_t_l_thread_operational_dataset_abcae4a33ad8b3b8578e00d790c9f284d}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily -\/ (size\+\_\+t const WTLSize\+Thread\+Extended\+PANID) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_af89406b1df2496acc1ef3aaa941b54ac}\label{interface_w_t_l_thread_operational_dataset_af89406b1df2496acc1ef3aaa941b54ac}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily -\/ (size\+\_\+t const WTLSize\+Thread\+PANID) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_a01d0f61971bbe0b8416809ea87187cb8}\label{interface_w_t_l_thread_operational_dataset_a01d0f61971bbe0b8416809ea87187cb8}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$channel\+Number) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+The Thread network channel. Always an unsigned 16-\/bit integer. \mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_ad47816d284bb41b79981451692ba5be1}\label{interface_w_t_l_thread_operational_dataset_ad47816d284bb41b79981451692ba5be1}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!data@{data}}
+\index{data@{data}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily -\/ (NSData $\ast$) data \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get the underlying data that represents the Thread Active Operational Dataset This can be used for the thread\+Operational\+Dataset of \mbox{\hyperlink{interface_w_t_l_commissioning_parameters}{WTLCommissioning\+Parameters}}. \mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_a14427fa0c56d21112b39c70baead7cab}\label{interface_w_t_l_thread_operational_dataset_a14427fa0c56d21112b39c70baead7cab}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!initWithData:@{initWithData:}}
+\index{initWithData:@{initWithData:}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{initWithData:}{initWithData:}}
+{\footnotesize\ttfamily -\/ (instancetype \+\_\+\+Nullable) init\+With\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\end{DoxyParamCaption}}
+
+Create a Thread Operational Dataset object with a RCP formatted active operational dataset. This initializer will return nil if the input data cannot be parsed correctly \mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_a2883feb241be8c0cf9adde0f641840f1}\label{interface_w_t_l_thread_operational_dataset_a2883feb241be8c0cf9adde0f641840f1}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!initWithNetworkName:extendedPANID:masterKey:PSKc:channel:panID:@{initWithNetworkName:extendedPANID:masterKey:PSKc:channel:panID:}}
+\index{initWithNetworkName:extendedPANID:masterKey:PSKc:channel:panID:@{initWithNetworkName:extendedPANID:masterKey:PSKc:channel:panID:}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{initWithNetworkName:extendedPANID:masterKey:PSKc:channel:panID:}{initWithNetworkName:extendedPANID:masterKey:PSKc:channel:panID:}}
+{\footnotesize\ttfamily -\/ (nullable instancetype) init\+With\+Network\+Name\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{network\+Name }\item[{extended\+PANID\+:(NSData $\ast$)}]{extended\+PANID }\item[{master\+Key\+:(NSData $\ast$)}]{master\+Key }\item[{PSKc\+:(NSData $\ast$)}]{PSKc }\item[{channel\+:(uint16\+\_\+t)}]{channel }\item[{pan\+ID\+:(\char`\"{}Please use init\+With\+Network\+Name\+:extended\+PANID\+:master\+Key\+:\+PSKc\+:channel\+Number\+:pan\+ID\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_thread_operational_dataset_07_deprecated_08_a2883feb241be8c0cf9adde0f641840f1}{WTLThread\+Operational\+Dataset(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_a8ba552651166b26dd5b3d17240f9372e}\label{interface_w_t_l_thread_operational_dataset_a8ba552651166b26dd5b3d17240f9372e}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!initWithNetworkName:extendedPANID:masterKey:PSKc:channelNumber:panID:@{initWithNetworkName:extendedPANID:masterKey:PSKc:channelNumber:panID:}}
+\index{initWithNetworkName:extendedPANID:masterKey:PSKc:channelNumber:panID:@{initWithNetworkName:extendedPANID:masterKey:PSKc:channelNumber:panID:}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{initWithNetworkName:extendedPANID:masterKey:PSKc:channelNumber:panID:}{initWithNetworkName:extendedPANID:masterKey:PSKc:channelNumber:panID:}}
+{\footnotesize\ttfamily -\/ (instancetype \+\_\+\+Nullable) init\+With\+Network\+Name\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{network\+Name }\item[{extended\+PANID\+:(NSData $\ast$)}]{extended\+PANID }\item[{master\+Key\+:(NSData $\ast$)}]{master\+Key }\item[{PSKc\+:(NSData $\ast$)}]{PSKc }\item[{channel\+Number\+:(NSNumber $\ast$)}]{channel\+Number }\item[{pan\+ID\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Create a Thread Operational Dataset object with the individual network fields.
+
+
+\begin{DoxyParams}{Parameters}
+{\em extended\+PANID} & Must be WTLSize\+Thread\+Extended\+PANID bytes. Otherwise nil will be returned. \\
+\hline
+{\em master\+Key} & Must be WTLSize\+Thread\+Master\+Key bytes. Otherwise nil will be returned. \\
+\hline
+{\em PSKc} & Must be WTLSize\+Thread\+PSKc bytes. Otherwise nil will be returned. \\
+\hline
+{\em channel\+Number} & Must be an unsigned 16-\/bit value. \\
+\hline
+{\em pan\+ID} & Must be WTLSize\+Thread\+PANID bytes. Otherwise nil will be returned. In particular, it\textquotesingle{}s expected to be a 16-\/bit unsigned integer stored as 2 bytes in host order. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_a8511f6fdbb7c31a21133fe2835848497}\label{interface_w_t_l_thread_operational_dataset_a8511f6fdbb7c31a21133fe2835848497}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_a8511f6fdbb7c31a21133fe2835848497}\label{interface_w_t_l_thread_operational_dataset_a8511f6fdbb7c31a21133fe2835848497}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_a477ddba8fd18aef4b7b8ed53c3a9f640}\label{interface_w_t_l_thread_operational_dataset_a477ddba8fd18aef4b7b8ed53c3a9f640}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!WTL\_DEPRECATED@{WTL\_DEPRECATED}}
+\index{WTL\_DEPRECATED@{WTL\_DEPRECATED}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED}{WTL\_DEPRECATED}}
+{\footnotesize\ttfamily -\/ (size\+\_\+t const WTLSize\+Thread\+Extended\+Pan\+Id) WTL\+\_\+\+DEPRECATED \begin{DoxyParamCaption}\item[{(\char`\"{}Please use WTLSize\+Thread\+Extended\+PANID\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_thread_operational_dataset_07_deprecated_08_a5c85148ebf97068d730028eef7b4b425}{WTLThread\+Operational\+Dataset(\+Deprecated)}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_a7da998f1714aeec07867f04da5f5c57a}\label{interface_w_t_l_thread_operational_dataset_a7da998f1714aeec07867f04da5f5c57a}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!WTLSizeThreadMasterKey@{WTLSizeThreadMasterKey}}
+\index{WTLSizeThreadMasterKey@{WTLSizeThreadMasterKey}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{WTLSizeThreadMasterKey}{WTLSizeThreadMasterKey}}
+{\footnotesize\ttfamily -\/ (size\+\_\+t const) WTLSize\+Thread\+Master\+Key}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source_l00068}{68}} of file \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source}{WTLThread\+Operational\+Dataset.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_a3766d36a238ee63301251a058c6b7bec}\label{interface_w_t_l_thread_operational_dataset_a3766d36a238ee63301251a058c6b7bec}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!WTLSizeThreadNetworkName@{WTLSizeThreadNetworkName}}
+\index{WTLSizeThreadNetworkName@{WTLSizeThreadNetworkName}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{WTLSizeThreadNetworkName}{WTLSizeThreadNetworkName}}
+{\footnotesize\ttfamily -\/ (size\+\_\+t const) WTLSize\+Thread\+Network\+Name}
+
+The expected lengths of each of the NSData fields in the \mbox{\hyperlink{interface_w_t_l_thread_operational_dataset}{WTLThread\+Operational\+Dataset}} 
+
+Definition at line \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source_l00064}{64}} of file \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source}{WTLThread\+Operational\+Dataset.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_ad537b917f15ee5d1c4c2e0da6e72b245}\label{interface_w_t_l_thread_operational_dataset_ad537b917f15ee5d1c4c2e0da6e72b245}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!WTLSizeThreadPSKc@{WTLSizeThreadPSKc}}
+\index{WTLSizeThreadPSKc@{WTLSizeThreadPSKc}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{WTLSizeThreadPSKc}{WTLSizeThreadPSKc}}
+{\footnotesize\ttfamily -\/ (size\+\_\+t const) WTLSize\+Thread\+PSKc}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source_l00069}{69}} of file \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source}{WTLThread\+Operational\+Dataset.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_ab8d298a5f2e82b00d6c0a912b704a071}\label{interface_w_t_l_thread_operational_dataset_ab8d298a5f2e82b00d6c0a912b704a071}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!extendedPANID@{extendedPANID}}
+\index{extendedPANID@{extendedPANID}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{extendedPANID}{extendedPANID}}
+{\footnotesize\ttfamily -\/ (NSData$\ast$) extended\+PANID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The Thread Network extendended PAN ID 
+
+Definition at line \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source_l00080}{80}} of file \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source}{WTLThread\+Operational\+Dataset.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_ac633303e0d785a502d3f1554ae4d55bd}\label{interface_w_t_l_thread_operational_dataset_ac633303e0d785a502d3f1554ae4d55bd}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!masterKey@{masterKey}}
+\index{masterKey@{masterKey}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{masterKey}{masterKey}}
+{\footnotesize\ttfamily -\/ (NSData$\ast$) master\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The 16 byte Master Key 
+
+Definition at line \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source_l00085}{85}} of file \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source}{WTLThread\+Operational\+Dataset.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_afbb67915530236c132a20ca3ef8bf122}\label{interface_w_t_l_thread_operational_dataset_afbb67915530236c132a20ca3ef8bf122}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!networkName@{networkName}}
+\index{networkName@{networkName}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{networkName}{networkName}}
+{\footnotesize\ttfamily -\/ (NSString$\ast$) network\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The Thread Network name 
+
+Definition at line \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source_l00075}{75}} of file \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source}{WTLThread\+Operational\+Dataset.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_ae1fc9b53bf3ebd7c61b9030da0f87b87}\label{interface_w_t_l_thread_operational_dataset_ae1fc9b53bf3ebd7c61b9030da0f87b87}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!panID@{panID}}
+\index{panID@{panID}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{panID}{panID}}
+{\footnotesize\ttfamily -\/ (NSData$\ast$) pan\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+A uint16\+\_\+t stored as 2-\/bytes in host order representing the Thread PAN ID 
+
+Definition at line \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source_l00100}{100}} of file \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source}{WTLThread\+Operational\+Dataset.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_thread_operational_dataset_a41108b2f60380e211a4d1dc9676e7336}\label{interface_w_t_l_thread_operational_dataset_a41108b2f60380e211a4d1dc9676e7336}} 
+\index{WTLThreadOperationalDataset@{WTLThreadOperationalDataset}!PSKc@{PSKc}}
+\index{PSKc@{PSKc}!WTLThreadOperationalDataset@{WTLThreadOperationalDataset}}
+\doxysubsubsection{\texorpdfstring{PSKc}{PSKc}}
+{\footnotesize\ttfamily -\/ (NSData$\ast$) PSKc\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The Thread PSKc 
+
+Definition at line \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source_l00090}{90}} of file \mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h_source}{WTLThread\+Operational\+Dataset.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_thread_operational_dataset_8h}{WTLThread\+Operational\+Dataset.\+h}}\end{DoxyCompactItemize}

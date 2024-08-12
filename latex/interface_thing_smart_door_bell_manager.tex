@@ -1,0 +1,356 @@
+\hypertarget{interface_thing_smart_door_bell_manager}{}\doxysection{Thing\+Smart\+Door\+Bell\+Manager Class Reference}
+\label{interface_thing_smart_door_bell_manager}\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Door\+Bell\+Manager.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Door\+Bell\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_door_bell_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSInteger doorbell\+Ring\+Time\+Out) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a07ed8d0ff5004408718adf000d8565ba}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\begin{DoxyCompactList}\small\item\em set the time out of call, if not answer when time out, the call will be canceled \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_abb95bc53a41c35161d021171a502daa4}{add\+Observer\+:}}
+\begin{DoxyCompactList}\small\item\em Add observer for doorbell call. \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_error_code_8h_a97c864d6500799b4c11f3e46b166308a}{Thing\+Door\+Bell\+Error}}) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a1ef564f2dc3868cc9cc0c1a0e67cdcf4}{answer\+Door\+Bell\+Call\+:}}
+\begin{DoxyCompactList}\small\item\em answer the doorbell call of specified message id \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_error_code_8h_a97c864d6500799b4c11f3e46b166308a}{Thing\+Door\+Bell\+Error}}) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a42b4118048fea32cc82ec4a4cbcc98a0}{refuse\+Door\+Bell\+Call\+:}}
+\begin{DoxyCompactList}\small\item\em refuse the doorbell call of specified message id \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_error_code_8h_a97c864d6500799b4c11f3e46b166308a}{Thing\+Door\+Bell\+Error}}) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a9cd77b77a78fff528e672912c2d9e945}{hangup\+Door\+Bell\+Call\+:}}
+\begin{DoxyCompactList}\small\item\em hangup the doorbell call of specified message id \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a9e809d5baac26d750505e1faef11b8c9}{on\+Preview\+Success\+:}}
+\begin{DoxyCompactList}\small\item\em the camera preview successful \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_ab65f6fa7829854ff48f5e3da3f22db0e}{generate\+Call\+:}}
+\begin{DoxyCompactList}\small\item\em generate a doorbell call with call message data \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{interface_thing_smart_door_bell_call_model}{Thing\+Smart\+Door\+Bell\+Call\+Model}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a280a1cce2789ae39c36a4de49dd9e399}{call\+Model\+With\+Message\+Id\+:}}
+\begin{DoxyCompactList}\small\item\em get the call model for the specified message id, if no validate call model, return nil \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a538508aa71675c10583ada43a76746ba}{remove\+Observer\+:}}
+\begin{DoxyCompactList}\small\item\em remove the specified observer for doorbell call \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_ae62a44154d085ff3d7e0574021a67b98}{remove\+All\+Observers}}
+\begin{DoxyCompactList}\small\item\em remove all observer \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a72ef34710c0d55fd9b0c954d241f9cc0}{did\+Receive\+Voip\+Datas\+:}}
+\item 
+(NSInteger doorbell\+Ring\+Time\+Out) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a07ed8d0ff5004408718adf000d8565ba}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\begin{DoxyCompactList}\small\item\em set the time out of call, if not answer when time out, the call will be canceled \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_abb95bc53a41c35161d021171a502daa4}{add\+Observer\+:}}
+\begin{DoxyCompactList}\small\item\em Add observer for doorbell call. \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_error_code_8h_a97c864d6500799b4c11f3e46b166308a}{Thing\+Door\+Bell\+Error}}) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a1ef564f2dc3868cc9cc0c1a0e67cdcf4}{answer\+Door\+Bell\+Call\+:}}
+\begin{DoxyCompactList}\small\item\em answer the doorbell call of specified message id \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_error_code_8h_a97c864d6500799b4c11f3e46b166308a}{Thing\+Door\+Bell\+Error}}) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a42b4118048fea32cc82ec4a4cbcc98a0}{refuse\+Door\+Bell\+Call\+:}}
+\begin{DoxyCompactList}\small\item\em refuse the doorbell call of specified message id \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_error_code_8h_a97c864d6500799b4c11f3e46b166308a}{Thing\+Door\+Bell\+Error}}) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a9cd77b77a78fff528e672912c2d9e945}{hangup\+Door\+Bell\+Call\+:}}
+\begin{DoxyCompactList}\small\item\em hangup the doorbell call of specified message id \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a9e809d5baac26d750505e1faef11b8c9}{on\+Preview\+Success\+:}}
+\begin{DoxyCompactList}\small\item\em the camera preview successful \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_ab65f6fa7829854ff48f5e3da3f22db0e}{generate\+Call\+:}}
+\begin{DoxyCompactList}\small\item\em generate a doorbell call with call message data \end{DoxyCompactList}\item 
+(\mbox{\hyperlink{interface_thing_smart_door_bell_call_model}{Thing\+Smart\+Door\+Bell\+Call\+Model}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a280a1cce2789ae39c36a4de49dd9e399}{call\+Model\+With\+Message\+Id\+:}}
+\begin{DoxyCompactList}\small\item\em get the call model for the specified message id, if no validate call model, return nil \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a538508aa71675c10583ada43a76746ba}{remove\+Observer\+:}}
+\begin{DoxyCompactList}\small\item\em remove the specified observer for doorbell call \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_ae62a44154d085ff3d7e0574021a67b98}{remove\+All\+Observers}}
+\begin{DoxyCompactList}\small\item\em remove all observer \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a72ef34710c0d55fd9b0c954d241f9cc0}{did\+Receive\+Voip\+Datas\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a94acd10bbd94376ffcf990c8de496cbb}{shared\+Instance}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a94acd10bbd94376ffcf990c8de496cbb}{shared\+Instance}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ id$<$ \mbox{\hyperlink{protocol_thing_smart_door_bell_observer-p}{Thing\+Smart\+Door\+Bell\+Observer}} $>$ $>$ $\ast$ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a558e875383b013087464391f5d4f4210}{all\+Observers}}
+\begin{DoxyCompactList}\small\item\em get all observers \end{DoxyCompactList}\item 
+id$<$ \mbox{\hyperlink{protocol_thing_smart_door_bell_config_data_source-p}{Thing\+Smart\+Door\+Bell\+Config\+Data\+Source}} $>$ \mbox{\hyperlink{interface_thing_smart_door_bell_manager_a84e639e8add43609d28997b414c1a8e5}{door\+Bell\+Config\+Data\+Source}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_smart_door_bell_manager_af087df0d8143bacba0112839744eadfe}{ignore\+When\+Calling}}
+\begin{DoxyCompactList}\small\item\em If a device is already in a call, subsequent calls to this device will be automatically ignored when set it YES. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_door_bell_manager_8h_source_l00077}{77}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_door_bell_manager_8h_source}{Thing\+Smart\+Door\+Bell\+Manager.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a07ed8d0ff5004408718adf000d8565ba}\label{interface_thing_smart_door_bell_manager_a07ed8d0ff5004408718adf000d8565ba}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSInteger doorbell\+Ring\+Time\+Out) \+\_\+\+\_\+deprecated\+\_\+msg \begin{DoxyParamCaption}\item[{(\char`\"{}Use -\/ instead\char`\"{})}]{\mbox{[}door\+Bell\+Config\+Data\+Source doorbell\+Ring\+Time\+Out\+:with\+Dev\+Id\+:\mbox{]} }\end{DoxyParamCaption}}
+
+
+
+set the time out of call, if not answer when time out, the call will be canceled 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a07ed8d0ff5004408718adf000d8565ba}\label{interface_thing_smart_door_bell_manager_a07ed8d0ff5004408718adf000d8565ba}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSInteger doorbell\+Ring\+Time\+Out) \+\_\+\+\_\+deprecated\+\_\+msg \begin{DoxyParamCaption}\item[{(\char`\"{}Use -\/ instead\char`\"{})}]{\mbox{[}door\+Bell\+Config\+Data\+Source doorbell\+Ring\+Time\+Out\+:with\+Dev\+Id\+:\mbox{]} }\end{DoxyParamCaption}}
+
+
+
+set the time out of call, if not answer when time out, the call will be canceled 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_abb95bc53a41c35161d021171a502daa4}\label{interface_thing_smart_door_bell_manager_abb95bc53a41c35161d021171a502daa4}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!addObserver:@{addObserver:}}
+\index{addObserver:@{addObserver:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{addObserver:}{addObserver:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Observer\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_door_bell_observer-p}{Thing\+Smart\+Door\+Bell\+Observer}} $>$)}]{observer }\end{DoxyParamCaption}}
+
+
+
+Add observer for doorbell call. 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_abb95bc53a41c35161d021171a502daa4}\label{interface_thing_smart_door_bell_manager_abb95bc53a41c35161d021171a502daa4}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!addObserver:@{addObserver:}}
+\index{addObserver:@{addObserver:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{addObserver:}{addObserver:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Observer\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_door_bell_observer-p}{Thing\+Smart\+Door\+Bell\+Observer}} $>$)}]{observer }\end{DoxyParamCaption}}
+
+
+
+Add observer for doorbell call. 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a1ef564f2dc3868cc9cc0c1a0e67cdcf4}\label{interface_thing_smart_door_bell_manager_a1ef564f2dc3868cc9cc0c1a0e67cdcf4}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!answerDoorBellCall:@{answerDoorBellCall:}}
+\index{answerDoorBellCall:@{answerDoorBellCall:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{answerDoorBellCall:}{answerDoorBellCall:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_error_code_8h_a97c864d6500799b4c11f3e46b166308a}{Thing\+Door\+Bell\+Error}}) answer\+Door\+Bell\+Call\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{message\+Id }\end{DoxyParamCaption}}
+
+
+
+answer the doorbell call of specified message id 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a1ef564f2dc3868cc9cc0c1a0e67cdcf4}\label{interface_thing_smart_door_bell_manager_a1ef564f2dc3868cc9cc0c1a0e67cdcf4}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!answerDoorBellCall:@{answerDoorBellCall:}}
+\index{answerDoorBellCall:@{answerDoorBellCall:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{answerDoorBellCall:}{answerDoorBellCall:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_error_code_8h_a97c864d6500799b4c11f3e46b166308a}{Thing\+Door\+Bell\+Error}}) answer\+Door\+Bell\+Call\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{message\+Id }\end{DoxyParamCaption}}
+
+
+
+answer the doorbell call of specified message id 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a280a1cce2789ae39c36a4de49dd9e399}\label{interface_thing_smart_door_bell_manager_a280a1cce2789ae39c36a4de49dd9e399}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!callModelWithMessageId:@{callModelWithMessageId:}}
+\index{callModelWithMessageId:@{callModelWithMessageId:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{callModelWithMessageId:}{callModelWithMessageId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_smart_door_bell_call_model}{Thing\+Smart\+Door\+Bell\+Call\+Model}} $\ast$) call\+Model\+With\+Message\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{message\+Id }\end{DoxyParamCaption}}
+
+
+
+get the call model for the specified message id, if no validate call model, return nil 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a280a1cce2789ae39c36a4de49dd9e399}\label{interface_thing_smart_door_bell_manager_a280a1cce2789ae39c36a4de49dd9e399}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!callModelWithMessageId:@{callModelWithMessageId:}}
+\index{callModelWithMessageId:@{callModelWithMessageId:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{callModelWithMessageId:}{callModelWithMessageId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_smart_door_bell_call_model}{Thing\+Smart\+Door\+Bell\+Call\+Model}} $\ast$) call\+Model\+With\+Message\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{message\+Id }\end{DoxyParamCaption}}
+
+
+
+get the call model for the specified message id, if no validate call model, return nil 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a72ef34710c0d55fd9b0c954d241f9cc0}\label{interface_thing_smart_door_bell_manager_a72ef34710c0d55fd9b0c954d241f9cc0}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!didReceiveVoipDatas:@{didReceiveVoipDatas:}}
+\index{didReceiveVoipDatas:@{didReceiveVoipDatas:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{didReceiveVoipDatas:}{didReceiveVoipDatas:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Receive\+Voip\+Datas\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_door_bell_call_model}{Thing\+Smart\+Door\+Bell\+Call\+Model}} $\ast$)}]{call\+Model }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a72ef34710c0d55fd9b0c954d241f9cc0}\label{interface_thing_smart_door_bell_manager_a72ef34710c0d55fd9b0c954d241f9cc0}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!didReceiveVoipDatas:@{didReceiveVoipDatas:}}
+\index{didReceiveVoipDatas:@{didReceiveVoipDatas:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{didReceiveVoipDatas:}{didReceiveVoipDatas:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Receive\+Voip\+Datas\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_door_bell_call_model}{Thing\+Smart\+Door\+Bell\+Call\+Model}} $\ast$)}]{call\+Model }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_ab65f6fa7829854ff48f5e3da3f22db0e}\label{interface_thing_smart_door_bell_manager_ab65f6fa7829854ff48f5e3da3f22db0e}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!generateCall:@{generateCall:}}
+\index{generateCall:@{generateCall:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{generateCall:}{generateCall:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) generate\+Call\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{params }\end{DoxyParamCaption}}
+
+
+
+generate a doorbell call with call message data 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_ab65f6fa7829854ff48f5e3da3f22db0e}\label{interface_thing_smart_door_bell_manager_ab65f6fa7829854ff48f5e3da3f22db0e}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!generateCall:@{generateCall:}}
+\index{generateCall:@{generateCall:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{generateCall:}{generateCall:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) generate\+Call\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{params }\end{DoxyParamCaption}}
+
+
+
+generate a doorbell call with call message data 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a9cd77b77a78fff528e672912c2d9e945}\label{interface_thing_smart_door_bell_manager_a9cd77b77a78fff528e672912c2d9e945}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!hangupDoorBellCall:@{hangupDoorBellCall:}}
+\index{hangupDoorBellCall:@{hangupDoorBellCall:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{hangupDoorBellCall:}{hangupDoorBellCall:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_error_code_8h_a97c864d6500799b4c11f3e46b166308a}{Thing\+Door\+Bell\+Error}}) hangup\+Door\+Bell\+Call\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{message\+Id }\end{DoxyParamCaption}}
+
+
+
+hangup the doorbell call of specified message id 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a9cd77b77a78fff528e672912c2d9e945}\label{interface_thing_smart_door_bell_manager_a9cd77b77a78fff528e672912c2d9e945}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!hangupDoorBellCall:@{hangupDoorBellCall:}}
+\index{hangupDoorBellCall:@{hangupDoorBellCall:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{hangupDoorBellCall:}{hangupDoorBellCall:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_error_code_8h_a97c864d6500799b4c11f3e46b166308a}{Thing\+Door\+Bell\+Error}}) hangup\+Door\+Bell\+Call\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{message\+Id }\end{DoxyParamCaption}}
+
+
+
+hangup the doorbell call of specified message id 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a9e809d5baac26d750505e1faef11b8c9}\label{interface_thing_smart_door_bell_manager_a9e809d5baac26d750505e1faef11b8c9}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!onPreviewSuccess:@{onPreviewSuccess:}}
+\index{onPreviewSuccess:@{onPreviewSuccess:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{onPreviewSuccess:}{onPreviewSuccess:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Preview\+Success\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{message\+Id }\end{DoxyParamCaption}}
+
+
+
+the camera preview successful 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a9e809d5baac26d750505e1faef11b8c9}\label{interface_thing_smart_door_bell_manager_a9e809d5baac26d750505e1faef11b8c9}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!onPreviewSuccess:@{onPreviewSuccess:}}
+\index{onPreviewSuccess:@{onPreviewSuccess:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{onPreviewSuccess:}{onPreviewSuccess:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Preview\+Success\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{message\+Id }\end{DoxyParamCaption}}
+
+
+
+the camera preview successful 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a42b4118048fea32cc82ec4a4cbcc98a0}\label{interface_thing_smart_door_bell_manager_a42b4118048fea32cc82ec4a4cbcc98a0}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!refuseDoorBellCall:@{refuseDoorBellCall:}}
+\index{refuseDoorBellCall:@{refuseDoorBellCall:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{refuseDoorBellCall:}{refuseDoorBellCall:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_error_code_8h_a97c864d6500799b4c11f3e46b166308a}{Thing\+Door\+Bell\+Error}}) refuse\+Door\+Bell\+Call\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{message\+Id }\end{DoxyParamCaption}}
+
+
+
+refuse the doorbell call of specified message id 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a42b4118048fea32cc82ec4a4cbcc98a0}\label{interface_thing_smart_door_bell_manager_a42b4118048fea32cc82ec4a4cbcc98a0}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!refuseDoorBellCall:@{refuseDoorBellCall:}}
+\index{refuseDoorBellCall:@{refuseDoorBellCall:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{refuseDoorBellCall:}{refuseDoorBellCall:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_error_code_8h_a97c864d6500799b4c11f3e46b166308a}{Thing\+Door\+Bell\+Error}}) refuse\+Door\+Bell\+Call\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{message\+Id }\end{DoxyParamCaption}}
+
+
+
+refuse the doorbell call of specified message id 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_ae62a44154d085ff3d7e0574021a67b98}\label{interface_thing_smart_door_bell_manager_ae62a44154d085ff3d7e0574021a67b98}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!removeAllObservers@{removeAllObservers}}
+\index{removeAllObservers@{removeAllObservers}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{removeAllObservers}{removeAllObservers}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Observers \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+remove all observer 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_ae62a44154d085ff3d7e0574021a67b98}\label{interface_thing_smart_door_bell_manager_ae62a44154d085ff3d7e0574021a67b98}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!removeAllObservers@{removeAllObservers}}
+\index{removeAllObservers@{removeAllObservers}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{removeAllObservers}{removeAllObservers}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Observers \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+remove all observer 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a538508aa71675c10583ada43a76746ba}\label{interface_thing_smart_door_bell_manager_a538508aa71675c10583ada43a76746ba}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!removeObserver:@{removeObserver:}}
+\index{removeObserver:@{removeObserver:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{removeObserver:}{removeObserver:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Observer\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_door_bell_observer-p}{Thing\+Smart\+Door\+Bell\+Observer}} $>$)}]{observer }\end{DoxyParamCaption}}
+
+
+
+remove the specified observer for doorbell call 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a538508aa71675c10583ada43a76746ba}\label{interface_thing_smart_door_bell_manager_a538508aa71675c10583ada43a76746ba}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!removeObserver:@{removeObserver:}}
+\index{removeObserver:@{removeObserver:}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{removeObserver:}{removeObserver:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Observer\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_door_bell_observer-p}{Thing\+Smart\+Door\+Bell\+Observer}} $>$)}]{observer }\end{DoxyParamCaption}}
+
+
+
+remove the specified observer for doorbell call 
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a94acd10bbd94376ffcf990c8de496cbb}\label{interface_thing_smart_door_bell_manager_a94acd10bbd94376ffcf990c8de496cbb}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!sharedInstance@{sharedInstance}}
+\index{sharedInstance@{sharedInstance}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{sharedInstance}{sharedInstance}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (instancetype) shared\+Instance \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a94acd10bbd94376ffcf990c8de496cbb}\label{interface_thing_smart_door_bell_manager_a94acd10bbd94376ffcf990c8de496cbb}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!sharedInstance@{sharedInstance}}
+\index{sharedInstance@{sharedInstance}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{sharedInstance}{sharedInstance}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (instancetype) shared\+Instance \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a558e875383b013087464391f5d4f4210}\label{interface_thing_smart_door_bell_manager_a558e875383b013087464391f5d4f4210}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!allObservers@{allObservers}}
+\index{allObservers@{allObservers}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{allObservers}{allObservers}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ id$<$ \mbox{\hyperlink{protocol_thing_smart_door_bell_observer-p}{Thing\+Smart\+Door\+Bell\+Observer}} $>$ $>$ $\ast$) all\+Observers\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+get all observers 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_door_bell_manager_8h_source_l00080}{80}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_door_bell_manager_8h_source}{Thing\+Smart\+Door\+Bell\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_a84e639e8add43609d28997b414c1a8e5}\label{interface_thing_smart_door_bell_manager_a84e639e8add43609d28997b414c1a8e5}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!doorBellConfigDataSource@{doorBellConfigDataSource}}
+\index{doorBellConfigDataSource@{doorBellConfigDataSource}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{doorBellConfigDataSource}{doorBellConfigDataSource}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_smart_door_bell_config_data_source-p}{Thing\+Smart\+Door\+Bell\+Config\+Data\+Source}} $>$) door\+Bell\+Config\+Data\+Source\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_door_bell_manager_8h_source_l00082}{82}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_door_bell_manager_8h_source}{Thing\+Smart\+Door\+Bell\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_door_bell_manager_af087df0d8143bacba0112839744eadfe}\label{interface_thing_smart_door_bell_manager_af087df0d8143bacba0112839744eadfe}} 
+\index{ThingSmartDoorBellManager@{ThingSmartDoorBellManager}!ignoreWhenCalling@{ignoreWhenCalling}}
+\index{ignoreWhenCalling@{ignoreWhenCalling}!ThingSmartDoorBellManager@{ThingSmartDoorBellManager}}
+\doxysubsubsection{\texorpdfstring{ignoreWhenCalling}{ignoreWhenCalling}}
+{\footnotesize\ttfamily -\/ (BOOL) ignore\+When\+Calling\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+If a device is already in a call, subsequent calls to this device will be automatically ignored when set it YES. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_door_bell_manager_8h_source_l00085}{85}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_door_bell_manager_8h_source}{Thing\+Smart\+Door\+Bell\+Manager.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Camera\+Kit/\+Build/\+Thing\+Smart\+Camera\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Camera\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_door_bell_manager_8h}{Thing\+Smart\+Door\+Bell\+Manager.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Camera\+Kit/\+Build/\+Thing\+Smart\+Camera\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Camera\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_camera_kit_8framework_2_headers_2_thing_smart_door_bell_manager_8h}{Thing\+Smart\+Door\+Bell\+Manager.\+h}}\end{DoxyCompactItemize}

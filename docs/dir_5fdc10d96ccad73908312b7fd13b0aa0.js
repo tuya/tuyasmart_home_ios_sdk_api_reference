@@ -1,4 +1,0 @@
-var dir_5fdc10d96ccad73908312b7fd13b0aa0 =
-[
-    [ "ThingDeviceShareModuleSktAPI-umbrella.h", "x86__64-simulator_2_thing_device_share_module_skt_a_p_i_8framework_2_headers_2_thing_device_share_module_skt_a_p_i-umbrella_8h.html", "x86__64-simulator_2_thing_device_share_module_skt_a_p_i_8framework_2_headers_2_thing_device_share_module_skt_a_p_i-umbrella_8h" ]
-];

@@ -1,0 +1,567 @@
+\hypertarget{interface_thing_timeline_view}{}\doxysection{Thing\+Timeline\+View Class Reference}
+\label{interface_thing_timeline_view}\index{ThingTimelineView@{ThingTimelineView}}
+
+
+{\ttfamily \#import $<$Thing\+Timeline\+View.\+h$>$}
+
+Inheritance diagram for Thing\+Timeline\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_timeline_view}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_timeline_view_a4fb34bd09db8016f24c46573617dfd5c}{enable\+Selection\+Mode\+With\+Min\+Length\+:max\+Length\+:}}
+\item 
+(NSRange) -\/ \mbox{\hyperlink{interface_thing_timeline_view_a255aff916fffeef423d9fdd10922a164}{finish\+Selection}}
+\begin{DoxyCompactList}\small\item\em exit selection mode \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_timeline_view_a4e6bc5b77dd1f70413df2092f2bbabd8}{set\+Current\+Time\+:animated\+:}}
+\begin{DoxyCompactList}\small\item\em set current time \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_timeline_view_a4fb34bd09db8016f24c46573617dfd5c}{enable\+Selection\+Mode\+With\+Min\+Length\+:max\+Length\+:}}
+\item 
+(NSRange) -\/ \mbox{\hyperlink{interface_thing_timeline_view_a255aff916fffeef423d9fdd10922a164}{finish\+Selection}}
+\begin{DoxyCompactList}\small\item\em exit selection mode \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_timeline_view_a4e6bc5b77dd1f70413df2092f2bbabd8}{set\+Current\+Time\+:animated\+:}}
+\begin{DoxyCompactList}\small\item\em set current time \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+CGFloat \mbox{\hyperlink{interface_thing_timeline_view_a679e420de1de98a76ab81f68dd7fc2d5}{space\+Per\+Unit}}
+\begin{DoxyCompactList}\small\item\em the space of two long tick mark \end{DoxyCompactList}\item 
+Thing\+Timeline\+Unit\+Mode \mbox{\hyperlink{interface_thing_timeline_view_a62d87a3c0559d833cf4c1c25c0d2af0d}{unit\+Mode}}
+\begin{DoxyCompactList}\small\item\em the seconds of two long tick mark \end{DoxyCompactList}\item 
+UIColor $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_aff57b53695cc15650a4b98cd2c4d54ff}{tick\+Mark\+Color}}
+\begin{DoxyCompactList}\small\item\em color of tick mark \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_a433b6e46a59a44e8945b2b14321ad052}{background\+Gradient\+Colors}}
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_a4c10e5b6d7e2b44880ba96a230427d60}{background\+Gradient\+Locations}}
+\item 
+UIColor $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_a6d6a8bc961f578d3bc9ce0fc127c3af8}{content\+Color}}
+\begin{DoxyCompactList}\small\item\em time slice source color \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_a36e79422b3f96afc9eb8d38d36c274c4}{content\+Gradient\+Colors}}
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_ac42d543932dc53221c84ade3da7b5389}{content\+Gradient\+Locations}}
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_a1fa1a98d654c0d456e692db427c11e67}{event\+Gradient\+Colors}}
+\item 
+CGFloat \mbox{\hyperlink{interface_thing_timeline_view_abf9db00b152e51dd7d704a310eade027}{time\+Header\+Height}}
+\begin{DoxyCompactList}\small\item\em height of the time text bar in the top \end{DoxyCompactList}\item 
+CGFloat \mbox{\hyperlink{interface_thing_timeline_view_a899d74f74e109e212289bfc87f79572c}{time\+Text\+Top}}
+\begin{DoxyCompactList}\small\item\em top space of the time text bar \end{DoxyCompactList}\item 
+NSDictionary $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_aa0d127ada5d1dfe1d8be4a61b9b6614b}{time\+String\+Attributes}}
+\begin{DoxyCompactList}\small\item\em time text attributes \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_timeline_view_a8f9d70c72dd898788cd236607011083a}{show\+Time\+Text}}
+\begin{DoxyCompactList}\small\item\em is show the time string \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_timeline_view_adec1a365a2e5025b63ac9213f7aee199}{show\+Short\+Mark}}
+\begin{DoxyCompactList}\small\item\em is show short tick mark between two long tick mark \end{DoxyCompactList}\item 
+NSTime\+Interval \mbox{\hyperlink{interface_thing_timeline_view_ae2a5ef408d413bdf2bcfa863c389b559}{current\+Time}}
+\begin{DoxyCompactList}\small\item\em selected time \end{DoxyCompactList}\item 
+NSDate $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_ae6d1f5f667a33a6addaade4dd69f10a2}{date}}
+\begin{DoxyCompactList}\small\item\em the day \end{DoxyCompactList}\item 
+NSTime\+Zone $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_ab4486c83d7946cfebe4aa601b42c985d}{time\+Zone}}
+\begin{DoxyCompactList}\small\item\em time zone \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_timeline_view_aef3391f8fc3f0f3c8c489ab397cb9ef2}{is\+Dragging}}
+\begin{DoxyCompactList}\small\item\em is being dragging \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_timeline_view_a06cf2406c4352dad12c437f087969fa7}{is\+Decelerating}}
+\begin{DoxyCompactList}\small\item\em is continue moving afterwards \end{DoxyCompactList}\item 
+UIColor $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_ad5331a24271b25da56fff7906664298f}{mid\+Line\+Color}}
+\begin{DoxyCompactList}\small\item\em color of selection line at the midle \end{DoxyCompactList}\item 
+UIColor $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_a687bca10dd5e399e714b1a6a5799417c}{selection\+Box\+Color}}
+\begin{DoxyCompactList}\small\item\em tint color of selection box \end{DoxyCompactList}\item 
+NSRange \mbox{\hyperlink{interface_thing_timeline_view_af12f7baa8b3db9b85fe12b4721692300}{selected\+Time\+Range}}
+\begin{DoxyCompactList}\small\item\em selected time range \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_timeline_view_a414a29e9c533db85acc766c683ae423e}{is\+Selection\+Enabled}}
+\begin{DoxyCompactList}\small\item\em is in selection mode \end{DoxyCompactList}\item 
+UIColor $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_ae213e99f68c9009cee149d4c616b8339}{selection\+Time\+Background\+Color}}
+\begin{DoxyCompactList}\small\item\em the selected time when dragging selection box \end{DoxyCompactList}\item 
+UIColor $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_a71b8d2a299629fdc98e129b9f359b8a4}{selection\+Time\+Text\+Color}}
+\item 
+NSUInteger \mbox{\hyperlink{interface_thing_timeline_view_aa0cabc15b876393b5901ed5a9f3a4723}{selection\+Time\+Text\+Font\+Size}}
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ id$<$ \mbox{\hyperlink{protocol_thing_timeline_view_source-p}{Thing\+Timeline\+View\+Source}} $>$ $>$ $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_a110819b5efefdb4cd112308d8203da24}{source\+Models}}
+\begin{DoxyCompactList}\small\item\em time slices \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ id$<$ \mbox{\hyperlink{protocol_thing_timeline_view_source-p}{Thing\+Timeline\+View\+Source}} $>$ $>$ $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_a91f17f0981dff35481cc7c0935fdfdfc}{AIDetection\+Source\+Models}}
+\begin{DoxyCompactList}\small\item\em ai detection datasource \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$ \mbox{\hyperlink{interface_thing_timeline_view_aacde42a895f1ae0242ddc4ac0b9e3a49}{ai\+Event\+Content\+Gradient\+Colors}}
+\begin{DoxyCompactList}\small\item\em ai background color \end{DoxyCompactList}\item 
+id$<$ \mbox{\hyperlink{protocol_thing_timeline_view_delegate-p}{Thing\+Timeline\+View\+Delegate}} $>$ \mbox{\hyperlink{interface_thing_timeline_view_a6d5e0774a9098183df264cee71e826e1}{delegate}}
+\begin{DoxyCompactList}\small\item\em delegate \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00045}{45}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_timeline_view_a4fb34bd09db8016f24c46573617dfd5c}\label{interface_thing_timeline_view_a4fb34bd09db8016f24c46573617dfd5c}} 
+\index{ThingTimelineView@{ThingTimelineView}!enableSelectionModeWithMinLength:maxLength:@{enableSelectionModeWithMinLength:maxLength:}}
+\index{enableSelectionModeWithMinLength:maxLength:@{enableSelectionModeWithMinLength:maxLength:}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{enableSelectionModeWithMinLength:maxLength:}{enableSelectionModeWithMinLength:maxLength:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) enable\+Selection\+Mode\+With\+Min\+Length\+: \begin{DoxyParamCaption}\item[{(NSInteger)}]{min }\item[{max\+Length\+:(NSInteger)}]{max }\end{DoxyParamCaption}}
+
+enable selection mode 
+\begin{DoxyParams}{Parameters}
+{\em min} & min seconds to selected \\
+\hline
+{\em max} & max seconds to selected \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_timeline_view_a4fb34bd09db8016f24c46573617dfd5c}\label{interface_thing_timeline_view_a4fb34bd09db8016f24c46573617dfd5c}} 
+\index{ThingTimelineView@{ThingTimelineView}!enableSelectionModeWithMinLength:maxLength:@{enableSelectionModeWithMinLength:maxLength:}}
+\index{enableSelectionModeWithMinLength:maxLength:@{enableSelectionModeWithMinLength:maxLength:}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{enableSelectionModeWithMinLength:maxLength:}{enableSelectionModeWithMinLength:maxLength:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) enable\+Selection\+Mode\+With\+Min\+Length\+: \begin{DoxyParamCaption}\item[{(NSInteger)}]{min }\item[{max\+Length\+:(NSInteger)}]{max }\end{DoxyParamCaption}}
+
+enable selection mode 
+\begin{DoxyParams}{Parameters}
+{\em min} & min seconds to selected \\
+\hline
+{\em max} & max seconds to selected \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_timeline_view_a255aff916fffeef423d9fdd10922a164}\label{interface_thing_timeline_view_a255aff916fffeef423d9fdd10922a164}} 
+\index{ThingTimelineView@{ThingTimelineView}!finishSelection@{finishSelection}}
+\index{finishSelection@{finishSelection}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{finishSelection}{finishSelection}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSRange) finish\+Selection \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+exit selection mode 
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a255aff916fffeef423d9fdd10922a164}\label{interface_thing_timeline_view_a255aff916fffeef423d9fdd10922a164}} 
+\index{ThingTimelineView@{ThingTimelineView}!finishSelection@{finishSelection}}
+\index{finishSelection@{finishSelection}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{finishSelection}{finishSelection}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSRange) finish\+Selection \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+exit selection mode 
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a4e6bc5b77dd1f70413df2092f2bbabd8}\label{interface_thing_timeline_view_a4e6bc5b77dd1f70413df2092f2bbabd8}} 
+\index{ThingTimelineView@{ThingTimelineView}!setCurrentTime:animated:@{setCurrentTime:animated:}}
+\index{setCurrentTime:animated:@{setCurrentTime:animated:}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{setCurrentTime:animated:}{setCurrentTime:animated:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Current\+Time\+: \begin{DoxyParamCaption}\item[{(NSTime\+Interval)}]{current\+Time }\item[{animated\+:(BOOL)}]{animated }\end{DoxyParamCaption}}
+
+
+
+set current time 
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a4e6bc5b77dd1f70413df2092f2bbabd8}\label{interface_thing_timeline_view_a4e6bc5b77dd1f70413df2092f2bbabd8}} 
+\index{ThingTimelineView@{ThingTimelineView}!setCurrentTime:animated:@{setCurrentTime:animated:}}
+\index{setCurrentTime:animated:@{setCurrentTime:animated:}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{setCurrentTime:animated:}{setCurrentTime:animated:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Current\+Time\+: \begin{DoxyParamCaption}\item[{(NSTime\+Interval)}]{current\+Time }\item[{animated\+:(BOOL)}]{animated }\end{DoxyParamCaption}}
+
+
+
+set current time 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_timeline_view_a91f17f0981dff35481cc7c0935fdfdfc}\label{interface_thing_timeline_view_a91f17f0981dff35481cc7c0935fdfdfc}} 
+\index{ThingTimelineView@{ThingTimelineView}!AIDetectionSourceModels@{AIDetectionSourceModels}}
+\index{AIDetectionSourceModels@{AIDetectionSourceModels}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{AIDetectionSourceModels}{AIDetectionSourceModels}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ id$<$ \mbox{\hyperlink{protocol_thing_timeline_view_source-p}{Thing\+Timeline\+View\+Source}} $>$ $>$ $\ast$) AIDetection\+Source\+Models\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+ai detection datasource 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00114}{114}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_aacde42a895f1ae0242ddc4ac0b9e3a49}\label{interface_thing_timeline_view_aacde42a895f1ae0242ddc4ac0b9e3a49}} 
+\index{ThingTimelineView@{ThingTimelineView}!aiEventContentGradientColors@{aiEventContentGradientColors}}
+\index{aiEventContentGradientColors@{aiEventContentGradientColors}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{aiEventContentGradientColors}{aiEventContentGradientColors}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) ai\+Event\+Content\+Gradient\+Colors\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+ai background color 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00117}{117}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a433b6e46a59a44e8945b2b14321ad052}\label{interface_thing_timeline_view_a433b6e46a59a44e8945b2b14321ad052}} 
+\index{ThingTimelineView@{ThingTimelineView}!backgroundGradientColors@{backgroundGradientColors}}
+\index{backgroundGradientColors@{backgroundGradientColors}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{backgroundGradientColors}{backgroundGradientColors}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) background\+Gradient\+Colors\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00056}{56}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a4c10e5b6d7e2b44880ba96a230427d60}\label{interface_thing_timeline_view_a4c10e5b6d7e2b44880ba96a230427d60}} 
+\index{ThingTimelineView@{ThingTimelineView}!backgroundGradientLocations@{backgroundGradientLocations}}
+\index{backgroundGradientLocations@{backgroundGradientLocations}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{backgroundGradientLocations}{backgroundGradientLocations}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) background\+Gradient\+Locations\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00057}{57}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a6d6a8bc961f578d3bc9ce0fc127c3af8}\label{interface_thing_timeline_view_a6d6a8bc961f578d3bc9ce0fc127c3af8}} 
+\index{ThingTimelineView@{ThingTimelineView}!contentColor@{contentColor}}
+\index{contentColor@{contentColor}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{contentColor}{contentColor}}
+{\footnotesize\ttfamily -\/ (UIColor $\ast$) content\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+time slice source color 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00060}{60}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a36e79422b3f96afc9eb8d38d36c274c4}\label{interface_thing_timeline_view_a36e79422b3f96afc9eb8d38d36c274c4}} 
+\index{ThingTimelineView@{ThingTimelineView}!contentGradientColors@{contentGradientColors}}
+\index{contentGradientColors@{contentGradientColors}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{contentGradientColors}{contentGradientColors}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) content\+Gradient\+Colors\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00062}{62}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_ac42d543932dc53221c84ade3da7b5389}\label{interface_thing_timeline_view_ac42d543932dc53221c84ade3da7b5389}} 
+\index{ThingTimelineView@{ThingTimelineView}!contentGradientLocations@{contentGradientLocations}}
+\index{contentGradientLocations@{contentGradientLocations}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{contentGradientLocations}{contentGradientLocations}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) content\+Gradient\+Locations\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00063}{63}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_ae2a5ef408d413bdf2bcfa863c389b559}\label{interface_thing_timeline_view_ae2a5ef408d413bdf2bcfa863c389b559}} 
+\index{ThingTimelineView@{ThingTimelineView}!currentTime@{currentTime}}
+\index{currentTime@{currentTime}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{currentTime}{currentTime}}
+{\footnotesize\ttfamily -\/ (NSTime\+Interval) current\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+selected time 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00081}{81}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_ae6d1f5f667a33a6addaade4dd69f10a2}\label{interface_thing_timeline_view_ae6d1f5f667a33a6addaade4dd69f10a2}} 
+\index{ThingTimelineView@{ThingTimelineView}!date@{date}}
+\index{date@{date}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{date}{date}}
+{\footnotesize\ttfamily -\/ (NSDate $\ast$) date\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+the day 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00084}{84}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a6d5e0774a9098183df264cee71e826e1}\label{interface_thing_timeline_view_a6d5e0774a9098183df264cee71e826e1}} 
+\index{ThingTimelineView@{ThingTimelineView}!delegate@{delegate}}
+\index{delegate@{delegate}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_timeline_view_delegate-p}{Thing\+Timeline\+View\+Delegate}} $>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+delegate 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00119}{119}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a1fa1a98d654c0d456e692db427c11e67}\label{interface_thing_timeline_view_a1fa1a98d654c0d456e692db427c11e67}} 
+\index{ThingTimelineView@{ThingTimelineView}!eventGradientColors@{eventGradientColors}}
+\index{eventGradientColors@{eventGradientColors}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{eventGradientColors}{eventGradientColors}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$) event\+Gradient\+Colors\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00064}{64}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a06cf2406c4352dad12c437f087969fa7}\label{interface_thing_timeline_view_a06cf2406c4352dad12c437f087969fa7}} 
+\index{ThingTimelineView@{ThingTimelineView}!isDecelerating@{isDecelerating}}
+\index{isDecelerating@{isDecelerating}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{isDecelerating}{isDecelerating}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Decelerating\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+is continue moving afterwards 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00093}{93}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_aef3391f8fc3f0f3c8c489ab397cb9ef2}\label{interface_thing_timeline_view_aef3391f8fc3f0f3c8c489ab397cb9ef2}} 
+\index{ThingTimelineView@{ThingTimelineView}!isDragging@{isDragging}}
+\index{isDragging@{isDragging}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{isDragging}{isDragging}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Dragging\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+is being dragging 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00090}{90}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a414a29e9c533db85acc766c683ae423e}\label{interface_thing_timeline_view_a414a29e9c533db85acc766c683ae423e}} 
+\index{ThingTimelineView@{ThingTimelineView}!isSelectionEnabled@{isSelectionEnabled}}
+\index{isSelectionEnabled@{isSelectionEnabled}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{isSelectionEnabled}{isSelectionEnabled}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Selection\+Enabled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+is in selection mode 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00103}{103}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_ad5331a24271b25da56fff7906664298f}\label{interface_thing_timeline_view_ad5331a24271b25da56fff7906664298f}} 
+\index{ThingTimelineView@{ThingTimelineView}!midLineColor@{midLineColor}}
+\index{midLineColor@{midLineColor}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{midLineColor}{midLineColor}}
+{\footnotesize\ttfamily -\/ (UIColor $\ast$) mid\+Line\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+color of selection line at the midle 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00096}{96}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_af12f7baa8b3db9b85fe12b4721692300}\label{interface_thing_timeline_view_af12f7baa8b3db9b85fe12b4721692300}} 
+\index{ThingTimelineView@{ThingTimelineView}!selectedTimeRange@{selectedTimeRange}}
+\index{selectedTimeRange@{selectedTimeRange}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{selectedTimeRange}{selectedTimeRange}}
+{\footnotesize\ttfamily -\/ (NSRange) selected\+Time\+Range\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+selected time range 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00101}{101}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a687bca10dd5e399e714b1a6a5799417c}\label{interface_thing_timeline_view_a687bca10dd5e399e714b1a6a5799417c}} 
+\index{ThingTimelineView@{ThingTimelineView}!selectionBoxColor@{selectionBoxColor}}
+\index{selectionBoxColor@{selectionBoxColor}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{selectionBoxColor}{selectionBoxColor}}
+{\footnotesize\ttfamily -\/ (UIColor $\ast$) selection\+Box\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+tint color of selection box 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00099}{99}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_ae213e99f68c9009cee149d4c616b8339}\label{interface_thing_timeline_view_ae213e99f68c9009cee149d4c616b8339}} 
+\index{ThingTimelineView@{ThingTimelineView}!selectionTimeBackgroundColor@{selectionTimeBackgroundColor}}
+\index{selectionTimeBackgroundColor@{selectionTimeBackgroundColor}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{selectionTimeBackgroundColor}{selectionTimeBackgroundColor}}
+{\footnotesize\ttfamily -\/ (UIColor $\ast$) selection\+Time\+Background\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+the selected time when dragging selection box 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00106}{106}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a71b8d2a299629fdc98e129b9f359b8a4}\label{interface_thing_timeline_view_a71b8d2a299629fdc98e129b9f359b8a4}} 
+\index{ThingTimelineView@{ThingTimelineView}!selectionTimeTextColor@{selectionTimeTextColor}}
+\index{selectionTimeTextColor@{selectionTimeTextColor}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{selectionTimeTextColor}{selectionTimeTextColor}}
+{\footnotesize\ttfamily -\/ (UIColor $\ast$) selection\+Time\+Text\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00107}{107}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_aa0cabc15b876393b5901ed5a9f3a4723}\label{interface_thing_timeline_view_aa0cabc15b876393b5901ed5a9f3a4723}} 
+\index{ThingTimelineView@{ThingTimelineView}!selectionTimeTextFontSize@{selectionTimeTextFontSize}}
+\index{selectionTimeTextFontSize@{selectionTimeTextFontSize}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{selectionTimeTextFontSize}{selectionTimeTextFontSize}}
+{\footnotesize\ttfamily -\/ (NSUInteger) selection\+Time\+Text\+Font\+Size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00108}{108}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_adec1a365a2e5025b63ac9213f7aee199}\label{interface_thing_timeline_view_adec1a365a2e5025b63ac9213f7aee199}} 
+\index{ThingTimelineView@{ThingTimelineView}!showShortMark@{showShortMark}}
+\index{showShortMark@{showShortMark}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{showShortMark}{showShortMark}}
+{\footnotesize\ttfamily -\/ (BOOL) show\+Short\+Mark\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+is show short tick mark between two long tick mark 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00078}{78}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a8f9d70c72dd898788cd236607011083a}\label{interface_thing_timeline_view_a8f9d70c72dd898788cd236607011083a}} 
+\index{ThingTimelineView@{ThingTimelineView}!showTimeText@{showTimeText}}
+\index{showTimeText@{showTimeText}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{showTimeText}{showTimeText}}
+{\footnotesize\ttfamily -\/ (BOOL) show\+Time\+Text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+is show the time string 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00075}{75}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a110819b5efefdb4cd112308d8203da24}\label{interface_thing_timeline_view_a110819b5efefdb4cd112308d8203da24}} 
+\index{ThingTimelineView@{ThingTimelineView}!sourceModels@{sourceModels}}
+\index{sourceModels@{sourceModels}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{sourceModels}{sourceModels}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ id$<$ \mbox{\hyperlink{protocol_thing_timeline_view_source-p}{Thing\+Timeline\+View\+Source}} $>$ $>$ $\ast$) source\+Models\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+time slices 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00111}{111}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a679e420de1de98a76ab81f68dd7fc2d5}\label{interface_thing_timeline_view_a679e420de1de98a76ab81f68dd7fc2d5}} 
+\index{ThingTimelineView@{ThingTimelineView}!spacePerUnit@{spacePerUnit}}
+\index{spacePerUnit@{spacePerUnit}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{spacePerUnit}{spacePerUnit}}
+{\footnotesize\ttfamily -\/ (CGFloat) space\+Per\+Unit\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+the space of two long tick mark 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00048}{48}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_aff57b53695cc15650a4b98cd2c4d54ff}\label{interface_thing_timeline_view_aff57b53695cc15650a4b98cd2c4d54ff}} 
+\index{ThingTimelineView@{ThingTimelineView}!tickMarkColor@{tickMarkColor}}
+\index{tickMarkColor@{tickMarkColor}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{tickMarkColor}{tickMarkColor}}
+{\footnotesize\ttfamily -\/ (UIColor $\ast$) tick\+Mark\+Color\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+color of tick mark 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00054}{54}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_abf9db00b152e51dd7d704a310eade027}\label{interface_thing_timeline_view_abf9db00b152e51dd7d704a310eade027}} 
+\index{ThingTimelineView@{ThingTimelineView}!timeHeaderHeight@{timeHeaderHeight}}
+\index{timeHeaderHeight@{timeHeaderHeight}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{timeHeaderHeight}{timeHeaderHeight}}
+{\footnotesize\ttfamily -\/ (CGFloat) time\+Header\+Height\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+height of the time text bar in the top 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00067}{67}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_aa0d127ada5d1dfe1d8be4a61b9b6614b}\label{interface_thing_timeline_view_aa0d127ada5d1dfe1d8be4a61b9b6614b}} 
+\index{ThingTimelineView@{ThingTimelineView}!timeStringAttributes@{timeStringAttributes}}
+\index{timeStringAttributes@{timeStringAttributes}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{timeStringAttributes}{timeStringAttributes}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) time\+String\+Attributes\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+time text attributes 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00072}{72}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a899d74f74e109e212289bfc87f79572c}\label{interface_thing_timeline_view_a899d74f74e109e212289bfc87f79572c}} 
+\index{ThingTimelineView@{ThingTimelineView}!timeTextTop@{timeTextTop}}
+\index{timeTextTop@{timeTextTop}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{timeTextTop}{timeTextTop}}
+{\footnotesize\ttfamily -\/ (CGFloat) time\+Text\+Top\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+top space of the time text bar 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00069}{69}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_ab4486c83d7946cfebe4aa601b42c985d}\label{interface_thing_timeline_view_ab4486c83d7946cfebe4aa601b42c985d}} 
+\index{ThingTimelineView@{ThingTimelineView}!timeZone@{timeZone}}
+\index{timeZone@{timeZone}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{timeZone}{timeZone}}
+{\footnotesize\ttfamily -\/ (NSTime\+Zone $\ast$) time\+Zone\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+time zone 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00087}{87}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_timeline_view_a62d87a3c0559d833cf4c1c25c0d2af0d}\label{interface_thing_timeline_view_a62d87a3c0559d833cf4c1c25c0d2af0d}} 
+\index{ThingTimelineView@{ThingTimelineView}!unitMode@{unitMode}}
+\index{unitMode@{unitMode}!ThingTimelineView@{ThingTimelineView}}
+\doxysubsubsection{\texorpdfstring{unitMode}{unitMode}}
+{\footnotesize\ttfamily -\/ (Thing\+Timeline\+Unit\+Mode) unit\+Mode\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+the seconds of two long tick mark 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source_l00051}{51}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h_source}{Thing\+Timeline\+View.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Camera\+UIKit/\+Build/\+Thing\+Camera\+UIKit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Camera\+UIKit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h}{Thing\+Timeline\+View.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Camera\+UIKit/\+Build/\+Thing\+Camera\+UIKit.\+xcframework/ios-\/arm64/\+Thing\+Camera\+UIKit.\+framework/\+Headers/\mbox{\hyperlink{_thing_camera_u_i_kit_8framework_2_headers_2_thing_timeline_view_8h}{Thing\+Timeline\+View.\+h}}\end{DoxyCompactItemize}

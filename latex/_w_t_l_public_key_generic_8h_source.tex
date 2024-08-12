@@ -1,0 +1,34 @@
+\hypertarget{_w_t_l_public_key_generic_8h_source}{}\doxysection{WTLPublic\+Key\+Generic.\+h}
+\label{_w_t_l_public_key_generic_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLPublicKeyGeneric.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLPublicKeyGeneric.h}}
+\mbox{\hyperlink{_w_t_l_public_key_generic_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00018}00018 \textcolor{comment}{}\textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00019}00019 \textcolor{preprocessor}{\#import <Security/Security.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00021}00021 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00023}\mbox{\hyperlink{_w_t_l_public_key_generic_8h_aa1b2a6d662db647bf128ba1309949111}{00023}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{_w_t_l_public_key_generic_8h_aa1b2a6d662db647bf128ba1309949111}{keyPair}})(SecKeyRef publicKey ,SecKeyRef privateKey);}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00025}\mbox{\hyperlink{interface_w_t_l_public_key_generic}{00025}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_public_key_generic}{WTLPublicKeyGeneric}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00027}\mbox{\hyperlink{interface_w_t_l_public_key_generic_a613b8a8d5fdba7cfdfa2c7e417d611df}{00027}} \textcolor{keyword}{@property} (nonatomic, assign, readonly) SecKeyRef \mbox{\hyperlink{interface_w_t_l_public_key_generic_a613b8a8d5fdba7cfdfa2c7e417d611df}{icacPublicKey}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00029}\mbox{\hyperlink{interface_w_t_l_public_key_generic_af4d361705604a5703c280544c66a0afc}{00029}} \textcolor{keyword}{@property} (nonatomic, assign, readonly) SecKeyRef \mbox{\hyperlink{interface_w_t_l_public_key_generic_af4d361705604a5703c280544c66a0afc}{icacPrivateKey}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00031}\mbox{\hyperlink{interface_w_t_l_public_key_generic_a5ad1e0d98b992c6f283859d5b9cdbb57}{00031}} \textcolor{keyword}{@property} (nonatomic, assign, readonly) SecKeyRef \mbox{\hyperlink{interface_w_t_l_public_key_generic_a5ad1e0d98b992c6f283859d5b9cdbb57}{nocPublicKey}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00033}\mbox{\hyperlink{interface_w_t_l_public_key_generic_aa62354bb2a4e71e8479038ea5d5ed50d}{00033}} \textcolor{keyword}{@property} (nonatomic, assign, readonly) SecKeyRef \mbox{\hyperlink{interface_w_t_l_public_key_generic_ad0a1c54dfc20a876cb4fbc7df35cd7d2}{nocPrivateKey}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00035}00035 + (instancetype)\mbox{\hyperlink{interface_w_t_l_public_key_generic_a64380dbace0fe178d9829d831b046494}{sharedInstance}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00037}00037 -\/ (NSData *)KeyBitsFromSecKey:(SecKeyRef)givenKey;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00039}00039 -\/ (void)\mbox{\hyperlink{interface_w_t_l_public_key_generic_aa62354bb2a4e71e8479038ea5d5ed50d}{generateNewKeyPair}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00041}00041 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00043}00043 NS\_ASSUME\_NONNULL\_END}
+\DoxyCodeLine{\Hypertarget{_w_t_l_public_key_generic_8h_source_l00044}00044 }
+
+\end{DoxyCode}

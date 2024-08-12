@@ -1,0 +1,882 @@
+\hypertarget{interface_thing_smart_wi_fi_lock_device}{}\doxysection{Thing\+Smart\+Wi\+Fi\+Lock\+Device Class Reference}
+\label{interface_thing_smart_wi_fi_lock_device}\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Wi\+Fi\+Lock\+Device.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Wi\+Fi\+Lock\+Device\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.800000cm]{interface_thing_smart_wi_fi_lock_device}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a0b9e14da9f6cd7a5c714507a01e7e321}{init\+With\+Device\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a80c81901c90dee62188901ec867585d7}{re\+Take\+Photo\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a8a88c258ef7cd5bf696da94cf97e6ef9}{enforce\+Lock\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a63fc8f3eec6c3732148a65fe5f6c1308}{remote\+Lock\+With\+Dev\+Id\+:open\+:confirm\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a3b5383aa21d4f265999edf60d7a3c422}{get\+Popup\+Picture\+Address\+With\+Dev\+Id\+:bucket\+:file\+Path\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a833d31bf33a137f78eb0aaadbb45c6e0}{get\+Latest\+Popup\+Info\+With\+Dev\+Id\+:file\+Type\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_ab51fd6912a1631257642aa7140003081}{fetch\+Remote\+Voice\+Unlock\+With\+Dev\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a2d4dfeab2576a2879ffdff0bcdb4e5e8}{set\+Remote\+Voice\+Unlock\+With\+Dev\+Id\+:open\+:pwd\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a1e89d35a6ea25d79a3dcf32b64c0163e}{p2p\+Connect}}
+\begin{DoxyCompactList}\small\item\em 建立\+P2\+P连接 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_acf7d3d75b68b04a4e7880f6c677b1fe9}{p2p\+Dis\+Connect}}
+\begin{DoxyCompactList}\small\item\em 断开\+P2\+P连接 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a77561749890d7b54b78c004c2aa171f7}{is\+P2p\+Connected}}
+\begin{DoxyCompactList}\small\item\em P2\+P是否已连接 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a8f8ca5c7744779a6744870a814806ea4}{is\+P2p\+Connecting}}
+\begin{DoxyCompactList}\small\item\em P2\+P是否连接中 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a7c81839ccae3fe7f195c344afa4b7c62}{start\+Preview\+With\+Definition\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_ab259f40b8afa4666b2ed6aef30e4c77f}{stop\+Preview}}
+\begin{DoxyCompactList}\small\item\em 停止预览 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a44ffdece6e17f6dff4bc14b730353516}{is\+Preview\+On}}
+\begin{DoxyCompactList}\small\item\em 是否预览成功 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_afc93effb97146fa71b625bcf3f5b3c9a}{start\+Record\+With\+Rotate\+Direction\+:file\+Path\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a18a0a11b3a2f6c38ae946c21d7f8e37d}{stop\+Record\+And\+Fetch\+Path}}
+\begin{DoxyCompactList}\small\item\em 停止录制并返回录制文件的路径和封面图数据 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a6c2dd111a29f1da6d772c7a17e38b421}{is\+Recording}}
+\begin{DoxyCompactList}\small\item\em 是否正在录制中 \end{DoxyCompactList}\item 
+(UIImage $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a1b11f6e8444125725b8715824f9800a8}{snap\+Shoot\+With\+Rotate\+Direction\+:saved\+At\+Path\+:thumbnil\+Path\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_aa4740702f6b548e02e7670d004222776}{enable\+Mute\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a553bb4e6fea73ffc7fde6f21c8378324}{is\+Muting}}
+\begin{DoxyCompactList}\small\item\em 是否静音中 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a9c99791e4324d1d59f784b836d2b5823}{start\+Talk}}
+\begin{DoxyCompactList}\small\item\em 开启对讲 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_ab7c104f86f369668548e69a7da1b50b3}{stop\+Talk}}
+\begin{DoxyCompactList}\small\item\em 关闭对讲 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_ac84090efe214b15c02256225294dabad}{is\+Talking}}
+\begin{DoxyCompactList}\small\item\em 设备是否对讲中 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a90cb50306804ea7a2ffa41766b9bf9e4}{is\+Supported\+Talk}}
+\begin{DoxyCompactList}\small\item\em 设备是否支持对讲 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a922be2f73d93779925423b2dc48ec475}{is\+Supported\+Sound}}
+\begin{DoxyCompactList}\small\item\em 设备是否支持拾音器 \end{DoxyCompactList}\item 
+(Thing\+Smart\+Camera\+Talkback\+Mode) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a12b124b51059608a4932fc9e93f2f15d}{supported\+Audio\+Mode}}
+\begin{DoxyCompactList}\small\item\em 设备默认支持的对讲模式 \end{DoxyCompactList}\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a0b9e14da9f6cd7a5c714507a01e7e321}{init\+With\+Device\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a80c81901c90dee62188901ec867585d7}{re\+Take\+Photo\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a8a88c258ef7cd5bf696da94cf97e6ef9}{enforce\+Lock\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a63fc8f3eec6c3732148a65fe5f6c1308}{remote\+Lock\+With\+Dev\+Id\+:open\+:confirm\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a3b5383aa21d4f265999edf60d7a3c422}{get\+Popup\+Picture\+Address\+With\+Dev\+Id\+:bucket\+:file\+Path\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a833d31bf33a137f78eb0aaadbb45c6e0}{get\+Latest\+Popup\+Info\+With\+Dev\+Id\+:file\+Type\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_ab51fd6912a1631257642aa7140003081}{fetch\+Remote\+Voice\+Unlock\+With\+Dev\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a2d4dfeab2576a2879ffdff0bcdb4e5e8}{set\+Remote\+Voice\+Unlock\+With\+Dev\+Id\+:open\+:pwd\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a1e89d35a6ea25d79a3dcf32b64c0163e}{p2p\+Connect}}
+\begin{DoxyCompactList}\small\item\em 建立\+P2\+P连接 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_acf7d3d75b68b04a4e7880f6c677b1fe9}{p2p\+Dis\+Connect}}
+\begin{DoxyCompactList}\small\item\em 断开\+P2\+P连接 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a77561749890d7b54b78c004c2aa171f7}{is\+P2p\+Connected}}
+\begin{DoxyCompactList}\small\item\em P2\+P是否已连接 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a8f8ca5c7744779a6744870a814806ea4}{is\+P2p\+Connecting}}
+\begin{DoxyCompactList}\small\item\em P2\+P是否连接中 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a7c81839ccae3fe7f195c344afa4b7c62}{start\+Preview\+With\+Definition\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_ab259f40b8afa4666b2ed6aef30e4c77f}{stop\+Preview}}
+\begin{DoxyCompactList}\small\item\em 停止预览 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a44ffdece6e17f6dff4bc14b730353516}{is\+Preview\+On}}
+\begin{DoxyCompactList}\small\item\em 是否预览成功 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_afc93effb97146fa71b625bcf3f5b3c9a}{start\+Record\+With\+Rotate\+Direction\+:file\+Path\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a18a0a11b3a2f6c38ae946c21d7f8e37d}{stop\+Record\+And\+Fetch\+Path}}
+\begin{DoxyCompactList}\small\item\em 停止录制并返回录制文件的路径和封面图数据 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a6c2dd111a29f1da6d772c7a17e38b421}{is\+Recording}}
+\begin{DoxyCompactList}\small\item\em 是否正在录制中 \end{DoxyCompactList}\item 
+(UIImage $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a1b11f6e8444125725b8715824f9800a8}{snap\+Shoot\+With\+Rotate\+Direction\+:saved\+At\+Path\+:thumbnil\+Path\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_aa4740702f6b548e02e7670d004222776}{enable\+Mute\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a553bb4e6fea73ffc7fde6f21c8378324}{is\+Muting}}
+\begin{DoxyCompactList}\small\item\em 是否静音中 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a9c99791e4324d1d59f784b836d2b5823}{start\+Talk}}
+\begin{DoxyCompactList}\small\item\em 开启对讲 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_ab7c104f86f369668548e69a7da1b50b3}{stop\+Talk}}
+\begin{DoxyCompactList}\small\item\em 关闭对讲 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_ac84090efe214b15c02256225294dabad}{is\+Talking}}
+\begin{DoxyCompactList}\small\item\em 设备是否对讲中 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a90cb50306804ea7a2ffa41766b9bf9e4}{is\+Supported\+Talk}}
+\begin{DoxyCompactList}\small\item\em 设备是否支持对讲 \end{DoxyCompactList}\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a922be2f73d93779925423b2dc48ec475}{is\+Supported\+Sound}}
+\begin{DoxyCompactList}\small\item\em 设备是否支持拾音器 \end{DoxyCompactList}\item 
+(Thing\+Smart\+Camera\+Talkback\+Mode) -\/ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a12b124b51059608a4932fc9e93f2f15d}{supported\+Audio\+Mode}}
+\begin{DoxyCompactList}\small\item\em 设备默认支持的对讲模式 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_smart_camera_type-p}{Thing\+Smart\+Camera\+Type}} $>$ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a14b9b44683253222a70aaa62b2e6b012}{camera\+Type}}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p}{Thing\+Smart\+Wi\+Fi\+Lock\+Device\+Delegate}} $>$ \mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device_a1c103419a2c01892038508737058e5c3}{delegate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_wi_fi_lock_device_8h_source_l00060}{60}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_wi_fi_lock_device_8h_source}{Thing\+Smart\+Wi\+Fi\+Lock\+Device.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_aa4740702f6b548e02e7670d004222776}\label{interface_thing_smart_wi_fi_lock_device_aa4740702f6b548e02e7670d004222776}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!enableMute:@{enableMute:}}
+\index{enableMute:@{enableMute:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{enableMute:}{enableMute:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) enable\+Mute\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{mute }\end{DoxyParamCaption}}
+
+开启关闭静音
+
+
+\begin{DoxyParams}{Parameters}
+{\em mute} & 是否静音 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_aa4740702f6b548e02e7670d004222776}\label{interface_thing_smart_wi_fi_lock_device_aa4740702f6b548e02e7670d004222776}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!enableMute:@{enableMute:}}
+\index{enableMute:@{enableMute:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{enableMute:}{enableMute:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) enable\+Mute\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{mute }\end{DoxyParamCaption}}
+
+开启关闭静音
+
+
+\begin{DoxyParams}{Parameters}
+{\em mute} & 是否静音 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a8a88c258ef7cd5bf696da94cf97e6ef9}\label{interface_thing_smart_wi_fi_lock_device_a8a88c258ef7cd5bf696da94cf97e6ef9}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!enforceLock:success:failure:@{enforceLock:success:failure:}}
+\index{enforceLock:success:failure:@{enforceLock:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{enforceLock:success:failure:}{enforceLock:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) enforce\+Lock\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{need\+Lock }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+强制反锁接口
+
+
+\begin{DoxyParams}{Parameters}
+{\em need\+Lock} & 是否要强制繁琐 \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a8a88c258ef7cd5bf696da94cf97e6ef9}\label{interface_thing_smart_wi_fi_lock_device_a8a88c258ef7cd5bf696da94cf97e6ef9}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!enforceLock:success:failure:@{enforceLock:success:failure:}}
+\index{enforceLock:success:failure:@{enforceLock:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{enforceLock:success:failure:}{enforceLock:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) enforce\+Lock\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{need\+Lock }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+强制反锁接口
+
+
+\begin{DoxyParams}{Parameters}
+{\em need\+Lock} & 是否要强制繁琐 \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_ab51fd6912a1631257642aa7140003081}\label{interface_thing_smart_wi_fi_lock_device_ab51fd6912a1631257642aa7140003081}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!fetchRemoteVoiceUnlockWithDevId:success:failure:@{fetchRemoteVoiceUnlockWithDevId:success:failure:}}
+\index{fetchRemoteVoiceUnlockWithDevId:success:failure:@{fetchRemoteVoiceUnlockWithDevId:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{fetchRemoteVoiceUnlockWithDevId:success:failure:}{fetchRemoteVoiceUnlockWithDevId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) fetch\+Remote\+Voice\+Unlock\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+查询音箱密码开启状态
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备\+ID \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_ab51fd6912a1631257642aa7140003081}\label{interface_thing_smart_wi_fi_lock_device_ab51fd6912a1631257642aa7140003081}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!fetchRemoteVoiceUnlockWithDevId:success:failure:@{fetchRemoteVoiceUnlockWithDevId:success:failure:}}
+\index{fetchRemoteVoiceUnlockWithDevId:success:failure:@{fetchRemoteVoiceUnlockWithDevId:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{fetchRemoteVoiceUnlockWithDevId:success:failure:}{fetchRemoteVoiceUnlockWithDevId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) fetch\+Remote\+Voice\+Unlock\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+查询音箱密码开启状态
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备\+ID \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a833d31bf33a137f78eb0aaadbb45c6e0}\label{interface_thing_smart_wi_fi_lock_device_a833d31bf33a137f78eb0aaadbb45c6e0}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!getLatestPopupInfoWithDevId:fileType:success:failure:@{getLatestPopupInfoWithDevId:fileType:success:failure:}}
+\index{getLatestPopupInfoWithDevId:fileType:success:failure:@{getLatestPopupInfoWithDevId:fileType:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{getLatestPopupInfoWithDevId:fileType:success:failure:}{getLatestPopupInfoWithDevId:fileType:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Latest\+Popup\+Info\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{file\+Type\+:(NSInteger)}]{file\+Type }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+获取最近一次的拍照封面
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备\+ID \\
+\hline
+{\em file\+Type} & 文件类型 1. 远程开门， 2. 告警 \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a833d31bf33a137f78eb0aaadbb45c6e0}\label{interface_thing_smart_wi_fi_lock_device_a833d31bf33a137f78eb0aaadbb45c6e0}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!getLatestPopupInfoWithDevId:fileType:success:failure:@{getLatestPopupInfoWithDevId:fileType:success:failure:}}
+\index{getLatestPopupInfoWithDevId:fileType:success:failure:@{getLatestPopupInfoWithDevId:fileType:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{getLatestPopupInfoWithDevId:fileType:success:failure:}{getLatestPopupInfoWithDevId:fileType:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Latest\+Popup\+Info\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{file\+Type\+:(NSInteger)}]{file\+Type }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+获取最近一次的拍照封面
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备\+ID \\
+\hline
+{\em file\+Type} & 文件类型 1. 远程开门， 2. 告警 \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a3b5383aa21d4f265999edf60d7a3c422}\label{interface_thing_smart_wi_fi_lock_device_a3b5383aa21d4f265999edf60d7a3c422}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!getPopupPictureAddressWithDevId:bucket:filePath:success:failure:@{getPopupPictureAddressWithDevId:bucket:filePath:success:failure:}}
+\index{getPopupPictureAddressWithDevId:bucket:filePath:success:failure:@{getPopupPictureAddressWithDevId:bucket:filePath:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{getPopupPictureAddressWithDevId:bucket:filePath:success:failure:}{getPopupPictureAddressWithDevId:bucket:filePath:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Popup\+Picture\+Address\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{bucket\+:(NSString $\ast$)}]{bucket }\item[{file\+Path\+:(NSString $\ast$)}]{file\+Path }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+查询封面图地址
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备\+ID \\
+\hline
+{\em bucket} & 文件所属的仓库 \\
+\hline
+{\em file\+Path} & 封面图路径 \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a3b5383aa21d4f265999edf60d7a3c422}\label{interface_thing_smart_wi_fi_lock_device_a3b5383aa21d4f265999edf60d7a3c422}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!getPopupPictureAddressWithDevId:bucket:filePath:success:failure:@{getPopupPictureAddressWithDevId:bucket:filePath:success:failure:}}
+\index{getPopupPictureAddressWithDevId:bucket:filePath:success:failure:@{getPopupPictureAddressWithDevId:bucket:filePath:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{getPopupPictureAddressWithDevId:bucket:filePath:success:failure:}{getPopupPictureAddressWithDevId:bucket:filePath:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Popup\+Picture\+Address\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{bucket\+:(NSString $\ast$)}]{bucket }\item[{file\+Path\+:(NSString $\ast$)}]{file\+Path }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+查询封面图地址
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备\+ID \\
+\hline
+{\em bucket} & 文件所属的仓库 \\
+\hline
+{\em file\+Path} & 封面图路径 \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a0b9e14da9f6cd7a5c714507a01e7e321}\label{interface_thing_smart_wi_fi_lock_device_a0b9e14da9f6cd7a5c714507a01e7e321}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!initWithDeviceId:@{initWithDeviceId:}}
+\index{initWithDeviceId:@{initWithDeviceId:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{initWithDeviceId:}{initWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{NS\+\_\+\+DESIGNATED\+\_\+\+INITIALIZER }\end{DoxyParamCaption}}
+
+Returns the \mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} instance. If the current user does not have this device, a value of nil is returned. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & The device ID. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_thing_smart_device_a0daa422fc16394927cffa1074e070add}{Thing\+Smart\+Device}}.
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a0b9e14da9f6cd7a5c714507a01e7e321}\label{interface_thing_smart_wi_fi_lock_device_a0b9e14da9f6cd7a5c714507a01e7e321}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!initWithDeviceId:@{initWithDeviceId:}}
+\index{initWithDeviceId:@{initWithDeviceId:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{initWithDeviceId:}{initWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{NS\+\_\+\+DESIGNATED\+\_\+\+INITIALIZER }\end{DoxyParamCaption}}
+
+Returns the \mbox{\hyperlink{interface_thing_smart_device}{Thing\+Smart\+Device}} instance. If the current user does not have this device, a value of nil is returned. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & The device ID. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_thing_smart_device_a0daa422fc16394927cffa1074e070add}{Thing\+Smart\+Device}}.
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a553bb4e6fea73ffc7fde6f21c8378324}\label{interface_thing_smart_wi_fi_lock_device_a553bb4e6fea73ffc7fde6f21c8378324}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isMuting@{isMuting}}
+\index{isMuting@{isMuting}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isMuting}{isMuting}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Muting \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+是否静音中 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a553bb4e6fea73ffc7fde6f21c8378324}\label{interface_thing_smart_wi_fi_lock_device_a553bb4e6fea73ffc7fde6f21c8378324}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isMuting@{isMuting}}
+\index{isMuting@{isMuting}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isMuting}{isMuting}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Muting \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+是否静音中 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a77561749890d7b54b78c004c2aa171f7}\label{interface_thing_smart_wi_fi_lock_device_a77561749890d7b54b78c004c2aa171f7}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isP2pConnected@{isP2pConnected}}
+\index{isP2pConnected@{isP2pConnected}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isP2pConnected}{isP2pConnected}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+P2p\+Connected \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+P2\+P是否已连接 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a77561749890d7b54b78c004c2aa171f7}\label{interface_thing_smart_wi_fi_lock_device_a77561749890d7b54b78c004c2aa171f7}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isP2pConnected@{isP2pConnected}}
+\index{isP2pConnected@{isP2pConnected}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isP2pConnected}{isP2pConnected}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+P2p\+Connected \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+P2\+P是否已连接 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a8f8ca5c7744779a6744870a814806ea4}\label{interface_thing_smart_wi_fi_lock_device_a8f8ca5c7744779a6744870a814806ea4}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isP2pConnecting@{isP2pConnecting}}
+\index{isP2pConnecting@{isP2pConnecting}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isP2pConnecting}{isP2pConnecting}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+P2p\+Connecting \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+P2\+P是否连接中 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a8f8ca5c7744779a6744870a814806ea4}\label{interface_thing_smart_wi_fi_lock_device_a8f8ca5c7744779a6744870a814806ea4}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isP2pConnecting@{isP2pConnecting}}
+\index{isP2pConnecting@{isP2pConnecting}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isP2pConnecting}{isP2pConnecting}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+P2p\+Connecting \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+P2\+P是否连接中 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a44ffdece6e17f6dff4bc14b730353516}\label{interface_thing_smart_wi_fi_lock_device_a44ffdece6e17f6dff4bc14b730353516}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isPreviewOn@{isPreviewOn}}
+\index{isPreviewOn@{isPreviewOn}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isPreviewOn}{isPreviewOn}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Preview\+On \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+是否预览成功 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a44ffdece6e17f6dff4bc14b730353516}\label{interface_thing_smart_wi_fi_lock_device_a44ffdece6e17f6dff4bc14b730353516}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isPreviewOn@{isPreviewOn}}
+\index{isPreviewOn@{isPreviewOn}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isPreviewOn}{isPreviewOn}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Preview\+On \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+是否预览成功 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a6c2dd111a29f1da6d772c7a17e38b421}\label{interface_thing_smart_wi_fi_lock_device_a6c2dd111a29f1da6d772c7a17e38b421}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isRecording@{isRecording}}
+\index{isRecording@{isRecording}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isRecording}{isRecording}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Recording \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+是否正在录制中 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a6c2dd111a29f1da6d772c7a17e38b421}\label{interface_thing_smart_wi_fi_lock_device_a6c2dd111a29f1da6d772c7a17e38b421}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isRecording@{isRecording}}
+\index{isRecording@{isRecording}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isRecording}{isRecording}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Recording \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+是否正在录制中 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a922be2f73d93779925423b2dc48ec475}\label{interface_thing_smart_wi_fi_lock_device_a922be2f73d93779925423b2dc48ec475}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isSupportedSound@{isSupportedSound}}
+\index{isSupportedSound@{isSupportedSound}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isSupportedSound}{isSupportedSound}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Supported\+Sound \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+设备是否支持拾音器 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a922be2f73d93779925423b2dc48ec475}\label{interface_thing_smart_wi_fi_lock_device_a922be2f73d93779925423b2dc48ec475}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isSupportedSound@{isSupportedSound}}
+\index{isSupportedSound@{isSupportedSound}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isSupportedSound}{isSupportedSound}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Supported\+Sound \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+设备是否支持拾音器 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a90cb50306804ea7a2ffa41766b9bf9e4}\label{interface_thing_smart_wi_fi_lock_device_a90cb50306804ea7a2ffa41766b9bf9e4}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isSupportedTalk@{isSupportedTalk}}
+\index{isSupportedTalk@{isSupportedTalk}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isSupportedTalk}{isSupportedTalk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Supported\+Talk \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+设备是否支持对讲 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a90cb50306804ea7a2ffa41766b9bf9e4}\label{interface_thing_smart_wi_fi_lock_device_a90cb50306804ea7a2ffa41766b9bf9e4}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isSupportedTalk@{isSupportedTalk}}
+\index{isSupportedTalk@{isSupportedTalk}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isSupportedTalk}{isSupportedTalk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Supported\+Talk \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+设备是否支持对讲 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_ac84090efe214b15c02256225294dabad}\label{interface_thing_smart_wi_fi_lock_device_ac84090efe214b15c02256225294dabad}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isTalking@{isTalking}}
+\index{isTalking@{isTalking}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isTalking}{isTalking}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Talking \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+设备是否对讲中 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_ac84090efe214b15c02256225294dabad}\label{interface_thing_smart_wi_fi_lock_device_ac84090efe214b15c02256225294dabad}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!isTalking@{isTalking}}
+\index{isTalking@{isTalking}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{isTalking}{isTalking}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Talking \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+设备是否对讲中 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a1e89d35a6ea25d79a3dcf32b64c0163e}\label{interface_thing_smart_wi_fi_lock_device_a1e89d35a6ea25d79a3dcf32b64c0163e}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!p2pConnect@{p2pConnect}}
+\index{p2pConnect@{p2pConnect}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{p2pConnect}{p2pConnect}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) p2p\+Connect \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+建立\+P2\+P连接 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a1e89d35a6ea25d79a3dcf32b64c0163e}\label{interface_thing_smart_wi_fi_lock_device_a1e89d35a6ea25d79a3dcf32b64c0163e}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!p2pConnect@{p2pConnect}}
+\index{p2pConnect@{p2pConnect}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{p2pConnect}{p2pConnect}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) p2p\+Connect \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+建立\+P2\+P连接 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_acf7d3d75b68b04a4e7880f6c677b1fe9}\label{interface_thing_smart_wi_fi_lock_device_acf7d3d75b68b04a4e7880f6c677b1fe9}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!p2pDisConnect@{p2pDisConnect}}
+\index{p2pDisConnect@{p2pDisConnect}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{p2pDisConnect}{p2pDisConnect}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) p2p\+Dis\+Connect \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+断开\+P2\+P连接 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_acf7d3d75b68b04a4e7880f6c677b1fe9}\label{interface_thing_smart_wi_fi_lock_device_acf7d3d75b68b04a4e7880f6c677b1fe9}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!p2pDisConnect@{p2pDisConnect}}
+\index{p2pDisConnect@{p2pDisConnect}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{p2pDisConnect}{p2pDisConnect}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) p2p\+Dis\+Connect \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+断开\+P2\+P连接 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a63fc8f3eec6c3732148a65fe5f6c1308}\label{interface_thing_smart_wi_fi_lock_device_a63fc8f3eec6c3732148a65fe5f6c1308}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!remoteLockWithDevId:open:confirm:success:failure:@{remoteLockWithDevId:open:confirm:success:failure:}}
+\index{remoteLockWithDevId:open:confirm:success:failure:@{remoteLockWithDevId:open:confirm:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{remoteLockWithDevId:open:confirm:success:failure:}{remoteLockWithDevId:open:confirm:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remote\+Lock\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{open\+:(BOOL)}]{open }\item[{confirm\+:(BOOL)}]{confirm }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a69c1e753c6b7729845fff29427d408b8}{Thing\+Success\+BOOL}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+远程开关门接口
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备\+ID \\
+\hline
+{\em open} & 远程开门：\+YES 远程关门：\+NO \\
+\hline
+{\em confirm} & 确认：\+YES 拒绝：\+NO \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a63fc8f3eec6c3732148a65fe5f6c1308}\label{interface_thing_smart_wi_fi_lock_device_a63fc8f3eec6c3732148a65fe5f6c1308}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!remoteLockWithDevId:open:confirm:success:failure:@{remoteLockWithDevId:open:confirm:success:failure:}}
+\index{remoteLockWithDevId:open:confirm:success:failure:@{remoteLockWithDevId:open:confirm:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{remoteLockWithDevId:open:confirm:success:failure:}{remoteLockWithDevId:open:confirm:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remote\+Lock\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{open\+:(BOOL)}]{open }\item[{confirm\+:(BOOL)}]{confirm }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a69c1e753c6b7729845fff29427d408b8}{Thing\+Success\+BOOL}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+远程开关门接口
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备\+ID \\
+\hline
+{\em open} & 远程开门：\+YES 远程关门：\+NO \\
+\hline
+{\em confirm} & 确认：\+YES 拒绝：\+NO \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a80c81901c90dee62188901ec867585d7}\label{interface_thing_smart_wi_fi_lock_device_a80c81901c90dee62188901ec867585d7}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!reTakePhoto:success:failure:@{reTakePhoto:success:failure:}}
+\index{reTakePhoto:success:failure:@{reTakePhoto:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{reTakePhoto:success:failure:}{reTakePhoto:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) re\+Take\+Photo\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{need\+Take }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+重新拍照接口，防抖处理15s内别重复调用
+
+
+\begin{DoxyParams}{Parameters}
+{\em need\+Take} & 是否要重新拍照 \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a80c81901c90dee62188901ec867585d7}\label{interface_thing_smart_wi_fi_lock_device_a80c81901c90dee62188901ec867585d7}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!reTakePhoto:success:failure:@{reTakePhoto:success:failure:}}
+\index{reTakePhoto:success:failure:@{reTakePhoto:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{reTakePhoto:success:failure:}{reTakePhoto:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) re\+Take\+Photo\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{need\+Take }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+重新拍照接口，防抖处理15s内别重复调用
+
+
+\begin{DoxyParams}{Parameters}
+{\em need\+Take} & 是否要重新拍照 \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a2d4dfeab2576a2879ffdff0bcdb4e5e8}\label{interface_thing_smart_wi_fi_lock_device_a2d4dfeab2576a2879ffdff0bcdb4e5e8}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!setRemoteVoiceUnlockWithDevId:open:pwd:success:failure:@{setRemoteVoiceUnlockWithDevId:open:pwd:success:failure:}}
+\index{setRemoteVoiceUnlockWithDevId:open:pwd:success:failure:@{setRemoteVoiceUnlockWithDevId:open:pwd:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{setRemoteVoiceUnlockWithDevId:open:pwd:success:failure:}{setRemoteVoiceUnlockWithDevId:open:pwd:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Remote\+Voice\+Unlock\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{open\+:(BOOL)}]{open }\item[{pwd\+:(NSString $\ast$)}]{pwd }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+设置或取消音箱密码
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备\+ID \\
+\hline
+{\em open} & 开关状态 \\
+\hline
+{\em pwd} & 密码 \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a2d4dfeab2576a2879ffdff0bcdb4e5e8}\label{interface_thing_smart_wi_fi_lock_device_a2d4dfeab2576a2879ffdff0bcdb4e5e8}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!setRemoteVoiceUnlockWithDevId:open:pwd:success:failure:@{setRemoteVoiceUnlockWithDevId:open:pwd:success:failure:}}
+\index{setRemoteVoiceUnlockWithDevId:open:pwd:success:failure:@{setRemoteVoiceUnlockWithDevId:open:pwd:success:failure:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{setRemoteVoiceUnlockWithDevId:open:pwd:success:failure:}{setRemoteVoiceUnlockWithDevId:open:pwd:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) set\+Remote\+Voice\+Unlock\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{open\+:(BOOL)}]{open }\item[{pwd\+:(NSString $\ast$)}]{pwd }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+设置或取消音箱密码
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备\+ID \\
+\hline
+{\em open} & 开关状态 \\
+\hline
+{\em pwd} & 密码 \\
+\hline
+{\em success} & 成功回调 \\
+\hline
+{\em failure} & 失败回调 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a1b11f6e8444125725b8715824f9800a8}\label{interface_thing_smart_wi_fi_lock_device_a1b11f6e8444125725b8715824f9800a8}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!snapShootWithRotateDirection:savedAtPath:thumbnilPath:@{snapShootWithRotateDirection:savedAtPath:thumbnilPath:}}
+\index{snapShootWithRotateDirection:savedAtPath:thumbnilPath:@{snapShootWithRotateDirection:savedAtPath:thumbnilPath:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{snapShootWithRotateDirection:savedAtPath:thumbnilPath:}{snapShootWithRotateDirection:savedAtPath:thumbnilPath:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (UIImage $\ast$) snap\+Shoot\+With\+Rotate\+Direction\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Video\+Rotate\+Direction)}]{direction }\item[{saved\+At\+Path\+:(NSString $\ast$)}]{file\+Path }\item[{thumbnil\+Path\+:(NSString $\ast$)}]{thumbnil\+Path }\end{DoxyParamCaption}}
+
+截图并返回文件存储路径和缩略图
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & 旋转角度 \\
+\hline
+{\em file\+Path} & 指定存储目录 \\
+\hline
+{\em thumbnil\+Path} & 缩略图 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a1b11f6e8444125725b8715824f9800a8}\label{interface_thing_smart_wi_fi_lock_device_a1b11f6e8444125725b8715824f9800a8}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!snapShootWithRotateDirection:savedAtPath:thumbnilPath:@{snapShootWithRotateDirection:savedAtPath:thumbnilPath:}}
+\index{snapShootWithRotateDirection:savedAtPath:thumbnilPath:@{snapShootWithRotateDirection:savedAtPath:thumbnilPath:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{snapShootWithRotateDirection:savedAtPath:thumbnilPath:}{snapShootWithRotateDirection:savedAtPath:thumbnilPath:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (UIImage $\ast$) snap\+Shoot\+With\+Rotate\+Direction\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Video\+Rotate\+Direction)}]{direction }\item[{saved\+At\+Path\+:(NSString $\ast$)}]{file\+Path }\item[{thumbnil\+Path\+:(NSString $\ast$)}]{thumbnil\+Path }\end{DoxyParamCaption}}
+
+截图并返回文件存储路径和缩略图
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & 旋转角度 \\
+\hline
+{\em file\+Path} & 指定存储目录 \\
+\hline
+{\em thumbnil\+Path} & 缩略图 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a7c81839ccae3fe7f195c344afa4b7c62}\label{interface_thing_smart_wi_fi_lock_device_a7c81839ccae3fe7f195c344afa4b7c62}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!startPreviewWithDefinition:@{startPreviewWithDefinition:}}
+\index{startPreviewWithDefinition:@{startPreviewWithDefinition:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{startPreviewWithDefinition:}{startPreviewWithDefinition:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Preview\+With\+Definition\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Camera\+Definition)}]{definition }\end{DoxyParamCaption}}
+
+开始预览（设置清晰度）
+
+
+\begin{DoxyParams}{Parameters}
+{\em definition} & 设置清晰度。0x2：标清 0x4：高清 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a7c81839ccae3fe7f195c344afa4b7c62}\label{interface_thing_smart_wi_fi_lock_device_a7c81839ccae3fe7f195c344afa4b7c62}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!startPreviewWithDefinition:@{startPreviewWithDefinition:}}
+\index{startPreviewWithDefinition:@{startPreviewWithDefinition:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{startPreviewWithDefinition:}{startPreviewWithDefinition:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Preview\+With\+Definition\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Camera\+Definition)}]{definition }\end{DoxyParamCaption}}
+
+开始预览（设置清晰度）
+
+
+\begin{DoxyParams}{Parameters}
+{\em definition} & 设置清晰度。0x2：标清 0x4：高清 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_afc93effb97146fa71b625bcf3f5b3c9a}\label{interface_thing_smart_wi_fi_lock_device_afc93effb97146fa71b625bcf3f5b3c9a}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!startRecordWithRotateDirection:filePath:@{startRecordWithRotateDirection:filePath:}}
+\index{startRecordWithRotateDirection:filePath:@{startRecordWithRotateDirection:filePath:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{startRecordWithRotateDirection:filePath:}{startRecordWithRotateDirection:filePath:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Record\+With\+Rotate\+Direction\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Video\+Rotate\+Direction)}]{direction }\item[{file\+Path\+:(NSString $\ast$)}]{file\+Path }\end{DoxyParamCaption}}
+
+开启录制
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & 旋转角度 \\
+\hline
+{\em file\+Path} & 指定存储目录 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_afc93effb97146fa71b625bcf3f5b3c9a}\label{interface_thing_smart_wi_fi_lock_device_afc93effb97146fa71b625bcf3f5b3c9a}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!startRecordWithRotateDirection:filePath:@{startRecordWithRotateDirection:filePath:}}
+\index{startRecordWithRotateDirection:filePath:@{startRecordWithRotateDirection:filePath:}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{startRecordWithRotateDirection:filePath:}{startRecordWithRotateDirection:filePath:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Record\+With\+Rotate\+Direction\+: \begin{DoxyParamCaption}\item[{(Thing\+Smart\+Video\+Rotate\+Direction)}]{direction }\item[{file\+Path\+:(NSString $\ast$)}]{file\+Path }\end{DoxyParamCaption}}
+
+开启录制
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & 旋转角度 \\
+\hline
+{\em file\+Path} & 指定存储目录 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a9c99791e4324d1d59f784b836d2b5823}\label{interface_thing_smart_wi_fi_lock_device_a9c99791e4324d1d59f784b836d2b5823}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!startTalk@{startTalk}}
+\index{startTalk@{startTalk}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{startTalk}{startTalk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Talk \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+开启对讲 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a9c99791e4324d1d59f784b836d2b5823}\label{interface_thing_smart_wi_fi_lock_device_a9c99791e4324d1d59f784b836d2b5823}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!startTalk@{startTalk}}
+\index{startTalk@{startTalk}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{startTalk}{startTalk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Talk \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+开启对讲 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_ab259f40b8afa4666b2ed6aef30e4c77f}\label{interface_thing_smart_wi_fi_lock_device_ab259f40b8afa4666b2ed6aef30e4c77f}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!stopPreview@{stopPreview}}
+\index{stopPreview@{stopPreview}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{stopPreview}{stopPreview}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Preview \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+停止预览 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_ab259f40b8afa4666b2ed6aef30e4c77f}\label{interface_thing_smart_wi_fi_lock_device_ab259f40b8afa4666b2ed6aef30e4c77f}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!stopPreview@{stopPreview}}
+\index{stopPreview@{stopPreview}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{stopPreview}{stopPreview}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Preview \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+停止预览 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a18a0a11b3a2f6c38ae946c21d7f8e37d}\label{interface_thing_smart_wi_fi_lock_device_a18a0a11b3a2f6c38ae946c21d7f8e37d}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!stopRecordAndFetchPath@{stopRecordAndFetchPath}}
+\index{stopRecordAndFetchPath@{stopRecordAndFetchPath}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{stopRecordAndFetchPath}{stopRecordAndFetchPath}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Record\+And\+Fetch\+Path \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+停止录制并返回录制文件的路径和封面图数据 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a18a0a11b3a2f6c38ae946c21d7f8e37d}\label{interface_thing_smart_wi_fi_lock_device_a18a0a11b3a2f6c38ae946c21d7f8e37d}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!stopRecordAndFetchPath@{stopRecordAndFetchPath}}
+\index{stopRecordAndFetchPath@{stopRecordAndFetchPath}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{stopRecordAndFetchPath}{stopRecordAndFetchPath}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Record\+And\+Fetch\+Path \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+停止录制并返回录制文件的路径和封面图数据 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_ab7c104f86f369668548e69a7da1b50b3}\label{interface_thing_smart_wi_fi_lock_device_ab7c104f86f369668548e69a7da1b50b3}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!stopTalk@{stopTalk}}
+\index{stopTalk@{stopTalk}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{stopTalk}{stopTalk}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Talk \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+关闭对讲 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_ab7c104f86f369668548e69a7da1b50b3}\label{interface_thing_smart_wi_fi_lock_device_ab7c104f86f369668548e69a7da1b50b3}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!stopTalk@{stopTalk}}
+\index{stopTalk@{stopTalk}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{stopTalk}{stopTalk}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Talk \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+关闭对讲 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a12b124b51059608a4932fc9e93f2f15d}\label{interface_thing_smart_wi_fi_lock_device_a12b124b51059608a4932fc9e93f2f15d}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!supportedAudioMode@{supportedAudioMode}}
+\index{supportedAudioMode@{supportedAudioMode}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{supportedAudioMode}{supportedAudioMode}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (Thing\+Smart\+Camera\+Talkback\+Mode) supported\+Audio\+Mode \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+设备默认支持的对讲模式 
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a12b124b51059608a4932fc9e93f2f15d}\label{interface_thing_smart_wi_fi_lock_device_a12b124b51059608a4932fc9e93f2f15d}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!supportedAudioMode@{supportedAudioMode}}
+\index{supportedAudioMode@{supportedAudioMode}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{supportedAudioMode}{supportedAudioMode}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (Thing\+Smart\+Camera\+Talkback\+Mode) supported\+Audio\+Mode \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+设备默认支持的对讲模式 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a14b9b44683253222a70aaa62b2e6b012}\label{interface_thing_smart_wi_fi_lock_device_a14b9b44683253222a70aaa62b2e6b012}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!cameraType@{cameraType}}
+\index{cameraType@{cameraType}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{cameraType}{cameraType}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_smart_camera_type-p}{Thing\+Smart\+Camera\+Type}} $>$) camera\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_wi_fi_lock_device_8h_source_l00062}{62}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_wi_fi_lock_device_8h_source}{Thing\+Smart\+Wi\+Fi\+Lock\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_wi_fi_lock_device_a1c103419a2c01892038508737058e5c3}\label{interface_thing_smart_wi_fi_lock_device_a1c103419a2c01892038508737058e5c3}} 
+\index{ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}!delegate@{delegate}}
+\index{delegate@{delegate}!ThingSmartWiFiLockDevice@{ThingSmartWiFiLockDevice}}
+\doxysubsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p}{Thing\+Smart\+Wi\+Fi\+Lock\+Device\+Delegate}} $>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_wi_fi_lock_device_8h_source_l00063}{63}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_wi_fi_lock_device_8h_source}{Thing\+Smart\+Wi\+Fi\+Lock\+Device.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Lock\+Kit/\+Build/\+Thing\+Smart\+Lock\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Lock\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_wi_fi_lock_device_8h}{Thing\+Smart\+Wi\+Fi\+Lock\+Device.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Lock\+Kit/\+Build/\+Thing\+Smart\+Lock\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Lock\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_wi_fi_lock_device_8h}{Thing\+Smart\+Wi\+Fi\+Lock\+Device.\+h}}\end{DoxyCompactItemize}

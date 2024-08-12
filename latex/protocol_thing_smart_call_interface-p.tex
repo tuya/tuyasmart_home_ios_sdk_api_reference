@@ -1,0 +1,219 @@
+\hypertarget{protocol_thing_smart_call_interface-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+Call\+Interface\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_call_interface-p}\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Call\+Interface.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+Call\+Interface\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.442060cm]{protocol_thing_smart_call_interface-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a3327366242fe8110588a6d2d6b550f5d}{init\+With\+Call\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a018f4110cb4fe546dcfc277d0899487d}{setup\+Completed\+:}}
+\begin{DoxyCompactList}\small\item\em setup some actions before send/receive call,eg\+:sync device model. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_ab09cab5ee2b485413c8f620db6fbc13f}{call\+Peer\+Did\+Respond}}
+\begin{DoxyCompactList}\small\item\em the peer sent answer or already answered. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a37d39ba3ff10075e98c9d628105bd4ba}{call\+End\+With\+Error\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a9a4a9f76983c48332c3b92464e06b336}{configurate\+Audio\+Session}}
+\item 
+(CGFloat) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_aa1a7042ac327c9c08ea9b54c6429c522}{interval\+Before\+Interface\+Dismission}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a2858ccdb721a5a308b54c48f4a5e1c20}{execute\+Heavy\+Tasks\+Completed\+:}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a7588ab6bf05bd32f47e41b8adcd4cb95}{target\+Name}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a3327366242fe8110588a6d2d6b550f5d}{init\+With\+Call\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a018f4110cb4fe546dcfc277d0899487d}{setup\+Completed\+:}}
+\begin{DoxyCompactList}\small\item\em setup some actions before send/receive call,eg\+:sync device model. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_ab09cab5ee2b485413c8f620db6fbc13f}{call\+Peer\+Did\+Respond}}
+\begin{DoxyCompactList}\small\item\em the peer sent answer or already answered. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a37d39ba3ff10075e98c9d628105bd4ba}{call\+End\+With\+Error\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a9a4a9f76983c48332c3b92464e06b336}{configurate\+Audio\+Session}}
+\item 
+(CGFloat) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_aa1a7042ac327c9c08ea9b54c6429c522}{interval\+Before\+Interface\+Dismission}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a2858ccdb721a5a308b54c48f4a5e1c20}{execute\+Heavy\+Tasks\+Completed\+:}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a7588ab6bf05bd32f47e41b8adcd4cb95}{target\+Name}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_call_action_executer-p}{Thing\+Call\+Action\+Executer}} $>$ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_af88bf76961fe4464f2960c414c1e33d4}{action\+Executer}}
+\begin{DoxyCompactList}\small\item\em send message to the peer by action\+Executer. \end{DoxyCompactList}\item 
+id$<$ \mbox{\hyperlink{protocol_thing_smart_call_kit_executer-p}{Thing\+Smart\+Call\+Kit\+Executer}} $>$ \mbox{\hyperlink{protocol_thing_smart_call_interface-p_a11327fc2d3269492acbf18ce8ef60c6b}{call\+Kit}}
+\begin{DoxyCompactList}\small\item\em implement \mbox{\hyperlink{protocol_thing_smart_call_kit_executer-p}{Thing\+Smart\+Call\+Kit\+Executer}} if use call\+Kit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_interface_8h_source_l00028}{28}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_interface_8h_source}{Thing\+Smart\+Call\+Interface.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a37d39ba3ff10075e98c9d628105bd4ba}\label{protocol_thing_smart_call_interface-p_a37d39ba3ff10075e98c9d628105bd4ba}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!callEndWithError:@{callEndWithError:}}
+\index{callEndWithError:@{callEndWithError:}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{callEndWithError:}{callEndWithError:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) call\+End\+With\+Error\+: \begin{DoxyParamCaption}\item[{(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}}
+
+通知界面通话结束
+\begin{DoxyItemize}
+\item Parameter error\+: 错误 
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a37d39ba3ff10075e98c9d628105bd4ba}\label{protocol_thing_smart_call_interface-p_a37d39ba3ff10075e98c9d628105bd4ba}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!callEndWithError:@{callEndWithError:}}
+\index{callEndWithError:@{callEndWithError:}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{callEndWithError:}{callEndWithError:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) call\+End\+With\+Error\+: \begin{DoxyParamCaption}\item[{(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}}
+
+通知界面通话结束
+\begin{DoxyItemize}
+\item Parameter error\+: 错误 
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_ab09cab5ee2b485413c8f620db6fbc13f}\label{protocol_thing_smart_call_interface-p_ab09cab5ee2b485413c8f620db6fbc13f}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!callPeerDidRespond@{callPeerDidRespond}}
+\index{callPeerDidRespond@{callPeerDidRespond}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{callPeerDidRespond}{callPeerDidRespond}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) call\+Peer\+Did\+Respond \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+the peer sent answer or already answered. 
+
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_ab09cab5ee2b485413c8f620db6fbc13f}\label{protocol_thing_smart_call_interface-p_ab09cab5ee2b485413c8f620db6fbc13f}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!callPeerDidRespond@{callPeerDidRespond}}
+\index{callPeerDidRespond@{callPeerDidRespond}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{callPeerDidRespond}{callPeerDidRespond}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) call\+Peer\+Did\+Respond \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+the peer sent answer or already answered. 
+
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a9a4a9f76983c48332c3b92464e06b336}\label{protocol_thing_smart_call_interface-p_a9a4a9f76983c48332c3b92464e06b336}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!configurateAudioSession@{configurateAudioSession}}
+\index{configurateAudioSession@{configurateAudioSession}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{configurateAudioSession}{configurateAudioSession}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) configurate\+Audio\+Session \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a9a4a9f76983c48332c3b92464e06b336}\label{protocol_thing_smart_call_interface-p_a9a4a9f76983c48332c3b92464e06b336}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!configurateAudioSession@{configurateAudioSession}}
+\index{configurateAudioSession@{configurateAudioSession}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{configurateAudioSession}{configurateAudioSession}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) configurate\+Audio\+Session \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a2858ccdb721a5a308b54c48f4a5e1c20}\label{protocol_thing_smart_call_interface-p_a2858ccdb721a5a308b54c48f4a5e1c20}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!executeHeavyTasksCompleted:@{executeHeavyTasksCompleted:}}
+\index{executeHeavyTasksCompleted:@{executeHeavyTasksCompleted:}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{executeHeavyTasksCompleted:}{executeHeavyTasksCompleted:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) execute\+Heavy\+Tasks\+Completed\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{completed }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a2858ccdb721a5a308b54c48f4a5e1c20}\label{protocol_thing_smart_call_interface-p_a2858ccdb721a5a308b54c48f4a5e1c20}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!executeHeavyTasksCompleted:@{executeHeavyTasksCompleted:}}
+\index{executeHeavyTasksCompleted:@{executeHeavyTasksCompleted:}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{executeHeavyTasksCompleted:}{executeHeavyTasksCompleted:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) execute\+Heavy\+Tasks\+Completed\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{completed }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a3327366242fe8110588a6d2d6b550f5d}\label{protocol_thing_smart_call_interface-p_a3327366242fe8110588a6d2d6b550f5d}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!initWithCall:@{initWithCall:}}
+\index{initWithCall:@{initWithCall:}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{initWithCall:}{initWithCall:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Call\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_call_protocol-p}{Thing\+Smart\+Call\+Protocol}} $>$)}]{call }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a3327366242fe8110588a6d2d6b550f5d}\label{protocol_thing_smart_call_interface-p_a3327366242fe8110588a6d2d6b550f5d}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!initWithCall:@{initWithCall:}}
+\index{initWithCall:@{initWithCall:}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{initWithCall:}{initWithCall:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Call\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_smart_call_protocol-p}{Thing\+Smart\+Call\+Protocol}} $>$)}]{call }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_aa1a7042ac327c9c08ea9b54c6429c522}\label{protocol_thing_smart_call_interface-p_aa1a7042ac327c9c08ea9b54c6429c522}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!intervalBeforeInterfaceDismission@{intervalBeforeInterfaceDismission}}
+\index{intervalBeforeInterfaceDismission@{intervalBeforeInterfaceDismission}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{intervalBeforeInterfaceDismission}{intervalBeforeInterfaceDismission}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (CGFloat) interval\+Before\+Interface\+Dismission \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+通知界面通话结束，页面延时关闭 retrun value, dismiss after interval, default 1.\+5 \mbox{\Hypertarget{protocol_thing_smart_call_interface-p_aa1a7042ac327c9c08ea9b54c6429c522}\label{protocol_thing_smart_call_interface-p_aa1a7042ac327c9c08ea9b54c6429c522}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!intervalBeforeInterfaceDismission@{intervalBeforeInterfaceDismission}}
+\index{intervalBeforeInterfaceDismission@{intervalBeforeInterfaceDismission}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{intervalBeforeInterfaceDismission}{intervalBeforeInterfaceDismission}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (CGFloat) interval\+Before\+Interface\+Dismission \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+通知界面通话结束，页面延时关闭 retrun value, dismiss after interval, default 1.\+5 \mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a018f4110cb4fe546dcfc277d0899487d}\label{protocol_thing_smart_call_interface-p_a018f4110cb4fe546dcfc277d0899487d}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!setupCompleted:@{setupCompleted:}}
+\index{setupCompleted:@{setupCompleted:}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{setupCompleted:}{setupCompleted:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) setup\+Completed\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{completed }\end{DoxyParamCaption}}
+
+
+
+setup some actions before send/receive call,eg\+:sync device model. 
+
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a018f4110cb4fe546dcfc277d0899487d}\label{protocol_thing_smart_call_interface-p_a018f4110cb4fe546dcfc277d0899487d}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!setupCompleted:@{setupCompleted:}}
+\index{setupCompleted:@{setupCompleted:}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{setupCompleted:}{setupCompleted:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) setup\+Completed\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{completed }\end{DoxyParamCaption}}
+
+
+
+setup some actions before send/receive call,eg\+:sync device model. 
+
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a7588ab6bf05bd32f47e41b8adcd4cb95}\label{protocol_thing_smart_call_interface-p_a7588ab6bf05bd32f47e41b8adcd4cb95}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!targetName@{targetName}}
+\index{targetName@{targetName}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{targetName}{targetName}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) target\+Name \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a7588ab6bf05bd32f47e41b8adcd4cb95}\label{protocol_thing_smart_call_interface-p_a7588ab6bf05bd32f47e41b8adcd4cb95}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!targetName@{targetName}}
+\index{targetName@{targetName}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{targetName}{targetName}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) target\+Name \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_af88bf76961fe4464f2960c414c1e33d4}\label{protocol_thing_smart_call_interface-p_af88bf76961fe4464f2960c414c1e33d4}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!actionExecuter@{actionExecuter}}
+\index{actionExecuter@{actionExecuter}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{actionExecuter}{actionExecuter}}
+{\footnotesize\ttfamily -\/ (id$<$\mbox{\hyperlink{protocol_thing_call_action_executer-p}{Thing\+Call\+Action\+Executer}}$>$) action\+Executer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+send message to the peer by action\+Executer. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_interface_8h_source_l00031}{31}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_interface_8h_source}{Thing\+Smart\+Call\+Interface.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_smart_call_interface-p_a11327fc2d3269492acbf18ce8ef60c6b}\label{protocol_thing_smart_call_interface-p_a11327fc2d3269492acbf18ce8ef60c6b}} 
+\index{$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}!callKit@{callKit}}
+\index{callKit@{callKit}!$<$ThingSmartCallInterface$>$@{$<$ThingSmartCallInterface$>$}}
+\doxysubsubsection{\texorpdfstring{callKit}{callKit}}
+{\footnotesize\ttfamily -\/ (id$<$\mbox{\hyperlink{protocol_thing_smart_call_kit_executer-p}{Thing\+Smart\+Call\+Kit\+Executer}}$>$) call\+Kit\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [optional]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+implement \mbox{\hyperlink{protocol_thing_smart_call_kit_executer-p}{Thing\+Smart\+Call\+Kit\+Executer}} if use call\+Kit. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_interface_8h_source_l00060}{60}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_interface_8h_source}{Thing\+Smart\+Call\+Interface.\+h}}.
+
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Call\+Channel\+Kit/\+Build/\+Thing\+Smart\+Call\+Channel\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Call\+Channel\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_interface_8h}{Thing\+Smart\+Call\+Interface.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Call\+Channel\+Kit/\+Build/\+Thing\+Smart\+Call\+Channel\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Call\+Channel\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_call_channel_kit_8framework_2_headers_2_thing_smart_call_interface_8h}{Thing\+Smart\+Call\+Interface.\+h}}\end{DoxyCompactItemize}

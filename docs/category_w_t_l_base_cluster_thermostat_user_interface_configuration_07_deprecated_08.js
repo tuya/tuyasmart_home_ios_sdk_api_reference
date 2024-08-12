@@ -1,0 +1,26 @@
+var category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08 =
+[
+    [ "initWithDevice:endpoint:queue:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a573798328eb7e311aa051174b9f12630", null ],
+    [ "readAttributeAcceptedCommandListWithCompletionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a3c362f71dae283f7c15ba510081507af", null ],
+    [ "readAttributeAttributeListWithCompletionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a1fd9fd3b002bb052e0e1d5a9d0de8aa4", null ],
+    [ "readAttributeClusterRevisionWithCompletionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a8b4e2f9c962c53a796b3d2508b0c2d2b", null ],
+    [ "readAttributeFeatureMapWithCompletionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a5a0f2b87889aba1a368b6857e141fdca", null ],
+    [ "readAttributeGeneratedCommandListWithCompletionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#acbc4f46d57dc8257e177931e717e64b3", null ],
+    [ "readAttributeKeypadLockoutWithCompletionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a408a49518570c98bd31488e5176d8838", null ],
+    [ "readAttributeScheduleProgrammingVisibilityWithCompletionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a2b5f0e5cba9e9a822d3ccd538417be3c", null ],
+    [ "readAttributeTemperatureDisplayModeWithCompletionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a1795fbc24ed6db20ff36a88c4877b283", null ],
+    [ "subscribeAttributeAcceptedCommandListWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#aee4cf08735867cd3b3ccdffea8aaaba8", null ],
+    [ "subscribeAttributeAttributeListWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a9efb818fb4f4d6a89a52cf02f133dee5", null ],
+    [ "subscribeAttributeClusterRevisionWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#aea4878c432dcb443ad75a7283a34212e", null ],
+    [ "subscribeAttributeFeatureMapWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a6a1bc451f5f0ed4ef5a2dab23f102e5f", null ],
+    [ "subscribeAttributeGeneratedCommandListWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a5b3530538f03af938e9a8af8336f6295", null ],
+    [ "subscribeAttributeKeypadLockoutWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a21cb86e46ff59eb63d245aaeeb273db2", null ],
+    [ "subscribeAttributeScheduleProgrammingVisibilityWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a529af7c93b5011157faed9028f8a4ea6", null ],
+    [ "subscribeAttributeTemperatureDisplayModeWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#ae12e6bc9151c206c0d408aec0754943d", null ],
+    [ "writeAttributeKeypadLockoutWithValue:completionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a36995f176ac18e260b07d74355de1302", null ],
+    [ "writeAttributeKeypadLockoutWithValue:params:completionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a6b842d620c71e304c9e063a6074f6a63", null ],
+    [ "writeAttributeScheduleProgrammingVisibilityWithValue:completionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a9be02b48f05dafdc354295419b007713", null ],
+    [ "writeAttributeScheduleProgrammingVisibilityWithValue:params:completionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#a299db56666b131780a05c385831b9569", null ],
+    [ "writeAttributeTemperatureDisplayModeWithValue:completionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#aad75551a31d3ddf2c3710da84f6d8175", null ],
+    [ "writeAttributeTemperatureDisplayModeWithValue:params:completionHandler:", "category_w_t_l_base_cluster_thermostat_user_interface_configuration_07_deprecated_08.html#ad33ec34a90fa8e637411d439a6ab31c9", null ]
+];

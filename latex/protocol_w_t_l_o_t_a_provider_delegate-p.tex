@@ -1,0 +1,128 @@
+\hypertarget{protocol_w_t_l_o_t_a_provider_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}WTLOTAProvider\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_w_t_l_o_t_a_provider_delegate-p}\index{$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}}
+
+
+{\ttfamily \#import $<$WTLOTAProvider\+Delegate.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}WTLOTAProvider\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_w_t_l_o_t_a_provider_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p_a69128ebb86ebf7317246f46a64cc4a98}{handle\+Query\+Image\+For\+Node\+ID\+:controller\+:params\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p_ae4ae037226e0da6cc804d6065edd29cb}{handle\+Query\+Image\+For\+Node\+ID\+:controller\+:params\+:completion\+Handler\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p_a659698869663728cb479b9cb2950d62b}{handle\+Apply\+Update\+Request\+For\+Node\+ID\+:controller\+:params\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p_af33cb35d4e67cf2faa99e4a955d3f1a1}{handle\+Apply\+Update\+Request\+For\+Node\+ID\+:controller\+:params\+:completion\+Handler\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p_a7c74f254ada100c2e9dd4164774335e1}{handle\+Notify\+Update\+Applied\+For\+Node\+ID\+:controller\+:params\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p_a4eda7e7269baba53f6d8569c0808aec4}{handle\+Notify\+Update\+Applied\+For\+Node\+ID\+:controller\+:params\+:completion\+Handler\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p_a8de469b422eec42edb141af39af59d89}{handle\+BDXTransfer\+Session\+Begin\+For\+Node\+ID\+:controller\+:file\+Designator\+:offset\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p_a07cefdedae07d39022866fdc521b7314}{handle\+BDXTransfer\+Session\+Begin\+For\+Node\+ID\+:controller\+:file\+Designator\+:offset\+:completion\+Handler\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p_af059c984fd63b5c78935aebe11042406}{handle\+BDXTransfer\+Session\+End\+For\+Node\+ID\+:controller\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p_a8b7e82d5938dfd0f775d57687e8caa94}{handle\+BDXQuery\+For\+Node\+ID\+:controller\+:block\+Size\+:block\+Index\+:bytes\+To\+Skip\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p_ac5b9abecdb21f5582452ce30d91b928c}{handle\+BDXQuery\+For\+Node\+ID\+:controller\+:block\+Size\+:block\+Index\+:bytes\+To\+Skip\+:completion\+Handler\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The protocol definition for the \mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p}{WTLOTAProvider\+Delegate}}
+
+All delegate methods will be called on the supplied Delegate Queue.
+
+While the selectors on this protocol are marked @optional, in practice an implementation must provide an implementation for one of each pair of selectors (e.\+g. one of the two handle\+Query\+Image\+For\+Node\+ID selectors must be implemented). The selector ending in \char`\"{}completion\+:\char`\"{} will be used if present; otherwise the one ending in \char`\"{}completion\+Handler\+:\char`\"{} will be used. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_o_t_a_provider_delegate_8h_source_l00038}{38}} of file \mbox{\hyperlink{_w_t_l_o_t_a_provider_delegate_8h_source}{WTLOTAProvider\+Delegate.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_w_t_l_o_t_a_provider_delegate-p_a659698869663728cb479b9cb2950d62b}\label{protocol_w_t_l_o_t_a_provider_delegate-p_a659698869663728cb479b9cb2950d62b}} 
+\index{$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}!handleApplyUpdateRequestForNodeID:controller:params:completion:@{handleApplyUpdateRequestForNodeID:controller:params:completion:}}
+\index{handleApplyUpdateRequestForNodeID:controller:params:completion:@{handleApplyUpdateRequestForNodeID:controller:params:completion:}!$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleApplyUpdateRequestForNodeID:controller:params:completion:}{handleApplyUpdateRequestForNodeID:controller:params:completion:}}
+{\footnotesize\ttfamily -\/ (void) handle\+Apply\+Update\+Request\+For\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{params\+:(WTLOTASoftware\+Update\+Provider\+Cluster\+Apply\+Update\+Request\+Params $\ast$)}]{params }\item[{completion\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Notify the delegate when the apply update request command is received from some node. The controller identifies the fabric the node is on, and the node\+ID identifies the node within that fabric.
+
+If completion is passed a non-\/nil error, that will be converted into an error response to the client. Otherwise it must have a non-\/nil data, which will be returned to the client. \mbox{\Hypertarget{protocol_w_t_l_o_t_a_provider_delegate-p_af33cb35d4e67cf2faa99e4a955d3f1a1}\label{protocol_w_t_l_o_t_a_provider_delegate-p_af33cb35d4e67cf2faa99e4a955d3f1a1}} 
+\index{$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}!handleApplyUpdateRequestForNodeID:controller:params:completionHandler:@{handleApplyUpdateRequestForNodeID:controller:params:completionHandler:}}
+\index{handleApplyUpdateRequestForNodeID:controller:params:completionHandler:@{handleApplyUpdateRequestForNodeID:controller:params:completionHandler:}!$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleApplyUpdateRequestForNodeID:controller:params:completionHandler:}{handleApplyUpdateRequestForNodeID:controller:params:completionHandler:}}
+{\footnotesize\ttfamily -\/ (void) handle\+Apply\+Update\+Request\+For\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{params\+:(WTLOta\+Software\+Update\+Provider\+Cluster\+Apply\+Update\+Request\+Params $\ast$)}]{params }\item[{completion\+Handler\+:(\char`\"{}handle\+Apply\+Update\+Request\+For\+Node\+ID\+:controller\+:params\+:completion\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED\+\_\+\+WITH\+\_\+\+REPLACEMENT }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_w_t_l_o_t_a_provider_delegate-p_a8b7e82d5938dfd0f775d57687e8caa94}\label{protocol_w_t_l_o_t_a_provider_delegate-p_a8b7e82d5938dfd0f775d57687e8caa94}} 
+\index{$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}!handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completion:@{handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completion:}}
+\index{handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completion:@{handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completion:}!$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completion:}{handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completion:}}
+{\footnotesize\ttfamily -\/ (void) handle\+BDXQuery\+For\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{block\+Size\+:(NSNumber $\ast$)}]{block\+Size }\item[{block\+Index\+:(NSNumber $\ast$)}]{block\+Index }\item[{bytes\+To\+Skip\+:(NSNumber $\ast$)}]{bytes\+To\+Skip }\item[{completion\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Notify the delegate when a BDX Query message has been received for some node. The controller identifies the fabric the node is on, and the node\+ID identifies the node within that fabric. \mbox{\Hypertarget{protocol_w_t_l_o_t_a_provider_delegate-p_ac5b9abecdb21f5582452ce30d91b928c}\label{protocol_w_t_l_o_t_a_provider_delegate-p_ac5b9abecdb21f5582452ce30d91b928c}} 
+\index{$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}!handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completionHandler:@{handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completionHandler:}}
+\index{handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completionHandler:@{handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completionHandler:}!$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completionHandler:}{handleBDXQueryForNodeID:controller:blockSize:blockIndex:bytesToSkip:completionHandler:}}
+{\footnotesize\ttfamily -\/ (void) handle\+BDXQuery\+For\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{block\+Size\+:(NSNumber $\ast$)}]{block\+Size }\item[{block\+Index\+:(NSNumber $\ast$)}]{block\+Index }\item[{bytes\+To\+Skip\+:(NSNumber $\ast$)}]{bytes\+To\+Skip }\item[{completion\+Handler\+:(\char`\"{}handle\+BDXQuery\+For\+Node\+ID\+:controller\+:block\+Size\+:block\+Index\+:bytes\+To\+Skip\+:completion\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED\+\_\+\+WITH\+\_\+\+REPLACEMENT }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_w_t_l_o_t_a_provider_delegate-p_a8de469b422eec42edb141af39af59d89}\label{protocol_w_t_l_o_t_a_provider_delegate-p_a8de469b422eec42edb141af39af59d89}} 
+\index{$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}!handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completion:@{handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completion:}}
+\index{handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completion:@{handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completion:}!$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completion:}{handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completion:}}
+{\footnotesize\ttfamily -\/ (void) handle\+BDXTransfer\+Session\+Begin\+For\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{file\+Designator\+:(NSString $\ast$)}]{file\+Designator }\item[{offset\+:(NSNumber $\ast$)}]{offset }\item[{completion\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Notify the delegate when a BDX Session starts for some node. The controller identifies the fabric the node is on, and the node\+ID identifies the node within that fabric. \mbox{\Hypertarget{protocol_w_t_l_o_t_a_provider_delegate-p_a07cefdedae07d39022866fdc521b7314}\label{protocol_w_t_l_o_t_a_provider_delegate-p_a07cefdedae07d39022866fdc521b7314}} 
+\index{$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}!handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completionHandler:@{handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completionHandler:}}
+\index{handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completionHandler:@{handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completionHandler:}!$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completionHandler:}{handleBDXTransferSessionBeginForNodeID:controller:fileDesignator:offset:completionHandler:}}
+{\footnotesize\ttfamily -\/ (void) handle\+BDXTransfer\+Session\+Begin\+For\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{file\+Designator\+:(NSString $\ast$)}]{file\+Designator }\item[{offset\+:(NSNumber $\ast$)}]{offset }\item[{completion\+Handler\+:(\char`\"{}handle\+BDXTransfer\+Session\+Begin\+For\+Node\+ID\+:controller\+:file\+Designator\+:offset\+:completion\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED\+\_\+\+WITH\+\_\+\+REPLACEMENT }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_w_t_l_o_t_a_provider_delegate-p_af059c984fd63b5c78935aebe11042406}\label{protocol_w_t_l_o_t_a_provider_delegate-p_af059c984fd63b5c78935aebe11042406}} 
+\index{$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}!handleBDXTransferSessionEndForNodeID:controller:error:@{handleBDXTransferSessionEndForNodeID:controller:error:}}
+\index{handleBDXTransferSessionEndForNodeID:controller:error:@{handleBDXTransferSessionEndForNodeID:controller:error:}!$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleBDXTransferSessionEndForNodeID:controller:error:}{handleBDXTransferSessionEndForNodeID:controller:error:}}
+{\footnotesize\ttfamily -\/ (void) handle\+BDXTransfer\+Session\+End\+For\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{error\+:(NSError $\ast$\+\_\+\+Nullable)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Notify the delegate when a BDX Session ends for some node. The controller identifies the fabric the node is on, and the node\+ID identifies the node within that fabric. \mbox{\Hypertarget{protocol_w_t_l_o_t_a_provider_delegate-p_a7c74f254ada100c2e9dd4164774335e1}\label{protocol_w_t_l_o_t_a_provider_delegate-p_a7c74f254ada100c2e9dd4164774335e1}} 
+\index{$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}!handleNotifyUpdateAppliedForNodeID:controller:params:completion:@{handleNotifyUpdateAppliedForNodeID:controller:params:completion:}}
+\index{handleNotifyUpdateAppliedForNodeID:controller:params:completion:@{handleNotifyUpdateAppliedForNodeID:controller:params:completion:}!$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleNotifyUpdateAppliedForNodeID:controller:params:completion:}{handleNotifyUpdateAppliedForNodeID:controller:params:completion:}}
+{\footnotesize\ttfamily -\/ (void) handle\+Notify\+Update\+Applied\+For\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{params\+:(WTLOTASoftware\+Update\+Provider\+Cluster\+Notify\+Update\+Applied\+Params $\ast$)}]{params }\item[{completion\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Notify the delegate when the notify update applied command is received from some node. The controller identifies the fabric the node is on, and the node\+ID identifies the node within that fabric.
+
+If completion is passed a non-\/nil error, that will be converted into an error response to the client. Otherwise a success response will be sent. \mbox{\Hypertarget{protocol_w_t_l_o_t_a_provider_delegate-p_a4eda7e7269baba53f6d8569c0808aec4}\label{protocol_w_t_l_o_t_a_provider_delegate-p_a4eda7e7269baba53f6d8569c0808aec4}} 
+\index{$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}!handleNotifyUpdateAppliedForNodeID:controller:params:completionHandler:@{handleNotifyUpdateAppliedForNodeID:controller:params:completionHandler:}}
+\index{handleNotifyUpdateAppliedForNodeID:controller:params:completionHandler:@{handleNotifyUpdateAppliedForNodeID:controller:params:completionHandler:}!$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleNotifyUpdateAppliedForNodeID:controller:params:completionHandler:}{handleNotifyUpdateAppliedForNodeID:controller:params:completionHandler:}}
+{\footnotesize\ttfamily -\/ (void) handle\+Notify\+Update\+Applied\+For\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{params\+:(WTLOta\+Software\+Update\+Provider\+Cluster\+Notify\+Update\+Applied\+Params $\ast$)}]{params }\item[{completion\+Handler\+:(\char`\"{}handle\+Notify\+Update\+Applied\+For\+Node\+ID\+:controller\+:params\+:completion\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED\+\_\+\+WITH\+\_\+\+REPLACEMENT }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_w_t_l_o_t_a_provider_delegate-p_a69128ebb86ebf7317246f46a64cc4a98}\label{protocol_w_t_l_o_t_a_provider_delegate-p_a69128ebb86ebf7317246f46a64cc4a98}} 
+\index{$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}!handleQueryImageForNodeID:controller:params:completion:@{handleQueryImageForNodeID:controller:params:completion:}}
+\index{handleQueryImageForNodeID:controller:params:completion:@{handleQueryImageForNodeID:controller:params:completion:}!$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleQueryImageForNodeID:controller:params:completion:}{handleQueryImageForNodeID:controller:params:completion:}}
+{\footnotesize\ttfamily -\/ (void) handle\+Query\+Image\+For\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{params\+:(WTLOTASoftware\+Update\+Provider\+Cluster\+Query\+Image\+Params $\ast$)}]{params }\item[{completion\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Notify the delegate when the query image command is received from some node. The controller identifies the fabric the node is on, and the node\+ID identifies the node within that fabric.
+
+If completion is passed a non-\/nil error, that will be converted into an error response to the client. Otherwise it must have a non-\/nil data, which will be returned to the client. \mbox{\Hypertarget{protocol_w_t_l_o_t_a_provider_delegate-p_ae4ae037226e0da6cc804d6065edd29cb}\label{protocol_w_t_l_o_t_a_provider_delegate-p_ae4ae037226e0da6cc804d6065edd29cb}} 
+\index{$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}!handleQueryImageForNodeID:controller:params:completionHandler:@{handleQueryImageForNodeID:controller:params:completionHandler:}}
+\index{handleQueryImageForNodeID:controller:params:completionHandler:@{handleQueryImageForNodeID:controller:params:completionHandler:}!$<$WTLOTAProviderDelegate$>$@{$<$WTLOTAProviderDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleQueryImageForNodeID:controller:params:completionHandler:}{handleQueryImageForNodeID:controller:params:completionHandler:}}
+{\footnotesize\ttfamily -\/ (void) handle\+Query\+Image\+For\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{params\+:(WTLOta\+Software\+Update\+Provider\+Cluster\+Query\+Image\+Params $\ast$)}]{params }\item[{completion\+Handler\+:(\char`\"{}handle\+Query\+Image\+For\+Node\+ID\+:controller\+:params\+:completion\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED\+\_\+\+WITH\+\_\+\+REPLACEMENT }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_o_t_a_provider_delegate_8h}{WTLOTAProvider\+Delegate.\+h}}\end{DoxyCompactItemize}

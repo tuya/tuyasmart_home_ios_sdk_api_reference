@@ -1,0 +1,58 @@
+\hypertarget{_w_t_l_o_t_a_header_8h_source}{}\doxysection{WTLOTAHeader.\+h}
+\label{_w_t_l_o_t_a_header_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLOTAHeader.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLOTAHeader.h}}
+\mbox{\hyperlink{_w_t_l_o_t_a_header_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Water/WTLDefines.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00025}00025 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00027}\mbox{\hyperlink{_w_t_l_o_t_a_header_8h_a07aed54a323b3b1fc5a5a5984aebc4ea}{00027}} \textcolor{keyword}{typedef} \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_a07aed54a323b3b1fc5a5a5984aebc4ea}{NS\_ENUM}}(NSUInteger, WTLOTAImageDigestType) \{}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00028}00028     WTLOTAImageDigestTypeSha256 = 1,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00029}00029     WTLOTAImageDigestTypeSha256\_128,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00030}00030     WTLOTAImageDigestTypeSha256\_120,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00031}00031     WTLOTAImageDigestTypeSha256\_96,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00032}00032     WTLOTAImageDigestTypeSha256\_64,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00033}00033     WTLOTAImageDigestTypeSha256\_32,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00034}00034     WTLOTAImageDigestTypeSha384,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00035}00035     WTLOTAImageDigestTypeSha512,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00036}00036     WTLOTAImageDigestTypeSha3\_224,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00037}00037     WTLOTAImageDigestTypeSha3\_256,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00038}00038     WTLOTAImageDigestTypeSha3\_384,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00039}00039     WTLOTAImageDigestTypeSha3\_512,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00040}00040 \};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00042}\mbox{\hyperlink{interface_w_t_l_o_t_a_header}{00042}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_o_t_a_header}{WTLOTAHeader}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00054}00054 -\/ (instancetype)initWithData:(NSData *)data API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00066}\mbox{\hyperlink{interface_w_t_l_o_t_a_header_a1a6a2b984484475ffc1bf10bcdac911b}{00066}} \textcolor{keyword}{@property} (nonatomic, copy) NSNumber * \mbox{\hyperlink{_w_t_l_fabric_info_8h_aa847c51e6ff914c7603c882d1845d433}{vendorID}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00073}\mbox{\hyperlink{interface_w_t_l_o_t_a_header_af939c82f9047fe08e22e8bd8fcc2ecb2}{00073}} \textcolor{keyword}{@property} (nonatomic, copy) NSNumber * \mbox{\hyperlink{interface_w_t_l_o_t_a_header_af939c82f9047fe08e22e8bd8fcc2ecb2}{productID}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00079}\mbox{\hyperlink{interface_w_t_l_o_t_a_header_a68b590e145d58d0b984d57579d7123d7}{00079}} \textcolor{keyword}{@property} (nonatomic, copy) NSNumber * \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a68b590e145d58d0b984d57579d7123d7}{payloadSize}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00088}\mbox{\hyperlink{interface_w_t_l_o_t_a_header_a002cee55120337b360db4300dc4125bb}{00088}} \textcolor{keyword}{@property} (nonatomic, copy) NSNumber * \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a002cee55120337b360db4300dc4125bb}{softwareVersion}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00094}\mbox{\hyperlink{interface_w_t_l_o_t_a_header_ae4a3c970054c4f10070a4fe8f0095ff9}{00094}} \textcolor{keyword}{@property} (nonatomic, copy) NSString * \mbox{\hyperlink{interface_w_t_l_o_t_a_header_ae4a3c970054c4f10070a4fe8f0095ff9}{softwareVersionString}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00100}\mbox{\hyperlink{interface_w_t_l_o_t_a_header_a75c5e0fdc228495b5e0298e285f9e991}{00100}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString * \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a75c5e0fdc228495b5e0298e285f9e991}{releaseNotesURL}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00106}\mbox{\hyperlink{interface_w_t_l_o_t_a_header_a677706b40a417e598e62a3ea2a4a6b70}{00106}} \textcolor{keyword}{@property} (nonatomic, copy) NSData * \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a677706b40a417e598e62a3ea2a4a6b70}{imageDigest}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00111}\mbox{\hyperlink{interface_w_t_l_o_t_a_header_a49df38ebdff02b50caf6af5f33dbef22}{00111}} \textcolor{keyword}{@property} (nonatomic, assign) WTLOTAImageDigestType \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a49df38ebdff02b50caf6af5f33dbef22}{imageDigestType}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00119}\mbox{\hyperlink{interface_w_t_l_o_t_a_header_accfc066ac60ed1517082daea349d205b}{00119}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSNumber * \mbox{\hyperlink{interface_w_t_l_o_t_a_header_accfc066ac60ed1517082daea349d205b}{minApplicableVersion}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00127}\mbox{\hyperlink{interface_w_t_l_o_t_a_header_a73128e308ee3c331eba914b1349d6872}{00127}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSNumber * \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a73128e308ee3c331eba914b1349d6872}{maxApplicableVersion}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00128}00128 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00129}00129 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00131}00131 \mbox{\hyperlink{_w_t_l_defines_8h_a7e03a091c94319bf3cac9352bb2c3aff}{WTL\_DEPRECATED}}(\textcolor{stringliteral}{"{}Please use WTLOTAHeader's initWithData:"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00132}00132 \textcolor{keyword}{@interface }WTLOTAHeaderParser : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00133}00133 + (nullable \mbox{\hyperlink{interface_w_t_l_o_t_a_header}{WTLOTAHeader}} *)headerFromData:(NSData *)data error:(NSError * \_\_autoreleasing *)error;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00134}00134 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_o_t_a_header_8h_source_l00136}\mbox{\hyperlink{interface_w_t_l_o_t_a_header_aaee89a08c9ba05da21bb750d7145eada}{00136}} NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

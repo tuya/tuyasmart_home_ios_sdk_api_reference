@@ -1,0 +1,170 @@
+\hypertarget{interface_w_t_l_o_t_a_header}{}\doxysection{WTLOTAHeader Class Reference}
+\label{interface_w_t_l_o_t_a_header}\index{WTLOTAHeader@{WTLOTAHeader}}
+
+
+{\ttfamily \#import $<$WTLOTAHeader.\+h$>$}
+
+Inheritance diagram for WTLOTAHeader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_w_t_l_o_t_a_header}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_o_t_a_header_aaee89a08c9ba05da21bb750d7145eada}{init\+With\+Data\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a1a6a2b984484475ffc1bf10bcdac911b}{vendor\+ID}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_w_t_l_o_t_a_header_af939c82f9047fe08e22e8bd8fcc2ecb2}{product\+ID}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a68b590e145d58d0b984d57579d7123d7}{payload\+Size}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a002cee55120337b360db4300dc4125bb}{software\+Version}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_w_t_l_o_t_a_header_ae4a3c970054c4f10070a4fe8f0095ff9}{software\+Version\+String}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a75c5e0fdc228495b5e0298e285f9e991}{release\+Notes\+URL}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a677706b40a417e598e62a3ea2a4a6b70}{image\+Digest}}
+\item 
+WTLOTAImage\+Digest\+Type \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a49df38ebdff02b50caf6af5f33dbef22}{image\+Digest\+Type}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_w_t_l_o_t_a_header_accfc066ac60ed1517082daea349d205b}{min\+Applicable\+Version}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_w_t_l_o_t_a_header_a73128e308ee3c331eba914b1349d6872}{max\+Applicable\+Version}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source_l00042}{42}} of file \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source}{WTLOTAHeader.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_o_t_a_header_aaee89a08c9ba05da21bb750d7145eada}\label{interface_w_t_l_o_t_a_header_aaee89a08c9ba05da21bb750d7145eada}} 
+\index{WTLOTAHeader@{WTLOTAHeader}!initWithData:@{initWithData:}}
+\index{initWithData:@{initWithData:}!WTLOTAHeader@{WTLOTAHeader}}
+\doxysubsubsection{\texorpdfstring{initWithData:}{initWithData:}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Data\+: \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Initialize the \mbox{\hyperlink{interface_w_t_l_o_t_a_header}{WTLOTAHeader}} with the given Matter OTA software image data (as defined in the \char`\"{}\+Over-\/the-\/\+Air (\+OTA) Software Update File Format\char`\"{} section of the Matter specification). The provided data is expected to point to a large enough initial chunk of an OTA software image that it includes the entire header (e.\+g. the entire image).
+
+If the passed-\/in data is too small and does not contain the entire OTA image header, init\+With\+Data will return nil and the caller should try creating a new \mbox{\hyperlink{interface_w_t_l_o_t_a_header}{WTLOTAHeader}} object and initializing it with a larger chunk of the image. 
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_t_l_o_t_a_header_a677706b40a417e598e62a3ea2a4a6b70}\label{interface_w_t_l_o_t_a_header_a677706b40a417e598e62a3ea2a4a6b70}} 
+\index{WTLOTAHeader@{WTLOTAHeader}!imageDigest@{imageDigest}}
+\index{imageDigest@{imageDigest}!WTLOTAHeader@{WTLOTAHeader}}
+\doxysubsubsection{\texorpdfstring{imageDigest}{imageDigest}}
+{\footnotesize\ttfamily -\/ (NSData$\ast$) image\+Digest\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+A digest of the payload that follows the header. Can be used to verify that the payload is not truncated or corrupted. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source_l00106}{106}} of file \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source}{WTLOTAHeader.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_o_t_a_header_a49df38ebdff02b50caf6af5f33dbef22}\label{interface_w_t_l_o_t_a_header_a49df38ebdff02b50caf6af5f33dbef22}} 
+\index{WTLOTAHeader@{WTLOTAHeader}!imageDigestType@{imageDigestType}}
+\index{imageDigestType@{imageDigestType}!WTLOTAHeader@{WTLOTAHeader}}
+\doxysubsubsection{\texorpdfstring{imageDigestType}{imageDigestType}}
+{\footnotesize\ttfamily -\/ (WTLOTAImage\+Digest\+Type) image\+Digest\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+The specific algorithm that was used to compute image\+Digest. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source_l00111}{111}} of file \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source}{WTLOTAHeader.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_o_t_a_header_a73128e308ee3c331eba914b1349d6872}\label{interface_w_t_l_o_t_a_header_a73128e308ee3c331eba914b1349d6872}} 
+\index{WTLOTAHeader@{WTLOTAHeader}!maxApplicableVersion@{maxApplicableVersion}}
+\index{maxApplicableVersion@{maxApplicableVersion}!WTLOTAHeader@{WTLOTAHeader}}
+\doxysubsubsection{\texorpdfstring{maxApplicableVersion}{maxApplicableVersion}}
+{\footnotesize\ttfamily -\/ (NSNumber$\ast$) max\+Applicable\+Version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+If not nil, specifies the largest software version that this update can be applied on top of. In that case, this value must be compared to the Software\+Version in the Query\+Image command to check whether this image is valid for the OTA requestor. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source_l00127}{127}} of file \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source}{WTLOTAHeader.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_o_t_a_header_accfc066ac60ed1517082daea349d205b}\label{interface_w_t_l_o_t_a_header_accfc066ac60ed1517082daea349d205b}} 
+\index{WTLOTAHeader@{WTLOTAHeader}!minApplicableVersion@{minApplicableVersion}}
+\index{minApplicableVersion@{minApplicableVersion}!WTLOTAHeader@{WTLOTAHeader}}
+\doxysubsubsection{\texorpdfstring{minApplicableVersion}{minApplicableVersion}}
+{\footnotesize\ttfamily -\/ (NSNumber$\ast$) min\+Applicable\+Version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+If not nil, specifies the smallest software version that this update can be applied on top of. In that case, this value must be compared to the Software\+Version in the Query\+Image command to check whether this image is valid for the OTA requestor. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source_l00119}{119}} of file \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source}{WTLOTAHeader.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_o_t_a_header_a68b590e145d58d0b984d57579d7123d7}\label{interface_w_t_l_o_t_a_header_a68b590e145d58d0b984d57579d7123d7}} 
+\index{WTLOTAHeader@{WTLOTAHeader}!payloadSize@{payloadSize}}
+\index{payloadSize@{payloadSize}!WTLOTAHeader@{WTLOTAHeader}}
+\doxysubsubsection{\texorpdfstring{payloadSize}{payloadSize}}
+{\footnotesize\ttfamily -\/ (NSNumber$\ast$) payload\+Size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The size of the actual image payload, which follows the header in the OTA file. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source_l00079}{79}} of file \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source}{WTLOTAHeader.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_o_t_a_header_af939c82f9047fe08e22e8bd8fcc2ecb2}\label{interface_w_t_l_o_t_a_header_af939c82f9047fe08e22e8bd8fcc2ecb2}} 
+\index{WTLOTAHeader@{WTLOTAHeader}!productID@{productID}}
+\index{productID@{productID}!WTLOTAHeader@{WTLOTAHeader}}
+\doxysubsubsection{\texorpdfstring{productID}{productID}}
+{\footnotesize\ttfamily -\/ (NSNumber$\ast$) product\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The identifier of the specific product the image is meant for. May be 0, if the image might apply to more than one product. This is allowed, but not required, to be matched against the product id received in Query Image. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source_l00073}{73}} of file \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source}{WTLOTAHeader.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_o_t_a_header_a75c5e0fdc228495b5e0298e285f9e991}\label{interface_w_t_l_o_t_a_header_a75c5e0fdc228495b5e0298e285f9e991}} 
+\index{WTLOTAHeader@{WTLOTAHeader}!releaseNotesURL@{releaseNotesURL}}
+\index{releaseNotesURL@{releaseNotesURL}!WTLOTAHeader@{WTLOTAHeader}}
+\doxysubsubsection{\texorpdfstring{releaseNotesURL}{releaseNotesURL}}
+{\footnotesize\ttfamily -\/ (NSString$\ast$) release\+Notes\+URL\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+If not nil a URL pointing to release notes for the software update represented by the image. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source_l00100}{100}} of file \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source}{WTLOTAHeader.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_o_t_a_header_a002cee55120337b360db4300dc4125bb}\label{interface_w_t_l_o_t_a_header_a002cee55120337b360db4300dc4125bb}} 
+\index{WTLOTAHeader@{WTLOTAHeader}!softwareVersion@{softwareVersion}}
+\index{softwareVersion@{softwareVersion}!WTLOTAHeader@{WTLOTAHeader}}
+\doxysubsubsection{\texorpdfstring{softwareVersion}{softwareVersion}}
+{\footnotesize\ttfamily -\/ (NSNumber$\ast$) software\+Version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The version of the software contained in this image. This is the version the OTA requestor will be updated to if this image is installed. This can be used to determine whether this image is newer than what the requestor is currently running, by comparing it to the Software\+Version in the Query Image command. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source_l00088}{88}} of file \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source}{WTLOTAHeader.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_o_t_a_header_ae4a3c970054c4f10070a4fe8f0095ff9}\label{interface_w_t_l_o_t_a_header_ae4a3c970054c4f10070a4fe8f0095ff9}} 
+\index{WTLOTAHeader@{WTLOTAHeader}!softwareVersionString@{softwareVersionString}}
+\index{softwareVersionString@{softwareVersionString}!WTLOTAHeader@{WTLOTAHeader}}
+\doxysubsubsection{\texorpdfstring{softwareVersionString}{softwareVersionString}}
+{\footnotesize\ttfamily -\/ (NSString$\ast$) software\+Version\+String\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Human-\/readable version of software\+Version. This must not be used for deciding which versions are newer or older; use software\+Version for that. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source_l00094}{94}} of file \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source}{WTLOTAHeader.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_o_t_a_header_a1a6a2b984484475ffc1bf10bcdac911b}\label{interface_w_t_l_o_t_a_header_a1a6a2b984484475ffc1bf10bcdac911b}} 
+\index{WTLOTAHeader@{WTLOTAHeader}!vendorID@{vendorID}}
+\index{vendorID@{vendorID}!WTLOTAHeader@{WTLOTAHeader}}
+\doxysubsubsection{\texorpdfstring{vendorID}{vendorID}}
+{\footnotesize\ttfamily -\/ (NSNumber$\ast$) vendor\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The identifier of the vendor whose product this image is meant for.
+
+This field can be compared to the vendor id received in the Query Image command to determine whether an image matches.
+
+This field may be 0, in which case the image might apply to products from more than one vendor. If it\textquotesingle{}s nonzero, it must match the vendor id in Query Image for this image to be considered. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source_l00066}{66}} of file \mbox{\hyperlink{_w_t_l_o_t_a_header_8h_source}{WTLOTAHeader.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_o_t_a_header_8h}{WTLOTAHeader.\+h}}\end{DoxyCompactItemize}

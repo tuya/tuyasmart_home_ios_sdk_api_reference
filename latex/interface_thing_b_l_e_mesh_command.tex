@@ -1,0 +1,133 @@
+\hypertarget{interface_thing_b_l_e_mesh_command}{}\doxysection{Thing\+BLEMesh\+Command Class Reference}
+\label{interface_thing_b_l_e_mesh_command}\index{ThingBLEMeshCommand@{ThingBLEMeshCommand}}
+
+
+The Bluetooth mesh protocol for certain commands.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+BLEMesh\+Command.\+h$>$}
+
+Inheritance diagram for Thing\+BLEMesh\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.520362cm]{interface_thing_b_l_e_mesh_command}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Thing\+BLEMesh\+Command\+Type \mbox{\hyperlink{interface_thing_b_l_e_mesh_command_afc970c534805e9a5fee4e0b263b6a7ca}{command\+Type}}
+\begin{DoxyCompactList}\small\item\em The command type. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_mesh_command_a18582f021783582fcb54c33f4617465d}{pcc}}
+\begin{DoxyCompactList}\small\item\em In each product category code (PCC), a small category is followed by a major category. For example, the PCC of a cool white and colored light (RGBC) is {\ttfamily 0401}. In this case, {\ttfamily 04} represents a cool white and colored light (RGBC) and {\ttfamily 01} represents the major category of lights. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{interface_thing_b_l_e_mesh_command_a68a54194e66941afae140209f2f6c2d5}{address}}
+\begin{DoxyCompactList}\small\item\em The address of a device or a group. Valid values of a device address\+: 1 to 255. Valid values of a group address\+: 0x8001 and 0x8008. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_mesh_command_a7de800417fc92264f98768c9748cd150}{is\+Group}}
+\begin{DoxyCompactList}\small\item\em Specifies whether a group command is used. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_mesh_command_aa936dec12ecc21abd60a0134bbee02b3}{data\+Params}}
+\begin{DoxyCompactList}\small\item\em For more information about the command data, see the documentation. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_mesh_command_a42764662858e7dff1577c37e214f96e7}{log\+Description}}
+\begin{DoxyCompactList}\small\item\em The output of secondary log files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The Bluetooth mesh protocol for certain commands. 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source_l00024}{24}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source}{Thing\+BLEMesh\+Command.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_b_l_e_mesh_command_a68a54194e66941afae140209f2f6c2d5}\label{interface_thing_b_l_e_mesh_command_a68a54194e66941afae140209f2f6c2d5}} 
+\index{ThingBLEMeshCommand@{ThingBLEMeshCommand}!address@{address}}
+\index{address@{address}!ThingBLEMeshCommand@{ThingBLEMeshCommand}}
+\doxysubsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily -\/ (uint32\+\_\+t) address\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The address of a device or a group. Valid values of a device address\+: 1 to 255. Valid values of a group address\+: 0x8001 and 0x8008. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source_l00033}{33}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source}{Thing\+BLEMesh\+Command.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_mesh_command_afc970c534805e9a5fee4e0b263b6a7ca}\label{interface_thing_b_l_e_mesh_command_afc970c534805e9a5fee4e0b263b6a7ca}} 
+\index{ThingBLEMeshCommand@{ThingBLEMeshCommand}!commandType@{commandType}}
+\index{commandType@{commandType}!ThingBLEMeshCommand@{ThingBLEMeshCommand}}
+\doxysubsubsection{\texorpdfstring{commandType}{commandType}}
+{\footnotesize\ttfamily -\/ (Thing\+BLEMesh\+Command\+Type) command\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The command type. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source_l00027}{27}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source}{Thing\+BLEMesh\+Command.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_mesh_command_aa936dec12ecc21abd60a0134bbee02b3}\label{interface_thing_b_l_e_mesh_command_aa936dec12ecc21abd60a0134bbee02b3}} 
+\index{ThingBLEMeshCommand@{ThingBLEMeshCommand}!dataParams@{dataParams}}
+\index{dataParams@{dataParams}!ThingBLEMeshCommand@{ThingBLEMeshCommand}}
+\doxysubsubsection{\texorpdfstring{dataParams}{dataParams}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$) data\+Params\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+For more information about the command data, see the documentation. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source_l00039}{39}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source}{Thing\+BLEMesh\+Command.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_mesh_command_a7de800417fc92264f98768c9748cd150}\label{interface_thing_b_l_e_mesh_command_a7de800417fc92264f98768c9748cd150}} 
+\index{ThingBLEMeshCommand@{ThingBLEMeshCommand}!isGroup@{isGroup}}
+\index{isGroup@{isGroup}!ThingBLEMeshCommand@{ThingBLEMeshCommand}}
+\doxysubsubsection{\texorpdfstring{isGroup}{isGroup}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Group\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Specifies whether a group command is used. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source_l00036}{36}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source}{Thing\+BLEMesh\+Command.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_mesh_command_a42764662858e7dff1577c37e214f96e7}\label{interface_thing_b_l_e_mesh_command_a42764662858e7dff1577c37e214f96e7}} 
+\index{ThingBLEMeshCommand@{ThingBLEMeshCommand}!logDescription@{logDescription}}
+\index{logDescription@{logDescription}!ThingBLEMeshCommand@{ThingBLEMeshCommand}}
+\doxysubsubsection{\texorpdfstring{logDescription}{logDescription}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) log\+Description\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The output of secondary log files. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source_l00042}{42}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source}{Thing\+BLEMesh\+Command.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_mesh_command_a18582f021783582fcb54c33f4617465d}\label{interface_thing_b_l_e_mesh_command_a18582f021783582fcb54c33f4617465d}} 
+\index{ThingBLEMeshCommand@{ThingBLEMeshCommand}!pcc@{pcc}}
+\index{pcc@{pcc}!ThingBLEMeshCommand@{ThingBLEMeshCommand}}
+\doxysubsubsection{\texorpdfstring{pcc}{pcc}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) pcc\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+In each product category code (PCC), a small category is followed by a major category. For example, the PCC of a cool white and colored light (RGBC) is {\ttfamily 0401}. In this case, {\ttfamily 04} represents a cool white and colored light (RGBC) and {\ttfamily 01} represents the major category of lights. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source_l00030}{30}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h_source}{Thing\+BLEMesh\+Command.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEMesh\+Kit/\+Build/\+Thing\+Smart\+BLEMesh\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLEMesh\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h}{Thing\+BLEMesh\+Command.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEMesh\+Kit/\+Build/\+Thing\+Smart\+BLEMesh\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLEMesh\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_b_l_e_mesh_command_8h}{Thing\+BLEMesh\+Command.\+h}}\end{DoxyCompactItemize}

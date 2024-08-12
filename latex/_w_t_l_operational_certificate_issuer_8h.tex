@@ -1,0 +1,146 @@
+\hypertarget{_w_t_l_operational_certificate_issuer_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.framework/\+Headers/\+WTLOperational\+Certificate\+Issuer.h File Reference}
+\label{_w_t_l_operational_certificate_issuer_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLOperationalCertificateIssuer.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLOperationalCertificateIssuer.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import $<$Water/\+WTLCSRInfo.\+h$>$}\newline
+{\ttfamily \#import $<$Water/\+WTLCertificates.\+h$>$}\newline
+{\ttfamily \#import $<$Water/\+WTLDevice\+Attestation\+Info.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}{API\+\_\+\+AVAILABLE}} (instancetype) new \mbox{\hyperlink{_w_t_l_clusters_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+end \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_af98726e3245c016574823a07fb4c8dbb}{WTL\+\_\+\+DEPRECATED}} (\char`\"{}WTLNOCChain\+Issuer is deprecated\char`\"{}, macos(13.\+0, 13.\+3), watchos(9.\+1, 9.\+4), tvos(16.\+1, 16.\+4)) typedef void($^\wedge$WTLNOCChain\+Generation\+Complete\+Handler)(NSData $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aaee3dfe945ca6db5e3f0168cbd7097a4}{operational\+Certificate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+instancetype \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a1c53cf56377bc6204a954a99505b8c55}{init\+With\+Operational\+Certificate}}
+\item 
+\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aaee3dfe945ca6db5e3f0168cbd7097a4}{operational\+Certificate}}
+\item 
+\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a1df3d186b78939727302b30a1a1e5c56}{intermediate\+Certificate}}
+\item 
+\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a45eb53d44e32cff49d2c9ead762597bd}{root\+Certificate}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_ab9ffa0d44f4313ad07137d877049f525}{admin\+Subject}}
+\item 
+end \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}{API\+\_\+\+AVAILABLE}}(macos(13.\+3), watchos(9.\+4), tvos(16.\+4)) @protocol WTLOperational\+Certificate\+Issuer @required -\/(void) issue\+Operational\+Certificate\+For\+Request BOOL \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a2fe6b0422618cb83f3ae2b17e7a8aa34}{should\+Skip\+Attestation\+Certificate\+Validation}}
+\begin{DoxyCompactList}\small\item\em When an WTLOperational\+Certificate\+Issuer is set for an \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}}, it will be used to issue operational certificates as needed during commissioning. \end{DoxyCompactList}\item 
+end NSData NSData NSData $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_ab87c5f9fab244bd7d62f91ae926fbb30}{ipk}}
+\item 
+end NSData NSData NSData $\ast$\+\_\+\+Nullable NSNumber $\ast$\+\_\+\+Nullable NSError $\ast$\+\_\+\+\_\+autoreleasing $\ast$ \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}\label{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}} 
+\index{WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE()}{API\_AVAILABLE()}}
+{\footnotesize\ttfamily API\+\_\+\+AVAILABLE (\begin{DoxyParamCaption}\item[{instancetype}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [new]}}
+
+A representation of the operational certificate chain for a node. \mbox{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_af98726e3245c016574823a07fb4c8dbb}\label{_w_t_l_operational_certificate_issuer_8h_af98726e3245c016574823a07fb4c8dbb}} 
+\index{WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}!WTL\_DEPRECATED@{WTL\_DEPRECATED}}
+\index{WTL\_DEPRECATED@{WTL\_DEPRECATED}!WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED()}{WTL\_DEPRECATED()}}
+{\footnotesize\ttfamily end WTL\+\_\+\+DEPRECATED (\begin{DoxyParamCaption}\item[{\char`\"{}WTLNOCChain\+Issuer is deprecated\char`\"{}}]{,  }\item[{macos(13.\+0, 13.\+3)}]{,  }\item[{watchos(9.\+1, 9.\+4)}]{,  }\item[{tvos(16.\+1, 16.\+4)}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_ab9ffa0d44f4313ad07137d877049f525}\label{_w_t_l_operational_certificate_issuer_8h_ab9ffa0d44f4313ad07137d877049f525}} 
+\index{WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}!adminSubject@{adminSubject}}
+\index{adminSubject@{adminSubject}!WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}}
+\doxysubsubsection{\texorpdfstring{adminSubject}{adminSubject}}
+{\footnotesize\ttfamily end NSData NSData NSData $\ast$\+\_\+\+Nullable NSNumber $\ast$\+\_\+\+Nullable admin\+Subject\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+admin\+Subject is passed to the device as part of the Add\+NOC command. A nil admin\+Subject means the node id of the relevant \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} will be used. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source_l00056}{56}} of file \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source}{WTLOperational\+Certificate\+Issuer.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}\label{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}} 
+\index{WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}!error@{error}}
+\index{error@{error}!WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}}
+\doxysubsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily end NSData NSData NSData$\ast$ \+\_\+\+Nullable NSNumber$\ast$ \+\_\+\+Nullable NSError$\ast$ \+\_\+\+\_\+autoreleasing$\ast$ error}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source_l00119}{119}} of file \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source}{WTLOperational\+Certificate\+Issuer.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_a1c53cf56377bc6204a954a99505b8c55}\label{_w_t_l_operational_certificate_issuer_8h_a1c53cf56377bc6204a954a99505b8c55}} 
+\index{WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}!initWithOperationalCertificate@{initWithOperationalCertificate}}
+\index{initWithOperationalCertificate@{initWithOperationalCertificate}!WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}}
+\doxysubsubsection{\texorpdfstring{initWithOperationalCertificate}{initWithOperationalCertificate}}
+{\footnotesize\ttfamily instancetype init\+With\+Operational\+Certificate}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source_l00037}{37}} of file \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source}{WTLOperational\+Certificate\+Issuer.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_a1df3d186b78939727302b30a1a1e5c56}\label{_w_t_l_operational_certificate_issuer_8h_a1df3d186b78939727302b30a1a1e5c56}} 
+\index{WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}!intermediateCertificate@{intermediateCertificate}}
+\index{intermediateCertificate@{intermediateCertificate}!WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}}
+\doxysubsubsection{\texorpdfstring{intermediateCertificate}{intermediateCertificate}}
+{\footnotesize\ttfamily end NSData$\ast$ intermediate\+Certificate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+A nil intermediate\+Certificate means there is no intermediate. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source_l00047}{47}} of file \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source}{WTLOperational\+Certificate\+Issuer.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_ab87c5f9fab244bd7d62f91ae926fbb30}\label{_w_t_l_operational_certificate_issuer_8h_ab87c5f9fab244bd7d62f91ae926fbb30}} 
+\index{WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}!ipk@{ipk}}
+\index{ipk@{ipk}!WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}}
+\doxysubsubsection{\texorpdfstring{ipk}{ipk}}
+{\footnotesize\ttfamily end NSData NSData NSData$\ast$ \+\_\+\+Nullable ipk}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source_l00119}{119}} of file \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source}{WTLOperational\+Certificate\+Issuer.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_aaee3dfe945ca6db5e3f0168cbd7097a4}\label{_w_t_l_operational_certificate_issuer_8h_aaee3dfe945ca6db5e3f0168cbd7097a4}} 
+\index{WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}!operationalCertificate@{operationalCertificate}}
+\index{operationalCertificate@{operationalCertificate}!WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}}
+\doxysubsubsection{\texorpdfstring{operationalCertificate}{operationalCertificate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} operational\+Certificate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source_l00042}{42}} of file \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source}{WTLOperational\+Certificate\+Issuer.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_a45eb53d44e32cff49d2c9ead762597bd}\label{_w_t_l_operational_certificate_issuer_8h_a45eb53d44e32cff49d2c9ead762597bd}} 
+\index{WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}!rootCertificate@{rootCertificate}}
+\index{rootCertificate@{rootCertificate}!WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}}
+\doxysubsubsection{\texorpdfstring{rootCertificate}{rootCertificate}}
+{\footnotesize\ttfamily end NSData NSData$\ast$ root\+Certificate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source_l00049}{49}} of file \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source}{WTLOperational\+Certificate\+Issuer.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_a2fe6b0422618cb83f3ae2b17e7a8aa34}\label{_w_t_l_operational_certificate_issuer_8h_a2fe6b0422618cb83f3ae2b17e7a8aa34}} 
+\index{WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}!shouldSkipAttestationCertificateValidation@{shouldSkipAttestationCertificateValidation}}
+\index{shouldSkipAttestationCertificateValidation@{shouldSkipAttestationCertificateValidation}!WTLOperationalCertificateIssuer.h@{WTLOperationalCertificateIssuer.h}}
+\doxysubsubsection{\texorpdfstring{shouldSkipAttestationCertificateValidation}{shouldSkipAttestationCertificateValidation}}
+{\footnotesize\ttfamily end \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}{API\+\_\+\+AVAILABLE}} (macos(13.\+3), watchos(9.\+4), tvos(16.\+4)) @protocol WTLOperational\+Certificate\+Issuer @required -\/ (void)issue\+Operational\+Certificate\+For\+Request BOOL should\+Skip\+Attestation\+Certificate\+Validation\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+When an WTLOperational\+Certificate\+Issuer is set for an \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}}, it will be used to issue operational certificates as needed during commissioning. 
+
+Commissioning will pause when issue\+Operational\+Certificate\+For\+Request\+:attestation\+Info\+:completion\+: is called, and resume when the completion is invoked with a non-\/nil WTLOperational\+Certificate\+Chain. When the completion is invoked with an error, commissioning will fail.
+
+This will be called on the dispatch queue passed as operational\+Certificate\+Issuer\+Queue in the WTLDevice\+Controller\+Factory\+Params.
+
+The csr\+Nonce in the provided WTLOperational\+CSRInfo will be the nonce that was sent in the CSRRequest command, which will be guaranteed, at this point, to match the nonce in the CSRResponse command. A way for WTLOperational\+Certificate\+Issuer to control whether it wants the Matter framework to perform device attestation checks that require trust anchors. If this returns NO, then product\+Attestation\+Authority\+Certificates should be passed in via WTLDevice\+Controller\+Factory\+Params, as well as any desired additional certification\+Declaration\+Certificates.
+
+If this returns YES, then all device attestation checks that require some sort of trust anchors are delegated to this WTLOperational\+Certificate\+Issuer, which can use the arguments passed to issue\+Operational\+Certificate\+For\+Request\+:attestation\+Info\+:controller\+:completion\+: to perform the checks.
+
+Specifically, the following device attestation checks are not performed and must be done by the WTLOperational\+Certificate\+Issuer\+:
+
+(1) Make sure the PAA is valid and approved by CSA. (2) VID-\/scoped PAA check\+: if the PAA is VID scoped, then its VID must match the DAC VID. (3) cert chain check\+: verify PAI is signed by PAA, and DAC is signed by PAI. (4) PAA subject key id extraction\+: the PAA subject key must match the PAA key referenced in the PAI. (5) CD signature check\+: make sure a valid CSA CD key is used to sign the CD.
+
+This will be read on an arbitrary queue and must not block or call any Matter APIs. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source_l00113}{113}} of file \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_source}{WTLOperational\+Certificate\+Issuer.\+h}}.
+

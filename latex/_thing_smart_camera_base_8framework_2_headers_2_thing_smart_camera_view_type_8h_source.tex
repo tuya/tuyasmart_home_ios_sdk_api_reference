@@ -1,0 +1,55 @@
+\hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source}{}\doxysection{Thing\+Smart\+Camera\+View\+Type.\+h}
+\label{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartCameraBase/Build/ThingSmartCameraBase.xcframework/ios-\/arm64/ThingSmartCameraBase.framework/Headers/ThingSmartCameraViewType.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartCameraBase/Build/ThingSmartCameraBase.xcframework/ios-\/arm64/ThingSmartCameraBase.framework/Headers/ThingSmartCameraViewType.h}}
+\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00001}\mbox{\hyperlink{protocol_thing_smart_camera_view_delegate-p_ab5a01d015e547c2984af7f755ccf831b}{00001}} \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00002}00002 \textcolor{comment}{//  ThingSmartCameraViewType.h}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00003}00003 \textcolor{comment}{//  ThingSmartCameraBase}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00005}00005 \textcolor{comment}{//  Created by Aaron on 2022/7/19.}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00008}00008 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00010}00010 \textcolor{preprocessor}{\#import "{}\mbox{\hyperlink{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_video_view_type_8h}{ThingSmartVideoViewType.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00012}00012 \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_thing_smart_camera_view_type-p}{ThingSmartCameraViewType}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00013}00013 \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_thing_smart_camera_view_delegate-p}{ThingSmartCameraViewDelegate}} <NSObject>}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00015}00015 -\/ (void)didTapCameraView:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_thing_smart_camera_view_type-p}{ThingSmartCameraViewType}}>)cameraView reponse:(\textcolor{keywordtype}{id})reponse;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00017}00017 \textcolor{comment}{//response, NSDictionary, @\{ zoomStatus scaleStatus currentVideoScale \}}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00018}00018 -\/ (void)didZoomFreeCameraView:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_thing_smart_camera_view_type-p}{ThingSmartCameraViewType}}>)cameraView reponse:(\textcolor{keywordtype}{id})reponse;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00020}00020 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00022}00022 \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_thing_smart_camera_view_type-p}{ThingSmartCameraViewType}} <\mbox{\hyperlink{protocol_thing_smart_video_view_type-p}{ThingSmartVideoViewType}}>}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00025}00025 \textcolor{keyword}{@property} (nonatomic, assign) \textcolor{keywordtype}{int} \mbox{\hyperlink{protocol_thing_smart_camera_view_type-p_a2f7bff76d49a9fb6db619fb6b516b6cc}{scaleMode}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00028}00028 \textcolor{keyword}{@property} (nonatomic, assign) BOOL \mbox{\hyperlink{protocol_thing_smart_camera_view_type-p_aa172a5dcae6418383d65a3d88b6fc6eb}{isScalable}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00031}00031 \textcolor{keyword}{@property} (nonatomic, assign) \textcolor{keywordtype}{float} \mbox{\hyperlink{protocol_thing_smart_camera_view_type-p_a840a3231d0fe7762f5ce9df37a32c174}{maxScaleFactor}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00034}00034 \textcolor{keyword}{@property} (nonatomic, assign) \textcolor{keywordtype}{float} \mbox{\hyperlink{protocol_thing_smart_camera_view_type-p_aa1cd0aa6f5229e02f22f50129169857b}{scaleFactor}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00037}00037 \textcolor{keyword}{@property} (nonatomic, assign) \textcolor{keywordtype}{float} \mbox{\hyperlink{protocol_thing_smart_camera_view_type-p_a5cf5e3adbe38ced88fca187edd54bfb9}{rotateZ}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00040}00040 \textcolor{keyword}{@property} (nonatomic, assign) BOOL \mbox{\hyperlink{protocol_thing_smart_camera_view_type-p_aca37b1976f436ab3b51161f4595bea1b}{enableFeatureTracking}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00043}00043 \textcolor{keyword}{@property} (nonatomic, assign) CGSize \mbox{\hyperlink{protocol_thing_smart_camera_view_type-p_adb8e0a02f7d1cf8ca06f57e3fcb12699}{videoFrameSize}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00046}00046 \textcolor{keyword}{@property} (nonatomic, assign) BOOL \mbox{\hyperlink{protocol_thing_smart_camera_view_type-p_aa3f6f4c2f1271dd9380322b4df3db1bb}{isPTZControllable}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00048}00048 \textcolor{comment}{//摇杆震动反馈和方向按键 @\{@"{}up"{}:@"{}"{}, @"{}left"{}:@"{}"{}, @"{}down"{}:@"{}"{}, @"{}right"{}:@"{}"{}, @"{}rockerEnabled"{}:@"{}"{}, @"{}showIndicator"{}:@"{}"{}\}}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00049}00049 \textcolor{keyword}{@property} (nonatomic, strong) NSDictionary *\mbox{\hyperlink{protocol_thing_smart_camera_view_type-p_a8d935abca2eae84e9565503fc1463762}{rockerDirectionsParams}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00052}00052 \textcolor{keyword}{@property} (nonatomic, copy) NSDictionary *\mbox{\hyperlink{protocol_thing_smart_camera_view_type-p_aee77f6cc6ef8c4b319568de73765fdd4}{extParams}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00055}00055 \textcolor{keyword}{@property} (nonatomic, strong, readonly) id <ThingSmartVideoViewType> \mbox{\hyperlink{protocol_thing_smart_camera_view_type-p_af1568e36bad9e288479c025d57cd4dff}{videoView}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00058}00058 \textcolor{keyword}{@property} (nonatomic, weak) id <ThingSmartCameraViewDelegate> \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a635b292c6056d8511c5a0b4a11e1dd70}{delegate}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_base_8framework_2_headers_2_thing_smart_camera_view_type_8h_source_l00060}00060 \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

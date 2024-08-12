@@ -1,0 +1,56 @@
+\hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source}{}\doxysection{Thing\+AESImpl.\+h}
+\label{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingFoundationKit/ThingFoundationKit.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingFoundationKit.framework/Headers/ThingAESImpl.h@{/Users/humtong/Downloads/Pods\_副本/ThingFoundationKit/ThingFoundationKit.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingFoundationKit.framework/Headers/ThingAESImpl.h}}
+\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00002}00002 \textcolor{comment}{//  ThingAESImpl.h}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00003}00003 \textcolor{comment}{//  ThingFoundationKit}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00005}00005 \textcolor{comment}{//  Created by ThingInc on 2019/4/17.}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00008}00008 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00010}\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_ab3793168d0a290c262859f71be115f6e}{00010}} \textcolor{keyword}{typedef} \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_ab3793168d0a290c262859f71be115f6e}{NS\_ENUM}}(NSInteger, ThingAESKeySize) \{}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00011}00011     ThingAESKey128Bits,    \textcolor{comment}{// 128位}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00012}00012     ThingAESKey256Bits     \textcolor{comment}{// 256位}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00013}00013 \};}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00015}\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_ae0390b0dbf0b87692119e3ac6bb1eb3e}{00015}} \textcolor{keyword}{typedef} \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_ab3793168d0a290c262859f71be115f6e}{NS\_ENUM}}(NSInteger, ThingAESMode) \{}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00016}00016     ThingAESModeP7ECB,     \textcolor{comment}{// ECB模式 kCCOptionPKCS7Padding | kCCOptionECBMode}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00017}00017     ThingAESModeP7CBC      \textcolor{comment}{// CBC模式 kCCOptionPKCS7Padding}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00018}00018 \};}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00021}00021 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_a_e_s_config}{ThingAESConfig}} : NSObject}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00026}00026 \textcolor{keyword}{@property} (nonatomic, assign) ThingAESKeySize \mbox{\hyperlink{interface_thing_a_e_s_config_a12ce42054ce95664c7334b7271c5ed48}{keySize}};}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00031}00031 \textcolor{keyword}{@property} (nonatomic, assign) ThingAESMode \mbox{\hyperlink{interface_thing_a_e_s_config_affdb2922a009a875397d8c1a5a7f6099}{mode}};}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00036}\mbox{\hyperlink{interface_thing_a_e_s_impl_ae9ae495cbdfe665bcbf5abce94b1ed21}{00036}} \textcolor{keyword}{@property} (nonatomic, strong) NSData *\mbox{\hyperlink{interface_thing_a_e_s_config_a8c892ceac876092658e916d53276a17b}{CBCIV}};}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00038}00038 + (instancetype)\mbox{\hyperlink{interface_thing_a_e_s_config_adec0db96429ba31004975fa85fce99c0}{default128Config}};}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00040}00040 + (instancetype)\mbox{\hyperlink{interface_thing_a_e_s_config_a3ba3f52d9a42c110d62acf07616230f5}{default256Config}};}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00042}00042 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00045}00045 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_a_e_s_impl}{ThingAESImpl}} : NSObject}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00055}00055 + (NSData *)encryptData:(NSData *)data keyData:(NSData *)keyData config:(\mbox{\hyperlink{interface_thing_a_e_s_config}{ThingAESConfig}} *)config;}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00065}00065 + (NSData *)decryptData:(NSData *)data keyData:(NSData *)keyData config:(\mbox{\hyperlink{interface_thing_a_e_s_config}{ThingAESConfig}} *)config;}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00068}00068 \textcolor{preprocessor}{\# pragma mark -\/ deprecated}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00069}00069 \textcolor{comment}{// 128:ECB  256:CBC}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00070}00070 + (NSData *)encryptData:(NSData *)data keyData:(NSData *)keyData keySize:(ThingAESKeySize)keySize DEPRECATED\_MSG\_ATTRIBUTE("{}use encryptData:keyData:config: instead."{});}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00072}00072 \textcolor{comment}{// 128:ECB  256:CBC}}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00073}00073 + (NSData *)decryptData:(NSData *)data keyData:(NSData *)keyData keySize:(ThingAESKeySize)keySize DEPRECATED\_MSG\_ATTRIBUTE("{}use decryptData:keyData:config: instead."{});}
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_a_e_s_impl_8h_source_l00075}00075 \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

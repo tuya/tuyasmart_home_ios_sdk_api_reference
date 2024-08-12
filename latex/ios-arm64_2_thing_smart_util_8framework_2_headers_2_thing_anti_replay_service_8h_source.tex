@@ -1,0 +1,31 @@
+\hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source}{}\doxysection{Thing\+Anti\+Replay\+Service.\+h}
+\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-\/arm64/ThingSmartUtil.framework/Headers/ThingAntiReplayService.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-\/arm64/ThingSmartUtil.framework/Headers/ThingAntiReplayService.h}}
+\mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00002}00002 \textcolor{comment}{//  ThingAntiReplayService.h}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00003}00003 \textcolor{comment}{//  ThingSmartUtil}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00005}00005 \textcolor{comment}{//  Copyright (c) 2014-\/2024 Tuya Inc. (https://developer.tuya.com)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00008}00008 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00009}00009 \textcolor{preprocessor}{\#import "{}\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_model_8h}{ThingAntiReplayModel.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00011}00011 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00013}00013 \textcolor{comment}{//防重放攻击}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00014}00014 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_anti_replay_service}{ThingAntiReplayService}} : NSObject}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00016}00016 + (instancetype)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_ad7881a4da5a21e14cc4a3b05a73ff852}{sharedInstance}};}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00018}00018 -\/ (\mbox{\hyperlink{interface_thing_anti_replay_model}{ThingAntiReplayModel}} *)getReplayPublishModel:(nonnull NSString *)devId;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00020}00020 -\/ (BOOL)isNormalReplayReport:(NSInteger)s r:(NSInteger)r devId:(nonnull NSString *)devId;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00023}00023 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_anti_replay_service_8h_source_l00025}\mbox{\hyperlink{interface_thing_anti_replay_service_a0191ffaf186b68afc28282ed510b285b}{00025}} NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

@@ -1,0 +1,1593 @@
+\hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+P2\+PSDK/\+Build/\+Thing\+P2\+PSDK.xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+P2\+PSDK.framework/\+Headers/imm\+\_\+p2p\+\_\+defs.h File Reference}
+\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingP2PSDK/Build/ThingP2PSDK.xcframework/ios-\/x86\_64-\/simulator/ThingP2PSDK.framework/Headers/imm\_p2p\_defs.h@{/Users/humtong/Downloads/Pods\_副本/ThingP2PSDK/Build/ThingP2PSDK.xcframework/ios-\/x86\_64-\/simulator/ThingP2PSDK.framework/Headers/imm\_p2p\_defs.h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structimm__p2p__rtc__audio__codec}{imm\+\_\+p2p\+\_\+rtc\+\_\+audio\+\_\+codec}}
+\item 
+struct \mbox{\hyperlink{structimm__p2p__rtc__video__codec}{imm\+\_\+p2p\+\_\+rtc\+\_\+video\+\_\+codec}}
+\item 
+struct \mbox{\hyperlink{structimm__p2p__rtc__frame__t}{imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structimm__p2p__rtc__session__info__t}{imm\+\_\+p2p\+\_\+rtc\+\_\+session\+\_\+info\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structimm__p2p__rtc__cb}{imm\+\_\+p2p\+\_\+rtc\+\_\+cb}}
+\item 
+struct \mbox{\hyperlink{structimm__p2p__rtc__options}{imm\+\_\+p2p\+\_\+rtc\+\_\+options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1f274c38987b61e573236f60dbb055f5}{IMM\+\_\+\+P2\+P\+\_\+\+ID\+\_\+\+LEN\+\_\+\+MAX}}~80
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81fa9589fef1a58ed38c44127c116d98}{IMM\+\_\+\+P2\+P\+\_\+\+CHANNEL\+\_\+\+NUMBER\+\_\+\+MAX}}~330
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6db8aaf73dd217e2d4141cbb62a994d0}{IMM\+\_\+\+P2\+P\+\_\+\+SESSION\+\_\+\+NUMBER\+\_\+\+MAX}}~1024
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a8bf01d2bb3680a9f18e9e63d1cd66d97}{IMM\+\_\+\+P2\+P\+\_\+\+VIDEO\+\_\+\+BITRATE\+\_\+\+MIN}}~(600)
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adfa0074b5e0462042b48c2a6803c3e4b}{IMM\+\_\+\+P2\+P\+\_\+\+VIDEO\+\_\+\+BITRATE\+\_\+\+MAX}}~(4000)
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab20792ad8659dbcbb18748ae865bb955}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SUCCESSFUL}}~0
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a19290f0f04d48677a2e3bd0fbcc011b9}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+NOT\+\_\+\+INITIALIZED}}~-\/1
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa169c2f8a720f6ccf5b5422f1b283b74}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+ALREADY\+\_\+\+INITIALIZED}}~-\/2
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_af23bc1eef245afe329196bd8a8ffbc85}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TIME\+\_\+\+OUT}}~-\/3
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a933c74b76790b78a73d20ade7e794b31}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+ID}}~-\/4
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a8dc0db43215238cbe48efa3af98fa91c}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+PARAMETER}}~-\/5
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a90cbd7ac6147ae6910932ea927f2aa74}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+NOT\+\_\+\+ONLINE}}~-\/6
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a830a4be0ad44eb130ed34bb2357272eb}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+FAIL\+\_\+\+TO\+\_\+\+RESOLVE\+\_\+\+NAME}}~-\/7
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab26c59337fb73c2f407cb0aa11d4d90a}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+PREFIX}}~-\/8
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5354dec612e630746ad69cca2071259a}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+ID\+\_\+\+OUT\+\_\+\+OF\+\_\+\+DATE}}~-\/9
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a9b5d43b14bd7bf60351ef5e6a0af2a90}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+NO\+\_\+\+RELAY\+\_\+\+SERVER\+\_\+\+AVAILABLE}}~-\/10
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a02aa18334d51a3d5603ec24b0baefcca}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+SESSION\+\_\+\+HANDLE}}~-\/11
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a49df4d39337f9351a2416afb1f68ace2}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SESSION\+\_\+\+CLOSED\+\_\+\+REMOTE}}~-\/12
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ad5f4cf8a65bd51bd0e8b962d45fb2948}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SESSION\+\_\+\+CLOSED\+\_\+\+TIMEOUT}}~-\/13
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a86e4cfe4a21176f5d8a92607e836e858}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SESSION\+\_\+\+CLOSED\+\_\+\+CALLED}}~-\/14
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6a898a5ceca25c1a65534d5e1c72d728}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+REMOTE\+\_\+\+SITE\+\_\+\+BUFFER\+\_\+\+FULL}}~-\/15
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5ae6c836f770eaf9b8b7792a8fb6651e}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+USER\+\_\+\+LISTEN\+\_\+\+BREAK}}~-\/16
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_abaa4d02db676e53038024a93fab4e94f}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+MAX\+\_\+\+SESSION}}~-\/17
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a3d01c0a6121d608b559a47d98f9b8dce}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+UDP\+\_\+\+PORT\+\_\+\+BIND\+\_\+\+FAILED}}~-\/18
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a65d3a323c5234cb8774f36ad0f21e960}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+USER\+\_\+\+CONNECT\+\_\+\+BREAK}}~-\/19
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adceec070586b1662a4d6297eded1ba6a}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SESSION\+\_\+\+CLOSED\+\_\+\+INSUFFICIENT\+\_\+\+MEMORY}}~-\/20
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5e2b66da472610916958d5563a9a64ff}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+APILICENSE}}~-\/21
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_acfaa85811e04945094f5e1364a65a152}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+FAIL\+\_\+\+TO\+\_\+\+CREATE\+\_\+\+THREAD}}~-\/22
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_acd3bfd65ae886d1cb17e4ef31a0e4586}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+OUT\+\_\+\+OF\+\_\+\+SESSION}}~-\/23
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ad73c480d5a6b43ab5156b1fca68bb1fa}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+PRE\+\_\+\+SESSION}}~-\/24
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_af6ce99f44bc95ae23b18992011db239e}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+PRE\+\_\+\+SESSION\+\_\+\+NOT\+\_\+\+CONNECTED}}~-\/25
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a4c10f8fbfdf1f19ce0fd4e3d52b36011}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+PRE\+\_\+\+SESSION\+\_\+\+ALREADY\+\_\+\+ACTIVE}}~-\/26
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a34fe6614fd45d7c5dc51b6042cb13417}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+PRE\+\_\+\+SESSION\+\_\+\+NOT\+\_\+\+ACTIVE}}~-\/27
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab27daa5ef78638c25a2a8615aef13ab8}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+PRE\+\_\+\+SESSION\+\_\+\+SUSPENDED}}~-\/28
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a9fec07b65928e926e4c46b382b401b29}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+OUT\+\_\+\+OF\+\_\+\+MEMORY}}~-\/29
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a8149029b7ca7ad1abafb859d0ec44132}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+HTTP\+\_\+\+FAILED}}~-\/30
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a217853d3b51e2edb178272d4a1b54847}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+PRECONNECT\+\_\+\+UNSUPPORTED}}~-\/31
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_add93eeeee2fbaeb8c0ae82bfc39b2951}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DTLS\+\_\+\+HANDSHAKE\+\_\+\+FAILED\+\_\+\+FINGERPRINT}}~-\/32
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa6b50002247ff3502bba645cfcb1700b}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+GET\+\_\+\+TOKEN\+\_\+\+TIMEOUT}}~-\/33
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a214359c193c286337631f1a9b38d5f60}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+AUTH\+\_\+\+FAILED}}~-\/34
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_affb067e76acae05ebf576980c74d7ca7}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INIT\+\_\+\+MBEDTLS\+\_\+\+MD\+\_\+\+AND\+\_\+\+AES\+\_\+\+FAILED}}~-\/35
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_afde4546c10bb21f0b70f821b417f72ef}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+HEARTBEAT\+\_\+\+TIMEOUT}}~-\/36
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a53137b005a91279e815ab13658ab83aa}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DTLS\+\_\+\+HANDSHAKE\+\_\+\+FAILED}}~-\/37
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac41dcf7fbd28105c60ab021b615648b4}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DTLS\+\_\+\+HANDSHAKE\+\_\+\+TIMEOUT}}~-\/38
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a2e436f0958f4bd9c6e6159ba6f1a9672}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+REMOTE\+\_\+\+NO\+\_\+\+RESPONSE}}~-\/39
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a966ecc043a3bf92b2e735b5e6e388633}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+PRE\+\_\+\+SESSION\+\_\+\+RESERVE\+\_\+\+TIMEOUT}}~-\/40
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae6c904d99e93e4345a93f59c6fa130df}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+RESET}}~-\/41
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5dab686c8c3fbb2852c5fe422822d303}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+UV\+\_\+\+TIMER\+\_\+\+INIT\+\_\+\+FAILED}}~-\/42
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac83bcaed1de7fa4f77bbb18eb929f60d}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SDP\+\_\+\+INIT\+\_\+\+FAILED}}~-\/43
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab573ba4a879e34eb40d4366132579e0f}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SDP\+\_\+\+ADD\+\_\+\+MEDIA\+\_\+\+FAILED}}~-\/44
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a2aa704dc2ae79509df994c1dbacc44c4}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SDP\+\_\+\+ADD\+\_\+\+CODEC\+\_\+\+FAILED}}~-\/45
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa9df5c34d95954a198fb5403e7c55142}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+CHANNEL\+\_\+\+INIT\+\_\+\+FAILED}}~-\/46
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6ad53375dcfc9e3c7c502dd89e0923fc}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+AES\+\_\+\+KEY}}~-\/47
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_abc9b58ed57534a15d69809b20dba8273}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SDP\+\_\+\+SET\+\_\+\+AES\+\_\+\+KEY\+\_\+\+FAILED}}~-\/48
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a7a5f0ee07e1873aa96bf155687728210}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+TOKEN}}~-\/49
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa393ff0b339e4a2e0b231107157a740a}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TIME\+\_\+\+OUT\+\_\+\+NO\+\_\+\+ANSWER}}~-\/50
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a096894931eeedaec0fe4eefc12b13274}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TIME\+\_\+\+OUT\+\_\+\+LOCAL\+\_\+\+NO\+\_\+\+HOST\+\_\+\+CAND}}~-\/51
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab969a5238aca2a37101ddc57cfd5fa10}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TIME\+\_\+\+OUT\+\_\+\+LOCAL\+\_\+\+NAT}}~-\/52
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12e1bf7d0b073d588e8b15d0d818cb85}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TIME\+\_\+\+OUT\+\_\+\+REMOTE\+\_\+\+NAT}}~-\/53
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a66a9f19deae7e7dc577f49d1b0568dcb}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TIME\+\_\+\+COWBOY\+\_\+\+NO\+\_\+\+RESPONSE}}~-\/54
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a0c4724d8ed3fa6b1bd7496d19ab242b5}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TOKEN\+\_\+\+EXPIRED}}~-\/55
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6527d30ccba3ae21ea17450ffcbb5ec7}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TOKEN\+\_\+\+DEVICE\+\_\+\+NOTMATCH}}~-\/56
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6f8b615c9b6bdd2d7580a379cca0db68}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TOKEN\+\_\+\+AUTH\+\_\+\+FAILED}}~-\/57
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a2988e0a6964a9b67796b31111ffc6b4a}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+MQTT\+\_\+\+SEND\+\_\+\+FAILED}}~-\/58
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a0bf52664e08dad69022d243c02d60e2f}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+SECRET\+\_\+\+MODE}}~-\/102
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a840cb4c11239c99e34cc9fdb9486744f}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+CREATE\+\_\+\+SEND\+\_\+\+THREAD\+\_\+\+FAILED}}~-\/103
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1ae7f12ca8152d54668600cb68bc3911}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+OUT\+\_\+\+OF\+\_\+\+SESSION}}~-\/104
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab8953f1a8d7a70874aee18c2c1a8c380}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+AUTH\+\_\+\+FAILED}}~-\/105
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a4ec06f3984e958dcfd522808efa8e581}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+SESSION\+\_\+\+CLOSED}}~-\/106
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a7f62937db0018334a2e1039da5814014}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+CREATE\+\_\+\+WEBRTC\+\_\+\+THREAD\+\_\+\+FAILED}}~-\/107
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae3a6b16410e9e075632c6aaf95d6e8f2}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+ZOMBI\+\_\+\+SESSION}}~-\/108
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_afc3aa8e485dcd38f7f16d8b1eeeb8e62}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+USER\+\_\+\+CLOSE}}~-\/109
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ad2f8050b5b91c98cec0cc12cf32d0296}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+USER\+\_\+\+EXIT}}~-\/110
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_abae63ce52cf643226b30b75925abaab8}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+IN\+\_\+\+SECRET\+\_\+\+MODE}}~-\/111
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_afc5560e501f0d4cd0f54e0f3eff7cc7b}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+CALLING}}~-\/113
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a03f9e338555765941fadec65ad836a91}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+WEBRTC\+\_\+\+EXIT}}~-\/300
+\item 
+\#define \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab85dbcd4bcd9be8afe4a20594734ce89}{IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+REMOTE}}~-\/100
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595}{imm\+\_\+p2p\+\_\+rtc\+\_\+log\+\_\+level}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a38de6063ebcd98b2c0a76e07d67d744e}{imm\+\_\+p2p\+\_\+rtc\+\_\+log\+\_\+level\+\_\+e}}
+\item 
+typedef enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4}{imm\+\_\+p2p\+\_\+rtc\+\_\+security\+\_\+level}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa31778bd19da4e4a8a9ea84b0d6d2034}{imm\+\_\+p2p\+\_\+rtc\+\_\+security\+\_\+level\+\_\+e}}
+\item 
+typedef enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abc}{imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1d4fb15801b1bb79116c222bd9f63399}{imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type\+\_\+e}}
+\item 
+typedef struct \mbox{\hyperlink{structimm__p2p__rtc__audio__codec}{imm\+\_\+p2p\+\_\+rtc\+\_\+audio\+\_\+codec}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a24e63cc71e9347a844b9fb71df3d2664}{imm\+\_\+p2p\+\_\+rtc\+\_\+audio\+\_\+codec\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structimm__p2p__rtc__video__codec}{imm\+\_\+p2p\+\_\+rtc\+\_\+video\+\_\+codec}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a24227f220ab046bab5fc280cb3604bc5}{imm\+\_\+p2p\+\_\+rtc\+\_\+video\+\_\+codec\+\_\+t}}
+\item 
+typedef enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61f}{rtc\+\_\+state}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac132caceff1a35518773245ff644c145}{rtc\+\_\+state\+\_\+e}}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a66659616f381547af9b0acad4a0571cf}{imm\+\_\+p2p\+\_\+rtc\+\_\+signaling\+\_\+cb\+\_\+t}}) (char $\ast$remote\+\_\+id, char $\ast$signaling, uint32\+\_\+t len)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6def249c3a98b548a83751cbaeb4fbe5}{imm\+\_\+p2p\+\_\+rtc\+\_\+log\+\_\+cb\+\_\+t}}) (char $\ast$log, uint32\+\_\+t len, uint32\+\_\+t flags)
+\item 
+typedef int32\+\_\+t($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_af2aa8e4b7ec78973b54effa7c88b68d9}{imm\+\_\+p2p\+\_\+rtc\+\_\+auth\+\_\+cb\+\_\+t}}) (char $\ast$buf, uint32\+\_\+t len, char $\ast$md, uint32\+\_\+t md\+\_\+len)
+\item 
+typedef int32\+\_\+t($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac6895a679cfc9e6cfce32b7586aed628}{imm\+\_\+p2p\+\_\+rtc\+\_\+http\+\_\+cb\+\_\+t}}) (char $\ast$api, char $\ast$dev\+Id, char $\ast$content, uint32\+\_\+t content\+\_\+len)
+\item 
+typedef int($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a4b07c5cadc12f433a8c41d7c2164abbf}{imm\+\_\+p2p\+\_\+rtc\+\_\+aes\+\_\+create\+\_\+cb\+\_\+t}}) (void $\ast$$\ast$handle, char $\ast$mode, char $\ast$crypt, char $\ast$key, int key\+\_\+bits)
+\item 
+typedef int($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae3feda37790be7bb555777f1a3afbb42}{imm\+\_\+p2p\+\_\+rtc\+\_\+aes\+\_\+destroy\+\_\+cb\+\_\+t}}) (void $\ast$handle)
+\item 
+typedef int($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6bad57728081cd2bcc37eaed4ddbb8c7}{imm\+\_\+p2p\+\_\+rtc\+\_\+aes\+\_\+encrypt\+\_\+cb\+\_\+t}}) (void $\ast$handle, int length, char $\ast$iv, char $\ast$input, char $\ast$output)
+\item 
+typedef int($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa74f1335e588df55c68c7ccf8dc3e45f}{imm\+\_\+p2p\+\_\+rtc\+\_\+aes\+\_\+decrypt\+\_\+cb\+\_\+t}}) (void $\ast$handle, int length, char $\ast$iv, char $\ast$input, char $\ast$output)
+\item 
+typedef int($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1f7064258637c204c54a0fa736250db6}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+alloc\+\_\+port\+\_\+cb\+\_\+t}}) (\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527a}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol}} protocol, int $\ast$local\+\_\+port, char $\ast$address, int $\ast$\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_aadbdd25b48e1f9226cefe59e9c124ac7}{port}})
+\item 
+typedef int($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5799fcc4dc18f20a5789bcc72047427f}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+release\+\_\+port\+\_\+cb\+\_\+t}}) (\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527a}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol}} protocol, int local\+\_\+port)
+\item 
+typedef int($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a0ddeaa472f83b82f4c3cfb560480d0d4}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+bind\+\_\+result\+\_\+cb\+\_\+t}}) (\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527a}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol}} protocol, int local\+\_\+port, int error\+\_\+code)
+\item 
+typedef int($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1cf5da88012926a0499cfea1583e9ed4}{imm\+\_\+p2p\+\_\+rtc\+\_\+session\+\_\+state\+\_\+cb\+\_\+t}}) (char $\ast$remote\+\_\+id, int handle, int is\+\_\+pre, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac132caceff1a35518773245ff644c145}{rtc\+\_\+state\+\_\+e}} state, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919d}{rtc\+\_\+active\+\_\+state\+\_\+e}} active\+\_\+state, int \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}})
+\item 
+typedef int($\ast$ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1ae8f7250f0155b424e43a2ec330c845}{imm\+\_\+p2p\+\_\+rtc\+\_\+session\+\_\+get\+\_\+address\+\_\+cb\+\_\+t}}) (char $\ast$address)
+\item 
+typedef struct \mbox{\hyperlink{structimm__p2p__rtc__cb}{imm\+\_\+p2p\+\_\+rtc\+\_\+cb}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a3543d62f841cbb633b009b5a69991f61}{imm\+\_\+p2p\+\_\+rtc\+\_\+cb\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structimm__p2p__rtc__options}{imm\+\_\+p2p\+\_\+rtc\+\_\+options}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae94227b2d2fe5b19251e0e95c147bf70}{imm\+\_\+p2p\+\_\+rtc\+\_\+options\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595}{imm\+\_\+p2p\+\_\+rtc\+\_\+log\+\_\+level}} \{ \newline
+\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595a754c20ccaa7f0d8dfc3574fca357ca67}{IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+TRACE}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595af3d7e1aa6207737ee2cc33011e5dd74d}{IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+DEBUG}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad8b0e6c4f8cf303977eee4933eaef023}{IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+INFO}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad47471dba76bf012f27b923a82979eee}{IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+WARN}}
+, \newline
+\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad6f2e6c44d994cf1d264362b2f007f62}{IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+ERROR}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595aba7668a07e4833b608b988e2b2a6c4cd}{IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+FATAL}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595a754c20ccaa7f0d8dfc3574fca357ca67}{IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+TRACE}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595af3d7e1aa6207737ee2cc33011e5dd74d}{IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+DEBUG}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad8b0e6c4f8cf303977eee4933eaef023}{IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+INFO}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad47471dba76bf012f27b923a82979eee}{IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+WARN}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad6f2e6c44d994cf1d264362b2f007f62}{IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+ERROR}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595aba7668a07e4833b608b988e2b2a6c4cd}{IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+FATAL}}
+ \}
+\item 
+enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4}{imm\+\_\+p2p\+\_\+rtc\+\_\+security\+\_\+level}} \{ \newline
+\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a00794c06e612751e505a1a1aa9f56341}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+0}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a8cbe16e531bd6e903be514d01759bf00}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+1}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4ade493736fbc521c4349921bf0cbd841d}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+2}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4ae87a592c92eb7fd276e3b84e56413da4}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+3}}
+, \newline
+\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4af50dbc0e7ae31a479b168f324a578f2d}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+4}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4abdf14af1652f258afa0207d9d77d2bd8}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+5}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a9bfd487e924a6d3c81cb1f447f695034}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+\+MAX}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a00794c06e612751e505a1a1aa9f56341}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+0}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a8cbe16e531bd6e903be514d01759bf00}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+1}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4ade493736fbc521c4349921bf0cbd841d}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+2}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4ae87a592c92eb7fd276e3b84e56413da4}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+3}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4af50dbc0e7ae31a479b168f324a578f2d}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+4}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4abdf14af1652f258afa0207d9d77d2bd8}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+5}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a9bfd487e924a6d3c81cb1f447f695034}{IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+\+MAX}}
+ \}
+\item 
+enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bf}{imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+e}} \{ \newline
+\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa7394f3c17dbb709b2bee1456ab7544b2}{imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+audio}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa9ea7a105542a75cdd0fc2b63816f7687}{imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+video\+\_\+p}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa8eb2821add8fb402f2e357a975324e02}{imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+video\+\_\+i}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa7394f3c17dbb709b2bee1456ab7544b2}{imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+audio}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa9ea7a105542a75cdd0fc2b63816f7687}{imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+video\+\_\+p}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa8eb2821add8fb402f2e357a975324e02}{imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+video\+\_\+i}}
+ \}
+\item 
+enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abc}{imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type}} \{ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abcac5335dd326113a77e51c27731328fee4}{imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type\+\_\+p2p}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abca60f849b3f369653c6bfbbc91b93e413d}{imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type\+\_\+webrtc}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abcac5335dd326113a77e51c27731328fee4}{imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type\+\_\+p2p}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abca60f849b3f369653c6bfbbc91b93e413d}{imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type\+\_\+webrtc}}
+ \}
+\item 
+enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527a}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol}} \{ \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527aaf6bc7861d1792557de20b81366699f6c}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol\+\_\+udp}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527aa7c1bdd8148e5adf07be8c9efcc4d3624}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol\+\_\+tcp}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527aaf6bc7861d1792557de20b81366699f6c}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol\+\_\+udp}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527aa7c1bdd8148e5adf07be8c9efcc4d3624}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol\+\_\+tcp}}
+ \}
+\item 
+enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61f}{rtc\+\_\+state}} \{ \newline
+\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fac416a2bb0060f36dc2454130ca980945}{RTC\+\_\+\+STATE\+\_\+\+GET\+\_\+\+TOKEN}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61faf31437a0d452dbb68993fdbf58d785fa}{RTC\+\_\+\+STATE\+\_\+\+P2\+P\+\_\+\+CONNECT}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa2b47e277b61076d5b1db376419eeb84f}{RTC\+\_\+\+STATE\+\_\+\+DTLS\+\_\+\+SRTP\+\_\+\+KEY\+\_\+\+NEGO}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa2fe248387984f449ff9da70100f22dc2}{RTC\+\_\+\+STATE\+\_\+\+STREAM}}
+, \newline
+\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa5ea5e96233d99408d63be7f2363d24cd}{RTC\+\_\+\+STATE\+\_\+\+FAILED}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61faf363a70f93cd3b5ebc505ac1d6ad7ad3}{RTC\+\_\+\+STATE\+\_\+\+NUMBER}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fac416a2bb0060f36dc2454130ca980945}{RTC\+\_\+\+STATE\+\_\+\+GET\+\_\+\+TOKEN}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61faf31437a0d452dbb68993fdbf58d785fa}{RTC\+\_\+\+STATE\+\_\+\+P2\+P\+\_\+\+CONNECT}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa2b47e277b61076d5b1db376419eeb84f}{RTC\+\_\+\+STATE\+\_\+\+DTLS\+\_\+\+SRTP\+\_\+\+KEY\+\_\+\+NEGO}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa2fe248387984f449ff9da70100f22dc2}{RTC\+\_\+\+STATE\+\_\+\+STREAM}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa5ea5e96233d99408d63be7f2363d24cd}{RTC\+\_\+\+STATE\+\_\+\+FAILED}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61faf363a70f93cd3b5ebc505ac1d6ad7ad3}{RTC\+\_\+\+STATE\+\_\+\+NUMBER}}
+ \}
+\item 
+enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919d}{rtc\+\_\+active\+\_\+state\+\_\+e}} \{ \newline
+\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919da18911c148a122f8d8ea7836f690b3b8c}{RTC\+\_\+\+PRE\+\_\+\+NOT\+\_\+\+ACTIVE}} = 0
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919dae0818d73f972a4a368c4bc28e7ddb47f}{RTC\+\_\+\+PRE\+\_\+\+ACTIVATING}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919da7af4ebaf33e2cb2103f22f0027f6c81a}{RTC\+\_\+\+PRE\+\_\+\+ACTIVE}}
+, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919daf8feeb1d446a6adfdfeb5fc9108acfe7}{RTC\+\_\+\+PRE\+\_\+\+SUSPENDING}}
+, \newline
+\mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919da18911c148a122f8d8ea7836f690b3b8c}{RTC\+\_\+\+PRE\+\_\+\+NOT\+\_\+\+ACTIVE}} = 0
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919dae0818d73f972a4a368c4bc28e7ddb47f}{RTC\+\_\+\+PRE\+\_\+\+ACTIVATING}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919da7af4ebaf33e2cb2103f22f0027f6c81a}{RTC\+\_\+\+PRE\+\_\+\+ACTIVE}}
+, \mbox{\hyperlink{ios-arm64_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919daf8feeb1d446a6adfdfeb5fc9108acfe7}{RTC\+\_\+\+PRE\+\_\+\+SUSPENDING}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81fa9589fef1a58ed38c44127c116d98}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81fa9589fef1a58ed38c44127c116d98}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_CHANNEL\_NUMBER\_MAX@{IMM\_P2P\_CHANNEL\_NUMBER\_MAX}}
+\index{IMM\_P2P\_CHANNEL\_NUMBER\_MAX@{IMM\_P2P\_CHANNEL\_NUMBER\_MAX}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_CHANNEL\_NUMBER\_MAX}{IMM\_P2P\_CHANNEL\_NUMBER\_MAX}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+CHANNEL\+\_\+\+NUMBER\+\_\+\+MAX~330}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00012}{12}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa169c2f8a720f6ccf5b5422f1b283b74}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa169c2f8a720f6ccf5b5422f1b283b74}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_ALREADY\_INITIALIZED@{IMM\_P2P\_ERROR\_ALREADY\_INITIALIZED}}
+\index{IMM\_P2P\_ERROR\_ALREADY\_INITIALIZED@{IMM\_P2P\_ERROR\_ALREADY\_INITIALIZED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_ALREADY\_INITIALIZED}{IMM\_P2P\_ERROR\_ALREADY\_INITIALIZED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+ALREADY\+\_\+\+INITIALIZED~-\/2}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00019}{19}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a214359c193c286337631f1a9b38d5f60}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a214359c193c286337631f1a9b38d5f60}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_AUTH\_FAILED@{IMM\_P2P\_ERROR\_AUTH\_FAILED}}
+\index{IMM\_P2P\_ERROR\_AUTH\_FAILED@{IMM\_P2P\_ERROR\_AUTH\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_AUTH\_FAILED}{IMM\_P2P\_ERROR\_AUTH\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+AUTH\+\_\+\+FAILED~-\/34}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00051}{51}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa9df5c34d95954a198fb5403e7c55142}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa9df5c34d95954a198fb5403e7c55142}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_CHANNEL\_INIT\_FAILED@{IMM\_P2P\_ERROR\_CHANNEL\_INIT\_FAILED}}
+\index{IMM\_P2P\_ERROR\_CHANNEL\_INIT\_FAILED@{IMM\_P2P\_ERROR\_CHANNEL\_INIT\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_CHANNEL\_INIT\_FAILED}{IMM\_P2P\_ERROR\_CHANNEL\_INIT\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+CHANNEL\+\_\+\+INIT\+\_\+\+FAILED~-\/46}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00063}{63}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab8953f1a8d7a70874aee18c2c1a8c380}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab8953f1a8d7a70874aee18c2c1a8c380}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_AUTH\_FAILED@{IMM\_P2P\_ERROR\_DEVICE\_AUTH\_FAILED}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_AUTH\_FAILED@{IMM\_P2P\_ERROR\_DEVICE\_AUTH\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_AUTH\_FAILED}{IMM\_P2P\_ERROR\_DEVICE\_AUTH\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+AUTH\+\_\+\+FAILED~-\/105}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00079}{79}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_afc5560e501f0d4cd0f54e0f3eff7cc7b}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_afc5560e501f0d4cd0f54e0f3eff7cc7b}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_CALLING@{IMM\_P2P\_ERROR\_DEVICE\_CALLING}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_CALLING@{IMM\_P2P\_ERROR\_DEVICE\_CALLING}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_CALLING}{IMM\_P2P\_ERROR\_DEVICE\_CALLING}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+CALLING~-\/113}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00086}{86}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a840cb4c11239c99e34cc9fdb9486744f}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a840cb4c11239c99e34cc9fdb9486744f}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_CREATE\_SEND\_THREAD\_FAILED@{IMM\_P2P\_ERROR\_DEVICE\_CREATE\_SEND\_THREAD\_FAILED}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_CREATE\_SEND\_THREAD\_FAILED@{IMM\_P2P\_ERROR\_DEVICE\_CREATE\_SEND\_THREAD\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_CREATE\_SEND\_THREAD\_FAILED}{IMM\_P2P\_ERROR\_DEVICE\_CREATE\_SEND\_THREAD\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+CREATE\+\_\+\+SEND\+\_\+\+THREAD\+\_\+\+FAILED~-\/103}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00077}{77}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a7f62937db0018334a2e1039da5814014}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a7f62937db0018334a2e1039da5814014}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_CREATE\_WEBRTC\_THREAD\_FAILED@{IMM\_P2P\_ERROR\_DEVICE\_CREATE\_WEBRTC\_THREAD\_FAILED}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_CREATE\_WEBRTC\_THREAD\_FAILED@{IMM\_P2P\_ERROR\_DEVICE\_CREATE\_WEBRTC\_THREAD\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_CREATE\_WEBRTC\_THREAD\_FAILED}{IMM\_P2P\_ERROR\_DEVICE\_CREATE\_WEBRTC\_THREAD\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+CREATE\+\_\+\+WEBRTC\+\_\+\+THREAD\+\_\+\+FAILED~-\/107}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00081}{81}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_abae63ce52cf643226b30b75925abaab8}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_abae63ce52cf643226b30b75925abaab8}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_IN\_SECRET\_MODE@{IMM\_P2P\_ERROR\_DEVICE\_IN\_SECRET\_MODE}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_IN\_SECRET\_MODE@{IMM\_P2P\_ERROR\_DEVICE\_IN\_SECRET\_MODE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_IN\_SECRET\_MODE}{IMM\_P2P\_ERROR\_DEVICE\_IN\_SECRET\_MODE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+IN\+\_\+\+SECRET\+\_\+\+MODE~-\/111}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00085}{85}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a90cbd7ac6147ae6910932ea927f2aa74}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a90cbd7ac6147ae6910932ea927f2aa74}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_NOT\_ONLINE@{IMM\_P2P\_ERROR\_DEVICE\_NOT\_ONLINE}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_NOT\_ONLINE@{IMM\_P2P\_ERROR\_DEVICE\_NOT\_ONLINE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_NOT\_ONLINE}{IMM\_P2P\_ERROR\_DEVICE\_NOT\_ONLINE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+NOT\+\_\+\+ONLINE~-\/6}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00023}{23}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1ae7f12ca8152d54668600cb68bc3911}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1ae7f12ca8152d54668600cb68bc3911}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_OUT\_OF\_SESSION@{IMM\_P2P\_ERROR\_DEVICE\_OUT\_OF\_SESSION}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_OUT\_OF\_SESSION@{IMM\_P2P\_ERROR\_DEVICE\_OUT\_OF\_SESSION}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_OUT\_OF\_SESSION}{IMM\_P2P\_ERROR\_DEVICE\_OUT\_OF\_SESSION}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+OUT\+\_\+\+OF\+\_\+\+SESSION~-\/104}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00078}{78}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a0bf52664e08dad69022d243c02d60e2f}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a0bf52664e08dad69022d243c02d60e2f}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_SECRET\_MODE@{IMM\_P2P\_ERROR\_DEVICE\_SECRET\_MODE}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_SECRET\_MODE@{IMM\_P2P\_ERROR\_DEVICE\_SECRET\_MODE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_SECRET\_MODE}{IMM\_P2P\_ERROR\_DEVICE\_SECRET\_MODE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+SECRET\+\_\+\+MODE~-\/102}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00076}{76}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a4ec06f3984e958dcfd522808efa8e581}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a4ec06f3984e958dcfd522808efa8e581}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_SESSION\_CLOSED@{IMM\_P2P\_ERROR\_DEVICE\_SESSION\_CLOSED}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_SESSION\_CLOSED@{IMM\_P2P\_ERROR\_DEVICE\_SESSION\_CLOSED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_SESSION\_CLOSED}{IMM\_P2P\_ERROR\_DEVICE\_SESSION\_CLOSED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+SESSION\+\_\+\+CLOSED~-\/106}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00080}{80}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_afc3aa8e485dcd38f7f16d8b1eeeb8e62}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_afc3aa8e485dcd38f7f16d8b1eeeb8e62}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_USER\_CLOSE@{IMM\_P2P\_ERROR\_DEVICE\_USER\_CLOSE}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_USER\_CLOSE@{IMM\_P2P\_ERROR\_DEVICE\_USER\_CLOSE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_USER\_CLOSE}{IMM\_P2P\_ERROR\_DEVICE\_USER\_CLOSE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+USER\+\_\+\+CLOSE~-\/109}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00083}{83}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ad2f8050b5b91c98cec0cc12cf32d0296}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ad2f8050b5b91c98cec0cc12cf32d0296}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_USER\_EXIT@{IMM\_P2P\_ERROR\_DEVICE\_USER\_EXIT}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_USER\_EXIT@{IMM\_P2P\_ERROR\_DEVICE\_USER\_EXIT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_USER\_EXIT}{IMM\_P2P\_ERROR\_DEVICE\_USER\_EXIT}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+USER\+\_\+\+EXIT~-\/110}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00084}{84}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a03f9e338555765941fadec65ad836a91}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a03f9e338555765941fadec65ad836a91}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_WEBRTC\_EXIT@{IMM\_P2P\_ERROR\_DEVICE\_WEBRTC\_EXIT}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_WEBRTC\_EXIT@{IMM\_P2P\_ERROR\_DEVICE\_WEBRTC\_EXIT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_WEBRTC\_EXIT}{IMM\_P2P\_ERROR\_DEVICE\_WEBRTC\_EXIT}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+WEBRTC\+\_\+\+EXIT~-\/300}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00087}{87}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae3a6b16410e9e075632c6aaf95d6e8f2}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae3a6b16410e9e075632c6aaf95d6e8f2}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DEVICE\_ZOMBI\_SESSION@{IMM\_P2P\_ERROR\_DEVICE\_ZOMBI\_SESSION}}
+\index{IMM\_P2P\_ERROR\_DEVICE\_ZOMBI\_SESSION@{IMM\_P2P\_ERROR\_DEVICE\_ZOMBI\_SESSION}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DEVICE\_ZOMBI\_SESSION}{IMM\_P2P\_ERROR\_DEVICE\_ZOMBI\_SESSION}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DEVICE\+\_\+\+ZOMBI\+\_\+\+SESSION~-\/108}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00082}{82}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a53137b005a91279e815ab13658ab83aa}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a53137b005a91279e815ab13658ab83aa}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_FAILED@{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_FAILED}}
+\index{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_FAILED@{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_FAILED}{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DTLS\+\_\+\+HANDSHAKE\+\_\+\+FAILED~-\/37}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00054}{54}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_add93eeeee2fbaeb8c0ae82bfc39b2951}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_add93eeeee2fbaeb8c0ae82bfc39b2951}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_FAILED\_FINGERPRINT@{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_FAILED\_FINGERPRINT}}
+\index{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_FAILED\_FINGERPRINT@{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_FAILED\_FINGERPRINT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_FAILED\_FINGERPRINT}{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_FAILED\_FINGERPRINT}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DTLS\+\_\+\+HANDSHAKE\+\_\+\+FAILED\+\_\+\+FINGERPRINT~-\/32}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00049}{49}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac41dcf7fbd28105c60ab021b615648b4}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac41dcf7fbd28105c60ab021b615648b4}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_TIMEOUT@{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_TIMEOUT}}
+\index{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_TIMEOUT@{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_TIMEOUT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_TIMEOUT}{IMM\_P2P\_ERROR\_DTLS\_HANDSHAKE\_TIMEOUT}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+DTLS\+\_\+\+HANDSHAKE\+\_\+\+TIMEOUT~-\/38}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00055}{55}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_acfaa85811e04945094f5e1364a65a152}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_acfaa85811e04945094f5e1364a65a152}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_FAIL\_TO\_CREATE\_THREAD@{IMM\_P2P\_ERROR\_FAIL\_TO\_CREATE\_THREAD}}
+\index{IMM\_P2P\_ERROR\_FAIL\_TO\_CREATE\_THREAD@{IMM\_P2P\_ERROR\_FAIL\_TO\_CREATE\_THREAD}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_FAIL\_TO\_CREATE\_THREAD}{IMM\_P2P\_ERROR\_FAIL\_TO\_CREATE\_THREAD}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+FAIL\+\_\+\+TO\+\_\+\+CREATE\+\_\+\+THREAD~-\/22}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00039}{39}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a830a4be0ad44eb130ed34bb2357272eb}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a830a4be0ad44eb130ed34bb2357272eb}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_FAIL\_TO\_RESOLVE\_NAME@{IMM\_P2P\_ERROR\_FAIL\_TO\_RESOLVE\_NAME}}
+\index{IMM\_P2P\_ERROR\_FAIL\_TO\_RESOLVE\_NAME@{IMM\_P2P\_ERROR\_FAIL\_TO\_RESOLVE\_NAME}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_FAIL\_TO\_RESOLVE\_NAME}{IMM\_P2P\_ERROR\_FAIL\_TO\_RESOLVE\_NAME}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+FAIL\+\_\+\+TO\+\_\+\+RESOLVE\+\_\+\+NAME~-\/7}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00024}{24}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa6b50002247ff3502bba645cfcb1700b}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa6b50002247ff3502bba645cfcb1700b}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_GET\_TOKEN\_TIMEOUT@{IMM\_P2P\_ERROR\_GET\_TOKEN\_TIMEOUT}}
+\index{IMM\_P2P\_ERROR\_GET\_TOKEN\_TIMEOUT@{IMM\_P2P\_ERROR\_GET\_TOKEN\_TIMEOUT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_GET\_TOKEN\_TIMEOUT}{IMM\_P2P\_ERROR\_GET\_TOKEN\_TIMEOUT}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+GET\+\_\+\+TOKEN\+\_\+\+TIMEOUT~-\/33}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00050}{50}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_afde4546c10bb21f0b70f821b417f72ef}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_afde4546c10bb21f0b70f821b417f72ef}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_HEARTBEAT\_TIMEOUT@{IMM\_P2P\_ERROR\_HEARTBEAT\_TIMEOUT}}
+\index{IMM\_P2P\_ERROR\_HEARTBEAT\_TIMEOUT@{IMM\_P2P\_ERROR\_HEARTBEAT\_TIMEOUT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_HEARTBEAT\_TIMEOUT}{IMM\_P2P\_ERROR\_HEARTBEAT\_TIMEOUT}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+HEARTBEAT\+\_\+\+TIMEOUT~-\/36}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00053}{53}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a8149029b7ca7ad1abafb859d0ec44132}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a8149029b7ca7ad1abafb859d0ec44132}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_HTTP\_FAILED@{IMM\_P2P\_ERROR\_HTTP\_FAILED}}
+\index{IMM\_P2P\_ERROR\_HTTP\_FAILED@{IMM\_P2P\_ERROR\_HTTP\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_HTTP\_FAILED}{IMM\_P2P\_ERROR\_HTTP\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+HTTP\+\_\+\+FAILED~-\/30}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00047}{47}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5354dec612e630746ad69cca2071259a}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5354dec612e630746ad69cca2071259a}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_ID\_OUT\_OF\_DATE@{IMM\_P2P\_ERROR\_ID\_OUT\_OF\_DATE}}
+\index{IMM\_P2P\_ERROR\_ID\_OUT\_OF\_DATE@{IMM\_P2P\_ERROR\_ID\_OUT\_OF\_DATE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_ID\_OUT\_OF\_DATE}{IMM\_P2P\_ERROR\_ID\_OUT\_OF\_DATE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+ID\+\_\+\+OUT\+\_\+\+OF\+\_\+\+DATE~-\/9}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00026}{26}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_affb067e76acae05ebf576980c74d7ca7}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_affb067e76acae05ebf576980c74d7ca7}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_INIT\_MBEDTLS\_MD\_AND\_AES\_FAILED@{IMM\_P2P\_ERROR\_INIT\_MBEDTLS\_MD\_AND\_AES\_FAILED}}
+\index{IMM\_P2P\_ERROR\_INIT\_MBEDTLS\_MD\_AND\_AES\_FAILED@{IMM\_P2P\_ERROR\_INIT\_MBEDTLS\_MD\_AND\_AES\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_INIT\_MBEDTLS\_MD\_AND\_AES\_FAILED}{IMM\_P2P\_ERROR\_INIT\_MBEDTLS\_MD\_AND\_AES\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INIT\+\_\+\+MBEDTLS\+\_\+\+MD\+\_\+\+AND\+\_\+\+AES\+\_\+\+FAILED~-\/35}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00052}{52}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6ad53375dcfc9e3c7c502dd89e0923fc}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6ad53375dcfc9e3c7c502dd89e0923fc}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_INVALID\_AES\_KEY@{IMM\_P2P\_ERROR\_INVALID\_AES\_KEY}}
+\index{IMM\_P2P\_ERROR\_INVALID\_AES\_KEY@{IMM\_P2P\_ERROR\_INVALID\_AES\_KEY}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_INVALID\_AES\_KEY}{IMM\_P2P\_ERROR\_INVALID\_AES\_KEY}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+AES\+\_\+\+KEY~-\/47}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00064}{64}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5e2b66da472610916958d5563a9a64ff}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5e2b66da472610916958d5563a9a64ff}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_INVALID\_APILICENSE@{IMM\_P2P\_ERROR\_INVALID\_APILICENSE}}
+\index{IMM\_P2P\_ERROR\_INVALID\_APILICENSE@{IMM\_P2P\_ERROR\_INVALID\_APILICENSE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_INVALID\_APILICENSE}{IMM\_P2P\_ERROR\_INVALID\_APILICENSE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+APILICENSE~-\/21}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00038}{38}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a933c74b76790b78a73d20ade7e794b31}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a933c74b76790b78a73d20ade7e794b31}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_INVALID\_ID@{IMM\_P2P\_ERROR\_INVALID\_ID}}
+\index{IMM\_P2P\_ERROR\_INVALID\_ID@{IMM\_P2P\_ERROR\_INVALID\_ID}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_INVALID\_ID}{IMM\_P2P\_ERROR\_INVALID\_ID}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+ID~-\/4}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00021}{21}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a8dc0db43215238cbe48efa3af98fa91c}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a8dc0db43215238cbe48efa3af98fa91c}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_INVALID\_PARAMETER@{IMM\_P2P\_ERROR\_INVALID\_PARAMETER}}
+\index{IMM\_P2P\_ERROR\_INVALID\_PARAMETER@{IMM\_P2P\_ERROR\_INVALID\_PARAMETER}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_INVALID\_PARAMETER}{IMM\_P2P\_ERROR\_INVALID\_PARAMETER}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+PARAMETER~-\/5}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00022}{22}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ad73c480d5a6b43ab5156b1fca68bb1fa}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ad73c480d5a6b43ab5156b1fca68bb1fa}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_INVALID\_PRE\_SESSION@{IMM\_P2P\_ERROR\_INVALID\_PRE\_SESSION}}
+\index{IMM\_P2P\_ERROR\_INVALID\_PRE\_SESSION@{IMM\_P2P\_ERROR\_INVALID\_PRE\_SESSION}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_INVALID\_PRE\_SESSION}{IMM\_P2P\_ERROR\_INVALID\_PRE\_SESSION}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+PRE\+\_\+\+SESSION~-\/24}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00041}{41}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab26c59337fb73c2f407cb0aa11d4d90a}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab26c59337fb73c2f407cb0aa11d4d90a}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_INVALID\_PREFIX@{IMM\_P2P\_ERROR\_INVALID\_PREFIX}}
+\index{IMM\_P2P\_ERROR\_INVALID\_PREFIX@{IMM\_P2P\_ERROR\_INVALID\_PREFIX}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_INVALID\_PREFIX}{IMM\_P2P\_ERROR\_INVALID\_PREFIX}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+PREFIX~-\/8}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00025}{25}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a02aa18334d51a3d5603ec24b0baefcca}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a02aa18334d51a3d5603ec24b0baefcca}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_INVALID\_SESSION\_HANDLE@{IMM\_P2P\_ERROR\_INVALID\_SESSION\_HANDLE}}
+\index{IMM\_P2P\_ERROR\_INVALID\_SESSION\_HANDLE@{IMM\_P2P\_ERROR\_INVALID\_SESSION\_HANDLE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_INVALID\_SESSION\_HANDLE}{IMM\_P2P\_ERROR\_INVALID\_SESSION\_HANDLE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+SESSION\+\_\+\+HANDLE~-\/11}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00028}{28}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a7a5f0ee07e1873aa96bf155687728210}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a7a5f0ee07e1873aa96bf155687728210}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_INVALID\_TOKEN@{IMM\_P2P\_ERROR\_INVALID\_TOKEN}}
+\index{IMM\_P2P\_ERROR\_INVALID\_TOKEN@{IMM\_P2P\_ERROR\_INVALID\_TOKEN}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_INVALID\_TOKEN}{IMM\_P2P\_ERROR\_INVALID\_TOKEN}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+INVALID\+\_\+\+TOKEN~-\/49}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00066}{66}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_abaa4d02db676e53038024a93fab4e94f}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_abaa4d02db676e53038024a93fab4e94f}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_MAX\_SESSION@{IMM\_P2P\_ERROR\_MAX\_SESSION}}
+\index{IMM\_P2P\_ERROR\_MAX\_SESSION@{IMM\_P2P\_ERROR\_MAX\_SESSION}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_MAX\_SESSION}{IMM\_P2P\_ERROR\_MAX\_SESSION}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+MAX\+\_\+\+SESSION~-\/17}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00034}{34}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a2988e0a6964a9b67796b31111ffc6b4a}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a2988e0a6964a9b67796b31111ffc6b4a}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_MQTT\_SEND\_FAILED@{IMM\_P2P\_ERROR\_MQTT\_SEND\_FAILED}}
+\index{IMM\_P2P\_ERROR\_MQTT\_SEND\_FAILED@{IMM\_P2P\_ERROR\_MQTT\_SEND\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_MQTT\_SEND\_FAILED}{IMM\_P2P\_ERROR\_MQTT\_SEND\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+MQTT\+\_\+\+SEND\+\_\+\+FAILED~-\/58}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00075}{75}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a9b5d43b14bd7bf60351ef5e6a0af2a90}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a9b5d43b14bd7bf60351ef5e6a0af2a90}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_NO\_RELAY\_SERVER\_AVAILABLE@{IMM\_P2P\_ERROR\_NO\_RELAY\_SERVER\_AVAILABLE}}
+\index{IMM\_P2P\_ERROR\_NO\_RELAY\_SERVER\_AVAILABLE@{IMM\_P2P\_ERROR\_NO\_RELAY\_SERVER\_AVAILABLE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_NO\_RELAY\_SERVER\_AVAILABLE}{IMM\_P2P\_ERROR\_NO\_RELAY\_SERVER\_AVAILABLE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+NO\+\_\+\+RELAY\+\_\+\+SERVER\+\_\+\+AVAILABLE~-\/10}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00027}{27}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a19290f0f04d48677a2e3bd0fbcc011b9}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a19290f0f04d48677a2e3bd0fbcc011b9}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_NOT\_INITIALIZED@{IMM\_P2P\_ERROR\_NOT\_INITIALIZED}}
+\index{IMM\_P2P\_ERROR\_NOT\_INITIALIZED@{IMM\_P2P\_ERROR\_NOT\_INITIALIZED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_NOT\_INITIALIZED}{IMM\_P2P\_ERROR\_NOT\_INITIALIZED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+NOT\+\_\+\+INITIALIZED~-\/1}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00018}{18}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a9fec07b65928e926e4c46b382b401b29}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a9fec07b65928e926e4c46b382b401b29}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_OUT\_OF\_MEMORY@{IMM\_P2P\_ERROR\_OUT\_OF\_MEMORY}}
+\index{IMM\_P2P\_ERROR\_OUT\_OF\_MEMORY@{IMM\_P2P\_ERROR\_OUT\_OF\_MEMORY}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_OUT\_OF\_MEMORY}{IMM\_P2P\_ERROR\_OUT\_OF\_MEMORY}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+OUT\+\_\+\+OF\+\_\+\+MEMORY~-\/29}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00046}{46}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_acd3bfd65ae886d1cb17e4ef31a0e4586}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_acd3bfd65ae886d1cb17e4ef31a0e4586}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_OUT\_OF\_SESSION@{IMM\_P2P\_ERROR\_OUT\_OF\_SESSION}}
+\index{IMM\_P2P\_ERROR\_OUT\_OF\_SESSION@{IMM\_P2P\_ERROR\_OUT\_OF\_SESSION}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_OUT\_OF\_SESSION}{IMM\_P2P\_ERROR\_OUT\_OF\_SESSION}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+OUT\+\_\+\+OF\+\_\+\+SESSION~-\/23}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00040}{40}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a4c10f8fbfdf1f19ce0fd4e3d52b36011}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a4c10f8fbfdf1f19ce0fd4e3d52b36011}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_PRE\_SESSION\_ALREADY\_ACTIVE@{IMM\_P2P\_ERROR\_PRE\_SESSION\_ALREADY\_ACTIVE}}
+\index{IMM\_P2P\_ERROR\_PRE\_SESSION\_ALREADY\_ACTIVE@{IMM\_P2P\_ERROR\_PRE\_SESSION\_ALREADY\_ACTIVE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_PRE\_SESSION\_ALREADY\_ACTIVE}{IMM\_P2P\_ERROR\_PRE\_SESSION\_ALREADY\_ACTIVE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+PRE\+\_\+\+SESSION\+\_\+\+ALREADY\+\_\+\+ACTIVE~-\/26}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00043}{43}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a34fe6614fd45d7c5dc51b6042cb13417}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a34fe6614fd45d7c5dc51b6042cb13417}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_PRE\_SESSION\_NOT\_ACTIVE@{IMM\_P2P\_ERROR\_PRE\_SESSION\_NOT\_ACTIVE}}
+\index{IMM\_P2P\_ERROR\_PRE\_SESSION\_NOT\_ACTIVE@{IMM\_P2P\_ERROR\_PRE\_SESSION\_NOT\_ACTIVE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_PRE\_SESSION\_NOT\_ACTIVE}{IMM\_P2P\_ERROR\_PRE\_SESSION\_NOT\_ACTIVE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+PRE\+\_\+\+SESSION\+\_\+\+NOT\+\_\+\+ACTIVE~-\/27}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00044}{44}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_af6ce99f44bc95ae23b18992011db239e}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_af6ce99f44bc95ae23b18992011db239e}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_PRE\_SESSION\_NOT\_CONNECTED@{IMM\_P2P\_ERROR\_PRE\_SESSION\_NOT\_CONNECTED}}
+\index{IMM\_P2P\_ERROR\_PRE\_SESSION\_NOT\_CONNECTED@{IMM\_P2P\_ERROR\_PRE\_SESSION\_NOT\_CONNECTED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_PRE\_SESSION\_NOT\_CONNECTED}{IMM\_P2P\_ERROR\_PRE\_SESSION\_NOT\_CONNECTED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+PRE\+\_\+\+SESSION\+\_\+\+NOT\+\_\+\+CONNECTED~-\/25}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00042}{42}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a966ecc043a3bf92b2e735b5e6e388633}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a966ecc043a3bf92b2e735b5e6e388633}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_PRE\_SESSION\_RESERVE\_TIMEOUT@{IMM\_P2P\_ERROR\_PRE\_SESSION\_RESERVE\_TIMEOUT}}
+\index{IMM\_P2P\_ERROR\_PRE\_SESSION\_RESERVE\_TIMEOUT@{IMM\_P2P\_ERROR\_PRE\_SESSION\_RESERVE\_TIMEOUT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_PRE\_SESSION\_RESERVE\_TIMEOUT}{IMM\_P2P\_ERROR\_PRE\_SESSION\_RESERVE\_TIMEOUT}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+PRE\+\_\+\+SESSION\+\_\+\+RESERVE\+\_\+\+TIMEOUT~-\/40}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00057}{57}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab27daa5ef78638c25a2a8615aef13ab8}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab27daa5ef78638c25a2a8615aef13ab8}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_PRE\_SESSION\_SUSPENDED@{IMM\_P2P\_ERROR\_PRE\_SESSION\_SUSPENDED}}
+\index{IMM\_P2P\_ERROR\_PRE\_SESSION\_SUSPENDED@{IMM\_P2P\_ERROR\_PRE\_SESSION\_SUSPENDED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_PRE\_SESSION\_SUSPENDED}{IMM\_P2P\_ERROR\_PRE\_SESSION\_SUSPENDED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+PRE\+\_\+\+SESSION\+\_\+\+SUSPENDED~-\/28}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00045}{45}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a217853d3b51e2edb178272d4a1b54847}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a217853d3b51e2edb178272d4a1b54847}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_PRECONNECT\_UNSUPPORTED@{IMM\_P2P\_ERROR\_PRECONNECT\_UNSUPPORTED}}
+\index{IMM\_P2P\_ERROR\_PRECONNECT\_UNSUPPORTED@{IMM\_P2P\_ERROR\_PRECONNECT\_UNSUPPORTED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_PRECONNECT\_UNSUPPORTED}{IMM\_P2P\_ERROR\_PRECONNECT\_UNSUPPORTED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+PRECONNECT\+\_\+\+UNSUPPORTED~-\/31}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00048}{48}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab85dbcd4bcd9be8afe4a20594734ce89}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab85dbcd4bcd9be8afe4a20594734ce89}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_REMOTE@{IMM\_P2P\_ERROR\_REMOTE}}
+\index{IMM\_P2P\_ERROR\_REMOTE@{IMM\_P2P\_ERROR\_REMOTE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_REMOTE}{IMM\_P2P\_ERROR\_REMOTE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+REMOTE~-\/100}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00088}{88}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a2e436f0958f4bd9c6e6159ba6f1a9672}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a2e436f0958f4bd9c6e6159ba6f1a9672}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_REMOTE\_NO\_RESPONSE@{IMM\_P2P\_ERROR\_REMOTE\_NO\_RESPONSE}}
+\index{IMM\_P2P\_ERROR\_REMOTE\_NO\_RESPONSE@{IMM\_P2P\_ERROR\_REMOTE\_NO\_RESPONSE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_REMOTE\_NO\_RESPONSE}{IMM\_P2P\_ERROR\_REMOTE\_NO\_RESPONSE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+REMOTE\+\_\+\+NO\+\_\+\+RESPONSE~-\/39}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00056}{56}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6a898a5ceca25c1a65534d5e1c72d728}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6a898a5ceca25c1a65534d5e1c72d728}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_REMOTE\_SITE\_BUFFER\_FULL@{IMM\_P2P\_ERROR\_REMOTE\_SITE\_BUFFER\_FULL}}
+\index{IMM\_P2P\_ERROR\_REMOTE\_SITE\_BUFFER\_FULL@{IMM\_P2P\_ERROR\_REMOTE\_SITE\_BUFFER\_FULL}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_REMOTE\_SITE\_BUFFER\_FULL}{IMM\_P2P\_ERROR\_REMOTE\_SITE\_BUFFER\_FULL}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+REMOTE\+\_\+\+SITE\+\_\+\+BUFFER\+\_\+\+FULL~-\/15}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00032}{32}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae6c904d99e93e4345a93f59c6fa130df}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae6c904d99e93e4345a93f59c6fa130df}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_RESET@{IMM\_P2P\_ERROR\_RESET}}
+\index{IMM\_P2P\_ERROR\_RESET@{IMM\_P2P\_ERROR\_RESET}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_RESET}{IMM\_P2P\_ERROR\_RESET}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+RESET~-\/41}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00058}{58}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a2aa704dc2ae79509df994c1dbacc44c4}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a2aa704dc2ae79509df994c1dbacc44c4}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_SDP\_ADD\_CODEC\_FAILED@{IMM\_P2P\_ERROR\_SDP\_ADD\_CODEC\_FAILED}}
+\index{IMM\_P2P\_ERROR\_SDP\_ADD\_CODEC\_FAILED@{IMM\_P2P\_ERROR\_SDP\_ADD\_CODEC\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_SDP\_ADD\_CODEC\_FAILED}{IMM\_P2P\_ERROR\_SDP\_ADD\_CODEC\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SDP\+\_\+\+ADD\+\_\+\+CODEC\+\_\+\+FAILED~-\/45}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00062}{62}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab573ba4a879e34eb40d4366132579e0f}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab573ba4a879e34eb40d4366132579e0f}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_SDP\_ADD\_MEDIA\_FAILED@{IMM\_P2P\_ERROR\_SDP\_ADD\_MEDIA\_FAILED}}
+\index{IMM\_P2P\_ERROR\_SDP\_ADD\_MEDIA\_FAILED@{IMM\_P2P\_ERROR\_SDP\_ADD\_MEDIA\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_SDP\_ADD\_MEDIA\_FAILED}{IMM\_P2P\_ERROR\_SDP\_ADD\_MEDIA\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SDP\+\_\+\+ADD\+\_\+\+MEDIA\+\_\+\+FAILED~-\/44}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00061}{61}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac83bcaed1de7fa4f77bbb18eb929f60d}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac83bcaed1de7fa4f77bbb18eb929f60d}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_SDP\_INIT\_FAILED@{IMM\_P2P\_ERROR\_SDP\_INIT\_FAILED}}
+\index{IMM\_P2P\_ERROR\_SDP\_INIT\_FAILED@{IMM\_P2P\_ERROR\_SDP\_INIT\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_SDP\_INIT\_FAILED}{IMM\_P2P\_ERROR\_SDP\_INIT\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SDP\+\_\+\+INIT\+\_\+\+FAILED~-\/43}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00060}{60}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_abc9b58ed57534a15d69809b20dba8273}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_abc9b58ed57534a15d69809b20dba8273}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_SDP\_SET\_AES\_KEY\_FAILED@{IMM\_P2P\_ERROR\_SDP\_SET\_AES\_KEY\_FAILED}}
+\index{IMM\_P2P\_ERROR\_SDP\_SET\_AES\_KEY\_FAILED@{IMM\_P2P\_ERROR\_SDP\_SET\_AES\_KEY\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_SDP\_SET\_AES\_KEY\_FAILED}{IMM\_P2P\_ERROR\_SDP\_SET\_AES\_KEY\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SDP\+\_\+\+SET\+\_\+\+AES\+\_\+\+KEY\+\_\+\+FAILED~-\/48}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00065}{65}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a86e4cfe4a21176f5d8a92607e836e858}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a86e4cfe4a21176f5d8a92607e836e858}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_SESSION\_CLOSED\_CALLED@{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_CALLED}}
+\index{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_CALLED@{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_CALLED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_CALLED}{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_CALLED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SESSION\+\_\+\+CLOSED\+\_\+\+CALLED~-\/14}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00031}{31}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adceec070586b1662a4d6297eded1ba6a}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adceec070586b1662a4d6297eded1ba6a}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_SESSION\_CLOSED\_INSUFFICIENT\_MEMORY@{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_INSUFFICIENT\_MEMORY}}
+\index{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_INSUFFICIENT\_MEMORY@{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_INSUFFICIENT\_MEMORY}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_INSUFFICIENT\_MEMORY}{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_INSUFFICIENT\_MEMORY}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SESSION\+\_\+\+CLOSED\+\_\+\+INSUFFICIENT\+\_\+\+MEMORY~-\/20}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00037}{37}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a49df4d39337f9351a2416afb1f68ace2}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a49df4d39337f9351a2416afb1f68ace2}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_SESSION\_CLOSED\_REMOTE@{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_REMOTE}}
+\index{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_REMOTE@{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_REMOTE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_REMOTE}{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_REMOTE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SESSION\+\_\+\+CLOSED\+\_\+\+REMOTE~-\/12}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00029}{29}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ad5f4cf8a65bd51bd0e8b962d45fb2948}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ad5f4cf8a65bd51bd0e8b962d45fb2948}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_SESSION\_CLOSED\_TIMEOUT@{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_TIMEOUT}}
+\index{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_TIMEOUT@{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_TIMEOUT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_TIMEOUT}{IMM\_P2P\_ERROR\_SESSION\_CLOSED\_TIMEOUT}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SESSION\+\_\+\+CLOSED\+\_\+\+TIMEOUT~-\/13}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00030}{30}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab20792ad8659dbcbb18748ae865bb955}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab20792ad8659dbcbb18748ae865bb955}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_SUCCESSFUL@{IMM\_P2P\_ERROR\_SUCCESSFUL}}
+\index{IMM\_P2P\_ERROR\_SUCCESSFUL@{IMM\_P2P\_ERROR\_SUCCESSFUL}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_SUCCESSFUL}{IMM\_P2P\_ERROR\_SUCCESSFUL}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+SUCCESSFUL~0}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00017}{17}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a66a9f19deae7e7dc577f49d1b0568dcb}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a66a9f19deae7e7dc577f49d1b0568dcb}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_TIME\_COWBOY\_NO\_RESPONSE@{IMM\_P2P\_ERROR\_TIME\_COWBOY\_NO\_RESPONSE}}
+\index{IMM\_P2P\_ERROR\_TIME\_COWBOY\_NO\_RESPONSE@{IMM\_P2P\_ERROR\_TIME\_COWBOY\_NO\_RESPONSE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_TIME\_COWBOY\_NO\_RESPONSE}{IMM\_P2P\_ERROR\_TIME\_COWBOY\_NO\_RESPONSE}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TIME\+\_\+\+COWBOY\+\_\+\+NO\+\_\+\+RESPONSE~-\/54}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00071}{71}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_af23bc1eef245afe329196bd8a8ffbc85}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_af23bc1eef245afe329196bd8a8ffbc85}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_TIME\_OUT@{IMM\_P2P\_ERROR\_TIME\_OUT}}
+\index{IMM\_P2P\_ERROR\_TIME\_OUT@{IMM\_P2P\_ERROR\_TIME\_OUT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_TIME\_OUT}{IMM\_P2P\_ERROR\_TIME\_OUT}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TIME\+\_\+\+OUT~-\/3}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00020}{20}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab969a5238aca2a37101ddc57cfd5fa10}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab969a5238aca2a37101ddc57cfd5fa10}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_TIME\_OUT\_LOCAL\_NAT@{IMM\_P2P\_ERROR\_TIME\_OUT\_LOCAL\_NAT}}
+\index{IMM\_P2P\_ERROR\_TIME\_OUT\_LOCAL\_NAT@{IMM\_P2P\_ERROR\_TIME\_OUT\_LOCAL\_NAT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_TIME\_OUT\_LOCAL\_NAT}{IMM\_P2P\_ERROR\_TIME\_OUT\_LOCAL\_NAT}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TIME\+\_\+\+OUT\+\_\+\+LOCAL\+\_\+\+NAT~-\/52}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00069}{69}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a096894931eeedaec0fe4eefc12b13274}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a096894931eeedaec0fe4eefc12b13274}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_TIME\_OUT\_LOCAL\_NO\_HOST\_CAND@{IMM\_P2P\_ERROR\_TIME\_OUT\_LOCAL\_NO\_HOST\_CAND}}
+\index{IMM\_P2P\_ERROR\_TIME\_OUT\_LOCAL\_NO\_HOST\_CAND@{IMM\_P2P\_ERROR\_TIME\_OUT\_LOCAL\_NO\_HOST\_CAND}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_TIME\_OUT\_LOCAL\_NO\_HOST\_CAND}{IMM\_P2P\_ERROR\_TIME\_OUT\_LOCAL\_NO\_HOST\_CAND}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TIME\+\_\+\+OUT\+\_\+\+LOCAL\+\_\+\+NO\+\_\+\+HOST\+\_\+\+CAND~-\/51}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00068}{68}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa393ff0b339e4a2e0b231107157a740a}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa393ff0b339e4a2e0b231107157a740a}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_TIME\_OUT\_NO\_ANSWER@{IMM\_P2P\_ERROR\_TIME\_OUT\_NO\_ANSWER}}
+\index{IMM\_P2P\_ERROR\_TIME\_OUT\_NO\_ANSWER@{IMM\_P2P\_ERROR\_TIME\_OUT\_NO\_ANSWER}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_TIME\_OUT\_NO\_ANSWER}{IMM\_P2P\_ERROR\_TIME\_OUT\_NO\_ANSWER}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TIME\+\_\+\+OUT\+\_\+\+NO\+\_\+\+ANSWER~-\/50}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00067}{67}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12e1bf7d0b073d588e8b15d0d818cb85}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12e1bf7d0b073d588e8b15d0d818cb85}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_TIME\_OUT\_REMOTE\_NAT@{IMM\_P2P\_ERROR\_TIME\_OUT\_REMOTE\_NAT}}
+\index{IMM\_P2P\_ERROR\_TIME\_OUT\_REMOTE\_NAT@{IMM\_P2P\_ERROR\_TIME\_OUT\_REMOTE\_NAT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_TIME\_OUT\_REMOTE\_NAT}{IMM\_P2P\_ERROR\_TIME\_OUT\_REMOTE\_NAT}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TIME\+\_\+\+OUT\+\_\+\+REMOTE\+\_\+\+NAT~-\/53}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00070}{70}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6f8b615c9b6bdd2d7580a379cca0db68}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6f8b615c9b6bdd2d7580a379cca0db68}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_TOKEN\_AUTH\_FAILED@{IMM\_P2P\_ERROR\_TOKEN\_AUTH\_FAILED}}
+\index{IMM\_P2P\_ERROR\_TOKEN\_AUTH\_FAILED@{IMM\_P2P\_ERROR\_TOKEN\_AUTH\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_TOKEN\_AUTH\_FAILED}{IMM\_P2P\_ERROR\_TOKEN\_AUTH\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TOKEN\+\_\+\+AUTH\+\_\+\+FAILED~-\/57}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00074}{74}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6527d30ccba3ae21ea17450ffcbb5ec7}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6527d30ccba3ae21ea17450ffcbb5ec7}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_TOKEN\_DEVICE\_NOTMATCH@{IMM\_P2P\_ERROR\_TOKEN\_DEVICE\_NOTMATCH}}
+\index{IMM\_P2P\_ERROR\_TOKEN\_DEVICE\_NOTMATCH@{IMM\_P2P\_ERROR\_TOKEN\_DEVICE\_NOTMATCH}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_TOKEN\_DEVICE\_NOTMATCH}{IMM\_P2P\_ERROR\_TOKEN\_DEVICE\_NOTMATCH}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TOKEN\+\_\+\+DEVICE\+\_\+\+NOTMATCH~-\/56}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00073}{73}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a0c4724d8ed3fa6b1bd7496d19ab242b5}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a0c4724d8ed3fa6b1bd7496d19ab242b5}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_TOKEN\_EXPIRED@{IMM\_P2P\_ERROR\_TOKEN\_EXPIRED}}
+\index{IMM\_P2P\_ERROR\_TOKEN\_EXPIRED@{IMM\_P2P\_ERROR\_TOKEN\_EXPIRED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_TOKEN\_EXPIRED}{IMM\_P2P\_ERROR\_TOKEN\_EXPIRED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+TOKEN\+\_\+\+EXPIRED~-\/55}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00072}{72}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a3d01c0a6121d608b559a47d98f9b8dce}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a3d01c0a6121d608b559a47d98f9b8dce}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_UDP\_PORT\_BIND\_FAILED@{IMM\_P2P\_ERROR\_UDP\_PORT\_BIND\_FAILED}}
+\index{IMM\_P2P\_ERROR\_UDP\_PORT\_BIND\_FAILED@{IMM\_P2P\_ERROR\_UDP\_PORT\_BIND\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_UDP\_PORT\_BIND\_FAILED}{IMM\_P2P\_ERROR\_UDP\_PORT\_BIND\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+UDP\+\_\+\+PORT\+\_\+\+BIND\+\_\+\+FAILED~-\/18}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00035}{35}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a65d3a323c5234cb8774f36ad0f21e960}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a65d3a323c5234cb8774f36ad0f21e960}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_USER\_CONNECT\_BREAK@{IMM\_P2P\_ERROR\_USER\_CONNECT\_BREAK}}
+\index{IMM\_P2P\_ERROR\_USER\_CONNECT\_BREAK@{IMM\_P2P\_ERROR\_USER\_CONNECT\_BREAK}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_USER\_CONNECT\_BREAK}{IMM\_P2P\_ERROR\_USER\_CONNECT\_BREAK}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+USER\+\_\+\+CONNECT\+\_\+\+BREAK~-\/19}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00036}{36}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5ae6c836f770eaf9b8b7792a8fb6651e}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5ae6c836f770eaf9b8b7792a8fb6651e}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_USER\_LISTEN\_BREAK@{IMM\_P2P\_ERROR\_USER\_LISTEN\_BREAK}}
+\index{IMM\_P2P\_ERROR\_USER\_LISTEN\_BREAK@{IMM\_P2P\_ERROR\_USER\_LISTEN\_BREAK}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_USER\_LISTEN\_BREAK}{IMM\_P2P\_ERROR\_USER\_LISTEN\_BREAK}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+USER\+\_\+\+LISTEN\+\_\+\+BREAK~-\/16}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00033}{33}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5dab686c8c3fbb2852c5fe422822d303}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5dab686c8c3fbb2852c5fe422822d303}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ERROR\_UV\_TIMER\_INIT\_FAILED@{IMM\_P2P\_ERROR\_UV\_TIMER\_INIT\_FAILED}}
+\index{IMM\_P2P\_ERROR\_UV\_TIMER\_INIT\_FAILED@{IMM\_P2P\_ERROR\_UV\_TIMER\_INIT\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ERROR\_UV\_TIMER\_INIT\_FAILED}{IMM\_P2P\_ERROR\_UV\_TIMER\_INIT\_FAILED}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ERROR\+\_\+\+UV\+\_\+\+TIMER\+\_\+\+INIT\+\_\+\+FAILED~-\/42}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00059}{59}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1f274c38987b61e573236f60dbb055f5}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1f274c38987b61e573236f60dbb055f5}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_ID\_LEN\_MAX@{IMM\_P2P\_ID\_LEN\_MAX}}
+\index{IMM\_P2P\_ID\_LEN\_MAX@{IMM\_P2P\_ID\_LEN\_MAX}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_ID\_LEN\_MAX}{IMM\_P2P\_ID\_LEN\_MAX}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+ID\+\_\+\+LEN\+\_\+\+MAX~80}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00011}{11}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6db8aaf73dd217e2d4141cbb62a994d0}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6db8aaf73dd217e2d4141cbb62a994d0}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SESSION\_NUMBER\_MAX@{IMM\_P2P\_SESSION\_NUMBER\_MAX}}
+\index{IMM\_P2P\_SESSION\_NUMBER\_MAX@{IMM\_P2P\_SESSION\_NUMBER\_MAX}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_SESSION\_NUMBER\_MAX}{IMM\_P2P\_SESSION\_NUMBER\_MAX}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+SESSION\+\_\+\+NUMBER\+\_\+\+MAX~1024}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00013}{13}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adfa0074b5e0462042b48c2a6803c3e4b}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adfa0074b5e0462042b48c2a6803c3e4b}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_VIDEO\_BITRATE\_MAX@{IMM\_P2P\_VIDEO\_BITRATE\_MAX}}
+\index{IMM\_P2P\_VIDEO\_BITRATE\_MAX@{IMM\_P2P\_VIDEO\_BITRATE\_MAX}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_VIDEO\_BITRATE\_MAX}{IMM\_P2P\_VIDEO\_BITRATE\_MAX}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+VIDEO\+\_\+\+BITRATE\+\_\+\+MAX~(4000)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00015}{15}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a8bf01d2bb3680a9f18e9e63d1cd66d97}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a8bf01d2bb3680a9f18e9e63d1cd66d97}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_VIDEO\_BITRATE\_MIN@{IMM\_P2P\_VIDEO\_BITRATE\_MIN}}
+\index{IMM\_P2P\_VIDEO\_BITRATE\_MIN@{IMM\_P2P\_VIDEO\_BITRATE\_MIN}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{IMM\_P2P\_VIDEO\_BITRATE\_MIN}{IMM\_P2P\_VIDEO\_BITRATE\_MIN}}
+{\footnotesize\ttfamily \#define IMM\+\_\+\+P2\+P\+\_\+\+VIDEO\+\_\+\+BITRATE\+\_\+\+MIN~(600)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00014}{14}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a4b07c5cadc12f433a8c41d7c2164abbf}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a4b07c5cadc12f433a8c41d7c2164abbf}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_aes\_create\_cb\_t@{imm\_p2p\_rtc\_aes\_create\_cb\_t}}
+\index{imm\_p2p\_rtc\_aes\_create\_cb\_t@{imm\_p2p\_rtc\_aes\_create\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_aes\_create\_cb\_t}{imm\_p2p\_rtc\_aes\_create\_cb\_t}}
+{\footnotesize\ttfamily typedef int($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+aes\+\_\+create\+\_\+cb\+\_\+t) (void $\ast$$\ast$handle, char $\ast$mode, char $\ast$crypt, char $\ast$key, int key\+\_\+bits)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00215}{215}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa74f1335e588df55c68c7ccf8dc3e45f}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa74f1335e588df55c68c7ccf8dc3e45f}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_aes\_decrypt\_cb\_t@{imm\_p2p\_rtc\_aes\_decrypt\_cb\_t}}
+\index{imm\_p2p\_rtc\_aes\_decrypt\_cb\_t@{imm\_p2p\_rtc\_aes\_decrypt\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_aes\_decrypt\_cb\_t}{imm\_p2p\_rtc\_aes\_decrypt\_cb\_t}}
+{\footnotesize\ttfamily typedef int($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+aes\+\_\+decrypt\+\_\+cb\+\_\+t) (void $\ast$handle, int length, char $\ast$iv, char $\ast$input, char $\ast$output)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00218}{218}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae3feda37790be7bb555777f1a3afbb42}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae3feda37790be7bb555777f1a3afbb42}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_aes\_destroy\_cb\_t@{imm\_p2p\_rtc\_aes\_destroy\_cb\_t}}
+\index{imm\_p2p\_rtc\_aes\_destroy\_cb\_t@{imm\_p2p\_rtc\_aes\_destroy\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_aes\_destroy\_cb\_t}{imm\_p2p\_rtc\_aes\_destroy\_cb\_t}}
+{\footnotesize\ttfamily typedef int($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+aes\+\_\+destroy\+\_\+cb\+\_\+t) (void $\ast$handle)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00216}{216}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6bad57728081cd2bcc37eaed4ddbb8c7}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6bad57728081cd2bcc37eaed4ddbb8c7}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_aes\_encrypt\_cb\_t@{imm\_p2p\_rtc\_aes\_encrypt\_cb\_t}}
+\index{imm\_p2p\_rtc\_aes\_encrypt\_cb\_t@{imm\_p2p\_rtc\_aes\_encrypt\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_aes\_encrypt\_cb\_t}{imm\_p2p\_rtc\_aes\_encrypt\_cb\_t}}
+{\footnotesize\ttfamily typedef int($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+aes\+\_\+encrypt\+\_\+cb\+\_\+t) (void $\ast$handle, int length, char $\ast$iv, char $\ast$input, char $\ast$output)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00217}{217}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a24e63cc71e9347a844b9fb71df3d2664}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a24e63cc71e9347a844b9fb71df3d2664}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_audio\_codec\_t@{imm\_p2p\_rtc\_audio\_codec\_t}}
+\index{imm\_p2p\_rtc\_audio\_codec\_t@{imm\_p2p\_rtc\_audio\_codec\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_audio\_codec\_t}{imm\_p2p\_rtc\_audio\_codec\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structimm__p2p__rtc__audio__codec}{imm\+\_\+p2p\+\_\+rtc\+\_\+audio\+\_\+codec}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a24e63cc71e9347a844b9fb71df3d2664}{imm\+\_\+p2p\+\_\+rtc\+\_\+audio\+\_\+codec\+\_\+t}}}
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_af2aa8e4b7ec78973b54effa7c88b68d9}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_af2aa8e4b7ec78973b54effa7c88b68d9}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_auth\_cb\_t@{imm\_p2p\_rtc\_auth\_cb\_t}}
+\index{imm\_p2p\_rtc\_auth\_cb\_t@{imm\_p2p\_rtc\_auth\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_auth\_cb\_t}{imm\_p2p\_rtc\_auth\_cb\_t}}
+{\footnotesize\ttfamily typedef int32\+\_\+t($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+auth\+\_\+cb\+\_\+t) (char $\ast$buf, uint32\+\_\+t len, char $\ast$md, uint32\+\_\+t md\+\_\+len)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00203}{203}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a3543d62f841cbb633b009b5a69991f61}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a3543d62f841cbb633b009b5a69991f61}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_cb\_t@{imm\_p2p\_rtc\_cb\_t}}
+\index{imm\_p2p\_rtc\_cb\_t@{imm\_p2p\_rtc\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_cb\_t}{imm\_p2p\_rtc\_cb\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structimm__p2p__rtc__cb}{imm\+\_\+p2p\+\_\+rtc\+\_\+cb}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a3543d62f841cbb633b009b5a69991f61}{imm\+\_\+p2p\+\_\+rtc\+\_\+cb\+\_\+t}}}
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1d4fb15801b1bb79116c222bd9f63399}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1d4fb15801b1bb79116c222bd9f63399}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_connection\_type\_e@{imm\_p2p\_rtc\_connection\_type\_e}}
+\index{imm\_p2p\_rtc\_connection\_type\_e@{imm\_p2p\_rtc\_connection\_type\_e}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_connection\_type\_e}{imm\_p2p\_rtc\_connection\_type\_e}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abc}{imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1d4fb15801b1bb79116c222bd9f63399}{imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type\+\_\+e}}}
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac6895a679cfc9e6cfce32b7586aed628}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac6895a679cfc9e6cfce32b7586aed628}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_http\_cb\_t@{imm\_p2p\_rtc\_http\_cb\_t}}
+\index{imm\_p2p\_rtc\_http\_cb\_t@{imm\_p2p\_rtc\_http\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_http\_cb\_t}{imm\_p2p\_rtc\_http\_cb\_t}}
+{\footnotesize\ttfamily typedef int32\+\_\+t($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+http\+\_\+cb\+\_\+t) (char $\ast$api, char $\ast$dev\+Id, char $\ast$content, uint32\+\_\+t content\+\_\+len)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00210}{210}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6def249c3a98b548a83751cbaeb4fbe5}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a6def249c3a98b548a83751cbaeb4fbe5}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_log\_cb\_t@{imm\_p2p\_rtc\_log\_cb\_t}}
+\index{imm\_p2p\_rtc\_log\_cb\_t@{imm\_p2p\_rtc\_log\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_log\_cb\_t}{imm\_p2p\_rtc\_log\_cb\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+log\+\_\+cb\+\_\+t) (char $\ast$log, uint32\+\_\+t len, uint32\+\_\+t flags)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00197}{197}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a38de6063ebcd98b2c0a76e07d67d744e}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a38de6063ebcd98b2c0a76e07d67d744e}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_log\_level\_e@{imm\_p2p\_rtc\_log\_level\_e}}
+\index{imm\_p2p\_rtc\_log\_level\_e@{imm\_p2p\_rtc\_log\_level\_e}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_log\_level\_e}{imm\_p2p\_rtc\_log\_level\_e}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595}{imm\+\_\+p2p\+\_\+rtc\+\_\+log\+\_\+level}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a38de6063ebcd98b2c0a76e07d67d744e}{imm\+\_\+p2p\+\_\+rtc\+\_\+log\+\_\+level\+\_\+e}}}
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae94227b2d2fe5b19251e0e95c147bf70}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae94227b2d2fe5b19251e0e95c147bf70}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_options\_t@{imm\_p2p\_rtc\_options\_t}}
+\index{imm\_p2p\_rtc\_options\_t@{imm\_p2p\_rtc\_options\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_options\_t}{imm\_p2p\_rtc\_options\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structimm__p2p__rtc__options}{imm\+\_\+p2p\+\_\+rtc\+\_\+options}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ae94227b2d2fe5b19251e0e95c147bf70}{imm\+\_\+p2p\+\_\+rtc\+\_\+options\+\_\+t}}}
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa31778bd19da4e4a8a9ea84b0d6d2034}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa31778bd19da4e4a8a9ea84b0d6d2034}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_security\_level\_e@{imm\_p2p\_rtc\_security\_level\_e}}
+\index{imm\_p2p\_rtc\_security\_level\_e@{imm\_p2p\_rtc\_security\_level\_e}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_security\_level\_e}{imm\_p2p\_rtc\_security\_level\_e}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4}{imm\+\_\+p2p\+\_\+rtc\+\_\+security\+\_\+level}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_aa31778bd19da4e4a8a9ea84b0d6d2034}{imm\+\_\+p2p\+\_\+rtc\+\_\+security\+\_\+level\+\_\+e}}}
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1ae8f7250f0155b424e43a2ec330c845}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1ae8f7250f0155b424e43a2ec330c845}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_session\_get\_address\_cb\_t@{imm\_p2p\_rtc\_session\_get\_address\_cb\_t}}
+\index{imm\_p2p\_rtc\_session\_get\_address\_cb\_t@{imm\_p2p\_rtc\_session\_get\_address\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_session\_get\_address\_cb\_t}{imm\_p2p\_rtc\_session\_get\_address\_cb\_t}}
+{\footnotesize\ttfamily typedef int($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+session\+\_\+get\+\_\+address\+\_\+cb\+\_\+t) (char $\ast$address)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00230}{230}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1cf5da88012926a0499cfea1583e9ed4}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1cf5da88012926a0499cfea1583e9ed4}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_session\_state\_cb\_t@{imm\_p2p\_rtc\_session\_state\_cb\_t}}
+\index{imm\_p2p\_rtc\_session\_state\_cb\_t@{imm\_p2p\_rtc\_session\_state\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_session\_state\_cb\_t}{imm\_p2p\_rtc\_session\_state\_cb\_t}}
+{\footnotesize\ttfamily typedef int($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+session\+\_\+state\+\_\+cb\+\_\+t) (char $\ast$remote\+\_\+id, int handle, int is\+\_\+pre, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac132caceff1a35518773245ff644c145}{rtc\+\_\+state\+\_\+e}} state, \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919d}{rtc\+\_\+active\+\_\+state\+\_\+e}} active\+\_\+state, int \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}})}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00226}{226}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a66659616f381547af9b0acad4a0571cf}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a66659616f381547af9b0acad4a0571cf}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_signaling\_cb\_t@{imm\_p2p\_rtc\_signaling\_cb\_t}}
+\index{imm\_p2p\_rtc\_signaling\_cb\_t@{imm\_p2p\_rtc\_signaling\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_signaling\_cb\_t}{imm\_p2p\_rtc\_signaling\_cb\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+signaling\+\_\+cb\+\_\+t) (char $\ast$remote\+\_\+id, char $\ast$signaling, uint32\+\_\+t len)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00191}{191}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1f7064258637c204c54a0fa736250db6}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a1f7064258637c204c54a0fa736250db6}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_upnp\_alloc\_port\_cb\_t@{imm\_p2p\_rtc\_upnp\_alloc\_port\_cb\_t}}
+\index{imm\_p2p\_rtc\_upnp\_alloc\_port\_cb\_t@{imm\_p2p\_rtc\_upnp\_alloc\_port\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_upnp\_alloc\_port\_cb\_t}{imm\_p2p\_rtc\_upnp\_alloc\_port\_cb\_t}}
+{\footnotesize\ttfamily typedef int($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+alloc\+\_\+port\+\_\+cb\+\_\+t) (\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527a}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol}} protocol, int $\ast$local\+\_\+port, char $\ast$address, int $\ast$\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_aadbdd25b48e1f9226cefe59e9c124ac7}{port}})}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00221}{221}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a0ddeaa472f83b82f4c3cfb560480d0d4}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a0ddeaa472f83b82f4c3cfb560480d0d4}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_upnp\_bind\_result\_cb\_t@{imm\_p2p\_rtc\_upnp\_bind\_result\_cb\_t}}
+\index{imm\_p2p\_rtc\_upnp\_bind\_result\_cb\_t@{imm\_p2p\_rtc\_upnp\_bind\_result\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_upnp\_bind\_result\_cb\_t}{imm\_p2p\_rtc\_upnp\_bind\_result\_cb\_t}}
+{\footnotesize\ttfamily typedef int($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+bind\+\_\+result\+\_\+cb\+\_\+t) (\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527a}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol}} protocol, int local\+\_\+port, int error\+\_\+code)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00223}{223}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5799fcc4dc18f20a5789bcc72047427f}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a5799fcc4dc18f20a5789bcc72047427f}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_upnp\_release\_port\_cb\_t@{imm\_p2p\_rtc\_upnp\_release\_port\_cb\_t}}
+\index{imm\_p2p\_rtc\_upnp\_release\_port\_cb\_t@{imm\_p2p\_rtc\_upnp\_release\_port\_cb\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_upnp\_release\_port\_cb\_t}{imm\_p2p\_rtc\_upnp\_release\_port\_cb\_t}}
+{\footnotesize\ttfamily typedef int($\ast$ imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+release\+\_\+port\+\_\+cb\+\_\+t) (\mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527a}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol}} protocol, int local\+\_\+port)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00222}{222}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a24227f220ab046bab5fc280cb3604bc5}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a24227f220ab046bab5fc280cb3604bc5}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_video\_codec\_t@{imm\_p2p\_rtc\_video\_codec\_t}}
+\index{imm\_p2p\_rtc\_video\_codec\_t@{imm\_p2p\_rtc\_video\_codec\_t}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_video\_codec\_t}{imm\_p2p\_rtc\_video\_codec\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structimm__p2p__rtc__video__codec}{imm\+\_\+p2p\+\_\+rtc\+\_\+video\+\_\+codec}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a24227f220ab046bab5fc280cb3604bc5}{imm\+\_\+p2p\+\_\+rtc\+\_\+video\+\_\+codec\+\_\+t}}}
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac132caceff1a35518773245ff644c145}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac132caceff1a35518773245ff644c145}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!rtc\_state\_e@{rtc\_state\_e}}
+\index{rtc\_state\_e@{rtc\_state\_e}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_state\_e}{rtc\_state\_e}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61f}{rtc\+\_\+state}} \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ac132caceff1a35518773245ff644c145}{rtc\+\_\+state\+\_\+e}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abc}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abc}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_connection\_type@{imm\_p2p\_rtc\_connection\_type}}
+\index{imm\_p2p\_rtc\_connection\_type@{imm\_p2p\_rtc\_connection\_type}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_connection\_type}{imm\_p2p\_rtc\_connection\_type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abc}{imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_connection\_type\_p2p@{imm\_p2p\_rtc\_connection\_type\_p2p}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_connection\_type\_p2p@{imm\_p2p\_rtc\_connection\_type\_p2p}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abcac5335dd326113a77e51c27731328fee4}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abcac5335dd326113a77e51c27731328fee4}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type\+\_\+p2p&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_connection\_type\_webrtc@{imm\_p2p\_rtc\_connection\_type\_webrtc}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_connection\_type\_webrtc@{imm\_p2p\_rtc\_connection\_type\_webrtc}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abca60f849b3f369653c6bfbbc91b93e413d}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abca60f849b3f369653c6bfbbc91b93e413d}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type\+\_\+webrtc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_connection\_type\_p2p@{imm\_p2p\_rtc\_connection\_type\_p2p}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_connection\_type\_p2p@{imm\_p2p\_rtc\_connection\_type\_p2p}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abcac5335dd326113a77e51c27731328fee4}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abcac5335dd326113a77e51c27731328fee4}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type\+\_\+p2p&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_connection\_type\_webrtc@{imm\_p2p\_rtc\_connection\_type\_webrtc}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_connection\_type\_webrtc@{imm\_p2p\_rtc\_connection\_type\_webrtc}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abca60f849b3f369653c6bfbbc91b93e413d}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a12292a633668044a1efacb1382277abca60f849b3f369653c6bfbbc91b93e413d}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+connection\+\_\+type\+\_\+webrtc&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00116}{116}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bf}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bf}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_frame\_type\_e@{imm\_p2p\_rtc\_frame\_type\_e}}
+\index{imm\_p2p\_rtc\_frame\_type\_e@{imm\_p2p\_rtc\_frame\_type\_e}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_frame\_type\_e}{imm\_p2p\_rtc\_frame\_type\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bf}{imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+e}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_frame\_type\_audio@{imm\_p2p\_rtc\_frame\_type\_audio}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_frame\_type\_audio@{imm\_p2p\_rtc\_frame\_type\_audio}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa7394f3c17dbb709b2bee1456ab7544b2}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa7394f3c17dbb709b2bee1456ab7544b2}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+audio&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_frame\_type\_video\_p@{imm\_p2p\_rtc\_frame\_type\_video\_p}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_frame\_type\_video\_p@{imm\_p2p\_rtc\_frame\_type\_video\_p}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa9ea7a105542a75cdd0fc2b63816f7687}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa9ea7a105542a75cdd0fc2b63816f7687}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+video\+\_\+p&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_frame\_type\_video\_i@{imm\_p2p\_rtc\_frame\_type\_video\_i}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_frame\_type\_video\_i@{imm\_p2p\_rtc\_frame\_type\_video\_i}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa8eb2821add8fb402f2e357a975324e02}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa8eb2821add8fb402f2e357a975324e02}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+video\+\_\+i&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_frame\_type\_audio@{imm\_p2p\_rtc\_frame\_type\_audio}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_frame\_type\_audio@{imm\_p2p\_rtc\_frame\_type\_audio}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa7394f3c17dbb709b2bee1456ab7544b2}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa7394f3c17dbb709b2bee1456ab7544b2}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+audio&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_frame\_type\_video\_p@{imm\_p2p\_rtc\_frame\_type\_video\_p}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_frame\_type\_video\_p@{imm\_p2p\_rtc\_frame\_type\_video\_p}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa9ea7a105542a75cdd0fc2b63816f7687}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa9ea7a105542a75cdd0fc2b63816f7687}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+video\+\_\+p&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_frame\_type\_video\_i@{imm\_p2p\_rtc\_frame\_type\_video\_i}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_frame\_type\_video\_i@{imm\_p2p\_rtc\_frame\_type\_video\_i}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa8eb2821add8fb402f2e357a975324e02}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_adaa71f9c399e198ffbdc290e1902a3bfa8eb2821add8fb402f2e357a975324e02}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+frame\+\_\+type\+\_\+video\+\_\+i&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00110}{110}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_log\_level@{imm\_p2p\_rtc\_log\_level}}
+\index{imm\_p2p\_rtc\_log\_level@{imm\_p2p\_rtc\_log\_level}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_log\_level}{imm\_p2p\_rtc\_log\_level}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595}{imm\+\_\+p2p\+\_\+rtc\+\_\+log\+\_\+level}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_LOG\_TRACE@{IMM\_P2P\_LOG\_TRACE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_LOG\_TRACE@{IMM\_P2P\_LOG\_TRACE}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595a754c20ccaa7f0d8dfc3574fca357ca67}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595a754c20ccaa7f0d8dfc3574fca357ca67}} 
+IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+TRACE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_LOG\_DEBUG@{IMM\_P2P\_LOG\_DEBUG}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_LOG\_DEBUG@{IMM\_P2P\_LOG\_DEBUG}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595af3d7e1aa6207737ee2cc33011e5dd74d}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595af3d7e1aa6207737ee2cc33011e5dd74d}} 
+IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+DEBUG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_LOG\_INFO@{IMM\_P2P\_LOG\_INFO}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_LOG\_INFO@{IMM\_P2P\_LOG\_INFO}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad8b0e6c4f8cf303977eee4933eaef023}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad8b0e6c4f8cf303977eee4933eaef023}} 
+IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+INFO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_LOG\_WARN@{IMM\_P2P\_LOG\_WARN}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_LOG\_WARN@{IMM\_P2P\_LOG\_WARN}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad47471dba76bf012f27b923a82979eee}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad47471dba76bf012f27b923a82979eee}} 
+IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+WARN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_LOG\_ERROR@{IMM\_P2P\_LOG\_ERROR}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_LOG\_ERROR@{IMM\_P2P\_LOG\_ERROR}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad6f2e6c44d994cf1d264362b2f007f62}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad6f2e6c44d994cf1d264362b2f007f62}} 
+IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_LOG\_FATAL@{IMM\_P2P\_LOG\_FATAL}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_LOG\_FATAL@{IMM\_P2P\_LOG\_FATAL}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595aba7668a07e4833b608b988e2b2a6c4cd}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595aba7668a07e4833b608b988e2b2a6c4cd}} 
+IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+FATAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_LOG\_TRACE@{IMM\_P2P\_LOG\_TRACE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_LOG\_TRACE@{IMM\_P2P\_LOG\_TRACE}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595a754c20ccaa7f0d8dfc3574fca357ca67}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595a754c20ccaa7f0d8dfc3574fca357ca67}} 
+IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+TRACE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_LOG\_DEBUG@{IMM\_P2P\_LOG\_DEBUG}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_LOG\_DEBUG@{IMM\_P2P\_LOG\_DEBUG}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595af3d7e1aa6207737ee2cc33011e5dd74d}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595af3d7e1aa6207737ee2cc33011e5dd74d}} 
+IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+DEBUG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_LOG\_INFO@{IMM\_P2P\_LOG\_INFO}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_LOG\_INFO@{IMM\_P2P\_LOG\_INFO}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad8b0e6c4f8cf303977eee4933eaef023}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad8b0e6c4f8cf303977eee4933eaef023}} 
+IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+INFO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_LOG\_WARN@{IMM\_P2P\_LOG\_WARN}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_LOG\_WARN@{IMM\_P2P\_LOG\_WARN}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad47471dba76bf012f27b923a82979eee}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad47471dba76bf012f27b923a82979eee}} 
+IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+WARN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_LOG\_ERROR@{IMM\_P2P\_LOG\_ERROR}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_LOG\_ERROR@{IMM\_P2P\_LOG\_ERROR}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad6f2e6c44d994cf1d264362b2f007f62}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595ad6f2e6c44d994cf1d264362b2f007f62}} 
+IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_LOG\_FATAL@{IMM\_P2P\_LOG\_FATAL}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_LOG\_FATAL@{IMM\_P2P\_LOG\_FATAL}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595aba7668a07e4833b608b988e2b2a6c4cd}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_ab0278b614995fd0e10ed2d6ab2a78595aba7668a07e4833b608b988e2b2a6c4cd}} 
+IMM\+\_\+\+P2\+P\+\_\+\+LOG\+\_\+\+FATAL&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00090}{90}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_security\_level@{imm\_p2p\_rtc\_security\_level}}
+\index{imm\_p2p\_rtc\_security\_level@{imm\_p2p\_rtc\_security\_level}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_security\_level}{imm\_p2p\_rtc\_security\_level}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4}{imm\+\_\+p2p\+\_\+rtc\+\_\+security\+\_\+level}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_0@{IMM\_P2P\_SECURITY\_LEVEL\_0}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_0@{IMM\_P2P\_SECURITY\_LEVEL\_0}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a00794c06e612751e505a1a1aa9f56341}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a00794c06e612751e505a1a1aa9f56341}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_1@{IMM\_P2P\_SECURITY\_LEVEL\_1}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_1@{IMM\_P2P\_SECURITY\_LEVEL\_1}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a8cbe16e531bd6e903be514d01759bf00}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a8cbe16e531bd6e903be514d01759bf00}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_2@{IMM\_P2P\_SECURITY\_LEVEL\_2}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_2@{IMM\_P2P\_SECURITY\_LEVEL\_2}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4ade493736fbc521c4349921bf0cbd841d}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4ade493736fbc521c4349921bf0cbd841d}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_3@{IMM\_P2P\_SECURITY\_LEVEL\_3}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_3@{IMM\_P2P\_SECURITY\_LEVEL\_3}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4ae87a592c92eb7fd276e3b84e56413da4}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4ae87a592c92eb7fd276e3b84e56413da4}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_4@{IMM\_P2P\_SECURITY\_LEVEL\_4}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_4@{IMM\_P2P\_SECURITY\_LEVEL\_4}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4af50dbc0e7ae31a479b168f324a578f2d}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4af50dbc0e7ae31a479b168f324a578f2d}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_5@{IMM\_P2P\_SECURITY\_LEVEL\_5}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_5@{IMM\_P2P\_SECURITY\_LEVEL\_5}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4abdf14af1652f258afa0207d9d77d2bd8}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4abdf14af1652f258afa0207d9d77d2bd8}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_MAX@{IMM\_P2P\_SECURITY\_LEVEL\_MAX}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_MAX@{IMM\_P2P\_SECURITY\_LEVEL\_MAX}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a9bfd487e924a6d3c81cb1f447f695034}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a9bfd487e924a6d3c81cb1f447f695034}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+\+MAX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_0@{IMM\_P2P\_SECURITY\_LEVEL\_0}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_0@{IMM\_P2P\_SECURITY\_LEVEL\_0}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a00794c06e612751e505a1a1aa9f56341}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a00794c06e612751e505a1a1aa9f56341}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_1@{IMM\_P2P\_SECURITY\_LEVEL\_1}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_1@{IMM\_P2P\_SECURITY\_LEVEL\_1}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a8cbe16e531bd6e903be514d01759bf00}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a8cbe16e531bd6e903be514d01759bf00}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_2@{IMM\_P2P\_SECURITY\_LEVEL\_2}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_2@{IMM\_P2P\_SECURITY\_LEVEL\_2}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4ade493736fbc521c4349921bf0cbd841d}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4ade493736fbc521c4349921bf0cbd841d}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_3@{IMM\_P2P\_SECURITY\_LEVEL\_3}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_3@{IMM\_P2P\_SECURITY\_LEVEL\_3}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4ae87a592c92eb7fd276e3b84e56413da4}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4ae87a592c92eb7fd276e3b84e56413da4}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_4@{IMM\_P2P\_SECURITY\_LEVEL\_4}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_4@{IMM\_P2P\_SECURITY\_LEVEL\_4}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4af50dbc0e7ae31a479b168f324a578f2d}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4af50dbc0e7ae31a479b168f324a578f2d}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_5@{IMM\_P2P\_SECURITY\_LEVEL\_5}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_5@{IMM\_P2P\_SECURITY\_LEVEL\_5}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4abdf14af1652f258afa0207d9d77d2bd8}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4abdf14af1652f258afa0207d9d77d2bd8}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMM\_P2P\_SECURITY\_LEVEL\_MAX@{IMM\_P2P\_SECURITY\_LEVEL\_MAX}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!IMM\_P2P\_SECURITY\_LEVEL\_MAX@{IMM\_P2P\_SECURITY\_LEVEL\_MAX}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a9bfd487e924a6d3c81cb1f447f695034}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a74b45abf979f6942385a82d08bad42a4a9bfd487e924a6d3c81cb1f447f695034}} 
+IMM\+\_\+\+P2\+P\+\_\+\+SECURITY\+\_\+\+LEVEL\+\_\+\+MAX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00099}{99}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527a}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527a}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_upnp\_port\_protocol@{imm\_p2p\_rtc\_upnp\_port\_protocol}}
+\index{imm\_p2p\_rtc\_upnp\_port\_protocol@{imm\_p2p\_rtc\_upnp\_port\_protocol}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{imm\_p2p\_rtc\_upnp\_port\_protocol}{imm\_p2p\_rtc\_upnp\_port\_protocol}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527a}{imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_upnp\_port\_protocol\_udp@{imm\_p2p\_rtc\_upnp\_port\_protocol\_udp}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_upnp\_port\_protocol\_udp@{imm\_p2p\_rtc\_upnp\_port\_protocol\_udp}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527aaf6bc7861d1792557de20b81366699f6c}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527aaf6bc7861d1792557de20b81366699f6c}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol\+\_\+udp&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_upnp\_port\_protocol\_tcp@{imm\_p2p\_rtc\_upnp\_port\_protocol\_tcp}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_upnp\_port\_protocol\_tcp@{imm\_p2p\_rtc\_upnp\_port\_protocol\_tcp}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527aa7c1bdd8148e5adf07be8c9efcc4d3624}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527aa7c1bdd8148e5adf07be8c9efcc4d3624}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol\+\_\+tcp&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_upnp\_port\_protocol\_udp@{imm\_p2p\_rtc\_upnp\_port\_protocol\_udp}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_upnp\_port\_protocol\_udp@{imm\_p2p\_rtc\_upnp\_port\_protocol\_udp}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527aaf6bc7861d1792557de20b81366699f6c}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527aaf6bc7861d1792557de20b81366699f6c}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol\+\_\+udp&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{imm\_p2p\_rtc\_upnp\_port\_protocol\_tcp@{imm\_p2p\_rtc\_upnp\_port\_protocol\_tcp}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!imm\_p2p\_rtc\_upnp\_port\_protocol\_tcp@{imm\_p2p\_rtc\_upnp\_port\_protocol\_tcp}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527aa7c1bdd8148e5adf07be8c9efcc4d3624}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a432294076fd9d5e826c51c39e99c527aa7c1bdd8148e5adf07be8c9efcc4d3624}} 
+imm\+\_\+p2p\+\_\+rtc\+\_\+upnp\+\_\+port\+\_\+protocol\+\_\+tcp&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00121}{121}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919d}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919d}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!rtc\_active\_state\_e@{rtc\_active\_state\_e}}
+\index{rtc\_active\_state\_e@{rtc\_active\_state\_e}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_active\_state\_e}{rtc\_active\_state\_e}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919d}{rtc\+\_\+active\+\_\+state\+\_\+e}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_PRE\_NOT\_ACTIVE@{RTC\_PRE\_NOT\_ACTIVE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_PRE\_NOT\_ACTIVE@{RTC\_PRE\_NOT\_ACTIVE}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919da18911c148a122f8d8ea7836f690b3b8c}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919da18911c148a122f8d8ea7836f690b3b8c}} 
+RTC\+\_\+\+PRE\+\_\+\+NOT\+\_\+\+ACTIVE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_PRE\_ACTIVATING@{RTC\_PRE\_ACTIVATING}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_PRE\_ACTIVATING@{RTC\_PRE\_ACTIVATING}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919dae0818d73f972a4a368c4bc28e7ddb47f}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919dae0818d73f972a4a368c4bc28e7ddb47f}} 
+RTC\+\_\+\+PRE\+\_\+\+ACTIVATING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_PRE\_ACTIVE@{RTC\_PRE\_ACTIVE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_PRE\_ACTIVE@{RTC\_PRE\_ACTIVE}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919da7af4ebaf33e2cb2103f22f0027f6c81a}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919da7af4ebaf33e2cb2103f22f0027f6c81a}} 
+RTC\+\_\+\+PRE\+\_\+\+ACTIVE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_PRE\_SUSPENDING@{RTC\_PRE\_SUSPENDING}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_PRE\_SUSPENDING@{RTC\_PRE\_SUSPENDING}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919daf8feeb1d446a6adfdfeb5fc9108acfe7}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919daf8feeb1d446a6adfdfeb5fc9108acfe7}} 
+RTC\+\_\+\+PRE\+\_\+\+SUSPENDING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_PRE\_NOT\_ACTIVE@{RTC\_PRE\_NOT\_ACTIVE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_PRE\_NOT\_ACTIVE@{RTC\_PRE\_NOT\_ACTIVE}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919da18911c148a122f8d8ea7836f690b3b8c}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919da18911c148a122f8d8ea7836f690b3b8c}} 
+RTC\+\_\+\+PRE\+\_\+\+NOT\+\_\+\+ACTIVE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_PRE\_ACTIVATING@{RTC\_PRE\_ACTIVATING}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_PRE\_ACTIVATING@{RTC\_PRE\_ACTIVATING}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919dae0818d73f972a4a368c4bc28e7ddb47f}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919dae0818d73f972a4a368c4bc28e7ddb47f}} 
+RTC\+\_\+\+PRE\+\_\+\+ACTIVATING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_PRE\_ACTIVE@{RTC\_PRE\_ACTIVE}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_PRE\_ACTIVE@{RTC\_PRE\_ACTIVE}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919da7af4ebaf33e2cb2103f22f0027f6c81a}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919da7af4ebaf33e2cb2103f22f0027f6c81a}} 
+RTC\+\_\+\+PRE\+\_\+\+ACTIVE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_PRE\_SUSPENDING@{RTC\_PRE\_SUSPENDING}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_PRE\_SUSPENDING@{RTC\_PRE\_SUSPENDING}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919daf8feeb1d446a6adfdfeb5fc9108acfe7}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a20b36a1411cc5219c9b1b290595f919daf8feeb1d446a6adfdfeb5fc9108acfe7}} 
+RTC\+\_\+\+PRE\+\_\+\+SUSPENDING&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00155}{155}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+
+\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61f}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61f}} 
+\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!rtc\_state@{rtc\_state}}
+\index{rtc\_state@{rtc\_state}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}
+\doxysubsubsection{\texorpdfstring{rtc\_state}{rtc\_state}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61f}{rtc\+\_\+state}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_STATE\_GET\_TOKEN@{RTC\_STATE\_GET\_TOKEN}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_STATE\_GET\_TOKEN@{RTC\_STATE\_GET\_TOKEN}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fac416a2bb0060f36dc2454130ca980945}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fac416a2bb0060f36dc2454130ca980945}} 
+RTC\+\_\+\+STATE\+\_\+\+GET\+\_\+\+TOKEN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_STATE\_P2P\_CONNECT@{RTC\_STATE\_P2P\_CONNECT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_STATE\_P2P\_CONNECT@{RTC\_STATE\_P2P\_CONNECT}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61faf31437a0d452dbb68993fdbf58d785fa}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61faf31437a0d452dbb68993fdbf58d785fa}} 
+RTC\+\_\+\+STATE\+\_\+\+P2\+P\+\_\+\+CONNECT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_STATE\_DTLS\_SRTP\_KEY\_NEGO@{RTC\_STATE\_DTLS\_SRTP\_KEY\_NEGO}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_STATE\_DTLS\_SRTP\_KEY\_NEGO@{RTC\_STATE\_DTLS\_SRTP\_KEY\_NEGO}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa2b47e277b61076d5b1db376419eeb84f}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa2b47e277b61076d5b1db376419eeb84f}} 
+RTC\+\_\+\+STATE\+\_\+\+DTLS\+\_\+\+SRTP\+\_\+\+KEY\+\_\+\+NEGO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_STATE\_STREAM@{RTC\_STATE\_STREAM}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_STATE\_STREAM@{RTC\_STATE\_STREAM}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa2fe248387984f449ff9da70100f22dc2}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa2fe248387984f449ff9da70100f22dc2}} 
+RTC\+\_\+\+STATE\+\_\+\+STREAM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_STATE\_FAILED@{RTC\_STATE\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_STATE\_FAILED@{RTC\_STATE\_FAILED}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa5ea5e96233d99408d63be7f2363d24cd}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa5ea5e96233d99408d63be7f2363d24cd}} 
+RTC\+\_\+\+STATE\+\_\+\+FAILED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_STATE\_NUMBER@{RTC\_STATE\_NUMBER}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_STATE\_NUMBER@{RTC\_STATE\_NUMBER}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61faf363a70f93cd3b5ebc505ac1d6ad7ad3}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61faf363a70f93cd3b5ebc505ac1d6ad7ad3}} 
+RTC\+\_\+\+STATE\+\_\+\+NUMBER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_STATE\_GET\_TOKEN@{RTC\_STATE\_GET\_TOKEN}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_STATE\_GET\_TOKEN@{RTC\_STATE\_GET\_TOKEN}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fac416a2bb0060f36dc2454130ca980945}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fac416a2bb0060f36dc2454130ca980945}} 
+RTC\+\_\+\+STATE\+\_\+\+GET\+\_\+\+TOKEN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_STATE\_P2P\_CONNECT@{RTC\_STATE\_P2P\_CONNECT}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_STATE\_P2P\_CONNECT@{RTC\_STATE\_P2P\_CONNECT}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61faf31437a0d452dbb68993fdbf58d785fa}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61faf31437a0d452dbb68993fdbf58d785fa}} 
+RTC\+\_\+\+STATE\+\_\+\+P2\+P\+\_\+\+CONNECT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_STATE\_DTLS\_SRTP\_KEY\_NEGO@{RTC\_STATE\_DTLS\_SRTP\_KEY\_NEGO}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_STATE\_DTLS\_SRTP\_KEY\_NEGO@{RTC\_STATE\_DTLS\_SRTP\_KEY\_NEGO}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa2b47e277b61076d5b1db376419eeb84f}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa2b47e277b61076d5b1db376419eeb84f}} 
+RTC\+\_\+\+STATE\+\_\+\+DTLS\+\_\+\+SRTP\+\_\+\+KEY\+\_\+\+NEGO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_STATE\_STREAM@{RTC\_STATE\_STREAM}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_STATE\_STREAM@{RTC\_STATE\_STREAM}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa2fe248387984f449ff9da70100f22dc2}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa2fe248387984f449ff9da70100f22dc2}} 
+RTC\+\_\+\+STATE\+\_\+\+STREAM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_STATE\_FAILED@{RTC\_STATE\_FAILED}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_STATE\_FAILED@{RTC\_STATE\_FAILED}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa5ea5e96233d99408d63be7f2363d24cd}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61fa5ea5e96233d99408d63be7f2363d24cd}} 
+RTC\+\_\+\+STATE\+\_\+\+FAILED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTC\_STATE\_NUMBER@{RTC\_STATE\_NUMBER}!imm\_p2p\_defs.h@{imm\_p2p\_defs.h}}\index{imm\_p2p\_defs.h@{imm\_p2p\_defs.h}!RTC\_STATE\_NUMBER@{RTC\_STATE\_NUMBER}}}\mbox{\Hypertarget{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61faf363a70f93cd3b5ebc505ac1d6ad7ad3}\label{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_a81de29414ab3ae104a5dfa7dbefba61faf363a70f93cd3b5ebc505ac1d6ad7ad3}} 
+RTC\+\_\+\+STATE\+\_\+\+NUMBER&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source_l00146}{146}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_p2_p_s_d_k_8framework_2_headers_2imm__p2p__defs_8h_source}{imm\+\_\+p2p\+\_\+defs.\+h}}.
+

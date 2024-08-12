@@ -1,0 +1,224 @@
+\hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Util/\+Build/\+Thing\+Smart\+Util.xcframework/ios-\/arm64/\+Thing\+Smart\+Util.framework/\+Headers/\+Thing\+Smart\+Util.h File Reference}
+\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-\/arm64/ThingSmartUtil.framework/Headers/ThingSmartUtil.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-\/arm64/ThingSmartUtil.framework/Headers/ThingSmartUtil.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import \char`\"{}NSDate+\+Thing\+SDKOffset.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}NSError+\+Thing\+SDKDomain.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}NSNumber+\+Thing\+SDKRandom.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}NSObject+\+Thing\+SDKHex.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}NSObject+\+Thing\+SDKJSON.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}NSObject+\+Thing\+SDKURL.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}NSObject+\+Thing\+SDKEncrypt.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}NSObject+\+Thing\+SDKCategory.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}NSBundle+\+Thing\+SDKLanguage.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}NSMutable\+Dictionary+\+Thing\+SDKCategory.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+SDKUtil.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+SDKConfig.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+SDKDevice.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+SDKUser\+Default.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+SDKSafe\+Mutable\+Array.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+SDKSafe\+Mutable\+Dictionary.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+SDKNotification.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+SDKLog\+Utils.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+SDKFile.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+SDKLocal\+Network\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+SDKOpen\+SSLHelper.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Util\+Log.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Network\+Info\+Util.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Anti\+Replay\+Model.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Anti\+Replay\+Service.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Module\+Protocol.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Module\+Router.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Smart\+Weak\+Proxy.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+ECDHService.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a221a0721cbb61115f5e83d0fe7266c04}{Thing\+SDK\+\_\+\+SINGLETON}}~+ (instancetype)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_ad7881a4da5a21e14cc4a3b05a73ff852}{shared\+Instance}};
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_aa33fad2b629c08867cdb70a400ca7c65}{Thing\+SDK\+\_\+\+DEF\+\_\+\+SINGLETON}}
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ab0576c249d2ed30b1aeccf4c4ea86575}{WEAKSELF\+\_\+\+Thing\+SDK}}~\+\_\+\+\_\+weak \+\_\+\+\_\+typeof(\&$\ast$self)weak\+Self\+\_\+\+Thing\+SDK = self;
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a32a79cd7d4562b2e058fc1f7b525c842}{Thing\+Success\+Handler}}) (void)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}}) (NSDictionary $\ast$dict)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ee38442763f6622af80e13543e19bf8}{Thing\+Success\+String}}) (NSString $\ast$result)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a9b2841d4f6e0c2a2e62dc4fa7451bc9a}{Thing\+Success\+List}}) (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$list)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a69c1e753c6b7729845fff29427d408b8}{Thing\+Success\+BOOL}}) (BOOL result)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}}) (id result)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a62c3563efaf9e4ae80a7f930f8193404}{Thing\+Success\+Int}}) (int result)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ab36763937f68e19aadbcc82f11e5efe8}{Thing\+Success\+Long\+Long}}) (long long result)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a307f7c88add49e1ebfb55f4953850fea}{Thing\+Success\+Data}}) (NSData $\ast$data)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a9687ad750ce5d2dcd51ded9caf31bae3}{Thing\+Failure\+Handler}}) (void)
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a74d8849f89dd63458019fd96fd106f98}{Thing\+Failure\+Error}}) (NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_aa33fad2b629c08867cdb70a400ca7c65}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_aa33fad2b629c08867cdb70a400ca7c65}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingSDK\_DEF\_SINGLETON@{ThingSDK\_DEF\_SINGLETON}}
+\index{ThingSDK\_DEF\_SINGLETON@{ThingSDK\_DEF\_SINGLETON}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingSDK\_DEF\_SINGLETON}{ThingSDK\_DEF\_SINGLETON}}
+{\footnotesize\ttfamily \#define Thing\+SDK\+\_\+\+DEF\+\_\+\+SINGLETON}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{+ (instancetype)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_ad7881a4da5a21e14cc4a3b05a73ff852}{sharedInstance}} \{ \(\backslash\)}
+\DoxyCodeLine{    static \textcolor{keywordtype}{id} instance; \(\backslash\)}
+\DoxyCodeLine{    static dispatch\_once\_t once; \(\backslash\)}
+\DoxyCodeLine{    dispatch\_once(\&once, \string^\{ \(\backslash\)}
+\DoxyCodeLine{        instance = [[self alloc] init]; \(\backslash\)}
+\DoxyCodeLine{    \}); \(\backslash\)}
+\DoxyCodeLine{    return instance; \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00048}{48}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a221a0721cbb61115f5e83d0fe7266c04}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a221a0721cbb61115f5e83d0fe7266c04}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingSDK\_SINGLETON@{ThingSDK\_SINGLETON}}
+\index{ThingSDK\_SINGLETON@{ThingSDK\_SINGLETON}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingSDK\_SINGLETON}{ThingSDK\_SINGLETON}}
+{\footnotesize\ttfamily \#define Thing\+SDK\+\_\+\+SINGLETON~+ (instancetype)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_ad7881a4da5a21e14cc4a3b05a73ff852}{shared\+Instance}};}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00045}{45}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ab0576c249d2ed30b1aeccf4c4ea86575}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ab0576c249d2ed30b1aeccf4c4ea86575}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!WEAKSELF\_ThingSDK@{WEAKSELF\_ThingSDK}}
+\index{WEAKSELF\_ThingSDK@{WEAKSELF\_ThingSDK}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{WEAKSELF\_ThingSDK}{WEAKSELF\_ThingSDK}}
+{\footnotesize\ttfamily \#define WEAKSELF\+\_\+\+Thing\+SDK~\+\_\+\+\_\+weak \+\_\+\+\_\+typeof(\&$\ast$self)weak\+Self\+\_\+\+Thing\+SDK = self;}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00058}{58}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a74d8849f89dd63458019fd96fd106f98}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a74d8849f89dd63458019fd96fd106f98}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingFailureError@{ThingFailureError}}
+\index{ThingFailureError@{ThingFailureError}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingFailureError}{ThingFailureError}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Failure\+Error) (NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}})}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00079}{79}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a9687ad750ce5d2dcd51ded9caf31bae3}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a9687ad750ce5d2dcd51ded9caf31bae3}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingFailureHandler@{ThingFailureHandler}}
+\index{ThingFailureHandler@{ThingFailureHandler}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingFailureHandler}{ThingFailureHandler}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Failure\+Handler) (void)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00078}{78}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a69c1e753c6b7729845fff29427d408b8}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a69c1e753c6b7729845fff29427d408b8}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingSuccessBOOL@{ThingSuccessBOOL}}
+\index{ThingSuccessBOOL@{ThingSuccessBOOL}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingSuccessBOOL}{ThingSuccessBOOL}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Success\+BOOL) (BOOL result)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00072}{72}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a307f7c88add49e1ebfb55f4953850fea}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a307f7c88add49e1ebfb55f4953850fea}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingSuccessData@{ThingSuccessData}}
+\index{ThingSuccessData@{ThingSuccessData}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingSuccessData}{ThingSuccessData}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Success\+Data) (NSData $\ast$data)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00076}{76}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingSuccessDict@{ThingSuccessDict}}
+\index{ThingSuccessDict@{ThingSuccessDict}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingSuccessDict}{ThingSuccessDict}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Success\+Dict) (NSDictionary $\ast$dict)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00069}{69}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a32a79cd7d4562b2e058fc1f7b525c842}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a32a79cd7d4562b2e058fc1f7b525c842}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingSuccessHandler@{ThingSuccessHandler}}
+\index{ThingSuccessHandler@{ThingSuccessHandler}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingSuccessHandler}{ThingSuccessHandler}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Success\+Handler) (void)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00068}{68}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingSuccessID@{ThingSuccessID}}
+\index{ThingSuccessID@{ThingSuccessID}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingSuccessID}{ThingSuccessID}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Success\+ID) (id result)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00073}{73}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a62c3563efaf9e4ae80a7f930f8193404}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a62c3563efaf9e4ae80a7f930f8193404}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingSuccessInt@{ThingSuccessInt}}
+\index{ThingSuccessInt@{ThingSuccessInt}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingSuccessInt}{ThingSuccessInt}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Success\+Int) (int result)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00074}{74}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a9b2841d4f6e0c2a2e62dc4fa7451bc9a}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a9b2841d4f6e0c2a2e62dc4fa7451bc9a}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingSuccessList@{ThingSuccessList}}
+\index{ThingSuccessList@{ThingSuccessList}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingSuccessList}{ThingSuccessList}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Success\+List) (\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$list)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00071}{71}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ab36763937f68e19aadbcc82f11e5efe8}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ab36763937f68e19aadbcc82f11e5efe8}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingSuccessLongLong@{ThingSuccessLongLong}}
+\index{ThingSuccessLongLong@{ThingSuccessLongLong}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingSuccessLongLong}{ThingSuccessLongLong}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Success\+Long\+Long) (long long result)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00075}{75}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ee38442763f6622af80e13543e19bf8}\label{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ee38442763f6622af80e13543e19bf8}} 
+\index{ThingSmartUtil.h@{ThingSmartUtil.h}!ThingSuccessString@{ThingSuccessString}}
+\index{ThingSuccessString@{ThingSuccessString}!ThingSmartUtil.h@{ThingSmartUtil.h}}
+\doxysubsubsection{\texorpdfstring{ThingSuccessString}{ThingSuccessString}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Success\+String) (NSString $\ast$result)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source_l00070}{70}} of file \mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_source}{Thing\+Smart\+Util.\+h}}.
+

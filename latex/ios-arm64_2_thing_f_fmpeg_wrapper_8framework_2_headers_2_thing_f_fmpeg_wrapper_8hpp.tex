@@ -1,0 +1,874 @@
+\hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+FFmpeg\+Wrapper/\+Build/\+Thing\+FFmpeg\+Wrapper.xcframework/ios-\/arm64/\+Thing\+FFmpeg\+Wrapper.framework/\+Headers/\+Thing\+FFmpeg\+Wrapper.hpp File Reference}
+\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp}\index{/Users/humtong/Downloads/Pods\_副本/ThingFFmpegWrapper/Build/ThingFFmpegWrapper.xcframework/ios-\/arm64/ThingFFmpegWrapper.framework/Headers/ThingFFmpegWrapper.hpp@{/Users/humtong/Downloads/Pods\_副本/ThingFFmpegWrapper/Build/ThingFFmpegWrapper.xcframework/ios-\/arm64/ThingFFmpegWrapper.framework/Headers/ThingFFmpegWrapper.hpp}}
+{\ttfamily \#include $<$libavformat/avio.\+h$>$}\newline
+{\ttfamily \#include $<$libavcodec/avcodec.\+h$>$}\newline
+{\ttfamily \#include $<$libavformat/avformat.\+h$>$}\newline
+{\ttfamily \#include $<$libavutil/avassert.\+h$>$}\newline
+{\ttfamily \#include $<$libavutil/avutil.\+h$>$}\newline
+{\ttfamily \#include $<$libavutil/avstring.\+h$>$}\newline
+{\ttfamily \#include $<$libavutil/dict.\+h$>$}\newline
+{\ttfamily \#include $<$libavutil/opt.\+h$>$}\newline
+{\ttfamily \#include $<$libavutil/samplefmt.\+h$>$}\newline
+{\ttfamily \#include $<$libavutil/frame.\+h$>$}\newline
+{\ttfamily \#include $<$libswscale/swscale.\+h$>$}\newline
+{\ttfamily \#include $<$libswresample/swresample.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}libavutil/channel\+\_\+layout.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavutil/common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavutil/imgutils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}libavutil/mathematics.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aefc51f749a8aa33e142903486fcfdc57}{thing\+\_\+av\+\_\+err2str}}(errnum)~    thing\+\_\+av\+\_\+make\+\_\+error\+\_\+string((char\mbox{[}AV\+\_\+\+ERROR\+\_\+\+MAX\+\_\+\+STRING\+\_\+\+SIZE\mbox{]})\{0\}, AV\+\_\+\+ERROR\+\_\+\+MAX\+\_\+\+STRING\+\_\+\+SIZE, errnum)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a8e7edbd9736de2fe42352b99df53f9c1}{thing\+\_\+avcodec\+\_\+register\+\_\+all}} (void)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6b84632c654030d166f1541e24de4d44}{thing\+\_\+av\+\_\+usleep}} (unsigned usec)
+\item 
+int64\+\_\+t \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a14b7ba8c495bbd1beea37c2ead36eb2d}{thing\+\_\+av\+\_\+gettime}} (void)
+\item 
+void $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac7447778002c6e34763dc6c1ce467c70}{thing\+\_\+av\+\_\+mallocz}} (size\+\_\+t size) av\+\_\+malloc\+\_\+attrib av\+\_\+alloc\+\_\+size(1)
+\item 
+void $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ab1afe92ee6a6edbdb7d66ae2e51d42fd}{thing\+\_\+av\+\_\+calloc}} (size\+\_\+t nmemb, size\+\_\+t size) av\+\_\+malloc\+\_\+attrib
+\item 
+void $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5b260109523cb63089fc8998259ecd32}{thing\+\_\+av\+\_\+malloc}} (size\+\_\+t size) av\+\_\+malloc\+\_\+attrib av\+\_\+alloc\+\_\+size(1)
+\item 
+AVPacket $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae2203c4fc81cdd3fdd70a467c3db75d4}{thing\+\_\+av\+\_\+packet\+\_\+alloc}} (void)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae078d687fd14cbc4915729599721aa5e}{thing\+\_\+av\+\_\+packet\+\_\+free}} (AVPacket $\ast$$\ast$pkt)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae39e0b2be9374bf7f4062be6f308094a}{thing\+\_\+avcodec\+\_\+parameters\+\_\+from\+\_\+context}} (AVCodec\+Parameters $\ast$par, const AVCodec\+Context $\ast$codec)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a70974e118fb57548f00c6a97bcf21825}{thing\+\_\+avio\+\_\+open}} (AVIOContext $\ast$$\ast$s, const char $\ast$url, int flags)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a7ae5e9cb78d6e8d0531754fb6b28b96e}{thing\+\_\+avformat\+\_\+alloc\+\_\+output\+\_\+context2}} (AVFormat\+Context $\ast$$\ast$ctx, ff\+\_\+const59 AVOutput\+Format $\ast$oformat, const char $\ast$format\+\_\+name, const char $\ast$filename)
+\item 
+AVStream $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a04aceabb04555a4d3cc8f9cc92610707}{thing\+\_\+avformat\+\_\+new\+\_\+stream}} (AVFormat\+Context $\ast$s, const AVCodec $\ast$c)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6060be5f02d44d15331f19b3f7f7e8ed}{thing\+\_\+av\+\_\+write\+\_\+trailer}} (AVFormat\+Context $\ast$s)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a4e1838f91bfdb9b54dd08f54642bf712}{thing\+\_\+avio\+\_\+closep}} (AVIOContext $\ast$$\ast$s)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a101c51e480400538d14419ab915e2c95}{thing\+\_\+avformat\+\_\+free\+\_\+context}} (AVFormat\+Context $\ast$s)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a739b72e91007076e363feb66d2cddbd3}{thing\+\_\+av\+\_\+interleaved\+\_\+write\+\_\+frame}} (AVFormat\+Context $\ast$s, AVPacket $\ast$pkt)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1c1da67159c0531617d39728e39825de}{thing\+\_\+avformat\+\_\+write\+\_\+header}} (AVFormat\+Context $\ast$s, AVDictionary $\ast$$\ast$options)
+\item 
+ff\+\_\+const59 AVOutput\+Format $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a390100ac97c18d5f1f82f95f3a053a32}{thing\+\_\+av\+\_\+guess\+\_\+format}} (const char $\ast$short\+\_\+name, const char $\ast$filename, const char $\ast$mime\+\_\+type)
+\item 
+AVCodec $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a488510f5a3ad8b2ade1145bfd7e8bd6d}{thing\+\_\+avcodec\+\_\+find\+\_\+encoder}} (enum AVCodec\+ID id)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6ef66283c3d4a5d922653513e74ac65f}{thing\+\_\+avio\+\_\+close}} (AVIOContext $\ast$s)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1cae66aac9816f7385ce2a1d1c0b19bc}{thing\+\_\+avcodec\+\_\+send\+\_\+frame}} (AVCodec\+Context $\ast$avctx, const AVFrame $\ast$frame)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6a2ccb4ac5dccfd5201b1f28000504fb}{thing\+\_\+avcodec\+\_\+receive\+\_\+packet}} (AVCodec\+Context $\ast$avctx, AVPacket $\ast$avpkt)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aaea10c818569ef25ec7659e3b4331942}{thing\+\_\+av\+\_\+image\+\_\+fill\+\_\+arrays}} (uint8\+\_\+t $\ast$dst\+\_\+data\mbox{[}4\mbox{]}, int dst\+\_\+linesize\mbox{[}4\mbox{]}, const uint8\+\_\+t $\ast$src, enum AVPixel\+Format pix\+\_\+fmt, int width, int height, int align)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ad4cec6e6a578594f66e1b0419faa7f35}{thing\+\_\+av\+\_\+new\+\_\+packet}} (AVPacket $\ast$pkt, int size)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a400bbd1f6835529bbb1276ee60531a4a}{thing\+\_\+av\+\_\+write\+\_\+frame}} (AVFormat\+Context $\ast$s, AVPacket $\ast$pkt)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a571462a948a26ee6d6f0e00f262d7496}{thing\+\_\+av\+\_\+find\+\_\+best\+\_\+stream}} (AVFormat\+Context $\ast$ic, enum AVMedia\+Type type, int wanted\+\_\+stream\+\_\+nb, int related\+\_\+stream, AVCodec $\ast$$\ast$decoder\+\_\+ret, int flags)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1d86feeb510a72059e1f96eb2a9d23b1}{thing\+\_\+av\+\_\+frame\+\_\+get\+\_\+buffer}} (AVFrame $\ast$frame, int align)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a07afe6d47ca4e4b16a2af6ce57831c5c}{thing\+\_\+av\+\_\+free\+\_\+packet}} (AVPacket $\ast$pkt)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6cd83edbc2b9d38ae7c499305e3eaa2b}{thing\+\_\+sws\+\_\+free\+Context}} (struct Sws\+Context $\ast$sws\+Context)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a8eecec5956768d7573317c93eb3895aa}{thing\+\_\+av\+\_\+get\+\_\+bytes\+\_\+per\+\_\+sample}} (enum AVSample\+Format sample\+\_\+fmt)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a554c2260c7cae31865f15f2d216b5be3}{thing\+\_\+sws\+\_\+scale}} (struct Sws\+Context $\ast$c, const uint8\+\_\+t $\ast$const src\+Slice\mbox{[}$\,$\mbox{]}, const int src\+Stride\mbox{[}$\,$\mbox{]}, int src\+SliceY, int src\+SliceH, uint8\+\_\+t $\ast$const dst\mbox{[}$\,$\mbox{]}, const int dst\+Stride\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aeef8d82b13c328c2be0b54654bc5d9bb}{thing\+\_\+avcodec\+\_\+receive\+\_\+frame}} (AVCodec\+Context $\ast$avctx, AVFrame $\ast$frame)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_acd611a220c595f6b4c5779d459c5cd42}{thing\+\_\+avcodec\+\_\+send\+\_\+packet}} (AVCodec\+Context $\ast$avctx, const AVPacket $\ast$avpkt)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a920a936d306f6cf9b82ae6d8526a2512}{thing\+\_\+av\+\_\+free}} (void $\ast$ptr)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac446d2ee2e02a26b701f7bc96209c99e}{thing\+\_\+av\+\_\+freep}} (void $\ast$ptr)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aeffc55b4e1654997ed22ba80db874571}{thing\+\_\+av\+\_\+q2intfloat}} (AVRational q)
+\item 
+size\+\_\+t \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac2a11474231e762fca324aece2f3c7b1}{thing\+\_\+av\+\_\+strlcat}} (char $\ast$dst, const char $\ast$src, size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6ca3ec75bfcb34fd6b4261d239768cea}{thing\+\_\+av\+\_\+log\+\_\+set\+\_\+level}} (int level)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac835e496dd0d357623b12469a7a5a51d}{thing\+\_\+av\+\_\+log\+\_\+set\+\_\+flags}} (int arg)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a28fe9ad85a0952373ba8a6f5b2dcda18}{thing\+\_\+av\+\_\+log\+\_\+get\+\_\+flags}} (void)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aac39bde82ad1ba8d86364de9af417929}{thing\+\_\+av\+\_\+log}} (void $\ast$avcl, int level, const char $\ast$fmt,...)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_abc10ea9fd86b931976efdfdd7be7e913}{thing\+\_\+av\+\_\+register\+\_\+all}} (void)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5386f0b5113b14ac89f1b23b396f7bd2}{thing\+\_\+avformat\+\_\+network\+\_\+init}} (void)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6eda320bf1d62a53f2ab3006a8b21ed4}{thing\+\_\+av\+\_\+init\+\_\+packet}} (AVPacket $\ast$pkt)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac2a5f64e8ea0de543443da17600af63d}{thing\+\_\+av\+\_\+packet\+\_\+unref}} (AVPacket $\ast$pkt)
+\item 
+AVFrame $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a9b5b8411537628cf30381fd970e90729}{thing\+\_\+av\+\_\+frame\+\_\+alloc}} (void)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ad00d21a65ff9f695effff27d9f93aaa0}{thing\+\_\+av\+\_\+frame\+\_\+free}} (AVFrame $\ast$$\ast$frame)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a43d8b39752b3a52fc04272326d2c1037}{thing\+\_\+av\+\_\+frame\+\_\+unref}} (AVFrame $\ast$frame)
+\item 
+AVOutput\+Format $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ad162a34ab8cbfcbea45fdacd8b8cf912}{thing\+\_\+av\+\_\+oformat\+\_\+next}} (const AVOutput\+Format $\ast$f)
+\item 
+AVInput\+Format $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a32e9ddbfd5e3d6e0aeffcafddea1eaf9}{thing\+\_\+av\+\_\+iformat\+\_\+next}} (const AVInput\+Format $\ast$f)
+\item 
+AVCodec $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aae3028848a8f20d6202053d592a0d59b}{thing\+\_\+av\+\_\+codec\+\_\+next}} (const AVCodec $\ast$c)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a91160bf166ce2dc0788c54f5ac267e0c}{thing\+\_\+av\+\_\+codec\+\_\+is\+\_\+encoder}} (const AVCodec $\ast$codec)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac9e3d3438a3b0ed5ff9ed5289521e341}{thing\+\_\+av\+\_\+codec\+\_\+is\+\_\+decoder}} (const AVCodec $\ast$codec)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_accd38b2ca6f8cd6b0de63502309a614d}{thing\+\_\+av\+\_\+codec\+\_\+set\+\_\+lowres}} (AVCodec\+Context $\ast$avctx, int val)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a665b9d2797c685e098428a5ddbae574b}{thing\+\_\+av\+\_\+codec\+\_\+set\+\_\+pkt\+\_\+timebase}} (AVCodec\+Context $\ast$avctx, AVRational val)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5e853796feb662d4195536fa958d8863}{thing\+\_\+avcodec\+\_\+open2}} (AVCodec\+Context $\ast$avctx, const AVCodec $\ast$codec, AVDictionary $\ast$$\ast$options)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a4db213cec8552d001a3ad181788c9b26}{thing\+\_\+avcodec\+\_\+free\+\_\+context}} (AVCodec\+Context $\ast$$\ast$avctx)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a9875bccaa68690946e171d04ed1876e9}{thing\+\_\+avcodec\+\_\+close}} (AVCodec\+Context $\ast$avctx)
+\item 
+AVCodec\+Context $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_af969e7d93c83e444d2d578437cf504f1}{thing\+\_\+avcodec\+\_\+alloc\+\_\+context3}} (const AVCodec $\ast$codec)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a45ee065688030a4a83ee28e75b6a1555}{thing\+\_\+avcodec\+\_\+parameters\+\_\+to\+\_\+context}} (AVCodec\+Context $\ast$codec, const AVCodec\+Parameters $\ast$par)
+\item 
+AVCodec $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a0853dcd07e8b5be0d131d5f170c5bcd1}{thing\+\_\+avcodec\+\_\+find\+\_\+decoder}} (enum AVCodec\+ID id)
+\item 
+const AVCodec\+Descriptor $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5f88fc738911e100d02b7219a668f84e}{thing\+\_\+avcodec\+\_\+descriptor\+\_\+get}} (enum AVCodec\+ID id)
+\item 
+const AVCodec\+Descriptor $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aade3008f1bad810694a3cd59dbda0c67}{thing\+\_\+avcodec\+\_\+descriptor\+\_\+next}} (const AVCodec\+Descriptor $\ast$prev)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a15df84489b7f5bdf787b230757c54c03}{thing\+\_\+avcodec\+\_\+fill\+\_\+audio\+\_\+frame}} (AVFrame $\ast$frame, int nb\+\_\+channels, enum AVSample\+Format sample\+\_\+fmt, const uint8\+\_\+t $\ast$buf, int buty\+\_\+size, int align)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1d3aa95ea71e857325cda9a77961cc82}{thing\+\_\+avcodec\+\_\+flush\+\_\+buffers}} (AVCodec\+Context $\ast$avctx)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ad6456857d9d1cd1bf9cebb58ee068ed5}{thing\+\_\+avcodec\+\_\+decode\+\_\+audio4}} (AVCodec\+Context $\ast$avctx, AVFrame $\ast$frame, int $\ast$got\+\_\+frame\+\_\+ptr, const AVPacket $\ast$avpkt)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae8e3adfa0459202cd4a9e6a600f82297}{thing\+\_\+avcodec\+\_\+decode\+\_\+video2}} (AVCodec\+Context $\ast$avctx, AVFrame $\ast$picture, int $\ast$got\+\_\+picture\+\_\+ptr, const AVPacket $\ast$avpkt)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a43ded2780b3f8cf69057b8e683708b08}{thing\+\_\+avcodec\+\_\+decode\+\_\+subtitle2}} (AVCodec\+Context $\ast$avctx, AVSubtitle $\ast$sub, int $\ast$got\+\_\+sub\+\_\+ptr, AVPacket $\ast$avpkt)
+\item 
+AVDictionary\+Entry $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_afe61b4780c3b298e53da340031dc9e46}{thing\+\_\+av\+\_\+dict\+\_\+get}} (const AVDictionary $\ast$m, const char $\ast$key, const AVDictionary\+Entry $\ast$prev, int flags)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a891e8a7833f49f0513792e363ab72145}{thing\+\_\+av\+\_\+dict\+\_\+set}} (AVDictionary $\ast$$\ast$pm, const char $\ast$key, const char $\ast$value, int flags)
+\item 
+const AVOption $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_af198fe2629fa5b46905bb5230468864c}{thing\+\_\+av\+\_\+opt\+\_\+find}} (void $\ast$obj, const char $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h_a4b93d352d2fca75b34e1b5a50e03f587}{name}}, const char $\ast$unit, int opt\+\_\+flags, int search\+\_\+flags)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a92b5c99ea6912658ae22fa854bed7295}{thing\+\_\+av\+\_\+dict\+\_\+free}} (AVDictionary $\ast$$\ast$m)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a7402518607468301995fcd09525d73e9}{thing\+\_\+av\+\_\+samples\+\_\+get\+\_\+buffer\+\_\+size}} (int $\ast$linesize, int nb\+\_\+channels, int nb\+\_\+samples, enum AVSample\+Format sample\+\_\+fmt, int align)
+\item 
+AVRational \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ab0b136d07ee445166b3ff6b95562c230}{thing\+\_\+av\+\_\+guess\+\_\+sample\+\_\+aspect\+\_\+ratio}} (AVFormat\+Context $\ast$format, AVStream $\ast$stream, AVFrame $\ast$frame)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a42edd64c640e49a4c54ebfa4072d0ac9}{thing\+\_\+av\+\_\+reduce}} (int $\ast$dst\+\_\+num, int $\ast$dst\+\_\+den, int64\+\_\+t num, int64\+\_\+t den, int64\+\_\+t max)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac21978591719275e50b7e733a399a4c7}{thing\+\_\+av\+\_\+frame\+\_\+get\+\_\+channels}} (const AVFrame $\ast$frame)
+\item 
+int64\+\_\+t \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ab8aef9dc96065effde017e797ddede12}{thing\+\_\+av\+\_\+get\+\_\+default\+\_\+channel\+\_\+layout}} (int nb\+\_\+channels)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a0ee515c0e87d028cba541d008ba606f9}{thing\+\_\+av\+\_\+get\+\_\+channel\+\_\+layout\+\_\+nb\+\_\+channels}} (uint64\+\_\+t channel\+\_\+layout)
+\item 
+int64\+\_\+t \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a9e52753930309f6d533fc20c2485ee34}{thing\+\_\+av\+\_\+frame\+\_\+get\+\_\+best\+\_\+effort\+\_\+timestamp}} (const AVFrame $\ast$frame)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_afad6965f11586f85c94c2192862d2ab8}{thing\+\_\+swr\+\_\+init}} (struct Swr\+Context $\ast$s)
+\item 
+struct Sws\+Context $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a77b34a92de999703fe35663c3ee614e9}{thing\+\_\+sws\+\_\+get\+Cached\+Context}} (struct Sws\+Context $\ast$context, int srcW, int srcH, enum AVPixel\+Format src\+Format, int dstW, int dstH, enum AVPixel\+Format dst\+Format, int flags, Sws\+Filter $\ast$src\+Filter, Sws\+Filter $\ast$dst\+Filter, const double $\ast$param)
+\item 
+struct Sws\+Context $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5e9c7d4179e8d23d6866df8ec09e32dc}{thing\+\_\+sws\+\_\+get\+Context}} (int srcW, int srcH, enum AVPixel\+Format src\+Format, int dstW, int dstH, enum AVPixel\+Format dst\+Format, int flags, Sws\+Filter $\ast$src\+Filter, Sws\+Filter $\ast$dst\+Filter, const double $\ast$param)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a79ae39d32043d3f36af1b2a02b504075}{thing\+\_\+swr\+\_\+free}} (struct Swr\+Context $\ast$$\ast$s)
+\item 
+struct Swr\+Context $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a213e90c2fde662b0e0c0497c36a5269b}{thing\+\_\+swr\+\_\+alloc}} (void)
+\item 
+struct Swr\+Context $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1d565edac145f3879235a86ff58ef684}{thing\+\_\+swr\+\_\+alloc\+\_\+set\+\_\+opts}} (struct Swr\+Context $\ast$s, int64\+\_\+t out\+\_\+ch\+\_\+layout, enum AVSample\+Format out\+\_\+sample\+\_\+fmt, int out\+\_\+sample\+\_\+rate, int64\+\_\+t in\+\_\+ch\+\_\+layout, enum AVSample\+Format in\+\_\+sample\+\_\+fmt, int in\+\_\+sample\+\_\+rate, int log\+\_\+offset, void $\ast$log\+\_\+ctx)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a3170e7703f036fb3eb7b015026376060}{thing\+\_\+swr\+\_\+convert}} (struct Swr\+Context $\ast$s, uint8\+\_\+t $\ast$$\ast$out, int out\+\_\+count, const uint8\+\_\+t $\ast$$\ast$in, int in\+\_\+count)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac1d8abf80e9ae12f30f19ce862e148bf}{thing\+\_\+avpicture\+\_\+alloc}} (AVPicture $\ast$picture, enum AVPixel\+Format pix\+\_\+fmt, int width, int height)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a0320f82d55b8057b0ad0942eab1e6b58}{thing\+\_\+avpicture\+\_\+fill}} (AVPicture $\ast$picture, const uint8\+\_\+t $\ast$ptr, enum AVPixel\+Format pix\+\_\+fmt, int width, int height)
+\item 
+AVIOContext $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aa40a30818e6b38de426be0c252251fc5}{thing\+\_\+avio\+\_\+alloc\+\_\+context}} (unsigned char $\ast$buffer, int buffer\+\_\+size, int write\+\_\+flag, void $\ast$opaque, int($\ast$read\+\_\+packet)(void $\ast$opaque, uint8\+\_\+t $\ast$buf, int buty\+\_\+size), int($\ast$write\+\_\+packet)(void $\ast$opaque, uint8\+\_\+t $\ast$buf, int buty\+\_\+size), int64\+\_\+t($\ast$seek)(void $\ast$opaque, int64\+\_\+t offset, int whence))
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a61b71c32c2eca189694e205e12a23c9c}{thing\+\_\+av\+\_\+probe\+\_\+input\+\_\+buffer}} (AVIOContext $\ast$pb, AVInput\+Format $\ast$$\ast$fmt, const char $\ast$url, void $\ast$logctx, unsigned int offset, unsigned int max\+\_\+probe\+\_\+size)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_af35888e0fdbbafaa9dfdd4c4f051690c}{thing\+\_\+avformat\+\_\+open\+\_\+input}} (AVFormat\+Context $\ast$$\ast$ps, const char $\ast$url, AVInput\+Format $\ast$fmt, AVDictionary $\ast$$\ast$options)
+\item 
+AVInput\+Format $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a0d3709a2cd1d5e200230ca335a9e7ac7}{thing\+\_\+av\+\_\+find\+\_\+input\+\_\+format}} (const char $\ast$short\+\_\+name)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a153947cc238cfd6bbd73ce501f504cf5}{thing\+\_\+avformat\+\_\+find\+\_\+stream\+\_\+info}} (AVFormat\+Context $\ast$ic, AVDictionary $\ast$$\ast$options)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_abd5be46283f13d29e1e6be4d346d3699}{thing\+\_\+av\+\_\+dump\+\_\+format}} (AVFormat\+Context $\ast$ic, int index, const char $\ast$url, int is\+\_\+output)
+\item 
+AVFormat\+Context $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ab7203562e76b3ba521a8e22b6c0fe45b}{thing\+\_\+avformat\+\_\+alloc\+\_\+context}} (void)
+\item 
+void \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a27f854090373e814f23b94ce23cbfe44}{thing\+\_\+avformat\+\_\+close\+\_\+input}} (AVFormat\+Context $\ast$$\ast$s)
+\item 
+const AVClass $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_afa29189126550277a3b2a17ca187db4e}{thing\+\_\+avformat\+\_\+get\+\_\+class}} (void)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a7ff5e9618533971323c857a37e1c8fc6}{thing\+\_\+avformat\+\_\+seek\+\_\+file}} (AVFormat\+Context $\ast$s, int stream\+\_\+index, int64\+\_\+t min\+\_\+ts, int64\+\_\+t ts, int64\+\_\+t max\+\_\+ts, int flags)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a30df7710918ceff701732648a7908bbf}{thing\+\_\+av\+\_\+read\+\_\+frame}} (AVFormat\+Context $\ast$s, AVPacket $\ast$pkt)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1f16539672fd60d56b5358266a04aece}{thing\+\_\+av\+\_\+read\+\_\+pause}} (AVFormat\+Context $\ast$s)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a7280d60a42ba6c2b23c3937ac5384ce1}{thing\+\_\+av\+\_\+read\+\_\+play}} (AVFormat\+Context $\ast$s)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a26e79fe0c84d3c16faac93670162ce5e}{thing\+\_\+av\+\_\+strerror}} (int errnum, char $\ast$errbuf, size\+\_\+t errbuty\+\_\+size)
+\item 
+int \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_abc6b2b7880832aabb2e4f3ac6f3d6eee}{thing\+\_\+av\+\_\+image\+\_\+get\+\_\+buffer\+\_\+size}} (enum AVPixel\+Format pix\+\_\+fmt, int width, int height, int align)
+\item 
+const char $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae9583affe80b329dc1b0e6cc003a8c1f}{thing\+\_\+av\+\_\+get\+\_\+sample\+\_\+fmt\+\_\+name}} (enum AVSample\+Format sample\+\_\+fmt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aefc51f749a8aa33e142903486fcfdc57}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aefc51f749a8aa33e142903486fcfdc57}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_err2str@{thing\_av\_err2str}}
+\index{thing\_av\_err2str@{thing\_av\_err2str}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_err2str}{thing\_av\_err2str}}
+{\footnotesize\ttfamily \#define thing\+\_\+av\+\_\+err2str(\begin{DoxyParamCaption}\item[{}]{errnum }\end{DoxyParamCaption})~    thing\+\_\+av\+\_\+make\+\_\+error\+\_\+string((char\mbox{[}AV\+\_\+\+ERROR\+\_\+\+MAX\+\_\+\+STRING\+\_\+\+SIZE\mbox{]})\{0\}, AV\+\_\+\+ERROR\+\_\+\+MAX\+\_\+\+STRING\+\_\+\+SIZE, errnum)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_source_l00293}{293}} of file \mbox{\hyperlink{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_source}{Thing\+FFmpeg\+Wrapper.\+hpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ab1afe92ee6a6edbdb7d66ae2e51d42fd}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ab1afe92ee6a6edbdb7d66ae2e51d42fd}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_calloc@{thing\_av\_calloc}}
+\index{thing\_av\_calloc@{thing\_av\_calloc}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_calloc()}{thing\_av\_calloc()}}
+{\footnotesize\ttfamily void $\ast$ thing\+\_\+av\+\_\+calloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{nmemb,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac9e3d3438a3b0ed5ff9ed5289521e341}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac9e3d3438a3b0ed5ff9ed5289521e341}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_codec\_is\_decoder@{thing\_av\_codec\_is\_decoder}}
+\index{thing\_av\_codec\_is\_decoder@{thing\_av\_codec\_is\_decoder}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_codec\_is\_decoder()}{thing\_av\_codec\_is\_decoder()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+codec\+\_\+is\+\_\+decoder (\begin{DoxyParamCaption}\item[{const AVCodec $\ast$}]{codec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a91160bf166ce2dc0788c54f5ac267e0c}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a91160bf166ce2dc0788c54f5ac267e0c}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_codec\_is\_encoder@{thing\_av\_codec\_is\_encoder}}
+\index{thing\_av\_codec\_is\_encoder@{thing\_av\_codec\_is\_encoder}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_codec\_is\_encoder()}{thing\_av\_codec\_is\_encoder()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+codec\+\_\+is\+\_\+encoder (\begin{DoxyParamCaption}\item[{const AVCodec $\ast$}]{codec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aae3028848a8f20d6202053d592a0d59b}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aae3028848a8f20d6202053d592a0d59b}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_codec\_next@{thing\_av\_codec\_next}}
+\index{thing\_av\_codec\_next@{thing\_av\_codec\_next}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_codec\_next()}{thing\_av\_codec\_next()}}
+{\footnotesize\ttfamily AVCodec $\ast$ thing\+\_\+av\+\_\+codec\+\_\+next (\begin{DoxyParamCaption}\item[{const AVCodec $\ast$}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_accd38b2ca6f8cd6b0de63502309a614d}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_accd38b2ca6f8cd6b0de63502309a614d}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_codec\_set\_lowres@{thing\_av\_codec\_set\_lowres}}
+\index{thing\_av\_codec\_set\_lowres@{thing\_av\_codec\_set\_lowres}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_codec\_set\_lowres()}{thing\_av\_codec\_set\_lowres()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+codec\+\_\+set\+\_\+lowres (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{avctx,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a665b9d2797c685e098428a5ddbae574b}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a665b9d2797c685e098428a5ddbae574b}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_codec\_set\_pkt\_timebase@{thing\_av\_codec\_set\_pkt\_timebase}}
+\index{thing\_av\_codec\_set\_pkt\_timebase@{thing\_av\_codec\_set\_pkt\_timebase}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_codec\_set\_pkt\_timebase()}{thing\_av\_codec\_set\_pkt\_timebase()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+codec\+\_\+set\+\_\+pkt\+\_\+timebase (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{avctx,  }\item[{AVRational}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a92b5c99ea6912658ae22fa854bed7295}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a92b5c99ea6912658ae22fa854bed7295}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_dict\_free@{thing\_av\_dict\_free}}
+\index{thing\_av\_dict\_free@{thing\_av\_dict\_free}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_dict\_free()}{thing\_av\_dict\_free()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+dict\+\_\+free (\begin{DoxyParamCaption}\item[{AVDictionary $\ast$$\ast$}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_afe61b4780c3b298e53da340031dc9e46}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_afe61b4780c3b298e53da340031dc9e46}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_dict\_get@{thing\_av\_dict\_get}}
+\index{thing\_av\_dict\_get@{thing\_av\_dict\_get}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_dict\_get()}{thing\_av\_dict\_get()}}
+{\footnotesize\ttfamily AVDictionary\+Entry $\ast$ thing\+\_\+av\+\_\+dict\+\_\+get (\begin{DoxyParamCaption}\item[{const AVDictionary $\ast$}]{m,  }\item[{const char $\ast$}]{key,  }\item[{const AVDictionary\+Entry $\ast$}]{prev,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a891e8a7833f49f0513792e363ab72145}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a891e8a7833f49f0513792e363ab72145}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_dict\_set@{thing\_av\_dict\_set}}
+\index{thing\_av\_dict\_set@{thing\_av\_dict\_set}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_dict\_set()}{thing\_av\_dict\_set()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+dict\+\_\+set (\begin{DoxyParamCaption}\item[{AVDictionary $\ast$$\ast$}]{pm,  }\item[{const char $\ast$}]{key,  }\item[{const char $\ast$}]{value,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_abd5be46283f13d29e1e6be4d346d3699}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_abd5be46283f13d29e1e6be4d346d3699}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_dump\_format@{thing\_av\_dump\_format}}
+\index{thing\_av\_dump\_format@{thing\_av\_dump\_format}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_dump\_format()}{thing\_av\_dump\_format()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+dump\+\_\+format (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{ic,  }\item[{int}]{index,  }\item[{const char $\ast$}]{url,  }\item[{int}]{is\+\_\+output }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a571462a948a26ee6d6f0e00f262d7496}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a571462a948a26ee6d6f0e00f262d7496}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_find\_best\_stream@{thing\_av\_find\_best\_stream}}
+\index{thing\_av\_find\_best\_stream@{thing\_av\_find\_best\_stream}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_find\_best\_stream()}{thing\_av\_find\_best\_stream()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+find\+\_\+best\+\_\+stream (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{ic,  }\item[{enum AVMedia\+Type}]{type,  }\item[{int}]{wanted\+\_\+stream\+\_\+nb,  }\item[{int}]{related\+\_\+stream,  }\item[{AVCodec $\ast$$\ast$}]{decoder\+\_\+ret,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a0d3709a2cd1d5e200230ca335a9e7ac7}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a0d3709a2cd1d5e200230ca335a9e7ac7}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_find\_input\_format@{thing\_av\_find\_input\_format}}
+\index{thing\_av\_find\_input\_format@{thing\_av\_find\_input\_format}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_find\_input\_format()}{thing\_av\_find\_input\_format()}}
+{\footnotesize\ttfamily AVInput\+Format $\ast$ thing\+\_\+av\+\_\+find\+\_\+input\+\_\+format (\begin{DoxyParamCaption}\item[{const char $\ast$}]{short\+\_\+name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a9b5b8411537628cf30381fd970e90729}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a9b5b8411537628cf30381fd970e90729}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_frame\_alloc@{thing\_av\_frame\_alloc}}
+\index{thing\_av\_frame\_alloc@{thing\_av\_frame\_alloc}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_frame\_alloc()}{thing\_av\_frame\_alloc()}}
+{\footnotesize\ttfamily AVFrame $\ast$ thing\+\_\+av\+\_\+frame\+\_\+alloc (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ad00d21a65ff9f695effff27d9f93aaa0}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ad00d21a65ff9f695effff27d9f93aaa0}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_frame\_free@{thing\_av\_frame\_free}}
+\index{thing\_av\_frame\_free@{thing\_av\_frame\_free}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_frame\_free()}{thing\_av\_frame\_free()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+frame\+\_\+free (\begin{DoxyParamCaption}\item[{AVFrame $\ast$$\ast$}]{frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a9e52753930309f6d533fc20c2485ee34}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a9e52753930309f6d533fc20c2485ee34}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_frame\_get\_best\_effort\_timestamp@{thing\_av\_frame\_get\_best\_effort\_timestamp}}
+\index{thing\_av\_frame\_get\_best\_effort\_timestamp@{thing\_av\_frame\_get\_best\_effort\_timestamp}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_frame\_get\_best\_effort\_timestamp()}{thing\_av\_frame\_get\_best\_effort\_timestamp()}}
+{\footnotesize\ttfamily int64\+\_\+t thing\+\_\+av\+\_\+frame\+\_\+get\+\_\+best\+\_\+effort\+\_\+timestamp (\begin{DoxyParamCaption}\item[{const AVFrame $\ast$}]{frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1d86feeb510a72059e1f96eb2a9d23b1}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1d86feeb510a72059e1f96eb2a9d23b1}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_frame\_get\_buffer@{thing\_av\_frame\_get\_buffer}}
+\index{thing\_av\_frame\_get\_buffer@{thing\_av\_frame\_get\_buffer}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_frame\_get\_buffer()}{thing\_av\_frame\_get\_buffer()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+frame\+\_\+get\+\_\+buffer (\begin{DoxyParamCaption}\item[{AVFrame $\ast$}]{frame,  }\item[{int}]{align }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac21978591719275e50b7e733a399a4c7}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac21978591719275e50b7e733a399a4c7}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_frame\_get\_channels@{thing\_av\_frame\_get\_channels}}
+\index{thing\_av\_frame\_get\_channels@{thing\_av\_frame\_get\_channels}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_frame\_get\_channels()}{thing\_av\_frame\_get\_channels()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+frame\+\_\+get\+\_\+channels (\begin{DoxyParamCaption}\item[{const AVFrame $\ast$}]{frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a43d8b39752b3a52fc04272326d2c1037}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a43d8b39752b3a52fc04272326d2c1037}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_frame\_unref@{thing\_av\_frame\_unref}}
+\index{thing\_av\_frame\_unref@{thing\_av\_frame\_unref}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_frame\_unref()}{thing\_av\_frame\_unref()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+frame\+\_\+unref (\begin{DoxyParamCaption}\item[{AVFrame $\ast$}]{frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a920a936d306f6cf9b82ae6d8526a2512}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a920a936d306f6cf9b82ae6d8526a2512}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_free@{thing\_av\_free}}
+\index{thing\_av\_free@{thing\_av\_free}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_free()}{thing\_av\_free()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+free (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a07afe6d47ca4e4b16a2af6ce57831c5c}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a07afe6d47ca4e4b16a2af6ce57831c5c}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_free\_packet@{thing\_av\_free\_packet}}
+\index{thing\_av\_free\_packet@{thing\_av\_free\_packet}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_free\_packet()}{thing\_av\_free\_packet()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+free\+\_\+packet (\begin{DoxyParamCaption}\item[{AVPacket $\ast$}]{pkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac446d2ee2e02a26b701f7bc96209c99e}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac446d2ee2e02a26b701f7bc96209c99e}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_freep@{thing\_av\_freep}}
+\index{thing\_av\_freep@{thing\_av\_freep}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_freep()}{thing\_av\_freep()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+freep (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a8eecec5956768d7573317c93eb3895aa}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a8eecec5956768d7573317c93eb3895aa}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_get\_bytes\_per\_sample@{thing\_av\_get\_bytes\_per\_sample}}
+\index{thing\_av\_get\_bytes\_per\_sample@{thing\_av\_get\_bytes\_per\_sample}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_get\_bytes\_per\_sample()}{thing\_av\_get\_bytes\_per\_sample()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+get\+\_\+bytes\+\_\+per\+\_\+sample (\begin{DoxyParamCaption}\item[{enum AVSample\+Format}]{sample\+\_\+fmt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a0ee515c0e87d028cba541d008ba606f9}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a0ee515c0e87d028cba541d008ba606f9}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_get\_channel\_layout\_nb\_channels@{thing\_av\_get\_channel\_layout\_nb\_channels}}
+\index{thing\_av\_get\_channel\_layout\_nb\_channels@{thing\_av\_get\_channel\_layout\_nb\_channels}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_get\_channel\_layout\_nb\_channels()}{thing\_av\_get\_channel\_layout\_nb\_channels()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+get\+\_\+channel\+\_\+layout\+\_\+nb\+\_\+channels (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{channel\+\_\+layout }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ab8aef9dc96065effde017e797ddede12}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ab8aef9dc96065effde017e797ddede12}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_get\_default\_channel\_layout@{thing\_av\_get\_default\_channel\_layout}}
+\index{thing\_av\_get\_default\_channel\_layout@{thing\_av\_get\_default\_channel\_layout}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_get\_default\_channel\_layout()}{thing\_av\_get\_default\_channel\_layout()}}
+{\footnotesize\ttfamily int64\+\_\+t thing\+\_\+av\+\_\+get\+\_\+default\+\_\+channel\+\_\+layout (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+channels }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae9583affe80b329dc1b0e6cc003a8c1f}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae9583affe80b329dc1b0e6cc003a8c1f}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_get\_sample\_fmt\_name@{thing\_av\_get\_sample\_fmt\_name}}
+\index{thing\_av\_get\_sample\_fmt\_name@{thing\_av\_get\_sample\_fmt\_name}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_get\_sample\_fmt\_name()}{thing\_av\_get\_sample\_fmt\_name()}}
+{\footnotesize\ttfamily const char $\ast$ thing\+\_\+av\+\_\+get\+\_\+sample\+\_\+fmt\+\_\+name (\begin{DoxyParamCaption}\item[{enum AVSample\+Format}]{sample\+\_\+fmt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a14b7ba8c495bbd1beea37c2ead36eb2d}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a14b7ba8c495bbd1beea37c2ead36eb2d}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_gettime@{thing\_av\_gettime}}
+\index{thing\_av\_gettime@{thing\_av\_gettime}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_gettime()}{thing\_av\_gettime()}}
+{\footnotesize\ttfamily int64\+\_\+t thing\+\_\+av\+\_\+gettime (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a390100ac97c18d5f1f82f95f3a053a32}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a390100ac97c18d5f1f82f95f3a053a32}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_guess\_format@{thing\_av\_guess\_format}}
+\index{thing\_av\_guess\_format@{thing\_av\_guess\_format}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_guess\_format()}{thing\_av\_guess\_format()}}
+{\footnotesize\ttfamily ff\+\_\+const59 AVOutput\+Format $\ast$ thing\+\_\+av\+\_\+guess\+\_\+format (\begin{DoxyParamCaption}\item[{const char $\ast$}]{short\+\_\+name,  }\item[{const char $\ast$}]{filename,  }\item[{const char $\ast$}]{mime\+\_\+type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ab0b136d07ee445166b3ff6b95562c230}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ab0b136d07ee445166b3ff6b95562c230}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_guess\_sample\_aspect\_ratio@{thing\_av\_guess\_sample\_aspect\_ratio}}
+\index{thing\_av\_guess\_sample\_aspect\_ratio@{thing\_av\_guess\_sample\_aspect\_ratio}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_guess\_sample\_aspect\_ratio()}{thing\_av\_guess\_sample\_aspect\_ratio()}}
+{\footnotesize\ttfamily AVRational thing\+\_\+av\+\_\+guess\+\_\+sample\+\_\+aspect\+\_\+ratio (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{format,  }\item[{AVStream $\ast$}]{stream,  }\item[{AVFrame $\ast$}]{frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a32e9ddbfd5e3d6e0aeffcafddea1eaf9}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a32e9ddbfd5e3d6e0aeffcafddea1eaf9}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_iformat\_next@{thing\_av\_iformat\_next}}
+\index{thing\_av\_iformat\_next@{thing\_av\_iformat\_next}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_iformat\_next()}{thing\_av\_iformat\_next()}}
+{\footnotesize\ttfamily AVInput\+Format $\ast$ thing\+\_\+av\+\_\+iformat\+\_\+next (\begin{DoxyParamCaption}\item[{const AVInput\+Format $\ast$}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aaea10c818569ef25ec7659e3b4331942}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aaea10c818569ef25ec7659e3b4331942}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_image\_fill\_arrays@{thing\_av\_image\_fill\_arrays}}
+\index{thing\_av\_image\_fill\_arrays@{thing\_av\_image\_fill\_arrays}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_image\_fill\_arrays()}{thing\_av\_image\_fill\_arrays()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+image\+\_\+fill\+\_\+arrays (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{dst\+\_\+data\mbox{[}4\mbox{]},  }\item[{int}]{dst\+\_\+linesize\mbox{[}4\mbox{]},  }\item[{const uint8\+\_\+t $\ast$}]{src,  }\item[{enum AVPixel\+Format}]{pix\+\_\+fmt,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{align }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_abc6b2b7880832aabb2e4f3ac6f3d6eee}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_abc6b2b7880832aabb2e4f3ac6f3d6eee}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_image\_get\_buffer\_size@{thing\_av\_image\_get\_buffer\_size}}
+\index{thing\_av\_image\_get\_buffer\_size@{thing\_av\_image\_get\_buffer\_size}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_image\_get\_buffer\_size()}{thing\_av\_image\_get\_buffer\_size()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+image\+\_\+get\+\_\+buffer\+\_\+size (\begin{DoxyParamCaption}\item[{enum AVPixel\+Format}]{pix\+\_\+fmt,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{align }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6eda320bf1d62a53f2ab3006a8b21ed4}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6eda320bf1d62a53f2ab3006a8b21ed4}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_init\_packet@{thing\_av\_init\_packet}}
+\index{thing\_av\_init\_packet@{thing\_av\_init\_packet}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_init\_packet()}{thing\_av\_init\_packet()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+init\+\_\+packet (\begin{DoxyParamCaption}\item[{AVPacket $\ast$}]{pkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a739b72e91007076e363feb66d2cddbd3}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a739b72e91007076e363feb66d2cddbd3}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_interleaved\_write\_frame@{thing\_av\_interleaved\_write\_frame}}
+\index{thing\_av\_interleaved\_write\_frame@{thing\_av\_interleaved\_write\_frame}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_interleaved\_write\_frame()}{thing\_av\_interleaved\_write\_frame()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+interleaved\+\_\+write\+\_\+frame (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{s,  }\item[{AVPacket $\ast$}]{pkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aac39bde82ad1ba8d86364de9af417929}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aac39bde82ad1ba8d86364de9af417929}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_log@{thing\_av\_log}}
+\index{thing\_av\_log@{thing\_av\_log}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_log()}{thing\_av\_log()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+log (\begin{DoxyParamCaption}\item[{void $\ast$}]{avcl,  }\item[{int}]{level,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a28fe9ad85a0952373ba8a6f5b2dcda18}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a28fe9ad85a0952373ba8a6f5b2dcda18}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_log\_get\_flags@{thing\_av\_log\_get\_flags}}
+\index{thing\_av\_log\_get\_flags@{thing\_av\_log\_get\_flags}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_log\_get\_flags()}{thing\_av\_log\_get\_flags()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+log\+\_\+get\+\_\+flags (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac835e496dd0d357623b12469a7a5a51d}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac835e496dd0d357623b12469a7a5a51d}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_log\_set\_flags@{thing\_av\_log\_set\_flags}}
+\index{thing\_av\_log\_set\_flags@{thing\_av\_log\_set\_flags}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_log\_set\_flags()}{thing\_av\_log\_set\_flags()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+log\+\_\+set\+\_\+flags (\begin{DoxyParamCaption}\item[{int}]{arg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6ca3ec75bfcb34fd6b4261d239768cea}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6ca3ec75bfcb34fd6b4261d239768cea}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_log\_set\_level@{thing\_av\_log\_set\_level}}
+\index{thing\_av\_log\_set\_level@{thing\_av\_log\_set\_level}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_log\_set\_level()}{thing\_av\_log\_set\_level()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+log\+\_\+set\+\_\+level (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5b260109523cb63089fc8998259ecd32}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5b260109523cb63089fc8998259ecd32}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_malloc@{thing\_av\_malloc}}
+\index{thing\_av\_malloc@{thing\_av\_malloc}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_malloc()}{thing\_av\_malloc()}}
+{\footnotesize\ttfamily void $\ast$ thing\+\_\+av\+\_\+malloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac7447778002c6e34763dc6c1ce467c70}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac7447778002c6e34763dc6c1ce467c70}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_mallocz@{thing\_av\_mallocz}}
+\index{thing\_av\_mallocz@{thing\_av\_mallocz}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_mallocz()}{thing\_av\_mallocz()}}
+{\footnotesize\ttfamily void $\ast$ thing\+\_\+av\+\_\+mallocz (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ad4cec6e6a578594f66e1b0419faa7f35}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ad4cec6e6a578594f66e1b0419faa7f35}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_new\_packet@{thing\_av\_new\_packet}}
+\index{thing\_av\_new\_packet@{thing\_av\_new\_packet}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_new\_packet()}{thing\_av\_new\_packet()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+new\+\_\+packet (\begin{DoxyParamCaption}\item[{AVPacket $\ast$}]{pkt,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ad162a34ab8cbfcbea45fdacd8b8cf912}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ad162a34ab8cbfcbea45fdacd8b8cf912}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_oformat\_next@{thing\_av\_oformat\_next}}
+\index{thing\_av\_oformat\_next@{thing\_av\_oformat\_next}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_oformat\_next()}{thing\_av\_oformat\_next()}}
+{\footnotesize\ttfamily AVOutput\+Format $\ast$ thing\+\_\+av\+\_\+oformat\+\_\+next (\begin{DoxyParamCaption}\item[{const AVOutput\+Format $\ast$}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_af198fe2629fa5b46905bb5230468864c}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_af198fe2629fa5b46905bb5230468864c}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_opt\_find@{thing\_av\_opt\_find}}
+\index{thing\_av\_opt\_find@{thing\_av\_opt\_find}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_opt\_find()}{thing\_av\_opt\_find()}}
+{\footnotesize\ttfamily const AVOption $\ast$ thing\+\_\+av\+\_\+opt\+\_\+find (\begin{DoxyParamCaption}\item[{void $\ast$}]{obj,  }\item[{const char $\ast$}]{name,  }\item[{const char $\ast$}]{unit,  }\item[{int}]{opt\+\_\+flags,  }\item[{int}]{search\+\_\+flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae2203c4fc81cdd3fdd70a467c3db75d4}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae2203c4fc81cdd3fdd70a467c3db75d4}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_packet\_alloc@{thing\_av\_packet\_alloc}}
+\index{thing\_av\_packet\_alloc@{thing\_av\_packet\_alloc}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_packet\_alloc()}{thing\_av\_packet\_alloc()}}
+{\footnotesize\ttfamily AVPacket $\ast$ thing\+\_\+av\+\_\+packet\+\_\+alloc (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae078d687fd14cbc4915729599721aa5e}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae078d687fd14cbc4915729599721aa5e}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_packet\_free@{thing\_av\_packet\_free}}
+\index{thing\_av\_packet\_free@{thing\_av\_packet\_free}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_packet\_free()}{thing\_av\_packet\_free()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+packet\+\_\+free (\begin{DoxyParamCaption}\item[{AVPacket $\ast$$\ast$}]{pkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac2a5f64e8ea0de543443da17600af63d}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac2a5f64e8ea0de543443da17600af63d}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_packet\_unref@{thing\_av\_packet\_unref}}
+\index{thing\_av\_packet\_unref@{thing\_av\_packet\_unref}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_packet\_unref()}{thing\_av\_packet\_unref()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+packet\+\_\+unref (\begin{DoxyParamCaption}\item[{AVPacket $\ast$}]{pkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a61b71c32c2eca189694e205e12a23c9c}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a61b71c32c2eca189694e205e12a23c9c}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_probe\_input\_buffer@{thing\_av\_probe\_input\_buffer}}
+\index{thing\_av\_probe\_input\_buffer@{thing\_av\_probe\_input\_buffer}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_probe\_input\_buffer()}{thing\_av\_probe\_input\_buffer()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+probe\+\_\+input\+\_\+buffer (\begin{DoxyParamCaption}\item[{AVIOContext $\ast$}]{pb,  }\item[{AVInput\+Format $\ast$$\ast$}]{fmt,  }\item[{const char $\ast$}]{url,  }\item[{void $\ast$}]{logctx,  }\item[{unsigned int}]{offset,  }\item[{unsigned int}]{max\+\_\+probe\+\_\+size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aeffc55b4e1654997ed22ba80db874571}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aeffc55b4e1654997ed22ba80db874571}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_q2intfloat@{thing\_av\_q2intfloat}}
+\index{thing\_av\_q2intfloat@{thing\_av\_q2intfloat}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_q2intfloat()}{thing\_av\_q2intfloat()}}
+{\footnotesize\ttfamily uint32\+\_\+t thing\+\_\+av\+\_\+q2intfloat (\begin{DoxyParamCaption}\item[{AVRational}]{q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a30df7710918ceff701732648a7908bbf}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a30df7710918ceff701732648a7908bbf}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_read\_frame@{thing\_av\_read\_frame}}
+\index{thing\_av\_read\_frame@{thing\_av\_read\_frame}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_read\_frame()}{thing\_av\_read\_frame()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+read\+\_\+frame (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{s,  }\item[{AVPacket $\ast$}]{pkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1f16539672fd60d56b5358266a04aece}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1f16539672fd60d56b5358266a04aece}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_read\_pause@{thing\_av\_read\_pause}}
+\index{thing\_av\_read\_pause@{thing\_av\_read\_pause}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_read\_pause()}{thing\_av\_read\_pause()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+read\+\_\+pause (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a7280d60a42ba6c2b23c3937ac5384ce1}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a7280d60a42ba6c2b23c3937ac5384ce1}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_read\_play@{thing\_av\_read\_play}}
+\index{thing\_av\_read\_play@{thing\_av\_read\_play}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_read\_play()}{thing\_av\_read\_play()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+read\+\_\+play (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a42edd64c640e49a4c54ebfa4072d0ac9}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a42edd64c640e49a4c54ebfa4072d0ac9}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_reduce@{thing\_av\_reduce}}
+\index{thing\_av\_reduce@{thing\_av\_reduce}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_reduce()}{thing\_av\_reduce()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+reduce (\begin{DoxyParamCaption}\item[{int $\ast$}]{dst\+\_\+num,  }\item[{int $\ast$}]{dst\+\_\+den,  }\item[{int64\+\_\+t}]{num,  }\item[{int64\+\_\+t}]{den,  }\item[{int64\+\_\+t}]{max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_abc10ea9fd86b931976efdfdd7be7e913}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_abc10ea9fd86b931976efdfdd7be7e913}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_register\_all@{thing\_av\_register\_all}}
+\index{thing\_av\_register\_all@{thing\_av\_register\_all}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_register\_all()}{thing\_av\_register\_all()}}
+{\footnotesize\ttfamily void thing\+\_\+av\+\_\+register\+\_\+all (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a7402518607468301995fcd09525d73e9}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a7402518607468301995fcd09525d73e9}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_samples\_get\_buffer\_size@{thing\_av\_samples\_get\_buffer\_size}}
+\index{thing\_av\_samples\_get\_buffer\_size@{thing\_av\_samples\_get\_buffer\_size}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_samples\_get\_buffer\_size()}{thing\_av\_samples\_get\_buffer\_size()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+samples\+\_\+get\+\_\+buffer\+\_\+size (\begin{DoxyParamCaption}\item[{int $\ast$}]{linesize,  }\item[{int}]{nb\+\_\+channels,  }\item[{int}]{nb\+\_\+samples,  }\item[{enum AVSample\+Format}]{sample\+\_\+fmt,  }\item[{int}]{align }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a26e79fe0c84d3c16faac93670162ce5e}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a26e79fe0c84d3c16faac93670162ce5e}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_strerror@{thing\_av\_strerror}}
+\index{thing\_av\_strerror@{thing\_av\_strerror}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_strerror()}{thing\_av\_strerror()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+strerror (\begin{DoxyParamCaption}\item[{int}]{errnum,  }\item[{char $\ast$}]{errbuf,  }\item[{size\+\_\+t}]{errbuty\+\_\+size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac2a11474231e762fca324aece2f3c7b1}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac2a11474231e762fca324aece2f3c7b1}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_strlcat@{thing\_av\_strlcat}}
+\index{thing\_av\_strlcat@{thing\_av\_strlcat}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_strlcat()}{thing\_av\_strlcat()}}
+{\footnotesize\ttfamily size\+\_\+t thing\+\_\+av\+\_\+strlcat (\begin{DoxyParamCaption}\item[{char $\ast$}]{dst,  }\item[{const char $\ast$}]{src,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6b84632c654030d166f1541e24de4d44}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6b84632c654030d166f1541e24de4d44}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_usleep@{thing\_av\_usleep}}
+\index{thing\_av\_usleep@{thing\_av\_usleep}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_usleep()}{thing\_av\_usleep()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+usleep (\begin{DoxyParamCaption}\item[{unsigned}]{usec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a400bbd1f6835529bbb1276ee60531a4a}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a400bbd1f6835529bbb1276ee60531a4a}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_write\_frame@{thing\_av\_write\_frame}}
+\index{thing\_av\_write\_frame@{thing\_av\_write\_frame}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_write\_frame()}{thing\_av\_write\_frame()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+write\+\_\+frame (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{s,  }\item[{AVPacket $\ast$}]{pkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6060be5f02d44d15331f19b3f7f7e8ed}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6060be5f02d44d15331f19b3f7f7e8ed}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_av\_write\_trailer@{thing\_av\_write\_trailer}}
+\index{thing\_av\_write\_trailer@{thing\_av\_write\_trailer}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_av\_write\_trailer()}{thing\_av\_write\_trailer()}}
+{\footnotesize\ttfamily int thing\+\_\+av\+\_\+write\+\_\+trailer (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_af969e7d93c83e444d2d578437cf504f1}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_af969e7d93c83e444d2d578437cf504f1}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_alloc\_context3@{thing\_avcodec\_alloc\_context3}}
+\index{thing\_avcodec\_alloc\_context3@{thing\_avcodec\_alloc\_context3}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_alloc\_context3()}{thing\_avcodec\_alloc\_context3()}}
+{\footnotesize\ttfamily AVCodec\+Context $\ast$ thing\+\_\+avcodec\+\_\+alloc\+\_\+context3 (\begin{DoxyParamCaption}\item[{const AVCodec $\ast$}]{codec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a9875bccaa68690946e171d04ed1876e9}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a9875bccaa68690946e171d04ed1876e9}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_close@{thing\_avcodec\_close}}
+\index{thing\_avcodec\_close@{thing\_avcodec\_close}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_close()}{thing\_avcodec\_close()}}
+{\footnotesize\ttfamily int thing\+\_\+avcodec\+\_\+close (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{avctx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ad6456857d9d1cd1bf9cebb58ee068ed5}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ad6456857d9d1cd1bf9cebb58ee068ed5}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_decode\_audio4@{thing\_avcodec\_decode\_audio4}}
+\index{thing\_avcodec\_decode\_audio4@{thing\_avcodec\_decode\_audio4}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_decode\_audio4()}{thing\_avcodec\_decode\_audio4()}}
+{\footnotesize\ttfamily int thing\+\_\+avcodec\+\_\+decode\+\_\+audio4 (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{avctx,  }\item[{AVFrame $\ast$}]{frame,  }\item[{int $\ast$}]{got\+\_\+frame\+\_\+ptr,  }\item[{const AVPacket $\ast$}]{avpkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a43ded2780b3f8cf69057b8e683708b08}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a43ded2780b3f8cf69057b8e683708b08}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_decode\_subtitle2@{thing\_avcodec\_decode\_subtitle2}}
+\index{thing\_avcodec\_decode\_subtitle2@{thing\_avcodec\_decode\_subtitle2}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_decode\_subtitle2()}{thing\_avcodec\_decode\_subtitle2()}}
+{\footnotesize\ttfamily int thing\+\_\+avcodec\+\_\+decode\+\_\+subtitle2 (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{avctx,  }\item[{AVSubtitle $\ast$}]{sub,  }\item[{int $\ast$}]{got\+\_\+sub\+\_\+ptr,  }\item[{AVPacket $\ast$}]{avpkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae8e3adfa0459202cd4a9e6a600f82297}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae8e3adfa0459202cd4a9e6a600f82297}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_decode\_video2@{thing\_avcodec\_decode\_video2}}
+\index{thing\_avcodec\_decode\_video2@{thing\_avcodec\_decode\_video2}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_decode\_video2()}{thing\_avcodec\_decode\_video2()}}
+{\footnotesize\ttfamily int thing\+\_\+avcodec\+\_\+decode\+\_\+video2 (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{avctx,  }\item[{AVFrame $\ast$}]{picture,  }\item[{int $\ast$}]{got\+\_\+picture\+\_\+ptr,  }\item[{const AVPacket $\ast$}]{avpkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5f88fc738911e100d02b7219a668f84e}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5f88fc738911e100d02b7219a668f84e}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_descriptor\_get@{thing\_avcodec\_descriptor\_get}}
+\index{thing\_avcodec\_descriptor\_get@{thing\_avcodec\_descriptor\_get}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_descriptor\_get()}{thing\_avcodec\_descriptor\_get()}}
+{\footnotesize\ttfamily const AVCodec\+Descriptor $\ast$ thing\+\_\+avcodec\+\_\+descriptor\+\_\+get (\begin{DoxyParamCaption}\item[{enum AVCodec\+ID}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aade3008f1bad810694a3cd59dbda0c67}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aade3008f1bad810694a3cd59dbda0c67}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_descriptor\_next@{thing\_avcodec\_descriptor\_next}}
+\index{thing\_avcodec\_descriptor\_next@{thing\_avcodec\_descriptor\_next}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_descriptor\_next()}{thing\_avcodec\_descriptor\_next()}}
+{\footnotesize\ttfamily const AVCodec\+Descriptor $\ast$ thing\+\_\+avcodec\+\_\+descriptor\+\_\+next (\begin{DoxyParamCaption}\item[{const AVCodec\+Descriptor $\ast$}]{prev }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a15df84489b7f5bdf787b230757c54c03}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a15df84489b7f5bdf787b230757c54c03}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_fill\_audio\_frame@{thing\_avcodec\_fill\_audio\_frame}}
+\index{thing\_avcodec\_fill\_audio\_frame@{thing\_avcodec\_fill\_audio\_frame}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_fill\_audio\_frame()}{thing\_avcodec\_fill\_audio\_frame()}}
+{\footnotesize\ttfamily int thing\+\_\+avcodec\+\_\+fill\+\_\+audio\+\_\+frame (\begin{DoxyParamCaption}\item[{AVFrame $\ast$}]{frame,  }\item[{int}]{nb\+\_\+channels,  }\item[{enum AVSample\+Format}]{sample\+\_\+fmt,  }\item[{const uint8\+\_\+t $\ast$}]{buf,  }\item[{int}]{buty\+\_\+size,  }\item[{int}]{align }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a0853dcd07e8b5be0d131d5f170c5bcd1}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a0853dcd07e8b5be0d131d5f170c5bcd1}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_find\_decoder@{thing\_avcodec\_find\_decoder}}
+\index{thing\_avcodec\_find\_decoder@{thing\_avcodec\_find\_decoder}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_find\_decoder()}{thing\_avcodec\_find\_decoder()}}
+{\footnotesize\ttfamily AVCodec $\ast$ thing\+\_\+avcodec\+\_\+find\+\_\+decoder (\begin{DoxyParamCaption}\item[{enum AVCodec\+ID}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a488510f5a3ad8b2ade1145bfd7e8bd6d}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a488510f5a3ad8b2ade1145bfd7e8bd6d}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_find\_encoder@{thing\_avcodec\_find\_encoder}}
+\index{thing\_avcodec\_find\_encoder@{thing\_avcodec\_find\_encoder}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_find\_encoder()}{thing\_avcodec\_find\_encoder()}}
+{\footnotesize\ttfamily AVCodec $\ast$ thing\+\_\+avcodec\+\_\+find\+\_\+encoder (\begin{DoxyParamCaption}\item[{enum AVCodec\+ID}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1d3aa95ea71e857325cda9a77961cc82}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1d3aa95ea71e857325cda9a77961cc82}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_flush\_buffers@{thing\_avcodec\_flush\_buffers}}
+\index{thing\_avcodec\_flush\_buffers@{thing\_avcodec\_flush\_buffers}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_flush\_buffers()}{thing\_avcodec\_flush\_buffers()}}
+{\footnotesize\ttfamily void thing\+\_\+avcodec\+\_\+flush\+\_\+buffers (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{avctx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a4db213cec8552d001a3ad181788c9b26}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a4db213cec8552d001a3ad181788c9b26}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_free\_context@{thing\_avcodec\_free\_context}}
+\index{thing\_avcodec\_free\_context@{thing\_avcodec\_free\_context}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_free\_context()}{thing\_avcodec\_free\_context()}}
+{\footnotesize\ttfamily void thing\+\_\+avcodec\+\_\+free\+\_\+context (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$$\ast$}]{avctx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5e853796feb662d4195536fa958d8863}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5e853796feb662d4195536fa958d8863}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_open2@{thing\_avcodec\_open2}}
+\index{thing\_avcodec\_open2@{thing\_avcodec\_open2}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_open2()}{thing\_avcodec\_open2()}}
+{\footnotesize\ttfamily int thing\+\_\+avcodec\+\_\+open2 (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{avctx,  }\item[{const AVCodec $\ast$}]{codec,  }\item[{AVDictionary $\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae39e0b2be9374bf7f4062be6f308094a}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ae39e0b2be9374bf7f4062be6f308094a}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_parameters\_from\_context@{thing\_avcodec\_parameters\_from\_context}}
+\index{thing\_avcodec\_parameters\_from\_context@{thing\_avcodec\_parameters\_from\_context}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_parameters\_from\_context()}{thing\_avcodec\_parameters\_from\_context()}}
+{\footnotesize\ttfamily int thing\+\_\+avcodec\+\_\+parameters\+\_\+from\+\_\+context (\begin{DoxyParamCaption}\item[{AVCodec\+Parameters $\ast$}]{par,  }\item[{const AVCodec\+Context $\ast$}]{codec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a45ee065688030a4a83ee28e75b6a1555}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a45ee065688030a4a83ee28e75b6a1555}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_parameters\_to\_context@{thing\_avcodec\_parameters\_to\_context}}
+\index{thing\_avcodec\_parameters\_to\_context@{thing\_avcodec\_parameters\_to\_context}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_parameters\_to\_context()}{thing\_avcodec\_parameters\_to\_context()}}
+{\footnotesize\ttfamily int thing\+\_\+avcodec\+\_\+parameters\+\_\+to\+\_\+context (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{codec,  }\item[{const AVCodec\+Parameters $\ast$}]{par }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aeef8d82b13c328c2be0b54654bc5d9bb}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aeef8d82b13c328c2be0b54654bc5d9bb}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_receive\_frame@{thing\_avcodec\_receive\_frame}}
+\index{thing\_avcodec\_receive\_frame@{thing\_avcodec\_receive\_frame}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_receive\_frame()}{thing\_avcodec\_receive\_frame()}}
+{\footnotesize\ttfamily int thing\+\_\+avcodec\+\_\+receive\+\_\+frame (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{avctx,  }\item[{AVFrame $\ast$}]{frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6a2ccb4ac5dccfd5201b1f28000504fb}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6a2ccb4ac5dccfd5201b1f28000504fb}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_receive\_packet@{thing\_avcodec\_receive\_packet}}
+\index{thing\_avcodec\_receive\_packet@{thing\_avcodec\_receive\_packet}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_receive\_packet()}{thing\_avcodec\_receive\_packet()}}
+{\footnotesize\ttfamily int thing\+\_\+avcodec\+\_\+receive\+\_\+packet (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{avctx,  }\item[{AVPacket $\ast$}]{avpkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a8e7edbd9736de2fe42352b99df53f9c1}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a8e7edbd9736de2fe42352b99df53f9c1}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_register\_all@{thing\_avcodec\_register\_all}}
+\index{thing\_avcodec\_register\_all@{thing\_avcodec\_register\_all}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_register\_all()}{thing\_avcodec\_register\_all()}}
+{\footnotesize\ttfamily void thing\+\_\+avcodec\+\_\+register\+\_\+all (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1cae66aac9816f7385ce2a1d1c0b19bc}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1cae66aac9816f7385ce2a1d1c0b19bc}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_send\_frame@{thing\_avcodec\_send\_frame}}
+\index{thing\_avcodec\_send\_frame@{thing\_avcodec\_send\_frame}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_send\_frame()}{thing\_avcodec\_send\_frame()}}
+{\footnotesize\ttfamily int thing\+\_\+avcodec\+\_\+send\+\_\+frame (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{avctx,  }\item[{const AVFrame $\ast$}]{frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_acd611a220c595f6b4c5779d459c5cd42}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_acd611a220c595f6b4c5779d459c5cd42}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avcodec\_send\_packet@{thing\_avcodec\_send\_packet}}
+\index{thing\_avcodec\_send\_packet@{thing\_avcodec\_send\_packet}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avcodec\_send\_packet()}{thing\_avcodec\_send\_packet()}}
+{\footnotesize\ttfamily int thing\+\_\+avcodec\+\_\+send\+\_\+packet (\begin{DoxyParamCaption}\item[{AVCodec\+Context $\ast$}]{avctx,  }\item[{const AVPacket $\ast$}]{avpkt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ab7203562e76b3ba521a8e22b6c0fe45b}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ab7203562e76b3ba521a8e22b6c0fe45b}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avformat\_alloc\_context@{thing\_avformat\_alloc\_context}}
+\index{thing\_avformat\_alloc\_context@{thing\_avformat\_alloc\_context}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avformat\_alloc\_context()}{thing\_avformat\_alloc\_context()}}
+{\footnotesize\ttfamily AVFormat\+Context $\ast$ thing\+\_\+avformat\+\_\+alloc\+\_\+context (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a7ae5e9cb78d6e8d0531754fb6b28b96e}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a7ae5e9cb78d6e8d0531754fb6b28b96e}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avformat\_alloc\_output\_context2@{thing\_avformat\_alloc\_output\_context2}}
+\index{thing\_avformat\_alloc\_output\_context2@{thing\_avformat\_alloc\_output\_context2}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avformat\_alloc\_output\_context2()}{thing\_avformat\_alloc\_output\_context2()}}
+{\footnotesize\ttfamily int thing\+\_\+avformat\+\_\+alloc\+\_\+output\+\_\+context2 (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$$\ast$}]{ctx,  }\item[{ff\+\_\+const59 AVOutput\+Format $\ast$}]{oformat,  }\item[{const char $\ast$}]{format\+\_\+name,  }\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a27f854090373e814f23b94ce23cbfe44}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a27f854090373e814f23b94ce23cbfe44}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avformat\_close\_input@{thing\_avformat\_close\_input}}
+\index{thing\_avformat\_close\_input@{thing\_avformat\_close\_input}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avformat\_close\_input()}{thing\_avformat\_close\_input()}}
+{\footnotesize\ttfamily void thing\+\_\+avformat\+\_\+close\+\_\+input (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$$\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a153947cc238cfd6bbd73ce501f504cf5}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a153947cc238cfd6bbd73ce501f504cf5}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avformat\_find\_stream\_info@{thing\_avformat\_find\_stream\_info}}
+\index{thing\_avformat\_find\_stream\_info@{thing\_avformat\_find\_stream\_info}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avformat\_find\_stream\_info()}{thing\_avformat\_find\_stream\_info()}}
+{\footnotesize\ttfamily int thing\+\_\+avformat\+\_\+find\+\_\+stream\+\_\+info (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{ic,  }\item[{AVDictionary $\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a101c51e480400538d14419ab915e2c95}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a101c51e480400538d14419ab915e2c95}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avformat\_free\_context@{thing\_avformat\_free\_context}}
+\index{thing\_avformat\_free\_context@{thing\_avformat\_free\_context}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avformat\_free\_context()}{thing\_avformat\_free\_context()}}
+{\footnotesize\ttfamily void thing\+\_\+avformat\+\_\+free\+\_\+context (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_afa29189126550277a3b2a17ca187db4e}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_afa29189126550277a3b2a17ca187db4e}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avformat\_get\_class@{thing\_avformat\_get\_class}}
+\index{thing\_avformat\_get\_class@{thing\_avformat\_get\_class}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avformat\_get\_class()}{thing\_avformat\_get\_class()}}
+{\footnotesize\ttfamily const AVClass $\ast$ thing\+\_\+avformat\+\_\+get\+\_\+class (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5386f0b5113b14ac89f1b23b396f7bd2}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5386f0b5113b14ac89f1b23b396f7bd2}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avformat\_network\_init@{thing\_avformat\_network\_init}}
+\index{thing\_avformat\_network\_init@{thing\_avformat\_network\_init}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avformat\_network\_init()}{thing\_avformat\_network\_init()}}
+{\footnotesize\ttfamily int thing\+\_\+avformat\+\_\+network\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a04aceabb04555a4d3cc8f9cc92610707}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a04aceabb04555a4d3cc8f9cc92610707}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avformat\_new\_stream@{thing\_avformat\_new\_stream}}
+\index{thing\_avformat\_new\_stream@{thing\_avformat\_new\_stream}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avformat\_new\_stream()}{thing\_avformat\_new\_stream()}}
+{\footnotesize\ttfamily AVStream $\ast$ thing\+\_\+avformat\+\_\+new\+\_\+stream (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{s,  }\item[{const AVCodec $\ast$}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_af35888e0fdbbafaa9dfdd4c4f051690c}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_af35888e0fdbbafaa9dfdd4c4f051690c}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avformat\_open\_input@{thing\_avformat\_open\_input}}
+\index{thing\_avformat\_open\_input@{thing\_avformat\_open\_input}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avformat\_open\_input()}{thing\_avformat\_open\_input()}}
+{\footnotesize\ttfamily int thing\+\_\+avformat\+\_\+open\+\_\+input (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$$\ast$}]{ps,  }\item[{const char $\ast$}]{url,  }\item[{AVInput\+Format $\ast$}]{fmt,  }\item[{AVDictionary $\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a7ff5e9618533971323c857a37e1c8fc6}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a7ff5e9618533971323c857a37e1c8fc6}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avformat\_seek\_file@{thing\_avformat\_seek\_file}}
+\index{thing\_avformat\_seek\_file@{thing\_avformat\_seek\_file}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avformat\_seek\_file()}{thing\_avformat\_seek\_file()}}
+{\footnotesize\ttfamily int thing\+\_\+avformat\+\_\+seek\+\_\+file (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{s,  }\item[{int}]{stream\+\_\+index,  }\item[{int64\+\_\+t}]{min\+\_\+ts,  }\item[{int64\+\_\+t}]{ts,  }\item[{int64\+\_\+t}]{max\+\_\+ts,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1c1da67159c0531617d39728e39825de}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1c1da67159c0531617d39728e39825de}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avformat\_write\_header@{thing\_avformat\_write\_header}}
+\index{thing\_avformat\_write\_header@{thing\_avformat\_write\_header}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avformat\_write\_header()}{thing\_avformat\_write\_header()}}
+{\footnotesize\ttfamily int thing\+\_\+avformat\+\_\+write\+\_\+header (\begin{DoxyParamCaption}\item[{AVFormat\+Context $\ast$}]{s,  }\item[{AVDictionary $\ast$$\ast$}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aa40a30818e6b38de426be0c252251fc5}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_aa40a30818e6b38de426be0c252251fc5}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avio\_alloc\_context@{thing\_avio\_alloc\_context}}
+\index{thing\_avio\_alloc\_context@{thing\_avio\_alloc\_context}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avio\_alloc\_context()}{thing\_avio\_alloc\_context()}}
+{\footnotesize\ttfamily AVIOContext $\ast$ thing\+\_\+avio\+\_\+alloc\+\_\+context (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+\_\+size,  }\item[{int}]{write\+\_\+flag,  }\item[{void $\ast$}]{opaque,  }\item[{int($\ast$)(void $\ast$opaque, uint8\+\_\+t $\ast$buf, int buty\+\_\+size)}]{read\+\_\+packet,  }\item[{int($\ast$)(void $\ast$opaque, uint8\+\_\+t $\ast$buf, int buty\+\_\+size)}]{write\+\_\+packet,  }\item[{int64\+\_\+t($\ast$)(void $\ast$opaque, int64\+\_\+t offset, int whence)}]{seek }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6ef66283c3d4a5d922653513e74ac65f}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6ef66283c3d4a5d922653513e74ac65f}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avio\_close@{thing\_avio\_close}}
+\index{thing\_avio\_close@{thing\_avio\_close}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avio\_close()}{thing\_avio\_close()}}
+{\footnotesize\ttfamily int thing\+\_\+avio\+\_\+close (\begin{DoxyParamCaption}\item[{AVIOContext $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a4e1838f91bfdb9b54dd08f54642bf712}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a4e1838f91bfdb9b54dd08f54642bf712}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avio\_closep@{thing\_avio\_closep}}
+\index{thing\_avio\_closep@{thing\_avio\_closep}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avio\_closep()}{thing\_avio\_closep()}}
+{\footnotesize\ttfamily int thing\+\_\+avio\+\_\+closep (\begin{DoxyParamCaption}\item[{AVIOContext $\ast$$\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a70974e118fb57548f00c6a97bcf21825}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a70974e118fb57548f00c6a97bcf21825}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avio\_open@{thing\_avio\_open}}
+\index{thing\_avio\_open@{thing\_avio\_open}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avio\_open()}{thing\_avio\_open()}}
+{\footnotesize\ttfamily int thing\+\_\+avio\+\_\+open (\begin{DoxyParamCaption}\item[{AVIOContext $\ast$$\ast$}]{s,  }\item[{const char $\ast$}]{url,  }\item[{int}]{flags }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac1d8abf80e9ae12f30f19ce862e148bf}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_ac1d8abf80e9ae12f30f19ce862e148bf}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avpicture\_alloc@{thing\_avpicture\_alloc}}
+\index{thing\_avpicture\_alloc@{thing\_avpicture\_alloc}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avpicture\_alloc()}{thing\_avpicture\_alloc()}}
+{\footnotesize\ttfamily int thing\+\_\+avpicture\+\_\+alloc (\begin{DoxyParamCaption}\item[{AVPicture $\ast$}]{picture,  }\item[{enum AVPixel\+Format}]{pix\+\_\+fmt,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a0320f82d55b8057b0ad0942eab1e6b58}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a0320f82d55b8057b0ad0942eab1e6b58}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_avpicture\_fill@{thing\_avpicture\_fill}}
+\index{thing\_avpicture\_fill@{thing\_avpicture\_fill}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_avpicture\_fill()}{thing\_avpicture\_fill()}}
+{\footnotesize\ttfamily int thing\+\_\+avpicture\+\_\+fill (\begin{DoxyParamCaption}\item[{AVPicture $\ast$}]{picture,  }\item[{const uint8\+\_\+t $\ast$}]{ptr,  }\item[{enum AVPixel\+Format}]{pix\+\_\+fmt,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a213e90c2fde662b0e0c0497c36a5269b}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a213e90c2fde662b0e0c0497c36a5269b}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_swr\_alloc@{thing\_swr\_alloc}}
+\index{thing\_swr\_alloc@{thing\_swr\_alloc}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_swr\_alloc()}{thing\_swr\_alloc()}}
+{\footnotesize\ttfamily struct Swr\+Context $\ast$ thing\+\_\+swr\+\_\+alloc (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1d565edac145f3879235a86ff58ef684}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a1d565edac145f3879235a86ff58ef684}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_swr\_alloc\_set\_opts@{thing\_swr\_alloc\_set\_opts}}
+\index{thing\_swr\_alloc\_set\_opts@{thing\_swr\_alloc\_set\_opts}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_swr\_alloc\_set\_opts()}{thing\_swr\_alloc\_set\_opts()}}
+{\footnotesize\ttfamily struct Swr\+Context $\ast$ thing\+\_\+swr\+\_\+alloc\+\_\+set\+\_\+opts (\begin{DoxyParamCaption}\item[{struct Swr\+Context $\ast$}]{s,  }\item[{int64\+\_\+t}]{out\+\_\+ch\+\_\+layout,  }\item[{enum AVSample\+Format}]{out\+\_\+sample\+\_\+fmt,  }\item[{int}]{out\+\_\+sample\+\_\+rate,  }\item[{int64\+\_\+t}]{in\+\_\+ch\+\_\+layout,  }\item[{enum AVSample\+Format}]{in\+\_\+sample\+\_\+fmt,  }\item[{int}]{in\+\_\+sample\+\_\+rate,  }\item[{int}]{log\+\_\+offset,  }\item[{void $\ast$}]{log\+\_\+ctx }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a3170e7703f036fb3eb7b015026376060}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a3170e7703f036fb3eb7b015026376060}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_swr\_convert@{thing\_swr\_convert}}
+\index{thing\_swr\_convert@{thing\_swr\_convert}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_swr\_convert()}{thing\_swr\_convert()}}
+{\footnotesize\ttfamily int thing\+\_\+swr\+\_\+convert (\begin{DoxyParamCaption}\item[{struct Swr\+Context $\ast$}]{s,  }\item[{uint8\+\_\+t $\ast$$\ast$}]{out,  }\item[{int}]{out\+\_\+count,  }\item[{const uint8\+\_\+t $\ast$$\ast$}]{in,  }\item[{int}]{in\+\_\+count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a79ae39d32043d3f36af1b2a02b504075}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a79ae39d32043d3f36af1b2a02b504075}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_swr\_free@{thing\_swr\_free}}
+\index{thing\_swr\_free@{thing\_swr\_free}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_swr\_free()}{thing\_swr\_free()}}
+{\footnotesize\ttfamily void thing\+\_\+swr\+\_\+free (\begin{DoxyParamCaption}\item[{struct Swr\+Context $\ast$$\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_afad6965f11586f85c94c2192862d2ab8}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_afad6965f11586f85c94c2192862d2ab8}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_swr\_init@{thing\_swr\_init}}
+\index{thing\_swr\_init@{thing\_swr\_init}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_swr\_init()}{thing\_swr\_init()}}
+{\footnotesize\ttfamily int thing\+\_\+swr\+\_\+init (\begin{DoxyParamCaption}\item[{struct Swr\+Context $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6cd83edbc2b9d38ae7c499305e3eaa2b}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a6cd83edbc2b9d38ae7c499305e3eaa2b}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_sws\_freeContext@{thing\_sws\_freeContext}}
+\index{thing\_sws\_freeContext@{thing\_sws\_freeContext}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_sws\_freeContext()}{thing\_sws\_freeContext()}}
+{\footnotesize\ttfamily void thing\+\_\+sws\+\_\+free\+Context (\begin{DoxyParamCaption}\item[{struct Sws\+Context $\ast$}]{sws\+Context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a77b34a92de999703fe35663c3ee614e9}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a77b34a92de999703fe35663c3ee614e9}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_sws\_getCachedContext@{thing\_sws\_getCachedContext}}
+\index{thing\_sws\_getCachedContext@{thing\_sws\_getCachedContext}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_sws\_getCachedContext()}{thing\_sws\_getCachedContext()}}
+{\footnotesize\ttfamily struct Sws\+Context $\ast$ thing\+\_\+sws\+\_\+get\+Cached\+Context (\begin{DoxyParamCaption}\item[{struct Sws\+Context $\ast$}]{context,  }\item[{int}]{srcW,  }\item[{int}]{srcH,  }\item[{enum AVPixel\+Format}]{src\+Format,  }\item[{int}]{dstW,  }\item[{int}]{dstH,  }\item[{enum AVPixel\+Format}]{dst\+Format,  }\item[{int}]{flags,  }\item[{Sws\+Filter $\ast$}]{src\+Filter,  }\item[{Sws\+Filter $\ast$}]{dst\+Filter,  }\item[{const double $\ast$}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5e9c7d4179e8d23d6866df8ec09e32dc}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a5e9c7d4179e8d23d6866df8ec09e32dc}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_sws\_getContext@{thing\_sws\_getContext}}
+\index{thing\_sws\_getContext@{thing\_sws\_getContext}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_sws\_getContext()}{thing\_sws\_getContext()}}
+{\footnotesize\ttfamily struct Sws\+Context $\ast$ thing\+\_\+sws\+\_\+get\+Context (\begin{DoxyParamCaption}\item[{int}]{srcW,  }\item[{int}]{srcH,  }\item[{enum AVPixel\+Format}]{src\+Format,  }\item[{int}]{dstW,  }\item[{int}]{dstH,  }\item[{enum AVPixel\+Format}]{dst\+Format,  }\item[{int}]{flags,  }\item[{Sws\+Filter $\ast$}]{src\+Filter,  }\item[{Sws\+Filter $\ast$}]{dst\+Filter,  }\item[{const double $\ast$}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a554c2260c7cae31865f15f2d216b5be3}\label{ios-arm64_2_thing_f_fmpeg_wrapper_8framework_2_headers_2_thing_f_fmpeg_wrapper_8hpp_a554c2260c7cae31865f15f2d216b5be3}} 
+\index{ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}!thing\_sws\_scale@{thing\_sws\_scale}}
+\index{thing\_sws\_scale@{thing\_sws\_scale}!ThingFFmpegWrapper.hpp@{ThingFFmpegWrapper.hpp}}
+\doxysubsubsection{\texorpdfstring{thing\_sws\_scale()}{thing\_sws\_scale()}}
+{\footnotesize\ttfamily int thing\+\_\+sws\+\_\+scale (\begin{DoxyParamCaption}\item[{struct Sws\+Context $\ast$}]{c,  }\item[{const uint8\+\_\+t $\ast$const}]{src\+Slice\mbox{[}$\,$\mbox{]},  }\item[{const int}]{src\+Stride\mbox{[}$\,$\mbox{]},  }\item[{int}]{src\+SliceY,  }\item[{int}]{src\+SliceH,  }\item[{uint8\+\_\+t $\ast$const}]{dst\mbox{[}$\,$\mbox{]},  }\item[{const int}]{dst\+Stride\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+

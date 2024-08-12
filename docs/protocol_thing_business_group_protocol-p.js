@@ -36,6 +36,8 @@ var protocol_thing_business_group_protocol_p =
     [ "removeZigbeeDeviceWithGroup:nodeList:success:failure:", "protocol_thing_business_group_protocol-p.html#a16eb396a5039ae80b32603701babce77", null ],
     [ "updateDpCodeGroupRelationsWithGroup:devList:success:failure:", "protocol_thing_business_group_protocol-p.html#ae90a3666dc4cd7f2611d9c4226b315e8", null ],
     [ "updateDpCodeGroupRelationsWithGroup:devList:success:failure:", "protocol_thing_business_group_protocol-p.html#ae90a3666dc4cd7f2611d9c4226b315e8", null ],
+    [ "updateGroupBelong:roomId:success:failure:", "protocol_thing_business_group_protocol-p.html#a54cf4063b37d49350236a06f95f2732e", null ],
+    [ "updateGroupBelong:roomId:success:failure:", "protocol_thing_business_group_protocol-p.html#a54cf4063b37d49350236a06f95f2732e", null ],
     [ "updateGroupRelationsWithGroup:devList:success:failure:", "protocol_thing_business_group_protocol-p.html#a4ef8a04e2c7402d28b628b776d380c59", null ],
     [ "updateGroupRelationsWithGroup:devList:success:failure:", "protocol_thing_business_group_protocol-p.html#a4ef8a04e2c7402d28b628b776d380c59", null ]
 ];

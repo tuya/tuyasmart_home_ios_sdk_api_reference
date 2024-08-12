@@ -1,0 +1,170 @@
+\hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Encrypt\+Image.framework/\+Headers/\+Thing\+Encrypt\+Image\+Define.h File Reference}
+\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingEncryptImage/Build/ThingEncryptImage.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingEncryptImage.framework/Headers/ThingEncryptImageDefine.h@{/Users/humtong/Downloads/Pods\_副本/ThingEncryptImage/Build/ThingEncryptImage.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingEncryptImage.framework/Headers/ThingEncryptImageDefine.h}}
+{\ttfamily \#import \char`\"{}Thing\+Encrypt\+Web\+Image\+Compat.\+h\char`\"{}}\newline
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_a2a5c3bd210b8fc02172cb8252a6053af}{Thing\+Encrypt\+Web\+Image\+Completion\+Block}}) (UIImage $\ast$\+\_\+\+Nullable image, NSURL $\ast$\+\_\+\+Nullable url, Thing\+Encrypt\+Web\+Image\+From\+Type from, Thing\+Encrypt\+Web\+Image\+Stage stage, NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}})
+\item 
+typedef void($^\wedge$ \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_a7fb6ca8428dd4b40620e8b3a01787e12}{Thing\+Encrypt\+Web\+Image\+Progress\+Block}}) (NSInteger received\+Size, NSInteger expected\+Size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_a1358f71cf62e9843978a41504512623b}{NS\+\_\+\+ENUM}} (NSUInteger, Thing\+Encrypt\+Web\+Image\+From\+Type)
+\begin{DoxyCompactList}\small\item\em Indicated where the image came from. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_a053b95b1c1dd3876571536deba17cb3f}{NS\+\_\+\+ENUM}} (NSInteger, Thing\+Encrypt\+Web\+Image\+Stage)
+\begin{DoxyCompactList}\small\item\em Indicated image fetch complete stage. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_aa435b70ddfd478a8a2ffb596263f980c}{NS\+\_\+\+ENUM}} (NSUInteger, Thing\+Encrypt\+Image\+Type)
+\item 
+typedef \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_ad7f2278d972bf2f2e42c60aebae69aac}{NS\+\_\+\+OPTIONS}} (NSUInteger, Thing\+Encrypt\+Web\+Image\+Options)
+\begin{DoxyCompactList}\small\item\em The options to control image operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_a2a5c3bd210b8fc02172cb8252a6053af}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_a2a5c3bd210b8fc02172cb8252a6053af}} 
+\index{ThingEncryptImageDefine.h@{ThingEncryptImageDefine.h}!ThingEncryptWebImageCompletionBlock@{ThingEncryptWebImageCompletionBlock}}
+\index{ThingEncryptWebImageCompletionBlock@{ThingEncryptWebImageCompletionBlock}!ThingEncryptImageDefine.h@{ThingEncryptImageDefine.h}}
+\doxysubsubsection{\texorpdfstring{ThingEncryptWebImageCompletionBlock}{ThingEncryptWebImageCompletionBlock}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Encrypt\+Web\+Image\+Completion\+Block) (UIImage $\ast$\+\_\+\+Nullable image, NSURL $\ast$\+\_\+\+Nullable url, Thing\+Encrypt\+Web\+Image\+From\+Type from, Thing\+Encrypt\+Web\+Image\+Stage stage, NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}})}
+
+The block invoked when image fetch finished or cancelled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image. \\
+\hline
+{\em url} & The image url (remote or local file path). \\
+\hline
+{\em from} & Where the image came from. \\
+\hline
+{\em stage} & Current download stage. \\
+\hline
+{\em error} & Error during image fetching. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_source_l00106}{106}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_source}{Thing\+Encrypt\+Image\+Define.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_a7fb6ca8428dd4b40620e8b3a01787e12}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_a7fb6ca8428dd4b40620e8b3a01787e12}} 
+\index{ThingEncryptImageDefine.h@{ThingEncryptImageDefine.h}!ThingEncryptWebImageProgressBlock@{ThingEncryptWebImageProgressBlock}}
+\index{ThingEncryptWebImageProgressBlock@{ThingEncryptWebImageProgressBlock}!ThingEncryptImageDefine.h@{ThingEncryptImageDefine.h}}
+\doxysubsubsection{\texorpdfstring{ThingEncryptWebImageProgressBlock}{ThingEncryptWebImageProgressBlock}}
+{\footnotesize\ttfamily typedef void($^\wedge$ Thing\+Encrypt\+Web\+Image\+Progress\+Block) (NSInteger received\+Size, NSInteger expected\+Size)}
+
+The block invoked in remote image fetch progress.
+
+
+\begin{DoxyParams}{Parameters}
+{\em received\+Size} & Current received size in bytes. \\
+\hline
+{\em expected\+Size} & Expected total size in bytes (-\/1 means unknown). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_source_l00114}{114}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_source}{Thing\+Encrypt\+Image\+Define.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_a053b95b1c1dd3876571536deba17cb3f}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_a053b95b1c1dd3876571536deba17cb3f}} 
+\index{ThingEncryptImageDefine.h@{ThingEncryptImageDefine.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingEncryptImageDefine.h@{ThingEncryptImageDefine.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{NSInteger}]{,  }\item[{Thing\+Encrypt\+Web\+Image\+Stage}]{ }\end{DoxyParamCaption})}
+
+
+
+Indicated image fetch complete stage. 
+
+Incomplete, progressive image.
+
+Cancelled.
+
+Finished (succeed or failed).
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_source_l00036}{36}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_source}{Thing\+Encrypt\+Image\+Define.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_aa435b70ddfd478a8a2ffb596263f980c}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_aa435b70ddfd478a8a2ffb596263f980c}} 
+\index{ThingEncryptImageDefine.h@{ThingEncryptImageDefine.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingEncryptImageDefine.h@{ThingEncryptImageDefine.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{Thing\+Encrypt\+Image\+Type}]{ }\end{DoxyParamCaption})}
+
+Image file type. \texorpdfstring{$<$}{<} unknown
+
+\texorpdfstring{$<$}{<} jpeg, jpg
+
+\texorpdfstring{$<$}{<} jp2
+
+\texorpdfstring{$<$}{<} tiff, tif
+
+\texorpdfstring{$<$}{<} bmp
+
+\texorpdfstring{$<$}{<} ico
+
+\texorpdfstring{$<$}{<} icns
+
+\texorpdfstring{$<$}{<} gif
+
+\texorpdfstring{$<$}{<} png
+
+\texorpdfstring{$<$}{<} webp
+
+\texorpdfstring{$<$}{<} other image format
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_source_l00051}{51}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_source}{Thing\+Encrypt\+Image\+Define.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_a1358f71cf62e9843978a41504512623b}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_a1358f71cf62e9843978a41504512623b}} 
+\index{ThingEncryptImageDefine.h@{ThingEncryptImageDefine.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingEncryptImageDefine.h@{ThingEncryptImageDefine.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{Thing\+Encrypt\+Web\+Image\+From\+Type}]{ }\end{DoxyParamCaption})}
+
+
+
+Indicated where the image came from. 
+
+No value.
+
+Fetched from memory cache immediately. If you called \char`\"{}set\+Image\+With\+URL\+:...\char`\"{} and the image is already in memory, then you will get this value at the same call.
+
+Fetched from memory cache.
+
+Fetched from disk cache.
+
+Fetched from remote (web or file path).
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_source_l00015}{15}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_source}{Thing\+Encrypt\+Image\+Define.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_ad7f2278d972bf2f2e42c60aebae69aac}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_ad7f2278d972bf2f2e42c60aebae69aac}} 
+\index{ThingEncryptImageDefine.h@{ThingEncryptImageDefine.h}!NS\_OPTIONS@{NS\_OPTIONS}}
+\index{NS\_OPTIONS@{NS\_OPTIONS}!ThingEncryptImageDefine.h@{ThingEncryptImageDefine.h}}
+\doxysubsubsection{\texorpdfstring{NS\_OPTIONS()}{NS\_OPTIONS()}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+OPTIONS (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{Thing\+Encrypt\+Web\+Image\+Options}]{ }\end{DoxyParamCaption})}
+
+
+
+The options to control image operation. 
+
+Load the image from remote and refresh the image cache.
+
+Do not load image from/to disk cache.
+
+Do not change the view\textquotesingle{}s image before set a new URL to it.
+
+By default, placeholder images are loaded while the image is loading. This flag will delay the loading of the placeholder image until after the image has finished loading.
+
+Ignore image decoding. This may used for image downloading without display.
+
+Do not set the image to the view when image fetch complete. You may set the image manually.
+
+Use NSURLCache instead of Thing\+Image\+Cache.
+
+Handles cookies stored in NSHTTPCookie\+Store.
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_source_l00066}{66}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_define_8h_source}{Thing\+Encrypt\+Image\+Define.\+h}}.
+

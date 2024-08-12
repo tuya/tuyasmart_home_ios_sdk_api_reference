@@ -1,4 +1,0 @@
-var dir_15f4e3586f05f8eacb1d41d6f12314c9 =
-[
-    [ "ThingDeviceTinyBusinessModule-umbrella.h", "ios-x86__64-simulator_2_thing_device_tiny_business_module_8framework_2_headers_2_thing_device_tiny_business_module-umbrella_8h.html", "ios-x86__64-simulator_2_thing_device_tiny_business_module_8framework_2_headers_2_thing_device_tiny_business_module-umbrella_8h" ]
-];

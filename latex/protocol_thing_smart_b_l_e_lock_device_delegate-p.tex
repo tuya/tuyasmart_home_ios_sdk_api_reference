@@ -1,0 +1,235 @@
+\hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+BLELock\+Device\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_b_l_e_lock_device_delegate-p}\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+BLELock\+Device.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+BLELock\+Device\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.544303cm]{protocol_thing_smart_b_l_e_lock_device_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_lock_device_delegate-p_a858c7da5718207fe8cc002c45e8cae96}{device\+:did\+Receive\+Add\+Op\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_lock_device_delegate-p_aaf10aa368391311590782459954000d1}{device\+:did\+Receive\+Delete\+Op\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_lock_device_delegate-p_ae2a4c3a40ba9b3a72802c49c4ad9d35a}{device\+:did\+Receive\+Modify\+Op\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_lock_device_delegate-p_af34798526455d4bb36bc46753a40f4f7}{device\+:did\+Receive\+Create\+Password\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_lock_device_delegate-p_a20617523ae9cf773849aadd46f42e188}{device\+:did\+Receive\+Modify\+Password\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_lock_device_delegate-p_a744821326eabea4dd527c1ca774c045c}{device\+:did\+Receive\+Delete\+Password\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_lock_device_delegate-p_a858c7da5718207fe8cc002c45e8cae96}{device\+:did\+Receive\+Add\+Op\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_lock_device_delegate-p_aaf10aa368391311590782459954000d1}{device\+:did\+Receive\+Delete\+Op\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_lock_device_delegate-p_ae2a4c3a40ba9b3a72802c49c4ad9d35a}{device\+:did\+Receive\+Modify\+Op\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_lock_device_delegate-p_af34798526455d4bb36bc46753a40f4f7}{device\+:did\+Receive\+Create\+Password\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_lock_device_delegate-p_a20617523ae9cf773849aadd46f42e188}{device\+:did\+Receive\+Modify\+Password\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_lock_device_delegate-p_a744821326eabea4dd527c1ca774c045c}{device\+:did\+Receive\+Delete\+Password\+Message\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_b_l_e_lock_device_8h_source_l00028}{28}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_b_l_e_lock_device_8h_source}{Thing\+Smart\+BLELock\+Device.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p_a858c7da5718207fe8cc002c45e8cae96}\label{protocol_thing_smart_b_l_e_lock_device_delegate-p_a858c7da5718207fe8cc002c45e8cae96}} 
+\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}!device:didReceiveAddOpMessage:@{device:didReceiveAddOpMessage:}}
+\index{device:didReceiveAddOpMessage:@{device:didReceiveAddOpMessage:}!$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveAddOpMessage:}{device:didReceiveAddOpMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_device}{Thing\+Smart\+BLELock\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Add\+Op\+Message\+:(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_op_message_model}{Thing\+Smart\+BLELock\+Op\+Message\+Model}} $\ast$)}]{op\+Message }\end{DoxyParamCaption}}
+
+收到新增开锁方式回调消息
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em op\+Message} & 设备操作消息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p_a858c7da5718207fe8cc002c45e8cae96}\label{protocol_thing_smart_b_l_e_lock_device_delegate-p_a858c7da5718207fe8cc002c45e8cae96}} 
+\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}!device:didReceiveAddOpMessage:@{device:didReceiveAddOpMessage:}}
+\index{device:didReceiveAddOpMessage:@{device:didReceiveAddOpMessage:}!$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveAddOpMessage:}{device:didReceiveAddOpMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_device}{Thing\+Smart\+BLELock\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Add\+Op\+Message\+:(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_op_message_model}{Thing\+Smart\+BLELock\+Op\+Message\+Model}} $\ast$)}]{op\+Message }\end{DoxyParamCaption}}
+
+收到新增开锁方式回调消息
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em op\+Message} & 设备操作消息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p_af34798526455d4bb36bc46753a40f4f7}\label{protocol_thing_smart_b_l_e_lock_device_delegate-p_af34798526455d4bb36bc46753a40f4f7}} 
+\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}!device:didReceiveCreatePasswordMessage:@{device:didReceiveCreatePasswordMessage:}}
+\index{device:didReceiveCreatePasswordMessage:@{device:didReceiveCreatePasswordMessage:}!$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveCreatePasswordMessage:}{device:didReceiveCreatePasswordMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_device}{Thing\+Smart\+BLELock\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Create\+Password\+Message\+:(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_password_model}{Thing\+Smart\+BLELock\+Password\+Model}} $\ast$)}]{model }\end{DoxyParamCaption}}
+
+创建临时密码回调消息
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em model} & 创建操作结果模型 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p_af34798526455d4bb36bc46753a40f4f7}\label{protocol_thing_smart_b_l_e_lock_device_delegate-p_af34798526455d4bb36bc46753a40f4f7}} 
+\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}!device:didReceiveCreatePasswordMessage:@{device:didReceiveCreatePasswordMessage:}}
+\index{device:didReceiveCreatePasswordMessage:@{device:didReceiveCreatePasswordMessage:}!$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveCreatePasswordMessage:}{device:didReceiveCreatePasswordMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_device}{Thing\+Smart\+BLELock\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Create\+Password\+Message\+:(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_password_model}{Thing\+Smart\+BLELock\+Password\+Model}} $\ast$)}]{model }\end{DoxyParamCaption}}
+
+创建临时密码回调消息
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em model} & 创建操作结果模型 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p_aaf10aa368391311590782459954000d1}\label{protocol_thing_smart_b_l_e_lock_device_delegate-p_aaf10aa368391311590782459954000d1}} 
+\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}!device:didReceiveDeleteOpMessage:@{device:didReceiveDeleteOpMessage:}}
+\index{device:didReceiveDeleteOpMessage:@{device:didReceiveDeleteOpMessage:}!$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveDeleteOpMessage:}{device:didReceiveDeleteOpMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_device}{Thing\+Smart\+BLELock\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Delete\+Op\+Message\+:(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_op_message_model}{Thing\+Smart\+BLELock\+Op\+Message\+Model}} $\ast$)}]{op\+Message }\end{DoxyParamCaption}}
+
+收到删除开锁方式回调信息
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em op\+Message} & 设备操作消息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p_aaf10aa368391311590782459954000d1}\label{protocol_thing_smart_b_l_e_lock_device_delegate-p_aaf10aa368391311590782459954000d1}} 
+\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}!device:didReceiveDeleteOpMessage:@{device:didReceiveDeleteOpMessage:}}
+\index{device:didReceiveDeleteOpMessage:@{device:didReceiveDeleteOpMessage:}!$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveDeleteOpMessage:}{device:didReceiveDeleteOpMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_device}{Thing\+Smart\+BLELock\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Delete\+Op\+Message\+:(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_op_message_model}{Thing\+Smart\+BLELock\+Op\+Message\+Model}} $\ast$)}]{op\+Message }\end{DoxyParamCaption}}
+
+收到删除开锁方式回调信息
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em op\+Message} & 设备操作消息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p_a744821326eabea4dd527c1ca774c045c}\label{protocol_thing_smart_b_l_e_lock_device_delegate-p_a744821326eabea4dd527c1ca774c045c}} 
+\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}!device:didReceiveDeletePasswordMessage:@{device:didReceiveDeletePasswordMessage:}}
+\index{device:didReceiveDeletePasswordMessage:@{device:didReceiveDeletePasswordMessage:}!$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveDeletePasswordMessage:}{device:didReceiveDeletePasswordMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_device}{Thing\+Smart\+BLELock\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Delete\+Password\+Message\+:(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_password_model}{Thing\+Smart\+BLELock\+Password\+Model}} $\ast$)}]{model }\end{DoxyParamCaption}}
+
+删除临时密码回调消息
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em model} & 删除操作结果模型 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p_a744821326eabea4dd527c1ca774c045c}\label{protocol_thing_smart_b_l_e_lock_device_delegate-p_a744821326eabea4dd527c1ca774c045c}} 
+\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}!device:didReceiveDeletePasswordMessage:@{device:didReceiveDeletePasswordMessage:}}
+\index{device:didReceiveDeletePasswordMessage:@{device:didReceiveDeletePasswordMessage:}!$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveDeletePasswordMessage:}{device:didReceiveDeletePasswordMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_device}{Thing\+Smart\+BLELock\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Delete\+Password\+Message\+:(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_password_model}{Thing\+Smart\+BLELock\+Password\+Model}} $\ast$)}]{model }\end{DoxyParamCaption}}
+
+删除临时密码回调消息
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em model} & 删除操作结果模型 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p_ae2a4c3a40ba9b3a72802c49c4ad9d35a}\label{protocol_thing_smart_b_l_e_lock_device_delegate-p_ae2a4c3a40ba9b3a72802c49c4ad9d35a}} 
+\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}!device:didReceiveModifyOpMessage:@{device:didReceiveModifyOpMessage:}}
+\index{device:didReceiveModifyOpMessage:@{device:didReceiveModifyOpMessage:}!$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveModifyOpMessage:}{device:didReceiveModifyOpMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_device}{Thing\+Smart\+BLELock\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Modify\+Op\+Message\+:(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_op_message_model}{Thing\+Smart\+BLELock\+Op\+Message\+Model}} $\ast$)}]{op\+Message }\end{DoxyParamCaption}}
+
+收到修改开锁方式回调消息
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em op\+Message} & 设备操作消息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p_ae2a4c3a40ba9b3a72802c49c4ad9d35a}\label{protocol_thing_smart_b_l_e_lock_device_delegate-p_ae2a4c3a40ba9b3a72802c49c4ad9d35a}} 
+\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}!device:didReceiveModifyOpMessage:@{device:didReceiveModifyOpMessage:}}
+\index{device:didReceiveModifyOpMessage:@{device:didReceiveModifyOpMessage:}!$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveModifyOpMessage:}{device:didReceiveModifyOpMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_device}{Thing\+Smart\+BLELock\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Modify\+Op\+Message\+:(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_op_message_model}{Thing\+Smart\+BLELock\+Op\+Message\+Model}} $\ast$)}]{op\+Message }\end{DoxyParamCaption}}
+
+收到修改开锁方式回调消息
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em op\+Message} & 设备操作消息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p_a20617523ae9cf773849aadd46f42e188}\label{protocol_thing_smart_b_l_e_lock_device_delegate-p_a20617523ae9cf773849aadd46f42e188}} 
+\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}!device:didReceiveModifyPasswordMessage:@{device:didReceiveModifyPasswordMessage:}}
+\index{device:didReceiveModifyPasswordMessage:@{device:didReceiveModifyPasswordMessage:}!$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveModifyPasswordMessage:}{device:didReceiveModifyPasswordMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_device}{Thing\+Smart\+BLELock\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Modify\+Password\+Message\+:(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_password_model}{Thing\+Smart\+BLELock\+Password\+Model}} $\ast$)}]{model }\end{DoxyParamCaption}}
+
+修改临时密码回调消息
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em model} & 修改操作结果模型 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_lock_device_delegate-p_a20617523ae9cf773849aadd46f42e188}\label{protocol_thing_smart_b_l_e_lock_device_delegate-p_a20617523ae9cf773849aadd46f42e188}} 
+\index{$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}!device:didReceiveModifyPasswordMessage:@{device:didReceiveModifyPasswordMessage:}}
+\index{device:didReceiveModifyPasswordMessage:@{device:didReceiveModifyPasswordMessage:}!$<$ThingSmartBLELockDeviceDelegate$>$@{$<$ThingSmartBLELockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{device:didReceiveModifyPasswordMessage:}{device:didReceiveModifyPasswordMessage:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_device}{Thing\+Smart\+BLELock\+Device}} $\ast$)}]{device }\item[{did\+Receive\+Modify\+Password\+Message\+:(\mbox{\hyperlink{interface_thing_smart_b_l_e_lock_password_model}{Thing\+Smart\+BLELock\+Password\+Model}} $\ast$)}]{model }\end{DoxyParamCaption}}
+
+修改临时密码回调消息
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em model} & 修改操作结果模型 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Lock\+Kit/\+Build/\+Thing\+Smart\+Lock\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Lock\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_b_l_e_lock_device_8h}{Thing\+Smart\+BLELock\+Device.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Lock\+Kit/\+Build/\+Thing\+Smart\+Lock\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Lock\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_b_l_e_lock_device_8h}{Thing\+Smart\+BLELock\+Device.\+h}}\end{DoxyCompactItemize}

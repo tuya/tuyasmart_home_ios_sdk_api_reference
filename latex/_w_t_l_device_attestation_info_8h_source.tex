@@ -1,0 +1,73 @@
+\hypertarget{_w_t_l_device_attestation_info_8h_source}{}\doxysection{WTLDevice\+Attestation\+Info.\+h}
+\label{_w_t_l_device_attestation_info_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDeviceAttestationInfo.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDeviceAttestationInfo.h}}
+\mbox{\hyperlink{_w_t_l_device_attestation_info_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00020}00020 \textcolor{preprocessor}{\#import <Water/WTLCertificates.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00021}00021 \textcolor{preprocessor}{\#import <Water/WTLDefines.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00023}00023 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00029}00029 \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00030}00030 \textcolor{keyword}{@interface }WTLDeviceAttestationInfo : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00035}00035 \textcolor{keyword}{@property} (nonatomic, copy, readonly) NSData * challenge;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00039}\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a8040315c54407c9954f846a4c83fb4dd}{00039}} \textcolor{keyword}{@property} (nonatomic, copy, readonly) NSData * \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a8040315c54407c9954f846a4c83fb4dd}{nonce}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00044}\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a52e9805a89edaaf82db709b229156c15}{00044}} \textcolor{keyword}{@property} (nonatomic, copy, readonly) \mbox{\hyperlink{_w_t_l_defines_8h_a65443dbe5d9d296956f3c0666f6a9f71}{WTLTLVBytes}} \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a52e9805a89edaaf82db709b229156c15}{elementsTLV}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00050}\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ad5511128b037e5016ebbcb9a53bfd54a}{00050}} \textcolor{keyword}{@property} (nonatomic, copy, readonly) NSData * \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ad5511128b037e5016ebbcb9a53bfd54a}{elementsSignature}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00055}\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a1c683344f2831d6c73a45ef3ed9c1829}{00055}} \textcolor{keyword}{@property} (nonatomic, copy, readonly) \mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}} \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a1c683344f2831d6c73a45ef3ed9c1829}{deviceAttestationCertificate}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00060}\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ac96066643e16ed0a284c16d7d1e7b591}{00060}} \textcolor{keyword}{@property} (nonatomic, copy, readonly) \mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}} \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ac96066643e16ed0a284c16d7d1e7b591}{productAttestationIntermediateCertificate}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00065}\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ac9f084687f668535f871c438eedf8389}{00065}} \textcolor{keyword}{@property} (nonatomic, copy, readonly) NSData * \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ac9f084687f668535f871c438eedf8389}{certificationDeclaration}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00066}00066 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00067}00067 \textcolor{comment}{ * Firmware information, if any, provided in the elementsTLV.  The encoding of}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00068}00068 \textcolor{comment}{ * this is not currently specified, but if present this must match the}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00069}00069 \textcolor{comment}{ * Distributed Compliance Ledger entry for the device.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00070}00070 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00071}\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a8623eabc1d724c87c50c06956e9652c4}{00071}} \textcolor{keyword}{@property} (nonatomic, copy, readonly, nullable) NSData * \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a8623eabc1d724c87c50c06956e9652c4}{firmwareInfo}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00073}\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a593356330b444d4c84608e0b1474e4ff}{00073}} -\/ (instancetype)\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a593356330b444d4c84608e0b1474e4ff}{initWithDeviceAttestationChallenge}}:(NSData *)challenge}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00074}00074                                              nonce:(NSData *)nonce}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00075}00075                                        elementsTLV:(\mbox{\hyperlink{_w_t_l_defines_8h_a65443dbe5d9d296956f3c0666f6a9f71}{WTLTLVBytes}})elementsTLV}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00076}00076                                  elementsSignature:(NSData *)elementsSignature}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00077}00077                       deviceAttestationCertificate:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}})deviceAttestationCertificate}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00078}00078          productAttestationIntermediateCertificate:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}})processAttestationIntermediateCertificate}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00079}00079                           certificationDeclaration:(NSData *)certificationDeclaration}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00080}00080                                       firmwareInfo:(NSData *)firmwareInfo;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00082}00082 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00084}00084 \mbox{\hyperlink{_w_t_l_defines_8h_a7e03a091c94319bf3cac9352bb2c3aff}{WTL\_DEPRECATED}}(\textcolor{stringliteral}{"{}Please use WTLDeviceAttestationInfo"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00085}00085 \textcolor{keyword}{@interface }AttestationInfo : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00087}00087 \textcolor{keyword}{@property} (nonatomic, copy) NSData * challenge;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00089}00089 \textcolor{keyword}{@property} (nonatomic, copy) NSData * \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a8040315c54407c9954f846a4c83fb4dd}{nonce}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00091}\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a7a92df1542e00158b610d18f5321b3f0}{00091}} \textcolor{keyword}{@property} (nonatomic, copy) NSData * \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a7a92df1542e00158b610d18f5321b3f0}{elements}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00093}00093 \textcolor{keyword}{@property} (nonatomic, copy) NSData * \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ad5511128b037e5016ebbcb9a53bfd54a}{elementsSignature}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00095}\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ae8be1fa0c0e4079bd28147667ac86cda}{00095}} \textcolor{keyword}{@property} (nonatomic, copy) NSData * \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ae8be1fa0c0e4079bd28147667ac86cda}{dac}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00097}\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a3280421eb43ffec6e95c1d541470f64e}{00097}} \textcolor{keyword}{@property} (nonatomic, copy) NSData * \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a3280421eb43ffec6e95c1d541470f64e}{pai}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00099}00099 \textcolor{keyword}{@property} (nonatomic, copy) NSData * \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ac9f084687f668535f871c438eedf8389}{certificationDeclaration}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00101}00101 \textcolor{keyword}{@property} (nonatomic, copy) NSData * \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a8623eabc1d724c87c50c06956e9652c4}{firmwareInfo}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00103}\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ad4d3880d31ac38b210f2802633539e7e}{00103}} -\/ (instancetype)\mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ad4d3880d31ac38b210f2802633539e7e}{initWithChallenge}}:(NSData *)challenge}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00104}00104                             nonce:(NSData *)nonce}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00105}00105                          elements:(NSData *)elements}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00106}00106                 elementsSignature:(NSData *)elementsSignature}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00107}00107                               dac:(NSData *)dac}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00108}00108                               pai:(NSData *)pai}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00109}00109          certificationDeclaration:(NSData *)certificationDeclaration}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00110}00110                      firmwareInfo:(NSData *)firmwareInfo;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00112}00112 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_info_8h_source_l00114}00114 NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

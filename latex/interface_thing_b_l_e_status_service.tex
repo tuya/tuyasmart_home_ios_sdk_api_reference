@@ -1,0 +1,437 @@
+\hypertarget{interface_thing_b_l_e_status_service}{}\doxysection{Thing\+BLEStatus\+Service Class Reference}
+\label{interface_thing_b_l_e_status_service}\index{ThingBLEStatusService@{ThingBLEStatusService}}
+
+
+{\ttfamily \#import $<$Thing\+BLEStatus\+Service.\+h$>$}
+
+Inheritance diagram for Thing\+BLEStatus\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_b_l_e_status_service}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_ab68634a2e452648c5733ac85d2e42d3a}{add\+Device\+Info\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_af842d5c3e2ad290698419e137d804387}{update\+Device\+Info\+:state\+:}}
+\item 
+(nullable id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a23ca4c0686a8a950dd6dfb9b12f31f13}{find\+Device\+Info\+With\+Dev\+Id\+:}}
+\item 
+(nullable id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a1a489c60c1899b675fcc5e148bce5d60}{find\+Device\+Info\+With\+UUID\+:}}
+\item 
+(nullable id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a5e272fc94e4ca754fab3a570ec3accac}{find\+Device\+Info\+With\+UUID\+:and\+Mac\+:}}
+\item 
+(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a0723df9a91ff392d1ddcd1f25554aa53}{create\+Device\+Info\+With\+UUID\+:and\+Mac\+:}}
+\item 
+(NSDictionary$<$ NSString $\ast$, id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$ $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_ac34a51559f754c0c5dbdf9172ac94e11}{find\+All\+Device\+Info}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a21576e6ac68dec989a0a3f751f9f9084}{offline\+Devcie\+Info\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a85159243ac2f2c3c1d8a0c3d4968a590}{remove\+Devcie\+Info\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a3a17447c13b625e7819003eab868fb9c}{add\+Reconnect\+Device\+:for\+Key\+:}}
+\item 
+(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a4ced8b8ed3c7f981363858147571d7ea}{get\+Reconnect\+Device\+With\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a2444e30bdb0b891e7d01f0cba851f460}{remove\+Reconnect\+Device\+With\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_ae242bd6306b146235c616fb486fe5a15}{remove\+All\+Reconnect\+Device}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_acfd98e1dc3de307d18ad2ef119d6466d}{add\+Ota\+Status\+Device\+:for\+Key\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_ac9be848e1f0566cf1d8730bc858e23fd}{get\+Ota\+Status\+Device\+With\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_ab1d579bb1a6d4b069c40874293ce02b1}{remove\+Ota\+Status\+Device\+With\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_ae8e2c551f31586785cb0663299fd0824}{remove\+All\+Ota\+Status\+Device}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_aa7ca90a5f222961e92e466beef1ba06a}{add\+Device\+Category\+Info\+:for\+Key\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a2c20e3a70003ad72519a320edf51367f}{get\+Device\+Category\+Info\+With\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a270cd82f1afa3243c56471013462fc4c}{remove\+Device\+Category\+Info\+With\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_acdb88eee0a500a32122ce1ef6f9d32c7}{remove\+All\+Device\+Category\+Info}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a6550dc180683fd8fa5337a210bd36bb7}{add\+Psk\+Security\+Config\+Info\+:for\+Key\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a842abab1519f11a8ab69c1bef345074a}{get\+Psk\+Security\+Config\+Info\+With\+Key\+:}}
+\item 
+(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_ab68634a2e452648c5733ac85d2e42d3a}{add\+Device\+Info\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_af842d5c3e2ad290698419e137d804387}{update\+Device\+Info\+:state\+:}}
+\item 
+(nullable id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a23ca4c0686a8a950dd6dfb9b12f31f13}{find\+Device\+Info\+With\+Dev\+Id\+:}}
+\item 
+(nullable id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a1a489c60c1899b675fcc5e148bce5d60}{find\+Device\+Info\+With\+UUID\+:}}
+\item 
+(nullable id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a5e272fc94e4ca754fab3a570ec3accac}{find\+Device\+Info\+With\+UUID\+:and\+Mac\+:}}
+\item 
+(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a0723df9a91ff392d1ddcd1f25554aa53}{create\+Device\+Info\+With\+UUID\+:and\+Mac\+:}}
+\item 
+(NSDictionary$<$ NSString $\ast$, id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$ $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_ac34a51559f754c0c5dbdf9172ac94e11}{find\+All\+Device\+Info}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a21576e6ac68dec989a0a3f751f9f9084}{offline\+Devcie\+Info\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a85159243ac2f2c3c1d8a0c3d4968a590}{remove\+Devcie\+Info\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a3a17447c13b625e7819003eab868fb9c}{add\+Reconnect\+Device\+:for\+Key\+:}}
+\item 
+(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a4ced8b8ed3c7f981363858147571d7ea}{get\+Reconnect\+Device\+With\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a2444e30bdb0b891e7d01f0cba851f460}{remove\+Reconnect\+Device\+With\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_ae242bd6306b146235c616fb486fe5a15}{remove\+All\+Reconnect\+Device}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_acfd98e1dc3de307d18ad2ef119d6466d}{add\+Ota\+Status\+Device\+:for\+Key\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_ac9be848e1f0566cf1d8730bc858e23fd}{get\+Ota\+Status\+Device\+With\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_ab1d579bb1a6d4b069c40874293ce02b1}{remove\+Ota\+Status\+Device\+With\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_ae8e2c551f31586785cb0663299fd0824}{remove\+All\+Ota\+Status\+Device}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_aa7ca90a5f222961e92e466beef1ba06a}{add\+Device\+Category\+Info\+:for\+Key\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a2c20e3a70003ad72519a320edf51367f}{get\+Device\+Category\+Info\+With\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a270cd82f1afa3243c56471013462fc4c}{remove\+Device\+Category\+Info\+With\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_acdb88eee0a500a32122ce1ef6f9d32c7}{remove\+All\+Device\+Category\+Info}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a6550dc180683fd8fa5337a210bd36bb7}{add\+Psk\+Security\+Config\+Info\+:for\+Key\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a842abab1519f11a8ab69c1bef345074a}{get\+Psk\+Security\+Config\+Info\+With\+Key\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_find_mac_delegate-p}{Thing\+BLEFind\+Mac\+Delegate}} $>$ \mbox{\hyperlink{interface_thing_b_l_e_status_service_a655d9ff89043688c56971a3c38245987}{find\+Mac\+Delegate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_status_service_8h_source_l00013}{13}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_status_service_8h_source}{Thing\+BLEStatus\+Service.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_aa7ca90a5f222961e92e466beef1ba06a}\label{interface_thing_b_l_e_status_service_aa7ca90a5f222961e92e466beef1ba06a}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!addDeviceCategoryInfo:forKey:@{addDeviceCategoryInfo:forKey:}}
+\index{addDeviceCategoryInfo:forKey:@{addDeviceCategoryInfo:forKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{addDeviceCategoryInfo:forKey:}{addDeviceCategoryInfo:forKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Device\+Category\+Info\+: \begin{DoxyParamCaption}\item[{(id)}]{category\+Info }\item[{for\+Key\+:(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_aa7ca90a5f222961e92e466beef1ba06a}\label{interface_thing_b_l_e_status_service_aa7ca90a5f222961e92e466beef1ba06a}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!addDeviceCategoryInfo:forKey:@{addDeviceCategoryInfo:forKey:}}
+\index{addDeviceCategoryInfo:forKey:@{addDeviceCategoryInfo:forKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{addDeviceCategoryInfo:forKey:}{addDeviceCategoryInfo:forKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Device\+Category\+Info\+: \begin{DoxyParamCaption}\item[{(id)}]{category\+Info }\item[{for\+Key\+:(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_ab68634a2e452648c5733ac85d2e42d3a}\label{interface_thing_b_l_e_status_service_ab68634a2e452648c5733ac85d2e42d3a}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!addDeviceInfo:@{addDeviceInfo:}}
+\index{addDeviceInfo:@{addDeviceInfo:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{addDeviceInfo:}{addDeviceInfo:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) add\+Device\+Info\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_ab68634a2e452648c5733ac85d2e42d3a}\label{interface_thing_b_l_e_status_service_ab68634a2e452648c5733ac85d2e42d3a}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!addDeviceInfo:@{addDeviceInfo:}}
+\index{addDeviceInfo:@{addDeviceInfo:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{addDeviceInfo:}{addDeviceInfo:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) add\+Device\+Info\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_acfd98e1dc3de307d18ad2ef119d6466d}\label{interface_thing_b_l_e_status_service_acfd98e1dc3de307d18ad2ef119d6466d}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!addOtaStatusDevice:forKey:@{addOtaStatusDevice:forKey:}}
+\index{addOtaStatusDevice:forKey:@{addOtaStatusDevice:forKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{addOtaStatusDevice:forKey:}{addOtaStatusDevice:forKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Ota\+Status\+Device\+: \begin{DoxyParamCaption}\item[{(id)}]{an\+Object }\item[{for\+Key\+:(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_acfd98e1dc3de307d18ad2ef119d6466d}\label{interface_thing_b_l_e_status_service_acfd98e1dc3de307d18ad2ef119d6466d}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!addOtaStatusDevice:forKey:@{addOtaStatusDevice:forKey:}}
+\index{addOtaStatusDevice:forKey:@{addOtaStatusDevice:forKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{addOtaStatusDevice:forKey:}{addOtaStatusDevice:forKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Ota\+Status\+Device\+: \begin{DoxyParamCaption}\item[{(id)}]{an\+Object }\item[{for\+Key\+:(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a6550dc180683fd8fa5337a210bd36bb7}\label{interface_thing_b_l_e_status_service_a6550dc180683fd8fa5337a210bd36bb7}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!addPskSecurityConfigInfo:forKey:@{addPskSecurityConfigInfo:forKey:}}
+\index{addPskSecurityConfigInfo:forKey:@{addPskSecurityConfigInfo:forKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{addPskSecurityConfigInfo:forKey:}{addPskSecurityConfigInfo:forKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Psk\+Security\+Config\+Info\+: \begin{DoxyParamCaption}\item[{(id)}]{security\+Config\+Info }\item[{for\+Key\+:(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a6550dc180683fd8fa5337a210bd36bb7}\label{interface_thing_b_l_e_status_service_a6550dc180683fd8fa5337a210bd36bb7}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!addPskSecurityConfigInfo:forKey:@{addPskSecurityConfigInfo:forKey:}}
+\index{addPskSecurityConfigInfo:forKey:@{addPskSecurityConfigInfo:forKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{addPskSecurityConfigInfo:forKey:}{addPskSecurityConfigInfo:forKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Psk\+Security\+Config\+Info\+: \begin{DoxyParamCaption}\item[{(id)}]{security\+Config\+Info }\item[{for\+Key\+:(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a3a17447c13b625e7819003eab868fb9c}\label{interface_thing_b_l_e_status_service_a3a17447c13b625e7819003eab868fb9c}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!addReconnectDevice:forKey:@{addReconnectDevice:forKey:}}
+\index{addReconnectDevice:forKey:@{addReconnectDevice:forKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{addReconnectDevice:forKey:}{addReconnectDevice:forKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Reconnect\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\item[{for\+Key\+:(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a3a17447c13b625e7819003eab868fb9c}\label{interface_thing_b_l_e_status_service_a3a17447c13b625e7819003eab868fb9c}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!addReconnectDevice:forKey:@{addReconnectDevice:forKey:}}
+\index{addReconnectDevice:forKey:@{addReconnectDevice:forKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{addReconnectDevice:forKey:}{addReconnectDevice:forKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Reconnect\+Device\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\item[{for\+Key\+:(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a0723df9a91ff392d1ddcd1f25554aa53}\label{interface_thing_b_l_e_status_service_a0723df9a91ff392d1ddcd1f25554aa53}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!createDeviceInfoWithUUID:andMac:@{createDeviceInfoWithUUID:andMac:}}
+\index{createDeviceInfoWithUUID:andMac:@{createDeviceInfoWithUUID:andMac:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{createDeviceInfoWithUUID:andMac:}{createDeviceInfoWithUUID:andMac:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) create\+Device\+Info\+With\+UUID\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{and\+Mac\+:(nullable NSString $\ast$)}]{mac }\end{DoxyParamCaption}}
+
+Create \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} Model 
+\begin{DoxyParams}{Parameters}
+{\em uuid} & uuid \\
+\hline
+{\em mac} & mac id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a0723df9a91ff392d1ddcd1f25554aa53}\label{interface_thing_b_l_e_status_service_a0723df9a91ff392d1ddcd1f25554aa53}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!createDeviceInfoWithUUID:andMac:@{createDeviceInfoWithUUID:andMac:}}
+\index{createDeviceInfoWithUUID:andMac:@{createDeviceInfoWithUUID:andMac:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{createDeviceInfoWithUUID:andMac:}{createDeviceInfoWithUUID:andMac:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) create\+Device\+Info\+With\+UUID\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{and\+Mac\+:(nullable NSString $\ast$)}]{mac }\end{DoxyParamCaption}}
+
+Create \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} Model 
+\begin{DoxyParams}{Parameters}
+{\em uuid} & uuid \\
+\hline
+{\em mac} & mac id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_ac34a51559f754c0c5dbdf9172ac94e11}\label{interface_thing_b_l_e_status_service_ac34a51559f754c0c5dbdf9172ac94e11}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!findAllDeviceInfo@{findAllDeviceInfo}}
+\index{findAllDeviceInfo@{findAllDeviceInfo}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{findAllDeviceInfo}{findAllDeviceInfo}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSDictionary$<$ NSString $\ast$, id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$ $>$ $\ast$) find\+All\+Device\+Info \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_ac34a51559f754c0c5dbdf9172ac94e11}\label{interface_thing_b_l_e_status_service_ac34a51559f754c0c5dbdf9172ac94e11}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!findAllDeviceInfo@{findAllDeviceInfo}}
+\index{findAllDeviceInfo@{findAllDeviceInfo}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{findAllDeviceInfo}{findAllDeviceInfo}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSDictionary$<$ NSString $\ast$, id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$ $>$ $\ast$) find\+All\+Device\+Info \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a23ca4c0686a8a950dd6dfb9b12f31f13}\label{interface_thing_b_l_e_status_service_a23ca4c0686a8a950dd6dfb9b12f31f13}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!findDeviceInfoWithDevId:@{findDeviceInfoWithDevId:}}
+\index{findDeviceInfoWithDevId:@{findDeviceInfoWithDevId:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{findDeviceInfoWithDevId:}{findDeviceInfoWithDevId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (nullable id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) find\+Device\+Info\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+只能查询在线的设备，离线的设备可能返回nil
+\begin{DoxyItemize}
+\item Parameter dev\+Id\+: dev\+Id 
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a23ca4c0686a8a950dd6dfb9b12f31f13}\label{interface_thing_b_l_e_status_service_a23ca4c0686a8a950dd6dfb9b12f31f13}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!findDeviceInfoWithDevId:@{findDeviceInfoWithDevId:}}
+\index{findDeviceInfoWithDevId:@{findDeviceInfoWithDevId:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{findDeviceInfoWithDevId:}{findDeviceInfoWithDevId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (nullable id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) find\+Device\+Info\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+只能查询在线的设备，离线的设备可能返回nil
+\begin{DoxyItemize}
+\item Parameter dev\+Id\+: dev\+Id 
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a1a489c60c1899b675fcc5e148bce5d60}\label{interface_thing_b_l_e_status_service_a1a489c60c1899b675fcc5e148bce5d60}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!findDeviceInfoWithUUID:@{findDeviceInfoWithUUID:}}
+\index{findDeviceInfoWithUUID:@{findDeviceInfoWithUUID:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{findDeviceInfoWithUUID:}{findDeviceInfoWithUUID:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (nullable id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) find\+Device\+Info\+With\+UUID\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a1a489c60c1899b675fcc5e148bce5d60}\label{interface_thing_b_l_e_status_service_a1a489c60c1899b675fcc5e148bce5d60}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!findDeviceInfoWithUUID:@{findDeviceInfoWithUUID:}}
+\index{findDeviceInfoWithUUID:@{findDeviceInfoWithUUID:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{findDeviceInfoWithUUID:}{findDeviceInfoWithUUID:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (nullable id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) find\+Device\+Info\+With\+UUID\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a5e272fc94e4ca754fab3a570ec3accac}\label{interface_thing_b_l_e_status_service_a5e272fc94e4ca754fab3a570ec3accac}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!findDeviceInfoWithUUID:andMac:@{findDeviceInfoWithUUID:andMac:}}
+\index{findDeviceInfoWithUUID:andMac:@{findDeviceInfoWithUUID:andMac:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{findDeviceInfoWithUUID:andMac:}{findDeviceInfoWithUUID:andMac:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (nullable id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) \mbox{\hyperlink{interface_thing_b_l_e_status_service_a1a489c60c1899b675fcc5e148bce5d60}{find\+Device\+Info\+With\+UUID\+:}} \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{and\+Mac\+:(nullable NSString $\ast$)}]{mac }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a5e272fc94e4ca754fab3a570ec3accac}\label{interface_thing_b_l_e_status_service_a5e272fc94e4ca754fab3a570ec3accac}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!findDeviceInfoWithUUID:andMac:@{findDeviceInfoWithUUID:andMac:}}
+\index{findDeviceInfoWithUUID:andMac:@{findDeviceInfoWithUUID:andMac:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{findDeviceInfoWithUUID:andMac:}{findDeviceInfoWithUUID:andMac:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (nullable id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$) \mbox{\hyperlink{interface_thing_b_l_e_status_service_a1a489c60c1899b675fcc5e148bce5d60}{find\+Device\+Info\+With\+UUID\+:}} \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{and\+Mac\+:(nullable NSString $\ast$)}]{mac }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a2c20e3a70003ad72519a320edf51367f}\label{interface_thing_b_l_e_status_service_a2c20e3a70003ad72519a320edf51367f}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!getDeviceCategoryInfoWithKey:@{getDeviceCategoryInfoWithKey:}}
+\index{getDeviceCategoryInfoWithKey:@{getDeviceCategoryInfoWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{getDeviceCategoryInfoWithKey:}{getDeviceCategoryInfoWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (id) get\+Device\+Category\+Info\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a2c20e3a70003ad72519a320edf51367f}\label{interface_thing_b_l_e_status_service_a2c20e3a70003ad72519a320edf51367f}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!getDeviceCategoryInfoWithKey:@{getDeviceCategoryInfoWithKey:}}
+\index{getDeviceCategoryInfoWithKey:@{getDeviceCategoryInfoWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{getDeviceCategoryInfoWithKey:}{getDeviceCategoryInfoWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (id) get\+Device\+Category\+Info\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_ac9be848e1f0566cf1d8730bc858e23fd}\label{interface_thing_b_l_e_status_service_ac9be848e1f0566cf1d8730bc858e23fd}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!getOtaStatusDeviceWithKey:@{getOtaStatusDeviceWithKey:}}
+\index{getOtaStatusDeviceWithKey:@{getOtaStatusDeviceWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{getOtaStatusDeviceWithKey:}{getOtaStatusDeviceWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (id) get\+Ota\+Status\+Device\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_ac9be848e1f0566cf1d8730bc858e23fd}\label{interface_thing_b_l_e_status_service_ac9be848e1f0566cf1d8730bc858e23fd}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!getOtaStatusDeviceWithKey:@{getOtaStatusDeviceWithKey:}}
+\index{getOtaStatusDeviceWithKey:@{getOtaStatusDeviceWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{getOtaStatusDeviceWithKey:}{getOtaStatusDeviceWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (id) get\+Ota\+Status\+Device\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a842abab1519f11a8ab69c1bef345074a}\label{interface_thing_b_l_e_status_service_a842abab1519f11a8ab69c1bef345074a}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!getPskSecurityConfigInfoWithKey:@{getPskSecurityConfigInfoWithKey:}}
+\index{getPskSecurityConfigInfoWithKey:@{getPskSecurityConfigInfoWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{getPskSecurityConfigInfoWithKey:}{getPskSecurityConfigInfoWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (id) get\+Psk\+Security\+Config\+Info\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a842abab1519f11a8ab69c1bef345074a}\label{interface_thing_b_l_e_status_service_a842abab1519f11a8ab69c1bef345074a}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!getPskSecurityConfigInfoWithKey:@{getPskSecurityConfigInfoWithKey:}}
+\index{getPskSecurityConfigInfoWithKey:@{getPskSecurityConfigInfoWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{getPskSecurityConfigInfoWithKey:}{getPskSecurityConfigInfoWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (id) get\+Psk\+Security\+Config\+Info\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a4ced8b8ed3c7f981363858147571d7ea}\label{interface_thing_b_l_e_status_service_a4ced8b8ed3c7f981363858147571d7ea}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!getReconnectDeviceWithKey:@{getReconnectDeviceWithKey:}}
+\index{getReconnectDeviceWithKey:@{getReconnectDeviceWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{getReconnectDeviceWithKey:}{getReconnectDeviceWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$) get\+Reconnect\+Device\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a4ced8b8ed3c7f981363858147571d7ea}\label{interface_thing_b_l_e_status_service_a4ced8b8ed3c7f981363858147571d7ea}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!getReconnectDeviceWithKey:@{getReconnectDeviceWithKey:}}
+\index{getReconnectDeviceWithKey:@{getReconnectDeviceWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{getReconnectDeviceWithKey:}{getReconnectDeviceWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$) get\+Reconnect\+Device\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a21576e6ac68dec989a0a3f751f9f9084}\label{interface_thing_b_l_e_status_service_a21576e6ac68dec989a0a3f751f9f9084}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!offlineDevcieInfo:@{offlineDevcieInfo:}}
+\index{offlineDevcieInfo:@{offlineDevcieInfo:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{offlineDevcieInfo:}{offlineDevcieInfo:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) offline\+Devcie\+Info\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a21576e6ac68dec989a0a3f751f9f9084}\label{interface_thing_b_l_e_status_service_a21576e6ac68dec989a0a3f751f9f9084}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!offlineDevcieInfo:@{offlineDevcieInfo:}}
+\index{offlineDevcieInfo:@{offlineDevcieInfo:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{offlineDevcieInfo:}{offlineDevcieInfo:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) offline\+Devcie\+Info\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_acdb88eee0a500a32122ce1ef6f9d32c7}\label{interface_thing_b_l_e_status_service_acdb88eee0a500a32122ce1ef6f9d32c7}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeAllDeviceCategoryInfo@{removeAllDeviceCategoryInfo}}
+\index{removeAllDeviceCategoryInfo@{removeAllDeviceCategoryInfo}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeAllDeviceCategoryInfo}{removeAllDeviceCategoryInfo}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Device\+Category\+Info \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_acdb88eee0a500a32122ce1ef6f9d32c7}\label{interface_thing_b_l_e_status_service_acdb88eee0a500a32122ce1ef6f9d32c7}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeAllDeviceCategoryInfo@{removeAllDeviceCategoryInfo}}
+\index{removeAllDeviceCategoryInfo@{removeAllDeviceCategoryInfo}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeAllDeviceCategoryInfo}{removeAllDeviceCategoryInfo}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Device\+Category\+Info \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_ae8e2c551f31586785cb0663299fd0824}\label{interface_thing_b_l_e_status_service_ae8e2c551f31586785cb0663299fd0824}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeAllOtaStatusDevice@{removeAllOtaStatusDevice}}
+\index{removeAllOtaStatusDevice@{removeAllOtaStatusDevice}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeAllOtaStatusDevice}{removeAllOtaStatusDevice}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Ota\+Status\+Device \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_ae8e2c551f31586785cb0663299fd0824}\label{interface_thing_b_l_e_status_service_ae8e2c551f31586785cb0663299fd0824}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeAllOtaStatusDevice@{removeAllOtaStatusDevice}}
+\index{removeAllOtaStatusDevice@{removeAllOtaStatusDevice}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeAllOtaStatusDevice}{removeAllOtaStatusDevice}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Ota\+Status\+Device \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_ae242bd6306b146235c616fb486fe5a15}\label{interface_thing_b_l_e_status_service_ae242bd6306b146235c616fb486fe5a15}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeAllReconnectDevice@{removeAllReconnectDevice}}
+\index{removeAllReconnectDevice@{removeAllReconnectDevice}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeAllReconnectDevice}{removeAllReconnectDevice}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Reconnect\+Device \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_ae242bd6306b146235c616fb486fe5a15}\label{interface_thing_b_l_e_status_service_ae242bd6306b146235c616fb486fe5a15}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeAllReconnectDevice@{removeAllReconnectDevice}}
+\index{removeAllReconnectDevice@{removeAllReconnectDevice}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeAllReconnectDevice}{removeAllReconnectDevice}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Reconnect\+Device \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a85159243ac2f2c3c1d8a0c3d4968a590}\label{interface_thing_b_l_e_status_service_a85159243ac2f2c3c1d8a0c3d4968a590}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeDevcieInfo:@{removeDevcieInfo:}}
+\index{removeDevcieInfo:@{removeDevcieInfo:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeDevcieInfo:}{removeDevcieInfo:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Devcie\+Info\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a85159243ac2f2c3c1d8a0c3d4968a590}\label{interface_thing_b_l_e_status_service_a85159243ac2f2c3c1d8a0c3d4968a590}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeDevcieInfo:@{removeDevcieInfo:}}
+\index{removeDevcieInfo:@{removeDevcieInfo:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeDevcieInfo:}{removeDevcieInfo:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Devcie\+Info\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a270cd82f1afa3243c56471013462fc4c}\label{interface_thing_b_l_e_status_service_a270cd82f1afa3243c56471013462fc4c}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeDeviceCategoryInfoWithKey:@{removeDeviceCategoryInfoWithKey:}}
+\index{removeDeviceCategoryInfoWithKey:@{removeDeviceCategoryInfoWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeDeviceCategoryInfoWithKey:}{removeDeviceCategoryInfoWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Device\+Category\+Info\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a270cd82f1afa3243c56471013462fc4c}\label{interface_thing_b_l_e_status_service_a270cd82f1afa3243c56471013462fc4c}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeDeviceCategoryInfoWithKey:@{removeDeviceCategoryInfoWithKey:}}
+\index{removeDeviceCategoryInfoWithKey:@{removeDeviceCategoryInfoWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeDeviceCategoryInfoWithKey:}{removeDeviceCategoryInfoWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Device\+Category\+Info\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_ab1d579bb1a6d4b069c40874293ce02b1}\label{interface_thing_b_l_e_status_service_ab1d579bb1a6d4b069c40874293ce02b1}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeOtaStatusDeviceWithKey:@{removeOtaStatusDeviceWithKey:}}
+\index{removeOtaStatusDeviceWithKey:@{removeOtaStatusDeviceWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeOtaStatusDeviceWithKey:}{removeOtaStatusDeviceWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Ota\+Status\+Device\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_ab1d579bb1a6d4b069c40874293ce02b1}\label{interface_thing_b_l_e_status_service_ab1d579bb1a6d4b069c40874293ce02b1}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeOtaStatusDeviceWithKey:@{removeOtaStatusDeviceWithKey:}}
+\index{removeOtaStatusDeviceWithKey:@{removeOtaStatusDeviceWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeOtaStatusDeviceWithKey:}{removeOtaStatusDeviceWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Ota\+Status\+Device\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a2444e30bdb0b891e7d01f0cba851f460}\label{interface_thing_b_l_e_status_service_a2444e30bdb0b891e7d01f0cba851f460}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeReconnectDeviceWithKey:@{removeReconnectDeviceWithKey:}}
+\index{removeReconnectDeviceWithKey:@{removeReconnectDeviceWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeReconnectDeviceWithKey:}{removeReconnectDeviceWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Reconnect\+Device\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a2444e30bdb0b891e7d01f0cba851f460}\label{interface_thing_b_l_e_status_service_a2444e30bdb0b891e7d01f0cba851f460}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!removeReconnectDeviceWithKey:@{removeReconnectDeviceWithKey:}}
+\index{removeReconnectDeviceWithKey:@{removeReconnectDeviceWithKey:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{removeReconnectDeviceWithKey:}{removeReconnectDeviceWithKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Reconnect\+Device\+With\+Key\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_af842d5c3e2ad290698419e137d804387}\label{interface_thing_b_l_e_status_service_af842d5c3e2ad290698419e137d804387}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!updateDeviceInfo:state:@{updateDeviceInfo:state:}}
+\index{updateDeviceInfo:state:@{updateDeviceInfo:state:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{updateDeviceInfo:state:}{updateDeviceInfo:state:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+Device\+Info\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{state\+:(\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_device_info_protocol_8h_a8a646229dc99a267275470ecec5ddb61}{Thing\+Smart\+BLEDevice\+State}})}]{state }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_af842d5c3e2ad290698419e137d804387}\label{interface_thing_b_l_e_status_service_af842d5c3e2ad290698419e137d804387}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!updateDeviceInfo:state:@{updateDeviceInfo:state:}}
+\index{updateDeviceInfo:state:@{updateDeviceInfo:state:}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{updateDeviceInfo:state:}{updateDeviceInfo:state:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+Device\+Info\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{state\+:(\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_device_info_protocol_8h_a8a646229dc99a267275470ecec5ddb61}{Thing\+Smart\+BLEDevice\+State}})}]{state }\end{DoxyParamCaption}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_b_l_e_status_service_a655d9ff89043688c56971a3c38245987}\label{interface_thing_b_l_e_status_service_a655d9ff89043688c56971a3c38245987}} 
+\index{ThingBLEStatusService@{ThingBLEStatusService}!findMacDelegate@{findMacDelegate}}
+\index{findMacDelegate@{findMacDelegate}!ThingBLEStatusService@{ThingBLEStatusService}}
+\doxysubsubsection{\texorpdfstring{findMacDelegate}{findMacDelegate}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_find_mac_delegate-p}{Thing\+BLEFind\+Mac\+Delegate}} $>$) find\+Mac\+Delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_status_service_8h_source_l00015}{15}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_status_service_8h_source}{Thing\+BLEStatus\+Service.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_status_service_8h}{Thing\+BLEStatus\+Service.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_status_service_8h}{Thing\+BLEStatus\+Service.\+h}}\end{DoxyCompactItemize}

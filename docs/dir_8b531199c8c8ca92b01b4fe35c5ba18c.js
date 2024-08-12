@@ -1,4 +1,0 @@
-var dir_8b531199c8c8ca92b01b4fe35c5ba18c =
-[
-    [ "ThingNotificationsAuthManager-umbrella.h", "ios-x86__64-simulator_2_thing_notifications_auth_manager_8framework_2_headers_2_thing_notifications_auth_manager-umbrella_8h.html", "ios-x86__64-simulator_2_thing_notifications_auth_manager_8framework_2_headers_2_thing_notifications_auth_manager-umbrella_8h" ]
-];

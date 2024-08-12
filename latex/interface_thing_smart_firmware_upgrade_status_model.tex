@@ -1,0 +1,182 @@
+\hypertarget{interface_thing_smart_firmware_upgrade_status_model}{}\doxysection{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model Class Reference}
+\label{interface_thing_smart_firmware_upgrade_status_model}\index{ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}}
+
+
+The device firmware update status.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Firmware\+Upgrade\+Status\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.106719cm]{interface_thing_smart_firmware_upgrade_status_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h_ad7e00a45a7dd2493a5986d429fb991c5}{Thing\+Smart\+Device\+Upgrade\+Status}} \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model_a5191cc736e852bb9220f327c330c7f62}{upgrade\+Status}}
+\begin{DoxyCompactList}\small\item\em The firmware update status. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model_a288a5fec87bd7ed59bbc1f36ce3a5cec}{type}}
+\begin{DoxyCompactList}\small\item\em The firmware type. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model_a98e599d7bf7e81f64f8b172198feda4d}{status\+Text}}
+\begin{DoxyCompactList}\small\item\em The firmware update description. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model_a466e5dc7dbd9521124c3502affdcfec1}{status\+Title}}
+\begin{DoxyCompactList}\small\item\em The title of the firmware update description. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model_abedb238feefd669786afcece31423d8f}{group\+Id}}
+\begin{DoxyCompactList}\small\item\em The group ota\textquotesingle{}s task id. When single device update, its value is \texorpdfstring{$<$}{<}= 0. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model_a6c46876e1519abb389d5a4db14c1005e}{progress}}
+\begin{DoxyCompactList}\small\item\em The firmware update progress. ( sometime can be -\/1, please ignore when \texorpdfstring{$<$}{<} 0. ) \end{DoxyCompactList}\item 
+Thing\+Smart\+Device\+Upgrade\+Mode \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model_ae40e7ff345cb5fc9b168afe226ec447c}{upgrade\+Mode}}
+\begin{DoxyCompactList}\small\item\em The upgrade mode (normal, pid version, ... etc) \end{DoxyCompactList}\item 
+NSError $\ast$ \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model_af45cb35132f6a0aaa1355e0875aa6610}{error}}
+\begin{DoxyCompactList}\small\item\em The firmware update error info. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_status_model_aa4fe081b7a6258489cb1ed03fd562ea3}{remain\+Time}}
+\begin{DoxyCompactList}\small\item\em Firmware upgrade remaining time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The device firmware update status. 
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source_l00015}{15}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_firmware_upgrade_status_model_af45cb35132f6a0aaa1355e0875aa6610}\label{interface_thing_smart_firmware_upgrade_status_model_af45cb35132f6a0aaa1355e0875aa6610}} 
+\index{ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}!error@{error}}
+\index{error@{error}!ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}}
+\doxysubsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily -\/ (NSError $\ast$) error\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The firmware update error info. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source_l00033}{33}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_firmware_upgrade_status_model_abedb238feefd669786afcece31423d8f}\label{interface_thing_smart_firmware_upgrade_status_model_abedb238feefd669786afcece31423d8f}} 
+\index{ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}!groupId@{groupId}}
+\index{groupId@{groupId}!ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}}
+\doxysubsubsection{\texorpdfstring{groupId}{groupId}}
+{\footnotesize\ttfamily -\/ (long) group\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The group ota\textquotesingle{}s task id. When single device update, its value is \texorpdfstring{$<$}{<}= 0. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source_l00026}{26}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_firmware_upgrade_status_model_a6c46876e1519abb389d5a4db14c1005e}\label{interface_thing_smart_firmware_upgrade_status_model_a6c46876e1519abb389d5a4db14c1005e}} 
+\index{ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}!progress@{progress}}
+\index{progress@{progress}!ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}}
+\doxysubsubsection{\texorpdfstring{progress}{progress}}
+{\footnotesize\ttfamily -\/ (NSInteger) progress\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The firmware update progress. ( sometime can be -\/1, please ignore when \texorpdfstring{$<$}{<} 0. ) 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source_l00029}{29}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_firmware_upgrade_status_model_aa4fe081b7a6258489cb1ed03fd562ea3}\label{interface_thing_smart_firmware_upgrade_status_model_aa4fe081b7a6258489cb1ed03fd562ea3}} 
+\index{ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}!remainTime@{remainTime}}
+\index{remainTime@{remainTime}!ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}}
+\doxysubsubsection{\texorpdfstring{remainTime}{remainTime}}
+{\footnotesize\ttfamily -\/ (NSInteger) remain\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Firmware upgrade remaining time. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source_l00035}{35}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_firmware_upgrade_status_model_a98e599d7bf7e81f64f8b172198feda4d}\label{interface_thing_smart_firmware_upgrade_status_model_a98e599d7bf7e81f64f8b172198feda4d}} 
+\index{ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}!statusText@{statusText}}
+\index{statusText@{statusText}!ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}}
+\doxysubsubsection{\texorpdfstring{statusText}{statusText}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) status\+Text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The firmware update description. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source_l00022}{22}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_firmware_upgrade_status_model_a466e5dc7dbd9521124c3502affdcfec1}\label{interface_thing_smart_firmware_upgrade_status_model_a466e5dc7dbd9521124c3502affdcfec1}} 
+\index{ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}!statusTitle@{statusTitle}}
+\index{statusTitle@{statusTitle}!ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}}
+\doxysubsubsection{\texorpdfstring{statusTitle}{statusTitle}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) status\+Title\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The title of the firmware update description. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source_l00024}{24}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_firmware_upgrade_status_model_a288a5fec87bd7ed59bbc1f36ce3a5cec}\label{interface_thing_smart_firmware_upgrade_status_model_a288a5fec87bd7ed59bbc1f36ce3a5cec}} 
+\index{ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}!type@{type}}
+\index{type@{type}!ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily -\/ (NSInteger) type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The firmware type. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source_l00020}{20}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_firmware_upgrade_status_model_ae40e7ff345cb5fc9b168afe226ec447c}\label{interface_thing_smart_firmware_upgrade_status_model_ae40e7ff345cb5fc9b168afe226ec447c}} 
+\index{ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}!upgradeMode@{upgradeMode}}
+\index{upgradeMode@{upgradeMode}!ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}}
+\doxysubsubsection{\texorpdfstring{upgradeMode}{upgradeMode}}
+{\footnotesize\ttfamily -\/ (Thing\+Smart\+Device\+Upgrade\+Mode) upgrade\+Mode\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The upgrade mode (normal, pid version, ... etc) 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source_l00031}{31}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_firmware_upgrade_status_model_a5191cc736e852bb9220f327c330c7f62}\label{interface_thing_smart_firmware_upgrade_status_model_a5191cc736e852bb9220f327c330c7f62}} 
+\index{ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}!upgradeStatus@{upgradeStatus}}
+\index{upgradeStatus@{upgradeStatus}!ThingSmartFirmwareUpgradeStatusModel@{ThingSmartFirmwareUpgradeStatusModel}}
+\doxysubsubsection{\texorpdfstring{upgradeStatus}{upgradeStatus}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_device_model_utils_8h_ad7e00a45a7dd2493a5986d429fb991c5}{Thing\+Smart\+Device\+Upgrade\+Status}}) upgrade\+Status\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The firmware update status. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source_l00018}{18}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h_source}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thinb08f925b417e1556d048eaf937259e85}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_firmware_upgrade_status_model_8h}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smarc9d6333da3d14988e10aba8e1795771f}{Thing\+Smart\+Firmware\+Upgrade\+Status\+Model.\+h}}\end{DoxyCompactItemize}

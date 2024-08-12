@@ -1,0 +1,141 @@
+\hypertarget{category_w_t_l_device_controller_07_x_p_c_08}{}\doxysection{WTLDevice\+Controller(XPC) Category Reference}
+\label{category_w_t_l_device_controller_07_x_p_c_08}\index{WTLDeviceController(XPC)@{WTLDeviceController(XPC)}}
+
+
+{\ttfamily \#import $<$WTLDevice\+Controller+\+XPC.\+h$>$}
+
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$) + \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_af36db119182c3d799478617fb725734c}{shared\+Controller\+With\+ID\+:xpc\+Connect\+Block\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_abbdc6f685161cd7ec85ea07557a3be9d}{encode\+XPCResponse\+Values\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a12db6f05ffdead5ffd3cd5e35adf94f5}{decode\+XPCResponse\+Values\+:}}
+\item 
+(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a286fbbc631ea710ffd9ca109e4be5dd2}{encode\+XPCRead\+Params\+:}}
+\item 
+(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a9ee0e33a54211c1053cb2307c26a9672}{decode\+XPCRead\+Params\+:}}
+\item 
+(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a9df260256ed134b1451019690206e083}{encode\+XPCSubscribe\+Params\+:}}
+\item 
+(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a04a772465cfeb05298c051d19914d26b}{decode\+XPCSubscribe\+Params\+:}}
+\item 
+(16.\+5) + \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}
+\item 
+(16.\+5) + \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Extended methods for \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} object over XPC 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_source_l00034}{34}} of file \mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_source}{WTLDevice\+Controller+\+XPC.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{category_w_t_l_device_controller_07_x_p_c_08_a9ee0e33a54211c1053cb2307c26a9672}\label{category_w_t_l_device_controller_07_x_p_c_08_a9ee0e33a54211c1053cb2307c26a9672}} 
+\index{WTLDeviceController(XPC)@{WTLDeviceController(XPC)}!decodeXPCReadParams:@{decodeXPCReadParams:}}
+\index{decodeXPCReadParams:@{decodeXPCReadParams:}!WTLDeviceController(XPC)@{WTLDeviceController(XPC)}}
+\doxysubsubsection{\texorpdfstring{decodeXPCReadParams:}{decodeXPCReadParams:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} $\ast$\+\_\+\+Nullable) decode\+XPCRead\+Params\+: \begin{DoxyParamCaption}\item[{(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable)}]{params }\end{DoxyParamCaption}}
+
+Returns a deserialized read parameter object from an object received over XPC 
+
+Extends class \mbox{\hyperlink{interface_w_t_l_device_controller_a9ee0e33a54211c1053cb2307c26a9672}{WTLDevice\+Controller}}.
+
+\mbox{\Hypertarget{category_w_t_l_device_controller_07_x_p_c_08_a12db6f05ffdead5ffd3cd5e35adf94f5}\label{category_w_t_l_device_controller_07_x_p_c_08_a12db6f05ffdead5ffd3cd5e35adf94f5}} 
+\index{WTLDeviceController(XPC)@{WTLDeviceController(XPC)}!decodeXPCResponseValues:@{decodeXPCResponseValues:}}
+\index{decodeXPCResponseValues:@{decodeXPCResponseValues:}!WTLDeviceController(XPC)@{WTLDeviceController(XPC)}}
+\doxysubsubsection{\texorpdfstring{decodeXPCResponseValues:}{decodeXPCResponseValues:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable) decode\+XPCResponse\+Values\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{values }\end{DoxyParamCaption}}
+
+Returns a decoded values object from a values object received from XPC for read, write and command interactions 
+
+Extends class \mbox{\hyperlink{interface_w_t_l_device_controller_a12db6f05ffdead5ffd3cd5e35adf94f5}{WTLDevice\+Controller}}.
+
+\mbox{\Hypertarget{category_w_t_l_device_controller_07_x_p_c_08_a04a772465cfeb05298c051d19914d26b}\label{category_w_t_l_device_controller_07_x_p_c_08_a04a772465cfeb05298c051d19914d26b}} 
+\index{WTLDeviceController(XPC)@{WTLDeviceController(XPC)}!decodeXPCSubscribeParams:@{decodeXPCSubscribeParams:}}
+\index{decodeXPCSubscribeParams:@{decodeXPCSubscribeParams:}!WTLDeviceController(XPC)@{WTLDeviceController(XPC)}}
+\doxysubsubsection{\texorpdfstring{decodeXPCSubscribeParams:}{decodeXPCSubscribeParams:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable) decode\+XPCSubscribe\+Params\+: \begin{DoxyParamCaption}\item[{(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable)}]{params }\end{DoxyParamCaption}}
+
+Returns a deserialized subscribe parameter object from an object received over XPC 
+
+Extends class \mbox{\hyperlink{interface_w_t_l_device_controller_a04a772465cfeb05298c051d19914d26b}{WTLDevice\+Controller}}.
+
+\mbox{\Hypertarget{category_w_t_l_device_controller_07_x_p_c_08_a286fbbc631ea710ffd9ca109e4be5dd2}\label{category_w_t_l_device_controller_07_x_p_c_08_a286fbbc631ea710ffd9ca109e4be5dd2}} 
+\index{WTLDeviceController(XPC)@{WTLDeviceController(XPC)}!encodeXPCReadParams:@{encodeXPCReadParams:}}
+\index{encodeXPCReadParams:@{encodeXPCReadParams:}!WTLDeviceController(XPC)@{WTLDeviceController(XPC)}}
+\doxysubsubsection{\texorpdfstring{encodeXPCReadParams:}{encodeXPCReadParams:}}
+{\footnotesize\ttfamily + (NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable) encode\+XPCRead\+Params\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} $\ast$)}]{params }\end{DoxyParamCaption}}
+
+Returns a serialized read parameter object to send over XPC 
+
+Extends class \mbox{\hyperlink{interface_w_t_l_device_controller_a286fbbc631ea710ffd9ca109e4be5dd2}{WTLDevice\+Controller}}.
+
+\mbox{\Hypertarget{category_w_t_l_device_controller_07_x_p_c_08_abbdc6f685161cd7ec85ea07557a3be9d}\label{category_w_t_l_device_controller_07_x_p_c_08_abbdc6f685161cd7ec85ea07557a3be9d}} 
+\index{WTLDeviceController(XPC)@{WTLDeviceController(XPC)}!encodeXPCResponseValues:@{encodeXPCResponseValues:}}
+\index{encodeXPCResponseValues:@{encodeXPCResponseValues:}!WTLDeviceController(XPC)@{WTLDeviceController(XPC)}}
+\doxysubsubsection{\texorpdfstring{encodeXPCResponseValues:}{encodeXPCResponseValues:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable) encode\+XPCResponse\+Values\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{values }\end{DoxyParamCaption}}
+
+Returns an encoded values object to send over XPC for read, write and command interactions 
+
+Extends class \mbox{\hyperlink{interface_w_t_l_device_controller_abbdc6f685161cd7ec85ea07557a3be9d}{WTLDevice\+Controller}}.
+
+\mbox{\Hypertarget{category_w_t_l_device_controller_07_x_p_c_08_a9df260256ed134b1451019690206e083}\label{category_w_t_l_device_controller_07_x_p_c_08_a9df260256ed134b1451019690206e083}} 
+\index{WTLDeviceController(XPC)@{WTLDeviceController(XPC)}!encodeXPCSubscribeParams:@{encodeXPCSubscribeParams:}}
+\index{encodeXPCSubscribeParams:@{encodeXPCSubscribeParams:}!WTLDeviceController(XPC)@{WTLDeviceController(XPC)}}
+\doxysubsubsection{\texorpdfstring{encodeXPCSubscribeParams:}{encodeXPCSubscribeParams:}}
+{\footnotesize\ttfamily + (NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable) encode\+XPCSubscribe\+Params\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\end{DoxyParamCaption}}
+
+Returns a serialized subscribe parameter object to send over XPC 
+
+Extends class \mbox{\hyperlink{interface_w_t_l_device_controller_a9df260256ed134b1451019690206e083}{WTLDevice\+Controller}}.
+
+\mbox{\Hypertarget{category_w_t_l_device_controller_07_x_p_c_08_af36db119182c3d799478617fb725734c}\label{category_w_t_l_device_controller_07_x_p_c_08_af36db119182c3d799478617fb725734c}} 
+\index{WTLDeviceController(XPC)@{WTLDeviceController(XPC)}!sharedControllerWithID:xpcConnectBlock:@{sharedControllerWithID:xpcConnectBlock:}}
+\index{sharedControllerWithID:xpcConnectBlock:@{sharedControllerWithID:xpcConnectBlock:}!WTLDeviceController(XPC)@{WTLDeviceController(XPC)}}
+\doxysubsubsection{\texorpdfstring{sharedControllerWithID:xpcConnectBlock:}{sharedControllerWithID:xpcConnectBlock:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$) shared\+Controller\+With\+ID\+: \begin{DoxyParamCaption}\item[{(id$<$ NSCopying $>$ \+\_\+\+Nullable)}]{controller\+ID }\item[{xpc\+Connect\+Block\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Returns a shared device controller proxy for the controller object over XPC connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller\+ID} & an implementation specific id in case multiple shared device controllers are available over XPC connection \\
+\hline
+{\em xpc\+Connect\+Block} & block to connect to an XPC listener serving the shared device controllers in an implementation specific way \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \mbox{\hyperlink{interface_w_t_l_device_controller_af36db119182c3d799478617fb725734c}{WTLDevice\+Controller}}.
+
+\mbox{\Hypertarget{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}\label{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}} 
+\index{WTLDeviceController(XPC)@{WTLDeviceController(XPC)}!tvos@{tvos}}
+\index{tvos@{tvos}!WTLDeviceController(XPC)@{WTLDeviceController(XPC)}}
+\doxysubsubsection{\texorpdfstring{tvos}{tvos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (16.\+5) tvos \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns an NSXPCInterface configured for \mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p}{WTLDevice\+Controller\+Server\+Protocol}}. 
+
+Extends class \mbox{\hyperlink{interface_w_t_l_device_controller_a463e998b6a1ac29f0b75a70b56094fd7}{WTLDevice\+Controller}}.
+
+\mbox{\Hypertarget{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}\label{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}} 
+\index{WTLDeviceController(XPC)@{WTLDeviceController(XPC)}!tvos@{tvos}}
+\index{tvos@{tvos}!WTLDeviceController(XPC)@{WTLDeviceController(XPC)}}
+\doxysubsubsection{\texorpdfstring{tvos}{tvos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (16.\+5) tvos \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns an NSXPCInterface configured for \mbox{\hyperlink{protocol_w_t_l_device_controller_client_protocol-p}{WTLDevice\+Controller\+Client\+Protocol}}. 
+
+Extends class \mbox{\hyperlink{interface_w_t_l_device_controller_a463e998b6a1ac29f0b75a70b56094fd7}{WTLDevice\+Controller}}.
+
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h}{WTLDevice\+Controller+\+XPC.\+h}}\end{DoxyCompactItemize}

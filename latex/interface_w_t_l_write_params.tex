@@ -1,0 +1,62 @@
+\hypertarget{interface_w_t_l_write_params}{}\doxysection{WTLWrite\+Params Class Reference}
+\label{interface_w_t_l_write_params}\index{WTLWriteParams@{WTLWriteParams}}
+
+
+{\ttfamily \#import $<$WTLCluster.\+h$>$}
+
+Inheritance diagram for WTLWrite\+Params\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_w_t_l_write_params}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_w_t_l_write_params_a54ac20afab27c1bd8215b75528b65aef}{timed\+Write\+Timeout}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_w_t_l_write_params_a0ef5f4dd6bac9fc0dda9de42b0263361}{data\+Version}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interface_w_t_l_write_params}{WTLWrite\+Params}} This is used to control the behavior of cluster writes. If not provided (i.\+e. nil passed for the CHIPWrite\+Params argument), will be treated as if a default-\/initialized object was passed in. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_cluster_8h_source_l00054}{54}} of file \mbox{\hyperlink{_w_t_l_cluster_8h_source}{WTLCluster.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_t_l_write_params_a0ef5f4dd6bac9fc0dda9de42b0263361}\label{interface_w_t_l_write_params_a0ef5f4dd6bac9fc0dda9de42b0263361}} 
+\index{WTLWriteParams@{WTLWriteParams}!dataVersion@{dataVersion}}
+\index{dataVersion@{dataVersion}!WTLWriteParams@{WTLWriteParams}}
+\doxysubsubsection{\texorpdfstring{dataVersion}{dataVersion}}
+{\footnotesize\ttfamily -\/ (NSNumber$\ast$) data\+Version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Sets the data version for the Write Request for the interaction.
+
+If not nil, the write will only succeed if the current data version of the cluster matches the provided data version. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_cluster_8h_source_l00079}{79}} of file \mbox{\hyperlink{_w_t_l_cluster_8h_source}{WTLCluster.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_write_params_a54ac20afab27c1bd8215b75528b65aef}\label{interface_w_t_l_write_params_a54ac20afab27c1bd8215b75528b65aef}} 
+\index{WTLWriteParams@{WTLWriteParams}!timedWriteTimeout@{timedWriteTimeout}}
+\index{timedWriteTimeout@{timedWriteTimeout}!WTLWriteParams@{WTLWriteParams}}
+\doxysubsubsection{\texorpdfstring{timedWriteTimeout}{timedWriteTimeout}}
+{\footnotesize\ttfamily -\/ (NSNumber$\ast$) timed\+Write\+Timeout\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Controls whether the write is a timed write.
+
+If nil (the default value), a regular write is done for attributes that do not require a timed write and a timed write with some default timed request timeout is done for attributes that require a timed write.
+
+If not nil, a timed write is done, with the provided value used as the timed request timeout. The value should be chosen small enough to provide the desired security properties but large enough that it will allow a round-\/trip from the sever to the client (for the status response and actual write request) within the timeout window.
+
+This value is specified in milliseconds. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_cluster_8h_source_l00071}{71}} of file \mbox{\hyperlink{_w_t_l_cluster_8h_source}{WTLCluster.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_cluster_8h}{WTLCluster.\+h}}\end{DoxyCompactItemize}

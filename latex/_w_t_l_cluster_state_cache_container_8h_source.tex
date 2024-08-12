@@ -1,0 +1,39 @@
+\hypertarget{_w_t_l_cluster_state_cache_container_8h_source}{}\doxysection{WTLCluster\+State\+Cache\+Container.\+h}
+\label{_w_t_l_cluster_state_cache_container_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLClusterStateCacheContainer.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLClusterStateCacheContainer.h}}
+\mbox{\hyperlink{_w_t_l_cluster_state_cache_container_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00017}00017 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00019}00019 \textcolor{preprocessor}{\#import <Water/WTLBaseDevice.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00020}00020 \textcolor{preprocessor}{\#import <Water/WTLDeviceController.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00022}00022 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00024}00024 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribeParams}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00032}00032 \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00033}00033 \textcolor{keyword}{@interface }WTLClusterStateCacheContainer : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00049}00049 -\/ (void)readAttributesWithEndpointID:(NSNumber * \_Nullable)endpointID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00050}00050                            clusterID:(NSNumber * \_Nullable)clusterID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00051}00051                          attributeID:(NSNumber * \_Nullable)attributeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00052}00052                                queue:(dispatch\_queue\_t)queue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00053}00053                           completion:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})completion;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00055}00055 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00057}00057 \mbox{\hyperlink{_w_t_l_defines_8h_a7e03a091c94319bf3cac9352bb2c3aff}{WTL\_DEPRECATED}}(\textcolor{stringliteral}{"{}Please use WTLClusterStateCacheContainer"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00058}00058 \textcolor{keyword}{@interface }WTLAttributeCacheContainer : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00060}00060 -\/ (void)readAttributeWithEndpointId:(NSNumber * \_Nullable)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00061}00061                           clusterId:(NSNumber * \_Nullable)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00062}00062                         attributeId:(NSNumber * \_Nullable)attributeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00063}00063                         clientQueue:(dispatch\_queue\_t)clientQueue}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00064}00064                          completion:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDeviceResponseHandler}})completion;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00066}00066 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_state_cache_container_8h_source_l00068}00068 NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

@@ -1,0 +1,25 @@
+var category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08 =
+[
+    [ "announceOtaProviderWithParams:completionHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a634f9d6cd75faaf930e1568f64ad110d", null ],
+    [ "initWithDevice:endpoint:queue:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a5768919dda34e1a8d7d16ca75ae18401", null ],
+    [ "readAttributeAcceptedCommandListWithCompletionHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a1e460d0a3f0a24cf911c81585274c3c7", null ],
+    [ "readAttributeAttributeListWithCompletionHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a542352cf72c81f60fe91512213382346", null ],
+    [ "readAttributeClusterRevisionWithCompletionHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a63227d1a7be1488e6f00b7092f69a7e2", null ],
+    [ "readAttributeDefaultOtaProvidersWithParams:completionHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#ac3585f81292f8b0f2d25ad0c903ffcc4", null ],
+    [ "readAttributeFeatureMapWithCompletionHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a1b0cdd4cd38828381eecd873517360cd", null ],
+    [ "readAttributeGeneratedCommandListWithCompletionHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a457e8d05cd3ddb6aae041bd8cd281275", null ],
+    [ "readAttributeUpdatePossibleWithCompletionHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#ae69c5c138b765ed6be331f4acb5e7173", null ],
+    [ "readAttributeUpdateStateProgressWithCompletionHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a159eccbcd637267c14780aa2ed7ab223", null ],
+    [ "readAttributeUpdateStateWithCompletionHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a157cc4078c7c08d0963c2b2eb5954a68", null ],
+    [ "subscribeAttributeAcceptedCommandListWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a557510012d014d3457f738350711e93c", null ],
+    [ "subscribeAttributeAttributeListWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a8f9702e7579a556f6b0b940bfc200688", null ],
+    [ "subscribeAttributeClusterRevisionWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a448b780b92e62a4a0344b62450540c04", null ],
+    [ "subscribeAttributeDefaultOtaProvidersWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#ada1bb1761a175f0ae47670e72bab218f", null ],
+    [ "subscribeAttributeFeatureMapWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a3bc598c765d032a931330458e53d297f", null ],
+    [ "subscribeAttributeGeneratedCommandListWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a5c3db4bc795d75a740ba9362ac557f18", null ],
+    [ "subscribeAttributeUpdatePossibleWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#abf52fbaa8c942e672f4540ecba5d233c", null ],
+    [ "subscribeAttributeUpdateStateProgressWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a50ec13fb3ffdffe650578ed8bc80a462", null ],
+    [ "subscribeAttributeUpdateStateWithMinInterval:maxInterval:params:subscriptionEstablished:reportHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a3bb8cd5d5ec29300f765cbdd12687157", null ],
+    [ "writeAttributeDefaultOtaProvidersWithValue:completionHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#a83234c460e12c1982ec1af2ce5149774", null ],
+    [ "writeAttributeDefaultOtaProvidersWithValue:params:completionHandler:", "category_w_t_l_base_cluster_ota_software_update_requestor_07_deprecated_08.html#aacf9bff8007d146b3d6ab981bbd6afe1", null ]
+];

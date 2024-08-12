@@ -1,6 +1,0 @@
-var ios_arm64_2_thing_notifications_auth_manager_8framework_2_headers_2_thing_notifications_auth_manager_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "ios-arm64_2_thing_notifications_auth_manager_8framework_2_headers_2_thing_notifications_auth_manager-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingNotificationsAuthManagerVersionNumber", "ios-arm64_2_thing_notifications_auth_manager_8framework_2_headers_2_thing_notifications_auth_manager-umbrella_8h.html#a314260d3d9acf9af057599d8ef781e45", null ],
-    [ "ThingNotificationsAuthManagerVersionString", "ios-arm64_2_thing_notifications_auth_manager_8framework_2_headers_2_thing_notifications_auth_manager-umbrella_8h.html#ad2c6fc27a403dc07468bb5808fc5ceed", null ]
-];

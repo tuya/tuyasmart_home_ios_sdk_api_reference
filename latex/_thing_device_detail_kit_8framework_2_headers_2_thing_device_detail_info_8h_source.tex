@@ -1,0 +1,59 @@
+\hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source}{}\doxysection{Thing\+Device\+Detail\+Info.\+h}
+\label{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingDeviceDetailKit/ThingDeviceDetailKit.xcframework/ios-\/arm64/ThingDeviceDetailKit.framework/Headers/ThingDeviceDetailInfo.h@{/Users/humtong/Downloads/Pods\_副本/ThingDeviceDetailKit/ThingDeviceDetailKit.xcframework/ios-\/arm64/ThingDeviceDetailKit.framework/Headers/ThingDeviceDetailInfo.h}}
+\mbox{\hyperlink{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00002}00002 \textcolor{comment}{//  ThingDeviceDetailInfo.h}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00003}00003 \textcolor{comment}{//  ThingDeviceDetailKit}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00005}00005 \textcolor{comment}{//  Created by 后主 on 2023/8/17.}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00008}00008 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00010}00010 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00012}\mbox{\hyperlink{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_aaa6e2b20bba2626dd1edfa43a97214e7}{00012}} \textcolor{keyword}{typedef} \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_aaa6e2b20bba2626dd1edfa43a97214e7}{NS\_ENUM}}(NSUInteger, ThingDeviceInfoConnectAbility) \{}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00013}00013     ThingDeviceInfoConnectAbilityUnknown = 0,}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00014}00014     ThingDeviceInfoConnectAbilityPhone = 1,}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00015}00015     ThingDeviceInfoConnectAbilityGateway = 2,}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00016}00016     ThingDeviceInfoConnectAbilityPhoneAndGateway = 3,}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00017}00017 \};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00019}00019 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_device_detail_info}{ThingDeviceDetailInfo}} : NSObject <NSCopying>}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00022}00022 \textcolor{keyword}{@property} (nonatomic, copy) NSString *\mbox{\hyperlink{interface_thing_device_detail_info_ac03135e65b2eba98f9d082a8abac8b43}{devId}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00025}00025 \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString *\mbox{\hyperlink{interface_thing_device_detail_info_ab216950be34c8013f7fb8770c148f954}{iccid}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00028}00028 \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString *\mbox{\hyperlink{interface_thing_device_detail_info_acb95c9fa2110696c5f82931cd29ea5c8}{netStrength}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00031}00031 \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString *\mbox{\hyperlink{interface_thing_device_detail_info_a8ec52abd02c30fc24b8806f249637ec1}{lanIp}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00034}00034 \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString *\mbox{\hyperlink{interface_thing_device_detail_info_a97ea875c5426db8e535c115283aa944f}{ip}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00037}00037 \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString *\mbox{\hyperlink{interface_thing_device_detail_info_acae7c36272e471e4ad77590d06e51fac}{mac}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00040}00040 \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString *\mbox{\hyperlink{interface_thing_device_detail_info_a2e4d356b24bf1fc145e420513922cfc8}{timezone}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00043}00043 \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString *\mbox{\hyperlink{interface_thing_device_detail_info_ab7561ff3a47e0e9442367e1d530faec5}{channel}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00046}00046 \textcolor{keyword}{@property} (nonatomic, assign) NSInteger \mbox{\hyperlink{interface_thing_device_detail_info_ac4b8f8131e90b0579afbc0055ad16eac}{setChannelCapability}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00049}00049 \textcolor{keyword}{@property} (nonatomic, strong, nullable) NSNumber *\mbox{\hyperlink{interface_thing_device_detail_info_a88f542fe10d2456fa35378e1c1896e96}{rsrp}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00052}00052 \textcolor{keyword}{@property} (nonatomic, strong, nullable) NSNumber *\mbox{\hyperlink{interface_thing_device_detail_info_aac5426bf5d4584ce67e7a9279b6486ec}{wifiSignal}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00055}00055 \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString *\mbox{\hyperlink{interface_thing_device_detail_info_a40fee16b2d64141c043aceebcc832723}{homekitCode}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00058}00058 \textcolor{keyword}{@property} (nonatomic, assign) ThingDeviceInfoConnectAbility \mbox{\hyperlink{interface_thing_device_detail_info_a3e73658e25bd2e049f2d528ab082d125}{connectAbility}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00061}00061 \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString *\mbox{\hyperlink{interface_thing_device_detail_info_a73be4ddd467889cd51e50131f295b431}{vendorName}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00064}00064 \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSString *\mbox{\hyperlink{interface_thing_device_detail_info_a0e05b941e4de7954230f28397f13929f}{matterActiveCode}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00066}00066 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_detail_info_8h_source_l00068}00068 NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

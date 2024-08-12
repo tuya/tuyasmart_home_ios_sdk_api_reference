@@ -1,6 +1,0 @@
-var ios_arm64_2_thing_smart_camera_setting_biz_bundle_8framework_2_headers_2_thing_smart_camera_setting_biz_bundle_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "ios-arm64_2_thing_smart_camera_setting_biz_bundle_8framework_2_headers_2_thing_smart_camera_setting_biz_bundle-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingSmartCameraSettingBizBundleVersionNumber", "ios-arm64_2_thing_smart_camera_setting_biz_bundle_8framework_2_headers_2_thing_smart_camera_setting_biz_bundle-umbrella_8h.html#ab344e2abe25e2e644a0cf01ac8a210de", null ],
-    [ "ThingSmartCameraSettingBizBundleVersionString", "ios-arm64_2_thing_smart_camera_setting_biz_bundle_8framework_2_headers_2_thing_smart_camera_setting_biz_bundle-umbrella_8h.html#a2d2e96779e92b6f4d06506f250f7c3e2", null ]
-];

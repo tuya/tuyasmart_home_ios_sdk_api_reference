@@ -1,5 +1,7 @@
 var category_thing_smart_b_l_e_manager_07_alexa_voice_08 =
 [
+    [ "buildVoiceEntityWithType:", "category_thing_smart_b_l_e_manager_07_alexa_voice_08.html#a6100047629e46d17309f016af074c865", null ],
+    [ "buildVoiceEntityWithType:", "category_thing_smart_b_l_e_manager_07_alexa_voice_08.html#a6100047629e46d17309f016af074c865", null ],
     [ "clearAuthorizationToken:success:failure:", "category_thing_smart_b_l_e_manager_07_alexa_voice_08.html#a600444e85631287c55f1ac691fe9e8a7", null ],
     [ "clearAuthorizationToken:success:failure:", "category_thing_smart_b_l_e_manager_07_alexa_voice_08.html#a600444e85631287c55f1ac691fe9e8a7", null ],
     [ "getAudioVoiceAuthorizationToken:deviceId:success:failure:", "category_thing_smart_b_l_e_manager_07_alexa_voice_08.html#a0b0bc0777acb359138e6536b57bb0dbc", null ],

@@ -1,0 +1,127 @@
+\hypertarget{_w_t_l_device_controller_factory_8h_source}{}\doxysection{WTLDevice\+Controller\+Factory.\+h}
+\label{_w_t_l_device_controller_factory_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDeviceControllerFactory.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDeviceControllerFactory.h}}
+\mbox{\hyperlink{_w_t_l_device_controller_factory_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00023}00023 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00024}00024 \textcolor{preprocessor}{\#import <Water/WTLCertificates.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00026}00026 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00028}00028 \textcolor{keyword}{@protocol }WTLStorage;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00029}00029 \textcolor{keyword}{@protocol }WTLPersistentStorageDelegate;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00030}00030 \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_w_t_l_o_t_a_provider_delegate-p}{WTLOTAProviderDelegate}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00031}00031 \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00033}00033 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00034}00034 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params}{WTLDeviceControllerStartupParams}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00035}00035 \textcolor{keyword}{@class} WTLFabricInfo;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00037}00037 \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a2adacee8e3c43ee9e3e2fc6e5d9bdc63}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00038}00038 \textcolor{keyword}{@interface }WTLDeviceControllerFactoryParams : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00039}00039 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00040}00040 \textcolor{comment}{ * Storage delegate must be provided for correct functioning of Matter}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00041}00041 \textcolor{comment}{ * controllers.  It is used to store persistent information for the fabrics the}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00042}00042 \textcolor{comment}{ * controllers ends up interacting with.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00043}00043 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00044}00044 \textcolor{keyword}{@property} (nonatomic, strong, readonly) id<WTLStorage> storage;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00046}00046 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00047}00047 \textcolor{comment}{ * OTA Provider delegate to be called when an OTA Requestor is requesting a software update.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00048}00048 \textcolor{comment}{ * Defaults to nil.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00049}00049 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00050}00050 \textcolor{comment}{ * Calls to this delegate can happen on an arbitrary thread, but will not happen}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00051}00051 \textcolor{comment}{ * concurrently.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00052}00052 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00053}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a7c40ad6176688314424880fed4d0a15e}{00053}} \textcolor{keyword}{@property} (nonatomic, strong, nullable) id<WTLOTAProviderDelegate> \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a7c40ad6176688314424880fed4d0a15e}{otaProviderDelegate}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00055}00055 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00056}00056 \textcolor{comment}{ * The Product Attestation Authority certificates that are trusted to sign}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00057}00057 \textcolor{comment}{ * device attestation information (and in particular to sign Product Attestation}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00058}00058 \textcolor{comment}{ * Intermediate certificates, which then sign Device Attestation Certificates).}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00059}00059 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00060}00060 \textcolor{comment}{ * Defaults to nil.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00061}00061 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00062}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a3ca99fbf8c700feda46ee74f507a4a30}{00062}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) \mbox{\hyperlink{interface_n_s_array}{NSArray<WTLCertificateDERBytes>}} * \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a3ca99fbf8c700feda46ee74f507a4a30}{productAttestationAuthorityCertificates}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00064}00064 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00065}00065 \textcolor{comment}{ * The Certification Declaration certificates whose public keys correspond to}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00066}00066 \textcolor{comment}{ * private keys that are trusted to sign certification declarations.  Defaults}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00067}00067 \textcolor{comment}{ * to nil.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00068}00068 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00069}00069 \textcolor{comment}{ * These certificates are used in addition to, not replacing, the default set of}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00070}00070 \textcolor{comment}{ * well-\/known certification declaration signing keys.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00071}00071 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00072}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a09e583e02ff50fbca73fb1c72d1682e9}{00072}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) \mbox{\hyperlink{interface_n_s_array}{NSArray<WTLCertificateDERBytes>}} * \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a09e583e02ff50fbca73fb1c72d1682e9}{certificationDeclarationCertificates}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00074}00074 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00075}00075 \textcolor{comment}{ * The network port to bind to.  If not specified, an ephemeral port will be}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00076}00076 \textcolor{comment}{ * used.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00077}00077 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00078}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_aadbdd25b48e1f9226cefe59e9c124ac7}{00078}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSNumber * \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_aadbdd25b48e1f9226cefe59e9c124ac7}{port}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00080}00080 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00081}00081 \textcolor{comment}{ * Whether to run a server capable of accepting incoming CASE}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00082}00082 \textcolor{comment}{ * connections.  Defaults to NO.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00083}00083 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00084}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_aac05b90f69a25f8540ff6967a6d2b00f}{00084}} \textcolor{keyword}{@property} (nonatomic, assign) BOOL \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_aac05b90f69a25f8540ff6967a6d2b00f}{shouldStartServer}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00086}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a7ce30558a2e627651ffe88c2982fbaff}{00086}} -\/ (instancetype)init \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00087}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_ad8e29c4ee7b1749c0f6d1152a5f72f22}{00087}} -\/ (instancetype)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_ad8e29c4ee7b1749c0f6d1152a5f72f22}{initWithStorage}}:(\textcolor{keywordtype}{id}<WTLStorage>)storage;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00088}00088 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00090}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a2adacee8e3c43ee9e3e2fc6e5d9bdc63}{00090}} \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a2adacee8e3c43ee9e3e2fc6e5d9bdc63}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00091}00091 \textcolor{keyword}{@interface }WTLDeviceControllerFactory : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00093}00093 -\/ (instancetype)init \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00094}00094 + (instancetype)new \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00100}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_ad7881a4da5a21e14cc4a3b05a73ff852}{00100}} + (WTLDeviceControllerFactory *)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_ad7881a4da5a21e14cc4a3b05a73ff852}{sharedInstance}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00107}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a8eda704255787367b60f4829bcb34d46}{00107}} \textcolor{keyword}{@property} (readonly, nonatomic, getter=isRunning) BOOL \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a8eda704255787367b60f4829bcb34d46}{running}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00117}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_aca60203131bfd5988ab45f19af36c252}{00117}} \textcolor{keyword}{@property} (readonly, nonatomic, nullable) \mbox{\hyperlink{interface_n_s_array}{NSArray<WTLFabricInfo *>}} * \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_aca60203131bfd5988ab45f19af36c252}{knownFabrics}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00129}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a6e0023fd394882990447cfd835f86192}{00129}} -\/ (BOOL)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a6e0023fd394882990447cfd835f86192}{startControllerFactory}}:(WTLDeviceControllerFactoryParams *)startupParams error:(NSError * \_\_autoreleasing *)error;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00138}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a60ec145bdfe270f4fb4c2ebefe25538d}{00138}} -\/ (void)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a60ec145bdfe270f4fb4c2ebefe25538d}{stopControllerFactory}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00140}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a9c484e06bb81292670f67733eda582df}{00140}} -\/ (void)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a9c484e06bb81292670f67733eda582df}{disconnectUdp}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00142}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_abf00ebfbd7f53f40b6db8e13484f9540}{00142}} -\/ (void)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_abf00ebfbd7f53f40b6db8e13484f9540}{resumeconnectUdp}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00152}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a36b1a02a54b2089e4af99cd242c4f2e5}{00152}} -\/ (\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} * \_Nullable)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a36b1a02a54b2089e4af99cd242c4f2e5}{createControllerOnExistingFabric}}:(\mbox{\hyperlink{interface_w_t_l_device_controller_startup_params}{WTLDeviceControllerStartupParams}} *)startupParams}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00153}00153                                                               error:(NSError * \_\_autoreleasing *)error;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00154}00154 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00163}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_af15950b7d9d8f4da6436743b76507a32}{00163}} -\/ (\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} * \_Nullable)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_af15950b7d9d8f4da6436743b76507a32}{createControllerOnNewFabric}}:(\mbox{\hyperlink{interface_w_t_l_device_controller_startup_params}{WTLDeviceControllerStartupParams}} *)startupParams}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00164}00164                                                          error:(NSError * \_\_autoreleasing *)error;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00165}00165 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00166}00166 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00168}00168 \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a90fcd1b12b08645166456afa49f12c80}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00169}00169     \textcolor{stringliteral}{"{}Please use WTLDeviceControllerFactoryParams"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00170}00170 \textcolor{keyword}{@interface }WTLControllerFactoryParams : WTLDeviceControllerFactoryParams}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00171}00171 \textcolor{keyword}{@property} (nonatomic, strong, readonly) id<WTLPersistentStorageDelegate> storageDelegate \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a90fcd1b12b08645166456afa49f12c80}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00172}00172     \textcolor{stringliteral}{"{}Please use the storage property"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00173}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a90fcd1b12b08645166456afa49f12c80}{00173}} \textcolor{keyword}{@property} (nonatomic, assign) BOOL startServer \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a90fcd1b12b08645166456afa49f12c80}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00174}00174     \textcolor{stringliteral}{"{}Please use shouldStartServer"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00175}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a76d9fd0e640b6b3dfd2975c91b6d4f5f}{00175}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) \mbox{\hyperlink{interface_n_s_array}{NSArray<NSData *>}} * paaCerts \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a90fcd1b12b08645166456afa49f12c80}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00176}00176     \textcolor{stringliteral}{"{}Please use productAttestationAuthorityCertificates"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00177}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_afdf5cb96b4c35bbc8e6dbfacfa3e1750}{00177}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) \mbox{\hyperlink{interface_n_s_array}{NSArray<NSData *>}} * cdCerts \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a90fcd1b12b08645166456afa49f12c80}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00178}00178     \textcolor{stringliteral}{"{}Please use certificationDeclarationCertificates"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00179}00179 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00180}00180 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00181}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_aa181105a12e46e35e8f69f62d3da16ee}{00181}} \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a90fcd1b12b08645166456afa49f12c80}{WTL\_DEPRECATED}}(\textcolor{stringliteral}{"{}Please use WTLDeviceControllerFactory"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00182}00182 \textcolor{keyword}{@interface }WTLControllerFactory : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00183}00183 \textcolor{keyword}{@property} (readonly, nonatomic) BOOL isRunning;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00184}00184 + (WTLControllerFactory *)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_ad7881a4da5a21e14cc4a3b05a73ff852}{sharedInstance}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00185}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a61a3586d2969f81c4c4f54b915ae16db}{00185}} -\/ (BOOL)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a61a3586d2969f81c4c4f54b915ae16db}{startup}}:(WTLControllerFactoryParams *)startupParams;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00186}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a93cdf254ed94ee57078c11f9cea397d8}{00186}} -\/ (void)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a93cdf254ed94ee57078c11f9cea397d8}{shutdown}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00187}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_ab6295a50ae40b422ad492a9e6cbe1e05}{00187}} -\/ (\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} * \_Nullable)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_ab6295a50ae40b422ad492a9e6cbe1e05}{startControllerOnExistingFabric}}:(\mbox{\hyperlink{interface_w_t_l_device_controller_startup_params}{WTLDeviceControllerStartupParams}} *)startupParams;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00188}\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a77f2336199b00050ec60bff223d557de}{00188}} -\/ (\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} * \_Nullable)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a77f2336199b00050ec60bff223d557de}{startControllerOnNewFabric}}:(\mbox{\hyperlink{interface_w_t_l_device_controller_startup_params}{WTLDeviceControllerStartupParams}} *)startupParams;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00189}00189 -\/ (instancetype)init \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00190}00190 + (instancetype)new \mbox{\hyperlink{_w_t_l_device_controller_factory_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00191}00191 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00192}00192 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_factory_8h_source_l00193}00193 NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

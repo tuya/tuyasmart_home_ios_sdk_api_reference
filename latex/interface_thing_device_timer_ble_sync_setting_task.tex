@@ -1,0 +1,153 @@
+\hypertarget{interface_thing_device_timer_ble_sync_setting_task}{}\doxysection{Thing\+Device\+Timer\+Ble\+Sync\+Setting\+Task Class Reference}
+\label{interface_thing_device_timer_ble_sync_setting_task}\index{ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}}
+
+
+{\ttfamily \#import $<$Thing\+Device\+Timer\+Ble\+Sync\+Utils.\+h$>$}
+
+Inheritance diagram for Thing\+Device\+Timer\+Ble\+Sync\+Setting\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_device_timer_ble_sync_setting_task}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_device_timer_ble_sync_setting_task_a1c39a34ab5309f1933c36e7eb8138dfb}{init\+With\+Header\+:dps\+:schema\+Dict\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_device_timer_ble_sync_setting_task_a50aae755689af88fffc28b9245bd244e}{init\+With\+Timer\+Id\+:loops\+:dps\+:date\+Components\+:schema\+Dict\+:}}
+\item 
+(NSData $\ast$) -\/ \mbox{\hyperlink{interface_thing_device_timer_ble_sync_setting_task_ad4dfcdf688c3eee57822d26508c31639}{make\+Data}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_device_timer_ble_sync_setting_task_a1c39a34ab5309f1933c36e7eb8138dfb}{init\+With\+Header\+:dps\+:schema\+Dict\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_device_timer_ble_sync_setting_task_a50aae755689af88fffc28b9245bd244e}{init\+With\+Timer\+Id\+:loops\+:dps\+:date\+Components\+:schema\+Dict\+:}}
+\item 
+(NSData $\ast$) -\/ \mbox{\hyperlink{interface_thing_device_timer_ble_sync_setting_task_ad4dfcdf688c3eee57822d26508c31639}{make\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_thing_device_timer_ble_sync_setting_header}{Thing\+Device\+Timer\+Ble\+Sync\+Setting\+Header}} \mbox{\hyperlink{interface_thing_device_timer_ble_sync_setting_task_a9aea08df2b730b458497c39743140100}{header}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_device_timer_ble_sync_setting_task_a975943acee991d6949593c7acfa47500}{crc32\+Ignore\+Date}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{interface_thing_device_timer_ble_sync_setting_task_aba0ebb1392e012986519cf23463e0f3a}{crc32}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_utils_8h_source_l00128}{128}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_utils_8h_source}{Thing\+Device\+Timer\+Ble\+Sync\+Utils.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_setting_task_a1c39a34ab5309f1933c36e7eb8138dfb}\label{interface_thing_device_timer_ble_sync_setting_task_a1c39a34ab5309f1933c36e7eb8138dfb}} 
+\index{ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}!initWithHeader:dps:schemaDict:@{initWithHeader:dps:schemaDict:}}
+\index{initWithHeader:dps:schemaDict:@{initWithHeader:dps:schemaDict:}!ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}}
+\doxysubsubsection{\texorpdfstring{initWithHeader:dps:schemaDict:}{initWithHeader:dps:schemaDict:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Header\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{struct_thing_device_timer_ble_sync_setting_header}{Thing\+Device\+Timer\+Ble\+Sync\+Setting\+Header}})}]{header }\item[{dps\+:(NSDictionary $\ast$)}]{dps }\item[{schema\+Dict\+:(NSDictionary $\ast$)}]{schema\+Dict }\end{DoxyParamCaption}}
+
+初始化设置定时任务 
+\begin{DoxyParams}{Parameters}
+{\em header} & 头部 \\
+\hline
+{\em dps} & 定时 DP \\
+\hline
+{\em schema\+Dict} & dp schema \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_setting_task_a1c39a34ab5309f1933c36e7eb8138dfb}\label{interface_thing_device_timer_ble_sync_setting_task_a1c39a34ab5309f1933c36e7eb8138dfb}} 
+\index{ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}!initWithHeader:dps:schemaDict:@{initWithHeader:dps:schemaDict:}}
+\index{initWithHeader:dps:schemaDict:@{initWithHeader:dps:schemaDict:}!ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}}
+\doxysubsubsection{\texorpdfstring{initWithHeader:dps:schemaDict:}{initWithHeader:dps:schemaDict:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Header\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{struct_thing_device_timer_ble_sync_setting_header}{Thing\+Device\+Timer\+Ble\+Sync\+Setting\+Header}})}]{header }\item[{dps\+:(NSDictionary $\ast$)}]{dps }\item[{schema\+Dict\+:(NSDictionary $\ast$)}]{schema\+Dict }\end{DoxyParamCaption}}
+
+初始化设置定时任务 
+\begin{DoxyParams}{Parameters}
+{\em header} & 头部 \\
+\hline
+{\em dps} & 定时 DP \\
+\hline
+{\em schema\+Dict} & dp schema \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_setting_task_a50aae755689af88fffc28b9245bd244e}\label{interface_thing_device_timer_ble_sync_setting_task_a50aae755689af88fffc28b9245bd244e}} 
+\index{ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}!initWithTimerId:loops:dps:dateComponents:schemaDict:@{initWithTimerId:loops:dps:dateComponents:schemaDict:}}
+\index{initWithTimerId:loops:dps:dateComponents:schemaDict:@{initWithTimerId:loops:dps:dateComponents:schemaDict:}!ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}}
+\doxysubsubsection{\texorpdfstring{initWithTimerId:loops:dps:dateComponents:schemaDict:}{initWithTimerId:loops:dps:dateComponents:schemaDict:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Timer\+Id\+: \begin{DoxyParamCaption}\item[{(uint32\+\_\+t)}]{timer\+Id }\item[{loops\+:(NSString $\ast$)}]{loops }\item[{dps\+:(NSDictionary $\ast$)}]{dps }\item[{date\+Components\+:(NSDate\+Components $\ast$)}]{date\+Components }\item[{schema\+Dict\+:(NSDictionary $\ast$)}]{schema\+Dict }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_setting_task_a50aae755689af88fffc28b9245bd244e}\label{interface_thing_device_timer_ble_sync_setting_task_a50aae755689af88fffc28b9245bd244e}} 
+\index{ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}!initWithTimerId:loops:dps:dateComponents:schemaDict:@{initWithTimerId:loops:dps:dateComponents:schemaDict:}}
+\index{initWithTimerId:loops:dps:dateComponents:schemaDict:@{initWithTimerId:loops:dps:dateComponents:schemaDict:}!ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}}
+\doxysubsubsection{\texorpdfstring{initWithTimerId:loops:dps:dateComponents:schemaDict:}{initWithTimerId:loops:dps:dateComponents:schemaDict:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Timer\+Id\+: \begin{DoxyParamCaption}\item[{(uint32\+\_\+t)}]{timer\+Id }\item[{loops\+:(NSString $\ast$)}]{loops }\item[{dps\+:(NSDictionary $\ast$)}]{dps }\item[{date\+Components\+:(NSDate\+Components $\ast$)}]{date\+Components }\item[{schema\+Dict\+:(NSDictionary $\ast$)}]{schema\+Dict }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_setting_task_ad4dfcdf688c3eee57822d26508c31639}\label{interface_thing_device_timer_ble_sync_setting_task_ad4dfcdf688c3eee57822d26508c31639}} 
+\index{ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}!makeData@{makeData}}
+\index{makeData@{makeData}!ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}}
+\doxysubsubsection{\texorpdfstring{makeData}{makeData}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSData $\ast$) make\+Data \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+返回传给蓝牙设备的 Data
+
+\begin{DoxyNote}{Note}
+只有调用这个方法才会计算 {\ttfamily crc32} 
+\end{DoxyNote}
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_setting_task_ad4dfcdf688c3eee57822d26508c31639}\label{interface_thing_device_timer_ble_sync_setting_task_ad4dfcdf688c3eee57822d26508c31639}} 
+\index{ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}!makeData@{makeData}}
+\index{makeData@{makeData}!ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}}
+\doxysubsubsection{\texorpdfstring{makeData}{makeData}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSData $\ast$) make\+Data \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+返回传给蓝牙设备的 Data
+
+\begin{DoxyNote}{Note}
+只有调用这个方法才会计算 {\ttfamily crc32} 
+\end{DoxyNote}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_setting_task_aba0ebb1392e012986519cf23463e0f3a}\label{interface_thing_device_timer_ble_sync_setting_task_aba0ebb1392e012986519cf23463e0f3a}} 
+\index{ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}!crc32@{crc32}}
+\index{crc32@{crc32}!ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}}
+\doxysubsubsection{\texorpdfstring{crc32}{crc32}}
+{\footnotesize\ttfamily -\/ (uint32\+\_\+t) crc32\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+大端序
+
+{\ttfamily make\+Data} 后生成 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_utils_8h_source_l00141}{141}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_utils_8h_source}{Thing\+Device\+Timer\+Ble\+Sync\+Utils.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_setting_task_a975943acee991d6949593c7acfa47500}\label{interface_thing_device_timer_ble_sync_setting_task_a975943acee991d6949593c7acfa47500}} 
+\index{ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}!crc32IgnoreDate@{crc32IgnoreDate}}
+\index{crc32IgnoreDate@{crc32IgnoreDate}!ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}}
+\doxysubsubsection{\texorpdfstring{crc32IgnoreDate}{crc32IgnoreDate}}
+{\footnotesize\ttfamily -\/ (BOOL) crc32\+Ignore\+Date\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+如果 YES 计算 crc32 的范围为 header\{hour, minute, loops, timer\+\_\+id\}, dp\+Data 否则 header\{year, month, day, hour, minute, loops, timer\+\_\+id\}, dp\+Data
+
+默认 NO 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_utils_8h_source_l00136}{136}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_utils_8h_source}{Thing\+Device\+Timer\+Ble\+Sync\+Utils.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_device_timer_ble_sync_setting_task_a9aea08df2b730b458497c39743140100}\label{interface_thing_device_timer_ble_sync_setting_task_a9aea08df2b730b458497c39743140100}} 
+\index{ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}!header@{header}}
+\index{header@{header}!ThingDeviceTimerBleSyncSettingTask@{ThingDeviceTimerBleSyncSettingTask}}
+\doxysubsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{struct_thing_device_timer_ble_sync_setting_header}{Thing\+Device\+Timer\+Ble\+Sync\+Setting\+Header}}) header\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_utils_8h_source_l00130}{130}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_utils_8h_source}{Thing\+Device\+Timer\+Ble\+Sync\+Utils.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Device\+Detail\+Kit/\+Thing\+Device\+Detail\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Device\+Detail\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_utils_8h}{Thing\+Device\+Timer\+Ble\+Sync\+Utils.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Device\+Detail\+Kit/\+Thing\+Device\+Detail\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Device\+Detail\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_ble_sync_utils_8h}{Thing\+Device\+Timer\+Ble\+Sync\+Utils.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var watchos_arm64__i386__x86__64_simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_sm3bdb9cb8800df5fb0674f80081a6c6dd =
+[
+    [ "ThingSmartDeviceAlarmServiceInfoEntity", "interface_thing_smart_device_alarm_service_info_entity.html", "interface_thing_smart_device_alarm_service_info_entity" ]
+];

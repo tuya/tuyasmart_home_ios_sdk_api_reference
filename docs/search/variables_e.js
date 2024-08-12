@@ -16,6 +16,5 @@ var searchData=
   ['on_5frelease_13',['on_release',['../structimm__p2p__rtc__cb.html#ac0dbdd5fe984e78a16e3dca920cc7919',1,'imm_p2p_rtc_cb']]],
   ['on_5fsession_5fstate_14',['on_session_state',['../structimm__p2p__rtc__cb.html#a771875664ff4c878945ff92e76c1c770',1,'imm_p2p_rtc_cb']]],
   ['on_5fsignaling_15',['on_signaling',['../structimm__p2p__rtc__cb.html#a71f6a14710974a68dadbd2f576c0b3c3',1,'imm_p2p_rtc_cb']]],
-  ['optional_16',['optional',['../protocol_thing_security_config_arm_view_procotol-p.html#aeb6c8197dcb1220836f7ea7bc77e34e4',1,'ThingSecurityConfigArmViewProcotol-p::optional()'],['../protocol_thing_securty_arm_view_protocol-p.html#adc971005244789b5be49a1dc500998c0',1,'ThingSecurtyArmViewProtocol-p::optional()']]],
-  ['outputfile_17',['outputFile',['../struct_a_q_callback_struct.html#a7a415a04ae801714fae6912db1b5088a',1,'AQCallbackStruct']]]
+  ['outputfile_16',['outputFile',['../struct_a_q_callback_struct.html#a7a415a04ae801714fae6912db1b5088a',1,'AQCallbackStruct']]]
 ];

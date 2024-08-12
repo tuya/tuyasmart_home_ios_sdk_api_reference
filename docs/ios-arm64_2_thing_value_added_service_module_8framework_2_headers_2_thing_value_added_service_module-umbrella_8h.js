@@ -1,6 +1,0 @@
-var ios_arm64_2_thing_value_added_service_module_8framework_2_headers_2_thing_value_added_service_module_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "ios-arm64_2_thing_value_added_service_module_8framework_2_headers_2_thing_value_added_service_module-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingValueAddedServiceModuleVersionNumber", "ios-arm64_2_thing_value_added_service_module_8framework_2_headers_2_thing_value_added_service_module-umbrella_8h.html#a5f40fb84f473179d68fe719eed1e7b5e", null ],
-    [ "ThingValueAddedServiceModuleVersionString", "ios-arm64_2_thing_value_added_service_module_8framework_2_headers_2_thing_value_added_service_module-umbrella_8h.html#a848b34699e8feeb6686ac85452b6aa47", null ]
-];

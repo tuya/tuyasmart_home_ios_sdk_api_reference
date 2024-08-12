@@ -1,6 +1,0 @@
-var ios_x86__64_simulator_2_thing_device_accessory_manage_plug_a_p_i_8framework_2_headers_2_thing_de9472e1fa34fe7dc32ba2240617e9e718 =
-[
-    [ "FOUNDATION_EXPORT", "ios-x86__64-simulator_2_thing_device_accessory_manage_plug_a_p_i_8framework_2_headers_2_thing_de9472e1fa34fe7dc32ba2240617e9e718.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingDeviceAccessoryManagePlugAPIVersionNumber", "ios-x86__64-simulator_2_thing_device_accessory_manage_plug_a_p_i_8framework_2_headers_2_thing_de9472e1fa34fe7dc32ba2240617e9e718.html#acdef8b2ab5b586a0bdaa0e6178ed8458", null ],
-    [ "ThingDeviceAccessoryManagePlugAPIVersionString", "ios-x86__64-simulator_2_thing_device_accessory_manage_plug_a_p_i_8framework_2_headers_2_thing_de9472e1fa34fe7dc32ba2240617e9e718.html#a2d255182a0da969f060a4d539e4fcefc", null ]
-];

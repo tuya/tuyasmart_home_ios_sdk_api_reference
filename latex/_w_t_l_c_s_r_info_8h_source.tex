@@ -1,0 +1,61 @@
+\hypertarget{_w_t_l_c_s_r_info_8h_source}{}\doxysection{WTLCSRInfo.\+h}
+\label{_w_t_l_c_s_r_info_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLCSRInfo.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLCSRInfo.h}}
+\mbox{\hyperlink{_w_t_l_c_s_r_info_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00020}00020 \textcolor{preprocessor}{\#import <Water/WTLCommandPayloadsObjc.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00021}00021 \textcolor{preprocessor}{\#import <Water/WTLDefines.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00023}00023 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00029}00029 \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00030}00030 \textcolor{keyword}{@interface }WTLOperationalCSRInfo : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00035}00035 \textcolor{keyword}{@property} (nonatomic, copy, readonly) \mbox{\hyperlink{_w_t_l_defines_8h_a4efd552c6622c4fb6aee847e31a52634}{WTLCSRDERBytes}} \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a4d9b280bd21aa0f71185a25600f06ba7}{csr}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00040}\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a7c6c21abef026ce68c14fa92d97984f5}{00040}} \textcolor{keyword}{@property} (nonatomic, copy, readonly) NSData * \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a7c6c21abef026ce68c14fa92d97984f5}{csrNonce}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00046}\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a878636d58444d68dd0692d2556638cb0}{00046}} \textcolor{keyword}{@property} (nonatomic, copy, readonly) \mbox{\hyperlink{_w_t_l_defines_8h_a65443dbe5d9d296956f3c0666f6a9f71}{WTLTLVBytes}} \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a878636d58444d68dd0692d2556638cb0}{csrElementsTLV}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00055}\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a1bf271fd11d09d7104ceaceea7794453}{00055}} \textcolor{keyword}{@property} (nonatomic, copy, readonly) NSData * \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a1bf271fd11d09d7104ceaceea7794453}{attestationSignature}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00061}\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a80aaddb1e1bf77fa942c7baf5de16686}{00061}} -\/ (instancetype)\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a80aaddb1e1bf77fa942c7baf5de16686}{initWithCSR}}:(\mbox{\hyperlink{_w_t_l_defines_8h_a4efd552c6622c4fb6aee847e31a52634}{WTLCSRDERBytes}})csr}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00062}00062                    csrNonce:(NSData *)csrNonce}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00063}00063              csrElementsTLV:(\mbox{\hyperlink{_w_t_l_defines_8h_a65443dbe5d9d296956f3c0666f6a9f71}{WTLTLVBytes}})csrElementsTLV}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00064}00064        attestationSignature:(NSData *)attestationSignature}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00065}00065     WTL\_NEWLY\_DEPRECATED("{}Please use one of the initializers that validates the input"{});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00074}\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a7942a07a69ce91abd43d6afaea906972}{00074}} -\/ (nullable instancetype)\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a7942a07a69ce91abd43d6afaea906972}{initWithCSRNonce}}:(NSData *)csrNonce}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00075}00075                            csrElementsTLV:(\mbox{\hyperlink{_w_t_l_defines_8h_a65443dbe5d9d296956f3c0666f6a9f71}{WTLTLVBytes}})csrElementsTLV}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00076}00076                      attestationSignature:(NSData *)attestationSignature WTL\_NEWLY\_AVAILABLE;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00085}\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_ae98d7e67576a9855890d55a254a523d4}{00085}} -\/ (nullable instancetype)\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_ae98d7e67576a9855890d55a254a523d4}{initWithCSRElementsTLV}}:(\mbox{\hyperlink{_w_t_l_defines_8h_a65443dbe5d9d296956f3c0666f6a9f71}{WTLTLVBytes}})csrElementsTLV}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00086}00086                            attestationSignature:(NSData *)attestationSignature WTL\_NEWLY\_AVAILABLE;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00093}\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_adb7b15b404f4366489c3f3bd82bd20cd}{00093}} -\/ (nullable instancetype)\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_adb7b15b404f4366489c3f3bd82bd20cd}{initWithCSRResponseParams}}:(WTLOperationalCredentialsClusterCSRResponseParams *)responseParams}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00094}00094     WTL\_NEWLY\_AVAILABLE;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00095}00095 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00097}00097 \mbox{\hyperlink{_w_t_l_defines_8h_a7e03a091c94319bf3cac9352bb2c3aff}{WTL\_DEPRECATED}}(\textcolor{stringliteral}{"{}Please use WTLOperationalCSRInfo"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00098}00098 \textcolor{keyword}{@interface }CSRInfo : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00100}00100 \textcolor{keyword}{@property} (nonatomic, copy) NSData * \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a8040315c54407c9954f846a4c83fb4dd}{nonce}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00102}\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a6e0a2d46a184b9fb0f9921ae683a2ab6}{00102}} \textcolor{keyword}{@property} (nonatomic, copy) NSData * \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a6e0a2d46a184b9fb0f9921ae683a2ab6}{elements}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00104}\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_afb4b8ff4e2504de524c1a153102d9b30}{00104}} \textcolor{keyword}{@property} (nonatomic, copy) NSData * \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_afb4b8ff4e2504de524c1a153102d9b30}{elementsSignature}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00106}\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a4d9b280bd21aa0f71185a25600f06ba7}{00106}} \textcolor{keyword}{@property} (nonatomic, copy) NSData * \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a4d9b280bd21aa0f71185a25600f06ba7}{csr}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00108}\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a576f99a893bd63e54c5decadd9f290a0}{00108}} -\/ (instancetype)\mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a576f99a893bd63e54c5decadd9f290a0}{initWithNonce}}:(NSData *)nonce}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00109}00109                      elements:(NSData *)elements}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00110}00110             elementsSignature:(NSData *)elementsSignature}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00111}00111                           csr:(NSData *)csr;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00113}00113 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_c_s_r_info_8h_source_l00115}00115 NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

@@ -1,0 +1,5 @@
+var watchos_arm64__arm64__32__armv7k_2_thing_smart_scene_core_kit_8framework_2_headers_2_thing_smart38513d8aed598b52fef009a383623ed2 =
+[
+    [ "ThingSmartSceneConditionExtendConfigModel", "interface_thing_smart_scene_condition_extend_config_model.html", "interface_thing_smart_scene_condition_extend_config_model" ],
+    [ "ThingSmartSceneConditionExtendConfigList", "interface_thing_smart_scene_condition_extend_config_list.html", "interface_thing_smart_scene_condition_extend_config_list" ]
+];

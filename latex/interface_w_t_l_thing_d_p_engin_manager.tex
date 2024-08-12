@@ -1,0 +1,165 @@
+\hypertarget{interface_w_t_l_thing_d_p_engin_manager}{}\doxysection{WTLThing\+DPEngin\+Manager Class Reference}
+\label{interface_w_t_l_thing_d_p_engin_manager}\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+
+
+{\ttfamily \#import $<$WTLThing\+DPEngin\+Manager.\+h$>$}
+
+Inheritance diagram for WTLThing\+DPEngin\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_w_t_l_thing_d_p_engin_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_a18e30feb386ee844bf5446edc843cdc8}{set\+Up\+Thing\+Matter\+Engine\+:}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_aa9432174c45abef2742bcaef9a4badc1}{get\+Thing\+Matter\+Engine\+Version}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_a7d4ad36729e578b598122b867cf0ee5d}{set\+Product\+Engine\+Json\+:file\+Key\+:}}
+\begin{DoxyCompactList}\small\item\em 在引擎内创建一个转换文件节点 app端使用 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_adfa2046f476320968ac0b017dfa68c36}{send\+Thing\+Dps\+:node\+Id\+:dps\+:file\+Key\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_a4779afdbf8dfb687afb4c50daeaccafa}{register\+Matter\+DPReportcb\+:}}
+\begin{DoxyCompactList}\small\item\em dp上报监听 在线状态上报监听 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_aba70225b92d9efdfe85a53df3f37ce0d}{register\+Matter\+DPStatecb\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_ac24019821897436382ed7636fe964b27}{subscribe\+Matter\+Attribute\+:node\+Id\+:file\+Key\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_a3a17f3aa1d952192f58d7c1680cba5cf}{get\+Online\+Status\+:node\+Id\+:interval\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_ae2263c6cdaff86cface172ee7764507a}{query\+Dps\+Dps\+:node\+Id\+:dps\+:file\+Key\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_a035a3f1f7699a8bd7ab2c0b6ac58a4ae}{query\+All\+Dps\+:node\+Id\+:file\+Key\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_ab8eee05bf55be72c22d5a311588a831d}{shared\+Instance}}
+\item 
+(nullable NSString $\ast$) + \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_ad7320fb86c29affc9aebf99ea78b0091}{Tlv\+Bytes\+To\+Json\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_a54945d4e62dafb6d2e326fbd8b2c86e1}{dp\+Engin\+Version}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_source_l00030}{30}} of file \mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_source}{WTLThing\+DPEngin\+Manager.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_a3a17f3aa1d952192f58d7c1680cba5cf}\label{interface_w_t_l_thing_d_p_engin_manager_a3a17f3aa1d952192f58d7c1680cba5cf}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!getOnlineStatus:nodeId:interval:@{getOnlineStatus:nodeId:interval:}}
+\index{getOnlineStatus:nodeId:interval:@{getOnlineStatus:nodeId:interval:}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{getOnlineStatus:nodeId:interval:}{getOnlineStatus:nodeId:interval:}}
+{\footnotesize\ttfamily -\/ (void) get\+Online\+Status\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{node\+Id\+:(uint64\+\_\+t)}]{device\+ID }\item[{interval\+:(uint64\+\_\+t)}]{interval }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_aa9432174c45abef2742bcaef9a4badc1}\label{interface_w_t_l_thing_d_p_engin_manager_aa9432174c45abef2742bcaef9a4badc1}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!getThingMatterEngineVersion@{getThingMatterEngineVersion}}
+\index{getThingMatterEngineVersion@{getThingMatterEngineVersion}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{getThingMatterEngineVersion}{getThingMatterEngineVersion}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) get\+Thing\+Matter\+Engine\+Version \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_a035a3f1f7699a8bd7ab2c0b6ac58a4ae}\label{interface_w_t_l_thing_d_p_engin_manager_a035a3f1f7699a8bd7ab2c0b6ac58a4ae}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!queryAllDps:nodeId:fileKey:success:failure:@{queryAllDps:nodeId:fileKey:success:failure:}}
+\index{queryAllDps:nodeId:fileKey:success:failure:@{queryAllDps:nodeId:fileKey:success:failure:}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{queryAllDps:nodeId:fileKey:success:failure:}{queryAllDps:nodeId:fileKey:success:failure:}}
+{\footnotesize\ttfamily -\/ (void) query\+All\+Dps\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{node\+Id\+:(uint64\+\_\+t)}]{device\+ID }\item[{file\+Key\+:(NSString $\ast$)}]{filekey }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_ae2263c6cdaff86cface172ee7764507a}\label{interface_w_t_l_thing_d_p_engin_manager_ae2263c6cdaff86cface172ee7764507a}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!queryDpsDps:nodeId:dps:fileKey:success:failure:@{queryDpsDps:nodeId:dps:fileKey:success:failure:}}
+\index{queryDpsDps:nodeId:dps:fileKey:success:failure:@{queryDpsDps:nodeId:dps:fileKey:success:failure:}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{queryDpsDps:nodeId:dps:fileKey:success:failure:}{queryDpsDps:nodeId:dps:fileKey:success:failure:}}
+{\footnotesize\ttfamily -\/ (void) query\+Dps\+Dps\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{node\+Id\+:(uint64\+\_\+t)}]{device\+ID }\item[{dps\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$)}]{dps }\item[{file\+Key\+:(NSString $\ast$)}]{filekey }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_a4779afdbf8dfb687afb4c50daeaccafa}\label{interface_w_t_l_thing_d_p_engin_manager_a4779afdbf8dfb687afb4c50daeaccafa}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!registerMatterDPReportcb:@{registerMatterDPReportcb:}}
+\index{registerMatterDPReportcb:@{registerMatterDPReportcb:}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{registerMatterDPReportcb:}{registerMatterDPReportcb:}}
+{\footnotesize\ttfamily -\/ (void) register\+Matter\+DPReportcb\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_ac261fff2134fee48b5143016fc325c1e}{CHIPDevice\+DPReport\+Callback}})}]{dp\+Report\+Callback }\end{DoxyParamCaption}}
+
+
+
+dp上报监听 在线状态上报监听 
+
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_aba70225b92d9efdfe85a53df3f37ce0d}\label{interface_w_t_l_thing_d_p_engin_manager_aba70225b92d9efdfe85a53df3f37ce0d}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!registerMatterDPStatecb:@{registerMatterDPStatecb:}}
+\index{registerMatterDPStatecb:@{registerMatterDPStatecb:}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{registerMatterDPStatecb:}{registerMatterDPStatecb:}}
+{\footnotesize\ttfamily -\/ (void) register\+Matter\+DPStatecb\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_abeb83282ae321f244c6b826e22b6ca22}{CHIPDevice\+Control\+State\+Callback}})}]{dp\+State\+Callback }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_adfa2046f476320968ac0b017dfa68c36}\label{interface_w_t_l_thing_d_p_engin_manager_adfa2046f476320968ac0b017dfa68c36}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!sendThingDps:nodeId:dps:fileKey:success:failure:@{sendThingDps:nodeId:dps:fileKey:success:failure:}}
+\index{sendThingDps:nodeId:dps:fileKey:success:failure:@{sendThingDps:nodeId:dps:fileKey:success:failure:}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{sendThingDps:nodeId:dps:fileKey:success:failure:}{sendThingDps:nodeId:dps:fileKey:success:failure:}}
+{\footnotesize\ttfamily -\/ (void) send\+Thing\+Dps\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{node\+Id\+:(uint64\+\_\+t)}]{device\+ID }\item[{dps\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary $\ast$ $>$ $\ast$)}]{dps }\item[{file\+Key\+:(NSString $\ast$)}]{filekey }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_a7d4ad36729e578b598122b867cf0ee5d}\label{interface_w_t_l_thing_d_p_engin_manager_a7d4ad36729e578b598122b867cf0ee5d}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!setProductEngineJson:fileKey:@{setProductEngineJson:fileKey:}}
+\index{setProductEngineJson:fileKey:@{setProductEngineJson:fileKey:}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{setProductEngineJson:fileKey:}{setProductEngineJson:fileKey:}}
+{\footnotesize\ttfamily -\/ (int) set\+Product\+Engine\+Json\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{path }\item[{file\+Key\+:(NSString $\ast$)}]{filekey }\end{DoxyParamCaption}}
+
+
+
+在引擎内创建一个转换文件节点 app端使用 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & 文件的完整路径 \\
+\hline
+{\em filekey} & 文件key 一般为：pid\+\_\+schame\+Id 只要在控制及上报时传入这个key就可完成转换 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 成功返回\+OPRT\+\_\+\+OK 失败返回错误码 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_a18e30feb386ee844bf5446edc843cdc8}\label{interface_w_t_l_thing_d_p_engin_manager_a18e30feb386ee844bf5446edc843cdc8}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!setUpThingMatterEngine:@{setUpThingMatterEngine:}}
+\index{setUpThingMatterEngine:@{setUpThingMatterEngine:}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{setUpThingMatterEngine:}{setUpThingMatterEngine:}}
+{\footnotesize\ttfamily -\/ (int) set\+Up\+Thing\+Matter\+Engine\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{compress\+Fabric\+Id }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_ab8eee05bf55be72c22d5a311588a831d}\label{interface_w_t_l_thing_d_p_engin_manager_ab8eee05bf55be72c22d5a311588a831d}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!sharedInstance@{sharedInstance}}
+\index{sharedInstance@{sharedInstance}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{sharedInstance}{sharedInstance}}
+{\footnotesize\ttfamily + (instancetype) shared\+Instance \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_ac24019821897436382ed7636fe964b27}\label{interface_w_t_l_thing_d_p_engin_manager_ac24019821897436382ed7636fe964b27}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!subscribeMatterAttribute:nodeId:fileKey:success:failure:@{subscribeMatterAttribute:nodeId:fileKey:success:failure:}}
+\index{subscribeMatterAttribute:nodeId:fileKey:success:failure:@{subscribeMatterAttribute:nodeId:fileKey:success:failure:}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{subscribeMatterAttribute:nodeId:fileKey:success:failure:}{subscribeMatterAttribute:nodeId:fileKey:success:failure:}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+Matter\+Attribute\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$)}]{controller }\item[{node\+Id\+:(uint64\+\_\+t)}]{device\+ID }\item[{file\+Key\+:(NSString $\ast$)}]{filekey }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_ad7320fb86c29affc9aebf99ea78b0091}\label{interface_w_t_l_thing_d_p_engin_manager_ad7320fb86c29affc9aebf99ea78b0091}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!TlvBytesToJson:@{TlvBytesToJson:}}
+\index{TlvBytesToJson:@{TlvBytesToJson:}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{TlvBytesToJson:}{TlvBytesToJson:}}
+{\footnotesize\ttfamily + (nullable NSString $\ast$) Tlv\+Bytes\+To\+Json\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{tlv\+Byte\+Data }\end{DoxyParamCaption}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_t_l_thing_d_p_engin_manager_a54945d4e62dafb6d2e326fbd8b2c86e1}\label{interface_w_t_l_thing_d_p_engin_manager_a54945d4e62dafb6d2e326fbd8b2c86e1}} 
+\index{WTLThingDPEnginManager@{WTLThingDPEnginManager}!dpEnginVersion@{dpEnginVersion}}
+\index{dpEnginVersion@{dpEnginVersion}!WTLThingDPEnginManager@{WTLThingDPEnginManager}}
+\doxysubsubsection{\texorpdfstring{dpEnginVersion}{dpEnginVersion}}
+{\footnotesize\ttfamily -\/ (NSString$\ast$) dp\+Engin\+Version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_source_l00032}{32}} of file \mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_source}{WTLThing\+DPEngin\+Manager.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h}{WTLThing\+DPEngin\+Manager.\+h}}\end{DoxyCompactItemize}

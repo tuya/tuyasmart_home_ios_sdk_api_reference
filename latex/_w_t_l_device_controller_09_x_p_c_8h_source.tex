@@ -1,0 +1,129 @@
+\hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source}{}\doxysection{WTLDevice\+Controller+\+XPC.h}
+\label{_w_t_l_device_controller_09_x_p_c_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDeviceController+XPC.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDeviceController+XPC.h}}
+\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00020}00020 \textcolor{preprocessor}{\#import <Water/WTLCluster.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00021}00021 \textcolor{preprocessor}{\#import <Water/WTLDeviceController.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00023}00023 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00025}\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a673e3fa1e2d8527636e123bfadf0f021}{00025}} \textcolor{keyword}{typedef} NSXPCConnection * \_Nonnull (\string^\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a673e3fa1e2d8527636e123bfadf0f021}{WTLXPCConnectBlock}})(void);}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00027}\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a65dc93ddb92189d498cfbfc25d416cfc}{00027}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a65dc93ddb92189d498cfbfc25d416cfc}{WTLDeviceControllerGetterHandler}})(\textcolor{keywordtype}{id} \_Nullable controller, NSError * \_Nullable \mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00029}\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a264860f6fb724e9c6f70effc392e1b39}{00029}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a264860f6fb724e9c6f70effc392e1b39}{WTLValuesHandler}})(\textcolor{keywordtype}{id} \_Nullable values, NSError * \_Nullable \mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00034}\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08}{00034}} \textcolor{keyword}{@interface }\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08}{WTLDeviceController (XPC)}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00043}00043 + (\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)sharedControllerWithID:(\textcolor{keywordtype}{id}<NSCopying> \_Nullable)controllerID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00044}00044                                 xpcConnectBlock:(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a673e3fa1e2d8527636e123bfadf0f021}{WTLXPCConnectBlock}})xpcConnectBlock}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00045}00045     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00050}00050 + (\mbox{\hyperlink{interface_n_s_array}{NSArray}}<NSDictionary<NSString *, id> *> * \_Nullable)encodeXPCResponseValues:}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00051}00051     (\mbox{\hyperlink{interface_n_s_array}{NSArray}}<NSDictionary<NSString *, \textcolor{keywordtype}{id}> *> * \_Nullable)values;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00056}00056 + (\mbox{\hyperlink{interface_n_s_array}{NSArray}}<NSDictionary<NSString *, id> *> * \_Nullable)decodeXPCResponseValues:}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00057}00057     (\mbox{\hyperlink{interface_n_s_array}{NSArray}}<NSDictionary<NSString *, \textcolor{keywordtype}{id}> *> * \_Nullable)values;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00062}00062 + (NSDictionary<NSString *, id> * \_Nullable)encodeXPCReadParams:(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLReadParams}} *)params;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00067}00067 + (\mbox{\hyperlink{interface_w_t_l_read_params}{WTLReadParams}} * \_Nullable)decodeXPCReadParams:(NSDictionary<NSString *, \textcolor{keywordtype}{id}> * \_Nullable)params;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00072}00072 + (NSDictionary<NSString *, id> * \_Nullable)encodeXPCSubscribeParams:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribeParams}} * \_Nullable)params;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00077}00077 + (\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribeParams}} * \_Nullable)decodeXPCSubscribeParams:(NSDictionary<NSString *, \textcolor{keywordtype}{id}> * \_Nullable)params;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00082}00082 + (NSXPCInterface *)xpcInterfaceForServerProtocol \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.4), watchos(9.5), tvos(16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00087}00087 + (NSXPCInterface *)xpcInterfaceForClientProtocol \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.4), watchos(9.5), tvos(16.5));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00088}00088 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00093}\mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p}{00093}} \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p}{WTLDeviceControllerServerProtocol}} <NSObject>}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00095}00095 \textcolor{keyword}{@optional}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00099}00099 -\/ (void)getDeviceControllerWithFabricId:(uint64\_t)fabricId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00100}00100                              completion:(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a65dc93ddb92189d498cfbfc25d416cfc}{WTLDeviceControllerGetterHandler}})completion}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00101}00101     WTL\_DEPRECATED("{}This never called."{},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00103}00103 \textcolor{keyword}{@required}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00107}00107 -\/ (void)getAnyDeviceControllerWithCompletion:(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a65dc93ddb92189d498cfbfc25d416cfc}{WTLDeviceControllerGetterHandler}})completion;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00112}00112 -\/ (void)readAttributeWithController:(\textcolor{keywordtype}{id} \_Nullable)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00113}00113                              nodeId:(uint64\_t)nodeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00114}00114                          endpointId:(NSNumber * \_Nullable)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00115}00115                           clusterId:(NSNumber * \_Nullable)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00116}00116                         attributeId:(NSNumber * \_Nullable)attributeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00117}00117                              params:(NSDictionary<NSString *, \textcolor{keywordtype}{id}> * \_Nullable)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00118}00118                          completion:(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a264860f6fb724e9c6f70effc392e1b39}{WTLValuesHandler}})completion;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00123}00123 -\/ (void)writeAttributeWithController:(\textcolor{keywordtype}{id} \_Nullable)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00124}00124                               nodeId:(uint64\_t)nodeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00125}00125                           endpointId:(NSNumber *)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00126}00126                            clusterId:(NSNumber *)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00127}00127                          attributeId:(NSNumber *)attributeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00128}00128                                value:(\textcolor{keywordtype}{id})value}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00129}00129                    timedWriteTimeout:(NSNumber * \_Nullable)timeoutMs}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00130}00130                           completion:(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a264860f6fb724e9c6f70effc392e1b39}{WTLValuesHandler}})completion;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00135}00135 -\/ (void)invokeCommandWithController:(\textcolor{keywordtype}{id} \_Nullable)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00136}00136                              nodeId:(uint64\_t)nodeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00137}00137                          endpointId:(NSNumber *)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00138}00138                           clusterId:(NSNumber *)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00139}00139                           commandId:(NSNumber *)commandId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00140}00140                              fields:(\textcolor{keywordtype}{id})fields}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00141}00141                  timedInvokeTimeout:(NSNumber * \_Nullable)timeoutMs}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00142}00142                          completion:(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a264860f6fb724e9c6f70effc392e1b39}{WTLValuesHandler}})completion;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00148}00148 -\/ (void)subscribeAttributeWithController:(\textcolor{keywordtype}{id} \_Nullable)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00149}00149                                   nodeId:(uint64\_t)nodeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00150}00150                               endpointId:(NSNumber * \_Nullable)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00151}00151                                clusterId:(NSNumber * \_Nullable)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00152}00152                              attributeId:(NSNumber * \_Nullable)attributeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00153}00153                              minInterval:(NSNumber *)minInterval}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00154}00154                              maxInterval:(NSNumber *)maxInterval}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00155}00155                                   params:(NSDictionary<NSString *, \textcolor{keywordtype}{id}> * \_Nullable)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00156}00156                       establishedHandler:(dispatch\_block\_t)establishedHandler;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00157}00157 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00161}00161 -\/ (void)stopReportsWithController:(\textcolor{keywordtype}{id} \_Nullable)controller nodeId:(uint64\_t)nodeId completion:(dispatch\_block\_t)completion;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00167}00167 -\/ (void)subscribeWithController:(\textcolor{keywordtype}{id} \_Nullable)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00168}00168                          nodeId:(uint64\_t)nodeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00169}00169                     minInterval:(NSNumber *)minInterval}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00170}00170                     maxInterval:(NSNumber *)maxInterval}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00171}00171                          params:(NSDictionary<NSString *, \textcolor{keywordtype}{id}> * \_Nullable)params}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00172}00172                     shouldCache:(BOOL)shouldCache}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00173}00173                      completion:(\mbox{\hyperlink{_w_t_l_cluster_8h_adce6546b3c587c00857ef587702441ca}{WTLStatusCompletion}})completion;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00174}00174 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00178}00178 -\/ (void)readAttributeCacheWithController:(\textcolor{keywordtype}{id} \_Nullable)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00179}00179                                   nodeId:(uint64\_t)nodeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00180}00180                               endpointId:(NSNumber * \_Nullable)endpointId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00181}00181                                clusterId:(NSNumber * \_Nullable)clusterId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00182}00182                              attributeId:(NSNumber * \_Nullable)attributeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00183}00183                               completion:(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a264860f6fb724e9c6f70effc392e1b39}{WTLValuesHandler}})completion;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00184}00184 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00185}00185 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00186}00186 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00190}\mbox{\hyperlink{protocol_w_t_l_device_controller_client_protocol-p}{00190}} \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_w_t_l_device_controller_client_protocol-p}{WTLDeviceControllerClientProtocol}} <NSObject>}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00191}00191 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00195}00195 -\/ (void)handleReportWithController:(\textcolor{keywordtype}{id} \_Nullable)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00196}00196                             nodeId:(uint64\_t)nodeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00197}00197                             values:(\textcolor{keywordtype}{id} \_Nullable)values}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00198}00198                              error:(NSError * \_Nullable)error;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00199}00199 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00200}00200 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00201}00201 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00202}\mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated___x_p_c_08}{00202}} \textcolor{keyword}{@interface }\mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated___x_p_c_08}{WTLDeviceController (Deprecated\_XPC)}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00203}00203 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00204}00204 + (\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)sharedControllerWithId:(\textcolor{keywordtype}{id}<NSCopying> \_Nullable)controllerID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00205}00205                                 xpcConnectBlock:(\mbox{\hyperlink{_w_t_l_device_controller_09_x_p_c_8h_a673e3fa1e2d8527636e123bfadf0f021}{WTLXPCConnectBlock}})xpcConnectBlock}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00206}00206     WTL\_DEPRECATED("{}Please use sharedControllerWithID:xpcConnectBlock:"{},  macos(13.0, 13.3), watchos(9.1, 9.4),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00207}00207         tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00208}00208 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00209}00209 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00210}00210 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_controller_09_x_p_c_8h_source_l00211}\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a9ee0e33a54211c1053cb2307c26a9672}{00211}} NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

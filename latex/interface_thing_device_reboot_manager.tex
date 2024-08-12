@@ -1,0 +1,177 @@
+\hypertarget{interface_thing_device_reboot_manager}{}\doxysection{Thing\+Device\+Reboot\+Manager Class Reference}
+\label{interface_thing_device_reboot_manager}\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+
+
+{\ttfamily \#import $<$Thing\+Device\+Reboot\+Manager.\+h$>$}
+
+Inheritance diagram for Thing\+Device\+Reboot\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_device_reboot_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a750005c8898669c12401e18f57856fa9}{init\+With\+Device\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a544dbf3625679d2418694d2d580fed8c}{add\+Timers\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a375b6baa04ed7c46dcba8d44cb053bfd}{update\+Timer\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a5441282a5ec138bc9be0805fe1094b6c}{get\+Timers\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a1c960d1152442b09c5f10a4bdd70dcc5}{get\+Timers\+Count\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a539580b3fa911c2f9ddbc2c4961a89e8}{remove\+Timers\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a1ea3641412fe2155e6e960d13f9b6c73}{reboot\+Immediately\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_af7b2f4c00aebc4dfeb6e1548e81b5590}{support\+Reboot\+Success\+:failure\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a750005c8898669c12401e18f57856fa9}{init\+With\+Device\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a544dbf3625679d2418694d2d580fed8c}{add\+Timers\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a375b6baa04ed7c46dcba8d44cb053bfd}{update\+Timer\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a5441282a5ec138bc9be0805fe1094b6c}{get\+Timers\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a1c960d1152442b09c5f10a4bdd70dcc5}{get\+Timers\+Count\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a539580b3fa911c2f9ddbc2c4961a89e8}{remove\+Timers\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_a1ea3641412fe2155e6e960d13f9b6c73}{reboot\+Immediately\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_device_reboot_manager_af7b2f4c00aebc4dfeb6e1548e81b5590}{support\+Reboot\+Success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_device_reboot_manager_a986a9f9a13fda098f8dcb3d00a1f6284}{device\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_reboot_manager_8h_source_l00013}{13}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_reboot_manager_8h_source}{Thing\+Device\+Reboot\+Manager.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a544dbf3625679d2418694d2d580fed8c}\label{interface_thing_device_reboot_manager_a544dbf3625679d2418694d2d580fed8c}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!addTimers:success:failure:@{addTimers:success:failure:}}
+\index{addTimers:success:failure:@{addTimers:success:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{addTimers:success:failure:}{addTimers:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Timers\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_device_reboot_timer}{Thing\+Device\+Reboot\+Timer}} $\ast$ $>$ $\ast$)}]{timers }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a544dbf3625679d2418694d2d580fed8c}\label{interface_thing_device_reboot_manager_a544dbf3625679d2418694d2d580fed8c}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!addTimers:success:failure:@{addTimers:success:failure:}}
+\index{addTimers:success:failure:@{addTimers:success:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{addTimers:success:failure:}{addTimers:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Timers\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_device_reboot_timer}{Thing\+Device\+Reboot\+Timer}} $\ast$ $>$ $\ast$)}]{timers }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a1c960d1152442b09c5f10a4bdd70dcc5}\label{interface_thing_device_reboot_manager_a1c960d1152442b09c5f10a4bdd70dcc5}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!getTimersCountSuccess:failure:@{getTimersCountSuccess:failure:}}
+\index{getTimersCountSuccess:failure:@{getTimersCountSuccess:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{getTimersCountSuccess:failure:}{getTimersCountSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Timers\+Count\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSInteger count))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a1c960d1152442b09c5f10a4bdd70dcc5}\label{interface_thing_device_reboot_manager_a1c960d1152442b09c5f10a4bdd70dcc5}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!getTimersCountSuccess:failure:@{getTimersCountSuccess:failure:}}
+\index{getTimersCountSuccess:failure:@{getTimersCountSuccess:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{getTimersCountSuccess:failure:}{getTimersCountSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Timers\+Count\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSInteger count))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a5441282a5ec138bc9be0805fe1094b6c}\label{interface_thing_device_reboot_manager_a5441282a5ec138bc9be0805fe1094b6c}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!getTimersSuccess:failure:@{getTimersSuccess:failure:}}
+\index{getTimersSuccess:failure:@{getTimersSuccess:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{getTimersSuccess:failure:}{getTimersSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Timers\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_device_reboot_timer}{Thing\+Device\+Reboot\+Timer}} $\ast$ $>$ $\ast$))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a5441282a5ec138bc9be0805fe1094b6c}\label{interface_thing_device_reboot_manager_a5441282a5ec138bc9be0805fe1094b6c}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!getTimersSuccess:failure:@{getTimersSuccess:failure:}}
+\index{getTimersSuccess:failure:@{getTimersSuccess:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{getTimersSuccess:failure:}{getTimersSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Timers\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_device_reboot_timer}{Thing\+Device\+Reboot\+Timer}} $\ast$ $>$ $\ast$))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a750005c8898669c12401e18f57856fa9}\label{interface_thing_device_reboot_manager_a750005c8898669c12401e18f57856fa9}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!initWithDeviceId:@{initWithDeviceId:}}
+\index{initWithDeviceId:@{initWithDeviceId:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{initWithDeviceId:}{initWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a750005c8898669c12401e18f57856fa9}\label{interface_thing_device_reboot_manager_a750005c8898669c12401e18f57856fa9}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!initWithDeviceId:@{initWithDeviceId:}}
+\index{initWithDeviceId:@{initWithDeviceId:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{initWithDeviceId:}{initWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a1ea3641412fe2155e6e960d13f9b6c73}\label{interface_thing_device_reboot_manager_a1ea3641412fe2155e6e960d13f9b6c73}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!rebootImmediatelySuccess:failure:@{rebootImmediatelySuccess:failure:}}
+\index{rebootImmediatelySuccess:failure:@{rebootImmediatelySuccess:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{rebootImmediatelySuccess:failure:}{rebootImmediatelySuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) reboot\+Immediately\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a1ea3641412fe2155e6e960d13f9b6c73}\label{interface_thing_device_reboot_manager_a1ea3641412fe2155e6e960d13f9b6c73}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!rebootImmediatelySuccess:failure:@{rebootImmediatelySuccess:failure:}}
+\index{rebootImmediatelySuccess:failure:@{rebootImmediatelySuccess:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{rebootImmediatelySuccess:failure:}{rebootImmediatelySuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) reboot\+Immediately\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a539580b3fa911c2f9ddbc2c4961a89e8}\label{interface_thing_device_reboot_manager_a539580b3fa911c2f9ddbc2c4961a89e8}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!removeTimers:success:failure:@{removeTimers:success:failure:}}
+\index{removeTimers:success:failure:@{removeTimers:success:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{removeTimers:success:failure:}{removeTimers:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Timers\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{timers }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a539580b3fa911c2f9ddbc2c4961a89e8}\label{interface_thing_device_reboot_manager_a539580b3fa911c2f9ddbc2c4961a89e8}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!removeTimers:success:failure:@{removeTimers:success:failure:}}
+\index{removeTimers:success:failure:@{removeTimers:success:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{removeTimers:success:failure:}{removeTimers:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Timers\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{timers }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_af7b2f4c00aebc4dfeb6e1548e81b5590}\label{interface_thing_device_reboot_manager_af7b2f4c00aebc4dfeb6e1548e81b5590}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!supportRebootSuccess:failure:@{supportRebootSuccess:failure:}}
+\index{supportRebootSuccess:failure:@{supportRebootSuccess:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{supportRebootSuccess:failure:}{supportRebootSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) support\+Reboot\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(BOOL support))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_af7b2f4c00aebc4dfeb6e1548e81b5590}\label{interface_thing_device_reboot_manager_af7b2f4c00aebc4dfeb6e1548e81b5590}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!supportRebootSuccess:failure:@{supportRebootSuccess:failure:}}
+\index{supportRebootSuccess:failure:@{supportRebootSuccess:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{supportRebootSuccess:failure:}{supportRebootSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) support\+Reboot\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(BOOL support))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a375b6baa04ed7c46dcba8d44cb053bfd}\label{interface_thing_device_reboot_manager_a375b6baa04ed7c46dcba8d44cb053bfd}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!updateTimer:success:failure:@{updateTimer:success:failure:}}
+\index{updateTimer:success:failure:@{updateTimer:success:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{updateTimer:success:failure:}{updateTimer:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+Timer\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_device_reboot_timer}{Thing\+Device\+Reboot\+Timer}} $\ast$)}]{timer }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a375b6baa04ed7c46dcba8d44cb053bfd}\label{interface_thing_device_reboot_manager_a375b6baa04ed7c46dcba8d44cb053bfd}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!updateTimer:success:failure:@{updateTimer:success:failure:}}
+\index{updateTimer:success:failure:@{updateTimer:success:failure:}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{updateTimer:success:failure:}{updateTimer:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+Timer\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_device_reboot_timer}{Thing\+Device\+Reboot\+Timer}} $\ast$)}]{timer }\item[{success\+:(void($^\wedge$)(void))}]{success }\item[{failure\+:(void($^\wedge$)(NSError $\ast$\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{failure }\end{DoxyParamCaption}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_device_reboot_manager_a986a9f9a13fda098f8dcb3d00a1f6284}\label{interface_thing_device_reboot_manager_a986a9f9a13fda098f8dcb3d00a1f6284}} 
+\index{ThingDeviceRebootManager@{ThingDeviceRebootManager}!deviceId@{deviceId}}
+\index{deviceId@{deviceId}!ThingDeviceRebootManager@{ThingDeviceRebootManager}}
+\doxysubsubsection{\texorpdfstring{deviceId}{deviceId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) device\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_reboot_manager_8h_source_l00017}{17}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_reboot_manager_8h_source}{Thing\+Device\+Reboot\+Manager.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Device\+Detail\+Kit/\+Thing\+Device\+Detail\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Device\+Detail\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_reboot_manager_8h}{Thing\+Device\+Reboot\+Manager.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Device\+Detail\+Kit/\+Thing\+Device\+Detail\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Device\+Detail\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_device_detail_kit_8framework_2_headers_2_thing_device_reboot_manager_8h}{Thing\+Device\+Reboot\+Manager.\+h}}\end{DoxyCompactItemize}

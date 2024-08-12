@@ -1,0 +1,237 @@
+\hypertarget{interface_thing_smart_discovery}{}\doxysection{Thing\+Smart\+Discovery Class Reference}
+\label{interface_thing_smart_discovery}\index{ThingSmartDiscovery@{ThingSmartDiscovery}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Discovery.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Discovery\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_discovery}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_discovery_a816aba3d090f1eaef9e107fecd81d603}{get\+Token\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_discovery_aa9ffe59652fd803e0ea8d698d0038e8f}{start\+Discovery\+With\+Ssid\+:password\+:timeout\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_discovery_acbb5119366ea3abfdba44a55a3378081}{start\+Discovery\+With\+Ssid\+:password\+:token\+:timeout\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_discovery_ac586f9f54be4cdfc494aa91fccda88fd}{stop\+Discovery}}
+\begin{DoxyCompactList}\small\item\em Stops scanning for devices. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_discovery_a816aba3d090f1eaef9e107fecd81d603}{get\+Token\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_discovery_aa9ffe59652fd803e0ea8d698d0038e8f}{start\+Discovery\+With\+Ssid\+:password\+:timeout\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_discovery_acbb5119366ea3abfdba44a55a3378081}{start\+Discovery\+With\+Ssid\+:password\+:token\+:timeout\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_discovery_ac586f9f54be4cdfc494aa91fccda88fd}{stop\+Discovery}}
+\begin{DoxyCompactList}\small\item\em Stops scanning for devices. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_discovery_ad0bb872284cbfc14d515e77d8165b408}{bind\+Device\+With\+Home\+Id\+:dev\+Ids\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_discovery_ad0bb872284cbfc14d515e77d8165b408}{bind\+Device\+With\+Home\+Id\+:dev\+Ids\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_smart_discovery_delegate-p}{Thing\+Smart\+Discovery\+Delegate}} $>$ \mbox{\hyperlink{interface_thing_smart_discovery_a5515195c43a364f25e496ad77d2db988}{delegate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm64195cf9458dc333af35e18797e4831bfb_source_l00026}{26}} of file \mbox{\hyperlink{_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm64195cf9458dc333af35e18797e4831bfb_source}{Thing\+Smart\+Discovery.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_discovery_ad0bb872284cbfc14d515e77d8165b408}\label{interface_thing_smart_discovery_ad0bb872284cbfc14d515e77d8165b408}} 
+\index{ThingSmartDiscovery@{ThingSmartDiscovery}!bindDeviceWithHomeId:devIds:success:failure:@{bindDeviceWithHomeId:devIds:success:failure:}}
+\index{bindDeviceWithHomeId:devIds:success:failure:@{bindDeviceWithHomeId:devIds:success:failure:}!ThingSmartDiscovery@{ThingSmartDiscovery}}
+\doxysubsubsection{\texorpdfstring{bindDeviceWithHomeId:devIds:success:failure:}{bindDeviceWithHomeId:devIds:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) bind\+Device\+With\+Home\+Id\+: \begin{DoxyParamCaption}\item[{(long long)}]{home\+Id }\item[{dev\+Ids\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+Ids }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Adds devices to a specified home. 
+\begin{DoxyParams}{Parameters}
+{\em home\+Id} & The home ID. \\
+\hline
+{\em dev\+Ids} & A list of device IDs. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_discovery_07_home_08_ad0bb872284cbfc14d515e77d8165b408}{Thing\+Smart\+Discovery(\+Home)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_discovery_ad0bb872284cbfc14d515e77d8165b408}\label{interface_thing_smart_discovery_ad0bb872284cbfc14d515e77d8165b408}} 
+\index{ThingSmartDiscovery@{ThingSmartDiscovery}!bindDeviceWithHomeId:devIds:success:failure:@{bindDeviceWithHomeId:devIds:success:failure:}}
+\index{bindDeviceWithHomeId:devIds:success:failure:@{bindDeviceWithHomeId:devIds:success:failure:}!ThingSmartDiscovery@{ThingSmartDiscovery}}
+\doxysubsubsection{\texorpdfstring{bindDeviceWithHomeId:devIds:success:failure:}{bindDeviceWithHomeId:devIds:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) bind\+Device\+With\+Home\+Id\+: \begin{DoxyParamCaption}\item[{(long long)}]{home\+Id }\item[{dev\+Ids\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+Ids }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Adds devices to a specified home. 
+\begin{DoxyParams}{Parameters}
+{\em home\+Id} & The home ID. \\
+\hline
+{\em dev\+Ids} & A list of device IDs. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_discovery_07_home_08_ad0bb872284cbfc14d515e77d8165b408}{Thing\+Smart\+Discovery(\+Home)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_discovery_a816aba3d090f1eaef9e107fecd81d603}\label{interface_thing_smart_discovery_a816aba3d090f1eaef9e107fecd81d603}} 
+\index{ThingSmartDiscovery@{ThingSmartDiscovery}!getTokenSuccess:failure:@{getTokenSuccess:failure:}}
+\index{getTokenSuccess:failure:@{getTokenSuccess:failure:}!ThingSmartDiscovery@{ThingSmartDiscovery}}
+\doxysubsubsection{\texorpdfstring{getTokenSuccess:failure:}{getTokenSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Token\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a1ee38442763f6622af80e13543e19bf8}{Thing\+Success\+String}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Returns the pairing token. This token is valid for 10 minutes. 
+\begin{DoxyParams}{Parameters}
+{\em success} & Called when the task is finished. Thing\+Success\+String is returned. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_discovery_a816aba3d090f1eaef9e107fecd81d603}\label{interface_thing_smart_discovery_a816aba3d090f1eaef9e107fecd81d603}} 
+\index{ThingSmartDiscovery@{ThingSmartDiscovery}!getTokenSuccess:failure:@{getTokenSuccess:failure:}}
+\index{getTokenSuccess:failure:@{getTokenSuccess:failure:}!ThingSmartDiscovery@{ThingSmartDiscovery}}
+\doxysubsubsection{\texorpdfstring{getTokenSuccess:failure:}{getTokenSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Token\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a1ee38442763f6622af80e13543e19bf8}{Thing\+Success\+String}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Returns the pairing token. This token is valid for 10 minutes. 
+\begin{DoxyParams}{Parameters}
+{\em success} & Called when the task is finished. Thing\+Success\+String is returned. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_discovery_aa9ffe59652fd803e0ea8d698d0038e8f}\label{interface_thing_smart_discovery_aa9ffe59652fd803e0ea8d698d0038e8f}} 
+\index{ThingSmartDiscovery@{ThingSmartDiscovery}!startDiscoveryWithSsid:password:timeout:success:failure:@{startDiscoveryWithSsid:password:timeout:success:failure:}}
+\index{startDiscoveryWithSsid:password:timeout:success:failure:@{startDiscoveryWithSsid:password:timeout:success:failure:}!ThingSmartDiscovery@{ThingSmartDiscovery}}
+\doxysubsubsection{\texorpdfstring{startDiscoveryWithSsid:password:timeout:success:failure:}{startDiscoveryWithSsid:password:timeout:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Discovery\+With\+Ssid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{ssid }\item[{password\+:(NSString $\ast$)}]{password }\item[{timeout\+:(NSTime\+Interval)}]{timeout }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Starts to scan for devices. 
+\begin{DoxyParams}{Parameters}
+{\em ssid} & The name of the router. \\
+\hline
+{\em password} & The password of the router. \\
+\hline
+{\em timeout} & The timeout value. Unit\+: seconds. Default value\+: 100. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_discovery_aa9ffe59652fd803e0ea8d698d0038e8f}\label{interface_thing_smart_discovery_aa9ffe59652fd803e0ea8d698d0038e8f}} 
+\index{ThingSmartDiscovery@{ThingSmartDiscovery}!startDiscoveryWithSsid:password:timeout:success:failure:@{startDiscoveryWithSsid:password:timeout:success:failure:}}
+\index{startDiscoveryWithSsid:password:timeout:success:failure:@{startDiscoveryWithSsid:password:timeout:success:failure:}!ThingSmartDiscovery@{ThingSmartDiscovery}}
+\doxysubsubsection{\texorpdfstring{startDiscoveryWithSsid:password:timeout:success:failure:}{startDiscoveryWithSsid:password:timeout:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Discovery\+With\+Ssid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{ssid }\item[{password\+:(NSString $\ast$)}]{password }\item[{timeout\+:(NSTime\+Interval)}]{timeout }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Starts to scan for devices. 
+\begin{DoxyParams}{Parameters}
+{\em ssid} & The name of the router. \\
+\hline
+{\em password} & The password of the router. \\
+\hline
+{\em timeout} & The timeout value. Unit\+: seconds. Default value\+: 100. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_discovery_acbb5119366ea3abfdba44a55a3378081}\label{interface_thing_smart_discovery_acbb5119366ea3abfdba44a55a3378081}} 
+\index{ThingSmartDiscovery@{ThingSmartDiscovery}!startDiscoveryWithSsid:password:token:timeout:success:failure:@{startDiscoveryWithSsid:password:token:timeout:success:failure:}}
+\index{startDiscoveryWithSsid:password:token:timeout:success:failure:@{startDiscoveryWithSsid:password:token:timeout:success:failure:}!ThingSmartDiscovery@{ThingSmartDiscovery}}
+\doxysubsubsection{\texorpdfstring{startDiscoveryWithSsid:password:token:timeout:success:failure:}{startDiscoveryWithSsid:password:token:timeout:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Discovery\+With\+Ssid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{ssid }\item[{password\+:(NSString $\ast$)}]{password }\item[{token\+:(NSString $\ast$)}]{token }\item[{timeout\+:(NSTime\+Interval)}]{timeout }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Starts to scan for devices by using a token. 
+\begin{DoxyParams}{Parameters}
+{\em ssid} & The name of the router. \\
+\hline
+{\em password} & The password of the router. \\
+\hline
+{\em token} & The pairing token. \\
+\hline
+{\em timeout} & The timeout value. Unit\+: seconds. Default value\+: 100. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_discovery_acbb5119366ea3abfdba44a55a3378081}\label{interface_thing_smart_discovery_acbb5119366ea3abfdba44a55a3378081}} 
+\index{ThingSmartDiscovery@{ThingSmartDiscovery}!startDiscoveryWithSsid:password:token:timeout:success:failure:@{startDiscoveryWithSsid:password:token:timeout:success:failure:}}
+\index{startDiscoveryWithSsid:password:token:timeout:success:failure:@{startDiscoveryWithSsid:password:token:timeout:success:failure:}!ThingSmartDiscovery@{ThingSmartDiscovery}}
+\doxysubsubsection{\texorpdfstring{startDiscoveryWithSsid:password:token:timeout:success:failure:}{startDiscoveryWithSsid:password:token:timeout:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Discovery\+With\+Ssid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{ssid }\item[{password\+:(NSString $\ast$)}]{password }\item[{token\+:(NSString $\ast$)}]{token }\item[{timeout\+:(NSTime\+Interval)}]{timeout }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Starts to scan for devices by using a token. 
+\begin{DoxyParams}{Parameters}
+{\em ssid} & The name of the router. \\
+\hline
+{\em password} & The password of the router. \\
+\hline
+{\em token} & The pairing token. \\
+\hline
+{\em timeout} & The timeout value. Unit\+: seconds. Default value\+: 100. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_discovery_ac586f9f54be4cdfc494aa91fccda88fd}\label{interface_thing_smart_discovery_ac586f9f54be4cdfc494aa91fccda88fd}} 
+\index{ThingSmartDiscovery@{ThingSmartDiscovery}!stopDiscovery@{stopDiscovery}}
+\index{stopDiscovery@{stopDiscovery}!ThingSmartDiscovery@{ThingSmartDiscovery}}
+\doxysubsubsection{\texorpdfstring{stopDiscovery}{stopDiscovery}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Discovery \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Stops scanning for devices. 
+
+\mbox{\Hypertarget{interface_thing_smart_discovery_ac586f9f54be4cdfc494aa91fccda88fd}\label{interface_thing_smart_discovery_ac586f9f54be4cdfc494aa91fccda88fd}} 
+\index{ThingSmartDiscovery@{ThingSmartDiscovery}!stopDiscovery@{stopDiscovery}}
+\index{stopDiscovery@{stopDiscovery}!ThingSmartDiscovery@{ThingSmartDiscovery}}
+\doxysubsubsection{\texorpdfstring{stopDiscovery}{stopDiscovery}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Discovery \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Stops scanning for devices. 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_discovery_a5515195c43a364f25e496ad77d2db988}\label{interface_thing_smart_discovery_a5515195c43a364f25e496ad77d2db988}} 
+\index{ThingSmartDiscovery@{ThingSmartDiscovery}!delegate@{delegate}}
+\index{delegate@{delegate}!ThingSmartDiscovery@{ThingSmartDiscovery}}
+\doxysubsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_smart_discovery_delegate-p}{Thing\+Smart\+Discovery\+Delegate}} $>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm64195cf9458dc333af35e18797e4831bfb_source_l00028}{28}} of file \mbox{\hyperlink{_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm64195cf9458dc333af35e18797e4831bfb_source}{Thing\+Smart\+Discovery.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Activator\+Core\+Kit/\+Build/\+Thing\+Smart\+Activator\+Core\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Activator\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm64195cf9458dc333af35e18797e4831bfb}{Thing\+Smart\+Discovery.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Activator\+Core\+Kit/\+Build/\+Thing\+Smart\+Activator\+Core\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Activator\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm64065250ceb5f4d93fa78a382515e8a223}{Thing\+Smart\+Discovery.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\hypertarget{_w_t_l_cluster_8h_source}{}\doxysection{WTLCluster.\+h}
+\label{_w_t_l_cluster_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLCluster.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLCluster.h}}
+\mbox{\hyperlink{_w_t_l_cluster_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00002}00002 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00003}00003 \textcolor{comment}{ *    Copyright (c) 2021-\/2023 Project CHIP Authors}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00004}00004 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00005}00005 \textcolor{comment}{ *    Licensed under the Apache License, Version 2.0 (the "{}License"{});}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00006}00006 \textcolor{comment}{ *    you may not use this file except in compliance with the License.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00007}00007 \textcolor{comment}{ *    You may obtain a copy of the License at}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00008}00008 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00009}00009 \textcolor{comment}{ *        http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00010}00010 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00011}00011 \textcolor{comment}{ *    Unless required by applicable law or agreed to in writing, software}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00012}00012 \textcolor{comment}{ *    distributed under the License is distributed on an "{}AS IS"{} BASIS,}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00013}00013 \textcolor{comment}{ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00014}00014 \textcolor{comment}{ *    See the License for the specific language governing permissions and}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00015}00015 \textcolor{comment}{ *    limitations under the License.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00016}00016 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Water/WTLDefines.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00020}\mbox{\hyperlink{_w_t_l_cluster_8h_ae980e7031cb9b179b652f0dab2503677}{00020}} \mbox{\hyperlink{_w_t_l_cluster_8h_ae980e7031cb9b179b652f0dab2503677}{WTL\_DEPRECATED}}(\textcolor{stringliteral}{"{}ResponseHandler is not used"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00021}\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{00021}} typedef \textcolor{keywordtype}{void} (\string^ResponseHandler)(\textcolor{keywordtype}{id} \_Nullable value, NSError * \_Nullable \mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00022}\mbox{\hyperlink{_w_t_l_cluster_8h_aae277bc0cab6a6e2dd954c3bd0484de4}{00022}} \mbox{\hyperlink{_w_t_l_cluster_8h_ae980e7031cb9b179b652f0dab2503677}{WTL\_DEPRECATED}}("{}Please use \mbox{\hyperlink{_w_t_l_cluster_8h_adce6546b3c587c00857ef587702441ca}{WTLStatusCompletion}} instead"{},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00023}00023 typedef \textcolor{keywordtype}{void} (\string^StatusCompletion)(NSError * \_Nullable \mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00024}\mbox{\hyperlink{_w_t_l_cluster_8h_a314f19f2b8cfe675e3881146e4a3f68e}{00024}} \mbox{\hyperlink{_w_t_l_cluster_8h_ae980e7031cb9b179b652f0dab2503677}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00025}00025     "{}Please use \mbox{\hyperlink{_w_t_l_cluster_8h_a810a6df656356ef2e182f84dca940a5a}{WTLSubscriptionEstablishedHandler}} instead"{},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00026}00026 typedef \textcolor{keywordtype}{void} (\string^SubscriptionEstablishedHandler)(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00028}\mbox{\hyperlink{_w_t_l_cluster_8h_adce6546b3c587c00857ef587702441ca}{00028}} typedef \textcolor{keywordtype}{void} (\string^\mbox{\hyperlink{_w_t_l_cluster_8h_adce6546b3c587c00857ef587702441ca}{WTLStatusCompletion}})(NSError * \_Nullable \mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00029}\mbox{\hyperlink{_w_t_l_cluster_8h_a810a6df656356ef2e182f84dca940a5a}{00029}} typedef \textcolor{keywordtype}{void} (\string^\mbox{\hyperlink{_w_t_l_cluster_8h_a810a6df656356ef2e182f84dca940a5a}{WTLSubscriptionEstablishedHandler}})(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00031}00031 @class \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBaseDevice}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00033}00033 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00039}\mbox{\hyperlink{interface_w_t_l_cluster}{00039}} @interface \mbox{\hyperlink{interface_w_t_l_cluster}{WTLCluster}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00040}00040 -\/ (instancetype)init \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00041}00041 + (instancetype)new \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00042}00042 @end}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00044}\mbox{\hyperlink{category_w_t_l_cluster_07_device_08}{00044}} @interface \mbox{\hyperlink{interface_w_t_l_cluster}{WTLCluster}}(Device)}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00045}00045 -\/ (\mbox{\hyperlink{interface_w_t_l_base_device}{WTLBaseDevice}} *)device;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00046}00046 @end}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00054}\mbox{\hyperlink{interface_w_t_l_write_params}{00054}} @interface \mbox{\hyperlink{interface_w_t_l_write_params}{WTLWriteParams}} : NSObject <NSCopying>}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00071}\mbox{\hyperlink{interface_w_t_l_write_params_a54ac20afab27c1bd8215b75528b65aef}{00071}} @property (nonatomic, copy, nullable) NSNumber * timedWriteTimeout;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00079}\mbox{\hyperlink{interface_w_t_l_write_params_a0ef5f4dd6bac9fc0dda9de42b0263361}{00079}} @property (nonatomic, copy, nullable) NSNumber * dataVersion;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00081}00081 @end}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00089}\mbox{\hyperlink{interface_w_t_l_read_params}{00089}} @interface \mbox{\hyperlink{interface_w_t_l_read_params}{WTLReadParams}} : NSObject <NSCopying>}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00100}00100 @property (nonatomic, assign, getter=shouldFilterByFabric)}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00101}\mbox{\hyperlink{interface_w_t_l_read_params_a90029eae59335ffede9a68cecc536e99}{00101}}     BOOL filterByFabric \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00110}\mbox{\hyperlink{interface_w_t_l_read_params_a7397dd9f2bd059b814b28a42f157a4d1}{00110}} @property (nonatomic, copy, nullable) NSNumber * minEventNumber \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00112}00112 @end}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00120}\mbox{\hyperlink{interface_w_t_l_subscribe_params}{00120}} @interface \mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribeParams}} : \mbox{\hyperlink{interface_w_t_l_read_params}{WTLReadParams}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00131}00131 @property (nonatomic, assign, getter=shouldReplaceExistingSubscriptions)}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00132}\mbox{\hyperlink{interface_w_t_l_subscribe_params_abe1c4bc6dee79171f349257ac74ffd97}{00132}}     BOOL replaceExistingSubscriptions \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00133}00133 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00146}00146 @property (nonatomic, assign, getter=shouldResubscribeAutomatically)}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00147}\mbox{\hyperlink{interface_w_t_l_subscribe_params_a5709a73bccb2b9cd2f1847cd360c9397}{00147}}     BOOL resubscribeAutomatically \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00148}00148 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00154}\mbox{\hyperlink{interface_w_t_l_subscribe_params_a389b4a2c30b0792b43659d64cecc9c2b}{00154}} @property (nonatomic, copy) NSNumber * minInterval \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00155}00155 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00162}\mbox{\hyperlink{interface_w_t_l_subscribe_params_acb10458398656bab46452401daede6cc}{00162}} @property (nonatomic, copy) NSNumber * maxInterval \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00163}00163 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00171}00171 @property (nonatomic, assign, getter=shouldReportEventsUrgently)}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00172}\mbox{\hyperlink{interface_w_t_l_subscribe_params_ae5f4300ae15af3ceb7ac10bb61c00faa}{00172}}     BOOL reportEventsUrgently \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00173}00173 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00178}00178 -\/ (instancetype)initWithMinInterval:(NSNumber *)minInterval maxInterval:(NSNumber *)maxInterval;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00179}00179 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00180}00180 @end}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00181}00181 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00182}\mbox{\hyperlink{category_w_t_l_read_params_07_deprecated_08}{00182}} @interface \mbox{\hyperlink{interface_w_t_l_read_params}{WTLReadParams}} (Deprecated)}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00183}00183 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00184}\mbox{\hyperlink{category_w_t_l_read_params_07_deprecated_08_a71d4a61e70d4fc1e083d5120eaff0484}{00184}} @property (nonatomic, copy, nullable) NSNumber * fabricFiltered \mbox{\hyperlink{_w_t_l_cluster_8h_ae980e7031cb9b179b652f0dab2503677}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00185}00185     "{}Please use filterByFabric"{},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00186}00186 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00187}00187 @end}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00188}00188 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00189}\mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08}{00189}} @interface \mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribeParams}} (Deprecated)}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00190}00190 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00191}\mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_ab12707f3cce5990b2953150830158e8f}{00191}} @property (nonatomic, copy, nullable) NSNumber * keepPreviousSubscriptions \mbox{\hyperlink{_w_t_l_cluster_8h_ae980e7031cb9b179b652f0dab2503677}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00192}00192     "{}Please use replaceExistingSubscriptions"{},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00193}\mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_a9cb85189a06595b2315156873bdc4795}{00193}} @property (nonatomic, copy, nullable) NSNumber * autoResubscribe \mbox{\hyperlink{_w_t_l_cluster_8h_ae980e7031cb9b179b652f0dab2503677}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00194}00194     "{}Please use resubscribeAutomatically"{},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00195}00195 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00202}00202 -\/ (instancetype)init \mbox{\hyperlink{_w_t_l_cluster_8h_ae980e7031cb9b179b652f0dab2503677}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00203}00203     "{}Please use initWithMinInterval"{},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00204}00204 + (instancetype)new \mbox{\hyperlink{_w_t_l_cluster_8h_ae980e7031cb9b179b652f0dab2503677}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00205}00205     "{}Please use initWithMinInterval"{},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00206}00206 @end}
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00207}00207 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_cluster_8h_source_l00208}\mbox{\hyperlink{category_w_t_l_cluster_07_device_08_aa158e3081d3793975af1310f6cdbbcb1}{00208}} NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

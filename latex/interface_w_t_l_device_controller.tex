@@ -1,0 +1,616 @@
+\hypertarget{interface_w_t_l_device_controller}{}\doxysection{WTLDevice\+Controller Class Reference}
+\label{interface_w_t_l_device_controller}\index{WTLDeviceController@{WTLDeviceController}}
+
+
+{\ttfamily \#import $<$WTLDevice\+Controller.\+h$>$}
+
+Inheritance diagram for WTLDevice\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_w_t_l_device_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a67b7a9767a2857e40d5659146f28e7d6}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(NSNumber $\ast$controller\+Node\+ID) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a24ebe7c8a5f689dd19b8e2f496df22f2}{API\+\_\+\+AVAILABLE}}
+\item 
+(uint64\+\_\+t) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a970082551600399ef15bfdaae4f29efd}{get\+Compressed\+Fabric\+Id}}
+\item 
+(uint64\+\_\+t) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_ac43d8c51cd665e9c3410af017e1d8d1c}{get\+Fabric\+Index}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a85e692ac34b6694da0aa4a0fd36354a2}{clean\+Session}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_ac8f13adc0725ff91c9abef6411f0c50c}{get\+Peer\+Address\+And\+Port\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a05c0a9a2b27204c71f3d96c4b381dcba}{setup\+Commissioning\+Session\+With\+Payload\+:new\+Node\+ID\+:error\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a39d9b89f5f6baab37f68fb163a7eb3a7}{setup\+Commissioning\+Session\+With\+Payload\+:new\+Node\+ID\+:peripheral\+:error\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a51c8232a0a5054116a410ee8a73e5b64}{commission\+Node\+With\+ID\+:commissioning\+Params\+:error\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_ac1d9729f4b95c1cb2a5521f2d96a6026}{continue\+Commissioning\+Device\+:ignore\+Attestation\+Failure\+:error\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a8fb97d5b77b7d8e689c164d6448bd656}{cancel\+Commissioning\+For\+Node\+ID\+:error\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} $\ast$) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a4e83c756de336de93e3ebc61716ea119}{device\+Being\+Commissioned\+With\+Node\+ID\+:error\+:}}
+\item 
+(\mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} $\ast$) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_ab9705d7cac759d8fe05cd9bad51b00c6}{write\+Token\+With\+Node\+Id\+:active\+Token\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a793d128c698f775a428270456a3b1060}{write\+Token\+After\+Case\+:active\+Token\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a06491fa1f23078d903a5f60be75f2f8f}{set\+Device\+Controller\+Delegate\+:queue\+:}}
+\item 
+(NSData $\ast$\+\_\+\+Nullable) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a941eb04a3a77c7b0cd809fb948a851f2}{attestation\+Challenge\+For\+Device\+ID\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_ad627aa6c2026505ae013515cee675269}{shutdown}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a91568d93cdd2d6e7d3b0a1ef9173843c}{update\+Admin\+Vendor\+ID\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a2be9484fdf2b0477b062f5aa4ceea0e1}{is\+Device\+Session\+Exist\+With\+Node\+Id\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a86589036bb8af20a82b3978535338e2a}{shutdown\+Device\+Session\+For\+Node\+:}}
+\item 
+(NSNumber $\ast$controller\+Node\+Id) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a4e85165c94e2b02c2a961078fe4b0bc7}{WTL\+\_\+\+DEPRECATED}}
+\item 
+(nullable NSData $\ast$) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a3394bf2fc641fc7043fd2f06f98c0c01}{fetch\+Attestation\+Challenge\+For\+Device\+Id\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_adf7f9f821a13eaea034f69db2f8c9de8}{get\+Base\+Device\+:queue\+:completion\+Handler\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a73a7e88770381aacf308cbce42b4ab61}{pair\+Device\+:discriminator\+:setup\+PINCode\+:error\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a7384664a71872ad90fe43892ea61568a}{pair\+Device\+:address\+:port\+:setup\+PINCode\+:error\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a7a415157aaf32751b5988398a0884f4d}{pair\+Device\+:onboarding\+Payload\+:error\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a78b789d55ef0e6c542e602cae2596445}{commission\+Device\+:commissioning\+Params\+:error\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a837345373d4c7076b541e37df1bebaa0}{stop\+Device\+Pairing\+:error\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} $\ast$) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_acc8655518b9cb3222167b604dfb8a6b9}{get\+Device\+Being\+Commissioned\+:error\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_ac532f54864caf307c78760a3b6526f7f}{open\+Pairing\+Window\+:duration\+:error\+:}}
+\item 
+(nullable NSString $\ast$) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_aad3b8d7769389992024a2667e3fe9a3a}{open\+Pairing\+Window\+With\+PIN\+:duration\+:discriminator\+:setup\+PIN\+:error\+:}}
+\item 
+(nullable NSData $\ast$) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_adce2f3575e7e8d4deb46fee8d7edbb75}{compute\+Pase\+Verifier\+:iterations\+:salt\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_aa032a239556f2a31dc5b7b04e01f38b7}{set\+Pairing\+Delegate\+:queue\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_device_controller_a33a063ee6260f3c673ad0100f5206df3}{set\+Noc\+Chain\+Issuer\+:queue\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_w_t_l_device_controller_a67b7a9767a2857e40d5659146f28e7d6}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(nullable NSData $\ast$) + \mbox{\hyperlink{interface_w_t_l_device_controller_ab4cb9dd7e705e3c3e8ce8be8579bd817}{compute\+PASEVerifier\+For\+Setup\+Passcode\+:iterations\+:salt\+:error\+:}}
+\item 
+(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$) + \mbox{\hyperlink{interface_w_t_l_device_controller_a5ce021c70d41bbb5d0e1b81144d4aa2e}{shared\+Controller\+With\+Id\+:xpc\+Connect\+Block\+:}}
+\item 
+(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$) + \mbox{\hyperlink{interface_w_t_l_device_controller_af36db119182c3d799478617fb725734c}{shared\+Controller\+With\+ID\+:xpc\+Connect\+Block\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_device_controller_abbdc6f685161cd7ec85ea07557a3be9d}{encode\+XPCResponse\+Values\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_device_controller_a12db6f05ffdead5ffd3cd5e35adf94f5}{decode\+XPCResponse\+Values\+:}}
+\item 
+(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_device_controller_a286fbbc631ea710ffd9ca109e4be5dd2}{encode\+XPCRead\+Params\+:}}
+\item 
+(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_device_controller_a9ee0e33a54211c1053cb2307c26a9672}{decode\+XPCRead\+Params\+:}}
+\item 
+(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_device_controller_a9df260256ed134b1451019690206e083}{encode\+XPCSubscribe\+Params\+:}}
+\item 
+(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_device_controller_a04a772465cfeb05298c051d19914d26b}{decode\+XPCSubscribe\+Params\+:}}
+\item 
+(16.\+5) + \mbox{\hyperlink{interface_w_t_l_device_controller_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}
+\item 
+(16.\+5) + \mbox{\hyperlink{interface_w_t_l_device_controller_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+BOOL \mbox{\hyperlink{interface_w_t_l_device_controller_ac4ecfa6c4bb581910eb1767593127b18}{running}}
+\item 
+id$<$ WTLOperational\+Certificate\+Issuer $>$ \mbox{\hyperlink{interface_w_t_l_device_controller_a3d349169ade5978274264e2482b26d74}{operational\+Certificate\+Issuer}}
+\item 
+dispatch\+\_\+queue\+\_\+t \mbox{\hyperlink{interface_w_t_l_device_controller_acb2d73e92f651e6c24eb10753c14ffc8}{operational\+Certificate\+Issuer\+Queue}}
+\item 
+BOOL \mbox{\hyperlink{interface_w_t_l_device_controller_a465f3ea39130b21b13e7b2057cbad941}{is\+Pairing\+Thing\+Device}}
+\item 
+BOOL \mbox{\hyperlink{interface_w_t_l_device_controller_a38749842b5894ee7532e4ea1b8bbbb8c}{is\+Pairing\+Lite\+Device}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_8h_source_l00034}{34}} of file \mbox{\hyperlink{_w_t_l_device_controller_8h_source}{WTLDevice\+Controller.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a24ebe7c8a5f689dd19b8e2f496df22f2}\label{interface_w_t_l_device_controller_a24ebe7c8a5f689dd19b8e2f496df22f2}} 
+\index{WTLDeviceController@{WTLDeviceController}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$controller\+Node\+ID) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+Return the Node ID assigned to the controller. Will return nil if the controller is not running (and hence does not know its node id). \mbox{\Hypertarget{interface_w_t_l_device_controller_a941eb04a3a77c7b0cd809fb948a851f2}\label{interface_w_t_l_device_controller_a941eb04a3a77c7b0cd809fb948a851f2}} 
+\index{WTLDeviceController@{WTLDeviceController}!attestationChallengeForDeviceID:@{attestationChallengeForDeviceID:}}
+\index{attestationChallengeForDeviceID:@{attestationChallengeForDeviceID:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{attestationChallengeForDeviceID:}{attestationChallengeForDeviceID:}}
+{\footnotesize\ttfamily -\/ (NSData $\ast$\+\_\+\+Nullable) attestation\+Challenge\+For\+Device\+ID\+: \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Return the attestation challenge for the secure session of the device being commissioned.
+
+Attempts to retrieve the attestation challenge for a commissionee with the given Device ID. Returns nil if given Device ID does not match an active commissionee, or if a Secure Session is not availale. \mbox{\Hypertarget{interface_w_t_l_device_controller_a8fb97d5b77b7d8e689c164d6448bd656}\label{interface_w_t_l_device_controller_a8fb97d5b77b7d8e689c164d6448bd656}} 
+\index{WTLDeviceController@{WTLDeviceController}!cancelCommissioningForNodeID:error:@{cancelCommissioningForNodeID:error:}}
+\index{cancelCommissioningForNodeID:error:@{cancelCommissioningForNodeID:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{cancelCommissioningForNodeID:error:}{cancelCommissioningForNodeID:error:}}
+{\footnotesize\ttfamily -\/ (BOOL) cancel\+Commissioning\+For\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{error\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Cancel commissioning for the given node id. This will shut down any existing commissioning session for that node id. \mbox{\Hypertarget{interface_w_t_l_device_controller_a85e692ac34b6694da0aa4a0fd36354a2}\label{interface_w_t_l_device_controller_a85e692ac34b6694da0aa4a0fd36354a2}} 
+\index{WTLDeviceController@{WTLDeviceController}!cleanSession@{cleanSession}}
+\index{cleanSession@{cleanSession}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{cleanSession}{cleanSession}}
+{\footnotesize\ttfamily -\/ (void) clean\+Session \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a78b789d55ef0e6c542e602cae2596445}\label{interface_w_t_l_device_controller_a78b789d55ef0e6c542e602cae2596445}} 
+\index{WTLDeviceController@{WTLDeviceController}!commissionDevice:commissioningParams:error:@{commissionDevice:commissioningParams:error:}}
+\index{commissionDevice:commissioningParams:error:@{commissionDevice:commissioningParams:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{commissionDevice:commissioningParams:error:}{commissionDevice:commissioningParams:error:}}
+{\footnotesize\ttfamily -\/ (BOOL) commission\+Device\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{device\+Id }\item[{commissioning\+Params\+:(\mbox{\hyperlink{interface_w_t_l_commissioning_parameters}{WTLCommissioning\+Parameters}} $\ast$)}]{commissioning\+Params }\item[{error\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_device_controller_a51c8232a0a5054116a410ee8a73e5b64}{commission\+Node\+With\+ID\+:commissioning\+Params\+:error\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_a78b789d55ef0e6c542e602cae2596445}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a51c8232a0a5054116a410ee8a73e5b64}\label{interface_w_t_l_device_controller_a51c8232a0a5054116a410ee8a73e5b64}} 
+\index{WTLDeviceController@{WTLDeviceController}!commissionNodeWithID:commissioningParams:error:@{commissionNodeWithID:commissioningParams:error:}}
+\index{commissionNodeWithID:commissioningParams:error:@{commissionNodeWithID:commissioningParams:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{commissionNodeWithID:commissioningParams:error:}{commissionNodeWithID:commissioningParams:error:}}
+{\footnotesize\ttfamily -\/ (BOOL) commission\+Node\+With\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{commissioning\+Params\+:(\mbox{\hyperlink{interface_w_t_l_commissioning_parameters}{WTLCommissioning\+Parameters}} $\ast$)}]{commissioning\+Params }\item[{error\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Commission the node with the given node ID. The node ID must match the node ID that was used to set up the commissioning session. \mbox{\Hypertarget{interface_w_t_l_device_controller_adce2f3575e7e8d4deb46fee8d7edbb75}\label{interface_w_t_l_device_controller_adce2f3575e7e8d4deb46fee8d7edbb75}} 
+\index{WTLDeviceController@{WTLDeviceController}!computePaseVerifier:iterations:salt:@{computePaseVerifier:iterations:salt:}}
+\index{computePaseVerifier:iterations:salt:@{computePaseVerifier:iterations:salt:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{computePaseVerifier:iterations:salt:}{computePaseVerifier:iterations:salt:}}
+{\footnotesize\ttfamily -\/ (nullable NSData $\ast$) compute\+Pase\+Verifier\+: \begin{DoxyParamCaption}\item[{(uint32\+\_\+t)}]{setup\+Pincode }\item[{iterations\+:(uint32\+\_\+t)}]{iterations }\item[{salt\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_device_controller_ab4cb9dd7e705e3c3e8ce8be8579bd817}{compute\+PASEVerifier\+For\+Setup\+Passcode\+:iterations\+:salt\+:error\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_adce2f3575e7e8d4deb46fee8d7edbb75}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_ab4cb9dd7e705e3c3e8ce8be8579bd817}\label{interface_w_t_l_device_controller_ab4cb9dd7e705e3c3e8ce8be8579bd817}} 
+\index{WTLDeviceController@{WTLDeviceController}!computePASEVerifierForSetupPasscode:iterations:salt:error:@{computePASEVerifierForSetupPasscode:iterations:salt:error:}}
+\index{computePASEVerifierForSetupPasscode:iterations:salt:error:@{computePASEVerifierForSetupPasscode:iterations:salt:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{computePASEVerifierForSetupPasscode:iterations:salt:error:}{computePASEVerifierForSetupPasscode:iterations:salt:error:}}
+{\footnotesize\ttfamily + (nullable NSData $\ast$) compute\+PASEVerifier\+For\+Setup\+Passcode\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{setup\+Passcode }\item[{iterations\+:(NSNumber $\ast$)}]{iterations }\item[{salt\+:(NSData $\ast$)}]{salt }\item[{error\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Compute a PASE verifier for the desired setup passcode.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em setup\+Passcode} & The desired passcode to use. \\
+\hline
+\mbox{\texttt{ in}}  & {\em iterations} & The number of iterations to use when generating the verifier. \\
+\hline
+\mbox{\texttt{ in}}  & {\em salt} & The 16-\/byte salt for verifier computation.\\
+\hline
+\end{DoxyParams}
+Returns nil on errors (e.\+g. salt has the wrong size), otherwise the computed verifier bytes. \mbox{\Hypertarget{interface_w_t_l_device_controller_ac1d9729f4b95c1cb2a5521f2d96a6026}\label{interface_w_t_l_device_controller_ac1d9729f4b95c1cb2a5521f2d96a6026}} 
+\index{WTLDeviceController@{WTLDeviceController}!continueCommissioningDevice:ignoreAttestationFailure:error:@{continueCommissioningDevice:ignoreAttestationFailure:error:}}
+\index{continueCommissioningDevice:ignoreAttestationFailure:error:@{continueCommissioningDevice:ignoreAttestationFailure:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{continueCommissioningDevice:ignoreAttestationFailure:error:}{continueCommissioningDevice:ignoreAttestationFailure:error:}}
+{\footnotesize\ttfamily -\/ (BOOL) continue\+Commissioning\+Device\+: \begin{DoxyParamCaption}\item[{(void $\ast$)}]{opaque\+Device\+Handle }\item[{ignore\+Attestation\+Failure\+:(BOOL)}]{ignore\+Attestation\+Failure }\item[{error\+:(NSError $\ast$\+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Call this method after \mbox{\hyperlink{protocol_w_t_l_device_attestation_delegate-p}{WTLDevice\+Attestation\+Delegate}} device\+Attestation\+Failed\+For\+Controller\+:opaque\+Device\+Handle\+:error\+: or device\+Attestation\+Completed\+For\+Controller\+:opaque\+Device\+Handle\+:attestation\+Device\+Info\+:error\+: is called to continue commissioning the device. \mbox{\Hypertarget{interface_w_t_l_device_controller_a9ee0e33a54211c1053cb2307c26a9672}\label{interface_w_t_l_device_controller_a9ee0e33a54211c1053cb2307c26a9672}} 
+\index{WTLDeviceController@{WTLDeviceController}!decodeXPCReadParams:@{decodeXPCReadParams:}}
+\index{decodeXPCReadParams:@{decodeXPCReadParams:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{decodeXPCReadParams:}{decodeXPCReadParams:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} $\ast$\+\_\+\+Nullable) decode\+XPCRead\+Params\+: \begin{DoxyParamCaption}\item[{(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable)}]{params }\end{DoxyParamCaption}}
+
+Returns a deserialized read parameter object from an object received over XPC 
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a9ee0e33a54211c1053cb2307c26a9672}{WTLDevice\+Controller(\+XPC)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a12db6f05ffdead5ffd3cd5e35adf94f5}\label{interface_w_t_l_device_controller_a12db6f05ffdead5ffd3cd5e35adf94f5}} 
+\index{WTLDeviceController@{WTLDeviceController}!decodeXPCResponseValues:@{decodeXPCResponseValues:}}
+\index{decodeXPCResponseValues:@{decodeXPCResponseValues:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{decodeXPCResponseValues:}{decodeXPCResponseValues:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable) decode\+XPCResponse\+Values\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{values }\end{DoxyParamCaption}}
+
+Returns a decoded values object from a values object received from XPC for read, write and command interactions 
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a12db6f05ffdead5ffd3cd5e35adf94f5}{WTLDevice\+Controller(\+XPC)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a04a772465cfeb05298c051d19914d26b}\label{interface_w_t_l_device_controller_a04a772465cfeb05298c051d19914d26b}} 
+\index{WTLDeviceController@{WTLDeviceController}!decodeXPCSubscribeParams:@{decodeXPCSubscribeParams:}}
+\index{decodeXPCSubscribeParams:@{decodeXPCSubscribeParams:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{decodeXPCSubscribeParams:}{decodeXPCSubscribeParams:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable) decode\+XPCSubscribe\+Params\+: \begin{DoxyParamCaption}\item[{(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable)}]{params }\end{DoxyParamCaption}}
+
+Returns a deserialized subscribe parameter object from an object received over XPC 
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a04a772465cfeb05298c051d19914d26b}{WTLDevice\+Controller(\+XPC)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a4e83c756de336de93e3ebc61716ea119}\label{interface_w_t_l_device_controller_a4e83c756de336de93e3ebc61716ea119}} 
+\index{WTLDeviceController@{WTLDeviceController}!deviceBeingCommissionedWithNodeID:error:@{deviceBeingCommissionedWithNodeID:error:}}
+\index{deviceBeingCommissionedWithNodeID:error:@{deviceBeingCommissionedWithNodeID:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{deviceBeingCommissionedWithNodeID:error:}{deviceBeingCommissionedWithNodeID:error:}}
+{\footnotesize\ttfamily -\/ (nullable \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} $\ast$) device\+Being\+Commissioned\+With\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{error\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Get an \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} for a commissioning session that was set up for the given node ID. Returns nil if no such commissioning session is available. \mbox{\Hypertarget{interface_w_t_l_device_controller_a286fbbc631ea710ffd9ca109e4be5dd2}\label{interface_w_t_l_device_controller_a286fbbc631ea710ffd9ca109e4be5dd2}} 
+\index{WTLDeviceController@{WTLDeviceController}!encodeXPCReadParams:@{encodeXPCReadParams:}}
+\index{encodeXPCReadParams:@{encodeXPCReadParams:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{encodeXPCReadParams:}{encodeXPCReadParams:}}
+{\footnotesize\ttfamily + (NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable) encode\+XPCRead\+Params\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} $\ast$)}]{params }\end{DoxyParamCaption}}
+
+Returns a serialized read parameter object to send over XPC 
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a286fbbc631ea710ffd9ca109e4be5dd2}{WTLDevice\+Controller(\+XPC)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_abbdc6f685161cd7ec85ea07557a3be9d}\label{interface_w_t_l_device_controller_abbdc6f685161cd7ec85ea07557a3be9d}} 
+\index{WTLDeviceController@{WTLDeviceController}!encodeXPCResponseValues:@{encodeXPCResponseValues:}}
+\index{encodeXPCResponseValues:@{encodeXPCResponseValues:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{encodeXPCResponseValues:}{encodeXPCResponseValues:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable) encode\+XPCResponse\+Values\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSDictionary$<$ NSString $\ast$, id $>$ $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{values }\end{DoxyParamCaption}}
+
+Returns an encoded values object to send over XPC for read, write and command interactions 
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_abbdc6f685161cd7ec85ea07557a3be9d}{WTLDevice\+Controller(\+XPC)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a9df260256ed134b1451019690206e083}\label{interface_w_t_l_device_controller_a9df260256ed134b1451019690206e083}} 
+\index{WTLDeviceController@{WTLDeviceController}!encodeXPCSubscribeParams:@{encodeXPCSubscribeParams:}}
+\index{encodeXPCSubscribeParams:@{encodeXPCSubscribeParams:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{encodeXPCSubscribeParams:}{encodeXPCSubscribeParams:}}
+{\footnotesize\ttfamily + (NSDictionary$<$ NSString $\ast$, id $>$ $\ast$\+\_\+\+Nullable) encode\+XPCSubscribe\+Params\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\end{DoxyParamCaption}}
+
+Returns a serialized subscribe parameter object to send over XPC 
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a9df260256ed134b1451019690206e083}{WTLDevice\+Controller(\+XPC)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a3394bf2fc641fc7043fd2f06f98c0c01}\label{interface_w_t_l_device_controller_a3394bf2fc641fc7043fd2f06f98c0c01}} 
+\index{WTLDeviceController@{WTLDeviceController}!fetchAttestationChallengeForDeviceId:@{fetchAttestationChallengeForDeviceId:}}
+\index{fetchAttestationChallengeForDeviceId:@{fetchAttestationChallengeForDeviceId:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{fetchAttestationChallengeForDeviceId:}{fetchAttestationChallengeForDeviceId:}}
+{\footnotesize\ttfamily -\/ (nullable NSData $\ast$) fetch\+Attestation\+Challenge\+For\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(\char`\"{}Please use attestation\+Challenge\+For\+Device\+ID\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_a3394bf2fc641fc7043fd2f06f98c0c01}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_adf7f9f821a13eaea034f69db2f8c9de8}\label{interface_w_t_l_device_controller_adf7f9f821a13eaea034f69db2f8c9de8}} 
+\index{WTLDeviceController@{WTLDeviceController}!getBaseDevice:queue:completionHandler:@{getBaseDevice:queue:completionHandler:}}
+\index{getBaseDevice:queue:completionHandler:@{getBaseDevice:queue:completionHandler:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{getBaseDevice:queue:completionHandler:}{getBaseDevice:queue:completionHandler:}}
+{\footnotesize\ttfamily -\/ (BOOL) get\+Base\+Device\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{device\+ID }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+Handler\+:(\char`\"{}Please use \char`\"{})}]{\mbox{[}\+WTLBase\+Device device\+With\+Node\+ID\+:controller\+:\mbox{]} }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_adf7f9f821a13eaea034f69db2f8c9de8}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a970082551600399ef15bfdaae4f29efd}\label{interface_w_t_l_device_controller_a970082551600399ef15bfdaae4f29efd}} 
+\index{WTLDeviceController@{WTLDeviceController}!getCompressedFabricId@{getCompressedFabricId}}
+\index{getCompressedFabricId@{getCompressedFabricId}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{getCompressedFabricId}{getCompressedFabricId}}
+{\footnotesize\ttfamily -\/ (uint64\+\_\+t) get\+Compressed\+Fabric\+Id \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_acc8655518b9cb3222167b604dfb8a6b9}\label{interface_w_t_l_device_controller_acc8655518b9cb3222167b604dfb8a6b9}} 
+\index{WTLDeviceController@{WTLDeviceController}!getDeviceBeingCommissioned:error:@{getDeviceBeingCommissioned:error:}}
+\index{getDeviceBeingCommissioned:error:@{getDeviceBeingCommissioned:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{getDeviceBeingCommissioned:error:}{getDeviceBeingCommissioned:error:}}
+{\footnotesize\ttfamily -\/ (nullable \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} $\ast$) get\+Device\+Being\+Commissioned\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{device\+Id }\item[{error\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_device_controller_a4e83c756de336de93e3ebc61716ea119}{device\+Being\+Commissioned\+With\+Node\+ID\+:error\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_acc8655518b9cb3222167b604dfb8a6b9}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_ac43d8c51cd665e9c3410af017e1d8d1c}\label{interface_w_t_l_device_controller_ac43d8c51cd665e9c3410af017e1d8d1c}} 
+\index{WTLDeviceController@{WTLDeviceController}!getFabricIndex@{getFabricIndex}}
+\index{getFabricIndex@{getFabricIndex}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{getFabricIndex}{getFabricIndex}}
+{\footnotesize\ttfamily -\/ (uint64\+\_\+t) get\+Fabric\+Index \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_ac8f13adc0725ff91c9abef6411f0c50c}\label{interface_w_t_l_device_controller_ac8f13adc0725ff91c9abef6411f0c50c}} 
+\index{WTLDeviceController@{WTLDeviceController}!getPeerAddressAndPort:@{getPeerAddressAndPort:}}
+\index{getPeerAddressAndPort:@{getPeerAddressAndPort:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{getPeerAddressAndPort:}{getPeerAddressAndPort:}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) get\+Peer\+Address\+And\+Port\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{device\+Id }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a2be9484fdf2b0477b062f5aa4ceea0e1}\label{interface_w_t_l_device_controller_a2be9484fdf2b0477b062f5aa4ceea0e1}} 
+\index{WTLDeviceController@{WTLDeviceController}!isDeviceSessionExistWithNodeId:@{isDeviceSessionExistWithNodeId:}}
+\index{isDeviceSessionExistWithNodeId:@{isDeviceSessionExistWithNodeId:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{isDeviceSessionExistWithNodeId:}{isDeviceSessionExistWithNodeId:}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Device\+Session\+Exist\+With\+Node\+Id\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a67b7a9767a2857e40d5659146f28e7d6}\label{interface_w_t_l_device_controller_a67b7a9767a2857e40d5659146f28e7d6}} 
+\index{WTLDeviceController@{WTLDeviceController}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Controllers are created via the WTLDevice\+Controller\+Factory object. \mbox{\Hypertarget{interface_w_t_l_device_controller_a67b7a9767a2857e40d5659146f28e7d6}\label{interface_w_t_l_device_controller_a67b7a9767a2857e40d5659146f28e7d6}} 
+\index{WTLDeviceController@{WTLDeviceController}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_ac532f54864caf307c78760a3b6526f7f}\label{interface_w_t_l_device_controller_ac532f54864caf307c78760a3b6526f7f}} 
+\index{WTLDeviceController@{WTLDeviceController}!openPairingWindow:duration:error:@{openPairingWindow:duration:error:}}
+\index{openPairingWindow:duration:error:@{openPairingWindow:duration:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{openPairingWindow:duration:error:}{openPairingWindow:duration:error:}}
+{\footnotesize\ttfamily -\/ (BOOL) open\+Pairing\+Window\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{device\+ID }\item[{duration\+:(NSUInteger)}]{duration }\item[{error\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} or \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} open\+Commissioning\+Window\+With\+Setup\+Passcode\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_ac532f54864caf307c78760a3b6526f7f}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_aad3b8d7769389992024a2667e3fe9a3a}\label{interface_w_t_l_device_controller_aad3b8d7769389992024a2667e3fe9a3a}} 
+\index{WTLDeviceController@{WTLDeviceController}!openPairingWindowWithPIN:duration:discriminator:setupPIN:error:@{openPairingWindowWithPIN:duration:discriminator:setupPIN:error:}}
+\index{openPairingWindowWithPIN:duration:discriminator:setupPIN:error:@{openPairingWindowWithPIN:duration:discriminator:setupPIN:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{openPairingWindowWithPIN:duration:discriminator:setupPIN:error:}{openPairingWindowWithPIN:duration:discriminator:setupPIN:error:}}
+{\footnotesize\ttfamily -\/ (nullable NSString $\ast$) open\+Pairing\+Window\+With\+PIN\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{device\+ID }\item[{duration\+:(NSUInteger)}]{duration }\item[{discriminator\+:(NSUInteger)}]{discriminator }\item[{setup\+PIN\+:(NSUInteger)}]{setup\+PIN }\item[{error\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_device}{WTLDevice}} or \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} open\+Commissioning\+Window\+With\+Setup\+Passcode\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_aad3b8d7769389992024a2667e3fe9a3a}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a7384664a71872ad90fe43892ea61568a}\label{interface_w_t_l_device_controller_a7384664a71872ad90fe43892ea61568a}} 
+\index{WTLDeviceController@{WTLDeviceController}!pairDevice:address:port:setupPINCode:error:@{pairDevice:address:port:setupPINCode:error:}}
+\index{pairDevice:address:port:setupPINCode:error:@{pairDevice:address:port:setupPINCode:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{pairDevice:address:port:setupPINCode:error:}{pairDevice:address:port:setupPINCode:error:}}
+{\footnotesize\ttfamily -\/ (BOOL) pair\+Device\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{device\+ID }\item[{address\+:(NSString $\ast$)}]{address }\item[{port\+:(uint16\+\_\+t)}]{port }\item[{setup\+PINCode\+:(uint32\+\_\+t)}]{setup\+PINCode }\item[{error\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_device_controller_a05c0a9a2b27204c71f3d96c4b381dcba}{setup\+Commissioning\+Session\+With\+Payload\+:new\+Node\+ID\+:error\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_a7384664a71872ad90fe43892ea61568a}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a73a7e88770381aacf308cbce42b4ab61}\label{interface_w_t_l_device_controller_a73a7e88770381aacf308cbce42b4ab61}} 
+\index{WTLDeviceController@{WTLDeviceController}!pairDevice:discriminator:setupPINCode:error:@{pairDevice:discriminator:setupPINCode:error:}}
+\index{pairDevice:discriminator:setupPINCode:error:@{pairDevice:discriminator:setupPINCode:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{pairDevice:discriminator:setupPINCode:error:}{pairDevice:discriminator:setupPINCode:error:}}
+{\footnotesize\ttfamily -\/ (BOOL) pair\+Device\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{device\+ID }\item[{discriminator\+:(uint16\+\_\+t)}]{discriminator }\item[{setup\+PINCode\+:(uint32\+\_\+t)}]{setup\+PINCode }\item[{error\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_device_controller_a05c0a9a2b27204c71f3d96c4b381dcba}{setup\+Commissioning\+Session\+With\+Payload\+:new\+Node\+ID\+:error\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_a73a7e88770381aacf308cbce42b4ab61}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a7a415157aaf32751b5988398a0884f4d}\label{interface_w_t_l_device_controller_a7a415157aaf32751b5988398a0884f4d}} 
+\index{WTLDeviceController@{WTLDeviceController}!pairDevice:onboardingPayload:error:@{pairDevice:onboardingPayload:error:}}
+\index{pairDevice:onboardingPayload:error:@{pairDevice:onboardingPayload:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{pairDevice:onboardingPayload:error:}{pairDevice:onboardingPayload:error:}}
+{\footnotesize\ttfamily -\/ (BOOL) pair\+Device\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{device\+ID }\item[{onboarding\+Payload\+:(NSString $\ast$)}]{onboarding\+Payload }\item[{error\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_device_controller_a05c0a9a2b27204c71f3d96c4b381dcba}{setup\+Commissioning\+Session\+With\+Payload\+:new\+Node\+ID\+:error\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_a7a415157aaf32751b5988398a0884f4d}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a06491fa1f23078d903a5f60be75f2f8f}\label{interface_w_t_l_device_controller_a06491fa1f23078d903a5f60be75f2f8f}} 
+\index{WTLDeviceController@{WTLDeviceController}!setDeviceControllerDelegate:queue:@{setDeviceControllerDelegate:queue:}}
+\index{setDeviceControllerDelegate:queue:@{setDeviceControllerDelegate:queue:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{setDeviceControllerDelegate:queue:}{setDeviceControllerDelegate:queue:}}
+{\footnotesize\ttfamily -\/ (void) set\+Device\+Controller\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ WTLDevice\+Controller\+Delegate $>$)}]{delegate }\item[{queue\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Set the Delegate for the device controller as well as the Queue on which the Delegate callbacks will be triggered
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em delegate} & The delegate the commissioning process should use\\
+\hline
+\mbox{\texttt{ in}}  & {\em queue} & The queue on which the callbacks will be delivered \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a33a063ee6260f3c673ad0100f5206df3}\label{interface_w_t_l_device_controller_a33a063ee6260f3c673ad0100f5206df3}} 
+\index{WTLDeviceController@{WTLDeviceController}!setNocChainIssuer:queue:@{setNocChainIssuer:queue:}}
+\index{setNocChainIssuer:queue:@{setNocChainIssuer:queue:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{setNocChainIssuer:queue:}{setNocChainIssuer:queue:}}
+{\footnotesize\ttfamily -\/ (void) set\+Noc\+Chain\+Issuer\+: \begin{DoxyParamCaption}\item[{(id$<$ WTLNOCChain\+Issuer $>$)}]{noc\+Chain\+Issuer }\item[{queue\+:(\char`\"{}Please set the \mbox{\hyperlink{interface_w_t_l_device_controller_a3d349169ade5978274264e2482b26d74}{operational\+Certificate\+Issuer}} in the \mbox{\hyperlink{interface_w_t_l_device_controller_startup_params}{WTLDevice\+Controller\+Startup\+Params}} instead.\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_a33a063ee6260f3c673ad0100f5206df3}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_aa032a239556f2a31dc5b7b04e01f38b7}\label{interface_w_t_l_device_controller_aa032a239556f2a31dc5b7b04e01f38b7}} 
+\index{WTLDeviceController@{WTLDeviceController}!setPairingDelegate:queue:@{setPairingDelegate:queue:}}
+\index{setPairingDelegate:queue:@{setPairingDelegate:queue:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{setPairingDelegate:queue:}{setPairingDelegate:queue:}}
+{\footnotesize\ttfamily -\/ (void) set\+Pairing\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ WTLDevice\+Pairing\+Delegate $>$)}]{delegate }\item[{queue\+:(\char`\"{}Please use set\+Device\+Controller\+Delegate\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_aa032a239556f2a31dc5b7b04e01f38b7}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a05c0a9a2b27204c71f3d96c4b381dcba}\label{interface_w_t_l_device_controller_a05c0a9a2b27204c71f3d96c4b381dcba}} 
+\index{WTLDeviceController@{WTLDeviceController}!setupCommissioningSessionWithPayload:newNodeID:error:@{setupCommissioningSessionWithPayload:newNodeID:error:}}
+\index{setupCommissioningSessionWithPayload:newNodeID:error:@{setupCommissioningSessionWithPayload:newNodeID:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{setupCommissioningSessionWithPayload:newNodeID:error:}{setupCommissioningSessionWithPayload:newNodeID:error:}}
+{\footnotesize\ttfamily -\/ (BOOL) setup\+Commissioning\+Session\+With\+Payload\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}} $\ast$)}]{payload }\item[{new\+Node\+ID\+:(NSNumber $\ast$)}]{new\+Node\+ID }\item[{error\+:(macos(13.\+1))}]{ }\item[{(watchos(9.\+2))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+2))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Set up a commissioning session for a device, using the provided setup payload to discover it and connect to it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & a setup payload (probably created from a QR code or numeric code onboarding payload). \\
+\hline
+{\em new\+Node\+ID} & the planned node id for the node. @error error indication if discovery can\textquotesingle{}t start at all (e.\+g. because the setup payload is invalid).\\
+\hline
+\end{DoxyParams}
+The IP and port for the device will be discovered automatically based on the provided discriminator.
+
+Then a PASE session will be established with the device, unless an error occurs. WTLDevice\+Controller\+Delegate will be notified as follows\+:
+
+
+\begin{DoxyItemize}
+\item Discovery fails\+: on\+Status\+Update with WTLCommissioning\+Status\+Failed.
+\item Discovery succeeds but commissioning session setup fails\+: on\+Pairing\+Complete with an error.
+\item Commissioning session setup succeeds\+: on\+Pairing\+Complete with no error.
+\end{DoxyItemize}
+
+Once a commissioning session is set up, get\+Device\+Being\+Commissioned can be used to get an \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} and discover what sort of network credentials the device might need, and commission\+Device can be used to commission the device. \mbox{\Hypertarget{interface_w_t_l_device_controller_a39d9b89f5f6baab37f68fb163a7eb3a7}\label{interface_w_t_l_device_controller_a39d9b89f5f6baab37f68fb163a7eb3a7}} 
+\index{WTLDeviceController@{WTLDeviceController}!setupCommissioningSessionWithPayload:newNodeID:peripheral:error:@{setupCommissioningSessionWithPayload:newNodeID:peripheral:error:}}
+\index{setupCommissioningSessionWithPayload:newNodeID:peripheral:error:@{setupCommissioningSessionWithPayload:newNodeID:peripheral:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{setupCommissioningSessionWithPayload:newNodeID:peripheral:error:}{setupCommissioningSessionWithPayload:newNodeID:peripheral:error:}}
+{\footnotesize\ttfamily -\/ (BOOL) setup\+Commissioning\+Session\+With\+Payload\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}} $\ast$)}]{payload }\item[{new\+Node\+ID\+:(NSNumber $\ast$)}]{new\+Node\+ID }\item[{peripheral\+:(void $\ast$)}]{peripheral }\item[{error\+:(NSError $\ast$\+\_\+\+\_\+autoreleasing \+\_\+\+Nullable $\ast$)}]{error }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a5ce021c70d41bbb5d0e1b81144d4aa2e}\label{interface_w_t_l_device_controller_a5ce021c70d41bbb5d0e1b81144d4aa2e}} 
+\index{WTLDeviceController@{WTLDeviceController}!sharedControllerWithId:xpcConnectBlock:@{sharedControllerWithId:xpcConnectBlock:}}
+\index{sharedControllerWithId:xpcConnectBlock:@{sharedControllerWithId:xpcConnectBlock:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{sharedControllerWithId:xpcConnectBlock:}{sharedControllerWithId:xpcConnectBlock:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$) shared\+Controller\+With\+Id\+: \begin{DoxyParamCaption}\item[{(id$<$ NSCopying $>$ \+\_\+\+Nullable)}]{controller\+ID }\item[{xpc\+Connect\+Block\+:(\char`\"{}Please use \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_af36db119182c3d799478617fb725734c}{shared\+Controller\+With\+ID\+:xpc\+Connect\+Block\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated___x_p_c_08_a5ce021c70d41bbb5d0e1b81144d4aa2e}{WTLDevice\+Controller(\+Deprecated\+\_\+\+XPC)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_af36db119182c3d799478617fb725734c}\label{interface_w_t_l_device_controller_af36db119182c3d799478617fb725734c}} 
+\index{WTLDeviceController@{WTLDeviceController}!sharedControllerWithID:xpcConnectBlock:@{sharedControllerWithID:xpcConnectBlock:}}
+\index{sharedControllerWithID:xpcConnectBlock:@{sharedControllerWithID:xpcConnectBlock:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{sharedControllerWithID:xpcConnectBlock:}{sharedControllerWithID:xpcConnectBlock:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDevice\+Controller}} $\ast$) shared\+Controller\+With\+ID\+: \begin{DoxyParamCaption}\item[{(id$<$ NSCopying $>$ \+\_\+\+Nullable)}]{controller\+ID }\item[{xpc\+Connect\+Block\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Returns a shared device controller proxy for the controller object over XPC connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller\+ID} & an implementation specific id in case multiple shared device controllers are available over XPC connection \\
+\hline
+{\em xpc\+Connect\+Block} & block to connect to an XPC listener serving the shared device controllers in an implementation specific way \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_af36db119182c3d799478617fb725734c}{WTLDevice\+Controller(\+XPC)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_ad627aa6c2026505ae013515cee675269}\label{interface_w_t_l_device_controller_ad627aa6c2026505ae013515cee675269}} 
+\index{WTLDeviceController@{WTLDeviceController}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{shutdown}{shutdown}}
+{\footnotesize\ttfamily -\/ (void) shutdown \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Shut down the controller. Calls to shutdown after the first one are NO-\/\+OPs. This must be called, either directly or via shutting down the WTLDevice\+Controller\+Factory, to avoid leaking the controller. \mbox{\Hypertarget{interface_w_t_l_device_controller_a86589036bb8af20a82b3978535338e2a}\label{interface_w_t_l_device_controller_a86589036bb8af20a82b3978535338e2a}} 
+\index{WTLDeviceController@{WTLDeviceController}!shutdownDeviceSessionForNode:@{shutdownDeviceSessionForNode:}}
+\index{shutdownDeviceSessionForNode:@{shutdownDeviceSessionForNode:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{shutdownDeviceSessionForNode:}{shutdownDeviceSessionForNode:}}
+{\footnotesize\ttfamily -\/ (BOOL) shutdown\+Device\+Session\+For\+Node\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a837345373d4c7076b541e37df1bebaa0}\label{interface_w_t_l_device_controller_a837345373d4c7076b541e37df1bebaa0}} 
+\index{WTLDeviceController@{WTLDeviceController}!stopDevicePairing:error:@{stopDevicePairing:error:}}
+\index{stopDevicePairing:error:@{stopDevicePairing:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{stopDevicePairing:error:}{stopDevicePairing:error:}}
+{\footnotesize\ttfamily -\/ (BOOL) stop\+Device\+Pairing\+: \begin{DoxyParamCaption}\item[{(uint64\+\_\+t)}]{device\+ID }\item[{error\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_device_controller_a8fb97d5b77b7d8e689c164d6448bd656}{cancel\+Commissioning\+For\+Node\+ID\+:error\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_a837345373d4c7076b541e37df1bebaa0}{WTLDevice\+Controller(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a463e998b6a1ac29f0b75a70b56094fd7}\label{interface_w_t_l_device_controller_a463e998b6a1ac29f0b75a70b56094fd7}} 
+\index{WTLDeviceController@{WTLDeviceController}!tvos@{tvos}}
+\index{tvos@{tvos}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{tvos}{tvos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (16.\+5) tvos \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns an NSXPCInterface configured for \mbox{\hyperlink{protocol_w_t_l_device_controller_server_protocol-p}{WTLDevice\+Controller\+Server\+Protocol}}. 
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{WTLDevice\+Controller(\+XPC)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a463e998b6a1ac29f0b75a70b56094fd7}\label{interface_w_t_l_device_controller_a463e998b6a1ac29f0b75a70b56094fd7}} 
+\index{WTLDeviceController@{WTLDeviceController}!tvos@{tvos}}
+\index{tvos@{tvos}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{tvos}{tvos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (16.\+5) tvos \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Returns an NSXPCInterface configured for \mbox{\hyperlink{protocol_w_t_l_device_controller_client_protocol-p}{WTLDevice\+Controller\+Client\+Protocol}}. 
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{WTLDevice\+Controller(\+XPC)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a91568d93cdd2d6e7d3b0a1ef9173843c}\label{interface_w_t_l_device_controller_a91568d93cdd2d6e7d3b0a1ef9173843c}} 
+\index{WTLDeviceController@{WTLDeviceController}!updateAdminVendorID:@{updateAdminVendorID:}}
+\index{updateAdminVendorID:@{updateAdminVendorID:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{updateAdminVendorID:}{updateAdminVendorID:}}
+{\footnotesize\ttfamily -\/ (void) update\+Admin\+Vendor\+ID\+: \begin{DoxyParamCaption}\item[{(uint16\+\_\+t)}]{vid }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a793d128c698f775a428270456a3b1060}\label{interface_w_t_l_device_controller_a793d128c698f775a428270456a3b1060}} 
+\index{WTLDeviceController@{WTLDeviceController}!writeTokenAfterCase:activeToken:@{writeTokenAfterCase:activeToken:}}
+\index{writeTokenAfterCase:activeToken:@{writeTokenAfterCase:activeToken:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{writeTokenAfterCase:activeToken:}{writeTokenAfterCase:activeToken:}}
+{\footnotesize\ttfamily -\/ (void) write\+Token\+After\+Case\+: \begin{DoxyParamCaption}\item[{(long long)}]{node\+ID }\item[{active\+Token\+:(NSString $\ast$)}]{token }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_ab9705d7cac759d8fe05cd9bad51b00c6}\label{interface_w_t_l_device_controller_ab9705d7cac759d8fe05cd9bad51b00c6}} 
+\index{WTLDeviceController@{WTLDeviceController}!writeTokenWithNodeId:activeToken:error:@{writeTokenWithNodeId:activeToken:error:}}
+\index{writeTokenWithNodeId:activeToken:error:@{writeTokenWithNodeId:activeToken:error:}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{writeTokenWithNodeId:activeToken:error:}{writeTokenWithNodeId:activeToken:error:}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} $\ast$) write\+Token\+With\+Node\+Id\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{active\+Token\+:(NSString $\ast$)}]{token }\item[{error\+:(NSError $\ast$\+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+Optionally pre-\/warm the controller for setting up a commissioning session. This may be called before setup\+Commissioning\+Session\+With\+Payload if it\textquotesingle{}s known that a commissioning attempt will soon take place but the commissioning payload is not known yet.
+
+For example this may do a BLE scan in advance so results are ready earlier once the discriminator is known. \mbox{\Hypertarget{interface_w_t_l_device_controller_a4e85165c94e2b02c2a961078fe4b0bc7}\label{interface_w_t_l_device_controller_a4e85165c94e2b02c2a961078fe4b0bc7}} 
+\index{WTLDeviceController@{WTLDeviceController}!WTL\_DEPRECATED@{WTL\_DEPRECATED}}
+\index{WTL\_DEPRECATED@{WTL\_DEPRECATED}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED}{WTL\_DEPRECATED}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$controller\+Node\+Id) WTL\+\_\+\+DEPRECATED \begin{DoxyParamCaption}\item[{(\char`\"{}Please use controller\+Node\+ID\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_device_controller_07_x_p_c_08_a463e998b6a1ac29f0b75a70b56094fd7}{tvos}}(16.\+1, 16.\+4))}]{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_device_controller_07_deprecated_08_a4e85165c94e2b02c2a961078fe4b0bc7}{WTLDevice\+Controller(\+Deprecated)}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a38749842b5894ee7532e4ea1b8bbbb8c}\label{interface_w_t_l_device_controller_a38749842b5894ee7532e4ea1b8bbbb8c}} 
+\index{WTLDeviceController@{WTLDeviceController}!isPairingLiteDevice@{isPairingLiteDevice}}
+\index{isPairingLiteDevice@{isPairingLiteDevice}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{isPairingLiteDevice}{isPairingLiteDevice}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Pairing\+Lite\+Device\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_8h_source_l00059}{59}} of file \mbox{\hyperlink{_w_t_l_device_controller_8h_source}{WTLDevice\+Controller.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a465f3ea39130b21b13e7b2057cbad941}\label{interface_w_t_l_device_controller_a465f3ea39130b21b13e7b2057cbad941}} 
+\index{WTLDeviceController@{WTLDeviceController}!isPairingThingDevice@{isPairingThingDevice}}
+\index{isPairingThingDevice@{isPairingThingDevice}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{isPairingThingDevice}{isPairingThingDevice}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Pairing\+Thing\+Device\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_8h_source_l00057}{57}} of file \mbox{\hyperlink{_w_t_l_device_controller_8h_source}{WTLDevice\+Controller.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_a3d349169ade5978274264e2482b26d74}\label{interface_w_t_l_device_controller_a3d349169ade5978274264e2482b26d74}} 
+\index{WTLDeviceController@{WTLDeviceController}!operationalCertificateIssuer@{operationalCertificateIssuer}}
+\index{operationalCertificateIssuer@{operationalCertificateIssuer}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{operationalCertificateIssuer}{operationalCertificateIssuer}}
+{\footnotesize\ttfamily -\/ (id$<$WTLOperational\+Certificate\+Issuer$>$) operational\+Certificate\+Issuer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_8h_source_l00054}{54}} of file \mbox{\hyperlink{_w_t_l_device_controller_8h_source}{WTLDevice\+Controller.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_acb2d73e92f651e6c24eb10753c14ffc8}\label{interface_w_t_l_device_controller_acb2d73e92f651e6c24eb10753c14ffc8}} 
+\index{WTLDeviceController@{WTLDeviceController}!operationalCertificateIssuerQueue@{operationalCertificateIssuerQueue}}
+\index{operationalCertificateIssuerQueue@{operationalCertificateIssuerQueue}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{operationalCertificateIssuerQueue}{operationalCertificateIssuerQueue}}
+{\footnotesize\ttfamily -\/ (dispatch\+\_\+queue\+\_\+t) operational\+Certificate\+Issuer\+Queue\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_8h_source_l00055}{55}} of file \mbox{\hyperlink{_w_t_l_device_controller_8h_source}{WTLDevice\+Controller.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_device_controller_ac4ecfa6c4bb581910eb1767593127b18}\label{interface_w_t_l_device_controller_ac4ecfa6c4bb581910eb1767593127b18}} 
+\index{WTLDeviceController@{WTLDeviceController}!running@{running}}
+\index{running@{running}!WTLDeviceController@{WTLDeviceController}}
+\doxysubsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily -\/ (BOOL) running\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+If true, the controller has not been shut down yet. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_controller_8h_source_l00045}{45}} of file \mbox{\hyperlink{_w_t_l_device_controller_8h_source}{WTLDevice\+Controller.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_device_controller_8h}{WTLDevice\+Controller.\+h}}\end{DoxyCompactItemize}

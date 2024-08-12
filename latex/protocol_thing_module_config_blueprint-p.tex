@@ -1,0 +1,176 @@
+\hypertarget{protocol_thing_module_config_blueprint-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Module\+Config\+Blueprint\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_module_config_blueprint-p}\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Module\+Config\+Blueprint.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Module\+Config\+Blueprint\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.886598cm]{protocol_thing_module_config_blueprint-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{protocol_thing_module_config_blueprint-p_ab2d32ce5b01c46ac557f70e09fca021a}{config\+Value\+For\+Key\+Path\+:}}
+\item 
+(nullable Class) -\/ \mbox{\hyperlink{protocol_thing_module_config_blueprint-p_a51b994fe5f0d3abfbf5a20dd7fc16cd5}{valid\+Class\+Of\+Config\+Class\+:}}
+\item 
+(nullable Class) -\/ \mbox{\hyperlink{protocol_thing_module_config_blueprint-p_aa118add8c6f4cd32fbea45485d528407}{valid\+Class\+Of\+Config\+Key\+Path\+:}}
+\item 
+(id) -\/ \mbox{\hyperlink{protocol_thing_module_config_blueprint-p_ab2d32ce5b01c46ac557f70e09fca021a}{config\+Value\+For\+Key\+Path\+:}}
+\item 
+(nullable Class) -\/ \mbox{\hyperlink{protocol_thing_module_config_blueprint-p_a51b994fe5f0d3abfbf5a20dd7fc16cd5}{valid\+Class\+Of\+Config\+Class\+:}}
+\item 
+(nullable Class) -\/ \mbox{\hyperlink{protocol_thing_module_config_blueprint-p_aa118add8c6f4cd32fbea45485d528407}{valid\+Class\+Of\+Config\+Key\+Path\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSDictionary $\ast$ \mbox{\hyperlink{protocol_thing_module_config_blueprint-p_a2674b44d1e97cefd98e987515ece7e75}{original\+Data}}
+\item 
+Class$<$ \mbox{\hyperlink{protocol_thing_module_application_blueprint-p}{Thing\+Module\+Application\+Blueprint}} $>$ \mbox{\hyperlink{protocol_thing_module_config_blueprint-p_a6ba2d4ac8f0a3bf8935bf5047fcb809c}{application\+Module}}
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ Class$<$ \mbox{\hyperlink{protocol_thing_module_service_register_protocol-p}{Thing\+Module\+Service\+Register\+Protocol}} $>$ $>$ $\ast$ \mbox{\hyperlink{protocol_thing_module_config_blueprint-p_ae0578398672c00c08319c3035c0b314c}{build\+Modules}}
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ Class$<$ \mbox{\hyperlink{protocol_thing_module_tab_register_protocol-p}{Thing\+Module\+Tab\+Register\+Protocol}} $>$ $>$ $\ast$ \mbox{\hyperlink{protocol_thing_module_config_blueprint-p_aaf6134253944b2acecc59eebac190206}{module\+On\+Tab\+Bar}}
+\item 
+Class$<$ \mbox{\hyperlink{protocol_thing_module_tab_register_protocol-p}{Thing\+Module\+Tab\+Register\+Protocol}} $>$ \mbox{\hyperlink{protocol_thing_module_config_blueprint-p_a11b815ab7b0d0110db925b6598ffcd62}{tab\+Selected\+Module}}
+\item 
+NSDictionary$<$ NSString $\ast$, Class $>$ $\ast$ \mbox{\hyperlink{protocol_thing_module_config_blueprint-p_a86a10bedbb32a031804c770a5a342790}{mix\+Mapping}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source_l00016}{16}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source}{Thing\+Module\+Config\+Blueprint.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_module_config_blueprint-p_ab2d32ce5b01c46ac557f70e09fca021a}\label{protocol_thing_module_config_blueprint-p_ab2d32ce5b01c46ac557f70e09fca021a}} 
+\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}!configValueForKeyPath:@{configValueForKeyPath:}}
+\index{configValueForKeyPath:@{configValueForKeyPath:}!$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+\doxysubsubsection{\texorpdfstring{configValueForKeyPath:}{configValueForKeyPath:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (id) config\+Value\+For\+Key\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key\+Path }\end{DoxyParamCaption}}
+
+value for specified key path in the original data key path like that is supported \+: a\+\_\+path a\+\_\+path.\+sub\+\_\+path a\+\_\+path.\mbox{[}2\mbox{]}.sub\+\_\+path
+
+根据所给key\+Path，在original\+Data中查找并返回数据 支持点语法 xxx.\+xxx 支持数组 xxx.\mbox{[}2\mbox{]}.xxx \mbox{\Hypertarget{protocol_thing_module_config_blueprint-p_ab2d32ce5b01c46ac557f70e09fca021a}\label{protocol_thing_module_config_blueprint-p_ab2d32ce5b01c46ac557f70e09fca021a}} 
+\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}!configValueForKeyPath:@{configValueForKeyPath:}}
+\index{configValueForKeyPath:@{configValueForKeyPath:}!$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+\doxysubsubsection{\texorpdfstring{configValueForKeyPath:}{configValueForKeyPath:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (id) config\+Value\+For\+Key\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{key\+Path }\end{DoxyParamCaption}}
+
+value for specified key path in the original data key path like that is supported \+: a\+\_\+path a\+\_\+path.\+sub\+\_\+path a\+\_\+path.\mbox{[}2\mbox{]}.sub\+\_\+path
+
+根据所给key\+Path，在original\+Data中查找并返回数据 支持点语法 xxx.\+xxx 支持数组 xxx.\mbox{[}2\mbox{]}.xxx \mbox{\Hypertarget{protocol_thing_module_config_blueprint-p_a51b994fe5f0d3abfbf5a20dd7fc16cd5}\label{protocol_thing_module_config_blueprint-p_a51b994fe5f0d3abfbf5a20dd7fc16cd5}} 
+\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}!validClassOfConfigClass:@{validClassOfConfigClass:}}
+\index{validClassOfConfigClass:@{validClassOfConfigClass:}!$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+\doxysubsubsection{\texorpdfstring{validClassOfConfigClass:}{validClassOfConfigClass:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (nullable Class) valid\+Class\+Of\+Config\+Class\+: \begin{DoxyParamCaption}\item[{(nonnull NSString $\ast$)}]{module\+Name }\end{DoxyParamCaption}}
+
+the class that find out by the module name eg. input\+: "{}Test\+Module"{} return\+: Test\+Module\+Impl or Test\+Module class
+
+根据根据所给模块名返回正确的类 \mbox{\Hypertarget{protocol_thing_module_config_blueprint-p_a51b994fe5f0d3abfbf5a20dd7fc16cd5}\label{protocol_thing_module_config_blueprint-p_a51b994fe5f0d3abfbf5a20dd7fc16cd5}} 
+\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}!validClassOfConfigClass:@{validClassOfConfigClass:}}
+\index{validClassOfConfigClass:@{validClassOfConfigClass:}!$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+\doxysubsubsection{\texorpdfstring{validClassOfConfigClass:}{validClassOfConfigClass:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (nullable Class) valid\+Class\+Of\+Config\+Class\+: \begin{DoxyParamCaption}\item[{(nonnull NSString $\ast$)}]{module\+Name }\end{DoxyParamCaption}}
+
+the class that find out by the module name eg. input\+: "{}Test\+Module"{} return\+: Test\+Module\+Impl or Test\+Module class
+
+根据根据所给模块名返回正确的类 \mbox{\Hypertarget{protocol_thing_module_config_blueprint-p_aa118add8c6f4cd32fbea45485d528407}\label{protocol_thing_module_config_blueprint-p_aa118add8c6f4cd32fbea45485d528407}} 
+\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}!validClassOfConfigKeyPath:@{validClassOfConfigKeyPath:}}
+\index{validClassOfConfigKeyPath:@{validClassOfConfigKeyPath:}!$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+\doxysubsubsection{\texorpdfstring{validClassOfConfigKeyPath:}{validClassOfConfigKeyPath:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (nullable Class) valid\+Class\+Of\+Config\+Key\+Path\+: \begin{DoxyParamCaption}\item[{(nonnull NSString $\ast$)}]{key\+Path }\end{DoxyParamCaption}}
+
+class for specified key path in the original data key path like that is supported \+: a\+\_\+path a\+\_\+path.\+sub\+\_\+path a\+\_\+path.\mbox{[}2\mbox{]}.sub\+\_\+path
+
+根据所给key\+Path，在original\+Data中查找并返回正确的class 支持点语法 xxx.\+xxx 支持数组 xxx.\mbox{[}2\mbox{]}.xxx \mbox{\Hypertarget{protocol_thing_module_config_blueprint-p_aa118add8c6f4cd32fbea45485d528407}\label{protocol_thing_module_config_blueprint-p_aa118add8c6f4cd32fbea45485d528407}} 
+\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}!validClassOfConfigKeyPath:@{validClassOfConfigKeyPath:}}
+\index{validClassOfConfigKeyPath:@{validClassOfConfigKeyPath:}!$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+\doxysubsubsection{\texorpdfstring{validClassOfConfigKeyPath:}{validClassOfConfigKeyPath:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (nullable Class) valid\+Class\+Of\+Config\+Key\+Path\+: \begin{DoxyParamCaption}\item[{(nonnull NSString $\ast$)}]{key\+Path }\end{DoxyParamCaption}}
+
+class for specified key path in the original data key path like that is supported \+: a\+\_\+path a\+\_\+path.\+sub\+\_\+path a\+\_\+path.\mbox{[}2\mbox{]}.sub\+\_\+path
+
+根据所给key\+Path，在original\+Data中查找并返回正确的class 支持点语法 xxx.\+xxx 支持数组 xxx.\mbox{[}2\mbox{]}.xxx 
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{protocol_thing_module_config_blueprint-p_a6ba2d4ac8f0a3bf8935bf5047fcb809c}\label{protocol_thing_module_config_blueprint-p_a6ba2d4ac8f0a3bf8935bf5047fcb809c}} 
+\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}!applicationModule@{applicationModule}}
+\index{applicationModule@{applicationModule}!$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+\doxysubsubsection{\texorpdfstring{applicationModule}{applicationModule}}
+{\footnotesize\ttfamily -\/ (Class$<$ \mbox{\hyperlink{protocol_thing_module_application_blueprint-p}{Thing\+Module\+Application\+Blueprint}} $>$) application\+Module\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source_l00020}{20}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source}{Thing\+Module\+Config\+Blueprint.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_module_config_blueprint-p_ae0578398672c00c08319c3035c0b314c}\label{protocol_thing_module_config_blueprint-p_ae0578398672c00c08319c3035c0b314c}} 
+\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}!buildModules@{buildModules}}
+\index{buildModules@{buildModules}!$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+\doxysubsubsection{\texorpdfstring{buildModules}{buildModules}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$Class$<$\mbox{\hyperlink{protocol_thing_module_service_register_protocol-p}{Thing\+Module\+Service\+Register\+Protocol}}$>$ $>$$\ast$) build\+Modules\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+all modules that need to be loaded
+
+所有需要被加载的模块 
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source_l00027}{27}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source}{Thing\+Module\+Config\+Blueprint.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_module_config_blueprint-p_a86a10bedbb32a031804c770a5a342790}\label{protocol_thing_module_config_blueprint-p_a86a10bedbb32a031804c770a5a342790}} 
+\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}!mixMapping@{mixMapping}}
+\index{mixMapping@{mixMapping}!$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+\doxysubsubsection{\texorpdfstring{mixMapping}{mixMapping}}
+{\footnotesize\ttfamily -\/ (NSDictionary$<$NSString $\ast$, Class$>$$\ast$) mix\+Mapping\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+map of Mix Mode 
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source_l00047}{47}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source}{Thing\+Module\+Config\+Blueprint.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_module_config_blueprint-p_aaf6134253944b2acecc59eebac190206}\label{protocol_thing_module_config_blueprint-p_aaf6134253944b2acecc59eebac190206}} 
+\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}!moduleOnTabBar@{moduleOnTabBar}}
+\index{moduleOnTabBar@{moduleOnTabBar}!$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+\doxysubsubsection{\texorpdfstring{moduleOnTabBar}{moduleOnTabBar}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$Class$<$\mbox{\hyperlink{protocol_thing_module_tab_register_protocol-p}{Thing\+Module\+Tab\+Register\+Protocol}}$>$ $>$$\ast$) module\+On\+Tab\+Bar\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+modules that need to display on the tab bar
+
+想要展示在tab上的模块 
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source_l00034}{34}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source}{Thing\+Module\+Config\+Blueprint.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_module_config_blueprint-p_a2674b44d1e97cefd98e987515ece7e75}\label{protocol_thing_module_config_blueprint-p_a2674b44d1e97cefd98e987515ece7e75}} 
+\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}!originalData@{originalData}}
+\index{originalData@{originalData}!$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+\doxysubsubsection{\texorpdfstring{originalData}{originalData}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) original\+Data\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source_l00018}{18}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source}{Thing\+Module\+Config\+Blueprint.\+h}}.
+
+\mbox{\Hypertarget{protocol_thing_module_config_blueprint-p_a11b815ab7b0d0110db925b6598ffcd62}\label{protocol_thing_module_config_blueprint-p_a11b815ab7b0d0110db925b6598ffcd62}} 
+\index{$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}!tabSelectedModule@{tabSelectedModule}}
+\index{tabSelectedModule@{tabSelectedModule}!$<$ThingModuleConfigBlueprint$>$@{$<$ThingModuleConfigBlueprint$>$}}
+\doxysubsubsection{\texorpdfstring{tabSelectedModule}{tabSelectedModule}}
+{\footnotesize\ttfamily -\/ (Class$<$\mbox{\hyperlink{protocol_thing_module_tab_register_protocol-p}{Thing\+Module\+Tab\+Register\+Protocol}}$>$) tab\+Selected\+Module\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+default select module on tab bar
+
+tab\+Bar上默认选中的模块 
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source_l00041}{41}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h_source}{Thing\+Module\+Config\+Blueprint.\+h}}.
+
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Module\+Manager/\+Thing\+Module\+Manager.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Module\+Manager.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h}{Thing\+Module\+Config\+Blueprint.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Module\+Manager/\+Thing\+Module\+Manager.\+xcframework/ios-\/arm64/\+Thing\+Module\+Manager.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_config_blueprint_8h}{Thing\+Module\+Config\+Blueprint.\+h}}\end{DoxyCompactItemize}

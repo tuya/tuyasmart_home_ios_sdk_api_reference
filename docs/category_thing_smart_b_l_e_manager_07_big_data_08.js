@@ -1,5 +1,7 @@
 var category_thing_smart_b_l_e_manager_07_big_data_08 =
 [
+    [ "deleteBleBigDataChannel:success:failure:", "category_thing_smart_b_l_e_manager_07_big_data_08.html#a9cae666eded12e227604fa6ea13a1a1d", null ],
+    [ "deleteBleBigDataChannel:success:failure:", "category_thing_smart_b_l_e_manager_07_big_data_08.html#a9cae666eded12e227604fa6ea13a1a1d", null ],
     [ "postBleBigDataChannel:params:progress:success:failure:", "category_thing_smart_b_l_e_manager_07_big_data_08.html#abdc4aca00284a87de21499742d594d22", null ],
     [ "postBleBigDataChannel:params:progress:success:failure:", "category_thing_smart_b_l_e_manager_07_big_data_08.html#abdc4aca00284a87de21499742d594d22", null ],
     [ "postBleBigDataChannel:params:receivedDpsProgress:receivedDps:uploadClouldProgress:success:failure:", "category_thing_smart_b_l_e_manager_07_big_data_08.html#a39a7172e100287bd20943d7aa173e006", null ],

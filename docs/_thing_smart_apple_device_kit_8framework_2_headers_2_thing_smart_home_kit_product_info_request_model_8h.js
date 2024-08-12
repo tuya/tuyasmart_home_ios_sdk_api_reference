@@ -1,0 +1,4 @@
+var _thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_product_info_request_model_8h =
+[
+    [ "ThingSmartHomeKitProductInfoRequestModel", "interface_thing_smart_home_kit_product_info_request_model.html", "interface_thing_smart_home_kit_product_info_request_model" ]
+];

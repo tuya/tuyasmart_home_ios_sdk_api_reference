@@ -1,0 +1,252 @@
+\hypertarget{interface_thing_smart_pegasus_activator}{}\doxysection{Thing\+Smart\+Pegasus\+Activator Class Reference}
+\label{interface_thing_smart_pegasus_activator}\index{ThingSmartPegasusActivator@{ThingSmartPegasusActivator}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Pegasus\+Activator.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Pegasus\+Activator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_pegasus_activator}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_pegasus_activator_a53411cd839ad42b5937ea32880375e01}{start\+Discover\+With\+Dev\+IDs\+:server\+Timeout\+:client\+Timeout\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_pegasus_activator_a2d06aa91c03344dd2e1a49fdede34a68}{stop\+Discover\+With\+Dev\+IDs\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_pegasus_activator_afb07849e96da264efc9920b6214d2a21}{start\+Activator\+With\+Dev\+IDs\+:\+UUIDs\+:token\+:timeout\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_pegasus_activator_aca17f50723acdfd9e187a9252f9321f7}{cancel\+Activator\+With\+Dev\+IDs\+:\+UUIDs\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_pegasus_activator_a53411cd839ad42b5937ea32880375e01}{start\+Discover\+With\+Dev\+IDs\+:server\+Timeout\+:client\+Timeout\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_pegasus_activator_a2d06aa91c03344dd2e1a49fdede34a68}{stop\+Discover\+With\+Dev\+IDs\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_pegasus_activator_afb07849e96da264efc9920b6214d2a21}{start\+Activator\+With\+Dev\+IDs\+:\+UUIDs\+:token\+:timeout\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_pegasus_activator_aca17f50723acdfd9e187a9252f9321f7}{cancel\+Activator\+With\+Dev\+IDs\+:\+UUIDs\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$) + \mbox{\hyperlink{interface_thing_smart_pegasus_activator_a29ba47b83249726b9cbc9435efca113b}{pegasus\+Device\+List\+With\+Home\+ID\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$) + \mbox{\hyperlink{interface_thing_smart_pegasus_activator_a29ba47b83249726b9cbc9435efca113b}{pegasus\+Device\+List\+With\+Home\+ID\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_smart_pegasus_activator_delegate-p}{Thing\+Smart\+Pegasus\+Activator\+Delegate}} $>$ \mbox{\hyperlink{interface_thing_smart_pegasus_activator_af4b2799e7a4c005558a184538deeb2eb}{delegate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm64bd7aecec5be31189ed8958ee1184b156_source_l00030}{30}} of file \mbox{\hyperlink{_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm64bd7aecec5be31189ed8958ee1184b156_source}{Thing\+Smart\+Pegasus\+Activator.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_pegasus_activator_aca17f50723acdfd9e187a9252f9321f7}\label{interface_thing_smart_pegasus_activator_aca17f50723acdfd9e187a9252f9321f7}} 
+\index{ThingSmartPegasusActivator@{ThingSmartPegasusActivator}!cancelActivatorWithDevIDs:UUIDs:success:failure:@{cancelActivatorWithDevIDs:UUIDs:success:failure:}}
+\index{cancelActivatorWithDevIDs:UUIDs:success:failure:@{cancelActivatorWithDevIDs:UUIDs:success:failure:}!ThingSmartPegasusActivator@{ThingSmartPegasusActivator}}
+\doxysubsubsection{\texorpdfstring{cancelActivatorWithDevIDs:UUIDs:success:failure:}{cancelActivatorWithDevIDs:UUIDs:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) cancel\+Activator\+With\+Dev\+IDs\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+IDs }\item[{UUIDs\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{UUIDs }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Cancels the Pegasus-\/based pairing of devices. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+IDs} & A list of devices that support Pegasus. \\
+\hline
+{\em UUIDs} & A list of UUIDs of devices to be paired. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_pegasus_activator_aca17f50723acdfd9e187a9252f9321f7}\label{interface_thing_smart_pegasus_activator_aca17f50723acdfd9e187a9252f9321f7}} 
+\index{ThingSmartPegasusActivator@{ThingSmartPegasusActivator}!cancelActivatorWithDevIDs:UUIDs:success:failure:@{cancelActivatorWithDevIDs:UUIDs:success:failure:}}
+\index{cancelActivatorWithDevIDs:UUIDs:success:failure:@{cancelActivatorWithDevIDs:UUIDs:success:failure:}!ThingSmartPegasusActivator@{ThingSmartPegasusActivator}}
+\doxysubsubsection{\texorpdfstring{cancelActivatorWithDevIDs:UUIDs:success:failure:}{cancelActivatorWithDevIDs:UUIDs:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) cancel\+Activator\+With\+Dev\+IDs\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+IDs }\item[{UUIDs\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{UUIDs }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Cancels the Pegasus-\/based pairing of devices. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+IDs} & A list of devices that support Pegasus. \\
+\hline
+{\em UUIDs} & A list of UUIDs of devices to be paired. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_pegasus_activator_a29ba47b83249726b9cbc9435efca113b}\label{interface_thing_smart_pegasus_activator_a29ba47b83249726b9cbc9435efca113b}} 
+\index{ThingSmartPegasusActivator@{ThingSmartPegasusActivator}!pegasusDeviceListWithHomeID:@{pegasusDeviceListWithHomeID:}}
+\index{pegasusDeviceListWithHomeID:@{pegasusDeviceListWithHomeID:}!ThingSmartPegasusActivator@{ThingSmartPegasusActivator}}
+\doxysubsubsection{\texorpdfstring{pegasusDeviceListWithHomeID:}{pegasusDeviceListWithHomeID:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$) pegasus\+Device\+List\+With\+Home\+ID\+: \begin{DoxyParamCaption}\item[{(long long)}]{home\+ID }\end{DoxyParamCaption}}
+
+Returns the devices that support Pegasus. 
+\begin{DoxyParams}{Parameters}
+{\em home\+ID} & The home ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of devices that support Pegasus. 
+\end{DoxyReturn}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_pegasus_activator_07_home_08_a29ba47b83249726b9cbc9435efca113b}{Thing\+Smart\+Pegasus\+Activator(\+Home)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_pegasus_activator_a29ba47b83249726b9cbc9435efca113b}\label{interface_thing_smart_pegasus_activator_a29ba47b83249726b9cbc9435efca113b}} 
+\index{ThingSmartPegasusActivator@{ThingSmartPegasusActivator}!pegasusDeviceListWithHomeID:@{pegasusDeviceListWithHomeID:}}
+\index{pegasusDeviceListWithHomeID:@{pegasusDeviceListWithHomeID:}!ThingSmartPegasusActivator@{ThingSmartPegasusActivator}}
+\doxysubsubsection{\texorpdfstring{pegasusDeviceListWithHomeID:}{pegasusDeviceListWithHomeID:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$) pegasus\+Device\+List\+With\+Home\+ID\+: \begin{DoxyParamCaption}\item[{(long long)}]{home\+ID }\end{DoxyParamCaption}}
+
+Returns the devices that support Pegasus. 
+\begin{DoxyParams}{Parameters}
+{\em home\+ID} & The home ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of devices that support Pegasus. 
+\end{DoxyReturn}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_pegasus_activator_07_home_08_a29ba47b83249726b9cbc9435efca113b}{Thing\+Smart\+Pegasus\+Activator(\+Home)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_pegasus_activator_afb07849e96da264efc9920b6214d2a21}\label{interface_thing_smart_pegasus_activator_afb07849e96da264efc9920b6214d2a21}} 
+\index{ThingSmartPegasusActivator@{ThingSmartPegasusActivator}!startActivatorWithDevIDs:UUIDs:token:timeout:success:failure:@{startActivatorWithDevIDs:UUIDs:token:timeout:success:failure:}}
+\index{startActivatorWithDevIDs:UUIDs:token:timeout:success:failure:@{startActivatorWithDevIDs:UUIDs:token:timeout:success:failure:}!ThingSmartPegasusActivator@{ThingSmartPegasusActivator}}
+\doxysubsubsection{\texorpdfstring{startActivatorWithDevIDs:UUIDs:token:timeout:success:failure:}{startActivatorWithDevIDs:UUIDs:token:timeout:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Activator\+With\+Dev\+IDs\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+IDs }\item[{UUIDs\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{UUIDs }\item[{token\+:(NSString $\ast$)}]{token }\item[{timeout\+:(NSTime\+Interval)}]{timeout }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Pairs specified devices by using Pegasus. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+IDs} & A list of devices that support Pegasus. \\
+\hline
+{\em UUIDs} & A list of UUIDs of devices to be configured. \\
+\hline
+{\em token} & The pairing token. \\
+\hline
+{\em timeout} & The timeout value. Unit\+: seconds. Default value\+: 100. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_pegasus_activator_afb07849e96da264efc9920b6214d2a21}\label{interface_thing_smart_pegasus_activator_afb07849e96da264efc9920b6214d2a21}} 
+\index{ThingSmartPegasusActivator@{ThingSmartPegasusActivator}!startActivatorWithDevIDs:UUIDs:token:timeout:success:failure:@{startActivatorWithDevIDs:UUIDs:token:timeout:success:failure:}}
+\index{startActivatorWithDevIDs:UUIDs:token:timeout:success:failure:@{startActivatorWithDevIDs:UUIDs:token:timeout:success:failure:}!ThingSmartPegasusActivator@{ThingSmartPegasusActivator}}
+\doxysubsubsection{\texorpdfstring{startActivatorWithDevIDs:UUIDs:token:timeout:success:failure:}{startActivatorWithDevIDs:UUIDs:token:timeout:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Activator\+With\+Dev\+IDs\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+IDs }\item[{UUIDs\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{UUIDs }\item[{token\+:(NSString $\ast$)}]{token }\item[{timeout\+:(NSTime\+Interval)}]{timeout }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Pairs specified devices by using Pegasus. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+IDs} & A list of devices that support Pegasus. \\
+\hline
+{\em UUIDs} & A list of UUIDs of devices to be configured. \\
+\hline
+{\em token} & The pairing token. \\
+\hline
+{\em timeout} & The timeout value. Unit\+: seconds. Default value\+: 100. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_pegasus_activator_a53411cd839ad42b5937ea32880375e01}\label{interface_thing_smart_pegasus_activator_a53411cd839ad42b5937ea32880375e01}} 
+\index{ThingSmartPegasusActivator@{ThingSmartPegasusActivator}!startDiscoverWithDevIDs:serverTimeout:clientTimeout:success:failure:@{startDiscoverWithDevIDs:serverTimeout:clientTimeout:success:failure:}}
+\index{startDiscoverWithDevIDs:serverTimeout:clientTimeout:success:failure:@{startDiscoverWithDevIDs:serverTimeout:clientTimeout:success:failure:}!ThingSmartPegasusActivator@{ThingSmartPegasusActivator}}
+\doxysubsubsection{\texorpdfstring{startDiscoverWithDevIDs:serverTimeout:clientTimeout:success:failure:}{startDiscoverWithDevIDs:serverTimeout:clientTimeout:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Discover\+With\+Dev\+IDs\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+IDs }\item[{server\+Timeout\+:(NSTime\+Interval)}]{server\+Timeout }\item[{client\+Timeout\+:(NSTime\+Interval)}]{client\+Timeout }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Starts to scan for and pair devices by using Pegasus. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+IDs} & A list of device IDs. \\
+\hline
+{\em server\+Timeout} & The timeout value for paired devices to scan for devices to be paired. \\
+\hline
+{\em client\+Timeout} & The timeout value for devices to be paired. These devices are not added to the home. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_pegasus_activator_a53411cd839ad42b5937ea32880375e01}\label{interface_thing_smart_pegasus_activator_a53411cd839ad42b5937ea32880375e01}} 
+\index{ThingSmartPegasusActivator@{ThingSmartPegasusActivator}!startDiscoverWithDevIDs:serverTimeout:clientTimeout:success:failure:@{startDiscoverWithDevIDs:serverTimeout:clientTimeout:success:failure:}}
+\index{startDiscoverWithDevIDs:serverTimeout:clientTimeout:success:failure:@{startDiscoverWithDevIDs:serverTimeout:clientTimeout:success:failure:}!ThingSmartPegasusActivator@{ThingSmartPegasusActivator}}
+\doxysubsubsection{\texorpdfstring{startDiscoverWithDevIDs:serverTimeout:clientTimeout:success:failure:}{startDiscoverWithDevIDs:serverTimeout:clientTimeout:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) start\+Discover\+With\+Dev\+IDs\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+IDs }\item[{server\+Timeout\+:(NSTime\+Interval)}]{server\+Timeout }\item[{client\+Timeout\+:(NSTime\+Interval)}]{client\+Timeout }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Starts to scan for and pair devices by using Pegasus. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+IDs} & A list of device IDs. \\
+\hline
+{\em server\+Timeout} & The timeout value for paired devices to scan for devices to be paired. \\
+\hline
+{\em client\+Timeout} & The timeout value for devices to be paired. These devices are not added to the home. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_pegasus_activator_a2d06aa91c03344dd2e1a49fdede34a68}\label{interface_thing_smart_pegasus_activator_a2d06aa91c03344dd2e1a49fdede34a68}} 
+\index{ThingSmartPegasusActivator@{ThingSmartPegasusActivator}!stopDiscoverWithDevIDs:success:failure:@{stopDiscoverWithDevIDs:success:failure:}}
+\index{stopDiscoverWithDevIDs:success:failure:@{stopDiscoverWithDevIDs:success:failure:}!ThingSmartPegasusActivator@{ThingSmartPegasusActivator}}
+\doxysubsubsection{\texorpdfstring{stopDiscoverWithDevIDs:success:failure:}{stopDiscoverWithDevIDs:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Discover\+With\+Dev\+IDs\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+IDs }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Stops pairing devices by Pegasus after devices are paired. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+IDs} & A list of devices that support Pegasus. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_pegasus_activator_a2d06aa91c03344dd2e1a49fdede34a68}\label{interface_thing_smart_pegasus_activator_a2d06aa91c03344dd2e1a49fdede34a68}} 
+\index{ThingSmartPegasusActivator@{ThingSmartPegasusActivator}!stopDiscoverWithDevIDs:success:failure:@{stopDiscoverWithDevIDs:success:failure:}}
+\index{stopDiscoverWithDevIDs:success:failure:@{stopDiscoverWithDevIDs:success:failure:}!ThingSmartPegasusActivator@{ThingSmartPegasusActivator}}
+\doxysubsubsection{\texorpdfstring{stopDiscoverWithDevIDs:success:failure:}{stopDiscoverWithDevIDs:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Discover\+With\+Dev\+IDs\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{dev\+IDs }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Stops pairing devices by Pegasus after devices are paired. 
+\begin{DoxyParams}{Parameters}
+{\em dev\+IDs} & A list of devices that support Pegasus. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_pegasus_activator_af4b2799e7a4c005558a184538deeb2eb}\label{interface_thing_smart_pegasus_activator_af4b2799e7a4c005558a184538deeb2eb}} 
+\index{ThingSmartPegasusActivator@{ThingSmartPegasusActivator}!delegate@{delegate}}
+\index{delegate@{delegate}!ThingSmartPegasusActivator@{ThingSmartPegasusActivator}}
+\doxysubsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_smart_pegasus_activator_delegate-p}{Thing\+Smart\+Pegasus\+Activator\+Delegate}} $>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm64bd7aecec5be31189ed8958ee1184b156_source_l00032}{32}} of file \mbox{\hyperlink{_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm64bd7aecec5be31189ed8958ee1184b156_source}{Thing\+Smart\+Pegasus\+Activator.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Activator\+Core\+Kit/\+Build/\+Thing\+Smart\+Activator\+Core\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Activator\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm64bd7aecec5be31189ed8958ee1184b156}{Thing\+Smart\+Pegasus\+Activator.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Activator\+Core\+Kit/\+Build/\+Thing\+Smart\+Activator\+Core\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Activator\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_activator_core_kit_2_build_2_thing_smart_activator_core_kit_8xcframework_2ios-arm6454c97e851ca7963abafa15e75a33bea9}{Thing\+Smart\+Pegasus\+Activator.\+h}}\end{DoxyCompactItemize}

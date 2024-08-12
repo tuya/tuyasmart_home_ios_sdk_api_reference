@@ -1,0 +1,283 @@
+\hypertarget{category_thing_smart_b_l_e_manager_07_o_t_a_08}{}\doxysection{Thing\+Smart\+BLEManager(OTA) Category Reference}
+\label{category_thing_smart_b_l_e_manager_07_o_t_a_08}\index{ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+BLEManager+\+OTA.\+h$>$}
+
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_aa4203d9992fcd2693ce1640e5e8fb2c8}{send\+OTAPack\+:ota\+Data\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_a15a8aa81d946f0df0f5b520bcdbb8321}{send\+OTAPack\+:pid\+:ota\+Data\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_a9d80ddcda7c81938fe795590ed4e1b44}{send\+OTAPack\+:pid\+:ota\+Data\+:ota\+Type\+:ota\+Version\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_a0ad37c54867c7353fed357ae1b494eae}{send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_aa4203d9992fcd2693ce1640e5e8fb2c8}{send\+OTAPack\+:ota\+Data\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_a15a8aa81d946f0df0f5b520bcdbb8321}{send\+OTAPack\+:pid\+:ota\+Data\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_a9d80ddcda7c81938fe795590ed4e1b44}{send\+OTAPack\+:pid\+:ota\+Data\+:ota\+Type\+:ota\+Version\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_a0ad37c54867c7353fed357ae1b494eae}{send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_09_o_t_a_8h_source_l00012}{12}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_09_o_t_a_8h_source}{Thing\+Smart\+BLEManager+\+OTA.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{category_thing_smart_b_l_e_manager_07_o_t_a_08_a0ad37c54867c7353fed357ae1b494eae}\label{category_thing_smart_b_l_e_manager_07_o_t_a_08_a0ad37c54867c7353fed357ae1b494eae}} 
+\index{ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}!sendOTAPack:deviceModel:upgradeModel:success:failure:@{sendOTAPack:deviceModel:upgradeModel:success:failure:}}
+\index{sendOTAPack:deviceModel:upgradeModel:success:failure:@{sendOTAPack:deviceModel:upgradeModel:success:failure:}!ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}}
+\doxysubsubsection{\texorpdfstring{sendOTAPack:deviceModel:upgradeModel:success:failure:}{sendOTAPack:deviceModel:upgradeModel:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+OTAPack\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{ota\+Data }\item[{device\+Model\+:(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\item[{upgrade\+Model\+:(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}} $\ast$)}]{upgrade\+Model }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Send OTA package to upgrade firmware. 
+\begin{DoxyParams}{Parameters}
+{\em ota\+Data} & ota\+Data. \\
+\hline
+{\em device\+Model} & Device Model. \\
+\hline
+{\em upgrade\+Model} & Firmware upgrade model. \\
+\hline
+{\em success} & Called when the task finishes successfully. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \mbox{\hyperlink{interface_thing_smart_b_l_e_manager_a0ad37c54867c7353fed357ae1b494eae}{Thing\+Smart\+BLEManager}}.
+
+\mbox{\Hypertarget{category_thing_smart_b_l_e_manager_07_o_t_a_08_a0ad37c54867c7353fed357ae1b494eae}\label{category_thing_smart_b_l_e_manager_07_o_t_a_08_a0ad37c54867c7353fed357ae1b494eae}} 
+\index{ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}!sendOTAPack:deviceModel:upgradeModel:success:failure:@{sendOTAPack:deviceModel:upgradeModel:success:failure:}}
+\index{sendOTAPack:deviceModel:upgradeModel:success:failure:@{sendOTAPack:deviceModel:upgradeModel:success:failure:}!ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}}
+\doxysubsubsection{\texorpdfstring{sendOTAPack:deviceModel:upgradeModel:success:failure:}{sendOTAPack:deviceModel:upgradeModel:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+OTAPack\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{ota\+Data }\item[{device\+Model\+:(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$)}]{device\+Model }\item[{upgrade\+Model\+:(\mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}} $\ast$)}]{upgrade\+Model }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Send OTA package to upgrade firmware. 
+\begin{DoxyParams}{Parameters}
+{\em ota\+Data} & ota\+Data. \\
+\hline
+{\em device\+Model} & Device Model. \\
+\hline
+{\em upgrade\+Model} & Firmware upgrade model. \\
+\hline
+{\em success} & Called when the task finishes successfully. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Extends class \mbox{\hyperlink{interface_thing_smart_b_l_e_manager_a0ad37c54867c7353fed357ae1b494eae}{Thing\+Smart\+BLEManager}}.
+
+\mbox{\Hypertarget{category_thing_smart_b_l_e_manager_07_o_t_a_08_aa4203d9992fcd2693ce1640e5e8fb2c8}\label{category_thing_smart_b_l_e_manager_07_o_t_a_08_aa4203d9992fcd2693ce1640e5e8fb2c8}} 
+\index{ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}!sendOTAPack:otaData:success:failure:@{sendOTAPack:otaData:success:failure:}}
+\index{sendOTAPack:otaData:success:failure:@{sendOTAPack:otaData:success:failure:}!ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}}
+\doxysubsubsection{\texorpdfstring{sendOTAPack:otaData:success:failure:}{sendOTAPack:otaData:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+OTAPack\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{ota\+Data\+:(NSData $\ast$)}]{ota\+Data }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use Thing\+Smart\+BLEManager\+::send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+Sends an OTA package to update the firmware.
+
+The value of {\ttfamily ota\+Data} can be obtained from \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}}. You can get \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}} by using \mbox{\hyperlink{interface_thing_smart_device_aac1dc8f24cd9296a2994a5fdf3a14c34}{get\+Firmware\+Upgrade\+Info\+:failure\+: (\+Thing\+Smart\+Device)}}.
+
+\begin{DoxyNote}{Note}
+Your device must be connected over Bluetooth before the update.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The UUID of the device. \\
+\hline
+{\em ota\+Data} & The OTA package data. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000157}{Deprecated}}]This method is deprecated, Use \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_a0ad37c54867c7353fed357ae1b494eae}{send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:}} instead. \end{DoxyRefDesc}
+
+
+Extends class \mbox{\hyperlink{interface_thing_smart_b_l_e_manager_aa4203d9992fcd2693ce1640e5e8fb2c8}{Thing\+Smart\+BLEManager}}.
+
+\mbox{\Hypertarget{category_thing_smart_b_l_e_manager_07_o_t_a_08_aa4203d9992fcd2693ce1640e5e8fb2c8}\label{category_thing_smart_b_l_e_manager_07_o_t_a_08_aa4203d9992fcd2693ce1640e5e8fb2c8}} 
+\index{ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}!sendOTAPack:otaData:success:failure:@{sendOTAPack:otaData:success:failure:}}
+\index{sendOTAPack:otaData:success:failure:@{sendOTAPack:otaData:success:failure:}!ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}}
+\doxysubsubsection{\texorpdfstring{sendOTAPack:otaData:success:failure:}{sendOTAPack:otaData:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+OTAPack\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{ota\+Data\+:(NSData $\ast$)}]{ota\+Data }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use Thing\+Smart\+BLEManager\+::send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+Sends an OTA package to update the firmware.
+
+The value of {\ttfamily ota\+Data} can be obtained from \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}}. You can get \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}} by using \mbox{\hyperlink{interface_thing_smart_device_aac1dc8f24cd9296a2994a5fdf3a14c34}{get\+Firmware\+Upgrade\+Info\+:failure\+: (\+Thing\+Smart\+Device)}}.
+
+\begin{DoxyNote}{Note}
+Your device must be connected over Bluetooth before the update.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The UUID of the device. \\
+\hline
+{\em ota\+Data} & The OTA package data. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000162}{Deprecated}}]This method is deprecated, Use \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_a0ad37c54867c7353fed357ae1b494eae}{send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:}} instead. \end{DoxyRefDesc}
+
+
+Extends class \mbox{\hyperlink{interface_thing_smart_b_l_e_manager_aa4203d9992fcd2693ce1640e5e8fb2c8}{Thing\+Smart\+BLEManager}}.
+
+\mbox{\Hypertarget{category_thing_smart_b_l_e_manager_07_o_t_a_08_a9d80ddcda7c81938fe795590ed4e1b44}\label{category_thing_smart_b_l_e_manager_07_o_t_a_08_a9d80ddcda7c81938fe795590ed4e1b44}} 
+\index{ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}!sendOTAPack:pid:otaData:otaType:otaVersion:success:failure:@{sendOTAPack:pid:otaData:otaType:otaVersion:success:failure:}}
+\index{sendOTAPack:pid:otaData:otaType:otaVersion:success:failure:@{sendOTAPack:pid:otaData:otaType:otaVersion:success:failure:}!ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}}
+\doxysubsubsection{\texorpdfstring{sendOTAPack:pid:otaData:otaType:otaVersion:success:failure:}{sendOTAPack:pid:otaData:otaType:otaVersion:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+OTAPack\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{pid\+:(NSString $\ast$)}]{pid }\item[{ota\+Data\+:(NSData $\ast$)}]{ota\+Data }\item[{ota\+Type\+:(Thing\+Smart\+BLEOTAType)}]{ota\+Type }\item[{ota\+Version\+:(NSString $\ast$)}]{ota\+Version }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use Thing\+Smart\+BLEManager\+::send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+Sends an OTA package to update the firmware.
+
+The values of {\ttfamily ota\+Data}, {\ttfamily ota\+Type}, and {\ttfamily ota\+Version} can be obtained from \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}}. You can get \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}} by using \mbox{\hyperlink{interface_thing_smart_device_aac1dc8f24cd9296a2994a5fdf3a14c34}{get\+Firmware\+Upgrade\+Info\+:failure\+: (\+Thing\+Smart\+Device)}}.
+
+\begin{DoxyNote}{Note}
+Your device must be connected over Bluetooth before the update.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The UUID of the device. \\
+\hline
+{\em pid} & The product ID of the device. \\
+\hline
+{\em ota\+Data} & The OTA package data. \\
+\hline
+{\em ota\+Type} & The OTA update type. \\
+\hline
+{\em ota\+Version} & The OTA version. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000159}{Deprecated}}]This method is deprecated, Use \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_a0ad37c54867c7353fed357ae1b494eae}{send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:}} instead. \end{DoxyRefDesc}
+
+
+Extends class \mbox{\hyperlink{interface_thing_smart_b_l_e_manager_a9d80ddcda7c81938fe795590ed4e1b44}{Thing\+Smart\+BLEManager}}.
+
+\mbox{\Hypertarget{category_thing_smart_b_l_e_manager_07_o_t_a_08_a9d80ddcda7c81938fe795590ed4e1b44}\label{category_thing_smart_b_l_e_manager_07_o_t_a_08_a9d80ddcda7c81938fe795590ed4e1b44}} 
+\index{ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}!sendOTAPack:pid:otaData:otaType:otaVersion:success:failure:@{sendOTAPack:pid:otaData:otaType:otaVersion:success:failure:}}
+\index{sendOTAPack:pid:otaData:otaType:otaVersion:success:failure:@{sendOTAPack:pid:otaData:otaType:otaVersion:success:failure:}!ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}}
+\doxysubsubsection{\texorpdfstring{sendOTAPack:pid:otaData:otaType:otaVersion:success:failure:}{sendOTAPack:pid:otaData:otaType:otaVersion:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+OTAPack\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{pid\+:(NSString $\ast$)}]{pid }\item[{ota\+Data\+:(NSData $\ast$)}]{ota\+Data }\item[{ota\+Type\+:(Thing\+Smart\+BLEOTAType)}]{ota\+Type }\item[{ota\+Version\+:(NSString $\ast$)}]{ota\+Version }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use Thing\+Smart\+BLEManager\+::send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+Sends an OTA package to update the firmware.
+
+The values of {\ttfamily ota\+Data}, {\ttfamily ota\+Type}, and {\ttfamily ota\+Version} can be obtained from \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}}. You can get \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}} by using \mbox{\hyperlink{interface_thing_smart_device_aac1dc8f24cd9296a2994a5fdf3a14c34}{get\+Firmware\+Upgrade\+Info\+:failure\+: (\+Thing\+Smart\+Device)}}.
+
+\begin{DoxyNote}{Note}
+Your device must be connected over Bluetooth before the update.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The UUID of the device. \\
+\hline
+{\em pid} & The product ID of the device. \\
+\hline
+{\em ota\+Data} & The OTA package data. \\
+\hline
+{\em ota\+Type} & The OTA update type. \\
+\hline
+{\em ota\+Version} & The OTA version. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000164}{Deprecated}}]This method is deprecated, Use \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_a0ad37c54867c7353fed357ae1b494eae}{send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:}} instead. \end{DoxyRefDesc}
+
+
+Extends class \mbox{\hyperlink{interface_thing_smart_b_l_e_manager_a9d80ddcda7c81938fe795590ed4e1b44}{Thing\+Smart\+BLEManager}}.
+
+\mbox{\Hypertarget{category_thing_smart_b_l_e_manager_07_o_t_a_08_a15a8aa81d946f0df0f5b520bcdbb8321}\label{category_thing_smart_b_l_e_manager_07_o_t_a_08_a15a8aa81d946f0df0f5b520bcdbb8321}} 
+\index{ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}!sendOTAPack:pid:otaData:success:failure:@{sendOTAPack:pid:otaData:success:failure:}}
+\index{sendOTAPack:pid:otaData:success:failure:@{sendOTAPack:pid:otaData:success:failure:}!ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}}
+\doxysubsubsection{\texorpdfstring{sendOTAPack:pid:otaData:success:failure:}{sendOTAPack:pid:otaData:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+OTAPack\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{pid\+:(NSString $\ast$)}]{pid }\item[{ota\+Data\+:(NSData $\ast$)}]{ota\+Data }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use Thing\+Smart\+BLEManager\+::send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+Sends an OTA package to update the firmware.
+
+The value of {\ttfamily ota\+Data} can be obtained from \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}}. You can get \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}} by using \mbox{\hyperlink{interface_thing_smart_device_aac1dc8f24cd9296a2994a5fdf3a14c34}{get\+Firmware\+Upgrade\+Info\+:failure\+: (\+Thing\+Smart\+Device)}}.
+
+\begin{DoxyNote}{Note}
+Your device must be connected over Bluetooth before the update.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The UUID of the device. \\
+\hline
+{\em pid} & The product ID of the device. \\
+\hline
+{\em ota\+Data} & The OTA package data. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000158}{Deprecated}}]This method is deprecated, Use \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_a0ad37c54867c7353fed357ae1b494eae}{send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:}} instead. \end{DoxyRefDesc}
+
+
+Extends class \mbox{\hyperlink{interface_thing_smart_b_l_e_manager_a15a8aa81d946f0df0f5b520bcdbb8321}{Thing\+Smart\+BLEManager}}.
+
+\mbox{\Hypertarget{category_thing_smart_b_l_e_manager_07_o_t_a_08_a15a8aa81d946f0df0f5b520bcdbb8321}\label{category_thing_smart_b_l_e_manager_07_o_t_a_08_a15a8aa81d946f0df0f5b520bcdbb8321}} 
+\index{ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}!sendOTAPack:pid:otaData:success:failure:@{sendOTAPack:pid:otaData:success:failure:}}
+\index{sendOTAPack:pid:otaData:success:failure:@{sendOTAPack:pid:otaData:success:failure:}!ThingSmartBLEManager(OTA)@{ThingSmartBLEManager(OTA)}}
+\doxysubsubsection{\texorpdfstring{sendOTAPack:pid:otaData:success:failure:}{sendOTAPack:pid:otaData:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+OTAPack\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{pid\+:(NSString $\ast$)}]{pid }\item[{ota\+Data\+:(NSData $\ast$)}]{ota\+Data }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use Thing\+Smart\+BLEManager\+::send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+Sends an OTA package to update the firmware.
+
+The value of {\ttfamily ota\+Data} can be obtained from \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}}. You can get \mbox{\hyperlink{interface_thing_smart_firmware_upgrade_model}{Thing\+Smart\+Firmware\+Upgrade\+Model}} by using \mbox{\hyperlink{interface_thing_smart_device_aac1dc8f24cd9296a2994a5fdf3a14c34}{get\+Firmware\+Upgrade\+Info\+:failure\+: (\+Thing\+Smart\+Device)}}.
+
+\begin{DoxyNote}{Note}
+Your device must be connected over Bluetooth before the update.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The UUID of the device. \\
+\hline
+{\em pid} & The product ID of the device. \\
+\hline
+{\em ota\+Data} & The OTA package data. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000163}{Deprecated}}]This method is deprecated, Use \mbox{\hyperlink{category_thing_smart_b_l_e_manager_07_o_t_a_08_a0ad37c54867c7353fed357ae1b494eae}{send\+OTAPack\+:device\+Model\+:upgrade\+Model\+:success\+:failure\+:}} instead. \end{DoxyRefDesc}
+
+
+Extends class \mbox{\hyperlink{interface_thing_smart_b_l_e_manager_a15a8aa81d946f0df0f5b520bcdbb8321}{Thing\+Smart\+BLEManager}}.
+
+
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEKit/\+Build/\+Thing\+Smart\+BLEKit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLEKit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_09_o_t_a_8h}{Thing\+Smart\+BLEManager+\+OTA.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEKit/\+Build/\+Thing\+Smart\+BLEKit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLEKit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_09_o_t_a_8h}{Thing\+Smart\+BLEManager+\+OTA.\+h}}\end{DoxyCompactItemize}

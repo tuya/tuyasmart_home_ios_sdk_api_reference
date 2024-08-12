@@ -1,0 +1,1395 @@
+\hypertarget{interface_thing_smart_ble_mesh}{}\doxysection{Thing\+Smart\+Ble\+Mesh Class Reference}
+\label{interface_thing_smart_ble_mesh}\index{ThingSmartBleMesh@{ThingSmartBleMesh}}
+
+
+The Bluetooth mesh base class that supports the basic operations of Bluetooth mesh networks. For example, devices in a mesh network can be created, updated, and deleted.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Ble\+Mesh.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Ble\+Mesh\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_ble_mesh}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_adbe2ee307a3506428e90848c79b0215d}{init\+With\+Mesh\+Id\+:home\+Id\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a1cdabb68d79be3d73962d5f3c0ede5a1}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_ae5d333d1795d2aec7cf53375349a104b}{get\+Sub\+Device\+List\+From\+Cloud\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a4c6609c4c49f0bd5e12013ba13586021}{get\+Sub\+Device\+From\+Cloud\+With\+Device\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_af19c34aff8399c1e352f9efe74b06a01}{publish\+Node\+Id\+:pcc\+:dps\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a1e712197273dfe7bc4caf63fe94a408e}{multi\+Publish\+With\+Local\+Id\+:pcc\+:dps\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_aa3311e8d7d60d5a4ec04da2d1b7e0384}{broadcast\+Dps\+:pcc\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a9e30e5c0f37f372a1fb729f60b190696}{get\+Sub\+Device\+Dps\+With\+Node\+Id\+:pcc\+:dp\+Id\+List\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a9a542e91d45e25a632d1b4770cc9c5f4}{publish\+Raw\+Data\+With\+Raw\+:pcc\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a31272f8e23d9efe22ac969feb5c08ad5}{update\+Mesh\+Name\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a68bbdd3116d0abedc96585b70518dd69}{remove\+Mesh\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a7b76f36401d541047032e52d619946e8}{add\+Sub\+Device\+With\+Uuid\+:home\+Id\+:auth\+Key\+:node\+Id\+:product\+Key\+:ver\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a0426913b863d271ea5e1d9182146aefe}{rename\+Mesh\+Sub\+Device\+With\+Device\+Id\+:name\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a58651de14afcc01b293babeca9b584cc}{remove\+Mesh\+Sub\+Device\+With\+Device\+Id\+:success\+:failure\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_adbe2ee307a3506428e90848c79b0215d}{init\+With\+Mesh\+Id\+:home\+Id\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a1cdabb68d79be3d73962d5f3c0ede5a1}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_ae5d333d1795d2aec7cf53375349a104b}{get\+Sub\+Device\+List\+From\+Cloud\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a4c6609c4c49f0bd5e12013ba13586021}{get\+Sub\+Device\+From\+Cloud\+With\+Device\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_af19c34aff8399c1e352f9efe74b06a01}{publish\+Node\+Id\+:pcc\+:dps\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a1e712197273dfe7bc4caf63fe94a408e}{multi\+Publish\+With\+Local\+Id\+:pcc\+:dps\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_aa3311e8d7d60d5a4ec04da2d1b7e0384}{broadcast\+Dps\+:pcc\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a9e30e5c0f37f372a1fb729f60b190696}{get\+Sub\+Device\+Dps\+With\+Node\+Id\+:pcc\+:dp\+Id\+List\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a9a542e91d45e25a632d1b4770cc9c5f4}{publish\+Raw\+Data\+With\+Raw\+:pcc\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a31272f8e23d9efe22ac969feb5c08ad5}{update\+Mesh\+Name\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a68bbdd3116d0abedc96585b70518dd69}{remove\+Mesh\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a7b76f36401d541047032e52d619946e8}{add\+Sub\+Device\+With\+Uuid\+:home\+Id\+:auth\+Key\+:node\+Id\+:product\+Key\+:ver\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a0426913b863d271ea5e1d9182146aefe}{rename\+Mesh\+Sub\+Device\+With\+Device\+Id\+:name\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a58651de14afcc01b293babeca9b584cc}{remove\+Mesh\+Sub\+Device\+With\+Device\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_ab10056342c7e0fa2f484a1169f151ec5}{add\+SIGMesh\+Sub\+Device\+With\+Uuid\+:dev\+Key\+:node\+Id\+:product\+Key\+:ver\+:mac\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_ab10056342c7e0fa2f484a1169f151ec5}{add\+SIGMesh\+Sub\+Device\+With\+Uuid\+:dev\+Key\+:node\+Id\+:product\+Key\+:ver\+:mac\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a039533aa6cb7ecbdac0b2d93fa8ea505}{add\+SIGMesh\+Sub\+Device\+With\+Uuid\+:dev\+Key\+:node\+Id\+:product\+Key\+:ver\+:mac\+:company\+Id\+:vender\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a039533aa6cb7ecbdac0b2d93fa8ea505}{add\+SIGMesh\+Sub\+Device\+With\+Uuid\+:dev\+Key\+:node\+Id\+:product\+Key\+:ver\+:mac\+:company\+Id\+:vender\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a3fa15979d86d11f24adad7a9b5d006f0}{add\+SIGMesh\+Sub\+Device\+With\+Uuid\+:dev\+Key\+:node\+Id\+:product\+Id\+:ver\+:mac\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a3fa15979d86d11f24adad7a9b5d006f0}{add\+SIGMesh\+Sub\+Device\+With\+Uuid\+:dev\+Key\+:node\+Id\+:product\+Id\+:ver\+:mac\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a4a7250387a20595178f435070a845b76}{add\+SIGMesh\+Sub\+Device\+With\+Uuid\+:dev\+Key\+:node\+Id\+:product\+Id\+:ver\+:mac\+:company\+Id\+:vender\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a4a7250387a20595178f435070a845b76}{add\+SIGMesh\+Sub\+Device\+With\+Uuid\+:dev\+Key\+:node\+Id\+:product\+Id\+:ver\+:mac\+:company\+Id\+:vender\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_aa31d0686251029d9c7c123111558c744}{get\+SIGMesh\+Node\+Address\+From\+Server\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_aa31d0686251029d9c7c123111558c744}{get\+SIGMesh\+Node\+Address\+From\+Server\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a0f4b3cc94ab2ec96d1a6a9423609634e}{get\+Multi\+Node\+Address\+From\+Server\+With\+Number\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a0f4b3cc94ab2ec96d1a6a9423609634e}{get\+Multi\+Node\+Address\+From\+Server\+With\+Number\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a16ee940a6376bf9567d41d8c4916a3f9}{remove\+Mesh\+Sub\+Device\+With\+Gateway\+Id\+:sub\+Device\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a16ee940a6376bf9567d41d8c4916a3f9}{remove\+Mesh\+Sub\+Device\+With\+Gateway\+Id\+:sub\+Device\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a4ed4bd0b236487948f1e2ec2d95d2b53}{remove\+Mesh\+Sub\+Device\+With\+Mesh\+Id\+:device\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a4ed4bd0b236487948f1e2ec2d95d2b53}{remove\+Mesh\+Sub\+Device\+With\+Mesh\+Id\+:device\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_ad0b69a35895c591a9685378b0dab1693}{get\+SIGMesh\+Source\+Address\+From\+Server\+With\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_ble_mesh_ad0b69a35895c591a9685378b0dab1693}{get\+SIGMesh\+Source\+Address\+From\+Server\+With\+Success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a65363e052a96db62497b788b393c18c9}{shared\+Instance}}
+\begin{DoxyCompactList}\small\item\em The shared instance. \end{DoxyCompactList}\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_ae70be5285432ad28b749a8bc8c50864a}{ble\+Mesh\+With\+Mesh\+Id\+:home\+Id\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a3f7081b6e0dd7ac23cb0cced0e46c7c3}{create\+Ble\+Mesh\+With\+Mesh\+Name\+:home\+Id\+:success\+:failure\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a65363e052a96db62497b788b393c18c9}{shared\+Instance}}
+\begin{DoxyCompactList}\small\item\em The shared instance. \end{DoxyCompactList}\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_ae70be5285432ad28b749a8bc8c50864a}{ble\+Mesh\+With\+Mesh\+Id\+:home\+Id\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a3f7081b6e0dd7ac23cb0cced0e46c7c3}{create\+Ble\+Mesh\+With\+Mesh\+Name\+:home\+Id\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a3e1c02b19dec05fbbc84b9b5ed197180}{create\+SIGMesh\+With\+Home\+Id\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a3e1c02b19dec05fbbc84b9b5ed197180}{create\+SIGMesh\+With\+Home\+Id\+:success\+:failure\+:}}
+\item 
+(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a0316cdca61bac85ba718724d06520010}{init\+SIGMesh\+Manager\+:ttl\+:node\+Ids\+:}}
+\item 
+(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a0316cdca61bac85ba718724d06520010}{init\+SIGMesh\+Manager\+:ttl\+:node\+Ids\+:}}
+\item 
+(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a4a5e50087c170b1d45d9f0165d6c62c1}{get\+SIGMesh\+Manager\+:}}
+\item 
+(\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a4a5e50087c170b1d45d9f0165d6c62c1}{get\+SIGMesh\+Manager\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_ad24c9e397dc11e71a45ae9a399e09410}{delete\+SIGMesh\+Manager\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_ad24c9e397dc11e71a45ae9a399e09410}{delete\+SIGMesh\+Manager\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_ae742c5de6cc633a18037ff7a364d36f1}{set\+SIGMesh\+Network\+Max\+Count\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_ae742c5de6cc633a18037ff7a364d36f1}{set\+SIGMesh\+Network\+Max\+Count\+:}}
+\item 
+(NSInteger) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a08defd9ac40843bf071c117f6a60ee07}{get\+SIGMesh\+Network\+Max\+Count}}
+\item 
+(NSInteger) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a08defd9ac40843bf071c117f6a60ee07}{get\+SIGMesh\+Network\+Max\+Count}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$ $>$ $\ast$) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_ae455781696a6458ce3e26ce7240cd962}{get\+All\+SIGMesh\+Manager}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$ $>$ $\ast$) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_ae455781696a6458ce3e26ce7240cd962}{get\+All\+SIGMesh\+Manager}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a2822de52a8fd7d330a902e93cbfc8871}{get\+Un\+Actice\+Device\+Info\+:mac\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_ble_mesh_a2822de52a8fd7d330a902e93cbfc8871}{get\+Un\+Actice\+Device\+Info\+:mac\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a79b43d931dcdee68e36af07467c05f39}{ble\+Mesh\+Model}}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_smart_ble_mesh_delegate-p}{Thing\+Smart\+Ble\+Mesh\+Delegate}} $>$ \mbox{\hyperlink{interface_thing_smart_ble_mesh_a43bc116d3837d680266da01973cd9abc}{delegate}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_smart_ble_mesh_abc955512513ba87b768d89035fbd0b07}{disable\+BLECapability}}
+\begin{DoxyCompactList}\small\item\em Whether to disable bluetooth. Default NO. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Bluetooth mesh base class that supports the basic operations of Bluetooth mesh networks. For example, devices in a mesh network can be created, updated, and deleted. 
+
+The mesh parameters are required to establish a Bluetooth mesh connection. 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_8h_source_l00031}{31}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_8h_source}{Thing\+Smart\+Ble\+Mesh.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a4a7250387a20595178f435070a845b76}\label{interface_thing_smart_ble_mesh_a4a7250387a20595178f435070a845b76}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:}}
+\index{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:}{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+SIGMesh\+Sub\+Device\+With\+Uuid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{dev\+Key\+:(NSString $\ast$)}]{dev\+Key }\item[{node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{product\+Id\+:(NSString $\ast$)}]{product\+Id }\item[{ver\+:(NSString $\ast$)}]{ver }\item[{mac\+:(NSString $\ast$)}]{mac }\item[{company\+Id\+:(nullable NSString $\ast$)}]{company\+Id }\item[{vender\+Id\+:(nullable NSString $\ast$)}]{vender\+Id }\item[{success\+:(void($^\wedge$)(NSString $\ast$dev\+Id, NSString $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h_a4b93d352d2fca75b34e1b5a50e03f587}{name}}))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+The Bluetooth device is bound with a PID before the network is connected. This applies when a third-\/party device is paired. 
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The short address identification of the Bluetooth sub-\/device. \\
+\hline
+{\em dev\+Key} & The device key. \\
+\hline
+{\em node\+Id} & The node ID. \\
+\hline
+{\em product\+Id} & The product ID. \\
+\hline
+{\em ver} & The version. \\
+\hline
+{\em mac} & The MAC address of the device. \\
+\hline
+{\em company\+Id} & The company ID. \\
+\hline
+{\em vender\+Id} & This parameter is required to add a third-\/party device to the app. Lighting devices, switches, and other low-\/power devices are supported. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a4a7250387a20595178f435070a845b76}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a4a7250387a20595178f435070a845b76}\label{interface_thing_smart_ble_mesh_a4a7250387a20595178f435070a845b76}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:}}
+\index{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:}{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:companyId:venderId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+SIGMesh\+Sub\+Device\+With\+Uuid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{dev\+Key\+:(NSString $\ast$)}]{dev\+Key }\item[{node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{product\+Id\+:(NSString $\ast$)}]{product\+Id }\item[{ver\+:(NSString $\ast$)}]{ver }\item[{mac\+:(NSString $\ast$)}]{mac }\item[{company\+Id\+:(nullable NSString $\ast$)}]{company\+Id }\item[{vender\+Id\+:(nullable NSString $\ast$)}]{vender\+Id }\item[{success\+:(void($^\wedge$)(NSString $\ast$dev\+Id, NSString $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h_a4b93d352d2fca75b34e1b5a50e03f587}{name}}))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+The Bluetooth device is bound with a PID before the network is connected. This applies when a third-\/party device is paired. 
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The short address identification of the Bluetooth sub-\/device. \\
+\hline
+{\em dev\+Key} & The device key. \\
+\hline
+{\em node\+Id} & The node ID. \\
+\hline
+{\em product\+Id} & The product ID. \\
+\hline
+{\em ver} & The version. \\
+\hline
+{\em mac} & The MAC address of the device. \\
+\hline
+{\em company\+Id} & The company ID. \\
+\hline
+{\em vender\+Id} & This parameter is required to add a third-\/party device to the app. Lighting devices, switches, and other low-\/power devices are supported. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a4a7250387a20595178f435070a845b76}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a3fa15979d86d11f24adad7a9b5d006f0}\label{interface_thing_smart_ble_mesh_a3fa15979d86d11f24adad7a9b5d006f0}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:}}
+\index{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:}{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+SIGMesh\+Sub\+Device\+With\+Uuid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{dev\+Key\+:(NSString $\ast$)}]{dev\+Key }\item[{node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{product\+Id\+:(NSString $\ast$)}]{product\+Id }\item[{ver\+:(NSString $\ast$)}]{ver }\item[{mac\+:(NSString $\ast$)}]{mac }\item[{success\+:(void($^\wedge$)(NSString $\ast$dev\+Id, NSString $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h_a4b93d352d2fca75b34e1b5a50e03f587}{name}}))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Binds a PID to a Bluetooth device before the network is connected. 
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The short address identification of the Bluetooth sub-\/device. \\
+\hline
+{\em dev\+Key} & The device key. \\
+\hline
+{\em node\+Id} & The node ID. \\
+\hline
+{\em product\+Id} & The product ID. \\
+\hline
+{\em ver} & The version. \\
+\hline
+{\em mac} & The MAC address of the device. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a3fa15979d86d11f24adad7a9b5d006f0}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a3fa15979d86d11f24adad7a9b5d006f0}\label{interface_thing_smart_ble_mesh_a3fa15979d86d11f24adad7a9b5d006f0}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:}}
+\index{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:}{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productId:ver:mac:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+SIGMesh\+Sub\+Device\+With\+Uuid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{dev\+Key\+:(NSString $\ast$)}]{dev\+Key }\item[{node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{product\+Id\+:(NSString $\ast$)}]{product\+Id }\item[{ver\+:(NSString $\ast$)}]{ver }\item[{mac\+:(NSString $\ast$)}]{mac }\item[{success\+:(void($^\wedge$)(NSString $\ast$dev\+Id, NSString $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h_a4b93d352d2fca75b34e1b5a50e03f587}{name}}))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Binds a PID to a Bluetooth device before the network is connected. 
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The short address identification of the Bluetooth sub-\/device. \\
+\hline
+{\em dev\+Key} & The device key. \\
+\hline
+{\em node\+Id} & The node ID. \\
+\hline
+{\em product\+Id} & The product ID. \\
+\hline
+{\em ver} & The version. \\
+\hline
+{\em mac} & The MAC address of the device. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a3fa15979d86d11f24adad7a9b5d006f0}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a039533aa6cb7ecbdac0b2d93fa8ea505}\label{interface_thing_smart_ble_mesh_a039533aa6cb7ecbdac0b2d93fa8ea505}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:}}
+\index{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:}{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+SIGMesh\+Sub\+Device\+With\+Uuid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{dev\+Key\+:(NSString $\ast$)}]{dev\+Key }\item[{node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{product\+Key\+:(NSString $\ast$)}]{product\+Key }\item[{ver\+:(NSString $\ast$)}]{ver }\item[{mac\+:(NSString $\ast$)}]{mac }\item[{company\+Id\+:(nonnull NSString $\ast$)}]{company\+Id }\item[{vender\+Id\+:(nonnull NSString $\ast$)}]{vender\+Id }\item[{success\+:(void($^\wedge$)(NSString $\ast$dev\+Id, NSString $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h_a4b93d352d2fca75b34e1b5a50e03f587}{name}}))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Reports information about the paired Bluetooth device to the cloud after the device is connected to the network. The product key and MAC address are included in the report. The cloud returns the PID based on the reported information. This applies when a third-\/party device is paired. 
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The short address identification of the Bluetooth sub-\/device. \\
+\hline
+{\em dev\+Key} & The device key. \\
+\hline
+{\em node\+Id} & The node ID. \\
+\hline
+{\em product\+Key} & The product key. \\
+\hline
+{\em ver} & The version. \\
+\hline
+{\em mac} & The MAC address of the device. \\
+\hline
+{\em company\+Id} & The company ID of the Bluetooth mesh device. \\
+\hline
+{\em vender\+Id} & This parameter is required to add a third-\/party device to the app. Lighting devices, switches, and other low-\/power devices are supported. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a039533aa6cb7ecbdac0b2d93fa8ea505}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a039533aa6cb7ecbdac0b2d93fa8ea505}\label{interface_thing_smart_ble_mesh_a039533aa6cb7ecbdac0b2d93fa8ea505}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:}}
+\index{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:}{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:companyId:venderId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+SIGMesh\+Sub\+Device\+With\+Uuid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{dev\+Key\+:(NSString $\ast$)}]{dev\+Key }\item[{node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{product\+Key\+:(NSString $\ast$)}]{product\+Key }\item[{ver\+:(NSString $\ast$)}]{ver }\item[{mac\+:(NSString $\ast$)}]{mac }\item[{company\+Id\+:(nonnull NSString $\ast$)}]{company\+Id }\item[{vender\+Id\+:(nonnull NSString $\ast$)}]{vender\+Id }\item[{success\+:(void($^\wedge$)(NSString $\ast$dev\+Id, NSString $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h_a4b93d352d2fca75b34e1b5a50e03f587}{name}}))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Reports information about the paired Bluetooth device to the cloud after the device is connected to the network. The product key and MAC address are included in the report. The cloud returns the PID based on the reported information. This applies when a third-\/party device is paired. 
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The short address identification of the Bluetooth sub-\/device. \\
+\hline
+{\em dev\+Key} & The device key. \\
+\hline
+{\em node\+Id} & The node ID. \\
+\hline
+{\em product\+Key} & The product key. \\
+\hline
+{\em ver} & The version. \\
+\hline
+{\em mac} & The MAC address of the device. \\
+\hline
+{\em company\+Id} & The company ID of the Bluetooth mesh device. \\
+\hline
+{\em vender\+Id} & This parameter is required to add a third-\/party device to the app. Lighting devices, switches, and other low-\/power devices are supported. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a039533aa6cb7ecbdac0b2d93fa8ea505}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ab10056342c7e0fa2f484a1169f151ec5}\label{interface_thing_smart_ble_mesh_ab10056342c7e0fa2f484a1169f151ec5}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:}}
+\index{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:}{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+SIGMesh\+Sub\+Device\+With\+Uuid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{dev\+Key\+:(NSString $\ast$)}]{dev\+Key }\item[{node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{product\+Key\+:(NSString $\ast$)}]{product\+Key }\item[{ver\+:(NSString $\ast$)}]{ver }\item[{mac\+:(NSString $\ast$)}]{mac }\item[{success\+:(void($^\wedge$)(NSString $\ast$dev\+Id, NSString $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h_a4b93d352d2fca75b34e1b5a50e03f587}{name}}))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Reports the result of the successful pairing between a Bluetooth sub-\/device and the app to the cloud. The {\ttfamily product\+Key} and {\ttfamily mac} parameters are included in the report. Then, the cloud returns the product ID (PID) based on both parameters. 
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The short address identification of the Bluetooth sub-\/device. \\
+\hline
+{\em dev\+Key} & The device key. \\
+\hline
+{\em node\+Id} & The node ID. \\
+\hline
+{\em product\+Key} & The product key. \\
+\hline
+{\em ver} & The version. \\
+\hline
+{\em mac} & The MAC address of the device. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_ab10056342c7e0fa2f484a1169f151ec5}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ab10056342c7e0fa2f484a1169f151ec5}\label{interface_thing_smart_ble_mesh_ab10056342c7e0fa2f484a1169f151ec5}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:}}
+\index{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:@{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:}{addSIGMeshSubDeviceWithUuid:devKey:nodeId:productKey:ver:mac:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+SIGMesh\+Sub\+Device\+With\+Uuid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{dev\+Key\+:(NSString $\ast$)}]{dev\+Key }\item[{node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{product\+Key\+:(NSString $\ast$)}]{product\+Key }\item[{ver\+:(NSString $\ast$)}]{ver }\item[{mac\+:(NSString $\ast$)}]{mac }\item[{success\+:(void($^\wedge$)(NSString $\ast$dev\+Id, NSString $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h_a4b93d352d2fca75b34e1b5a50e03f587}{name}}))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Reports the result of the successful pairing between a Bluetooth sub-\/device and the app to the cloud. The {\ttfamily product\+Key} and {\ttfamily mac} parameters are included in the report. Then, the cloud returns the product ID (PID) based on both parameters. 
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The short address identification of the Bluetooth sub-\/device. \\
+\hline
+{\em dev\+Key} & The device key. \\
+\hline
+{\em node\+Id} & The node ID. \\
+\hline
+{\em product\+Key} & The product key. \\
+\hline
+{\em ver} & The version. \\
+\hline
+{\em mac} & The MAC address of the device. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_ab10056342c7e0fa2f484a1169f151ec5}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a7b76f36401d541047032e52d619946e8}\label{interface_thing_smart_ble_mesh_a7b76f36401d541047032e52d619946e8}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:@{addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:}}
+\index{addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:@{addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:}{addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Sub\+Device\+With\+Uuid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{auth\+Key\+:(NSString $\ast$)}]{auth\+Key }\item[{node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{product\+Key\+:(NSString $\ast$)}]{product\+Key }\item[{ver\+:(NSString $\ast$)}]{ver }\item[{success\+:(void($^\wedge$)(NSString $\ast$dev\+Id, NSString $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h_a4b93d352d2fca75b34e1b5a50e03f587}{name}}))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Adds a Bluetooth sub-\/device. API version\+: 2.\+0. 
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The short address identification of the Bluetooth sub-\/device. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+{\em auth\+Key} & The authorization key. \\
+\hline
+{\em node\+Id} & The node ID. \\
+\hline
+{\em product\+Key} & The product key. \\
+\hline
+{\em ver} & The version. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a7b76f36401d541047032e52d619946e8}\label{interface_thing_smart_ble_mesh_a7b76f36401d541047032e52d619946e8}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:@{addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:}}
+\index{addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:@{addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:}{addSubDeviceWithUuid:homeId:authKey:nodeId:productKey:ver:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Sub\+Device\+With\+Uuid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{auth\+Key\+:(NSString $\ast$)}]{auth\+Key }\item[{node\+Id\+:(NSString $\ast$)}]{node\+Id }\item[{product\+Key\+:(NSString $\ast$)}]{product\+Key }\item[{ver\+:(NSString $\ast$)}]{ver }\item[{success\+:(void($^\wedge$)(NSString $\ast$dev\+Id, NSString $\ast$\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_kit_8framework_2_headers_2_thing_smart_home_add_member_request_model_8h_a4b93d352d2fca75b34e1b5a50e03f587}{name}}))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Adds a Bluetooth sub-\/device. API version\+: 2.\+0. 
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The short address identification of the Bluetooth sub-\/device. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+{\em auth\+Key} & The authorization key. \\
+\hline
+{\em node\+Id} & The node ID. \\
+\hline
+{\em product\+Key} & The product key. \\
+\hline
+{\em ver} & The version. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ae70be5285432ad28b749a8bc8c50864a}\label{interface_thing_smart_ble_mesh_ae70be5285432ad28b749a8bc8c50864a}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!bleMeshWithMeshId:homeId:@{bleMeshWithMeshId:homeId:}}
+\index{bleMeshWithMeshId:homeId:@{bleMeshWithMeshId:homeId:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{bleMeshWithMeshId:homeId:}{bleMeshWithMeshId:homeId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (instancetype) ble\+Mesh\+With\+Mesh\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Id }\item[{home\+Id\+:(long long)}]{home\+Id }\end{DoxyParamCaption}}
+
+Returns a device object. 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Id} & The mesh ID. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ae70be5285432ad28b749a8bc8c50864a}\label{interface_thing_smart_ble_mesh_ae70be5285432ad28b749a8bc8c50864a}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!bleMeshWithMeshId:homeId:@{bleMeshWithMeshId:homeId:}}
+\index{bleMeshWithMeshId:homeId:@{bleMeshWithMeshId:homeId:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{bleMeshWithMeshId:homeId:}{bleMeshWithMeshId:homeId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (instancetype) ble\+Mesh\+With\+Mesh\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Id }\item[{home\+Id\+:(long long)}]{home\+Id }\end{DoxyParamCaption}}
+
+Returns a device object. 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Id} & The mesh ID. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_aa3311e8d7d60d5a4ec04da2d1b7e0384}\label{interface_thing_smart_ble_mesh_aa3311e8d7d60d5a4ec04da2d1b7e0384}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!broadcastDps:pcc:success:failure:@{broadcastDps:pcc:success:failure:}}
+\index{broadcastDps:pcc:success:failure:@{broadcastDps:pcc:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{broadcastDps:pcc:success:failure:}{broadcastDps:pcc:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) broadcast\+Dps\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{dps }\item[{pcc\+:(NSString $\ast$)}]{pcc }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Sends broadcast DPs. 
+\begin{DoxyParams}{Parameters}
+{\em dps} & The DP dictionary. \\
+\hline
+{\em pcc} & The size class label. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_aa3311e8d7d60d5a4ec04da2d1b7e0384}\label{interface_thing_smart_ble_mesh_aa3311e8d7d60d5a4ec04da2d1b7e0384}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!broadcastDps:pcc:success:failure:@{broadcastDps:pcc:success:failure:}}
+\index{broadcastDps:pcc:success:failure:@{broadcastDps:pcc:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{broadcastDps:pcc:success:failure:}{broadcastDps:pcc:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) broadcast\+Dps\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{dps }\item[{pcc\+:(NSString $\ast$)}]{pcc }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Sends broadcast DPs. 
+\begin{DoxyParams}{Parameters}
+{\em dps} & The DP dictionary. \\
+\hline
+{\em pcc} & The size class label. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a3f7081b6e0dd7ac23cb0cced0e46c7c3}\label{interface_thing_smart_ble_mesh_a3f7081b6e0dd7ac23cb0cced0e46c7c3}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!createBleMeshWithMeshName:homeId:success:failure:@{createBleMeshWithMeshName:homeId:success:failure:}}
+\index{createBleMeshWithMeshName:homeId:success:failure:@{createBleMeshWithMeshName:homeId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{createBleMeshWithMeshName:homeId:success:failure:}{createBleMeshWithMeshName:homeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) create\+Ble\+Mesh\+With\+Mesh\+Name\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Name }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$mesh\+Model))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Creates a mesh. 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Name} & The mesh name. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a3f7081b6e0dd7ac23cb0cced0e46c7c3}\label{interface_thing_smart_ble_mesh_a3f7081b6e0dd7ac23cb0cced0e46c7c3}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!createBleMeshWithMeshName:homeId:success:failure:@{createBleMeshWithMeshName:homeId:success:failure:}}
+\index{createBleMeshWithMeshName:homeId:success:failure:@{createBleMeshWithMeshName:homeId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{createBleMeshWithMeshName:homeId:success:failure:}{createBleMeshWithMeshName:homeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) create\+Ble\+Mesh\+With\+Mesh\+Name\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Name }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$mesh\+Model))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Creates a mesh. 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Name} & The mesh name. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a3e1c02b19dec05fbbc84b9b5ed197180}\label{interface_thing_smart_ble_mesh_a3e1c02b19dec05fbbc84b9b5ed197180}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!createSIGMeshWithHomeId:success:failure:@{createSIGMeshWithHomeId:success:failure:}}
+\index{createSIGMeshWithHomeId:success:failure:@{createSIGMeshWithHomeId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{createSIGMeshWithHomeId:success:failure:}{createSIGMeshWithHomeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) create\+SIGMesh\+With\+Home\+Id\+: \begin{DoxyParamCaption}\item[{(long long)}]{home\+Id }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$mesh\+Model))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a3e1c02b19dec05fbbc84b9b5ed197180}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a3e1c02b19dec05fbbc84b9b5ed197180}\label{interface_thing_smart_ble_mesh_a3e1c02b19dec05fbbc84b9b5ed197180}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!createSIGMeshWithHomeId:success:failure:@{createSIGMeshWithHomeId:success:failure:}}
+\index{createSIGMeshWithHomeId:success:failure:@{createSIGMeshWithHomeId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{createSIGMeshWithHomeId:success:failure:}{createSIGMeshWithHomeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) create\+SIGMesh\+With\+Home\+Id\+: \begin{DoxyParamCaption}\item[{(long long)}]{home\+Id }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$mesh\+Model))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a3e1c02b19dec05fbbc84b9b5ed197180}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ad24c9e397dc11e71a45ae9a399e09410}\label{interface_thing_smart_ble_mesh_ad24c9e397dc11e71a45ae9a399e09410}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!deleteSIGMeshManager:@{deleteSIGMeshManager:}}
+\index{deleteSIGMeshManager:@{deleteSIGMeshManager:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{deleteSIGMeshManager:}{deleteSIGMeshManager:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) delete\+SIGMesh\+Manager\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Id }\end{DoxyParamCaption}}
+
+remove sigmesh network 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Id} & mesh\+Id \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_ad24c9e397dc11e71a45ae9a399e09410}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ad24c9e397dc11e71a45ae9a399e09410}\label{interface_thing_smart_ble_mesh_ad24c9e397dc11e71a45ae9a399e09410}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!deleteSIGMeshManager:@{deleteSIGMeshManager:}}
+\index{deleteSIGMeshManager:@{deleteSIGMeshManager:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{deleteSIGMeshManager:}{deleteSIGMeshManager:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) delete\+SIGMesh\+Manager\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Id }\end{DoxyParamCaption}}
+
+remove sigmesh network 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Id} & mesh\+Id \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_ad24c9e397dc11e71a45ae9a399e09410}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ae455781696a6458ce3e26ce7240cd962}\label{interface_thing_smart_ble_mesh_ae455781696a6458ce3e26ce7240cd962}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getAllSIGMeshManager@{getAllSIGMeshManager}}
+\index{getAllSIGMeshManager@{getAllSIGMeshManager}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getAllSIGMeshManager}{getAllSIGMeshManager}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$ $>$ $\ast$) get\+All\+SIGMesh\+Manager \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_ae455781696a6458ce3e26ce7240cd962}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ae455781696a6458ce3e26ce7240cd962}\label{interface_thing_smart_ble_mesh_ae455781696a6458ce3e26ce7240cd962}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getAllSIGMeshManager@{getAllSIGMeshManager}}
+\index{getAllSIGMeshManager@{getAllSIGMeshManager}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getAllSIGMeshManager}{getAllSIGMeshManager}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$ $>$ $\ast$) get\+All\+SIGMesh\+Manager \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_ae455781696a6458ce3e26ce7240cd962}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a0f4b3cc94ab2ec96d1a6a9423609634e}\label{interface_thing_smart_ble_mesh_a0f4b3cc94ab2ec96d1a6a9423609634e}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getMultiNodeAddressFromServerWithNumber:success:failure:@{getMultiNodeAddressFromServerWithNumber:success:failure:}}
+\index{getMultiNodeAddressFromServerWithNumber:success:failure:@{getMultiNodeAddressFromServerWithNumber:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getMultiNodeAddressFromServerWithNumber:success:failure:}{getMultiNodeAddressFromServerWithNumber:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Multi\+Node\+Address\+From\+Server\+With\+Number\+: \begin{DoxyParamCaption}\item[{(NSInteger)}]{number }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a9b2841d4f6e0c2a2e62dc4fa7451bc9a}{Thing\+Success\+List}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Returns multiple node IDs of Bluetooth mesh in a call. 
+\begin{DoxyParams}{Parameters}
+{\em number} & The number of assigned node IDs. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a0f4b3cc94ab2ec96d1a6a9423609634e}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a0f4b3cc94ab2ec96d1a6a9423609634e}\label{interface_thing_smart_ble_mesh_a0f4b3cc94ab2ec96d1a6a9423609634e}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getMultiNodeAddressFromServerWithNumber:success:failure:@{getMultiNodeAddressFromServerWithNumber:success:failure:}}
+\index{getMultiNodeAddressFromServerWithNumber:success:failure:@{getMultiNodeAddressFromServerWithNumber:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getMultiNodeAddressFromServerWithNumber:success:failure:}{getMultiNodeAddressFromServerWithNumber:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Multi\+Node\+Address\+From\+Server\+With\+Number\+: \begin{DoxyParamCaption}\item[{(NSInteger)}]{number }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a9b2841d4f6e0c2a2e62dc4fa7451bc9a}{Thing\+Success\+List}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Returns multiple node IDs of Bluetooth mesh in a call. 
+\begin{DoxyParams}{Parameters}
+{\em number} & The number of assigned node IDs. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a0f4b3cc94ab2ec96d1a6a9423609634e}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a4a5e50087c170b1d45d9f0165d6c62c1}\label{interface_thing_smart_ble_mesh_a4a5e50087c170b1d45d9f0165d6c62c1}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSIGMeshManager:@{getSIGMeshManager:}}
+\index{getSIGMeshManager:@{getSIGMeshManager:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSIGMeshManager:}{getSIGMeshManager:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$\+\_\+\+Nullable) get\+SIGMesh\+Manager\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Id }\end{DoxyParamCaption}}
+
+get SIGMesh\+Manager by mesh\+Id 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Id} & mesh\+Id \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a4a5e50087c170b1d45d9f0165d6c62c1}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a4a5e50087c170b1d45d9f0165d6c62c1}\label{interface_thing_smart_ble_mesh_a4a5e50087c170b1d45d9f0165d6c62c1}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSIGMeshManager:@{getSIGMeshManager:}}
+\index{getSIGMeshManager:@{getSIGMeshManager:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSIGMeshManager:}{getSIGMeshManager:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$\+\_\+\+Nullable) get\+SIGMesh\+Manager\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Id }\end{DoxyParamCaption}}
+
+get SIGMesh\+Manager by mesh\+Id 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Id} & mesh\+Id \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a4a5e50087c170b1d45d9f0165d6c62c1}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a08defd9ac40843bf071c117f6a60ee07}\label{interface_thing_smart_ble_mesh_a08defd9ac40843bf071c117f6a60ee07}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSIGMeshNetworkMaxCount@{getSIGMeshNetworkMaxCount}}
+\index{getSIGMeshNetworkMaxCount@{getSIGMeshNetworkMaxCount}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSIGMeshNetworkMaxCount}{getSIGMeshNetworkMaxCount}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (NSInteger) get\+SIGMesh\+Network\+Max\+Count \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a08defd9ac40843bf071c117f6a60ee07}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a08defd9ac40843bf071c117f6a60ee07}\label{interface_thing_smart_ble_mesh_a08defd9ac40843bf071c117f6a60ee07}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSIGMeshNetworkMaxCount@{getSIGMeshNetworkMaxCount}}
+\index{getSIGMeshNetworkMaxCount@{getSIGMeshNetworkMaxCount}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSIGMeshNetworkMaxCount}{getSIGMeshNetworkMaxCount}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (NSInteger) get\+SIGMesh\+Network\+Max\+Count \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a08defd9ac40843bf071c117f6a60ee07}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_aa31d0686251029d9c7c123111558c744}\label{interface_thing_smart_ble_mesh_aa31d0686251029d9c7c123111558c744}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSIGMeshNodeAddressFromServerWithSuccess:failure:@{getSIGMeshNodeAddressFromServerWithSuccess:failure:}}
+\index{getSIGMeshNodeAddressFromServerWithSuccess:failure:@{getSIGMeshNodeAddressFromServerWithSuccess:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSIGMeshNodeAddressFromServerWithSuccess:failure:}{getSIGMeshNodeAddressFromServerWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+SIGMesh\+Node\+Address\+From\+Server\+With\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a62c3563efaf9e4ae80a7f930f8193404}{Thing\+Success\+Int}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Assigns the node ID of Bluetooth mesh from the cloud. In each request, the node ID is incremented by {\ttfamily 0000 0111} or {\ttfamily 8}. 
+\begin{DoxyParams}{Parameters}
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_aa31d0686251029d9c7c123111558c744}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_aa31d0686251029d9c7c123111558c744}\label{interface_thing_smart_ble_mesh_aa31d0686251029d9c7c123111558c744}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSIGMeshNodeAddressFromServerWithSuccess:failure:@{getSIGMeshNodeAddressFromServerWithSuccess:failure:}}
+\index{getSIGMeshNodeAddressFromServerWithSuccess:failure:@{getSIGMeshNodeAddressFromServerWithSuccess:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSIGMeshNodeAddressFromServerWithSuccess:failure:}{getSIGMeshNodeAddressFromServerWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+SIGMesh\+Node\+Address\+From\+Server\+With\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a62c3563efaf9e4ae80a7f930f8193404}{Thing\+Success\+Int}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Assigns the node ID of Bluetooth mesh from the cloud. In each request, the node ID is incremented by {\ttfamily 0000 0111} or {\ttfamily 8}. 
+\begin{DoxyParams}{Parameters}
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_aa31d0686251029d9c7c123111558c744}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ad0b69a35895c591a9685378b0dab1693}\label{interface_thing_smart_ble_mesh_ad0b69a35895c591a9685378b0dab1693}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSIGMeshSourceAddressFromServerWithSuccess:failure:@{getSIGMeshSourceAddressFromServerWithSuccess:failure:}}
+\index{getSIGMeshSourceAddressFromServerWithSuccess:failure:@{getSIGMeshSourceAddressFromServerWithSuccess:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSIGMeshSourceAddressFromServerWithSuccess:failure:}{getSIGMeshSourceAddressFromServerWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+SIGMesh\+Source\+Address\+From\+Server\+With\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a62c3563efaf9e4ae80a7f930f8193404}{Thing\+Success\+Int}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Assigns the terminal source ID of Bluetooth mesh from the cloud. 
+\begin{DoxyParams}{Parameters}
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_ad0b69a35895c591a9685378b0dab1693}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ad0b69a35895c591a9685378b0dab1693}\label{interface_thing_smart_ble_mesh_ad0b69a35895c591a9685378b0dab1693}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSIGMeshSourceAddressFromServerWithSuccess:failure:@{getSIGMeshSourceAddressFromServerWithSuccess:failure:}}
+\index{getSIGMeshSourceAddressFromServerWithSuccess:failure:@{getSIGMeshSourceAddressFromServerWithSuccess:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSIGMeshSourceAddressFromServerWithSuccess:failure:}{getSIGMeshSourceAddressFromServerWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+SIGMesh\+Source\+Address\+From\+Server\+With\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a62c3563efaf9e4ae80a7f930f8193404}{Thing\+Success\+Int}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Assigns the terminal source ID of Bluetooth mesh from the cloud. 
+\begin{DoxyParams}{Parameters}
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_ad0b69a35895c591a9685378b0dab1693}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a9e30e5c0f37f372a1fb729f60b190696}\label{interface_thing_smart_ble_mesh_a9e30e5c0f37f372a1fb729f60b190696}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSubDeviceDpsWithNodeId:pcc:dpIdList:success:failure:@{getSubDeviceDpsWithNodeId:pcc:dpIdList:success:failure:}}
+\index{getSubDeviceDpsWithNodeId:pcc:dpIdList:success:failure:@{getSubDeviceDpsWithNodeId:pcc:dpIdList:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSubDeviceDpsWithNodeId:pcc:dpIdList:success:failure:}{getSubDeviceDpsWithNodeId:pcc:dpIdList:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sub\+Device\+Dps\+With\+Node\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{node\+Id }\item[{pcc\+:(NSString $\ast$)}]{pcc }\item[{dp\+Id\+List\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSNumber $\ast$ $>$ $\ast$)}]{dp\+Id\+List }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Returns the latest DP information of the sub-\/device. 
+\begin{DoxyParams}{Parameters}
+{\em node\+Id} & The node ID. \\
+\hline
+{\em pcc} & The size class label. \\
+\hline
+{\em dp\+Id\+List} & A list of keys in the DPs. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a9e30e5c0f37f372a1fb729f60b190696}\label{interface_thing_smart_ble_mesh_a9e30e5c0f37f372a1fb729f60b190696}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSubDeviceDpsWithNodeId:pcc:dpIdList:success:failure:@{getSubDeviceDpsWithNodeId:pcc:dpIdList:success:failure:}}
+\index{getSubDeviceDpsWithNodeId:pcc:dpIdList:success:failure:@{getSubDeviceDpsWithNodeId:pcc:dpIdList:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSubDeviceDpsWithNodeId:pcc:dpIdList:success:failure:}{getSubDeviceDpsWithNodeId:pcc:dpIdList:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sub\+Device\+Dps\+With\+Node\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{node\+Id }\item[{pcc\+:(NSString $\ast$)}]{pcc }\item[{dp\+Id\+List\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSNumber $\ast$ $>$ $\ast$)}]{dp\+Id\+List }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Returns the latest DP information of the sub-\/device. 
+\begin{DoxyParams}{Parameters}
+{\em node\+Id} & The node ID. \\
+\hline
+{\em pcc} & The size class label. \\
+\hline
+{\em dp\+Id\+List} & A list of keys in the DPs. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a4c6609c4c49f0bd5e12013ba13586021}\label{interface_thing_smart_ble_mesh_a4c6609c4c49f0bd5e12013ba13586021}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSubDeviceFromCloudWithDeviceId:success:failure:@{getSubDeviceFromCloudWithDeviceId:success:failure:}}
+\index{getSubDeviceFromCloudWithDeviceId:success:failure:@{getSubDeviceFromCloudWithDeviceId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSubDeviceFromCloudWithDeviceId:success:failure:}{getSubDeviceFromCloudWithDeviceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sub\+Device\+From\+Cloud\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$sub\+Device\+Model))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Returns the single sub-\/device information. 
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & The device ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a4c6609c4c49f0bd5e12013ba13586021}\label{interface_thing_smart_ble_mesh_a4c6609c4c49f0bd5e12013ba13586021}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSubDeviceFromCloudWithDeviceId:success:failure:@{getSubDeviceFromCloudWithDeviceId:success:failure:}}
+\index{getSubDeviceFromCloudWithDeviceId:success:failure:@{getSubDeviceFromCloudWithDeviceId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSubDeviceFromCloudWithDeviceId:success:failure:}{getSubDeviceFromCloudWithDeviceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sub\+Device\+From\+Cloud\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$sub\+Device\+Model))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Returns the single sub-\/device information. 
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & The device ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ae5d333d1795d2aec7cf53375349a104b}\label{interface_thing_smart_ble_mesh_ae5d333d1795d2aec7cf53375349a104b}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSubDeviceListFromCloudWithSuccess:failure:@{getSubDeviceListFromCloudWithSuccess:failure:}}
+\index{getSubDeviceListFromCloudWithSuccess:failure:@{getSubDeviceListFromCloudWithSuccess:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSubDeviceListFromCloudWithSuccess:failure:}{getSubDeviceListFromCloudWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sub\+Device\+List\+From\+Cloud\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$sub\+Device\+List))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Returns the sub-\/device information of the mesh. 
+\begin{DoxyParams}{Parameters}
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ae5d333d1795d2aec7cf53375349a104b}\label{interface_thing_smart_ble_mesh_ae5d333d1795d2aec7cf53375349a104b}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getSubDeviceListFromCloudWithSuccess:failure:@{getSubDeviceListFromCloudWithSuccess:failure:}}
+\index{getSubDeviceListFromCloudWithSuccess:failure:@{getSubDeviceListFromCloudWithSuccess:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getSubDeviceListFromCloudWithSuccess:failure:}{getSubDeviceListFromCloudWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Sub\+Device\+List\+From\+Cloud\+With\+Success\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$sub\+Device\+List))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Returns the sub-\/device information of the mesh. 
+\begin{DoxyParams}{Parameters}
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a2822de52a8fd7d330a902e93cbfc8871}\label{interface_thing_smart_ble_mesh_a2822de52a8fd7d330a902e93cbfc8871}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getUnActiceDeviceInfo:mac:success:failure:@{getUnActiceDeviceInfo:mac:success:failure:}}
+\index{getUnActiceDeviceInfo:mac:success:failure:@{getUnActiceDeviceInfo:mac:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getUnActiceDeviceInfo:mac:success:failure:}{getUnActiceDeviceInfo:mac:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) get\+Un\+Actice\+Device\+Info\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{product\+Id }\item[{mac\+:(NSString $\ast$)}]{mac }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Get the unactive device information 
+\begin{DoxyParams}{Parameters}
+{\em product\+Id} & The product\+Id of device \\
+\hline
+{\em mac} & The mac of device \\
+\hline
+{\em success} & Called when the task is finished. A dictionary of device information is returned. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a2822de52a8fd7d330a902e93cbfc8871}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a2822de52a8fd7d330a902e93cbfc8871}\label{interface_thing_smart_ble_mesh_a2822de52a8fd7d330a902e93cbfc8871}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!getUnActiceDeviceInfo:mac:success:failure:@{getUnActiceDeviceInfo:mac:success:failure:}}
+\index{getUnActiceDeviceInfo:mac:success:failure:@{getUnActiceDeviceInfo:mac:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{getUnActiceDeviceInfo:mac:success:failure:}{getUnActiceDeviceInfo:mac:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) get\+Un\+Actice\+Device\+Info\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{product\+Id }\item[{mac\+:(NSString $\ast$)}]{mac }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Get the unactive device information 
+\begin{DoxyParams}{Parameters}
+{\em product\+Id} & The product\+Id of device \\
+\hline
+{\em mac} & The mac of device \\
+\hline
+{\em success} & Called when the task is finished. A dictionary of device information is returned. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a2822de52a8fd7d330a902e93cbfc8871}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a0316cdca61bac85ba718724d06520010}\label{interface_thing_smart_ble_mesh_a0316cdca61bac85ba718724d06520010}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!initSIGMeshManager:ttl:nodeIds:@{initSIGMeshManager:ttl:nodeIds:}}
+\index{initSIGMeshManager:ttl:nodeIds:@{initSIGMeshManager:ttl:nodeIds:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{initSIGMeshManager:ttl:nodeIds:}{initSIGMeshManager:ttl:nodeIds:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$\+\_\+\+Nullable) init\+SIGMesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$)}]{mesh\+Model }\item[{ttl\+:(NSInteger)}]{ttl }\item[{node\+Ids\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSData $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{node\+Ids }\end{DoxyParamCaption}}
+
+init SIGMesh\+Manager by mesh\+Model 、 ttl and node\+Ids 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Model} & mesh\+Model \\
+\hline
+{\em ttl} & Number of times messages are forwarded on the network default is 8 \\
+\hline
+{\em node\+Ids} & All node\+Id in the mesh network (Does not contain low-\/power node\+Ids) \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a0316cdca61bac85ba718724d06520010}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a0316cdca61bac85ba718724d06520010}\label{interface_thing_smart_ble_mesh_a0316cdca61bac85ba718724d06520010}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!initSIGMeshManager:ttl:nodeIds:@{initSIGMeshManager:ttl:nodeIds:}}
+\index{initSIGMeshManager:ttl:nodeIds:@{initSIGMeshManager:ttl:nodeIds:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{initSIGMeshManager:ttl:nodeIds:}{initSIGMeshManager:ttl:nodeIds:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_thing_smart_s_i_g_mesh_manager}{Thing\+Smart\+SIGMesh\+Manager}} $\ast$\+\_\+\+Nullable) init\+SIGMesh\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$)}]{mesh\+Model }\item[{ttl\+:(NSInteger)}]{ttl }\item[{node\+Ids\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSData $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{node\+Ids }\end{DoxyParamCaption}}
+
+init SIGMesh\+Manager by mesh\+Model 、 ttl and node\+Ids 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Model} & mesh\+Model \\
+\hline
+{\em ttl} & Number of times messages are forwarded on the network default is 8 \\
+\hline
+{\em node\+Ids} & All node\+Id in the mesh network (Does not contain low-\/power node\+Ids) \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a0316cdca61bac85ba718724d06520010}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_adbe2ee307a3506428e90848c79b0215d}\label{interface_thing_smart_ble_mesh_adbe2ee307a3506428e90848c79b0215d}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!initWithMeshId:homeId:@{initWithMeshId:homeId:}}
+\index{initWithMeshId:homeId:@{initWithMeshId:homeId:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{initWithMeshId:homeId:}{initWithMeshId:homeId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Mesh\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Id }\item[{home\+Id\+:(long long)}]{NS\+\_\+\+DESIGNATED\+\_\+\+INITIALIZER }\end{DoxyParamCaption}}
+
+The mesh parameters are required to establish a Bluetooth mesh connection. 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Id} & The mesh ID. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_adbe2ee307a3506428e90848c79b0215d}\label{interface_thing_smart_ble_mesh_adbe2ee307a3506428e90848c79b0215d}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!initWithMeshId:homeId:@{initWithMeshId:homeId:}}
+\index{initWithMeshId:homeId:@{initWithMeshId:homeId:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{initWithMeshId:homeId:}{initWithMeshId:homeId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Mesh\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Id }\item[{home\+Id\+:(long long)}]{NS\+\_\+\+DESIGNATED\+\_\+\+INITIALIZER }\end{DoxyParamCaption}}
+
+The mesh parameters are required to establish a Bluetooth mesh connection. 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Id} & The mesh ID. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a1e712197273dfe7bc4caf63fe94a408e}\label{interface_thing_smart_ble_mesh_a1e712197273dfe7bc4caf63fe94a408e}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!multiPublishWithLocalId:pcc:dps:success:failure:@{multiPublishWithLocalId:pcc:dps:success:failure:}}
+\index{multiPublishWithLocalId:pcc:dps:success:failure:@{multiPublishWithLocalId:pcc:dps:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{multiPublishWithLocalId:pcc:dps:success:failure:}{multiPublishWithLocalId:pcc:dps:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) multi\+Publish\+With\+Local\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{local\+Id }\item[{pcc\+:(NSString $\ast$)}]{pcc }\item[{dps\+:(NSDictionary $\ast$)}]{dps }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Controls devices in a group. 
+\begin{DoxyParams}{Parameters}
+{\em local\+Id} & The local ID. \\
+\hline
+{\em pcc} & The size class label. \\
+\hline
+{\em dps} & The DP dictionary. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a1e712197273dfe7bc4caf63fe94a408e}\label{interface_thing_smart_ble_mesh_a1e712197273dfe7bc4caf63fe94a408e}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!multiPublishWithLocalId:pcc:dps:success:failure:@{multiPublishWithLocalId:pcc:dps:success:failure:}}
+\index{multiPublishWithLocalId:pcc:dps:success:failure:@{multiPublishWithLocalId:pcc:dps:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{multiPublishWithLocalId:pcc:dps:success:failure:}{multiPublishWithLocalId:pcc:dps:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) multi\+Publish\+With\+Local\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{local\+Id }\item[{pcc\+:(NSString $\ast$)}]{pcc }\item[{dps\+:(NSDictionary $\ast$)}]{dps }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Controls devices in a group. 
+\begin{DoxyParams}{Parameters}
+{\em local\+Id} & The local ID. \\
+\hline
+{\em pcc} & The size class label. \\
+\hline
+{\em dps} & The DP dictionary. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a1cdabb68d79be3d73962d5f3c0ede5a1}\label{interface_thing_smart_ble_mesh_a1cdabb68d79be3d73962d5f3c0ede5a1}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a1cdabb68d79be3d73962d5f3c0ede5a1}\label{interface_thing_smart_ble_mesh_a1cdabb68d79be3d73962d5f3c0ede5a1}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_af19c34aff8399c1e352f9efe74b06a01}\label{interface_thing_smart_ble_mesh_af19c34aff8399c1e352f9efe74b06a01}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!publishNodeId:pcc:dps:success:failure:@{publishNodeId:pcc:dps:success:failure:}}
+\index{publishNodeId:pcc:dps:success:failure:@{publishNodeId:pcc:dps:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{publishNodeId:pcc:dps:success:failure:}{publishNodeId:pcc:dps:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) publish\+Node\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{node\+Id }\item[{pcc\+:(NSString $\ast$)}]{pcc }\item[{dps\+:(NSDictionary $\ast$)}]{dps }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Sends DPs to a single sub-\/device. 
+\begin{DoxyParams}{Parameters}
+{\em node\+Id} & The node ID. \\
+\hline
+{\em pcc} & The size class label. \\
+\hline
+{\em dps} & The DP dictionary. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_af19c34aff8399c1e352f9efe74b06a01}\label{interface_thing_smart_ble_mesh_af19c34aff8399c1e352f9efe74b06a01}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!publishNodeId:pcc:dps:success:failure:@{publishNodeId:pcc:dps:success:failure:}}
+\index{publishNodeId:pcc:dps:success:failure:@{publishNodeId:pcc:dps:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{publishNodeId:pcc:dps:success:failure:}{publishNodeId:pcc:dps:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) publish\+Node\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{node\+Id }\item[{pcc\+:(NSString $\ast$)}]{pcc }\item[{dps\+:(NSDictionary $\ast$)}]{dps }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Sends DPs to a single sub-\/device. 
+\begin{DoxyParams}{Parameters}
+{\em node\+Id} & The node ID. \\
+\hline
+{\em pcc} & The size class label. \\
+\hline
+{\em dps} & The DP dictionary. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a9a542e91d45e25a632d1b4770cc9c5f4}\label{interface_thing_smart_ble_mesh_a9a542e91d45e25a632d1b4770cc9c5f4}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!publishRawDataWithRaw:pcc:success:failure:@{publishRawDataWithRaw:pcc:success:failure:}}
+\index{publishRawDataWithRaw:pcc:success:failure:@{publishRawDataWithRaw:pcc:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{publishRawDataWithRaw:pcc:success:failure:}{publishRawDataWithRaw:pcc:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) publish\+Raw\+Data\+With\+Raw\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{raw }\item[{pcc\+:(NSString $\ast$)}]{pcc }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Sends DPs of raw type to the device. 
+\begin{DoxyParams}{Parameters}
+{\em raw} & The type of transmission. \\
+\hline
+{\em pcc} & The size class label. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a9a542e91d45e25a632d1b4770cc9c5f4}\label{interface_thing_smart_ble_mesh_a9a542e91d45e25a632d1b4770cc9c5f4}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!publishRawDataWithRaw:pcc:success:failure:@{publishRawDataWithRaw:pcc:success:failure:}}
+\index{publishRawDataWithRaw:pcc:success:failure:@{publishRawDataWithRaw:pcc:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{publishRawDataWithRaw:pcc:success:failure:}{publishRawDataWithRaw:pcc:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) publish\+Raw\+Data\+With\+Raw\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{raw }\item[{pcc\+:(NSString $\ast$)}]{pcc }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Sends DPs of raw type to the device. 
+\begin{DoxyParams}{Parameters}
+{\em raw} & The type of transmission. \\
+\hline
+{\em pcc} & The size class label. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a58651de14afcc01b293babeca9b584cc}\label{interface_thing_smart_ble_mesh_a58651de14afcc01b293babeca9b584cc}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!removeMeshSubDeviceWithDeviceId:success:failure:@{removeMeshSubDeviceWithDeviceId:success:failure:}}
+\index{removeMeshSubDeviceWithDeviceId:success:failure:@{removeMeshSubDeviceWithDeviceId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{removeMeshSubDeviceWithDeviceId:success:failure:}{removeMeshSubDeviceWithDeviceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Mesh\+Sub\+Device\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Removes the mesh sub-\/device. 
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & The device ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a58651de14afcc01b293babeca9b584cc}\label{interface_thing_smart_ble_mesh_a58651de14afcc01b293babeca9b584cc}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!removeMeshSubDeviceWithDeviceId:success:failure:@{removeMeshSubDeviceWithDeviceId:success:failure:}}
+\index{removeMeshSubDeviceWithDeviceId:success:failure:@{removeMeshSubDeviceWithDeviceId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{removeMeshSubDeviceWithDeviceId:success:failure:}{removeMeshSubDeviceWithDeviceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Mesh\+Sub\+Device\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Removes the mesh sub-\/device. 
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & The device ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a16ee940a6376bf9567d41d8c4916a3f9}\label{interface_thing_smart_ble_mesh_a16ee940a6376bf9567d41d8c4916a3f9}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!removeMeshSubDeviceWithGatewayId:subDeviceId:success:failure:@{removeMeshSubDeviceWithGatewayId:subDeviceId:success:failure:}}
+\index{removeMeshSubDeviceWithGatewayId:subDeviceId:success:failure:@{removeMeshSubDeviceWithGatewayId:subDeviceId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{removeMeshSubDeviceWithGatewayId:subDeviceId:success:failure:}{removeMeshSubDeviceWithGatewayId:subDeviceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Mesh\+Sub\+Device\+With\+Gateway\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{gateway\+Id }\item[{sub\+Device\+Id\+:(NSString $\ast$)}]{sub\+Device\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Removes a Bluetooth mesh sub-\/device from the gateway to which the sub-\/device is connected. 
+\begin{DoxyParams}{Parameters}
+{\em gateway\+Id} & The gateway ID. \\
+\hline
+{\em sub\+Device\+Id} & The sub-\/device ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a16ee940a6376bf9567d41d8c4916a3f9}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a16ee940a6376bf9567d41d8c4916a3f9}\label{interface_thing_smart_ble_mesh_a16ee940a6376bf9567d41d8c4916a3f9}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!removeMeshSubDeviceWithGatewayId:subDeviceId:success:failure:@{removeMeshSubDeviceWithGatewayId:subDeviceId:success:failure:}}
+\index{removeMeshSubDeviceWithGatewayId:subDeviceId:success:failure:@{removeMeshSubDeviceWithGatewayId:subDeviceId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{removeMeshSubDeviceWithGatewayId:subDeviceId:success:failure:}{removeMeshSubDeviceWithGatewayId:subDeviceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Mesh\+Sub\+Device\+With\+Gateway\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{gateway\+Id }\item[{sub\+Device\+Id\+:(NSString $\ast$)}]{sub\+Device\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Removes a Bluetooth mesh sub-\/device from the gateway to which the sub-\/device is connected. 
+\begin{DoxyParams}{Parameters}
+{\em gateway\+Id} & The gateway ID. \\
+\hline
+{\em sub\+Device\+Id} & The sub-\/device ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a16ee940a6376bf9567d41d8c4916a3f9}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a4ed4bd0b236487948f1e2ec2d95d2b53}\label{interface_thing_smart_ble_mesh_a4ed4bd0b236487948f1e2ec2d95d2b53}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!removeMeshSubDeviceWithMeshId:deviceId:success:failure:@{removeMeshSubDeviceWithMeshId:deviceId:success:failure:}}
+\index{removeMeshSubDeviceWithMeshId:deviceId:success:failure:@{removeMeshSubDeviceWithMeshId:deviceId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{removeMeshSubDeviceWithMeshId:deviceId:success:failure:}{removeMeshSubDeviceWithMeshId:deviceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Mesh\+Sub\+Device\+With\+Mesh\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Id }\item[{device\+Id\+:(NSString $\ast$)}]{device\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a4ed4bd0b236487948f1e2ec2d95d2b53}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a4ed4bd0b236487948f1e2ec2d95d2b53}\label{interface_thing_smart_ble_mesh_a4ed4bd0b236487948f1e2ec2d95d2b53}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!removeMeshSubDeviceWithMeshId:deviceId:success:failure:@{removeMeshSubDeviceWithMeshId:deviceId:success:failure:}}
+\index{removeMeshSubDeviceWithMeshId:deviceId:success:failure:@{removeMeshSubDeviceWithMeshId:deviceId:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{removeMeshSubDeviceWithMeshId:deviceId:success:failure:}{removeMeshSubDeviceWithMeshId:deviceId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Mesh\+Sub\+Device\+With\+Mesh\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Id }\item[{device\+Id\+:(NSString $\ast$)}]{device\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_a4ed4bd0b236487948f1e2ec2d95d2b53}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a68bbdd3116d0abedc96585b70518dd69}\label{interface_thing_smart_ble_mesh_a68bbdd3116d0abedc96585b70518dd69}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!removeMeshWithSuccess:failure:@{removeMeshWithSuccess:failure:}}
+\index{removeMeshWithSuccess:failure:@{removeMeshWithSuccess:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{removeMeshWithSuccess:failure:}{removeMeshWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Mesh\+With\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Deletes the mesh. If the specified mesh group contains sub-\/devices, the sub-\/devices are also removed. The Wi-\/\+Fi connector is also removed. 
+\begin{DoxyParams}{Parameters}
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a68bbdd3116d0abedc96585b70518dd69}\label{interface_thing_smart_ble_mesh_a68bbdd3116d0abedc96585b70518dd69}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!removeMeshWithSuccess:failure:@{removeMeshWithSuccess:failure:}}
+\index{removeMeshWithSuccess:failure:@{removeMeshWithSuccess:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{removeMeshWithSuccess:failure:}{removeMeshWithSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Mesh\+With\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Deletes the mesh. If the specified mesh group contains sub-\/devices, the sub-\/devices are also removed. The Wi-\/\+Fi connector is also removed. 
+\begin{DoxyParams}{Parameters}
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a0426913b863d271ea5e1d9182146aefe}\label{interface_thing_smart_ble_mesh_a0426913b863d271ea5e1d9182146aefe}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!renameMeshSubDeviceWithDeviceId:name:success:failure:@{renameMeshSubDeviceWithDeviceId:name:success:failure:}}
+\index{renameMeshSubDeviceWithDeviceId:name:success:failure:@{renameMeshSubDeviceWithDeviceId:name:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{renameMeshSubDeviceWithDeviceId:name:success:failure:}{renameMeshSubDeviceWithDeviceId:name:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) rename\+Mesh\+Sub\+Device\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\item[{name\+:(NSString $\ast$)}]{name }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Renames the mesh sub-\/device. 
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & The device ID. \\
+\hline
+{\em name} & The device name. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a0426913b863d271ea5e1d9182146aefe}\label{interface_thing_smart_ble_mesh_a0426913b863d271ea5e1d9182146aefe}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!renameMeshSubDeviceWithDeviceId:name:success:failure:@{renameMeshSubDeviceWithDeviceId:name:success:failure:}}
+\index{renameMeshSubDeviceWithDeviceId:name:success:failure:@{renameMeshSubDeviceWithDeviceId:name:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{renameMeshSubDeviceWithDeviceId:name:success:failure:}{renameMeshSubDeviceWithDeviceId:name:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) rename\+Mesh\+Sub\+Device\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\item[{name\+:(NSString $\ast$)}]{name }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Renames the mesh sub-\/device. 
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & The device ID. \\
+\hline
+{\em name} & The device name. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ae742c5de6cc633a18037ff7a364d36f1}\label{interface_thing_smart_ble_mesh_ae742c5de6cc633a18037ff7a364d36f1}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!setSIGMeshNetworkMaxCount:@{setSIGMeshNetworkMaxCount:}}
+\index{setSIGMeshNetworkMaxCount:@{setSIGMeshNetworkMaxCount:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{setSIGMeshNetworkMaxCount:}{setSIGMeshNetworkMaxCount:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (void) set\+SIGMesh\+Network\+Max\+Count\+: \begin{DoxyParamCaption}\item[{(NSInteger)}]{count }\end{DoxyParamCaption}}
+
+Set the maximum number of supported sigmesh networks 
+\begin{DoxyParams}{Parameters}
+{\em count} & count default is 3 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_ae742c5de6cc633a18037ff7a364d36f1}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_ae742c5de6cc633a18037ff7a364d36f1}\label{interface_thing_smart_ble_mesh_ae742c5de6cc633a18037ff7a364d36f1}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!setSIGMeshNetworkMaxCount:@{setSIGMeshNetworkMaxCount:}}
+\index{setSIGMeshNetworkMaxCount:@{setSIGMeshNetworkMaxCount:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{setSIGMeshNetworkMaxCount:}{setSIGMeshNetworkMaxCount:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (void) set\+SIGMesh\+Network\+Max\+Count\+: \begin{DoxyParamCaption}\item[{(NSInteger)}]{count }\end{DoxyParamCaption}}
+
+Set the maximum number of supported sigmesh networks 
+\begin{DoxyParams}{Parameters}
+{\em count} & count default is 3 \\
+\hline
+\end{DoxyParams}
+
+
+Provided by category \mbox{\hyperlink{category_thing_smart_ble_mesh_07_s_i_g_mesh_08_ae742c5de6cc633a18037ff7a364d36f1}{Thing\+Smart\+Ble\+Mesh(\+SIGMesh)}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a65363e052a96db62497b788b393c18c9}\label{interface_thing_smart_ble_mesh_a65363e052a96db62497b788b393c18c9}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!sharedInstance@{sharedInstance}}
+\index{sharedInstance@{sharedInstance}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{sharedInstance}{sharedInstance}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (instancetype) shared\+Instance \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+The shared instance. 
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a65363e052a96db62497b788b393c18c9}\label{interface_thing_smart_ble_mesh_a65363e052a96db62497b788b393c18c9}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!sharedInstance@{sharedInstance}}
+\index{sharedInstance@{sharedInstance}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{sharedInstance}{sharedInstance}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (instancetype) shared\+Instance \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+The shared instance. 
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a31272f8e23d9efe22ac969feb5c08ad5}\label{interface_thing_smart_ble_mesh_a31272f8e23d9efe22ac969feb5c08ad5}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!updateMeshName:success:failure:@{updateMeshName:success:failure:}}
+\index{updateMeshName:success:failure:@{updateMeshName:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{updateMeshName:success:failure:}{updateMeshName:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+Mesh\+Name\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Name }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Modifies the mesh name. 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Name} & The mesh name. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a31272f8e23d9efe22ac969feb5c08ad5}\label{interface_thing_smart_ble_mesh_a31272f8e23d9efe22ac969feb5c08ad5}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!updateMeshName:success:failure:@{updateMeshName:success:failure:}}
+\index{updateMeshName:success:failure:@{updateMeshName:success:failure:}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{updateMeshName:success:failure:}{updateMeshName:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+Mesh\+Name\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{mesh\+Name }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Modifies the mesh name. 
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Name} & The mesh name. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a79b43d931dcdee68e36af07467c05f39}\label{interface_thing_smart_ble_mesh_a79b43d931dcdee68e36af07467c05f39}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!bleMeshModel@{bleMeshModel}}
+\index{bleMeshModel@{bleMeshModel}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{bleMeshModel}{bleMeshModel}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_smart_ble_mesh_model}{Thing\+Smart\+Ble\+Mesh\+Model}} $\ast$) ble\+Mesh\+Model\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_8h_source_l00033}{33}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_8h_source}{Thing\+Smart\+Ble\+Mesh.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_a43bc116d3837d680266da01973cd9abc}\label{interface_thing_smart_ble_mesh_a43bc116d3837d680266da01973cd9abc}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!delegate@{delegate}}
+\index{delegate@{delegate}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_smart_ble_mesh_delegate-p}{Thing\+Smart\+Ble\+Mesh\+Delegate}} $>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_8h_source_l00035}{35}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_8h_source}{Thing\+Smart\+Ble\+Mesh.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_ble_mesh_abc955512513ba87b768d89035fbd0b07}\label{interface_thing_smart_ble_mesh_abc955512513ba87b768d89035fbd0b07}} 
+\index{ThingSmartBleMesh@{ThingSmartBleMesh}!disableBLECapability@{disableBLECapability}}
+\index{disableBLECapability@{disableBLECapability}!ThingSmartBleMesh@{ThingSmartBleMesh}}
+\doxysubsubsection{\texorpdfstring{disableBLECapability}{disableBLECapability}}
+{\footnotesize\ttfamily -\/ (BOOL) disable\+BLECapability\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Whether to disable bluetooth. Default NO. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_8h_source_l00038}{38}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_8h_source}{Thing\+Smart\+Ble\+Mesh.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEMesh\+Kit/\+Build/\+Thing\+Smart\+BLEMesh\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLEMesh\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_8h}{Thing\+Smart\+Ble\+Mesh.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEMesh\+Kit/\+Build/\+Thing\+Smart\+BLEMesh\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLEMesh\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_8h}{Thing\+Smart\+Ble\+Mesh.\+h}}\end{DoxyCompactItemize}

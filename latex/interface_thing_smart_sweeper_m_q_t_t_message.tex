@@ -1,0 +1,79 @@
+\hypertarget{interface_thing_smart_sweeper_m_q_t_t_message}{}\doxysection{Thing\+Smart\+Sweeper\+MQTTMessage Class Reference}
+\label{interface_thing_smart_sweeper_m_q_t_t_message}\index{ThingSmartSweeperMQTTMessage@{ThingSmartSweeperMQTTMessage}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Sweeper\+MQTTMessage.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Sweeper\+MQTTMessage\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_sweeper_m_q_t_t_message}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_sweeper_m_q_t_t_message_a90cadc9d591ffd23f8f8c89dee3bcbc5}{map\+Id}}
+\item 
+Thing\+Smart\+Sweeper\+MQTTMessage\+Type \mbox{\hyperlink{interface_thing_smart_sweeper_m_q_t_t_message_a9062e8bf406558acf6ac339331005a1c}{map\+Type}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_sweeper_m_q_t_t_message_afcf7888abbc0ab467f4f6c5d2e333d3a}{map\+Path}}
+\item 
+NSDictionary $\ast$ \mbox{\hyperlink{interface_thing_smart_sweeper_m_q_t_t_message_a93d41bbe2b4341ef4b228b48e622b844}{origin\+Json}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_m_q_t_t_message_8h_source_l00018}{18}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_m_q_t_t_message_8h_source}{Thing\+Smart\+Sweeper\+MQTTMessage.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_sweeper_m_q_t_t_message_a90cadc9d591ffd23f8f8c89dee3bcbc5}\label{interface_thing_smart_sweeper_m_q_t_t_message_a90cadc9d591ffd23f8f8c89dee3bcbc5}} 
+\index{ThingSmartSweeperMQTTMessage@{ThingSmartSweeperMQTTMessage}!mapId@{mapId}}
+\index{mapId@{mapId}!ThingSmartSweeperMQTTMessage@{ThingSmartSweeperMQTTMessage}}
+\doxysubsubsection{\texorpdfstring{mapId}{mapId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) map\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Sweeper map file id 实时回调的文件id 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_m_q_t_t_message_8h_source_l00024}{24}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_m_q_t_t_message_8h_source}{Thing\+Smart\+Sweeper\+MQTTMessage.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_sweeper_m_q_t_t_message_afcf7888abbc0ab467f4f6c5d2e333d3a}\label{interface_thing_smart_sweeper_m_q_t_t_message_afcf7888abbc0ab467f4f6c5d2e333d3a}} 
+\index{ThingSmartSweeperMQTTMessage@{ThingSmartSweeperMQTTMessage}!mapPath@{mapPath}}
+\index{mapPath@{mapPath}!ThingSmartSweeperMQTTMessage@{ThingSmartSweeperMQTTMessage}}
+\doxysubsubsection{\texorpdfstring{mapPath}{mapPath}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) map\+Path\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Sweeper map file path 实时回调的文件相对路径。（地图/路径存放在云端的相对路径） 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_m_q_t_t_message_8h_source_l00034}{34}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_m_q_t_t_message_8h_source}{Thing\+Smart\+Sweeper\+MQTTMessage.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_sweeper_m_q_t_t_message_a9062e8bf406558acf6ac339331005a1c}\label{interface_thing_smart_sweeper_m_q_t_t_message_a9062e8bf406558acf6ac339331005a1c}} 
+\index{ThingSmartSweeperMQTTMessage@{ThingSmartSweeperMQTTMessage}!mapType@{mapType}}
+\index{mapType@{mapType}!ThingSmartSweeperMQTTMessage@{ThingSmartSweeperMQTTMessage}}
+\doxysubsubsection{\texorpdfstring{mapType}{mapType}}
+{\footnotesize\ttfamily -\/ (Thing\+Smart\+Sweeper\+MQTTMessage\+Type) map\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Sweeper map file. 0\+: map; 1\+:route 实时回调的文件类型。0：地图；1：路径 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_m_q_t_t_message_8h_source_l00029}{29}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_m_q_t_t_message_8h_source}{Thing\+Smart\+Sweeper\+MQTTMessage.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_sweeper_m_q_t_t_message_a93d41bbe2b4341ef4b228b48e622b844}\label{interface_thing_smart_sweeper_m_q_t_t_message_a93d41bbe2b4341ef4b228b48e622b844}} 
+\index{ThingSmartSweeperMQTTMessage@{ThingSmartSweeperMQTTMessage}!originJson@{originJson}}
+\index{originJson@{originJson}!ThingSmartSweeperMQTTMessage@{ThingSmartSweeperMQTTMessage}}
+\doxysubsubsection{\texorpdfstring{originJson}{originJson}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) origin\+Json\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_m_q_t_t_message_8h_source_l00036}{36}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_m_q_t_t_message_8h_source}{Thing\+Smart\+Sweeper\+MQTTMessage.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Sweeper\+Kit/\+Build/\+Thing\+Smart\+Sweeper\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Sweeper\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_m_q_t_t_message_8h}{Thing\+Smart\+Sweeper\+MQTTMessage.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Sweeper\+Kit/\+Build/\+Thing\+Smart\+Sweeper\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Sweeper\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_m_q_t_t_message_8h}{Thing\+Smart\+Sweeper\+MQTTMessage.\+h}}\end{DoxyCompactItemize}

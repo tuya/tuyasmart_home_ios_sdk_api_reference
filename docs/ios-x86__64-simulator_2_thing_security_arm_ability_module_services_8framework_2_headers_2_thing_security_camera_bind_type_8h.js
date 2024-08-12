@@ -1,9 +1,0 @@
-var ios_x86__64_simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_camera_bind_type_8h =
-[
-    [ "ThingSecurityCameraBindType", "ios-x86__64-simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_camera_bind_type_8h.html#a179dbdbc949184091e9a0922b75a2596", [
-      [ "ThingSecurityCameraBindTypeVideo", "ios-arm64_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_camera_bind_type_8h.html#a179dbdbc949184091e9a0922b75a2596aba02cee2bfa4ad4fecc0d511dac85d24", null ],
-      [ "ThingSecurityCameraBindTypeImage", "ios-arm64_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_camera_bind_type_8h.html#a179dbdbc949184091e9a0922b75a2596a13d2bfe34264e987e7d2ada06ac5eff8", null ],
-      [ "ThingSecurityCameraBindTypeVideo", "ios-x86__64-simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_camera_bind_type_8h.html#a179dbdbc949184091e9a0922b75a2596aba02cee2bfa4ad4fecc0d511dac85d24", null ],
-      [ "ThingSecurityCameraBindTypeImage", "ios-x86__64-simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_security_camera_bind_type_8h.html#a179dbdbc949184091e9a0922b75a2596a13d2bfe34264e987e7d2ada06ac5eff8", null ]
-    ] ]
-];

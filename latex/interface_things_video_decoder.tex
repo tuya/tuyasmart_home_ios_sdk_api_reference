@@ -1,0 +1,129 @@
+\hypertarget{interface_things_video_decoder}{}\doxysection{Things\+Video\+Decoder Class Reference}
+\label{interface_things_video_decoder}\index{ThingsVideoDecoder@{ThingsVideoDecoder}}
+
+
+{\ttfamily \#import $<$Thing\+Video\+Codec.\+h$>$}
+
+Inheritance diagram for Things\+Video\+Decoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_things_video_decoder}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_things_video_decoder_a447f8a52d7510f4188f522dddc21cf57}{init\+With\+Type\+Id\+:width\+:height\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_things_video_decoder_a56bf4172219a4d1d25f734f4df838f5c}{uninit}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_things_video_decoder_a1cc6bcca1fa64b55d53cb7cb9ecce904}{decode\+One\+Frame\+With\+Data\+:length\+:timestamp\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_things_video_decoder_a8522362db3b045a5a175997d9111076b}{did\+Video\+Frame\+Recved\+With\+Frame\+Info\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_things_video_decoder_a5f5f5dec95c22d2b02122aed46f0a55c}{test\+Decode\+With\+File\+Path\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_things_video_decoder_a447f8a52d7510f4188f522dddc21cf57}{init\+With\+Type\+Id\+:width\+:height\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_things_video_decoder_a56bf4172219a4d1d25f734f4df838f5c}{uninit}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_things_video_decoder_a1cc6bcca1fa64b55d53cb7cb9ecce904}{decode\+One\+Frame\+With\+Data\+:length\+:timestamp\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_things_video_decoder_a8522362db3b045a5a175997d9111076b}{did\+Video\+Frame\+Recved\+With\+Frame\+Info\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_things_video_decoder_a5f5f5dec95c22d2b02122aed46f0a55c}{test\+Decode\+With\+File\+Path\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_video_decoder_delegate-p}{Thing\+Video\+Decoder\+Delegate}} $>$ \mbox{\hyperlink{interface_things_video_decoder_ad9279d8479635610870cd079dfe35ff3}{delegate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_8h_source_l00015}{15}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_8h_source}{Thing\+Video\+Codec.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_things_video_decoder_a1cc6bcca1fa64b55d53cb7cb9ecce904}\label{interface_things_video_decoder_a1cc6bcca1fa64b55d53cb7cb9ecce904}} 
+\index{ThingsVideoDecoder@{ThingsVideoDecoder}!decodeOneFrameWithData:length:timestamp:@{decodeOneFrameWithData:length:timestamp:}}
+\index{decodeOneFrameWithData:length:timestamp:@{decodeOneFrameWithData:length:timestamp:}!ThingsVideoDecoder@{ThingsVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{decodeOneFrameWithData:length:timestamp:}{decodeOneFrameWithData:length:timestamp:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) decode\+One\+Frame\+With\+Data\+: \begin{DoxyParamCaption}\item[{(const char $\ast$)}]{data }\item[{length\+:(int)}]{len }\item[{timestamp\+:(int)}]{timestamp }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_things_video_decoder_a1cc6bcca1fa64b55d53cb7cb9ecce904}\label{interface_things_video_decoder_a1cc6bcca1fa64b55d53cb7cb9ecce904}} 
+\index{ThingsVideoDecoder@{ThingsVideoDecoder}!decodeOneFrameWithData:length:timestamp:@{decodeOneFrameWithData:length:timestamp:}}
+\index{decodeOneFrameWithData:length:timestamp:@{decodeOneFrameWithData:length:timestamp:}!ThingsVideoDecoder@{ThingsVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{decodeOneFrameWithData:length:timestamp:}{decodeOneFrameWithData:length:timestamp:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) decode\+One\+Frame\+With\+Data\+: \begin{DoxyParamCaption}\item[{(const char $\ast$)}]{data }\item[{length\+:(int)}]{len }\item[{timestamp\+:(int)}]{timestamp }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_things_video_decoder_a8522362db3b045a5a175997d9111076b}\label{interface_things_video_decoder_a8522362db3b045a5a175997d9111076b}} 
+\index{ThingsVideoDecoder@{ThingsVideoDecoder}!didVideoFrameRecvedWithFrameInfo:@{didVideoFrameRecvedWithFrameInfo:}}
+\index{didVideoFrameRecvedWithFrameInfo:@{didVideoFrameRecvedWithFrameInfo:}!ThingsVideoDecoder@{ThingsVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{didVideoFrameRecvedWithFrameInfo:}{didVideoFrameRecvedWithFrameInfo:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Video\+Frame\+Recved\+With\+Frame\+Info\+: \begin{DoxyParamCaption}\item[{(const \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a6fdeceb5f13cf40ad69eae132017347c}{Thing\+Decoder\+Ouput\+Param}} $\ast$)}]{frame\+Info }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_things_video_decoder_a8522362db3b045a5a175997d9111076b}\label{interface_things_video_decoder_a8522362db3b045a5a175997d9111076b}} 
+\index{ThingsVideoDecoder@{ThingsVideoDecoder}!didVideoFrameRecvedWithFrameInfo:@{didVideoFrameRecvedWithFrameInfo:}}
+\index{didVideoFrameRecvedWithFrameInfo:@{didVideoFrameRecvedWithFrameInfo:}!ThingsVideoDecoder@{ThingsVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{didVideoFrameRecvedWithFrameInfo:}{didVideoFrameRecvedWithFrameInfo:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Video\+Frame\+Recved\+With\+Frame\+Info\+: \begin{DoxyParamCaption}\item[{(const \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_a6fdeceb5f13cf40ad69eae132017347c}{Thing\+Decoder\+Ouput\+Param}} $\ast$)}]{frame\+Info }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_things_video_decoder_a447f8a52d7510f4188f522dddc21cf57}\label{interface_things_video_decoder_a447f8a52d7510f4188f522dddc21cf57}} 
+\index{ThingsVideoDecoder@{ThingsVideoDecoder}!initWithTypeId:width:height:@{initWithTypeId:width:height:}}
+\index{initWithTypeId:width:height:@{initWithTypeId:width:height:}!ThingsVideoDecoder@{ThingsVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{initWithTypeId:width:height:}{initWithTypeId:width:height:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) init\+With\+Type\+Id\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_ab93607b30107f8d8d9007677b5f5e32f}{Thing\+\_\+\+VIDEO\+\_\+\+DECODER\+\_\+\+TYPE\+\_\+\+ID}})}]{video\+Decoder\+Id }\item[{width\+:(int)}]{width }\item[{height\+:(int)}]{height }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_things_video_decoder_a447f8a52d7510f4188f522dddc21cf57}\label{interface_things_video_decoder_a447f8a52d7510f4188f522dddc21cf57}} 
+\index{ThingsVideoDecoder@{ThingsVideoDecoder}!initWithTypeId:width:height:@{initWithTypeId:width:height:}}
+\index{initWithTypeId:width:height:@{initWithTypeId:width:height:}!ThingsVideoDecoder@{ThingsVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{initWithTypeId:width:height:}{initWithTypeId:width:height:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) init\+With\+Type\+Id\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_defines_8h_ab93607b30107f8d8d9007677b5f5e32f}{Thing\+\_\+\+VIDEO\+\_\+\+DECODER\+\_\+\+TYPE\+\_\+\+ID}})}]{video\+Decoder\+Id }\item[{width\+:(int)}]{width }\item[{height\+:(int)}]{height }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_things_video_decoder_a5f5f5dec95c22d2b02122aed46f0a55c}\label{interface_things_video_decoder_a5f5f5dec95c22d2b02122aed46f0a55c}} 
+\index{ThingsVideoDecoder@{ThingsVideoDecoder}!testDecodeWithFilePath:@{testDecodeWithFilePath:}}
+\index{testDecodeWithFilePath:@{testDecodeWithFilePath:}!ThingsVideoDecoder@{ThingsVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{testDecodeWithFilePath:}{testDecodeWithFilePath:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) test\+Decode\+With\+File\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{file\+Path }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_things_video_decoder_a5f5f5dec95c22d2b02122aed46f0a55c}\label{interface_things_video_decoder_a5f5f5dec95c22d2b02122aed46f0a55c}} 
+\index{ThingsVideoDecoder@{ThingsVideoDecoder}!testDecodeWithFilePath:@{testDecodeWithFilePath:}}
+\index{testDecodeWithFilePath:@{testDecodeWithFilePath:}!ThingsVideoDecoder@{ThingsVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{testDecodeWithFilePath:}{testDecodeWithFilePath:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) test\+Decode\+With\+File\+Path\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{file\+Path }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_things_video_decoder_a56bf4172219a4d1d25f734f4df838f5c}\label{interface_things_video_decoder_a56bf4172219a4d1d25f734f4df838f5c}} 
+\index{ThingsVideoDecoder@{ThingsVideoDecoder}!uninit@{uninit}}
+\index{uninit@{uninit}!ThingsVideoDecoder@{ThingsVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{uninit}{uninit}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) uninit \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_things_video_decoder_a56bf4172219a4d1d25f734f4df838f5c}\label{interface_things_video_decoder_a56bf4172219a4d1d25f734f4df838f5c}} 
+\index{ThingsVideoDecoder@{ThingsVideoDecoder}!uninit@{uninit}}
+\index{uninit@{uninit}!ThingsVideoDecoder@{ThingsVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{uninit}{uninit}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) uninit \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_things_video_decoder_ad9279d8479635610870cd079dfe35ff3}\label{interface_things_video_decoder_ad9279d8479635610870cd079dfe35ff3}} 
+\index{ThingsVideoDecoder@{ThingsVideoDecoder}!delegate@{delegate}}
+\index{delegate@{delegate}!ThingsVideoDecoder@{ThingsVideoDecoder}}
+\doxysubsubsection{\texorpdfstring{delegate}{delegate}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_video_decoder_delegate-p}{Thing\+Video\+Decoder\+Delegate}} $>$) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_8h_source_l00017}{17}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_8h_source}{Thing\+Video\+Codec.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Video\+Codec\+SDK/\+Build/\+Thing\+Video\+Codec\+SDK.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Video\+Codec\+SDK.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_8h}{Thing\+Video\+Codec.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Video\+Codec\+SDK/\+Build/\+Thing\+Video\+Codec\+SDK.\+xcframework/ios-\/arm64/\+Thing\+Video\+Codec\+SDK.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_video_codec_s_d_k_8framework_2_headers_2_thing_video_codec_8h}{Thing\+Video\+Codec.\+h}}\end{DoxyCompactItemize}

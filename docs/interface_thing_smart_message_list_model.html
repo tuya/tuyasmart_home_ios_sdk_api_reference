@@ -24,9 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.15.0</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('interface_thing_smart_message_list_mod
 <p>The model of a message list.  
  <a href="interface_thing_smart_message_list_model.html#details">More...</a></p>
 
-<p><code>#import &lt;<a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>&gt;</code></p>
+<p><code>#import &lt;<a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ThingSmartMessageListModel:</div>
 <div class="dyncontent">
@@ -135,6 +135,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a5f829379c94059a2b9ec46453034f37f"><td class="memItemLeft" align="right" valign="top">NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_message_list_model.html#a5f829379c94059a2b9ec46453034f37f">msgType</a></td></tr>
 <tr class="memdesc:a5f829379c94059a2b9ec46453034f37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of message. Valid values: <code>0</code> means system messages. <code>1</code> means that new devices are added. <code>2</code> means that new friends are added. <code>4</code> means device alerts.  <a href="interface_thing_smart_message_list_model.html#a5f829379c94059a2b9ec46453034f37f">More...</a><br /></td></tr>
 <tr class="separator:a5f829379c94059a2b9ec46453034f37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab677ebd9dfc52cbfd7ca02a12c9a0f2f"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_message_list_model.html#ab677ebd9dfc52cbfd7ca02a12c9a0f2f">msgCode</a></td></tr>
+<tr class="memdesc:ab677ebd9dfc52cbfd7ca02a12c9a0f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The code of message.  <a href="interface_thing_smart_message_list_model.html#ab677ebd9dfc52cbfd7ca02a12c9a0f2f">More...</a><br /></td></tr>
+<tr class="separator:ab677ebd9dfc52cbfd7ca02a12c9a0f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97b8092a9ec8b0ba283130dc2dab267a"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_message_list_model.html#a97b8092a9ec8b0ba283130dc2dab267a">homeID</a></td></tr>
 <tr class="memdesc:a97b8092a9ec8b0ba283130dc2dab267a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of the current home.  <a href="interface_thing_smart_message_list_model.html#a97b8092a9ec8b0ba283130dc2dab267a">More...</a><br /></td></tr>
 <tr class="separator:a97b8092a9ec8b0ba283130dc2dab267a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,12 +150,44 @@ Properties</h2></td></tr>
 <tr class="memitem:ac0e9365ee62c968e6e7e70b14c8c9e86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_thing_smart_message_list_model_extend.html">ThingSmartMessageListModelExtend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_message_list_model.html#ac0e9365ee62c968e6e7e70b14c8c9e86">extendParams</a></td></tr>
 <tr class="memdesc:ac0e9365ee62c968e6e7e70b14c8c9e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not all information will be available, some messages will return the orientation of the image, etc.  <a href="interface_thing_smart_message_list_model.html#ac0e9365ee62c968e6e7e70b14c8c9e86">More...</a><br /></td></tr>
 <tr class="separator:ac0e9365ee62c968e6e7e70b14c8c9e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ecd2c4769bcdc33ad7726a106c3ae1e"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_message_list_model.html#a3ecd2c4769bcdc33ad7726a106c3ae1e">actionURL</a></td></tr>
+<tr class="memdesc:a3ecd2c4769bcdc33ad7726a106c3ae1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URL to navigate to when the message is clicked.  <a href="interface_thing_smart_message_list_model.html#a3ecd2c4769bcdc33ad7726a106c3ae1e">More...</a><br /></td></tr>
+<tr class="separator:a3ecd2c4769bcdc33ad7726a106c3ae1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92a58374031a605c1469fbe913d79bb"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_thing_smart_message_list_model.html#ac92a58374031a605c1469fbe913d79bb">attachPics</a></td></tr>
+<tr class="memdesc:ac92a58374031a605c1469fbe913d79bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attachments (e.g., image.jpg; video.mp4; video.jpg; etc.)  <a href="interface_thing_smart_message_list_model.html#ac92a58374031a605c1469fbe913d79bb">More...</a><br /></td></tr>
+<tr class="separator:ac92a58374031a605c1469fbe913d79bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The model of a message list. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00041">41</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00060">60</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 </div><h2 class="groupheader">Property Documentation</h2>
+<a id="a3ecd2c4769bcdc33ad7726a106c3ae1e" name="a3ecd2c4769bcdc33ad7726a106c3ae1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ecd2c4769bcdc33ad7726a106c3ae1e">&#9670;&nbsp;</a></span>actionURL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString *) actionURL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The URL to navigate to when the message is clicked. </p>
+
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00110">110</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+
+</div>
+</div>
 <a id="a6629af9ce47c3c7027f4869df442f925" name="a6629af9ce47c3c7027f4869df442f925"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6629af9ce47c3c7027f4869df442f925">&#9670;&nbsp;</a></span>alarmType</h2>
 
@@ -175,7 +210,7 @@ Properties</h2></td></tr>
 
 <p>Valid values: <code>1</code> means an alert message. <code>2</code> means an automation message. Only alert messages support this field to distinguish between alert messages and automation messages. The home messages and notifications are ignored. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00070">70</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00089">89</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -201,7 +236,33 @@ Properties</h2></td></tr>
 
 <p>A list of attachments. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00062">62</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00081">81</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+
+</div>
+</div>
+<a id="ac92a58374031a605c1469fbe913d79bb" name="ac92a58374031a605c1469fbe913d79bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac92a58374031a605c1469fbe913d79bb">&#9670;&nbsp;</a></span>attachPics</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString *) attachPics</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attachments (e.g., image.jpg; video.mp4; video.jpg; etc.) </p>
+
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00113">113</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -227,7 +288,7 @@ Properties</h2></td></tr>
 
 <p>The formatted date and time. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00053">53</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00072">72</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -253,7 +314,7 @@ Properties</h2></td></tr>
 
 <p>Not all information will be available, some messages will return the orientation of the image, etc. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00085">85</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00107">107</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -277,7 +338,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00064">64</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00083">83</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -303,7 +364,7 @@ Properties</h2></td></tr>
 
 <p>The ID of the current home. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00076">76</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00098">98</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -329,7 +390,7 @@ Properties</h2></td></tr>
 
 <p>The name of the current home. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00079">79</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00101">101</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -355,7 +416,7 @@ Properties</h2></td></tr>
 
 <p>The icon of a message. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00059">59</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00078">78</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +442,33 @@ Properties</h2></td></tr>
 
 <p>Is it necessary to pull the key to decrypt attachPicList. If isNeedPullEncKey is true, you need to get the decryption key by calling fetchMessageDecryptKeyWithEncryptRequestModel: success: failure: </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00082">82</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00104">104</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+
+</div>
+</div>
+<a id="ab677ebd9dfc52cbfd7ca02a12c9a0f2f" name="ab677ebd9dfc52cbfd7ca02a12c9a0f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab677ebd9dfc52cbfd7ca02a12c9a0f2f">&#9670;&nbsp;</a></span>msgCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString *) msgCode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">copy</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The code of message. </p>
+
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00095">95</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +494,7 @@ Properties</h2></td></tr>
 
 <p>The content of a message. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00050">50</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00069">69</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -433,7 +520,7 @@ Properties</h2></td></tr>
 
 <p>The identifier of a message. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00044">44</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00063">63</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -459,7 +546,7 @@ Properties</h2></td></tr>
 
 <p>The device ID. Only alert messages support this field. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00067">67</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00086">86</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -485,7 +572,7 @@ Properties</h2></td></tr>
 
 <p>The type of message. Valid values: <code>0</code> means system messages. <code>1</code> means that new devices are added. <code>2</code> means that new friends are added. <code>4</code> means device alerts. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00073">73</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00092">92</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -511,7 +598,7 @@ Properties</h2></td></tr>
 
 <p>The title of a message. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00047">47</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00066">66</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
@@ -537,15 +624,15 @@ Properties</h2></td></tr>
 
 <p>The timestamp of a message. </p>
 
-<p class="definition">Definition at line <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00056">56</a> of file <a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html#l00075">75</a> of file <a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>ThingSmartMessageKit/Build/ThingSmartMessageKit.xcframework/ios-arm64/ThingSmartMessageKit.framework/Headers/<a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a></li>
-<li>ThingSmartMessageKit/Build/ThingSmartMessageKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartMessageKit.framework/Headers/<a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a></li>
-<li>ThingSmartMessageKit/Build/ThingSmartMessageKit.xcframework/watchos-arm64_arm64_32_armv7k/ThingSmartMessageKit.framework/Headers/<a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a></li>
-<li>ThingSmartMessageKit/Build/ThingSmartMessageKit.xcframework/watchos-arm64_i386_x86_64-simulator/ThingSmartMessageKit.framework/Headers/<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a></li>
+<li>/Users/humtong/Downloads/Pods_副本/ThingSmartMessageKit/Build/ThingSmartMessageKit.xcframework/ios-arm64_x86_64-simulator/ThingSmartMessageKit.framework/Headers/<a class="el" href="ios-arm64__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a></li>
+<li>/Users/humtong/Downloads/Pods_副本/ThingSmartMessageKit/Build/ThingSmartMessageKit.xcframework/watchos-arm64_i386_x86_64-simulator/ThingSmartMessageKit.framework/Headers/<a class="el" href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a></li>
+<li>/Users/humtong/Downloads/Pods_副本/ThingSmartMessageKit/Build/ThingSmartMessageKit.xcframework/ios-arm64/ThingSmartMessageKit.framework/Headers/<a class="el" href="ios-arm64_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a></li>
+<li>/Users/humtong/Downloads/Pods_副本/ThingSmartMessageKit/Build/ThingSmartMessageKit.xcframework/watchos-arm64_arm64_32_armv7k/ThingSmartMessageKit.framework/Headers/<a class="el" href="watchos-arm64__arm64__32__armv7k_2_thing_smart_message_kit_8framework_2_headers_2_thing_smart_message_list_model_8h_source.html">ThingSmartMessageListModel.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

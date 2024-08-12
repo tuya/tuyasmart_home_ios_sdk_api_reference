@@ -1,0 +1,257 @@
+\hypertarget{interface_thing_n_v_r}{}\doxysection{Thing\+NVR Class Reference}
+\label{interface_thing_n_v_r}\index{ThingNVR@{ThingNVR}}
+
+
+{\ttfamily \#import $<$Thing\+NVR.\+h$>$}
+
+Inheritance diagram for Thing\+NVR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_n_v_r}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_n_v_r_ae92d6424e78c5402a8412edba7db4453}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_n_v_r_a80abb3ba7263e7298933a9196cb55474}{init\+With\+Nvr\+Id\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_n_v_r_a082637cd26d2d21bf9e3c4f3dfd4eece}{connect\+With\+Token\+:skills\+:trace\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_n_v_r_a7ed588240a8aa3bed1490a74dd5a9b6e}{disconnect}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_n_v_r_a4ac1f7d7122d7630142b82a7dcc3c809}{send\+Authorization\+With\+Username\+:pwd\+:on\+Response\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_n_v_r_ac9263269ec0ef5cf0212ec42c1427200}{bind\+Sub\+Devices\+Info\+With\+Json\+Info\+:on\+Response\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_n_v_r_ae92d6424e78c5402a8412edba7db4453}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_n_v_r_a80abb3ba7263e7298933a9196cb55474}{init\+With\+Nvr\+Id\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_n_v_r_a082637cd26d2d21bf9e3c4f3dfd4eece}{connect\+With\+Token\+:skills\+:trace\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_n_v_r_a7ed588240a8aa3bed1490a74dd5a9b6e}{disconnect}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_n_v_r_a4ac1f7d7122d7630142b82a7dcc3c809}{send\+Authorization\+With\+Username\+:pwd\+:on\+Response\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_n_v_r_ac9263269ec0ef5cf0212ec42c1427200}{bind\+Sub\+Devices\+Info\+With\+Json\+Info\+:on\+Response\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_n_v_r_a8300346c979e16a79b39b68f90def262}{nvr\+\_\+device\+\_\+id\+\_\+}}
+\item 
+int \mbox{\hyperlink{interface_thing_n_v_r_a03d461d80f969e4534db1b5c1b7fa8ea}{session\+\_\+}}
+\item 
+id$<$ \mbox{\hyperlink{protocol_thing_n_v_r_delegate-p}{Thing\+NVRDelegate}} $>$ \mbox{\hyperlink{interface_thing_n_v_r_af26c49eb67da8b59792d37dddda3270b}{delegate\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_n_v_r_8h_source_l00013}{13}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_n_v_r_8h_source}{Thing\+NVR.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_n_v_r_ac9263269ec0ef5cf0212ec42c1427200}\label{interface_thing_n_v_r_ac9263269ec0ef5cf0212ec42c1427200}} 
+\index{ThingNVR@{ThingNVR}!bindSubDevicesInfoWithJsonInfo:onResponse:@{bindSubDevicesInfoWithJsonInfo:onResponse:}}
+\index{bindSubDevicesInfoWithJsonInfo:onResponse:@{bindSubDevicesInfoWithJsonInfo:onResponse:}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{bindSubDevicesInfoWithJsonInfo:onResponse:}{bindSubDevicesInfoWithJsonInfo:onResponse:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) bind\+Sub\+Devices\+Info\+With\+Json\+Info\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{json\+Info }\item[{on\+Response\+:(void($^\wedge$)(const char $\ast$result, int err\+Code))}]{on\+Response }\end{DoxyParamCaption}}
+
+Description bind subdevices to station
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Info} & json\+Info. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_n_v_r_ac9263269ec0ef5cf0212ec42c1427200}\label{interface_thing_n_v_r_ac9263269ec0ef5cf0212ec42c1427200}} 
+\index{ThingNVR@{ThingNVR}!bindSubDevicesInfoWithJsonInfo:onResponse:@{bindSubDevicesInfoWithJsonInfo:onResponse:}}
+\index{bindSubDevicesInfoWithJsonInfo:onResponse:@{bindSubDevicesInfoWithJsonInfo:onResponse:}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{bindSubDevicesInfoWithJsonInfo:onResponse:}{bindSubDevicesInfoWithJsonInfo:onResponse:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) bind\+Sub\+Devices\+Info\+With\+Json\+Info\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{json\+Info }\item[{on\+Response\+:(void($^\wedge$)(const char $\ast$result, int err\+Code))}]{on\+Response }\end{DoxyParamCaption}}
+
+Description bind subdevices to station
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+Info} & json\+Info. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_n_v_r_a082637cd26d2d21bf9e3c4f3dfd4eece}\label{interface_thing_n_v_r_a082637cd26d2d21bf9e3c4f3dfd4eece}} 
+\index{ThingNVR@{ThingNVR}!connectWithToken:skills:traceId:@{connectWithToken:skills:traceId:}}
+\index{connectWithToken:skills:traceId:@{connectWithToken:skills:traceId:}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{connectWithToken:skills:traceId:}{connectWithToken:skills:traceId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) connect\+With\+Token\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{token }\item[{skills\+:(NSString $\ast$)}]{skills }\item[{trace\+Id\+:(NSString $\ast$)}]{trace\+Id }\end{DoxyParamCaption}}
+
+Description P2P 3.\+0 connect(\+Normal mode, exchange signal through MQTT 302)
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & thing p2p token. \\
+\hline
+{\em skills} & thing p2p skills for pre connect. supported while p2p version \texorpdfstring{$>$}{>}= 0x\+F4030400 \\
+\hline
+{\em trace\+Id} & p2p fulllink log trace\+Id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retcode \texorpdfstring{$>$}{>}= 0\+: session id, retcode \texorpdfstring{$<$}{<} 0\+: error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_n_v_r_a082637cd26d2d21bf9e3c4f3dfd4eece}\label{interface_thing_n_v_r_a082637cd26d2d21bf9e3c4f3dfd4eece}} 
+\index{ThingNVR@{ThingNVR}!connectWithToken:skills:traceId:@{connectWithToken:skills:traceId:}}
+\index{connectWithToken:skills:traceId:@{connectWithToken:skills:traceId:}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{connectWithToken:skills:traceId:}{connectWithToken:skills:traceId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) connect\+With\+Token\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{token }\item[{skills\+:(NSString $\ast$)}]{skills }\item[{trace\+Id\+:(NSString $\ast$)}]{trace\+Id }\end{DoxyParamCaption}}
+
+Description P2P 3.\+0 connect(\+Normal mode, exchange signal through MQTT 302)
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & thing p2p token. \\
+\hline
+{\em skills} & thing p2p skills for pre connect. supported while p2p version \texorpdfstring{$>$}{>}= 0x\+F4030400 \\
+\hline
+{\em trace\+Id} & p2p fulllink log trace\+Id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retcode \texorpdfstring{$>$}{>}= 0\+: session id, retcode \texorpdfstring{$<$}{<} 0\+: error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_n_v_r_a7ed588240a8aa3bed1490a74dd5a9b6e}\label{interface_thing_n_v_r_a7ed588240a8aa3bed1490a74dd5a9b6e}} 
+\index{ThingNVR@{ThingNVR}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{disconnect}{disconnect}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) disconnect \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Descriotion P2P 3.\+0 disconnect \mbox{\Hypertarget{interface_thing_n_v_r_a7ed588240a8aa3bed1490a74dd5a9b6e}\label{interface_thing_n_v_r_a7ed588240a8aa3bed1490a74dd5a9b6e}} 
+\index{ThingNVR@{ThingNVR}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{disconnect}{disconnect}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) disconnect \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Descriotion P2P 3.\+0 disconnect \mbox{\Hypertarget{interface_thing_n_v_r_a80abb3ba7263e7298933a9196cb55474}\label{interface_thing_n_v_r_a80abb3ba7263e7298933a9196cb55474}} 
+\index{ThingNVR@{ThingNVR}!initWithNvrId:@{initWithNvrId:}}
+\index{initWithNvrId:@{initWithNvrId:}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{initWithNvrId:}{initWithNvrId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Nvr\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{NS\+\_\+\+DESIGNATED\+\_\+\+INITIALIZER }\end{DoxyParamCaption}}
+
+Description NVR initializer. 
+\begin{DoxyParams}{Parameters}
+{\em nvr\+Did} & nvrdid \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_thing_n_v_r}{Thing\+NVR}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_n_v_r_a80abb3ba7263e7298933a9196cb55474}\label{interface_thing_n_v_r_a80abb3ba7263e7298933a9196cb55474}} 
+\index{ThingNVR@{ThingNVR}!initWithNvrId:@{initWithNvrId:}}
+\index{initWithNvrId:@{initWithNvrId:}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{initWithNvrId:}{initWithNvrId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Nvr\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{NS\+\_\+\+DESIGNATED\+\_\+\+INITIALIZER }\end{DoxyParamCaption}}
+
+Description NVR initializer. 
+\begin{DoxyParams}{Parameters}
+{\em nvr\+Did} & nvrdid \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_thing_n_v_r}{Thing\+NVR}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_n_v_r_ae92d6424e78c5402a8412edba7db4453}\label{interface_thing_n_v_r_ae92d6424e78c5402a8412edba7db4453}} 
+\index{ThingNVR@{ThingNVR}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_n_v_r_ae92d6424e78c5402a8412edba7db4453}\label{interface_thing_n_v_r_ae92d6424e78c5402a8412edba7db4453}} 
+\index{ThingNVR@{ThingNVR}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_n_v_r_a4ac1f7d7122d7630142b82a7dcc3c809}\label{interface_thing_n_v_r_a4ac1f7d7122d7630142b82a7dcc3c809}} 
+\index{ThingNVR@{ThingNVR}!sendAuthorizationWithUsername:pwd:onResponse:@{sendAuthorizationWithUsername:pwd:onResponse:}}
+\index{sendAuthorizationWithUsername:pwd:onResponse:@{sendAuthorizationWithUsername:pwd:onResponse:}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{sendAuthorizationWithUsername:pwd:onResponse:}{sendAuthorizationWithUsername:pwd:onResponse:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) send\+Authorization\+With\+Username\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{user\+Name }\item[{pwd\+:(NSString $\ast$)}]{password }\item[{on\+Response\+:(void($^\wedge$)(const char $\ast$result, int err\+Code))}]{on\+Response }\end{DoxyParamCaption}}
+
+Descriotion Nvr device authorization 
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & user\+Name. \\
+\hline
+{\em password} & password \\
+\hline
+{\em callback} & result callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_n_v_r_a4ac1f7d7122d7630142b82a7dcc3c809}\label{interface_thing_n_v_r_a4ac1f7d7122d7630142b82a7dcc3c809}} 
+\index{ThingNVR@{ThingNVR}!sendAuthorizationWithUsername:pwd:onResponse:@{sendAuthorizationWithUsername:pwd:onResponse:}}
+\index{sendAuthorizationWithUsername:pwd:onResponse:@{sendAuthorizationWithUsername:pwd:onResponse:}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{sendAuthorizationWithUsername:pwd:onResponse:}{sendAuthorizationWithUsername:pwd:onResponse:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) send\+Authorization\+With\+Username\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{user\+Name }\item[{pwd\+:(NSString $\ast$)}]{password }\item[{on\+Response\+:(void($^\wedge$)(const char $\ast$result, int err\+Code))}]{on\+Response }\end{DoxyParamCaption}}
+
+Descriotion Nvr device authorization 
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & user\+Name. \\
+\hline
+{\em password} & password \\
+\hline
+{\em callback} & result callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+error code 
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_n_v_r_af26c49eb67da8b59792d37dddda3270b}\label{interface_thing_n_v_r_af26c49eb67da8b59792d37dddda3270b}} 
+\index{ThingNVR@{ThingNVR}!delegate\_@{delegate\_}}
+\index{delegate\_@{delegate\_}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{delegate\_}{delegate\_}}
+{\footnotesize\ttfamily -\/ (id$<$ \mbox{\hyperlink{protocol_thing_n_v_r_delegate-p}{Thing\+NVRDelegate}} $>$) delegate\+\_\+\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_n_v_r_8h_source_l00017}{17}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_n_v_r_8h_source}{Thing\+NVR.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_n_v_r_a8300346c979e16a79b39b68f90def262}\label{interface_thing_n_v_r_a8300346c979e16a79b39b68f90def262}} 
+\index{ThingNVR@{ThingNVR}!nvr\_device\_id\_@{nvr\_device\_id\_}}
+\index{nvr\_device\_id\_@{nvr\_device\_id\_}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{nvr\_device\_id\_}{nvr\_device\_id\_}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) nvr\+\_\+device\+\_\+id\+\_\+\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_n_v_r_8h_source_l00015}{15}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_n_v_r_8h_source}{Thing\+NVR.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_n_v_r_a03d461d80f969e4534db1b5c1b7fa8ea}\label{interface_thing_n_v_r_a03d461d80f969e4534db1b5c1b7fa8ea}} 
+\index{ThingNVR@{ThingNVR}!session\_@{session\_}}
+\index{session\_@{session\_}!ThingNVR@{ThingNVR}}
+\doxysubsubsection{\texorpdfstring{session\_}{session\_}}
+{\footnotesize\ttfamily -\/ (int) session\+\_\+\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_n_v_r_8h_source_l00016}{16}} of file \mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_n_v_r_8h_source}{Thing\+NVR.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Camera\+SDK/\+Build/\+Thing\+Camera\+SDK.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Camera\+SDK.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_camera_s_d_k_8framework_2_headers_2_thing_n_v_r_8h}{Thing\+NVR.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Camera\+SDK/\+Build/\+Thing\+Camera\+SDK.\+xcframework/ios-\/arm64/\+Thing\+Camera\+SDK.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_thing_n_v_r_8h}{Thing\+NVR.\+h}}\end{DoxyCompactItemize}

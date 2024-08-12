@@ -1,6 +1,0 @@
-var ios_x86__64_simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_18c25690ade8c3f7589fb523ec10d754 =
-[
-    [ "ThingSecurityDeviceSchemeByPidRuleDpItemAbnormalExprModel", "interface_thing_security_device_scheme_by_pid_rule_dp_item_abnormal_expr_model.html", "interface_thing_security_device_scheme_by_pid_rule_dp_item_abnormal_expr_model" ],
-    [ "ThingSecurityDeviceSchemeByPidRuleDpItemModel", "interface_thing_security_device_scheme_by_pid_rule_dp_item_model.html", "interface_thing_security_device_scheme_by_pid_rule_dp_item_model" ],
-    [ "ThingSecurityDeviceSchemeByPidRuleModel", "interface_thing_security_device_scheme_by_pid_rule_model.html", "interface_thing_security_device_scheme_by_pid_rule_model" ]
-];

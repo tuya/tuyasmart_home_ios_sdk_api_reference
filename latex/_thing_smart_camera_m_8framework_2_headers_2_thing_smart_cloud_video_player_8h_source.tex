@@ -1,0 +1,170 @@
+\hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source}{}\doxysection{Thing\+Smart\+Cloud\+Video\+Player.\+h}
+\label{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartCameraM/Build/ThingSmartCameraM.xcframework/ios-\/arm64/ThingSmartCameraM.framework/Headers/ThingSmartCloudVideoPlayer.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartCameraM/Build/ThingSmartCameraM.xcframework/ios-\/arm64/ThingSmartCameraM.framework/Headers/ThingSmartCloudVideoPlayer.h}}
+\mbox{\hyperlink{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00001}\mbox{\hyperlink{protocol_thing_smart_cloud_video_player_delegate-p_a3895fba9ba3a74098c6c3b19272e3378}{00001}} \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00002}00002 \textcolor{comment}{//  ThingSmartCloudVideoPlayer.h}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00003}00003 \textcolor{comment}{//  ThingSmartCameraM}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00005}00005 \textcolor{comment}{//  Created by 傅浪 on 2019/3/22.}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00008}00008 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00009}00009 \textcolor{preprocessor}{\#import <ThingSmartCameraBase/ThingSmartCameraBase.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00010}00010 \textcolor{preprocessor}{\#import <CoreMedia/CoreMedia.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00012}00012 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_thing_smart_cloud_video_player}{ThingSmartCloudVideoPlayer}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00013}00013 \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_thing_smart_cloud_video_player_delegate-p}{ThingSmartCloudVideoPlayerDelegate}} <NSObject>}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00015}00015 -\/ (void)cloudVideoPlayer:(\mbox{\hyperlink{interface_thing_smart_cloud_video_player}{ThingSmartCloudVideoPlayer}} *)player didReceivedFrame:(CMSampleBufferRef)frameBuffer videoFrameInfo:(\mbox{\hyperlink{struct_thing_smart_video_frame_info}{ThingSmartVideoFrameInfo}})frameInfo;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00017}00017 -\/ (void)cloudVideoPlayer:(\mbox{\hyperlink{interface_thing_smart_cloud_video_player}{ThingSmartCloudVideoPlayer}} *)player  didReceivedAudioFrameInfo:(\mbox{\hyperlink{struct_thing_smart_audio_frame_info}{ThingSmartAudioFrameInfo}})frameInfo;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00019}00019 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00021}00021 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_smart_cloud_video_player}{ThingSmartCloudVideoPlayer}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00023}00023 \textcolor{keyword}{@property} (nonatomic, strong, readonly) NSString *\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a90a4e1bb2952ea81f01ceb5d14ad0b88}{devId}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00025}00025 \textcolor{keyword}{@property} (nonatomic, assign, getter=isAutoPlay) BOOL \mbox{\hyperlink{interface_thing_smart_cloud_video_player_a97642a751785acfdb22e6bd341b0e293}{autoPlay}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00027}\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a6b29d626275dc867149e9d9a5f17a507}{00027}} \textcolor{keyword}{@property} (nonatomic, weak) id<ThingSmartCloudVideoPlayerDelegate> \mbox{\hyperlink{interface_thing_smart_cloud_video_player_a110090d0b37465ba831a65a7f776316f}{delegate}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00029}00029 -\/ (instancetype)initWithDeviceId:(NSString *)devId;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00040}00040 -\/ (int)configCloudDataTags:(NSString *)jsonCloudDataTags;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00042}00042 -\/ (NSString *)configCloudDataTagsV2:(NSString *)jsonCloudDataTags;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00053}00053 -\/ (NSString *)getCloudUrlsWithStartTime:(\textcolor{keywordtype}{int})startTime endTime:(\textcolor{keywordtype}{int})endTime isEvent:(\textcolor{keywordtype}{bool})isEvent authParams:(NSString *)jsonAuthParams encryptKey:(NSString *)encryptKey;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00064}00064 -\/ (int)playCloudDataWithStartTime:(\textcolor{keywordtype}{int})nStartTime}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00065}00065                            endTime:(\textcolor{keywordtype}{int})nEndTime}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00066}00066                            isEvent:(BOOL)isEvent}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00067}00067                         authParams:(NSString *)jsonAuthParams}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00068}00068                         encryptKey:(NSString *)encryptKey}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00069}00069                         onResponse:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} errCode))responseCallback}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00070}00070                           onFinish:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} errCode))finishCallBack;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00081}00081 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a8a577b5b90774582ae1344dc3208417d}{pausePlayCloudVideo}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00093}00093 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a0205a9cded9890d1501d6a9713d7a22a}{resumePlayCloudVideo}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00105}00105 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a5837232812535bf3f33444b7fb739e42}{stopPlayCloudVideo}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00118}00118 -\/ (UIView<\mbox{\hyperlink{protocol_thing_smart_video_view_type-p}{ThingSmartVideoViewType}}> *)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_ace856cc87884b16a3badae8df0419e31}{videoView}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00132}00132 -\/ (int)enableMute:(BOOL)mute success:(\textcolor{keywordtype}{void}(\string^)(\textcolor{keywordtype}{void}))success failure:(\textcolor{keywordtype}{void} (\string^)(NSError * \mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))failure;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00133}00133 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00144}00144 -\/ (BOOL)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a00fb57b147626d4ce35f5e0526eccbf3}{isMuted}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00145}00145 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00155}00155 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a7df5543d8856a1637e37a461a94eaca6}{startRecord}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00156}00156 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00168}00168 -\/ (int)startRecordAtPath:(NSString *)filePath;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00169}00169 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00180}00180 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a2422c3ca6968e9c484a16ce694773a39}{stopRecord}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00181}00181 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00191}00191 -\/ (UIImage *)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_aef4db200c03c4d6299f7ed51c73343f4}{snapShoot}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00192}00192 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00202}00202 -\/ (UIImage *)snapShootAtPath:(NSString *)filePath thumbnilPath:(NSString *)thumbnilPath;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00203}00203 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00213}00213 -\/ (void)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a92aa52b7d2ae3a9dd5d58b779984cd7e}{destroy}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00214}00214 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00215}00215 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00216}00216 \textcolor{comment}{ start download cloud video, saved as mp4}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00217}00217 \textcolor{comment}{ @param nStartTime Expected start time of the downloaded video  欲下载的云存储视频的起始时间}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00218}00218 \textcolor{comment}{ @param nStopTime Expected end time of the downloaded video 欲下载的云存储视频的结束时间}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00219}00219 \textcolor{comment}{ @param folderPath the folder path to save mp4. 存放mp4文件的文件夹}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00220}00220 \textcolor{comment}{ @param mp4FileName video file name. mp4文件名}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00221}00221 \textcolor{comment}{ @param callback 成功失败回调}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00222}00222 \textcolor{comment}{ @param progressCallBack 进度回调}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00223}00223 \textcolor{comment}{ @param finishedCallBack 结束回调}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00224}00224 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00225}00225 -\/ (int)startCloudDataDownloadWithStartTime:(\textcolor{keywordtype}{int})startTime stopTime:(\textcolor{keywordtype}{int})stopTime folderPath:(NSString *)folderPath fileName:(NSString *)mp4FileName authParams:(NSString *)jsonAuthParams encryptKey:(NSString *)encryptKey onResponse:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} errCode))callback onProgress:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} errCode, \textcolor{keywordtype}{int} nPos))progressCallBack onFinish:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} errCode))finishedCallBack;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00226}00226 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00227}00227 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00228}00228 \textcolor{comment}{ pause download cloud video}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00229}00229 \textcolor{comment}{ 暂停云存储视频下载}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00230}00230 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00231}00231 -\/ (int)pauseCloudDataDownloadWithResponse:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int}))callback;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00232}00232 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00233}00233 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00234}00234 \textcolor{comment}{ resume download cloud video}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00235}00235 \textcolor{comment}{ 恢复云存储视频下载}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00236}00236 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00237}00237 -\/ (int)resumeCloudDataDownloadWithResponse:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int}))callback;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00238}00238 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00239}00239 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00240}00240 \textcolor{comment}{ cancel download cloud video}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00241}00241 \textcolor{comment}{ 取消云存储视频下载}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00242}00242 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00243}00243 -\/ (int)cancelCloudDataDownloadWithResponse:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int}))callback;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00244}00244 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00251}00251 -\/ (int)setCloudVideoPlaySpeed:(ThingSmartCameraPlayBackSpeed)speed;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00252}00252 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00253}00253 \textcolor{preprocessor}{\#pragma mark -\/ Video Message}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00254}00254 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00272}00272 -\/ (int)playVideoMessageWithUrl:(NSString *)url startTime:(\textcolor{keywordtype}{int})nStartTime encryptKey:(NSString *)encryptKey onResponse:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} errCode))callback onFinish:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} errCode))finihedCallBack;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00273}00273 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00285}00285 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a3a96af56ed65d20f21ccb85f4832c938}{pausePlayVideoMessage}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00286}00286 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00298}00298 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a6dd8896690008756073143502ba05712}{resumePlayVideoMessage}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00299}00299 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00311}00311 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_ab4859851893f00e45b01759c0fa13983}{stopPlayVideoMessage}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00312}00312 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00330}00330 -\/ (int)playAudioMessageWithUrl:(NSString *)url startTime:(\textcolor{keywordtype}{int})nStartTime encryptKey:(NSString *)encryptKey onResponse:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} errCode))callback onFinish:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} errCode))finihedCallBack;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00331}00331 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00332}00332 -\/ (int)startVideoMessageDownloadWithUrl:(NSString *)url encryptKey:(NSString *)encryptKey filePath:(NSString *)filePath rotateDirection:(ThingSmartVideoRotateDirection)rotateDirection success:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{void}))successCallback progress:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int}))progressCallBack failure:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int}))failureCallBack;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00333}00333 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00345}00345 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a228ca78788aee6c2265b5515e4d8d31e}{pausePlayAudioMessage}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00346}00346 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00358}00358 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_ab78a48e348352ad90ad6e28a11b5c173}{resumePlayAudioMessage}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00359}00359 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00371}00371 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_a689c0ab076cce361443048b3dc8ed5a6}{stopPlayAudioMessage}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00372}00372 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00373}00373 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00374}00374 \textcolor{comment}{ start download audio or video in message}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00375}00375 \textcolor{comment}{ @param url}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00376}00376 \textcolor{comment}{ @param encryptKey}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00377}00377 \textcolor{comment}{ @param folderPath}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00378}00378 \textcolor{comment}{ @param mp4FileName}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00379}00379 \textcolor{comment}{ @param callback}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00380}00380 \textcolor{comment}{ @param progressCallBack}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00381}00381 \textcolor{comment}{ @param finishedCallBack}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00382}00382 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00383}00383 -\/ (int)startVideoMessageDownloadWithUrl:(NSString *)url encryptKey:(NSString *)encryptKey filePath:(NSString *)filePath success:(\textcolor{keywordtype}{void}(\string^)(\textcolor{keywordtype}{void}))successCallback progress:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} progress))progressCallBack failure:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} errCode))failureCallBack;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00384}00384 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00385}00385 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00386}00386 \textcolor{comment}{ pause download}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00387}00387 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00388}00388 -\/ (int)pauseVideoMessageDownload:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} errCode))callback;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00389}00389 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00390}00390 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00391}00391 \textcolor{comment}{ resume download}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00392}00392 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00393}00393 -\/ (int)resumeVideoMessageDownload:(\textcolor{keywordtype}{void} (\string^)(\textcolor{keywordtype}{int} errCode))callback;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00394}00394 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00395}00395 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00396}00396 \textcolor{comment}{ cancel download}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00397}00397 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00398}00398 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_ad1ff27e1cd61b3aec23c2b08a4ad61d5}{cancelVideoMessageDownload}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00399}00399 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00400}00400 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00401}00401 \textcolor{comment}{ convert MJPEG video into multiple images}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00402}00402 \textcolor{comment}{ @param urlPath MJPEG video url path}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00403}00403 \textcolor{comment}{ @param encryptKey}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00404}00404 \textcolor{comment}{ @param directoryPath local directory path to save image files}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00405}00405 \textcolor{comment}{ @param successCallback success callback}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00406}00406 \textcolor{comment}{ @param failureCallback failure callback}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00407}00407 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00408}00408 -\/ (int)convertMJPEGVideoToImagesWithUrl:(NSString *)urlPath encryptKey:(NSString *)encryptKey imageFileDirectory:(NSString *)directoryPath success:(\textcolor{keywordtype}{void}(\string^)(\mbox{\hyperlink{interface_n_s_array}{NSArray}} *imageFiles))successCallback failure:(\textcolor{keywordtype}{void}(\string^)(\textcolor{keywordtype}{int} errCode))failureCallback;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00409}00409 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00410}00410 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00411}00411 \textcolor{comment}{ cancel convert MJPEG video into images}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00412}00412 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00413}00413 -\/ (int)\mbox{\hyperlink{interface_thing_smart_cloud_video_player_ac96053558bdb229489eaa382f45b4a65}{cancelMJPEGVideoConvert}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00414}00414 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00415}00415 -\/ (int)setDeviceFeatures:(NSDictionary *)features;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00416}00416 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_cloud_video_player_8h_source_l00417}00417 \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

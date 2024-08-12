@@ -8,6 +8,8 @@ var interface_thing_smart_cloud_service =
     [ "enableAIDetect:state:success:failure:", "interface_thing_smart_cloud_service.html#ac595c52240f59f37a17e150d50b94863", null ],
     [ "queryAIDetectConfig:success:failure:", "interface_thing_smart_cloud_service.html#a54c2360f79070d7b14e34d54788cf034", null ],
     [ "queryAIDetectConfig:success:failure:", "interface_thing_smart_cloud_service.html#a54c2360f79070d7b14e34d54788cf034", null ],
+    [ "requestCloudStorageAIEventWithParams:success:failure:", "interface_thing_smart_cloud_service.html#a0ed89be9a8de4306034839822bb8788c", null ],
+    [ "requestCloudStorageAIEventWithParams:success:failure:", "interface_thing_smart_cloud_service.html#a0ed89be9a8de4306034839822bb8788c", null ],
     [ "requestCloudStorageAuthorityWithDeviceId:bukets:success:failure:", "interface_thing_smart_cloud_service.html#a0750fbe85ed4154dc3faa3cb6100e50e", null ],
     [ "requestCloudStorageAuthorityWithDeviceId:bukets:success:failure:", "interface_thing_smart_cloud_service.html#a0750fbe85ed4154dc3faa3cb6100e50e", null ],
     [ "requestCloudStorageAuthorityWithDeviceId:success:failure:", "interface_thing_smart_cloud_service.html#a0e165bcd8f8a5c9cc02188964ebdde40", null ],

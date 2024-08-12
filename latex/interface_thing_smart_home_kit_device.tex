@@ -1,0 +1,335 @@
+\hypertarget{interface_thing_smart_home_kit_device}{}\doxysection{Thing\+Smart\+Home\+Kit\+Device Class Reference}
+\label{interface_thing_smart_home_kit_device}\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+
+
+{\ttfamily HMAccessory}\textquotesingle{}s wrapped classes, defined some Thing Inc Home\+Kit Device properties  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Home\+Kit\+Device.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Home\+Kit\+Device\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_home_kit_device}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_home_kit_device_aa845314f30c03e0e507666272ef41d04}{init\+With\+Accessory\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_home_kit_device_a5e655ce38e6f970266dcaa8aaeaefb9d}{update\+With\+Completion\+Handler\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_home_kit_device_a4db0ab1b79950a1e428fcc05d338383c}{is\+BLELink\+Type}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_home_kit_device_aa845314f30c03e0e507666272ef41d04}{init\+With\+Accessory\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_home_kit_device_a5e655ce38e6f970266dcaa8aaeaefb9d}{update\+With\+Completion\+Handler\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_home_kit_device_a4db0ab1b79950a1e428fcc05d338383c}{is\+BLELink\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_smart_home_kit_device_a19190e8e02e704d67a0436cfeb42a73f}{reachable}}
+\begin{DoxyCompactList}\small\item\em A Boolean value indicating whether the accessory can be communicated with in the current network environment. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_smart_home_kit_device_a7ff9251d462281dfaa95851211f97d6c}{bridged}}
+\begin{DoxyCompactList}\small\item\em This property indicates whether this accessory is behind a bridge. If it is TRUE, the accessory cannot be removed from the home directly. Only the bridge that owns this accessory can be removed and removing the bridge will remove this accessory from the home. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_smart_home_kit_device_ab4b53eb5cf685b30d8529d9b3b4cf50a}{is\+Thing\+Device}}
+\begin{DoxyCompactList}\small\item\em A Boolean value indicating whether the device is Thing Inc Device. \end{DoxyCompactList}\item 
+HMCharacteristic $\ast$ \mbox{\hyperlink{interface_thing_smart_home_kit_device_ab69c6e9ae5d57dd2db937c9b803e98ec}{dev\+Id}}
+\item 
+HMCharacteristic $\ast$ \mbox{\hyperlink{interface_thing_smart_home_kit_device_a49e44b0ce0275c2101095111838e0593}{product\+ID}}
+\item 
+HMCharacteristic $\ast$ \mbox{\hyperlink{interface_thing_smart_home_kit_device_a9d3b753256488b7e1e39e8ba6782c6a6}{UUID}}
+\item 
+HMCharacteristic $\ast$ \mbox{\hyperlink{interface_thing_smart_home_kit_device_ac9cec1d3a905d1a8050edbba56f33a89}{token}}
+\item 
+HMCharacteristic $\ast$ \mbox{\hyperlink{interface_thing_smart_home_kit_device_a9ee8ee14128d86eb6bdde0ad6b94e709}{active}}
+\item 
+HMCharacteristic $\ast$ \mbox{\hyperlink{interface_thing_smart_home_kit_device_ab19bd97e8093966db619b683407dd015}{mac}}
+\begin{DoxyCompactList}\small\item\em The BLE device mac address. \end{DoxyCompactList}\item 
+HMCharacteristic $\ast$ \mbox{\hyperlink{interface_thing_smart_home_kit_device_a92a8f23bd98026ac37a49dfb74942e10}{link\+Type}}
+\begin{DoxyCompactList}\small\item\em The BLE device link type value is \char`\"{}\+BLE\char`\"{}. \end{DoxyCompactList}\item 
+HMCharacteristic $\ast$ \mbox{\hyperlink{interface_thing_smart_home_kit_device_aba3e299650e2a8f518d8a6c3bdac4f32}{ble\+Adv}}
+\begin{DoxyCompactList}\small\item\em The BLE Adv. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_smart_home_kit_device_af4aa1488a8b0fc5186b22f583eaff931}{is\+Matter\+Device}}
+\begin{DoxyCompactList}\small\item\em A Boolean value indicating whether the device is Matter Device. \end{DoxyCompactList}\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_thing_smart_home_kit_device_aac50b80212cd861df30259365df2efaa}{matter\+Node\+ID}}
+\begin{DoxyCompactList}\small\item\em The node identifier used to identify the device on Apple’s Matter fabric. \end{DoxyCompactList}\item 
+HMAccessory $\ast$ \mbox{\hyperlink{interface_thing_smart_home_kit_device_ad4a6507fda19535b3ca5c733c0fe3c86}{accessory}}
+\begin{DoxyCompactList}\small\item\em Accessory is passed in through the {\ttfamily init\+With\+Accessory\+:} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily HMAccessory}\textquotesingle{}s wrapped classes, defined some Thing Inc Home\+Kit Device properties 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00015}{15}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_aa845314f30c03e0e507666272ef41d04}\label{interface_thing_smart_home_kit_device_aa845314f30c03e0e507666272ef41d04}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!initWithAccessory:@{initWithAccessory:}}
+\index{initWithAccessory:@{initWithAccessory:}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{initWithAccessory:}{initWithAccessory:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Accessory\+: \begin{DoxyParamCaption}\item[{(HMAccessory $\ast$)}]{accessory }\end{DoxyParamCaption}}
+
+Wrapped with {\ttfamily HMAccessory} object, init Tuy Inc Device characteristics 
+\begin{DoxyParams}{Parameters}
+{\em accessory} & A home automation accessory, like a garage door opener or a thermostat. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_aa845314f30c03e0e507666272ef41d04}\label{interface_thing_smart_home_kit_device_aa845314f30c03e0e507666272ef41d04}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!initWithAccessory:@{initWithAccessory:}}
+\index{initWithAccessory:@{initWithAccessory:}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{initWithAccessory:}{initWithAccessory:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Accessory\+: \begin{DoxyParamCaption}\item[{(HMAccessory $\ast$)}]{accessory }\end{DoxyParamCaption}}
+
+Wrapped with {\ttfamily HMAccessory} object, init Tuy Inc Device characteristics 
+\begin{DoxyParams}{Parameters}
+{\em accessory} & A home automation accessory, like a garage door opener or a thermostat. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_a4db0ab1b79950a1e428fcc05d338383c}\label{interface_thing_smart_home_kit_device_a4db0ab1b79950a1e428fcc05d338383c}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!isBLELinkType@{isBLELinkType}}
+\index{isBLELinkType@{isBLELinkType}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{isBLELinkType}{isBLELinkType}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+BLELink\+Type \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_a4db0ab1b79950a1e428fcc05d338383c}\label{interface_thing_smart_home_kit_device_a4db0ab1b79950a1e428fcc05d338383c}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!isBLELinkType@{isBLELinkType}}
+\index{isBLELinkType@{isBLELinkType}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{isBLELinkType}{isBLELinkType}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+BLELink\+Type \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_a5e655ce38e6f970266dcaa8aaeaefb9d}\label{interface_thing_smart_home_kit_device_a5e655ce38e6f970266dcaa8aaeaefb9d}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!updateWithCompletionHandler:@{updateWithCompletionHandler:}}
+\index{updateWithCompletionHandler:@{updateWithCompletionHandler:}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{updateWithCompletionHandler:}{updateWithCompletionHandler:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+With\+Completion\+Handler\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{handler }\end{DoxyParamCaption}}
+
+Update all HMCharacteristic propertys. 
+\begin{DoxyParams}{Parameters}
+{\em handler} & All update completed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+HMCharacteristic property should update to get the latest values. 
+\end{DoxyNote}
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_a5e655ce38e6f970266dcaa8aaeaefb9d}\label{interface_thing_smart_home_kit_device_a5e655ce38e6f970266dcaa8aaeaefb9d}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!updateWithCompletionHandler:@{updateWithCompletionHandler:}}
+\index{updateWithCompletionHandler:@{updateWithCompletionHandler:}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{updateWithCompletionHandler:}{updateWithCompletionHandler:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+With\+Completion\+Handler\+: \begin{DoxyParamCaption}\item[{(void($^\wedge$)(NSError $\ast$\+\_\+\+Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))}]{handler }\end{DoxyParamCaption}}
+
+Update all HMCharacteristic propertys. 
+\begin{DoxyParams}{Parameters}
+{\em handler} & All update completed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+HMCharacteristic property should update to get the latest values. 
+\end{DoxyNote}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_ad4a6507fda19535b3ca5c733c0fe3c86}\label{interface_thing_smart_home_kit_device_ad4a6507fda19535b3ca5c733c0fe3c86}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!accessory@{accessory}}
+\index{accessory@{accessory}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{accessory}{accessory}}
+{\footnotesize\ttfamily -\/ (HMAccessory $\ast$) accessory\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Accessory is passed in through the {\ttfamily init\+With\+Accessory\+:} 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00066}{66}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_a9ee8ee14128d86eb6bdde0ad6b94e709}\label{interface_thing_smart_home_kit_device_a9ee8ee14128d86eb6bdde0ad6b94e709}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!active@{active}}
+\index{active@{active}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily -\/ (HMCharacteristic $\ast$) active\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Status for configuring the device to connect to the cloud. \begin{DoxyNote}{Note}
+Int Value. 0 is device not configured, 1 is device is start configuring. Invoke {\ttfamily read\+Value\+With\+Completion\+Handler\+:} get the latest value. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00048}{48}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_aba3e299650e2a8f518d8a6c3bdac4f32}\label{interface_thing_smart_home_kit_device_aba3e299650e2a8f518d8a6c3bdac4f32}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!bleAdv@{bleAdv}}
+\index{bleAdv@{bleAdv}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{bleAdv}{bleAdv}}
+{\footnotesize\ttfamily -\/ (HMCharacteristic $\ast$) ble\+Adv\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The BLE Adv. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00057}{57}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_a7ff9251d462281dfaa95851211f97d6c}\label{interface_thing_smart_home_kit_device_a7ff9251d462281dfaa95851211f97d6c}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!bridged@{bridged}}
+\index{bridged@{bridged}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{bridged}{bridged}}
+{\footnotesize\ttfamily -\/ (BOOL) bridged\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+This property indicates whether this accessory is behind a bridge. If it is TRUE, the accessory cannot be removed from the home directly. Only the bridge that owns this accessory can be removed and removing the bridge will remove this accessory from the home. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00025}{25}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_ab69c6e9ae5d57dd2db937c9b803e98ec}\label{interface_thing_smart_home_kit_device_ab69c6e9ae5d57dd2db937c9b803e98ec}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!devId@{devId}}
+\index{devId@{devId}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{devId}{devId}}
+{\footnotesize\ttfamily -\/ (HMCharacteristic $\ast$) dev\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Device id, only generated after the cloud binding \begin{DoxyNote}{Note}
+Invoke {\ttfamily read\+Value\+With\+Completion\+Handler\+:} get the latest value. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00032}{32}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_af4aa1488a8b0fc5186b22f583eaff931}\label{interface_thing_smart_home_kit_device_af4aa1488a8b0fc5186b22f583eaff931}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!isMatterDevice@{isMatterDevice}}
+\index{isMatterDevice@{isMatterDevice}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{isMatterDevice}{isMatterDevice}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Matter\+Device\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+A Boolean value indicating whether the device is Matter Device. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00060}{60}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_ab4b53eb5cf685b30d8529d9b3b4cf50a}\label{interface_thing_smart_home_kit_device_ab4b53eb5cf685b30d8529d9b3b4cf50a}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!isThingDevice@{isThingDevice}}
+\index{isThingDevice@{isThingDevice}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{isThingDevice}{isThingDevice}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Thing\+Device\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+A Boolean value indicating whether the device is Thing Inc Device. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00028}{28}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_a92a8f23bd98026ac37a49dfb74942e10}\label{interface_thing_smart_home_kit_device_a92a8f23bd98026ac37a49dfb74942e10}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!linkType@{linkType}}
+\index{linkType@{linkType}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{linkType}{linkType}}
+{\footnotesize\ttfamily -\/ (HMCharacteristic $\ast$) link\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The BLE device link type value is \char`\"{}\+BLE\char`\"{}. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00054}{54}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_ab19bd97e8093966db619b683407dd015}\label{interface_thing_smart_home_kit_device_ab19bd97e8093966db619b683407dd015}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!mac@{mac}}
+\index{mac@{mac}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{mac}{mac}}
+{\footnotesize\ttfamily -\/ (HMCharacteristic $\ast$) mac\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The BLE device mac address. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00051}{51}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_aac50b80212cd861df30259365df2efaa}\label{interface_thing_smart_home_kit_device_aac50b80212cd861df30259365df2efaa}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!matterNodeID@{matterNodeID}}
+\index{matterNodeID@{matterNodeID}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{matterNodeID}{matterNodeID}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$) matter\+Node\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The node identifier used to identify the device on Apple’s Matter fabric. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00063}{63}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_a49e44b0ce0275c2101095111838e0593}\label{interface_thing_smart_home_kit_device_a49e44b0ce0275c2101095111838e0593}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!productID@{productID}}
+\index{productID@{productID}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{productID}{productID}}
+{\footnotesize\ttfamily -\/ (HMCharacteristic $\ast$) product\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Identification of equipment categories. \begin{DoxyNote}{Note}
+Invoke {\ttfamily read\+Value\+With\+Completion\+Handler\+:} get the latest value. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00036}{36}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_a19190e8e02e704d67a0436cfeb42a73f}\label{interface_thing_smart_home_kit_device_a19190e8e02e704d67a0436cfeb42a73f}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!reachable@{reachable}}
+\index{reachable@{reachable}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{reachable}{reachable}}
+{\footnotesize\ttfamily -\/ (BOOL) reachable\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+A Boolean value indicating whether the accessory can be communicated with in the current network environment. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00018}{18}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_ac9cec1d3a905d1a8050edbba56f33a89}\label{interface_thing_smart_home_kit_device_ac9cec1d3a905d1a8050edbba56f33a89}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!token@{token}}
+\index{token@{token}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{token}{token}}
+{\footnotesize\ttfamily -\/ (HMCharacteristic $\ast$) token\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Token for configuring the device to connect to the cloud. \begin{DoxyNote}{Note}
+String value. If not confige to the cloud will nil. Invoke {\ttfamily read\+Value\+With\+Completion\+Handler\+:} get the latest value. Invoke {\ttfamily write\+Value\+:completion\+Handler\+:} to start configuring. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00044}{44}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_home_kit_device_a9d3b753256488b7e1e39e8ba6782c6a6}\label{interface_thing_smart_home_kit_device_a9d3b753256488b7e1e39e8ba6782c6a6}} 
+\index{ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}!UUID@{UUID}}
+\index{UUID@{UUID}!ThingSmartHomeKitDevice@{ThingSmartHomeKitDevice}}
+\doxysubsubsection{\texorpdfstring{UUID}{UUID}}
+{\footnotesize\ttfamily -\/ (HMCharacteristic $\ast$) UUID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+Unique identification of the device. \begin{DoxyNote}{Note}
+Invoke {\ttfamily read\+Value\+With\+Completion\+Handler\+:} get the latest value. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source_l00040}{40}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h_source}{Thing\+Smart\+Home\+Kit\+Device.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Apple\+Device\+Kit/\+Build/\+Thing\+Smart\+Apple\+Device\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Apple\+Device\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h}{Thing\+Smart\+Home\+Kit\+Device.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Apple\+Device\+Kit/\+Build/\+Thing\+Smart\+Apple\+Device\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Apple\+Device\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_apple_device_kit_8framework_2_headers_2_thing_smart_home_kit_device_8h}{Thing\+Smart\+Home\+Kit\+Device.\+h}}\end{DoxyCompactItemize}

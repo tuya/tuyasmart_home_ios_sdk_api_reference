@@ -1,0 +1,462 @@
+\hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Socket\+Channel\+Kit/\+Build/\+Thing\+Smart\+Socket\+Channel\+Kit.xcframework/ios-\/arm64/\+Thing\+Smart\+Socket\+Channel\+Kit.framework/\+Headers/\+Thing\+Smart\+Socket\+Channel.h File Reference}
+\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartSocketChannelKit/Build/ThingSmartSocketChannelKit.xcframework/ios-\/arm64/ThingSmartSocketChannelKit.framework/Headers/ThingSmartSocketChannel.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartSocketChannelKit/Build/ThingSmartSocketChannelKit.xcframework/ios-\/arm64/ThingSmartSocketChannelKit.framework/Headers/ThingSmartSocketChannel.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import $<$Thing\+Smart\+Socket\+Channel\+Kit/\+Thing\+Smart\+Socket\+Read\+Model.\+h$>$}\newline
+{\ttfamily \#import $<$Thing\+Smart\+Socket\+Channel\+Kit/\+Thing\+Smart\+Socket\+Write\+Model.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+protocol \mbox{\hyperlink{protocol_thing_smart_socket_channel_delegate-p}{$<$\+Thing\+Smart\+Socket\+Channel\+Delegate$>$}}
+\item 
+class \mbox{\hyperlink{interface_thing_smart_socket_channel}{Thing\+Smart\+Socket\+Channel}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_ab51acdb7fb4b0177b5abee9d50507834}{SOCKET\+\_\+\+TYPE\+\_\+\+BROADCAST}}~0x00
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a48d8f1c8e674788a232d52e197a933c6}{SOCKET\+\_\+\+TYPE\+\_\+\+BROADCAST\+\_\+\+V4}}~0x13
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a8cdabcf63041d4729d03bceda9822a13}{SOCKET\+\_\+\+TYPE\+\_\+\+BROADCAST\+\_\+\+V34}}~0x23
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a349197a9984fab81cd6dc9df6b4b0aab}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+ERROR}}~0x15
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a1432cfc5939f1bda14769f89f6f40790}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG}}~0x01
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a784fdd757a991a790cc4213047ed5ecc}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+ACTIVATE}}~0x02
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a987cce039513179ea07593e24ec109bc}{SOCKET\+\_\+\+TYPE\+\_\+\+DP\+\_\+\+PUBLISH}}~0x07
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a530fff954d2a01eba23dd0e0421deb82}{SOCKET\+\_\+\+TYPE\+\_\+\+DP\+\_\+\+REPORT}}~0x08
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_adc69642c7047cbc82aa2387dd2893241}{SOCKET\+\_\+\+TYPE\+\_\+\+HEARTBEAT}}~0x09
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a1e8f62ef905fd50716433e10dfcd2ed1}{SOCKET\+\_\+\+TYPE\+\_\+\+QUERY\+\_\+\+DEV\+\_\+\+INFO}}~0x0a
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a9548533b2deb2cdb172c636029c48a2f}{SOCKET\+\_\+\+TYPE\+\_\+\+QUERY\+\_\+\+SSID\+\_\+\+LIST}}~0x0b
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a6ee30953852e59f31cd3078bca62edb3}{SOCKET\+\_\+\+TYPE\+\_\+\+DP\+\_\+\+CAD\+\_\+\+PUBLISH}}~0x0d
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_afa2cde5f5704c40d94a347679af19f80}{SOCKET\+\_\+\+TYPE\+\_\+\+LOCL\+\_\+\+SCENE\+\_\+\+EXE}}~0x11
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_adf92d8a90359e78d1a42539f64fc69e4}{SOCKET\+\_\+\+TYPE\+\_\+\+ENABLE\+\_\+\+LOG}}~0x20
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a7e70f155e8c47b81bb79a5ae5f5954bd}{SOCKET\+\_\+\+TYPE\+\_\+\+BIND\+\_\+\+TOKEN}}~0x0c
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a4b422b78b8a3b16b1cb08cf857f04f7d}{SOCKET\+\_\+\+TYPE\+\_\+\+ACTIVE\+\_\+\+SUBDEV}}~0x0e
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a37e9510fe5b159dea593c0e4ecfc3701}{SOCKET\+\_\+\+TYPE\+\_\+\+QUERY\+\_\+\+CAD\+\_\+\+DEV\+\_\+\+INFO}}~0x10
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a87a1e83c41f32c82be4d0271a9b89a6c}{SOCKET\+\_\+\+TYPE\+\_\+\+INITIATIVE\+\_\+\+QUERY\+\_\+\+DPS}}~0x12
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a1432cfc5939f1bda14769f89f6f40790}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG}}~0x01
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_aa81e7e28c40cbc524ab65d4b1aa8daf0}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG\+\_\+\+NEW}}~0x14
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_ad3db3096db2b98197782c138e0f96cb3}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG\+\_\+\+BROADCAST}}~0x11
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a0bac2b4e20aeeb6ec4b59f967e2bcfe2}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG\+\_\+\+TLS\+\_\+\+BROADCAST}}~0x31
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a7f17cf5bcb4a11bc63df41dbb2efeb04}{SOCKET\+\_\+\+TYPE\+\_\+\+HANDSHAKE\+\_\+\+RAND\+\_\+A}}~0x03
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a2cc275a1929c33458e0cbded93a0578b}{SOCKET\+\_\+\+TYPE\+\_\+\+HANDSHAKE\+\_\+\+RAND\+\_\+B}}~0x04
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a5c344f3a8413035e01649db3a6f0cb1d}{SOCKET\+\_\+\+TYPE\+\_\+\+HANDSHAKE\+\_\+\+RAND\+\_\+\+ACK\+\_\+B}}~0x05
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a18de97ace239117cf879aa490fbc76be}{SOCKET\+\_\+\+TYPE\+\_\+\+IPC\+\_\+\+AP\+\_\+\+SET\+\_\+\+PWD}}~0x21
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a122890d04601ffd8ed710c6627da43ae}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+SEND\+\_\+\+PSK\+\_\+\+V30}}~0x24
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a62736f9454553ef16f57b60ffa0d7774}{SOCKET\+\_\+\+TYPE\+\_\+\+BROADCAST\+\_\+\+APP\+\_\+\+SEND}}~0x25
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_ae11e6e2de4324838c5c58d7d121ef858}{SOCKET\+\_\+\+TYPE\+\_\+\+EXTENSION}}~0x40
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a9a20b37baf371ec9e9d200c4051a1da5}{SOCKET\+\_\+\+TYPE\+\_\+\+FOR\+\_\+\+ACTIVE\+\_\+\+EXTENSION}}~0x42
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a50379d14d6f18e1e1f49f477d48db865}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+QUERY\+\_\+\+DEV\+\_\+\+INFO}}~0x16
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_adb2b0a2e1e18a86f930a5aabd9ef50b8}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG\+\_\+\+SCHEMA}}~0x17
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_ab9a8a70431326068f6e4f18c3f0fef96}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG\+\_\+\+TIME}}~0x18
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_af876fd30f0ff5c88e3f536dc69e0beaf}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+OTA\+\_\+\+START}}~0x1a
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a133b5d38b63ccb6cf1e0e151d8202b11}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+OTA\+\_\+\+DATA}}~0x1b
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a383e2c502473739d3ab85ea0ead13fc4}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+OTA\+\_\+\+END}}~0x1c
+\item 
+\#define \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a1af6e3b951aabafab4cc9ac9ee637350}{SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+DEVICE\+\_\+\+RESET}}~0x1d
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a4b422b78b8a3b16b1cb08cf857f04f7d}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a4b422b78b8a3b16b1cb08cf857f04f7d}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_ACTIVE\_SUBDEV@{SOCKET\_TYPE\_ACTIVE\_SUBDEV}}
+\index{SOCKET\_TYPE\_ACTIVE\_SUBDEV@{SOCKET\_TYPE\_ACTIVE\_SUBDEV}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_ACTIVE\_SUBDEV}{SOCKET\_TYPE\_ACTIVE\_SUBDEV}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+ACTIVE\+\_\+\+SUBDEV~0x0e}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00028}{28}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a784fdd757a991a790cc4213047ed5ecc}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a784fdd757a991a790cc4213047ed5ecc}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_ACTIVATE@{SOCKET\_TYPE\_AP\_ACTIVATE}}
+\index{SOCKET\_TYPE\_AP\_ACTIVATE@{SOCKET\_TYPE\_AP\_ACTIVATE}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_ACTIVATE}{SOCKET\_TYPE\_AP\_ACTIVATE}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+ACTIVATE~0x02}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00018}{18}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a1432cfc5939f1bda14769f89f6f40790}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a1432cfc5939f1bda14769f89f6f40790}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_CONFIG@{SOCKET\_TYPE\_AP\_CONFIG}}
+\index{SOCKET\_TYPE\_AP\_CONFIG@{SOCKET\_TYPE\_AP\_CONFIG}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_CONFIG}{SOCKET\_TYPE\_AP\_CONFIG}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG~0x01}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00031}{31}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a1432cfc5939f1bda14769f89f6f40790}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a1432cfc5939f1bda14769f89f6f40790}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_CONFIG@{SOCKET\_TYPE\_AP\_CONFIG}}
+\index{SOCKET\_TYPE\_AP\_CONFIG@{SOCKET\_TYPE\_AP\_CONFIG}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_CONFIG}{SOCKET\_TYPE\_AP\_CONFIG}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG~0x01}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00031}{31}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_ad3db3096db2b98197782c138e0f96cb3}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_ad3db3096db2b98197782c138e0f96cb3}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_CONFIG\_BROADCAST@{SOCKET\_TYPE\_AP\_CONFIG\_BROADCAST}}
+\index{SOCKET\_TYPE\_AP\_CONFIG\_BROADCAST@{SOCKET\_TYPE\_AP\_CONFIG\_BROADCAST}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_CONFIG\_BROADCAST}{SOCKET\_TYPE\_AP\_CONFIG\_BROADCAST}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG\+\_\+\+BROADCAST~0x11}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00033}{33}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_aa81e7e28c40cbc524ab65d4b1aa8daf0}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_aa81e7e28c40cbc524ab65d4b1aa8daf0}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_CONFIG\_NEW@{SOCKET\_TYPE\_AP\_CONFIG\_NEW}}
+\index{SOCKET\_TYPE\_AP\_CONFIG\_NEW@{SOCKET\_TYPE\_AP\_CONFIG\_NEW}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_CONFIG\_NEW}{SOCKET\_TYPE\_AP\_CONFIG\_NEW}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG\+\_\+\+NEW~0x14}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00032}{32}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_adb2b0a2e1e18a86f930a5aabd9ef50b8}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_adb2b0a2e1e18a86f930a5aabd9ef50b8}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_CONFIG\_SCHEMA@{SOCKET\_TYPE\_AP\_CONFIG\_SCHEMA}}
+\index{SOCKET\_TYPE\_AP\_CONFIG\_SCHEMA@{SOCKET\_TYPE\_AP\_CONFIG\_SCHEMA}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_CONFIG\_SCHEMA}{SOCKET\_TYPE\_AP\_CONFIG\_SCHEMA}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG\+\_\+\+SCHEMA~0x17}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00050}{50}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_ab9a8a70431326068f6e4f18c3f0fef96}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_ab9a8a70431326068f6e4f18c3f0fef96}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_CONFIG\_TIME@{SOCKET\_TYPE\_AP\_CONFIG\_TIME}}
+\index{SOCKET\_TYPE\_AP\_CONFIG\_TIME@{SOCKET\_TYPE\_AP\_CONFIG\_TIME}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_CONFIG\_TIME}{SOCKET\_TYPE\_AP\_CONFIG\_TIME}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG\+\_\+\+TIME~0x18}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00051}{51}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a0bac2b4e20aeeb6ec4b59f967e2bcfe2}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a0bac2b4e20aeeb6ec4b59f967e2bcfe2}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_CONFIG\_TLS\_BROADCAST@{SOCKET\_TYPE\_AP\_CONFIG\_TLS\_BROADCAST}}
+\index{SOCKET\_TYPE\_AP\_CONFIG\_TLS\_BROADCAST@{SOCKET\_TYPE\_AP\_CONFIG\_TLS\_BROADCAST}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_CONFIG\_TLS\_BROADCAST}{SOCKET\_TYPE\_AP\_CONFIG\_TLS\_BROADCAST}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+CONFIG\+\_\+\+TLS\+\_\+\+BROADCAST~0x31}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00034}{34}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a1af6e3b951aabafab4cc9ac9ee637350}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a1af6e3b951aabafab4cc9ac9ee637350}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_DEVICE\_RESET@{SOCKET\_TYPE\_AP\_DEVICE\_RESET}}
+\index{SOCKET\_TYPE\_AP\_DEVICE\_RESET@{SOCKET\_TYPE\_AP\_DEVICE\_RESET}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_DEVICE\_RESET}{SOCKET\_TYPE\_AP\_DEVICE\_RESET}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+DEVICE\+\_\+\+RESET~0x1d}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00056}{56}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a349197a9984fab81cd6dc9df6b4b0aab}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a349197a9984fab81cd6dc9df6b4b0aab}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_ERROR@{SOCKET\_TYPE\_AP\_ERROR}}
+\index{SOCKET\_TYPE\_AP\_ERROR@{SOCKET\_TYPE\_AP\_ERROR}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_ERROR}{SOCKET\_TYPE\_AP\_ERROR}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+ERROR~0x15}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00016}{16}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a133b5d38b63ccb6cf1e0e151d8202b11}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a133b5d38b63ccb6cf1e0e151d8202b11}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_OTA\_DATA@{SOCKET\_TYPE\_AP\_OTA\_DATA}}
+\index{SOCKET\_TYPE\_AP\_OTA\_DATA@{SOCKET\_TYPE\_AP\_OTA\_DATA}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_OTA\_DATA}{SOCKET\_TYPE\_AP\_OTA\_DATA}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+OTA\+\_\+\+DATA~0x1b}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00054}{54}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a383e2c502473739d3ab85ea0ead13fc4}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a383e2c502473739d3ab85ea0ead13fc4}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_OTA\_END@{SOCKET\_TYPE\_AP\_OTA\_END}}
+\index{SOCKET\_TYPE\_AP\_OTA\_END@{SOCKET\_TYPE\_AP\_OTA\_END}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_OTA\_END}{SOCKET\_TYPE\_AP\_OTA\_END}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+OTA\+\_\+\+END~0x1c}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00055}{55}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_af876fd30f0ff5c88e3f536dc69e0beaf}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_af876fd30f0ff5c88e3f536dc69e0beaf}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_OTA\_START@{SOCKET\_TYPE\_AP\_OTA\_START}}
+\index{SOCKET\_TYPE\_AP\_OTA\_START@{SOCKET\_TYPE\_AP\_OTA\_START}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_OTA\_START}{SOCKET\_TYPE\_AP\_OTA\_START}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+OTA\+\_\+\+START~0x1a}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00053}{53}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a50379d14d6f18e1e1f49f477d48db865}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a50379d14d6f18e1e1f49f477d48db865}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_QUERY\_DEV\_INFO@{SOCKET\_TYPE\_AP\_QUERY\_DEV\_INFO}}
+\index{SOCKET\_TYPE\_AP\_QUERY\_DEV\_INFO@{SOCKET\_TYPE\_AP\_QUERY\_DEV\_INFO}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_QUERY\_DEV\_INFO}{SOCKET\_TYPE\_AP\_QUERY\_DEV\_INFO}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+QUERY\+\_\+\+DEV\+\_\+\+INFO~0x16}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00049}{49}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a122890d04601ffd8ed710c6627da43ae}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a122890d04601ffd8ed710c6627da43ae}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_AP\_SEND\_PSK\_V30@{SOCKET\_TYPE\_AP\_SEND\_PSK\_V30}}
+\index{SOCKET\_TYPE\_AP\_SEND\_PSK\_V30@{SOCKET\_TYPE\_AP\_SEND\_PSK\_V30}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_AP\_SEND\_PSK\_V30}{SOCKET\_TYPE\_AP\_SEND\_PSK\_V30}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+AP\+\_\+\+SEND\+\_\+\+PSK\+\_\+\+V30~0x24}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00041}{41}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a7e70f155e8c47b81bb79a5ae5f5954bd}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a7e70f155e8c47b81bb79a5ae5f5954bd}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_BIND\_TOKEN@{SOCKET\_TYPE\_BIND\_TOKEN}}
+\index{SOCKET\_TYPE\_BIND\_TOKEN@{SOCKET\_TYPE\_BIND\_TOKEN}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_BIND\_TOKEN}{SOCKET\_TYPE\_BIND\_TOKEN}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+BIND\+\_\+\+TOKEN~0x0c}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00027}{27}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_ab51acdb7fb4b0177b5abee9d50507834}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_ab51acdb7fb4b0177b5abee9d50507834}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_BROADCAST@{SOCKET\_TYPE\_BROADCAST}}
+\index{SOCKET\_TYPE\_BROADCAST@{SOCKET\_TYPE\_BROADCAST}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_BROADCAST}{SOCKET\_TYPE\_BROADCAST}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+BROADCAST~0x00}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00013}{13}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a62736f9454553ef16f57b60ffa0d7774}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a62736f9454553ef16f57b60ffa0d7774}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_BROADCAST\_APP\_SEND@{SOCKET\_TYPE\_BROADCAST\_APP\_SEND}}
+\index{SOCKET\_TYPE\_BROADCAST\_APP\_SEND@{SOCKET\_TYPE\_BROADCAST\_APP\_SEND}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_BROADCAST\_APP\_SEND}{SOCKET\_TYPE\_BROADCAST\_APP\_SEND}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+BROADCAST\+\_\+\+APP\+\_\+\+SEND~0x25}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00042}{42}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a8cdabcf63041d4729d03bceda9822a13}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a8cdabcf63041d4729d03bceda9822a13}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_BROADCAST\_V34@{SOCKET\_TYPE\_BROADCAST\_V34}}
+\index{SOCKET\_TYPE\_BROADCAST\_V34@{SOCKET\_TYPE\_BROADCAST\_V34}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_BROADCAST\_V34}{SOCKET\_TYPE\_BROADCAST\_V34}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+BROADCAST\+\_\+\+V34~0x23}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00015}{15}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a48d8f1c8e674788a232d52e197a933c6}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a48d8f1c8e674788a232d52e197a933c6}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_BROADCAST\_V4@{SOCKET\_TYPE\_BROADCAST\_V4}}
+\index{SOCKET\_TYPE\_BROADCAST\_V4@{SOCKET\_TYPE\_BROADCAST\_V4}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_BROADCAST\_V4}{SOCKET\_TYPE\_BROADCAST\_V4}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+BROADCAST\+\_\+\+V4~0x13}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00014}{14}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a6ee30953852e59f31cd3078bca62edb3}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a6ee30953852e59f31cd3078bca62edb3}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_DP\_CAD\_PUBLISH@{SOCKET\_TYPE\_DP\_CAD\_PUBLISH}}
+\index{SOCKET\_TYPE\_DP\_CAD\_PUBLISH@{SOCKET\_TYPE\_DP\_CAD\_PUBLISH}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_DP\_CAD\_PUBLISH}{SOCKET\_TYPE\_DP\_CAD\_PUBLISH}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+DP\+\_\+\+CAD\+\_\+\+PUBLISH~0x0d}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00024}{24}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a987cce039513179ea07593e24ec109bc}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a987cce039513179ea07593e24ec109bc}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_DP\_PUBLISH@{SOCKET\_TYPE\_DP\_PUBLISH}}
+\index{SOCKET\_TYPE\_DP\_PUBLISH@{SOCKET\_TYPE\_DP\_PUBLISH}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_DP\_PUBLISH}{SOCKET\_TYPE\_DP\_PUBLISH}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+DP\+\_\+\+PUBLISH~0x07}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00019}{19}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a530fff954d2a01eba23dd0e0421deb82}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a530fff954d2a01eba23dd0e0421deb82}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_DP\_REPORT@{SOCKET\_TYPE\_DP\_REPORT}}
+\index{SOCKET\_TYPE\_DP\_REPORT@{SOCKET\_TYPE\_DP\_REPORT}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_DP\_REPORT}{SOCKET\_TYPE\_DP\_REPORT}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+DP\+\_\+\+REPORT~0x08}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00020}{20}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_adf92d8a90359e78d1a42539f64fc69e4}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_adf92d8a90359e78d1a42539f64fc69e4}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_ENABLE\_LOG@{SOCKET\_TYPE\_ENABLE\_LOG}}
+\index{SOCKET\_TYPE\_ENABLE\_LOG@{SOCKET\_TYPE\_ENABLE\_LOG}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_ENABLE\_LOG}{SOCKET\_TYPE\_ENABLE\_LOG}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+ENABLE\+\_\+\+LOG~0x20}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00026}{26}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_ae11e6e2de4324838c5c58d7d121ef858}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_ae11e6e2de4324838c5c58d7d121ef858}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_EXTENSION@{SOCKET\_TYPE\_EXTENSION}}
+\index{SOCKET\_TYPE\_EXTENSION@{SOCKET\_TYPE\_EXTENSION}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_EXTENSION}{SOCKET\_TYPE\_EXTENSION}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+EXTENSION~0x40}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00044}{44}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a9a20b37baf371ec9e9d200c4051a1da5}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a9a20b37baf371ec9e9d200c4051a1da5}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_FOR\_ACTIVE\_EXTENSION@{SOCKET\_TYPE\_FOR\_ACTIVE\_EXTENSION}}
+\index{SOCKET\_TYPE\_FOR\_ACTIVE\_EXTENSION@{SOCKET\_TYPE\_FOR\_ACTIVE\_EXTENSION}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_FOR\_ACTIVE\_EXTENSION}{SOCKET\_TYPE\_FOR\_ACTIVE\_EXTENSION}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+FOR\+\_\+\+ACTIVE\+\_\+\+EXTENSION~0x42}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00046}{46}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a7f17cf5bcb4a11bc63df41dbb2efeb04}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a7f17cf5bcb4a11bc63df41dbb2efeb04}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_HANDSHAKE\_RAND\_A@{SOCKET\_TYPE\_HANDSHAKE\_RAND\_A}}
+\index{SOCKET\_TYPE\_HANDSHAKE\_RAND\_A@{SOCKET\_TYPE\_HANDSHAKE\_RAND\_A}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_HANDSHAKE\_RAND\_A}{SOCKET\_TYPE\_HANDSHAKE\_RAND\_A}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+HANDSHAKE\+\_\+\+RAND\+\_\+A~0x03}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00036}{36}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a5c344f3a8413035e01649db3a6f0cb1d}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a5c344f3a8413035e01649db3a6f0cb1d}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_HANDSHAKE\_RAND\_ACK\_B@{SOCKET\_TYPE\_HANDSHAKE\_RAND\_ACK\_B}}
+\index{SOCKET\_TYPE\_HANDSHAKE\_RAND\_ACK\_B@{SOCKET\_TYPE\_HANDSHAKE\_RAND\_ACK\_B}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_HANDSHAKE\_RAND\_ACK\_B}{SOCKET\_TYPE\_HANDSHAKE\_RAND\_ACK\_B}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+HANDSHAKE\+\_\+\+RAND\+\_\+\+ACK\+\_\+B~0x05}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00038}{38}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a2cc275a1929c33458e0cbded93a0578b}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a2cc275a1929c33458e0cbded93a0578b}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_HANDSHAKE\_RAND\_B@{SOCKET\_TYPE\_HANDSHAKE\_RAND\_B}}
+\index{SOCKET\_TYPE\_HANDSHAKE\_RAND\_B@{SOCKET\_TYPE\_HANDSHAKE\_RAND\_B}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_HANDSHAKE\_RAND\_B}{SOCKET\_TYPE\_HANDSHAKE\_RAND\_B}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+HANDSHAKE\+\_\+\+RAND\+\_\+B~0x04}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00037}{37}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_adc69642c7047cbc82aa2387dd2893241}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_adc69642c7047cbc82aa2387dd2893241}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_HEARTBEAT@{SOCKET\_TYPE\_HEARTBEAT}}
+\index{SOCKET\_TYPE\_HEARTBEAT@{SOCKET\_TYPE\_HEARTBEAT}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_HEARTBEAT}{SOCKET\_TYPE\_HEARTBEAT}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+HEARTBEAT~0x09}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00021}{21}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a87a1e83c41f32c82be4d0271a9b89a6c}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a87a1e83c41f32c82be4d0271a9b89a6c}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_INITIATIVE\_QUERY\_DPS@{SOCKET\_TYPE\_INITIATIVE\_QUERY\_DPS}}
+\index{SOCKET\_TYPE\_INITIATIVE\_QUERY\_DPS@{SOCKET\_TYPE\_INITIATIVE\_QUERY\_DPS}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_INITIATIVE\_QUERY\_DPS}{SOCKET\_TYPE\_INITIATIVE\_QUERY\_DPS}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+INITIATIVE\+\_\+\+QUERY\+\_\+\+DPS~0x12}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00030}{30}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a18de97ace239117cf879aa490fbc76be}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a18de97ace239117cf879aa490fbc76be}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_IPC\_AP\_SET\_PWD@{SOCKET\_TYPE\_IPC\_AP\_SET\_PWD}}
+\index{SOCKET\_TYPE\_IPC\_AP\_SET\_PWD@{SOCKET\_TYPE\_IPC\_AP\_SET\_PWD}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_IPC\_AP\_SET\_PWD}{SOCKET\_TYPE\_IPC\_AP\_SET\_PWD}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+IPC\+\_\+\+AP\+\_\+\+SET\+\_\+\+PWD~0x21}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00040}{40}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_afa2cde5f5704c40d94a347679af19f80}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_afa2cde5f5704c40d94a347679af19f80}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_LOCL\_SCENE\_EXE@{SOCKET\_TYPE\_LOCL\_SCENE\_EXE}}
+\index{SOCKET\_TYPE\_LOCL\_SCENE\_EXE@{SOCKET\_TYPE\_LOCL\_SCENE\_EXE}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_LOCL\_SCENE\_EXE}{SOCKET\_TYPE\_LOCL\_SCENE\_EXE}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+LOCL\+\_\+\+SCENE\+\_\+\+EXE~0x11}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00025}{25}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a37e9510fe5b159dea593c0e4ecfc3701}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a37e9510fe5b159dea593c0e4ecfc3701}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_QUERY\_CAD\_DEV\_INFO@{SOCKET\_TYPE\_QUERY\_CAD\_DEV\_INFO}}
+\index{SOCKET\_TYPE\_QUERY\_CAD\_DEV\_INFO@{SOCKET\_TYPE\_QUERY\_CAD\_DEV\_INFO}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_QUERY\_CAD\_DEV\_INFO}{SOCKET\_TYPE\_QUERY\_CAD\_DEV\_INFO}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+QUERY\+\_\+\+CAD\+\_\+\+DEV\+\_\+\+INFO~0x10}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00029}{29}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a1e8f62ef905fd50716433e10dfcd2ed1}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a1e8f62ef905fd50716433e10dfcd2ed1}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_QUERY\_DEV\_INFO@{SOCKET\_TYPE\_QUERY\_DEV\_INFO}}
+\index{SOCKET\_TYPE\_QUERY\_DEV\_INFO@{SOCKET\_TYPE\_QUERY\_DEV\_INFO}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_QUERY\_DEV\_INFO}{SOCKET\_TYPE\_QUERY\_DEV\_INFO}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+QUERY\+\_\+\+DEV\+\_\+\+INFO~0x0a}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00022}{22}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+
+\mbox{\Hypertarget{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a9548533b2deb2cdb172c636029c48a2f}\label{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_a9548533b2deb2cdb172c636029c48a2f}} 
+\index{ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}!SOCKET\_TYPE\_QUERY\_SSID\_LIST@{SOCKET\_TYPE\_QUERY\_SSID\_LIST}}
+\index{SOCKET\_TYPE\_QUERY\_SSID\_LIST@{SOCKET\_TYPE\_QUERY\_SSID\_LIST}!ThingSmartSocketChannel.h@{ThingSmartSocketChannel.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET\_TYPE\_QUERY\_SSID\_LIST}{SOCKET\_TYPE\_QUERY\_SSID\_LIST}}
+{\footnotesize\ttfamily \#define SOCKET\+\_\+\+TYPE\+\_\+\+QUERY\+\_\+\+SSID\+\_\+\+LIST~0x0b}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source_l00023}{23}} of file \mbox{\hyperlink{_thing_smart_socket_channel_kit_8framework_2_headers_2_thing_smart_socket_channel_8h_source}{Thing\+Smart\+Socket\+Channel.\+h}}.
+

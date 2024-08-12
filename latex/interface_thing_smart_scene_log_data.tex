@@ -1,0 +1,274 @@
+\hypertarget{interface_thing_smart_scene_log_data}{}\doxysection{Thing\+Smart\+Scene\+Log\+Data Class Reference}
+\label{interface_thing_smart_scene_log_data}\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+
+
+\mbox{\hyperlink{interface_thing_smart_scene_log_data}{Thing\+Smart\+Scene\+Log\+Data}} provides more attributes for developers to create log data.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Scene\+Log\+Model.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Scene\+Log\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.686747cm]{interface_thing_smart_scene_log_data}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_scene_log_data_a9df6d5a934b77b33cc9c63f84e6d8dec}{event\+Id}}
+\begin{DoxyCompactList}\small\item\em The log event id. \end{DoxyCompactList}\item 
+TScene\+Log\+Exec\+Result\+Type \mbox{\hyperlink{interface_thing_smart_scene_log_data_ab6a8a39fba40829459f85255f979f47b}{exec\+Result}}
+\begin{DoxyCompactList}\small\item\em The result of scene execution. 1 and 3 is success. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_scene_log_data_ab6098d17c85b6eb13ca1d802e847b7ee}{exec\+Result\+Msg}}
+\begin{DoxyCompactList}\small\item\em The result message of scene execution. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_scene_log_data_a13d02de2f349cbbf505920d0f0e7431b}{exec\+Time}}
+\begin{DoxyCompactList}\small\item\em The time of scene execution. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_scene_log_data_a249295530c3a23cda9c4a1033e6f0fa4}{failure\+Cause}}
+\begin{DoxyCompactList}\small\item\em The error information of scene execution. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_scene_log_data_a173f4b68b282d9e8eaa06d70c793ff4b}{failure\+Code}}
+\begin{DoxyCompactList}\small\item\em The error code. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_scene_log_data_ab0b94a1041a231c3623c192632ad6e63}{owner\+Id}}
+\begin{DoxyCompactList}\small\item\em The owner id of scene log. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_scene_log_data_a1b551f1b9c8e8ef1461e76346c21def1}{rule\+Id}}
+\begin{DoxyCompactList}\small\item\em The rule id of the scene. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_scene_log_data_abcedca5cef4175df2f18be4f805bffa6}{rule\+Name}}
+\begin{DoxyCompactList}\small\item\em The rule name. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_scene_log_data_abe3a6207376ab3be944f2d70b4ee80e9}{run\+Mode}}
+\begin{DoxyCompactList}\small\item\em The rule run mode, {\ttfamily local} means local interaction, {\ttfamily cloud} means cloud interaction. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_scene_log_data_a396b1a336d5d5ef6bd0a6d4bd925997b}{scene\+Type}}
+\begin{DoxyCompactList}\small\item\em The scene type, 1 means tap-\/to-\/run scene, 2 means automation scene. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_scene_log_data_a2a562886047e802ebf2d6ef6a488c622}{uid}}
+\begin{DoxyCompactList}\small\item\em The user id. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_scene_log_data_a6125a0614fdc4e0a8f7a97b400b8184d}{detail\+Time}}
+\begin{DoxyCompactList}\small\item\em This data is not from service, you can set this property just for display. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_scene_log_data_ac664f88c0e369e3bf8db8e3f31294c16}{index\+Type}}
+\begin{DoxyCompactList}\small\item\em This data is not from service, you can set this property to assist sort the list into category use this property just for display. 0 first , 1 middle, 2 last, -\/1 needless(just one item) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_log_action_data}{Thing\+Smart\+Log\+Action\+Data}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{interface_thing_smart_scene_log_data_a01cc315d7c8f10b5fd547a253ecba527}{actions}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interface_thing_smart_scene_log_data}{Thing\+Smart\+Scene\+Log\+Data}} provides more attributes for developers to create log data. 
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00061}{61}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_a01cc315d7c8f10b5fd547a253ecba527}\label{interface_thing_smart_scene_log_data_a01cc315d7c8f10b5fd547a253ecba527}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!actions@{actions}}
+\index{actions@{actions}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{actions}{actions}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_log_action_data}{Thing\+Smart\+Log\+Action\+Data}} $\ast$ $>$ $\ast$) actions\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00105}{105}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_a6125a0614fdc4e0a8f7a97b400b8184d}\label{interface_thing_smart_scene_log_data_a6125a0614fdc4e0a8f7a97b400b8184d}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!detailTime@{detailTime}}
+\index{detailTime@{detailTime}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{detailTime}{detailTime}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) detail\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+This data is not from service, you can set this property just for display. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00100}{100}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_a9df6d5a934b77b33cc9c63f84e6d8dec}\label{interface_thing_smart_scene_log_data_a9df6d5a934b77b33cc9c63f84e6d8dec}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!eventId@{eventId}}
+\index{eventId@{eventId}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{eventId}{eventId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) event\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The log event id. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00064}{64}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_ab6a8a39fba40829459f85255f979f47b}\label{interface_thing_smart_scene_log_data_ab6a8a39fba40829459f85255f979f47b}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!execResult@{execResult}}
+\index{execResult@{execResult}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{execResult}{execResult}}
+{\footnotesize\ttfamily -\/ (TScene\+Log\+Exec\+Result\+Type) exec\+Result\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The result of scene execution. 1 and 3 is success. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00067}{67}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_ab6098d17c85b6eb13ca1d802e847b7ee}\label{interface_thing_smart_scene_log_data_ab6098d17c85b6eb13ca1d802e847b7ee}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!execResultMsg@{execResultMsg}}
+\index{execResultMsg@{execResultMsg}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{execResultMsg}{execResultMsg}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) exec\+Result\+Msg\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The result message of scene execution. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00070}{70}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_a13d02de2f349cbbf505920d0f0e7431b}\label{interface_thing_smart_scene_log_data_a13d02de2f349cbbf505920d0f0e7431b}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!execTime@{execTime}}
+\index{execTime@{execTime}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{execTime}{execTime}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) exec\+Time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The time of scene execution. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00073}{73}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_a249295530c3a23cda9c4a1033e6f0fa4}\label{interface_thing_smart_scene_log_data_a249295530c3a23cda9c4a1033e6f0fa4}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!failureCause@{failureCause}}
+\index{failureCause@{failureCause}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{failureCause}{failureCause}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) failure\+Cause\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The error information of scene execution. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00076}{76}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_a173f4b68b282d9e8eaa06d70c793ff4b}\label{interface_thing_smart_scene_log_data_a173f4b68b282d9e8eaa06d70c793ff4b}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!failureCode@{failureCode}}
+\index{failureCode@{failureCode}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{failureCode}{failureCode}}
+{\footnotesize\ttfamily -\/ (NSInteger) failure\+Code\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The error code. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00079}{79}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_ac664f88c0e369e3bf8db8e3f31294c16}\label{interface_thing_smart_scene_log_data_ac664f88c0e369e3bf8db8e3f31294c16}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!indexType@{indexType}}
+\index{indexType@{indexType}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{indexType}{indexType}}
+{\footnotesize\ttfamily -\/ (NSInteger) index\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+This data is not from service, you can set this property to assist sort the list into category use this property just for display. 0 first , 1 middle, 2 last, -\/1 needless(just one item) 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00103}{103}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_ab0b94a1041a231c3623c192632ad6e63}\label{interface_thing_smart_scene_log_data_ab0b94a1041a231c3623c192632ad6e63}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!ownerId@{ownerId}}
+\index{ownerId@{ownerId}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{ownerId}{ownerId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) owner\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The owner id of scene log. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00082}{82}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_a1b551f1b9c8e8ef1461e76346c21def1}\label{interface_thing_smart_scene_log_data_a1b551f1b9c8e8ef1461e76346c21def1}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!ruleId@{ruleId}}
+\index{ruleId@{ruleId}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{ruleId}{ruleId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) rule\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The rule id of the scene. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00085}{85}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_abcedca5cef4175df2f18be4f805bffa6}\label{interface_thing_smart_scene_log_data_abcedca5cef4175df2f18be4f805bffa6}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!ruleName@{ruleName}}
+\index{ruleName@{ruleName}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{ruleName}{ruleName}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) rule\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The rule name. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00088}{88}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_abe3a6207376ab3be944f2d70b4ee80e9}\label{interface_thing_smart_scene_log_data_abe3a6207376ab3be944f2d70b4ee80e9}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!runMode@{runMode}}
+\index{runMode@{runMode}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{runMode}{runMode}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) run\+Mode\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The rule run mode, {\ttfamily local} means local interaction, {\ttfamily cloud} means cloud interaction. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00091}{91}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_a396b1a336d5d5ef6bd0a6d4bd925997b}\label{interface_thing_smart_scene_log_data_a396b1a336d5d5ef6bd0a6d4bd925997b}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!sceneType@{sceneType}}
+\index{sceneType@{sceneType}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{sceneType}{sceneType}}
+{\footnotesize\ttfamily -\/ (NSInteger) scene\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The scene type, 1 means tap-\/to-\/run scene, 2 means automation scene. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00094}{94}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_scene_log_data_a2a562886047e802ebf2d6ef6a488c622}\label{interface_thing_smart_scene_log_data_a2a562886047e802ebf2d6ef6a488c622}} 
+\index{ThingSmartSceneLogData@{ThingSmartSceneLogData}!uid@{uid}}
+\index{uid@{uid}!ThingSmartSceneLogData@{ThingSmartSceneLogData}}
+\doxysubsubsection{\texorpdfstring{uid}{uid}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) uid\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The user id. 
+
+
+
+Definition at line \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source_l00097}{97}} of file \mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66_source}{Thing\+Smart\+Scene\+Log\+Model.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Scene\+Core\+Kit/\+Build/\+Thing\+Smart\+Scene\+Core\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Scene\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64__x86__68ff265447327959f888bfe84b452ca66}{Thing\+Smart\+Scene\+Log\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Scene\+Core\+Kit/\+Build/\+Thing\+Smart\+Scene\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Scene\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2watchos-arm64__i321603fb06db11d287b67046bc0e643c6}{Thing\+Smart\+Scene\+Log\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Scene\+Core\+Kit/\+Build/\+Thing\+Smart\+Scene\+Core\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Scene\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2ios-arm64_2_thing50f0977eff94c770c1dbd1f6bee6a335}{Thing\+Smart\+Scene\+Log\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Scene\+Core\+Kit/\+Build/\+Thing\+Smart\+Scene\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Scene\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_scene_core_kit_2_build_2_thing_smart_scene_core_kit_8xcframework_2watchos-arm64__arde9b933c5e7600b5b38c9ba7052e4d15}{Thing\+Smart\+Scene\+Log\+Model.\+h}}\end{DoxyCompactItemize}

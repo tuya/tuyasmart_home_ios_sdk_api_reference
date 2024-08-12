@@ -1,9 +1,9 @@
 var protocol_thing_smart_camera_type_p =
 [
-    [ "__deprecated_msg", "protocol_thing_smart_camera_type-p.html#a0634eb00f65f4bf177b4886fdffc6092", null ],
-    [ "__deprecated_msg", "protocol_thing_smart_camera_type-p.html#ae9cae1276afced309890a0132a4241ed", null ],
     [ "__deprecated_msg", "protocol_thing_smart_camera_type-p.html#ae9cae1276afced309890a0132a4241ed", null ],
     [ "__deprecated_msg", "protocol_thing_smart_camera_type-p.html#a0634eb00f65f4bf177b4886fdffc6092", null ],
+    [ "__deprecated_msg", "protocol_thing_smart_camera_type-p.html#a0634eb00f65f4bf177b4886fdffc6092", null ],
+    [ "__deprecated_msg", "protocol_thing_smart_camera_type-p.html#ae9cae1276afced309890a0132a4241ed", null ],
     [ "bindLocalVideoView:", "protocol_thing_smart_camera_type-p.html#a27eae87e4bbd32cdd02cb1ed4757a64a", null ],
     [ "bindLocalVideoView:", "protocol_thing_smart_camera_type-p.html#a27eae87e4bbd32cdd02cb1ed4757a64a", null ],
     [ "cameraView", "protocol_thing_smart_camera_type-p.html#af8ea9b0bb598321fca8fc7e7343f5386", null ],
@@ -18,6 +18,8 @@ var protocol_thing_smart_camera_type_p =
     [ "deleteAlbumFileWithAlbumName:fileList:success:failure:", "protocol_thing_smart_camera_type-p.html#ae864371a70cb91287e1a51a6bdf62293", null ],
     [ "deletePlayBackDataWithDay:onResponse:onFinish:", "protocol_thing_smart_camera_type-p.html#af5333e233b2c2cc25f4d12919e0ff85f", null ],
     [ "deletePlayBackDataWithDay:onResponse:onFinish:", "protocol_thing_smart_camera_type-p.html#af5333e233b2c2cc25f4d12919e0ff85f", null ],
+    [ "deletePlayBackDataWithFragments:onResponse:onFinish:", "protocol_thing_smart_camera_type-p.html#ac5dd7b1ea7653ad051260497968ed412", null ],
+    [ "deletePlayBackDataWithFragments:onResponse:onFinish:", "protocol_thing_smart_camera_type-p.html#ac5dd7b1ea7653ad051260497968ed412", null ],
     [ "destory", "protocol_thing_smart_camera_type-p.html#af79cb8b2b8ef001e2c93db67fce81f76", null ],
     [ "destory", "protocol_thing_smart_camera_type-p.html#af79cb8b2b8ef001e2c93db67fce81f76", null ],
     [ "disConnect", "protocol_thing_smart_camera_type-p.html#aad7b10d33f4b51653072c6d6967e8bdc", null ],

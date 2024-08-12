@@ -1,0 +1,659 @@
+\hypertarget{interface_thing_b_l_e_agent}{}\doxysection{Thing\+BLEAgent Class Reference}
+\label{interface_thing_b_l_e_agent}\index{ThingBLEAgent@{ThingBLEAgent}}
+
+
+{\ttfamily \#import $<$Thing\+BLEAgent.\+h$>$}
+
+Inheritance diagram for Thing\+BLEAgent\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_b_l_e_agent}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_aac61fc9bdf0ad52c253690b19c2d22a8}{add\+Delegate\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_ae4e00b32164569b431b52b5009cba03a}{remove\+Delegate\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_ac2ff388d4644680d4e02ddf082646b92}{discover\+Service\+UUID\+:options\+:scan\+Filter\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a6de84bb06b1f9907e9b015f097cdc1f7}{discover\+With\+Scan\+Filter\+:completion\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a991a421e271626e15ecacf162fc0e66e}{retrieve\+Connected\+Peripherals\+With\+Services\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a6395d62535e7b8af814bb8153a8734cd}{stop\+Discovering}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a52595413b1d8cb9c896f882ffb5966b3}{connect\+Peripheral\+:\+Charact\+UUID\+:service\+UUID\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_ab838bcd9f96721d0cfa50b9b9050f7a0}{connect\+Peripheral\+:\+Charact\+UUID\+:service\+UUID\+:timeout\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_aaa522ea85e257d1d644a9b74603d5b76}{disconnect\+Peripheral\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a5afa0c21aa59565f9f2e51cae65e3482}{disconnect\+Peripheral\+:timeout\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a9c26e2a9e33b6f1e1c992fa2a564f448}{disconnect\+Peripheral\+:completion\+:timeout\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a0e1a9473279b4397ad0bd339ad768411}{write\+Data\+:to\+Peripheral\+:charact\+UUID\+:service\+UUID\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a5a695d9385b3e5d8f2748bc8bb43ecf0}{read\+Data\+From\+Periphreral\+:\+Charact\+UUID\+:service\+UUID\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a6bc8e5f7aadc95349a11d5cda9ecf067}{notify\+Data\+:\+From\+Periphral\+:\+Charact\+UUID\+:service\+UUID\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_aa65172cbd4382d5944f76523fcf2d98f}{custom\+Notify\+Data\+:from\+Periphral\+:\+Charact\+UUID\+:service\+UUID\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a0516e84a8b20cce0f80d1076c8232937}{clean\+Scaned\+Cache\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_ae589a3fc2b6ec8151c68f845f2288857}{clean\+Scaned\+Cache\+With\+Services\+:}}
+\item 
+(BOOL($^\wedge$)) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a338388eae12a788c1ab96ce4b1540c4e}{scan\+Filter}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_aac61fc9bdf0ad52c253690b19c2d22a8}{add\+Delegate\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_ae4e00b32164569b431b52b5009cba03a}{remove\+Delegate\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_ac2ff388d4644680d4e02ddf082646b92}{discover\+Service\+UUID\+:options\+:scan\+Filter\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a6de84bb06b1f9907e9b015f097cdc1f7}{discover\+With\+Scan\+Filter\+:completion\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a991a421e271626e15ecacf162fc0e66e}{retrieve\+Connected\+Peripherals\+With\+Services\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a6395d62535e7b8af814bb8153a8734cd}{stop\+Discovering}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a52595413b1d8cb9c896f882ffb5966b3}{connect\+Peripheral\+:\+Charact\+UUID\+:service\+UUID\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_ab838bcd9f96721d0cfa50b9b9050f7a0}{connect\+Peripheral\+:\+Charact\+UUID\+:service\+UUID\+:timeout\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_aaa522ea85e257d1d644a9b74603d5b76}{disconnect\+Peripheral\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a5afa0c21aa59565f9f2e51cae65e3482}{disconnect\+Peripheral\+:timeout\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a9c26e2a9e33b6f1e1c992fa2a564f448}{disconnect\+Peripheral\+:completion\+:timeout\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a0e1a9473279b4397ad0bd339ad768411}{write\+Data\+:to\+Peripheral\+:charact\+UUID\+:service\+UUID\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a5a695d9385b3e5d8f2748bc8bb43ecf0}{read\+Data\+From\+Periphreral\+:\+Charact\+UUID\+:service\+UUID\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a6bc8e5f7aadc95349a11d5cda9ecf067}{notify\+Data\+:\+From\+Periphral\+:\+Charact\+UUID\+:service\+UUID\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_aa65172cbd4382d5944f76523fcf2d98f}{custom\+Notify\+Data\+:from\+Periphral\+:\+Charact\+UUID\+:service\+UUID\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_a0516e84a8b20cce0f80d1076c8232937}{clean\+Scaned\+Cache\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_b_l_e_agent_ae589a3fc2b6ec8151c68f845f2288857}{clean\+Scaned\+Cache\+With\+Services\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Thing\+BLEAgent\+Role \mbox{\hyperlink{interface_thing_b_l_e_agent_a24142ad60769c0f9020cdbe7ed1d406d}{role}}
+\item 
+BOOL($^\wedge$ \mbox{\hyperlink{interface_thing_b_l_e_agent_a3a58fb3cb0331897d630a415d7e32e92}{scan\+Filter}} )(NSDictionary $\ast$advertisement\+Data, NSNumber $\ast$rssi)
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_agent_a9aac8358fd5c8907ce3c31be3ab2ba21}{is\+Powered\+On}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_source_l00041}{41}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_source}{Thing\+BLEAgent.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_aac61fc9bdf0ad52c253690b19c2d22a8}\label{interface_thing_b_l_e_agent_aac61fc9bdf0ad52c253690b19c2d22a8}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!addDelegate:@{addDelegate:}}
+\index{addDelegate:@{addDelegate:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{addDelegate:}{addDelegate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{interface_thing_b_l_e_agent}{Thing\+BLEAgent}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+Adds a delegate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & The delegate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_aac61fc9bdf0ad52c253690b19c2d22a8}\label{interface_thing_b_l_e_agent_aac61fc9bdf0ad52c253690b19c2d22a8}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!addDelegate:@{addDelegate:}}
+\index{addDelegate:@{addDelegate:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{addDelegate:}{addDelegate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) add\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{interface_thing_b_l_e_agent}{Thing\+BLEAgent}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+Adds a delegate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & The delegate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a0516e84a8b20cce0f80d1076c8232937}\label{interface_thing_b_l_e_agent_a0516e84a8b20cce0f80d1076c8232937}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!cleanScanedCache:@{cleanScanedCache:}}
+\index{cleanScanedCache:@{cleanScanedCache:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{cleanScanedCache:}{cleanScanedCache:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) clean\+Scaned\+Cache\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{service }\end{DoxyParamCaption}}
+
+Clears the discovery cache. \mbox{\Hypertarget{interface_thing_b_l_e_agent_a0516e84a8b20cce0f80d1076c8232937}\label{interface_thing_b_l_e_agent_a0516e84a8b20cce0f80d1076c8232937}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!cleanScanedCache:@{cleanScanedCache:}}
+\index{cleanScanedCache:@{cleanScanedCache:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{cleanScanedCache:}{cleanScanedCache:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) clean\+Scaned\+Cache\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{service }\end{DoxyParamCaption}}
+
+Clears the discovery cache. \mbox{\Hypertarget{interface_thing_b_l_e_agent_ae589a3fc2b6ec8151c68f845f2288857}\label{interface_thing_b_l_e_agent_ae589a3fc2b6ec8151c68f845f2288857}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!cleanScanedCacheWithServices:@{cleanScanedCacheWithServices:}}
+\index{cleanScanedCacheWithServices:@{cleanScanedCacheWithServices:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{cleanScanedCacheWithServices:}{cleanScanedCacheWithServices:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) clean\+Scaned\+Cache\+With\+Services\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{services }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_ae589a3fc2b6ec8151c68f845f2288857}\label{interface_thing_b_l_e_agent_ae589a3fc2b6ec8151c68f845f2288857}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!cleanScanedCacheWithServices:@{cleanScanedCacheWithServices:}}
+\index{cleanScanedCacheWithServices:@{cleanScanedCacheWithServices:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{cleanScanedCacheWithServices:}{cleanScanedCacheWithServices:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) clean\+Scaned\+Cache\+With\+Services\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{services }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a52595413b1d8cb9c896f882ffb5966b3}\label{interface_thing_b_l_e_agent_a52595413b1d8cb9c896f882ffb5966b3}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!connectPeripheral:CharactUUID:serviceUUID:completion:@{connectPeripheral:CharactUUID:serviceUUID:completion:}}
+\index{connectPeripheral:CharactUUID:serviceUUID:completion:@{connectPeripheral:CharactUUID:serviceUUID:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{connectPeripheral:CharactUUID:serviceUUID:completion:}{connectPeripheral:CharactUUID:serviceUUID:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) connect\+Peripheral\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\item[{Charact\+UUID\+:(NSString $\ast$)}]{a\+Characteristic }\item[{service\+UUID\+:(NSString $\ast$)}]{a\+Service }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a4fd3370acf9d75f4fa7b1d1e470646b6}{Thing\+BLEAgent\+Central\+Connection\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Connects to a discovered Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em peripheral} & The Bluetooth device to be connected. \\
+\hline
+{\em a\+Characteristic} & The characteristic UUID. \\
+\hline
+{\em a\+Service} & The service UUID. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a52595413b1d8cb9c896f882ffb5966b3}\label{interface_thing_b_l_e_agent_a52595413b1d8cb9c896f882ffb5966b3}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!connectPeripheral:CharactUUID:serviceUUID:completion:@{connectPeripheral:CharactUUID:serviceUUID:completion:}}
+\index{connectPeripheral:CharactUUID:serviceUUID:completion:@{connectPeripheral:CharactUUID:serviceUUID:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{connectPeripheral:CharactUUID:serviceUUID:completion:}{connectPeripheral:CharactUUID:serviceUUID:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) connect\+Peripheral\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\item[{Charact\+UUID\+:(NSString $\ast$)}]{a\+Characteristic }\item[{service\+UUID\+:(NSString $\ast$)}]{a\+Service }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a4fd3370acf9d75f4fa7b1d1e470646b6}{Thing\+BLEAgent\+Central\+Connection\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Connects to a discovered Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em peripheral} & The Bluetooth device to be connected. \\
+\hline
+{\em a\+Characteristic} & The characteristic UUID. \\
+\hline
+{\em a\+Service} & The service UUID. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_ab838bcd9f96721d0cfa50b9b9050f7a0}\label{interface_thing_b_l_e_agent_ab838bcd9f96721d0cfa50b9b9050f7a0}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!connectPeripheral:CharactUUID:serviceUUID:timeout:completion:@{connectPeripheral:CharactUUID:serviceUUID:timeout:completion:}}
+\index{connectPeripheral:CharactUUID:serviceUUID:timeout:completion:@{connectPeripheral:CharactUUID:serviceUUID:timeout:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{connectPeripheral:CharactUUID:serviceUUID:timeout:completion:}{connectPeripheral:CharactUUID:serviceUUID:timeout:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) connect\+Peripheral\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\item[{Charact\+UUID\+:(NSString $\ast$)}]{a\+Characteristic }\item[{service\+UUID\+:(NSString $\ast$)}]{a\+Service }\item[{timeout\+:(NSTime\+Interval)}]{timeout }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a4fd3370acf9d75f4fa7b1d1e470646b6}{Thing\+BLEAgent\+Central\+Connection\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Connects to a discovered Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em peripheral} & The Bluetooth device to be connected. \\
+\hline
+{\em a\+Characteristic} & The characteristic UUID. \\
+\hline
+{\em a\+Service} & The service UUID. \\
+\hline
+{\em timeout} & The connection timed out. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_ab838bcd9f96721d0cfa50b9b9050f7a0}\label{interface_thing_b_l_e_agent_ab838bcd9f96721d0cfa50b9b9050f7a0}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!connectPeripheral:CharactUUID:serviceUUID:timeout:completion:@{connectPeripheral:CharactUUID:serviceUUID:timeout:completion:}}
+\index{connectPeripheral:CharactUUID:serviceUUID:timeout:completion:@{connectPeripheral:CharactUUID:serviceUUID:timeout:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{connectPeripheral:CharactUUID:serviceUUID:timeout:completion:}{connectPeripheral:CharactUUID:serviceUUID:timeout:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) connect\+Peripheral\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\item[{Charact\+UUID\+:(NSString $\ast$)}]{a\+Characteristic }\item[{service\+UUID\+:(NSString $\ast$)}]{a\+Service }\item[{timeout\+:(NSTime\+Interval)}]{timeout }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a4fd3370acf9d75f4fa7b1d1e470646b6}{Thing\+BLEAgent\+Central\+Connection\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Connects to a discovered Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em peripheral} & The Bluetooth device to be connected. \\
+\hline
+{\em a\+Characteristic} & The characteristic UUID. \\
+\hline
+{\em a\+Service} & The service UUID. \\
+\hline
+{\em timeout} & The connection timed out. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_aa65172cbd4382d5944f76523fcf2d98f}\label{interface_thing_b_l_e_agent_aa65172cbd4382d5944f76523fcf2d98f}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!customNotifyData:fromPeriphral:CharactUUID:serviceUUID:completion:@{customNotifyData:fromPeriphral:CharactUUID:serviceUUID:completion:}}
+\index{customNotifyData:fromPeriphral:CharactUUID:serviceUUID:completion:@{customNotifyData:fromPeriphral:CharactUUID:serviceUUID:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{customNotifyData:fromPeriphral:CharactUUID:serviceUUID:completion:}{customNotifyData:fromPeriphral:CharactUUID:serviceUUID:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) custom\+Notify\+Data\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{b }\item[{from\+Periphral\+:(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{a\+Peripheral }\item[{Charact\+UUID\+:(NSString $\ast$)}]{a\+Characteristic }\item[{service\+UUID\+:(NSString $\ast$)}]{a\+Service }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a7dadc2a6772e55abb47e084d20497386}{Thing\+BLEAgent\+Central\+Notify\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Receives data from custom notify channel that is pushed by the Bluetooth device. 
+\begin{DoxyParams}{Parameters}
+{\em b} & The switch that enables or disables data transfers. \\
+\hline
+{\em a\+Peripheral} & The connected Bluetooth device. \\
+\hline
+{\em a\+Characteristic} & The characteristic UUID. \\
+\hline
+{\em a\+Service} & The service UUID. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_aa65172cbd4382d5944f76523fcf2d98f}\label{interface_thing_b_l_e_agent_aa65172cbd4382d5944f76523fcf2d98f}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!customNotifyData:fromPeriphral:CharactUUID:serviceUUID:completion:@{customNotifyData:fromPeriphral:CharactUUID:serviceUUID:completion:}}
+\index{customNotifyData:fromPeriphral:CharactUUID:serviceUUID:completion:@{customNotifyData:fromPeriphral:CharactUUID:serviceUUID:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{customNotifyData:fromPeriphral:CharactUUID:serviceUUID:completion:}{customNotifyData:fromPeriphral:CharactUUID:serviceUUID:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) custom\+Notify\+Data\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{b }\item[{from\+Periphral\+:(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{a\+Peripheral }\item[{Charact\+UUID\+:(NSString $\ast$)}]{a\+Characteristic }\item[{service\+UUID\+:(NSString $\ast$)}]{a\+Service }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a7dadc2a6772e55abb47e084d20497386}{Thing\+BLEAgent\+Central\+Notify\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Receives data from custom notify channel that is pushed by the Bluetooth device. 
+\begin{DoxyParams}{Parameters}
+{\em b} & The switch that enables or disables data transfers. \\
+\hline
+{\em a\+Peripheral} & The connected Bluetooth device. \\
+\hline
+{\em a\+Characteristic} & The characteristic UUID. \\
+\hline
+{\em a\+Service} & The service UUID. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_aaa522ea85e257d1d644a9b74603d5b76}\label{interface_thing_b_l_e_agent_aaa522ea85e257d1d644a9b74603d5b76}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!disconnectPeripheral:@{disconnectPeripheral:}}
+\index{disconnectPeripheral:@{disconnectPeripheral:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{disconnectPeripheral:}{disconnectPeripheral:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) disconnect\+Peripheral\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\end{DoxyParamCaption}}
+
+Disconnects from a Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em peripheral} & The connected Bluetooth device. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_aaa522ea85e257d1d644a9b74603d5b76}\label{interface_thing_b_l_e_agent_aaa522ea85e257d1d644a9b74603d5b76}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!disconnectPeripheral:@{disconnectPeripheral:}}
+\index{disconnectPeripheral:@{disconnectPeripheral:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{disconnectPeripheral:}{disconnectPeripheral:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) disconnect\+Peripheral\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\end{DoxyParamCaption}}
+
+Disconnects from a Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em peripheral} & The connected Bluetooth device. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a9c26e2a9e33b6f1e1c992fa2a564f448}\label{interface_thing_b_l_e_agent_a9c26e2a9e33b6f1e1c992fa2a564f448}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!disconnectPeripheral:completion:timeout:@{disconnectPeripheral:completion:timeout:}}
+\index{disconnectPeripheral:completion:timeout:@{disconnectPeripheral:completion:timeout:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{disconnectPeripheral:completion:timeout:}{disconnectPeripheral:completion:timeout:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) \mbox{\hyperlink{interface_thing_b_l_e_agent_aaa522ea85e257d1d644a9b74603d5b76}{disconnect\+Peripheral\+:}} \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a4fd3370acf9d75f4fa7b1d1e470646b6}{Thing\+BLEAgent\+Central\+Connection\+Callback}})}]{a\+Callback }\item[{timeout\+:(NSTime\+Interval)}]{timeout }\end{DoxyParamCaption}}
+
+Disconnects from a Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em peripheral} & The connected Bluetooth device. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a9c26e2a9e33b6f1e1c992fa2a564f448}\label{interface_thing_b_l_e_agent_a9c26e2a9e33b6f1e1c992fa2a564f448}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!disconnectPeripheral:completion:timeout:@{disconnectPeripheral:completion:timeout:}}
+\index{disconnectPeripheral:completion:timeout:@{disconnectPeripheral:completion:timeout:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{disconnectPeripheral:completion:timeout:}{disconnectPeripheral:completion:timeout:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) \mbox{\hyperlink{interface_thing_b_l_e_agent_aaa522ea85e257d1d644a9b74603d5b76}{disconnect\+Peripheral\+:}} \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a4fd3370acf9d75f4fa7b1d1e470646b6}{Thing\+BLEAgent\+Central\+Connection\+Callback}})}]{a\+Callback }\item[{timeout\+:(NSTime\+Interval)}]{timeout }\end{DoxyParamCaption}}
+
+Disconnects from a Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em peripheral} & The connected Bluetooth device. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a5afa0c21aa59565f9f2e51cae65e3482}\label{interface_thing_b_l_e_agent_a5afa0c21aa59565f9f2e51cae65e3482}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!disconnectPeripheral:timeout:@{disconnectPeripheral:timeout:}}
+\index{disconnectPeripheral:timeout:@{disconnectPeripheral:timeout:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{disconnectPeripheral:timeout:}{disconnectPeripheral:timeout:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) \mbox{\hyperlink{interface_thing_b_l_e_agent_aaa522ea85e257d1d644a9b74603d5b76}{disconnect\+Peripheral\+:}} \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\item[{timeout\+:(NSTime\+Interval)}]{timeout }\end{DoxyParamCaption}}
+
+Disconnects from a Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em peripheral} & The connected Bluetooth device. \\
+\hline
+{\em timeout} & The disconnection timed out. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a5afa0c21aa59565f9f2e51cae65e3482}\label{interface_thing_b_l_e_agent_a5afa0c21aa59565f9f2e51cae65e3482}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!disconnectPeripheral:timeout:@{disconnectPeripheral:timeout:}}
+\index{disconnectPeripheral:timeout:@{disconnectPeripheral:timeout:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{disconnectPeripheral:timeout:}{disconnectPeripheral:timeout:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) \mbox{\hyperlink{interface_thing_b_l_e_agent_aaa522ea85e257d1d644a9b74603d5b76}{disconnect\+Peripheral\+:}} \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\item[{timeout\+:(NSTime\+Interval)}]{timeout }\end{DoxyParamCaption}}
+
+Disconnects from a Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em peripheral} & The connected Bluetooth device. \\
+\hline
+{\em timeout} & The disconnection timed out. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_ac2ff388d4644680d4e02ddf082646b92}\label{interface_thing_b_l_e_agent_ac2ff388d4644680d4e02ddf082646b92}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!discoverServiceUUID:options:scanFilter:completion:@{discoverServiceUUID:options:scanFilter:completion:}}
+\index{discoverServiceUUID:options:scanFilter:completion:@{discoverServiceUUID:options:scanFilter:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{discoverServiceUUID:options:scanFilter:completion:}{discoverServiceUUID:options:scanFilter:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) discover\+Service\+UUID\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{services }\item[{options\+:(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$)}]{options }\item[{scan\+Filter\+:(BOOL($^\wedge$)(NSDictionary $\ast$advertisement\+Data, NSNumber $\ast$rssi))}]{scan\+Filter }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a2a0f7f1d99e37ecb3ab18ede7287427c}{Thing\+BLEAgent\+Central\+Discover\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Discovers Bluetooth devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em services} & The UUIDs of services. \\
+\hline
+{\em options} & The discovery parameters. \\
+\hline
+{\em scan\+Filter} & The filtering criteria for discovery. \\
+\hline
+{\em a\+Callback} & The callback of discovered devices that meet the filtering criteria. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_ac2ff388d4644680d4e02ddf082646b92}\label{interface_thing_b_l_e_agent_ac2ff388d4644680d4e02ddf082646b92}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!discoverServiceUUID:options:scanFilter:completion:@{discoverServiceUUID:options:scanFilter:completion:}}
+\index{discoverServiceUUID:options:scanFilter:completion:@{discoverServiceUUID:options:scanFilter:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{discoverServiceUUID:options:scanFilter:completion:}{discoverServiceUUID:options:scanFilter:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) discover\+Service\+UUID\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{services }\item[{options\+:(NSDictionary$<$ NSString $\ast$, id $>$ $\ast$)}]{options }\item[{scan\+Filter\+:(BOOL($^\wedge$)(NSDictionary $\ast$advertisement\+Data, NSNumber $\ast$rssi))}]{scan\+Filter }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a2a0f7f1d99e37ecb3ab18ede7287427c}{Thing\+BLEAgent\+Central\+Discover\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Discovers Bluetooth devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em services} & The UUIDs of services. \\
+\hline
+{\em options} & The discovery parameters. \\
+\hline
+{\em scan\+Filter} & The filtering criteria for discovery. \\
+\hline
+{\em a\+Callback} & The callback of discovered devices that meet the filtering criteria. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a6de84bb06b1f9907e9b015f097cdc1f7}\label{interface_thing_b_l_e_agent_a6de84bb06b1f9907e9b015f097cdc1f7}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!discoverWithScanFilter:completion:@{discoverWithScanFilter:completion:}}
+\index{discoverWithScanFilter:completion:@{discoverWithScanFilter:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{discoverWithScanFilter:completion:}{discoverWithScanFilter:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) discover\+With\+Scan\+Filter\+: \begin{DoxyParamCaption}\item[{(BOOL($^\wedge$)(NSDictionary $\ast$advertisement\+Data, NSNumber $\ast$rssi))}]{scan\+Filter }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a2a0f7f1d99e37ecb3ab18ede7287427c}{Thing\+BLEAgent\+Central\+Discover\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Discovers Bluetooth devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scan\+Filter} & The filtering criteria for discovery. \\
+\hline
+{\em a\+Callback} & The callback of discovered devices that meet the filtering criteria. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a6de84bb06b1f9907e9b015f097cdc1f7}\label{interface_thing_b_l_e_agent_a6de84bb06b1f9907e9b015f097cdc1f7}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!discoverWithScanFilter:completion:@{discoverWithScanFilter:completion:}}
+\index{discoverWithScanFilter:completion:@{discoverWithScanFilter:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{discoverWithScanFilter:completion:}{discoverWithScanFilter:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) discover\+With\+Scan\+Filter\+: \begin{DoxyParamCaption}\item[{(BOOL($^\wedge$)(NSDictionary $\ast$advertisement\+Data, NSNumber $\ast$rssi))}]{scan\+Filter }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a2a0f7f1d99e37ecb3ab18ede7287427c}{Thing\+BLEAgent\+Central\+Discover\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Discovers Bluetooth devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em scan\+Filter} & The filtering criteria for discovery. \\
+\hline
+{\em a\+Callback} & The callback of discovered devices that meet the filtering criteria. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a6bc8e5f7aadc95349a11d5cda9ecf067}\label{interface_thing_b_l_e_agent_a6bc8e5f7aadc95349a11d5cda9ecf067}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!notifyData:FromPeriphral:CharactUUID:serviceUUID:completion:@{notifyData:FromPeriphral:CharactUUID:serviceUUID:completion:}}
+\index{notifyData:FromPeriphral:CharactUUID:serviceUUID:completion:@{notifyData:FromPeriphral:CharactUUID:serviceUUID:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{notifyData:FromPeriphral:CharactUUID:serviceUUID:completion:}{notifyData:FromPeriphral:CharactUUID:serviceUUID:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Data\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{b }\item[{From\+Periphral\+:(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{a\+Peripheral }\item[{Charact\+UUID\+:(NSString $\ast$)}]{a\+Characteristic }\item[{service\+UUID\+:(NSString $\ast$)}]{a\+Service }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a7dadc2a6772e55abb47e084d20497386}{Thing\+BLEAgent\+Central\+Notify\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Receives data that is pushed by the Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & The switch that enables or disables data transfers. \\
+\hline
+{\em a\+Peripheral} & The connected Bluetooth device. \\
+\hline
+{\em a\+Characteristic} & The characteristic UUID. \\
+\hline
+{\em a\+Service} & The service UUID. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a6bc8e5f7aadc95349a11d5cda9ecf067}\label{interface_thing_b_l_e_agent_a6bc8e5f7aadc95349a11d5cda9ecf067}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!notifyData:FromPeriphral:CharactUUID:serviceUUID:completion:@{notifyData:FromPeriphral:CharactUUID:serviceUUID:completion:}}
+\index{notifyData:FromPeriphral:CharactUUID:serviceUUID:completion:@{notifyData:FromPeriphral:CharactUUID:serviceUUID:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{notifyData:FromPeriphral:CharactUUID:serviceUUID:completion:}{notifyData:FromPeriphral:CharactUUID:serviceUUID:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Data\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{b }\item[{From\+Periphral\+:(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{a\+Peripheral }\item[{Charact\+UUID\+:(NSString $\ast$)}]{a\+Characteristic }\item[{service\+UUID\+:(NSString $\ast$)}]{a\+Service }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a7dadc2a6772e55abb47e084d20497386}{Thing\+BLEAgent\+Central\+Notify\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Receives data that is pushed by the Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & The switch that enables or disables data transfers. \\
+\hline
+{\em a\+Peripheral} & The connected Bluetooth device. \\
+\hline
+{\em a\+Characteristic} & The characteristic UUID. \\
+\hline
+{\em a\+Service} & The service UUID. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a5a695d9385b3e5d8f2748bc8bb43ecf0}\label{interface_thing_b_l_e_agent_a5a695d9385b3e5d8f2748bc8bb43ecf0}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!readDataFromPeriphreral:CharactUUID:serviceUUID:completion:@{readDataFromPeriphreral:CharactUUID:serviceUUID:completion:}}
+\index{readDataFromPeriphreral:CharactUUID:serviceUUID:completion:@{readDataFromPeriphreral:CharactUUID:serviceUUID:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{readDataFromPeriphreral:CharactUUID:serviceUUID:completion:}{readDataFromPeriphreral:CharactUUID:serviceUUID:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) read\+Data\+From\+Periphreral\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{a\+Peripheral }\item[{Charact\+UUID\+:(NSString $\ast$)}]{a\+Characteristic }\item[{service\+UUID\+:(NSString $\ast$)}]{a\+Service }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a345c8ffe9cdfdc255347d801ec69488f}{Thing\+BLEAgent\+Central\+Read\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Reads from a Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Peripheral} & The Bluetooth device from which data is read. \\
+\hline
+{\em a\+Characteristic} & The characteristic UUID. \\
+\hline
+{\em a\+Service} & The service UUID. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a5a695d9385b3e5d8f2748bc8bb43ecf0}\label{interface_thing_b_l_e_agent_a5a695d9385b3e5d8f2748bc8bb43ecf0}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!readDataFromPeriphreral:CharactUUID:serviceUUID:completion:@{readDataFromPeriphreral:CharactUUID:serviceUUID:completion:}}
+\index{readDataFromPeriphreral:CharactUUID:serviceUUID:completion:@{readDataFromPeriphreral:CharactUUID:serviceUUID:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{readDataFromPeriphreral:CharactUUID:serviceUUID:completion:}{readDataFromPeriphreral:CharactUUID:serviceUUID:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) read\+Data\+From\+Periphreral\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{a\+Peripheral }\item[{Charact\+UUID\+:(NSString $\ast$)}]{a\+Characteristic }\item[{service\+UUID\+:(NSString $\ast$)}]{a\+Service }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a345c8ffe9cdfdc255347d801ec69488f}{Thing\+BLEAgent\+Central\+Read\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Reads from a Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Peripheral} & The Bluetooth device from which data is read. \\
+\hline
+{\em a\+Characteristic} & The characteristic UUID. \\
+\hline
+{\em a\+Service} & The service UUID. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_ae4e00b32164569b431b52b5009cba03a}\label{interface_thing_b_l_e_agent_ae4e00b32164569b431b52b5009cba03a}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!removeDelegate:@{removeDelegate:}}
+\index{removeDelegate:@{removeDelegate:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{removeDelegate:}{removeDelegate:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{interface_thing_b_l_e_agent}{Thing\+BLEAgent}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+Removes a delegate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & The delegate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_ae4e00b32164569b431b52b5009cba03a}\label{interface_thing_b_l_e_agent_ae4e00b32164569b431b52b5009cba03a}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!removeDelegate:@{removeDelegate:}}
+\index{removeDelegate:@{removeDelegate:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{removeDelegate:}{removeDelegate:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{interface_thing_b_l_e_agent}{Thing\+BLEAgent}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+Removes a delegate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & The delegate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a991a421e271626e15ecacf162fc0e66e}\label{interface_thing_b_l_e_agent_a991a421e271626e15ecacf162fc0e66e}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!retrieveConnectedPeripheralsWithServices:@{retrieveConnectedPeripheralsWithServices:}}
+\index{retrieveConnectedPeripheralsWithServices:@{retrieveConnectedPeripheralsWithServices:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{retrieveConnectedPeripheralsWithServices:}{retrieveConnectedPeripheralsWithServices:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$ $>$ $\ast$) retrieve\+Connected\+Peripherals\+With\+Services\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ CBUUID $\ast$ $>$ $\ast$)}]{service\+UUIDs }\end{DoxyParamCaption}}
+
+Retrieve Connected Peripherals.
+
+
+\begin{DoxyParams}{Parameters}
+{\em service\+UUIDs} & The service UUID.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a991a421e271626e15ecacf162fc0e66e}\label{interface_thing_b_l_e_agent_a991a421e271626e15ecacf162fc0e66e}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!retrieveConnectedPeripheralsWithServices:@{retrieveConnectedPeripheralsWithServices:}}
+\index{retrieveConnectedPeripheralsWithServices:@{retrieveConnectedPeripheralsWithServices:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{retrieveConnectedPeripheralsWithServices:}{retrieveConnectedPeripheralsWithServices:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$ $>$ $\ast$) retrieve\+Connected\+Peripherals\+With\+Services\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ CBUUID $\ast$ $>$ $\ast$)}]{service\+UUIDs }\end{DoxyParamCaption}}
+
+Retrieve Connected Peripherals.
+
+
+\begin{DoxyParams}{Parameters}
+{\em service\+UUIDs} & The service UUID.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a338388eae12a788c1ab96ce4b1540c4e}\label{interface_thing_b_l_e_agent_a338388eae12a788c1ab96ce4b1540c4e}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!scanFilter@{scanFilter}}
+\index{scanFilter@{scanFilter}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{scanFilter}{scanFilter}}
+{\footnotesize\ttfamily -\/ (BOOL($^\wedge$)) scan\+Filter \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{advertisement\+Data }\item[{(NSNumber $\ast$)}]{rssi }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a6395d62535e7b8af814bb8153a8734cd}\label{interface_thing_b_l_e_agent_a6395d62535e7b8af814bb8153a8734cd}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!stopDiscovering@{stopDiscovering}}
+\index{stopDiscovering@{stopDiscovering}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{stopDiscovering}{stopDiscovering}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Discovering \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Stops discovery. \mbox{\Hypertarget{interface_thing_b_l_e_agent_a6395d62535e7b8af814bb8153a8734cd}\label{interface_thing_b_l_e_agent_a6395d62535e7b8af814bb8153a8734cd}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!stopDiscovering@{stopDiscovering}}
+\index{stopDiscovering@{stopDiscovering}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{stopDiscovering}{stopDiscovering}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) stop\+Discovering \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Stops discovery. \mbox{\Hypertarget{interface_thing_b_l_e_agent_a0e1a9473279b4397ad0bd339ad768411}\label{interface_thing_b_l_e_agent_a0e1a9473279b4397ad0bd339ad768411}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!writeData:toPeripheral:charactUUID:serviceUUID:completion:@{writeData:toPeripheral:charactUUID:serviceUUID:completion:}}
+\index{writeData:toPeripheral:charactUUID:serviceUUID:completion:@{writeData:toPeripheral:charactUUID:serviceUUID:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{writeData:toPeripheral:charactUUID:serviceUUID:completion:}{writeData:toPeripheral:charactUUID:serviceUUID:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) write\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{a\+Data }\item[{to\+Peripheral\+:(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{a\+Peripheral }\item[{charact\+UUID\+:(NSString $\ast$)}]{a\+Characteristic }\item[{service\+UUID\+:(NSString $\ast$)}]{a\+Service }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a60f826bb8224a5bbf85850b3c39cb8d7}{Thing\+BLEAgent\+Central\+Write\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Writes to a Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Data} & The binary data to be written. \\
+\hline
+{\em a\+Peripheral} & The Bluetooth device to which data is written. \\
+\hline
+{\em a\+Characteristic} & The characteristic UUID. \\
+\hline
+{\em a\+Service} & The service UUID. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a0e1a9473279b4397ad0bd339ad768411}\label{interface_thing_b_l_e_agent_a0e1a9473279b4397ad0bd339ad768411}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!writeData:toPeripheral:charactUUID:serviceUUID:completion:@{writeData:toPeripheral:charactUUID:serviceUUID:completion:}}
+\index{writeData:toPeripheral:charactUUID:serviceUUID:completion:@{writeData:toPeripheral:charactUUID:serviceUUID:completion:}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{writeData:toPeripheral:charactUUID:serviceUUID:completion:}{writeData:toPeripheral:charactUUID:serviceUUID:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) write\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{a\+Data }\item[{to\+Peripheral\+:(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{a\+Peripheral }\item[{charact\+UUID\+:(NSString $\ast$)}]{a\+Characteristic }\item[{service\+UUID\+:(NSString $\ast$)}]{a\+Service }\item[{completion\+:(\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_a60f826bb8224a5bbf85850b3c39cb8d7}{Thing\+BLEAgent\+Central\+Write\+Callback}})}]{a\+Callback }\end{DoxyParamCaption}}
+
+Writes to a Bluetooth device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Data} & The binary data to be written. \\
+\hline
+{\em a\+Peripheral} & The Bluetooth device to which data is written. \\
+\hline
+{\em a\+Characteristic} & The characteristic UUID. \\
+\hline
+{\em a\+Service} & The service UUID. \\
+\hline
+{\em a\+Callback} & The callback. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a9aac8358fd5c8907ce3c31be3ab2ba21}\label{interface_thing_b_l_e_agent_a9aac8358fd5c8907ce3c31be3ab2ba21}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!isPoweredOn@{isPoweredOn}}
+\index{isPoweredOn@{isPoweredOn}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{isPoweredOn}{isPoweredOn}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Powered\+On\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Specifies whether to enable Bluetooth. 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_source_l00050}{50}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_source}{Thing\+BLEAgent.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a24142ad60769c0f9020cdbe7ed1d406d}\label{interface_thing_b_l_e_agent_a24142ad60769c0f9020cdbe7ed1d406d}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!role@{role}}
+\index{role@{role}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{role}{role}}
+{\footnotesize\ttfamily -\/ (Thing\+BLEAgent\+Role) role\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_source_l00043}{43}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h_source}{Thing\+BLEAgent.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_agent_a3a58fb3cb0331897d630a415d7e32e92}\label{interface_thing_b_l_e_agent_a3a58fb3cb0331897d630a415d7e32e92}} 
+\index{ThingBLEAgent@{ThingBLEAgent}!scanFilter@{scanFilter}}
+\index{scanFilter@{scanFilter}!ThingBLEAgent@{ThingBLEAgent}}
+\doxysubsubsection{\texorpdfstring{scanFilter}{scanFilter}}
+{\footnotesize\ttfamily -\/ (BOOL($^\wedge$ scan\+Filter) (NSDictionary $\ast$advertisement\+Data, NSNumber $\ast$rssi))\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Bluetooth/\+Build/\+Thing\+Bluetooth.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Bluetooth.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h}{Thing\+BLEAgent.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Bluetooth/\+Build/\+Thing\+Bluetooth.\+xcframework/ios-\/arm64/\+Thing\+Bluetooth.\+framework/\+Headers/\mbox{\hyperlink{_thing_bluetooth_8framework_2_headers_2_thing_b_l_e_agent_8h}{Thing\+BLEAgent.\+h}}\end{DoxyCompactItemize}

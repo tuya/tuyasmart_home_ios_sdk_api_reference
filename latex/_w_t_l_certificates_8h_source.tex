@@ -1,0 +1,99 @@
+\hypertarget{_w_t_l_certificates_8h_source}{}\doxysection{WTLCertificates.\+h}
+\label{_w_t_l_certificates_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLCertificates.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLCertificates.h}}
+\mbox{\hyperlink{_w_t_l_certificates_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00021}00021 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00023}00023 \textcolor{preprocessor}{\#import <Water/WTLDefines.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00025}00025 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00027}00027 \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00029}\mbox{\hyperlink{interface_w_t_l_certificates}{00029}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_certificates}{WTLCertificates}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00031}00031 -\/ (instancetype)init \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00032}00032 + (instancetype)new \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00050}00050 + (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}} \_Nullable)createRootCertificate:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}>)keypair}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00051}00051                                                  issuerID:(NSNumber * \_Nullable)issuerID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00052}00052                                                  fabricID:(NSNumber * \_Nullable)fabricID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00053}00053                                                     error:(NSError * \_\_autoreleasing \_Nullable * \_Nullable)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00054}00054     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00072}00072 + (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}} \_Nullable)createIntermediateCertificate:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}>)rootKeypair}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00073}00073                                                   rootCertificate:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}})rootCertificate}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00074}00074                                             intermediatePublicKey:(SecKeyRef)intermediatePublicKey}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00075}00075                                                          issuerID:(NSNumber * \_Nullable)issuerID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00076}00076                                                          fabricID:(NSNumber * \_Nullable)fabricID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00077}00077                                                             error:(NSError * \_\_autoreleasing \_Nullable * \_Nullable)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00078}00078     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00101}00101 + (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}} \_Nullable)createOperationalCertificate:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}>)signingKeypair}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00102}00102                                               signingCertificate:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}})signingCertificate}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00103}00103                                             operationalPublicKey:(SecKeyRef)operationalPublicKey}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00104}00104                                                         fabricID:(NSNumber *)fabricID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00105}00105                                                           nodeID:(NSNumber *)nodeID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00106}00106                                            caseAuthenticatedTags:(NSSet<NSNumber *> * \_Nullable)caseAuthenticatedTags}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00107}00107                                                            error:(NSError * \_\_autoreleasing \_Nullable * \_Nullable)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00108}00108     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00117}00117 + (BOOL)keypair:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}>)keypair matchesCertificate:(NSData *)certificate;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00124}00124 + (BOOL)isCertificate:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}})certificate1 equalTo:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}})certificate2;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00139}00139 + (\mbox{\hyperlink{_w_t_l_defines_8h_a4efd552c6622c4fb6aee847e31a52634}{WTLCSRDERBytes}} \_Nullable)createCertificateSigningRequest:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}>)keypair}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00140}00140                                                       error:(NSError * \_\_autoreleasing \_Nullable * \_Nullable)error;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00150}00150 + (\mbox{\hyperlink{_w_t_l_defines_8h_a80edc0c3fcd1e58989eb7fc59408d12b}{WTLCertificateTLVBytes}} \_Nullable)convertX509Certificate:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}})x509Certificate;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00151}00151 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00160}00160 + (\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}} \_Nullable)convertMatterCertificate:(\mbox{\hyperlink{_w_t_l_defines_8h_a80edc0c3fcd1e58989eb7fc59408d12b}{WTLCertificateTLVBytes}})matterCertificate}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00161}00161     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00168}00168 + (NSData * \_Nullable)publicKeyFromCSR:(\mbox{\hyperlink{_w_t_l_defines_8h_a4efd552c6622c4fb6aee847e31a52634}{WTLCSRDERBytes}})csr}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00169}00169                                  error:(NSError * \_\_autoreleasing \_Nullable * \_Nullable)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00170}00170     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00171}00171 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00172}00172 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00173}00173 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00174}\mbox{\hyperlink{category_w_t_l_certificates_07_deprecated_08}{00174}} \textcolor{keyword}{@interface }\mbox{\hyperlink{category_w_t_l_certificates_07_deprecated_08}{WTLCertificates (Deprecated)}}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00175}00175 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00176}00176 + (nullable NSData *)generateRootCertificate:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}>)keypair}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00177}00177                                     issuerId:(nullable NSNumber *)issuerId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00178}00178                                     fabricId:(nullable NSNumber *)fabricId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00179}00179                                        error:(NSError * \_\_autoreleasing \_Nullable * \_Nullable)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00180}00180     WTL\_DEPRECATED("{}Please use createRootCertificate:issuerID:\mbox{\hyperlink{_w_t_l_certificate_info_8h_a24cc1e4082a028658318f9805b5bf0ab}{fabricID}}:\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}:"{},  macos(13.0, 13.3),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00181}00181         watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00182}00182 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00183}00183 + (nullable NSData *)generateIntermediateCertificate:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}>)rootKeypair}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00184}00184                                      rootCertificate:(NSData *)rootCertificate}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00185}00185                                intermediatePublicKey:(SecKeyRef)intermediatePublicKey}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00186}00186                                             issuerId:(nullable NSNumber *)issuerId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00187}00187                                             fabricId:(nullable NSNumber *)fabricId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00188}00188                                                error:(NSError * \_\_autoreleasing \_Nullable * \_Nullable)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00189}00189     WTL\_DEPRECATED("{}Please use createIntermediateCertificate:\mbox{\hyperlink{_w_t_l_fabric_info_8h_afb2efee6be0ca377eb2f566d6fdec255}{rootCertificate}}:intermediatePublicKey:issuerID:\mbox{\hyperlink{_w_t_l_certificate_info_8h_a24cc1e4082a028658318f9805b5bf0ab}{fabricID}}:\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}:"{},}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00190}00190          macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00191}00191 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00192}00192 + (nullable NSData *)generateOperationalCertificate:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}>)signingKeypair}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00193}00193                                  signingCertificate:(NSData *)signingCertificate}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00194}00194                                operationalPublicKey:(SecKeyRef)operationalPublicKey}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00195}00195                                            fabricId:(NSNumber *)fabricId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00196}00196                                              nodeId:(NSNumber *)nodeId}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00197}00197                               caseAuthenticatedTags:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}<NSNumber *> * \_Nullable)caseAuthenticatedTags}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00198}00198                                               error:(NSError * \_\_autoreleasing \_Nullable * \_Nullable)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00199}00199     WTL\_DEPRECATED(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00200}00200         "{}Plase use "{}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00201}00201         "{}createOperationalCertificate:signingCertificate:operationalPublicKey:\mbox{\hyperlink{_w_t_l_certificate_info_8h_a24cc1e4082a028658318f9805b5bf0ab}{fabricID}}:\mbox{\hyperlink{_w_t_l_certificate_info_8h_ab5516419187ddb2a199430b277696c2c}{nodeID}}:\mbox{\hyperlink{_w_t_l_certificate_info_8h_abe6583d6db0352086f282119d0b24c18}{caseAuthenticatedTags}}:\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}:"{},}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00202}00202          macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00203}00203 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00204}00204 + (nullable NSData *)generateCertificateSigningRequest:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_w_t_l_keypair-p}{WTLKeypair}}>)keypair}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00205}00205                                                  error:(NSError * \_\_autoreleasing \_Nullable * \_Nullable)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00206}00206     WTL\_DEPRECATED("{}Please use createCertificateSigningRequest:\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}:"{},  macos(13.0, 13.3), watchos(9.1, 9.4),}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00207}00207         tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00208}00208 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00209}00209 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00210}00210 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_certificates_8h_source_l00211}\mbox{\hyperlink{interface_w_t_l_certificates_a4333303405e4667d7a59e59b62f6f687}{00211}} NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

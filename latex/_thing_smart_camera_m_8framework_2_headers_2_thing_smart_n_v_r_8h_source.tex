@@ -1,0 +1,58 @@
+\hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source}{}\doxysection{Thing\+Smart\+NVR.\+h}
+\label{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartCameraM/Build/ThingSmartCameraM.xcframework/ios-\/arm64/ThingSmartCameraM.framework/Headers/ThingSmartNVR.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartCameraM/Build/ThingSmartCameraM.xcframework/ios-\/arm64/ThingSmartCameraM.framework/Headers/ThingSmartNVR.h}}
+\mbox{\hyperlink{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00002}00002 \textcolor{comment}{//  ThingSmartNVR.h}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00003}00003 \textcolor{comment}{//  ThingSmartCameraM}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00005}00005 \textcolor{comment}{//  Created by 路飞 on 2021/12/27.}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00008}00008 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00009}00009 \textcolor{preprocessor}{\#import <ThingSmartP2pChannelKit/ThingSmartP2pChannelKit.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00010}00010 \textcolor{preprocessor}{\#import <ThingSmartDeviceCoreKit/ThingSmartDeviceCoreKit.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00011}00011 \textcolor{preprocessor}{\#import <ThingSmartCameraBase/ThingSmartCameraBase.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00013}00013 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00015}\mbox{\hyperlink{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_a15ff98fb9e48414f74eb0665dfdaaa64}{00015}} \textcolor{keyword}{typedef} \mbox{\hyperlink{x86__64-simulator_2_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_a15ff98fb9e48414f74eb0665dfdaaa64}{NS\_ENUM}}(NSUInteger, ThingNVRConnectState) \{}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00016}00016     ThingNVRNotSupport = -\/1,}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00017}00017     ThingNVRDisconnected = 0,}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00018}00018     ThingNVRConnecting,}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00019}00019     ThingNVRConnected,}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00020}00020 \};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00022}00022 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_thing_smart_n_v_r}{ThingSmartNVR}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00023}00023 \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_thing_smart_n_v_r_delegate-p}{ThingSmartNVRDelegate}} <NSObject>}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00025}00025 \textcolor{keyword}{@optional}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00026}00026 -\/ (void)nvr:(\mbox{\hyperlink{interface_thing_smart_n_v_r}{ThingSmartNVR}} *)nvr sessionStatusDidChanged:(NSInteger)status;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00028}00028 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00030}00030 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_smart_n_v_r}{ThingSmartNVR}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00032}00032 \textcolor{keyword}{@property} (nonatomic, assign) ThingNVRConnectState \mbox{\hyperlink{interface_thing_smart_n_v_r_a2231b7f10601d73660c1ce7245ab8ef8}{connectState}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00034}00034 \textcolor{keyword}{@property} (nonatomic, assign) BOOL \mbox{\hyperlink{interface_thing_smart_n_v_r_aaeef385914e8e54fea687d38ae54e1e5}{didSubDevicesBind}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00036}\mbox{\hyperlink{interface_thing_smart_n_v_r_a64c6a38c7bc45c9fae569c1dba0a1433}{00036}} \textcolor{keyword}{@property} (nonatomic, weak) id<ThingSmartNVRDelegate> \mbox{\hyperlink{interface_thing_smart_n_v_r_af492b3b86363d6eba3ff0fc7673953ee}{delegate}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00038}00038 + (instancetype)nvrWithDeviceId:(NSString *)devId;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00040}00040 -\/ (void)connectWithMode:(ThingSmartP2pConnectMode)connectMode success:(\textcolor{keywordtype}{void}(\string^)(\textcolor{keywordtype}{void}))success failure:(\textcolor{keywordtype}{void}(\string^)(NSInteger errCode))failure;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00042}00042 -\/ (void)setupSubDevices:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}<\mbox{\hyperlink{interface_thing_smart_device_model}{ThingSmartDeviceModel}} *> *)devices success:(\textcolor{keywordtype}{void}(\string^)(\textcolor{keywordtype}{void}))success failure:(\textcolor{keywordtype}{void}(\string^)(NSInteger errCode))failure;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00044}00044 -\/ (id<\mbox{\hyperlink{protocol_thing_smart_camera_type-p}{ThingSmartCameraType}}>)cameraWithNodeId:(NSString *)nodeId;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00046}00046 -\/ (void)connectSubDeviceWithCamera:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_thing_smart_camera_type-p}{ThingSmartCameraType}}>)camera delegate:(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_thing_smart_camera_delegate-p}{ThingSmartCameraDelegate}}>)delegate  success:(\textcolor{keywordtype}{void}(\string^)(\textcolor{keywordtype}{id}<\mbox{\hyperlink{protocol_thing_smart_camera_type-p}{ThingSmartCameraType}}> camrea))success failure:(\textcolor{keywordtype}{void}(\string^)(NSInteger errCode))failure;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00048}00048 -\/ (void)\mbox{\hyperlink{interface_thing_smart_n_v_r_a063b42506da40ce283789dc764c767a8}{disconnect}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00050}00050 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_camera_m_8framework_2_headers_2_thing_smart_n_v_r_8h_source_l00052}\mbox{\hyperlink{protocol_thing_smart_n_v_r_delegate-p_a4cbfd4a097c1bb50285e028958b7efc0}{00052}} NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

@@ -1,0 +1,555 @@
+\hypertarget{protocol_thing_matter_share_interface_protocol-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Matter\+Share\+Interface\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_matter_share_interface_protocol-p}\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Matter\+Share\+Interface\+API.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Matter\+Share\+Interface\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_thing_matter_share_interface_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a519be46545fb785acf2804deaded2b43}{get\+Connected\+Status\+Success\+With\+Devid\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a906c7713f4033ebeb5ef78ed52a64f8a}{read\+Supported\+Fabrics\+With\+Devid\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_af8b0f7ded06c543448ca9d8675e163ec}{read\+Commissioned\+Fabrics\+With\+Devid\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_add3074a368dcc42ffb9f97cf62ed734a}{get\+Multiple\+Fabric\+Passcode\+With\+Devid\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a839100da98de023bb8ed54070d6875ae}{get\+Multiple\+Fabric\+Passcode\+Force\+Refresh\+With\+Devid\+:completion\+:}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a5966310bc42854b318efe6a8d983df87}{generate\+Qr\+Code\+With\+Devid\+:fabric\+Passcode\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a0e12f150723637cfee8e362d62c29ed8}{send\+Enhanced\+Commissioning\+Command\+With\+Devid\+:fabric\+Passcode\+Model\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a0628fb2bd77a07bc4e98357833571f58}{revoke\+Commissioning\+Command\+With\+Devid\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_abde88d3364224db2d89221fac1e0d6c7}{get\+Wifi\+Device\+Ssid\+With\+Devid\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_af81d2f59fe3467c67f068bc74eac0a51}{write\+Access\+Control\+List\+With\+Dev\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ac50e9996bfb4ebb9a801c72832316350}{notify\+Access\+Control\+List\+With\+Dev\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ab5a22878f851d0f28f1d8cf8e44601b6}{read\+Fabrics\+With\+Devid\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ad42346de3c3dd5c554285e5f34225a63}{remove\+Fabric\+Devid\+:\+Index\+:success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a1c6e614f861f4ee4cfae912a15c3a4cb}{check\+Pipeline\+Available\+With\+Devid\+:}}
+\begin{DoxyCompactList}\small\item\em Check the device multiple fabric command communicate channels avaliable or not. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}{send\+Enhanced\+Commissioning\+With\+Devid\+:force\+Refresh\+:ssid\+Info\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a8a3762d1420a865a864a446a09a99020}{send\+Enhanced\+Commissioning\+Method\+With\+Devid\+:force\+Refresh\+:ssid\+Info\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a519be46545fb785acf2804deaded2b43}{get\+Connected\+Status\+Success\+With\+Devid\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a906c7713f4033ebeb5ef78ed52a64f8a}{read\+Supported\+Fabrics\+With\+Devid\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_af8b0f7ded06c543448ca9d8675e163ec}{read\+Commissioned\+Fabrics\+With\+Devid\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_add3074a368dcc42ffb9f97cf62ed734a}{get\+Multiple\+Fabric\+Passcode\+With\+Devid\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a839100da98de023bb8ed54070d6875ae}{get\+Multiple\+Fabric\+Passcode\+Force\+Refresh\+With\+Devid\+:completion\+:}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a5966310bc42854b318efe6a8d983df87}{generate\+Qr\+Code\+With\+Devid\+:fabric\+Passcode\+Model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a0e12f150723637cfee8e362d62c29ed8}{send\+Enhanced\+Commissioning\+Command\+With\+Devid\+:fabric\+Passcode\+Model\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a0628fb2bd77a07bc4e98357833571f58}{revoke\+Commissioning\+Command\+With\+Devid\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_abde88d3364224db2d89221fac1e0d6c7}{get\+Wifi\+Device\+Ssid\+With\+Devid\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_af81d2f59fe3467c67f068bc74eac0a51}{write\+Access\+Control\+List\+With\+Dev\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ac50e9996bfb4ebb9a801c72832316350}{notify\+Access\+Control\+List\+With\+Dev\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ab5a22878f851d0f28f1d8cf8e44601b6}{read\+Fabrics\+With\+Devid\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ad42346de3c3dd5c554285e5f34225a63}{remove\+Fabric\+Devid\+:\+Index\+:success\+:failure\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a1c6e614f861f4ee4cfae912a15c3a4cb}{check\+Pipeline\+Available\+With\+Devid\+:}}
+\begin{DoxyCompactList}\small\item\em Check the device multiple fabric command communicate channels avaliable or not. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}{send\+Enhanced\+Commissioning\+With\+Devid\+:force\+Refresh\+:ssid\+Info\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_a8a3762d1420a865a864a446a09a99020}{send\+Enhanced\+Commissioning\+Method\+With\+Devid\+:force\+Refresh\+:ssid\+Info\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_source_l00024}{24}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_source}{Thing\+Matter\+Share\+Interface\+API.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a1c6e614f861f4ee4cfae912a15c3a4cb}\label{protocol_thing_matter_share_interface_protocol-p_a1c6e614f861f4ee4cfae912a15c3a4cb}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!checkPipelineAvailableWithDevid:@{checkPipelineAvailableWithDevid:}}
+\index{checkPipelineAvailableWithDevid:@{checkPipelineAvailableWithDevid:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{checkPipelineAvailableWithDevid:}{checkPipelineAvailableWithDevid:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) check\+Pipeline\+Available\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\end{DoxyParamCaption}}
+
+
+
+Check the device multiple fabric command communicate channels avaliable or not. 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a1c6e614f861f4ee4cfae912a15c3a4cb}\label{protocol_thing_matter_share_interface_protocol-p_a1c6e614f861f4ee4cfae912a15c3a4cb}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!checkPipelineAvailableWithDevid:@{checkPipelineAvailableWithDevid:}}
+\index{checkPipelineAvailableWithDevid:@{checkPipelineAvailableWithDevid:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{checkPipelineAvailableWithDevid:}{checkPipelineAvailableWithDevid:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) check\+Pipeline\+Available\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\end{DoxyParamCaption}}
+
+
+
+Check the device multiple fabric command communicate channels avaliable or not. 
+
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a5966310bc42854b318efe6a8d983df87}\label{protocol_thing_matter_share_interface_protocol-p_a5966310bc42854b318efe6a8d983df87}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!generateQrCodeWithDevid:fabricPasscodeModel:@{generateQrCodeWithDevid:fabricPasscodeModel:}}
+\index{generateQrCodeWithDevid:fabricPasscodeModel:@{generateQrCodeWithDevid:fabricPasscodeModel:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{generateQrCodeWithDevid:fabricPasscodeModel:}{generateQrCodeWithDevid:fabricPasscodeModel:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) generate\+Qr\+Code\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{fabric\+Passcode\+Model\+:(\char`\"{}This api is deprecate. Please use \`{}-\/\mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}{send\+Enhanced\+Commissioning\+With\+Devid\+:force\+Refresh\+:ssid\+Info\+:success\+:failure\+:}}\`{} directly\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+generate\+Qr\+Code 生成二维码内容 \begin{DoxyReturn}{Returns}
+Qr\+Code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a5966310bc42854b318efe6a8d983df87}\label{protocol_thing_matter_share_interface_protocol-p_a5966310bc42854b318efe6a8d983df87}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!generateQrCodeWithDevid:fabricPasscodeModel:@{generateQrCodeWithDevid:fabricPasscodeModel:}}
+\index{generateQrCodeWithDevid:fabricPasscodeModel:@{generateQrCodeWithDevid:fabricPasscodeModel:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{generateQrCodeWithDevid:fabricPasscodeModel:}{generateQrCodeWithDevid:fabricPasscodeModel:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) generate\+Qr\+Code\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{fabric\+Passcode\+Model\+:(\char`\"{}This api is deprecate. Please use \`{}-\/\mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}{send\+Enhanced\+Commissioning\+With\+Devid\+:force\+Refresh\+:ssid\+Info\+:success\+:failure\+:}}\`{} directly\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+generate\+Qr\+Code 生成二维码内容 \begin{DoxyReturn}{Returns}
+Qr\+Code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a519be46545fb785acf2804deaded2b43}\label{protocol_thing_matter_share_interface_protocol-p_a519be46545fb785acf2804deaded2b43}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!getConnectedStatusSuccessWithDevid:success:failure:@{getConnectedStatusSuccessWithDevid:success:failure:}}
+\index{getConnectedStatusSuccessWithDevid:success:failure:@{getConnectedStatusSuccessWithDevid:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getConnectedStatusSuccessWithDevid:success:failure:}{getConnectedStatusSuccessWithDevid:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Connected\+Status\+Success\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\char`\"{}This api is deprecate.\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+get matter connected Status 获取matter连接状态 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a519be46545fb785acf2804deaded2b43}\label{protocol_thing_matter_share_interface_protocol-p_a519be46545fb785acf2804deaded2b43}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!getConnectedStatusSuccessWithDevid:success:failure:@{getConnectedStatusSuccessWithDevid:success:failure:}}
+\index{getConnectedStatusSuccessWithDevid:success:failure:@{getConnectedStatusSuccessWithDevid:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getConnectedStatusSuccessWithDevid:success:failure:}{getConnectedStatusSuccessWithDevid:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Connected\+Status\+Success\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\char`\"{}This api is deprecate.\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+get matter connected Status 获取matter连接状态 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a839100da98de023bb8ed54070d6875ae}\label{protocol_thing_matter_share_interface_protocol-p_a839100da98de023bb8ed54070d6875ae}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!getMultipleFabricPasscodeForceRefreshWithDevid:completion:@{getMultipleFabricPasscodeForceRefreshWithDevid:completion:}}
+\index{getMultipleFabricPasscodeForceRefreshWithDevid:completion:@{getMultipleFabricPasscodeForceRefreshWithDevid:completion:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getMultipleFabricPasscodeForceRefreshWithDevid:completion:}{getMultipleFabricPasscodeForceRefreshWithDevid:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Multiple\+Fabric\+Passcode\+Force\+Refresh\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{completion\+:(\char`\"{}This api is deprecate. Please use \`{}-\/\mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}{send\+Enhanced\+Commissioning\+With\+Devid\+:force\+Refresh\+:ssid\+Info\+:success\+:failure\+:}}\`{} directly\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+get\+Multiple\+Fabric\+Passcode 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em completion\+Block} & Called when the task is finished. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a839100da98de023bb8ed54070d6875ae}\label{protocol_thing_matter_share_interface_protocol-p_a839100da98de023bb8ed54070d6875ae}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!getMultipleFabricPasscodeForceRefreshWithDevid:completion:@{getMultipleFabricPasscodeForceRefreshWithDevid:completion:}}
+\index{getMultipleFabricPasscodeForceRefreshWithDevid:completion:@{getMultipleFabricPasscodeForceRefreshWithDevid:completion:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getMultipleFabricPasscodeForceRefreshWithDevid:completion:}{getMultipleFabricPasscodeForceRefreshWithDevid:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Multiple\+Fabric\+Passcode\+Force\+Refresh\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{completion\+:(\char`\"{}This api is deprecate. Please use \`{}-\/\mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}{send\+Enhanced\+Commissioning\+With\+Devid\+:force\+Refresh\+:ssid\+Info\+:success\+:failure\+:}}\`{} directly\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+get\+Multiple\+Fabric\+Passcode 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em completion\+Block} & Called when the task is finished. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_add3074a368dcc42ffb9f97cf62ed734a}\label{protocol_thing_matter_share_interface_protocol-p_add3074a368dcc42ffb9f97cf62ed734a}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!getMultipleFabricPasscodeWithDevid:completion:@{getMultipleFabricPasscodeWithDevid:completion:}}
+\index{getMultipleFabricPasscodeWithDevid:completion:@{getMultipleFabricPasscodeWithDevid:completion:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getMultipleFabricPasscodeWithDevid:completion:}{getMultipleFabricPasscodeWithDevid:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Multiple\+Fabric\+Passcode\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{completion\+:(\char`\"{}This api is deprecate. Please use \`{}-\/\mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}{send\+Enhanced\+Commissioning\+With\+Devid\+:force\+Refresh\+:ssid\+Info\+:success\+:failure\+:}}\`{} directly\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+get\+Multiple\+Fabric\+Passcode 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em completion\+Block} & Called when the task is finished. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_add3074a368dcc42ffb9f97cf62ed734a}\label{protocol_thing_matter_share_interface_protocol-p_add3074a368dcc42ffb9f97cf62ed734a}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!getMultipleFabricPasscodeWithDevid:completion:@{getMultipleFabricPasscodeWithDevid:completion:}}
+\index{getMultipleFabricPasscodeWithDevid:completion:@{getMultipleFabricPasscodeWithDevid:completion:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getMultipleFabricPasscodeWithDevid:completion:}{getMultipleFabricPasscodeWithDevid:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Multiple\+Fabric\+Passcode\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{completion\+:(\char`\"{}This api is deprecate. Please use \`{}-\/\mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}{send\+Enhanced\+Commissioning\+With\+Devid\+:force\+Refresh\+:ssid\+Info\+:success\+:failure\+:}}\`{} directly\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+get\+Multiple\+Fabric\+Passcode 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em completion\+Block} & Called when the task is finished. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_abde88d3364224db2d89221fac1e0d6c7}\label{protocol_thing_matter_share_interface_protocol-p_abde88d3364224db2d89221fac1e0d6c7}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!getWifiDeviceSsidWithDevid:success:failure:@{getWifiDeviceSsidWithDevid:success:failure:}}
+\index{getWifiDeviceSsidWithDevid:success:failure:@{getWifiDeviceSsidWithDevid:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getWifiDeviceSsidWithDevid:success:failure:}{getWifiDeviceSsidWithDevid:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Wifi\+Device\+Ssid\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a1ee38442763f6622af80e13543e19bf8}{Thing\+Success\+String}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+获取当前设备 Wifi 名称 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_abde88d3364224db2d89221fac1e0d6c7}\label{protocol_thing_matter_share_interface_protocol-p_abde88d3364224db2d89221fac1e0d6c7}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!getWifiDeviceSsidWithDevid:success:failure:@{getWifiDeviceSsidWithDevid:success:failure:}}
+\index{getWifiDeviceSsidWithDevid:success:failure:@{getWifiDeviceSsidWithDevid:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{getWifiDeviceSsidWithDevid:success:failure:}{getWifiDeviceSsidWithDevid:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Wifi\+Device\+Ssid\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a1ee38442763f6622af80e13543e19bf8}{Thing\+Success\+String}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+获取当前设备 Wifi 名称 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_ac50e9996bfb4ebb9a801c72832316350}\label{protocol_thing_matter_share_interface_protocol-p_ac50e9996bfb4ebb9a801c72832316350}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!notifyAccessControlListWithDevId:success:failure:@{notifyAccessControlListWithDevId:success:failure:}}
+\index{notifyAccessControlListWithDevId:success:failure:@{notifyAccessControlListWithDevId:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{notifyAccessControlListWithDevId:success:failure:}{notifyAccessControlListWithDevId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Access\+Control\+List\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+通知设备写入\+ACL
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & dev\+Id \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_ac50e9996bfb4ebb9a801c72832316350}\label{protocol_thing_matter_share_interface_protocol-p_ac50e9996bfb4ebb9a801c72832316350}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!notifyAccessControlListWithDevId:success:failure:@{notifyAccessControlListWithDevId:success:failure:}}
+\index{notifyAccessControlListWithDevId:success:failure:@{notifyAccessControlListWithDevId:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{notifyAccessControlListWithDevId:success:failure:}{notifyAccessControlListWithDevId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) notify\+Access\+Control\+List\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+通知设备写入\+ACL
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & dev\+Id \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_af8b0f7ded06c543448ca9d8675e163ec}\label{protocol_thing_matter_share_interface_protocol-p_af8b0f7ded06c543448ca9d8675e163ec}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!readCommissionedFabricsWithDevid:success:failure:@{readCommissionedFabricsWithDevid:success:failure:}}
+\index{readCommissionedFabricsWithDevid:success:failure:@{readCommissionedFabricsWithDevid:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{readCommissionedFabricsWithDevid:success:failure:}{readCommissionedFabricsWithDevid:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) read\+Commissioned\+Fabrics\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a62c3563efaf9e4ae80a7f930f8193404}{Thing\+Success\+Int}})}]{success }\item[{failure\+:(\char`\"{}This api is deprecate.\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+read\+Commissioned\+Fabrics 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_af8b0f7ded06c543448ca9d8675e163ec}\label{protocol_thing_matter_share_interface_protocol-p_af8b0f7ded06c543448ca9d8675e163ec}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!readCommissionedFabricsWithDevid:success:failure:@{readCommissionedFabricsWithDevid:success:failure:}}
+\index{readCommissionedFabricsWithDevid:success:failure:@{readCommissionedFabricsWithDevid:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{readCommissionedFabricsWithDevid:success:failure:}{readCommissionedFabricsWithDevid:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) read\+Commissioned\+Fabrics\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a62c3563efaf9e4ae80a7f930f8193404}{Thing\+Success\+Int}})}]{success }\item[{failure\+:(\char`\"{}This api is deprecate.\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+read\+Commissioned\+Fabrics 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_ab5a22878f851d0f28f1d8cf8e44601b6}\label{protocol_thing_matter_share_interface_protocol-p_ab5a22878f851d0f28f1d8cf8e44601b6}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!readFabricsWithDevid:success:failure:@{readFabricsWithDevid:success:failure:}}
+\index{readFabricsWithDevid:success:failure:@{readFabricsWithDevid:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{readFabricsWithDevid:success:failure:}{readFabricsWithDevid:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) read\+Fabrics\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_matter_multiple_fabric_info_model}{Thing\+Matter\+Multiple\+Fabric\+Info\+Model}} $\ast$ $>$ $\ast$fabrics))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Read fabric list. 获取 Fabirc 列表
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item dev\+Id\+: dev\+Id
+\item success\+: Called when the task is finished.
+\item failure\+: Called when the task is interrupted by an error. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_ab5a22878f851d0f28f1d8cf8e44601b6}\label{protocol_thing_matter_share_interface_protocol-p_ab5a22878f851d0f28f1d8cf8e44601b6}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!readFabricsWithDevid:success:failure:@{readFabricsWithDevid:success:failure:}}
+\index{readFabricsWithDevid:success:failure:@{readFabricsWithDevid:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{readFabricsWithDevid:success:failure:}{readFabricsWithDevid:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) read\+Fabrics\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_matter_multiple_fabric_info_model}{Thing\+Matter\+Multiple\+Fabric\+Info\+Model}} $\ast$ $>$ $\ast$fabrics))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Read fabric list. 获取 Fabirc 列表
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item dev\+Id\+: dev\+Id
+\item success\+: Called when the task is finished.
+\item failure\+: Called when the task is interrupted by an error. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a906c7713f4033ebeb5ef78ed52a64f8a}\label{protocol_thing_matter_share_interface_protocol-p_a906c7713f4033ebeb5ef78ed52a64f8a}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!readSupportedFabricsWithDevid:success:failure:@{readSupportedFabricsWithDevid:success:failure:}}
+\index{readSupportedFabricsWithDevid:success:failure:@{readSupportedFabricsWithDevid:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{readSupportedFabricsWithDevid:success:failure:}{readSupportedFabricsWithDevid:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) read\+Supported\+Fabrics\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a62c3563efaf9e4ae80a7f930f8193404}{Thing\+Success\+Int}})}]{success }\item[{failure\+:(\char`\"{}This api is deprecate.\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+read\+Supported\+Fabrics 支持的\+Fabric数量 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a906c7713f4033ebeb5ef78ed52a64f8a}\label{protocol_thing_matter_share_interface_protocol-p_a906c7713f4033ebeb5ef78ed52a64f8a}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!readSupportedFabricsWithDevid:success:failure:@{readSupportedFabricsWithDevid:success:failure:}}
+\index{readSupportedFabricsWithDevid:success:failure:@{readSupportedFabricsWithDevid:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{readSupportedFabricsWithDevid:success:failure:}{readSupportedFabricsWithDevid:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) read\+Supported\+Fabrics\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a62c3563efaf9e4ae80a7f930f8193404}{Thing\+Success\+Int}})}]{success }\item[{failure\+:(\char`\"{}This api is deprecate.\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+read\+Supported\+Fabrics 支持的\+Fabric数量 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_ad42346de3c3dd5c554285e5f34225a63}\label{protocol_thing_matter_share_interface_protocol-p_ad42346de3c3dd5c554285e5f34225a63}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!removeFabricDevid:Index:success:failure:@{removeFabricDevid:Index:success:failure:}}
+\index{removeFabricDevid:Index:success:failure:@{removeFabricDevid:Index:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{removeFabricDevid:Index:success:failure:}{removeFabricDevid:Index:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Fabric\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{Index\+:(NSInteger)}]{fabric\+Index }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Remove Fabric by Fabric index.
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item dev\+Id\+: dev\+Id
+\item faibric\+Index\+: The fabric index.
+\item success\+: Called when the task is finished.
+\item failure\+: Called when the task is interrupted by an error. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_ad42346de3c3dd5c554285e5f34225a63}\label{protocol_thing_matter_share_interface_protocol-p_ad42346de3c3dd5c554285e5f34225a63}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!removeFabricDevid:Index:success:failure:@{removeFabricDevid:Index:success:failure:}}
+\index{removeFabricDevid:Index:success:failure:@{removeFabricDevid:Index:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{removeFabricDevid:Index:success:failure:}{removeFabricDevid:Index:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Fabric\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{Index\+:(NSInteger)}]{fabric\+Index }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Remove Fabric by Fabric index.
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item dev\+Id\+: dev\+Id
+\item faibric\+Index\+: The fabric index.
+\item success\+: Called when the task is finished.
+\item failure\+: Called when the task is interrupted by an error. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a0628fb2bd77a07bc4e98357833571f58}\label{protocol_thing_matter_share_interface_protocol-p_a0628fb2bd77a07bc4e98357833571f58}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!revokeCommissioningCommandWithDevid:success:failure:@{revokeCommissioningCommandWithDevid:success:failure:}}
+\index{revokeCommissioningCommandWithDevid:success:failure:@{revokeCommissioningCommandWithDevid:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{revokeCommissioningCommandWithDevid:success:failure:}{revokeCommissioningCommandWithDevid:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) revoke\+Commissioning\+Command\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\char`\"{}This api is deprecate.\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+close commissing window 关闭设备调试窗口 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a0628fb2bd77a07bc4e98357833571f58}\label{protocol_thing_matter_share_interface_protocol-p_a0628fb2bd77a07bc4e98357833571f58}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!revokeCommissioningCommandWithDevid:success:failure:@{revokeCommissioningCommandWithDevid:success:failure:}}
+\index{revokeCommissioningCommandWithDevid:success:failure:@{revokeCommissioningCommandWithDevid:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{revokeCommissioningCommandWithDevid:success:failure:}{revokeCommissioningCommandWithDevid:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) revoke\+Commissioning\+Command\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\char`\"{}This api is deprecate.\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+close commissing window 关闭设备调试窗口 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a0e12f150723637cfee8e362d62c29ed8}\label{protocol_thing_matter_share_interface_protocol-p_a0e12f150723637cfee8e362d62c29ed8}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!sendEnhancedCommissioningCommandWithDevid:fabricPasscodeModel:success:failure:@{sendEnhancedCommissioningCommandWithDevid:fabricPasscodeModel:success:failure:}}
+\index{sendEnhancedCommissioningCommandWithDevid:fabricPasscodeModel:success:failure:@{sendEnhancedCommissioningCommandWithDevid:fabricPasscodeModel:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{sendEnhancedCommissioningCommandWithDevid:fabricPasscodeModel:success:failure:}{sendEnhancedCommissioningCommandWithDevid:fabricPasscodeModel:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+Enhanced\+Commissioning\+Command\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{fabric\+Passcode\+Model\+:(\mbox{\hyperlink{interface_thing_matter_multiple_fabric_passcode_model}{Thing\+Matter\+Multiple\+Fabric\+Passcode\+Model}} $\ast$)}]{passcode\+Model }\item[{success\+:(void($^\wedge$)(NSString $\ast$qr\+Code, NSString $\ast$setup\+Code))}]{success }\item[{failure\+:(\char`\"{}This api is deprecate. Please use \`{}-\/\mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}{send\+Enhanced\+Commissioning\+With\+Devid\+:force\+Refresh\+:ssid\+Info\+:success\+:failure\+:}}\`{} directly\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+open commissing window 发送\+ECM指令 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a0e12f150723637cfee8e362d62c29ed8}\label{protocol_thing_matter_share_interface_protocol-p_a0e12f150723637cfee8e362d62c29ed8}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!sendEnhancedCommissioningCommandWithDevid:fabricPasscodeModel:success:failure:@{sendEnhancedCommissioningCommandWithDevid:fabricPasscodeModel:success:failure:}}
+\index{sendEnhancedCommissioningCommandWithDevid:fabricPasscodeModel:success:failure:@{sendEnhancedCommissioningCommandWithDevid:fabricPasscodeModel:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{sendEnhancedCommissioningCommandWithDevid:fabricPasscodeModel:success:failure:}{sendEnhancedCommissioningCommandWithDevid:fabricPasscodeModel:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+Enhanced\+Commissioning\+Command\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{fabric\+Passcode\+Model\+:(\mbox{\hyperlink{interface_thing_matter_multiple_fabric_passcode_model}{Thing\+Matter\+Multiple\+Fabric\+Passcode\+Model}} $\ast$)}]{passcode\+Model }\item[{success\+:(void($^\wedge$)(NSString $\ast$qr\+Code, NSString $\ast$setup\+Code))}]{success }\item[{failure\+:(\char`\"{}This api is deprecate. Please use \`{}-\/\mbox{\hyperlink{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}{send\+Enhanced\+Commissioning\+With\+Devid\+:force\+Refresh\+:ssid\+Info\+:success\+:failure\+:}}\`{} directly\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+open commissing window 发送\+ECM指令 
+\begin{DoxyParams}{Parameters}
+{\em devid} & devid \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a8a3762d1420a865a864a446a09a99020}\label{protocol_thing_matter_share_interface_protocol-p_a8a3762d1420a865a864a446a09a99020}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!sendEnhancedCommissioningMethodWithDevid:forceRefresh:ssidInfo:success:failure:@{sendEnhancedCommissioningMethodWithDevid:forceRefresh:ssidInfo:success:failure:}}
+\index{sendEnhancedCommissioningMethodWithDevid:forceRefresh:ssidInfo:success:failure:@{sendEnhancedCommissioningMethodWithDevid:forceRefresh:ssidInfo:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{sendEnhancedCommissioningMethodWithDevid:forceRefresh:ssidInfo:success:failure:}{sendEnhancedCommissioningMethodWithDevid:forceRefresh:ssidInfo:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+Enhanced\+Commissioning\+Method\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{force\+Refresh\+:(BOOL)}]{force\+Refresh }\item[{ssid\+Info\+:(nullable void($^\wedge$)(NSString $\ast$\+\_\+\+\_\+nullable ssid))}]{ssid\+Info }\item[{success\+:(void($^\wedge$)(NSString $\ast$qr\+Code\+Str, NSString $\ast$setup\+Code, long long duration))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Open commissing window. (ECM Command)
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item dev\+Id\+: dev\+Id
+\item force\+Refresh\+: Force refresh the passcode info.
+\item ssid\+Info\+: The Wi-\/\+Fi ssid currently connected to the device.
+\item success\+: Called when the task is finished.
+\item failure\+: Called when the task is interrupted by an error. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_a8a3762d1420a865a864a446a09a99020}\label{protocol_thing_matter_share_interface_protocol-p_a8a3762d1420a865a864a446a09a99020}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!sendEnhancedCommissioningMethodWithDevid:forceRefresh:ssidInfo:success:failure:@{sendEnhancedCommissioningMethodWithDevid:forceRefresh:ssidInfo:success:failure:}}
+\index{sendEnhancedCommissioningMethodWithDevid:forceRefresh:ssidInfo:success:failure:@{sendEnhancedCommissioningMethodWithDevid:forceRefresh:ssidInfo:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{sendEnhancedCommissioningMethodWithDevid:forceRefresh:ssidInfo:success:failure:}{sendEnhancedCommissioningMethodWithDevid:forceRefresh:ssidInfo:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+Enhanced\+Commissioning\+Method\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{force\+Refresh\+:(BOOL)}]{force\+Refresh }\item[{ssid\+Info\+:(nullable void($^\wedge$)(NSString $\ast$\+\_\+\+\_\+nullable ssid))}]{ssid\+Info }\item[{success\+:(void($^\wedge$)(NSString $\ast$qr\+Code\+Str, NSString $\ast$setup\+Code, long long duration))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Open commissing window. (ECM Command)
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item dev\+Id\+: dev\+Id
+\item force\+Refresh\+: Force refresh the passcode info.
+\item ssid\+Info\+: The Wi-\/\+Fi ssid currently connected to the device.
+\item success\+: Called when the task is finished.
+\item failure\+: Called when the task is interrupted by an error. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}\label{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!sendEnhancedCommissioningWithDevid:forceRefresh:ssidInfo:success:failure:@{sendEnhancedCommissioningWithDevid:forceRefresh:ssidInfo:success:failure:}}
+\index{sendEnhancedCommissioningWithDevid:forceRefresh:ssidInfo:success:failure:@{sendEnhancedCommissioningWithDevid:forceRefresh:ssidInfo:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{sendEnhancedCommissioningWithDevid:forceRefresh:ssidInfo:success:failure:}{sendEnhancedCommissioningWithDevid:forceRefresh:ssidInfo:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+Enhanced\+Commissioning\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{force\+Refresh\+:(BOOL)}]{force\+Refresh }\item[{ssid\+Info\+:(nullable void($^\wedge$)(NSString $\ast$\+\_\+\+\_\+nullable ssid))}]{ssid\+Info }\item[{success\+:(void($^\wedge$)(NSString $\ast$qr\+Code\+Str, NSString $\ast$setup\+Code))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Open commissing window. (ECM Command)
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item dev\+Id\+: dev\+Id
+\item force\+Refresh\+: Force refresh the passcode info.
+\item ssid\+Info\+: The Wi-\/\+Fi ssid currently connected to the device.
+\item success\+: Called when the task is finished.
+\item failure\+: Called when the task is interrupted by an error. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}\label{protocol_thing_matter_share_interface_protocol-p_ab78d9d33889085c418aba9e53432cedd}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!sendEnhancedCommissioningWithDevid:forceRefresh:ssidInfo:success:failure:@{sendEnhancedCommissioningWithDevid:forceRefresh:ssidInfo:success:failure:}}
+\index{sendEnhancedCommissioningWithDevid:forceRefresh:ssidInfo:success:failure:@{sendEnhancedCommissioningWithDevid:forceRefresh:ssidInfo:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{sendEnhancedCommissioningWithDevid:forceRefresh:ssidInfo:success:failure:}{sendEnhancedCommissioningWithDevid:forceRefresh:ssidInfo:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) send\+Enhanced\+Commissioning\+With\+Devid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{devid }\item[{force\+Refresh\+:(BOOL)}]{force\+Refresh }\item[{ssid\+Info\+:(nullable void($^\wedge$)(NSString $\ast$\+\_\+\+\_\+nullable ssid))}]{ssid\+Info }\item[{success\+:(void($^\wedge$)(NSString $\ast$qr\+Code\+Str, NSString $\ast$setup\+Code))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Open commissing window. (ECM Command)
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item dev\+Id\+: dev\+Id
+\item force\+Refresh\+: Force refresh the passcode info.
+\item ssid\+Info\+: The Wi-\/\+Fi ssid currently connected to the device.
+\item success\+: Called when the task is finished.
+\item failure\+: Called when the task is interrupted by an error. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_af81d2f59fe3467c67f068bc74eac0a51}\label{protocol_thing_matter_share_interface_protocol-p_af81d2f59fe3467c67f068bc74eac0a51}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!writeAccessControlListWithDevId:success:failure:@{writeAccessControlListWithDevId:success:failure:}}
+\index{writeAccessControlListWithDevId:success:failure:@{writeAccessControlListWithDevId:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{writeAccessControlListWithDevId:success:failure:}{writeAccessControlListWithDevId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) write\+Access\+Control\+List\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+write\+Access\+Control\+List 写入\+ACL
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & dev\+Id \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_matter_share_interface_protocol-p_af81d2f59fe3467c67f068bc74eac0a51}\label{protocol_thing_matter_share_interface_protocol-p_af81d2f59fe3467c67f068bc74eac0a51}} 
+\index{$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}!writeAccessControlListWithDevId:success:failure:@{writeAccessControlListWithDevId:success:failure:}}
+\index{writeAccessControlListWithDevId:success:failure:@{writeAccessControlListWithDevId:success:failure:}!$<$ThingMatterShareInterfaceProtocol$>$@{$<$ThingMatterShareInterfaceProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{writeAccessControlListWithDevId:success:failure:}{writeAccessControlListWithDevId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) write\+Access\+Control\+List\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+write\+Access\+Control\+List 写入\+ACL
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & dev\+Id \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Interface\+API/\+Thing\+Smart\+Matter\+Interface\+API.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Matter\+Interface\+API.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h}{Thing\+Matter\+Share\+Interface\+API.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Interface\+API/\+Thing\+Smart\+Matter\+Interface\+API.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Matter\+Interface\+API.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h}{Thing\+Matter\+Share\+Interface\+API.\+h}}\end{DoxyCompactItemize}

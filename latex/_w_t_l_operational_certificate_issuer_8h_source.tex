@@ -1,0 +1,68 @@
+\hypertarget{_w_t_l_operational_certificate_issuer_8h_source}{}\doxysection{WTLOperational\+Certificate\+Issuer.\+h}
+\label{_w_t_l_operational_certificate_issuer_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLOperationalCertificateIssuer.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLOperationalCertificateIssuer.h}}
+\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00020}00020 \textcolor{preprocessor}{\#import <Water/WTLCSRInfo.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00021}00021 \textcolor{preprocessor}{\#import <Water/WTLCertificates.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00022}00022 \textcolor{preprocessor}{\#import <Water/WTLDeviceAttestationInfo.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00024}00024 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00026}00026 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00031}\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}{00031}} \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00032}00032 \textcolor{keyword}{@interface }WTLOperationalCertificateChain : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00034}00034 -\/ (instancetype)init \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00035}00035 + (instancetype)new \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00037}\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a1c53cf56377bc6204a954a99505b8c55}{00037}} -\/ (instancetype)\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a1c53cf56377bc6204a954a99505b8c55}{initWithOperationalCertificate}}:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}})operationalCertificate}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00038}00038                        intermediateCertificate:(nullable \mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}})intermediateCertificate}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00039}00039                                rootCertificate:(\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}})rootCertificate}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00040}00040                                   adminSubject:(nullable NSNumber *)adminSubject;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00042}\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aaee3dfe945ca6db5e3f0168cbd7097a4}{00042}} \textcolor{keyword}{@property} (nonatomic, copy) \mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}} \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aaee3dfe945ca6db5e3f0168cbd7097a4}{operationalCertificate}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00047}\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a1df3d186b78939727302b30a1a1e5c56}{00047}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) \mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}} \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a1df3d186b78939727302b30a1a1e5c56}{intermediateCertificate}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00049}\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a45eb53d44e32cff49d2c9ead762597bd}{00049}} \textcolor{keyword}{@property} (nonatomic, copy) \mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}} \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a45eb53d44e32cff49d2c9ead762597bd}{rootCertificate}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00056}\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_ab9ffa0d44f4313ad07137d877049f525}{00056}} \textcolor{keyword}{@property} (nonatomic, copy, nullable) NSNumber * \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_ab9ffa0d44f4313ad07137d877049f525}{adminSubject}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00058}00058 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00060}00060 \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00061}00061 \textcolor{keyword}{@protocol }WTLOperationalCertificateIssuer}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00062}00062 \textcolor{keyword}{@required}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00082}00082 -\/ (void)issueOperationalCertificateForRequest:(WTLOperationalCSRInfo *)csrInfo}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00083}00083                               attestationInfo:(WTLDeviceAttestationInfo *)attestationInfo}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00084}00084                                    controller:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00085}00085                                    completion:(\textcolor{keywordtype}{void} (\string^)(WTLOperationalCertificateChain * \_Nullable info,}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00086}00086                                                   NSError * \_Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}}))completion;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00113}\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a2fe6b0422618cb83f3ae2b17e7a8aa34}{00113}} \textcolor{keyword}{@property} (nonatomic, readonly) BOOL \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a2fe6b0422618cb83f3ae2b17e7a8aa34}{shouldSkipAttestationCertificateValidation}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00115}00115 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00117}\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_af98726e3245c016574823a07fb4c8dbb}{00117}} \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_af98726e3245c016574823a07fb4c8dbb}{WTL\_DEPRECATED}}(\textcolor{stringliteral}{"{}WTLNOCChainIssuer is deprecated"{}},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00118}00118 typedef \textcolor{keywordtype}{void} (\string^WTLNOCChainGenerationCompleteHandler)(NSData * \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aaee3dfe945ca6db5e3f0168cbd7097a4}{operationalCertificate}}, NSData * \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a1df3d186b78939727302b30a1a1e5c56}{intermediateCertificate}},}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00119}\mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{00119}}     NSData * \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a45eb53d44e32cff49d2c9ead762597bd}{rootCertificate}}, NSData * \_Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_ab87c5f9fab244bd7d62f91ae926fbb30}{ipk}}, NSNumber * \_Nullable \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_ab9ffa0d44f4313ad07137d877049f525}{adminSubject}}, NSError * \_\_autoreleasing * \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_a8e54e5e99d851fe3bddce6b15762ad42}{error}});}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00121}00121 \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_af98726e3245c016574823a07fb4c8dbb}{WTL\_DEPRECATED}}(}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00122}00122     "{}Please use WTLOperationalCertificateIssuer"{},  macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4))}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00123}00123 @protocol WTLNOCChainIssuer <NSObject>}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00124}00124 @required}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00126}00126 -\/ (\textcolor{keywordtype}{void})onNOCChainGenerationNeeded:(CSRInfo *)csrInfo}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00127}00127                    attestationInfo:(AttestationInfo *)attestationInfo}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00128}00128       onNOCChainGenerationComplete:(WTLNOCChainGenerationCompleteHandler)onNOCChainGenerationComplete;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00130}00130 @end}
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_operational_certificate_issuer_8h_source_l00132}00132 NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

@@ -1,0 +1,160 @@
+\hypertarget{interface_thing_device_timer_data}{}\doxysection{Thing\+Device\+Timer\+Data Class Reference}
+\label{interface_thing_device_timer_data}\index{ThingDeviceTimerData@{ThingDeviceTimerData}}
+
+
+基础的定时数据  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Device\+Timer\+Operator.\+h$>$}
+
+Inheritance diagram for Thing\+Device\+Timer\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.181435cm]{interface_thing_device_timer_data}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Thing\+Device\+Timer\+Biz\+Type \mbox{\hyperlink{interface_thing_device_timer_data_a7cd88186157c79eee1350a227cd03b61}{biz\+Type}}
+\begin{DoxyCompactList}\small\item\em Thing\+Device\+Timer\+Biz\+Type\+Device for device, Thing\+Device\+Timer\+Biz\+Type\+Group for group. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_device_timer_data_a355e1a28306c2c67e32a66326b63c52a}{biz\+Id}}
+\begin{DoxyCompactList}\small\item\em device\+Id if biz\+Type is Thing\+Device\+Timer\+Biz\+Type\+Device, group\+Id if biz\+Type is Thing\+Device\+Timer\+Biz\+Type\+Group \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_device_timer_data_a50c95b2b5897676f038f5acad32b3989}{loops}}
+\begin{DoxyCompactList}\small\item\em The loop of the timer. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_device_timer_data_aaaed6a611001d65c86f374e5c91feea6}{status}}
+\begin{DoxyCompactList}\small\item\em The status of the timer. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_device_timer_data_aaa838ef356a3c439d66738b03a5f8535}{time}}
+\item 
+NSDictionary $\ast$ \mbox{\hyperlink{interface_thing_device_timer_data_a392e2e348e5514db3d47bcdb4225e99e}{dps}}
+\begin{DoxyCompactList}\small\item\em The action DPs of the timer. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_device_timer_data_a6c4c6315f472dcc918141f61e7431d99}{is\+App\+Push}}
+\begin{DoxyCompactList}\small\item\em Specifies whether the timer push notification is enabled. If the value is set to {\ttfamily yes}, when the timer runs, the app receives a push notification. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_device_timer_data_ae35ab55e2f379616f67cb5e8c68e4022}{alias\+Name}}
+\begin{DoxyCompactList}\small\item\em The alias name of the timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+基础的定时数据 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source_l00019}{19}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source}{Thing\+Device\+Timer\+Operator.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_device_timer_data_ae35ab55e2f379616f67cb5e8c68e4022}\label{interface_thing_device_timer_data_ae35ab55e2f379616f67cb5e8c68e4022}} 
+\index{ThingDeviceTimerData@{ThingDeviceTimerData}!aliasName@{aliasName}}
+\index{aliasName@{aliasName}!ThingDeviceTimerData@{ThingDeviceTimerData}}
+\doxysubsubsection{\texorpdfstring{aliasName}{aliasName}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) alias\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The alias name of the timer. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source_l00042}{42}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source}{Thing\+Device\+Timer\+Operator.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_device_timer_data_a355e1a28306c2c67e32a66326b63c52a}\label{interface_thing_device_timer_data_a355e1a28306c2c67e32a66326b63c52a}} 
+\index{ThingDeviceTimerData@{ThingDeviceTimerData}!bizId@{bizId}}
+\index{bizId@{bizId}!ThingDeviceTimerData@{ThingDeviceTimerData}}
+\doxysubsubsection{\texorpdfstring{bizId}{bizId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) biz\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+device\+Id if biz\+Type is Thing\+Device\+Timer\+Biz\+Type\+Device, group\+Id if biz\+Type is Thing\+Device\+Timer\+Biz\+Type\+Group 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source_l00024}{24}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source}{Thing\+Device\+Timer\+Operator.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_device_timer_data_a7cd88186157c79eee1350a227cd03b61}\label{interface_thing_device_timer_data_a7cd88186157c79eee1350a227cd03b61}} 
+\index{ThingDeviceTimerData@{ThingDeviceTimerData}!bizType@{bizType}}
+\index{bizType@{bizType}!ThingDeviceTimerData@{ThingDeviceTimerData}}
+\doxysubsubsection{\texorpdfstring{bizType}{bizType}}
+{\footnotesize\ttfamily -\/ (Thing\+Device\+Timer\+Biz\+Type) biz\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Thing\+Device\+Timer\+Biz\+Type\+Device for device, Thing\+Device\+Timer\+Biz\+Type\+Group for group. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source_l00021}{21}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source}{Thing\+Device\+Timer\+Operator.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_device_timer_data_a392e2e348e5514db3d47bcdb4225e99e}\label{interface_thing_device_timer_data_a392e2e348e5514db3d47bcdb4225e99e}} 
+\index{ThingDeviceTimerData@{ThingDeviceTimerData}!dps@{dps}}
+\index{dps@{dps}!ThingDeviceTimerData@{ThingDeviceTimerData}}
+\doxysubsubsection{\texorpdfstring{dps}{dps}}
+{\footnotesize\ttfamily -\/ (NSDictionary $\ast$) dps\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The action DPs of the timer. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source_l00036}{36}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source}{Thing\+Device\+Timer\+Operator.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_device_timer_data_a6c4c6315f472dcc918141f61e7431d99}\label{interface_thing_device_timer_data_a6c4c6315f472dcc918141f61e7431d99}} 
+\index{ThingDeviceTimerData@{ThingDeviceTimerData}!isAppPush@{isAppPush}}
+\index{isAppPush@{isAppPush}!ThingDeviceTimerData@{ThingDeviceTimerData}}
+\doxysubsubsection{\texorpdfstring{isAppPush}{isAppPush}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+App\+Push\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Specifies whether the timer push notification is enabled. If the value is set to {\ttfamily yes}, when the timer runs, the app receives a push notification. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source_l00039}{39}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source}{Thing\+Device\+Timer\+Operator.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_device_timer_data_a50c95b2b5897676f038f5acad32b3989}\label{interface_thing_device_timer_data_a50c95b2b5897676f038f5acad32b3989}} 
+\index{ThingDeviceTimerData@{ThingDeviceTimerData}!loops@{loops}}
+\index{loops@{loops}!ThingDeviceTimerData@{ThingDeviceTimerData}}
+\doxysubsubsection{\texorpdfstring{loops}{loops}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) loops\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+The loop of the timer. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source_l00027}{27}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source}{Thing\+Device\+Timer\+Operator.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_device_timer_data_aaaed6a611001d65c86f374e5c91feea6}\label{interface_thing_device_timer_data_aaaed6a611001d65c86f374e5c91feea6}} 
+\index{ThingDeviceTimerData@{ThingDeviceTimerData}!status@{status}}
+\index{status@{status}!ThingDeviceTimerData@{ThingDeviceTimerData}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily -\/ (BOOL) status\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The status of the timer. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source_l00030}{30}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source}{Thing\+Device\+Timer\+Operator.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_device_timer_data_aaa838ef356a3c439d66738b03a5f8535}\label{interface_thing_device_timer_data_aaa838ef356a3c439d66738b03a5f8535}} 
+\index{ThingDeviceTimerData@{ThingDeviceTimerData}!time@{time}}
+\index{time@{time}!ThingDeviceTimerData@{ThingDeviceTimerData}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source_l00033}{33}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h_source}{Thing\+Device\+Timer\+Operator.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Device\+Detail\+Kit/\+Thing\+Device\+Detail\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Device\+Detail\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h}{Thing\+Device\+Timer\+Operator.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Device\+Detail\+Kit/\+Thing\+Device\+Detail\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Device\+Detail\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_device_detail_kit_8framework_2_headers_2_thing_device_timer_operator_8h}{Thing\+Device\+Timer\+Operator.\+h}}\end{DoxyCompactItemize}

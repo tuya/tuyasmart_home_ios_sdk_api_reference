@@ -1,0 +1,208 @@
+\hypertarget{interface_thing_smart_weak_proxy}{}\doxysection{Thing\+Smart\+Weak\+Proxy Class Reference}
+\label{interface_thing_smart_weak_proxy}\index{ThingSmartWeakProxy@{ThingSmartWeakProxy}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Weak\+Proxy.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Weak\+Proxy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.904762cm]{interface_thing_smart_weak_proxy}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_weak_proxy_a2156dc19637f4b08b247ab40493d3f25}{init\+With\+Target\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_weak_proxy_a2156dc19637f4b08b247ab40493d3f25}{init\+With\+Target\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_weak_proxy_a2156dc19637f4b08b247ab40493d3f25}{init\+With\+Target\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_weak_proxy_a2156dc19637f4b08b247ab40493d3f25}{init\+With\+Target\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_weak_proxy_aeea874c40fed3d287c033f50f3ca2f39}{proxy\+With\+Target\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_weak_proxy_aeea874c40fed3d287c033f50f3ca2f39}{proxy\+With\+Target\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_weak_proxy_aeea874c40fed3d287c033f50f3ca2f39}{proxy\+With\+Target\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_weak_proxy_aeea874c40fed3d287c033f50f3ca2f39}{proxy\+With\+Target\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \mbox{\hyperlink{interface_thing_smart_weak_proxy_a27ef5452ac37a510b6b45df220ec30ff}{target}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A proxy used to hold a weak object. It can be used to avoid retain cycles, such as the target in NSTimer or CADisplay\+Link.
+
+sample code\+:
+
+@implementation My\+View \{ NSTimer $\ast$\+\_\+timer; \}
+
+
+\begin{DoxyItemize}
+\item (void)init\+Timer \{ \mbox{\hyperlink{interface_thing_smart_weak_proxy}{Thing\+Smart\+Weak\+Proxy}} $\ast$proxy = \mbox{[}\mbox{\hyperlink{interface_thing_smart_weak_proxy}{Thing\+Smart\+Weak\+Proxy}} proxy\+With\+Target\+:self\mbox{]}; \+\_\+timer = \mbox{[}NSTimer timer\+With\+Time\+Interval\+:0.\+1 target\+:proxy selector\+:@selector(tick\+:) user\+Info\+:nil repeats\+:YES\mbox{]}; \}
+\item (void)tick\+:(\+NSTimer $\ast$)timer \{...\} @end 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_weak_proxy_8h_source_l00029}{29}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_weak_proxy_8h_source}{Thing\+Smart\+Weak\+Proxy.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_weak_proxy_a2156dc19637f4b08b247ab40493d3f25}\label{interface_thing_smart_weak_proxy_a2156dc19637f4b08b247ab40493d3f25}} 
+\index{ThingSmartWeakProxy@{ThingSmartWeakProxy}!initWithTarget:@{initWithTarget:}}
+\index{initWithTarget:@{initWithTarget:}!ThingSmartWeakProxy@{ThingSmartWeakProxy}}
+\doxysubsubsection{\texorpdfstring{initWithTarget:}{initWithTarget:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Target\+: \begin{DoxyParamCaption}\item[{(id)}]{target }\end{DoxyParamCaption}}
+
+Creates a new weak proxy for target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Target object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new proxy object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_weak_proxy_a2156dc19637f4b08b247ab40493d3f25}\label{interface_thing_smart_weak_proxy_a2156dc19637f4b08b247ab40493d3f25}} 
+\index{ThingSmartWeakProxy@{ThingSmartWeakProxy}!initWithTarget:@{initWithTarget:}}
+\index{initWithTarget:@{initWithTarget:}!ThingSmartWeakProxy@{ThingSmartWeakProxy}}
+\doxysubsubsection{\texorpdfstring{initWithTarget:}{initWithTarget:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Target\+: \begin{DoxyParamCaption}\item[{(id)}]{target }\end{DoxyParamCaption}}
+
+Creates a new weak proxy for target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Target object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new proxy object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_weak_proxy_a2156dc19637f4b08b247ab40493d3f25}\label{interface_thing_smart_weak_proxy_a2156dc19637f4b08b247ab40493d3f25}} 
+\index{ThingSmartWeakProxy@{ThingSmartWeakProxy}!initWithTarget:@{initWithTarget:}}
+\index{initWithTarget:@{initWithTarget:}!ThingSmartWeakProxy@{ThingSmartWeakProxy}}
+\doxysubsubsection{\texorpdfstring{initWithTarget:}{initWithTarget:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Target\+: \begin{DoxyParamCaption}\item[{(id)}]{target }\end{DoxyParamCaption}}
+
+Creates a new weak proxy for target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Target object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new proxy object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_weak_proxy_a2156dc19637f4b08b247ab40493d3f25}\label{interface_thing_smart_weak_proxy_a2156dc19637f4b08b247ab40493d3f25}} 
+\index{ThingSmartWeakProxy@{ThingSmartWeakProxy}!initWithTarget:@{initWithTarget:}}
+\index{initWithTarget:@{initWithTarget:}!ThingSmartWeakProxy@{ThingSmartWeakProxy}}
+\doxysubsubsection{\texorpdfstring{initWithTarget:}{initWithTarget:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Target\+: \begin{DoxyParamCaption}\item[{(id)}]{target }\end{DoxyParamCaption}}
+
+Creates a new weak proxy for target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Target object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new proxy object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_weak_proxy_aeea874c40fed3d287c033f50f3ca2f39}\label{interface_thing_smart_weak_proxy_aeea874c40fed3d287c033f50f3ca2f39}} 
+\index{ThingSmartWeakProxy@{ThingSmartWeakProxy}!proxyWithTarget:@{proxyWithTarget:}}
+\index{proxyWithTarget:@{proxyWithTarget:}!ThingSmartWeakProxy@{ThingSmartWeakProxy}}
+\doxysubsubsection{\texorpdfstring{proxyWithTarget:}{proxyWithTarget:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily + (instancetype) proxy\+With\+Target\+: \begin{DoxyParamCaption}\item[{(id)}]{target }\end{DoxyParamCaption}}
+
+Creates a new weak proxy for target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Target object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new proxy object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_weak_proxy_aeea874c40fed3d287c033f50f3ca2f39}\label{interface_thing_smart_weak_proxy_aeea874c40fed3d287c033f50f3ca2f39}} 
+\index{ThingSmartWeakProxy@{ThingSmartWeakProxy}!proxyWithTarget:@{proxyWithTarget:}}
+\index{proxyWithTarget:@{proxyWithTarget:}!ThingSmartWeakProxy@{ThingSmartWeakProxy}}
+\doxysubsubsection{\texorpdfstring{proxyWithTarget:}{proxyWithTarget:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily + (instancetype) proxy\+With\+Target\+: \begin{DoxyParamCaption}\item[{(id)}]{target }\end{DoxyParamCaption}}
+
+Creates a new weak proxy for target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Target object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new proxy object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_weak_proxy_aeea874c40fed3d287c033f50f3ca2f39}\label{interface_thing_smart_weak_proxy_aeea874c40fed3d287c033f50f3ca2f39}} 
+\index{ThingSmartWeakProxy@{ThingSmartWeakProxy}!proxyWithTarget:@{proxyWithTarget:}}
+\index{proxyWithTarget:@{proxyWithTarget:}!ThingSmartWeakProxy@{ThingSmartWeakProxy}}
+\doxysubsubsection{\texorpdfstring{proxyWithTarget:}{proxyWithTarget:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (instancetype) proxy\+With\+Target\+: \begin{DoxyParamCaption}\item[{(id)}]{target }\end{DoxyParamCaption}}
+
+Creates a new weak proxy for target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Target object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new proxy object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_weak_proxy_aeea874c40fed3d287c033f50f3ca2f39}\label{interface_thing_smart_weak_proxy_aeea874c40fed3d287c033f50f3ca2f39}} 
+\index{ThingSmartWeakProxy@{ThingSmartWeakProxy}!proxyWithTarget:@{proxyWithTarget:}}
+\index{proxyWithTarget:@{proxyWithTarget:}!ThingSmartWeakProxy@{ThingSmartWeakProxy}}
+\doxysubsubsection{\texorpdfstring{proxyWithTarget:}{proxyWithTarget:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (instancetype) proxy\+With\+Target\+: \begin{DoxyParamCaption}\item[{(id)}]{target }\end{DoxyParamCaption}}
+
+Creates a new weak proxy for target.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & Target object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new proxy object. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_weak_proxy_a27ef5452ac37a510b6b45df220ec30ff}\label{interface_thing_smart_weak_proxy_a27ef5452ac37a510b6b45df220ec30ff}} 
+\index{ThingSmartWeakProxy@{ThingSmartWeakProxy}!target@{target}}
+\index{target@{target}!ThingSmartWeakProxy@{ThingSmartWeakProxy}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily -\/ (id) target\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [weak]}}
+
+The proxy target. 
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_weak_proxy_8h_source_l00034}{34}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_weak_proxy_8h_source}{Thing\+Smart\+Weak\+Proxy.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Util/\+Build/\+Thing\+Smart\+Util.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Util.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_weak_proxy_8h}{Thing\+Smart\+Weak\+Proxy.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Util/\+Build/\+Thing\+Smart\+Util.\+xcframework/ios-\/x86\+\_\+64-\/simulator/\+Thing\+Smart\+Util.\+framework/\+Headers/\mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_weak_proxy_8h}{Thing\+Smart\+Weak\+Proxy.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Util/\+Build/\+Thing\+Smart\+Util.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Util.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_weak_proxy_8h}{Thing\+Smart\+Weak\+Proxy.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Util/\+Build/\+Thing\+Smart\+Util.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Util.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_weak_proxy_8h}{Thing\+Smart\+Weak\+Proxy.\+h}}\end{DoxyCompactItemize}

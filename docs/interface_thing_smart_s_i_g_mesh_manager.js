@@ -45,6 +45,8 @@ var interface_thing_smart_s_i_g_mesh_manager =
     [ "prepareForOTAWithTargetNodeId:", "interface_thing_smart_s_i_g_mesh_manager.html#a462e9d79b5c5cbc854437140c72c52c7", null ],
     [ "publishDpsWithNodeId:schemaArray:dps:pcc:useUnacknowledged:success:failure:", "interface_thing_smart_s_i_g_mesh_manager.html#ac991224613bf25d6c387c9946aec5742", null ],
     [ "publishDpsWithNodeId:schemaArray:dps:pcc:useUnacknowledged:success:failure:", "interface_thing_smart_s_i_g_mesh_manager.html#ac991224613bf25d6c387c9946aec5742", null ],
+    [ "queryCachAdvNodeOnlineStatus", "interface_thing_smart_s_i_g_mesh_manager.html#a542596d8a18ffa57f382a513377ce21b", null ],
+    [ "queryCachAdvNodeOnlineStatus", "interface_thing_smart_s_i_g_mesh_manager.html#a542596d8a18ffa57f382a513377ce21b", null ],
     [ "queryDpsWithDeviceModel:dpIds:", "interface_thing_smart_s_i_g_mesh_manager.html#a9d9fc3ebd80542593133b0f074ca0c78", null ],
     [ "queryDpsWithDeviceModel:dpIds:", "interface_thing_smart_s_i_g_mesh_manager.html#a9d9fc3ebd80542593133b0f074ca0c78", null ],
     [ "queryGroupListWithDevid:", "interface_thing_smart_s_i_g_mesh_manager.html#a13be6b07bc4792804273ddcc86daf5c7", null ],
@@ -103,6 +105,7 @@ var interface_thing_smart_s_i_g_mesh_manager =
     [ "meshState", "interface_thing_smart_s_i_g_mesh_manager.html#a7c2ab407efccc1d47d6c3ee7e2c73a96", null ],
     [ "nodeIds", "interface_thing_smart_s_i_g_mesh_manager.html#ac178e18b6bcb077019397fb9c8a44a07", null ],
     [ "nodeList", "interface_thing_smart_s_i_g_mesh_manager.html#a4d4e0013f1cbc1c243f0a2d0f3bff0e5", null ],
+    [ "onlineNodeList", "interface_thing_smart_s_i_g_mesh_manager.html#ab7a3858b56173774788b8942e402d143", null ],
     [ "otaTargetNodeId", "interface_thing_smart_s_i_g_mesh_manager.html#a688b80347979733eb65e78c1bb865ed7", null ],
     [ "sigMesh", "interface_thing_smart_s_i_g_mesh_manager.html#a2b74cb2dea2050c8d2006a5dbacbefcd", null ]
 ];

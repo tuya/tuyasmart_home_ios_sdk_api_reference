@@ -7,6 +7,8 @@ var interface_thing_b_l_e_security_dev_info =
     [ "bleMac", "interface_thing_b_l_e_security_dev_info.html#a5de8afd0eec5ee39206c221771fb5e2b", null ],
     [ "bleType", "interface_thing_b_l_e_security_dev_info.html#a3d2579cdd396fa4fb69d899922241628", null ],
     [ "bond", "interface_thing_b_l_e_security_dev_info.html#a9612d3ae5503156d377bacbdb82b031b", null ],
+    [ "bootOTABeing", "interface_thing_b_l_e_security_dev_info.html#a7f5008ebd97a1d55f959aba30ffb00b7", null ],
+    [ "bootOTASupport", "interface_thing_b_l_e_security_dev_info.html#a7ed75b32eea3cb6cedef1ba75b684e0d", null ],
     [ "certCheck", "interface_thing_b_l_e_security_dev_info.html#a32706b8f51daaee0aefac5ad8cf5b0ea", null ],
     [ "channel_modules", "interface_thing_b_l_e_security_dev_info.html#abffc75542f5a3fc83d7e465195d213c2", null ],
     [ "devId", "interface_thing_b_l_e_security_dev_info.html#a0f27a8c38f65c28b355221f07dd76cbb", null ],

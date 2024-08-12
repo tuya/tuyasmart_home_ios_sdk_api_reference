@@ -2,6 +2,8 @@ var interface_thing_smart_camera_message =
 [
     [ "cancelDownloadMessageAttachment:", "interface_thing_smart_camera_message.html#a8df64209cfdf928059feb8da2b269503", null ],
     [ "cancelDownloadMessageAttachment:", "interface_thing_smart_camera_message.html#a8df64209cfdf928059feb8da2b269503", null ],
+    [ "getLatestMessageImage:success:failure:", "interface_thing_smart_camera_message.html#a444dd0d0a53a02fb1d02f6dc72fb9c76", null ],
+    [ "getLatestMessageImage:success:failure:", "interface_thing_smart_camera_message.html#a444dd0d0a53a02fb1d02f6dc72fb9c76", null ],
     [ "getMessageSchemes:failure:", "interface_thing_smart_camera_message.html#a87b9da9d14bd48ba03f039e600c669bc", null ],
     [ "getMessageSchemes:failure:", "interface_thing_smart_camera_message.html#a87b9da9d14bd48ba03f039e600c669bc", null ],
     [ "initWithDeviceId:timeZone:", "interface_thing_smart_camera_message.html#a496c81a3947c9f5ae525335517514806", null ],

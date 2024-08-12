@@ -1,0 +1,21 @@
+\hypertarget{protocol_thing_my_protocol-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+My\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_my_protocol-p}\index{$<$ThingMyProtocol$>$@{$<$ThingMyProtocol$>$}}
+
+
+\doxysubsection{Detailed Description}
+即插即拔的注册，使用\+Mach-\/\+O方式，支持 通用、结果过滤 两种注册，线程安全
+
+
+\begin{DoxyEnumerate}
+\item 通用注册： 注册类存在唯一键值 type + Key + priority；默认 priority 值为 0，当 type + Key 相等时，则只会生效高优先级 priority 注册 \+\_\+\+Thing\+Mach\+Register 使用 \mbox{[}\mbox{[}class\+Name alloc\mbox{]} init\mbox{]} 创建注册类实例；如果希望自定义实例创建方法，比如返回单例，可以使用 \+\_\+\+Thing\+Mach\+Register\+Block 自定义
+\end{DoxyEnumerate}
+
+业务使用时，业务模块可以声明一些自己的快捷方法，比如（\+My\+Type 模块）\+: Case A 普通注册： // 声明 注册类的快捷操作 \#define \+\_\+\+My\+Mach\+Register(\+Key, class\+Name) \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_a15e2599bfd27a9729ff1cd6e22f212f1}{\+\_\+\+Thing\+Mach\+Register(\+My\+Type, Key, class\+Name)}}
+
+// 声明 获取一个实例的快捷操作 \#define \+\_\+\+My\+Mach\+Register\+Fetch(\+Key) \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_a1be84338f9e726b5fb13c89f19cfb356}{\+\_\+\+Thing\+Mach\+Register\+Fetch(\+My\+Type, Key)}}
+
+// 使用 注册：\+\_\+\+My\+Mach\+Register(my\+Key, my\+Class\+Name); 获取：id my\+Class\+Instance = \+\_\+\+My\+Mach\+Register\+Fetch(my\+Key); 获取：id my\+Class\+Instance = \mbox{[}\mbox{[}\mbox{\hyperlink{interface_thing_mach_register_manager}{Thing\+Mach\+Register\+Manager}} share\+Instance\mbox{]} generate\+With\+Type\+:"{}My\+Type\char`\"{} key\+:@\char`\"{}my\+Key\char`\"{}\mbox{]};  \+Case B 注册有协议（\+Thing\+My\+Protocol）的类\+:     // 声明 注册有协议类的快捷操作     \#define \+\_\+\+My\+Mach\+Register\+With\+Protocol(\+Key, class\+Name) \textbackslash{}     \+\_\+\+Thing\+Mach\+Register\+With\+Creator(\+My\+Protocol\+Type, Key, class\+Name, \textbackslash{}     ($^\wedge$id$<$\+Thing\+My\+Protocol$>$(\+NSString $\ast$ t, NSString $\ast$ k, NSUInteger p, id default\+V) \{ \textbackslash{}         return \mbox{[}\mbox{[}class\+Name alloc\mbox{]} init\mbox{]};\textbackslash{}     \}))  2. 结果兜底过滤： 当需要对一个类别的通用注册结果做过滤时，比如空兜底、满足协议判断等，可以对该类别使用结果过滤  使用：     \+\_\+\+Thing\+Mach\+Register\+Filter(\+My\+Protocol\+Type,  ($^\wedge$id \+\_\+\+Nonnull (\+NSString $\ast$ type, NSString $\ast$ key, NSUInteger p, id default\+V) \{         return \mbox{[}default\+V conforms\+To\+Protocol\+:;     \}));  3. 注意\+:   因为我们会使用 \char`\"{}\+\_\+\char`\"{} 作为链接符， 所以不建议 type 、 Key里使用  \char`\"{}\+\_\+"{} 。 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Mach\+Register/\+Thing\+Mach\+Register.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Mach\+Register.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h}{Thing\+Mach\+Register\+Define\+Ext.\+h}}\end{DoxyCompactItemize}

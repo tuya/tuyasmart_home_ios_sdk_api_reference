@@ -1,0 +1,227 @@
+\hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+Wi\+Fi\+Lock\+Device\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_wi_fi_lock_device_delegate-p}\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Wi\+Fi\+Lock\+Device.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+Wi\+Fi\+Lock\+Device\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.757322cm]{protocol_thing_smart_wi_fi_lock_device_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p_a521e6ca9b33e3b2d0baefa10a2ab0940}{on\+Lock\+Message\+Arrived\+:message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p_a755f13762f7c2d71fd3a5ee3ccb4c620}{on\+Video\+Request\+Realtime\+:model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p_a3aaa659cfe87e9542449717657b659e8}{unlock\+Request\+Countdown\+:time\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p_a12acf546d700e676f648e60e0a2b9c60}{alarm\+Request\+Countdown\+:time\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p_a5c73db52d9640e81aa5f649affb68fb6}{on\+Remote\+Unlock\+Report\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p_a5ce96493c657d5597217df03bdddaf0b}{on\+Force\+Lock\+Up\+Report\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p_a521e6ca9b33e3b2d0baefa10a2ab0940}{on\+Lock\+Message\+Arrived\+:message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p_a755f13762f7c2d71fd3a5ee3ccb4c620}{on\+Video\+Request\+Realtime\+:model\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p_a3aaa659cfe87e9542449717657b659e8}{unlock\+Request\+Countdown\+:time\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p_a12acf546d700e676f648e60e0a2b9c60}{alarm\+Request\+Countdown\+:time\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p_a5c73db52d9640e81aa5f649affb68fb6}{on\+Remote\+Unlock\+Report\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_wi_fi_lock_device_delegate-p_a5ce96493c657d5597217df03bdddaf0b}{on\+Force\+Lock\+Up\+Report\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_wi_fi_lock_device_8h_source_l00016}{16}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_wi_fi_lock_device_8h_source}{Thing\+Smart\+Wi\+Fi\+Lock\+Device.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p_a12acf546d700e676f648e60e0a2b9c60}\label{protocol_thing_smart_wi_fi_lock_device_delegate-p_a12acf546d700e676f648e60e0a2b9c60}} 
+\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}!alarmRequestCountdown:time:@{alarmRequestCountdown:time:}}
+\index{alarmRequestCountdown:time:@{alarmRequestCountdown:time:}!$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{alarmRequestCountdown:time:}{alarmRequestCountdown:time:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) alarm\+Request\+Countdown\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device}{Thing\+Smart\+Wi\+Fi\+Lock\+Device}} $\ast$)}]{device }\item[{time\+:(NSInteger)}]{time }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+告警请求图片上报 dp45
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em time} & 倒计时数据 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p_a12acf546d700e676f648e60e0a2b9c60}\label{protocol_thing_smart_wi_fi_lock_device_delegate-p_a12acf546d700e676f648e60e0a2b9c60}} 
+\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}!alarmRequestCountdown:time:@{alarmRequestCountdown:time:}}
+\index{alarmRequestCountdown:time:@{alarmRequestCountdown:time:}!$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{alarmRequestCountdown:time:}{alarmRequestCountdown:time:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) alarm\+Request\+Countdown\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device}{Thing\+Smart\+Wi\+Fi\+Lock\+Device}} $\ast$)}]{device }\item[{time\+:(NSInteger)}]{time }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+告警请求图片上报 dp45
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em time} & 倒计时数据 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p_a5ce96493c657d5597217df03bdddaf0b}\label{protocol_thing_smart_wi_fi_lock_device_delegate-p_a5ce96493c657d5597217df03bdddaf0b}} 
+\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}!onForceLockUpReport:@{onForceLockUpReport:}}
+\index{onForceLockUpReport:@{onForceLockUpReport:}!$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{onForceLockUpReport:}{onForceLockUpReport:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Force\+Lock\+Up\+Report\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device}{Thing\+Smart\+Wi\+Fi\+Lock\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+强制反锁回复上报 dp13
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p_a5ce96493c657d5597217df03bdddaf0b}\label{protocol_thing_smart_wi_fi_lock_device_delegate-p_a5ce96493c657d5597217df03bdddaf0b}} 
+\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}!onForceLockUpReport:@{onForceLockUpReport:}}
+\index{onForceLockUpReport:@{onForceLockUpReport:}!$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{onForceLockUpReport:}{onForceLockUpReport:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Force\+Lock\+Up\+Report\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device}{Thing\+Smart\+Wi\+Fi\+Lock\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+强制反锁回复上报 dp13
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p_a521e6ca9b33e3b2d0baefa10a2ab0940}\label{protocol_thing_smart_wi_fi_lock_device_delegate-p_a521e6ca9b33e3b2d0baefa10a2ab0940}} 
+\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}!onLockMessageArrived:message:@{onLockMessageArrived:message:}}
+\index{onLockMessageArrived:message:@{onLockMessageArrived:message:}!$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{onLockMessageArrived:message:}{onLockMessageArrived:message:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Lock\+Message\+Arrived\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device}{Thing\+Smart\+Wi\+Fi\+Lock\+Device}} $\ast$)}]{device }\item[{message\+:(NSDictionary $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+设备传图数据上报 dp212
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em message} & 设备上报的数据 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p_a521e6ca9b33e3b2d0baefa10a2ab0940}\label{protocol_thing_smart_wi_fi_lock_device_delegate-p_a521e6ca9b33e3b2d0baefa10a2ab0940}} 
+\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}!onLockMessageArrived:message:@{onLockMessageArrived:message:}}
+\index{onLockMessageArrived:message:@{onLockMessageArrived:message:}!$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{onLockMessageArrived:message:}{onLockMessageArrived:message:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Lock\+Message\+Arrived\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device}{Thing\+Smart\+Wi\+Fi\+Lock\+Device}} $\ast$)}]{device }\item[{message\+:(NSDictionary $\ast$)}]{message }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+设备传图数据上报 dp212
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em message} & 设备上报的数据 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p_a5c73db52d9640e81aa5f649affb68fb6}\label{protocol_thing_smart_wi_fi_lock_device_delegate-p_a5c73db52d9640e81aa5f649affb68fb6}} 
+\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}!onRemoteUnlockReport:@{onRemoteUnlockReport:}}
+\index{onRemoteUnlockReport:@{onRemoteUnlockReport:}!$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{onRemoteUnlockReport:}{onRemoteUnlockReport:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Remote\+Unlock\+Report\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device}{Thing\+Smart\+Wi\+Fi\+Lock\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+远程开门回复上报 dp50
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p_a5c73db52d9640e81aa5f649affb68fb6}\label{protocol_thing_smart_wi_fi_lock_device_delegate-p_a5c73db52d9640e81aa5f649affb68fb6}} 
+\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}!onRemoteUnlockReport:@{onRemoteUnlockReport:}}
+\index{onRemoteUnlockReport:@{onRemoteUnlockReport:}!$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{onRemoteUnlockReport:}{onRemoteUnlockReport:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Remote\+Unlock\+Report\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device}{Thing\+Smart\+Wi\+Fi\+Lock\+Device}} $\ast$)}]{device }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+远程开门回复上报 dp50
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p_a755f13762f7c2d71fd3a5ee3ccb4c620}\label{protocol_thing_smart_wi_fi_lock_device_delegate-p_a755f13762f7c2d71fd3a5ee3ccb4c620}} 
+\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}!onVideoRequestRealtime:model:@{onVideoRequestRealtime:model:}}
+\index{onVideoRequestRealtime:model:@{onVideoRequestRealtime:model:}!$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{onVideoRequestRealtime:model:}{onVideoRequestRealtime:model:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Video\+Request\+Realtime\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device}{Thing\+Smart\+Wi\+Fi\+Lock\+Device}} $\ast$)}]{device }\item[{model\+:(NSString $\ast$)}]{model }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+实时视频上报回调 dp63
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em model} & 设备上报的数据 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p_a755f13762f7c2d71fd3a5ee3ccb4c620}\label{protocol_thing_smart_wi_fi_lock_device_delegate-p_a755f13762f7c2d71fd3a5ee3ccb4c620}} 
+\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}!onVideoRequestRealtime:model:@{onVideoRequestRealtime:model:}}
+\index{onVideoRequestRealtime:model:@{onVideoRequestRealtime:model:}!$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{onVideoRequestRealtime:model:}{onVideoRequestRealtime:model:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Video\+Request\+Realtime\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device}{Thing\+Smart\+Wi\+Fi\+Lock\+Device}} $\ast$)}]{device }\item[{model\+:(NSString $\ast$)}]{model }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+实时视频上报回调 dp63
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em model} & 设备上报的数据 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p_a3aaa659cfe87e9542449717657b659e8}\label{protocol_thing_smart_wi_fi_lock_device_delegate-p_a3aaa659cfe87e9542449717657b659e8}} 
+\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}!unlockRequestCountdown:time:@{unlockRequestCountdown:time:}}
+\index{unlockRequestCountdown:time:@{unlockRequestCountdown:time:}!$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unlockRequestCountdown:time:}{unlockRequestCountdown:time:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) unlock\+Request\+Countdown\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device}{Thing\+Smart\+Wi\+Fi\+Lock\+Device}} $\ast$)}]{device }\item[{time\+:(NSInteger)}]{time }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+远程开门请求图片上报 dp9
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em time} & 倒计时数据 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_wi_fi_lock_device_delegate-p_a3aaa659cfe87e9542449717657b659e8}\label{protocol_thing_smart_wi_fi_lock_device_delegate-p_a3aaa659cfe87e9542449717657b659e8}} 
+\index{$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}!unlockRequestCountdown:time:@{unlockRequestCountdown:time:}}
+\index{unlockRequestCountdown:time:@{unlockRequestCountdown:time:}!$<$ThingSmartWiFiLockDeviceDelegate$>$@{$<$ThingSmartWiFiLockDeviceDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unlockRequestCountdown:time:}{unlockRequestCountdown:time:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) unlock\+Request\+Countdown\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_wi_fi_lock_device}{Thing\+Smart\+Wi\+Fi\+Lock\+Device}} $\ast$)}]{device }\item[{time\+:(NSInteger)}]{time }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+远程开门请求图片上报 dp9
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & 门锁设备 \\
+\hline
+{\em time} & 倒计时数据 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Lock\+Kit/\+Build/\+Thing\+Smart\+Lock\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Lock\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_wi_fi_lock_device_8h}{Thing\+Smart\+Wi\+Fi\+Lock\+Device.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Lock\+Kit/\+Build/\+Thing\+Smart\+Lock\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Lock\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_lock_kit_8framework_2_headers_2_thing_smart_wi_fi_lock_device_8h}{Thing\+Smart\+Wi\+Fi\+Lock\+Device.\+h}}\end{DoxyCompactItemize}

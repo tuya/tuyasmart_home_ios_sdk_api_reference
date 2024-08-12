@@ -1,0 +1,835 @@
+\hypertarget{interface_thing_smart_core_cache}{}\doxysection{Thing\+Smart\+Core\+Cache Class Reference}
+\label{interface_thing_smart_core_cache}\index{ThingSmartCoreCache@{ThingSmartCoreCache}}
+
+
+Quick Cache Any Object.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Core\+Cache.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Core\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_thing_smart_core_cache}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}} $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a36eb868d22699f3c7148a8bcdedf2910}{all\+Objects}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ Key\+Type $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a43e2ae05e71ef3c4aadbac8904714de5}{all\+Keys}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_aa9e4bda7de1f47ab2e8c90ea8e3ae4c5}{set\+Object\+:for\+Key\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}{object\+For\+Key\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}{contains\+Object\+For\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}{remove\+Object\+For\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_aba0f999477872f10447d88ca85f723ca}{remove\+All\+Objects}}
+\begin{DoxyCompactList}\small\item\em Remove all cached objects. \end{DoxyCompactList}\item 
+(NSUInteger) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a4e9496210b7b9ea19657daabbed03e9d}{count}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}{cache\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}{cache\+Objects\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}{remove\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}} $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a36eb868d22699f3c7148a8bcdedf2910}{all\+Objects}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ Key\+Type $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a43e2ae05e71ef3c4aadbac8904714de5}{all\+Keys}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_aa9e4bda7de1f47ab2e8c90ea8e3ae4c5}{set\+Object\+:for\+Key\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}{object\+For\+Key\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}{contains\+Object\+For\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}{remove\+Object\+For\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_aba0f999477872f10447d88ca85f723ca}{remove\+All\+Objects}}
+\begin{DoxyCompactList}\small\item\em Remove all cached objects. \end{DoxyCompactList}\item 
+(NSUInteger) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a4e9496210b7b9ea19657daabbed03e9d}{count}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}{cache\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}{cache\+Objects\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}{remove\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}} $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a36eb868d22699f3c7148a8bcdedf2910}{all\+Objects}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ Key\+Type $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a43e2ae05e71ef3c4aadbac8904714de5}{all\+Keys}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_aa9e4bda7de1f47ab2e8c90ea8e3ae4c5}{set\+Object\+:for\+Key\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}{object\+For\+Key\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}{contains\+Object\+For\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}{remove\+Object\+For\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_aba0f999477872f10447d88ca85f723ca}{remove\+All\+Objects}}
+\begin{DoxyCompactList}\small\item\em Remove all cached objects. \end{DoxyCompactList}\item 
+(NSUInteger) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a4e9496210b7b9ea19657daabbed03e9d}{count}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}{cache\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}{cache\+Objects\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}{remove\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}} $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a36eb868d22699f3c7148a8bcdedf2910}{all\+Objects}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ Key\+Type $>$ $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a43e2ae05e71ef3c4aadbac8904714de5}{all\+Keys}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_aa9e4bda7de1f47ab2e8c90ea8e3ae4c5}{set\+Object\+:for\+Key\+:}}
+\item 
+(nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}{object\+For\+Key\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}{contains\+Object\+For\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}{remove\+Object\+For\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_aba0f999477872f10447d88ca85f723ca}{remove\+All\+Objects}}
+\begin{DoxyCompactList}\small\item\em Remove all cached objects. \end{DoxyCompactList}\item 
+(NSUInteger) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a4e9496210b7b9ea19657daabbed03e9d}{count}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}{cache\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}{cache\+Objects\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}{remove\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_core_cache_aa74b5669f36da0adb92a917d8b1eb1d8}{cache\+With\+Name\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}{cache\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a object, the object must implement the {\ttfamily + (nonnull NSString $\ast$)cache\+Name} and {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}{cache\+Objects\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}{remove\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) + \mbox{\hyperlink{interface_thing_smart_core_cache_a3ac69b9735aaa1ab9c9f87e8367e5afa}{object\+For\+Key\+:with\+Class\+:}}
+\item 
+(BOOL) + \mbox{\hyperlink{interface_thing_smart_core_cache_a0e899c72e6f82198306b5df7e991b0f1}{contains\+Object\+For\+Key\+:with\+Class\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_a5ea160e60749ab3b0777e086d1ee7392}{remove\+Object\+For\+Key\+:with\+Class\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_core_cache_aa74b5669f36da0adb92a917d8b1eb1d8}{cache\+With\+Name\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}{cache\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a object, the object must implement the {\ttfamily + (nonnull NSString $\ast$)cache\+Name} and {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}{cache\+Objects\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}{remove\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) + \mbox{\hyperlink{interface_thing_smart_core_cache_a3ac69b9735aaa1ab9c9f87e8367e5afa}{object\+For\+Key\+:with\+Class\+:}}
+\item 
+(BOOL) + \mbox{\hyperlink{interface_thing_smart_core_cache_a0e899c72e6f82198306b5df7e991b0f1}{contains\+Object\+For\+Key\+:with\+Class\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_a5ea160e60749ab3b0777e086d1ee7392}{remove\+Object\+For\+Key\+:with\+Class\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_core_cache_aa74b5669f36da0adb92a917d8b1eb1d8}{cache\+With\+Name\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}{cache\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a object, the object must implement the {\ttfamily + (nonnull NSString $\ast$)cache\+Name} and {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}{cache\+Objects\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}{remove\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) + \mbox{\hyperlink{interface_thing_smart_core_cache_a3ac69b9735aaa1ab9c9f87e8367e5afa}{object\+For\+Key\+:with\+Class\+:}}
+\item 
+(BOOL) + \mbox{\hyperlink{interface_thing_smart_core_cache_a0e899c72e6f82198306b5df7e991b0f1}{contains\+Object\+For\+Key\+:with\+Class\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_a5ea160e60749ab3b0777e086d1ee7392}{remove\+Object\+For\+Key\+:with\+Class\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_core_cache_aa74b5669f36da0adb92a917d8b1eb1d8}{cache\+With\+Name\+:}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}{cache\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a object, the object must implement the {\ttfamily + (nonnull NSString $\ast$)cache\+Name} and {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}{cache\+Objects\+:}}
+\begin{DoxyCompactList}\small\item\em Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}{remove\+Object\+:}}
+\begin{DoxyCompactList}\small\item\em Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. \end{DoxyCompactList}\item 
+(nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) + \mbox{\hyperlink{interface_thing_smart_core_cache_a3ac69b9735aaa1ab9c9f87e8367e5afa}{object\+For\+Key\+:with\+Class\+:}}
+\item 
+(BOOL) + \mbox{\hyperlink{interface_thing_smart_core_cache_a0e899c72e6f82198306b5df7e991b0f1}{contains\+Object\+For\+Key\+:with\+Class\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_core_cache_a5ea160e60749ab3b0777e086d1ee7392}{remove\+Object\+For\+Key\+:with\+Class\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+covariant \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}\+: NSObject@property (nullable
+\item 
+\+\_\+\+\_\+covariant \mbox{\hyperlink{interface_thing_smart_core_cache_a75dd0c8f5139be73cd0f9c748924f0a8}{copy}}
+\item 
+\+\_\+\+\_\+covariant readonly NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_core_cache_ae538f84e1be509c19e8a6c779f62bdaf}{name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Quick Cache Any Object. 
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h_source_l00013}{13}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h_source}{Thing\+Smart\+Core\+Cache.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a43e2ae05e71ef3c4aadbac8904714de5}\label{interface_thing_smart_core_cache_a43e2ae05e71ef3c4aadbac8904714de5}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!allKeys@{allKeys}}
+\index{allKeys@{allKeys}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{allKeys}{allKeys}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ Key\+Type $>$ $\ast$) all\+Keys \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a43e2ae05e71ef3c4aadbac8904714de5}\label{interface_thing_smart_core_cache_a43e2ae05e71ef3c4aadbac8904714de5}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!allKeys@{allKeys}}
+\index{allKeys@{allKeys}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{allKeys}{allKeys}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ Key\+Type $>$ $\ast$) all\+Keys \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a43e2ae05e71ef3c4aadbac8904714de5}\label{interface_thing_smart_core_cache_a43e2ae05e71ef3c4aadbac8904714de5}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!allKeys@{allKeys}}
+\index{allKeys@{allKeys}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{allKeys}{allKeys}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ Key\+Type $>$ $\ast$) all\+Keys \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a43e2ae05e71ef3c4aadbac8904714de5}\label{interface_thing_smart_core_cache_a43e2ae05e71ef3c4aadbac8904714de5}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!allKeys@{allKeys}}
+\index{allKeys@{allKeys}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{allKeys}{allKeys}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ Key\+Type $>$ $\ast$) all\+Keys \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a36eb868d22699f3c7148a8bcdedf2910}\label{interface_thing_smart_core_cache_a36eb868d22699f3c7148a8bcdedf2910}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!allObjects@{allObjects}}
+\index{allObjects@{allObjects}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{allObjects}{allObjects}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}} $>$ $\ast$) all\+Objects \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a36eb868d22699f3c7148a8bcdedf2910}\label{interface_thing_smart_core_cache_a36eb868d22699f3c7148a8bcdedf2910}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!allObjects@{allObjects}}
+\index{allObjects@{allObjects}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{allObjects}{allObjects}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}} $>$ $\ast$) all\+Objects \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a36eb868d22699f3c7148a8bcdedf2910}\label{interface_thing_smart_core_cache_a36eb868d22699f3c7148a8bcdedf2910}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!allObjects@{allObjects}}
+\index{allObjects@{allObjects}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{allObjects}{allObjects}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}} $>$ $\ast$) all\+Objects \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a36eb868d22699f3c7148a8bcdedf2910}\label{interface_thing_smart_core_cache_a36eb868d22699f3c7148a8bcdedf2910}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!allObjects@{allObjects}}
+\index{allObjects@{allObjects}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{allObjects}{allObjects}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}} $>$ $\ast$) all\+Objects \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}\label{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObject:@{cacheObject:}}
+\index{cacheObject:@{cacheObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObject:}{cacheObject:}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily + (void) cache\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Cache a object, the object must implement the {\ttfamily + (nonnull NSString $\ast$)cache\+Name} and {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}\label{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObject:@{cacheObject:}}
+\index{cacheObject:@{cacheObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObject:}{cacheObject:}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily -\/ (void) cache\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Cache a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}\label{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObject:@{cacheObject:}}
+\index{cacheObject:@{cacheObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObject:}{cacheObject:}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily + (void) cache\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Cache a object, the object must implement the {\ttfamily + (nonnull NSString $\ast$)cache\+Name} and {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}\label{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObject:@{cacheObject:}}
+\index{cacheObject:@{cacheObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObject:}{cacheObject:}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily -\/ (void) cache\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Cache a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}\label{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObject:@{cacheObject:}}
+\index{cacheObject:@{cacheObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObject:}{cacheObject:}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily -\/ (void) cache\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Cache a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}\label{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObject:@{cacheObject:}}
+\index{cacheObject:@{cacheObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObject:}{cacheObject:}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily + (void) cache\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Cache a object, the object must implement the {\ttfamily + (nonnull NSString $\ast$)cache\+Name} and {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}\label{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObject:@{cacheObject:}}
+\index{cacheObject:@{cacheObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObject:}{cacheObject:}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily + (void) cache\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Cache a object, the object must implement the {\ttfamily + (nonnull NSString $\ast$)cache\+Name} and {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}\label{interface_thing_smart_core_cache_a0cc1c29e19a8c4a3a9e352efdb35dc64}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObject:@{cacheObject:}}
+\index{cacheObject:@{cacheObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObject:}{cacheObject:}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily -\/ (void) cache\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Cache a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}\label{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObjects:@{cacheObjects:}}
+\index{cacheObjects:@{cacheObjects:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObjects:}{cacheObjects:}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily + (void) cache\+Objects\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$ $>$ $\ast$)}]{objects }\end{DoxyParamCaption}}
+
+
+
+Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}\label{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObjects:@{cacheObjects:}}
+\index{cacheObjects:@{cacheObjects:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObjects:}{cacheObjects:}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily -\/ (void) cache\+Objects\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$ $>$ $\ast$)}]{objects }\end{DoxyParamCaption}}
+
+
+
+Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}\label{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObjects:@{cacheObjects:}}
+\index{cacheObjects:@{cacheObjects:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObjects:}{cacheObjects:}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily + (void) cache\+Objects\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$ $>$ $\ast$)}]{objects }\end{DoxyParamCaption}}
+
+
+
+Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}\label{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObjects:@{cacheObjects:}}
+\index{cacheObjects:@{cacheObjects:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObjects:}{cacheObjects:}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily -\/ (void) cache\+Objects\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$ $>$ $\ast$)}]{objects }\end{DoxyParamCaption}}
+
+
+
+Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}\label{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObjects:@{cacheObjects:}}
+\index{cacheObjects:@{cacheObjects:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObjects:}{cacheObjects:}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily -\/ (void) cache\+Objects\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$ $>$ $\ast$)}]{objects }\end{DoxyParamCaption}}
+
+
+
+Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}\label{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObjects:@{cacheObjects:}}
+\index{cacheObjects:@{cacheObjects:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObjects:}{cacheObjects:}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily + (void) cache\+Objects\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$ $>$ $\ast$)}]{objects }\end{DoxyParamCaption}}
+
+
+
+Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}\label{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObjects:@{cacheObjects:}}
+\index{cacheObjects:@{cacheObjects:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObjects:}{cacheObjects:}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily + (void) cache\+Objects\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$ $>$ $\ast$)}]{objects }\end{DoxyParamCaption}}
+
+
+
+Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}\label{interface_thing_smart_core_cache_a01c6d01098812ca82bd8bbb6344dcd7d}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheObjects:@{cacheObjects:}}
+\index{cacheObjects:@{cacheObjects:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheObjects:}{cacheObjects:}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily -\/ (void) cache\+Objects\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$ $>$ $\ast$)}]{objects }\end{DoxyParamCaption}}
+
+
+
+Cache a set of objects, the objects must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aa74b5669f36da0adb92a917d8b1eb1d8}\label{interface_thing_smart_core_cache_aa74b5669f36da0adb92a917d8b1eb1d8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheWithName:@{cacheWithName:}}
+\index{cacheWithName:@{cacheWithName:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheWithName:}{cacheWithName:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily + (instancetype) cache\+With\+Name\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{name }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aa74b5669f36da0adb92a917d8b1eb1d8}\label{interface_thing_smart_core_cache_aa74b5669f36da0adb92a917d8b1eb1d8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheWithName:@{cacheWithName:}}
+\index{cacheWithName:@{cacheWithName:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheWithName:}{cacheWithName:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily + (instancetype) cache\+With\+Name\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{name }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aa74b5669f36da0adb92a917d8b1eb1d8}\label{interface_thing_smart_core_cache_aa74b5669f36da0adb92a917d8b1eb1d8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheWithName:@{cacheWithName:}}
+\index{cacheWithName:@{cacheWithName:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheWithName:}{cacheWithName:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (instancetype) cache\+With\+Name\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{name }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aa74b5669f36da0adb92a917d8b1eb1d8}\label{interface_thing_smart_core_cache_aa74b5669f36da0adb92a917d8b1eb1d8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!cacheWithName:@{cacheWithName:}}
+\index{cacheWithName:@{cacheWithName:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{cacheWithName:}{cacheWithName:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (instancetype) cache\+With\+Name\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{name }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}\label{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!containsObjectForKey:@{containsObjectForKey:}}
+\index{containsObjectForKey:@{containsObjectForKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{containsObjectForKey:}{containsObjectForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) contains\+Object\+For\+Key\+: \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}\label{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!containsObjectForKey:@{containsObjectForKey:}}
+\index{containsObjectForKey:@{containsObjectForKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{containsObjectForKey:}{containsObjectForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) contains\+Object\+For\+Key\+: \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}\label{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!containsObjectForKey:@{containsObjectForKey:}}
+\index{containsObjectForKey:@{containsObjectForKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{containsObjectForKey:}{containsObjectForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) contains\+Object\+For\+Key\+: \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}\label{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!containsObjectForKey:@{containsObjectForKey:}}
+\index{containsObjectForKey:@{containsObjectForKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{containsObjectForKey:}{containsObjectForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (BOOL) contains\+Object\+For\+Key\+: \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a0e899c72e6f82198306b5df7e991b0f1}\label{interface_thing_smart_core_cache_a0e899c72e6f82198306b5df7e991b0f1}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!containsObjectForKey:withClass:@{containsObjectForKey:withClass:}}
+\index{containsObjectForKey:withClass:@{containsObjectForKey:withClass:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{containsObjectForKey:withClass:}{containsObjectForKey:withClass:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily + (BOOL) \mbox{\hyperlink{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}{contains\+Object\+For\+Key\+:}} \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\item[{with\+Class\+:(Class$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{a\+Class }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a0e899c72e6f82198306b5df7e991b0f1}\label{interface_thing_smart_core_cache_a0e899c72e6f82198306b5df7e991b0f1}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!containsObjectForKey:withClass:@{containsObjectForKey:withClass:}}
+\index{containsObjectForKey:withClass:@{containsObjectForKey:withClass:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{containsObjectForKey:withClass:}{containsObjectForKey:withClass:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily + (BOOL) \mbox{\hyperlink{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}{contains\+Object\+For\+Key\+:}} \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\item[{with\+Class\+:(Class$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{a\+Class }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a0e899c72e6f82198306b5df7e991b0f1}\label{interface_thing_smart_core_cache_a0e899c72e6f82198306b5df7e991b0f1}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!containsObjectForKey:withClass:@{containsObjectForKey:withClass:}}
+\index{containsObjectForKey:withClass:@{containsObjectForKey:withClass:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{containsObjectForKey:withClass:}{containsObjectForKey:withClass:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (BOOL) \mbox{\hyperlink{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}{contains\+Object\+For\+Key\+:}} \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\item[{with\+Class\+:(Class$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{a\+Class }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a0e899c72e6f82198306b5df7e991b0f1}\label{interface_thing_smart_core_cache_a0e899c72e6f82198306b5df7e991b0f1}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!containsObjectForKey:withClass:@{containsObjectForKey:withClass:}}
+\index{containsObjectForKey:withClass:@{containsObjectForKey:withClass:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{containsObjectForKey:withClass:}{containsObjectForKey:withClass:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (BOOL) \mbox{\hyperlink{interface_thing_smart_core_cache_a1acc6f72f739e8477c0b5fabb3e31b2c}{contains\+Object\+For\+Key\+:}} \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\item[{with\+Class\+:(Class$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{a\+Class }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a4e9496210b7b9ea19657daabbed03e9d}\label{interface_thing_smart_core_cache_a4e9496210b7b9ea19657daabbed03e9d}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!count@{count}}
+\index{count@{count}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{count}{count}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (NSUInteger) count \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a4e9496210b7b9ea19657daabbed03e9d}\label{interface_thing_smart_core_cache_a4e9496210b7b9ea19657daabbed03e9d}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!count@{count}}
+\index{count@{count}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{count}{count}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (NSUInteger) count \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a4e9496210b7b9ea19657daabbed03e9d}\label{interface_thing_smart_core_cache_a4e9496210b7b9ea19657daabbed03e9d}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!count@{count}}
+\index{count@{count}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{count}{count}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (NSUInteger) count \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a4e9496210b7b9ea19657daabbed03e9d}\label{interface_thing_smart_core_cache_a4e9496210b7b9ea19657daabbed03e9d}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!count@{count}}
+\index{count@{count}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{count}{count}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (NSUInteger) count \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}\label{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily + (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}\label{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}\label{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily + (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}\label{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily + (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}\label{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily + (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}\label{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}\label{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}\label{interface_thing_smart_core_cache_a21d39fa8b8a597a1f4d148f2dc252cd8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}\label{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!objectForKey:@{objectForKey:}}
+\index{objectForKey:@{objectForKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{objectForKey:}{objectForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) object\+For\+Key\+: \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}\label{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!objectForKey:@{objectForKey:}}
+\index{objectForKey:@{objectForKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{objectForKey:}{objectForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) object\+For\+Key\+: \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}\label{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!objectForKey:@{objectForKey:}}
+\index{objectForKey:@{objectForKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{objectForKey:}{objectForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) object\+For\+Key\+: \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}\label{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!objectForKey:@{objectForKey:}}
+\index{objectForKey:@{objectForKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{objectForKey:}{objectForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) object\+For\+Key\+: \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a3ac69b9735aaa1ab9c9f87e8367e5afa}\label{interface_thing_smart_core_cache_a3ac69b9735aaa1ab9c9f87e8367e5afa}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!objectForKey:withClass:@{objectForKey:withClass:}}
+\index{objectForKey:withClass:@{objectForKey:withClass:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{objectForKey:withClass:}{objectForKey:withClass:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily + (nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) \mbox{\hyperlink{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}{object\+For\+Key\+:}} \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\item[{with\+Class\+:(Class$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{a\+Class }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a3ac69b9735aaa1ab9c9f87e8367e5afa}\label{interface_thing_smart_core_cache_a3ac69b9735aaa1ab9c9f87e8367e5afa}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!objectForKey:withClass:@{objectForKey:withClass:}}
+\index{objectForKey:withClass:@{objectForKey:withClass:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{objectForKey:withClass:}{objectForKey:withClass:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily + (nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) \mbox{\hyperlink{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}{object\+For\+Key\+:}} \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\item[{with\+Class\+:(Class$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{a\+Class }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a3ac69b9735aaa1ab9c9f87e8367e5afa}\label{interface_thing_smart_core_cache_a3ac69b9735aaa1ab9c9f87e8367e5afa}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!objectForKey:withClass:@{objectForKey:withClass:}}
+\index{objectForKey:withClass:@{objectForKey:withClass:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{objectForKey:withClass:}{objectForKey:withClass:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) \mbox{\hyperlink{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}{object\+For\+Key\+:}} \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\item[{with\+Class\+:(Class$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{a\+Class }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a3ac69b9735aaa1ab9c9f87e8367e5afa}\label{interface_thing_smart_core_cache_a3ac69b9735aaa1ab9c9f87e8367e5afa}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!objectForKey:withClass:@{objectForKey:withClass:}}
+\index{objectForKey:withClass:@{objectForKey:withClass:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{objectForKey:withClass:}{objectForKey:withClass:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (nullable \mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}) \mbox{\hyperlink{interface_thing_smart_core_cache_aa396f9523dc7d2bf94e2dce8539301e9}{object\+For\+Key\+:}} \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\item[{with\+Class\+:(Class$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{a\+Class }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aba0f999477872f10447d88ca85f723ca}\label{interface_thing_smart_core_cache_aba0f999477872f10447d88ca85f723ca}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeAllObjects@{removeAllObjects}}
+\index{removeAllObjects@{removeAllObjects}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeAllObjects}{removeAllObjects}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Objects \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Remove all cached objects. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aba0f999477872f10447d88ca85f723ca}\label{interface_thing_smart_core_cache_aba0f999477872f10447d88ca85f723ca}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeAllObjects@{removeAllObjects}}
+\index{removeAllObjects@{removeAllObjects}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeAllObjects}{removeAllObjects}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Objects \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Remove all cached objects. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aba0f999477872f10447d88ca85f723ca}\label{interface_thing_smart_core_cache_aba0f999477872f10447d88ca85f723ca}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeAllObjects@{removeAllObjects}}
+\index{removeAllObjects@{removeAllObjects}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeAllObjects}{removeAllObjects}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Objects \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Remove all cached objects. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aba0f999477872f10447d88ca85f723ca}\label{interface_thing_smart_core_cache_aba0f999477872f10447d88ca85f723ca}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeAllObjects@{removeAllObjects}}
+\index{removeAllObjects@{removeAllObjects}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeAllObjects}{removeAllObjects}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) remove\+All\+Objects \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Remove all cached objects. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}\label{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObject:@{removeObject:}}
+\index{removeObject:@{removeObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObject:}{removeObject:}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}\label{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObject:@{removeObject:}}
+\index{removeObject:@{removeObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObject:}{removeObject:}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily + (void) remove\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}\label{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObject:@{removeObject:}}
+\index{removeObject:@{removeObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObject:}{removeObject:}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}\label{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObject:@{removeObject:}}
+\index{removeObject:@{removeObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObject:}{removeObject:}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily + (void) remove\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}\label{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObject:@{removeObject:}}
+\index{removeObject:@{removeObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObject:}{removeObject:}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}\label{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObject:@{removeObject:}}
+\index{removeObject:@{removeObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObject:}{removeObject:}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}\label{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObject:@{removeObject:}}
+\index{removeObject:@{removeObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObject:}{removeObject:}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily + (void) remove\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}\label{interface_thing_smart_core_cache_ac165ce885fb721d0818feb0cd8fcd58c}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObject:@{removeObject:}}
+\index{removeObject:@{removeObject:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObject:}{removeObject:}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily + (void) remove\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}}$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{object }\end{DoxyParamCaption}}
+
+
+
+Remove a object, the object must implement the {\ttfamily \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}}} method at the first time. 
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}\label{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObjectForKey:@{removeObjectForKey:}}
+\index{removeObjectForKey:@{removeObjectForKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObjectForKey:}{removeObjectForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Object\+For\+Key\+: \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}\label{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObjectForKey:@{removeObjectForKey:}}
+\index{removeObjectForKey:@{removeObjectForKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObjectForKey:}{removeObjectForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Object\+For\+Key\+: \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}\label{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObjectForKey:@{removeObjectForKey:}}
+\index{removeObjectForKey:@{removeObjectForKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObjectForKey:}{removeObjectForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Object\+For\+Key\+: \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}\label{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObjectForKey:@{removeObjectForKey:}}
+\index{removeObjectForKey:@{removeObjectForKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObjectForKey:}{removeObjectForKey:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) remove\+Object\+For\+Key\+: \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a5ea160e60749ab3b0777e086d1ee7392}\label{interface_thing_smart_core_cache_a5ea160e60749ab3b0777e086d1ee7392}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObjectForKey:withClass:@{removeObjectForKey:withClass:}}
+\index{removeObjectForKey:withClass:@{removeObjectForKey:withClass:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObjectForKey:withClass:}{removeObjectForKey:withClass:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily + (void) \mbox{\hyperlink{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}{remove\+Object\+For\+Key\+:}} \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\item[{with\+Class\+:(Class$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{a\+Class }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a5ea160e60749ab3b0777e086d1ee7392}\label{interface_thing_smart_core_cache_a5ea160e60749ab3b0777e086d1ee7392}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObjectForKey:withClass:@{removeObjectForKey:withClass:}}
+\index{removeObjectForKey:withClass:@{removeObjectForKey:withClass:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObjectForKey:withClass:}{removeObjectForKey:withClass:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily + (void) \mbox{\hyperlink{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}{remove\+Object\+For\+Key\+:}} \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\item[{with\+Class\+:(Class$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{a\+Class }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a5ea160e60749ab3b0777e086d1ee7392}\label{interface_thing_smart_core_cache_a5ea160e60749ab3b0777e086d1ee7392}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObjectForKey:withClass:@{removeObjectForKey:withClass:}}
+\index{removeObjectForKey:withClass:@{removeObjectForKey:withClass:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObjectForKey:withClass:}{removeObjectForKey:withClass:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (void) \mbox{\hyperlink{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}{remove\+Object\+For\+Key\+:}} \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\item[{with\+Class\+:(Class$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{a\+Class }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a5ea160e60749ab3b0777e086d1ee7392}\label{interface_thing_smart_core_cache_a5ea160e60749ab3b0777e086d1ee7392}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!removeObjectForKey:withClass:@{removeObjectForKey:withClass:}}
+\index{removeObjectForKey:withClass:@{removeObjectForKey:withClass:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{removeObjectForKey:withClass:}{removeObjectForKey:withClass:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (void) \mbox{\hyperlink{interface_thing_smart_core_cache_a14b8bafda52770ac6988f9a7745f7c26}{remove\+Object\+For\+Key\+:}} \begin{DoxyParamCaption}\item[{(Key\+Type)}]{key }\item[{with\+Class\+:(Class$<$ \mbox{\hyperlink{protocol_thing_smart_core_cache_protocol-p}{Thing\+Smart\+Core\+Cache\+Protocol}} $>$)}]{a\+Class }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aa9e4bda7de1f47ab2e8c90ea8e3ae4c5}\label{interface_thing_smart_core_cache_aa9e4bda7de1f47ab2e8c90ea8e3ae4c5}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!setObject:forKey:@{setObject:forKey:}}
+\index{setObject:forKey:@{setObject:forKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{setObject:forKey:}{setObject:forKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) set\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}})}]{object }\item[{for\+Key\+:(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aa9e4bda7de1f47ab2e8c90ea8e3ae4c5}\label{interface_thing_smart_core_cache_aa9e4bda7de1f47ab2e8c90ea8e3ae4c5}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!setObject:forKey:@{setObject:forKey:}}
+\index{setObject:forKey:@{setObject:forKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{setObject:forKey:}{setObject:forKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) set\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}})}]{object }\item[{for\+Key\+:(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aa9e4bda7de1f47ab2e8c90ea8e3ae4c5}\label{interface_thing_smart_core_cache_aa9e4bda7de1f47ab2e8c90ea8e3ae4c5}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!setObject:forKey:@{setObject:forKey:}}
+\index{setObject:forKey:@{setObject:forKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{setObject:forKey:}{setObject:forKey:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) set\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}})}]{object }\item[{for\+Key\+:(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_aa9e4bda7de1f47ab2e8c90ea8e3ae4c5}\label{interface_thing_smart_core_cache_aa9e4bda7de1f47ab2e8c90ea8e3ae4c5}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!setObject:forKey:@{setObject:forKey:}}
+\index{setObject:forKey:@{setObject:forKey:}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{setObject:forKey:}{setObject:forKey:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) set\+Object\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}{Object\+Type}})}]{object }\item[{for\+Key\+:(Key\+Type)}]{key }\end{DoxyParamCaption}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a75dd0c8f5139be73cd0f9c748924f0a8}\label{interface_thing_smart_core_cache_a75dd0c8f5139be73cd0f9c748924f0a8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!copy@{copy}}
+\index{copy@{copy}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{copy}{copy}}
+{\footnotesize\ttfamily -\/ (\+\_\+\+\_\+covariant) copy\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h_source_l00016}{16}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h_source}{Thing\+Smart\+Core\+Cache.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_ae538f84e1be509c19e8a6c779f62bdaf}\label{interface_thing_smart_core_cache_ae538f84e1be509c19e8a6c779f62bdaf}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!name@{name}}
+\index{name@{name}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily -\/ (\+\_\+\+\_\+covariant readonly NSString $\ast$) name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h_source_l00016}{16}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h_source}{Thing\+Smart\+Core\+Cache.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}\label{interface_thing_smart_core_cache_a9e52c457043ca7bcc19f4cd98358feb8}} 
+\index{ThingSmartCoreCache@{ThingSmartCoreCache}!ObjectType@{ObjectType}}
+\index{ObjectType@{ObjectType}!ThingSmartCoreCache@{ThingSmartCoreCache}}
+\doxysubsubsection{\texorpdfstring{ObjectType}{ObjectType}}
+{\footnotesize\ttfamily -\/ (\+\_\+\+\_\+covariant) Object\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h_source_l00013}{13}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h_source}{Thing\+Smart\+Core\+Cache.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h}{Thing\+Smart\+Core\+Cache.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h}{Thing\+Smart\+Core\+Cache.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h}{Thing\+Smart\+Core\+Cache.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_core_cache_8h}{Thing\+Smart\+Core\+Cache.\+h}}\end{DoxyCompactItemize}

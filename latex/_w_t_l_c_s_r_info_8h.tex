@@ -1,0 +1,149 @@
+\hypertarget{_w_t_l_c_s_r_info_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.framework/\+Headers/\+WTLCSRInfo.h File Reference}
+\label{_w_t_l_c_s_r_info_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLCSRInfo.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLCSRInfo.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import $<$Water/\+WTLCommand\+Payloads\+Objc.\+h$>$}\newline
+{\ttfamily \#import $<$Water/\+WTLDefines.\+h$>$}\newline
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}{API\+\_\+\+AVAILABLE}}(macos(13.\+3), watchos(9.\+4), tvos(16.\+4)) @interface WTLOperational\+CSRInfo NSData $\ast$ \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a7c6c21abef026ce68c14fa92d97984f5}{csr\+Nonce}}
+\item 
+\mbox{\hyperlink{_w_t_l_defines_8h_a65443dbe5d9d296956f3c0666f6a9f71}{WTLTLVBytes}} \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a878636d58444d68dd0692d2556638cb0}{csr\+Elements\+TLV}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a1bf271fd11d09d7104ceaceea7794453}{attestation\+Signature}}
+\item 
+instancetype \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a80aaddb1e1bf77fa942c7baf5de16686}{init\+With\+CSR}}
+\item 
+nullable instancetype \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a7942a07a69ce91abd43d6afaea906972}{init\+With\+CSRNonce}}
+\item 
+nullable instancetype \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_ae98d7e67576a9855890d55a254a523d4}{init\+With\+CSRElements\+TLV}}
+\item 
+nullable instancetype \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_adb7b15b404f4366489c3f3bd82bd20cd}{init\+With\+CSRResponse\+Params}}
+\item 
+end \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_af98726e3245c016574823a07fb4c8dbb}{WTL\+\_\+\+DEPRECATED}}(\char`\"{}Please use WTLOperational\+CSRInfo\char`\"{}, macos(13.\+0, 13.\+3), watchos(9.\+1, 9.\+4), tvos(16.\+1, 16.\+4)) @interface CSRInfo NSData $\ast$ \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a6e0a2d46a184b9fb0f9921ae683a2ab6}{elements}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_afb4b8ff4e2504de524c1a153102d9b30}{elements\+Signature}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a4d9b280bd21aa0f71185a25600f06ba7}{csr}}
+\item 
+instancetype \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_a576f99a893bd63e54c5decadd9f290a0}{init\+With\+Nonce}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_w_t_l_c_s_r_info_8h_a1bf271fd11d09d7104ceaceea7794453}\label{_w_t_l_c_s_r_info_8h_a1bf271fd11d09d7104ceaceea7794453}} 
+\index{WTLCSRInfo.h@{WTLCSRInfo.h}!attestationSignature@{attestationSignature}}
+\index{attestationSignature@{attestationSignature}!WTLCSRInfo.h@{WTLCSRInfo.h}}
+\doxysubsubsection{\texorpdfstring{attestationSignature}{attestationSignature}}
+{\footnotesize\ttfamily NSData$\ast$ attestation\+Signature\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+A signature, using the device attestation private key of the device that created the CSR, over the concatenation of csr\+Elements\+TLV and the attestation challenge from the secure session.
+
+The attestation challenge is available in WTLAttestion\+Info. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source_l00055}{55}} of file \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source}{WTLCSRInfo.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_c_s_r_info_8h_a4d9b280bd21aa0f71185a25600f06ba7}\label{_w_t_l_c_s_r_info_8h_a4d9b280bd21aa0f71185a25600f06ba7}} 
+\index{WTLCSRInfo.h@{WTLCSRInfo.h}!csr@{csr}}
+\index{csr@{csr}!WTLCSRInfo.h@{WTLCSRInfo.h}}
+\doxysubsubsection{\texorpdfstring{csr}{csr}}
+{\footnotesize\ttfamily NSData$\ast$ csr\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source_l00106}{106}} of file \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source}{WTLCSRInfo.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_c_s_r_info_8h_a878636d58444d68dd0692d2556638cb0}\label{_w_t_l_c_s_r_info_8h_a878636d58444d68dd0692d2556638cb0}} 
+\index{WTLCSRInfo.h@{WTLCSRInfo.h}!csrElementsTLV@{csrElementsTLV}}
+\index{csrElementsTLV@{csrElementsTLV}!WTLCSRInfo.h@{WTLCSRInfo.h}}
+\doxysubsubsection{\texorpdfstring{csrElementsTLV}{csrElementsTLV}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_w_t_l_defines_8h_a65443dbe5d9d296956f3c0666f6a9f71}{WTLTLVBytes}} csr\+Elements\+TLV\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+TLV-\/encoded nocsr-\/elements structure. This includes the \char`\"{}csr\char`\"{} and \char`\"{}csr\+Nonce\char`\"{} fields, and can include additional vendor-\/specific information. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source_l00046}{46}} of file \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source}{WTLCSRInfo.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_c_s_r_info_8h_a7c6c21abef026ce68c14fa92d97984f5}\label{_w_t_l_c_s_r_info_8h_a7c6c21abef026ce68c14fa92d97984f5}} 
+\index{WTLCSRInfo.h@{WTLCSRInfo.h}!csrNonce@{csrNonce}}
+\index{csrNonce@{csrNonce}!WTLCSRInfo.h@{WTLCSRInfo.h}}
+\doxysubsubsection{\texorpdfstring{csrNonce}{csrNonce}}
+{\footnotesize\ttfamily NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}{API\+\_\+\+AVAILABLE}} (macos(13.\+3), watchos(9.\+4), tvos(16.\+4)) @interface WTLOperational\+CSRInfo NSData$\ast$ csr\+Nonce\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Copyright (c) 2022-\/2023 Project CHIP Authors
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb}http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Represents information relating to a certificate signing request for a Matter operational certificate. DER-\/encoded certificate signing request. The nonce associated with this CSR. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source_l00040}{40}} of file \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source}{WTLCSRInfo.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_c_s_r_info_8h_a6e0a2d46a184b9fb0f9921ae683a2ab6}\label{_w_t_l_c_s_r_info_8h_a6e0a2d46a184b9fb0f9921ae683a2ab6}} 
+\index{WTLCSRInfo.h@{WTLCSRInfo.h}!elements@{elements}}
+\index{elements@{elements}!WTLCSRInfo.h@{WTLCSRInfo.h}}
+\doxysubsubsection{\texorpdfstring{elements}{elements}}
+{\footnotesize\ttfamily end \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_af98726e3245c016574823a07fb4c8dbb}{WTL\+\_\+\+DEPRECATED}} (\char`\"{}Please use WTLOperational\+CSRInfo\char`\"{}, macos(13.\+0, 13.\+3), watchos(9.\+1, 9.\+4), tvos(16.\+1, 16.\+4)) @interface CSRInfo NSData$\ast$ elements\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source_l00102}{102}} of file \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source}{WTLCSRInfo.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_c_s_r_info_8h_afb4b8ff4e2504de524c1a153102d9b30}\label{_w_t_l_c_s_r_info_8h_afb4b8ff4e2504de524c1a153102d9b30}} 
+\index{WTLCSRInfo.h@{WTLCSRInfo.h}!elementsSignature@{elementsSignature}}
+\index{elementsSignature@{elementsSignature}!WTLCSRInfo.h@{WTLCSRInfo.h}}
+\doxysubsubsection{\texorpdfstring{elementsSignature}{elementsSignature}}
+{\footnotesize\ttfamily NSData$\ast$ elements\+Signature\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source_l00104}{104}} of file \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source}{WTLCSRInfo.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_c_s_r_info_8h_a80aaddb1e1bf77fa942c7baf5de16686}\label{_w_t_l_c_s_r_info_8h_a80aaddb1e1bf77fa942c7baf5de16686}} 
+\index{WTLCSRInfo.h@{WTLCSRInfo.h}!initWithCSR@{initWithCSR}}
+\index{initWithCSR@{initWithCSR}!WTLCSRInfo.h@{WTLCSRInfo.h}}
+\doxysubsubsection{\texorpdfstring{initWithCSR}{initWithCSR}}
+{\footnotesize\ttfamily instancetype init\+With\+CSR}
+
+Initialize an WTLOperational\+CSRInfo by providing all the fields. It\textquotesingle{}s the caller\textquotesingle{}s responsibility to ensure that csr and csr\+Nonce match the csr\+Elements\+TLV. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source_l00061}{61}} of file \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source}{WTLCSRInfo.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_c_s_r_info_8h_ae98d7e67576a9855890d55a254a523d4}\label{_w_t_l_c_s_r_info_8h_ae98d7e67576a9855890d55a254a523d4}} 
+\index{WTLCSRInfo.h@{WTLCSRInfo.h}!initWithCSRElementsTLV@{initWithCSRElementsTLV}}
+\index{initWithCSRElementsTLV@{initWithCSRElementsTLV}!WTLCSRInfo.h@{WTLCSRInfo.h}}
+\doxysubsubsection{\texorpdfstring{initWithCSRElementsTLV}{initWithCSRElementsTLV}}
+{\footnotesize\ttfamily nullable instancetype init\+With\+CSRElements\+TLV}
+
+Initialize an WTLOperational\+CSRInfo by providing just the csr\+Elements\+TLV and attestation\+Signature (which can come from an WTLOperational\+Credentials\+Cluster\+CSRResponse\+Params). This will extract the csr and csr\+Nonce from the csr\+Elements\+TLV, if possible, and return nil if that fails. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source_l00085}{85}} of file \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source}{WTLCSRInfo.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_c_s_r_info_8h_a7942a07a69ce91abd43d6afaea906972}\label{_w_t_l_c_s_r_info_8h_a7942a07a69ce91abd43d6afaea906972}} 
+\index{WTLCSRInfo.h@{WTLCSRInfo.h}!initWithCSRNonce@{initWithCSRNonce}}
+\index{initWithCSRNonce@{initWithCSRNonce}!WTLCSRInfo.h@{WTLCSRInfo.h}}
+\doxysubsubsection{\texorpdfstring{initWithCSRNonce}{initWithCSRNonce}}
+{\footnotesize\ttfamily nullable instancetype init\+With\+CSRNonce}
+
+Initialize an WTLOperational\+CSRInfo by providing the csr\+Nonce (for example, the nonce the client initially supplied), and the csr\+Elements\+TLV and attestation\+Signature that the server returned. This will ensure that csr\+Nonce matches the data in csr\+Elements\+TLV, returning nil if it does not, and extract the csr from csr\+Elements\+TLV. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source_l00074}{74}} of file \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source}{WTLCSRInfo.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_c_s_r_info_8h_adb7b15b404f4366489c3f3bd82bd20cd}\label{_w_t_l_c_s_r_info_8h_adb7b15b404f4366489c3f3bd82bd20cd}} 
+\index{WTLCSRInfo.h@{WTLCSRInfo.h}!initWithCSRResponseParams@{initWithCSRResponseParams}}
+\index{initWithCSRResponseParams@{initWithCSRResponseParams}!WTLCSRInfo.h@{WTLCSRInfo.h}}
+\doxysubsubsection{\texorpdfstring{initWithCSRResponseParams}{initWithCSRResponseParams}}
+{\footnotesize\ttfamily nullable instancetype init\+With\+CSRResponse\+Params}
+
+Initialize an WTLOperational\+CSRInfo by providing an WTLOperational\+Credentials\+Cluster\+CSRResponse\+Params. This will extract the relevant fields from the response data. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source_l00093}{93}} of file \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source}{WTLCSRInfo.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_c_s_r_info_8h_a576f99a893bd63e54c5decadd9f290a0}\label{_w_t_l_c_s_r_info_8h_a576f99a893bd63e54c5decadd9f290a0}} 
+\index{WTLCSRInfo.h@{WTLCSRInfo.h}!initWithNonce@{initWithNonce}}
+\index{initWithNonce@{initWithNonce}!WTLCSRInfo.h@{WTLCSRInfo.h}}
+\doxysubsubsection{\texorpdfstring{initWithNonce}{initWithNonce}}
+{\footnotesize\ttfamily instancetype init\+With\+Nonce}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source_l00108}{108}} of file \mbox{\hyperlink{_w_t_l_c_s_r_info_8h_source}{WTLCSRInfo.\+h}}.
+

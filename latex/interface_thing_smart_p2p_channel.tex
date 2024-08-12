@@ -1,0 +1,728 @@
+\hypertarget{interface_thing_smart_p2p_channel}{}\doxysection{Thing\+Smart\+P2p\+Channel Class Reference}
+\label{interface_thing_smart_p2p_channel}\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+P2p\+Channel.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+P2p\+Channel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_p2p_channel}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a1df3da3d217e9115a45171daf4f7839b}{init\+SDKWith\+Uid\+:}}
+\begin{DoxyCompactList}\small\item\em init configs, add msg observing \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a91337cb5cb3452bab60c345d4f64020a}{de\+Init\+SDK}}
+\begin{DoxyCompactList}\small\item\em reset configs, remove msg observing \end{DoxyCompactList}\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_p2p_channel}{Thing\+Smart\+P2p\+Channel}} \mbox{\hyperlink{interface_thing_smart_p2p_channel_a91337cb5cb3452bab60c345d4f64020a}{de\+Init\+SDK}}\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_acc7fd456e505501f38da72dc52392dae}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a87fcaab8a206ca81faf0d9bf6e62ad59}{init\+P2\+PSDKWith\+Uid\+:}}
+\begin{DoxyCompactList}\small\item\em init P2P SDK, only call when login \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a1cc5d4e94caf00eee0b33890123d8035}{de\+Init\+P2\+PSDK}}
+\begin{DoxyCompactList}\small\item\em de\+Init P2P SDK, only call when logout \end{DoxyCompactList}\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a261dd2776a05bec5c2f05a57e3265a69}{connect\+With\+Dev\+Id\+:mode\+:timeout\+:success\+:failure\+:}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a92595e56fb83a2f4bb4eaeec35d05aa0}{connect\+With\+Device\+Id\+:mode\+:timeout\+:success\+:failure\+:}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_ae3934e3382b728d6c4f7ca26745e69e6}{connect\+With\+Device\+Id\+:token\+:trace\+Id\+:mode\+:success\+:failure\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a714c0366278859fd5882ebec61f8a7e1}{break\+Connect\+With\+Trace\+Id\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a26ffcd3353f8efd9cd82b9f7e8fd45f8}{disconnect\+With\+P2p\+Handle\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_aa9ec5cdab563c9d8841a887c1d0bbd77}{read\+Data\+With\+P2p\+Handle\+:channel\+:buffer\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a8aa9bc92246bb141694649e9b5a01e67}{read\+Data\+With\+P2p\+Handle\+:channel\+:buffer\+:timeout\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a5cae26d949ff1633741a7ee6f28aa7f7}{send\+Data\+With\+P2p\+Handle\+:channel\+:buffer\+:length\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_abb99f35aa6c4a852d24a7f0944cd0c7d}{send\+Data\+With\+P2p\+Handle\+:channel\+:buffer\+:length\+:timeout\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_ab0c2ddc5ae863f701620ec1e40df6a8e}{resend\+Offer\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a254927eb74a07edfd7a304caec1b1263}{on\+Device\+Online\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a92b9f8eccf7dffc1db7e5642a75a617f}{is\+P2p\+Active\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a2f7b525873a5d836d8894d6e0661d2b7}{active\+Check\+With\+Handle\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a250282eb62edb195e995ce6d1ecde269}{start\+Pre\+Connect\+With\+Device\+Id\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_ac0c921c6077e1f163ca69b154d10dc0b}{close\+Pre\+Connect\+With\+Device\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a1df3da3d217e9115a45171daf4f7839b}{init\+SDKWith\+Uid\+:}}
+\begin{DoxyCompactList}\small\item\em init configs, add msg observing \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a91337cb5cb3452bab60c345d4f64020a}{de\+Init\+SDK}}
+\begin{DoxyCompactList}\small\item\em reset configs, remove msg observing \end{DoxyCompactList}\item 
+(\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_p2p_channel}{Thing\+Smart\+P2p\+Channel}} \mbox{\hyperlink{interface_thing_smart_p2p_channel_a91337cb5cb3452bab60c345d4f64020a}{de\+Init\+SDK}}\mbox{]} instead\char`\"{}) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_acc7fd456e505501f38da72dc52392dae}{\+\_\+\+\_\+deprecated\+\_\+msg}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a87fcaab8a206ca81faf0d9bf6e62ad59}{init\+P2\+PSDKWith\+Uid\+:}}
+\begin{DoxyCompactList}\small\item\em init P2P SDK, only call when login \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a1cc5d4e94caf00eee0b33890123d8035}{de\+Init\+P2\+PSDK}}
+\begin{DoxyCompactList}\small\item\em de\+Init P2P SDK, only call when logout \end{DoxyCompactList}\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a261dd2776a05bec5c2f05a57e3265a69}{connect\+With\+Dev\+Id\+:mode\+:timeout\+:success\+:failure\+:}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a92595e56fb83a2f4bb4eaeec35d05aa0}{connect\+With\+Device\+Id\+:mode\+:timeout\+:success\+:failure\+:}}
+\item 
+(NSString $\ast$) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_ae3934e3382b728d6c4f7ca26745e69e6}{connect\+With\+Device\+Id\+:token\+:trace\+Id\+:mode\+:success\+:failure\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a714c0366278859fd5882ebec61f8a7e1}{break\+Connect\+With\+Trace\+Id\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a26ffcd3353f8efd9cd82b9f7e8fd45f8}{disconnect\+With\+P2p\+Handle\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_aa9ec5cdab563c9d8841a887c1d0bbd77}{read\+Data\+With\+P2p\+Handle\+:channel\+:buffer\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a8aa9bc92246bb141694649e9b5a01e67}{read\+Data\+With\+P2p\+Handle\+:channel\+:buffer\+:timeout\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a5cae26d949ff1633741a7ee6f28aa7f7}{send\+Data\+With\+P2p\+Handle\+:channel\+:buffer\+:length\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_abb99f35aa6c4a852d24a7f0944cd0c7d}{send\+Data\+With\+P2p\+Handle\+:channel\+:buffer\+:length\+:timeout\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_ab0c2ddc5ae863f701620ec1e40df6a8e}{resend\+Offer\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a254927eb74a07edfd7a304caec1b1263}{on\+Device\+Online\+:}}
+\item 
+(BOOL) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a92b9f8eccf7dffc1db7e5642a75a617f}{is\+P2p\+Active\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a2f7b525873a5d836d8894d6e0661d2b7}{active\+Check\+With\+Handle\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_a250282eb62edb195e995ce6d1ecde269}{start\+Pre\+Connect\+With\+Device\+Id\+:}}
+\item 
+(int) -\/ \mbox{\hyperlink{interface_thing_smart_p2p_channel_ac0c921c6077e1f163ca69b154d10dc0b}{close\+Pre\+Connect\+With\+Device\+Id\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_p2p_channel_afd8b4e47ea213070ad8d0593becda412}{shared\+Instance}}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_thing_smart_p2p_channel_afd8b4e47ea213070ad8d0593becda412}{shared\+Instance}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_p2p_channel_a101292ff1f05cddc71edc6a3ed43f983}{read\+Data\+Time\+Out}}
+\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_p2p_channel_a7182b64b4d9ef65b958f74296769ba93}{send\+Data\+Time\+Out}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_p2p_channel_aada8adc2c35b2883d77aed195e6c34a3}{p2p\+Version}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_p2p_channel_kit_8framework_2_headers_2_thing_smart_p2p_channel_8h_source_l00019}{19}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_p2p_channel_kit_8framework_2_headers_2_thing_smart_p2p_channel_8h_source}{Thing\+Smart\+P2p\+Channel.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_acc7fd456e505501f38da72dc52392dae}\label{interface_thing_smart_p2p_channel_acc7fd456e505501f38da72dc52392dae}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_p2p_channel}{Thing\+Smart\+P2p\+Channel}} \mbox{\hyperlink{interface_thing_smart_p2p_channel_a91337cb5cb3452bab60c345d4f64020a}{de\+Init\+SDK}}\mbox{]} instead\char`\"{}) \+\_\+\+\_\+deprecated\+\_\+msg \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_acc7fd456e505501f38da72dc52392dae}\label{interface_thing_smart_p2p_channel_acc7fd456e505501f38da72dc52392dae}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!\_\_deprecated\_msg@{\_\_deprecated\_msg}}
+\index{\_\_deprecated\_msg@{\_\_deprecated\_msg}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{\_\_deprecated\_msg}{\_\_deprecated\_msg}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\char`\"{}Use -\/\mbox{[}\mbox{\hyperlink{interface_thing_smart_p2p_channel}{Thing\+Smart\+P2p\+Channel}} \mbox{\hyperlink{interface_thing_smart_p2p_channel_a91337cb5cb3452bab60c345d4f64020a}{de\+Init\+SDK}}\mbox{]} instead\char`\"{}) \+\_\+\+\_\+deprecated\+\_\+msg \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a2f7b525873a5d836d8894d6e0661d2b7}\label{interface_thing_smart_p2p_channel_a2f7b525873a5d836d8894d6e0661d2b7}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!activeCheckWithHandle:@{activeCheckWithHandle:}}
+\index{activeCheckWithHandle:@{activeCheckWithHandle:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{activeCheckWithHandle:}{activeCheckWithHandle:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) active\+Check\+With\+Handle\+: \begin{DoxyParamCaption}\item[{(int)}]{p2p\+Handle }\end{DoxyParamCaption}}
+
+check the p2p session status, return a negative number to indicate that the connection has been disconnected 
+\begin{DoxyParams}{Parameters}
+{\em p2p\+Handle} & p2p session handle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a2f7b525873a5d836d8894d6e0661d2b7}\label{interface_thing_smart_p2p_channel_a2f7b525873a5d836d8894d6e0661d2b7}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!activeCheckWithHandle:@{activeCheckWithHandle:}}
+\index{activeCheckWithHandle:@{activeCheckWithHandle:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{activeCheckWithHandle:}{activeCheckWithHandle:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) active\+Check\+With\+Handle\+: \begin{DoxyParamCaption}\item[{(int)}]{p2p\+Handle }\end{DoxyParamCaption}}
+
+check the p2p session status, return a negative number to indicate that the connection has been disconnected 
+\begin{DoxyParams}{Parameters}
+{\em p2p\+Handle} & p2p session handle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a714c0366278859fd5882ebec61f8a7e1}\label{interface_thing_smart_p2p_channel_a714c0366278859fd5882ebec61f8a7e1}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!breakConnectWithTraceId:@{breakConnectWithTraceId:}}
+\index{breakConnectWithTraceId:@{breakConnectWithTraceId:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{breakConnectWithTraceId:}{breakConnectWithTraceId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) break\+Connect\+With\+Trace\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{trace\+Id }\end{DoxyParamCaption}}
+
+break connecting session 
+\begin{DoxyParams}{Parameters}
+{\em trace\+Id} & trace id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a714c0366278859fd5882ebec61f8a7e1}\label{interface_thing_smart_p2p_channel_a714c0366278859fd5882ebec61f8a7e1}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!breakConnectWithTraceId:@{breakConnectWithTraceId:}}
+\index{breakConnectWithTraceId:@{breakConnectWithTraceId:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{breakConnectWithTraceId:}{breakConnectWithTraceId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) break\+Connect\+With\+Trace\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{trace\+Id }\end{DoxyParamCaption}}
+
+break connecting session 
+\begin{DoxyParams}{Parameters}
+{\em trace\+Id} & trace id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_ac0c921c6077e1f163ca69b154d10dc0b}\label{interface_thing_smart_p2p_channel_ac0c921c6077e1f163ca69b154d10dc0b}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!closePreConnectWithDeviceId:@{closePreConnectWithDeviceId:}}
+\index{closePreConnectWithDeviceId:@{closePreConnectWithDeviceId:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{closePreConnectWithDeviceId:}{closePreConnectWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) close\+Pre\+Connect\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+return\+Value \texorpdfstring{$>$}{>}= 0 , success 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_ac0c921c6077e1f163ca69b154d10dc0b}\label{interface_thing_smart_p2p_channel_ac0c921c6077e1f163ca69b154d10dc0b}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!closePreConnectWithDeviceId:@{closePreConnectWithDeviceId:}}
+\index{closePreConnectWithDeviceId:@{closePreConnectWithDeviceId:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{closePreConnectWithDeviceId:}{closePreConnectWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) close\+Pre\+Connect\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+return\+Value \texorpdfstring{$>$}{>}= 0 , success 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a92595e56fb83a2f4bb4eaeec35d05aa0}\label{interface_thing_smart_p2p_channel_a92595e56fb83a2f4bb4eaeec35d05aa0}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!connectWithDeviceId:mode:timeout:success:failure:@{connectWithDeviceId:mode:timeout:success:failure:}}
+\index{connectWithDeviceId:mode:timeout:success:failure:@{connectWithDeviceId:mode:timeout:success:failure:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{connectWithDeviceId:mode:timeout:success:failure:}{connectWithDeviceId:mode:timeout:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) connect\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{mode\+:(Thing\+Smart\+P2p\+Connect\+Mode)}]{mode }\item[{timeout\+:(NSInteger)}]{timeout }\item[{success\+:(void($^\wedge$)(int p2p\+Handle))}]{success }\item[{failure\+:(void($^\wedge$)(NSInteger err\+Code))}]{failure }\end{DoxyParamCaption}}
+
+create p2p channel 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em mode} & connect mode \\
+\hline
+{\em timeout} & timeout, set 0 will use default value, Lan Mode\+: 3000 ms, Internet Mode\+: 15000 ms \\
+\hline
+{\em success} & success callback, and parameter is the p2p session handle \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+trace id, break connecting must use trace id to specify p2p session 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a92595e56fb83a2f4bb4eaeec35d05aa0}\label{interface_thing_smart_p2p_channel_a92595e56fb83a2f4bb4eaeec35d05aa0}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!connectWithDeviceId:mode:timeout:success:failure:@{connectWithDeviceId:mode:timeout:success:failure:}}
+\index{connectWithDeviceId:mode:timeout:success:failure:@{connectWithDeviceId:mode:timeout:success:failure:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{connectWithDeviceId:mode:timeout:success:failure:}{connectWithDeviceId:mode:timeout:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) connect\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{mode\+:(Thing\+Smart\+P2p\+Connect\+Mode)}]{mode }\item[{timeout\+:(NSInteger)}]{timeout }\item[{success\+:(void($^\wedge$)(int p2p\+Handle))}]{success }\item[{failure\+:(void($^\wedge$)(NSInteger err\+Code))}]{failure }\end{DoxyParamCaption}}
+
+create p2p channel 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em mode} & connect mode \\
+\hline
+{\em timeout} & timeout, set 0 will use default value, Lan Mode\+: 3000 ms, Internet Mode\+: 15000 ms \\
+\hline
+{\em success} & success callback, and parameter is the p2p session handle \\
+\hline
+{\em failure} & failure callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+trace id, break connecting must use trace id to specify p2p session 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_ae3934e3382b728d6c4f7ca26745e69e6}\label{interface_thing_smart_p2p_channel_ae3934e3382b728d6c4f7ca26745e69e6}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!connectWithDeviceId:token:traceId:mode:success:failure:@{connectWithDeviceId:token:traceId:mode:success:failure:}}
+\index{connectWithDeviceId:token:traceId:mode:success:failure:@{connectWithDeviceId:token:traceId:mode:success:failure:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{connectWithDeviceId:token:traceId:mode:success:failure:}{connectWithDeviceId:token:traceId:mode:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) connect\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{token\+:(NSString $\ast$)}]{token }\item[{trace\+Id\+:(NSString $\ast$)}]{trace\+Id }\item[{mode\+:(Thing\+Smart\+P2p\+Connect\+Mode)}]{mode }\item[{success\+:(void($^\wedge$)(int p2p\+Handle))}]{success }\item[{failure\+:(\char`\"{}Use \mbox{\hyperlink{interface_thing_smart_p2p_channel_a92595e56fb83a2f4bb4eaeec35d05aa0}{connect\+With\+Device\+Id\+:mode\+:timeout\+:success\+:failure\+:}} instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+create p2p channel 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em token} & p2p token \\
+\hline
+{\em trace\+Id} & trace id for link, and break a connecting session must use the trace id to specify the p2p session \\
+\hline
+{\em mode} & connect mode \\
+\hline
+{\em success} & connect success callback, and parameter is the p2p session handle \\
+\hline
+{\em failure} & connect failure callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+trace id, if param {\ttfamily trace\+Id} is nil, there well create one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_ae3934e3382b728d6c4f7ca26745e69e6}\label{interface_thing_smart_p2p_channel_ae3934e3382b728d6c4f7ca26745e69e6}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!connectWithDeviceId:token:traceId:mode:success:failure:@{connectWithDeviceId:token:traceId:mode:success:failure:}}
+\index{connectWithDeviceId:token:traceId:mode:success:failure:@{connectWithDeviceId:token:traceId:mode:success:failure:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{connectWithDeviceId:token:traceId:mode:success:failure:}{connectWithDeviceId:token:traceId:mode:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) connect\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{token\+:(NSString $\ast$)}]{token }\item[{trace\+Id\+:(NSString $\ast$)}]{trace\+Id }\item[{mode\+:(Thing\+Smart\+P2p\+Connect\+Mode)}]{mode }\item[{success\+:(void($^\wedge$)(int p2p\+Handle))}]{success }\item[{failure\+:(\char`\"{}Use \mbox{\hyperlink{interface_thing_smart_p2p_channel_a92595e56fb83a2f4bb4eaeec35d05aa0}{connect\+With\+Device\+Id\+:mode\+:timeout\+:success\+:failure\+:}} instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+create p2p channel 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em token} & p2p token \\
+\hline
+{\em trace\+Id} & trace id for link, and break a connecting session must use the trace id to specify the p2p session \\
+\hline
+{\em mode} & connect mode \\
+\hline
+{\em success} & connect success callback, and parameter is the p2p session handle \\
+\hline
+{\em failure} & connect failure callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+trace id, if param {\ttfamily trace\+Id} is nil, there well create one 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a261dd2776a05bec5c2f05a57e3265a69}\label{interface_thing_smart_p2p_channel_a261dd2776a05bec5c2f05a57e3265a69}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!connectWithDevId:mode:timeout:success:failure:@{connectWithDevId:mode:timeout:success:failure:}}
+\index{connectWithDevId:mode:timeout:success:failure:@{connectWithDevId:mode:timeout:success:failure:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{connectWithDevId:mode:timeout:success:failure:}{connectWithDevId:mode:timeout:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) connect\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{mode\+:(Thing\+Smart\+P2p\+Connect\+Mode)}]{mode }\item[{timeout\+:(NSInteger)}]{timeout }\item[{success\+:(void($^\wedge$)(int p2p\+Handle))}]{success }\item[{failure\+:(void($^\wedge$)(NSInteger err\+Code))}]{failure }\end{DoxyParamCaption}}
+
+create p2p channel new -- optimize error code 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em mode} & connect mode \\
+\hline
+{\em timeout} & timeout, set 0 will use default value, Lan Mode\+: 3000 ms, Internet Mode\+: 15000 ms \\
+\hline
+{\em success} & success callback, and parameter is the p2p session handle \\
+\hline
+{\em failure} & failure callback, Note\+: err\+Code -\/3 split info more error codes,eg\+:-\/33，-\/38，-\/39, -\/40 and so on. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+trace id, break connecting must use trace id to specify p2p session 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a261dd2776a05bec5c2f05a57e3265a69}\label{interface_thing_smart_p2p_channel_a261dd2776a05bec5c2f05a57e3265a69}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!connectWithDevId:mode:timeout:success:failure:@{connectWithDevId:mode:timeout:success:failure:}}
+\index{connectWithDevId:mode:timeout:success:failure:@{connectWithDevId:mode:timeout:success:failure:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{connectWithDevId:mode:timeout:success:failure:}{connectWithDevId:mode:timeout:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) connect\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{mode\+:(Thing\+Smart\+P2p\+Connect\+Mode)}]{mode }\item[{timeout\+:(NSInteger)}]{timeout }\item[{success\+:(void($^\wedge$)(int p2p\+Handle))}]{success }\item[{failure\+:(void($^\wedge$)(NSInteger err\+Code))}]{failure }\end{DoxyParamCaption}}
+
+create p2p channel new -- optimize error code 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+{\em mode} & connect mode \\
+\hline
+{\em timeout} & timeout, set 0 will use default value, Lan Mode\+: 3000 ms, Internet Mode\+: 15000 ms \\
+\hline
+{\em success} & success callback, and parameter is the p2p session handle \\
+\hline
+{\em failure} & failure callback, Note\+: err\+Code -\/3 split info more error codes,eg\+:-\/33，-\/38，-\/39, -\/40 and so on. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+trace id, break connecting must use trace id to specify p2p session 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a1cc5d4e94caf00eee0b33890123d8035}\label{interface_thing_smart_p2p_channel_a1cc5d4e94caf00eee0b33890123d8035}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!deInitP2PSDK@{deInitP2PSDK}}
+\index{deInitP2PSDK@{deInitP2PSDK}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{deInitP2PSDK}{deInitP2PSDK}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) de\+Init\+P2\+PSDK \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+de\+Init P2P SDK, only call when logout 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a1cc5d4e94caf00eee0b33890123d8035}\label{interface_thing_smart_p2p_channel_a1cc5d4e94caf00eee0b33890123d8035}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!deInitP2PSDK@{deInitP2PSDK}}
+\index{deInitP2PSDK@{deInitP2PSDK}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{deInitP2PSDK}{deInitP2PSDK}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) de\+Init\+P2\+PSDK \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+de\+Init P2P SDK, only call when logout 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a91337cb5cb3452bab60c345d4f64020a}\label{interface_thing_smart_p2p_channel_a91337cb5cb3452bab60c345d4f64020a}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!deInitSDK@{deInitSDK}}
+\index{deInitSDK@{deInitSDK}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{deInitSDK}{deInitSDK}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) de\+Init\+SDK \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+reset configs, remove msg observing 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a91337cb5cb3452bab60c345d4f64020a}\label{interface_thing_smart_p2p_channel_a91337cb5cb3452bab60c345d4f64020a}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!deInitSDK@{deInitSDK}}
+\index{deInitSDK@{deInitSDK}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{deInitSDK}{deInitSDK}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) de\+Init\+SDK \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+reset configs, remove msg observing 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a26ffcd3353f8efd9cd82b9f7e8fd45f8}\label{interface_thing_smart_p2p_channel_a26ffcd3353f8efd9cd82b9f7e8fd45f8}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!disconnectWithP2pHandle:@{disconnectWithP2pHandle:}}
+\index{disconnectWithP2pHandle:@{disconnectWithP2pHandle:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{disconnectWithP2pHandle:}{disconnectWithP2pHandle:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) disconnect\+With\+P2p\+Handle\+: \begin{DoxyParamCaption}\item[{(int)}]{handle }\end{DoxyParamCaption}}
+
+disconnect p2p 
+\begin{DoxyParams}{Parameters}
+{\em handle} & p2p session handle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a26ffcd3353f8efd9cd82b9f7e8fd45f8}\label{interface_thing_smart_p2p_channel_a26ffcd3353f8efd9cd82b9f7e8fd45f8}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!disconnectWithP2pHandle:@{disconnectWithP2pHandle:}}
+\index{disconnectWithP2pHandle:@{disconnectWithP2pHandle:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{disconnectWithP2pHandle:}{disconnectWithP2pHandle:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) disconnect\+With\+P2p\+Handle\+: \begin{DoxyParamCaption}\item[{(int)}]{handle }\end{DoxyParamCaption}}
+
+disconnect p2p 
+\begin{DoxyParams}{Parameters}
+{\em handle} & p2p session handle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a87fcaab8a206ca81faf0d9bf6e62ad59}\label{interface_thing_smart_p2p_channel_a87fcaab8a206ca81faf0d9bf6e62ad59}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!initP2PSDKWithUid:@{initP2PSDKWithUid:}}
+\index{initP2PSDKWithUid:@{initP2PSDKWithUid:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{initP2PSDKWithUid:}{initP2PSDKWithUid:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) init\+P2\+PSDKWith\+Uid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uid }\end{DoxyParamCaption}}
+
+
+
+init P2P SDK, only call when login 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a87fcaab8a206ca81faf0d9bf6e62ad59}\label{interface_thing_smart_p2p_channel_a87fcaab8a206ca81faf0d9bf6e62ad59}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!initP2PSDKWithUid:@{initP2PSDKWithUid:}}
+\index{initP2PSDKWithUid:@{initP2PSDKWithUid:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{initP2PSDKWithUid:}{initP2PSDKWithUid:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) init\+P2\+PSDKWith\+Uid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uid }\end{DoxyParamCaption}}
+
+
+
+init P2P SDK, only call when login 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a1df3da3d217e9115a45171daf4f7839b}\label{interface_thing_smart_p2p_channel_a1df3da3d217e9115a45171daf4f7839b}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!initSDKWithUid:@{initSDKWithUid:}}
+\index{initSDKWithUid:@{initSDKWithUid:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{initSDKWithUid:}{initSDKWithUid:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) init\+SDKWith\+Uid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uid }\end{DoxyParamCaption}}
+
+
+
+init configs, add msg observing 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a1df3da3d217e9115a45171daf4f7839b}\label{interface_thing_smart_p2p_channel_a1df3da3d217e9115a45171daf4f7839b}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!initSDKWithUid:@{initSDKWithUid:}}
+\index{initSDKWithUid:@{initSDKWithUid:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{initSDKWithUid:}{initSDKWithUid:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) init\+SDKWith\+Uid\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uid }\end{DoxyParamCaption}}
+
+
+
+init configs, add msg observing 
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a92b9f8eccf7dffc1db7e5642a75a617f}\label{interface_thing_smart_p2p_channel_a92b9f8eccf7dffc1db7e5642a75a617f}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!isP2pActive:@{isP2pActive:}}
+\index{isP2pActive:@{isP2pActive:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{isP2pActive:}{isP2pActive:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+P2p\+Active\+: \begin{DoxyParamCaption}\item[{(\char`\"{}Use \mbox{\hyperlink{interface_thing_smart_p2p_channel_a2f7b525873a5d836d8894d6e0661d2b7}{active\+Check\+With\+Handle\+:}} instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+check the p2p session active or not 
+\begin{DoxyParams}{Parameters}
+{\em p2p\+Handle} & p2p session handle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a92b9f8eccf7dffc1db7e5642a75a617f}\label{interface_thing_smart_p2p_channel_a92b9f8eccf7dffc1db7e5642a75a617f}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!isP2pActive:@{isP2pActive:}}
+\index{isP2pActive:@{isP2pActive:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{isP2pActive:}{isP2pActive:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+P2p\+Active\+: \begin{DoxyParamCaption}\item[{(\char`\"{}Use \mbox{\hyperlink{interface_thing_smart_p2p_channel_a2f7b525873a5d836d8894d6e0661d2b7}{active\+Check\+With\+Handle\+:}} instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+check the p2p session active or not 
+\begin{DoxyParams}{Parameters}
+{\em p2p\+Handle} & p2p session handle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a254927eb74a07edfd7a304caec1b1263}\label{interface_thing_smart_p2p_channel_a254927eb74a07edfd7a304caec1b1263}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!onDeviceOnline:@{onDeviceOnline:}}
+\index{onDeviceOnline:@{onDeviceOnline:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{onDeviceOnline:}{onDeviceOnline:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) on\+Device\+Online\+: \begin{DoxyParamCaption}\item[{(\char`\"{}Use \mbox{\hyperlink{interface_thing_smart_p2p_channel_ab0c2ddc5ae863f701620ec1e40df6a8e}{resend\+Offer\+:}} instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+notify p2p SDK the device is online, for the low-\/power device 
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a254927eb74a07edfd7a304caec1b1263}\label{interface_thing_smart_p2p_channel_a254927eb74a07edfd7a304caec1b1263}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!onDeviceOnline:@{onDeviceOnline:}}
+\index{onDeviceOnline:@{onDeviceOnline:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{onDeviceOnline:}{onDeviceOnline:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) on\+Device\+Online\+: \begin{DoxyParamCaption}\item[{(\char`\"{}Use \mbox{\hyperlink{interface_thing_smart_p2p_channel_ab0c2ddc5ae863f701620ec1e40df6a8e}{resend\+Offer\+:}} instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}}
+
+notify p2p SDK the device is online, for the low-\/power device 
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_aa9ec5cdab563c9d8841a887c1d0bbd77}\label{interface_thing_smart_p2p_channel_aa9ec5cdab563c9d8841a887c1d0bbd77}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!readDataWithP2pHandle:channel:buffer:@{readDataWithP2pHandle:channel:buffer:}}
+\index{readDataWithP2pHandle:channel:buffer:@{readDataWithP2pHandle:channel:buffer:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{readDataWithP2pHandle:channel:buffer:}{readDataWithP2pHandle:channel:buffer:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) read\+Data\+With\+P2p\+Handle\+: \begin{DoxyParamCaption}\item[{(int)}]{handle }\item[{channel\+:(int)}]{channel }\item[{buffer\+:(unsigned char $\ast$)}]{buffer }\end{DoxyParamCaption}}
+
+read data from p2p channel 
+\begin{DoxyParams}{Parameters}
+{\em handle} & p2p session handle \\
+\hline
+{\em channel} & p2p channel \\
+\hline
+{\em buffer} & buffer ponter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of read data. if -\/0, means error. -\/3 is timeout, and others means session did disconnected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_aa9ec5cdab563c9d8841a887c1d0bbd77}\label{interface_thing_smart_p2p_channel_aa9ec5cdab563c9d8841a887c1d0bbd77}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!readDataWithP2pHandle:channel:buffer:@{readDataWithP2pHandle:channel:buffer:}}
+\index{readDataWithP2pHandle:channel:buffer:@{readDataWithP2pHandle:channel:buffer:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{readDataWithP2pHandle:channel:buffer:}{readDataWithP2pHandle:channel:buffer:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) read\+Data\+With\+P2p\+Handle\+: \begin{DoxyParamCaption}\item[{(int)}]{handle }\item[{channel\+:(int)}]{channel }\item[{buffer\+:(unsigned char $\ast$)}]{buffer }\end{DoxyParamCaption}}
+
+read data from p2p channel 
+\begin{DoxyParams}{Parameters}
+{\em handle} & p2p session handle \\
+\hline
+{\em channel} & p2p channel \\
+\hline
+{\em buffer} & buffer ponter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of read data. if -\/0, means error. -\/3 is timeout, and others means session did disconnected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a8aa9bc92246bb141694649e9b5a01e67}\label{interface_thing_smart_p2p_channel_a8aa9bc92246bb141694649e9b5a01e67}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!readDataWithP2pHandle:channel:buffer:timeout:@{readDataWithP2pHandle:channel:buffer:timeout:}}
+\index{readDataWithP2pHandle:channel:buffer:timeout:@{readDataWithP2pHandle:channel:buffer:timeout:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{readDataWithP2pHandle:channel:buffer:timeout:}{readDataWithP2pHandle:channel:buffer:timeout:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) read\+Data\+With\+P2p\+Handle\+: \begin{DoxyParamCaption}\item[{(int)}]{handle }\item[{channel\+:(int)}]{channel }\item[{buffer\+:(unsigned char $\ast$)}]{buffer }\item[{timeout\+:(int)}]{timeout }\end{DoxyParamCaption}}
+
+read data from p2p channel 
+\begin{DoxyParams}{Parameters}
+{\em handle} & p2p session handle \\
+\hline
+{\em channel} & p2p channel \\
+\hline
+{\em buffer} & buffer ponter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of read data. if -\/0, means error. -\/3 is timeout, and others means session did disconnected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a8aa9bc92246bb141694649e9b5a01e67}\label{interface_thing_smart_p2p_channel_a8aa9bc92246bb141694649e9b5a01e67}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!readDataWithP2pHandle:channel:buffer:timeout:@{readDataWithP2pHandle:channel:buffer:timeout:}}
+\index{readDataWithP2pHandle:channel:buffer:timeout:@{readDataWithP2pHandle:channel:buffer:timeout:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{readDataWithP2pHandle:channel:buffer:timeout:}{readDataWithP2pHandle:channel:buffer:timeout:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) read\+Data\+With\+P2p\+Handle\+: \begin{DoxyParamCaption}\item[{(int)}]{handle }\item[{channel\+:(int)}]{channel }\item[{buffer\+:(unsigned char $\ast$)}]{buffer }\item[{timeout\+:(int)}]{timeout }\end{DoxyParamCaption}}
+
+read data from p2p channel 
+\begin{DoxyParams}{Parameters}
+{\em handle} & p2p session handle \\
+\hline
+{\em channel} & p2p channel \\
+\hline
+{\em buffer} & buffer ponter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of read data. if -\/0, means error. -\/3 is timeout, and others means session did disconnected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_ab0c2ddc5ae863f701620ec1e40df6a8e}\label{interface_thing_smart_p2p_channel_ab0c2ddc5ae863f701620ec1e40df6a8e}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!resendOffer:@{resendOffer:}}
+\index{resendOffer:@{resendOffer:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{resendOffer:}{resendOffer:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) resend\+Offer\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\end{DoxyParamCaption}}
+
+resend p2p connect offer 
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_ab0c2ddc5ae863f701620ec1e40df6a8e}\label{interface_thing_smart_p2p_channel_ab0c2ddc5ae863f701620ec1e40df6a8e}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!resendOffer:@{resendOffer:}}
+\index{resendOffer:@{resendOffer:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{resendOffer:}{resendOffer:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) resend\+Offer\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{device\+Id }\end{DoxyParamCaption}}
+
+resend p2p connect offer 
+\begin{DoxyParams}{Parameters}
+{\em device\+Id} & device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a5cae26d949ff1633741a7ee6f28aa7f7}\label{interface_thing_smart_p2p_channel_a5cae26d949ff1633741a7ee6f28aa7f7}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!sendDataWithP2pHandle:channel:buffer:length:@{sendDataWithP2pHandle:channel:buffer:length:}}
+\index{sendDataWithP2pHandle:channel:buffer:length:@{sendDataWithP2pHandle:channel:buffer:length:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{sendDataWithP2pHandle:channel:buffer:length:}{sendDataWithP2pHandle:channel:buffer:length:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) send\+Data\+With\+P2p\+Handle\+: \begin{DoxyParamCaption}\item[{(int)}]{handle }\item[{channel\+:(int)}]{channel }\item[{buffer\+:(unsigned char $\ast$)}]{buffer }\item[{length\+:(int)}]{len }\end{DoxyParamCaption}}
+
+send data by p2p channel 
+\begin{DoxyParams}{Parameters}
+{\em handle} & p2p session handle \\
+\hline
+{\em channel} & p2p channel \\
+\hline
+{\em buffer} & buffer pointer \\
+\hline
+{\em len} & length of buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of send data successfull. if -\/0, means error. -\/3 is timeout, and others means session did disconnected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a5cae26d949ff1633741a7ee6f28aa7f7}\label{interface_thing_smart_p2p_channel_a5cae26d949ff1633741a7ee6f28aa7f7}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!sendDataWithP2pHandle:channel:buffer:length:@{sendDataWithP2pHandle:channel:buffer:length:}}
+\index{sendDataWithP2pHandle:channel:buffer:length:@{sendDataWithP2pHandle:channel:buffer:length:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{sendDataWithP2pHandle:channel:buffer:length:}{sendDataWithP2pHandle:channel:buffer:length:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) send\+Data\+With\+P2p\+Handle\+: \begin{DoxyParamCaption}\item[{(int)}]{handle }\item[{channel\+:(int)}]{channel }\item[{buffer\+:(unsigned char $\ast$)}]{buffer }\item[{length\+:(int)}]{len }\end{DoxyParamCaption}}
+
+send data by p2p channel 
+\begin{DoxyParams}{Parameters}
+{\em handle} & p2p session handle \\
+\hline
+{\em channel} & p2p channel \\
+\hline
+{\em buffer} & buffer pointer \\
+\hline
+{\em len} & length of buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of send data successfull. if -\/0, means error. -\/3 is timeout, and others means session did disconnected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_abb99f35aa6c4a852d24a7f0944cd0c7d}\label{interface_thing_smart_p2p_channel_abb99f35aa6c4a852d24a7f0944cd0c7d}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!sendDataWithP2pHandle:channel:buffer:length:timeout:@{sendDataWithP2pHandle:channel:buffer:length:timeout:}}
+\index{sendDataWithP2pHandle:channel:buffer:length:timeout:@{sendDataWithP2pHandle:channel:buffer:length:timeout:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{sendDataWithP2pHandle:channel:buffer:length:timeout:}{sendDataWithP2pHandle:channel:buffer:length:timeout:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) send\+Data\+With\+P2p\+Handle\+: \begin{DoxyParamCaption}\item[{(int)}]{handle }\item[{channel\+:(int)}]{channel }\item[{buffer\+:(unsigned char $\ast$)}]{buffer }\item[{length\+:(int)}]{len }\item[{timeout\+:(int)}]{timeout }\end{DoxyParamCaption}}
+
+send data by p2p channel 
+\begin{DoxyParams}{Parameters}
+{\em handle} & p2p session handle \\
+\hline
+{\em channel} & p2p channel \\
+\hline
+{\em buffer} & buffer pointer \\
+\hline
+{\em len} & length of buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of send data successfull. if -\/0, means error. -\/3 is timeout, and others means session did disconnected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_abb99f35aa6c4a852d24a7f0944cd0c7d}\label{interface_thing_smart_p2p_channel_abb99f35aa6c4a852d24a7f0944cd0c7d}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!sendDataWithP2pHandle:channel:buffer:length:timeout:@{sendDataWithP2pHandle:channel:buffer:length:timeout:}}
+\index{sendDataWithP2pHandle:channel:buffer:length:timeout:@{sendDataWithP2pHandle:channel:buffer:length:timeout:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{sendDataWithP2pHandle:channel:buffer:length:timeout:}{sendDataWithP2pHandle:channel:buffer:length:timeout:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) send\+Data\+With\+P2p\+Handle\+: \begin{DoxyParamCaption}\item[{(int)}]{handle }\item[{channel\+:(int)}]{channel }\item[{buffer\+:(unsigned char $\ast$)}]{buffer }\item[{length\+:(int)}]{len }\item[{timeout\+:(int)}]{timeout }\end{DoxyParamCaption}}
+
+send data by p2p channel 
+\begin{DoxyParams}{Parameters}
+{\em handle} & p2p session handle \\
+\hline
+{\em channel} & p2p channel \\
+\hline
+{\em buffer} & buffer pointer \\
+\hline
+{\em len} & length of buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the length of send data successfull. if -\/0, means error. -\/3 is timeout, and others means session did disconnected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_afd8b4e47ea213070ad8d0593becda412}\label{interface_thing_smart_p2p_channel_afd8b4e47ea213070ad8d0593becda412}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!sharedInstance@{sharedInstance}}
+\index{sharedInstance@{sharedInstance}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{sharedInstance}{sharedInstance}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily + (instancetype) shared\+Instance \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_afd8b4e47ea213070ad8d0593becda412}\label{interface_thing_smart_p2p_channel_afd8b4e47ea213070ad8d0593becda412}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!sharedInstance@{sharedInstance}}
+\index{sharedInstance@{sharedInstance}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{sharedInstance}{sharedInstance}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (instancetype) shared\+Instance \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a250282eb62edb195e995ce6d1ecde269}\label{interface_thing_smart_p2p_channel_a250282eb62edb195e995ce6d1ecde269}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!startPreConnectWithDeviceId:@{startPreConnectWithDeviceId:}}
+\index{startPreConnectWithDeviceId:@{startPreConnectWithDeviceId:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{startPreConnectWithDeviceId:}{startPreConnectWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (int) start\+Pre\+Connect\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+return\+Value \texorpdfstring{$>$}{>}= 0 , success 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a250282eb62edb195e995ce6d1ecde269}\label{interface_thing_smart_p2p_channel_a250282eb62edb195e995ce6d1ecde269}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!startPreConnectWithDeviceId:@{startPreConnectWithDeviceId:}}
+\index{startPreConnectWithDeviceId:@{startPreConnectWithDeviceId:}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{startPreConnectWithDeviceId:}{startPreConnectWithDeviceId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (int) start\+Pre\+Connect\+With\+Device\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}}
+
+return\+Value \texorpdfstring{$>$}{>}= 0 , success 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & device id \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_aada8adc2c35b2883d77aed195e6c34a3}\label{interface_thing_smart_p2p_channel_aada8adc2c35b2883d77aed195e6c34a3}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!p2pVersion@{p2pVersion}}
+\index{p2pVersion@{p2pVersion}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{p2pVersion}{p2pVersion}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) p2p\+Version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_p2p_channel_kit_8framework_2_headers_2_thing_smart_p2p_channel_8h_source_l00024}{24}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_p2p_channel_kit_8framework_2_headers_2_thing_smart_p2p_channel_8h_source}{Thing\+Smart\+P2p\+Channel.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a101292ff1f05cddc71edc6a3ed43f983}\label{interface_thing_smart_p2p_channel_a101292ff1f05cddc71edc6a3ed43f983}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!readDataTimeOut@{readDataTimeOut}}
+\index{readDataTimeOut@{readDataTimeOut}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{readDataTimeOut}{readDataTimeOut}}
+{\footnotesize\ttfamily -\/ (NSInteger) read\+Data\+Time\+Out\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_p2p_channel_kit_8framework_2_headers_2_thing_smart_p2p_channel_8h_source_l00021}{21}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_p2p_channel_kit_8framework_2_headers_2_thing_smart_p2p_channel_8h_source}{Thing\+Smart\+P2p\+Channel.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_p2p_channel_a7182b64b4d9ef65b958f74296769ba93}\label{interface_thing_smart_p2p_channel_a7182b64b4d9ef65b958f74296769ba93}} 
+\index{ThingSmartP2pChannel@{ThingSmartP2pChannel}!sendDataTimeOut@{sendDataTimeOut}}
+\index{sendDataTimeOut@{sendDataTimeOut}!ThingSmartP2pChannel@{ThingSmartP2pChannel}}
+\doxysubsubsection{\texorpdfstring{sendDataTimeOut}{sendDataTimeOut}}
+{\footnotesize\ttfamily -\/ (NSInteger) send\+Data\+Time\+Out\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_p2p_channel_kit_8framework_2_headers_2_thing_smart_p2p_channel_8h_source_l00022}{22}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_p2p_channel_kit_8framework_2_headers_2_thing_smart_p2p_channel_8h_source}{Thing\+Smart\+P2p\+Channel.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+P2p\+Channel\+Kit/\+Build/\+Thing\+Smart\+P2p\+Channel\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+P2p\+Channel\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_p2p_channel_kit_8framework_2_headers_2_thing_smart_p2p_channel_8h}{Thing\+Smart\+P2p\+Channel.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+P2p\+Channel\+Kit/\+Build/\+Thing\+Smart\+P2p\+Channel\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+P2p\+Channel\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_p2p_channel_kit_8framework_2_headers_2_thing_smart_p2p_channel_8h}{Thing\+Smart\+P2p\+Channel.\+h}}\end{DoxyCompactItemize}

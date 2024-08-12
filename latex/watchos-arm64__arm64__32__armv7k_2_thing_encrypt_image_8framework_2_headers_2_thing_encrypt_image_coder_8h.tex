@@ -1,0 +1,362 @@
+\hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Encrypt\+Image.framework/\+Headers/\+Thing\+Encrypt\+Image\+Coder.h File Reference}
+\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingEncryptImage/Build/ThingEncryptImage.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingEncryptImage.framework/Headers/ThingEncryptImageCoder.h@{/Users/humtong/Downloads/Pods\_副本/ThingEncryptImage/Build/ThingEncryptImage.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingEncryptImage.framework/Headers/ThingEncryptImageCoder.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import \char`\"{}Thing\+Encrypt\+Web\+Image\+Compat.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Encrypt\+Image\+Define.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{interface_thing_encrypt_image_frame}{Thing\+Encrypt\+Image\+Frame}}
+\item 
+class \mbox{\hyperlink{interface_thing_encrypt_image_decoder}{Thing\+Encrypt\+Image\+Decoder}}
+\item 
+class \mbox{\hyperlink{interface_thing_encrypt_image_encoder}{Thing\+Encrypt\+Image\+Encoder}}
+\item 
+category \mbox{\hyperlink{category_u_i_image_07_thing_image_coder_08}{UIImage(\+Thing\+Image\+Coder)}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN typedef \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_af99de39b43dd01cf945d462311747799}{NS\+\_\+\+ENUM}} (NSUInteger, Thing\+Image\+Dispose\+Method)
+\item 
+typedef \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a07918fcb1dc98c8f4ec1e21baaf91be7}{NS\+\_\+\+ENUM}} (NSUInteger, Thing\+Image\+Blend\+Operation)
+\item 
+CG\+\_\+\+EXTERN Thing\+Encrypt\+Image\+Type \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_aa6505c0e141635ed5ca816af900a9fcb}{Thing\+Image\+Detect\+Type}} (CFData\+Ref data)
+\begin{DoxyCompactList}\small\item\em Detect a data\textquotesingle{}s image type by reading the data\textquotesingle{}s header 16 bytes (very fast). \end{DoxyCompactList}\item 
+CG\+\_\+\+EXTERN CFString\+Ref \+\_\+\+Nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a19340bc2318bfb9f6afd3c9b3a635efe}{Thing\+Image\+Type\+To\+UTType}} (Thing\+Encrypt\+Image\+Type type)
+\begin{DoxyCompactList}\small\item\em Convert Thing\+Encrypt\+Image\+Type to UTI (such as k\+UTType\+JPEG). \end{DoxyCompactList}\item 
+CG\+\_\+\+EXTERN Thing\+Encrypt\+Image\+Type \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a1057172708f13c03883cc613ea7608b6}{Thing\+Image\+Type\+From\+UTType}} (CFString\+Ref uti)
+\begin{DoxyCompactList}\small\item\em Convert UTI (such as k\+UTType\+JPEG) to Thing\+Encrypt\+Image\+Type. \end{DoxyCompactList}\item 
+CG\+\_\+\+EXTERN NSString $\ast$\+\_\+\+Nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a132b7d4b4c58ef05836a442a6fe94213}{Thing\+Image\+Type\+Get\+Extension}} (Thing\+Encrypt\+Image\+Type type)
+\begin{DoxyCompactList}\small\item\em Get image type\textquotesingle{}s file extension (such as "{}jpg"{}). \end{DoxyCompactList}\item 
+CG\+\_\+\+EXTERN CGColor\+Space\+Ref \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a97a42cc70f517f99fb4633c2875233a9}{Thing\+CGColor\+Space\+Get\+Device\+RGB}} ()
+\begin{DoxyCompactList}\small\item\em Returns the shared Device\+RGB color space. \end{DoxyCompactList}\item 
+CG\+\_\+\+EXTERN CGColor\+Space\+Ref \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a08356fa25996ca40473940a284e4ab2b}{Thing\+CGColor\+Space\+Get\+Device\+Gray}} ()
+\begin{DoxyCompactList}\small\item\em Returns the shared Device\+Gray color space. \end{DoxyCompactList}\item 
+CG\+\_\+\+EXTERN BOOL \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a657fa0055e9f382d49c3f95fe079b28a}{Thing\+CGColor\+Space\+Is\+Device\+RGB}} (CGColor\+Space\+Ref space)
+\begin{DoxyCompactList}\small\item\em Returns whether a color space is Device\+RGB. \end{DoxyCompactList}\item 
+CG\+\_\+\+EXTERN BOOL \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_af9bd11b85e2905950018cd675152772b}{Thing\+CGColor\+Space\+Is\+Device\+Gray}} (CGColor\+Space\+Ref space)
+\begin{DoxyCompactList}\small\item\em Returns whether a color space is Device\+Gray. \end{DoxyCompactList}\item 
+CG\+\_\+\+EXTERN UIImage\+Orientation \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a18cb2160185a383bcd77c3f5eb0839f6}{Thing\+UIImage\+Orientation\+From\+EXIFValue}} (NSInteger value)
+\begin{DoxyCompactList}\small\item\em Convert EXIF orientation value to UIImage\+Orientation. \end{DoxyCompactList}\item 
+CG\+\_\+\+EXTERN NSInteger \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_ae1760617a6b58f731439fb5c3c0dfbfe}{Thing\+UIImage\+Orientation\+To\+EXIFValue}} (UIImage\+Orientation orientation)
+\begin{DoxyCompactList}\small\item\em Convert UIImage\+Orientation to EXIF orientation value. \end{DoxyCompactList}\item 
+CG\+\_\+\+EXTERN CGImage\+Ref \+\_\+\+Nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a2b35bd63fafc9b039dd3be36079fc171}{Thing\+CGImage\+Create\+Decoded\+Copy}} (CGImage\+Ref image\+Ref, BOOL decode\+For\+Display)
+\item 
+CG\+\_\+\+EXTERN CGImage\+Ref \+\_\+\+Nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a40cd311d0dc29ca2422bb546abed95c3}{Thing\+CGImage\+Create\+Copy\+With\+Orientation}} (CGImage\+Ref image\+Ref, UIImage\+Orientation orientation, CGBitmap\+Info dest\+Bitmap\+Info)
+\item 
+CG\+\_\+\+EXTERN CGImage\+Ref \+\_\+\+Nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_ae4370f164e95445c90795256337cbf03}{Thing\+CGImage\+Create\+Affine\+Transform\+Copy}} (CGImage\+Ref image\+Ref, CGAffine\+Transform transform, CGSize dest\+Size, CGBitmap\+Info dest\+Bitmap\+Info)
+\item 
+CG\+\_\+\+EXTERN CFData\+Ref \+\_\+\+Nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_adba2f7e25dc818cd506b5f54fe2712ae}{Thing\+CGImage\+Create\+Encoded\+Data}} (CGImage\+Ref image\+Ref, Thing\+Encrypt\+Image\+Type type, CGFloat quality)
+\item 
+CG\+\_\+\+EXTERN BOOL \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a61da17b2bd600c0f8eb3f8e4bec2ae35}{Thing\+Image\+Web\+PAvailable}} (void)
+\item 
+CG\+\_\+\+EXTERN NSUInteger \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a6a515c0113c2d876fa4d53158223db97}{Thing\+Image\+Get\+Web\+PFrame\+Count}} (CFData\+Ref webp\+Data)
+\item 
+CG\+\_\+\+EXTERN CGImage\+Ref \+\_\+\+Nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a8cb76a25501e4b2475c3d7c2aa1bc194}{Thing\+CGImage\+Create\+With\+Web\+PData}} (CFData\+Ref webp\+Data, BOOL decode\+For\+Display, BOOL use\+Threads, BOOL bypass\+Filtering, BOOL no\+Fancy\+Upsampling)
+\item 
+typedef \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a2048e0bbeb04d674efa7adc09074ac2d}{NS\+\_\+\+ENUM}} (NSUInteger, Thing\+Image\+Preset)
+\item 
+CG\+\_\+\+EXTERN CFData\+Ref \+\_\+\+Nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a6ce3aee2a33b3803b53c4dfdc16a4e92}{Thing\+CGImage\+Create\+Encoded\+Web\+PData}} (CGImage\+Ref image\+Ref, BOOL lossless, CGFloat quality, int compress\+Level, Thing\+Image\+Preset preset)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a07918fcb1dc98c8f4ec1e21baaf91be7}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a07918fcb1dc98c8f4ec1e21baaf91be7}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{Thing\+Image\+Blend\+Operation}]{ }\end{DoxyParamCaption})}
+
+Blend operation specifies how transparent pixels of the current frame are blended with those of the previous canvas. All color components of the frame, including alpha, overwrite the current contents of the frame\textquotesingle{}s canvas region.
+
+The frame should be composited onto the output buffer based on its alpha.
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_source_l00043}{43}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_source}{Thing\+Encrypt\+Image\+Coder.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_af99de39b43dd01cf945d462311747799}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_af99de39b43dd01cf945d462311747799}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{Thing\+Image\+Dispose\+Method}]{ }\end{DoxyParamCaption})}
+
+Dispose method specifies how the area used by the current frame is to be treated before rendering the next frame on the canvas. No disposal is done on this frame before rendering the next; the contents of the canvas are left as is.
+
+The frame\textquotesingle{}s region of the canvas is to be cleared to fully transparent black before rendering the next frame.
+
+The frame\textquotesingle{}s region of the canvas is to be reverted to the previous contents before rendering the next frame.
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_source_l00018}{18}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_source}{Thing\+Encrypt\+Image\+Coder.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a2048e0bbeb04d674efa7adc09074ac2d}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a2048e0bbeb04d674efa7adc09074ac2d}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{Thing\+Image\+Preset}]{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} default preset.
+
+\texorpdfstring{$<$}{<} digital picture, like portrait, inner shot
+
+\texorpdfstring{$<$}{<} outdoor photograph, with natural lighting
+
+\texorpdfstring{$<$}{<} hand or line drawing, with high-\/contrast details
+
+\texorpdfstring{$<$}{<} small-\/sized colorful images
+
+\texorpdfstring{$<$}{<} text-\/like
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_source_l00446}{446}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_source}{Thing\+Encrypt\+Image\+Coder.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a08356fa25996ca40473940a284e4ab2b}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a08356fa25996ca40473940a284e4ab2b}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingCGColorSpaceGetDeviceGray@{ThingCGColorSpaceGetDeviceGray}}
+\index{ThingCGColorSpaceGetDeviceGray@{ThingCGColorSpaceGetDeviceGray}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingCGColorSpaceGetDeviceGray()}{ThingCGColorSpaceGetDeviceGray()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN CGColor\+Space\+Ref Thing\+CGColor\+Space\+Get\+Device\+Gray (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the shared Device\+Gray color space. 
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a97a42cc70f517f99fb4633c2875233a9}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a97a42cc70f517f99fb4633c2875233a9}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingCGColorSpaceGetDeviceRGB@{ThingCGColorSpaceGetDeviceRGB}}
+\index{ThingCGColorSpaceGetDeviceRGB@{ThingCGColorSpaceGetDeviceRGB}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingCGColorSpaceGetDeviceRGB()}{ThingCGColorSpaceGetDeviceRGB()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN CGColor\+Space\+Ref Thing\+CGColor\+Space\+Get\+Device\+RGB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the shared Device\+RGB color space. 
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_af9bd11b85e2905950018cd675152772b}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_af9bd11b85e2905950018cd675152772b}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingCGColorSpaceIsDeviceGray@{ThingCGColorSpaceIsDeviceGray}}
+\index{ThingCGColorSpaceIsDeviceGray@{ThingCGColorSpaceIsDeviceGray}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingCGColorSpaceIsDeviceGray()}{ThingCGColorSpaceIsDeviceGray()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN BOOL Thing\+CGColor\+Space\+Is\+Device\+Gray (\begin{DoxyParamCaption}\item[{CGColor\+Space\+Ref}]{space }\end{DoxyParamCaption})}
+
+
+
+Returns whether a color space is Device\+Gray. 
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a657fa0055e9f382d49c3f95fe079b28a}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a657fa0055e9f382d49c3f95fe079b28a}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingCGColorSpaceIsDeviceRGB@{ThingCGColorSpaceIsDeviceRGB}}
+\index{ThingCGColorSpaceIsDeviceRGB@{ThingCGColorSpaceIsDeviceRGB}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingCGColorSpaceIsDeviceRGB()}{ThingCGColorSpaceIsDeviceRGB()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN BOOL Thing\+CGColor\+Space\+Is\+Device\+RGB (\begin{DoxyParamCaption}\item[{CGColor\+Space\+Ref}]{space }\end{DoxyParamCaption})}
+
+
+
+Returns whether a color space is Device\+RGB. 
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_ae4370f164e95445c90795256337cbf03}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_ae4370f164e95445c90795256337cbf03}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingCGImageCreateAffineTransformCopy@{ThingCGImageCreateAffineTransformCopy}}
+\index{ThingCGImageCreateAffineTransformCopy@{ThingCGImageCreateAffineTransformCopy}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingCGImageCreateAffineTransformCopy()}{ThingCGImageCreateAffineTransformCopy()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN CGImage\+Ref \+\_\+\+Nullable Thing\+CGImage\+Create\+Affine\+Transform\+Copy (\begin{DoxyParamCaption}\item[{CGImage\+Ref}]{image\+Ref,  }\item[{CGAffine\+Transform}]{transform,  }\item[{CGSize}]{dest\+Size,  }\item[{CGBitmap\+Info}]{dest\+Bitmap\+Info }\end{DoxyParamCaption})}
+
+Create an image copy with CGAffine\+Transform.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Ref} & Source image. \\
+\hline
+{\em transform} & Transform applied to image (left-\/bottom based coordinate system). \\
+\hline
+{\em dest\+Size} & Destination image size \\
+\hline
+{\em dest\+Bitmap\+Info} & Destimation image bitmap, only support 32bit format (such as ARGB8888). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new image, or NULL if an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a40cd311d0dc29ca2422bb546abed95c3}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a40cd311d0dc29ca2422bb546abed95c3}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingCGImageCreateCopyWithOrientation@{ThingCGImageCreateCopyWithOrientation}}
+\index{ThingCGImageCreateCopyWithOrientation@{ThingCGImageCreateCopyWithOrientation}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingCGImageCreateCopyWithOrientation()}{ThingCGImageCreateCopyWithOrientation()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN CGImage\+Ref \+\_\+\+Nullable Thing\+CGImage\+Create\+Copy\+With\+Orientation (\begin{DoxyParamCaption}\item[{CGImage\+Ref}]{image\+Ref,  }\item[{UIImage\+Orientation}]{orientation,  }\item[{CGBitmap\+Info}]{dest\+Bitmap\+Info }\end{DoxyParamCaption})}
+
+Create an image copy with an orientation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Ref} & Source image \\
+\hline
+{\em orientation} & Image orientation which will applied to the image. \\
+\hline
+{\em dest\+Bitmap\+Info} & Destimation image bitmap, only support 32bit format (such as ARGB8888). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new image, or NULL if an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a2b35bd63fafc9b039dd3be36079fc171}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a2b35bd63fafc9b039dd3be36079fc171}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingCGImageCreateDecodedCopy@{ThingCGImageCreateDecodedCopy}}
+\index{ThingCGImageCreateDecodedCopy@{ThingCGImageCreateDecodedCopy}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingCGImageCreateDecodedCopy()}{ThingCGImageCreateDecodedCopy()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN CGImage\+Ref \+\_\+\+Nullable Thing\+CGImage\+Create\+Decoded\+Copy (\begin{DoxyParamCaption}\item[{CGImage\+Ref}]{image\+Ref,  }\item[{BOOL}]{decode\+For\+Display }\end{DoxyParamCaption})}
+
+Create a decoded image.
+
+@discussion If the source image is created from a compressed image data (such as PNG or JPEG), you can use this method to decode the image. After decoded, you can access the decoded bytes with CGImage\+Get\+Data\+Provider() and CGData\+Provider\+Copy\+Data() without additional decode process. If the image has already decoded, this method just copy the decoded bytes to the new image.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Ref} & The source image. \\
+\hline
+{\em decode\+For\+Display} & If YES, this method will decode the image and convert it to BGRA8888 (premultiplied) or BGRX8888 format for CALayer display.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A decoded image, or NULL if an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_adba2f7e25dc818cd506b5f54fe2712ae}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_adba2f7e25dc818cd506b5f54fe2712ae}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingCGImageCreateEncodedData@{ThingCGImageCreateEncodedData}}
+\index{ThingCGImageCreateEncodedData@{ThingCGImageCreateEncodedData}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingCGImageCreateEncodedData()}{ThingCGImageCreateEncodedData()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN CFData\+Ref \+\_\+\+Nullable Thing\+CGImage\+Create\+Encoded\+Data (\begin{DoxyParamCaption}\item[{CGImage\+Ref}]{image\+Ref,  }\item[{Thing\+Encrypt\+Image\+Type}]{type,  }\item[{CGFloat}]{quality }\end{DoxyParamCaption})}
+
+Encode an image to data with CGImage\+Destination.
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Ref} & The image. \\
+\hline
+{\em type} & The image destination data type. \\
+\hline
+{\em quality} & The quality (0.\+0$\sim$1.0) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new image data, or nil if an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a6ce3aee2a33b3803b53c4dfdc16a4e92}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a6ce3aee2a33b3803b53c4dfdc16a4e92}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingCGImageCreateEncodedWebPData@{ThingCGImageCreateEncodedWebPData}}
+\index{ThingCGImageCreateEncodedWebPData@{ThingCGImageCreateEncodedWebPData}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingCGImageCreateEncodedWebPData()}{ThingCGImageCreateEncodedWebPData()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN CFData\+Ref \+\_\+\+Nullable Thing\+CGImage\+Create\+Encoded\+Web\+PData (\begin{DoxyParamCaption}\item[{CGImage\+Ref}]{image\+Ref,  }\item[{BOOL}]{lossless,  }\item[{CGFloat}]{quality,  }\item[{int}]{compress\+Level,  }\item[{Thing\+Image\+Preset}]{preset }\end{DoxyParamCaption})}
+
+Encode a CGImage to WebP data
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Ref} & image \\
+\hline
+{\em lossless} & YES=lossless (similar to PNG), NO=lossy (similar to JPEG) \\
+\hline
+{\em quality} & 0.\+0$\sim$1.0 (0=smallest file, 1.\+0=biggest file) For lossless image, try the value near 1.\+0; for lossy, try the value near 0.\+8. \\
+\hline
+{\em compress\+Level} & 0$\sim$6 (0=fast, 6=slower-\/better). Default is 4. \\
+\hline
+{\em preset} & Preset for different image type, default is Thing\+Image\+Preset\+Default. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+WebP data, or nil if an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a8cb76a25501e4b2475c3d7c2aa1bc194}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a8cb76a25501e4b2475c3d7c2aa1bc194}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingCGImageCreateWithWebPData@{ThingCGImageCreateWithWebPData}}
+\index{ThingCGImageCreateWithWebPData@{ThingCGImageCreateWithWebPData}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingCGImageCreateWithWebPData()}{ThingCGImageCreateWithWebPData()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN CGImage\+Ref \+\_\+\+Nullable Thing\+CGImage\+Create\+With\+Web\+PData (\begin{DoxyParamCaption}\item[{CFData\+Ref}]{webp\+Data,  }\item[{BOOL}]{decode\+For\+Display,  }\item[{BOOL}]{use\+Threads,  }\item[{BOOL}]{bypass\+Filtering,  }\item[{BOOL}]{no\+Fancy\+Upsampling }\end{DoxyParamCaption})}
+
+Decode an image from WebP data, returns NULL if an error occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em webp\+Data} & The WebP data. \\
+\hline
+{\em decode\+For\+Display} & If YES, this method will decode the image and convert it to BGRA8888 (premultiplied) format for CALayer display. \\
+\hline
+{\em use\+Threads} & YES to enable multi-\/thread decode. (speed up, but cost more CPU) \\
+\hline
+{\em bypass\+Filtering} & YES to skip the in-\/loop filtering. (speed up, but may lose some smooth) \\
+\hline
+{\em no\+Fancy\+Upsampling} & YES to use faster pointwise upsampler. (speed down, and may lose some details). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The decoded image, or NULL if an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_aa6505c0e141635ed5ca816af900a9fcb}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_aa6505c0e141635ed5ca816af900a9fcb}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingImageDetectType@{ThingImageDetectType}}
+\index{ThingImageDetectType@{ThingImageDetectType}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingImageDetectType()}{ThingImageDetectType()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN Thing\+Encrypt\+Image\+Type Thing\+Image\+Detect\+Type (\begin{DoxyParamCaption}\item[{CFData\+Ref}]{data }\end{DoxyParamCaption})}
+
+
+
+Detect a data\textquotesingle{}s image type by reading the data\textquotesingle{}s header 16 bytes (very fast). 
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a6a515c0113c2d876fa4d53158223db97}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a6a515c0113c2d876fa4d53158223db97}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingImageGetWebPFrameCount@{ThingImageGetWebPFrameCount}}
+\index{ThingImageGetWebPFrameCount@{ThingImageGetWebPFrameCount}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingImageGetWebPFrameCount()}{ThingImageGetWebPFrameCount()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN NSUInteger Thing\+Image\+Get\+Web\+PFrame\+Count (\begin{DoxyParamCaption}\item[{CFData\+Ref}]{webp\+Data }\end{DoxyParamCaption})}
+
+Get a webp image frame count;
+
+
+\begin{DoxyParams}{Parameters}
+{\em webp\+Data} & WebP data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Image frame count, or 0 if an error occurs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a1057172708f13c03883cc613ea7608b6}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a1057172708f13c03883cc613ea7608b6}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingImageTypeFromUTType@{ThingImageTypeFromUTType}}
+\index{ThingImageTypeFromUTType@{ThingImageTypeFromUTType}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingImageTypeFromUTType()}{ThingImageTypeFromUTType()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN Thing\+Encrypt\+Image\+Type Thing\+Image\+Type\+From\+UTType (\begin{DoxyParamCaption}\item[{CFString\+Ref}]{uti }\end{DoxyParamCaption})}
+
+
+
+Convert UTI (such as k\+UTType\+JPEG) to Thing\+Encrypt\+Image\+Type. 
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a132b7d4b4c58ef05836a442a6fe94213}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a132b7d4b4c58ef05836a442a6fe94213}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingImageTypeGetExtension@{ThingImageTypeGetExtension}}
+\index{ThingImageTypeGetExtension@{ThingImageTypeGetExtension}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingImageTypeGetExtension()}{ThingImageTypeGetExtension()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN NSString $\ast$\+\_\+\+Nullable Thing\+Image\+Type\+Get\+Extension (\begin{DoxyParamCaption}\item[{Thing\+Encrypt\+Image\+Type}]{type }\end{DoxyParamCaption})}
+
+
+
+Get image type\textquotesingle{}s file extension (such as "{}jpg"{}). 
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a19340bc2318bfb9f6afd3c9b3a635efe}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a19340bc2318bfb9f6afd3c9b3a635efe}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingImageTypeToUTType@{ThingImageTypeToUTType}}
+\index{ThingImageTypeToUTType@{ThingImageTypeToUTType}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingImageTypeToUTType()}{ThingImageTypeToUTType()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN CFString\+Ref \+\_\+\+Nullable Thing\+Image\+Type\+To\+UTType (\begin{DoxyParamCaption}\item[{Thing\+Encrypt\+Image\+Type}]{type }\end{DoxyParamCaption})}
+
+
+
+Convert Thing\+Encrypt\+Image\+Type to UTI (such as k\+UTType\+JPEG). 
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a61da17b2bd600c0f8eb3f8e4bec2ae35}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a61da17b2bd600c0f8eb3f8e4bec2ae35}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingImageWebPAvailable@{ThingImageWebPAvailable}}
+\index{ThingImageWebPAvailable@{ThingImageWebPAvailable}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingImageWebPAvailable()}{ThingImageWebPAvailable()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN BOOL Thing\+Image\+Web\+PAvailable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Whether WebP is available in Thing\+Image. \mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a18cb2160185a383bcd77c3f5eb0839f6}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_a18cb2160185a383bcd77c3f5eb0839f6}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingUIImageOrientationFromEXIFValue@{ThingUIImageOrientationFromEXIFValue}}
+\index{ThingUIImageOrientationFromEXIFValue@{ThingUIImageOrientationFromEXIFValue}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingUIImageOrientationFromEXIFValue()}{ThingUIImageOrientationFromEXIFValue()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN UIImage\+Orientation Thing\+UIImage\+Orientation\+From\+EXIFValue (\begin{DoxyParamCaption}\item[{NSInteger}]{value }\end{DoxyParamCaption})}
+
+
+
+Convert EXIF orientation value to UIImage\+Orientation. 
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_ae1760617a6b58f731439fb5c3c0dfbfe}\label{watchos-arm64__arm64__32__armv7k_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_coder_8h_ae1760617a6b58f731439fb5c3c0dfbfe}} 
+\index{ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}!ThingUIImageOrientationToEXIFValue@{ThingUIImageOrientationToEXIFValue}}
+\index{ThingUIImageOrientationToEXIFValue@{ThingUIImageOrientationToEXIFValue}!ThingEncryptImageCoder.h@{ThingEncryptImageCoder.h}}
+\doxysubsubsection{\texorpdfstring{ThingUIImageOrientationToEXIFValue()}{ThingUIImageOrientationToEXIFValue()}}
+{\footnotesize\ttfamily CG\+\_\+\+EXTERN NSInteger Thing\+UIImage\+Orientation\+To\+EXIFValue (\begin{DoxyParamCaption}\item[{UIImage\+Orientation}]{orientation }\end{DoxyParamCaption})}
+
+
+
+Convert UIImage\+Orientation to EXIF orientation value. 
+

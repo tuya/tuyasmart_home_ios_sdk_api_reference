@@ -1,0 +1,115 @@
+\hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source}{}\doxysection{Thing\+Assert.\+h}
+\label{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingFoundationKit/ThingFoundationKit.xcframework/ios-\/arm64/ThingFoundationKit.framework/Headers/ThingAssert.h@{/Users/humtong/Downloads/Pods\_副本/ThingFoundationKit/ThingFoundationKit.xcframework/ios-\/arm64/ThingFoundationKit.framework/Headers/ThingAssert.h}}
+\mbox{\hyperlink{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00002}00002 \textcolor{comment}{//  ThingAssert.h}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00003}00003 \textcolor{comment}{//  Pods}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00005}00005 \textcolor{comment}{//  Created by 尼奥 on 2020/8/13.}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00008}00008 \textcolor{preprocessor}{\#ifndef ThingAssert\_h}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00009}00009 \textcolor{preprocessor}{\#define ThingAssert\_h}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00011}00011 \textcolor{preprocessor}{\#ifdef \_\_OPTIMIZE\_\_}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00013}00013 \textcolor{comment}{/* relese */}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00015}00015 \textcolor{preprocessor}{\#define ThingAssertCond(\_\_cond)             do \{\} while (0)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00016}00016 \textcolor{preprocessor}{\#define ThingAssertCondDesc(\_\_cond, \_\_desc) do \{\} while (0)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00017}00017 \textcolor{preprocessor}{\#define ThingAssertCondDescs(\_\_cond, \_\_desc, ...) do \{\} while (0)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00019}00019 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00021}00021 \textcolor{comment}{/* debug */}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00023}00023 \textcolor{preprocessor}{\#include <assert.h>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00024}00024 \textcolor{preprocessor}{\#include <stdbool.h>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00025}00025 \textcolor{preprocessor}{\#include <sys/types.h>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00026}00026 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00027}00027 \textcolor{preprocessor}{\#include <sys/sysctl.h>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00029}00029 \textcolor{comment}{// 检查是否处于被 Xcode 调试中}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00030}00030 \textcolor{comment}{// 参考 https://developer.apple.com/library/archive/qa/qa1361/\_index.html}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00031}00031 \textcolor{keyword}{static} \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} AmIBeingDebugged(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00032}00032     \textcolor{comment}{// Returns true if the current process is being debugged (either}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00033}00033     \textcolor{comment}{// running under the debugger or has a debugger attached post facto).}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00034}00034 \{}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00035}00035     \textcolor{keywordtype}{int}                 junk;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00036}00036     \textcolor{keywordtype}{int}                 mib[4];}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00037}00037     \textcolor{keyword}{struct }kinfo\_proc   info;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00038}00038     \textcolor{keywordtype}{size\_t}              size;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00040}00040     \textcolor{comment}{// Initialize the flags so that, if sysctl fails for some bizarre}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00041}00041     \textcolor{comment}{// reason, we get a predictable result.}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00043}00043     info.kp\_proc.p\_flag = 0;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00045}00045     \textcolor{comment}{// Initialize mib, which tells sysctl the info we want, in this case}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00046}00046     \textcolor{comment}{// we're looking for information about a specific process ID.}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00048}00048     mib[0] = CTL\_KERN;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00049}00049     mib[1] = KERN\_PROC;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00050}00050     mib[2] = KERN\_PROC\_PID;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00051}00051     mib[3] = getpid();}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00053}00053     \textcolor{comment}{// Call sysctl.}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00055}00055     size = \textcolor{keyword}{sizeof}(info);}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00056}00056     junk = sysctl(mib, \textcolor{keyword}{sizeof}(mib) / \textcolor{keyword}{sizeof}(*mib), \&info, \&size, NULL, 0);}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00057}00057     assert(junk == 0);}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00059}00059     \textcolor{comment}{// We're being debugged if the P\_TRACED flag is set.}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00061}00061     \textcolor{keywordflow}{return} ( (info.kp\_proc.p\_flag \& P\_TRACED) != 0 );}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00062}00062 \}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00064}00064 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00065}00065 \textcolor{comment}{ 替换系统断言宏，当遇到断言时会在 Xcode 触发一次命中断点，可以方便的保留调用栈的上下文}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00066}00066 \textcolor{comment}{ 相关背景信息可以查看 https://registry.code.thing-\/inc.top/thingIOS/ThingFoundationKit/issues/1}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00067}00067 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00069}00069 \textcolor{comment}{/* break */}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00070}00070 \textcolor{preprocessor}{\#if TARGET\_IPHONE\_SIMULATOR \&\& XCODE\_VERSION\_MAJOR > 1200}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00071}00071 \textcolor{preprocessor}{    \#define Thing\_ASSERT\_BREAK\_POINT asm("{}int3"{}});}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00072}00072 \textcolor{preprocessor}{\#elif TARGET\_OS\_IPHONE}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00074}00074 \textcolor{preprocessor}{    \#define Thing\_ASSERT\_BREAK\_POINT \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00075}00075 \textcolor{preprocessor}{        do \{ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00076}00076 \textcolor{preprocessor}{            if(AmIBeingDebugged()) \{ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00077}00077 \textcolor{preprocessor}{                raise(SIGINT); \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00078}00078 \textcolor{preprocessor}{            \} \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00079}00079 \textcolor{preprocessor}{        \} while(0)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00080}00080 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00081}\mbox{\hyperlink{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_aaafac36d6851448df781f1a81890bd00}{00081}} \textcolor{preprocessor}{    \#define Thing\_ASSERT\_BREAK\_POINT do \{\} while (0)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00082}00082 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00084}00084 \textcolor{comment}{/* thing style assert */}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00085}\mbox{\hyperlink{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_af76870641b6b1d82975949aae6256070}{00085}} \textcolor{preprocessor}{\#define ThingAssertCond(\_\_cond)              ThingAssertCondDesc(\_\_cond, @"{}"{}})}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00086}\mbox{\hyperlink{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_a28b9e078b4b7525df15228f667a6a343}{00086}} \textcolor{preprocessor}{\#define ThingAssertCondDesc(\_\_cond, \_\_desc)  ThingAssertCondDescs(\_\_cond, \_\_desc)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00087}\mbox{\hyperlink{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_ac568bab35d7601cec11228415f5dae73}{00087}} \textcolor{preprocessor}{\#define ThingAssertCondDescs(\_\_cond, \_\_desc, ...)  do \{ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00088}00088 \textcolor{preprocessor}{    if (!(\_\_cond)) \{ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00089}00089 \textcolor{preprocessor}{        NSLog((@"{}trigger thing assert \%s [line:\%d]"{}} \_\_desc), \_\_PRETTY\_FUNCTION\_\_, \_\_LINE\_\_, \#\#\_\_VA\_ARGS\_\_); \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00090}00090         Thing\_ASSERT\_BREAK\_POINT; \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00091}00091     \} \(\backslash\)}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00092}00092 \} while (0)}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00095}00095 \textcolor{comment}{//\#undef NSAssert}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00096}00096 \textcolor{comment}{//\#define NSAssert(condition, desc, ...) do \{ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00097}00097 \textcolor{comment}{//    \_\_PRAGMA\_PUSH\_NO\_EXTRA\_ARG\_WARNINGS \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00098}00098 \textcolor{comment}{//    ThingAssertCondDescs(condition, desc, \#\#\_\_VA\_ARGS\_\_); \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00099}00099 \textcolor{comment}{//    \_\_PRAGMA\_POP\_NO\_EXTRA\_ARG\_WARNINGS \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00100}00100 \textcolor{comment}{//\} while(0)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00101}00101 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00103}00103 \textcolor{comment}{}\textcolor{comment}{//\#undef NSCAssert}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00104}00104 \textcolor{comment}{//\#define NSCAssert(condition, desc, ...)  do \{ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00105}00105 \textcolor{comment}{//    \_\_PRAGMA\_PUSH\_NO\_EXTRA\_ARG\_WARNINGS \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00106}00106 \textcolor{comment}{//    ThingAssertCondDescs(condition, desc, \#\#\_\_VA\_ARGS\_\_); \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00107}00107 \textcolor{comment}{//    \_\_PRAGMA\_POP\_NO\_EXTRA\_ARG\_WARNINGS \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00108}00108 \textcolor{comment}{//\} while(0)}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00110}00110 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_\_OPTIMIZE\_\_ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_thing_assert_8h_source_l00112}00112 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* ThingAssert\_h */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

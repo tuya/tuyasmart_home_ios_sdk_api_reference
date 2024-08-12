@@ -1,0 +1,36 @@
+\hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_time_zone_09_thing_time_difference_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.xcframework/ios-\/arm64/\+Thing\+Foundation\+Kit.framework/\+Headers/\+NSTime\+Zone+\+Thing\+Time\+Difference.h File Reference}
+\label{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_time_zone_09_thing_time_difference_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingFoundationKit/ThingFoundationKit.xcframework/ios-\/arm64/ThingFoundationKit.framework/Headers/NSTimeZone+ThingTimeDifference.h@{/Users/humtong/Downloads/Pods\_副本/ThingFoundationKit/ThingFoundationKit.xcframework/ios-\/arm64/ThingFoundationKit.framework/Headers/NSTimeZone+ThingTimeDifference.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+category \mbox{\hyperlink{category_n_s_time_zone_07_thing_time_difference_08}{NSTime\+Zone(\+Thing\+Time\+Difference)}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_foundation_kit_8h_a68d4dcc8dedad4782a8994950dcfb1f4}{FOUNDATION\+\_\+\+EXTERN}} NSString $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_time_zone_09_thing_time_difference_8h_a59d4478ba897691318d59393bfcf0bac}{Thing\+\_\+\+Local\+Time\+Zone\+Name}} (void)
+\item 
+\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_foundation_kit_8h_a68d4dcc8dedad4782a8994950dcfb1f4}{FOUNDATION\+\_\+\+EXTERN}} NSString $\ast$ \mbox{\hyperlink{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_time_zone_09_thing_time_difference_8h_a65f2364220ed63a9c9c716aceb764d5d}{Thing\+\_\+\+Time\+Difference\+With\+GMT}} (NSString $\ast$\+\_\+\+Nullable time\+Zone\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_time_zone_09_thing_time_difference_8h_a59d4478ba897691318d59393bfcf0bac}\label{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_time_zone_09_thing_time_difference_8h_a59d4478ba897691318d59393bfcf0bac}} 
+\index{NSTimeZone+ThingTimeDifference.h@{NSTimeZone+ThingTimeDifference.h}!Thing\_LocalTimeZoneName@{Thing\_LocalTimeZoneName}}
+\index{Thing\_LocalTimeZoneName@{Thing\_LocalTimeZoneName}!NSTimeZone+ThingTimeDifference.h@{NSTimeZone+ThingTimeDifference.h}}
+\doxysubsubsection{\texorpdfstring{Thing\_LocalTimeZoneName()}{Thing\_LocalTimeZoneName()}}
+{\footnotesize\ttfamily NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_foundation_kit_8h_a68d4dcc8dedad4782a8994950dcfb1f4}{FOUNDATION\+\_\+\+EXTERN}} NSString $\ast$ Thing\+\_\+\+Local\+Time\+Zone\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\mbox{[}NSTime\+Zone local\+Time\+Zone\mbox{]}.name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_time_zone_09_thing_time_difference_8h_a65f2364220ed63a9c9c716aceb764d5d}\label{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_time_zone_09_thing_time_difference_8h_a65f2364220ed63a9c9c716aceb764d5d}} 
+\index{NSTimeZone+ThingTimeDifference.h@{NSTimeZone+ThingTimeDifference.h}!Thing\_TimeDifferenceWithGMT@{Thing\_TimeDifferenceWithGMT}}
+\index{Thing\_TimeDifferenceWithGMT@{Thing\_TimeDifferenceWithGMT}!NSTimeZone+ThingTimeDifference.h@{NSTimeZone+ThingTimeDifference.h}}
+\doxysubsubsection{\texorpdfstring{Thing\_TimeDifferenceWithGMT()}{Thing\_TimeDifferenceWithGMT()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_foundation_kit_8h_a68d4dcc8dedad4782a8994950dcfb1f4}{FOUNDATION\+\_\+\+EXTERN}} NSString $\ast$ Thing\+\_\+\+Time\+Difference\+With\+GMT (\begin{DoxyParamCaption}\item[{NSString $\ast$\+\_\+\+Nullable}]{time\+Zone\+Name }\end{DoxyParamCaption})}
+
+if time\+Zone\+Name is nil, use local\+Time\+Zone insted \begin{DoxyReturn}{Returns}
+string like +08\+:00 
+\end{DoxyReturn}

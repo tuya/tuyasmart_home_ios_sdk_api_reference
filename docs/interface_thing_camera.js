@@ -22,6 +22,8 @@ var interface_thing_camera =
     [ "deleteAlbumFileWithAlbumName:jsonfiles:onResponse:onFinish:", "interface_thing_camera.html#a9d9fa47011184f00f871a19745486c5b", null ],
     [ "deletePlayBackDataWithDay:onResponse:onFinish:", "interface_thing_camera.html#ad4117b4a6478ca457a4b72b007e6388a", null ],
     [ "deletePlayBackDataWithDay:onResponse:onFinish:", "interface_thing_camera.html#ad4117b4a6478ca457a4b72b007e6388a", null ],
+    [ "deletePlayBackDataWithFragments:onResponse:onFinish:", "interface_thing_camera.html#a8f7acda9207dd6427923732ebd90722c", null ],
+    [ "deletePlayBackDataWithFragments:onResponse:onFinish:", "interface_thing_camera.html#a8f7acda9207dd6427923732ebd90722c", null ],
     [ "disconnect", "interface_thing_camera.html#afa232513f5e8c503e33fdf3f614d26ba", null ],
     [ "disconnect", "interface_thing_camera.html#afa232513f5e8c503e33fdf3f614d26ba", null ],
     [ "disconnectWithForced:", "interface_thing_camera.html#a090cb2a49cf02ca8e490f0ec45338c8b", null ],

@@ -1,0 +1,80 @@
+\hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source}{}\doxysection{WTLThing\+DPEngin\+Manager.\+h}
+\label{_w_t_l_thing_d_p_engin_manager_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLThingDPEnginManager.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLThingDPEnginManager.h}}
+\mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00018}00018 \textcolor{comment}{}\textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00020}00020 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00022}00022 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00024}\mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_ac261fff2134fee48b5143016fc325c1e}{00024}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_ac261fff2134fee48b5143016fc325c1e}{CHIPDeviceDPReportCallback}})(NSString *scopedNodeId, NSDictionary *dps);}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00026}\mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_acac6dde01327130c179f1be4cfa0ff1c}{00026}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_acac6dde01327130c179f1be4cfa0ff1c}{CHIPDeviceOnlineCallback}})(NSString *scopedNodeId, BOOL online);}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00028}\mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_abeb83282ae321f244c6b826e22b6ca22}{00028}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_abeb83282ae321f244c6b826e22b6ca22}{CHIPDeviceControlStateCallback}})(NSString *scopedNodeId, BOOL state);}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00030}\mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager}{00030}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager}{WTLThingDPEnginManager}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00032}\mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_a54945d4e62dafb6d2e326fbd8b2c86e1}{00032}} \textcolor{keyword}{@property} (nonatomic, strong) NSString *\mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_a54945d4e62dafb6d2e326fbd8b2c86e1}{dpEnginVersion}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00034}00034 + (instancetype)\mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_ab8eee05bf55be72c22d5a311588a831d}{sharedInstance}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00036}00036 \textcolor{comment}{//matter转换引擎初始化}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00037}00037 -\/ (int)setUpThingMatterEngine:(uint64\_t)compressFabricId;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00039}00039 \textcolor{comment}{//获取matter转换引擎版本}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00040}00040 -\/ (NSString *)\mbox{\hyperlink{interface_w_t_l_thing_d_p_engin_manager_aa9432174c45abef2742bcaef9a4badc1}{getThingMatterEngineVersion}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00042}00042 \textcolor{comment}{//在dp引擎内创建一个转换文件节点}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00050}00050 \textcolor{comment}{}-\/ (int)setProductEngineJson:(NSString *)path fileKey:(NSString *)filekey;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00053}00053 \textcolor{comment}{//dp数据使用matter接口下发}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00054}00054 -\/ (void)sendThingDps:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00055}00055               nodeId:(uint64\_t)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00056}00056                  dps:(\mbox{\hyperlink{interface_n_s_array}{NSArray<NSDictionary *>}} *)dps}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00057}00057              fileKey:(NSString *)filekey}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00058}00058              success:(\textcolor{keywordtype}{void}(\string^)(void))success}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00059}00059              \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a40010724599157eec59d4bd3a738f2c2}{failure}}:(void(\string^)(NSError *\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))\mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a40010724599157eec59d4bd3a738f2c2}{failure}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00062}00062 -\/ (void)registerMatterDPReportcb:(\mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_ac261fff2134fee48b5143016fc325c1e}{CHIPDeviceDPReportCallback}})dpReportCallback;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00064}00064 -\/ (void)registerMatterDPStatecb:(\mbox{\hyperlink{_w_t_l_thing_d_p_engin_manager_8h_abeb83282ae321f244c6b826e22b6ca22}{CHIPDeviceControlStateCallback}})dpStateCallback;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00066}00066 \textcolor{comment}{//订阅matter子设备状态上报}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00067}00067 -\/ (void)subscribeMatterAttribute:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00068}00068                           nodeId:(uint64\_t)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00069}00069                          fileKey:(NSString *)filekey}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00070}00070                          success:(void(\string^)(void))success}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00071}00071                          \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a40010724599157eec59d4bd3a738f2c2}{failure}}:(void(\string^)(NSError *\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))\mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a40010724599157eec59d4bd3a738f2c2}{failure}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00073}00073 \textcolor{comment}{//设备在线状态查询}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00074}00074 -\/ (void)getOnlineStatus:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00075}00075                  nodeId:(uint64\_t)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00076}00076                interval:(uint64\_t)interval;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00078}00078 \textcolor{comment}{//设备dp状态查询}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00079}00079 -\/ (void)queryDpsDps:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00080}00080              nodeId:(uint64\_t)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00081}00081                 dps:(\mbox{\hyperlink{interface_n_s_array}{NSArray}} *)dps}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00082}00082             fileKey:(NSString *)filekey}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00083}00083             success:(\textcolor{keywordtype}{void}(\string^)(void))success}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00084}00084             \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a40010724599157eec59d4bd3a738f2c2}{failure}}:(void(\string^)(NSError *\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))\mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a40010724599157eec59d4bd3a738f2c2}{failure}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00086}00086 \textcolor{comment}{//查询设备所有dps}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00087}00087 -\/ (void)queryAllDps:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00088}00088              nodeId:(uint64\_t)deviceID}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00089}00089             fileKey:(NSString *)filekey}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00090}00090             success:(void(\string^)(void))success}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00091}00091             \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a40010724599157eec59d4bd3a738f2c2}{failure}}:(void(\string^)(NSError *\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))\mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h_a40010724599157eec59d4bd3a738f2c2}{failure}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00093}00093 \textcolor{comment}{//将Tlv data 转换成 json}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00094}00094 + (nullable NSString *)TlvBytesToJson:(NSData *)tlvByteData;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00096}00096 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_thing_d_p_engin_manager_8h_source_l00098}00098 NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

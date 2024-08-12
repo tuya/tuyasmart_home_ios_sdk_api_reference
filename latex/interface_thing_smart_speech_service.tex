@@ -1,0 +1,212 @@
+\hypertarget{interface_thing_smart_speech_service}{}\doxysection{Thing\+Smart\+Speech\+Service Class Reference}
+\label{interface_thing_smart_speech_service}\index{ThingSmartSpeechService@{ThingSmartSpeechService}}
+
+
+\mbox{\hyperlink{interface_thing_smart_speech_service}{Thing\+Smart\+Speech\+Service}} is used for voice control.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Speech\+Service.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Speech\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.647059cm]{interface_thing_smart_speech_service}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_speech_service_a0f133eb714ab142514ca1b472977160c}{convert\+To\+Text\+With\+Audio\+Data\+:audio\+Rate\+:audio\+Type\+:home\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_speech_service_aa5f19b4b18073036e9a7fdb73852821e}{execute\+Command\+With\+Speech\+Text\+:home\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_speech_service_a0f133eb714ab142514ca1b472977160c}{convert\+To\+Text\+With\+Audio\+Data\+:audio\+Rate\+:audio\+Type\+:home\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_speech_service_aa5f19b4b18073036e9a7fdb73852821e}{execute\+Command\+With\+Speech\+Text\+:home\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_speech_service_a0f133eb714ab142514ca1b472977160c}{convert\+To\+Text\+With\+Audio\+Data\+:audio\+Rate\+:audio\+Type\+:home\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_speech_service_aa5f19b4b18073036e9a7fdb73852821e}{execute\+Command\+With\+Speech\+Text\+:home\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_speech_service_a0f133eb714ab142514ca1b472977160c}{convert\+To\+Text\+With\+Audio\+Data\+:audio\+Rate\+:audio\+Type\+:home\+Id\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_thing_smart_speech_service_aa5f19b4b18073036e9a7fdb73852821e}{execute\+Command\+With\+Speech\+Text\+:home\+Id\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interface_thing_smart_speech_service}{Thing\+Smart\+Speech\+Service}} is used for voice control. 
+
+There\textquotesingle{}s two main functions\+:
+\begin{DoxyEnumerate}
+\item Audio to text. Convert voice data into text strings.
+\item Execute text command. Device related commands can be done through this API. 
+\end{DoxyEnumerate}
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_speech_service_8h_source_l00021}{21}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_speech_service_8h_source}{Thing\+Smart\+Speech\+Service.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_speech_service_a0f133eb714ab142514ca1b472977160c}\label{interface_thing_smart_speech_service_a0f133eb714ab142514ca1b472977160c}} 
+\index{ThingSmartSpeechService@{ThingSmartSpeechService}!convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:@{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}}
+\index{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:@{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}!ThingSmartSpeechService@{ThingSmartSpeechService}}
+\doxysubsubsection{\texorpdfstring{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) convert\+To\+Text\+With\+Audio\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{audio\+Data }\item[{audio\+Rate\+:(NSString $\ast$)}]{audio\+Rate }\item[{audio\+Type\+:(NSString $\ast$)}]{audio\+Type }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a1ee38442763f6622af80e13543e19bf8}{Thing\+Success\+String}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Converts from audio to text. 
+\begin{DoxyParams}{Parameters}
+{\em audio\+Data} & The audio data. \\
+\hline
+{\em audio\+Rate} & The audio rate. \\
+\hline
+{\em audio\+Type} & The audio type. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_speech_service_a0f133eb714ab142514ca1b472977160c}\label{interface_thing_smart_speech_service_a0f133eb714ab142514ca1b472977160c}} 
+\index{ThingSmartSpeechService@{ThingSmartSpeechService}!convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:@{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}}
+\index{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:@{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}!ThingSmartSpeechService@{ThingSmartSpeechService}}
+\doxysubsubsection{\texorpdfstring{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) convert\+To\+Text\+With\+Audio\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{audio\+Data }\item[{audio\+Rate\+:(NSString $\ast$)}]{audio\+Rate }\item[{audio\+Type\+:(NSString $\ast$)}]{audio\+Type }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a1ee38442763f6622af80e13543e19bf8}{Thing\+Success\+String}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Converts from audio to text. 
+\begin{DoxyParams}{Parameters}
+{\em audio\+Data} & The audio data. \\
+\hline
+{\em audio\+Rate} & The audio rate. \\
+\hline
+{\em audio\+Type} & The audio type. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_speech_service_a0f133eb714ab142514ca1b472977160c}\label{interface_thing_smart_speech_service_a0f133eb714ab142514ca1b472977160c}} 
+\index{ThingSmartSpeechService@{ThingSmartSpeechService}!convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:@{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}}
+\index{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:@{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}!ThingSmartSpeechService@{ThingSmartSpeechService}}
+\doxysubsubsection{\texorpdfstring{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) convert\+To\+Text\+With\+Audio\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{audio\+Data }\item[{audio\+Rate\+:(NSString $\ast$)}]{audio\+Rate }\item[{audio\+Type\+:(NSString $\ast$)}]{audio\+Type }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a1ee38442763f6622af80e13543e19bf8}{Thing\+Success\+String}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Converts from audio to text. 
+\begin{DoxyParams}{Parameters}
+{\em audio\+Data} & The audio data. \\
+\hline
+{\em audio\+Rate} & The audio rate. \\
+\hline
+{\em audio\+Type} & The audio type. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_speech_service_a0f133eb714ab142514ca1b472977160c}\label{interface_thing_smart_speech_service_a0f133eb714ab142514ca1b472977160c}} 
+\index{ThingSmartSpeechService@{ThingSmartSpeechService}!convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:@{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}}
+\index{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:@{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}!ThingSmartSpeechService@{ThingSmartSpeechService}}
+\doxysubsubsection{\texorpdfstring{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}{convertToTextWithAudioData:audioRate:audioType:homeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) convert\+To\+Text\+With\+Audio\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{audio\+Data }\item[{audio\+Rate\+:(NSString $\ast$)}]{audio\+Rate }\item[{audio\+Type\+:(NSString $\ast$)}]{audio\+Type }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_a1ee38442763f6622af80e13543e19bf8}{Thing\+Success\+String}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Converts from audio to text. 
+\begin{DoxyParams}{Parameters}
+{\em audio\+Data} & The audio data. \\
+\hline
+{\em audio\+Rate} & The audio rate. \\
+\hline
+{\em audio\+Type} & The audio type. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_speech_service_aa5f19b4b18073036e9a7fdb73852821e}\label{interface_thing_smart_speech_service_aa5f19b4b18073036e9a7fdb73852821e}} 
+\index{ThingSmartSpeechService@{ThingSmartSpeechService}!executeCommandWithSpeechText:homeId:success:failure:@{executeCommandWithSpeechText:homeId:success:failure:}}
+\index{executeCommandWithSpeechText:homeId:success:failure:@{executeCommandWithSpeechText:homeId:success:failure:}!ThingSmartSpeechService@{ThingSmartSpeechService}}
+\doxysubsubsection{\texorpdfstring{executeCommandWithSpeechText:homeId:success:failure:}{executeCommandWithSpeechText:homeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily -\/ (void) execute\+Command\+With\+Speech\+Text\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{speech\+Text }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Runs audio commands. 
+\begin{DoxyParams}{Parameters}
+{\em speech\+Text} & The voice text. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_speech_service_aa5f19b4b18073036e9a7fdb73852821e}\label{interface_thing_smart_speech_service_aa5f19b4b18073036e9a7fdb73852821e}} 
+\index{ThingSmartSpeechService@{ThingSmartSpeechService}!executeCommandWithSpeechText:homeId:success:failure:@{executeCommandWithSpeechText:homeId:success:failure:}}
+\index{executeCommandWithSpeechText:homeId:success:failure:@{executeCommandWithSpeechText:homeId:success:failure:}!ThingSmartSpeechService@{ThingSmartSpeechService}}
+\doxysubsubsection{\texorpdfstring{executeCommandWithSpeechText:homeId:success:failure:}{executeCommandWithSpeechText:homeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily -\/ (void) execute\+Command\+With\+Speech\+Text\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{speech\+Text }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Runs audio commands. 
+\begin{DoxyParams}{Parameters}
+{\em speech\+Text} & The voice text. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_speech_service_aa5f19b4b18073036e9a7fdb73852821e}\label{interface_thing_smart_speech_service_aa5f19b4b18073036e9a7fdb73852821e}} 
+\index{ThingSmartSpeechService@{ThingSmartSpeechService}!executeCommandWithSpeechText:homeId:success:failure:@{executeCommandWithSpeechText:homeId:success:failure:}}
+\index{executeCommandWithSpeechText:homeId:success:failure:@{executeCommandWithSpeechText:homeId:success:failure:}!ThingSmartSpeechService@{ThingSmartSpeechService}}
+\doxysubsubsection{\texorpdfstring{executeCommandWithSpeechText:homeId:success:failure:}{executeCommandWithSpeechText:homeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily -\/ (void) execute\+Command\+With\+Speech\+Text\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{speech\+Text }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Runs audio commands. 
+\begin{DoxyParams}{Parameters}
+{\em speech\+Text} & The voice text. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_thing_smart_speech_service_aa5f19b4b18073036e9a7fdb73852821e}\label{interface_thing_smart_speech_service_aa5f19b4b18073036e9a7fdb73852821e}} 
+\index{ThingSmartSpeechService@{ThingSmartSpeechService}!executeCommandWithSpeechText:homeId:success:failure:@{executeCommandWithSpeechText:homeId:success:failure:}}
+\index{executeCommandWithSpeechText:homeId:success:failure:@{executeCommandWithSpeechText:homeId:success:failure:}!ThingSmartSpeechService@{ThingSmartSpeechService}}
+\doxysubsubsection{\texorpdfstring{executeCommandWithSpeechText:homeId:success:failure:}{executeCommandWithSpeechText:homeId:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily -\/ (void) execute\+Command\+With\+Speech\+Text\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{speech\+Text }\item[{home\+Id\+:(long long)}]{home\+Id }\item[{success\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Runs audio commands. 
+\begin{DoxyParams}{Parameters}
+{\em speech\+Text} & The voice text. \\
+\hline
+{\em home\+Id} & The home ID. \\
+\hline
+{\em success} & Called when the task is finished. \\
+\hline
+{\em failure} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Base\+Kit/\+Build/\+Thing\+Smart\+Base\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Base\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_speech_service_8h}{Thing\+Smart\+Speech\+Service.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Base\+Kit/\+Build/\+Thing\+Smart\+Base\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Base\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_speech_service_8h}{Thing\+Smart\+Speech\+Service.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Base\+Kit/\+Build/\+Thing\+Smart\+Base\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Base\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_speech_service_8h}{Thing\+Smart\+Speech\+Service.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Base\+Kit/\+Build/\+Thing\+Smart\+Base\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Base\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_base_kit_8framework_2_headers_2_thing_smart_speech_service_8h}{Thing\+Smart\+Speech\+Service.\+h}}\end{DoxyCompactItemize}

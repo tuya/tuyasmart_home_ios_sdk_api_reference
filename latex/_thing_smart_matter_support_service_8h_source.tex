@@ -1,0 +1,32 @@
+\hypertarget{_thing_smart_matter_support_service_8h_source}{}\doxysection{Thing\+Smart\+Matter\+Support\+Service.\+h}
+\label{_thing_smart_matter_support_service_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/ThingMatterSupport.framework/Headers/ThingSmartMatterSupportService.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/ThingMatterSupport.framework/Headers/ThingSmartMatterSupportService.h}}
+\mbox{\hyperlink{_thing_smart_matter_support_service_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00002}00002 \textcolor{comment}{//  ThingSmartMatterSupportService.h}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00003}00003 \textcolor{comment}{//  ThingMatterSupport}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00005}00005 \textcolor{comment}{//  Created by 神威 on 2022/11/3.}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00008}00008 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00010}00010 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00012}00012 \textcolor{keyword}{@class} MTRSetupPayload;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00014}\mbox{\hyperlink{_thing_smart_matter_support_service_8h_a34be0574b50cdcbff8782ff69a05687b}{00014}} \textcolor{keyword}{typedef} void(\string^\mbox{\hyperlink{_thing_smart_matter_support_service_8h_a34be0574b50cdcbff8782ff69a05687b}{ThingMatterPairCompleteBlock}})(NSError * result);}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00016}\mbox{\hyperlink{interface_thing_smart_matter_support_service}{00016}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_smart_matter_support_service}{ThingSmartMatterSupportService}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00018}00018 + (instancetype)\mbox{\hyperlink{_w_t_l_device_controller_factory_8h_ad7881a4da5a21e14cc4a3b05a73ff852}{sharedInstance}};}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00020}00020 -\/ (MTRSetupPayload *)generatePayloadWithOnboardingString:(NSString *)onboardingString;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00022}00022 -\/ (void)startMatterSupportPairWithEcoName:(NSString *)ecoName homes:(\mbox{\hyperlink{interface_n_s_array}{NSArray}} <NSString *> *)homes payloadString:(NSString *)payloadString completion:(\mbox{\hyperlink{_thing_smart_matter_support_service_8h_a34be0574b50cdcbff8782ff69a05687b}{ThingMatterPairCompleteBlock}})completion;}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00024}00024 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_thing_smart_matter_support_service_8h_source_l00026}\mbox{\hyperlink{interface_thing_smart_matter_support_service_a67d7acc8969be6aa810358482d1065db}{00026}} NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

@@ -1,0 +1,78 @@
+\hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Mach\+Register/\+Thing\+Mach\+Register.xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Mach\+Register.framework/\+Headers/\+Thing\+Mach\+Register\+Define\+Ext.h File Reference}
+\label{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingMachRegister/ThingMachRegister.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingMachRegister.framework/Headers/ThingMachRegisterDefineExt.h@{/Users/humtong/Downloads/Pods\_副本/ThingMachRegister/ThingMachRegister.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingMachRegister.framework/Headers/ThingMachRegisterDefineExt.h}}
+{\ttfamily \#import \char`\"{}Thing\+Mach\+Register\+Define.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Mach\+Register\+Manager.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_a15e2599bfd27a9729ff1cd6e22f212f1}{\+\_\+\+Thing\+Mach\+Register}}(type,  Key,  class\+Name)
+\begin{DoxyCompactList}\small\item\em 快捷注册 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_a99ae0cefdb9fc5af0f30a2d3118feebf}{\+\_\+\+Thing\+Mach\+Register\+With\+Creator}}(type,  Key,  class\+Name,  creator\+Block)
+\begin{DoxyCompactList}\small\item\em 个性化注册 \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_a1be84338f9e726b5fb13c89f19cfb356}{\+\_\+\+Thing\+Mach\+Register\+Fetch}}(type,  Key)~\mbox{[}\mbox{[}\mbox{\hyperlink{interface_thing_mach_register_manager}{Thing\+Mach\+Register\+Manager}} share\+Instance\mbox{]} generate\+With\+Type\+:@\#type key\+:@\#Key\mbox{]}
+\begin{DoxyCompactList}\small\item\em 获取注册类的实例 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_a15e2599bfd27a9729ff1cd6e22f212f1}\label{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_a15e2599bfd27a9729ff1cd6e22f212f1}} 
+\index{ThingMachRegisterDefineExt.h@{ThingMachRegisterDefineExt.h}!\_ThingMachRegister@{\_ThingMachRegister}}
+\index{\_ThingMachRegister@{\_ThingMachRegister}!ThingMachRegisterDefineExt.h@{ThingMachRegisterDefineExt.h}}
+\doxysubsubsection{\texorpdfstring{\_ThingMachRegister}{\_ThingMachRegister}}
+{\footnotesize\ttfamily \#define \+\_\+\+Thing\+Mach\+Register(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{Key,  }\item[{}]{class\+Name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_8h_ab699e7dbaceb16621d2daab020b06c04}{\_ThingMachRegisterBlock}}(type, Key, 0,\(\backslash\)}
+\DoxyCodeLine{(\string^Class \_Nullable (NSString * t, NSString * k, NSUInteger p) \{ \(\backslash\)}
+\DoxyCodeLine{return className.class;\(\backslash\)}
+\DoxyCodeLine{\}),\(\backslash\)}
+\DoxyCodeLine{(\string^\textcolor{keywordtype}{id} \_Nonnull (NSString * t, NSString * k, NSUInteger p, \textcolor{keywordtype}{id} defaultV) \{ \(\backslash\)}
+\DoxyCodeLine{return [[className alloc] init];\(\backslash\)}
+\DoxyCodeLine{\}))}
+
+\end{DoxyCode}
+
+
+快捷注册 
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_source_l00052}{52}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_source}{Thing\+Mach\+Register\+Define\+Ext.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_a1be84338f9e726b5fb13c89f19cfb356}\label{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_a1be84338f9e726b5fb13c89f19cfb356}} 
+\index{ThingMachRegisterDefineExt.h@{ThingMachRegisterDefineExt.h}!\_ThingMachRegisterFetch@{\_ThingMachRegisterFetch}}
+\index{\_ThingMachRegisterFetch@{\_ThingMachRegisterFetch}!ThingMachRegisterDefineExt.h@{ThingMachRegisterDefineExt.h}}
+\doxysubsubsection{\texorpdfstring{\_ThingMachRegisterFetch}{\_ThingMachRegisterFetch}}
+{\footnotesize\ttfamily \#define \+\_\+\+Thing\+Mach\+Register\+Fetch(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{Key }\end{DoxyParamCaption})~\mbox{[}\mbox{[}\mbox{\hyperlink{interface_thing_mach_register_manager}{Thing\+Mach\+Register\+Manager}} share\+Instance\mbox{]} generate\+With\+Type\+:@\#type key\+:@\#Key\mbox{]}}
+
+
+
+获取注册类的实例 
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_source_l00070}{70}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_source}{Thing\+Mach\+Register\+Define\+Ext.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_a99ae0cefdb9fc5af0f30a2d3118feebf}\label{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_a99ae0cefdb9fc5af0f30a2d3118feebf}} 
+\index{ThingMachRegisterDefineExt.h@{ThingMachRegisterDefineExt.h}!\_ThingMachRegisterWithCreator@{\_ThingMachRegisterWithCreator}}
+\index{\_ThingMachRegisterWithCreator@{\_ThingMachRegisterWithCreator}!ThingMachRegisterDefineExt.h@{ThingMachRegisterDefineExt.h}}
+\doxysubsubsection{\texorpdfstring{\_ThingMachRegisterWithCreator}{\_ThingMachRegisterWithCreator}}
+{\footnotesize\ttfamily \#define \+\_\+\+Thing\+Mach\+Register\+With\+Creator(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{Key,  }\item[{}]{class\+Name,  }\item[{}]{creator\+Block }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_8h_ab699e7dbaceb16621d2daab020b06c04}{\_ThingMachRegisterBlock}}(type, Key, 0,\(\backslash\)}
+\DoxyCodeLine{(\string^Class \_Nullable (NSString * t, NSString * k, NSUInteger p) \{ \(\backslash\)}
+\DoxyCodeLine{return className.class;\(\backslash\)}
+\DoxyCodeLine{\}),\(\backslash\)}
+\DoxyCodeLine{(creatorBlock))}
+
+\end{DoxyCode}
+
+
+个性化注册 
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_source_l00062}{62}} of file \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h_source}{Thing\+Mach\+Register\+Define\+Ext.\+h}}.
+

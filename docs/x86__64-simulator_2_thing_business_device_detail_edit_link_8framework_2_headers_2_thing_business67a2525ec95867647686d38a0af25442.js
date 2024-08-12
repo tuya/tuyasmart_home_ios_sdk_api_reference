@@ -1,6 +1,0 @@
-var x86__64_simulator_2_thing_business_device_detail_edit_link_8framework_2_headers_2_thing_business67a2525ec95867647686d38a0af25442 =
-[
-    [ "FOUNDATION_EXPORT", "x86__64-simulator_2_thing_business_device_detail_edit_link_8framework_2_headers_2_thing_business67a2525ec95867647686d38a0af25442.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingBusinessDeviceDetailEditLinkVersionNumber", "x86__64-simulator_2_thing_business_device_detail_edit_link_8framework_2_headers_2_thing_business67a2525ec95867647686d38a0af25442.html#a20871651a5fcfb30812f1a0a913b1929", null ],
-    [ "ThingBusinessDeviceDetailEditLinkVersionString", "x86__64-simulator_2_thing_business_device_detail_edit_link_8framework_2_headers_2_thing_business67a2525ec95867647686d38a0af25442.html#aa8c12c5eb8f9a969ea39d74d80bd4d79", null ]
-];

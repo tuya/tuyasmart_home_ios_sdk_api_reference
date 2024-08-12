@@ -1,4 +1,0 @@
-var dir_7f87d80666c17c41066d82823f1f889a =
-[
-    [ "ThingSmartDeviceSyncBizBundle-umbrella.h", "ios-x86__64-simulator_2_thing_smart_device_sync_biz_bundle_8framework_2_headers_2_thing_smart_deb859fb733f29618fc548a1bce6971825.html", "ios-x86__64-simulator_2_thing_smart_device_sync_biz_bundle_8framework_2_headers_2_thing_smart_deb859fb733f29618fc548a1bce6971825" ]
-];

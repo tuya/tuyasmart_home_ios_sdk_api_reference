@@ -1,4 +1,0 @@
-var dir_1a99a2f75fa185c83779bdfb02831e83 =
-[
-    [ "ThingMatterHomekitInterface-umbrella.h", "x86__64-simulator_2_thing_matter_homekit_interface_8framework_2_headers_2_thing_matter_homekit_interface-umbrella_8h.html", "x86__64-simulator_2_thing_matter_homekit_interface_8framework_2_headers_2_thing_matter_homekit_interface-umbrella_8h" ]
-];

@@ -1,0 +1,132 @@
+\hypertarget{interface_thing_gateway_transfer_info}{}\doxysection{Thing\+Gateway\+Transfer\+Info Class Reference}
+\label{interface_thing_gateway_transfer_info}\index{ThingGatewayTransferInfo@{ThingGatewayTransferInfo}}
+
+
+The status model of transfer.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Gateway\+Transfer\+Manager.\+h$>$}
+
+Inheritance diagram for Thing\+Gateway\+Transfer\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_gateway_transfer_info}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_gateway_transfer_info_a532d5acdf1511f0031551f1d1cb1a57e}{target\+Device\+Id}}
+\begin{DoxyCompactList}\small\item\em The device id of the faulty gateway. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_gateway_transfer_info_a2c36b3bf74470c5fb47911947d715625}{target\+Device\+Name}}
+\begin{DoxyCompactList}\small\item\em The device name of the faulty gateway. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_gateway_transfer_info_a1475af3adb9bebd2a80cd8b2bebf7eb2}{source\+Device\+Id}}
+\begin{DoxyCompactList}\small\item\em The device id of the source gateway. \end{DoxyCompactList}\item 
+Thing\+Gateway\+Transfer\+Status \mbox{\hyperlink{interface_thing_gateway_transfer_info_a580ef36ad52972e06dd55e5cdf7343d2}{status}}
+\begin{DoxyCompactList}\small\item\em The status of transfer. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_gateway_transfer_info_ab37cc680a7e320ee0216428115fc8625}{failed\+Code}}
+\begin{DoxyCompactList}\small\item\em The failed code, returned when failed. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{interface_thing_gateway_transfer_info_a90b9dda5cf9619e65c6d2d4a791021ed}{time}}
+\begin{DoxyCompactList}\small\item\em the time in millisecond when status changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The status model of transfer. 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source_l00030}{30}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source}{Thing\+Gateway\+Transfer\+Manager.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_gateway_transfer_info_ab37cc680a7e320ee0216428115fc8625}\label{interface_thing_gateway_transfer_info_ab37cc680a7e320ee0216428115fc8625}} 
+\index{ThingGatewayTransferInfo@{ThingGatewayTransferInfo}!failedCode@{failedCode}}
+\index{failedCode@{failedCode}!ThingGatewayTransferInfo@{ThingGatewayTransferInfo}}
+\doxysubsubsection{\texorpdfstring{failedCode}{failedCode}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) failed\+Code\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The failed code, returned when failed. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source_l00045}{45}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source}{Thing\+Gateway\+Transfer\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_gateway_transfer_info_a1475af3adb9bebd2a80cd8b2bebf7eb2}\label{interface_thing_gateway_transfer_info_a1475af3adb9bebd2a80cd8b2bebf7eb2}} 
+\index{ThingGatewayTransferInfo@{ThingGatewayTransferInfo}!sourceDeviceId@{sourceDeviceId}}
+\index{sourceDeviceId@{sourceDeviceId}!ThingGatewayTransferInfo@{ThingGatewayTransferInfo}}
+\doxysubsubsection{\texorpdfstring{sourceDeviceId}{sourceDeviceId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) source\+Device\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The device id of the source gateway. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source_l00039}{39}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source}{Thing\+Gateway\+Transfer\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_gateway_transfer_info_a580ef36ad52972e06dd55e5cdf7343d2}\label{interface_thing_gateway_transfer_info_a580ef36ad52972e06dd55e5cdf7343d2}} 
+\index{ThingGatewayTransferInfo@{ThingGatewayTransferInfo}!status@{status}}
+\index{status@{status}!ThingGatewayTransferInfo@{ThingGatewayTransferInfo}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily -\/ (Thing\+Gateway\+Transfer\+Status) status\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The status of transfer. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source_l00042}{42}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source}{Thing\+Gateway\+Transfer\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_gateway_transfer_info_a532d5acdf1511f0031551f1d1cb1a57e}\label{interface_thing_gateway_transfer_info_a532d5acdf1511f0031551f1d1cb1a57e}} 
+\index{ThingGatewayTransferInfo@{ThingGatewayTransferInfo}!targetDeviceId@{targetDeviceId}}
+\index{targetDeviceId@{targetDeviceId}!ThingGatewayTransferInfo@{ThingGatewayTransferInfo}}
+\doxysubsubsection{\texorpdfstring{targetDeviceId}{targetDeviceId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) target\+Device\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The device id of the faulty gateway. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source_l00033}{33}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source}{Thing\+Gateway\+Transfer\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_gateway_transfer_info_a2c36b3bf74470c5fb47911947d715625}\label{interface_thing_gateway_transfer_info_a2c36b3bf74470c5fb47911947d715625}} 
+\index{ThingGatewayTransferInfo@{ThingGatewayTransferInfo}!targetDeviceName@{targetDeviceName}}
+\index{targetDeviceName@{targetDeviceName}!ThingGatewayTransferInfo@{ThingGatewayTransferInfo}}
+\doxysubsubsection{\texorpdfstring{targetDeviceName}{targetDeviceName}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) target\+Device\+Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The device name of the faulty gateway. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source_l00036}{36}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source}{Thing\+Gateway\+Transfer\+Manager.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_gateway_transfer_info_a90b9dda5cf9619e65c6d2d4a791021ed}\label{interface_thing_gateway_transfer_info_a90b9dda5cf9619e65c6d2d4a791021ed}} 
+\index{ThingGatewayTransferInfo@{ThingGatewayTransferInfo}!time@{time}}
+\index{time@{time}!ThingGatewayTransferInfo@{ThingGatewayTransferInfo}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily -\/ (double) time\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+the time in millisecond when status changed. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source_l00048}{48}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h_source}{Thing\+Gateway\+Transfer\+Manager.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Device\+Detail\+Kit/\+Thing\+Device\+Detail\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Device\+Detail\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h}{Thing\+Gateway\+Transfer\+Manager.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Device\+Detail\+Kit/\+Thing\+Device\+Detail\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Device\+Detail\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_device_detail_kit_8framework_2_headers_2_thing_gateway_transfer_manager_8h}{Thing\+Gateway\+Transfer\+Manager.\+h}}\end{DoxyCompactItemize}

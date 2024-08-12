@@ -1,0 +1,39 @@
+\hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source}{}\doxysection{Thing\+SDKLocal\+Network\+Manager.\+h}
+\label{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-\/x86\_64-\/simulator/ThingSmartUtil.framework/Headers/ThingSDKLocalNetworkManager.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-\/x86\_64-\/simulator/ThingSmartUtil.framework/Headers/ThingSDKLocalNetworkManager.h}}
+\mbox{\hyperlink{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00002}00002 \textcolor{comment}{//  ThingSDKLocalNetworkManager.h}}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00003}00003 \textcolor{comment}{//  ThingSmartUtil}}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00005}00005 \textcolor{comment}{//  Copyright (c) 2014-\/2024 Tuya Inc. (https://developer.tuya.com)}}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00008}00008 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00010}\mbox{\hyperlink{interface_thing_s_d_k_local_network_manager_a461d5fb98c19304ecba8383f3c7e8179}{00010}} \textcolor{keyword}{typedef} \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_ab9f4557087a62ea5b16457998e802581}{NS\_ENUM}}(\textcolor{keywordtype}{int}, ThingSDKLocalNetworkStatus) \{}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00011}00011     \textcolor{comment}{// The local network is not connected (the Wi-\/Fi adapter cannot get an IP address).}}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00012}00012     kThingSDKLocalNetworkStatusNotConnected,}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00013}00013     }
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00014}00014     \textcolor{comment}{// The user has explicitly denied authorization for this application, or not yet made a choice.}}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00015}00015     kThingSDKLocalNetworkStatusNotDeterminedOrDenied,}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00016}00016     }
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00017}00017     \textcolor{comment}{// The user has granted permissions to use the local network only when your app is being used.}}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00018}00018     kThingSDKLocalNetworkStatusStatusAuthorized,}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00019}00019 \};}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00021}00021 \mbox{\hyperlink{_w_t_l_base_clusters_8h_a903263fd3efe66dcdf64d2c821de6ad4}{API\_AVAILABLE}}(ios(14.0))}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00022}00022 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_s_d_k_local_network_manager}{ThingSDKLocalNetworkManager}} : NSObject}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00024}00024 + (instancetype)\mbox{\hyperlink{interface_thing_s_d_k_local_network_manager_ac35f0ea139c66170efbcd3531f5715d4}{manager}};}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00029}00029 -\/ (NSString *)\mbox{\hyperlink{interface_thing_s_d_k_local_network_manager_a434ddb227cf1892cc8afd66ddb6e9c28}{localIPAddress}};}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00037}00037 -\/ (void)\mbox{\hyperlink{interface_thing_s_d_k_local_network_manager_aa53181b37051934bf96d108a3c4e8f00}{requestAuthorization}};}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00043}00043 -\/ (void)authorizationStatus:(\textcolor{keywordtype}{void} (\string^)(ThingSDKLocalNetworkStatus status))callback;}
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{ios-x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_s_d_k_local_network_manager_8h_source_l00045}00045 \textcolor{keyword}{@end}}
+
+\end{DoxyCode}

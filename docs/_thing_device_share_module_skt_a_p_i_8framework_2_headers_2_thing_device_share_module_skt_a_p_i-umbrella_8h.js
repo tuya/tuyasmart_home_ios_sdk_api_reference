@@ -1,6 +1,0 @@
-var _thing_device_share_module_skt_a_p_i_8framework_2_headers_2_thing_device_share_module_skt_a_p_i_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "_thing_device_share_module_skt_a_p_i_8framework_2_headers_2_thing_device_share_module_skt_a_p_i-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingDeviceShareModuleSktAPIVersionNumber", "_thing_device_share_module_skt_a_p_i_8framework_2_headers_2_thing_device_share_module_skt_a_p_i-umbrella_8h.html#a76e6725d119951e0c9f1974d688752d5", null ],
-    [ "ThingDeviceShareModuleSktAPIVersionString", "_thing_device_share_module_skt_a_p_i_8framework_2_headers_2_thing_device_share_module_skt_a_p_i-umbrella_8h.html#a9ea714417bc7ef6d4527290a43822dc2", null ]
-];

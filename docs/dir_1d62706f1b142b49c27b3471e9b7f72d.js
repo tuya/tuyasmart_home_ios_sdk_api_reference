@@ -1,5 +1,0 @@
-var dir_1d62706f1b142b49c27b3471e9b7f72d =
-[
-    [ "ios-arm64", "dir_28545c2a15d427e59e3f54161c925765.html", "dir_28545c2a15d427e59e3f54161c925765" ],
-    [ "ios-x86_64-simulator", "dir_57b64d7921fc6087b092a901fb4bc383.html", "dir_57b64d7921fc6087b092a901fb4bc383" ]
-];

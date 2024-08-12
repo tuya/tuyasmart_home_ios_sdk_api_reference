@@ -20,6 +20,8 @@ var protocol_thing_b_l_e_device_info_protocol_p =
     [ "bleMac", "protocol_thing_b_l_e_device_info_protocol-p.html#a08095f595e7066495a4b7a72b1f21472", null ],
     [ "bleProtocolV", "protocol_thing_b_l_e_device_info_protocol-p.html#a72afd4cc4d86318c0200b518027ef572", null ],
     [ "bondState", "protocol_thing_b_l_e_device_info_protocol-p.html#a810c0aa7040a9d23250fa7a1dede848b", null ],
+    [ "bootOTABeing", "protocol_thing_b_l_e_device_info_protocol-p.html#a714465dad3f4122c723d389debb2d6e9", null ],
+    [ "bootOTASupport", "protocol_thing_b_l_e_device_info_protocol-p.html#abd0dbef5cad866b5b7f7822e24f7f9fb", null ],
     [ "businessType", "protocol_thing_b_l_e_device_info_protocol-p.html#a8d36fa60d304f55cedf33c9a5cddc8df", null ],
     [ "certCheck", "protocol_thing_b_l_e_device_info_protocol-p.html#a97a7324b4da16ba67ddd6385bc8fdb86", null ],
     [ "channel_modules", "protocol_thing_b_l_e_device_info_protocol-p.html#a34e1840692560c671cd16aed8f40dd27", null ],

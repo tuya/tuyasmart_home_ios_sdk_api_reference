@@ -1,6 +1,0 @@
-var ios_arm64_2_thing_smart_activator_extra_biz_bundle_8framework_2_headers_2_thing_smart_activator_extra_biz_bundle_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "ios-arm64_2_thing_smart_activator_extra_biz_bundle_8framework_2_headers_2_thing_smart_activator_extra_biz_bundle-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingSmartActivatorExtraBizBundleVersionNumber", "ios-arm64_2_thing_smart_activator_extra_biz_bundle_8framework_2_headers_2_thing_smart_activator_extra_biz_bundle-umbrella_8h.html#a69e4747ba09b1afafd127180fb22878d", null ],
-    [ "ThingSmartActivatorExtraBizBundleVersionString", "ios-arm64_2_thing_smart_activator_extra_biz_bundle_8framework_2_headers_2_thing_smart_activator_extra_biz_bundle-umbrella_8h.html#a1a559497ead4a4379760721fac90bbee", null ]
-];

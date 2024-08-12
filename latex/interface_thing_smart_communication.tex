@@ -1,0 +1,154 @@
+\hypertarget{interface_thing_smart_communication}{}\doxysection{Thing\+Smart\+Communication Class Reference}
+\label{interface_thing_smart_communication}\index{ThingSmartCommunication@{ThingSmartCommunication}}
+
+
+The device communication.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Communication.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Communication\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.666667cm]{interface_thing_smart_communication}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_communication_mode}{Thing\+Smart\+Communication\+Mode}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{interface_thing_smart_communication_a7b141ab488830aed05a051718874b3e6}{communication\+Modes}}
+\begin{DoxyCompactList}\small\item\em The communication sequence. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_communication_a97556b926ea765e27dad0be461830661}{communication\+Node}}
+\begin{DoxyCompactList}\small\item\em The communication nodes. \end{DoxyCompactList}\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_communication_a43f2d7496493faf0cbfba51d961be3bc}{connect\+Status}}
+\begin{DoxyCompactList}\small\item\em The connection status. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_communication_ad31c08e5e93100e473562b4093fcb464}{local\+Communication\+Node}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_smart_communication_a6aaf6a1cd49b6762da7225bea5afcfcc}{local\+Node\+Id}}
+\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_communication_ae033907d816aac6bf3916675dc8627b0}{local\+Data\+Model}}
+\item 
+NSInteger \mbox{\hyperlink{interface_thing_smart_communication_ab24ff1315f6c1292ba2ad8e16fc207d2}{data\+Model}}
+\begin{DoxyCompactList}\small\item\em The data model. 1-\/DP Model , 2-\/Thing Model. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{interface_thing_smart_communication_a34c3e21b0058ff687714223da1498966}{mqtt\+Topic\+Attr}}
+\begin{DoxyCompactList}\small\item\em The mqtt topic attribute. 0-\/Default 1-\/Thing-\/\+Link. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The device communication. 
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source_l00039}{39}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source}{Thing\+Smart\+Communication.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_smart_communication_a7b141ab488830aed05a051718874b3e6}\label{interface_thing_smart_communication_a7b141ab488830aed05a051718874b3e6}} 
+\index{ThingSmartCommunication@{ThingSmartCommunication}!communicationModes@{communicationModes}}
+\index{communicationModes@{communicationModes}!ThingSmartCommunication@{ThingSmartCommunication}}
+\doxysubsubsection{\texorpdfstring{communicationModes}{communicationModes}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_communication_mode}{Thing\+Smart\+Communication\+Mode}} $\ast$ $>$ $\ast$) communication\+Modes\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The communication sequence. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source_l00042}{42}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source}{Thing\+Smart\+Communication.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_communication_a97556b926ea765e27dad0be461830661}\label{interface_thing_smart_communication_a97556b926ea765e27dad0be461830661}} 
+\index{ThingSmartCommunication@{ThingSmartCommunication}!communicationNode@{communicationNode}}
+\index{communicationNode@{communicationNode}!ThingSmartCommunication@{ThingSmartCommunication}}
+\doxysubsubsection{\texorpdfstring{communicationNode}{communicationNode}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) communication\+Node\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The communication nodes. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source_l00045}{45}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source}{Thing\+Smart\+Communication.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_communication_a43f2d7496493faf0cbfba51d961be3bc}\label{interface_thing_smart_communication_a43f2d7496493faf0cbfba51d961be3bc}} 
+\index{ThingSmartCommunication@{ThingSmartCommunication}!connectStatus@{connectStatus}}
+\index{connectStatus@{connectStatus}!ThingSmartCommunication@{ThingSmartCommunication}}
+\doxysubsubsection{\texorpdfstring{connectStatus}{connectStatus}}
+{\footnotesize\ttfamily -\/ (NSInteger) connect\+Status\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The connection status. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source_l00051}{51}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source}{Thing\+Smart\+Communication.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_communication_ab24ff1315f6c1292ba2ad8e16fc207d2}\label{interface_thing_smart_communication_ab24ff1315f6c1292ba2ad8e16fc207d2}} 
+\index{ThingSmartCommunication@{ThingSmartCommunication}!dataModel@{dataModel}}
+\index{dataModel@{dataModel}!ThingSmartCommunication@{ThingSmartCommunication}}
+\doxysubsubsection{\texorpdfstring{dataModel}{dataModel}}
+{\footnotesize\ttfamily -\/ (NSInteger) data\+Model\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The data model. 1-\/DP Model , 2-\/Thing Model. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source_l00061}{61}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source}{Thing\+Smart\+Communication.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_communication_ad31c08e5e93100e473562b4093fcb464}\label{interface_thing_smart_communication_ad31c08e5e93100e473562b4093fcb464}} 
+\index{ThingSmartCommunication@{ThingSmartCommunication}!localCommunicationNode@{localCommunicationNode}}
+\index{localCommunicationNode@{localCommunicationNode}!ThingSmartCommunication@{ThingSmartCommunication}}
+\doxysubsubsection{\texorpdfstring{localCommunicationNode}{localCommunicationNode}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) local\+Communication\+Node\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source_l00054}{54}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source}{Thing\+Smart\+Communication.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_communication_ae033907d816aac6bf3916675dc8627b0}\label{interface_thing_smart_communication_ae033907d816aac6bf3916675dc8627b0}} 
+\index{ThingSmartCommunication@{ThingSmartCommunication}!localDataModel@{localDataModel}}
+\index{localDataModel@{localDataModel}!ThingSmartCommunication@{ThingSmartCommunication}}
+\doxysubsubsection{\texorpdfstring{localDataModel}{localDataModel}}
+{\footnotesize\ttfamily -\/ (NSInteger) local\+Data\+Model\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source_l00058}{58}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source}{Thing\+Smart\+Communication.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_communication_a6aaf6a1cd49b6762da7225bea5afcfcc}\label{interface_thing_smart_communication_a6aaf6a1cd49b6762da7225bea5afcfcc}} 
+\index{ThingSmartCommunication@{ThingSmartCommunication}!localNodeId@{localNodeId}}
+\index{localNodeId@{localNodeId}!ThingSmartCommunication@{ThingSmartCommunication}}
+\doxysubsubsection{\texorpdfstring{localNodeId}{localNodeId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) local\+Node\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source_l00056}{56}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source}{Thing\+Smart\+Communication.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_smart_communication_a34c3e21b0058ff687714223da1498966}\label{interface_thing_smart_communication_a34c3e21b0058ff687714223da1498966}} 
+\index{ThingSmartCommunication@{ThingSmartCommunication}!mqttTopicAttr@{mqttTopicAttr}}
+\index{mqttTopicAttr@{mqttTopicAttr}!ThingSmartCommunication@{ThingSmartCommunication}}
+\doxysubsubsection{\texorpdfstring{mqttTopicAttr}{mqttTopicAttr}}
+{\footnotesize\ttfamily -\/ (long) mqtt\+Topic\+Attr\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The mqtt topic attribute. 0-\/Default 1-\/Thing-\/\+Link. 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source_l00064}{64}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h_source}{Thing\+Smart\+Communication.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h}{Thing\+Smart\+Communication.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h}{Thing\+Smart\+Communication.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h}{Thing\+Smart\+Communication.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_communication_8h}{Thing\+Smart\+Communication.\+h}}\end{DoxyCompactItemize}

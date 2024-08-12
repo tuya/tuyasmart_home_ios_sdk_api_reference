@@ -1,0 +1,96 @@
+\hypertarget{category_w_t_l_base_device_07_deprecated_08}{}\doxysection{WTLBase\+Device(Deprecated) Category Reference}
+\label{category_w_t_l_base_device_07_deprecated_08}\index{WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}}
+
+
+{\ttfamily \#import $<$WTLBase\+Device.\+h$>$}
+
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08_ace47de6c47a8a9d5fb42ed90742dedff}{subscribe\+With\+Queue\+:min\+Interval\+:max\+Interval\+:params\+:cache\+Container\+:attribute\+Report\+Handler\+:event\+Report\+Handler\+:error\+Handler\+:subscription\+Established\+:resubscription\+Scheduled\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08_add47ee28f67b3649ab04613f23ae9ced}{read\+Attribute\+With\+Endpoint\+Id\+:cluster\+Id\+:attribute\+Id\+:params\+:client\+Queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08_af0d5860e3a21abd39d83db0cf3aaf846}{write\+Attribute\+With\+Endpoint\+Id\+:cluster\+Id\+:attribute\+Id\+:value\+:timed\+Write\+Timeout\+:client\+Queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08_a4940c7cb5320ccd1543806fd0eb03c37}{invoke\+Command\+With\+Endpoint\+Id\+:cluster\+Id\+:command\+Id\+:command\+Fields\+:timed\+Invoke\+Timeout\+:client\+Queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08_a5609462c6b89799e701b6e8c8aaa8f92}{subscribe\+Attribute\+With\+Endpoint\+Id\+:cluster\+Id\+:attribute\+Id\+:min\+Interval\+:max\+Interval\+:params\+:client\+Queue\+:report\+Handler\+:subscription\+Established\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08_a9162bb906fdc0d12e41b72be35b0bced}{deregister\+Report\+Handlers\+With\+Client\+Queue\+:completion\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_base_device_8h_source_l00631}{631}} of file \mbox{\hyperlink{_w_t_l_base_device_8h_source}{WTLBase\+Device.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{category_w_t_l_base_device_07_deprecated_08_a9162bb906fdc0d12e41b72be35b0bced}\label{category_w_t_l_base_device_07_deprecated_08_a9162bb906fdc0d12e41b72be35b0bced}} 
+\index{WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}!deregisterReportHandlersWithClientQueue:completion:@{deregisterReportHandlersWithClientQueue:completion:}}
+\index{deregisterReportHandlersWithClientQueue:completion:@{deregisterReportHandlersWithClientQueue:completion:}!WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}}
+\doxysubsubsection{\texorpdfstring{deregisterReportHandlersWithClientQueue:completion:}{deregisterReportHandlersWithClientQueue:completion:}}
+{\footnotesize\ttfamily -\/ (void) deregister\+Report\+Handlers\+With\+Client\+Queue\+: \begin{DoxyParamCaption}\item[{(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(\char`\"{}Pease use deregister\+Report\+Handlers\+With\+Queue\+:completion\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Extends class \mbox{\hyperlink{interface_w_t_l_base_device_a9162bb906fdc0d12e41b72be35b0bced}{WTLBase\+Device}}.
+
+\mbox{\Hypertarget{category_w_t_l_base_device_07_deprecated_08_a4940c7cb5320ccd1543806fd0eb03c37}\label{category_w_t_l_base_device_07_deprecated_08_a4940c7cb5320ccd1543806fd0eb03c37}} 
+\index{WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}!invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:@{invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:}}
+\index{invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:@{invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:}!WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}}
+\doxysubsubsection{\texorpdfstring{invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:}{invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:}}
+{\footnotesize\ttfamily -\/ (void) invoke\+Command\+With\+Endpoint\+Id\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$)}]{cluster\+Id }\item[{command\+Id\+:(NSNumber $\ast$)}]{command\+Id }\item[{command\+Fields\+:(id)}]{command\+Fields }\item[{timed\+Invoke\+Timeout\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{timeout\+Ms }\item[{client\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{client\+Queue }\item[{completion\+:(\char`\"{}Please use invoke\+Command\+With\+Endpoint\+ID\+:cluster\+ID\+:command\+ID\+:command\+Fields\+:timed\+Invoke\+Timeout\+:queue\+:completion\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Extends class \mbox{\hyperlink{interface_w_t_l_base_device_a4940c7cb5320ccd1543806fd0eb03c37}{WTLBase\+Device}}.
+
+\mbox{\Hypertarget{category_w_t_l_base_device_07_deprecated_08_add47ee28f67b3649ab04613f23ae9ced}\label{category_w_t_l_base_device_07_deprecated_08_add47ee28f67b3649ab04613f23ae9ced}} 
+\index{WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}!readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:@{readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:}}
+\index{readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:@{readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:}!WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}}
+\doxysubsubsection{\texorpdfstring{readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:}{readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:}}
+{\footnotesize\ttfamily -\/ (void) read\+Attribute\+With\+Endpoint\+Id\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$\+\_\+\+Nullable)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{cluster\+Id }\item[{attribute\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{attribute\+Id }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\item[{client\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{client\+Queue }\item[{completion\+:(\char`\"{}Please use read\+Attributes\+With\+Endpoint\+ID\+:cluster\+ID\+:attribute\+ID\+:params\+:queue\+:completion\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Extends class \mbox{\hyperlink{interface_w_t_l_base_device_add47ee28f67b3649ab04613f23ae9ced}{WTLBase\+Device}}.
+
+\mbox{\Hypertarget{category_w_t_l_base_device_07_deprecated_08_a5609462c6b89799e701b6e8c8aaa8f92}\label{category_w_t_l_base_device_07_deprecated_08_a5609462c6b89799e701b6e8c8aaa8f92}} 
+\index{WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}!subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:@{subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:}}
+\index{subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:@{subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:}!WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}}
+\doxysubsubsection{\texorpdfstring{subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:}{subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+Attribute\+With\+Endpoint\+Id\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$\+\_\+\+Nullable)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{cluster\+Id }\item[{attribute\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{attribute\+Id }\item[{min\+Interval\+:(NSNumber $\ast$)}]{min\+Interval }\item[{max\+Interval\+:(NSNumber $\ast$)}]{max\+Interval }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\item[{client\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{client\+Queue }\item[{report\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDevice\+Response\+Handler}})}]{report\+Handler }\item[{subscription\+Established\+:(\char`\"{}Please use \char`\"{} \char`\"{}subscribe\+To\+Attributes\+With\+Endpoint\+ID\+:cluster\+ID\+:attribute\+ID\+:params\+:queue\+:\char`\"{} \char`\"{}report\+Handler\+:subscription\+Established\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Extends class \mbox{\hyperlink{interface_w_t_l_base_device_a5609462c6b89799e701b6e8c8aaa8f92}{WTLBase\+Device}}.
+
+\mbox{\Hypertarget{category_w_t_l_base_device_07_deprecated_08_ace47de6c47a8a9d5fb42ed90742dedff}\label{category_w_t_l_base_device_07_deprecated_08_ace47de6c47a8a9d5fb42ed90742dedff}} 
+\index{WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}!subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:@{subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:}}
+\index{subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:@{subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:}!WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}}
+\doxysubsubsection{\texorpdfstring{subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:}{subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+With\+Queue\+: \begin{DoxyParamCaption}\item[{(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{min\+Interval\+:(uint16\+\_\+t)}]{min\+Interval }\item[{max\+Interval\+:(uint16\+\_\+t)}]{max\+Interval }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\item[{cache\+Container\+:(WTLAttribute\+Cache\+Container $\ast$\+\_\+\+Nullable)}]{attribute\+Cache\+Container }\item[{attribute\+Report\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{WTLDevice\+Report\+Handler}} \+\_\+\+Nullable)}]{attribute\+Report\+Handler }\item[{event\+Report\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{WTLDevice\+Report\+Handler}} \+\_\+\+Nullable)}]{event\+Report\+Handler }\item[{error\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_afa0cd905259a1e4838660d0cb47ef6e8}{WTLDevice\+Error\+Handler}})}]{error\+Handler }\item[{subscription\+Established\+:(dispatch\+\_\+block\+\_\+t \+\_\+\+Nullable)}]{subscription\+Established\+Handler }\item[{resubscription\+Scheduled\+:(\char`\"{}Please use \char`\"{} \char`\"{}subscribe\+With\+Queue\+:params\+:cluster\+State\+Cache\+Container\+:attribute\+Report\+Handler\+:event\+Report\+Handler\+:error\+Handler\+:\char`\"{} \char`\"{}subscription\+Established\+:resubscription\+Scheduled\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+Deprecated \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} APIs. 
+
+Extends class \mbox{\hyperlink{interface_w_t_l_base_device_ace47de6c47a8a9d5fb42ed90742dedff}{WTLBase\+Device}}.
+
+\mbox{\Hypertarget{category_w_t_l_base_device_07_deprecated_08_af0d5860e3a21abd39d83db0cf3aaf846}\label{category_w_t_l_base_device_07_deprecated_08_af0d5860e3a21abd39d83db0cf3aaf846}} 
+\index{WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}!writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:@{writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:}}
+\index{writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:@{writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:}!WTLBaseDevice(Deprecated)@{WTLBaseDevice(Deprecated)}}
+\doxysubsubsection{\texorpdfstring{writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:}{writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:}}
+{\footnotesize\ttfamily -\/ (void) write\+Attribute\+With\+Endpoint\+Id\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$)}]{cluster\+Id }\item[{attribute\+Id\+:(NSNumber $\ast$)}]{attribute\+Id }\item[{value\+:(id)}]{value }\item[{timed\+Write\+Timeout\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{timeout\+Ms }\item[{client\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{client\+Queue }\item[{completion\+:(\char`\"{}Please use write\+Attribute\+With\+Endpoint\+ID\+:cluster\+ID\+:attribute\+ID\+:value\+:timed\+Write\+Timeout\+:queue\+:completion\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Extends class \mbox{\hyperlink{interface_w_t_l_base_device_af0d5860e3a21abd39d83db0cf3aaf846}{WTLBase\+Device}}.
+
+
+
+The documentation for this category was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_base_device_8h}{WTLBase\+Device.\+h}}\end{DoxyCompactItemize}

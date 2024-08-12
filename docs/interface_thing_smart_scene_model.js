@@ -53,6 +53,8 @@ var interface_thing_smart_scene_model =
     [ "enabled", "interface_thing_smart_scene_model.html#a6799800684cafc38b0bc602135cb8008", null ],
     [ "gwId", "interface_thing_smart_scene_model.html#a7dda52e9a9dfbb9a80c20a24570e9062", null ],
     [ "hotCount", "interface_thing_smart_scene_model.html#a96a8ff6331d948536b51523c6089c7b9", null ],
+    [ "iconTitle", "interface_thing_smart_scene_model.html#a66dd89c8ef9a06ac748b7df3ce3a5737", null ],
+    [ "iconUrl", "interface_thing_smart_scene_model.html#a38bf14776631af129f0c032af31241fa", null ],
     [ "jumpType", "interface_thing_smart_scene_model.html#a0a89c87a3e2dac5dd32434470bec1b5e", null ],
     [ "jumpUrl", "interface_thing_smart_scene_model.html#ad053415df6bc858cec4aad39522e3c0e", null ],
     [ "linkageType", "interface_thing_smart_scene_model.html#a851760592c7ee8f627d9def34564b840", null ],

@@ -1,6 +1,0 @@
-var ios_arm64_2_thing_smart_light_scene_biz_bundle_8framework_2_headers_2_thing_smart_light_scene_biz_bundle_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "ios-arm64_2_thing_smart_light_scene_biz_bundle_8framework_2_headers_2_thing_smart_light_scene_biz_bundle-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingSmartLightSceneBizBundleVersionNumber", "ios-arm64_2_thing_smart_light_scene_biz_bundle_8framework_2_headers_2_thing_smart_light_scene_biz_bundle-umbrella_8h.html#ac00cbec189639f38cf5ee15eebb1ee23", null ],
-    [ "ThingSmartLightSceneBizBundleVersionString", "ios-arm64_2_thing_smart_light_scene_biz_bundle_8framework_2_headers_2_thing_smart_light_scene_biz_bundle-umbrella_8h.html#af5f08373cfa92d55f44f4071dd587097", null ]
-];

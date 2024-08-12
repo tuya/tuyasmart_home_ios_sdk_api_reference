@@ -1,0 +1,50 @@
+\hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Foundation\+Kit.framework/\+Headers/\+Thing\+Dispatch\+Queue.h File Reference}
+\label{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingFoundationKit/ThingFoundationKit.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingFoundationKit.framework/Headers/ThingDispatchQueue.h@{/Users/humtong/Downloads/Pods\_副本/ThingFoundationKit/ThingFoundationKit.xcframework/watchos-\/arm64\_arm64\_32\_armv7k/ThingFoundationKit.framework/Headers/ThingDispatchQueue.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN void \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_a2c1bb6e2a2fbd704a76aec402d7d75c5}{thing\+\_\+sync\+\_\+on\+\_\+main}} (dispatch\+\_\+block\+\_\+t block)
+\item 
+void \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_ae07c8b9a770a051fb2d8fccea4836fe4}{thing\+\_\+async\+\_\+on\+\_\+main}} (dispatch\+\_\+block\+\_\+t block)
+\item 
+void \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_a73a2c853673dd5660fbbf90ac6e36ca8}{thing\+\_\+async\+\_\+on\+\_\+global}} (dispatch\+\_\+block\+\_\+t block)
+\item 
+void \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_a5fbbf238a80cbd4729957d7ca1d607ed}{thing\+\_\+delay\+\_\+on\+\_\+main}} (NSTime\+Interval delay\+In\+Seconds, dispatch\+\_\+block\+\_\+t block)
+\item 
+void \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_a2f670737a03d6ea00e3443acdbf9101f}{thing\+\_\+delay\+\_\+on\+\_\+global}} (NSTime\+Interval delay\+In\+Seconds, dispatch\+\_\+block\+\_\+t block)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_a73a2c853673dd5660fbbf90ac6e36ca8}\label{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_a73a2c853673dd5660fbbf90ac6e36ca8}} 
+\index{ThingDispatchQueue.h@{ThingDispatchQueue.h}!thing\_async\_on\_global@{thing\_async\_on\_global}}
+\index{thing\_async\_on\_global@{thing\_async\_on\_global}!ThingDispatchQueue.h@{ThingDispatchQueue.h}}
+\doxysubsubsection{\texorpdfstring{thing\_async\_on\_global()}{thing\_async\_on\_global()}}
+{\footnotesize\ttfamily void thing\+\_\+async\+\_\+on\+\_\+global (\begin{DoxyParamCaption}\item[{dispatch\+\_\+block\+\_\+t}]{block }\end{DoxyParamCaption})}
+
+async to global thread \mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_ae07c8b9a770a051fb2d8fccea4836fe4}\label{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_ae07c8b9a770a051fb2d8fccea4836fe4}} 
+\index{ThingDispatchQueue.h@{ThingDispatchQueue.h}!thing\_async\_on\_main@{thing\_async\_on\_main}}
+\index{thing\_async\_on\_main@{thing\_async\_on\_main}!ThingDispatchQueue.h@{ThingDispatchQueue.h}}
+\doxysubsubsection{\texorpdfstring{thing\_async\_on\_main()}{thing\_async\_on\_main()}}
+{\footnotesize\ttfamily void thing\+\_\+async\+\_\+on\+\_\+main (\begin{DoxyParamCaption}\item[{dispatch\+\_\+block\+\_\+t}]{block }\end{DoxyParamCaption})}
+
+async to main thread if current thread isn\textquotesingle{}t main execute directly if current thread is main \mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_a2f670737a03d6ea00e3443acdbf9101f}\label{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_a2f670737a03d6ea00e3443acdbf9101f}} 
+\index{ThingDispatchQueue.h@{ThingDispatchQueue.h}!thing\_delay\_on\_global@{thing\_delay\_on\_global}}
+\index{thing\_delay\_on\_global@{thing\_delay\_on\_global}!ThingDispatchQueue.h@{ThingDispatchQueue.h}}
+\doxysubsubsection{\texorpdfstring{thing\_delay\_on\_global()}{thing\_delay\_on\_global()}}
+{\footnotesize\ttfamily void thing\+\_\+delay\+\_\+on\+\_\+global (\begin{DoxyParamCaption}\item[{NSTime\+Interval}]{delay\+In\+Seconds,  }\item[{dispatch\+\_\+block\+\_\+t}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_a5fbbf238a80cbd4729957d7ca1d607ed}\label{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_a5fbbf238a80cbd4729957d7ca1d607ed}} 
+\index{ThingDispatchQueue.h@{ThingDispatchQueue.h}!thing\_delay\_on\_main@{thing\_delay\_on\_main}}
+\index{thing\_delay\_on\_main@{thing\_delay\_on\_main}!ThingDispatchQueue.h@{ThingDispatchQueue.h}}
+\doxysubsubsection{\texorpdfstring{thing\_delay\_on\_main()}{thing\_delay\_on\_main()}}
+{\footnotesize\ttfamily void thing\+\_\+delay\+\_\+on\+\_\+main (\begin{DoxyParamCaption}\item[{NSTime\+Interval}]{delay\+In\+Seconds,  }\item[{dispatch\+\_\+block\+\_\+t}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_a2c1bb6e2a2fbd704a76aec402d7d75c5}\label{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_thing_dispatch_queue_8h_a2c1bb6e2a2fbd704a76aec402d7d75c5}} 
+\index{ThingDispatchQueue.h@{ThingDispatchQueue.h}!thing\_sync\_on\_main@{thing\_sync\_on\_main}}
+\index{thing\_sync\_on\_main@{thing\_sync\_on\_main}!ThingDispatchQueue.h@{ThingDispatchQueue.h}}
+\doxysubsubsection{\texorpdfstring{thing\_sync\_on\_main()}{thing\_sync\_on\_main()}}
+{\footnotesize\ttfamily NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN void thing\+\_\+sync\+\_\+on\+\_\+main (\begin{DoxyParamCaption}\item[{dispatch\+\_\+block\+\_\+t}]{block }\end{DoxyParamCaption})}
+
+sync to main thread if current thread isn\textquotesingle{}t main execute directly if current thread is main 

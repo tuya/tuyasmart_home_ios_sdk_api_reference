@@ -1,9 +1,0 @@
-var dir_161a3aec4017dd69ff2e9c9488a8b64b =
-[
-    [ "ThingMachRegister-watchOS-umbrella.h", "watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register-watch_o_s-umbrella_8h.html", "watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register-watch_o_s-umbrella_8h" ],
-    [ "ThingMachRegister.h", "watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_8h.html", null ],
-    [ "ThingMachRegisterDebugger.h", "watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_debugger_8h.html", "watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_debugger_8h" ],
-    [ "ThingMachRegisterDefine.h", "watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_8h.html", "watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_8h" ],
-    [ "ThingMachRegisterDefineExt.h", "watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h.html", "watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_define_ext_8h" ],
-    [ "ThingMachRegisterManager.h", "watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_manager_8h.html", "watchos-arm64__arm64__32__armv7k_2_thing_mach_register_8framework_2_headers_2_thing_mach_register_manager_8h" ]
-];

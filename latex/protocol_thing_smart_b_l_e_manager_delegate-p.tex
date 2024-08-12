@@ -1,0 +1,318 @@
+\hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+BLEManager\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_b_l_e_manager_delegate-p}\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+
+
+The delegate for scanning and notifications of Bluetooth status changes.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+BLEManager.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+BLEManager\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_thing_smart_b_l_e_manager_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a7f35fdfddf2ec05153967653fc1cf11e}{bluetooth\+Did\+Update\+State\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a7e420d51ea96df3bae9f01728f864e7d}{on\+Central\+Did\+Disconnect\+From\+Device\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a68118c6a3626fb20d3fa8a13a84d2a42}{did\+Discovery\+Device\+With\+UUID\+:product\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a2947b6a6a94927029a744b7d82a06c78}{did\+Discovery\+Device\+With\+Device\+Info\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a150c09d810a6aa4e0158badbca1d82ed}{ble\+Manager\+:did\+Finish\+Activate\+Device\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a99a7659c8e74ecd8f91b35642f1d4db6}{ble\+Receive\+Transparent\+Data\+:dev\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a0daacc2d935f28765065341cde0e71ee}{get\+Weather\+With\+Dev\+Id\+:codes\+:use\+Location\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_afcd6d58e5436aeb007fa1157abce2cea}{new\+Get\+Weather\+With\+Dev\+Id\+:codes\+:use\+Location\+:completion\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_ad5500e172c3bca2e7ffde5c3604d76bc}{ble\+Manager\+Device\+List\+Data\+Source}}
+\begin{DoxyCompactList}\small\item\em Data source for the device list. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a7f35fdfddf2ec05153967653fc1cf11e}{bluetooth\+Did\+Update\+State\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a7e420d51ea96df3bae9f01728f864e7d}{on\+Central\+Did\+Disconnect\+From\+Device\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a68118c6a3626fb20d3fa8a13a84d2a42}{did\+Discovery\+Device\+With\+UUID\+:product\+Key\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a2947b6a6a94927029a744b7d82a06c78}{did\+Discovery\+Device\+With\+Device\+Info\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a150c09d810a6aa4e0158badbca1d82ed}{ble\+Manager\+:did\+Finish\+Activate\+Device\+:error\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a99a7659c8e74ecd8f91b35642f1d4db6}{ble\+Receive\+Transparent\+Data\+:dev\+Id\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_a0daacc2d935f28765065341cde0e71ee}{get\+Weather\+With\+Dev\+Id\+:codes\+:use\+Location\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_afcd6d58e5436aeb007fa1157abce2cea}{new\+Get\+Weather\+With\+Dev\+Id\+:codes\+:use\+Location\+:completion\+:}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_manager_delegate-p_ad5500e172c3bca2e7ffde5c3604d76bc}{ble\+Manager\+Device\+List\+Data\+Source}}
+\begin{DoxyCompactList}\small\item\em Data source for the device list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The delegate for scanning and notifications of Bluetooth status changes. 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source_l00041}{41}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h_source}{Thing\+Smart\+BLEManager.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a150c09d810a6aa4e0158badbca1d82ed}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a150c09d810a6aa4e0158badbca1d82ed}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!bleManager:didFinishActivateDevice:error:@{bleManager:didFinishActivateDevice:error:}}
+\index{bleManager:didFinishActivateDevice:error:@{bleManager:didFinishActivateDevice:error:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bleManager:didFinishActivateDevice:error:}{bleManager:didFinishActivateDevice:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) ble\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_manager}{Thing\+Smart\+BLEManager}} $\ast$)}]{manager }\item[{did\+Finish\+Activate\+Device\+:(nullable id)}]{device\+Model }\item[{error\+:(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The result of activating Bluetooth LE devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & The class. \\
+\hline
+{\em device\+Model} & Called when the task is finished. Device\+Model is returned. \\
+\hline
+{\em error} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a150c09d810a6aa4e0158badbca1d82ed}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a150c09d810a6aa4e0158badbca1d82ed}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!bleManager:didFinishActivateDevice:error:@{bleManager:didFinishActivateDevice:error:}}
+\index{bleManager:didFinishActivateDevice:error:@{bleManager:didFinishActivateDevice:error:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bleManager:didFinishActivateDevice:error:}{bleManager:didFinishActivateDevice:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) ble\+Manager\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_b_l_e_manager}{Thing\+Smart\+BLEManager}} $\ast$)}]{manager }\item[{did\+Finish\+Activate\+Device\+:(nullable id)}]{device\+Model }\item[{error\+:(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The result of activating Bluetooth LE devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & The class. \\
+\hline
+{\em device\+Model} & Called when the task is finished. Device\+Model is returned. \\
+\hline
+{\em error} & Called when the task is interrupted by an error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_ad5500e172c3bca2e7ffde5c3604d76bc}\label{protocol_thing_smart_b_l_e_manager_delegate-p_ad5500e172c3bca2e7ffde5c3604d76bc}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!bleManagerDeviceListDataSource@{bleManagerDeviceListDataSource}}
+\index{bleManagerDeviceListDataSource@{bleManagerDeviceListDataSource}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bleManagerDeviceListDataSource}{bleManagerDeviceListDataSource}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$) ble\+Manager\+Device\+List\+Data\+Source \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+Data source for the device list. 
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_ad5500e172c3bca2e7ffde5c3604d76bc}\label{protocol_thing_smart_b_l_e_manager_delegate-p_ad5500e172c3bca2e7ffde5c3604d76bc}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!bleManagerDeviceListDataSource@{bleManagerDeviceListDataSource}}
+\index{bleManagerDeviceListDataSource@{bleManagerDeviceListDataSource}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bleManagerDeviceListDataSource}{bleManagerDeviceListDataSource}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_thing_smart_device_model}{Thing\+Smart\+Device\+Model}} $\ast$ $>$ $\ast$) ble\+Manager\+Device\+List\+Data\+Source \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+Data source for the device list. 
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a99a7659c8e74ecd8f91b35642f1d4db6}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a99a7659c8e74ecd8f91b35642f1d4db6}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!bleReceiveTransparentData:devId:@{bleReceiveTransparentData:devId:}}
+\index{bleReceiveTransparentData:devId:@{bleReceiveTransparentData:devId:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bleReceiveTransparentData:devId:}{bleReceiveTransparentData:devId:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) ble\+Receive\+Transparent\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{dev\+Id\+:(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Receives the transmission data from the device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Transmission data that is sent by the device. \\
+\hline
+{\em dev\+Id} & The device ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a99a7659c8e74ecd8f91b35642f1d4db6}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a99a7659c8e74ecd8f91b35642f1d4db6}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!bleReceiveTransparentData:devId:@{bleReceiveTransparentData:devId:}}
+\index{bleReceiveTransparentData:devId:@{bleReceiveTransparentData:devId:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bleReceiveTransparentData:devId:}{bleReceiveTransparentData:devId:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) ble\+Receive\+Transparent\+Data\+: \begin{DoxyParamCaption}\item[{(NSData $\ast$)}]{data }\item[{dev\+Id\+:(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Receives the transmission data from the device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Transmission data that is sent by the device. \\
+\hline
+{\em dev\+Id} & The device ID. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a7f35fdfddf2ec05153967653fc1cf11e}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a7f35fdfddf2ec05153967653fc1cf11e}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!bluetoothDidUpdateState:@{bluetoothDidUpdateState:}}
+\index{bluetoothDidUpdateState:@{bluetoothDidUpdateState:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bluetoothDidUpdateState:}{bluetoothDidUpdateState:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) bluetooth\+Did\+Update\+State\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{is\+Powered\+On }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The notification for Bluetooth status changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Powered\+On} & Indicates the Bluetooth status. Valid values\+: {\ttfamily on} and {\ttfamily off}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a7f35fdfddf2ec05153967653fc1cf11e}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a7f35fdfddf2ec05153967653fc1cf11e}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!bluetoothDidUpdateState:@{bluetoothDidUpdateState:}}
+\index{bluetoothDidUpdateState:@{bluetoothDidUpdateState:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{bluetoothDidUpdateState:}{bluetoothDidUpdateState:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) bluetooth\+Did\+Update\+State\+: \begin{DoxyParamCaption}\item[{(BOOL)}]{is\+Powered\+On }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The notification for Bluetooth status changes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Powered\+On} & Indicates the Bluetooth status. Valid values\+: {\ttfamily on} and {\ttfamily off}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a2947b6a6a94927029a744b7d82a06c78}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a2947b6a6a94927029a744b7d82a06c78}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!didDiscoveryDeviceWithDeviceInfo:@{didDiscoveryDeviceWithDeviceInfo:}}
+\index{didDiscoveryDeviceWithDeviceInfo:@{didDiscoveryDeviceWithDeviceInfo:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didDiscoveryDeviceWithDeviceInfo:}{didDiscoveryDeviceWithDeviceInfo:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Discovery\+Device\+With\+Device\+Info\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_adv_model}{Thing\+BLEAdv\+Model}} $\ast$)}]{device\+Info }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The result of scanning inactive devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & The advertising\+Data model for the inactive device. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a2947b6a6a94927029a744b7d82a06c78}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a2947b6a6a94927029a744b7d82a06c78}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!didDiscoveryDeviceWithDeviceInfo:@{didDiscoveryDeviceWithDeviceInfo:}}
+\index{didDiscoveryDeviceWithDeviceInfo:@{didDiscoveryDeviceWithDeviceInfo:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didDiscoveryDeviceWithDeviceInfo:}{didDiscoveryDeviceWithDeviceInfo:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Discovery\+Device\+With\+Device\+Info\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_adv_model}{Thing\+BLEAdv\+Model}} $\ast$)}]{device\+Info }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The result of scanning inactive devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & The advertising\+Data model for the inactive device. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a68118c6a3626fb20d3fa8a13a84d2a42}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a68118c6a3626fb20d3fa8a13a84d2a42}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!didDiscoveryDeviceWithUUID:productKey:@{didDiscoveryDeviceWithUUID:productKey:}}
+\index{didDiscoveryDeviceWithUUID:productKey:@{didDiscoveryDeviceWithUUID:productKey:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didDiscoveryDeviceWithUUID:productKey:}{didDiscoveryDeviceWithUUID:productKey:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Discovery\+Device\+With\+UUID\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{product\+Key\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use Thing\+Smart\+BLEManager\+::did\+Discovery\+Device\+With\+Device\+Info\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The result of scanning inactive devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The device UUID. \\
+\hline
+{\em product\+Key} & The product ID for the device. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000131}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+BLEManager\+::did\+Discovery\+Device\+With\+Device\+Info\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a68118c6a3626fb20d3fa8a13a84d2a42}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a68118c6a3626fb20d3fa8a13a84d2a42}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!didDiscoveryDeviceWithUUID:productKey:@{didDiscoveryDeviceWithUUID:productKey:}}
+\index{didDiscoveryDeviceWithUUID:productKey:@{didDiscoveryDeviceWithUUID:productKey:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didDiscoveryDeviceWithUUID:productKey:}{didDiscoveryDeviceWithUUID:productKey:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Discovery\+Device\+With\+UUID\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{product\+Key\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use Thing\+Smart\+BLEManager\+::did\+Discovery\+Device\+With\+Device\+Info\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The result of scanning inactive devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The device UUID. \\
+\hline
+{\em product\+Key} & The product ID for the device. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000132}{Deprecated}}]This method is deprecated. Use Thing\+Smart\+BLEManager\+::did\+Discovery\+Device\+With\+Device\+Info\+: instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a0daacc2d935f28765065341cde0e71ee}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a0daacc2d935f28765065341cde0e71ee}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!getWeatherWithDevId:codes:useLocation:completion:@{getWeatherWithDevId:codes:useLocation:completion:}}
+\index{getWeatherWithDevId:codes:useLocation:completion:@{getWeatherWithDevId:codes:useLocation:completion:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{getWeatherWithDevId:codes:useLocation:completion:}{getWeatherWithDevId:codes:useLocation:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Weather\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{codes\+:(NSString $\ast$)}]{codes }\item[{use\+Location\+:(BOOL)}]{whether\+Use }\item[{completion\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use new\+Get\+Weather\+With\+Dev\+Id\+:codes\+:use\+Location\+:completion\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Get weather information 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & The device ID. \\
+\hline
+{\em codes} & codes \\
+\hline
+{\em whether\+Use} & Whether to request weather information using location information \\
+\hline
+{\em completion} & completion \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a0daacc2d935f28765065341cde0e71ee}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a0daacc2d935f28765065341cde0e71ee}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!getWeatherWithDevId:codes:useLocation:completion:@{getWeatherWithDevId:codes:useLocation:completion:}}
+\index{getWeatherWithDevId:codes:useLocation:completion:@{getWeatherWithDevId:codes:useLocation:completion:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{getWeatherWithDevId:codes:useLocation:completion:}{getWeatherWithDevId:codes:useLocation:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) get\+Weather\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{codes\+:(NSString $\ast$)}]{codes }\item[{use\+Location\+:(BOOL)}]{whether\+Use }\item[{completion\+:(\char`\"{}This method is)}]{deprecated }\item[{(Use new\+Get\+Weather\+With\+Dev\+Id\+:codes\+:use\+Location\+:completion\+:instead\char`\"{})}]{\+\_\+\+\_\+deprecated\+\_\+msg }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+Get weather information 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & The device ID. \\
+\hline
+{\em codes} & codes \\
+\hline
+{\em whether\+Use} & Whether to request weather information using location information \\
+\hline
+{\em completion} & completion \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_afcd6d58e5436aeb007fa1157abce2cea}\label{protocol_thing_smart_b_l_e_manager_delegate-p_afcd6d58e5436aeb007fa1157abce2cea}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!newGetWeatherWithDevId:codes:useLocation:completion:@{newGetWeatherWithDevId:codes:useLocation:completion:}}
+\index{newGetWeatherWithDevId:codes:useLocation:completion:@{newGetWeatherWithDevId:codes:useLocation:completion:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{newGetWeatherWithDevId:codes:useLocation:completion:}{newGetWeatherWithDevId:codes:useLocation:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) new\+Get\+Weather\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{codes\+:(NSString $\ast$)}]{codes }\item[{use\+Location\+:(BOOL)}]{whether\+Use }\item[{completion\+:(void($^\wedge$)(NSDictionary $\ast$\+\_\+\+Nullable weather\+Data))}]{completion }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_afcd6d58e5436aeb007fa1157abce2cea}\label{protocol_thing_smart_b_l_e_manager_delegate-p_afcd6d58e5436aeb007fa1157abce2cea}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!newGetWeatherWithDevId:codes:useLocation:completion:@{newGetWeatherWithDevId:codes:useLocation:completion:}}
+\index{newGetWeatherWithDevId:codes:useLocation:completion:@{newGetWeatherWithDevId:codes:useLocation:completion:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{newGetWeatherWithDevId:codes:useLocation:completion:}{newGetWeatherWithDevId:codes:useLocation:completion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) new\+Get\+Weather\+With\+Dev\+Id\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{codes\+:(NSString $\ast$)}]{codes }\item[{use\+Location\+:(BOOL)}]{whether\+Use }\item[{completion\+:(void($^\wedge$)(NSDictionary $\ast$\+\_\+\+Nullable weather\+Data))}]{completion }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a7e420d51ea96df3bae9f01728f864e7d}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a7e420d51ea96df3bae9f01728f864e7d}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!onCentralDidDisconnectFromDevice:error:@{onCentralDidDisconnectFromDevice:error:}}
+\index{onCentralDidDisconnectFromDevice:error:@{onCentralDidDisconnectFromDevice:error:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{onCentralDidDisconnectFromDevice:error:}{onCentralDidDisconnectFromDevice:error:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Central\+Did\+Disconnect\+From\+Device\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The result of disconnecting the device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & The device ID. \\
+\hline
+{\em error} & An error occurs while processing the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_manager_delegate-p_a7e420d51ea96df3bae9f01728f864e7d}\label{protocol_thing_smart_b_l_e_manager_delegate-p_a7e420d51ea96df3bae9f01728f864e7d}} 
+\index{$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}!onCentralDidDisconnectFromDevice:error:@{onCentralDidDisconnectFromDevice:error:}}
+\index{onCentralDidDisconnectFromDevice:error:@{onCentralDidDisconnectFromDevice:error:}!$<$ThingSmartBLEManagerDelegate$>$@{$<$ThingSmartBLEManagerDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{onCentralDidDisconnectFromDevice:error:}{onCentralDidDisconnectFromDevice:error:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) on\+Central\+Did\+Disconnect\+From\+Device\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{error\+:(NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+The result of disconnecting the device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & The device ID. \\
+\hline
+{\em error} & An error occurs while processing the request. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h}{Thing\+Smart\+BLEManager.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_manager_8h}{Thing\+Smart\+BLEManager.\+h}}\end{DoxyCompactItemize}

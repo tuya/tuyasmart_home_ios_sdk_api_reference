@@ -1,0 +1,285 @@
+\hypertarget{interface_thing_b_l_e_adv_model}{}\doxysection{Thing\+BLEAdv\+Model Class Reference}
+\label{interface_thing_b_l_e_adv_model}\index{ThingBLEAdvModel@{ThingBLEAdvModel}}
+
+
+\mbox{\hyperlink{interface_thing_b_l_e_adv_model}{Thing\+BLEAdv\+Model}} provides a model to get the Bluetooth LE device broadcast information.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+BLEAdv\+Model.\+h$>$}
+
+Inheritance diagram for Thing\+BLEAdv\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_b_l_e_adv_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_adv_model_ac7193f8dca6f956c393373a4ef46ef9a}{peripheral}}
+\begin{DoxyCompactList}\small\item\em The Bluetooth peripheral to be scanned. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_adv_model_ad685e46d9624ebb58302e6129a2f9f15}{uuid}}
+\begin{DoxyCompactList}\small\item\em The UUID of the Bluetooth LE device. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_adv_model_aa48d35fa65eb369e9c912236908b0b1b}{product\+Id}}
+\begin{DoxyCompactList}\small\item\em The product ID of the Bluetooth LE device. \end{DoxyCompactList}\item 
+NSString $\ast$ \mbox{\hyperlink{interface_thing_b_l_e_adv_model_a69b380f8a41f34a75d7ddf5155979cde}{mac}}
+\begin{DoxyCompactList}\small\item\em The MAC address of the Bluetooth LE device. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_adv_model_af1b9d1f27b88d4ec97a7b4cc9063eeb4}{is\+Active}}
+\begin{DoxyCompactList}\small\item\em The activation state of the Bluetooth LE device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_aee44427e147a215862d177a5662f087d}{Thing\+Smart\+BLEType}} \mbox{\hyperlink{interface_thing_b_l_e_adv_model_aeae0886d8446f61027155161662abf40}{ble\+Type}}
+\begin{DoxyCompactList}\small\item\em The type of Bluetooth LE device. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_adv_model_aa446e69ed38e583796974c5ca617ebca}{is\+Support5G}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_adv_model_a4e9329ff98e814d4ec1acc1643edb26c}{is\+Prouduct\+Key}}
+\begin{DoxyCompactList}\small\item\em Indicates whether the Bluetooth LE device supports the product key. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_thing_b_l_e_adv_model_a357b3005329409b0c696f94e14fa5e3f}{ble\+ProtocolV}}
+\begin{DoxyCompactList}\small\item\em The protocol version of the Bluetooth LE device. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_adv_model_a7a3c5f98c0652e1cebdfe1ff5f9d2085}{is\+QRCode\+Device}}
+\begin{DoxyCompactList}\small\item\em Whether the device is activated by scanning, such as scanning a QR code.\+Defaults to NO. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_adv_model_af36833f8503fbf774472c83b9aa38de8}{is\+Support\+Multi\+User\+Share}}
+\begin{DoxyCompactList}\small\item\em Whether the device is support config by multi user. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_adv_model_a55aaac1ba50599092c17d5508cc8643b}{is\+Roaming}}
+\begin{DoxyCompactList}\small\item\em Whether the device is support roam. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_adv_model_a1692ee5ab732c4011c85d836f895822c}{is\+Support\+Query\+Wifi\+List}}
+\begin{DoxyCompactList}\small\item\em Whether the device is support wifi list query. \end{DoxyCompactList}\item 
+Thing\+Smart\+BLECommunication\+Capability \mbox{\hyperlink{interface_thing_b_l_e_adv_model_afef80db1b1ebe3915c902c391b27f1cb}{ble\+Communication\+Capability}}
+\begin{DoxyCompactList}\small\item\em The communication capability of Bluetooth LE devices. \end{DoxyCompactList}\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_adv_model_ac62b507d370a4b9d5306863821334b71}{is\+Executed\+V2\+Secret}}
+\item 
+BOOL \mbox{\hyperlink{interface_thing_b_l_e_adv_model_a0d009153ced19e515486754fa14b1026}{is\+Support\+V2\+Secret}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interface_thing_b_l_e_adv_model}{Thing\+BLEAdv\+Model}} provides a model to get the Bluetooth LE device broadcast information. 
+
+All the device information is obtained from the Bluetooth device broadcast packet data. The different types of Bluetooth LE devices. See the following parameter descriptions. 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00063}{63}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_afef80db1b1ebe3915c902c391b27f1cb}\label{interface_thing_b_l_e_adv_model_afef80db1b1ebe3915c902c391b27f1cb}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!bleCommunicationCapability@{bleCommunicationCapability}}
+\index{bleCommunicationCapability@{bleCommunicationCapability}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{bleCommunicationCapability}{bleCommunicationCapability}}
+{\footnotesize\ttfamily -\/ (Thing\+Smart\+BLECommunication\+Capability) ble\+Communication\+Capability\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The communication capability of Bluetooth LE devices. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00094}{94}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_a357b3005329409b0c696f94e14fa5e3f}\label{interface_thing_b_l_e_adv_model_a357b3005329409b0c696f94e14fa5e3f}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!bleProtocolV@{bleProtocolV}}
+\index{bleProtocolV@{bleProtocolV}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{bleProtocolV}{bleProtocolV}}
+{\footnotesize\ttfamily -\/ (int) ble\+ProtocolV\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The protocol version of the Bluetooth LE device. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00083}{83}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_aeae0886d8446f61027155161662abf40}\label{interface_thing_b_l_e_adv_model_aeae0886d8446f61027155161662abf40}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!bleType@{bleType}}
+\index{bleType@{bleType}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{bleType}{bleType}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_aee44427e147a215862d177a5662f087d}{Thing\+Smart\+BLEType}}) ble\+Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The type of Bluetooth LE device. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00076}{76}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_af1b9d1f27b88d4ec97a7b4cc9063eeb4}\label{interface_thing_b_l_e_adv_model_af1b9d1f27b88d4ec97a7b4cc9063eeb4}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!isActive@{isActive}}
+\index{isActive@{isActive}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{isActive}{isActive}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Active\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+The activation state of the Bluetooth LE device. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00074}{74}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_ac62b507d370a4b9d5306863821334b71}\label{interface_thing_b_l_e_adv_model_ac62b507d370a4b9d5306863821334b71}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!isExecutedV2Secret@{isExecutedV2Secret}}
+\index{isExecutedV2Secret@{isExecutedV2Secret}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{isExecutedV2Secret}{isExecutedV2Secret}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Executed\+V2\+Secret\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00096}{96}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_a4e9329ff98e814d4ec1acc1643edb26c}\label{interface_thing_b_l_e_adv_model_a4e9329ff98e814d4ec1acc1643edb26c}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!isProuductKey@{isProuductKey}}
+\index{isProuductKey@{isProuductKey}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{isProuductKey}{isProuductKey}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Prouduct\+Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Indicates whether the Bluetooth LE device supports the product key. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00081}{81}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_a7a3c5f98c0652e1cebdfe1ff5f9d2085}\label{interface_thing_b_l_e_adv_model_a7a3c5f98c0652e1cebdfe1ff5f9d2085}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!isQRCodeDevice@{isQRCodeDevice}}
+\index{isQRCodeDevice@{isQRCodeDevice}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{isQRCodeDevice}{isQRCodeDevice}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+QRCode\+Device\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Whether the device is activated by scanning, such as scanning a QR code.\+Defaults to NO. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00085}{85}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_a55aaac1ba50599092c17d5508cc8643b}\label{interface_thing_b_l_e_adv_model_a55aaac1ba50599092c17d5508cc8643b}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!isRoaming@{isRoaming}}
+\index{isRoaming@{isRoaming}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{isRoaming}{isRoaming}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Roaming\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Whether the device is support roam. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00089}{89}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_aa446e69ed38e583796974c5ca617ebca}\label{interface_thing_b_l_e_adv_model_aa446e69ed38e583796974c5ca617ebca}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!isSupport5G@{isSupport5G}}
+\index{isSupport5G@{isSupport5G}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{isSupport5G}{isSupport5G}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support5G\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+Indicates whether the Bluetooth LE device supports connections through the router on a 5 GHz band. \begin{DoxyNote}{Note}
+{\ttfamily Thing\+Smart\+BLEType\+BLEWifi} or {\ttfamily Thing\+Smart\+BLEType\+BLEWifi\+Security} is only available for {\ttfamily ble\+Type}. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00079}{79}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_af36833f8503fbf774472c83b9aa38de8}\label{interface_thing_b_l_e_adv_model_af36833f8503fbf774472c83b9aa38de8}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!isSupportMultiUserShare@{isSupportMultiUserShare}}
+\index{isSupportMultiUserShare@{isSupportMultiUserShare}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{isSupportMultiUserShare}{isSupportMultiUserShare}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Multi\+User\+Share\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Whether the device is support config by multi user. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00087}{87}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_a1692ee5ab732c4011c85d836f895822c}\label{interface_thing_b_l_e_adv_model_a1692ee5ab732c4011c85d836f895822c}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!isSupportQueryWifiList@{isSupportQueryWifiList}}
+\index{isSupportQueryWifiList@{isSupportQueryWifiList}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{isSupportQueryWifiList}{isSupportQueryWifiList}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+Query\+Wifi\+List\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Whether the device is support wifi list query. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00091}{91}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_a0d009153ced19e515486754fa14b1026}\label{interface_thing_b_l_e_adv_model_a0d009153ced19e515486754fa14b1026}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!isSupportV2Secret@{isSupportV2Secret}}
+\index{isSupportV2Secret@{isSupportV2Secret}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{isSupportV2Secret}{isSupportV2Secret}}
+{\footnotesize\ttfamily -\/ (BOOL) is\+Support\+V2\+Secret\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00097}{97}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_a69b380f8a41f34a75d7ddf5155979cde}\label{interface_thing_b_l_e_adv_model_a69b380f8a41f34a75d7ddf5155979cde}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!mac@{mac}}
+\index{mac@{mac}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{mac}{mac}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) mac\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The MAC address of the Bluetooth LE device. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00072}{72}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_ac7193f8dca6f956c393373a4ef46ef9a}\label{interface_thing_b_l_e_adv_model_ac7193f8dca6f956c393373a4ef46ef9a}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!peripheral@{peripheral}}
+\index{peripheral@{peripheral}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{peripheral}{peripheral}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$) peripheral\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The Bluetooth peripheral to be scanned. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00066}{66}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_aa48d35fa65eb369e9c912236908b0b1b}\label{interface_thing_b_l_e_adv_model_aa48d35fa65eb369e9c912236908b0b1b}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!productId@{productId}}
+\index{productId@{productId}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{productId}{productId}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) product\+Id\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The product ID of the Bluetooth LE device. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00070}{70}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+\mbox{\Hypertarget{interface_thing_b_l_e_adv_model_ad685e46d9624ebb58302e6129a2f9f15}\label{interface_thing_b_l_e_adv_model_ad685e46d9624ebb58302e6129a2f9f15}} 
+\index{ThingBLEAdvModel@{ThingBLEAdvModel}!uuid@{uuid}}
+\index{uuid@{uuid}!ThingBLEAdvModel@{ThingBLEAdvModel}}
+\doxysubsubsection{\texorpdfstring{uuid}{uuid}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$) uuid\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+The UUID of the Bluetooth LE device. 
+
+
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source_l00068}{68}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h_source}{Thing\+BLEAdv\+Model.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h}{Thing\+BLEAdv\+Model.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_b_l_e_adv_model_8h}{Thing\+BLEAdv\+Model.\+h}}\end{DoxyCompactItemize}

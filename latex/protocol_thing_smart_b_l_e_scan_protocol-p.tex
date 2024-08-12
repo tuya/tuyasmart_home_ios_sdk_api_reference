@@ -1,0 +1,98 @@
+\hypertarget{protocol_thing_smart_b_l_e_scan_protocol-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+BLEScan\+Protocol\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_b_l_e_scan_protocol-p}\index{$<$ThingSmartBLEScanProtocol$>$@{$<$ThingSmartBLEScanProtocol$>$}}
+
+
+\mbox{\hyperlink{protocol_thing_smart_b_l_e_device_protocol-p}{Thing\+Smart\+BLEDevice\+Protocol}} provides protocol methods to implement multiple functions, such as activation, device control, and over-\/the-\/air (OTA) updates.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+BLEDevice\+Protocol.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+BLEScan\+Protocol\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_thing_smart_b_l_e_scan_protocol-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_scan_protocol-p_a0f3e95c93a6a451f6694f2997c9464a5}{ble\+Agent\+:ble\+Scan\+:did\+Scan\+BLEDevice\+Peripheral\+:error\+:scan\+Result\+Handher\+:}}
+\item 
+(NSMutable\+Array $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_scan_protocol-p_a7109f3a941f3fae80a28c10d807e59ba}{third\+Devices\+Scan\+Service\+UUID}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_scan_protocol-p_a0f3e95c93a6a451f6694f2997c9464a5}{ble\+Agent\+:ble\+Scan\+:did\+Scan\+BLEDevice\+Peripheral\+:error\+:scan\+Result\+Handher\+:}}
+\item 
+(NSMutable\+Array $\ast$) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_scan_protocol-p_a7109f3a941f3fae80a28c10d807e59ba}{third\+Devices\+Scan\+Service\+UUID}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{protocol_thing_smart_b_l_e_device_protocol-p}{Thing\+Smart\+BLEDevice\+Protocol}} provides protocol methods to implement multiple functions, such as activation, device control, and over-\/the-\/air (OTA) updates. 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_device_protocol_8h_source_l00019}{19}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_device_protocol_8h_source}{Thing\+Smart\+BLEDevice\+Protocol.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_scan_protocol-p_a0f3e95c93a6a451f6694f2997c9464a5}\label{protocol_thing_smart_b_l_e_scan_protocol-p_a0f3e95c93a6a451f6694f2997c9464a5}} 
+\index{$<$ThingSmartBLEScanProtocol$>$@{$<$ThingSmartBLEScanProtocol$>$}!bleAgent:bleScan:didScanBLEDevicePeripheral:error:scanResultHandher:@{bleAgent:bleScan:didScanBLEDevicePeripheral:error:scanResultHandher:}}
+\index{bleAgent:bleScan:didScanBLEDevicePeripheral:error:scanResultHandher:@{bleAgent:bleScan:didScanBLEDevicePeripheral:error:scanResultHandher:}!$<$ThingSmartBLEScanProtocol$>$@{$<$ThingSmartBLEScanProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{bleAgent:bleScan:didScanBLEDevicePeripheral:error:scanResultHandher:}{bleAgent:bleScan:didScanBLEDevicePeripheral:error:scanResultHandher:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) ble\+Agent\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_agent}{Thing\+BLEAgent}} $\ast$)}]{agent }\item[{ble\+Scan\+:(Thing\+BLEScan $\ast$)}]{scan }\item[{did\+Scan\+BLEDevice\+Peripheral\+:(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\item[{error\+:(NSError $\ast$)}]{error }\item[{scan\+Result\+Handher\+:(Thing\+BLEScan\+Result\+Handher)}]{handler }\end{DoxyParamCaption}}
+
+Results of inactive device scanning.
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & The scanning agent. \\
+\hline
+{\em scan} & The scanning class. \\
+\hline
+{\em peripheral} & The scanned Bluetooth peripheral. \\
+\hline
+{\em error} & The scan error. \\
+\hline
+{\em handler} & The scan callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_scan_protocol-p_a0f3e95c93a6a451f6694f2997c9464a5}\label{protocol_thing_smart_b_l_e_scan_protocol-p_a0f3e95c93a6a451f6694f2997c9464a5}} 
+\index{$<$ThingSmartBLEScanProtocol$>$@{$<$ThingSmartBLEScanProtocol$>$}!bleAgent:bleScan:didScanBLEDevicePeripheral:error:scanResultHandher:@{bleAgent:bleScan:didScanBLEDevicePeripheral:error:scanResultHandher:}}
+\index{bleAgent:bleScan:didScanBLEDevicePeripheral:error:scanResultHandher:@{bleAgent:bleScan:didScanBLEDevicePeripheral:error:scanResultHandher:}!$<$ThingSmartBLEScanProtocol$>$@{$<$ThingSmartBLEScanProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{bleAgent:bleScan:didScanBLEDevicePeripheral:error:scanResultHandher:}{bleAgent:bleScan:didScanBLEDevicePeripheral:error:scanResultHandher:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) ble\+Agent\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_agent}{Thing\+BLEAgent}} $\ast$)}]{agent }\item[{ble\+Scan\+:(Thing\+BLEScan $\ast$)}]{scan }\item[{did\+Scan\+BLEDevice\+Peripheral\+:(\mbox{\hyperlink{interface_thing_b_l_e_peripheral}{Thing\+BLEPeripheral}} $\ast$)}]{peripheral }\item[{error\+:(NSError $\ast$)}]{error }\item[{scan\+Result\+Handher\+:(Thing\+BLEScan\+Result\+Handher)}]{handler }\end{DoxyParamCaption}}
+
+Results of inactive device scanning.
+
+
+\begin{DoxyParams}{Parameters}
+{\em agent} & The scanning agent. \\
+\hline
+{\em scan} & The scanning class. \\
+\hline
+{\em peripheral} & The scanned Bluetooth peripheral. \\
+\hline
+{\em error} & The scan error. \\
+\hline
+{\em handler} & The scan callback. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_scan_protocol-p_a7109f3a941f3fae80a28c10d807e59ba}\label{protocol_thing_smart_b_l_e_scan_protocol-p_a7109f3a941f3fae80a28c10d807e59ba}} 
+\index{$<$ThingSmartBLEScanProtocol$>$@{$<$ThingSmartBLEScanProtocol$>$}!thirdDevicesScanServiceUUID@{thirdDevicesScanServiceUUID}}
+\index{thirdDevicesScanServiceUUID@{thirdDevicesScanServiceUUID}!$<$ThingSmartBLEScanProtocol$>$@{$<$ThingSmartBLEScanProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{thirdDevicesScanServiceUUID}{thirdDevicesScanServiceUUID}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSMutable\+Array $\ast$) third\+Devices\+Scan\+Service\+UUID \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_scan_protocol-p_a7109f3a941f3fae80a28c10d807e59ba}\label{protocol_thing_smart_b_l_e_scan_protocol-p_a7109f3a941f3fae80a28c10d807e59ba}} 
+\index{$<$ThingSmartBLEScanProtocol$>$@{$<$ThingSmartBLEScanProtocol$>$}!thirdDevicesScanServiceUUID@{thirdDevicesScanServiceUUID}}
+\index{thirdDevicesScanServiceUUID@{thirdDevicesScanServiceUUID}!$<$ThingSmartBLEScanProtocol$>$@{$<$ThingSmartBLEScanProtocol$>$}}
+\doxysubsubsection{\texorpdfstring{thirdDevicesScanServiceUUID}{thirdDevicesScanServiceUUID}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSMutable\+Array $\ast$) third\+Devices\+Scan\+Service\+UUID \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_device_protocol_8h}{Thing\+Smart\+BLEDevice\+Protocol.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_device_protocol_8h}{Thing\+Smart\+BLEDevice\+Protocol.\+h}}\end{DoxyCompactItemize}

@@ -1,9 +1,19 @@
 var searchData=
 [
   ['index_0',['index',['../structtag_thing_video_frame_info.html#af52357ee572529fddfb57e9400d04f22',1,'tagThingVideoFrameInfo']]],
-  ['initcloudconfigwithdevid_1',['initCloudConfigWithDevId',['../_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h.html#a2f4d8b618af9d54d0219d9559871cacc',1,'initCloudConfigWithDevId():&#160;ThingSmartSweeper.h'],['../x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h.html#a2f4d8b618af9d54d0219d9559871cacc',1,'initCloudConfigWithDevId():&#160;ThingSmartSweeper.h']]],
-  ['is_5fmirror_2',['is_mirror',['../struct_thing_video_frame.html#a1625f7a959d910691b8af319abf49227',1,'ThingVideoFrame']]],
-  ['is_5fpre_3',['is_pre',['../structimm__p2p__rtc__session__info__t.html#a7701e54ce87b79c51d1e7f07091fd75d',1,'imm_p2p_rtc_session_info_t']]],
-  ['is_5freplay_4',['is_replay',['../structimm__p2p__rtc__session__info__t.html#a157e6c370e0cf672361092aa1b1e573e',1,'imm_p2p_rtc_session_info_t']]],
-  ['isiframe_5',['isIFrame',['../structtag_thing_decoder_input_param.html#a3908876e54969822fd1f880e91aa4ffc',1,'tagThingDecoderInputParam']]]
+  ['initcloudconfigwithdevid_1',['initCloudConfigWithDevId',['../x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h.html#a2f4d8b618af9d54d0219d9559871cacc',1,'initCloudConfigWithDevId():&#160;ThingSmartSweeper.h'],['../_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_sweeper_8h.html#a2f4d8b618af9d54d0219d9559871cacc',1,'initCloudConfigWithDevId():&#160;ThingSmartSweeper.h']]],
+  ['initwithchallenge_2',['initWithChallenge',['../_w_t_l_device_attestation_info_8h.html#ad4d3880d31ac38b210f2802633539e7e',1,'WTLDeviceAttestationInfo.h']]],
+  ['initwithcsr_3',['initWithCSR',['../_w_t_l_c_s_r_info_8h.html#a80aaddb1e1bf77fa942c7baf5de16686',1,'WTLCSRInfo.h']]],
+  ['initwithcsrelementstlv_4',['initWithCSRElementsTLV',['../_w_t_l_c_s_r_info_8h.html#ae98d7e67576a9855890d55a254a523d4',1,'WTLCSRInfo.h']]],
+  ['initwithcsrnonce_5',['initWithCSRNonce',['../_w_t_l_c_s_r_info_8h.html#a7942a07a69ce91abd43d6afaea906972',1,'WTLCSRInfo.h']]],
+  ['initwithcsrresponseparams_6',['initWithCSRResponseParams',['../_w_t_l_c_s_r_info_8h.html#adb7b15b404f4366489c3f3bd82bd20cd',1,'WTLCSRInfo.h']]],
+  ['initwithdeviceattestationchallenge_7',['initWithDeviceAttestationChallenge',['../_w_t_l_device_attestation_info_8h.html#a593356330b444d4c84608e0b1474e4ff',1,'WTLDeviceAttestationInfo.h']]],
+  ['initwithnonce_8',['initWithNonce',['../_w_t_l_c_s_r_info_8h.html#a576f99a893bd63e54c5decadd9f290a0',1,'WTLCSRInfo.h']]],
+  ['initwithoperationalcertificate_9',['initWithOperationalCertificate',['../_w_t_l_operational_certificate_issuer_8h.html#a1c53cf56377bc6204a954a99505b8c55',1,'WTLOperationalCertificateIssuer.h']]],
+  ['initwithstorage_10',['initWithStorage',['../_w_t_l_device_controller_factory_8h.html#ad8e29c4ee7b1749c0f6d1152a5f72f22',1,'WTLDeviceControllerFactory.h']]],
+  ['initwithtlvbytes_11',['initWithTLVBytes',['../_w_t_l_certificate_info_8h.html#a04307d76a42526869e4664a5d101a4a1',1,'WTLCertificateInfo.h']]],
+  ['ipk_12',['ipk',['../_w_t_l_operational_certificate_issuer_8h.html#ab87c5f9fab244bd7d62f91ae926fbb30',1,'WTLOperationalCertificateIssuer.h']]],
+  ['is_5fpre_13',['is_pre',['../structimm__p2p__rtc__session__info__t.html#a7701e54ce87b79c51d1e7f07091fd75d',1,'imm_p2p_rtc_session_info_t']]],
+  ['is_5freplay_14',['is_replay',['../structimm__p2p__rtc__session__info__t.html#a157e6c370e0cf672361092aa1b1e573e',1,'imm_p2p_rtc_session_info_t']]],
+  ['isiframe_15',['isIFrame',['../structtag_thing_decoder_input_param.html#a3908876e54969822fd1f880e91aa4ffc',1,'tagThingDecoderInputParam']]]
 ];

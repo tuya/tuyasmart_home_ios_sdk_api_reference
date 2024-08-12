@@ -1,0 +1,58 @@
+\hypertarget{_w_t_l_device_attestation_delegate_8h_source}{}\doxysection{WTLDevice\+Attestation\+Delegate.\+h}
+\label{_w_t_l_device_attestation_delegate_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDeviceAttestationDelegate.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDeviceAttestationDelegate.h}}
+\mbox{\hyperlink{_w_t_l_device_attestation_delegate_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00019}00019 \textcolor{preprocessor}{\#import <Water/WTLCertificates.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00021}00021 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00023}00023 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00025}\mbox{\hyperlink{interface_w_t_l_device_attestation_device_info}{00025}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_device_attestation_device_info}{WTLDeviceAttestationDeviceInfo}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00027}00027 -\/ (instancetype)init \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00028}00028 + (instancetype)new \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00033}\mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_acef82c6375e817dd4aed72a7810a40d4}{00033}} \textcolor{keyword}{@property} (nonatomic, readonly, nullable) NSNumber * \mbox{\hyperlink{_w_t_l_fabric_info_8h_aa847c51e6ff914c7603c882d1845d433}{vendorID}} \mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_acef82c6375e817dd4aed72a7810a40d4}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00038}\mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a3c16801562a2ffb4d6414c41f35e6acf}{00038}} \textcolor{keyword}{@property} (nonatomic, readonly, nullable) NSNumber * productID \mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a3c16801562a2ffb4d6414c41f35e6acf}{API\_AVAILABLE}}(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00040}\mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a91489bf83945d43131cb3737d5ab63da}{00040}} \textcolor{keyword}{@property} (nonatomic, readonly) \mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}} \mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a91489bf83945d43131cb3737d5ab63da}{dacCertificate}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00041}\mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a6f02bc758fbe7ef07c03cc170d114a2d}{00041}} \textcolor{keyword}{@property} (nonatomic, readonly) \mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificateDERBytes}} \mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a6f02bc758fbe7ef07c03cc170d114a2d}{dacPAICertificate}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00042}\mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a772f66646ef43531134d8633fa1a9df2}{00042}} \textcolor{keyword}{@property} (nonatomic, readonly, nullable) NSData * \mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a772f66646ef43531134d8633fa1a9df2}{certificateDeclaration}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00044}00044 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00049}\mbox{\hyperlink{protocol_w_t_l_device_attestation_delegate-p}{00049}} \textcolor{keyword}{@protocol }\mbox{\hyperlink{protocol_w_t_l_device_attestation_delegate-p}{WTLDeviceAttestationDelegate}} <NSObject>}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00050}00050 \textcolor{keyword}{@optional}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00074}00074 -\/ (void)deviceAttestationCompletedForController:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00075}00075                              opaqueDeviceHandle:(\textcolor{keywordtype}{void} *)opaqueDeviceHandle}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00076}00076                           attestationDeviceInfo:(\mbox{\hyperlink{interface_w_t_l_device_attestation_device_info}{WTLDeviceAttestationDeviceInfo}} *)attestationDeviceInfo}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00077}00077                                           error:(NSError * \_Nullable)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00078}00078     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00089}00089 -\/ (void)deviceAttestationFailedForController:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00090}00090                           opaqueDeviceHandle:(\textcolor{keywordtype}{void} *)opaqueDeviceHandle}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00091}00091                                        error:(NSError * \_Nonnull)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00092}00092     API\_AVAILABLE(macos(13.3), watchos(9.4), tvos(16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00094}00094 -\/ (void)deviceAttestation:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00095}00095        completedForDevice:(\textcolor{keywordtype}{void} *)device}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00096}00096     attestationDeviceInfo:(\mbox{\hyperlink{interface_w_t_l_device_attestation_device_info}{WTLDeviceAttestationDeviceInfo}} *)attestationDeviceInfo}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00097}00097                     error:(NSError * \_Nullable)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00098}00098     WTL\_DEPRECATED("{}Please implement deviceAttestationCompletedForController:opaqueDeviceHandle:attestationDeviceInfo:\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}:"{},}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00099}00099          macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00101}00101 -\/ (void)deviceAttestation:(\mbox{\hyperlink{interface_w_t_l_device_controller}{WTLDeviceController}} *)controller}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00102}00102           failedForDevice:(\textcolor{keywordtype}{void} *)device}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00103}00103                     error:(NSError * \_Nonnull)error}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00104}00104     WTL\_DEPRECATED("{}Please implement deviceAttestationFailedForController:opaqueDeviceHandle:\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}:"{}, }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00105}00105         macos(13.0, 13.3), watchos(9.1, 9.4), tvos(16.1, 16.4));}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00107}00107 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_device_attestation_delegate_8h_source_l00109}\mbox{\hyperlink{interface_w_t_l_device_attestation_device_info_a71093c82552b0145b96a3890e978d821}{00109}} NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

@@ -1,6 +1,0 @@
-var dir_28d3671e10a7ce0df9562d9bb7d33174 =
-[
-    [ "ThingOTADeviceUpgradeListModel.h", "_thing_o_t_a_general_plug_a_p_i_8framework_2_headers_2_thing_o_t_a_device_upgrade_list_model_8h.html", "_thing_o_t_a_general_plug_a_p_i_8framework_2_headers_2_thing_o_t_a_device_upgrade_list_model_8h" ],
-    [ "ThingOTAGeneralPlugAPI-umbrella.h", "_thing_o_t_a_general_plug_a_p_i_8framework_2_headers_2_thing_o_t_a_general_plug_a_p_i-umbrella_8h.html", "_thing_o_t_a_general_plug_a_p_i_8framework_2_headers_2_thing_o_t_a_general_plug_a_p_i-umbrella_8h" ],
-    [ "ThingOTAGeneralPlugAPI.h", "_thing_o_t_a_general_plug_a_p_i_8framework_2_headers_2_thing_o_t_a_general_plug_a_p_i_8h.html", "_thing_o_t_a_general_plug_a_p_i_8framework_2_headers_2_thing_o_t_a_general_plug_a_p_i_8h" ]
-];

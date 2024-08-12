@@ -1,4 +1,0 @@
-var dir_b63ece0d7f47ff86b3fa227bea04b0f2 =
-[
-    [ "TRCTResourceManagerXcframework.h", "ios-x86__64-simulator_2_t_r_c_t_resource_manager_8framework_2_private_headers_2_t_r_c_t_resource_manager_xcframework_8h.html", "ios-x86__64-simulator_2_t_r_c_t_resource_manager_8framework_2_private_headers_2_t_r_c_t_resource_manager_xcframework_8h" ]
-];

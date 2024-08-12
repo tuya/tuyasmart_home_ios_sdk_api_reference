@@ -1,0 +1,239 @@
+\hypertarget{interface_w_t_l_setup_payload}{}\doxysection{WTLSetup\+Payload Class Reference}
+\label{interface_w_t_l_setup_payload}\index{WTLSetupPayload@{WTLSetupPayload}}
+
+
+{\ttfamily \#import $<$WTLSetup\+Payload.\+h$>$}
+
+Inheritance diagram for WTLSetup\+Payload\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_w_t_l_setup_payload}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(WTLDiscovery\+Capabilities discovery\+Capabilities) -\/ \mbox{\hyperlink{interface_w_t_l_setup_payload_ac9265ba53fc88dd4937c95af809f10bf}{API\+\_\+\+AVAILABLE}}
+\item 
+(NSNumber $\ast$setup\+Passcode) -\/ \mbox{\hyperlink{interface_w_t_l_setup_payload_a130750e5c9bc2b741129e81529d89c18}{API\+\_\+\+AVAILABLE}}
+\item 
+(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info}{WTLOptional\+QRCode\+Info}} $\ast$ $>$ $\ast$\+\_\+\+Nullable) -\/ \mbox{\hyperlink{interface_w_t_l_setup_payload_ad36ed30f985e64f6aa3e30d0b03fa6bb}{get\+All\+Optional\+Vendor\+Data\+:}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_setup_payload_a61b1894853a13da3a0b5a1744afa4a69}{init\+With\+Setup\+Passcode\+:discriminator\+:}}
+\item 
+(NSString $\ast$\+\_\+\+Nullable) -\/ \mbox{\hyperlink{interface_w_t_l_setup_payload_a585d3716f159c5c56b3a42264bf9e8b6}{manual\+Entry\+Code}}
+\item 
+(NSString $\ast$\+\_\+\+Nullable) -\/ \mbox{\hyperlink{interface_w_t_l_setup_payload_a19e98fc6d28b3c7d2d3b8b9d92328c5a}{qr\+Code\+String\+:}}
+\item 
+(NSNumber $\ast$rendezvous\+Information) -\/ \mbox{\hyperlink{interface_w_t_l_setup_payload_a2e7e0846316caf52e49777e7d522f53e}{WTL\+\_\+\+DEPRECATED}}
+\item 
+(NSNumber $\ast$set\+Up\+PINCode) -\/ \mbox{\hyperlink{interface_w_t_l_setup_payload_a34083fe0a45989a75b8f6d0eaea3d15a}{WTL\+\_\+\+DEPRECATED}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(NSUInteger) + \mbox{\hyperlink{interface_w_t_l_setup_payload_a297d065bbd8975170d96a03c979fba4c}{generate\+Random\+PIN}}
+\item 
+(16.\+2) + \mbox{\hyperlink{interface_w_t_l_setup_payload_a0c6ff8b429c379e26303ed6ea030fba6}{tvos}}
+\item 
+(\mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}} $\ast$\+\_\+\+Nullable) + \mbox{\hyperlink{interface_w_t_l_setup_payload_a7455afa8f95e7aa4b0afd381b08358eb}{setup\+Payload\+With\+Onboarding\+Payload\+:error\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_w_t_l_setup_payload_a9578660cd8b07a2e76912e8a8defcc07}{version}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_w_t_l_setup_payload_aa9ad625ca7c6ca289b0a5c31ec1a8860}{vendor\+ID}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_w_t_l_setup_payload_a50a7fa383a826016926691c679330e61}{product\+ID}}
+\item 
+WTLCommissioning\+Flow \mbox{\hyperlink{interface_w_t_l_setup_payload_a9f3f8cc327df214ad3f29a4dbcee86d6}{commissioning\+Flow}}
+\item 
+\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info}{WTLOptional\+QRCode\+Info}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{interface_w_t_l_setup_payload_a16d33f0708ec686f1757d133ceefc20f}{all\+QRCode\+Info\+Array}}
+\item 
+NSNumber $\ast$ \mbox{\hyperlink{interface_w_t_l_setup_payload_af19485917faf09a22d359f02ece97941}{discriminator}}
+\item 
+BOOL \mbox{\hyperlink{interface_w_t_l_setup_payload_a96fdb6bc1d10ff7646683af673c9f9d1}{has\+Short\+Discriminator}}
+\item 
+NSString $\ast$ \mbox{\hyperlink{interface_w_t_l_setup_payload_a2975f2edc9f3210832f225929b5ab4a4}{serial\+Number}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A setup payload that can be created from a numeric code or QR code and serialized to a numeric code or QR code, though serializing to QR code after creating from numeric code will not work, because some required information will be missing. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_setup_payload_8h_source_l00077}{77}} of file \mbox{\hyperlink{_w_t_l_setup_payload_8h_source}{WTLSetup\+Payload.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_ac9265ba53fc88dd4937c95af809f10bf}\label{interface_w_t_l_setup_payload_ac9265ba53fc88dd4937c95af809f10bf}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (WTLDiscovery\+Capabilities discovery\+Capabilities) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{interface_w_t_l_setup_payload_a0c6ff8b429c379e26303ed6ea030fba6}{tvos}}(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+The value of discovery\+Capabilities is made up of the various WTLDiscovery\+Capabilities flags. If the discovery capabilities are not known, this will be set to WTLDiscovery\+Capabilities\+Unknown. \mbox{\Hypertarget{interface_w_t_l_setup_payload_a130750e5c9bc2b741129e81529d89c18}\label{interface_w_t_l_setup_payload_a130750e5c9bc2b741129e81529d89c18}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$setup\+Passcode) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{interface_w_t_l_setup_payload_a0c6ff8b429c379e26303ed6ea030fba6}{tvos}}(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_a297d065bbd8975170d96a03c979fba4c}\label{interface_w_t_l_setup_payload_a297d065bbd8975170d96a03c979fba4c}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!generateRandomPIN@{generateRandomPIN}}
+\index{generateRandomPIN@{generateRandomPIN}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{generateRandomPIN}{generateRandomPIN}}
+{\footnotesize\ttfamily + (NSUInteger) generate\+Random\+PIN \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Generate a random Matter-\/valid setup PIN. \mbox{\Hypertarget{interface_w_t_l_setup_payload_ad36ed30f985e64f6aa3e30d0b03fa6bb}\label{interface_w_t_l_setup_payload_ad36ed30f985e64f6aa3e30d0b03fa6bb}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!getAllOptionalVendorData:@{getAllOptionalVendorData:}}
+\index{getAllOptionalVendorData:@{getAllOptionalVendorData:}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{getAllOptionalVendorData:}{getAllOptionalVendorData:}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info}{WTLOptional\+QRCode\+Info}} $\ast$ $>$ $\ast$\+\_\+\+Nullable) get\+All\+Optional\+Vendor\+Data\+: \begin{DoxyParamCaption}\item[{(NSError $\ast$\+\_\+\+\_\+autoreleasing $\ast$)}]{error }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_a61b1894853a13da3a0b5a1744afa4a69}\label{interface_w_t_l_setup_payload_a61b1894853a13da3a0b5a1744afa4a69}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!initWithSetupPasscode:discriminator:@{initWithSetupPasscode:discriminator:}}
+\index{initWithSetupPasscode:discriminator:@{initWithSetupPasscode:discriminator:}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{initWithSetupPasscode:discriminator:}{initWithSetupPasscode:discriminator:}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Setup\+Passcode\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{setup\+Passcode }\item[{discriminator\+:(macos(13.\+1))}]{ }\item[{(watchos(9.\+2))}]{ }\item[{(\mbox{\hyperlink{interface_w_t_l_setup_payload_a0c6ff8b429c379e26303ed6ea030fba6}{tvos}}(16.\+2))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Initialize an \mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}} with the given passcode and discriminator. This will pre-\/set version, product id, and vendor id to 0. \mbox{\Hypertarget{interface_w_t_l_setup_payload_a585d3716f159c5c56b3a42264bf9e8b6}\label{interface_w_t_l_setup_payload_a585d3716f159c5c56b3a42264bf9e8b6}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!manualEntryCode@{manualEntryCode}}
+\index{manualEntryCode@{manualEntryCode}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{manualEntryCode}{manualEntryCode}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$\+\_\+\+Nullable) manual\+Entry\+Code \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get 11 digit manual entry code from the setup payload. \mbox{\Hypertarget{interface_w_t_l_setup_payload_a19e98fc6d28b3c7d2d3b8b9d92328c5a}\label{interface_w_t_l_setup_payload_a19e98fc6d28b3c7d2d3b8b9d92328c5a}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!qrCodeString:@{qrCodeString:}}
+\index{qrCodeString:@{qrCodeString:}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{qrCodeString:}{qrCodeString:}}
+{\footnotesize\ttfamily -\/ (NSString $\ast$\+\_\+\+Nullable) qr\+Code\+String\+: \begin{DoxyParamCaption}\item[{(macos(13.\+1))}]{ }\item[{(watchos(9.\+2))}]{ }\item[{(\mbox{\hyperlink{interface_w_t_l_setup_payload_a0c6ff8b429c379e26303ed6ea030fba6}{tvos}}(16.\+2))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Get a QR code from the setup payload.
+
+Returns nil on failure (e.\+g. if the setup payload does not have all the information a QR code needs). \mbox{\Hypertarget{interface_w_t_l_setup_payload_a7455afa8f95e7aa4b0afd381b08358eb}\label{interface_w_t_l_setup_payload_a7455afa8f95e7aa4b0afd381b08358eb}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!setupPayloadWithOnboardingPayload:error:@{setupPayloadWithOnboardingPayload:error:}}
+\index{setupPayloadWithOnboardingPayload:error:@{setupPayloadWithOnboardingPayload:error:}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{setupPayloadWithOnboardingPayload:error:}{setupPayloadWithOnboardingPayload:error:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}} $\ast$\+\_\+\+Nullable) setup\+Payload\+With\+Onboarding\+Payload\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{onboarding\+Payload }\item[{error\+:(macos(13.\+1))}]{ }\item[{(watchos(9.\+2))}]{ }\item[{(\mbox{\hyperlink{interface_w_t_l_setup_payload_a0c6ff8b429c379e26303ed6ea030fba6}{tvos}}(16.\+2))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Create an \mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}} with the given onboarding payload.
+
+Will return nil on errors (e.\+g. if the onboarding payload cannot be parsed). \mbox{\Hypertarget{interface_w_t_l_setup_payload_a0c6ff8b429c379e26303ed6ea030fba6}\label{interface_w_t_l_setup_payload_a0c6ff8b429c379e26303ed6ea030fba6}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!tvos@{tvos}}
+\index{tvos@{tvos}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{tvos}{tvos}}
+{\footnotesize\ttfamily + (16.\+2) tvos \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Generate a random Matter-\/valid setup passcode. 
+
+Provided by category \mbox{\hyperlink{category_w_t_l_setup_payload_07_deprecated_08_af2afccfb47a778b5eb72b062b07de108}{WTLSetup\+Payload(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_a2e7e0846316caf52e49777e7d522f53e}\label{interface_w_t_l_setup_payload_a2e7e0846316caf52e49777e7d522f53e}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!WTL\_DEPRECATED@{WTL\_DEPRECATED}}
+\index{WTL\_DEPRECATED@{WTL\_DEPRECATED}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED}{WTL\_DEPRECATED}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$rendezvous\+Information) WTL\+\_\+\+DEPRECATED \begin{DoxyParamCaption}\item[{(\char`\"{}Please use discovery\+Capabilities\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{interface_w_t_l_setup_payload_a0c6ff8b429c379e26303ed6ea030fba6}{tvos}}(16.\+1, 16.\+4))}]{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_setup_payload_07_deprecated_08_a2e7e0846316caf52e49777e7d522f53e}{WTLSetup\+Payload(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_a34083fe0a45989a75b8f6d0eaea3d15a}\label{interface_w_t_l_setup_payload_a34083fe0a45989a75b8f6d0eaea3d15a}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!WTL\_DEPRECATED@{WTL\_DEPRECATED}}
+\index{WTL\_DEPRECATED@{WTL\_DEPRECATED}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED}{WTL\_DEPRECATED}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$set\+Up\+PINCode) WTL\+\_\+\+DEPRECATED \begin{DoxyParamCaption}\item[{(\char`\"{}Please use setup\+Passcode\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{interface_w_t_l_setup_payload_a0c6ff8b429c379e26303ed6ea030fba6}{tvos}}(16.\+1, 16.\+4))}]{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_setup_payload_07_deprecated_08_a34083fe0a45989a75b8f6d0eaea3d15a}{WTLSetup\+Payload(\+Deprecated)}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_a16d33f0708ec686f1757d133ceefc20f}\label{interface_w_t_l_setup_payload_a16d33f0708ec686f1757d133ceefc20f}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!allQRCodeInfoArray@{allQRCodeInfoArray}}
+\index{allQRCodeInfoArray@{allQRCodeInfoArray}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{allQRCodeInfoArray}{allQRCodeInfoArray}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$\mbox{\hyperlink{interface_w_t_l_optional_q_r_code_info}{WTLOptional\+QRCode\+Info}} $\ast$$>$$\ast$) all\+QRCode\+Info\+Array\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_setup_payload_8h_source_l00084}{84}} of file \mbox{\hyperlink{_w_t_l_setup_payload_8h_source}{WTLSetup\+Payload.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_a9f3f8cc327df214ad3f29a4dbcee86d6}\label{interface_w_t_l_setup_payload_a9f3f8cc327df214ad3f29a4dbcee86d6}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!commissioningFlow@{commissioningFlow}}
+\index{commissioningFlow@{commissioningFlow}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{commissioningFlow}{commissioningFlow}}
+{\footnotesize\ttfamily -\/ (WTLCommissioning\+Flow) commissioning\+Flow\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_setup_payload_8h_source_l00082}{82}} of file \mbox{\hyperlink{_w_t_l_setup_payload_8h_source}{WTLSetup\+Payload.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_af19485917faf09a22d359f02ece97941}\label{interface_w_t_l_setup_payload_af19485917faf09a22d359f02ece97941}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!discriminator@{discriminator}}
+\index{discriminator@{discriminator}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{discriminator}{discriminator}}
+{\footnotesize\ttfamily -\/ (NSNumber$\ast$) discriminator\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_setup_payload_8h_source_l00093}{93}} of file \mbox{\hyperlink{_w_t_l_setup_payload_8h_source}{WTLSetup\+Payload.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_a96fdb6bc1d10ff7646683af673c9f9d1}\label{interface_w_t_l_setup_payload_a96fdb6bc1d10ff7646683af673c9f9d1}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!hasShortDiscriminator@{hasShortDiscriminator}}
+\index{hasShortDiscriminator@{hasShortDiscriminator}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{hasShortDiscriminator}{hasShortDiscriminator}}
+{\footnotesize\ttfamily -\/ (BOOL) has\+Short\+Discriminator\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [assign]}}
+
+If has\+Short\+Discriminator is true, the discriminator value contains just the high 4 bits of the full discriminator. For example, if has\+Short\+Discriminator is true and discriminator is 0xA, then the full discriminator can be anything in the range 0x\+A00 t0 0x\+AFF. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_setup_payload_8h_source_l00101}{101}} of file \mbox{\hyperlink{_w_t_l_setup_payload_8h_source}{WTLSetup\+Payload.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_a50a7fa383a826016926691c679330e61}\label{interface_w_t_l_setup_payload_a50a7fa383a826016926691c679330e61}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!productID@{productID}}
+\index{productID@{productID}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{productID}{productID}}
+{\footnotesize\ttfamily -\/ (NSNumber$\ast$) product\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_setup_payload_8h_source_l00081}{81}} of file \mbox{\hyperlink{_w_t_l_setup_payload_8h_source}{WTLSetup\+Payload.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_a2975f2edc9f3210832f225929b5ab4a4}\label{interface_w_t_l_setup_payload_a2975f2edc9f3210832f225929b5ab4a4}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!serialNumber@{serialNumber}}
+\index{serialNumber@{serialNumber}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{serialNumber}{serialNumber}}
+{\footnotesize\ttfamily -\/ (NSString$\ast$) serial\+Number\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_setup_payload_8h_source_l00104}{104}} of file \mbox{\hyperlink{_w_t_l_setup_payload_8h_source}{WTLSetup\+Payload.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_aa9ad625ca7c6ca289b0a5c31ec1a8860}\label{interface_w_t_l_setup_payload_aa9ad625ca7c6ca289b0a5c31ec1a8860}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!vendorID@{vendorID}}
+\index{vendorID@{vendorID}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{vendorID}{vendorID}}
+{\footnotesize\ttfamily -\/ (NSNumber$\ast$) vendor\+ID\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_setup_payload_8h_source_l00080}{80}} of file \mbox{\hyperlink{_w_t_l_setup_payload_8h_source}{WTLSetup\+Payload.\+h}}.
+
+\mbox{\Hypertarget{interface_w_t_l_setup_payload_a9578660cd8b07a2e76912e8a8defcc07}\label{interface_w_t_l_setup_payload_a9578660cd8b07a2e76912e8a8defcc07}} 
+\index{WTLSetupPayload@{WTLSetupPayload}!version@{version}}
+\index{version@{version}!WTLSetupPayload@{WTLSetupPayload}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily -\/ (NSNumber$\ast$) version\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_setup_payload_8h_source_l00079}{79}} of file \mbox{\hyperlink{_w_t_l_setup_payload_8h_source}{WTLSetup\+Payload.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_setup_payload_8h}{WTLSetup\+Payload.\+h}}\end{DoxyCompactItemize}

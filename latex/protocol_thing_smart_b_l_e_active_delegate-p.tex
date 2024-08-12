@@ -1,0 +1,532 @@
+\hypertarget{protocol_thing_smart_b_l_e_active_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+BLEActive\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_b_l_e_active_delegate-p}\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+
+
+用于处理解耦后的\+BLEKit\+Core在激活/解绑阶段想要的一些数据回调，比如秘钥、注册的gid等等，回头要拆到public里  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+BLEActive\+Delegate.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+BLEActive\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_thing_smart_b_l_e_active_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a557fc5f5a93f82fa9ed4d8dc44e77cd0}{trans\+Enc\+Key\+With\+Adv\+Model\+:enc\+Key\+Type\+:handler\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a8cc8559f43099512b326809d195b40a2}{register\+To\+Serve\+:dev\+Id\+:encrypted\+Auth\+Key\+:product\+Key\+:pv\+:sv\+:mac\+:is\+Register\+Key\+:is\+Share\+:options\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em 注册设备到云端 \end{DoxyCompactList}\item 
+(NSInteger) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a4ae190c8b0b89f36f4ff3f4723d1d48e}{get\+Ext\+Module\+Type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a42a338f107aa50c746e1007443f21959}{activate\+Extended\+Module\+:automatic\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a5a180adbcf89f81d714e296214306585}{activate\+Extended\+Wi\+Fi\+Module\+:automatic\+:ssid\+:password\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a9d8e79a16638add7779536cd93ceaaf0}{validate\+BLEBeacon\+Capability\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a62d178981fe990cf80d891333305b79b}{handle\+Chip\+Encrypt\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a298af65d1980bc734414340fe5ee289f}{sync\+Device\+Info\+:dev\+Id\+:handler\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_ae4c49afaf06ec980eabc7239ab98c67f}{active\+Failed\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_ad8de2255fd06fb24a241b81a1cdd7426}{unbind\+Device\+:handler\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_acfdda00bb81293dbda2692a40cccad6c}{update\+Device\+Info\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a0e689c015d7f9093468c8e283e290b1d}{report\+Dps\+:dev\+Id\+:dps\+Time\+:mode\+:report\+Type\+:}}
+\begin{DoxyCompactList}\small\item\em 上报dp点 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a9ce6fc4bf77d4a6a9c7f7c581c284677}{report\+Dps\+:mac\+:dps\+Time\+:mode\+:report\+Type\+:}}
+\begin{DoxyCompactList}\small\item\em 上报dp点(无dev\+Id本地类型设备) \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_ae6fe52ad25f43c2505299c123579fbcd}{report\+Dps\+:dev\+Id\+:dps\+Time\+Map\+:mode\+:report\+Type\+:}}
+\begin{DoxyCompactList}\small\item\em 上报dp点，time 是个 map \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_ad5a53e3114186e9a60ee1f6173c3a148}{update\+OTAVersion\+:ota\+Type\+:ota\+Version\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a02c5e1c849bd4eefe0accb38d6138fbc}{update\+BLEOnline\+Status\+:is\+Online\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a5a0c3555a9b82d2c681cb28fe1a0607b}{discover\+Ble\+Channel\+:services\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a7c0704c62e68a478577b2ee0717680f5}{transfer\+PSKInfo\+With\+SL\+:handler\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a9c8144802f061226e1ad90316a927cd9}{did\+Scan\+Wifi\+List\+Success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a557fc5f5a93f82fa9ed4d8dc44e77cd0}{trans\+Enc\+Key\+With\+Adv\+Model\+:enc\+Key\+Type\+:handler\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a8cc8559f43099512b326809d195b40a2}{register\+To\+Serve\+:dev\+Id\+:encrypted\+Auth\+Key\+:product\+Key\+:pv\+:sv\+:mac\+:is\+Register\+Key\+:is\+Share\+:options\+:success\+:failure\+:}}
+\begin{DoxyCompactList}\small\item\em 注册设备到云端 \end{DoxyCompactList}\item 
+(NSInteger) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a4ae190c8b0b89f36f4ff3f4723d1d48e}{get\+Ext\+Module\+Type\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a42a338f107aa50c746e1007443f21959}{activate\+Extended\+Module\+:automatic\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a5a180adbcf89f81d714e296214306585}{activate\+Extended\+Wi\+Fi\+Module\+:automatic\+:ssid\+:password\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a9d8e79a16638add7779536cd93ceaaf0}{validate\+BLEBeacon\+Capability\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a62d178981fe990cf80d891333305b79b}{handle\+Chip\+Encrypt\+:success\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a298af65d1980bc734414340fe5ee289f}{sync\+Device\+Info\+:dev\+Id\+:handler\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_ae4c49afaf06ec980eabc7239ab98c67f}{active\+Failed\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_ad8de2255fd06fb24a241b81a1cdd7426}{unbind\+Device\+:handler\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_acfdda00bb81293dbda2692a40cccad6c}{update\+Device\+Info\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a0e689c015d7f9093468c8e283e290b1d}{report\+Dps\+:dev\+Id\+:dps\+Time\+:mode\+:report\+Type\+:}}
+\begin{DoxyCompactList}\small\item\em 上报dp点 \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a9ce6fc4bf77d4a6a9c7f7c581c284677}{report\+Dps\+:mac\+:dps\+Time\+:mode\+:report\+Type\+:}}
+\begin{DoxyCompactList}\small\item\em 上报dp点(无dev\+Id本地类型设备) \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_ae6fe52ad25f43c2505299c123579fbcd}{report\+Dps\+:dev\+Id\+:dps\+Time\+Map\+:mode\+:report\+Type\+:}}
+\begin{DoxyCompactList}\small\item\em 上报dp点，time 是个 map \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_ad5a53e3114186e9a60ee1f6173c3a148}{update\+OTAVersion\+:ota\+Type\+:ota\+Version\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a02c5e1c849bd4eefe0accb38d6138fbc}{update\+BLEOnline\+Status\+:is\+Online\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a5a0c3555a9b82d2c681cb28fe1a0607b}{discover\+Ble\+Channel\+:services\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a7c0704c62e68a478577b2ee0717680f5}{transfer\+PSKInfo\+With\+SL\+:handler\+:failure\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_b_l_e_active_delegate-p_a9c8144802f061226e1ad90316a927cd9}{did\+Scan\+Wifi\+List\+Success\+:failure\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+用于处理解耦后的\+BLEKit\+Core在激活/解绑阶段想要的一些数据回调，比如秘钥、注册的gid等等，回头要拆到public里 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_active_delegate_8h_source_l00026}{26}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_active_delegate_8h_source}{Thing\+Smart\+BLEActive\+Delegate.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a42a338f107aa50c746e1007443f21959}\label{protocol_thing_smart_b_l_e_active_delegate-p_a42a338f107aa50c746e1007443f21959}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!activateExtendedModule:automatic:success:failure:@{activateExtendedModule:automatic:success:failure:}}
+\index{activateExtendedModule:automatic:success:failure:@{activateExtendedModule:automatic:success:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activateExtendedModule:automatic:success:failure:}{activateExtendedModule:automatic:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) activate\+Extended\+Module\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{automatic\+:(BOOL)}]{automatic }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a42a338f107aa50c746e1007443f21959}\label{protocol_thing_smart_b_l_e_active_delegate-p_a42a338f107aa50c746e1007443f21959}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!activateExtendedModule:automatic:success:failure:@{activateExtendedModule:automatic:success:failure:}}
+\index{activateExtendedModule:automatic:success:failure:@{activateExtendedModule:automatic:success:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activateExtendedModule:automatic:success:failure:}{activateExtendedModule:automatic:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) activate\+Extended\+Module\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{automatic\+:(BOOL)}]{automatic }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a5a180adbcf89f81d714e296214306585}\label{protocol_thing_smart_b_l_e_active_delegate-p_a5a180adbcf89f81d714e296214306585}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!activateExtendedWiFiModule:automatic:ssid:password:success:failure:@{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}}
+\index{activateExtendedWiFiModule:automatic:ssid:password:success:failure:@{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) activate\+Extended\+Wi\+Fi\+Module\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{automatic\+:(BOOL)}]{automatic }\item[{ssid\+:(NSString $\ast$)}]{ssid }\item[{password\+:(NSString $\ast$)}]{pwd }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a5a180adbcf89f81d714e296214306585}\label{protocol_thing_smart_b_l_e_active_delegate-p_a5a180adbcf89f81d714e296214306585}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!activateExtendedWiFiModule:automatic:ssid:password:success:failure:@{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}}
+\index{activateExtendedWiFiModule:automatic:ssid:password:success:failure:@{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}{activateExtendedWiFiModule:automatic:ssid:password:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) activate\+Extended\+Wi\+Fi\+Module\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\item[{automatic\+:(BOOL)}]{automatic }\item[{ssid\+:(NSString $\ast$)}]{ssid }\item[{password\+:(NSString $\ast$)}]{pwd }\item[{success\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_ae4c49afaf06ec980eabc7239ab98c67f}\label{protocol_thing_smart_b_l_e_active_delegate-p_ae4c49afaf06ec980eabc7239ab98c67f}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!activeFailed:@{activeFailed:}}
+\index{activeFailed:@{activeFailed:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activeFailed:}{activeFailed:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) active\+Failed\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+激活失败 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_ae4c49afaf06ec980eabc7239ab98c67f}\label{protocol_thing_smart_b_l_e_active_delegate-p_ae4c49afaf06ec980eabc7239ab98c67f}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!activeFailed:@{activeFailed:}}
+\index{activeFailed:@{activeFailed:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{activeFailed:}{activeFailed:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) active\+Failed\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+激活失败 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & 设备id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a9c8144802f061226e1ad90316a927cd9}\label{protocol_thing_smart_b_l_e_active_delegate-p_a9c8144802f061226e1ad90316a927cd9}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!didScanWifiListSuccess:failure:@{didScanWifiListSuccess:failure:}}
+\index{didScanWifiListSuccess:failure:@{didScanWifiListSuccess:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didScanWifiListSuccess:failure:}{didScanWifiListSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Scan\+Wifi\+List\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$)}]{wifi\+List }\item[{failure\+:(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a9c8144802f061226e1ad90316a927cd9}\label{protocol_thing_smart_b_l_e_active_delegate-p_a9c8144802f061226e1ad90316a927cd9}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!didScanWifiListSuccess:failure:@{didScanWifiListSuccess:failure:}}
+\index{didScanWifiListSuccess:failure:@{didScanWifiListSuccess:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{didScanWifiListSuccess:failure:}{didScanWifiListSuccess:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) did\+Scan\+Wifi\+List\+Success\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$)}]{wifi\+List }\item[{failure\+:(nullable NSError $\ast$)}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a5a0c3555a9b82d2c681cb28fe1a0607b}\label{protocol_thing_smart_b_l_e_active_delegate-p_a5a0c3555a9b82d2c681cb28fe1a0607b}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!discoverBleChannel:services:@{discoverBleChannel:services:}}
+\index{discoverBleChannel:services:@{discoverBleChannel:services:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{discoverBleChannel:services:}{discoverBleChannel:services:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) discover\+Ble\+Channel\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\item[{services\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$)}]{services }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+发现大数据通道 
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & 设备信息 \\
+\hline
+{\em services} & services \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a5a0c3555a9b82d2c681cb28fe1a0607b}\label{protocol_thing_smart_b_l_e_active_delegate-p_a5a0c3555a9b82d2c681cb28fe1a0607b}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!discoverBleChannel:services:@{discoverBleChannel:services:}}
+\index{discoverBleChannel:services:@{discoverBleChannel:services:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{discoverBleChannel:services:}{discoverBleChannel:services:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) discover\+Ble\+Channel\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\item[{services\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$)}]{services }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+发现大数据通道 
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & 设备信息 \\
+\hline
+{\em services} & services \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a4ae190c8b0b89f36f4ff3f4723d1d48e}\label{protocol_thing_smart_b_l_e_active_delegate-p_a4ae190c8b0b89f36f4ff3f4723d1d48e}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!getExtModuleType:@{getExtModuleType:}}
+\index{getExtModuleType:@{getExtModuleType:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{getExtModuleType:}{getExtModuleType:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSInteger) get\+Ext\+Module\+Type\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a4ae190c8b0b89f36f4ff3f4723d1d48e}\label{protocol_thing_smart_b_l_e_active_delegate-p_a4ae190c8b0b89f36f4ff3f4723d1d48e}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!getExtModuleType:@{getExtModuleType:}}
+\index{getExtModuleType:@{getExtModuleType:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{getExtModuleType:}{getExtModuleType:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSInteger) get\+Ext\+Module\+Type\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{dev\+Id }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a62d178981fe990cf80d891333305b79b}\label{protocol_thing_smart_b_l_e_active_delegate-p_a62d178981fe990cf80d891333305b79b}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!handleChipEncrypt:success:failure:@{handleChipEncrypt:success:failure:}}
+\index{handleChipEncrypt:success:failure:@{handleChipEncrypt:success:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleChipEncrypt:success:failure:}{handleChipEncrypt:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) handle\+Chip\+Encrypt\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+激活流程加签 
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & 设备信息 \\
+\hline
+{\em success} & success \\
+\hline
+{\em failure} & failure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a62d178981fe990cf80d891333305b79b}\label{protocol_thing_smart_b_l_e_active_delegate-p_a62d178981fe990cf80d891333305b79b}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!handleChipEncrypt:success:failure:@{handleChipEncrypt:success:failure:}}
+\index{handleChipEncrypt:success:failure:@{handleChipEncrypt:success:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{handleChipEncrypt:success:failure:}{handleChipEncrypt:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) handle\+Chip\+Encrypt\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\item[{success\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+激活流程加签 
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & 设备信息 \\
+\hline
+{\em success} & success \\
+\hline
+{\em failure} & failure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a8cc8559f43099512b326809d195b40a2}\label{protocol_thing_smart_b_l_e_active_delegate-p_a8cc8559f43099512b326809d195b40a2}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:@{registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:}}
+\index{registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:@{registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:}{registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) register\+To\+Serve\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{dev\+Id\+:(nullable NSString $\ast$)}]{dev\+Id }\item[{encrypted\+Auth\+Key\+:(NSString $\ast$)}]{encrypted\+Auth\+Key }\item[{product\+Key\+:(NSString $\ast$)}]{product\+Key }\item[{pv\+:(NSString $\ast$)}]{pv }\item[{sv\+:(NSString $\ast$)}]{sv }\item[{mac\+:(nullable NSString $\ast$)}]{mac }\item[{is\+Register\+Key\+:(BOOL)}]{is\+Register\+Key }\item[{is\+Share\+:(BOOL)}]{is\+Share }\item[{options\+:(NSDictionary $\ast$)}]{options }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+注册设备到云端 
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a8cc8559f43099512b326809d195b40a2}\label{protocol_thing_smart_b_l_e_active_delegate-p_a8cc8559f43099512b326809d195b40a2}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:@{registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:}}
+\index{registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:@{registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:}{registerToServe:devId:encryptedAuthKey:productKey:pv:sv:mac:isRegisterKey:isShare:options:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) register\+To\+Serve\+: \begin{DoxyParamCaption}\item[{(NSString $\ast$)}]{uuid }\item[{dev\+Id\+:(nullable NSString $\ast$)}]{dev\+Id }\item[{encrypted\+Auth\+Key\+:(NSString $\ast$)}]{encrypted\+Auth\+Key }\item[{product\+Key\+:(NSString $\ast$)}]{product\+Key }\item[{pv\+:(NSString $\ast$)}]{pv }\item[{sv\+:(NSString $\ast$)}]{sv }\item[{mac\+:(nullable NSString $\ast$)}]{mac }\item[{is\+Register\+Key\+:(BOOL)}]{is\+Register\+Key }\item[{is\+Share\+:(BOOL)}]{is\+Share }\item[{options\+:(NSDictionary $\ast$)}]{options }\item[{success\+:(\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}})}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+注册设备到云端 
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a0e689c015d7f9093468c8e283e290b1d}\label{protocol_thing_smart_b_l_e_active_delegate-p_a0e689c015d7f9093468c8e283e290b1d}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!reportDps:devId:dpsTime:mode:reportType:@{reportDps:devId:dpsTime:mode:reportType:}}
+\index{reportDps:devId:dpsTime:mode:reportType:@{reportDps:devId:dpsTime:mode:reportType:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{reportDps:devId:dpsTime:mode:reportType:}{reportDps:devId:dpsTime:mode:reportType:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) report\+Dps\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{dps }\item[{dev\+Id\+:(NSString $\ast$)}]{dev\+Id }\item[{dps\+Time\+:(NSString $\ast$)}]{dps\+Time }\item[{mode\+:(NSUInteger)}]{mode }\item[{report\+Type\+:(NSUInteger)}]{type }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+上报dp点 
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a0e689c015d7f9093468c8e283e290b1d}\label{protocol_thing_smart_b_l_e_active_delegate-p_a0e689c015d7f9093468c8e283e290b1d}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!reportDps:devId:dpsTime:mode:reportType:@{reportDps:devId:dpsTime:mode:reportType:}}
+\index{reportDps:devId:dpsTime:mode:reportType:@{reportDps:devId:dpsTime:mode:reportType:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{reportDps:devId:dpsTime:mode:reportType:}{reportDps:devId:dpsTime:mode:reportType:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) report\+Dps\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{dps }\item[{dev\+Id\+:(NSString $\ast$)}]{dev\+Id }\item[{dps\+Time\+:(NSString $\ast$)}]{dps\+Time }\item[{mode\+:(NSUInteger)}]{mode }\item[{report\+Type\+:(NSUInteger)}]{type }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+上报dp点 
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_ae6fe52ad25f43c2505299c123579fbcd}\label{protocol_thing_smart_b_l_e_active_delegate-p_ae6fe52ad25f43c2505299c123579fbcd}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!reportDps:devId:dpsTimeMap:mode:reportType:@{reportDps:devId:dpsTimeMap:mode:reportType:}}
+\index{reportDps:devId:dpsTimeMap:mode:reportType:@{reportDps:devId:dpsTimeMap:mode:reportType:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{reportDps:devId:dpsTimeMap:mode:reportType:}{reportDps:devId:dpsTimeMap:mode:reportType:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) report\+Dps\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{dps }\item[{dev\+Id\+:(NSString $\ast$)}]{dev\+Id }\item[{dps\+Time\+Map\+:(NSDictionary $\ast$)}]{dps\+Time\+Map }\item[{mode\+:(NSUInteger)}]{mode }\item[{report\+Type\+:(NSUInteger)}]{type }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+上报dp点，time 是个 map 
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_ae6fe52ad25f43c2505299c123579fbcd}\label{protocol_thing_smart_b_l_e_active_delegate-p_ae6fe52ad25f43c2505299c123579fbcd}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!reportDps:devId:dpsTimeMap:mode:reportType:@{reportDps:devId:dpsTimeMap:mode:reportType:}}
+\index{reportDps:devId:dpsTimeMap:mode:reportType:@{reportDps:devId:dpsTimeMap:mode:reportType:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{reportDps:devId:dpsTimeMap:mode:reportType:}{reportDps:devId:dpsTimeMap:mode:reportType:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) report\+Dps\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{dps }\item[{dev\+Id\+:(NSString $\ast$)}]{dev\+Id }\item[{dps\+Time\+Map\+:(NSDictionary $\ast$)}]{dps\+Time\+Map }\item[{mode\+:(NSUInteger)}]{mode }\item[{report\+Type\+:(NSUInteger)}]{type }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+上报dp点，time 是个 map 
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a9ce6fc4bf77d4a6a9c7f7c581c284677}\label{protocol_thing_smart_b_l_e_active_delegate-p_a9ce6fc4bf77d4a6a9c7f7c581c284677}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!reportDps:mac:dpsTime:mode:reportType:@{reportDps:mac:dpsTime:mode:reportType:}}
+\index{reportDps:mac:dpsTime:mode:reportType:@{reportDps:mac:dpsTime:mode:reportType:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{reportDps:mac:dpsTime:mode:reportType:}{reportDps:mac:dpsTime:mode:reportType:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) report\+Dps\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{dps }\item[{mac\+:(NSString $\ast$)}]{mac }\item[{dps\+Time\+:(NSString $\ast$)}]{dps\+Time }\item[{mode\+:(NSUInteger)}]{mode }\item[{report\+Type\+:(NSUInteger)}]{type }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+上报dp点(无dev\+Id本地类型设备) 
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a9ce6fc4bf77d4a6a9c7f7c581c284677}\label{protocol_thing_smart_b_l_e_active_delegate-p_a9ce6fc4bf77d4a6a9c7f7c581c284677}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!reportDps:mac:dpsTime:mode:reportType:@{reportDps:mac:dpsTime:mode:reportType:}}
+\index{reportDps:mac:dpsTime:mode:reportType:@{reportDps:mac:dpsTime:mode:reportType:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{reportDps:mac:dpsTime:mode:reportType:}{reportDps:mac:dpsTime:mode:reportType:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) report\+Dps\+: \begin{DoxyParamCaption}\item[{(NSDictionary $\ast$)}]{dps }\item[{mac\+:(NSString $\ast$)}]{mac }\item[{dps\+Time\+:(NSString $\ast$)}]{dps\+Time }\item[{mode\+:(NSUInteger)}]{mode }\item[{report\+Type\+:(NSUInteger)}]{type }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+上报dp点(无dev\+Id本地类型设备) 
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a298af65d1980bc734414340fe5ee289f}\label{protocol_thing_smart_b_l_e_active_delegate-p_a298af65d1980bc734414340fe5ee289f}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!syncDeviceInfo:devId:handler:failure:@{syncDeviceInfo:devId:handler:failure:}}
+\index{syncDeviceInfo:devId:handler:failure:@{syncDeviceInfo:devId:handler:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{syncDeviceInfo:devId:handler:failure:}{syncDeviceInfo:devId:handler:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) sync\+Device\+Info\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\item[{dev\+Id\+:(NSString $\ast$)}]{dev\+Id }\item[{handler\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{handler }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+同步设备信息，业务根据 dev\+Id 获取 device 并处理后传递给 SDK 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & dev\+Id \\
+\hline
+{\em handler} & 业务层使用 handler 传递 device 给\+SDK \\
+\hline
+{\em error} & error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a298af65d1980bc734414340fe5ee289f}\label{protocol_thing_smart_b_l_e_active_delegate-p_a298af65d1980bc734414340fe5ee289f}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!syncDeviceInfo:devId:handler:failure:@{syncDeviceInfo:devId:handler:failure:}}
+\index{syncDeviceInfo:devId:handler:failure:@{syncDeviceInfo:devId:handler:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{syncDeviceInfo:devId:handler:failure:}{syncDeviceInfo:devId:handler:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) sync\+Device\+Info\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\item[{dev\+Id\+:(NSString $\ast$)}]{dev\+Id }\item[{handler\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_a1ac4228c704d9d5a24b47a8d3b9d4c32}{Thing\+Success\+ID}})}]{handler }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+同步设备信息，业务根据 dev\+Id 获取 device 并处理后传递给 SDK 
+\begin{DoxyParams}{Parameters}
+{\em dev\+Id} & dev\+Id \\
+\hline
+{\em handler} & 业务层使用 handler 传递 device 给\+SDK \\
+\hline
+{\em error} & error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a557fc5f5a93f82fa9ed4d8dc44e77cd0}\label{protocol_thing_smart_b_l_e_active_delegate-p_a557fc5f5a93f82fa9ed4d8dc44e77cd0}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!transEncKeyWithAdvModel:encKeyType:handler:failure:@{transEncKeyWithAdvModel:encKeyType:handler:failure:}}
+\index{transEncKeyWithAdvModel:encKeyType:handler:failure:@{transEncKeyWithAdvModel:encKeyType:handler:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{transEncKeyWithAdvModel:encKeyType:handler:failure:}{transEncKeyWithAdvModel:encKeyType:handler:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) trans\+Enc\+Key\+With\+Adv\+Model\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_adv_model}{Thing\+BLEAdv\+Model}} $\ast$)}]{adv\+Model }\item[{enc\+Key\+Type\+:(Thing\+Smart\+BLEEnc\+Key\+Type)}]{enc\+Key\+Type }\item[{handler\+:(nullable void($^\wedge$)(id \+\_\+\+Nullable key))}]{handler }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+激活、解绑过程传递秘钥给 SDK 
+\begin{DoxyParams}{Parameters}
+{\em adv\+Model} & 设备信息 \\
+\hline
+{\em enc\+Key\+Type} & 激活、解绑 \\
+\hline
+{\em handler} & 业务层使用handler传递秘钥给\+SDK \\
+\hline
+{\em error} & error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a557fc5f5a93f82fa9ed4d8dc44e77cd0}\label{protocol_thing_smart_b_l_e_active_delegate-p_a557fc5f5a93f82fa9ed4d8dc44e77cd0}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!transEncKeyWithAdvModel:encKeyType:handler:failure:@{transEncKeyWithAdvModel:encKeyType:handler:failure:}}
+\index{transEncKeyWithAdvModel:encKeyType:handler:failure:@{transEncKeyWithAdvModel:encKeyType:handler:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{transEncKeyWithAdvModel:encKeyType:handler:failure:}{transEncKeyWithAdvModel:encKeyType:handler:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) trans\+Enc\+Key\+With\+Adv\+Model\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_b_l_e_adv_model}{Thing\+BLEAdv\+Model}} $\ast$)}]{adv\+Model }\item[{enc\+Key\+Type\+:(Thing\+Smart\+BLEEnc\+Key\+Type)}]{enc\+Key\+Type }\item[{handler\+:(nullable void($^\wedge$)(id \+\_\+\+Nullable key))}]{handler }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+激活、解绑过程传递秘钥给 SDK 
+\begin{DoxyParams}{Parameters}
+{\em adv\+Model} & 设备信息 \\
+\hline
+{\em enc\+Key\+Type} & 激活、解绑 \\
+\hline
+{\em handler} & 业务层使用handler传递秘钥给\+SDK \\
+\hline
+{\em error} & error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a7c0704c62e68a478577b2ee0717680f5}\label{protocol_thing_smart_b_l_e_active_delegate-p_a7c0704c62e68a478577b2ee0717680f5}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!transferPSKInfoWithSL:handler:failure:@{transferPSKInfoWithSL:handler:failure:}}
+\index{transferPSKInfoWithSL:handler:failure:@{transferPSKInfoWithSL:handler:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{transferPSKInfoWithSL:handler:failure:}{transferPSKInfoWithSL:handler:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) transfer\+PSKInfo\+With\+SL\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{SL }\item[{handler\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}})}]{handler }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+传递 psk 信息 
+\begin{DoxyParams}{Parameters}
+{\em SL} & 安全级别 \\
+\hline
+{\em handler} & 回调 \\
+\hline
+{\em error} & failure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a7c0704c62e68a478577b2ee0717680f5}\label{protocol_thing_smart_b_l_e_active_delegate-p_a7c0704c62e68a478577b2ee0717680f5}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!transferPSKInfoWithSL:handler:failure:@{transferPSKInfoWithSL:handler:failure:}}
+\index{transferPSKInfoWithSL:handler:failure:@{transferPSKInfoWithSL:handler:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{transferPSKInfoWithSL:handler:failure:}{transferPSKInfoWithSL:handler:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) transfer\+PSKInfo\+With\+SL\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{SL }\item[{handler\+:(nullable \mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_util_8framework_2_headers_2_thing_smart_util_8h_ad2a617c0463d5bf9cfd259cf19341efc}{Thing\+Success\+Dict}})}]{handler }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+传递 psk 信息 
+\begin{DoxyParams}{Parameters}
+{\em SL} & 安全级别 \\
+\hline
+{\em handler} & 回调 \\
+\hline
+{\em error} & failure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_ad8de2255fd06fb24a241b81a1cdd7426}\label{protocol_thing_smart_b_l_e_active_delegate-p_ad8de2255fd06fb24a241b81a1cdd7426}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!unbindDevice:handler:failure:@{unbindDevice:handler:failure:}}
+\index{unbindDevice:handler:failure:@{unbindDevice:handler:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unbindDevice:handler:failure:}{unbindDevice:handler:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) unbind\+Device\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\item[{handler\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{handler }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+设备解绑 
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & 设备信息 \\
+\hline
+{\em handler} & handler \\
+\hline
+{\em error} & error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_ad8de2255fd06fb24a241b81a1cdd7426}\label{protocol_thing_smart_b_l_e_active_delegate-p_ad8de2255fd06fb24a241b81a1cdd7426}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!unbindDevice:handler:failure:@{unbindDevice:handler:failure:}}
+\index{unbindDevice:handler:failure:@{unbindDevice:handler:failure:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unbindDevice:handler:failure:}{unbindDevice:handler:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) unbind\+Device\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\item[{handler\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_ae3aa9bacb5c7dc6f20e04b208db97afb}{Thing\+Success\+Handler}})}]{handler }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{error }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+设备解绑 
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & 设备信息 \\
+\hline
+{\em handler} & handler \\
+\hline
+{\em error} & error \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a02c5e1c849bd4eefe0accb38d6138fbc}\label{protocol_thing_smart_b_l_e_active_delegate-p_a02c5e1c849bd4eefe0accb38d6138fbc}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!updateBLEOnlineStatus:isOnline:@{updateBLEOnlineStatus:isOnline:}}
+\index{updateBLEOnlineStatus:isOnline:@{updateBLEOnlineStatus:isOnline:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{updateBLEOnlineStatus:isOnline:}{updateBLEOnlineStatus:isOnline:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+BLEOnline\+Status\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\item[{is\+Online\+:(BOOL)}]{is\+Online }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+更新设备在线状态 
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & 设备信息 \\
+\hline
+{\em is\+Online} & 是否在线 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a02c5e1c849bd4eefe0accb38d6138fbc}\label{protocol_thing_smart_b_l_e_active_delegate-p_a02c5e1c849bd4eefe0accb38d6138fbc}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!updateBLEOnlineStatus:isOnline:@{updateBLEOnlineStatus:isOnline:}}
+\index{updateBLEOnlineStatus:isOnline:@{updateBLEOnlineStatus:isOnline:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{updateBLEOnlineStatus:isOnline:}{updateBLEOnlineStatus:isOnline:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+BLEOnline\+Status\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\item[{is\+Online\+:(BOOL)}]{is\+Online }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+更新设备在线状态 
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & 设备信息 \\
+\hline
+{\em is\+Online} & 是否在线 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_acfdda00bb81293dbda2692a40cccad6c}\label{protocol_thing_smart_b_l_e_active_delegate-p_acfdda00bb81293dbda2692a40cccad6c}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!updateDeviceInfo:@{updateDeviceInfo:}}
+\index{updateDeviceInfo:@{updateDeviceInfo:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{updateDeviceInfo:}{updateDeviceInfo:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+Device\+Info\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+更新设备信息 
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & 设备信息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_acfdda00bb81293dbda2692a40cccad6c}\label{protocol_thing_smart_b_l_e_active_delegate-p_acfdda00bb81293dbda2692a40cccad6c}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!updateDeviceInfo:@{updateDeviceInfo:}}
+\index{updateDeviceInfo:@{updateDeviceInfo:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{updateDeviceInfo:}{updateDeviceInfo:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+Device\+Info\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+更新设备信息 
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & 设备信息 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_ad5a53e3114186e9a60ee1f6173c3a148}\label{protocol_thing_smart_b_l_e_active_delegate-p_ad5a53e3114186e9a60ee1f6173c3a148}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!updateOTAVersion:otaType:otaVersion:@{updateOTAVersion:otaType:otaVersion:}}
+\index{updateOTAVersion:otaType:otaVersion:@{updateOTAVersion:otaType:otaVersion:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{updateOTAVersion:otaType:otaVersion:}{updateOTAVersion:otaType:otaVersion:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+OTAVersion\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\item[{ota\+Type\+:(Thing\+Smart\+BLEOTAType)}]{ota\+Type }\item[{ota\+Version\+:(NSString $\ast$)}]{ota\+Version }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+更新\+OTA信息 
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & 设备信息 \\
+\hline
+{\em ota\+Type} & OTA类型 \\
+\hline
+{\em ota\+Version} & OTA版本 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_ad5a53e3114186e9a60ee1f6173c3a148}\label{protocol_thing_smart_b_l_e_active_delegate-p_ad5a53e3114186e9a60ee1f6173c3a148}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!updateOTAVersion:otaType:otaVersion:@{updateOTAVersion:otaType:otaVersion:}}
+\index{updateOTAVersion:otaType:otaVersion:@{updateOTAVersion:otaType:otaVersion:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{updateOTAVersion:otaType:otaVersion:}{updateOTAVersion:otaType:otaVersion:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) update\+OTAVersion\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocol_thing_b_l_e_device_info_protocol-p}{Thing\+BLEDevice\+Info\+Protocol}} $>$)}]{device\+Info }\item[{ota\+Type\+:(Thing\+Smart\+BLEOTAType)}]{ota\+Type }\item[{ota\+Version\+:(NSString $\ast$)}]{ota\+Version }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+更新\+OTA信息 
+\begin{DoxyParams}{Parameters}
+{\em device\+Info} & 设备信息 \\
+\hline
+{\em ota\+Type} & OTA类型 \\
+\hline
+{\em ota\+Version} & OTA版本 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a9d8e79a16638add7779536cd93ceaaf0}\label{protocol_thing_smart_b_l_e_active_delegate-p_a9d8e79a16638add7779536cd93ceaaf0}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!validateBLEBeaconCapability:@{validateBLEBeaconCapability:}}
+\index{validateBLEBeaconCapability:@{validateBLEBeaconCapability:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{validateBLEBeaconCapability:}{validateBLEBeaconCapability:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) validate\+BLEBeacon\+Capability\+: \begin{DoxyParamCaption}\item[{(nullable \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info}{Thing\+BLESecurity\+Dev\+Info}} $\ast$)}]{dev\+Info }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+\mbox{\Hypertarget{protocol_thing_smart_b_l_e_active_delegate-p_a9d8e79a16638add7779536cd93ceaaf0}\label{protocol_thing_smart_b_l_e_active_delegate-p_a9d8e79a16638add7779536cd93ceaaf0}} 
+\index{$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}!validateBLEBeaconCapability:@{validateBLEBeaconCapability:}}
+\index{validateBLEBeaconCapability:@{validateBLEBeaconCapability:}!$<$ThingSmartBLEActiveDelegate$>$@{$<$ThingSmartBLEActiveDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{validateBLEBeaconCapability:}{validateBLEBeaconCapability:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) validate\+BLEBeacon\+Capability\+: \begin{DoxyParamCaption}\item[{(nullable \mbox{\hyperlink{interface_thing_b_l_e_security_dev_info}{Thing\+BLESecurity\+Dev\+Info}} $\ast$)}]{dev\+Info }\end{DoxyParamCaption}\hspace{0.3cm}{\ttfamily [optional]}}
+
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_active_delegate_8h}{Thing\+Smart\+BLEActive\+Delegate.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLECore\+Kit/\+Build/\+Thing\+Smart\+BLECore\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLECore\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_core_kit_8framework_2_headers_2_thing_smart_b_l_e_active_delegate_8h}{Thing\+Smart\+BLEActive\+Delegate.\+h}}\end{DoxyCompactItemize}

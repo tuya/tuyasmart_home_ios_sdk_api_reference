@@ -1,0 +1,57 @@
+\hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source}{}\doxysection{Limited\+CVPixel\+Buffer\+Pool.\+h}
+\label{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingCameraSDK/Build/ThingCameraSDK.xcframework/ios-\/arm64/ThingCameraSDK.framework/Headers/LimitedCVPixelBufferPool.h@{/Users/humtong/Downloads/Pods\_副本/ThingCameraSDK/Build/ThingCameraSDK.xcframework/ios-\/arm64/ThingCameraSDK.framework/Headers/LimitedCVPixelBufferPool.h}}
+\mbox{\hyperlink{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00002}00002 \textcolor{comment}{//  LimitedCVPixelBufferPool.h}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00003}00003 \textcolor{comment}{//  ThingCameraSDK}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00005}00005 \textcolor{comment}{//  Created by 吴沙坤 on 2023/3/3.}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00008}00008 \textcolor{preprocessor}{\#ifndef LimitedCVPixelBufferPool\_hpp}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00009}00009 \textcolor{preprocessor}{\#define LimitedCVPixelBufferPool\_hpp}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00011}00011 \textcolor{preprocessor}{\#include <CoreFoundation/CoreFoundation.h>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <CoreVideo/CoreVideo.h>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00013}00013 \textcolor{preprocessor}{\#include <queue>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00014}00014 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00015}00015 \textcolor{preprocessor}{\#include <mutex>}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00017}00017 \textcolor{keyword}{class }\mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool}{LimitedCVPixelBufferPool}} \{}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00018}00018 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00019}\mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_a17564b9c7213c5ddb973d4a64d558033}{00019}}     \mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_a17564b9c7213c5ddb973d4a64d558033}{LimitedCVPixelBufferPool}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_a2c54307496d79657f8a03aa50773e8e0}{width}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_a7cac4274b6fc5ac6c11ae80b6e00fb78}{height}}, \textcolor{keywordtype}{int} pixelfmt);}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00021}\mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_a5e8516841f430374238167c66fbf960d}{00021}}     \mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_a5e8516841f430374238167c66fbf960d}{\string~LimitedCVPixelBufferPool}}();}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00023}\mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_aa65f1fb20fe72eca76e9db78d6c27869}{00023}}     CVPixelBufferRef \mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_aa65f1fb20fe72eca76e9db78d6c27869}{GetPixelBuffer}}();}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00025}\mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_a755e67836b3040673548ae414aa8e31d}{00025}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_a755e67836b3040673548ae414aa8e31d}{ReleasePixelBuffer}}(CVPixelBufferRef pixelBuffer);}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00026}00026     }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00027}\mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_a2c54307496d79657f8a03aa50773e8e0}{00027}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_a2c54307496d79657f8a03aa50773e8e0}{width}}() \{}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00028}00028         \textcolor{keywordflow}{return} width\_;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00029}00029     \};}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00030}\mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_a7cac4274b6fc5ac6c11ae80b6e00fb78}{00030}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_limited_c_v_pixel_buffer_pool_a7cac4274b6fc5ac6c11ae80b6e00fb78}{height}}() \{}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00031}00031         \textcolor{keywordflow}{return} height\_;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00032}00032     \}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00033}00033     }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00034}00034  private :}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00035}00035     CFMutableDictionaryRef gen\_pixelbuffer\_attributes();}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00036}00036     CFDictionaryRef gen\_pixelbuffer\_pool\_attributes();}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00037}00037     \textcolor{comment}{//static void bufferReleased(void *releaseRefCon, void *baseAddress);}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00038}00038     \textcolor{keywordtype}{int} width\_;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00039}00039     \textcolor{keywordtype}{int} height\_;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00040}00040     \textcolor{keywordtype}{int} pixelfmt\_;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00041}00041     \textcolor{keywordtype}{int} min\_buffer\_count\_;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00042}00042     \textcolor{keywordtype}{int} max\_buffer\_count\_;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00043}00043     CVPixelBufferPoolRef pixelbuffer\_pool\_; \textcolor{comment}{// 缓冲区池}}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00044}00044     std::queue<CVPixelBufferRef> bufferQueue\_;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00045}00045     std::mutex mutex\_;}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00046}00046 \};}
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{ios-arm64_2_thing_camera_s_d_k_8framework_2_headers_2_limited_c_v_pixel_buffer_pool_8h_source_l00051}00051 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* LimitedCVPixelBufferPool\_h */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

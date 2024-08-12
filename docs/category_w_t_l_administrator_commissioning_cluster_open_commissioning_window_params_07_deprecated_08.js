@@ -1,0 +1,4 @@
+var category_w_t_l_administrator_commissioning_cluster_open_commissioning_window_params_07_deprecated_08 =
+[
+    [ "WTL_DEPRECATED", "category_w_t_l_administrator_commissioning_cluster_open_commissioning_window_params_07_deprecated_08.html#a415e9f0b03be481b055464dd09a5d520", null ]
+];

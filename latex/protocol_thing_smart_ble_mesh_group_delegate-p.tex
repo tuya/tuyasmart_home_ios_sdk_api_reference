@@ -1,0 +1,96 @@
+\hypertarget{protocol_thing_smart_ble_mesh_group_delegate-p}{}\doxysection{\texorpdfstring{$<$}{<}Thing\+Smart\+Ble\+Mesh\+Group\+Delegate\texorpdfstring{$>$}{>} Protocol Reference}
+\label{protocol_thing_smart_ble_mesh_group_delegate-p}\index{$<$ThingSmartBleMeshGroupDelegate$>$@{$<$ThingSmartBleMeshGroupDelegate$>$}}
+
+
+The Bluetooth mesh group delegate. The delegate is instantiated when a gateway is used to add a device to a group.  
+
+
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Ble\+Mesh\+Group.\+h$>$}
+
+Inheritance diagram for \texorpdfstring{$<$}{<}Thing\+Smart\+Ble\+Mesh\+Group\+Delegate\texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{protocol_thing_smart_ble_mesh_group_delegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_ble_mesh_group_delegate-p_acc9bd56362d070d87506c90f5b4f5515}{mesh\+Group\+:add\+Response\+Code\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_ble_mesh_group_delegate-p_a5df4b50fed420899b5b1af601939ecda}{mesh\+Group\+:remove\+Response\+Code\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_ble_mesh_group_delegate-p_acc9bd56362d070d87506c90f5b4f5515}{mesh\+Group\+:add\+Response\+Code\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocol_thing_smart_ble_mesh_group_delegate-p_a5df4b50fed420899b5b1af601939ecda}{mesh\+Group\+:remove\+Response\+Code\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Bluetooth mesh group delegate. The delegate is instantiated when a gateway is used to add a device to a group. 
+
+Definition at line \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_group_8h_source_l00014}{14}} of file \mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_group_8h_source}{Thing\+Smart\+Ble\+Mesh\+Group.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocol_thing_smart_ble_mesh_group_delegate-p_acc9bd56362d070d87506c90f5b4f5515}\label{protocol_thing_smart_ble_mesh_group_delegate-p_acc9bd56362d070d87506c90f5b4f5515}} 
+\index{$<$ThingSmartBleMeshGroupDelegate$>$@{$<$ThingSmartBleMeshGroupDelegate$>$}!meshGroup:addResponseCode:@{meshGroup:addResponseCode:}}
+\index{meshGroup:addResponseCode:@{meshGroup:addResponseCode:}!$<$ThingSmartBleMeshGroupDelegate$>$@{$<$ThingSmartBleMeshGroupDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{meshGroup:addResponseCode:}{meshGroup:addResponseCode:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) mesh\+Group\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_ble_mesh_group}{Thing\+Smart\+Ble\+Mesh\+Group}} $\ast$)}]{group }\item[{add\+Response\+Code\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSNumber $\ast$ $>$ $\ast$)}]{response\+Code }\end{DoxyParamCaption}}
+
+The group response that is returned when the Bluetooth mesh device joins the gateway. 
+\begin{DoxyParams}{Parameters}
+{\em group} & The Thing Smart Bluetooth mesh group. \\
+\hline
+{\em response\+Code} & Valid values\+: {\ttfamily 1}\+: exceeds the maximum number of scenes. {\ttfamily 2}\+: sub-\/device timeout. {\ttfamily 3}\+: specifies a value out of range. {\ttfamily 4}\+: file writing error. {\ttfamily 5}\+: other errors. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_ble_mesh_group_delegate-p_acc9bd56362d070d87506c90f5b4f5515}\label{protocol_thing_smart_ble_mesh_group_delegate-p_acc9bd56362d070d87506c90f5b4f5515}} 
+\index{$<$ThingSmartBleMeshGroupDelegate$>$@{$<$ThingSmartBleMeshGroupDelegate$>$}!meshGroup:addResponseCode:@{meshGroup:addResponseCode:}}
+\index{meshGroup:addResponseCode:@{meshGroup:addResponseCode:}!$<$ThingSmartBleMeshGroupDelegate$>$@{$<$ThingSmartBleMeshGroupDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{meshGroup:addResponseCode:}{meshGroup:addResponseCode:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) mesh\+Group\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_ble_mesh_group}{Thing\+Smart\+Ble\+Mesh\+Group}} $\ast$)}]{group }\item[{add\+Response\+Code\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSNumber $\ast$ $>$ $\ast$)}]{response\+Code }\end{DoxyParamCaption}}
+
+The group response that is returned when the Bluetooth mesh device joins the gateway. 
+\begin{DoxyParams}{Parameters}
+{\em group} & The Thing Smart Bluetooth mesh group. \\
+\hline
+{\em response\+Code} & Valid values\+: {\ttfamily 1}\+: exceeds the maximum number of scenes. {\ttfamily 2}\+: sub-\/device timeout. {\ttfamily 3}\+: specifies a value out of range. {\ttfamily 4}\+: file writing error. {\ttfamily 5}\+: other errors. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_ble_mesh_group_delegate-p_a5df4b50fed420899b5b1af601939ecda}\label{protocol_thing_smart_ble_mesh_group_delegate-p_a5df4b50fed420899b5b1af601939ecda}} 
+\index{$<$ThingSmartBleMeshGroupDelegate$>$@{$<$ThingSmartBleMeshGroupDelegate$>$}!meshGroup:removeResponseCode:@{meshGroup:removeResponseCode:}}
+\index{meshGroup:removeResponseCode:@{meshGroup:removeResponseCode:}!$<$ThingSmartBleMeshGroupDelegate$>$@{$<$ThingSmartBleMeshGroupDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{meshGroup:removeResponseCode:}{meshGroup:removeResponseCode:}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (void) mesh\+Group\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_ble_mesh_group}{Thing\+Smart\+Ble\+Mesh\+Group}} $\ast$)}]{group }\item[{remove\+Response\+Code\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSNumber $\ast$ $>$ $\ast$)}]{response\+Code }\end{DoxyParamCaption}}
+
+The group response that is returned when a Bluetooth mesh device is removed. 
+\begin{DoxyParams}{Parameters}
+{\em group} & The Thing Smart Bluetooth mesh group. \\
+\hline
+{\em response\+Code} & Valid values\+: {\ttfamily 1}\+: exceeds the maximum number of scenes. {\ttfamily 2}\+: sub-\/device timeout. {\ttfamily 3}\+: specifies a value out of range. {\ttfamily 4}\+: file writing error. {\ttfamily 5}\+: other errors. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocol_thing_smart_ble_mesh_group_delegate-p_a5df4b50fed420899b5b1af601939ecda}\label{protocol_thing_smart_ble_mesh_group_delegate-p_a5df4b50fed420899b5b1af601939ecda}} 
+\index{$<$ThingSmartBleMeshGroupDelegate$>$@{$<$ThingSmartBleMeshGroupDelegate$>$}!meshGroup:removeResponseCode:@{meshGroup:removeResponseCode:}}
+\index{meshGroup:removeResponseCode:@{meshGroup:removeResponseCode:}!$<$ThingSmartBleMeshGroupDelegate$>$@{$<$ThingSmartBleMeshGroupDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{meshGroup:removeResponseCode:}{meshGroup:removeResponseCode:}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (void) mesh\+Group\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_thing_smart_ble_mesh_group}{Thing\+Smart\+Ble\+Mesh\+Group}} $\ast$)}]{group }\item[{remove\+Response\+Code\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSNumber $\ast$ $>$ $\ast$)}]{response\+Code }\end{DoxyParamCaption}}
+
+The group response that is returned when a Bluetooth mesh device is removed. 
+\begin{DoxyParams}{Parameters}
+{\em group} & The Thing Smart Bluetooth mesh group. \\
+\hline
+{\em response\+Code} & Valid values\+: {\ttfamily 1}\+: exceeds the maximum number of scenes. {\ttfamily 2}\+: sub-\/device timeout. {\ttfamily 3}\+: specifies a value out of range. {\ttfamily 4}\+: file writing error. {\ttfamily 5}\+: other errors. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEMesh\+Kit/\+Build/\+Thing\+Smart\+BLEMesh\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+BLEMesh\+Kit.\+framework/\+Headers/\mbox{\hyperlink{x86__64-simulator_2_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_group_8h}{Thing\+Smart\+Ble\+Mesh\+Group.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+BLEMesh\+Kit/\+Build/\+Thing\+Smart\+BLEMesh\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+BLEMesh\+Kit.\+framework/\+Headers/\mbox{\hyperlink{_thing_smart_b_l_e_mesh_kit_8framework_2_headers_2_thing_smart_ble_mesh_group_8h}{Thing\+Smart\+Ble\+Mesh\+Group.\+h}}\end{DoxyCompactItemize}

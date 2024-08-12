@@ -1,0 +1,59 @@
+\hypertarget{category_n_s_object_07_thing_k_v_o_controller_08}{}\doxysection{NSObject(Thing\+KVOController) Category Reference}
+\label{category_n_s_object_07_thing_k_v_o_controller_08}\index{NSObject(ThingKVOController)@{NSObject(ThingKVOController)}}
+
+
+{\ttfamily \#import $<$NSObject+\+Thing\+KVOController.\+h$>$}
+
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_thing_k_v_o_controller}{Thing\+KVOController}} $\ast$ \mbox{\hyperlink{category_n_s_object_07_thing_k_v_o_controller_08_abdfae241a3ee3bf27d78a15b8fe0d4c8}{thing\+\_\+\+KVOController}}
+\item 
+\mbox{\hyperlink{interface_thing_k_v_o_controller}{Thing\+KVOController}} $\ast$ \mbox{\hyperlink{category_n_s_object_07_thing_k_v_o_controller_08_a2dc7f758022b05ebaf69067f7e6953c9}{thing\+\_\+\+KVOController\+Non\+Retaining}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Category that adds built-\/in {\ttfamily KVOController} and {\ttfamily KVOController\+Non\+Retaining} on any instance of {\ttfamily \mbox{\hyperlink{class_n_s_object-p}{NSObject}}}.
+
+This makes it convenient to simply create and forget a {\ttfamily \mbox{\hyperlink{interface_thing_k_v_o_controller}{Thing\+KVOController}}}, and when this object gets dealloc\textquotesingle{}d, so will the associated controller and the observation info. 
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_n_s_object_09_thing_k_v_o_controller_8h_source_l00020}{20}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_n_s_object_09_thing_k_v_o_controller_8h_source}{NSObject+\+Thing\+KVOController.\+h}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{category_n_s_object_07_thing_k_v_o_controller_08_abdfae241a3ee3bf27d78a15b8fe0d4c8}\label{category_n_s_object_07_thing_k_v_o_controller_08_abdfae241a3ee3bf27d78a15b8fe0d4c8}} 
+\index{NSObject(ThingKVOController)@{NSObject(ThingKVOController)}!thing\_KVOController@{thing\_KVOController}}
+\index{thing\_KVOController@{thing\_KVOController}!NSObject(ThingKVOController)@{NSObject(ThingKVOController)}}
+\doxysubsubsection{\texorpdfstring{thing\_KVOController}{thing\_KVOController}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_k_v_o_controller}{Thing\+KVOController}}$\ast$) thing\+\_\+\+KVOController\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@abstract Lazy-\/loaded \mbox{\hyperlink{interface_thing_k_v_o_controller}{Thing\+KVOController}} for use with any object \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_thing_k_v_o_controller}{Thing\+KVOController}} associated with this object, creating one if necessary @discussion This makes it convenient to simply create and forget a \mbox{\hyperlink{interface_thing_k_v_o_controller}{Thing\+KVOController}}, and when this object gets dealloc\textquotesingle{}d, so will the associated controller and the observation info. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_n_s_object_09_thing_k_v_o_controller_8h_source_l00027}{27}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_n_s_object_09_thing_k_v_o_controller_8h_source}{NSObject+\+Thing\+KVOController.\+h}}.
+
+\mbox{\Hypertarget{category_n_s_object_07_thing_k_v_o_controller_08_a2dc7f758022b05ebaf69067f7e6953c9}\label{category_n_s_object_07_thing_k_v_o_controller_08_a2dc7f758022b05ebaf69067f7e6953c9}} 
+\index{NSObject(ThingKVOController)@{NSObject(ThingKVOController)}!thing\_KVOControllerNonRetaining@{thing\_KVOControllerNonRetaining}}
+\index{thing\_KVOControllerNonRetaining@{thing\_KVOControllerNonRetaining}!NSObject(ThingKVOController)@{NSObject(ThingKVOController)}}
+\doxysubsubsection{\texorpdfstring{thing\_KVOControllerNonRetaining}{thing\_KVOControllerNonRetaining}}
+{\footnotesize\ttfamily -\/ (\mbox{\hyperlink{interface_thing_k_v_o_controller}{Thing\+KVOController}}$\ast$) thing\+\_\+\+KVOController\+Non\+Retaining\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [strong]}}
+
+@abstract Lazy-\/loaded \mbox{\hyperlink{interface_thing_k_v_o_controller}{Thing\+KVOController}} for use with any object \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_thing_k_v_o_controller}{Thing\+KVOController}} associated with this object, creating one if necessary @discussion This makes it convenient to simply create and forget a \mbox{\hyperlink{interface_thing_k_v_o_controller}{Thing\+KVOController}}. Use this version when a strong reference between controller and observed object would create a retain cycle. When not retaining observed objects, special care must be taken to remove observation info prior to deallocation of the observed object. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_n_s_object_09_thing_k_v_o_controller_8h_source_l00036}{36}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_n_s_object_09_thing_k_v_o_controller_8h_source}{NSObject+\+Thing\+KVOController.\+h}}.
+
+
+
+The documentation for this category was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Foundation\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_n_s_object_09_thing_k_v_o_controller_8h}{NSObject+\+Thing\+KVOController.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Foundation\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_foundation_kit_8framework_2_headers_2_n_s_object_09_thing_k_v_o_controller_8h}{NSObject+\+Thing\+KVOController.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Foundation\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_foundation_kit_8framework_2_headers_2_n_s_object_09_thing_k_v_o_controller_8h}{NSObject+\+Thing\+KVOController.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Foundation\+Kit/\+Thing\+Foundation\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Foundation\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_foundation_kit_8framework_2_headers_2_n_s_object_09_thing_k_v_o_controller_8h}{NSObject+\+Thing\+KVOController.\+h}}\end{DoxyCompactItemize}

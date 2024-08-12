@@ -1,4 +1,0 @@
-var ios_x86__64_simulator_2_thing_security_arm_ability_module_services_8framework_2_headers_2_thing_9e871fed9c0bab307ef47139a6e1912f =
-[
-    [ "ThingSecurityModeSettingItemModel", "interface_thing_security_mode_setting_item_model.html", "interface_thing_security_mode_setting_item_model" ]
-];

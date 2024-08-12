@@ -1,0 +1,114 @@
+\hypertarget{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Encrypt\+Image.framework/\+Headers/\+Thing\+Encrypt\+Web\+Image\+Compat.h File Reference}
+\label{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingEncryptImage/Build/ThingEncryptImage.xcframework/watchos-\/arm64\_i386\_x86\_64-\/simulator/ThingEncryptImage.framework/Headers/ThingEncryptWebImageCompat.h@{/Users/humtong/Downloads/Pods\_副本/ThingEncryptImage/Build/ThingEncryptImage.xcframework/watchos-\/arm64\_i386\_x86\_64-\/simulator/ThingEncryptImage.framework/Headers/ThingEncryptWebImageCompat.h}}
+{\ttfamily \#import $<$Target\+Conditionals.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a3df1b7a3232ba9d04d70347cf2713e7c}{Thing\+\_\+\+EI\+\_\+\+MAC}}~0
+\item 
+\#define \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_aac520e2aa7ed2062daf4952fc1e31006}{Thing\+\_\+\+EI\+\_\+\+UIKIT}}~0
+\item 
+\#define \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a3b807eb3628c17f2710c41fb232e766f}{Thing\+\_\+\+EI\+\_\+\+IOS}}~0
+\item 
+\#define \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a0885d3c641dd96a359be185971060555}{Thing\+\_\+\+EI\+\_\+\+TV}}~0
+\item 
+\#define \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a75f94603e0d3caee0c97c41b811fff29}{Thing\+\_\+\+EI\+\_\+\+WATCH}}~0
+\item 
+\#define \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a1cd5423db1dd8b54fe8fcdb7b9cb5041}{NS\+\_\+\+ENUM}}(\+\_\+type,  \+\_\+name)~enum \+\_\+name \+: \+\_\+type \+\_\+name; enum \+\_\+name \+: \+\_\+type
+\item 
+\#define \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a69a9dd15e6127a1d805b2a25ed79220b}{NS\+\_\+\+OPTIONS}}(\+\_\+type,  \+\_\+name)~enum \+\_\+name \+: \+\_\+type \+\_\+name; enum \+\_\+name \+: \+\_\+type
+\item 
+\#define \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a4a8918b21fadf9f9acfb0e37c36e0c75}{dispatch\+\_\+main\+\_\+async\+\_\+safe}}(block)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a4a8918b21fadf9f9acfb0e37c36e0c75}\label{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a4a8918b21fadf9f9acfb0e37c36e0c75}} 
+\index{ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}!dispatch\_main\_async\_safe@{dispatch\_main\_async\_safe}}
+\index{dispatch\_main\_async\_safe@{dispatch\_main\_async\_safe}!ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}}
+\doxysubsubsection{\texorpdfstring{dispatch\_main\_async\_safe}{dispatch\_main\_async\_safe}}
+{\footnotesize\ttfamily \#define dispatch\+\_\+main\+\_\+async\+\_\+safe(\begin{DoxyParamCaption}\item[{}]{block }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (dispatch\_queue\_get\_label(DISPATCH\_CURRENT\_QUEUE\_LABEL) == dispatch\_queue\_get\_label(dispatch\_get\_main\_queue())) \{\(\backslash\)}
+\DoxyCodeLine{        block();\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{else} \{\(\backslash\)}
+\DoxyCodeLine{        dispatch\_async(dispatch\_get\_main\_queue(), block);\(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source_l00087}{87}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source}{Thing\+Encrypt\+Web\+Image\+Compat.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a1cd5423db1dd8b54fe8fcdb7b9cb5041}\label{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a1cd5423db1dd8b54fe8fcdb7b9cb5041}} 
+\index{ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM}{NS\_ENUM}}
+{\footnotesize\ttfamily \#define NS\+\_\+\+ENUM(\begin{DoxyParamCaption}\item[{}]{\+\_\+type,  }\item[{}]{\+\_\+name }\end{DoxyParamCaption})~enum \+\_\+name \+: \+\_\+type \+\_\+name; enum \+\_\+name \+: \+\_\+type}
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source_l00079}{79}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source}{Thing\+Encrypt\+Web\+Image\+Compat.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a69a9dd15e6127a1d805b2a25ed79220b}\label{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a69a9dd15e6127a1d805b2a25ed79220b}} 
+\index{ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}!NS\_OPTIONS@{NS\_OPTIONS}}
+\index{NS\_OPTIONS@{NS\_OPTIONS}!ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}}
+\doxysubsubsection{\texorpdfstring{NS\_OPTIONS}{NS\_OPTIONS}}
+{\footnotesize\ttfamily \#define NS\+\_\+\+OPTIONS(\begin{DoxyParamCaption}\item[{}]{\+\_\+type,  }\item[{}]{\+\_\+name }\end{DoxyParamCaption})~enum \+\_\+name \+: \+\_\+type \+\_\+name; enum \+\_\+name \+: \+\_\+type}
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source_l00083}{83}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source}{Thing\+Encrypt\+Web\+Image\+Compat.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a3b807eb3628c17f2710c41fb232e766f}\label{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a3b807eb3628c17f2710c41fb232e766f}} 
+\index{ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}!Thing\_EI\_IOS@{Thing\_EI\_IOS}}
+\index{Thing\_EI\_IOS@{Thing\_EI\_IOS}!ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}}
+\doxysubsubsection{\texorpdfstring{Thing\_EI\_IOS}{Thing\_EI\_IOS}}
+{\footnotesize\ttfamily \#define Thing\+\_\+\+EI\+\_\+\+IOS~0}
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source_l00033}{33}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source}{Thing\+Encrypt\+Web\+Image\+Compat.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a3df1b7a3232ba9d04d70347cf2713e7c}\label{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a3df1b7a3232ba9d04d70347cf2713e7c}} 
+\index{ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}!Thing\_EI\_MAC@{Thing\_EI\_MAC}}
+\index{Thing\_EI\_MAC@{Thing\_EI\_MAC}!ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}}
+\doxysubsubsection{\texorpdfstring{Thing\_EI\_MAC}{Thing\_EI\_MAC}}
+{\footnotesize\ttfamily \#define Thing\+\_\+\+EI\+\_\+\+MAC~0}
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source_l00019}{19}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source}{Thing\+Encrypt\+Web\+Image\+Compat.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a0885d3c641dd96a359be185971060555}\label{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a0885d3c641dd96a359be185971060555}} 
+\index{ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}!Thing\_EI\_TV@{Thing\_EI\_TV}}
+\index{Thing\_EI\_TV@{Thing\_EI\_TV}!ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}}
+\doxysubsubsection{\texorpdfstring{Thing\_EI\_TV}{Thing\_EI\_TV}}
+{\footnotesize\ttfamily \#define Thing\+\_\+\+EI\+\_\+\+TV~0}
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source_l00039}{39}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source}{Thing\+Encrypt\+Web\+Image\+Compat.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_aac520e2aa7ed2062daf4952fc1e31006}\label{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_aac520e2aa7ed2062daf4952fc1e31006}} 
+\index{ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}!Thing\_EI\_UIKIT@{Thing\_EI\_UIKIT}}
+\index{Thing\_EI\_UIKIT@{Thing\_EI\_UIKIT}!ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}}
+\doxysubsubsection{\texorpdfstring{Thing\_EI\_UIKIT}{Thing\_EI\_UIKIT}}
+{\footnotesize\ttfamily \#define Thing\+\_\+\+EI\+\_\+\+UIKIT~0}
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source_l00027}{27}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source}{Thing\+Encrypt\+Web\+Image\+Compat.\+h}}.
+
+\mbox{\Hypertarget{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a75f94603e0d3caee0c97c41b811fff29}\label{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_a75f94603e0d3caee0c97c41b811fff29}} 
+\index{ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}!Thing\_EI\_WATCH@{Thing\_EI\_WATCH}}
+\index{Thing\_EI\_WATCH@{Thing\_EI\_WATCH}!ThingEncryptWebImageCompat.h@{ThingEncryptWebImageCompat.h}}
+\doxysubsubsection{\texorpdfstring{Thing\_EI\_WATCH}{Thing\_EI\_WATCH}}
+{\footnotesize\ttfamily \#define Thing\+\_\+\+EI\+\_\+\+WATCH~0}
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source_l00045}{45}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_web_image_compat_8h_source}{Thing\+Encrypt\+Web\+Image\+Compat.\+h}}.
+

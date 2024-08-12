@@ -1,0 +1,159 @@
+\hypertarget{_w_t_l_device_attestation_info_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.framework/\+Headers/\+WTLDevice\+Attestation\+Info.h File Reference}
+\label{_w_t_l_device_attestation_info_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDeviceAttestationInfo.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLDeviceAttestationInfo.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import $<$Water/\+WTLCertificates.\+h$>$}\newline
+{\ttfamily \#import $<$Water/\+WTLDefines.\+h$>$}\newline
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+NS\+\_\+\+ASSUME\+\_\+\+NONNULL\+\_\+\+BEGIN \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_aa633c0b7bf1c0c550e70666305fa4074}{API\+\_\+\+AVAILABLE}}(macos(13.\+3), watchos(9.\+4), tvos(16.\+4)) @interface WTLDevice\+Attestation\+Info NSData $\ast$ \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a8040315c54407c9954f846a4c83fb4dd}{nonce}}
+\item 
+\mbox{\hyperlink{_w_t_l_defines_8h_a65443dbe5d9d296956f3c0666f6a9f71}{WTLTLVBytes}} \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a52e9805a89edaaf82db709b229156c15}{elements\+TLV}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ad5511128b037e5016ebbcb9a53bfd54a}{elements\+Signature}}
+\item 
+\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a1c683344f2831d6c73a45ef3ed9c1829}{device\+Attestation\+Certificate}}
+\item 
+\mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ac96066643e16ed0a284c16d7d1e7b591}{product\+Attestation\+Intermediate\+Certificate}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ac9f084687f668535f871c438eedf8389}{certification\+Declaration}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a8623eabc1d724c87c50c06956e9652c4}{firmware\+Info}}
+\item 
+instancetype \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a593356330b444d4c84608e0b1474e4ff}{init\+With\+Device\+Attestation\+Challenge}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a7a92df1542e00158b610d18f5321b3f0}{elements}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ae8be1fa0c0e4079bd28147667ac86cda}{dac}}
+\item 
+NSData $\ast$ \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_a3280421eb43ffec6e95c1d541470f64e}{pai}}
+\item 
+instancetype \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_ad4d3880d31ac38b210f2802633539e7e}{init\+With\+Challenge}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_w_t_l_device_attestation_info_8h_ac9f084687f668535f871c438eedf8389}\label{_w_t_l_device_attestation_info_8h_ac9f084687f668535f871c438eedf8389}} 
+\index{WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}!certificationDeclaration@{certificationDeclaration}}
+\index{certificationDeclaration@{certificationDeclaration}!WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}}
+\doxysubsubsection{\texorpdfstring{certificationDeclaration}{certificationDeclaration}}
+{\footnotesize\ttfamily NSData $\ast$ certification\+Declaration\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The certification declaration of the device. This is a DER-\/encoded string representing a CMS-\/formatted certification declaration. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source_l00065}{65}} of file \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source}{WTLDevice\+Attestation\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_device_attestation_info_8h_ae8be1fa0c0e4079bd28147667ac86cda}\label{_w_t_l_device_attestation_info_8h_ae8be1fa0c0e4079bd28147667ac86cda}} 
+\index{WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}!dac@{dac}}
+\index{dac@{dac}!WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}}
+\doxysubsubsection{\texorpdfstring{dac}{dac}}
+{\footnotesize\ttfamily NSData$\ast$ dac\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source_l00095}{95}} of file \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source}{WTLDevice\+Attestation\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_device_attestation_info_8h_a1c683344f2831d6c73a45ef3ed9c1829}\label{_w_t_l_device_attestation_info_8h_a1c683344f2831d6c73a45ef3ed9c1829}} 
+\index{WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}!deviceAttestationCertificate@{deviceAttestationCertificate}}
+\index{deviceAttestationCertificate@{deviceAttestationCertificate}!WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}}
+\doxysubsubsection{\texorpdfstring{deviceAttestationCertificate}{deviceAttestationCertificate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} device\+Attestation\+Certificate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The device attestation certificate for the device. This can be used to verify signatures created with the device attestation private key. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source_l00055}{55}} of file \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source}{WTLDevice\+Attestation\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_device_attestation_info_8h_a7a92df1542e00158b610d18f5321b3f0}\label{_w_t_l_device_attestation_info_8h_a7a92df1542e00158b610d18f5321b3f0}} 
+\index{WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}!elements@{elements}}
+\index{elements@{elements}!WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}}
+\doxysubsubsection{\texorpdfstring{elements}{elements}}
+{\footnotesize\ttfamily NSData$\ast$ elements\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source_l00091}{91}} of file \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source}{WTLDevice\+Attestation\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_device_attestation_info_8h_ad5511128b037e5016ebbcb9a53bfd54a}\label{_w_t_l_device_attestation_info_8h_ad5511128b037e5016ebbcb9a53bfd54a}} 
+\index{WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}!elementsSignature@{elementsSignature}}
+\index{elementsSignature@{elementsSignature}!WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}}
+\doxysubsubsection{\texorpdfstring{elementsSignature}{elementsSignature}}
+{\footnotesize\ttfamily NSData $\ast$ elements\+Signature\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+A signature, using the device attestation private key of the device that sent the attestation information, over the concatenation of elements\+TLV and the attestation challenge from the secure session. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source_l00050}{50}} of file \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source}{WTLDevice\+Attestation\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_device_attestation_info_8h_a52e9805a89edaaf82db709b229156c15}\label{_w_t_l_device_attestation_info_8h_a52e9805a89edaaf82db709b229156c15}} 
+\index{WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}!elementsTLV@{elementsTLV}}
+\index{elementsTLV@{elementsTLV}!WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}}
+\doxysubsubsection{\texorpdfstring{elementsTLV}{elementsTLV}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_w_t_l_defines_8h_a65443dbe5d9d296956f3c0666f6a9f71}{WTLTLVBytes}} elements\+TLV\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The TLV-\/encoded attestation\+\_\+elements\+\_\+message that was used to find the certification\+Declaration and firmware\+Info. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source_l00044}{44}} of file \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source}{WTLDevice\+Attestation\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_device_attestation_info_8h_a8623eabc1d724c87c50c06956e9652c4}\label{_w_t_l_device_attestation_info_8h_a8623eabc1d724c87c50c06956e9652c4}} 
+\index{WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}!firmwareInfo@{firmwareInfo}}
+\index{firmwareInfo@{firmwareInfo}!WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}}
+\doxysubsubsection{\texorpdfstring{firmwareInfo}{firmwareInfo}}
+{\footnotesize\ttfamily NSData $\ast$ firmware\+Info\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source_l00071}{71}} of file \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source}{WTLDevice\+Attestation\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_device_attestation_info_8h_ad4d3880d31ac38b210f2802633539e7e}\label{_w_t_l_device_attestation_info_8h_ad4d3880d31ac38b210f2802633539e7e}} 
+\index{WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}!initWithChallenge@{initWithChallenge}}
+\index{initWithChallenge@{initWithChallenge}!WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}}
+\doxysubsubsection{\texorpdfstring{initWithChallenge}{initWithChallenge}}
+{\footnotesize\ttfamily instancetype init\+With\+Challenge}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source_l00103}{103}} of file \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source}{WTLDevice\+Attestation\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_device_attestation_info_8h_a593356330b444d4c84608e0b1474e4ff}\label{_w_t_l_device_attestation_info_8h_a593356330b444d4c84608e0b1474e4ff}} 
+\index{WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}!initWithDeviceAttestationChallenge@{initWithDeviceAttestationChallenge}}
+\index{initWithDeviceAttestationChallenge@{initWithDeviceAttestationChallenge}!WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}}
+\doxysubsubsection{\texorpdfstring{initWithDeviceAttestationChallenge}{initWithDeviceAttestationChallenge}}
+{\footnotesize\ttfamily instancetype init\+With\+Device\+Attestation\+Challenge}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source_l00073}{73}} of file \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source}{WTLDevice\+Attestation\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_device_attestation_info_8h_a8040315c54407c9954f846a4c83fb4dd}\label{_w_t_l_device_attestation_info_8h_a8040315c54407c9954f846a4c83fb4dd}} 
+\index{WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}!nonce@{nonce}}
+\index{nonce@{nonce}!WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}}
+\doxysubsubsection{\texorpdfstring{nonce}{nonce}}
+{\footnotesize\ttfamily end \mbox{\hyperlink{_w_t_l_operational_certificate_issuer_8h_af98726e3245c016574823a07fb4c8dbb}{WTL\+\_\+\+DEPRECATED}} (\char`\"{}Please use WTLDevice\+Attestation\+Info\char`\"{}, macos(13.\+0, 13.\+3), watchos(9.\+1, 9.\+4), tvos(16.\+1, 16.\+4)) @interface Attestation\+Info NSData$\ast$ nonce\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+Copyright (c) 2022-\/2023 Project CHIP Authors
+
+Licensed under the Apache License, Version 2.\+0 (the \char`\"{}\+License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb}http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+ Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\+AS IS\char`\"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Represents information relating to product attestation. The attestation challenge from the secure session. The attestation nonce from the Attestation\+Request command. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source_l00039}{39}} of file \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source}{WTLDevice\+Attestation\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_device_attestation_info_8h_a3280421eb43ffec6e95c1d541470f64e}\label{_w_t_l_device_attestation_info_8h_a3280421eb43ffec6e95c1d541470f64e}} 
+\index{WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}!pai@{pai}}
+\index{pai@{pai}!WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}}
+\doxysubsubsection{\texorpdfstring{pai}{pai}}
+{\footnotesize\ttfamily NSData$\ast$ pai\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source_l00097}{97}} of file \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source}{WTLDevice\+Attestation\+Info.\+h}}.
+
+\mbox{\Hypertarget{_w_t_l_device_attestation_info_8h_ac96066643e16ed0a284c16d7d1e7b591}\label{_w_t_l_device_attestation_info_8h_ac96066643e16ed0a284c16d7d1e7b591}} 
+\index{WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}!productAttestationIntermediateCertificate@{productAttestationIntermediateCertificate}}
+\index{productAttestationIntermediateCertificate@{productAttestationIntermediateCertificate}!WTLDeviceAttestationInfo.h@{WTLDeviceAttestationInfo.h}}
+\doxysubsubsection{\texorpdfstring{productAttestationIntermediateCertificate}{productAttestationIntermediateCertificate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_w_t_l_defines_8h_a1303696625fba26ad571809a1e148577}{WTLCertificate\+DERBytes}} product\+Attestation\+Intermediate\+Certificate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}
+
+The product attestation intermediate certificate that can be used to verify the authenticity of the device attestation certificate. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source_l00060}{60}} of file \mbox{\hyperlink{_w_t_l_device_attestation_info_8h_source}{WTLDevice\+Attestation\+Info.\+h}}.
+

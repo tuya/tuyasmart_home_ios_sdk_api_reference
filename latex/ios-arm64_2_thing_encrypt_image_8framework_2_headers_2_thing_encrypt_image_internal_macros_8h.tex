@@ -1,0 +1,79 @@
+\hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Encrypt\+Image/\+Build/\+Thing\+Encrypt\+Image.xcframework/ios-\/arm64/\+Thing\+Encrypt\+Image.framework/\+Headers/\+Thing\+Encrypt\+Image\+Internal\+Macros.h File Reference}
+\label{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingEncryptImage/Build/ThingEncryptImage.xcframework/ios-\/arm64/ThingEncryptImage.framework/Headers/ThingEncryptImageInternalMacros.h@{/Users/humtong/Downloads/Pods\_副本/ThingEncryptImage/Build/ThingEncryptImage.xcframework/ios-\/arm64/ThingEncryptImage.framework/Headers/ThingEncryptImageInternalMacros.h}}
+{\ttfamily \#import $<$os/lock.\+h$>$}\newline
+{\ttfamily \#import $<$libkern/\+OSAtomic.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_a97e045cafbd3601a04872e0dfc81f8cb}{Thing\+\_\+\+USE\+\_\+\+OS\+\_\+\+UNFAIR\+\_\+\+LOCK}}
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_a0dad8e3cea5092d37e0212af9045518f}{Thing\+\_\+\+LOCK\+\_\+\+DECLARE}}(lock)~os\+\_\+unfair\+\_\+lock lock
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_adfe950a5ad55d58fdae775af7dbe9352}{Thing\+\_\+\+LOCK\+\_\+\+INIT}}(lock)~lock = OS\+\_\+\+UNFAIR\+\_\+\+LOCK\+\_\+\+INIT
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_a0a08c308e95573a8809a86578d4ff0d2}{Thing\+\_\+\+LOCK}}(lock)~os\+\_\+unfair\+\_\+lock\+\_\+lock(\&lock)
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_ae28b66eecb58581835c0692a31e99c3c}{Thing\+\_\+\+UNLOCK}}(lock)~os\+\_\+unfair\+\_\+lock\+\_\+unlock(\&lock)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_a0a08c308e95573a8809a86578d4ff0d2}\label{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_a0a08c308e95573a8809a86578d4ff0d2}} 
+\index{ThingEncryptImageInternalMacros.h@{ThingEncryptImageInternalMacros.h}!Thing\_LOCK@{Thing\_LOCK}}
+\index{Thing\_LOCK@{Thing\_LOCK}!ThingEncryptImageInternalMacros.h@{ThingEncryptImageInternalMacros.h}}
+\doxysubsubsection{\texorpdfstring{Thing\_LOCK}{Thing\_LOCK}}
+{\footnotesize\ttfamily \#define Thing\+\_\+\+LOCK(\begin{DoxyParamCaption}\item[{}]{lock }\end{DoxyParamCaption})~os\+\_\+unfair\+\_\+lock\+\_\+lock(\&lock)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_source_l00040}{40}} of file \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_source}{Thing\+Encrypt\+Image\+Internal\+Macros.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_a0dad8e3cea5092d37e0212af9045518f}\label{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_a0dad8e3cea5092d37e0212af9045518f}} 
+\index{ThingEncryptImageInternalMacros.h@{ThingEncryptImageInternalMacros.h}!Thing\_LOCK\_DECLARE@{Thing\_LOCK\_DECLARE}}
+\index{Thing\_LOCK\_DECLARE@{Thing\_LOCK\_DECLARE}!ThingEncryptImageInternalMacros.h@{ThingEncryptImageInternalMacros.h}}
+\doxysubsubsection{\texorpdfstring{Thing\_LOCK\_DECLARE}{Thing\_LOCK\_DECLARE}}
+{\footnotesize\ttfamily \#define Thing\+\_\+\+LOCK\+\_\+\+DECLARE(\begin{DoxyParamCaption}\item[{}]{lock }\end{DoxyParamCaption})~os\+\_\+unfair\+\_\+lock lock}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_source_l00022}{22}} of file \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_source}{Thing\+Encrypt\+Image\+Internal\+Macros.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_adfe950a5ad55d58fdae775af7dbe9352}\label{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_adfe950a5ad55d58fdae775af7dbe9352}} 
+\index{ThingEncryptImageInternalMacros.h@{ThingEncryptImageInternalMacros.h}!Thing\_LOCK\_INIT@{Thing\_LOCK\_INIT}}
+\index{Thing\_LOCK\_INIT@{Thing\_LOCK\_INIT}!ThingEncryptImageInternalMacros.h@{ThingEncryptImageInternalMacros.h}}
+\doxysubsubsection{\texorpdfstring{Thing\_LOCK\_INIT}{Thing\_LOCK\_INIT}}
+{\footnotesize\ttfamily \#define Thing\+\_\+\+LOCK\+\_\+\+INIT(\begin{DoxyParamCaption}\item[{}]{lock }\end{DoxyParamCaption})~lock = OS\+\_\+\+UNFAIR\+\_\+\+LOCK\+\_\+\+INIT}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_source_l00031}{31}} of file \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_source}{Thing\+Encrypt\+Image\+Internal\+Macros.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_ae28b66eecb58581835c0692a31e99c3c}\label{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_ae28b66eecb58581835c0692a31e99c3c}} 
+\index{ThingEncryptImageInternalMacros.h@{ThingEncryptImageInternalMacros.h}!Thing\_UNLOCK@{Thing\_UNLOCK}}
+\index{Thing\_UNLOCK@{Thing\_UNLOCK}!ThingEncryptImageInternalMacros.h@{ThingEncryptImageInternalMacros.h}}
+\doxysubsubsection{\texorpdfstring{Thing\_UNLOCK}{Thing\_UNLOCK}}
+{\footnotesize\ttfamily \#define Thing\+\_\+\+UNLOCK(\begin{DoxyParamCaption}\item[{}]{lock }\end{DoxyParamCaption})~os\+\_\+unfair\+\_\+lock\+\_\+unlock(\&lock)}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_source_l00049}{49}} of file \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_source}{Thing\+Encrypt\+Image\+Internal\+Macros.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_a97e045cafbd3601a04872e0dfc81f8cb}\label{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_a97e045cafbd3601a04872e0dfc81f8cb}} 
+\index{ThingEncryptImageInternalMacros.h@{ThingEncryptImageInternalMacros.h}!Thing\_USE\_OS\_UNFAIR\_LOCK@{Thing\_USE\_OS\_UNFAIR\_LOCK}}
+\index{Thing\_USE\_OS\_UNFAIR\_LOCK@{Thing\_USE\_OS\_UNFAIR\_LOCK}!ThingEncryptImageInternalMacros.h@{ThingEncryptImageInternalMacros.h}}
+\doxysubsubsection{\texorpdfstring{Thing\_USE\_OS\_UNFAIR\_LOCK}{Thing\_USE\_OS\_UNFAIR\_LOCK}}
+{\footnotesize\ttfamily \#define Thing\+\_\+\+USE\+\_\+\+OS\+\_\+\+UNFAIR\+\_\+\+LOCK}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    TARGET\_OS\_MACCATALYST ||\(\backslash\)}
+\DoxyCodeLine{    (\_\_IPHONE\_OS\_VERSION\_MIN\_REQUIRED >= \_\_IPHONE\_10\_0) ||\(\backslash\)}
+\DoxyCodeLine{    (\_\_MAC\_OS\_X\_VERSION\_MIN\_REQUIRED >= \_\_MAC\_10\_12) ||\(\backslash\)}
+\DoxyCodeLine{    (\_\_TV\_OS\_VERSION\_MIN\_REQUIRED >= \_\_TVOS\_10\_0) ||\(\backslash\)}
+\DoxyCodeLine{    (\_\_WATCH\_OS\_VERSION\_MIN\_REQUIRED >= \_\_WATCHOS\_3\_0)}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_source_l00014}{14}} of file \mbox{\hyperlink{ios-arm64_2_thing_encrypt_image_8framework_2_headers_2_thing_encrypt_image_internal_macros_8h_source}{Thing\+Encrypt\+Image\+Internal\+Macros.\+h}}.
+

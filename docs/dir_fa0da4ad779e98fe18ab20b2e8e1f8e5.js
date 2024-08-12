@@ -1,4 +1,0 @@
-var dir_fa0da4ad779e98fe18ab20b2e8e1f8e5 =
-[
-    [ "ThingBusinessDeviceDetailEditLink-umbrella.h", "_thing_business_device_detail_edit_link_8framework_2_headers_2_thing_business_device_detail_edit_link-umbrella_8h.html", "_thing_business_device_detail_edit_link_8framework_2_headers_2_thing_business_device_detail_edit_link-umbrella_8h" ]
-];

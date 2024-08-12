@@ -1,4 +1,0 @@
-var _thing_navigation_controller_8framework_2_private_headers_2_u_i_navigation_controller_09_thing_base_interface_8h =
-[
-    [ "UINavigationController(ThingBaseInterface)", "category_u_i_navigation_controller_07_thing_base_interface_08.html", "category_u_i_navigation_controller_07_thing_base_interface_08" ]
-];

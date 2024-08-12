@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Tuya iOS Smart Life App SDK: ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-arm64/ThingSmartUtil.framework/Headers/ThingSmartModuleProtocol.h Source File</title>
+<title>Tuya iOS Smart Life App SDK: /Users/humtong/Downloads/Pods_副本/ThingSmartUtil/Build/ThingSmartUtil.xcframework/ios-arm64/ThingSmartUtil.framework/Headers/ThingSmartModuleProtocol.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,9 +24,9 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo (1).png"/></td>
   <td id="projectalign">
-   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.14.0</span>
+   <div id="projectname">Tuya iOS Smart Life App SDK<span id="projectnumber">&#160;5.15.0</span>
    </div>
   </td>
  </tr>
@@ -97,14 +97,14 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_util_8framewor
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>NS_ASSUME_NONNULL_BEGIN</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="protocol_thing_smart_module_protocol-p.html">   12</a></span><span class="keyword">@protocol </span><a class="code hl_protocol" href="protocol_thing_smart_module_protocol-p.html">ThingSmartModuleProtocol</a> &lt;NSObject&gt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">@protocol </span><a class="code hl_protocol" href="protocol_thing_smart_module_protocol-p.html">ThingSmartModuleProtocol</a> &lt;NSObject&gt;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="protocol_thing_smart_device_core_entry-p.html#a47261b1b256c26f6f8051998c96db311">   14</a></span><span class="keyword">@property</span> (nonatomic, weak) NSObject *<a class="code hl_property" href="protocol_thing_smart_module_protocol-p.html#ab63e2020dacc41c5f39a416b6181d388">moduleEntry</a>;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">@end</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="protocol_thing_smart_device_core_entry-p.html">   19</a></span><span class="keyword">@protocol </span><a class="code hl_protocol" href="protocol_thing_smart_device_core_entry-p.html">ThingSmartDeviceCoreEntry</a> &lt;<a class="code hl_protocol" href="protocol_thing_smart_module_protocol-p.html">ThingSmartModuleProtocol</a>&gt;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">@protocol </span><a class="code hl_protocol" href="protocol_thing_smart_device_core_entry-p.html">ThingSmartDeviceCoreEntry</a> &lt;<a class="code hl_protocol" href="protocol_thing_smart_module_protocol-p.html">ThingSmartModuleProtocol</a>&gt;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>- (void)configSocketWithUniversal:(BOOL)universal uid:(NSString *)uid configKey:(nullable NSData *)configKey broadcastKey:(nullable NSData *)broadcastKey sendKey:(nullable NSData *)sendKey;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
@@ -114,45 +114,47 @@ $(document).ready(function(){initNavTree('ios-arm64_2_thing_smart_util_8framewor
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>- (void)<a class="code hl_function" href="protocol_thing_smart_device_core_entry-p.html#a1c166ac44311420246eaa5316d340f97">unRegisterYuNetService</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>- (void)syncYuNetService:(nullable NSDictionary *)ext;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="protocol_thing_smart_channel_reg_entry-p.html">   32</a></span><span class="keyword">@protocol </span><a class="code hl_protocol" href="protocol_thing_smart_channel_reg_entry-p.html">ThingSmartChannelRegEntry</a> &lt;<a class="code hl_protocol" href="protocol_thing_smart_module_protocol-p.html">ThingSmartModuleProtocol</a>&gt;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">@required</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">@protocol </span><a class="code hl_protocol" href="protocol_thing_smart_channel_reg_entry-p.html">ThingSmartChannelRegEntry</a> &lt;<a class="code hl_protocol" href="protocol_thing_smart_module_protocol-p.html">ThingSmartModuleProtocol</a>&gt;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>- (void)<a class="code hl_function" href="protocol_thing_smart_channel_reg_entry-p.html#af0099bf89116b5ff8c1a5670da9b5e70">registMQTT</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">@required</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>- (void)<a class="code hl_function" href="protocol_thing_smart_channel_reg_entry-p.html#a6f443ea6ed83f9631955770054bce6d4">registSocket</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>- (void)<a class="code hl_function" href="protocol_thing_smart_channel_reg_entry-p.html#af0099bf89116b5ff8c1a5670da9b5e70">registMQTT</a>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>- (BOOL)<a class="code hl_function" href="protocol_thing_smart_channel_reg_entry-p.html#a3769f3c8aa9c523311f049821e949f80">disconnect</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>- (void)<a class="code hl_function" href="protocol_thing_smart_channel_reg_entry-p.html#a6f443ea6ed83f9631955770054bce6d4">registSocket</a>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>- (BOOL)<a class="code hl_function" href="protocol_thing_smart_channel_reg_entry-p.html#a6865e8b7c413f4d04fc5685308122e05">reconnect</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>- (BOOL)<a class="code hl_function" href="protocol_thing_smart_channel_reg_entry-p.html#a3769f3c8aa9c523311f049821e949f80">disconnect</a>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>- (NSString *)<a class="code hl_function" href="protocol_thing_smart_channel_reg_entry-p.html#a0ff1831e0b5d70f4473ca54dae93fd18">getUserCountryCode</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>- (BOOL)<a class="code hl_function" href="protocol_thing_smart_channel_reg_entry-p.html#a6865e8b7c413f4d04fc5685308122e05">reconnect</a>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="protocol_thing_smart_channel_reg_entry-p.html#aa032bea9d5ac9991ef0c4b52e875c2f0">   46</a></span><span class="keyword">@property</span> (nonatomic, assign) BOOL <a class="code hl_property" href="protocol_thing_smart_channel_reg_entry-p.html#aa032bea9d5ac9991ef0c4b52e875c2f0">manualRegister</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>- (NSString *)<a class="code hl_function" href="protocol_thing_smart_channel_reg_entry-p.html#a0ff1831e0b5d70f4473ca54dae93fd18">getUserCountryCode</a>;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">@property</span> (nonatomic, assign) BOOL <a class="code hl_property" href="protocol_thing_smart_channel_reg_entry-p.html#aa032bea9d5ac9991ef0c4b52e875c2f0">manualRegister</a>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>NS_ASSUME_NONNULL_END</div>
-<div class="ttc" id="aprotocol_thing_smart_channel_reg_entry-p_html"><div class="ttname"><a href="protocol_thing_smart_channel_reg_entry-p.html">ThingSmartChannelRegEntry-p</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h_source.html#l00032">ThingSmartModuleProtocol.h:32</a></div></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="aprotocol_thing_smart_channel_reg_entry-p_html"><div class="ttname"><a href="protocol_thing_smart_channel_reg_entry-p.html">ThingSmartChannelRegEntry-p</a></div><div class="ttdef"><b>Definition:</b> <a href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h_source.html#l00034">ThingSmartModuleProtocol.h:34</a></div></div>
 <div class="ttc" id="aprotocol_thing_smart_channel_reg_entry-p_html_a0ff1831e0b5d70f4473ca54dae93fd18"><div class="ttname"><a href="protocol_thing_smart_channel_reg_entry-p.html#a0ff1831e0b5d70f4473ca54dae93fd18">-[ThingSmartChannelRegEntry-p getUserCountryCode]</a></div><div class="ttdeci">NSString * getUserCountryCode()</div></div>
 <div class="ttc" id="aprotocol_thing_smart_channel_reg_entry-p_html_a3769f3c8aa9c523311f049821e949f80"><div class="ttname"><a href="protocol_thing_smart_channel_reg_entry-p.html#a3769f3c8aa9c523311f049821e949f80">-[ThingSmartChannelRegEntry-p disconnect]</a></div><div class="ttdeci">BOOL disconnect()</div></div>
 <div class="ttc" id="aprotocol_thing_smart_channel_reg_entry-p_html_a6865e8b7c413f4d04fc5685308122e05"><div class="ttname"><a href="protocol_thing_smart_channel_reg_entry-p.html#a6865e8b7c413f4d04fc5685308122e05">-[ThingSmartChannelRegEntry-p reconnect]</a></div><div class="ttdeci">BOOL reconnect()</div></div>
 <div class="ttc" id="aprotocol_thing_smart_channel_reg_entry-p_html_a6f443ea6ed83f9631955770054bce6d4"><div class="ttname"><a href="protocol_thing_smart_channel_reg_entry-p.html#a6f443ea6ed83f9631955770054bce6d4">-[ThingSmartChannelRegEntry-p registSocket]</a></div><div class="ttdeci">void registSocket()</div></div>
-<div class="ttc" id="aprotocol_thing_smart_channel_reg_entry-p_html_aa032bea9d5ac9991ef0c4b52e875c2f0"><div class="ttname"><a href="protocol_thing_smart_channel_reg_entry-p.html#aa032bea9d5ac9991ef0c4b52e875c2f0">ThingSmartChannelRegEntry-p::manualRegister</a></div><div class="ttdeci">BOOL manualRegister</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h_source.html#l00046">ThingSmartModuleProtocol.h:46</a></div></div>
+<div class="ttc" id="aprotocol_thing_smart_channel_reg_entry-p_html_aa032bea9d5ac9991ef0c4b52e875c2f0"><div class="ttname"><a href="protocol_thing_smart_channel_reg_entry-p.html#aa032bea9d5ac9991ef0c4b52e875c2f0">ThingSmartChannelRegEntry-p::manualRegister</a></div><div class="ttdeci">BOOL manualRegister</div><div class="ttdef"><b>Definition:</b> <a href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h_source.html#l00048">ThingSmartModuleProtocol.h:48</a></div></div>
 <div class="ttc" id="aprotocol_thing_smart_channel_reg_entry-p_html_af0099bf89116b5ff8c1a5670da9b5e70"><div class="ttname"><a href="protocol_thing_smart_channel_reg_entry-p.html#af0099bf89116b5ff8c1a5670da9b5e70">-[ThingSmartChannelRegEntry-p registMQTT]</a></div><div class="ttdeci">void registMQTT()</div></div>
-<div class="ttc" id="aprotocol_thing_smart_device_core_entry-p_html"><div class="ttname"><a href="protocol_thing_smart_device_core_entry-p.html">ThingSmartDeviceCoreEntry-p</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h_source.html#l00019">ThingSmartModuleProtocol.h:19</a></div></div>
+<div class="ttc" id="aprotocol_thing_smart_device_core_entry-p_html"><div class="ttname"><a href="protocol_thing_smart_device_core_entry-p.html">ThingSmartDeviceCoreEntry-p</a></div><div class="ttdef"><b>Definition:</b> <a href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h_source.html#l00019">ThingSmartModuleProtocol.h:19</a></div></div>
 <div class="ttc" id="aprotocol_thing_smart_device_core_entry-p_html_a1c166ac44311420246eaa5316d340f97"><div class="ttname"><a href="protocol_thing_smart_device_core_entry-p.html#a1c166ac44311420246eaa5316d340f97">-[ThingSmartDeviceCoreEntry-p unRegisterYuNetService]</a></div><div class="ttdeci">void unRegisterYuNetService()</div></div>
-<div class="ttc" id="aprotocol_thing_smart_module_protocol-p_html"><div class="ttname"><a href="protocol_thing_smart_module_protocol-p.html">ThingSmartModuleProtocol-p</a></div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h_source.html#l00012">ThingSmartModuleProtocol.h:12</a></div></div>
-<div class="ttc" id="aprotocol_thing_smart_module_protocol-p_html_ab63e2020dacc41c5f39a416b6181d388"><div class="ttname"><a href="protocol_thing_smart_module_protocol-p.html#ab63e2020dacc41c5f39a416b6181d388">ThingSmartModuleProtocol-p::moduleEntry</a></div><div class="ttdeci">NSObject * moduleEntry</div><div class="ttdef"><b>Definition:</b> <a href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h_source.html#l00014">ThingSmartModuleProtocol.h:14</a></div></div>
+<div class="ttc" id="aprotocol_thing_smart_module_protocol-p_html"><div class="ttname"><a href="protocol_thing_smart_module_protocol-p.html">ThingSmartModuleProtocol-p</a></div><div class="ttdef"><b>Definition:</b> <a href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h_source.html#l00012">ThingSmartModuleProtocol.h:12</a></div></div>
+<div class="ttc" id="aprotocol_thing_smart_module_protocol-p_html_ab63e2020dacc41c5f39a416b6181d388"><div class="ttname"><a href="protocol_thing_smart_module_protocol-p.html#ab63e2020dacc41c5f39a416b6181d388">ThingSmartModuleProtocol-p::moduleEntry</a></div><div class="ttdeci">NSObject * moduleEntry</div><div class="ttdef"><b>Definition:</b> <a href="watchos-arm64__i386__x86__64-simulator_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h_source.html#l00014">ThingSmartModuleProtocol.h:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_8a9eccfa76d0eb5089f6caa7cf789aee.html">ThingSmartUtil</a></li><li class="navelem"><a class="el" href="dir_3be5bec98c9d3151c83610af0d8a5189.html">Build</a></li><li class="navelem"><a class="el" href="dir_35a17d56b387ad3a3e7bf8f6c9029848.html">ThingSmartUtil.xcframework</a></li><li class="navelem"><a class="el" href="dir_a5719138ca9a0048696c3f3abc10aa13.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_1d2fab5c557800dba9525331c1e67c92.html">ThingSmartUtil.framework</a></li><li class="navelem"><a class="el" href="dir_80a6b313db8e1514bab659f2cbbdf274.html">Headers</a></li><li class="navelem"><a class="el" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h.html">ThingSmartModuleProtocol.h</a></li>
+    <li class="navelem"><a class="el" href="dir_2c12105386bcc5c3935feab96f296a41.html">Downloads</a></li><li class="navelem"><a class="el" href="dir_bd9edb8e3735a0b00a8a02eaea3de015.html">Pods_副本</a></li><li class="navelem"><a class="el" href="dir_0d5920c9921410e05ca904407c196eeb.html">ThingSmartUtil</a></li><li class="navelem"><a class="el" href="dir_41e64b4da1b22d863a772480c9de0df9.html">Build</a></li><li class="navelem"><a class="el" href="dir_89a657d8deb22e53c8c17594da32b58f.html">ThingSmartUtil.xcframework</a></li><li class="navelem"><a class="el" href="dir_554cde88d077ca514d9b75d9d3cd24ea.html">ios-arm64</a></li><li class="navelem"><a class="el" href="dir_28514eba8880773f5e82b318ea0ee914.html">ThingSmartUtil.framework</a></li><li class="navelem"><a class="el" href="dir_4b40c369cfd214810097c162239fe6e9.html">Headers</a></li><li class="navelem"><a class="el" href="ios-arm64_2_thing_smart_util_8framework_2_headers_2_thing_smart_module_protocol_8h.html">ThingSmartModuleProtocol.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

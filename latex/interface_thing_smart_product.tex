@@ -1,0 +1,169 @@
+\hypertarget{interface_thing_smart_product}{}\doxysection{Thing\+Smart\+Product Class Reference}
+\label{interface_thing_smart_product}\index{ThingSmartProduct@{ThingSmartProduct}}
+
+
+{\ttfamily \#import $<$Thing\+Smart\+Product.\+h$>$}
+
+Inheritance diagram for Thing\+Smart\+Product\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_thing_smart_product}
+\end{center}
+\end{figure}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_product_ac98195bf4a44599a41b093d4ff861fab}{get\+Product\+List\+With\+Product\+Ids\+:versions\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_product_a82afe90065119b0cf9336dd3427d527f}{get\+Product\+List\+From\+Cloud\+With\+Product\+Ids\+:versions\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_product_ac98195bf4a44599a41b093d4ff861fab}{get\+Product\+List\+With\+Product\+Ids\+:versions\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_product_a82afe90065119b0cf9336dd3427d527f}{get\+Product\+List\+From\+Cloud\+With\+Product\+Ids\+:versions\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_product_ac98195bf4a44599a41b093d4ff861fab}{get\+Product\+List\+With\+Product\+Ids\+:versions\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_product_a82afe90065119b0cf9336dd3427d527f}{get\+Product\+List\+From\+Cloud\+With\+Product\+Ids\+:versions\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_product_ac98195bf4a44599a41b093d4ff861fab}{get\+Product\+List\+With\+Product\+Ids\+:versions\+:success\+:failure\+:}}
+\item 
+(void) + \mbox{\hyperlink{interface_thing_smart_product_a82afe90065119b0cf9336dd3427d527f}{get\+Product\+List\+From\+Cloud\+With\+Product\+Ids\+:versions\+:success\+:failure\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_product_8h_source_l00012}{12}} of file \mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_product_8h_source}{Thing\+Smart\+Product.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_thing_smart_product_a82afe90065119b0cf9336dd3427d527f}\label{interface_thing_smart_product_a82afe90065119b0cf9336dd3427d527f}} 
+\index{ThingSmartProduct@{ThingSmartProduct}!getProductListFromCloudWithProductIds:versions:success:failure:@{getProductListFromCloudWithProductIds:versions:success:failure:}}
+\index{getProductListFromCloudWithProductIds:versions:success:failure:@{getProductListFromCloudWithProductIds:versions:success:failure:}!ThingSmartProduct@{ThingSmartProduct}}
+\doxysubsubsection{\texorpdfstring{getProductListFromCloudWithProductIds:versions:success:failure:}{getProductListFromCloudWithProductIds:versions:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily + (void) get\+Product\+List\+From\+Cloud\+With\+Product\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{product\+Ids }\item[{versions\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{versions }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$product\+List))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Get product models from cloud only. Notice\+: One product id match One version, if missing default use \char`\"{}1.\+0.\+0\char`\"{}
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item product\+Ids\+: prodcut id list.
+\item version\+: product version list. default for \char`\"{}1.\+0.\+0\char`\"{}
+\item success\+: success handler.
+\item failure\+: failure handler. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_product_a82afe90065119b0cf9336dd3427d527f}\label{interface_thing_smart_product_a82afe90065119b0cf9336dd3427d527f}} 
+\index{ThingSmartProduct@{ThingSmartProduct}!getProductListFromCloudWithProductIds:versions:success:failure:@{getProductListFromCloudWithProductIds:versions:success:failure:}}
+\index{getProductListFromCloudWithProductIds:versions:success:failure:@{getProductListFromCloudWithProductIds:versions:success:failure:}!ThingSmartProduct@{ThingSmartProduct}}
+\doxysubsubsection{\texorpdfstring{getProductListFromCloudWithProductIds:versions:success:failure:}{getProductListFromCloudWithProductIds:versions:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily + (void) get\+Product\+List\+From\+Cloud\+With\+Product\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{product\+Ids }\item[{versions\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{versions }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$product\+List))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Get product models from cloud only. Notice\+: One product id match One version, if missing default use \char`\"{}1.\+0.\+0\char`\"{}
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item product\+Ids\+: prodcut id list.
+\item version\+: product version list. default for \char`\"{}1.\+0.\+0\char`\"{}
+\item success\+: success handler.
+\item failure\+: failure handler. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_product_a82afe90065119b0cf9336dd3427d527f}\label{interface_thing_smart_product_a82afe90065119b0cf9336dd3427d527f}} 
+\index{ThingSmartProduct@{ThingSmartProduct}!getProductListFromCloudWithProductIds:versions:success:failure:@{getProductListFromCloudWithProductIds:versions:success:failure:}}
+\index{getProductListFromCloudWithProductIds:versions:success:failure:@{getProductListFromCloudWithProductIds:versions:success:failure:}!ThingSmartProduct@{ThingSmartProduct}}
+\doxysubsubsection{\texorpdfstring{getProductListFromCloudWithProductIds:versions:success:failure:}{getProductListFromCloudWithProductIds:versions:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (void) get\+Product\+List\+From\+Cloud\+With\+Product\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{product\+Ids }\item[{versions\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{versions }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$product\+List))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Get product models from cloud only. Notice\+: One product id match One version, if missing default use \char`\"{}1.\+0.\+0\char`\"{}
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item product\+Ids\+: prodcut id list.
+\item version\+: product version list. default for \char`\"{}1.\+0.\+0\char`\"{}
+\item success\+: success handler.
+\item failure\+: failure handler. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_product_a82afe90065119b0cf9336dd3427d527f}\label{interface_thing_smart_product_a82afe90065119b0cf9336dd3427d527f}} 
+\index{ThingSmartProduct@{ThingSmartProduct}!getProductListFromCloudWithProductIds:versions:success:failure:@{getProductListFromCloudWithProductIds:versions:success:failure:}}
+\index{getProductListFromCloudWithProductIds:versions:success:failure:@{getProductListFromCloudWithProductIds:versions:success:failure:}!ThingSmartProduct@{ThingSmartProduct}}
+\doxysubsubsection{\texorpdfstring{getProductListFromCloudWithProductIds:versions:success:failure:}{getProductListFromCloudWithProductIds:versions:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (void) get\+Product\+List\+From\+Cloud\+With\+Product\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{product\+Ids }\item[{versions\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{versions }\item[{success\+:(void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$product\+List))}]{success }\item[{failure\+:(nullable \mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Get product models from cloud only. Notice\+: One product id match One version, if missing default use \char`\"{}1.\+0.\+0\char`\"{}
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item product\+Ids\+: prodcut id list.
+\item version\+: product version list. default for \char`\"{}1.\+0.\+0\char`\"{}
+\item success\+: success handler.
+\item failure\+: failure handler. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_product_ac98195bf4a44599a41b093d4ff861fab}\label{interface_thing_smart_product_ac98195bf4a44599a41b093d4ff861fab}} 
+\index{ThingSmartProduct@{ThingSmartProduct}!getProductListWithProductIds:versions:success:failure:@{getProductListWithProductIds:versions:success:failure:}}
+\index{getProductListWithProductIds:versions:success:failure:@{getProductListWithProductIds:versions:success:failure:}!ThingSmartProduct@{ThingSmartProduct}}
+\doxysubsubsection{\texorpdfstring{getProductListWithProductIds:versions:success:failure:}{getProductListWithProductIds:versions:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily + (void) get\+Product\+List\+With\+Product\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{product\+Ids }\item[{versions\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{versions }\item[{success\+:(nonnull void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$\+\_\+\+Nonnull))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Get product models frome cache priority, if cache not contain then from cloud. Notice\+: One product id match One version, if missing default use \char`\"{}1.\+0.\+0\char`\"{}
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item product\+Ids\+: prodcut id.
+\item versions\+: product version. default for \char`\"{}1.\+0.\+0\char`\"{}
+\item success\+: success handler.
+\item failure\+: failure handler. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_product_ac98195bf4a44599a41b093d4ff861fab}\label{interface_thing_smart_product_ac98195bf4a44599a41b093d4ff861fab}} 
+\index{ThingSmartProduct@{ThingSmartProduct}!getProductListWithProductIds:versions:success:failure:@{getProductListWithProductIds:versions:success:failure:}}
+\index{getProductListWithProductIds:versions:success:failure:@{getProductListWithProductIds:versions:success:failure:}!ThingSmartProduct@{ThingSmartProduct}}
+\doxysubsubsection{\texorpdfstring{getProductListWithProductIds:versions:success:failure:}{getProductListWithProductIds:versions:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily + (void) get\+Product\+List\+With\+Product\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{product\+Ids }\item[{versions\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{versions }\item[{success\+:(nonnull void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$\+\_\+\+Nonnull))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Get product models frome cache priority, if cache not contain then from cloud. Notice\+: One product id match One version, if missing default use \char`\"{}1.\+0.\+0\char`\"{}
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item product\+Ids\+: prodcut id.
+\item versions\+: product version. default for \char`\"{}1.\+0.\+0\char`\"{}
+\item success\+: success handler.
+\item failure\+: failure handler. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_product_ac98195bf4a44599a41b093d4ff861fab}\label{interface_thing_smart_product_ac98195bf4a44599a41b093d4ff861fab}} 
+\index{ThingSmartProduct@{ThingSmartProduct}!getProductListWithProductIds:versions:success:failure:@{getProductListWithProductIds:versions:success:failure:}}
+\index{getProductListWithProductIds:versions:success:failure:@{getProductListWithProductIds:versions:success:failure:}!ThingSmartProduct@{ThingSmartProduct}}
+\doxysubsubsection{\texorpdfstring{getProductListWithProductIds:versions:success:failure:}{getProductListWithProductIds:versions:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily + (void) get\+Product\+List\+With\+Product\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{product\+Ids }\item[{versions\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{versions }\item[{success\+:(nonnull void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$\+\_\+\+Nonnull))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Get product models frome cache priority, if cache not contain then from cloud. Notice\+: One product id match One version, if missing default use \char`\"{}1.\+0.\+0\char`\"{}
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item product\+Ids\+: prodcut id.
+\item versions\+: product version. default for \char`\"{}1.\+0.\+0\char`\"{}
+\item success\+: success handler.
+\item failure\+: failure handler. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{interface_thing_smart_product_ac98195bf4a44599a41b093d4ff861fab}\label{interface_thing_smart_product_ac98195bf4a44599a41b093d4ff861fab}} 
+\index{ThingSmartProduct@{ThingSmartProduct}!getProductListWithProductIds:versions:success:failure:@{getProductListWithProductIds:versions:success:failure:}}
+\index{getProductListWithProductIds:versions:success:failure:@{getProductListWithProductIds:versions:success:failure:}!ThingSmartProduct@{ThingSmartProduct}}
+\doxysubsubsection{\texorpdfstring{getProductListWithProductIds:versions:success:failure:}{getProductListWithProductIds:versions:success:failure:}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily + (void) get\+Product\+List\+With\+Product\+Ids\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{product\+Ids }\item[{versions\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ NSString $\ast$ $>$ $\ast$)}]{versions }\item[{success\+:(nonnull void($^\wedge$)(\mbox{\hyperlink{interface_n_s_array}{NSArray}} $\ast$\+\_\+\+Nonnull))}]{success }\item[{failure\+:(\mbox{\hyperlink{_thing_smart_matter_interface_a_p_i_8framework_2_headers_2_thing_matter_share_interface_a_p_i_8h_af2b46bef0575729ec6391704cfc8a038}{Thing\+Failure\+Error}})}]{failure }\end{DoxyParamCaption}}
+
+Get product models frome cache priority, if cache not contain then from cloud. Notice\+: One product id match One version, if missing default use \char`\"{}1.\+0.\+0\char`\"{}
+\begin{DoxyItemize}
+\item Parameters\+:
+\begin{DoxyItemize}
+\item product\+Ids\+: prodcut id.
+\item versions\+: product version. default for \char`\"{}1.\+0.\+0\char`\"{}
+\item success\+: success handler.
+\item failure\+: failure handler. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_product_8h}{Thing\+Smart\+Product.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_product_8h}{Thing\+Smart\+Product.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/ios-\/arm64/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{ios-arm64_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_product_8h}{Thing\+Smart\+Product.\+h}}\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.\+xcframework/watchos-\/arm64\+\_\+arm64\+\_\+32\+\_\+armv7k/\+Thing\+Smart\+Device\+Core\+Kit.\+framework/\+Headers/\mbox{\hyperlink{watchos-arm64__arm64__32__armv7k_2_thing_smart_device_core_kit_8framework_2_headers_2_thing_smart_product_8h}{Thing\+Smart\+Product.\+h}}\end{DoxyCompactItemize}

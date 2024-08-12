@@ -1,0 +1,71 @@
+\hypertarget{_w_t_l_async_callback_work_queue_8h_source}{}\doxysection{WTLAsync\+Callback\+Work\+Queue.\+h}
+\label{_w_t_l_async_callback_work_queue_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLAsyncCallbackWorkQueue.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartMatterKit/Build/VendorsFramework/Water.framework/Headers/WTLAsyncCallbackWorkQueue.h}}
+\mbox{\hyperlink{_w_t_l_async_callback_work_queue_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00018}00018 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00020}00020 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00022}00022 \textcolor{keyword}{@class} \mbox{\hyperlink{interface_w_t_l_async_callback_queue_work_item}{WTLAsyncCallbackQueueWorkItem}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00024}\mbox{\hyperlink{_w_t_l_async_callback_work_queue_8h_a76a422aac4030968815ad2d816b31537}{00024}} \textcolor{keyword}{typedef} void (\string^\mbox{\hyperlink{_w_t_l_async_callback_work_queue_8h_a76a422aac4030968815ad2d816b31537}{WTLAsyncCallbackReadyHandler}})(\textcolor{keywordtype}{id} context, NSUInteger retryCount);}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00026}00026 \textcolor{comment}{// WTLAsyncCallbackQueue high level description}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00027}00027 \textcolor{comment}{//   The WTLAsyncCallbackQueue was made to call one readyHandler}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00028}00028 \textcolor{comment}{//   block at a time asynchronously, and the readyHandler is}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00029}00029 \textcolor{comment}{//   expected to start/schedule a task. When the task finishes}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00030}00030 \textcolor{comment}{//   asynchronously in the future (at any time, from any queue}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00031}00031 \textcolor{comment}{//   or thread), it is expected to ask the workItem object to}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00032}00032 \textcolor{comment}{//   either endWork or retryWork.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00034}00034 \textcolor{comment}{// Sequence of steps when queuing a work item:}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00035}00035 \textcolor{comment}{//   -\/ Create WTLAsyncCallbackQueueWorkItem object}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00036}00036 \textcolor{comment}{//   -\/ Create ready handler block (WTLAsyncCallbackReadyHandler)}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00037}00037 \textcolor{comment}{//      -\/ block is called when it's the WorkItem's turn to do work}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00038}00038 \textcolor{comment}{//      -\/ its body is to perform a task that is expected to end asynchronously in the future}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00039}00039 \textcolor{comment}{//      -\/ at the end of work, call on the work item object:}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00040}00040 \textcolor{comment}{//         -\/ endWork for success or failure}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00041}00041 \textcolor{comment}{//         -\/ retryWork for temporary failures}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00042}00042 \textcolor{comment}{//   -\/ Set the readyHandler block on the WorkItem object}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00043}00043 \textcolor{comment}{//   -\/ Call enqueueWorkItem on a WTLAsyncCallbackQueue}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00045}00045 \textcolor{comment}{// A serial one-\/at-\/a-\/time queue for performing work items}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00046}\mbox{\hyperlink{interface_w_t_l_async_callback_work_queue}{00046}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_async_callback_work_queue}{WTLAsyncCallbackWorkQueue}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00047}00047 -\/ (instancetype)init \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00048}00048 + (instancetype)new \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00050}00050 \textcolor{comment}{// The context object is only held and passed back as a reference and is opaque to the work queue}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00051}00051 -\/ (instancetype)initWithContext:(\textcolor{keywordtype}{id} \_Nullable)context queue:(dispatch\_queue\_t)queue;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00053}00053 \textcolor{comment}{// Called by the work queue owner to clean up and cancel work items}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00054}00054 -\/ (void)\mbox{\hyperlink{interface_w_t_l_async_callback_work_queue_a907b9aba6e22da84daa4ca74cb65ab92}{invalidate}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00056}00056 \textcolor{comment}{// Work items may be enqueued from any queue or thread}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00057}00057 -\/ (void)enqueueWorkItem:(\mbox{\hyperlink{interface_w_t_l_async_callback_queue_work_item}{WTLAsyncCallbackQueueWorkItem}} *)item;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00059}00059 \textcolor{comment}{// TODO: Add a "{}set concurrency width"{} method to allow for more than 1 work item at a time}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00060}00060 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00062}00062 \textcolor{comment}{// An item in the work queue}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00063}\mbox{\hyperlink{interface_w_t_l_async_callback_queue_work_item}{00063}} \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_w_t_l_async_callback_queue_work_item}{WTLAsyncCallbackQueueWorkItem}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00064}00064 -\/ (instancetype)init \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00065}00065 + (instancetype)new \mbox{\hyperlink{x86__64-simulator_2_thing_smart_sweeper_kit_8framework_2_headers_2_thing_smart_file_download_8h_a7ce30558a2e627651ffe88c2982fbaff}{NS\_UNAVAILABLE}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00067}00067 \textcolor{comment}{// Both readyHandler and cancelHander will be called on the queue given to initWithQueue}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00068}00068 -\/ (instancetype)initWithQueue:(dispatch\_queue\_t)queue;}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00069}\mbox{\hyperlink{interface_w_t_l_async_callback_queue_work_item_ae267e77a9718df96ee7f187124a0f0ac}{00069}} \textcolor{keyword}{@property} (nonatomic, strong) \mbox{\hyperlink{_w_t_l_async_callback_work_queue_8h_a76a422aac4030968815ad2d816b31537}{WTLAsyncCallbackReadyHandler}} \mbox{\hyperlink{interface_w_t_l_async_callback_queue_work_item_ae267e77a9718df96ee7f187124a0f0ac}{readyHandler}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00070}\mbox{\hyperlink{interface_w_t_l_async_callback_queue_work_item_a9f24e919ce228ef7d9aa2e0793611850}{00070}} \textcolor{keyword}{@property} (nonatomic, strong) dispatch\_block\_t \mbox{\hyperlink{interface_w_t_l_async_callback_queue_work_item_a9f24e919ce228ef7d9aa2e0793611850}{cancelHandler}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00072}00072 \textcolor{comment}{// Called by the creater of the work item when async work is done and should}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00073}00073 \textcolor{comment}{// be removed from the queue. The work queue will run the next work item.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00074}00074 -\/ (void)\mbox{\hyperlink{interface_w_t_l_async_callback_queue_work_item_a94920151b756ee8d217aa6ccafc21247}{endWork}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00076}00076 \textcolor{comment}{// Called by the creater of the work item when async work should be retried.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00077}00077 \textcolor{comment}{// The work queue will call this workItem's readyHandler again.}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00078}00078 -\/ (void)\mbox{\hyperlink{interface_w_t_l_async_callback_queue_work_item_a117c405bae0327e2ff2a4ffe5e308e5e}{retryWork}};}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00079}00079 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_w_t_l_async_callback_work_queue_8h_source_l00081}\mbox{\hyperlink{interface_w_t_l_async_callback_work_queue_a5815960a00f004fe470be7ff2fadea96}{00081}} NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

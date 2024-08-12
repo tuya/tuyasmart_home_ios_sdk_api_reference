@@ -1,0 +1,76 @@
+\hypertarget{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Module\+Manager/\+Thing\+Module\+Manager.xcframework/ios-\/arm64/\+Thing\+Module\+Manager.framework/\+Headers/\+Thing\+Module\+Customize\+Manager.h File Reference}
+\label{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingModuleManager/ThingModuleManager.xcframework/ios-\/arm64/ThingModuleManager.framework/Headers/ThingModuleCustomizeManager.h@{/Users/humtong/Downloads/Pods\_副本/ThingModuleManager/ThingModuleManager.xcframework/ios-\/arm64/ThingModuleManager.framework/Headers/ThingModuleCustomizeManager.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+{\ttfamily \#import \char`\"{}Thing\+Module\+Application\+Blueprint.\+h\char`\"{}}\newline
+{\ttfamily \#import \char`\"{}Thing\+Module\+Tab\+Register\+Protocol.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+protocol \mbox{\hyperlink{protocol_thing_module_config_data_source-p}{$<$\+Thing\+Module\+Config\+Data\+Source$>$}}
+\item 
+class \mbox{\hyperlink{interface_thing_module_customize_manager}{Thing\+Module\+Customize\+Manager}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_a9542511e3d16a015e0113b4cd7d2728e}{Thing\+Module\+Customize\+Register}}(class\+Name)~char $\ast$ thingmodule\+\_\+\#\#class\+Name\#\#\+\_\+data \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_aab199c8ee5047644bf13f15e86a4d67b}{Thing\+Module\+Customize\+DATASection}} = \char`\"{}\char`\"{}\#class\+Name\char`\"{}\char`\"{};
+\begin{DoxyCompactList}\small\item\em 在需要配置的类的实现文件中添加这个宏，class\+Name为类名，如：\+Thing\+Module\+Customize\+Register(\+Thing\+Module\+Customize\+Manager) \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_a2ca1e30a09ffa57dbc4b112cbcb95cf1}{Thing\+Module\+Section\+Name}}~\char`\"{}TModule\+Section\char`\"{}
+\item 
+\#define \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_aab199c8ee5047644bf13f15e86a4d67b}{Thing\+Module\+Customize\+DATASection}}~\+\_\+\+\_\+attribute((used, section(\char`\"{}\+\_\+\+\_\+\+DATA, TModule\+Section\char`\"{})))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_a789308a13dc900952219ccdb4e4b7a3a}{NS\+\_\+\+ENUM}} (NSUInteger, Thing\+Module\+Level)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_aab199c8ee5047644bf13f15e86a4d67b}\label{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_aab199c8ee5047644bf13f15e86a4d67b}} 
+\index{ThingModuleCustomizeManager.h@{ThingModuleCustomizeManager.h}!ThingModuleCustomizeDATASection@{ThingModuleCustomizeDATASection}}
+\index{ThingModuleCustomizeDATASection@{ThingModuleCustomizeDATASection}!ThingModuleCustomizeManager.h@{ThingModuleCustomizeManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingModuleCustomizeDATASection}{ThingModuleCustomizeDATASection}}
+{\footnotesize\ttfamily \#define Thing\+Module\+Customize\+DATASection~\+\_\+\+\_\+attribute((used, section(\char`\"{}\+\_\+\+\_\+\+DATA, TModule\+Section\char`\"{})))}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_source_l00027}{27}} of file \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_source}{Thing\+Module\+Customize\+Manager.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_a9542511e3d16a015e0113b4cd7d2728e}\label{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_a9542511e3d16a015e0113b4cd7d2728e}} 
+\index{ThingModuleCustomizeManager.h@{ThingModuleCustomizeManager.h}!ThingModuleCustomizeRegister@{ThingModuleCustomizeRegister}}
+\index{ThingModuleCustomizeRegister@{ThingModuleCustomizeRegister}!ThingModuleCustomizeManager.h@{ThingModuleCustomizeManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingModuleCustomizeRegister}{ThingModuleCustomizeRegister}}
+{\footnotesize\ttfamily \#define Thing\+Module\+Customize\+Register(\begin{DoxyParamCaption}\item[{}]{class\+Name }\end{DoxyParamCaption})~char $\ast$ thingmodule\+\_\+\#\#class\+Name\#\#\+\_\+data \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_aab199c8ee5047644bf13f15e86a4d67b}{Thing\+Module\+Customize\+DATASection}} = \char`\"{}\char`\"{}\#class\+Name\char`\"{}\char`\"{};}
+
+
+
+在需要配置的类的实现文件中添加这个宏，class\+Name为类名，如：\+Thing\+Module\+Customize\+Register(\+Thing\+Module\+Customize\+Manager) 
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_source_l00023}{23}} of file \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_source}{Thing\+Module\+Customize\+Manager.\+h}}.
+
+\mbox{\Hypertarget{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_a2ca1e30a09ffa57dbc4b112cbcb95cf1}\label{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_a2ca1e30a09ffa57dbc4b112cbcb95cf1}} 
+\index{ThingModuleCustomizeManager.h@{ThingModuleCustomizeManager.h}!ThingModuleSectionName@{ThingModuleSectionName}}
+\index{ThingModuleSectionName@{ThingModuleSectionName}!ThingModuleCustomizeManager.h@{ThingModuleCustomizeManager.h}}
+\doxysubsubsection{\texorpdfstring{ThingModuleSectionName}{ThingModuleSectionName}}
+{\footnotesize\ttfamily \#define Thing\+Module\+Section\+Name~\char`\"{}TModule\+Section\char`\"{}}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_source_l00026}{26}} of file \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_source}{Thing\+Module\+Customize\+Manager.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_a789308a13dc900952219ccdb4e4b7a3a}\label{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_a789308a13dc900952219ccdb4e4b7a3a}} 
+\index{ThingModuleCustomizeManager.h@{ThingModuleCustomizeManager.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!ThingModuleCustomizeManager.h@{ThingModuleCustomizeManager.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{Thing\+Module\+Level}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_source_l00012}{12}} of file \mbox{\hyperlink{ios-arm64_2_thing_module_manager_8framework_2_headers_2_thing_module_customize_manager_8h_source}{Thing\+Module\+Customize\+Manager.\+h}}.
+

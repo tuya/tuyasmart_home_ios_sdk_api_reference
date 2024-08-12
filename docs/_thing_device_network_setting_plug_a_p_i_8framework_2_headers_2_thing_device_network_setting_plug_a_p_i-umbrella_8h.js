@@ -1,6 +1,0 @@
-var _thing_device_network_setting_plug_a_p_i_8framework_2_headers_2_thing_device_network_setting_plug_a_p_i_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "_thing_device_network_setting_plug_a_p_i_8framework_2_headers_2_thing_device_network_setting_plug_a_p_i-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingDeviceNetworkSettingPlugAPIVersionNumber", "_thing_device_network_setting_plug_a_p_i_8framework_2_headers_2_thing_device_network_setting_plug_a_p_i-umbrella_8h.html#ae2cad28517e64b049ecb001ee2fa2e34", null ],
-    [ "ThingDeviceNetworkSettingPlugAPIVersionString", "_thing_device_network_setting_plug_a_p_i_8framework_2_headers_2_thing_device_network_setting_plug_a_p_i-umbrella_8h.html#a90383485728f004967a64791ac9e05a2", null ]
-];

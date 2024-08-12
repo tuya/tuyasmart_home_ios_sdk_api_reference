@@ -4,5 +4,6 @@ var interface_thing_device_config_info =
     [ "icon", "interface_thing_device_config_info.html#ad461bbb3e7fec3f786a6212fe35f2687", null ],
     [ "id", "interface_thing_device_config_info.html#aa07eb9a164a53b1de32fd065f1c82f5e", null ],
     [ "name", "interface_thing_device_config_info.html#ae596923fe4e4766c7b496e15e7551817", null ],
+    [ "support5G", "interface_thing_device_config_info.html#a00ae56476b97980e22c8675d2a954164", null ],
     [ "whetherHasAuth", "interface_thing_device_config_info.html#a65ba6d397082a2d164de70a4f29d9d6e", null ]
 ];

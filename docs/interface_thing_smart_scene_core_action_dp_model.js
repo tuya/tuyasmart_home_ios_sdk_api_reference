@@ -68,6 +68,7 @@ var interface_thing_smart_scene_core_action_dp_model =
     [ "entityId", "interface_thing_smart_scene_core_action_dp_model.html#a2995eba324b7a41bb7b6b34486bfedc7", null ],
     [ "entitySubId", "interface_thing_smart_scene_core_action_dp_model.html#accc288f5993e0053efaae63f842d770f", null ],
     [ "entityType", "interface_thing_smart_scene_core_action_dp_model.html#ab69a15504b4df673482267a9cef707d6", null ],
+    [ "externalDisplayValue", "interface_thing_smart_scene_core_action_dp_model.html#a31e41a170ebe7998c046db2fe94e765c", null ],
     [ "iconUrl", "interface_thing_smart_scene_core_action_dp_model.html#ae7f38bf7636179175e12c4dcfde06c70", null ],
     [ "model", "interface_thing_smart_scene_core_action_dp_model.html#a3827c11b700e8fa7ce5be19c56dc69fb", null ],
     [ "sceneDPId", "interface_thing_smart_scene_core_action_dp_model.html#a799d7e22cb0a09a7d7097aff575d487a", null ],
@@ -75,6 +76,7 @@ var interface_thing_smart_scene_core_action_dp_model =
     [ "selectStepType", "interface_thing_smart_scene_core_action_dp_model.html#a957f4a08e92dca69aa998ce65a81b7f6", null ],
     [ "stepHighDpProperty", "interface_thing_smart_scene_core_action_dp_model.html#a6cee0e00a37e59269e2b3be29b9f9da1", null ],
     [ "stepLowDpProperty", "interface_thing_smart_scene_core_action_dp_model.html#a4769526889a50dd190bbe2a667566f66", null ],
+    [ "useExternalDisplayValue", "interface_thing_smart_scene_core_action_dp_model.html#ae8c182bb7ccacac5845670a3e8628f18", null ],
     [ "value", "interface_thing_smart_scene_core_action_dp_model.html#ad71983737f0b5a37e9e3d15b0fd3ece0", null ],
     [ "valueRangeJson", "interface_thing_smart_scene_core_action_dp_model.html#a0e8d386cf3dba6c5452a4c62375371d2", null ],
     [ "valueType", "interface_thing_smart_scene_core_action_dp_model.html#a86a7722c5f874a9dd4631a2c5c59a84c", null ]

@@ -1,6 +1,0 @@
-var ios_arm64_2_thing_device_location_plug_a_p_i_8framework_2_headers_2_thing_device_location_plug_a_p_i_umbrella_8h =
-[
-    [ "FOUNDATION_EXPORT", "ios-arm64_2_thing_device_location_plug_a_p_i_8framework_2_headers_2_thing_device_location_plug_a_p_i-umbrella_8h.html#af7ed8a8cc695841daf9b3c196c8b6bfa", null ],
-    [ "ThingDeviceLocationPlugAPIVersionNumber", "ios-arm64_2_thing_device_location_plug_a_p_i_8framework_2_headers_2_thing_device_location_plug_a_p_i-umbrella_8h.html#adb62504d3bb89c0b97d24f0f43d402c9", null ],
-    [ "ThingDeviceLocationPlugAPIVersionString", "ios-arm64_2_thing_device_location_plug_a_p_i_8framework_2_headers_2_thing_device_location_plug_a_p_i-umbrella_8h.html#a25d07c4506a3a295d3af1c544ea6bd85", null ]
-];

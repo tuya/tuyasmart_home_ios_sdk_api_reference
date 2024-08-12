@@ -1,4 +1,0 @@
-var ios_x86__64_simulator_2_g_z_l_mini_app_tab__i_o_s_8framework_2_private_headers_2_g_z_l_mini_app_tab_support_view_controller_8h =
-[
-    [ "GZLMiniAppTabSupportViewController", "interface_g_z_l_mini_app_tab_support_view_controller.html", "interface_g_z_l_mini_app_tab_support_view_controller" ]
-];

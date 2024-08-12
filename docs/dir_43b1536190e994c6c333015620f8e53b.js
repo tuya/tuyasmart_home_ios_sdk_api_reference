@@ -1,6 +1,0 @@
-var dir_43b1536190e994c6c333015620f8e53b =
-[
-    [ "ThingSceneFeatureExtModule-umbrella.h", "x86__64-simulator_2_thing_scene_feature_ext_module_8framework_2_headers_2_thing_scene_feature_ext_module-umbrella_8h.html", "x86__64-simulator_2_thing_scene_feature_ext_module_8framework_2_headers_2_thing_scene_feature_ext_module-umbrella_8h" ],
-    [ "ThingSceneFeatureProtocol.h", "x86__64-simulator_2_thing_scene_feature_ext_module_8framework_2_headers_2_thing_scene_feature_protocol_8h.html", "x86__64-simulator_2_thing_scene_feature_ext_module_8framework_2_headers_2_thing_scene_feature_protocol_8h" ],
-    [ "TSceneFeatureResultModel.h", "x86__64-simulator_2_thing_scene_feature_ext_module_8framework_2_headers_2_t_scene_feature_result_model_8h.html", "x86__64-simulator_2_thing_scene_feature_ext_module_8framework_2_headers_2_t_scene_feature_result_model_8h" ]
-];

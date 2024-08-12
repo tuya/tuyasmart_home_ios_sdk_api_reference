@@ -36,6 +36,8 @@ var protocol_thing_smart_s_i_g_mesh_manager_delegate_p =
     [ "sigMeshManager:didReceivedCustomOpCodeData:payload:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#ac8c58a74a9f8d580f2ce8d966ba15e02", null ],
     [ "sigMeshManager:didScanedDevice:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a09f317688be0b4a18591aadce210fc04", null ],
     [ "sigMeshManager:didScanedDevice:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a09f317688be0b4a18591aadce210fc04", null ],
+    [ "sigMeshManager:provisionedSIGMeshDevice:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#aa59a7aee55a22a80a9e8a1e7a9e89404", null ],
+    [ "sigMeshManager:provisionedSIGMeshDevice:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#aa59a7aee55a22a80a9e8a1e7a9e89404", null ],
     [ "sigMeshManager:queryDeviceModel:groupAddress:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a4bef5a9d30b09549a8bdef26e92c1cc5", null ],
     [ "sigMeshManager:queryDeviceModel:groupAddress:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a4bef5a9d30b09549a8bdef26e92c1cc5", null ],
     [ "sigMeshManager:queryGroupList:deviceModel:error:", "protocol_thing_smart_s_i_g_mesh_manager_delegate-p.html#a15032d73ca712956a96f0b922fe44043", null ],

@@ -1,0 +1,78 @@
+\hypertarget{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_n_s_error_09_thing_o_t_a_8h}{}\doxysection{/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Device\+Core\+Kit/\+Build/\+Thing\+Smart\+Device\+Core\+Kit.xcframework/watchos-\/arm64\+\_\+i386\+\_\+x86\+\_\+64-\/simulator/\+Thing\+Smart\+Device\+Core\+Kit.framework/\+Headers/\+NSError+\+Thing\+OTA.h File Reference}
+\label{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_n_s_error_09_thing_o_t_a_8h}\index{/Users/humtong/Downloads/Pods\_副本/ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/watchos-\/arm64\_i386\_x86\_64-\/simulator/ThingSmartDeviceCoreKit.framework/Headers/NSError+ThingOTA.h@{/Users/humtong/Downloads/Pods\_副本/ThingSmartDeviceCoreKit/Build/ThingSmartDeviceCoreKit.xcframework/watchos-\/arm64\_i386\_x86\_64-\/simulator/ThingSmartDeviceCoreKit.framework/Headers/NSError+ThingOTA.h}}
+{\ttfamily \#import $<$Foundation/\+Foundation.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+category \mbox{\hyperlink{category_n_s_error_07_thing_o_t_a_08}{NSError(\+Thing\+OTA)}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_n_s_error_09_thing_o_t_a_8h_a8b48f895b1e9e800a5619127c83a813d}{Thing\+OTAError\+Domain}}~@\char`\"{}com.\+ota.\+www\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_n_s_error_09_thing_o_t_a_8h_a9ce79a0914ccf42d2b113754fef3ff76}{NS\+\_\+\+ENUM}} (NSUInteger, Thing\+OTAError\+Code)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_n_s_error_09_thing_o_t_a_8h_a8b48f895b1e9e800a5619127c83a813d}\label{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_n_s_error_09_thing_o_t_a_8h_a8b48f895b1e9e800a5619127c83a813d}} 
+\index{NSError+ThingOTA.h@{NSError+ThingOTA.h}!ThingOTAErrorDomain@{ThingOTAErrorDomain}}
+\index{ThingOTAErrorDomain@{ThingOTAErrorDomain}!NSError+ThingOTA.h@{NSError+ThingOTA.h}}
+\doxysubsubsection{\texorpdfstring{ThingOTAErrorDomain}{ThingOTAErrorDomain}}
+{\footnotesize\ttfamily \#define Thing\+OTAError\+Domain~@\char`\"{}com.\+ota.\+www\char`\"{}}
+
+
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_n_s_error_09_thing_o_t_a_8h_source_l00012}{12}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_n_s_error_09_thing_o_t_a_8h_source}{NSError+\+Thing\+OTA.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_n_s_error_09_thing_o_t_a_8h_a9ce79a0914ccf42d2b113754fef3ff76}\label{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_n_s_error_09_thing_o_t_a_8h_a9ce79a0914ccf42d2b113754fef3ff76}} 
+\index{NSError+ThingOTA.h@{NSError+ThingOTA.h}!NS\_ENUM@{NS\_ENUM}}
+\index{NS\_ENUM@{NS\_ENUM}!NSError+ThingOTA.h@{NSError+ThingOTA.h}}
+\doxysubsubsection{\texorpdfstring{NS\_ENUM()}{NS\_ENUM()}}
+{\footnotesize\ttfamily typedef NS\+\_\+\+ENUM (\begin{DoxyParamCaption}\item[{NSUInteger}]{,  }\item[{Thing\+OTAError\+Code}]{ }\end{DoxyParamCaption})}
+
+Device\textquotesingle{}s all firmwares is latest.
+
+Checked no firmware.
+
+Only one device can upgrade same time. (BLE device, Ble\+Mesh Sub device, Sig\+Mesh Sub device)
+
+App download firmware fail. (BLE device, Ble\+Mesh Sub device, Sig\+Mesh Sub device)
+
+Fetch device if need signal limit fail. ( can\textquotesingle{}t continue )
+
+The device signal strength not satisfy the limit.（ alert continue or not, let user confirm, then call function {\ttfamily -\/ confirm\+Warning\+Upgrade\+Task\+:}）
+
+Link to the device failed. (BLE device, Ble\+Mesh Sub device, Sig\+Mesh Sub device)
+
+Switch BLE device
+
+The downloaded firmware\textquotesingle{}s MD5 checked failed.
+
+Send firmware to device failed. (BLE device, Ble\+Mesh Sub device, Sig\+Mesh Sub device)
+
+The device is offline.
+
+The pre verify before upgrade failed.
+
+Phone\textquotesingle{}s bluetooth is not open.
+
+Failed when check the device need upgrade firmware list. ( Deprecated )
+
+Device upgrade timeout. ( Deprecated )
+
+Failed when request comfirm upgrade device api. ( The server error code in {\ttfamily error.\+localized\+Failure\+Reason}, error msg in {\ttfamily error.\+localized\+Description} )
+
+While device upgrading, the device report fail reason by mqtt.
+
+The general OTA failed.
+
+Definition at line \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_n_s_error_09_thing_o_t_a_8h_source_l00014}{14}} of file \mbox{\hyperlink{watchos-arm64__i386__x86__64-simulator_2_thing_smart_device_core_kit_8framework_2_headers_2_n_s_error_09_thing_o_t_a_8h_source}{NSError+\+Thing\+OTA.\+h}}.
+

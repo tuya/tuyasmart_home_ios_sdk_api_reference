@@ -1,7 +1,0 @@
-var dir_d22276cc9b7ede1509e027bce5d56196 =
-[
-    [ "TUNIMiniProgramManager+Ext.h", "ios-x86__64-simulator_2_t_u_n_i_mini_program_manager_8framework_2_private_headers_2_t_u_n_i_mini_program_manager_09_ext_8h.html", null ],
-    [ "TUNIMiniProgramManager+Impl.h", "ios-x86__64-simulator_2_t_u_n_i_mini_program_manager_8framework_2_private_headers_2_t_u_n_i_mini_program_manager_09_impl_8h.html", "ios-x86__64-simulator_2_t_u_n_i_mini_program_manager_8framework_2_private_headers_2_t_u_n_i_mini_program_manager_09_impl_8h" ],
-    [ "TUNIMiniProgramManager.h", "ios-x86__64-simulator_2_t_u_n_i_mini_program_manager_8framework_2_private_headers_2_t_u_n_i_mini_program_manager_8h.html", "ios-x86__64-simulator_2_t_u_n_i_mini_program_manager_8framework_2_private_headers_2_t_u_n_i_mini_program_manager_8h" ],
-    [ "TUNIMiniProgramManagerModelDefined.h", "ios-x86__64-simulator_2_t_u_n_i_mini_program_manager_8framework_2_private_headers_2_t_u_n_i_mini73cf40cfc0ec0275e4465bc0edc4710e.html", "ios-x86__64-simulator_2_t_u_n_i_mini_program_manager_8framework_2_private_headers_2_t_u_n_i_mini73cf40cfc0ec0275e4465bc0edc4710e" ]
-];

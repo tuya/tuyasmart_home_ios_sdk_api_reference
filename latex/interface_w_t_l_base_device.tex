@@ -1,0 +1,381 @@
+\hypertarget{interface_w_t_l_base_device}{}\doxysection{WTLBase\+Device Class Reference}
+\label{interface_w_t_l_base_device}\index{WTLBaseDevice@{WTLBaseDevice}}
+
+
+{\ttfamily \#import $<$WTLBase\+Device.\+h$>$}
+
+Inheritance diagram for WTLBase\+Device\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_w_t_l_base_device}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a79c865c61068e082f80ee5b72d2e9584}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_ad6a3949239c8a51ffcdbc33f55743e70}{invalidate\+CASESession}}
+\item 
+(WTLTransport\+Type session\+Transport\+Type) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a416c10f2e6d277094116c6010952bb80}{API\+\_\+\+AVAILABLE}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a246de3a170519194bf648aa2d023b142}{subscribe\+With\+Queue\+:params\+:cluster\+State\+Cache\+Container\+:attribute\+Report\+Handler\+:event\+Report\+Handler\+:error\+Handler\+:subscription\+Established\+:resubscription\+Scheduled\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a34883e28231dfc5a3db249aeceb2903f}{read\+Attributes\+With\+Endpoint\+ID\+:cluster\+ID\+:attribute\+ID\+:params\+:queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_ac9c967c00cfda8b3e4511351980fd265}{read\+Attribute\+Paths\+:event\+Paths\+:params\+:queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a1caea65868e69daefb49df0ec3f9b325}{write\+Attribute\+With\+Endpoint\+ID\+:cluster\+ID\+:attribute\+ID\+:value\+:timed\+Write\+Timeout\+:queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a9c85f2c43922040fd85c8e4eb4f4baf7}{invoke\+Command\+With\+Endpoint\+ID\+:cluster\+ID\+:command\+ID\+:command\+Fields\+:timed\+Invoke\+Timeout\+:queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a2310ecae2400aea0359592a64651b2cd}{subscribe\+To\+Attributes\+With\+Endpoint\+ID\+:cluster\+ID\+:attribute\+ID\+:params\+:queue\+:report\+Handler\+:subscription\+Established\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a9630e49da0f237c16a026cac1c695a9d}{subscribe\+To\+Attribute\+Paths\+:event\+Paths\+:params\+:queue\+:report\+Handler\+:subscription\+Established\+:resubscription\+Scheduled\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a0eb5db01191f046190feeac928c750da}{deregister\+Report\+Handlers\+With\+Queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a96888cd0fabb8f8ecf9ae14f080c491f}{open\+Commissioning\+Window\+With\+Setup\+Passcode\+:discriminator\+:duration\+:queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_adac17d11118494dcd1a25047d35f4c42}{open\+Commissioning\+Window\+With\+Discriminator\+:duration\+:queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_ac82d3b9373d1113a0ca74e3a336f8594}{read\+Events\+With\+Endpoint\+ID\+:cluster\+ID\+:event\+ID\+:params\+:queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a6d6437549552d210efe547e8a0a62910}{subscribe\+To\+Events\+With\+Endpoint\+ID\+:cluster\+ID\+:event\+ID\+:params\+:queue\+:report\+Handler\+:subscription\+Established\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_ace47de6c47a8a9d5fb42ed90742dedff}{subscribe\+With\+Queue\+:min\+Interval\+:max\+Interval\+:params\+:cache\+Container\+:attribute\+Report\+Handler\+:event\+Report\+Handler\+:error\+Handler\+:subscription\+Established\+:resubscription\+Scheduled\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_add47ee28f67b3649ab04613f23ae9ced}{read\+Attribute\+With\+Endpoint\+Id\+:cluster\+Id\+:attribute\+Id\+:params\+:client\+Queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_af0d5860e3a21abd39d83db0cf3aaf846}{write\+Attribute\+With\+Endpoint\+Id\+:cluster\+Id\+:attribute\+Id\+:value\+:timed\+Write\+Timeout\+:client\+Queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a4940c7cb5320ccd1543806fd0eb03c37}{invoke\+Command\+With\+Endpoint\+Id\+:cluster\+Id\+:command\+Id\+:command\+Fields\+:timed\+Invoke\+Timeout\+:client\+Queue\+:completion\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a5609462c6b89799e701b6e8c8aaa8f92}{subscribe\+Attribute\+With\+Endpoint\+Id\+:cluster\+Id\+:attribute\+Id\+:min\+Interval\+:max\+Interval\+:params\+:client\+Queue\+:report\+Handler\+:subscription\+Established\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{interface_w_t_l_base_device_a9162bb906fdc0d12e41b72be35b0bced}{deregister\+Report\+Handlers\+With\+Client\+Queue\+:completion\+:}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(instancetype) + \mbox{\hyperlink{interface_w_t_l_base_device_a79c865c61068e082f80ee5b72d2e9584}{NS\+\_\+\+UNAVAILABLE}}
+\item 
+(\mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} $\ast$) + \mbox{\hyperlink{interface_w_t_l_base_device_a957dc2cbc0531402f02f021bf8815ba4}{device\+With\+Node\+ID\+:controller\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_w_t_l_base_device_8h_source_l00184}{184}} of file \mbox{\hyperlink{_w_t_l_base_device_8h_source}{WTLBase\+Device.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_base_device_a416c10f2e6d277094116c6010952bb80}\label{interface_w_t_l_base_device_a416c10f2e6d277094116c6010952bb80}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}}
+{\footnotesize\ttfamily -\/ (WTLTransport\+Type session\+Transport\+Type) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+The transport used by the current session with this device, or {\ttfamily WTLTransport\+Type\+Undefined} if no session is currently active. \mbox{\Hypertarget{interface_w_t_l_base_device_a9162bb906fdc0d12e41b72be35b0bced}\label{interface_w_t_l_base_device_a9162bb906fdc0d12e41b72be35b0bced}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!deregisterReportHandlersWithClientQueue:completion:@{deregisterReportHandlersWithClientQueue:completion:}}
+\index{deregisterReportHandlersWithClientQueue:completion:@{deregisterReportHandlersWithClientQueue:completion:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{deregisterReportHandlersWithClientQueue:completion:}{deregisterReportHandlersWithClientQueue:completion:}}
+{\footnotesize\ttfamily -\/ (void) deregister\+Report\+Handlers\+With\+Client\+Queue\+: \begin{DoxyParamCaption}\item[{(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(\char`\"{}Pease use \mbox{\hyperlink{interface_w_t_l_base_device_a0eb5db01191f046190feeac928c750da}{deregister\+Report\+Handlers\+With\+Queue\+:completion\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08_a9162bb906fdc0d12e41b72be35b0bced}{WTLBase\+Device(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_base_device_a0eb5db01191f046190feeac928c750da}\label{interface_w_t_l_base_device_a0eb5db01191f046190feeac928c750da}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!deregisterReportHandlersWithQueue:completion:@{deregisterReportHandlersWithQueue:completion:}}
+\index{deregisterReportHandlersWithQueue:completion:@{deregisterReportHandlersWithQueue:completion:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{deregisterReportHandlersWithQueue:completion:}{deregisterReportHandlersWithQueue:completion:}}
+{\footnotesize\ttfamily -\/ (void) deregister\+Report\+Handlers\+With\+Queue\+: \begin{DoxyParamCaption}\item[{(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Deregister all local report handlers for a remote device
+
+This method is applicable only for a remote device. For a local device, the stack has to be shutdown to stop report handlers. There could be multiple clients accessing a node through a remote controller object and hence it is not appropriate for one of those clients to shut down the entire stack to stop receiving reports. \mbox{\Hypertarget{interface_w_t_l_base_device_a957dc2cbc0531402f02f021bf8815ba4}\label{interface_w_t_l_base_device_a957dc2cbc0531402f02f021bf8815ba4}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!deviceWithNodeID:controller:@{deviceWithNodeID:controller:}}
+\index{deviceWithNodeID:controller:@{deviceWithNodeID:controller:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{deviceWithNodeID:controller:}{deviceWithNodeID:controller:}}
+{\footnotesize\ttfamily + (\mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} $\ast$) device\+With\+Node\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{node\+ID }\item[{controller\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Create a device object with the given node id and controller. This will always succeed, even if there is no such node id on the controller\textquotesingle{}s fabric, but attempts to actually use the \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} will fail (asynchronously) in that case. \mbox{\Hypertarget{interface_w_t_l_base_device_ad6a3949239c8a51ffcdbc33f55743e70}\label{interface_w_t_l_base_device_ad6a3949239c8a51ffcdbc33f55743e70}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!invalidateCASESession@{invalidateCASESession}}
+\index{invalidateCASESession@{invalidateCASESession}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{invalidateCASESession}{invalidateCASESession}}
+{\footnotesize\ttfamily -\/ (void) invalidate\+CASESession \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+invalid the case session \mbox{\Hypertarget{interface_w_t_l_base_device_a4940c7cb5320ccd1543806fd0eb03c37}\label{interface_w_t_l_base_device_a4940c7cb5320ccd1543806fd0eb03c37}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:@{invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:}}
+\index{invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:@{invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:}{invokeCommandWithEndpointId:clusterId:commandId:commandFields:timedInvokeTimeout:clientQueue:completion:}}
+{\footnotesize\ttfamily -\/ (void) invoke\+Command\+With\+Endpoint\+Id\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$)}]{cluster\+Id }\item[{command\+Id\+:(NSNumber $\ast$)}]{command\+Id }\item[{command\+Fields\+:(id)}]{command\+Fields }\item[{timed\+Invoke\+Timeout\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{timeout\+Ms }\item[{client\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{client\+Queue }\item[{completion\+:(\char`\"{}Please use invoke\+Command\+With\+Endpoint\+ID\+:cluster\+ID\+:command\+ID\+:command\+Fields\+:timed\+Invoke\+Timeout\+:queue\+:completion\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08_a4940c7cb5320ccd1543806fd0eb03c37}{WTLBase\+Device(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_base_device_a9c85f2c43922040fd85c8e4eb4f4baf7}\label{interface_w_t_l_base_device_a9c85f2c43922040fd85c8e4eb4f4baf7}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!invokeCommandWithEndpointID:clusterID:commandID:commandFields:timedInvokeTimeout:queue:completion:@{invokeCommandWithEndpointID:clusterID:commandID:commandFields:timedInvokeTimeout:queue:completion:}}
+\index{invokeCommandWithEndpointID:clusterID:commandID:commandFields:timedInvokeTimeout:queue:completion:@{invokeCommandWithEndpointID:clusterID:commandID:commandFields:timedInvokeTimeout:queue:completion:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{invokeCommandWithEndpointID:clusterID:commandID:commandFields:timedInvokeTimeout:queue:completion:}{invokeCommandWithEndpointID:clusterID:commandID:commandFields:timedInvokeTimeout:queue:completion:}}
+{\footnotesize\ttfamily -\/ (void) invoke\+Command\+With\+Endpoint\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{endpoint\+ID }\item[{cluster\+ID\+:(NSNumber $\ast$)}]{cluster\+ID }\item[{command\+ID\+:(NSNumber $\ast$)}]{command\+ID }\item[{command\+Fields\+:(id)}]{command\+Fields }\item[{timed\+Invoke\+Timeout\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{timeout\+Ms }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Invoke a command with a designated command path
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+Fields} & command fields object. The object must be a data-\/value NSDictionary object as described in the WTLDevice\+Response\+Handler. The attribute must be a Structure, i.\+e., the NSDictionary WTLType\+Key key must have the value WTLStructure\+Value\+Type.\\
+\hline
+{\em timeout\+Ms} & timeout in milliseconds for timed invoke, or nil.\\
+\hline
+{\em completion} & response handler will receive either values or error. A path-\/specific error status from the command invocation will result in an error being passed to the completion, so values will only be passed in when the command succeeds. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_t_l_base_device_a79c865c61068e082f80ee5b72d2e9584}\label{interface_w_t_l_base_device_a79c865c61068e082f80ee5b72d2e9584}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_base_device_a79c865c61068e082f80ee5b72d2e9584}\label{interface_w_t_l_base_device_a79c865c61068e082f80ee5b72d2e9584}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!NS\_UNAVAILABLE@{NS\_UNAVAILABLE}}
+\index{NS\_UNAVAILABLE@{NS\_UNAVAILABLE}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{NS\_UNAVAILABLE}{NS\_UNAVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (instancetype) NS\+\_\+\+UNAVAILABLE \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+\mbox{\Hypertarget{interface_w_t_l_base_device_adac17d11118494dcd1a25047d35f4c42}\label{interface_w_t_l_base_device_adac17d11118494dcd1a25047d35f4c42}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!openCommissioningWindowWithDiscriminator:duration:queue:completion:@{openCommissioningWindowWithDiscriminator:duration:queue:completion:}}
+\index{openCommissioningWindowWithDiscriminator:duration:queue:completion:@{openCommissioningWindowWithDiscriminator:duration:queue:completion:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{openCommissioningWindowWithDiscriminator:duration:queue:completion:}{openCommissioningWindowWithDiscriminator:duration:queue:completion:}}
+{\footnotesize\ttfamily -\/ (void) open\+Commissioning\+Window\+With\+Discriminator\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{discriminator }\item[{duration\+:(NSNumber $\ast$)}]{duration }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(WTLDevice\+Open\+Commissioning\+Window\+Handler)}]{WTL\+\_\+\+NEWLY\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Open a commissioning window on the device, using a random setup passcode.
+
+On success, completion will be called on queue with the \mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}} that can be used to commission the device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em discriminator} & The discriminator to use for the commissionable advertisement. \\
+\hline
+{\em duration} & Duration, in seconds, during which the commissioning window will be open. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_t_l_base_device_a96888cd0fabb8f8ecf9ae14f080c491f}\label{interface_w_t_l_base_device_a96888cd0fabb8f8ecf9ae14f080c491f}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!openCommissioningWindowWithSetupPasscode:discriminator:duration:queue:completion:@{openCommissioningWindowWithSetupPasscode:discriminator:duration:queue:completion:}}
+\index{openCommissioningWindowWithSetupPasscode:discriminator:duration:queue:completion:@{openCommissioningWindowWithSetupPasscode:discriminator:duration:queue:completion:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{openCommissioningWindowWithSetupPasscode:discriminator:duration:queue:completion:}{openCommissioningWindowWithSetupPasscode:discriminator:duration:queue:completion:}}
+{\footnotesize\ttfamily -\/ (void) open\+Commissioning\+Window\+With\+Setup\+Passcode\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{setup\+Passcode }\item[{discriminator\+:(NSNumber $\ast$)}]{discriminator }\item[{duration\+:(NSNumber $\ast$)}]{duration }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(macos(13.\+1))}]{ }\item[{(watchos(9.\+2))}]{ }\item[{(tvos(16.\+2))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Open a commissioning window on the device.
+
+On success, completion will be called on queue with the \mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}} that can be used to commission the device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em setup\+Passcode} & The setup passcode to use for the commissioning window. See \mbox{\hyperlink{interface_w_t_l_setup_payload}{WTLSetup\+Payload}}\textquotesingle{}s generate\+Random\+Setup\+Passcode for generating a valid random passcode. \\
+\hline
+{\em discriminator} & The discriminator to use for the commissionable advertisement. \\
+\hline
+{\em duration} & Duration, in seconds, during which the commissioning window will be open. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_w_t_l_base_device_ac9c967c00cfda8b3e4511351980fd265}\label{interface_w_t_l_base_device_ac9c967c00cfda8b3e4511351980fd265}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!readAttributePaths:eventPaths:params:queue:completion:@{readAttributePaths:eventPaths:params:queue:completion:}}
+\index{readAttributePaths:eventPaths:params:queue:completion:@{readAttributePaths:eventPaths:params:queue:completion:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{readAttributePaths:eventPaths:params:queue:completion:}{readAttributePaths:eventPaths:params:queue:completion:}}
+{\footnotesize\ttfamily -\/ (void) read\+Attribute\+Paths\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_w_t_l_attribute_request_path}{WTLAttribute\+Request\+Path}} $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{attribute\+Paths }\item[{event\+Paths\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_w_t_l_event_request_path}{WTLEvent\+Request\+Path}} $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{event\+Paths }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDevice\+Response\+Handler}})}]{WTL\+\_\+\+NEWLY\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Reads multiple attribute or event paths from the device.
+
+Nil is treated as an empty array for attribute\+Paths and event\+Paths.
+
+Lists of attribute and event paths to read can be provided via attribute\+Paths and event\+Paths.
+
+The completion will be called with an error if the entire read interaction fails. Otherwise it will be called with an array of values. This array may be empty (e.\+g. if no paths matched the wildcard paths passed in, or if empty lists of paths were passed in) or may include per-\/path errors if particular paths failed.
+
+If the sum of the lengths of attribute\+Paths and event\+Paths exceeds 9, the read may fail due to the device not supporting that many read paths. \mbox{\Hypertarget{interface_w_t_l_base_device_a34883e28231dfc5a3db249aeceb2903f}\label{interface_w_t_l_base_device_a34883e28231dfc5a3db249aeceb2903f}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!readAttributesWithEndpointID:clusterID:attributeID:params:queue:completion:@{readAttributesWithEndpointID:clusterID:attributeID:params:queue:completion:}}
+\index{readAttributesWithEndpointID:clusterID:attributeID:params:queue:completion:@{readAttributesWithEndpointID:clusterID:attributeID:params:queue:completion:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{readAttributesWithEndpointID:clusterID:attributeID:params:queue:completion:}{readAttributesWithEndpointID:clusterID:attributeID:params:queue:completion:}}
+{\footnotesize\ttfamily -\/ (void) read\+Attributes\+With\+Endpoint\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$\+\_\+\+Nullable)}]{endpoint\+ID }\item[{cluster\+ID\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{cluster\+ID }\item[{attribute\+ID\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{attribute\+ID }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Reads attributes from the device.
+
+Nil values for endpoint\+ID, cluster\+ID, attribute\+ID indicate wildcards (e.\+g. nil attribute\+ID means \char`\"{}read all the attributes from the endpoint(s) and cluster(s) that match endpoint\+ID/cluster\+ID\char`\"{}).
+
+If all of endpoint\+ID, cluster\+ID, attribute\+ID are non-\/nil, a single attribute will be read.
+
+If all of endpoint\+ID, cluster\+ID, attribute\+ID are nil, all attributes on the device will be read.
+
+A non-\/nil attribute\+ID along with a nil cluster\+ID will only succeed if the attribute ID is for a global attribute that applies to all clusters.
+
+The completion will be called with an error if the entire read interaction fails. Otherwise it will be called with values, which may be empty (e.\+g. if no paths matched the wildcard) or may include per-\/path errors if particular paths failed. \mbox{\Hypertarget{interface_w_t_l_base_device_add47ee28f67b3649ab04613f23ae9ced}\label{interface_w_t_l_base_device_add47ee28f67b3649ab04613f23ae9ced}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:@{readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:}}
+\index{readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:@{readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:}{readAttributeWithEndpointId:clusterId:attributeId:params:clientQueue:completion:}}
+{\footnotesize\ttfamily -\/ (void) read\+Attribute\+With\+Endpoint\+Id\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$\+\_\+\+Nullable)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{cluster\+Id }\item[{attribute\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{attribute\+Id }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\item[{client\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{client\+Queue }\item[{completion\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_base_device_a34883e28231dfc5a3db249aeceb2903f}{read\+Attributes\+With\+Endpoint\+ID\+:cluster\+ID\+:attribute\+ID\+:params\+:queue\+:completion\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08_add47ee28f67b3649ab04613f23ae9ced}{WTLBase\+Device(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_base_device_ac82d3b9373d1113a0ca74e3a336f8594}\label{interface_w_t_l_base_device_ac82d3b9373d1113a0ca74e3a336f8594}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!readEventsWithEndpointID:clusterID:eventID:params:queue:completion:@{readEventsWithEndpointID:clusterID:eventID:params:queue:completion:}}
+\index{readEventsWithEndpointID:clusterID:eventID:params:queue:completion:@{readEventsWithEndpointID:clusterID:eventID:params:queue:completion:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{readEventsWithEndpointID:clusterID:eventID:params:queue:completion:}{readEventsWithEndpointID:clusterID:eventID:params:queue:completion:}}
+{\footnotesize\ttfamily -\/ (void) read\+Events\+With\+Endpoint\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$\+\_\+\+Nullable)}]{endpoint\+ID }\item[{cluster\+ID\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{cluster\+ID }\item[{event\+ID\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{event\+ID }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_read_params}{WTLRead\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Reads events from the device.
+
+Nil values for endpoint\+ID, cluster\+ID, event\+ID indicate wildcards (e.\+g. nil event\+ID means \char`\"{}read all the events from the endpoint(s) and cluster(s) that match endpoint\+ID/cluster\+ID\char`\"{}).
+
+If all of endpoint\+ID, cluster\+ID, event\+ID are non-\/nil, all the matching instances of a single event will be read.
+
+If all of endpoint\+ID, cluster\+ID, event\+ID are nil, all events on the device will be read.
+
+The completion will be called with an error if the entire read interaction fails. Otherwise it will be called with values, which may be empty (e.\+g. if no paths matched the wildcard) or may include per-\/path errors if particular paths failed. \mbox{\Hypertarget{interface_w_t_l_base_device_a5609462c6b89799e701b6e8c8aaa8f92}\label{interface_w_t_l_base_device_a5609462c6b89799e701b6e8c8aaa8f92}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:@{subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:}}
+\index{subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:@{subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:}{subscribeAttributeWithEndpointId:clusterId:attributeId:minInterval:maxInterval:params:clientQueue:reportHandler:subscriptionEstablished:}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+Attribute\+With\+Endpoint\+Id\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$\+\_\+\+Nullable)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{cluster\+Id }\item[{attribute\+Id\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{attribute\+Id }\item[{min\+Interval\+:(NSNumber $\ast$)}]{min\+Interval }\item[{max\+Interval\+:(NSNumber $\ast$)}]{max\+Interval }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\item[{client\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{client\+Queue }\item[{report\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDevice\+Response\+Handler}})}]{report\+Handler }\item[{subscription\+Established\+:(\char`\"{}Please use \char`\"{} \char`\"{}subscribe\+To\+Attributes\+With\+Endpoint\+ID\+:cluster\+ID\+:attribute\+ID\+:params\+:queue\+:\char`\"{} \char`\"{}report\+Handler\+:subscription\+Established\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08_a5609462c6b89799e701b6e8c8aaa8f92}{WTLBase\+Device(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_base_device_a9630e49da0f237c16a026cac1c695a9d}\label{interface_w_t_l_base_device_a9630e49da0f237c16a026cac1c695a9d}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!subscribeToAttributePaths:eventPaths:params:queue:reportHandler:subscriptionEstablished:resubscriptionScheduled:@{subscribeToAttributePaths:eventPaths:params:queue:reportHandler:subscriptionEstablished:resubscriptionScheduled:}}
+\index{subscribeToAttributePaths:eventPaths:params:queue:reportHandler:subscriptionEstablished:resubscriptionScheduled:@{subscribeToAttributePaths:eventPaths:params:queue:reportHandler:subscriptionEstablished:resubscriptionScheduled:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{subscribeToAttributePaths:eventPaths:params:queue:reportHandler:subscriptionEstablished:resubscriptionScheduled:}{subscribeToAttributePaths:eventPaths:params:queue:reportHandler:subscriptionEstablished:resubscriptionScheduled:}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+To\+Attribute\+Paths\+: \begin{DoxyParamCaption}\item[{(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_w_t_l_attribute_request_path}{WTLAttribute\+Request\+Path}} $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{attribute\+Paths }\item[{event\+Paths\+:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}$<$ \mbox{\hyperlink{interface_w_t_l_event_request_path}{WTLEvent\+Request\+Path}} $\ast$ $>$ $\ast$\+\_\+\+Nullable)}]{event\+Paths }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{report\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDevice\+Response\+Handler}})}]{report\+Handler }\item[{subscription\+Established\+:(\mbox{\hyperlink{_w_t_l_cluster_8h_a810a6df656356ef2e182f84dca940a5a}{WTLSubscription\+Established\+Handler}} \+\_\+\+Nullable)}]{subscription\+Established }\item[{resubscription\+Scheduled\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a0afbfa6be4e20b42f2ce662deadb8942}{WTLDevice\+Resubscription\+Scheduled\+Handler}} \+\_\+\+Nullable)}]{WTL\+\_\+\+NEWLY\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Subscribes to multiple attribute or event paths.
+
+Nil is treated as an empty array for attribute\+Paths and event\+Paths.
+
+Lists of attribute and event paths to subscribe to can be provided via attribute\+Paths and event\+Paths.
+
+The report\+Handler will be called with an error if the subscription fails entirely (including when both attribute\+Paths and event\+Paths are empty).
+
+The report\+Handler will be called with arrays of response-\/value dictionaries (which may be data or errors) as path-\/specific data is received.
+
+subscription\+Established will be called when the subscription is first successfully established (after the initial set of data reports has been delivered to report\+Handler). If params allow automatic resubscription, it will be called any time resubscription succeeds.
+
+resubscription\+Scheduled will be called if subscription drop is detected and params allow automatic resubscription.
+
+If the sum of the lengths of attribute\+Paths and event\+Paths exceeds 3, the subscribe may fail due to the device not supporting that many paths for a subscription. \mbox{\Hypertarget{interface_w_t_l_base_device_a2310ecae2400aea0359592a64651b2cd}\label{interface_w_t_l_base_device_a2310ecae2400aea0359592a64651b2cd}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!subscribeToAttributesWithEndpointID:clusterID:attributeID:params:queue:reportHandler:subscriptionEstablished:@{subscribeToAttributesWithEndpointID:clusterID:attributeID:params:queue:reportHandler:subscriptionEstablished:}}
+\index{subscribeToAttributesWithEndpointID:clusterID:attributeID:params:queue:reportHandler:subscriptionEstablished:@{subscribeToAttributesWithEndpointID:clusterID:attributeID:params:queue:reportHandler:subscriptionEstablished:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{subscribeToAttributesWithEndpointID:clusterID:attributeID:params:queue:reportHandler:subscriptionEstablished:}{subscribeToAttributesWithEndpointID:clusterID:attributeID:params:queue:reportHandler:subscriptionEstablished:}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+To\+Attributes\+With\+Endpoint\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$\+\_\+\+Nullable)}]{endpoint\+ID }\item[{cluster\+ID\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{cluster\+ID }\item[{attribute\+ID\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{attribute\+ID }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{report\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDevice\+Response\+Handler}})}]{report\+Handler }\item[{subscription\+Established\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Subscribes to the specified attributes on the device.
+
+Nil values for endpoint\+ID, cluster\+ID, attribute\+ID indicate wildcards (e.\+g. nil attribute\+ID means \char`\"{}subscribe to all the attributes from the endpoint(s) and cluster(s) that match endpoint\+ID/cluster\+ID\char`\"{}).
+
+If all of endpoint\+ID, cluster\+ID, attribute\+ID are non-\/nil, a single attribute will be subscribed to.
+
+If all of endpoint\+ID, cluster\+ID, attribute\+ID are nil, all attributes on the device will be subscribed to.
+
+A non-\/nil attribute\+ID along with a nil cluster\+ID will only succeed if the attribute ID is for a global attribute that applies to all clusters.
+
+The report\+Handler will be called with an error if the subscription fails entirely.
+
+The report\+Handler will be called with arrays of response-\/value dictionaries (which may be data or errors) as path-\/specific data is received.
+
+subscription\+Established will be called when the subscription is first successfully established (after the initial set of data reports has been delivered to report\+Handler). If params allow automatic resubscription, it will be called any time resubscription succeeds. \mbox{\Hypertarget{interface_w_t_l_base_device_a6d6437549552d210efe547e8a0a62910}\label{interface_w_t_l_base_device_a6d6437549552d210efe547e8a0a62910}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!subscribeToEventsWithEndpointID:clusterID:eventID:params:queue:reportHandler:subscriptionEstablished:@{subscribeToEventsWithEndpointID:clusterID:eventID:params:queue:reportHandler:subscriptionEstablished:}}
+\index{subscribeToEventsWithEndpointID:clusterID:eventID:params:queue:reportHandler:subscriptionEstablished:@{subscribeToEventsWithEndpointID:clusterID:eventID:params:queue:reportHandler:subscriptionEstablished:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{subscribeToEventsWithEndpointID:clusterID:eventID:params:queue:reportHandler:subscriptionEstablished:}{subscribeToEventsWithEndpointID:clusterID:eventID:params:queue:reportHandler:subscriptionEstablished:}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+To\+Events\+With\+Endpoint\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$\+\_\+\+Nullable)}]{endpoint\+ID }\item[{cluster\+ID\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{cluster\+ID }\item[{event\+ID\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{event\+ID }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{report\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a3343a89edcb865e083b29cc9c296eceb}{WTLDevice\+Response\+Handler}})}]{report\+Handler }\item[{subscription\+Established\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Subscribes to the specified events on the device.
+
+Nil values for endpoint\+ID, cluster\+ID, event\+ID indicate wildcards (e.\+g. nil event\+ID means \char`\"{}subscribe to all the events from the endpoint(s) and cluster(s) that match endpoint\+ID/cluster\+ID\char`\"{}).
+
+If all of endpoint\+ID, cluster\+ID, event\+ID are non-\/nil, a single event will be subscribed to.
+
+If all of endpoint\+ID, cluster\+ID, event\+ID are nil, all events on the device will be subscribed to.
+
+The report\+Handler will be called with an error if the subscription fails entirely.
+
+The report\+Handler will be called with arrays of response-\/value dictionaries (which may be data or errors) as path-\/specific data is received.
+
+subscription\+Established will be called when the subscription is first successfully established (after the initial set of data reports has been delivered to report\+Handler). If params allow automatic resubscription, it will be called any time resubscription succeeds. \mbox{\Hypertarget{interface_w_t_l_base_device_ace47de6c47a8a9d5fb42ed90742dedff}\label{interface_w_t_l_base_device_ace47de6c47a8a9d5fb42ed90742dedff}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:@{subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:}}
+\index{subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:@{subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:}{subscribeWithQueue:minInterval:maxInterval:params:cacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+With\+Queue\+: \begin{DoxyParamCaption}\item[{(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{min\+Interval\+:(uint16\+\_\+t)}]{min\+Interval }\item[{max\+Interval\+:(uint16\+\_\+t)}]{max\+Interval }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$\+\_\+\+Nullable)}]{params }\item[{cache\+Container\+:(WTLAttribute\+Cache\+Container $\ast$\+\_\+\+Nullable)}]{attribute\+Cache\+Container }\item[{attribute\+Report\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{WTLDevice\+Report\+Handler}} \+\_\+\+Nullable)}]{attribute\+Report\+Handler }\item[{event\+Report\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{WTLDevice\+Report\+Handler}} \+\_\+\+Nullable)}]{event\+Report\+Handler }\item[{error\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_afa0cd905259a1e4838660d0cb47ef6e8}{WTLDevice\+Error\+Handler}})}]{error\+Handler }\item[{subscription\+Established\+:(dispatch\+\_\+block\+\_\+t \+\_\+\+Nullable)}]{subscription\+Established\+Handler }\item[{resubscription\+Scheduled\+:(\char`\"{}Please use \char`\"{} \char`\"{}subscribe\+With\+Queue\+:params\+:cluster\+State\+Cache\+Container\+:attribute\+Report\+Handler\+:event\+Report\+Handler\+:error\+Handler\+:\char`\"{} \char`\"{}subscription\+Established\+:resubscription\+Scheduled\+:\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+Deprecated \mbox{\hyperlink{interface_w_t_l_base_device}{WTLBase\+Device}} APIs. 
+
+Provided by category \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08_ace47de6c47a8a9d5fb42ed90742dedff}{WTLBase\+Device(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_base_device_a246de3a170519194bf648aa2d023b142}\label{interface_w_t_l_base_device_a246de3a170519194bf648aa2d023b142}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!subscribeWithQueue:params:clusterStateCacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:@{subscribeWithQueue:params:clusterStateCacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:}}
+\index{subscribeWithQueue:params:clusterStateCacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:@{subscribeWithQueue:params:clusterStateCacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{subscribeWithQueue:params:clusterStateCacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:}{subscribeWithQueue:params:clusterStateCacheContainer:attributeReportHandler:eventReportHandler:errorHandler:subscriptionEstablished:resubscriptionScheduled:}}
+{\footnotesize\ttfamily -\/ (void) subscribe\+With\+Queue\+: \begin{DoxyParamCaption}\item[{(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{params\+:(\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} $\ast$)}]{params }\item[{cluster\+State\+Cache\+Container\+:(WTLCluster\+State\+Cache\+Container $\ast$\+\_\+\+Nullable)}]{cluster\+State\+Cache\+Container }\item[{attribute\+Report\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{WTLDevice\+Report\+Handler}} \+\_\+\+Nullable)}]{attribute\+Report\+Handler }\item[{event\+Report\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_a950d5db521fae1c25dd993bd6e0017f8}{WTLDevice\+Report\+Handler}} \+\_\+\+Nullable)}]{event\+Report\+Handler }\item[{error\+Handler\+:(\mbox{\hyperlink{_w_t_l_base_device_8h_afa0cd905259a1e4838660d0cb47ef6e8}{WTLDevice\+Error\+Handler}})}]{error\+Handler }\item[{subscription\+Established\+:(\mbox{\hyperlink{_w_t_l_cluster_8h_a810a6df656356ef2e182f84dca940a5a}{WTLSubscription\+Established\+Handler}} \+\_\+\+Nullable)}]{subscription\+Established }\item[{resubscription\+Scheduled\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Subscribe to receive attribute reports for everything (all endpoints, all clusters, all attributes, all events) on the device.
+
+A non-\/nil attribute cache container will cache attribute values, retrievable through the designated attribute cache container.
+
+attribute\+Report\+Handler will be called any time a data update is available (with a non-\/nil \char`\"{}value\char`\"{})
+
+The array passed to attribute\+Report\+Handler will contain \mbox{\hyperlink{interface_w_t_l_attribute_report}{WTLAttribute\+Report}} instances. Errors for specific paths, not the whole subscription, will be reported via those objects.
+
+event\+Report\+Handler will be called any time an event is reported (with a non-\/nil \char`\"{}value\char`\"{})
+
+The array passed to event\+Report\+Handler will contain \mbox{\hyperlink{interface_w_t_l_event_report}{WTLEvent\+Report}} instances. Errors for specific paths, not the whole subscription, will be reported via those objects.
+
+error\+Handler will be called any time there is an error for the entire subscription (with a non-\/nil \char`\"{}error\char`\"{}), and terminate the subscription. This will generally not be invoked if auto-\/resubscription is enabled, unless there is a fatal error during a resubscription attempt.
+
+Both report handlers are not supported over XPC at the moment.
+
+The subscription\+Established block, if not nil, will be called once the subscription is established. This will be {\itshape after} the first (priming) call to both report handlers. Note that if the \mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} are set to automatically resubscribe this can end up being called more than once.
+
+The resubscription\+Scheduled block, if not nil, will be called if auto-\/resubscription is enabled, subscription loss is detected, and a resubscription is scheduled. This can be called multiple times in a row without an intervening subscription\+Established call if the resubscription attempts fail. \mbox{\Hypertarget{interface_w_t_l_base_device_af0d5860e3a21abd39d83db0cf3aaf846}\label{interface_w_t_l_base_device_af0d5860e3a21abd39d83db0cf3aaf846}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:@{writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:}}
+\index{writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:@{writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:}{writeAttributeWithEndpointId:clusterId:attributeId:value:timedWriteTimeout:clientQueue:completion:}}
+{\footnotesize\ttfamily -\/ (void) write\+Attribute\+With\+Endpoint\+Id\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{endpoint\+Id }\item[{cluster\+Id\+:(NSNumber $\ast$)}]{cluster\+Id }\item[{attribute\+Id\+:(NSNumber $\ast$)}]{attribute\+Id }\item[{value\+:(id)}]{value }\item[{timed\+Write\+Timeout\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{timeout\+Ms }\item[{client\+Queue\+:(dispatch\+\_\+queue\+\_\+t)}]{client\+Queue }\item[{completion\+:(\char`\"{}Please use \mbox{\hyperlink{interface_w_t_l_base_device_a1caea65868e69daefb49df0ec3f9b325}{write\+Attribute\+With\+Endpoint\+ID\+:cluster\+ID\+:attribute\+ID\+:value\+:timed\+Write\+Timeout\+:queue\+:completion\+:}}\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(tvos(16.\+1, 16.\+4))}]{WTL\+\_\+\+DEPRECATED }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_base_device_07_deprecated_08_af0d5860e3a21abd39d83db0cf3aaf846}{WTLBase\+Device(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_base_device_a1caea65868e69daefb49df0ec3f9b325}\label{interface_w_t_l_base_device_a1caea65868e69daefb49df0ec3f9b325}} 
+\index{WTLBaseDevice@{WTLBaseDevice}!writeAttributeWithEndpointID:clusterID:attributeID:value:timedWriteTimeout:queue:completion:@{writeAttributeWithEndpointID:clusterID:attributeID:value:timedWriteTimeout:queue:completion:}}
+\index{writeAttributeWithEndpointID:clusterID:attributeID:value:timedWriteTimeout:queue:completion:@{writeAttributeWithEndpointID:clusterID:attributeID:value:timedWriteTimeout:queue:completion:}!WTLBaseDevice@{WTLBaseDevice}}
+\doxysubsubsection{\texorpdfstring{writeAttributeWithEndpointID:clusterID:attributeID:value:timedWriteTimeout:queue:completion:}{writeAttributeWithEndpointID:clusterID:attributeID:value:timedWriteTimeout:queue:completion:}}
+{\footnotesize\ttfamily -\/ (void) write\+Attribute\+With\+Endpoint\+ID\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{endpoint\+ID }\item[{cluster\+ID\+:(NSNumber $\ast$)}]{cluster\+ID }\item[{attribute\+ID\+:(NSNumber $\ast$)}]{attribute\+ID }\item[{value\+:(id)}]{value }\item[{timed\+Write\+Timeout\+:(NSNumber $\ast$\+\_\+\+Nullable)}]{timeout\+Ms }\item[{queue\+:(dispatch\+\_\+queue\+\_\+t)}]{queue }\item[{completion\+:(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(tvos(16.\+4))}]{API\+\_\+\+AVAILABLE }\end{DoxyParamCaption}}
+
+Write to attribute in a designated attribute path
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & A data-\/value NSDictionary object as described in WTLDevice\+Response\+Handler.\\
+\hline
+{\em timeout\+Ms} & timeout in milliseconds for timed write, or nil.\\
+\hline
+{\em completion} & response handler will receive either values or error. \begin{DoxyVerb}               A path-specific error status will get turned into an error
+               passed to the completion, so values will only be passed in
+               when the write succeeds.  In that case, values will have
+               the format documented in the definition of
+               WTLDeviceResponseHandler and will be an array with a single element
+               which is a dictionary that has a WTLAttributePathKey entry in it, whose value
+               is the attribute path that was successfully written to.
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_base_device_8h}{WTLBase\+Device.\+h}}\end{DoxyCompactItemize}

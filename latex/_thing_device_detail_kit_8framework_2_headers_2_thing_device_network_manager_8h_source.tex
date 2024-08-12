@@ -1,0 +1,70 @@
+\hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source}{}\doxysection{Thing\+Device\+Network\+Manager.\+h}
+\label{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source}\index{/Users/humtong/Downloads/Pods\_副本/ThingDeviceDetailKit/ThingDeviceDetailKit.xcframework/ios-\/arm64/ThingDeviceDetailKit.framework/Headers/ThingDeviceNetworkManager.h@{/Users/humtong/Downloads/Pods\_副本/ThingDeviceDetailKit/ThingDeviceDetailKit.xcframework/ios-\/arm64/ThingDeviceDetailKit.framework/Headers/ThingDeviceNetworkManager.h}}
+\mbox{\hyperlink{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00002}00002 \textcolor{comment}{//  ThingDeviceNetworkManager.h}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00003}00003 \textcolor{comment}{//  ThingDeviceDetailKit}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00005}00005 \textcolor{comment}{//  Created by 后主 on 2024/4/2.}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00006}00006 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00008}00008 \textcolor{preprocessor}{\#import <Foundation/Foundation.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00009}00009 \textcolor{preprocessor}{\#import <ThingSmartDeviceCoreKit/ThingSmartDeviceCoreKit.h>}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00011}00011 NS\_ASSUME\_NONNULL\_BEGIN}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00014}\mbox{\hyperlink{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_ac7c301c4fb3fc1ef76b9ab436ffecef7}{00014}} \textcolor{keyword}{typedef} \mbox{\hyperlink{x86__64-simulator_2_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_ac7c301c4fb3fc1ef76b9ab436ffecef7}{NS\_ENUM}}(NSUInteger, ThingDeviceNetworkInfoType) \{}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00015}00015     ThingDeviceNetworkInfoTypeWifi = 0,}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00016}00016     ThingDeviceNetworkInfoTypeWire = 1,}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00017}00017     ThingDeviceNetworkInfoType4G = 2,}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00018}00018 \};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00021}00021 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_device_network_info}{ThingDeviceNetworkInfo}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00022}00022 \textcolor{keyword}{@property} (nonatomic, assign) ThingDeviceNetworkInfoType \mbox{\hyperlink{interface_thing_device_network_info_a907c3a5a426dfb21a3df9e9c5333e0aa}{network}};  \textcolor{comment}{//0表示无线，1表示有线, 2表示4g}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00023}00023 \textcolor{keyword}{@property} (nonatomic, copy) NSString *\mbox{\hyperlink{interface_thing_device_network_info_a3672f3a2343ac4995f0c18d4711ce17b}{ssid}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00024}00024 \textcolor{keyword}{@property} (nonatomic, assign) NSInteger \mbox{\hyperlink{interface_thing_device_network_info_ad0953c62d69cda8555428bd854a72c4b}{signal}}; \textcolor{comment}{//信号}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00025}00025 \textcolor{keyword}{@property} (nonatomic, assign) NSInteger \mbox{\hyperlink{interface_thing_device_network_info_ab065205969a7103eeb033b9740b5f39d}{flags}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00026}\mbox{\hyperlink{interface_thing_device_network_manager_a204f1bed62a3682cf9ddf73175b45b46}{00026}} \textcolor{keyword}{@property} (nonatomic, copy) NSString *\mbox{\hyperlink{interface_thing_device_network_info_ad4789c3867126f70bb08df784ed6f9fb}{ssidHash}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00027}00027 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00030}00030 \textcolor{keyword}{@interface }\mbox{\hyperlink{interface_thing_device_network_manager}{ThingDeviceNetworkManager}} : NSObject}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00032}00032 -\/ (instancetype)initWithDeviceId:(NSString *)deviceId;}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00036}00036 + (BOOL)\mbox{\hyperlink{interface_thing_device_network_manager_a6391840a02e23aaddfd6fdce8b3a74c2}{supportWifiBackupNetwork}}:(NSString *)deviceId;}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00039}00039 -\/ (BOOL)\mbox{\hyperlink{interface_thing_device_network_manager_a6391840a02e23aaddfd6fdce8b3a74c2}{supportWifiBackupNetwork}};}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00046}00046 -\/ (void)getCurrentNetworkInfoWithSuccess:(\textcolor{keywordtype}{void}(\string^)(\mbox{\hyperlink{interface_thing_device_network_info}{ThingDeviceNetworkInfo}} *info))success failure:(\textcolor{keywordtype}{void}(\string^)(NSError *\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))failure;}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00054}00054 -\/ (void)getBackupWifiNetworksWithSuccess:(\textcolor{keywordtype}{void}(\string^)(\mbox{\hyperlink{interface_n_s_array}{NSArray}}<\mbox{\hyperlink{interface_thing_smart_backup_wifi_model}{ThingSmartBackupWifiModel}} *> *backWifiInfos, NSInteger maxNum))success failure:(\textcolor{keywordtype}{void}(\string^)(NSError *\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))failure;}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00062}00062 -\/ (\mbox{\hyperlink{interface_thing_smart_backup_wifi_model}{ThingSmartBackupWifiModel}} *)generateBackupWifiModelWithSSID:(NSString *)ssid pwd:(NSString *)pwd;}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00067}00067 -\/ (BOOL)canUpdateWifiBackupNetwork:(\mbox{\hyperlink{interface_thing_device_network_info}{ThingDeviceNetworkInfo}} *)info;}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00075}00075 -\/ (void)updateBackupWifiNetworks:(\mbox{\hyperlink{interface_n_s_array}{NSArray}}<\mbox{\hyperlink{interface_thing_smart_backup_wifi_model}{ThingSmartBackupWifiModel}} *> *)infos success:(\textcolor{keywordtype}{void}(\string^)(\textcolor{keywordtype}{void}))success failure:(\textcolor{keywordtype}{void}(\string^)(NSError *\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))failure;}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00081}00081 -\/ (BOOL)canSwitchWifiNetwork:(\mbox{\hyperlink{interface_thing_device_network_info}{ThingDeviceNetworkInfo}} *)info;}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00090}00090 -\/ (void)switchBackupWifiNetworkWithHash:(NSString *)hash success:(\textcolor{keywordtype}{void}(\string^)(\textcolor{keywordtype}{void}))success failure:(\textcolor{keywordtype}{void}(\string^)(NSError *\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))failure;}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00100}00100 -\/ (void)switchBackupWifiNetworkWithSSID:(NSString *)ssid pwd:(NSString *)pwd success:(\textcolor{keywordtype}{void}(\string^)(\textcolor{keywordtype}{void}))success failure:(\textcolor{keywordtype}{void}(\string^)(NSError *\mbox{\hyperlink{_w_t_l_cluster_8h_a6710b99207ceec3a7b09cadf04f4e246}{error}}))failure;}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00102}00102 \textcolor{keyword}{@end}}
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{_thing_device_detail_kit_8framework_2_headers_2_thing_device_network_manager_8h_source_l00104}00104 NS\_ASSUME\_NONNULL\_END}
+
+\end{DoxyCode}

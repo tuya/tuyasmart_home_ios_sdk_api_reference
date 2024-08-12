@@ -1,0 +1,161 @@
+\hypertarget{interface_w_t_l_subscribe_params}{}\doxysection{WTLSubscribe\+Params Class Reference}
+\label{interface_w_t_l_subscribe_params}\index{WTLSubscribeParams@{WTLSubscribeParams}}
+
+
+{\ttfamily \#import $<$WTLCluster.\+h$>$}
+
+Inheritance diagram for WTLSubscribe\+Params\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_w_t_l_subscribe_params}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(BOOL replace\+Existing\+Subscriptions) -\/ \mbox{\hyperlink{interface_w_t_l_subscribe_params_abe1c4bc6dee79171f349257ac74ffd97}{API\+\_\+\+AVAILABLE}}
+\item 
+(BOOL resubscribe\+Automatically) -\/ \mbox{\hyperlink{interface_w_t_l_subscribe_params_a5709a73bccb2b9cd2f1847cd360c9397}{API\+\_\+\+AVAILABLE}}
+\item 
+(NSNumber $\ast$min\+Interval) -\/ \mbox{\hyperlink{interface_w_t_l_subscribe_params_a389b4a2c30b0792b43659d64cecc9c2b}{API\+\_\+\+AVAILABLE}}
+\item 
+(NSNumber $\ast$max\+Interval) -\/ \mbox{\hyperlink{interface_w_t_l_subscribe_params_acb10458398656bab46452401daede6cc}{API\+\_\+\+AVAILABLE}}
+\item 
+(BOOL report\+Events\+Urgently) -\/ \mbox{\hyperlink{interface_w_t_l_subscribe_params_ae5f4300ae15af3ceb7ac10bb61c00faa}{API\+\_\+\+AVAILABLE}}
+\item 
+(instancetype) -\/ \mbox{\hyperlink{interface_w_t_l_subscribe_params_ab48e9d95798ff50cec54d2713cdef7b0}{init\+With\+Min\+Interval\+:max\+Interval\+:}}
+\item 
+(NSNumber $\ast$keep\+Previous\+Subscriptions) -\/ \mbox{\hyperlink{interface_w_t_l_subscribe_params_ab12707f3cce5990b2953150830158e8f}{WTL\+\_\+\+DEPRECATED}}
+\item 
+(NSNumber $\ast$auto\+Resubscribe) -\/ \mbox{\hyperlink{interface_w_t_l_subscribe_params_ae97abbe0c03df9d0069cbd2b76adcee9}{WTL\+\_\+\+DEPRECATED}}
+\item 
+(16.\+1, 16.\+4) -\/ \mbox{\hyperlink{interface_w_t_l_subscribe_params_a9cb85189a06595b2315156873bdc4795}{tvos}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(16.\+1, 16.\+4) + \mbox{\hyperlink{interface_w_t_l_subscribe_params_a9cb85189a06595b2315156873bdc4795}{tvos}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} This is used to control the behavior of attribute/event subscribes. If not provided (i.\+e. nil passed for the \mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} argument), will be treated as if a default-\/initialized object was passed in. 
+
+Definition at line \mbox{\hyperlink{_w_t_l_cluster_8h_source_l00120}{120}} of file \mbox{\hyperlink{_w_t_l_cluster_8h_source}{WTLCluster.\+h}}.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_w_t_l_subscribe_params_abe1c4bc6dee79171f349257ac74ffd97}\label{interface_w_t_l_subscribe_params_abe1c4bc6dee79171f349257ac74ffd97}} 
+\index{WTLSubscribeParams@{WTLSubscribeParams}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLSubscribeParams@{WTLSubscribeParams}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily -\/ (BOOL replace\+Existing\+Subscriptions) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_a9cb85189a06595b2315156873bdc4795}{tvos}}(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+Whether the subscribe should replace already-\/existing subscriptions. The default value is YES.
+
+If YES, the subscribe will cancel any existing subscriptions to the target node when it sets up the new one.
+
+If NO, the subscribe will allow any previous subscriptions to remain. 
+
+Implements \mbox{\hyperlink{interface_w_t_l_read_params_a90029eae59335ffede9a68cecc536e99}{WTLRead\+Params}}.
+
+\mbox{\Hypertarget{interface_w_t_l_subscribe_params_a5709a73bccb2b9cd2f1847cd360c9397}\label{interface_w_t_l_subscribe_params_a5709a73bccb2b9cd2f1847cd360c9397}} 
+\index{WTLSubscribeParams@{WTLSubscribeParams}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLSubscribeParams@{WTLSubscribeParams}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily -\/ (BOOL resubscribe\+Automatically) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_a9cb85189a06595b2315156873bdc4795}{tvos}}(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+Whether the subscription should automatically try to re-\/establish if it drops. The default value is YES.
+
+If NO, loss of subscription will simply lead to an error report. Some subscription APIs do not support this value.
+
+If YES, loss of subscription will lead to an automatic resubscription attempt. If this succeeds, the subscription\+Established callback will be called again. 
+
+Implements \mbox{\hyperlink{interface_w_t_l_read_params_a90029eae59335ffede9a68cecc536e99}{WTLRead\+Params}}.
+
+\mbox{\Hypertarget{interface_w_t_l_subscribe_params_a389b4a2c30b0792b43659d64cecc9c2b}\label{interface_w_t_l_subscribe_params_a389b4a2c30b0792b43659d64cecc9c2b}} 
+\index{WTLSubscribeParams@{WTLSubscribeParams}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLSubscribeParams@{WTLSubscribeParams}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$min\+Interval) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_a9cb85189a06595b2315156873bdc4795}{tvos}}(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+The minimum time, in seconds, between consecutive reports a server will send for this subscription. This can be used to rate-\/limit the subscription traffic. Any non-\/negative value is allowed, including 0. 
+
+Implements \mbox{\hyperlink{interface_w_t_l_read_params_a90029eae59335ffede9a68cecc536e99}{WTLRead\+Params}}.
+
+\mbox{\Hypertarget{interface_w_t_l_subscribe_params_acb10458398656bab46452401daede6cc}\label{interface_w_t_l_subscribe_params_acb10458398656bab46452401daede6cc}} 
+\index{WTLSubscribeParams@{WTLSubscribeParams}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLSubscribeParams@{WTLSubscribeParams}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$max\+Interval) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_a9cb85189a06595b2315156873bdc4795}{tvos}}(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+The suggested maximum time, in seconds, during which the server is allowed to send no reports at all for this subscription. Must be at least as large as min\+Interval. The server is allowed to use a larger time than this as the max\+Interval it selects if it needs to (e.\+g. to meet its power budget). 
+
+Implements \mbox{\hyperlink{interface_w_t_l_read_params_a90029eae59335ffede9a68cecc536e99}{WTLRead\+Params}}.
+
+\mbox{\Hypertarget{interface_w_t_l_subscribe_params_ae5f4300ae15af3ceb7ac10bb61c00faa}\label{interface_w_t_l_subscribe_params_ae5f4300ae15af3ceb7ac10bb61c00faa}} 
+\index{WTLSubscribeParams@{WTLSubscribeParams}!API\_AVAILABLE@{API\_AVAILABLE}}
+\index{API\_AVAILABLE@{API\_AVAILABLE}!WTLSubscribeParams@{WTLSubscribeParams}}
+\doxysubsubsection{\texorpdfstring{API\_AVAILABLE}{API\_AVAILABLE}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily -\/ (BOOL report\+Events\+Urgently) API\+\_\+\+AVAILABLE \begin{DoxyParamCaption}\item[{(macos(13.\+3))}]{ }\item[{(watchos(9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_a9cb85189a06595b2315156873bdc4795}{tvos}}(16.\+4))}]{ }\end{DoxyParamCaption}}
+
+Controls whether events will be reported urgently. The default value is YES.
+
+If YES, the events will be reported as soon as the min\+Interval does not prevent it.
+
+If NO, the events will be reported at the maximum interval. 
+
+Implements \mbox{\hyperlink{interface_w_t_l_read_params_a90029eae59335ffede9a68cecc536e99}{WTLRead\+Params}}.
+
+\mbox{\Hypertarget{interface_w_t_l_subscribe_params_ab48e9d95798ff50cec54d2713cdef7b0}\label{interface_w_t_l_subscribe_params_ab48e9d95798ff50cec54d2713cdef7b0}} 
+\index{WTLSubscribeParams@{WTLSubscribeParams}!initWithMinInterval:maxInterval:@{initWithMinInterval:maxInterval:}}
+\index{initWithMinInterval:maxInterval:@{initWithMinInterval:maxInterval:}!WTLSubscribeParams@{WTLSubscribeParams}}
+\doxysubsubsection{\texorpdfstring{initWithMinInterval:maxInterval:}{initWithMinInterval:maxInterval:}}
+{\footnotesize\ttfamily -\/ (instancetype) init\+With\+Min\+Interval\+: \begin{DoxyParamCaption}\item[{(NSNumber $\ast$)}]{min\+Interval }\item[{max\+Interval\+:(NSNumber $\ast$)}]{max\+Interval }\end{DoxyParamCaption}}
+
+Initialize an \mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}}. Must provide a min\+Interval and max\+Interval; there are no default values for those. \mbox{\Hypertarget{interface_w_t_l_subscribe_params_a9cb85189a06595b2315156873bdc4795}\label{interface_w_t_l_subscribe_params_a9cb85189a06595b2315156873bdc4795}} 
+\index{WTLSubscribeParams@{WTLSubscribeParams}!tvos@{tvos}}
+\index{tvos@{tvos}!WTLSubscribeParams@{WTLSubscribeParams}}
+\doxysubsubsection{\texorpdfstring{tvos}{tvos}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (16.\+1, 16.\+4) tvos \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+init and new exist for now, for backwards compatibility, and initialize with min\+Interval set to 1 and max\+Interval set to 0, which will not work on its own. Uses of \mbox{\hyperlink{interface_w_t_l_subscribe_params}{WTLSubscribe\+Params}} that rely on init must all be using (deprecated) APIs that pass in a separate min\+Interval and max\+Interval. 
+
+Provided by category \mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_a9cb85189a06595b2315156873bdc4795}{WTLSubscribe\+Params(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_subscribe_params_a9cb85189a06595b2315156873bdc4795}\label{interface_w_t_l_subscribe_params_a9cb85189a06595b2315156873bdc4795}} 
+\index{WTLSubscribeParams@{WTLSubscribeParams}!tvos@{tvos}}
+\index{tvos@{tvos}!WTLSubscribeParams@{WTLSubscribeParams}}
+\doxysubsubsection{\texorpdfstring{tvos}{tvos}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily + (16.\+1, 16.\+4) tvos \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_a9cb85189a06595b2315156873bdc4795}{WTLSubscribe\+Params(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_subscribe_params_ab12707f3cce5990b2953150830158e8f}\label{interface_w_t_l_subscribe_params_ab12707f3cce5990b2953150830158e8f}} 
+\index{WTLSubscribeParams@{WTLSubscribeParams}!WTL\_DEPRECATED@{WTL\_DEPRECATED}}
+\index{WTL\_DEPRECATED@{WTL\_DEPRECATED}!WTLSubscribeParams@{WTLSubscribeParams}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED}{WTL\_DEPRECATED}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$keep\+Previous\+Subscriptions) WTL\+\_\+\+DEPRECATED \begin{DoxyParamCaption}\item[{(\char`\"{}Please use replace\+Existing\+Subscriptions\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_a9cb85189a06595b2315156873bdc4795}{tvos}}(16.\+1, 16.\+4))}]{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_ab12707f3cce5990b2953150830158e8f}{WTLSubscribe\+Params(\+Deprecated)}}.
+
+\mbox{\Hypertarget{interface_w_t_l_subscribe_params_ae97abbe0c03df9d0069cbd2b76adcee9}\label{interface_w_t_l_subscribe_params_ae97abbe0c03df9d0069cbd2b76adcee9}} 
+\index{WTLSubscribeParams@{WTLSubscribeParams}!WTL\_DEPRECATED@{WTL\_DEPRECATED}}
+\index{WTL\_DEPRECATED@{WTL\_DEPRECATED}!WTLSubscribeParams@{WTLSubscribeParams}}
+\doxysubsubsection{\texorpdfstring{WTL\_DEPRECATED}{WTL\_DEPRECATED}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily -\/ (NSNumber $\ast$auto\+Resubscribe) WTL\+\_\+\+DEPRECATED \begin{DoxyParamCaption}\item[{(\char`\"{}Please use resubscribe\+Automatically\char`\"{})}]{ }\item[{(macos(13.\+0, 13.\+3))}]{ }\item[{(watchos(9.\+1, 9.\+4))}]{ }\item[{(\mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_a9cb85189a06595b2315156873bdc4795}{tvos}}(16.\+1, 16.\+4))}]{ }\end{DoxyParamCaption}}
+
+
+
+Provided by category \mbox{\hyperlink{category_w_t_l_subscribe_params_07_deprecated_08_ae97abbe0c03df9d0069cbd2b76adcee9}{WTLSubscribe\+Params(\+Deprecated)}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/humtong/\+Downloads/\+Pods\+\_\+副本/\+Thing\+Smart\+Matter\+Kit/\+Build/\+Vendors\+Framework/\+Water.\+framework/\+Headers/\mbox{\hyperlink{_w_t_l_cluster_8h}{WTLCluster.\+h}}\end{DoxyCompactItemize}
